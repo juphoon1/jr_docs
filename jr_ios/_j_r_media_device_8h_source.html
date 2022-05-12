@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JRSDK Objective-C API Reference for iOS: JRSDK/JRMediaDevice/JRMediaDevice.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JRSDK Objective-C API Reference for iOS
+   &#160;<span id="projectnumber">1.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_caa039d10d3a7c353a262d2975205903.html">JRSDK</a></li><li class="navelem"><a class="el" href="dir_41d6b8e5fe5f904ec186d989fa13c42d.html">JRMediaDevice</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">JRMediaDevice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  JRMediaDevice.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  JRSDK</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Ginger on 2017/11/24.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2017年 Ginger. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;JRMediaDeviceCallback.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;JRMediaDeviceConstants.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;JRMediaDeviceVideoCanvas.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_j_r_media_device.html">   18</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_j_r_media_device.html">JRMediaDevice</a> : NSObject</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_j_r_media_device.html#ae7544d4abc36911eb40a062d50149d4b">   23</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;JRMediaDeviceCallback&gt; <a class="code" href="interface_j_r_media_device.html#ae7544d4abc36911eb40a062d50149d4b">delegate</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_j_r_media_device.html#a63b0f9147c0702637464dfa57dff4fbc">   28</a></span>&#160;<span class="keyword">@property</span> (nonatomic,assign, readonly) BOOL <a class="code" href="interface_j_r_media_device.html#a7639f0805f2ebff28ecc501e0790fe67">speakerOn</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;+ (<a class="code" href="interface_j_r_media_device.html">JRMediaDevice</a> *)<a class="code" href="interface_j_r_media_device.html#abf37ce3462944d8d4f0aa3f21bcafd1b">sharedInstance</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;- (<a class="code" href="interface_j_r_media_device_video_canvas.html">JRMediaDeviceVideoCanvas</a> *)startCameraVideo:(<a class="code" href="group___xE8_xAE_xBE_xE5_xA4_x87_xE6_xA8_xA1_xE5_x9D_x97.html#ga03a741fa0cce81bc78d22280587d8082">JRMediaDeviceRender</a>)type autoRotate:(BOOL)autoRotate;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;- (<a class="code" href="interface_j_r_media_device_video_canvas.html">JRMediaDeviceVideoCanvas</a> *)startVideo:(NSString*)videoSource</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                              renderType:(<a class="code" href="group___xE8_xAE_xBE_xE5_xA4_x87_xE6_xA8_xA1_xE5_x9D_x97.html#ga03a741fa0cce81bc78d22280587d8082">JRMediaDeviceRender</a>)type</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                              autoRotate:(BOOL)autoRotate;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;- (void)stopVideo:(<a class="code" href="interface_j_r_media_device_video_canvas.html">JRMediaDeviceVideoCanvas</a> *)canvas;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (BOOL)rotateVideo:(<a class="code" href="interface_j_r_media_device_video_canvas.html">JRMediaDeviceVideoCanvas</a> *)canvas angle:(<span class="keywordtype">int</span>)angle;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (BOOL)<a class="code" href="interface_j_r_media_device.html#ae4be758e362c011feb340d3debfcd678">startAudio</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (BOOL)<a class="code" href="interface_j_r_media_device.html#ae0f16576b522c885ff11a140f973f220">stopAudio</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (BOOL)<a class="code" href="interface_j_r_media_device.html#a5451d58fd56c5c083197b12160c6df86">startCamera</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (BOOL)<a class="code" href="interface_j_r_media_device.html#a9063ced8826d23db5248d8b6f14ff6b8">stopCamera</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;- (BOOL)<a class="code" href="interface_j_r_media_device.html#a63b0f9147c0702637464dfa57dff4fbc">switchCamera</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;- (BOOL)enableSpeaker:(BOOL)enable;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ainterface_j_r_media_device_html_a5451d58fd56c5c083197b12160c6df86"><div class="ttname"><a href="interface_j_r_media_device.html#a5451d58fd56c5c083197b12160c6df86">-[JRMediaDevice startCamera]</a></div><div class="ttdeci">BOOL startCamera()</div><div class="ttdoc">开启摄像头</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html"><div class="ttname"><a href="interface_j_r_media_device.html">JRMediaDevice</a></div><div class="ttdoc">主要负责音视频设备管理</div><div class="ttdef"><b>Definition:</b> JRMediaDevice.h:19</div></div>
+<div class="ttc" id="agroup___xE8_xAE_xBE_xE5_xA4_x87_xE6_xA8_xA1_xE5_x9D_x97_html_ga03a741fa0cce81bc78d22280587d8082"><div class="ttname"><a href="group___xE8_xAE_xBE_xE5_xA4_x87_xE6_xA8_xA1_xE5_x9D_x97.html#ga03a741fa0cce81bc78d22280587d8082">JRMediaDeviceRender</a></div><div class="ttdeci">JRMediaDeviceRender</div><div class="ttdoc">渲染模式</div><div class="ttdef"><b>Definition:</b> JRMediaDeviceConstants.h:27</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_ae7544d4abc36911eb40a062d50149d4b"><div class="ttname"><a href="interface_j_r_media_device.html#ae7544d4abc36911eb40a062d50149d4b">JRMediaDevice::delegate</a></div><div class="ttdeci">id&lt; JRMediaDeviceCallback &gt; delegate</div><div class="ttdoc">媒体设备管理回调代理对象</div><div class="ttdef"><b>Definition:</b> JRMediaDevice.h:23</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_a7639f0805f2ebff28ecc501e0790fe67"><div class="ttname"><a href="interface_j_r_media_device.html#a7639f0805f2ebff28ecc501e0790fe67">JRMediaDevice::speakerOn</a></div><div class="ttdeci">BOOL speakerOn</div><div class="ttdoc">扬声器是否为开启状态，YES 表示扬声器为开启状态，NO 表示扬声器为关闭状态</div><div class="ttdef"><b>Definition:</b> JRMediaDevice.h:28</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_ae0f16576b522c885ff11a140f973f220"><div class="ttname"><a href="interface_j_r_media_device.html#ae0f16576b522c885ff11a140f973f220">-[JRMediaDevice stopAudio]</a></div><div class="ttdeci">BOOL stopAudio()</div><div class="ttdoc">关闭音频</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_a63b0f9147c0702637464dfa57dff4fbc"><div class="ttname"><a href="interface_j_r_media_device.html#a63b0f9147c0702637464dfa57dff4fbc">-[JRMediaDevice switchCamera]</a></div><div class="ttdeci">BOOL switchCamera()</div><div class="ttdoc">切换摄像头</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_ae4be758e362c011feb340d3debfcd678"><div class="ttname"><a href="interface_j_r_media_device.html#ae4be758e362c011feb340d3debfcd678">-[JRMediaDevice startAudio]</a></div><div class="ttdeci">BOOL startAudio()</div><div class="ttdoc">启用音频</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_video_canvas_html"><div class="ttname"><a href="interface_j_r_media_device_video_canvas.html">JRMediaDeviceVideoCanvas</a></div><div class="ttdoc">视频渲染对象，用于UI层方便操作视频</div><div class="ttdef"><b>Definition:</b> JRMediaDeviceVideoCanvas.h:17</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_abf37ce3462944d8d4f0aa3f21bcafd1b"><div class="ttname"><a href="interface_j_r_media_device.html#abf37ce3462944d8d4f0aa3f21bcafd1b">+[JRMediaDevice sharedInstance]</a></div><div class="ttdeci">JRMediaDevice * sharedInstance()</div><div class="ttdoc">获取 JRMediaDevice 单例对象</div></div>
+<div class="ttc" id="ainterface_j_r_media_device_html_a9063ced8826d23db5248d8b6f14ff6b8"><div class="ttname"><a href="interface_j_r_media_device.html#a9063ced8826d23db5248d8b6f14ff6b8">-[JRMediaDevice stopCamera]</a></div><div class="ttdeci">BOOL stopCamera()</div><div class="ttdoc">关闭摄像头</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['scene_328',['scene',['../interface_j_r_call_item.html#a2b2ac421a47feb9f9e8fbfea3380a7ef',1,'JRCallItem']]],
+  ['sdkversion_329',['sdkVersion',['../interface_j_r_client.html#a06336df19984cf902659b10fcfe1a1d8',1,'JRClient']]],
+  ['selfnumber_330',['selfNumber',['../interface_j_r_call_item.html#af8cfdefc2eecf49894cb66803067d324',1,'JRCallItem']]],
+  ['senddtmf_3adtmf_3a_331',['sendDtmf:dtmf:',['../interface_j_r_call.html#a3f51031accb226636a42685272c4b42a',1,'JRCall']]],
+  ['setaccount_3aconfig_3aforkey_3a_332',['setAccount:config:forKey:',['../interface_j_r_account.html#afdea7f8b8c005eda21a04d724c7b53bd',1,'JRAccount']]],
+  ['sharedinstance_333',['sharedInstance',['../interface_j_r_client.html#a36bc87331b61620e067c05e75681119c',1,'JRClient::sharedInstance()'],['../interface_j_r_auto_config.html#a12fcc7fe3d40e95a1994eb6669624be6',1,'JRAutoConfig::sharedInstance()'],['../interface_j_r_media_device.html#abf37ce3462944d8d4f0aa3f21bcafd1b',1,'JRMediaDevice::sharedInstance()'],['../interface_j_r_call.html#af3401da58fec17e5b2d8cdc6ab64d335',1,'JRCall::sharedInstance()'],['../interface_j_r_call_authority.html#a06c0e458875557c56474ed1baaf1831c',1,'JRCallAuthority::sharedInstance()']]],
+  ['speakeron_334',['speakerOn',['../interface_j_r_media_device.html#a7639f0805f2ebff28ecc501e0790fe67',1,'JRMediaDevice']]],
+  ['startaudio_335',['startAudio',['../interface_j_r_media_device.html#ae4be758e362c011feb340d3debfcd678',1,'JRMediaDevice']]],
+  ['startautoconfig_3a_336',['startAutoConfig:',['../interface_j_r_auto_config.html#afb79f62435aaa3da6a7be7a761acc8d7',1,'JRAutoConfig']]],
+  ['startcamera_337',['startCamera',['../interface_j_r_media_device.html#a5451d58fd56c5c083197b12160c6df86',1,'JRMediaDevice']]],
+  ['startcameravideo_3aautorotate_3a_338',['startCameraVideo:autoRotate:',['../interface_j_r_media_device.html#a9062f550ca055bcc215825b16df2b4a7',1,'JRMediaDevice']]],
+  ['startinitsdk_339',['startInitSDK',['../interface_j_r_client.html#a29cab4bbe0f9702e74351a2969339c9b',1,'JRClient']]],
+  ['startvideo_3arendertype_3aautorotate_3a_340',['startVideo:renderType:autoRotate:',['../interface_j_r_media_device.html#a397b45f4d4c4ea1384c96345016672a8',1,'JRMediaDevice']]],
+  ['state_341',['state',['../interface_j_r_client.html#a80640752e86e83de7fdd3d26f74bfdb5',1,'JRClient::state()'],['../interface_j_r_auto_config.html#ab4cd745b11f60f488c10b76df78694d0',1,'JRAutoConfig::state()'],['../interface_j_r_call_item.html#ad428719884a05e037d0b3d41a3cc5daa',1,'JRCallItem::state()']]],
+  ['status_342',['status',['../interface_j_r_call_member.html#a4f656cc43f415edf8ebe0b5071e39ecf',1,'JRCallMember']]],
+  ['stopaudio_343',['stopAudio',['../interface_j_r_media_device.html#ae0f16576b522c885ff11a140f973f220',1,'JRMediaDevice']]],
+  ['stopcamera_344',['stopCamera',['../interface_j_r_media_device.html#a9063ced8826d23db5248d8b6f14ff6b8',1,'JRMediaDevice']]],
+  ['stopvideo_3a_345',['stopVideo:',['../interface_j_r_media_device.html#a496dca0e89cf70aa1ab4f99d003e3461',1,'JRMediaDevice']]],
+  ['stringparam_346',['stringParam',['../interface_j_r_account_config_param.html#a55b1bd8f7a90c5c352d033d64bda6ca9',1,'JRAccountConfigParam']]],
+  ['switchcamera_347',['switchCamera',['../interface_j_r_media_device.html#a63b0f9147c0702637464dfa57dff4fbc',1,'JRMediaDevice']]],
+  ['switchcamera_3a_348',['switchCamera:',['../interface_j_r_call.html#a56144c9ba68cc508bdf6fdf6a8c74a4c',1,'JRCall']]]
+];

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JRSDK Objective-C API Reference for iOS: JRSDK/JRCall/JRCallItem.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JRSDK Objective-C API Reference for iOS
+   &#160;<span id="projectnumber">1.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_caa039d10d3a7c353a262d2975205903.html">JRSDK</a></li><li class="navelem"><a class="el" href="dir_afcc047e67b6555b29daef573a2e7f4f.html">JRCall</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">JRCallItem.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  JRCallItem.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  JRSDK</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Ginger on 2017/11/23.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2017年 Ginger. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;JRCallConstants.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;JRCallMember.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html">   17</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_j_r_call_item.html">JRCallItem</a> : NSObject</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a2e48499a167752ac0ae35c67856ddd0c">   22</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, strong) NSArray&lt;JRCallMember *&gt; *<a class="code" href="interface_j_r_call_item.html#a2e48499a167752ac0ae35c67856ddd0c">callMembers</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#af8cfdefc2eecf49894cb66803067d324">   27</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, copy) NSString *<a class="code" href="interface_j_r_call_item.html#af8cfdefc2eecf49894cb66803067d324">selfNumber</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a606512a88b2fe254475160d670559b48">   32</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, copy) NSString *<a class="code" href="interface_j_r_call_item.html#a606512a88b2fe254475160d670559b48">renderId</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a509deb22a23bd95b1ba795c7eb493aa4">   37</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gaff136b2bfa160e0dda56ffc7b144b6e2">JRCallDirection</a> <a class="code" href="interface_j_r_call_item.html#a509deb22a23bd95b1ba795c7eb493aa4">direction</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#ad9c6c81620d84b8b3c252e14aa7a31b7">   42</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gab4229b7df7997bb40011d009ac35493f">JRCallType</a> <a class="code" href="interface_j_r_call_item.html#ad9c6c81620d84b8b3c252e14aa7a31b7">type</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#ad428719884a05e037d0b3d41a3cc5daa">   47</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga58974c50893b09ca75ab9a02153ed825">JRCallState</a> <a class="code" href="interface_j_r_call_item.html#ad428719884a05e037d0b3d41a3cc5daa">state</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a04ba3bc18279aeec8934f868ef46f884">   52</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <span class="keywordtype">long</span> <a class="code" href="interface_j_r_call_item.html#a04ba3bc18279aeec8934f868ef46f884">beginTime</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#aba4b2d0f66dd9d88d7c2069646ee73e8">   57</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <span class="keywordtype">long</span> <a class="code" href="interface_j_r_call_item.html#aba4b2d0f66dd9d88d7c2069646ee73e8">endTime</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#aeae79f86713ec4c85788605f6dc2dedf">   62</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <span class="keywordtype">long</span> <a class="code" href="interface_j_r_call_item.html#aeae79f86713ec4c85788605f6dc2dedf">talkingBeginTime</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a643f916d0bda1be4780c90b5ae238f0b">   67</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) BOOL <a class="code" href="interface_j_r_call_item.html#a643f916d0bda1be4780c90b5ae238f0b">hold</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a359f3e5e7816e04752f63315f1221072">   72</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) BOOL <a class="code" href="interface_j_r_call_item.html#a359f3e5e7816e04752f63315f1221072">held</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a889e895214143d546d01e800ec188833">   77</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) BOOL <a class="code" href="interface_j_r_call_item.html#a889e895214143d546d01e800ec188833">mute</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#abaeb09d6fd3f1d17858c543fd465bcf4">   82</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) BOOL <a class="code" href="interface_j_r_call_item.html#abaeb09d6fd3f1d17858c543fd465bcf4">active</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a06ff4d3aca2e3c49d8f6f3a0093c611f">   87</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) BOOL <a class="code" href="interface_j_r_call_item.html#a06ff4d3aca2e3c49d8f6f3a0093c611f">toConf</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="interface_j_r_call_item.html#a2b2ac421a47feb9f9e8fbfea3380a7ef">   92</a></span>&#160;<span class="keyword">@property</span> (nonatomic, readonly, assign) <a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga609f87ac7e768c526775404a31bf0946">JRCallScene</a> <a class="code" href="interface_j_r_call_item.html#a2b2ac421a47feb9f9e8fbfea3380a7ef">scene</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (BOOL)isEqual:(<a class="code" href="interface_j_r_call_item.html">JRCallItem</a> *)object;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;- (<a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga161de66b2c164e3122e572891b4c82aa">JRCallNetStatus</a>)<a class="code" href="interface_j_r_call_item.html#ad145e41521478b707fade06ac28e4937">getAudioNetSendStatus</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (<a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga161de66b2c164e3122e572891b4c82aa">JRCallNetStatus</a>)<a class="code" href="interface_j_r_call_item.html#adadf8eb068c2cb09ae8fe6708fcc0f96">getAudioNetReceiveStatus</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;- (<a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga161de66b2c164e3122e572891b4c82aa">JRCallNetStatus</a>)<a class="code" href="interface_j_r_call_item.html#a4f54b740a587ffb4b41a9a39aceb6fad">getVideoNetSendStatus</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;- (<a class="code" href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga161de66b2c164e3122e572891b4c82aa">JRCallNetStatus</a>)<a class="code" href="interface_j_r_call_item.html#a29b76301c81e06dbdb207d7483e7fa74">getVideoNetReceiveStatus</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ainterface_j_r_call_item_html_a4f54b740a587ffb4b41a9a39aceb6fad"><div class="ttname"><a href="interface_j_r_call_item.html#a4f54b740a587ffb4b41a9a39aceb6fad">-[JRCallItem getVideoNetSendStatus]</a></div><div class="ttdeci">JRCallNetStatus getVideoNetSendStatus()</div><div class="ttdoc">获得视频发送网络状态，详见 JRCallNetStatus</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_ad9c6c81620d84b8b3c252e14aa7a31b7"><div class="ttname"><a href="interface_j_r_call_item.html#ad9c6c81620d84b8b3c252e14aa7a31b7">JRCallItem::type</a></div><div class="ttdeci">JRCallType type</div><div class="ttdoc">通话类型</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:42</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_ad428719884a05e037d0b3d41a3cc5daa"><div class="ttname"><a href="interface_j_r_call_item.html#ad428719884a05e037d0b3d41a3cc5daa">JRCallItem::state</a></div><div class="ttdeci">JRCallState state</div><div class="ttdoc">通话状态</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:47</div></div>
+<div class="ttc" id="agroup___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97_html_ga609f87ac7e768c526775404a31bf0946"><div class="ttname"><a href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga609f87ac7e768c526775404a31bf0946">JRCallScene</a></div><div class="ttdeci">JRCallScene</div><div class="ttdoc">通话场景</div><div class="ttdef"><b>Definition:</b> JRCallConstants.h:15</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a06ff4d3aca2e3c49d8f6f3a0093c611f"><div class="ttname"><a href="interface_j_r_call_item.html#a06ff4d3aca2e3c49d8f6f3a0093c611f">JRCallItem::toConf</a></div><div class="ttdeci">BOOL toConf</div><div class="ttdoc">是否是一对一转多方通话（适用于被转）</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:87</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a889e895214143d546d01e800ec188833"><div class="ttname"><a href="interface_j_r_call_item.html#a889e895214143d546d01e800ec188833">JRCallItem::mute</a></div><div class="ttdeci">BOOL mute</div><div class="ttdoc">是否是静音状态</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:77</div></div>
+<div class="ttc" id="agroup___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97_html_ga161de66b2c164e3122e572891b4c82aa"><div class="ttname"><a href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga161de66b2c164e3122e572891b4c82aa">JRCallNetStatus</a></div><div class="ttdeci">JRCallNetStatus</div><div class="ttdoc">通话质量</div><div class="ttdef"><b>Definition:</b> JRCallConstants.h:194</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_aba4b2d0f66dd9d88d7c2069646ee73e8"><div class="ttname"><a href="interface_j_r_call_item.html#aba4b2d0f66dd9d88d7c2069646ee73e8">JRCallItem::endTime</a></div><div class="ttdeci">long endTime</div><div class="ttdoc">通话结束时间</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:57</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_ad145e41521478b707fade06ac28e4937"><div class="ttname"><a href="interface_j_r_call_item.html#ad145e41521478b707fade06ac28e4937">-[JRCallItem getAudioNetSendStatus]</a></div><div class="ttdeci">JRCallNetStatus getAudioNetSendStatus()</div><div class="ttdoc">获得音频发送网络状态，详见 JRCallNetStatus</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_adadf8eb068c2cb09ae8fe6708fcc0f96"><div class="ttname"><a href="interface_j_r_call_item.html#adadf8eb068c2cb09ae8fe6708fcc0f96">-[JRCallItem getAudioNetReceiveStatus]</a></div><div class="ttdeci">JRCallNetStatus getAudioNetReceiveStatus()</div><div class="ttdoc">获得音频接收网络状态，详见 JRCallNetStatus</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a359f3e5e7816e04752f63315f1221072"><div class="ttname"><a href="interface_j_r_call_item.html#a359f3e5e7816e04752f63315f1221072">JRCallItem::held</a></div><div class="ttdeci">BOOL held</div><div class="ttdoc">是否是被挂起状态</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:72</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_abaeb09d6fd3f1d17858c543fd465bcf4"><div class="ttname"><a href="interface_j_r_call_item.html#abaeb09d6fd3f1d17858c543fd465bcf4">JRCallItem::active</a></div><div class="ttdeci">BOOL active</div><div class="ttdoc">是否激活状态</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:82</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a2b2ac421a47feb9f9e8fbfea3380a7ef"><div class="ttname"><a href="interface_j_r_call_item.html#a2b2ac421a47feb9f9e8fbfea3380a7ef">JRCallItem::scene</a></div><div class="ttdeci">JRCallScene scene</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:92</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_af8cfdefc2eecf49894cb66803067d324"><div class="ttname"><a href="interface_j_r_call_item.html#af8cfdefc2eecf49894cb66803067d324">JRCallItem::selfNumber</a></div><div class="ttdeci">NSString * selfNumber</div><div class="ttdoc">自己的号码，可用于通话记录的筛选显示</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:27</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a29b76301c81e06dbdb207d7483e7fa74"><div class="ttname"><a href="interface_j_r_call_item.html#a29b76301c81e06dbdb207d7483e7fa74">-[JRCallItem getVideoNetReceiveStatus]</a></div><div class="ttdeci">JRCallNetStatus getVideoNetReceiveStatus()</div><div class="ttdoc">获得视频接收网络状态，详见 JRCallNetStatus</div></div>
+<div class="ttc" id="agroup___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97_html_gab4229b7df7997bb40011d009ac35493f"><div class="ttname"><a href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gab4229b7df7997bb40011d009ac35493f">JRCallType</a></div><div class="ttdeci">JRCallType</div><div class="ttdoc">通话类型</div><div class="ttdef"><b>Definition:</b> JRCallConstants.h:29</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a2e48499a167752ac0ae35c67856ddd0c"><div class="ttname"><a href="interface_j_r_call_item.html#a2e48499a167752ac0ae35c67856ddd0c">JRCallItem::callMembers</a></div><div class="ttdeci">NSArray&lt; JRCallMember * &gt; * callMembers</div><div class="ttdoc">对端号码列表，一对一通话时取数组第一个元素即可</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:22</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html"><div class="ttname"><a href="interface_j_r_call_item.html">JRCallItem</a></div><div class="ttdoc">通话对象类</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:18</div></div>
+<div class="ttc" id="agroup___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97_html_gaff136b2bfa160e0dda56ffc7b144b6e2"><div class="ttname"><a href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gaff136b2bfa160e0dda56ffc7b144b6e2">JRCallDirection</a></div><div class="ttdeci">JRCallDirection</div><div class="ttdoc">通话方向</div><div class="ttdef"><b>Definition:</b> JRCallConstants.h:63</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a606512a88b2fe254475160d670559b48"><div class="ttname"><a href="interface_j_r_call_item.html#a606512a88b2fe254475160d670559b48">JRCallItem::renderId</a></div><div class="ttdeci">NSString * renderId</div><div class="ttdoc">媒体操作标识，用于视频通话</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:32</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_aeae79f86713ec4c85788605f6dc2dedf"><div class="ttname"><a href="interface_j_r_call_item.html#aeae79f86713ec4c85788605f6dc2dedf">JRCallItem::talkingBeginTime</a></div><div class="ttdeci">long talkingBeginTime</div><div class="ttdoc">通话接通时间</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:62</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a509deb22a23bd95b1ba795c7eb493aa4"><div class="ttname"><a href="interface_j_r_call_item.html#a509deb22a23bd95b1ba795c7eb493aa4">JRCallItem::direction</a></div><div class="ttdeci">JRCallDirection direction</div><div class="ttdoc">呼入或者呼出</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:37</div></div>
+<div class="ttc" id="agroup___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97_html_ga58974c50893b09ca75ab9a02153ed825"><div class="ttname"><a href="group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga58974c50893b09ca75ab9a02153ed825">JRCallState</a></div><div class="ttdeci">JRCallState</div><div class="ttdoc">通话状态</div><div class="ttdef"><b>Definition:</b> JRCallConstants.h:41</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a643f916d0bda1be4780c90b5ae238f0b"><div class="ttname"><a href="interface_j_r_call_item.html#a643f916d0bda1be4780c90b5ae238f0b">JRCallItem::hold</a></div><div class="ttdeci">BOOL hold</div><div class="ttdoc">是否是挂起状态</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:67</div></div>
+<div class="ttc" id="ainterface_j_r_call_item_html_a04ba3bc18279aeec8934f868ef46f884"><div class="ttname"><a href="interface_j_r_call_item.html#a04ba3bc18279aeec8934f868ef46f884">JRCallItem::beginTime</a></div><div class="ttdeci">long beginTime</div><div class="ttdoc">呼叫发起时间</div><div class="ttdef"><b>Definition:</b> JRCallItem.h:52</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

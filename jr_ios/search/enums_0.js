@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['jraccountconfigkey_429',['JRAccountConfigKey',['../group___xE8_xB4_xA6_xE5_x8F_xB7_xE6_xA8_xA1_xE5_x9D_x97.html#ga5526609195841fc9cc1850728768d8ba',1,'JRAccountConstants.h']]],
+  ['jrautoconfigreason_430',['JRAutoConfigReason',['../group___xE8_x87_xAA_xE5_x8A_xA8_xE9_x85_x8D_xE7_xBD_xAE_xE6_xA8_xA1_xE5_x9D_x97.html#ga906756bd89352b8d8681bba720c4238a',1,'JRAutoConfigConstants.h']]],
+  ['jrautoconfigstate_431',['JRAutoConfigState',['../group___xE8_x87_xAA_xE5_x8A_xA8_xE9_x85_x8D_xE7_xBD_xAE_xE6_xA8_xA1_xE5_x9D_x97.html#gafce0aab0a682dfdbbd0a64968b2cbbe1',1,'JRAutoConfigConstants.h']]],
+  ['jrautoconfigupdate_432',['JRAutoConfigUpdate',['../group___xE8_x87_xAA_xE5_x8A_xA8_xE9_x85_x8D_xE7_xBD_xAE_xE6_xA8_xA1_xE5_x9D_x97.html#gabe5669eb8ea15d2ff56516ede62b64a1',1,'JRAutoConfigConstants.h']]],
+  ['jrcalldirection_433',['JRCallDirection',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gaff136b2bfa160e0dda56ffc7b144b6e2',1,'JRCallConstants.h']]],
+  ['jrcalldtmftype_434',['JRCallDtmfType',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga33fa8dc4a63e1cfcd30d02f7318a1373',1,'JRCallConstants.h']]],
+  ['jrcallmemberstatus_435',['JRCallMemberStatus',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga0d513cd2510aaa2868641b85a2253222',1,'JRCallConstants.h']]],
+  ['jrcallnetstatus_436',['JRCallNetStatus',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga161de66b2c164e3122e572891b4c82aa',1,'JRCallConstants.h']]],
+  ['jrcallscene_437',['JRCallScene',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga609f87ac7e768c526775404a31bf0946',1,'JRCallConstants.h']]],
+  ['jrcallstate_438',['JRCallState',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga58974c50893b09ca75ab9a02153ed825',1,'JRCallConstants.h']]],
+  ['jrcalltermreason_439',['JRCallTermReason',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#ga8270cc683a893f49d7c189defce3e28d',1,'JRCallConstants.h']]],
+  ['jrcalltype_440',['JRCallType',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gab4229b7df7997bb40011d009ac35493f',1,'JRCallConstants.h']]],
+  ['jrcallupdatetype_441',['JRCallUpdateType',['../group___xE9_x80_x9A_xE8_xAF_x9D_xE6_xA8_xA1_xE5_x9D_x97.html#gae87e098420de6b10e3214d720a75797d',1,'JRCallConstants.h']]],
+  ['jrclientinitreason_442',['JRClientInitReason',['../group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga77429ed1f6d861a6f446ad2ff1939c29',1,'JRClientConstants.h']]],
+  ['jrclientreason_443',['JRClientReason',['../group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga290114c67ae36b4b9914467e5ff98ccf',1,'JRClientConstants.h']]],
+  ['jrclientstate_444',['JRClientState',['../group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga16a76081f7d659cc12ce0df3c94dd8a0',1,'JRClientConstants.h']]],
+  ['jrmediadevicerender_445',['JRMediaDeviceRender',['../group___xE8_xAE_xBE_xE5_xA4_x87_xE6_xA8_xA1_xE5_x9D_x97.html#ga03a741fa0cce81bc78d22280587d8082',1,'JRMediaDeviceConstants.h']]],
+  ['jrmediadevicerotateangle_446',['JRMediaDeviceRotateAngle',['../group___xE8_xAE_xBE_xE5_xA4_x87_xE6_xA8_xA1_xE5_x9D_x97.html#ga1cc6d76feefe2ed8f72c709581341703',1,'JRMediaDeviceConstants.h']]]
+];

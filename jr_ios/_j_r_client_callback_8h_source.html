@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JRSDK Objective-C API Reference for iOS: JRSDK/JRClient/JRClientCallback.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JRSDK Objective-C API Reference for iOS
+   &#160;<span id="projectnumber">1.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_caa039d10d3a7c353a262d2975205903.html">JRSDK</a></li><li class="navelem"><a class="el" href="dir_2650841ee7907ffed8c221dc0dfcd903.html">JRClient</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">JRClientCallback.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="protocol_j_r_client_callback-p.html#a77bfa0cb3f43edbd50d07f210ffb3530">    1</a></span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  JRClientCallback.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  JRSDK</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Ginger on 2017/11/22.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2017年 Ginger. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;JRClientConstants.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="protocol_j_r_client_callback-p.html">   16</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_j_r_client_callback-p.html">JRClientCallback</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (void)onClientInitResult:(BOOL)result reason:(<a class="code" href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga77429ed1f6d861a6f446ad2ff1939c29">JRClientInitReason</a>)reason;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (void)onLogin:(BOOL)result reason:(<a class="code" href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga290114c67ae36b4b9914467e5ff98ccf">JRClientReason</a>)reason;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;- (void)onLogout:(<a class="code" href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga290114c67ae36b4b9914467e5ff98ccf">JRClientReason</a>)reason;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;- (void)onClientStateChange:(<a class="code" href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga16a76081f7d659cc12ce0df3c94dd8a0">JRClientState</a>)state reason:(<a class="code" href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga290114c67ae36b4b9914467e5ff98ccf">JRClientReason</a>)reason;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97_html_ga290114c67ae36b4b9914467e5ff98ccf"><div class="ttname"><a href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga290114c67ae36b4b9914467e5ff98ccf">JRClientReason</a></div><div class="ttdeci">JRClientReason</div><div class="ttdoc">账号登录失败原因</div><div class="ttdef"><b>Definition:</b> JRClientConstants.h:15</div></div>
+<div class="ttc" id="agroup___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97_html_ga77429ed1f6d861a6f446ad2ff1939c29"><div class="ttname"><a href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga77429ed1f6d861a6f446ad2ff1939c29">JRClientInitReason</a></div><div class="ttdeci">JRClientInitReason</div><div class="ttdoc">SDK 初始化原因</div><div class="ttdef"><b>Definition:</b> JRClientConstants.h:73</div></div>
+<div class="ttc" id="agroup___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97_html_ga16a76081f7d659cc12ce0df3c94dd8a0"><div class="ttname"><a href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga16a76081f7d659cc12ce0df3c94dd8a0">JRClientState</a></div><div class="ttdeci">JRClientState</div><div class="ttdoc">账号状态</div><div class="ttdef"><b>Definition:</b> JRClientConstants.h:108</div></div>
+<div class="ttc" id="aprotocol_j_r_client_callback-p_html"><div class="ttname"><a href="protocol_j_r_client_callback-p.html">JRClientCallback-p</a></div><div class="ttdoc">JRClient 回调代理 用于回调初始化与登录相关事件</div><div class="ttdef"><b>Definition:</b> JRClientCallback.h:16</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JRSDK Objective-C API Reference for iOS: JRSDK/JRClient/JRClient.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JRSDK Objective-C API Reference for iOS
+   &#160;<span id="projectnumber">1.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_caa039d10d3a7c353a262d2975205903.html">JRSDK</a></li><li class="navelem"><a class="el" href="dir_2650841ee7907ffed8c221dc0dfcd903.html">JRClient</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">JRClient.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  JRClient.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  JRSDK</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Ginger on 2017/11/22.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2017年 Ginger. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;JRClientConstants.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;JRClientCallback.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;FOUNDATION_EXPORT NSString* JRSDKVersion;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;FOUNDATION_EXPORT <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> JRSDKVersionChar[];</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_j_r_client.html">   23</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_j_r_client.html">JRClient</a> : NSObject</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_j_r_client.html#a11888706fcf409cdc3b7643b3a62fde2">   28</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;JRClientCallback&gt; <a class="code" href="interface_j_r_client.html#a11888706fcf409cdc3b7643b3a62fde2">delegate</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="interface_j_r_client.html#a80640752e86e83de7fdd3d26f74bfdb5">   33</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign, readonly) <a class="code" href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga16a76081f7d659cc12ce0df3c94dd8a0">JRClientState</a> <a class="code" href="interface_j_r_client.html#a80640752e86e83de7fdd3d26f74bfdb5">state</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_j_r_client.html#af55c866995b11a48aa524fc5e020295f">   38</a></span>&#160;<span class="keyword">@property</span> (nonatomic, copy, readonly) NSString *<a class="code" href="interface_j_r_client.html#af55c866995b11a48aa524fc5e020295f">currentUser</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_j_r_client.html#a021e7b0b6ff32e365b10c7d7221a1b65">   43</a></span>&#160;<span class="keyword">@property</span> (nonatomic, copy) NSString *<a class="code" href="interface_j_r_client.html#a021e7b0b6ff32e365b10c7d7221a1b65">currentNumber</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_j_r_client.html#a29cab4bbe0f9702e74351a2969339c9b">   48</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code" href="interface_j_r_client.html#a53477a7ffbc229005691fb3afac1c26d">isAutoReLogin</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;+ (<a class="code" href="interface_j_r_client.html">JRClient</a> *)<a class="code" href="interface_j_r_client.html#a36bc87331b61620e067c05e75681119c">sharedInstance</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;- (BOOL)<a class="code" href="interface_j_r_client.html#a29cab4bbe0f9702e74351a2969339c9b">startInitSDK</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (BOOL)login:(NSString *)accountName;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (BOOL)<a class="code" href="interface_j_r_client.html#a135010d909cfe0e2a7ef02199e1155f2">logout</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (NSString *)<a class="code" href="interface_j_r_client.html#a61fe7bc1e74dcbf83125e739321edd6c">getLogDirectory</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (NSString *)<a class="code" href="interface_j_r_client.html#a06336df19984cf902659b10fcfe1a1d8">sdkVersion</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ainterface_j_r_client_html_a53477a7ffbc229005691fb3afac1c26d"><div class="ttname"><a href="interface_j_r_client.html#a53477a7ffbc229005691fb3afac1c26d">JRClient::isAutoReLogin</a></div><div class="ttdeci">BOOL isAutoReLogin</div><div class="ttdoc">掉线是否重连，默认为 YES</div><div class="ttdef"><b>Definition:</b> JRClient.h:48</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a11888706fcf409cdc3b7643b3a62fde2"><div class="ttname"><a href="interface_j_r_client.html#a11888706fcf409cdc3b7643b3a62fde2">JRClient::delegate</a></div><div class="ttdeci">id&lt; JRClientCallback &gt; delegate</div><div class="ttdoc">Client 回调代理对象，用于接收 Client 相关通知</div><div class="ttdef"><b>Definition:</b> JRClient.h:28</div></div>
+<div class="ttc" id="ainterface_j_r_client_html"><div class="ttname"><a href="interface_j_r_client.html">JRClient</a></div><div class="ttdoc">主要负责SDK初始化及账号的登录登出管理</div><div class="ttdef"><b>Definition:</b> JRClient.h:24</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a29cab4bbe0f9702e74351a2969339c9b"><div class="ttname"><a href="interface_j_r_client.html#a29cab4bbe0f9702e74351a2969339c9b">-[JRClient startInitSDK]</a></div><div class="ttdeci">BOOL startInitSDK()</div><div class="ttdoc">初始化 SDK</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a61fe7bc1e74dcbf83125e739321edd6c"><div class="ttname"><a href="interface_j_r_client.html#a61fe7bc1e74dcbf83125e739321edd6c">-[JRClient getLogDirectory]</a></div><div class="ttdeci">NSString * getLogDirectory()</div><div class="ttdoc">获取日志目录</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a06336df19984cf902659b10fcfe1a1d8"><div class="ttname"><a href="interface_j_r_client.html#a06336df19984cf902659b10fcfe1a1d8">-[JRClient sdkVersion]</a></div><div class="ttdeci">NSString * sdkVersion()</div><div class="ttdoc">获取 SDK 版本</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a80640752e86e83de7fdd3d26f74bfdb5"><div class="ttname"><a href="interface_j_r_client.html#a80640752e86e83de7fdd3d26f74bfdb5">JRClient::state</a></div><div class="ttdeci">JRClientState state</div><div class="ttdoc">当前账号登录状态，详见 JRClientState</div><div class="ttdef"><b>Definition:</b> JRClient.h:33</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a36bc87331b61620e067c05e75681119c"><div class="ttname"><a href="interface_j_r_client.html#a36bc87331b61620e067c05e75681119c">+[JRClient sharedInstance]</a></div><div class="ttdeci">JRClient * sharedInstance()</div><div class="ttdoc">获取 JRClient 单例对象</div></div>
+<div class="ttc" id="agroup___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97_html_ga16a76081f7d659cc12ce0df3c94dd8a0"><div class="ttname"><a href="group___xE5_x88_x9D_xE5_xA7_x8B_xE5_x8C_x96_xE4_xB8_x8E_xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html#ga16a76081f7d659cc12ce0df3c94dd8a0">JRClientState</a></div><div class="ttdeci">JRClientState</div><div class="ttdoc">账号状态</div><div class="ttdef"><b>Definition:</b> JRClientConstants.h:108</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_af55c866995b11a48aa524fc5e020295f"><div class="ttname"><a href="interface_j_r_client.html#af55c866995b11a48aa524fc5e020295f">JRClient::currentUser</a></div><div class="ttdeci">NSString * currentUser</div><div class="ttdoc">当前使用的账号</div><div class="ttdef"><b>Definition:</b> JRClient.h:38</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a021e7b0b6ff32e365b10c7d7221a1b65"><div class="ttname"><a href="interface_j_r_client.html#a021e7b0b6ff32e365b10c7d7221a1b65">JRClient::currentNumber</a></div><div class="ttdeci">NSString * currentNumber</div><div class="ttdoc">当前打开账号的号码</div><div class="ttdef"><b>Definition:</b> JRClient.h:43</div></div>
+<div class="ttc" id="ainterface_j_r_client_html_a135010d909cfe0e2a7ef02199e1155f2"><div class="ttname"><a href="interface_j_r_client.html#a135010d909cfe0e2a7ef02199e1155f2">-[JRClient logout]</a></div><div class="ttdeci">BOOL logout()</div><div class="ttdoc">登出当前账号</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

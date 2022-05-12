@@ -1,747 +1,237 @@
-
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>CD_WebRTC 多流版本 &mdash; CD_WebRTC 1.0.1 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JRSDK Objective-C API Reference for iOS: 概览</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body class="wy-body-for-nav">
-
-   
-  <div class="wy-grid-for-nav">
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="#" class="icon icon-home"> CD_WebRTC
-          
-
-          
-          </a>
-
-          
-            
-            
-          
-
-          
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">JRSDK Objective-C API Reference for iOS
+   &#160;<span id="projectnumber">1.0.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
 </div>
 
-          
-        </div>
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
 
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">CD_WebRTC 多流版本</a><ul>
-<li><a class="reference internal" href="#id1">1. 概述</a></li>
-<li><a class="reference internal" href="#id2">2. 架构说明</a></li>
-<li><a class="reference internal" href="#id3">3. 工作模式</a></li>
-<li><a class="reference internal" href="#id4">4. 主要流程</a><ul>
-<li><a class="reference internal" href="#id5">4.1 登陆和入会流程</a></li>
-<li><a class="reference internal" href="#id6">4.2 单流模式媒体订阅流程</a></li>
-<li><a class="reference internal" href="#id7">4.3 多流模式媒体订阅流程</a></li>
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">概览 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><ul>
+<li><a class="el" href="interface_j_r_account.html" title="主要负责账号的增删改查管理">JRAccount</a> 主要负责账号的增删改查管理</li>
+<li><a class="el" href="interface_j_r_client.html" title="主要负责SDK初始化及账号的登录登出管理">JRClient</a> 主要负责SDK初始化及账号的登录登出管理</li>
+<li><a class="el" href="protocol_j_r_client_callback-p.html" title="JRClient 回调代理 用于回调初始化与登录相关事件">JRClientCallback</a> 用于回调初始化与登录相关事件</li>
+<li><a class="el" href="interface_j_r_auto_config.html" title="主要负责通过自动配置获取账户信息">JRAutoConfig</a> 主要负责通过自动配置获取账户信息</li>
+<li><a class="el" href="protocol_j_r_auto_config_callback-p.html" title="JRAutoConfig 回调代理 用于回调自动配置结果">JRAutoConfigCallback</a> 用于回调自动配置结果</li>
+<li><a class="el" href="interface_j_r_media_device.html" title="主要负责音视频设备管理">JRMediaDevice</a> 主要负责音视频设备管理</li>
+<li><a class="el" href="protocol_j_r_media_device_callback-p.html" title="JRMediaDevice 回调代理 用于回调音视频设备相关事件">JRMediaDeviceCallback</a> 用于回调音视频设备相关事件</li>
+<li><a class="el" href="interface_j_r_call.html" title="主要负责通话管理">JRCall</a> 主要负责通话管理</li>
+<li><a class="el" href="protocol_j_r_call_callback-p.html" title="JRCall 回调代理 用于回调通话相关事件">JRCallCallback</a> 用于回调通话相关事件</li>
 </ul>
-</li>
-<li><a class="reference internal" href="#id8">5. 接口使用说明</a><ul>
-<li><a class="reference internal" href="#id9">5.1 接口调用和命令反馈调用流程</a></li>
-<li><a class="reference internal" href="#id10">5.2 单流版本接口</a></li>
-<li><a class="reference internal" href="#id11">5.3 多流版本接口情况</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id12">6. 透传版本说明</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-</div>
-            
-          
-        </div>
-        
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">CD_WebRTC</a>
-        
-      </nav>
-
-
-      <div class="wy-nav-content">
-        
-        <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
-  <ul class="wy-breadcrumbs">
-    
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>CD_WebRTC 多流版本</li>
-    
-    
-      <li class="wy-breadcrumbs-aside">
-        
-          
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
-          
-        
-      </li>
-    
-  </ul>
-
-  
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-            
-  <div class="section" id="cd-webrtc">
-<h1>CD_WebRTC 多流版本<a class="headerlink" href="#cd-webrtc" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-</div>
-<div class="section" id="id1">
-<h2>1. 概述<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>CD_WebRTC负责给前端网页提供对接会议服务和相应媒体转码功能的服务。</p>
-<p>原先单流版本的CD_WebRTC将所有的视频流混合成一股流发送给前端，前端只能通过有限的几个接口进行控制，大部分媒体的控制和展现逻辑由CD_WebRTC完成。</p>
-<p>而多流版本则取消了媒体混流的逻辑，将各个媒体流单独发送给前端，并由前端来控制媒体流，CD_WebRTC负责转发媒体控制指令，大大增强了前端的自主控制权限。</p>
-</div></blockquote>
-</div>
-<div class="section" id="id2">
-<h2>2. 架构说明<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<img alt="_images/architecture.png" src="_images/architecture.png" />
-</div>
-<div class="section" id="id3">
-<h2>3. 工作模式<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><dl class="simple">
-<dt>3.1 单流工作模式</dt><dd><ol class="arabic simple">
-<li><p>前端通过WebRTCGateway与CD_WebRTC进行信令通讯,登陆和加入会议。</p></li>
-<li><p>前端创建WebRTC和CD_WebRTC之间建立媒体通道，用于传输媒体和自定义数据。</p></li>
-<li><p>有新成员加入，会议服务通知CD_WebRTC。</p></li>
-<li><p>CD_WebRTC根据前端设置的布局模式计算分辨率，对媒体进行订阅，同时会将相应人员变动消息通知给前端。</p></li>
-<li><p>CD_WebRTC将订阅的媒体进行混流，合并成一股媒体流，通过WebRTC媒体通道发送给前端进行显示。</p></li>
-</ol>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>3.2 多流工作模式</dt><dd><ol class="arabic simple">
-<li><p>前端通过WebRTCGateway与CD_WebRTC进行信令通讯,登陆和加入会议。</p></li>
-<li><p>前端创建WebRTC和CD_WebRTC之间建立媒体通道，用于传输媒体和自定义数据。</p></li>
-<li><p>有新成员加入，会议服务通知CD_WebRTC。</p></li>
-<li><p>CD_WebRTC将人员变动信息和媒体信息发送给前端。</p></li>
-<li><p>前端将媒体信息通知给对接客户，由客户指定需要订阅的媒体分辨率。</p></li>
-<li><p>客户将媒体订阅信息发送给前端。</p></li>
-<li><p>前端接收到客户的订阅信息，解析之后发送给CD_WebRTC。</p></li>
-<li><p>CD_WebRTC接收到订阅信息，正式向会议服务订阅媒体。</p></li>
-<li><p>CD_WebRTC将收到的媒体数据通过WebRTC媒体通道发送给前端进行显示</p></li>
-</ol>
-</dd>
-</dl>
-</li>
-</ul>
-</div>
-<div class="section" id="id4">
-<h2>4. 主要流程<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>4.1 登陆和入会流程<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p class="plantuml">
-<img src="_images/plantuml-7fbed8de7bd36af3232677277e6ef2ea5018f3e0.png" alt="skinparam monochrome true
-box 前端
-   participant Web as web
-   participant WebRTC as webrtc
-end box
-box 多方会议服务
-   participant WebRTCGetWay as webrtcgetway
-   participant JMDS as jmds
-   participant CD_WebRTC as cd_webrtc
-   participant JSMS as jsms
-end box
-
-== 登陆 ==
-web -&gt; webrtcgetway: 发送登陆请求
-webrtcgetway -&gt; jmds: 对请求进行转换\n并转发给JMDS
-jmds -&gt; cd_webrtc: JMDS根据需求在独立进程上\n创建CD_WebRTC负责与web进行对接
-cd_webrtc -&gt; jsms: 查询并验证用户信息
-jsms -&gt; cd_webrtc: 返回结果
-cd_webrtc -&gt; webrtcgetway: 发送登陆结果
-webrtcgetway -&gt; web: 转换请求并转发
-
-== 入会 ==
-web -&gt; webrtcgetway: 发送入会请求
-webrtcgetway -&gt; cd_webrtc: 对请求进行转换\n并转发请求
-cd_webrtc -&gt; jsms: 加入会议
-jsms -&gt; cd_webrtc: 返回结果
-cd_webrtc -&gt; webrtcgetway: 发送结果
-webrtcgetway -&gt; web: 转换请求并转发
-web -&gt; webrtc: 创建webrtc\n并和CD_WebRTC建立媒体通道"/>
-</p>
-</div>
-<div class="section" id="id6">
-<h3>4.2 单流模式媒体订阅流程<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p class="plantuml">
-<img src="_images/plantuml-b13ff274a7ecce904863ca8ab6103174b2e5f559.png" alt="skinparam monochrome true
-box 前端
-   participant Web as web
-   participant WebRTC as webrtc
-end box
-box 多方会议服务
-   participant CD_WebRTC as cd_webrtc
-   participant JSMS as jsms
-end box
-
-== 有新成员加入 ==
-jsms -&gt; cd_webrtc: 通知CD_WebRTC有新成员加入
-cd_webrtc -&gt; jsms: 根据设置的参数调整各个媒体流的分辨率
-cd_webrtc -&gt; web: 发送成员加入通知
-loop 周期性执行
-   jsms -&gt; cd_webrtc: 发送媒体资源
-   cd_webrtc -&gt; webrtc: 对媒体资源进行转码
-   webrtc -&gt; web: 将媒体资源发送给前端
-end"/>
-</p>
-</div>
-<div class="section" id="id7">
-<h3>4.3 多流模式媒体订阅流程<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><p class="plantuml">
-<img src="_images/plantuml-e153bcb9c12a65902d34734656166551e2f8efd1.png" alt="skinparam monochrome true
-box 前端
-   participant 用户 as user
-   participant Web as web
-   participant WebRTC as webrtc
-end box
-box 多方会议服务
-   participant CD_WebRTC as cd_webrtc
-   participant JSMS as jsms
-end box
-
-== 有新成员加入 ==
-jsms -&gt; cd_webrtc: 通知CD_WebRTC有新成员加入
-cd_webrtc -&gt; web: 发送成员加入信息和对应的媒体信息
-note over web: onmedianotiy反馈消息\n进行通知
-web -&gt; user: 通知客户进行设置
-user -&gt; web: 发送设置通知
-web -&gt; cd_webrtc: 发送媒体设置信息给CD_WebRTC
-note over cd_webrtc: setmediainfo接口\n进行设置
-cd_webrtc -&gt; jsms: 根据设置信息进行媒体订阅
-loop 周期性执行
-   jsms -&gt; cd_webrtc: 发送媒体资源
-   cd_webrtc -&gt; webrtc: 对媒体资源进行转码
-   webrtc -&gt; web: 将媒体资源发送给前端
-end"/>
-</p>
-</div></blockquote>
-</div>
-</div>
-<div class="section" id="id8">
-<h2>5. 接口使用说明<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id9">
-<h3>5.1 接口调用和命令反馈调用流程<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><dl>
-<dt>接口调用 - 接口调用有两种方法, 一种是使用WebRTCGetWay调用,另一种是借助webrtc的媒体通道调用webrtc的send函数。</dt><dd><ul>
-<li><p>使用WebRTCGetWay进行调用:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>数据格式: {&quot;txt&quot;:text, &quot;type&quot;:&quot;msg&quot;}
-// text: 符合协议格式的字符串，以下有说明
-// msg: 固定的数据类型字符串
-</pre></div>
-</div>
-</li>
-<li><p>借助webrtc的媒体通道调用webrtc的send函数:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>send(text, peer);
-peer: 可选的对端 Id,http 连接时被忽略
-text: 符合协议格式的字符串,以下有说明。
-</pre></div>
-</div>
-</li>
-</ul>
-<p>协议格式 - BASE64 编码的 JSON 格式:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:cmd, &quot;param&quot;:...}
-//cmd 为指令，... 为包含相应参数的json字符串
-</pre></div>
-</div>
-</dd>
-</dl>
-</li>
-<li><p>信息反馈 - 调用webrtc的onmessage函数接收信息反馈:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">onmessage</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">peer</span><span class="p">);</span>
-<span class="o">//</span> <span class="n">text</span> <span class="n">json数据字符串</span><span class="p">,</span> <span class="n">格式为</span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="n">interface</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">...</span><span class="p">};</span><span class="n">interface</span> <span class="n">为对应的指令</span><span class="p">,</span><span class="o">...</span><span class="n">为对应的数据</span>
-<span class="o">//</span> <span class="n">peer</span> <span class="n">对端</span> <span class="n">Id</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</div>
-<div class="section" id="id10">
-<h3>5.2 单流版本接口<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<ul>
-<li><p>queryroom - 查询房间是否存在:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;queryroom&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;roomid&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">roomid</span> <span class="n">房间号</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;queryroom&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="mi">0</span> <span class="o">-</span> <span class="n">失败</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">成功</span>
-</pre></div>
-</div>
-</li>
-<li><p>joinroom - 加入房间:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;joinroom&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;regionId&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;roomId&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="s2">&quot;displayname&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">regionId</span> <span class="n">域id</span>
-<span class="n">roomId</span> <span class="n">房间号</span>
-<span class="n">displayname</span> <span class="n">显示名称</span>
-<span class="n">bVideo</span> <span class="n">是否现实视频</span>
-<span class="n">param</span> <span class="n">媒体设置参数</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;joinroom&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="mi">0</span> <span class="o">-</span> <span class="n">失败</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">成功</span>
-</pre></div>
-</div>
-</li>
-<li><p>leaveroom - 离开会议:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;leaveroom&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;confId&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">confId</span> <span class="n">会议id</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;leaveroom&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="mi">0</span> <span class="o">-</span> <span class="n">失败</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">成功</span>
-</pre></div>
-</div>
-</li>
-<li><p>getrealm - 获取区域信息:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;getrealm&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;confId&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">confId</span> <span class="n">会议id</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="n">成功</span> <span class="o">-</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;ongetrealmok&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="n">区域信息</span>
-     <span class="n">失败</span> <span class="o">-</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;ongetrealmfail&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><p>uesendonline - 发送Online信息:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;uesendonline&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;content&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">content</span> <span class="n">消息内容</span>
-<span class="n">target</span> <span class="n">目标用户uri</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;uesendonline&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="mi">0</span> <span class="o">-</span> <span class="n">失败</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">成功</span>
-</pre></div>
-</div>
-</li>
-<li><p>setpushuri uri - 设置推流地址，设置推流地址. 若以’/’结尾, 则自动添加当前会议号，必须在开始“视频混合”前设置:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;setpushuri&quot;, &quot;param&quot;:{&quot;uri&quot;:%s}}
-uri 推流地址，例:rtmp://jusmeeting3.8686c.com/jusmeeting/test
-
-返回: {&quot;cmd&quot;:&quot;setpushuri&quot;, &quot;val&quot;:%d} // val:0 - 失败, 1 - 成功
-</pre></div>
-</div>
-</li>
-<li><p>startpush -  开始向 CDN 推流:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;startpush&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{}}</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;startpush&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="mi">0</span> <span class="o">-</span> <span class="n">失败</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">成功</span>
-</pre></div>
-</div>
-</li>
-<li><p>stoppush - 停止推流:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;stoppush&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{}}</span>
-
-<span class="n">返回</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;stoppush&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}</span> <span class="o">//</span> <span class="n">val</span><span class="p">:</span><span class="mi">0</span> <span class="o">-</span> <span class="n">失败</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">成功</span>
-</pre></div>
-</div>
-</li>
-<li><p>getstats - 反馈实时统计, 字符串以’rn’开头:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;getstats&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{}}</span>
-</pre></div>
-</div>
-</li>
-<li><p>help - 反馈帮助信息, 字符串以’rn’开头:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{}}</span>
-</pre></div>
-</div>
-</li>
-<li><p>rec - 开始录制，东莞移动项目中，由排队机发送该指令，实现录制功能。此方法已废弃, 使用 startrecord 代替:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;rec&quot;, &quot;param&quot;:{&quot;recFile&quot;:%s}}
-recFile 文件服务器上的 URL,  不是本地文件路径。例如 //group1/fdafa/212.mp4
-</pre></div>
-</div>
-</li>
-<li><p>stoprec - 对应rec的, 停止录制并上传，东莞移动项目中，由排队机发送该指令，结束并上传的文件服务器:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;stoprec&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;expire&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">expire</span> <span class="n">文件服务器删除该文件的过期时间</span><span class="p">,</span> <span class="n">单位秒</span><span class="p">,</span> <span class="n">默认为1年</span>
-</pre></div>
-</div>
-</li>
-<li><p>startrecord - 开始录制命令,默认使用qiniu的服务，录制后文件会上传到qiniu云（保留原来的数据格式）:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;StartRecord&quot;,&quot;Video&quot;:true,&quot;Storage&quot;:{
-&quot;Protocol&quot;:&quot;qiniu&quot;,//协议
-&quot;AccessKey&quot;:&quot;Th2jW_jP5VSk-wfdVMy5it1oK4iHa8pv8vBZMhbd&quot;,//qiniu sdk需要的信息
-&quot;SecretKey&quot;:&quot;Nh-_pgXrx9weiq8bkAtJPkrBlV3YP13U0Fx0fT-c&quot;,//qiniu sdk需要的信息
-&quot;BucketName&quot;:&quot;ajianzheng&quot;,//qiniu sdk需要的信息
-&quot;FileKey&quot;:&quot;1234.mp4&quot;,//上传文件相关的key
-&quot;SplitFileSize&quot;:100}//分割文件的大小，单位Kb，不传的话默认500Mb
-}
-目前录制都是会自动分割的模式，生成文件达到SplitFileSize指定的大小是就会重新写一个新的文件，而文件名的生成与FileKey有关，不如FileKey为&quot;1234.mp4&quot;,最终上传qiniu后会是&quot;1234_0000.mp4&quot;,&quot;1234_0001.mp4&quot;,&quot;1234_0002.mp4&quot;...这样形式的文件
-</pre></div>
-</div>
-</li>
-<li><p>stoprecord - 对应startrecord的,  停止录制:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;stoprecord&quot;, &quot;param&quot;:{}}
-录制结束后，文件的上传是由StorageTransfer服务完成的，服务会定期检查record目录下是否有info文件，并根据info文件的内容进行上传
-</pre></div>
-</div>
-</li>
-<li><p>setvideolevel - 设置混合视频的尺寸， 必须在开始视频混合前设置， 与setmerge有重复, 建议使用setmerge代替:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;setvideolevel&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;MtcConfVideoLevelKey&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">MtcConfVideoLevelKey</span> <span class="n">视频尺寸</span><span class="p">,</span><span class="n">由小到大可选值</span>
-   <span class="mi">256</span> <span class="n">minial</span> <span class="n">picture</span>
-   <span class="mi">512</span> <span class="n">small</span> <span class="n">picture</span>
-   <span class="mi">768</span> <span class="n">large</span> <span class="n">picture</span>
-   <span class="mi">1024</span> <span class="n">maxium</span> <span class="n">picture</span>
-</pre></div>
-</div>
-</li>
-<li><p>setrole - 设置角色:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;setrole&quot;</span><span class="p">,</span><span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;mask&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;role&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">mask</span> <span class="n">掩码</span><span class="p">,</span><span class="n">表示操作的bit位</span>
-<span class="n">role</span> <span class="n">角色</span><span class="p">,</span><span class="n">按位解释</span><span class="p">,</span><span class="n">设原状态为_ROLE_</span><span class="p">,</span>
-            <span class="n">_ROLE_</span> <span class="o">=</span> <span class="p">(</span><span class="n">_ROLE_</span> <span class="o">&amp;</span> <span class="o">~</span><span class="n">mask</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">mask</span> <span class="o">&amp;</span> <span class="n">role</span><span class="p">);</span>
-<span class="n">target</span>  <span class="n">可选的设置对象</span><span class="o">.</span><span class="n">缺省时为自身</span>
-</pre></div>
-</div>
-</li>
-<li><p>setstate - 设置会场成员的状态:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;setstate&quot;,&quot;param&quot;:{&quot;mask&quot;:%d, &quot;state&quot;:%d, &quot;target&quot;:%s}}
-mask  掩码,表示操作的bit位
-state 状态,按位解释，设原状态为_STATE_, 则
-            _STATE_ = (_STATE_ &amp; ~mask) | (mask &amp; state);
-target  可选的设置对象.缺省时为自身
-</pre></div>
-</div>
-</li>
-<li><p>setnick - 设置会场成员的昵称:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;setnick&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;nick&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">nick</span> <span class="n">utf8编码的昵称</span>
-<span class="n">target</span> <span class="n">可选的设置对象</span><span class="o">.</span><span class="n">缺省时为自身</span>
-</pre></div>
-</div>
-</li>
-<li><p>settitle - 修改会场标题:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;settitle&quot;</span><span class="p">,</span><span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">title</span> <span class="n">utf8编码的标题</span>
-</pre></div>
-</div>
-</li>
-<li><p>sendtext - 向会场内成员,发送聊天文本:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;sendtext&quot;</span><span class="p">,</span><span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="n">text</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">text</span> <span class="n">utf8编码的文本</span>
-<span class="n">target</span> <span class="n">可选的目标对象</span><span class="o">.</span><span class="n">缺省时将广播</span>
-</pre></div>
-</div>
-</li>
-<li><p>publish - 向第三方平台 (WEBRTC) 发送视频:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;publish&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;video&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">video</span> <span class="mi">0</span> <span class="o">-</span> <span class="n">表示发送</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">表示发送</span>
-</pre></div>
-</div>
-</li>
-<li><p>subscribe - 第三方平台, 订阅会场内的事件,将会场事件分三类,相应的反馈格式同上:{“cmd”:cmd, “val”:…}:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;subscribe&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;mask&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">mask</span> <span class="n">事件位集合</span>
-<span class="mh">0x1</span> <span class="n">自身状态改变</span><span class="p">,</span> <span class="n">对应cmd值为</span> <span class="n">onselfstate</span>
-<span class="mh">0x2</span> <span class="n">其他成员状态改变</span><span class="p">,</span> <span class="n">对应cmd值为</span> <span class="n">onactorstate</span><span class="o">/</span><span class="n">onactorleave</span>
-<span class="mh">0x4</span> <span class="n">会场属性改变</span><span class="p">,</span> <span class="n">对应cmd值为</span> <span class="n">onconfstate</span>
-<span class="mh">0x8</span> <span class="n">收到的聊天信息</span><span class="p">,</span> <span class="n">对应cmd值为</span> <span class="n">onconfchat</span>
-</pre></div>
-</div>
-</li>
-<li><p>vsubscribe - 订阅视频:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;vsubscribe&quot;</span><span class="p">,</span><span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;target&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="s2">&quot;state&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">target</span> <span class="n">订阅对象</span>
-<span class="n">state</span>  <span class="mi">0</span> <span class="o">-</span> <span class="n">表示不订阅</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">订阅视频</span>
-</pre></div>
-</div>
-</li>
-<li><p>setmerge - 设置视频混合参数, 必须在开始视频混合前设置:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;setMerge&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;videoLevel&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;mergeMode&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;mergeFps&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">videoLevel</span> <span class="n">视频尺寸</span><span class="p">,</span><span class="n">由小到大可选值</span>
-      <span class="mi">256</span> <span class="n">minial</span> <span class="n">picture</span>
-      <span class="mi">512</span> <span class="n">small</span> <span class="n">picture</span>
-      <span class="mi">768</span> <span class="n">large</span> <span class="n">picture</span>
-      <span class="mi">1024</span> <span class="n">maxium</span> <span class="n">picture</span>
-<span class="n">mergeMode</span> <span class="n">模式值</span><span class="p">,</span><span class="n">范围</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span><span class="n">参考setmergemode的模式定义</span>
-<span class="n">mergeFps</span> <span class="n">混合后视频帧速率</span><span class="p">,</span><span class="n">通常不能超过30</span>
-</pre></div>
-</div>
-</li>
-<li><p>setmergemode - 设置视频混合模式, 支持如下几种:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;setMergeMode&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;mergeMode&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">}}</span>
-<span class="n">mergeMode</span> <span class="n">模式值</span><span class="p">,</span><span class="n">范围</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
-  <span class="mf">1.</span> <span class="n">平铺模式</span><span class="p">,</span><span class="n">所有视频均分平铺</span>
-  <span class="mf">2.</span> <span class="n">讲台模式</span><span class="p">,</span><span class="n">共享为大图</span><span class="p">,</span><span class="n">其他视频为小图</span>
-  <span class="mf">3.</span> <span class="n">演讲模式</span><span class="p">,</span><span class="n">共享为大图</span><span class="p">,</span><span class="n">共享者视频为小图</span><span class="p">,</span><span class="n">其他不显示</span>
-  <span class="mf">4.</span> <span class="n">自定义模式</span><span class="p">,</span><span class="n">由</span> <span class="n">setlayout</span> <span class="n">指令设置所有视频布局</span>
-  <span class="mf">5.</span> <span class="n">智能模式</span><span class="p">,</span> <span class="n">可用</span> <span class="n">setmergemode_i</span><span class="p">,</span> <span class="n">setmerge_i</span> <span class="n">调整相应的参数</span>
-</pre></div>
-</div>
-</li>
-<li><p>setmergemode_i - 智能布局中的智能模式, setmergemode 必须设置为 <strong>*智能模式(5)*</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;setMergeMode_i&quot;</span><span class="p">,</span> <span class="s2">&quot;param&quot;</span><span class="p">:{</span><span class="s2">&quot;mergeMode&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;scsMergeMode&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="s2">&quot;zoomUserName&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">}}</span>
-<span class="n">mergeMode</span> <span class="n">智能分屏模式</span>
-   <span class="mi">1</span> <span class="n">freeLayout</span>
-   <span class="mi">2</span> <span class="n">rectLayout</span>
-   <span class="mi">3</span> <span class="n">bigSmallX2</span>
-   <span class="mi">4</span> <span class="n">bigSmallX3</span>
-   <span class="o">....</span><span class="p">,</span>
-   <span class="mi">11</span> <span class="n">bigSmallX10</span>
-   <span class="mi">12</span> <span class="n">bigSmallTop</span>
-   <span class="mi">13</span> <span class="n">bigSmallBottom</span>
-<span class="n">scsMergeMode</span> <span class="n">智能分屏带屏幕共享模式</span>
-   <span class="mi">1</span> <span class="n">screen</span>
-   <span class="mi">2</span> <span class="n">platform</span>
-   <span class="mi">3</span> <span class="n">platformCover</span>
-   <span class="mi">4</span> <span class="n">speaker</span>
-<span class="n">zoomUserName</span> <span class="n">大小屏默认放大的用户</span> <span class="n">uri</span>
-</pre></div>
-</div>
-</li>
-<li><p>setmerge_i - 智能布局参数, setmergemode必须设置为 <strong>*智能模式(5)*</strong>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;setMerge_i&quot;, &quot;param&quot;:{&quot;videoWidth&quot;:%d, &quot;videoHeight&quot;:%d, &quot;mergeMode&quot;:%d, &quot;scsMergeMode&quot;:%d, &quot;mergeFps&quot;:%d, &quot;zoomUserName&quot;:%s}}
-videoWidth: 宽
-videoHeight
-mergeMode: 智能分屏模式 参见上方 setmergemode_i
-scsMergeMode：智能分屏带屏幕共享模式，参见上方 setmergemode_iv
-mergeFps: 帧数 1-30
-zoomUserName: 大小屏默认放大的用户 uri
-</pre></div>
-</div>
-</li>
-<li><p>setlayout - 自定义布局, setmergemode 必须设置为 <strong>*自定义模式(4)*</strong>, 可以自由定义,每个成员视频在单位画布中的位置:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;setLayout&quot;, &quot;param&quot;:{&quot;layout&quot;:[[&lt;id0&gt;,&lt;ps&gt; x, y, w, h],[&quot;id1&quot;,256, 0.1, 0.1, 1.0, 1.0], ...}}
-id0 成员 URI 或屏幕 URI
-ps  视频尺寸，由小到大分别为
-      256 minial picture
-      512 small picture
-      768 large picture
-      1024 maxium picture
-x,y,w,h 单位 [0.0,1.0] 的坐标和尺寸
-</pre></div>
-</div>
-</li>
-</ul>
-</div>
-<div class="section" id="id11">
-<h3>5.3 多流版本接口情况<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<p><strong>* 被取消的接口 *</strong></p>
-<ul class="simple">
-<li><p>setvideolevel</p></li>
-<li><p>publish</p></li>
-<li><p>vsubscribe</p></li>
-<li><p>setmerge</p></li>
-<li><p>setmerge_i</p></li>
-<li><p>setmergemode_i</p></li>
-<li><p>setlayout</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>由于多流版本不对媒体流做混流处理，并且媒体订阅的控制转移到前端，原先设置媒体混流和订阅的接口会被弃用。</p>
-</div>
-<p><strong>* 新增接口 *</strong></p>
-<ul>
-<li><p>onmedianotiy - 媒体变化通知:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;onmedianotiy&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:[{</span><span class="s2">&quot;uri&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="o">%</span><span class="n">d</span><span class="p">},</span><span class="o">...</span><span class="p">]}</span>
-<span class="n">uri</span> <span class="n">媒体流的uri</span>
-<span class="nb">type</span> <span class="n">媒体类型</span>
-   <span class="mi">1</span> <span class="o">-</span> <span class="n">视频流</span>
-   <span class="mi">2</span> <span class="o">-</span> <span class="n">屏幕共享</span>
-</pre></div>
-</div>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>onmedianotiy消息会在以下两种情况通知:</p>
-<ol class="arabic simple">
-<li><p>加入会议成功之后反馈当前会议中的已经存在的媒体流，如果当前没有其他人员存在则返回的val为空[]。</p></li>
-<li><p>会议开始之后，有人员新增时通知。如果有人员离开CD_WebRTC会自动取消订阅，并由onactorleave进行通知。</p></li>
-</ol>
-</div>
-<ul>
-<li><p>setmediainfo - 设置媒体订阅:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{&quot;cmd&quot;:&quot;setmediainfo&quot;, &quot;param&quot;:{&quot;medias&quot;:[{&quot;uri&quot;:%s, &quot;type&quot;:%d, &quot;ps&quot;:%x, &quot;fps&quot;:%d},...]}}
-uri 媒体流的uri，由onmedianotiy传入
-type 媒体类型，由onmedianotiy传入
-   1 视频流
-   2 屏幕共享
-ps 需要的视频尺寸
-   0   取消订阅
-   256 minial picture
-   512 small picture
-   768 large picture
-   1024 maxium picture
-fps 帧率 可选范围[1~30]
-</pre></div>
-</div>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>setmediainfo设置媒体订阅有以下两种使用场景:</p>
-<ol class="arabic simple">
-<li><p>接收到onmedianotiy消息时，对新增的媒体进行设置订阅。</p></li>
-<li><p>会议开始之后，需要更改当前正在显示的媒体，重新对媒体订阅情况进行设置。</p></li>
-</ol>
-</div>
-<p><strong>* 媒体订阅使用示例 *</strong></p>
-<p>CD_WebRTC接收到来自jsms的新增媒体时，反馈onmedianotiy消息通知前端，前端调用setmediainfo接口设置媒体订阅。</p>
-<ul>
-<li><p>指令反馈:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">onmessage</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">peer</span><span class="p">);</span>
-   <span class="n">text</span> <span class="o">-</span> <span class="p">{</span><span class="s2">&quot;cmd&quot;</span><span class="p">:</span><span class="s2">&quot;onmedianotiy&quot;</span><span class="p">,</span> <span class="s2">&quot;val&quot;</span><span class="p">:[{</span><span class="s2">&quot;uri&quot;</span><span class="p">:</span><span class="s2">&quot;media_uri_1&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="s2">&quot;uri&quot;</span><span class="p">:</span><span class="s2">&quot;media_uri_2&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">}]}</span>
-</pre></div>
-</div>
-</li>
-<li><p>设置媒体订阅:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">send</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">peer</span><span class="p">);</span>
-   <span class="n">text</span> <span class="o">-</span> <span class="s2">&quot;{&quot;</span><span class="n">cmd</span><span class="s2">&quot;:&quot;</span><span class="n">setmediainfo</span><span class="s2">&quot;, &quot;</span><span class="n">param</span><span class="s2">&quot;:{&quot;</span><span class="n">medias</span><span class="s2">&quot;:[{&quot;</span><span class="n">uri</span><span class="s2">&quot;:&quot;</span><span class="n">media_uri_1</span><span class="s2">&quot;, &quot;</span><span class="nb">type</span><span class="s2">&quot;:1, &quot;</span><span class="n">ps</span><span class="s2">&quot;:256, &quot;</span><span class="n">fps</span><span class="s2">&quot;:30}, {&quot;</span><span class="n">uri</span><span class="s2">&quot;:&quot;</span><span class="n">media_uri_2</span><span class="s2">&quot;, &quot;</span><span class="nb">type</span><span class="s2">&quot;:1, &quot;</span><span class="n">ps</span><span class="s2">&quot;:256, &quot;</span><span class="n">fps</span><span class="s2">&quot;:30}]}}&quot;</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="id12">
-<h2>6. 透传版本说明<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
-<p>单流和多流版本的媒体流都需要在CD_WebRTC经过一次编解码，webrtc也需要一次编解码才能在前端进行显示。
-透传就是不在CD_WebRTC端进行编解码，由会议服务到前端只需要在webrtc经过一次编解码过程，降低多路视频情况下的cpu占用。
-透传版本理论上不会更改前端使用接口，只在webrtc和CD_WebRTC进行调整。</p>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
-</div>
-
-
-           </div>
-           
-          </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>
-        &#169; Copyright 2021, hzhou.
-
-    </p>
-  </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
-</footer>
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-  
-
-  <script type="text/javascript">
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script>
-
-  
-  
-    
-   
-
+<h3><a class="anchor" id="autotoc_md0"></a>
+账号管理</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">方法  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_account.html#aee767fd3a09ceeb412ad34d715030c71">createAccount</a>  </td><td class="markdownTableBodyNone">创建一个账号   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_account.html#afdea7f8b8c005eda21a04d724c7b53bd">setAccount</a>  </td><td class="markdownTableBodyNone">设置账号配置   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_account.html#a30286524e22b7b06e34af554187e0a4f">getAccountConfig</a>  </td><td class="markdownTableBodyNone">获取账号配置   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_account.html#a232b8867db254f29aadd6560c88fbcd5">deleteAccount</a>  </td><td class="markdownTableBodyNone">删除账号   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_account.html#af19e6d705c702a141cf185f329ff71ed">getAccountsList </a> </td><td class="markdownTableBodyNone">获取所有已存在的账号名称列表   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md1"></a>
+初始化与登录管理</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">方法  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_client.html#a36bc87331b61620e067c05e75681119c">sharedInstance</a>  </td><td class="markdownTableBodyNone">获取 <a class="el" href="interface_j_r_client.html" title="主要负责SDK初始化及账号的登录登出管理">JRClient</a> 单例对象   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_client.html#a29cab4bbe0f9702e74351a2969339c9b">startInitSDK</a>  </td><td class="markdownTableBodyNone">初始化 SDK   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_client.html#a7c35d98f1ca9f091e067de09f497232b">login</a>  </td><td class="markdownTableBodyNone">账号登录   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_client.html#a135010d909cfe0e2a7ef02199e1155f2">logout</a>  </td><td class="markdownTableBodyNone">登出当前账号   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_client.html#a61fe7bc1e74dcbf83125e739321edd6c">getLogDirectory</a>  </td><td class="markdownTableBodyNone">获取日志目录   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_client.html#a06336df19984cf902659b10fcfe1a1d8">sdkVersion</a>  </td><td class="markdownTableBodyNone">获取 SDK 版本   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md2"></a>
+初始化与登录事件</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">事件  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_client_callback-p.html#a5b2325891e0ca94c2b4ff696e942c94c">onClientInitResult</a>  </td><td class="markdownTableBodyNone">初始化SDK结果回调   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_client_callback-p.html#a24699133a570040721eb10683dae4ef8">onLogin</a>  </td><td class="markdownTableBodyNone">登录结果回调   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_client_callback-p.html#a77bfa0cb3f43edbd50d07f210ffb3530">onLogout</a>  </td><td class="markdownTableBodyNone">登出回调   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_client_callback-p.html#aac441eb03d5e1c01c767722f08f684fa">onClientStateChange</a>  </td><td class="markdownTableBodyNone">登录状态变化回调   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md3"></a>
+自动配置管理</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">方法  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_auto_config.html#a12fcc7fe3d40e95a1994eb6669624be6">sharedInstance</a>  </td><td class="markdownTableBodyNone">获取 <a class="el" href="interface_j_r_auto_config.html" title="主要负责通过自动配置获取账户信息">JRAutoConfig</a> 单例对象   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_auto_config.html#afb79f62435aaa3da6a7be7a761acc8d7">startAutoConfig</a>  </td><td class="markdownTableBodyNone">开始自动配置   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md4"></a>
+自动配置事件</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">事件  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_auto_config_callback-p.html#ab8a071649bdc06d6bf8ccc0be957b737">onAutoConfigResult</a>  </td><td class="markdownTableBodyNone">新增通话回调   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md5"></a>
+音视频设备管理</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">方法  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#abf37ce3462944d8d4f0aa3f21bcafd1b">sharedInstance</a>  </td><td class="markdownTableBodyNone">获取 <a class="el" href="interface_j_r_media_device.html" title="主要负责音视频设备管理">JRMediaDevice</a> 单例对象   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#a9062f550ca055bcc215825b16df2b4a7">startCameraVideo</a>  </td><td class="markdownTableBodyNone">开启摄像头视频渲染   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#a397b45f4d4c4ea1384c96345016672a8">startVideo</a>  </td><td class="markdownTableBodyNone">开始远端视频渲染   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="">stopVideo</a>  </td><td class="markdownTableBodyNone">停止视频渲染   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#a65d3f975be8cf78a586046da7aeb9ab6">rotateVideo</a>  </td><td class="markdownTableBodyNone">旋转对端画面的角度   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#ae4be758e362c011feb340d3debfcd678">startAudio</a>  </td><td class="markdownTableBodyNone">启用音频   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#ae0f16576b522c885ff11a140f973f220">stopAudio</a>  </td><td class="markdownTableBodyNone">关闭音频   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#a5451d58fd56c5c083197b12160c6df86">startAudio</a>  </td><td class="markdownTableBodyNone">开启摄像头   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#a9063ced8826d23db5248d8b6f14ff6b8">stopAudio</a>  </td><td class="markdownTableBodyNone">关闭摄像头   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#a63b0f9147c0702637464dfa57dff4fbc">switchCamera</a>  </td><td class="markdownTableBodyNone">切换摄像头   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_media_device.html#ab8589531501125d04eeb9fbc0d4ff9fd">enableSpeaker</a>  </td><td class="markdownTableBodyNone">开启/关闭扬声器   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md6"></a>
+音视频设备事件</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">事件  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_media_device_callback-p.html#a4c74a661d63e660c3b7d22e7049e01d2">onCameraTypeChange</a>  </td><td class="markdownTableBodyNone">摄像头切换回调   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_media_device_callback-p.html#a5c15f98a5a00cee449f6bae5978b5908">onAudioOutputTypeChange</a>  </td><td class="markdownTableBodyNone">音频输出设备切换回调   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_media_device_callback-p.html#a9ce83ef0788864a62ca44bd70eafc076">onRenderStart</a>  </td><td class="markdownTableBodyNone">渲染开始回调   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md7"></a>
+通话管理</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">方法  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#af3401da58fec17e5b2d8cdc6ab64d335">stopVideo</a>  </td><td class="markdownTableBodyNone">获取 <a class="el" href="interface_j_r_call.html" title="主要负责通话管理">JRCall</a> 单例对象   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a36a711ef6ec7751e70a4973704a090b2">call</a>  </td><td class="markdownTableBodyNone">发起呼叫   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#ab8543a474da9156abf2cda418a7d74af">answer</a>  </td><td class="markdownTableBodyNone">接听   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#aae770f6acae56b6e66eed37da11f529e">end</a>  </td><td class="markdownTableBodyNone">结束通话   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#abd859d06cb78c38bd3498248d55db047">mute</a>  </td><td class="markdownTableBodyNone">静音/解除静音   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a61f3ecdddf5d243a2344e3705d0e2ca6">hold</a>  </td><td class="markdownTableBodyNone">保持/解除保持   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a56144c9ba68cc508bdf6fdf6a8c74a4c">switchCamera</a>  </td><td class="markdownTableBodyNone">切换摄像头   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a3f51031accb226636a42685272c4b42a">sendDtmf</a>  </td><td class="markdownTableBodyNone">发送DTMF   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a394bc55bf0c941e12da98ba6ac5537eb">updateCall</a>  </td><td class="markdownTableBodyNone">发起音视频互转的请求   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a50e60e825dc357368a508952df6fe576">answerUpdate</a>  </td><td class="markdownTableBodyNone">响应音频转视频的请求   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a25e18121fda183fc0b5381608d7cbb6e">becomeActive</a>  </td><td class="markdownTableBodyNone">切换活跃通话   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#aa2b862f83acccc582fbafff9a8d3ad65">getActiveCallItem</a>  </td><td class="markdownTableBodyNone">获取当前活跃通话   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="interface_j_r_call.html#a441da7c8ea1e87adb7ee0b2d91eb5c06">getStatistics</a>  </td><td class="markdownTableBodyNone">获得当前通话统计信息   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md8"></a>
+通话事件</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">事件  </th><th class="markdownTableHeadNone">描述   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_call_callback-p.html#a0875d6f427cdfbb8a3c9507a39015e9d">onCallItemAdd</a>  </td><td class="markdownTableBodyNone">增加一路通话回调   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_call_callback-p.html#a0c1f70bb0d1bef238b319765202704b4">onCallItemRemove</a>  </td><td class="markdownTableBodyNone">移除一路通话回调   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="protocol_j_r_call_callback-p.html#ab8207057040351d01021a5edd1368b09">onCallItemUpdate</a>  </td><td class="markdownTableBodyNone">通话状态更新回调   </td></tr>
+</table>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
 </body>
 </html>
