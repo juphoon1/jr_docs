@@ -1,0 +1,83 @@
+\hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Ntp Class Reference}
+\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp}\index{com.juphoon.cmcc.app.lemon.MtcNtp@{com.juphoon.cmcc.app.lemon.MtcNtp}}
+
+
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp}{Mtc\+Ntp}} interface.  
+
+
+
+
+Inheritance diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Ntp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Ntp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp_a71f9299fa8e057f2d63366cfd8ba9b6a}{Mtc\+\_\+\+Ntp\+Req}} (int i\+Owner)
+\begin{DoxyCompactList}\small\item\em Begin Ntp Request. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp_adfe36fec1216a7bf6278e17cb63bd153}{Mtc\+\_\+\+Ntp\+Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get Ntp timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp}{Mtc\+Ntp}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp_adfe36fec1216a7bf6278e17cb63bd153}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp_adfe36fec1216a7bf6278e17cb63bd153}} 
+\index{com.juphoon.cmcc.app.lemon.MtcNtp@{com.juphoon.cmcc.app.lemon.MtcNtp}!Mtc\_NtpGetTime@{Mtc\_NtpGetTime}}
+\index{Mtc\_NtpGetTime@{Mtc\_NtpGetTime}!com.juphoon.cmcc.app.lemon.MtcNtp@{com.juphoon.cmcc.app.lemon.MtcNtp}}
+\doxysubsubsection{\texorpdfstring{Mtc\_NtpGetTime()}{Mtc\_NtpGetTime()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Ntp.\+Mtc\+\_\+\+Ntp\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get Ntp timestamp. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+U\+I\+NT} & Ntp timestamp, if never initiate ntp request return 0. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp_a71f9299fa8e057f2d63366cfd8ba9b6a}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_ntp_a71f9299fa8e057f2d63366cfd8ba9b6a}} 
+\index{com.juphoon.cmcc.app.lemon.MtcNtp@{com.juphoon.cmcc.app.lemon.MtcNtp}!Mtc\_NtpReq@{Mtc\_NtpReq}}
+\index{Mtc\_NtpReq@{Mtc\_NtpReq}!com.juphoon.cmcc.app.lemon.MtcNtp@{com.juphoon.cmcc.app.lemon.MtcNtp}}
+\doxysubsubsection{\texorpdfstring{Mtc\_NtpReq()}{Mtc\_NtpReq()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Ntp.\+Mtc\+\_\+\+Ntp\+Req (\begin{DoxyParamCaption}\item[{int}]{i\+Owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Begin Ntp Request. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Owner} & The owner of ntp request.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Trigger Ntp Request successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Trigger Ntp Request failed. \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/\mbox{\hyperlink{_mtc_ntp_8java}{Mtc\+Ntp.\+java}}\end{DoxyCompactItemize}

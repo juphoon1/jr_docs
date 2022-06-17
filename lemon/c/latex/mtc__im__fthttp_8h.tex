@@ -1,0 +1,996 @@
+\hypertarget{mtc__im__fthttp_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im\+\_\+fthttp.h File Reference}
+\label{mtc__im__fthttp_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_fthttp.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_fthttp.h}}
+
+
+M\+TC Instant Message File Transfer Via Http Interface Functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a28c91c8a0f9d69b77cf1822863f19461}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}~\char`\"{}text/plain\char`\"{}
+\begin{DoxyCompactList}\small\item\em M\+TC IM file transfer via http hcontent type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a8c823a05c0d95aa51a92729914a3021a}\label{mtc__im__fthttp_8h_a8c823a05c0d95aa51a92729914a3021a}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a8c823a05c0d95aa51a92729914a3021a}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+H\+T\+ML}}~\char`\"{}text/html\char`\"{}
+\begin{DoxyCompactList}\small\item\em text/html content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a521720bd611c4175beaf1bffb8fc6ebc}\label{mtc__im__fthttp_8h_a521720bd611c4175beaf1bffb8fc6ebc}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a521720bd611c4175beaf1bffb8fc6ebc}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+J\+P\+EG}}~\char`\"{}image/jpeg\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/jpeg content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a68202f69f3c522258225df49d915aedd}\label{mtc__im__fthttp_8h_a68202f69f3c522258225df49d915aedd}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a68202f69f3c522258225df49d915aedd}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+G\+IF}}~\char`\"{}image/gif\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/gif content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a5f4f3fcc1399da19af9f7ca7f3440567}\label{mtc__im__fthttp_8h_a5f4f3fcc1399da19af9f7ca7f3440567}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a5f4f3fcc1399da19af9f7ca7f3440567}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+B\+MP}}~\char`\"{}image/bmp\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/bmp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a71be1b16aa8a8e72b34a91b0a4ecaf88}\label{mtc__im__fthttp_8h_a71be1b16aa8a8e72b34a91b0a4ecaf88}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a71be1b16aa8a8e72b34a91b0a4ecaf88}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+P\+NG}}~\char`\"{}image/png\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/png content \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a6e90f5b37f7798fecb70055591004030}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+N\+D\+ER}}~\char`\"{}render\char`\"{}
+\begin{DoxyCompactList}\small\item\em M\+TC IM file transfer via http file disposition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a7529468ec4b80b07ce4889c8d045db9e}\label{mtc__im__fthttp_8h_a7529468ec4b80b07ce4889c8d045db9e}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a7529468ec4b80b07ce4889c8d045db9e}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+A\+T\+T\+A\+C\+H\+M\+E\+NT}}~\char`\"{}attachment\char`\"{}
+\begin{DoxyCompactList}\small\item\em attachment \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a42ec48712b4ecf75c68bb29fd085c3ea}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+NO}}~0x00000000
+\begin{DoxyCompactList}\small\item\em M\+TC IM file transfer via http imdn type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_af53a7f55343508c9bedb8dad726fa482}\label{mtc__im__fthttp_8h_af53a7f55343508c9bedb8dad726fa482}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_af53a7f55343508c9bedb8dad726fa482}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+U\+N\+K\+N\+O\+WN}}~0x00000001
+\begin{DoxyCompactList}\small\item\em unknown imdn type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_abf12f2ceb1896c66d58211fcc14cfa9a}\label{mtc__im__fthttp_8h_abf12f2ceb1896c66d58211fcc14cfa9a}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_abf12f2ceb1896c66d58211fcc14cfa9a}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+L\+I\+\_\+\+S\+U\+CC}}~0x00000002
+\begin{DoxyCompactList}\small\item\em message with delivery succeed notification request \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a47679e8a51135bfbc131e18da3e21307}\label{mtc__im__fthttp_8h_a47679e8a51135bfbc131e18da3e21307}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a47679e8a51135bfbc131e18da3e21307}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+L\+I\+\_\+\+F\+A\+IL}}~0x00000004
+\begin{DoxyCompactList}\small\item\em message with delivery fail notification request \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a9d681c6db9a492e548d90ad852bec0e0}\label{mtc__im__fthttp_8h_a9d681c6db9a492e548d90ad852bec0e0}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_a9d681c6db9a492e548d90ad852bec0e0}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+L\+I\+\_\+\+F\+WD}}~0x00000008
+\begin{DoxyCompactList}\small\item\em message with delivery forward notification request \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_aae1350f48fd4fe7ac0dadca9aaf1a554}\label{mtc__im__fthttp_8h_aae1350f48fd4fe7ac0dadca9aaf1a554}} 
+\#define \mbox{\hyperlink{mtc__im__fthttp_8h_aae1350f48fd4fe7ac0dadca9aaf1a554}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+SP}}~0x00000010
+\begin{DoxyCompactList}\small\item\em message with display notification request \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im__fthttp_8h_aebfe59d140633b24eadfa5597e5f9079}\label{mtc__im__fthttp_8h_aebfe59d140633b24eadfa5597e5f9079}} 
+typedef enum \mbox{\hyperlink{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__fthttp_8h_aebfe59d140633b24eadfa5597e5f9079}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer status type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca1710af79f81b45a4b573bf51ed05c575}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+P\+L\+O\+A\+D\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca584adeb14ecebe51dd97da9fdc99b567}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca392b6797b5007c47be9c2423b63bbfa5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+NO}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer status type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a1020a1adc38afedceb4ebfcbcdb96fd6}{Mtc\+\_\+\+Im\+Ft\+Http\+Upload}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+C\+H\+AR $\ast$pc\+Disposition)
+\begin{DoxyCompactList}\small\item\em M\+TC Uploading a file via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a15d622b45c6102f4f3cd44b2a74b0d78}{Mtc\+\_\+\+Im\+Ft\+Http\+Download}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+B\+O\+OL b\+Get\+Thumb)
+\begin{DoxyCompactList}\small\item\em M\+TC Downloading a file via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_aec88a5215266cbf9cbee63b42f629758}{Mtc\+\_\+\+Im\+Ft\+Http\+Resume\+Up}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+U\+I\+NT i\+Duration, Z\+C\+H\+AR $\ast$pc\+Disposition)
+\begin{DoxyCompactList}\small\item\em M\+TC Resume upload a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_af9fda782e18a3cd173a2072ce7ecd22d}{Mtc\+\_\+\+Im\+Ft\+Http\+Resume\+Down}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Start\+Offset, Z\+U\+I\+NT i\+File\+Stop\+Offset, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Resume download a file transfer via http . \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_ae1148fbe11cc44051b12d3cc7fc84ccb}{Mtc\+\_\+\+Im\+Ft\+Http\+Refresh}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Hash\+Val, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Refresh file on server file via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_ae97cac23126f6ea1aa9b72b49c59befb}{Mtc\+\_\+\+Im\+Ft\+Http\+Cancel}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Cancel a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__im__fthttp_8h_a4cf2820c9ce4659f59fc742ce064dcae}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Cookie}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get user cookie from a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a2443583ab0a3a8487f65d7a0a03a4efe}{Mtc\+\_\+\+Im\+Ft\+Http\+Set\+Cookie}} (Z\+U\+I\+NT i\+Ft\+Http\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC Set user cookie in a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_ade384c92620e05ec17acbd6b5f0b0897}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Msg\+Data}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message data from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_a8984b1f7b17e5156176ac5b9d1c5bb36}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Url}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file url from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__fthttp_8h_aeddfedfb3a611995f8a2501b1796e1a9}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Validity}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file validity from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_ac110d0f2d1d3597c99dae0283f28f1b5}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Trans\+Id}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file branded-\/url from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_a67f17c4fe67f592521b21c213d144332}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Name}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file name from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_ad678c984f0e7481ab338f19ea1806926}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Path}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file path from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_ad46b7f6e67f10d0ffd1f3b2e1d4a9547}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Type}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file type from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_ae49d4ffaf1e775eb57ffc24abad78e17}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Type}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumb type from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a1a4f62961d7c316144467dfa035194eb}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a0cade52aaa0ea4c2d3cf6f4ec87ec0d6}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumb size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_aee9fdb622219d5677daa1a14a3c2aac7}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Sent\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get sent file data size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a1fd126ed6887d0f12214e072ea47bc05}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Recv\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get received file data size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a1f0b15a27c3c1fe2066cf38c09d53f4a}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Start\+Offset}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file start offset from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_abac1fc25159215409398fbfd3eb47274}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Stop\+Offset}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file start offset from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__fthttp_8h_a3b690bf8dfeab5b176b9fef296ffbc9c}{Mtc\+\_\+\+Im\+Ft\+Http\+Has\+Thumb}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumbnail flag from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__fthttp_8h_a6a0501a8d0bb38ebab2fdabb82288077}{Mtc\+\_\+\+Im\+Ft\+Http\+Is\+Thumb}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get download file thumbnail flag from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__fthttp_8h_abbe420a83fc510825f6acc54dc867478}{Mtc\+\_\+\+Im\+Ft\+Http\+Allow\+Resume}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get allow resume flag from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_ad38f25c2d4cc06464096ea451f7ece2c}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Data}} (Z\+U\+I\+NT i\+Ft\+Http\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumbnail date from file transfervia http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a9c74ca2a2821463d92e01cc74bf85e3d}{Mtc\+\_\+\+Im\+Ft\+Http\+Clr\+Thumb\+Data}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Clear thumbnail date. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_a2ea3a2626a96480284238e3e7ff7a138}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Url}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumb url from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__fthttp_8h_aae7b51225687df61a4681c2b4178c44e}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Validity}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumb validity from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_ad984ddb4efcff15d65b19848f8d86eed}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Hash\+Value}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get hash value from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a3b957bb57adc233ab5ee9b58bdf454d4}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Duration}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file duration from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_a2278b8a0c004ca592d20bbf109f1940a}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Disposition}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file dispostion from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_a47b2155a3bc0d0783875ab687a103490}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+File\+Info\+Xml}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file info(xml) string from file transfer via http.. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_ae7da1402a4306e6cfe3c0cb8df81dc6b}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+G\+Info\+Id}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get ginfo id from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_a93b6a1ed4300a67eb59e122255e6ac1c}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Trans\+State}} (Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file transfer state from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__fthttp_8h_a235708f7cd753185142fc0244c0d7a2a}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Token}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get token from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__fthttp_8h_ac6c676258950a0f565e77fe32c9b7879}{Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Retry\+Time\+Len}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get retry time length from file transfer via http. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Message File Transfer Via Http Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a28c91c8a0f9d69b77cf1822863f19461}\label{mtc__im__fthttp_8h_a28c91c8a0f9d69b77cf1822863f19461}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!MTC\_IM\_FTHTTP\_CONT\_TXT\_PLAIN@{MTC\_IM\_FTHTTP\_CONT\_TXT\_PLAIN}}
+\index{MTC\_IM\_FTHTTP\_CONT\_TXT\_PLAIN@{MTC\_IM\_FTHTTP\_CONT\_TXT\_PLAIN}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_IM\_FTHTTP\_CONT\_TXT\_PLAIN}{MTC\_IM\_FTHTTP\_CONT\_TXT\_PLAIN}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN~\char`\"{}text/plain\char`\"{}}
+
+
+
+M\+TC IM file transfer via http hcontent type. 
+
+text/plain content \mbox{\Hypertarget{mtc__im__fthttp_8h_a6e90f5b37f7798fecb70055591004030}\label{mtc__im__fthttp_8h_a6e90f5b37f7798fecb70055591004030}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!MTC\_IM\_FTHTTP\_DISPOSITION\_RENDER@{MTC\_IM\_FTHTTP\_DISPOSITION\_RENDER}}
+\index{MTC\_IM\_FTHTTP\_DISPOSITION\_RENDER@{MTC\_IM\_FTHTTP\_DISPOSITION\_RENDER}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_IM\_FTHTTP\_DISPOSITION\_RENDER}{MTC\_IM\_FTHTTP\_DISPOSITION\_RENDER}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+I\+S\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+N\+D\+ER~\char`\"{}render\char`\"{}}
+
+
+
+M\+TC IM file transfer via http file disposition. 
+
+render \mbox{\Hypertarget{mtc__im__fthttp_8h_a42ec48712b4ecf75c68bb29fd085c3ea}\label{mtc__im__fthttp_8h_a42ec48712b4ecf75c68bb29fd085c3ea}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!MTC\_IM\_FTHTTP\_IMDN\_NO@{MTC\_IM\_FTHTTP\_IMDN\_NO}}
+\index{MTC\_IM\_FTHTTP\_IMDN\_NO@{MTC\_IM\_FTHTTP\_IMDN\_NO}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_IM\_FTHTTP\_IMDN\_NO}{MTC\_IM\_FTHTTP\_IMDN\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+I\+M\+D\+N\+\_\+\+NO~0x00000000}
+
+
+
+M\+TC IM file transfer via http imdn type. 
+
+regular message 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fc}\label{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fc}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!EN\_MTC\_FTHTTP\_STATUS\_TYPE@{EN\_MTC\_FTHTTP\_STATUS\_TYPE}}
+\index{EN\_MTC\_FTHTTP\_STATUS\_TYPE@{EN\_MTC\_FTHTTP\_STATUS\_TYPE}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_FTHTTP\_STATUS\_TYPE}{EN\_MTC\_FTHTTP\_STATUS\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC file transfer status type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FTHTTP\_STATUS\_UPLOADING@{EN\_MTC\_FTHTTP\_STATUS\_UPLOADING}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!EN\_MTC\_FTHTTP\_STATUS\_UPLOADING@{EN\_MTC\_FTHTTP\_STATUS\_UPLOADING}}}\mbox{\Hypertarget{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca1710af79f81b45a4b573bf51ed05c575}\label{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca1710af79f81b45a4b573bf51ed05c575}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+U\+P\+L\+O\+A\+D\+I\+NG&fthttp status uploading \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FTHTTP\_STATUS\_DOWNLOADING@{EN\_MTC\_FTHTTP\_STATUS\_DOWNLOADING}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!EN\_MTC\_FTHTTP\_STATUS\_DOWNLOADING@{EN\_MTC\_FTHTTP\_STATUS\_DOWNLOADING}}}\mbox{\Hypertarget{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca584adeb14ecebe51dd97da9fdc99b567}\label{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca584adeb14ecebe51dd97da9fdc99b567}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+I\+NG&fthttp status downloading \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FTHTTP\_STATUS\_NO@{EN\_MTC\_FTHTTP\_STATUS\_NO}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!EN\_MTC\_FTHTTP\_STATUS\_NO@{EN\_MTC\_FTHTTP\_STATUS\_NO}}}\mbox{\Hypertarget{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca392b6797b5007c47be9c2423b63bbfa5}\label{mtc__im__fthttp_8h_a8817ddd8b8fbe254ba39080b68bd38fca392b6797b5007c47be9c2423b63bbfa5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+NO&fthttp status no \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_abbe420a83fc510825f6acc54dc867478}\label{mtc__im__fthttp_8h_abbe420a83fc510825f6acc54dc867478}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpAllowResume@{Mtc\_ImFtHttpAllowResume}}
+\index{Mtc\_ImFtHttpAllowResume@{Mtc\_ImFtHttpAllowResume}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpAllowResume()}{Mtc\_ImFtHttpAllowResume()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Ft\+Http\+Allow\+Resume (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get allow resume flag from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE if allow resume upload otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ae97cac23126f6ea1aa9b72b49c59befb}\label{mtc__im__fthttp_8h_ae97cac23126f6ea1aa9b72b49c59befb}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpCancel@{Mtc\_ImFtHttpCancel}}
+\index{Mtc\_ImFtHttpCancel@{Mtc\_ImFtHttpCancel}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpCancel()}{Mtc\_ImFtHttpCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cancel a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancel file transfer via http successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancel file transfer via http failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a9c74ca2a2821463d92e01cc74bf85e3d}\label{mtc__im__fthttp_8h_a9c74ca2a2821463d92e01cc74bf85e3d}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpClrThumbData@{Mtc\_ImFtHttpClrThumbData}}
+\index{Mtc\_ImFtHttpClrThumbData@{Mtc\_ImFtHttpClrThumbData}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpClrThumbData()}{Mtc\_ImFtHttpClrThumbData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Clr\+Thumb\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Clear thumbnail date. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Clear thumbnail date successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Clear thumbnail date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a15d622b45c6102f4f3cd44b2a74b0d78}\label{mtc__im__fthttp_8h_a15d622b45c6102f4f3cd44b2a74b0d78}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpDownload@{Mtc\_ImFtHttpDownload}}
+\index{Mtc\_ImFtHttpDownload@{Mtc\_ImFtHttpDownload}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpDownload()}{Mtc\_ImFtHttpDownload()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Download (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Get\+Thumb }\end{DoxyParamCaption})}
+
+
+
+M\+TC Downloading a file via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The file uri or thumb uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for download. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Get\+Thumb} & get thumb.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer via http id, download file invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a4cf2820c9ce4659f59fc742ce064dcae}\label{mtc__im__fthttp_8h_a4cf2820c9ce4659f59fc742ce064dcae}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetCookie@{Mtc\_ImFtHttpGetCookie}}
+\index{Mtc\_ImFtHttpGetCookie@{Mtc\_ImFtHttpGetCookie}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetCookie()}{Mtc\_ImFtHttpGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get user cookie from a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User cookie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a2278b8a0c004ca592d20bbf109f1940a}\label{mtc__im__fthttp_8h_a2278b8a0c004ca592d20bbf109f1940a}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetDisposition@{Mtc\_ImFtHttpGetDisposition}}
+\index{Mtc\_ImFtHttpGetDisposition@{Mtc\_ImFtHttpGetDisposition}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetDisposition()}{Mtc\_ImFtHttpGetDisposition()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Disposition (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file dispostion from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file disposition. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a3b957bb57adc233ab5ee9b58bdf454d4}\label{mtc__im__fthttp_8h_a3b957bb57adc233ab5ee9b58bdf454d4}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetDuration@{Mtc\_ImFtHttpGetDuration}}
+\index{Mtc\_ImFtHttpGetDuration@{Mtc\_ImFtHttpGetDuration}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetDuration()}{Mtc\_ImFtHttpGetDuration()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Duration (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file duration from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file duration. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a47b2155a3bc0d0783875ab687a103490}\label{mtc__im__fthttp_8h_a47b2155a3bc0d0783875ab687a103490}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetFileInfoXml@{Mtc\_ImFtHttpGetFileInfoXml}}
+\index{Mtc\_ImFtHttpGetFileInfoXml@{Mtc\_ImFtHttpGetFileInfoXml}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetFileInfoXml()}{Mtc\_ImFtHttpGetFileInfoXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+File\+Info\+Xml (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file info(xml) string from file transfer via http.. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file info string(xml). The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ae7da1402a4306e6cfe3c0cb8df81dc6b}\label{mtc__im__fthttp_8h_ae7da1402a4306e6cfe3c0cb8df81dc6b}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetGInfoId@{Mtc\_ImFtHttpGetGInfoId}}
+\index{Mtc\_ImFtHttpGetGInfoId@{Mtc\_ImFtHttpGetGInfoId}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetGInfoId()}{Mtc\_ImFtHttpGetGInfoId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+G\+Info\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get ginfo id from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ginfo id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ad984ddb4efcff15d65b19848f8d86eed}\label{mtc__im__fthttp_8h_ad984ddb4efcff15d65b19848f8d86eed}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetHashValue@{Mtc\_ImFtHttpGetHashValue}}
+\index{Mtc\_ImFtHttpGetHashValue@{Mtc\_ImFtHttpGetHashValue}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetHashValue()}{Mtc\_ImFtHttpGetHashValue()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Hash\+Value (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get hash value from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+hash value. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ade384c92620e05ec17acbd6b5f0b0897}\label{mtc__im__fthttp_8h_ade384c92620e05ec17acbd6b5f0b0897}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetMsgData@{Mtc\_ImFtHttpGetMsgData}}
+\index{Mtc\_ImFtHttpGetMsgData@{Mtc\_ImFtHttpGetMsgData}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetMsgData()}{Mtc\_ImFtHttpGetMsgData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Msg\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message data from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+message data. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a67f17c4fe67f592521b21c213d144332}\label{mtc__im__fthttp_8h_a67f17c4fe67f592521b21c213d144332}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetName@{Mtc\_ImFtHttpGetName}}
+\index{Mtc\_ImFtHttpGetName@{Mtc\_ImFtHttpGetName}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetName()}{Mtc\_ImFtHttpGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file name from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & name. The caller must copy it, then use. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ad678c984f0e7481ab338f19ea1806926}\label{mtc__im__fthttp_8h_ad678c984f0e7481ab338f19ea1806926}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetPath@{Mtc\_ImFtHttpGetPath}}
+\index{Mtc\_ImFtHttpGetPath@{Mtc\_ImFtHttpGetPath}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetPath()}{Mtc\_ImFtHttpGetPath()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Path (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file path from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & name. The caller must copy it, then use. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a1fd126ed6887d0f12214e072ea47bc05}\label{mtc__im__fthttp_8h_a1fd126ed6887d0f12214e072ea47bc05}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetRecvSize@{Mtc\_ImFtHttpGetRecvSize}}
+\index{Mtc\_ImFtHttpGetRecvSize@{Mtc\_ImFtHttpGetRecvSize}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetRecvSize()}{Mtc\_ImFtHttpGetRecvSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Recv\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get received file data size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file data received size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ac6c676258950a0f565e77fe32c9b7879}\label{mtc__im__fthttp_8h_ac6c676258950a0f565e77fe32c9b7879}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetRetryTimeLen@{Mtc\_ImFtHttpGetRetryTimeLen}}
+\index{Mtc\_ImFtHttpGetRetryTimeLen@{Mtc\_ImFtHttpGetRetryTimeLen}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetRetryTimeLen()}{Mtc\_ImFtHttpGetRetryTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Retry\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get retry time length from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retry time length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_aee9fdb622219d5677daa1a14a3c2aac7}\label{mtc__im__fthttp_8h_aee9fdb622219d5677daa1a14a3c2aac7}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetSentSize@{Mtc\_ImFtHttpGetSentSize}}
+\index{Mtc\_ImFtHttpGetSentSize@{Mtc\_ImFtHttpGetSentSize}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetSentSize()}{Mtc\_ImFtHttpGetSentSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Sent\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get sent file data size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file data sent size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a1a4f62961d7c316144467dfa035194eb}\label{mtc__im__fthttp_8h_a1a4f62961d7c316144467dfa035194eb}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetSize@{Mtc\_ImFtHttpGetSize}}
+\index{Mtc\_ImFtHttpGetSize@{Mtc\_ImFtHttpGetSize}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetSize()}{Mtc\_ImFtHttpGetSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a1f0b15a27c3c1fe2066cf38c09d53f4a}\label{mtc__im__fthttp_8h_a1f0b15a27c3c1fe2066cf38c09d53f4a}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetStartOffset@{Mtc\_ImFtHttpGetStartOffset}}
+\index{Mtc\_ImFtHttpGetStartOffset@{Mtc\_ImFtHttpGetStartOffset}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetStartOffset()}{Mtc\_ImFtHttpGetStartOffset()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Start\+Offset (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file start offset from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file start offset. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_abac1fc25159215409398fbfd3eb47274}\label{mtc__im__fthttp_8h_abac1fc25159215409398fbfd3eb47274}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetStopOffset@{Mtc\_ImFtHttpGetStopOffset}}
+\index{Mtc\_ImFtHttpGetStopOffset@{Mtc\_ImFtHttpGetStopOffset}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetStopOffset()}{Mtc\_ImFtHttpGetStopOffset()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Stop\+Offset (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file start offset from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file stop offset. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ad38f25c2d4cc06464096ea451f7ece2c}\label{mtc__im__fthttp_8h_ad38f25c2d4cc06464096ea451f7ece2c}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetThumbData@{Mtc\_ImFtHttpGetThumbData}}
+\index{Mtc\_ImFtHttpGetThumbData@{Mtc\_ImFtHttpGetThumbData}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetThumbData()}{Mtc\_ImFtHttpGetThumbData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumbnail date from file transfervia http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pp\+Data} & thumbnail data. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Data\+Size} & thumbnail data size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get thumbnail date successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get thumbnail date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a0cade52aaa0ea4c2d3cf6f4ec87ec0d6}\label{mtc__im__fthttp_8h_a0cade52aaa0ea4c2d3cf6f4ec87ec0d6}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetThumbSize@{Mtc\_ImFtHttpGetThumbSize}}
+\index{Mtc\_ImFtHttpGetThumbSize@{Mtc\_ImFtHttpGetThumbSize}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetThumbSize()}{Mtc\_ImFtHttpGetThumbSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumb size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id via http.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The thumb size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ae49d4ffaf1e775eb57ffc24abad78e17}\label{mtc__im__fthttp_8h_ae49d4ffaf1e775eb57ffc24abad78e17}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetThumbType@{Mtc\_ImFtHttpGetThumbType}}
+\index{Mtc\_ImFtHttpGetThumbType@{Mtc\_ImFtHttpGetThumbType}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetThumbType()}{Mtc\_ImFtHttpGetThumbType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumb type from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The thumb type, see \mbox{\hyperlink{mtc__im__fthttp_8h_a28c91c8a0f9d69b77cf1822863f19461}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}.... The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a2ea3a2626a96480284238e3e7ff7a138}\label{mtc__im__fthttp_8h_a2ea3a2626a96480284238e3e7ff7a138}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetThumbUrl@{Mtc\_ImFtHttpGetThumbUrl}}
+\index{Mtc\_ImFtHttpGetThumbUrl@{Mtc\_ImFtHttpGetThumbUrl}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetThumbUrl()}{Mtc\_ImFtHttpGetThumbUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumb url from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+thumb url. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_aae7b51225687df61a4681c2b4178c44e}\label{mtc__im__fthttp_8h_aae7b51225687df61a4681c2b4178c44e}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetThumbValidity@{Mtc\_ImFtHttpGetThumbValidity}}
+\index{Mtc\_ImFtHttpGetThumbValidity@{Mtc\_ImFtHttpGetThumbValidity}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetThumbValidity()}{Mtc\_ImFtHttpGetThumbValidity()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Thumb\+Validity (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumb validity from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+thumb validity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a235708f7cd753185142fc0244c0d7a2a}\label{mtc__im__fthttp_8h_a235708f7cd753185142fc0244c0d7a2a}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetToken@{Mtc\_ImFtHttpGetToken}}
+\index{Mtc\_ImFtHttpGetToken@{Mtc\_ImFtHttpGetToken}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetToken()}{Mtc\_ImFtHttpGetToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Token (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get token from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+token. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ac110d0f2d1d3597c99dae0283f28f1b5}\label{mtc__im__fthttp_8h_ac110d0f2d1d3597c99dae0283f28f1b5}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetTransId@{Mtc\_ImFtHttpGetTransId}}
+\index{Mtc\_ImFtHttpGetTransId@{Mtc\_ImFtHttpGetTransId}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetTransId()}{Mtc\_ImFtHttpGetTransId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Trans\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file branded-\/url from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File branded-\/url.
+\end{DoxyReturn}
+M\+TC Get file Transaction ID string from file transfer via http.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file Transaction ID. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a93b6a1ed4300a67eb59e122255e6ac1c}\label{mtc__im__fthttp_8h_a93b6a1ed4300a67eb59e122255e6ac1c}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetTransState@{Mtc\_ImFtHttpGetTransState}}
+\index{Mtc\_ImFtHttpGetTransState@{Mtc\_ImFtHttpGetTransState}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetTransState()}{Mtc\_ImFtHttpGetTransState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Trans\+State (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file transfer state from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer state, \mbox{\hyperlink{mtc__im__fthttp_8h_aebfe59d140633b24eadfa5597e5f9079}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ad46b7f6e67f10d0ffd1f3b2e1d4a9547}\label{mtc__im__fthttp_8h_ad46b7f6e67f10d0ffd1f3b2e1d4a9547}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetType@{Mtc\_ImFtHttpGetType}}
+\index{Mtc\_ImFtHttpGetType@{Mtc\_ImFtHttpGetType}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetType()}{Mtc\_ImFtHttpGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file type from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File type, see \mbox{\hyperlink{mtc__im__fthttp_8h_a28c91c8a0f9d69b77cf1822863f19461}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}.... The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a8984b1f7b17e5156176ac5b9d1c5bb36}\label{mtc__im__fthttp_8h_a8984b1f7b17e5156176ac5b9d1c5bb36}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetUrl@{Mtc\_ImFtHttpGetUrl}}
+\index{Mtc\_ImFtHttpGetUrl@{Mtc\_ImFtHttpGetUrl}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetUrl()}{Mtc\_ImFtHttpGetUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file url from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File url. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_aeddfedfb3a611995f8a2501b1796e1a9}\label{mtc__im__fthttp_8h_aeddfedfb3a611995f8a2501b1796e1a9}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpGetValidity@{Mtc\_ImFtHttpGetValidity}}
+\index{Mtc\_ImFtHttpGetValidity@{Mtc\_ImFtHttpGetValidity}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpGetValidity()}{Mtc\_ImFtHttpGetValidity()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+Ft\+Http\+Get\+Validity (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file validity from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File validity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a3b690bf8dfeab5b176b9fef296ffbc9c}\label{mtc__im__fthttp_8h_a3b690bf8dfeab5b176b9fef296ffbc9c}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpHasThumb@{Mtc\_ImFtHttpHasThumb}}
+\index{Mtc\_ImFtHttpHasThumb@{Mtc\_ImFtHttpHasThumb}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpHasThumb()}{Mtc\_ImFtHttpHasThumb()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Ft\+Http\+Has\+Thumb (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumbnail flag from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of IM file transfer via http participant, see \mbox{\hyperlink{mtc__partp_8h_abe66ab722861a8aced34488e887e7663}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a6a0501a8d0bb38ebab2fdabb82288077}\label{mtc__im__fthttp_8h_a6a0501a8d0bb38ebab2fdabb82288077}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpIsThumb@{Mtc\_ImFtHttpIsThumb}}
+\index{Mtc\_ImFtHttpIsThumb@{Mtc\_ImFtHttpIsThumb}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpIsThumb()}{Mtc\_ImFtHttpIsThumb()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Ft\+Http\+Is\+Thumb (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get download file thumbnail flag from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE if download file is thumbnail otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_ae1148fbe11cc44051b12d3cc7fc84ccb}\label{mtc__im__fthttp_8h_ae1148fbe11cc44051b12d3cc7fc84ccb}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpRefresh@{Mtc\_ImFtHttpRefresh}}
+\index{Mtc\_ImFtHttpRefresh@{Mtc\_ImFtHttpRefresh}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpRefresh()}{Mtc\_ImFtHttpRefresh()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Refresh (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Hash\+Val,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Refresh file on server file via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Hash\+Val} & The file hash value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for refresh. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer via http id, if refresh file successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_af9fda782e18a3cd173a2072ce7ecd22d}\label{mtc__im__fthttp_8h_af9fda782e18a3cd173a2072ce7ecd22d}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpResumeDown@{Mtc\_ImFtHttpResumeDown}}
+\index{Mtc\_ImFtHttpResumeDown@{Mtc\_ImFtHttpResumeDown}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpResumeDown()}{Mtc\_ImFtHttpResumeDown()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Resume\+Down (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+File\+Stop\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Resume download a file transfer via http . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The file uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Start\+Offset} & The file start offset, value must bigger than 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Stop\+Offset} & The waitting for fetching file stop offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for resume download. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer via http id, if file resume download successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_aec88a5215266cbf9cbee63b42f629758}\label{mtc__im__fthttp_8h_aec88a5215266cbf9cbee63b42f629758}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpResumeUp@{Mtc\_ImFtHttpResumeUp}}
+\index{Mtc\_ImFtHttpResumeUp@{Mtc\_ImFtHttpResumeUp}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpResumeUp()}{Mtc\_ImFtHttpResumeUp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Resume\+Up (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disposition }\end{DoxyParamCaption})}
+
+
+
+M\+TC Resume upload a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for resume. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disposition} & The file Disposition, value \char`\"{}render\char`\"{} or \char`\"{}attachment\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer via http id, if file resume upload successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a2443583ab0a3a8487f65d7a0a03a4efe}\label{mtc__im__fthttp_8h_a2443583ab0a3a8487f65d7a0a03a4efe}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpSetCookie@{Mtc\_ImFtHttpSetCookie}}
+\index{Mtc\_ImFtHttpSetCookie@{Mtc\_ImFtHttpSetCookie}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpSetCookie()}{Mtc\_ImFtHttpSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC Set user cookie in a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__fthttp_8h_a1020a1adc38afedceb4ebfcbcdb96fd6}\label{mtc__im__fthttp_8h_a1020a1adc38afedceb4ebfcbcdb96fd6}} 
+\index{mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}!Mtc\_ImFtHttpUpload@{Mtc\_ImFtHttpUpload}}
+\index{Mtc\_ImFtHttpUpload@{Mtc\_ImFtHttpUpload}!mtc\_im\_fthttp.h@{mtc\_im\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFtHttpUpload()}{Mtc\_ImFtHttpUpload()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Ft\+Http\+Upload (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disposition }\end{DoxyParamCaption})}
+
+
+
+M\+TC Uploading a file via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__fthttp_8h_a28c91c8a0f9d69b77cf1822863f19461}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}} etc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disposition} & The file Disposition, value \char`\"{}render\char`\"{} or \char`\"{}attachment\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer via http id, upload file invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}

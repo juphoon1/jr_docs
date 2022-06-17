@@ -1,0 +1,84 @@
+\hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cap\+Cb.\+Callback Interface Reference}
+\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback}\index{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}}
+
+
+M\+TC capability callbacks.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_ab8aaf5f42db7c50cc77d1016ed523454}{mtc\+Cap\+Cb\+Cap\+Q\+Ok}} (String uri, Object cookie, int type)
+\begin{DoxyCompactList}\small\item\em M\+TC capability query ok callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_a17894ba6e6517ba17c0b6cda4f4a111b}{mtc\+Cap\+Cb\+Q\+Failed}} (String uri, Object cookie, int error\+Code)
+\begin{DoxyCompactList}\small\item\em M\+TC capability query failed callback. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_afbfca6f35b564cdffacdd8a571a62ec9}{mtc\+Cap\+Cb\+Q\+Update}} (String uri, int type)
+\begin{DoxyCompactList}\small\item\em M\+TC capability query update callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC capability callbacks. 
+
+In order to receive M\+TC capability callbacks, user should implement this interface, then use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_af3a212398d616607115da8b81203181e}{Mtc\+Cap\+Cb.\+set\+Callback}} to register callbacks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_ab8aaf5f42db7c50cc77d1016ed523454}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_ab8aaf5f42db7c50cc77d1016ed523454}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}!mtcCapCbCapQOk@{mtcCapCbCapQOk}}
+\index{mtcCapCbCapQOk@{mtcCapCbCapQOk}!com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCapCbCapQOk()}{mtcCapCbCapQOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cap\+Cb.\+Callback.\+mtc\+Cap\+Cb\+Cap\+Q\+Ok (\begin{DoxyParamCaption}\item[{String}]{uri,  }\item[{Object}]{cookie,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability query ok callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uri} & Uri address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em cookie} & capability cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & capability type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_a17894ba6e6517ba17c0b6cda4f4a111b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_a17894ba6e6517ba17c0b6cda4f4a111b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}!mtcCapCbQFailed@{mtcCapCbQFailed}}
+\index{mtcCapCbQFailed@{mtcCapCbQFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCapCbQFailed()}{mtcCapCbQFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cap\+Cb.\+Callback.\+mtc\+Cap\+Cb\+Q\+Failed (\begin{DoxyParamCaption}\item[{String}]{uri,  }\item[{Object}]{cookie,  }\item[{int}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability query failed callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uri} & Uri address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em cookie} & capability cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em error\+Code} & error Code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_afbfca6f35b564cdffacdd8a571a62ec9}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cap_cb_1_1_callback_afbfca6f35b564cdffacdd8a571a62ec9}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}!mtcCapCbQUpdate@{mtcCapCbQUpdate}}
+\index{mtcCapCbQUpdate@{mtcCapCbQUpdate}!com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCapCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCapCbQUpdate()}{mtcCapCbQUpdate()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cap\+Cb.\+Callback.\+mtc\+Cap\+Cb\+Q\+Update (\begin{DoxyParamCaption}\item[{String}]{uri,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability query update callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uri} & Uri address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em type} & capability typ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/callback/\mbox{\hyperlink{_mtc_cap_cb_8java}{Mtc\+Cap\+Cb.\+java}}\end{DoxyCompactItemize}

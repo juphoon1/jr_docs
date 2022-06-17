@@ -1,0 +1,526 @@
+\hypertarget{mtc__cli__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cli\+\_\+cb.h File Reference}
+\label{mtc__cli__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cli\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cli\_cb.h}}
+
+
+M\+TC Client Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cli__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cli__cb_8h_af39a029019d4c383a9e5ffb342529170}\label{mtc__cli__cb_8h_af39a029019d4c383a9e5ffb342529170}} 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_af39a029019d4c383a9e5ffb342529170}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+CB}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client callback. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a2bc483ce4a5b44b99ecbd7bf05e499e0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+P\+R\+I\+NT}}) (Z\+C\+H\+AR $\ast$pc\+Str)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client callback for post print message. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a2c18b10e628670ae158bcd7ed223e4b9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+E\+V\+NT}}) (Z\+E\+V\+NT z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client callback for post event to M\+TC user. $\ast$. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a67639e21426d2aee30bf7f09ac46b818}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+F\+A\+I\+L\+ED}}) (Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify R\+E\+G\+I\+S\+T\+ER failed. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_ab5e6e2d0fd7b12cb3ae480c5a5d212d9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+A\+U\+T\+H\+I\+ND}}) (Z\+U\+I\+NT i\+Auth\+Type, Z\+U\+I\+NT i\+Reg\+Id, Z\+C\+H\+AR $\ast$pc\+Nonce)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify authorization failed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cb_8h_a0a64f856acd28283c256653a648066f1}\label{mtc__cli__cb_8h_a0a64f856acd28283c256653a648066f1}} 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a0a64f856acd28283c256653a648066f1}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+I\+N\+OK}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify server login ok. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cb_8h_a4f92fd14a62325e4a82b2619037a0842}\label{mtc__cli__cb_8h_a4f92fd14a62325e4a82b2619037a0842}} 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a4f92fd14a62325e4a82b2619037a0842}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+C\+L\+L\+O\+G\+I\+N\+OK}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify local login ok. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a7370059515ea191b96169ace7ddaff3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+O\+G\+I\+N\+F\+A\+I\+L\+ED}}) (Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify login failed. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a21bf0dddb7fe24b95f6537eb348afd2a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+OK}}) (Z\+B\+O\+OL b\+Active, Z\+B\+O\+OL b\+Changed)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify refresh ok. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_aae8bbed514805a03fb9fc812552f8500}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+F\+A\+I\+L\+ED}}) (Z\+B\+O\+OL b\+Active, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify refresh failed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cb_8h_a7a2e42197114b4f801f2e1cb6e9ce68d}\label{mtc__cli__cb_8h_a7a2e42197114b4f801f2e1cb6e9ce68d}} 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a7a2e42197114b4f801f2e1cb6e9ce68d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+C\+L\+L\+O\+G\+O\+UT}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify local logout. \end{DoxyCompactList}\item 
+typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a56d0823b4d11d9e35a323c9d65edccf8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+O\+UT}}) (Z\+B\+O\+OL b\+Active, Z\+U\+I\+NT i\+Stat\+Code, Z\+U\+I\+NT i\+Expires)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify server logout. \end{DoxyCompactList}\item 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a1aaccca9eb375468aa54355dc75f44ab}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+N\+E\+T\+C\+H\+A\+N\+G\+ED}}) (Z\+U\+I\+NT i\+Net\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify network changed. \end{DoxyCompactList}\item 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_ad2a1d33d8d5825c16b9fa45f1808ea13}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED}}) (Z\+U\+I\+NT i\+Reg\+Stat, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify register state changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cb_8h_a60cbdd0e6ca2f88f325a660ab20df1b5}\label{mtc__cli__cb_8h_a60cbdd0e6ca2f88f325a660ab20df1b5}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_a60cbdd0e6ca2f88f325a660ab20df1b5}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+B\+E\+F\+O\+R\+E\+L\+O\+G\+IN}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify before login. \end{DoxyCompactList}\item 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__cli__cb_8h_ac0994585309e96de889dde3e45f54c2c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+S\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED}}) (Z\+U\+I\+NT i\+Subs\+Stat, Z\+U\+I\+NT i\+Sip\+Code, Z\+C\+H\+AR $\ast$pc\+Body)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify register subscribe state changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_afae76f71d49d125a9d6fd7973715e281}{Mtc\+\_\+\+Cli\+Cb\+Set\+Print}} (\mbox{\hyperlink{mtc__cli__cb_8h_a2bc483ce4a5b44b99ecbd7bf05e499e0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+P\+R\+I\+NT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the Zos\+\_\+\+Printf string print callback. Zos print and log functions will always call it if callback is not Z\+N\+U\+LL. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a93b868b61b162347e1f2276833f01065}{Mtc\+\_\+\+Cli\+Cb\+Set\+Evnt}} (\mbox{\hyperlink{mtc__cli__cb_8h_a2c18b10e628670ae158bcd7ed223e4b9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+E\+V\+NT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the service event callback to M\+TC driver owner. If M\+TC is running multi-\/thread mode, M\+TC and service enablers need be drived by M\+TC user(mostly is G\+U\+I), so M\+TC will call this callback for convey event to M\+TC user, M\+TC user should post event to itself. M\+TC user then call \mbox{\hyperlink{mtc__cli_8h_a89d7a73e994d19e72a2b8702cc318668}{Mtc\+\_\+\+Cli\+Drive}} for run M\+TC and service enablers. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Ok}} (\mbox{\hyperlink{mtc__cli__cb_8h_af39a029019d4c383a9e5ffb342529170}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the R\+E\+G\+I\+S\+E\+T\+ER successfully indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Failed}} (\mbox{\hyperlink{mtc__cli__cb_8h_a67639e21426d2aee30bf7f09ac46b818}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the R\+E\+G\+I\+S\+E\+T\+ER failed indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER failed The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a29d333bc96d8d9c7fe65c06f1cc705ec}{Mtc\+\_\+\+Cli\+Cb\+Set\+Auth\+Ind}} (\mbox{\hyperlink{mtc__cli__cb_8h_ab5e6e2d0fd7b12cb3ae480c5a5d212d9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+A\+U\+T\+H\+I\+ND}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a891188a9ad7d75499033bef5706367a0}{Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Login\+Ok}} (\mbox{\hyperlink{mtc__cli__cb_8h_a0a64f856acd28283c256653a648066f1}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+I\+N\+OK}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the login successfully indication callback. The callback will be notified if server login successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_aeba9e3608b3f2abd6d5773b4e6a15a92}{Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Login\+Ok}} (\mbox{\hyperlink{mtc__cli__cb_8h_a4f92fd14a62325e4a82b2619037a0842}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+C\+L\+L\+O\+G\+I\+N\+OK}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the login successfully indication callback. The callback will be notified if local login successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a62c384428eae21ee51710170316fd2da}{Mtc\+\_\+\+Cli\+Cb\+Set\+Login\+Failed}} (\mbox{\hyperlink{mtc__cli__cb_8h_a7370059515ea191b96169ace7ddaff3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+O\+G\+I\+N\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the login failed indication callback. The callback will be notified if login failed The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a932a287a6606a636c8ec945dea8135e2}{Mtc\+\_\+\+Cli\+Cb\+Set\+Refresh\+Ok}} (\mbox{\hyperlink{mtc__cli__cb_8h_a21bf0dddb7fe24b95f6537eb348afd2a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+OK}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the refresh successfully indication callback. The callback will be notified if refresh successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}{Mtc\+\_\+\+Cli\+Refresh}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a16ec4cfe215b0aaa81e9b2ee13ce63cd}{Mtc\+\_\+\+Cli\+Cb\+Set\+Refresh\+Failed}} (\mbox{\hyperlink{mtc__cli__cb_8h_aae8bbed514805a03fb9fc812552f8500}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the refresh indication callback. The callback will be notified if refresh failed The callback is one of \mbox{\hyperlink{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}{Mtc\+\_\+\+Cli\+Refresh}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_afa3a78f7eaca94e2f4e1160a1c78e6e1}{Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Logout}} (\mbox{\hyperlink{mtc__cli__cb_8h_a7a2e42197114b4f801f2e1cb6e9ce68d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+C\+L\+L\+O\+G\+O\+UT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the local logout indication callback. The callback will be notified if client is not in register with server. If \mbox{\hyperlink{mtc__cli__db_8h_a87a5a12f9a9159b887434321995cfeed}{Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg\+Type}} is E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+L\+O\+C\+AL, this callback will not be called. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_adb985259dd72323c8914591cc53e1240}{Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Logout}} (\mbox{\hyperlink{mtc__cli__cb_8h_a56d0823b4d11d9e35a323c9d65edccf8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+O\+UT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the server logout indication callback. The callback will be notified if client has un-\/register from server. If \mbox{\hyperlink{mtc__cli__db_8h_a87a5a12f9a9159b887434321995cfeed}{Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg\+Type}} isnot E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+L\+O\+C\+AL, this callback will not be called. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_ad2f50fb0272b9b91c08c2018cf17791b}{Mtc\+\_\+\+Cli\+Cb\+Set\+Sub\+Net\+Changed}} (\mbox{\hyperlink{mtc__cli__cb_8h_a1aaccca9eb375468aa54355dc75f44ab}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+N\+E\+T\+C\+H\+A\+N\+G\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set subscribe network changed indication callback. The callback will be notified if network has changed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a25e6106015e720de7547b0795df03c20}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Stat\+Changed}} (\mbox{\hyperlink{mtc__cli__cb_8h_ad2a1d33d8d5825c16b9fa45f1808ea13}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set register state changed indication callback. The callback will be notified if register state has changed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a47d6e9d330c0383f7b57110a28d9a4e0}{Mtc\+\_\+\+Cli\+Cb\+Set\+Before\+Login}} (\mbox{\hyperlink{mtc__cli__cb_8h_a60cbdd0e6ca2f88f325a660ab20df1b5}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+B\+E\+F\+O\+R\+E\+L\+O\+G\+IN}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set before login indication callback. The callback will be notified before login. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}{Mtc\+\_\+\+Cli\+Cb\+Set\+Subs\+Stat\+Changed}} (\mbox{\hyperlink{mtc__cli__cb_8h_ac0994585309e96de889dde3e45f54c2c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+S\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set register subscribe state changed indication callback. The callback will be notified if register subscribe state has changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Client Callback Interface Functions. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mtc__cli__cb_8h_ab5e6e2d0fd7b12cb3ae480c5a5d212d9}\label{mtc__cli__cb_8h_ab5e6e2d0fd7b12cb3ae480c5a5d212d9}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIAUTHIND@{PFN\_MTCCLIAUTHIND}}
+\index{PFN\_MTCCLIAUTHIND@{PFN\_MTCCLIAUTHIND}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIAUTHIND}{PFN\_MTCCLIAUTHIND}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+A\+U\+T\+H\+I\+ND) (Z\+U\+I\+NT i\+Auth\+Type, Z\+U\+I\+NT i\+Reg\+Id, Z\+C\+H\+AR $\ast$pc\+Nonce)}
+
+
+
+Type define of M\+TC G\+UI callback for notify authorization failed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Auth\+Type} & is authorization type(see \mbox{\hyperlink{mtc__cli__db_8h_ac4bce0b271657832817b620298ebe1c3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+S\+\_\+\+A\+U\+T\+H\+\_\+\+T\+Y\+PE}}). \\
+\hline
+{\em pc\+Nonce} & is used when authorization type is E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+S\+\_\+\+A\+U\+T\+H\+\_\+\+I\+M\+S\+\_\+\+A\+KA. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a2c18b10e628670ae158bcd7ed223e4b9}\label{mtc__cli__cb_8h_a2c18b10e628670ae158bcd7ed223e4b9}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIEVNT@{PFN\_MTCCLIEVNT}}
+\index{PFN\_MTCCLIEVNT@{PFN\_MTCCLIEVNT}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIEVNT}{PFN\_MTCCLIEVNT}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+E\+V\+NT) (Z\+E\+V\+NT z\+Evnt\+Id)}
+
+
+
+Type define of M\+TC client callback for post event to M\+TC user. $\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Evnt\+Id} & is point to the event. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a7370059515ea191b96169ace7ddaff3f}\label{mtc__cli__cb_8h_a7370059515ea191b96169ace7ddaff3f}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLILOGINFAILED@{PFN\_MTCCLILOGINFAILED}}
+\index{PFN\_MTCCLILOGINFAILED@{PFN\_MTCCLILOGINFAILED}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLILOGINFAILED}{PFN\_MTCCLILOGINFAILED}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+O\+G\+I\+N\+F\+A\+I\+L\+ED) (Z\+U\+I\+NT i\+Stat\+Code)}
+
+
+
+Type define of M\+TC G\+UI callback for notify login failed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Stat\+Code} & is login failed status code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a2bc483ce4a5b44b99ecbd7bf05e499e0}\label{mtc__cli__cb_8h_a2bc483ce4a5b44b99ecbd7bf05e499e0}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIPRINT@{PFN\_MTCCLIPRINT}}
+\index{PFN\_MTCCLIPRINT@{PFN\_MTCCLIPRINT}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIPRINT}{PFN\_MTCCLIPRINT}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+P\+R\+I\+NT) (Z\+C\+H\+AR $\ast$pc\+Str)}
+
+
+
+Type define of M\+TC client callback for post print message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Str} & is the print string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_aae8bbed514805a03fb9fc812552f8500}\label{mtc__cli__cb_8h_aae8bbed514805a03fb9fc812552f8500}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIREFRESHFAILED@{PFN\_MTCCLIREFRESHFAILED}}
+\index{PFN\_MTCCLIREFRESHFAILED@{PFN\_MTCCLIREFRESHFAILED}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIREFRESHFAILED}{PFN\_MTCCLIREFRESHFAILED}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+F\+A\+I\+L\+ED) (Z\+B\+O\+OL b\+Active, Z\+U\+I\+NT i\+Stat\+Code)}
+
+
+
+Type define of M\+TC G\+UI callback for notify refresh failed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Active} & indicate if it is a user action results. \\
+\hline
+{\em i\+Stat\+Code} & is refresh failed status code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a21bf0dddb7fe24b95f6537eb348afd2a}\label{mtc__cli__cb_8h_a21bf0dddb7fe24b95f6537eb348afd2a}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIREFRESHOK@{PFN\_MTCCLIREFRESHOK}}
+\index{PFN\_MTCCLIREFRESHOK@{PFN\_MTCCLIREFRESHOK}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIREFRESHOK}{PFN\_MTCCLIREFRESHOK}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+OK) (Z\+B\+O\+OL b\+Active, Z\+B\+O\+OL b\+Changed)}
+
+
+
+Type define of M\+TC G\+UI callback for notify refresh ok. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Active} & indicate if it is a user action results. \\
+\hline
+{\em b\+Changed} & indicate if the registration information changed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a67639e21426d2aee30bf7f09ac46b818}\label{mtc__cli__cb_8h_a67639e21426d2aee30bf7f09ac46b818}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIREGFAILED@{PFN\_MTCCLIREGFAILED}}
+\index{PFN\_MTCCLIREGFAILED@{PFN\_MTCCLIREGFAILED}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIREGFAILED}{PFN\_MTCCLIREGFAILED}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+F\+A\+I\+L\+ED) (Z\+U\+I\+NT i\+Stat\+Code)}
+
+
+
+Type define of M\+TC G\+UI callback for notify R\+E\+G\+I\+S\+T\+ER failed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Stat\+Code} & is register failed status code(see \mbox{\hyperlink{mtc__cli_8h_a1045813fc5218e0ec28e7a9c958a6200}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+L\+C\+L\+\_\+\+F\+A\+I\+L\+ED}}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_ad2a1d33d8d5825c16b9fa45f1808ea13}\label{mtc__cli__cb_8h_ad2a1d33d8d5825c16b9fa45f1808ea13}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLIREGSTATCHANGED@{PFN\_MTCCLIREGSTATCHANGED}}
+\index{PFN\_MTCCLIREGSTATCHANGED@{PFN\_MTCCLIREGSTATCHANGED}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLIREGSTATCHANGED}{PFN\_MTCCLIREGSTATCHANGED}}
+{\footnotesize\ttfamily typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED) (Z\+U\+I\+NT i\+Reg\+Stat, Z\+U\+I\+NT i\+Stat\+Code)}
+
+
+
+Type define of M\+TC G\+UI callback for notify register state changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Reg\+Stat} & is register state type(see \mbox{\hyperlink{mtc__cli_8h_a61e4cf0dada15119e2da0b698ce2a5de}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}). \\
+\hline
+{\em i\+Stat\+Code} & is changed reason(see \mbox{\hyperlink{mtc__cli_8h_a1045813fc5218e0ec28e7a9c958a6200}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+L\+C\+L\+\_\+\+F\+A\+I\+L\+ED}}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a56d0823b4d11d9e35a323c9d65edccf8}\label{mtc__cli__cb_8h_a56d0823b4d11d9e35a323c9d65edccf8}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLISERVLOGOUT@{PFN\_MTCCLISERVLOGOUT}}
+\index{PFN\_MTCCLISERVLOGOUT@{PFN\_MTCCLISERVLOGOUT}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLISERVLOGOUT}{PFN\_MTCCLISERVLOGOUT}}
+{\footnotesize\ttfamily typedef Z\+I\+NT(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+O\+UT) (Z\+B\+O\+OL b\+Active, Z\+U\+I\+NT i\+Stat\+Code, Z\+U\+I\+NT i\+Expires)}
+
+
+
+Type define of M\+TC G\+UI callback for notify server logout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Active} & indicate if it is a user action results. \\
+\hline
+{\em i\+Stat\+Code} & is event type which trigger logout(see \mbox{\hyperlink{mtc__cli_8h_a1045813fc5218e0ec28e7a9c958a6200}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+L\+C\+L\+\_\+\+F\+A\+I\+L\+ED}}). \\
+\hline
+{\em i\+Expires} & is expire time value if server notify logout later. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a1aaccca9eb375468aa54355dc75f44ab}\label{mtc__cli__cb_8h_a1aaccca9eb375468aa54355dc75f44ab}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLISUBNETCHANGED@{PFN\_MTCCLISUBNETCHANGED}}
+\index{PFN\_MTCCLISUBNETCHANGED@{PFN\_MTCCLISUBNETCHANGED}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLISUBNETCHANGED}{PFN\_MTCCLISUBNETCHANGED}}
+{\footnotesize\ttfamily typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+N\+E\+T\+C\+H\+A\+N\+G\+ED) (Z\+U\+I\+NT i\+Net\+Type)}
+
+
+
+Type define of M\+TC G\+UI callback for notify network changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Net\+Type} & is access network type(see M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE...). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_ac0994585309e96de889dde3e45f54c2c}\label{mtc__cli__cb_8h_ac0994585309e96de889dde3e45f54c2c}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!PFN\_MTCCLISUBSSTATCHANGED@{PFN\_MTCCLISUBSSTATCHANGED}}
+\index{PFN\_MTCCLISUBSSTATCHANGED@{PFN\_MTCCLISUBSSTATCHANGED}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCLISUBSSTATCHANGED}{PFN\_MTCCLISUBSSTATCHANGED}}
+{\footnotesize\ttfamily typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+S\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED) (Z\+U\+I\+NT i\+Subs\+Stat, Z\+U\+I\+NT i\+Sip\+Code, Z\+C\+H\+AR $\ast$pc\+Body)}
+
+
+
+Type define of M\+TC G\+UI callback for notify register subscribe state changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Subs\+Stat} & is register subscribe state type(see \mbox{\hyperlink{mtc__cli_8h_a08097ca09b911897331522504a9d56ee}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}). \\
+\hline
+{\em i\+Sip\+Code} & is S\+IP code. \\
+\hline
+{\em pc\+Body} & is notify body when i\+Subs\+Stat equal E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+C\+V\+\_\+\+N\+O\+T\+I\+FY, otherwise is null. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a29d333bc96d8d9c7fe65c06f1cc705ec}\label{mtc__cli__cb_8h_a29d333bc96d8d9c7fe65c06f1cc705ec}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetAuthInd@{Mtc\_CliCbSetAuthInd}}
+\index{Mtc\_CliCbSetAuthInd@{Mtc\_CliCbSetAuthInd}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetAuthInd()}{Mtc\_CliCbSetAuthInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Auth\+Ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_ab5e6e2d0fd7b12cb3ae480c5a5d212d9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+A\+U\+T\+H\+I\+ND}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a47d6e9d330c0383f7b57110a28d9a4e0}\label{mtc__cli__cb_8h_a47d6e9d330c0383f7b57110a28d9a4e0}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetBeforeLogin@{Mtc\_CliCbSetBeforeLogin}}
+\index{Mtc\_CliCbSetBeforeLogin@{Mtc\_CliCbSetBeforeLogin}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetBeforeLogin()}{Mtc\_CliCbSetBeforeLogin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Before\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a60cbdd0e6ca2f88f325a660ab20df1b5}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+B\+E\+F\+O\+R\+E\+L\+O\+G\+IN}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set before login indication callback. The callback will be notified before login. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a93b868b61b162347e1f2276833f01065}\label{mtc__cli__cb_8h_a93b868b61b162347e1f2276833f01065}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetEvnt@{Mtc\_CliCbSetEvnt}}
+\index{Mtc\_CliCbSetEvnt@{Mtc\_CliCbSetEvnt}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetEvnt()}{Mtc\_CliCbSetEvnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Evnt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a2c18b10e628670ae158bcd7ed223e4b9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+E\+V\+NT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the service event callback to M\+TC driver owner. If M\+TC is running multi-\/thread mode, M\+TC and service enablers need be drived by M\+TC user(mostly is G\+U\+I), so M\+TC will call this callback for convey event to M\+TC user, M\+TC user should post event to itself. M\+TC user then call \mbox{\hyperlink{mtc__cli_8h_a89d7a73e994d19e72a2b8702cc318668}{Mtc\+\_\+\+Cli\+Drive}} for run M\+TC and service enablers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_aeba9e3608b3f2abd6d5773b4e6a15a92}\label{mtc__cli__cb_8h_aeba9e3608b3f2abd6d5773b4e6a15a92}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetLclLoginOk@{Mtc\_CliCbSetLclLoginOk}}
+\index{Mtc\_CliCbSetLclLoginOk@{Mtc\_CliCbSetLclLoginOk}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetLclLoginOk()}{Mtc\_CliCbSetLclLoginOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Login\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a4f92fd14a62325e4a82b2619037a0842}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+C\+L\+L\+O\+G\+I\+N\+OK}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the login successfully indication callback. The callback will be notified if local login successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_afa3a78f7eaca94e2f4e1160a1c78e6e1}\label{mtc__cli__cb_8h_afa3a78f7eaca94e2f4e1160a1c78e6e1}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetLclLogout@{Mtc\_CliCbSetLclLogout}}
+\index{Mtc\_CliCbSetLclLogout@{Mtc\_CliCbSetLclLogout}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetLclLogout()}{Mtc\_CliCbSetLclLogout()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Logout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a7a2e42197114b4f801f2e1cb6e9ce68d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+C\+L\+L\+O\+G\+O\+UT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the local logout indication callback. The callback will be notified if client is not in register with server. If \mbox{\hyperlink{mtc__cli__db_8h_a87a5a12f9a9159b887434321995cfeed}{Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg\+Type}} is E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+L\+O\+C\+AL, this callback will not be called. 
+
+The callback is one of \mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} results
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a62c384428eae21ee51710170316fd2da}\label{mtc__cli__cb_8h_a62c384428eae21ee51710170316fd2da}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetLoginFailed@{Mtc\_CliCbSetLoginFailed}}
+\index{Mtc\_CliCbSetLoginFailed@{Mtc\_CliCbSetLoginFailed}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetLoginFailed()}{Mtc\_CliCbSetLoginFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Login\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a7370059515ea191b96169ace7ddaff3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+L\+O\+G\+I\+N\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the login failed indication callback. The callback will be notified if login failed The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_afae76f71d49d125a9d6fd7973715e281}\label{mtc__cli__cb_8h_afae76f71d49d125a9d6fd7973715e281}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetPrint@{Mtc\_CliCbSetPrint}}
+\index{Mtc\_CliCbSetPrint@{Mtc\_CliCbSetPrint}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetPrint()}{Mtc\_CliCbSetPrint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a2bc483ce4a5b44b99ecbd7bf05e499e0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+P\+R\+I\+NT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the Zos\+\_\+\+Printf string print callback. Zos print and log functions will always call it if callback is not Z\+N\+U\+LL. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a16ec4cfe215b0aaa81e9b2ee13ce63cd}\label{mtc__cli__cb_8h_a16ec4cfe215b0aaa81e9b2ee13ce63cd}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetRefreshFailed@{Mtc\_CliCbSetRefreshFailed}}
+\index{Mtc\_CliCbSetRefreshFailed@{Mtc\_CliCbSetRefreshFailed}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetRefreshFailed()}{Mtc\_CliCbSetRefreshFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Refresh\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_aae8bbed514805a03fb9fc812552f8500}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the refresh indication callback. The callback will be notified if refresh failed The callback is one of \mbox{\hyperlink{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}{Mtc\+\_\+\+Cli\+Refresh}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a932a287a6606a636c8ec945dea8135e2}\label{mtc__cli__cb_8h_a932a287a6606a636c8ec945dea8135e2}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetRefreshOk@{Mtc\_CliCbSetRefreshOk}}
+\index{Mtc\_CliCbSetRefreshOk@{Mtc\_CliCbSetRefreshOk}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetRefreshOk()}{Mtc\_CliCbSetRefreshOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Refresh\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a21bf0dddb7fe24b95f6537eb348afd2a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+F\+R\+E\+S\+H\+OK}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the refresh successfully indication callback. The callback will be notified if refresh successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}{Mtc\+\_\+\+Cli\+Refresh}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}\label{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetRegFailed@{Mtc\_CliCbSetRegFailed}}
+\index{Mtc\_CliCbSetRegFailed@{Mtc\_CliCbSetRegFailed}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetRegFailed()}{Mtc\_CliCbSetRegFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a67639e21426d2aee30bf7f09ac46b818}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the R\+E\+G\+I\+S\+E\+T\+ER failed indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER failed The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}\label{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetRegOk@{Mtc\_CliCbSetRegOk}}
+\index{Mtc\_CliCbSetRegOk@{Mtc\_CliCbSetRegOk}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetRegOk()}{Mtc\_CliCbSetRegOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_af39a029019d4c383a9e5ffb342529170}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the R\+E\+G\+I\+S\+E\+T\+ER successfully indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a25e6106015e720de7547b0795df03c20}\label{mtc__cli__cb_8h_a25e6106015e720de7547b0795df03c20}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetRegStatChanged@{Mtc\_CliCbSetRegStatChanged}}
+\index{Mtc\_CliCbSetRegStatChanged@{Mtc\_CliCbSetRegStatChanged}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetRegStatChanged()}{Mtc\_CliCbSetRegStatChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Stat\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_ad2a1d33d8d5825c16b9fa45f1808ea13}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+R\+E\+G\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set register state changed indication callback. The callback will be notified if register state has changed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a891188a9ad7d75499033bef5706367a0}\label{mtc__cli__cb_8h_a891188a9ad7d75499033bef5706367a0}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetServLoginOk@{Mtc\_CliCbSetServLoginOk}}
+\index{Mtc\_CliCbSetServLoginOk@{Mtc\_CliCbSetServLoginOk}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetServLoginOk()}{Mtc\_CliCbSetServLoginOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Login\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a0a64f856acd28283c256653a648066f1}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+I\+N\+OK}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the login successfully indication callback. The callback will be notified if server login successfully The callback is one of \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_adb985259dd72323c8914591cc53e1240}\label{mtc__cli__cb_8h_adb985259dd72323c8914591cc53e1240}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetServLogout@{Mtc\_CliCbSetServLogout}}
+\index{Mtc\_CliCbSetServLogout@{Mtc\_CliCbSetServLogout}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetServLogout()}{Mtc\_CliCbSetServLogout()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Logout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a56d0823b4d11d9e35a323c9d65edccf8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+E\+R\+V\+L\+O\+G\+O\+UT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the server logout indication callback. The callback will be notified if client has un-\/register from server. If \mbox{\hyperlink{mtc__cli__db_8h_a87a5a12f9a9159b887434321995cfeed}{Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg\+Type}} isnot E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+L\+O\+C\+AL, this callback will not be called. 
+
+The callback is one of \mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} results
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_ad2f50fb0272b9b91c08c2018cf17791b}\label{mtc__cli__cb_8h_ad2f50fb0272b9b91c08c2018cf17791b}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetSubNetChanged@{Mtc\_CliCbSetSubNetChanged}}
+\index{Mtc\_CliCbSetSubNetChanged@{Mtc\_CliCbSetSubNetChanged}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetSubNetChanged()}{Mtc\_CliCbSetSubNetChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Sub\+Net\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_a1aaccca9eb375468aa54355dc75f44ab}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+N\+E\+T\+C\+H\+A\+N\+G\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set subscribe network changed indication callback. The callback will be notified if network has changed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}\label{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}} 
+\index{mtc\_cli\_cb.h@{mtc\_cli\_cb.h}!Mtc\_CliCbSetSubsStatChanged@{Mtc\_CliCbSetSubsStatChanged}}
+\index{Mtc\_CliCbSetSubsStatChanged@{Mtc\_CliCbSetSubsStatChanged}!mtc\_cli\_cb.h@{mtc\_cli\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCbSetSubsStatChanged()}{Mtc\_CliCbSetSubsStatChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cb\+Set\+Subs\+Stat\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cb_8h_ac0994585309e96de889dde3e45f54c2c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+L\+I\+S\+U\+B\+S\+S\+T\+A\+T\+C\+H\+A\+N\+G\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set register subscribe state changed indication callback. The callback will be notified if register subscribe state has changed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

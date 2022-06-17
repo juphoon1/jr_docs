@@ -1,0 +1,307 @@
+\hypertarget{mtc__cap_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cap.h File Reference}
+\label{mtc__cap_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cap.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cap.h}}
+
+
+M\+TC Capability Qurey Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cap_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__cap_8h_aa8f6c18a7155e526b0299b36533f1645}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+P\+M\+\_\+\+S\+E\+SS}}~0x00000001
+\begin{DoxyCompactList}\small\item\em M\+TC capability type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a5519ddde9e0d9766472c70fd7bf1c09e}\label{mtc__cap_8h_a5519ddde9e0d9766472c70fd7bf1c09e}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a5519ddde9e0d9766472c70fd7bf1c09e}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+F\+T\+H\+T\+TP}}~0x00000002
+\begin{DoxyCompactList}\small\item\em file transfer via H\+T\+TP \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a09e093c63b35f244bc1a230b09cda422}\label{mtc__cap_8h_a09e093c63b35f244bc1a230b09cda422}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a09e093c63b35f244bc1a230b09cda422}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+F\+T\+S\+MS}}~0x00000004
+\begin{DoxyCompactList}\small\item\em file transfer sms \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a3c338ba5bb85af9a3589cac9bbfd0fed}\label{mtc__cap_8h_a3c338ba5bb85af9a3589cac9bbfd0fed}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a3c338ba5bb85af9a3589cac9bbfd0fed}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+G\+E\+O\+P\+U\+SH}}~0x00000008
+\begin{DoxyCompactList}\small\item\em geolocation push \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_ac886d6b50d61c34e29c11969f244f44f}\label{mtc__cap_8h_ac886d6b50d61c34e29c11969f244f44f}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_ac886d6b50d61c34e29c11969f244f44f}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+G\+E\+O\+S\+MS}}~0x00000010
+\begin{DoxyCompactList}\small\item\em geolocation sms \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_aded30a6592130c77b64c308f67f83384}\label{mtc__cap_8h_aded30a6592130c77b64c308f67f83384}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_aded30a6592130c77b64c308f67f83384}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+H\+A\+T\+B\+OT}}~0x00000020
+\begin{DoxyCompactList}\small\item\em gsma chatbot \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a8c1559c5a776c90c5d11463c1330bcf2}\label{mtc__cap_8h_a8c1559c5a776c90c5d11463c1330bcf2}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a8c1559c5a776c90c5d11463c1330bcf2}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+H\+A\+T\+B\+O\+T\+\_\+\+SA}}~0x00000040
+\begin{DoxyCompactList}\small\item\em gsma chatbot sa \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a9969d9885ec78a9a43c75ada902e34af}\label{mtc__cap_8h_a9969d9885ec78a9a43c75ada902e34af}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a9969d9885ec78a9a43c75ada902e34af}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+I\+S\+\_\+\+B\+OT}}~0x00000080
+\begin{DoxyCompactList}\small\item\em gsma is chatbot \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a24db6d66153757bc6b69e40e542677d8}\label{mtc__cap_8h_a24db6d66153757bc6b69e40e542677d8}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a24db6d66153757bc6b69e40e542677d8}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+A\+L\+L\+\_\+\+C\+O\+M\+\_\+\+M\+S\+RP}}~0x00000100
+\begin{DoxyCompactList}\small\item\em gsma up call composer via Enriched Calling session \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a3e0e969e6740c06104ec54090fdff6d5}\label{mtc__cap_8h_a3e0e969e6740c06104ec54090fdff6d5}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a3e0e969e6740c06104ec54090fdff6d5}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+A\+L\+L\+\_\+\+C\+O\+M\+\_\+\+M\+U\+TI}}~0x00000200
+\begin{DoxyCompactList}\small\item\em gsma up call composer via Multimedia Telephony session \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a0550e3433cc0e23c7c2f5b2bf43ce10b}\label{mtc__cap_8h_a0550e3433cc0e23c7c2f5b2bf43ce10b}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a0550e3433cc0e23c7c2f5b2bf43ce10b}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+A\+L\+L\+\_\+\+U\+N\+A\+NS}}~0x00000400
+\begin{DoxyCompactList}\small\item\em gsma up call unanswered \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_aff5ffed8caa5b7ef88f6753abe42924c}\label{mtc__cap_8h_aff5ffed8caa5b7ef88f6753abe42924c}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_aff5ffed8caa5b7ef88f6753abe42924c}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+M\+AP}}~0x00000800
+\begin{DoxyCompactList}\small\item\em shared map \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_ad2943a12c1b79f0f22ae9ce019354afb}\label{mtc__cap_8h_ad2943a12c1b79f0f22ae9ce019354afb}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_ad2943a12c1b79f0f22ae9ce019354afb}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+S\+K\+E\+T\+CH}}~0x00001000
+\begin{DoxyCompactList}\small\item\em shared sketch \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a0e98528ac9c184adbfa55f59366ba050}\label{mtc__cap_8h_a0e98528ac9c184adbfa55f59366ba050}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a0e98528ac9c184adbfa55f59366ba050}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+IM}}~0x00001000
+\begin{DoxyCompactList}\small\item\em instant message \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a646dae0016f8e68c9889d7a92cf6d3d3}\label{mtc__cap_8h_a646dae0016f8e68c9889d7a92cf6d3d3}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a646dae0016f8e68c9889d7a92cf6d3d3}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+VS}}~0x00002000
+\begin{DoxyCompactList}\small\item\em video share \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_ae638cfdc2d4a961a842175bcd709e265}\label{mtc__cap_8h_ae638cfdc2d4a961a842175bcd709e265}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_ae638cfdc2d4a961a842175bcd709e265}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+V\+O\+I\+C\+E\+C\+A\+LL}}~0x00004000
+\begin{DoxyCompactList}\small\item\em ip voice call \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a22c773ed9d1a966fc3a784729141e8f4}\label{mtc__cap_8h_a22c773ed9d1a966fc3a784729141e8f4}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a22c773ed9d1a966fc3a784729141e8f4}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+V\+I\+D\+E\+O\+C\+A\+LL}}~0x00008000
+\begin{DoxyCompactList}\small\item\em ip video call \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a398c6a9b9c465c7683852821fa33df5e}\label{mtc__cap_8h_a398c6a9b9c465c7683852821fa33df5e}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a398c6a9b9c465c7683852821fa33df5e}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+P\+L\+U\+G\+IN}}~0x00010000
+\begin{DoxyCompactList}\small\item\em gsma Plug-\/ins \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a134c23fa574411b3354286e72a4afc24}\label{mtc__cap_8h_a134c23fa574411b3354286e72a4afc24}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a134c23fa574411b3354286e72a4afc24}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+B\+U\+RN}}~0x00020000
+\begin{DoxyCompactList}\small\item\em brief burn after reading function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a57f618491a00f5370e12e02989ad1073}\label{mtc__cap_8h_a57f618491a00f5370e12e02989ad1073}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a57f618491a00f5370e12e02989ad1073}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE}}~0x00040000
+\begin{DoxyCompactList}\small\item\em cloud file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a18387d6b30be298693969788b2ab7483}\label{mtc__cap_8h_a18387d6b30be298693969788b2ab7483}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a18387d6b30be298693969788b2ab7483}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+V\+EM}}~0x00080000
+\begin{DoxyCompactList}\small\item\em vemoticon \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a2c876a610b0df0d2abf45780af4b6afa}\label{mtc__cap_8h_a2c876a610b0df0d2abf45780af4b6afa}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a2c876a610b0df0d2abf45780af4b6afa}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+G\+R\+P\+\_\+\+M\+AN}}~0x00100000
+\begin{DoxyCompactList}\small\item\em group manage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_ad113964edde846425b7940515229f79c}\label{mtc__cap_8h_ad113964edde846425b7940515229f79c}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_ad113964edde846425b7940515229f79c}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+P\+M\+\_\+\+FT}}~0x00200000
+\begin{DoxyCompactList}\small\item\em cpm file transfer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a3026d4b540467b6bf3d063022d809797}\label{mtc__cap_8h_a3026d4b540467b6bf3d063022d809797}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a3026d4b540467b6bf3d063022d809797}{M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+E\+X\+V\+C\+A\+RD}}~0x00400000
+\begin{DoxyCompactList}\small\item\em cpm ex-\/vcard session \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_a019713c615b2ac6c21a8040ebd8cb71b}\label{mtc__cap_8h_a019713c615b2ac6c21a8040ebd8cb71b}} 
+\#define \mbox{\hyperlink{mtc__cap_8h_a019713c615b2ac6c21a8040ebd8cb71b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+N\+O\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 0) /$\ast$ no error $\ast$/
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC capability status code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap_8h_ac30f214b14c66838619f0ccca6cac5cd}\label{mtc__cap_8h_ac30f214b14c66838619f0ccca6cac5cd}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 1) /$\ast$ user not found $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a07f0f8fdf203c6f299f72b87275586c6}\label{mtc__cap_8h_a07f0f8fdf203c6f299f72b87275586c6}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+T\+M\+P\+\_\+\+U\+N\+A\+V\+A\+IL}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 2) /$\ast$ user temporality unavailable $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a8198283722ec997ae0367d1183cf7c35}\label{mtc__cap_8h_a8198283722ec997ae0367d1183cf7c35}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 3) /$\ast$ query authentication failed $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a443218cc73316420cb29390b6ac5ff1f}\label{mtc__cap_8h_a443218cc73316420cb29390b6ac5ff1f}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+OW}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 4) /$\ast$ query method not allow $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a6edca7cebe0c3b5ab415a5169665af37}\label{mtc__cap_8h_a6edca7cebe0c3b5ab415a5169665af37}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 5) /$\ast$ query forbidden $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a14fa6f11e6b32e8065e6f920534a3664}\label{mtc__cap_8h_a14fa6f11e6b32e8065e6f920534a3664}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+T\+I\+M\+E\+O\+UT}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 6) /$\ast$ query timeout $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_af3cc3880ca88951edb60e77fc9594546}\label{mtc__cap_8h_af3cc3880ca88951edb60e77fc9594546}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 7) /$\ast$ query not exist $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a599d534bb1db7a7f80c3dbc4ccb72ccd}\label{mtc__cap_8h_a599d534bb1db7a7f80c3dbc4ccb72ccd}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+N\+O\+T\+\_\+\+I\+MP}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 8) /$\ast$ query not implement $\ast$/
+\item 
+\mbox{\Hypertarget{mtc__cap_8h_a70c2ad4c6249ad486c7b471b7249c8d3}\label{mtc__cap_8h_a70c2ad4c6249ad486c7b471b7249c8d3}} 
+\#define {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+O\+T\+H\+E\+R\+\_\+\+E\+RR}~(\mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}} + 9) /$\ast$ other error $\ast$/
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cap_8h_af7be796e6336d73c72a7a3c51ec52709}{Mtc\+\_\+\+Cap\+Qry\+Opt}} (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Query option capability of one participant immediately. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cap_8h_abc9c221e26a50199c7bbea7b6d82a3a2}{Mtc\+\_\+\+Cap\+Qry\+One\+Imd}} (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+B\+O\+OL b\+Once)
+\begin{DoxyCompactList}\small\item\em Query capability of one participant immediately. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method or S\+U\+B\+S\+C\+R\+I\+BE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cap_8h_a7b800d7a8296997622ee904387cf92b5}{Mtc\+\_\+\+Cap\+Qry\+One}} (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+B\+O\+OL b\+Once)
+\begin{DoxyCompactList}\small\item\em Query capability of one participant. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method or S\+U\+B\+S\+C\+R\+I\+BE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cap_8h_a8b291742ca26157ac2e3fc0110b8023e}{Mtc\+\_\+\+Cap\+Qry\+Lst}} (Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+B\+O\+OL b\+Once)
+\begin{DoxyCompactList}\small\item\em Query capability of participant list. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method or S\+U\+B\+S\+C\+R\+I\+BE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cap_8h_a8d22821554d659dc54b484fe2843fe3a}{Mtc\+\_\+\+Cap\+Qry\+Pause}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Pause capability query. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cap_8h_ac8744ddc7d2f8a78b40322bb255d5e5e}{Mtc\+\_\+\+Cap\+Qry\+Resume}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Resume capability query. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Capability Qurey Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__cap_8h_aa8f6c18a7155e526b0299b36533f1645}\label{mtc__cap_8h_aa8f6c18a7155e526b0299b36533f1645}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!MTC\_CAP\_CPM\_SESS@{MTC\_CAP\_CPM\_SESS}}
+\index{MTC\_CAP\_CPM\_SESS@{MTC\_CAP\_CPM\_SESS}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CAP\_CPM\_SESS}{MTC\_CAP\_CPM\_SESS}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+C\+P\+M\+\_\+\+S\+E\+SS~0x00000001}
+
+
+
+M\+TC capability type. 
+
+cpm session 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cap_8h_a8b291742ca26157ac2e3fc0110b8023e}\label{mtc__cap_8h_a8b291742ca26157ac2e3fc0110b8023e}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!Mtc\_CapQryLst@{Mtc\_CapQryLst}}
+\index{Mtc\_CapQryLst@{Mtc\_CapQryLst}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapQryLst()}{Mtc\_CapQryLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cap\+Qry\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+B\+O\+OL}]{b\+Once }\end{DoxyParamCaption})}
+
+
+
+Query capability of participant list. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method or S\+U\+B\+S\+C\+R\+I\+BE method. 
+
+While query ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab40c61161dd08b4e2bd76653a1e03d15}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok}}.
+
+While query failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Once} & The once flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability query will be running. It will trigger the callback\+:Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok, Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap_8h_a7b800d7a8296997622ee904387cf92b5}\label{mtc__cap_8h_a7b800d7a8296997622ee904387cf92b5}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!Mtc\_CapQryOne@{Mtc\_CapQryOne}}
+\index{Mtc\_CapQryOne@{Mtc\_CapQryOne}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapQryOne()}{Mtc\_CapQryOne()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cap\+Qry\+One (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+B\+O\+OL}]{b\+Once }\end{DoxyParamCaption})}
+
+
+
+Query capability of one participant. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method or S\+U\+B\+S\+C\+R\+I\+BE method. 
+
+While query ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab40c61161dd08b4e2bd76653a1e03d15}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok}}.
+
+While query failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Once} & The once flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability query will be running. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap_8h_abc9c221e26a50199c7bbea7b6d82a3a2}\label{mtc__cap_8h_abc9c221e26a50199c7bbea7b6d82a3a2}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!Mtc\_CapQryOneImd@{Mtc\_CapQryOneImd}}
+\index{Mtc\_CapQryOneImd@{Mtc\_CapQryOneImd}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapQryOneImd()}{Mtc\_CapQryOneImd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cap\+Qry\+One\+Imd (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+B\+O\+OL}]{b\+Once }\end{DoxyParamCaption})}
+
+
+
+Query capability of one participant immediately. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method or S\+U\+B\+S\+C\+R\+I\+BE method. 
+
+While query ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab40c61161dd08b4e2bd76653a1e03d15}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok}}.
+
+While query failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Once} & The once flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability query will be running. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap_8h_af7be796e6336d73c72a7a3c51ec52709}\label{mtc__cap_8h_af7be796e6336d73c72a7a3c51ec52709}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!Mtc\_CapQryOpt@{Mtc\_CapQryOpt}}
+\index{Mtc\_CapQryOpt@{Mtc\_CapQryOpt}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapQryOpt()}{Mtc\_CapQryOpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cap\+Qry\+Opt (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Query option capability of one participant immediately. Capability query will be operated by S\+IP O\+P\+T\+I\+ON method. 
+
+While query ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_aa73c0dd9679205b851e23272556c9f11}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Opt\+Ok}}.
+
+While query failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability option query will be running. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & capability option query failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap_8h_a8d22821554d659dc54b484fe2843fe3a}\label{mtc__cap_8h_a8d22821554d659dc54b484fe2843fe3a}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!Mtc\_CapQryPause@{Mtc\_CapQryPause}}
+\index{Mtc\_CapQryPause@{Mtc\_CapQryPause}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapQryPause()}{Mtc\_CapQryPause()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cap\+Qry\+Pause (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Pause capability query. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Pause successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Pause failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap_8h_ac8744ddc7d2f8a78b40322bb255d5e5e}\label{mtc__cap_8h_ac8744ddc7d2f8a78b40322bb255d5e5e}} 
+\index{mtc\_cap.h@{mtc\_cap.h}!Mtc\_CapQryResume@{Mtc\_CapQryResume}}
+\index{Mtc\_CapQryResume@{Mtc\_CapQryResume}!mtc\_cap.h@{mtc\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapQryResume()}{Mtc\_CapQryResume()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cap\+Qry\+Resume (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Resume capability query. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Resume successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Resume failed. \\
+\hline
+\end{DoxyRetVals}

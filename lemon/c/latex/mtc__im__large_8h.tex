@@ -1,0 +1,1152 @@
+\hypertarget{mtc__im__large_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im\+\_\+large.h File Reference}
+\label{mtc__im__large_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_large.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_large.h}}
+
+
+M\+TC Instant Message Large Mode Interface Functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__im__large_8h_a2ab61612d66225dcabc8f684601f8428}{M\+T\+C\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN}}~0x0001
+\begin{DoxyCompactList}\small\item\em M\+TC IM large message service flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__large_8h_a43264b89d494bdffb0bc1648bd253aca}\label{mtc__im__large_8h_a43264b89d494bdffb0bc1648bd253aca}} 
+\#define \mbox{\hyperlink{mtc__im__large_8h_a43264b89d494bdffb0bc1648bd253aca}{M\+T\+C\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+P\+U\+B\+\_\+\+I\+ND}}~0x0002
+\begin{DoxyCompactList}\small\item\em The public message flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}\label{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}} 
+typedef enum \mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM large message content type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__large_8h_a39ea8b811e5dea77c6adc4978b7437f0}\label{mtc__im__large_8h_a39ea8b811e5dea77c6adc4978b7437f0}} 
+typedef enum \mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__large_8h_a39ea8b811e5dea77c6adc4978b7437f0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM large message spam type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a23b80f9a7735819c15aef7a2dc69b5f6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ab1f8369459e2a98d067c66df3f2e10f9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a7919d584343547e964aa58e776bed6ec}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+O\+M\+A\+P\+U\+SH}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ac1657d2d7c29e57348af9383052d4a53}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\newline
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a711484f6ef7f0b7a1eedeedd5b2be86d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ab4e3d02ae067699c3cca888b621e8d64}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87abf424d662521552c5428bfe9c8627c97}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+DN}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a2d06884af9924955bda3ba8600ee3286}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON}}, 
+\newline
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a794f19d695a0482332d28779e6781a65}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87aaa29f7a01acba639aab4177235515dc9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87aaec159327b5708fe5757e3044e4d4fa1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a8bddc0a762d17fc617c341d63b32a04d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW}}, 
+\newline
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a58f92169845319717bd48213289fec12}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+S\+MS}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a9a7029bca81ef04dd851f0717e8f9d9d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a0dbaeb357cbf4ef62b6c81ada27a3681}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG}}, 
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87af590cb840888d0bf047bf4dd1c6c9849}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE}}, 
+\newline
+\mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87af6819d4cf28a46e9e79c4d0cd2e1a432}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM large message content type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+IN}, 
+\mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a9bc773073aefa51ccf3c3a218638ecce}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+P\+O\+L\+I\+T\+I\+C\+A\+L\+\_\+\+R\+U\+M\+OR}}, 
+\mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50ae4a4185cb792a3b46c38fbead2974e0b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+J\+U\+R\+I\+S\+P\+R\+U\+D\+E\+N\+CE}}, 
+\mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a1aa1a5f2b859de19e8c10474be0f0dda}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+F\+R\+A\+UD}}, 
+\newline
+\mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a5ef1f80f41f6bdb69c5785138811b7b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+A\+L\+I\+C\+I\+O\+U\+S\+\_\+\+M\+A\+R\+K\+E\+T\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a9ae9b5768dbd6bcc28b244a93554725c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+V\+I\+O\+L\+E\+N\+CE}}, 
+\mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a0e2d0b5cb15467cccad48c5b646ee7bf}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+O\+T\+H\+ER}} = 9, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+AX}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM large message spam type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_af1da28b12238019a7ad8fbab5ce2ab4f}{Mtc\+\_\+\+Im\+L\+Msg\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending Large Instant Message to One Participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a552c79cdc93003984fcf110895c9af77}{Mtc\+\_\+\+Im\+L\+Msg\+SendU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending Large Instant Message to U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_ac0019b9220a56aa9ed6fb4b928385030}{Mtc\+\_\+\+Im\+L\+Msg\+SendS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending Large Instant Message to one participant with spam information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a71f691ea77bc605dbfef2c293c8ce249}{Mtc\+\_\+\+Im\+L\+Msg\+SendM}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending multi-\/media Message to One Participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_ac90360e6cf20ec79918115c01663cd51}{Mtc\+\_\+\+Im\+L\+Msg\+Reply}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Reply to specific standalone large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__im__large_8h_a978ebb0d780fa413cbadc3e82e1efb76}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get user cookie from a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_aa3a23ed25b151dc58ee5ca7e9888f3e4}{Mtc\+\_\+\+Im\+L\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC Set user cookie in a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a86ee64264237ebcfc5067bdf747bb024}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the Imdn id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_affa219bafd10755f3eaf3d9aaee3a7f7}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get device id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a416d772d81260594078fdc79dd6b32c2}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get content type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_a86b9a4b28be9dccbf53b82860731095b}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get content from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_af57b1793bd8d64c8461806ed57d927e3}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+M\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Get multi-\/media content from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a1dfd4eaf492acd77ddcca4f8acd432d7}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_acadd6b012c0127a31887f4c8ba0e49f4}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant information from large message. Get receiver information from fetion carbon copy large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a37560edfb0113543603f6a4602ed5285}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp\+Lst}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant list id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a76ad0e2ff49d42dbdc1f67323408857e}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get original participant from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a1b17b8ba3b68e79d95762738ff1185af}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get original identity of participant from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a8962fe77fb660a80133981ba7390013c}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Sys\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id, \mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__large_8h_a25884976c75f2072f58f5a2855143247}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_af361f9981e728f391a0254892806ea5f}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the font information from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_a912da979db6d18be66fb005e0b2a50fb}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get conversation-\/id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_aecfbaf3a6d64f82af92582f2a3c2c763}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_a6ad8d7541169f22c96d976997637b589}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Irt\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get inreplyto-\/contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a1c98e4012a43bcedda898730c2d9281b}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Burn\+Time\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get burn after reading time length from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a14bfa1709a5c3162f17d69e1e9b04d60}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+App\+Push\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get app push type from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_a2c5c22a5e08aa3b0e90cb74d91296070}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get public messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_acdd61756ec4079cc116a903a592d7779}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Burn\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get burn after reading messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_aa755661c046a12ea82d4f250ab993af6}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get spam messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_a1fb1c3f8e1c52145898ca04d813235e5}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get directional messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_a3364cb43b534ca4c91f5fca6badffb6d}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get carbon copy messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_a6badf67dbf1b83b703c7aeff6ebe7824}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get silence messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_ada19da9fc8b4a8ef585164841c6b3b3c}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get offline messgae indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__large_8h_ad2fda27290bdc8f3edfd874fc015a737}{Mtc\+\_\+\+Im\+L\+Msg\+Has\+Revoke\+Msg\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_aba0b3c5932057e347513aeae5f5f6660}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke message-\/id from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__im__large_8h_ab979fb1dc4dce26209731f19d29f7547}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke result from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_af2cd4fb3720071e99cab520dc74c69a4}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke from addr from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__large_8h_a2aded3aaca87c691698810a73bd6844f}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke to addr from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a95f515138a98572c1d89596439024205}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Sip\+Code}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get sip code from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__large_8h_a7f5b27779abbc5290768507e43066fdd}{Mtc\+\_\+\+Im\+L\+Msg\+Conver\+C\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Mtc large msg conver type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Message Large Mode Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__im__large_8h_a2ab61612d66225dcabc8f684601f8428}\label{mtc__im__large_8h_a2ab61612d66225dcabc8f684601f8428}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!MTC\_LMSG\_SRV\_BURN@{MTC\_LMSG\_SRV\_BURN}}
+\index{MTC\_LMSG\_SRV\_BURN@{MTC\_LMSG\_SRV\_BURN}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_LMSG\_SRV\_BURN}{MTC\_LMSG\_SRV\_BURN}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN~0x0001}
+
+
+
+M\+TC IM large message service flag. 
+
+The burn after reading message flag 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_TYPE@{EN\_MTC\_IM\_LMSG\_CONT\_TYPE}}
+\index{EN\_MTC\_IM\_LMSG\_CONT\_TYPE@{EN\_MTC\_IM\_LMSG\_CONT\_TYPE}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_LMSG\_CONT\_TYPE}{EN\_MTC\_IM\_LMSG\_CONT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM large message content type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_UNKNOWN@{EN\_MTC\_IM\_LMSG\_CONT\_UNKNOWN}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_UNKNOWN@{EN\_MTC\_IM\_LMSG\_CONT\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a23b80f9a7735819c15aef7a2dc69b5f6}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a23b80f9a7735819c15aef7a2dc69b5f6}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&unknown content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_TXT\_PLAIN@{EN\_MTC\_IM\_LMSG\_CONT\_TXT\_PLAIN}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_TXT\_PLAIN@{EN\_MTC\_IM\_LMSG\_CONT\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ab1f8369459e2a98d067c66df3f2e10f9}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ab1f8369459e2a98d067c66df3f2e10f9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&text/plain content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_OMAPUSH@{EN\_MTC\_IM\_LMSG\_CONT\_OMAPUSH}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_OMAPUSH@{EN\_MTC\_IM\_LMSG\_CONT\_OMAPUSH}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a7919d584343547e964aa58e776bed6ec}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a7919d584343547e964aa58e776bed6ec}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+O\+M\+A\+P\+U\+SH&\char`\"{}application/vnd.\+oma.\+push\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_PLAIN}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ac1657d2d7c29e57348af9383052d4a53}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ac1657d2d7c29e57348af9383052d4a53}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&content type of \char`\"{}text/plain\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_JPEG}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_JPEG}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a711484f6ef7f0b7a1eedeedd5b2be86d}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a711484f6ef7f0b7a1eedeedd5b2be86d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG&content type of \char`\"{}image/jpeg\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_BMP@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_BMP}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_BMP@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMAGE\_BMP}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ab4e3d02ae067699c3cca888b621e8d64}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87ab4e3d02ae067699c3cca888b621e8d64}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP&content type of \char`\"{}image/bmp\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMDN@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMDN}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMDN@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_IMDN}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87abf424d662521552c5428bfe9c8627c97}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87abf424d662521552c5428bfe9c8627c97}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+DN&content type of \char`\"{}message/imdn+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_VEMOTICON@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_VEMOTICON}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_VEMOTICON@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_VEMOTICON}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a2d06884af9924955bda3ba8600ee3286}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a2d06884af9924955bda3ba8600ee3286}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON&content type of \char`\"{}message/vemoticon+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CLOUD\_FILE}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CLOUD\_FILE}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a794f19d695a0482332d28779e6781a65}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a794f19d695a0482332d28779e6781a65}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE&content type of \char`\"{}message/cloudfile+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CMRED\_BAG}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CMRED\_BAG}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87aaa29f7a01acba639aab4177235515dc9}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87aaa29f7a01acba639aab4177235515dc9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}message/cmredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CARD@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CARD}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CARD@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CARD}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87aaec159327b5708fe5757e3044e4d4fa1}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87aaec159327b5708fe5757e3044e4d4fa1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD&content type of \char`\"{}message/card+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_139MAIL\_NEW@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_139MAIL\_NEW}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_139MAIL\_NEW@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_139MAIL\_NEW}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a8bddc0a762d17fc617c341d63b32a04d}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a8bddc0a762d17fc617c341d63b32a04d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW&content type of \char`\"{}application/commonextension+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_SMS@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_SMS}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_SMS@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_TXT\_SMS}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a58f92169845319717bd48213289fec12}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a58f92169845319717bd48213289fec12}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+S\+MS&content type of \char`\"{}text/sms\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_COM\_TEMP}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_COM\_TEMP}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a9a7029bca81ef04dd851f0717e8f9d9d}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a9a7029bca81ef04dd851f0717e8f9d9d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP&content type of \char`\"{}application/commontemplate+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CHRED\_BAG}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_CHRED\_BAG}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a0dbaeb357cbf4ef62b6c81ada27a3681}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87a0dbaeb357cbf4ef62b6c81ada27a3681}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}message/cmredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_REVOKE@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_REVOKE}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_REVOKE@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_REVOKE}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87af590cb840888d0bf047bf4dd1c6c9849}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87af590cb840888d0bf047bf4dd1c6c9849}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE&content type of \char`\"{}application/vnd.\+gsma.\+rcsrevoke+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_FTHTTP@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_FTHTTP}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_CONT\_MSG\_FTHTTP@{EN\_MTC\_IM\_LMSG\_CONT\_MSG\_FTHTTP}}}\mbox{\Hypertarget{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87af6819d4cf28a46e9e79c4d0cd2e1a432}\label{mtc__im__large_8h_a6014bec345cd7401dc1fa6b2b4edab87af6819d4cf28a46e9e79c4d0cd2e1a432}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP&content type of \char`\"{}application/vnd.\+gsma.\+rcs-\/ft-\/http+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_TYPE@{EN\_MTC\_IM\_LMSG\_SPAM\_TYPE}}
+\index{EN\_MTC\_IM\_LMSG\_SPAM\_TYPE@{EN\_MTC\_IM\_LMSG\_SPAM\_TYPE}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_LMSG\_SPAM\_TYPE}{EN\_MTC\_IM\_LMSG\_SPAM\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM large message spam type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_SPAM\_POLITICAL\_RUMOR@{EN\_MTC\_IM\_LMSG\_SPAM\_POLITICAL\_RUMOR}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_POLITICAL\_RUMOR@{EN\_MTC\_IM\_LMSG\_SPAM\_POLITICAL\_RUMOR}}}\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a9bc773073aefa51ccf3c3a218638ecce}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a9bc773073aefa51ccf3c3a218638ecce}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+P\+O\+L\+I\+T\+I\+C\+A\+L\+\_\+\+R\+U\+M\+OR&political rumor msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_SPAM\_JURISPRUDENCE@{EN\_MTC\_IM\_LMSG\_SPAM\_JURISPRUDENCE}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_JURISPRUDENCE@{EN\_MTC\_IM\_LMSG\_SPAM\_JURISPRUDENCE}}}\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50ae4a4185cb792a3b46c38fbead2974e0b}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50ae4a4185cb792a3b46c38fbead2974e0b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+J\+U\+R\+I\+S\+P\+R\+U\+D\+E\+N\+CE&jurisprudence msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_SPAM\_FRAUD@{EN\_MTC\_IM\_LMSG\_SPAM\_FRAUD}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_FRAUD@{EN\_MTC\_IM\_LMSG\_SPAM\_FRAUD}}}\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a1aa1a5f2b859de19e8c10474be0f0dda}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a1aa1a5f2b859de19e8c10474be0f0dda}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+F\+R\+A\+UD&fraud msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_SPAM\_MALICIOUS\_MARKETING@{EN\_MTC\_IM\_LMSG\_SPAM\_MALICIOUS\_MARKETING}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_MALICIOUS\_MARKETING@{EN\_MTC\_IM\_LMSG\_SPAM\_MALICIOUS\_MARKETING}}}\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a5ef1f80f41f6bdb69c5785138811b7b8}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a5ef1f80f41f6bdb69c5785138811b7b8}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+A\+L\+I\+C\+I\+O\+U\+S\+\_\+\+M\+A\+R\+K\+E\+T\+I\+NG&malicious marketing msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_SPAM\_VIOLENCE@{EN\_MTC\_IM\_LMSG\_SPAM\_VIOLENCE}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_VIOLENCE@{EN\_MTC\_IM\_LMSG\_SPAM\_VIOLENCE}}}\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a9ae9b5768dbd6bcc28b244a93554725c}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a9ae9b5768dbd6bcc28b244a93554725c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+V\+I\+O\+L\+E\+N\+CE&violence msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_LMSG\_SPAM\_OTHER@{EN\_MTC\_IM\_LMSG\_SPAM\_OTHER}!mtc\_im\_large.h@{mtc\_im\_large.h}}\index{mtc\_im\_large.h@{mtc\_im\_large.h}!EN\_MTC\_IM\_LMSG\_SPAM\_OTHER@{EN\_MTC\_IM\_LMSG\_SPAM\_OTHER}}}\mbox{\Hypertarget{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a0e2d0b5cb15467cccad48c5b646ee7bf}\label{mtc__im__large_8h_af23ed629bebc64d9d2bc0a842c77bf50a0e2d0b5cb15467cccad48c5b646ee7bf}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+O\+T\+H\+ER&other msg \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im__large_8h_a7f5b27779abbc5290768507e43066fdd}\label{mtc__im__large_8h_a7f5b27779abbc5290768507e43066fdd}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgConverCType@{Mtc\_ImLMsgConverCType}}
+\index{Mtc\_ImLMsgConverCType@{Mtc\_ImLMsgConverCType}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgConverCType()}{Mtc\_ImLMsgConverCType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Conver\+C\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Mtc large msg conver type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The old mtc msg type.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em new} & mmf msg type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a14bfa1709a5c3162f17d69e1e9b04d60}\label{mtc__im__large_8h_a14bfa1709a5c3162f17d69e1e9b04d60}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetAppPushType@{Mtc\_ImLMsgGetAppPushType}}
+\index{Mtc\_ImLMsgGetAppPushType@{Mtc\_ImLMsgGetAppPushType}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetAppPushType()}{Mtc\_ImLMsgGetAppPushType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+App\+Push\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get app push type from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em app} & push type if it is a oma push message, otherwise return Z\+M\+A\+X\+U\+I\+NT. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a1c98e4012a43bcedda898730c2d9281b}\label{mtc__im__large_8h_a1c98e4012a43bcedda898730c2d9281b}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetBurnTimeLen@{Mtc\_ImLMsgGetBurnTimeLen}}
+\index{Mtc\_ImLMsgGetBurnTimeLen@{Mtc\_ImLMsgGetBurnTimeLen}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetBurnTimeLen()}{Mtc\_ImLMsgGetBurnTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Burn\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get burn after reading time length from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+burn after reading time length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a86b9a4b28be9dccbf53b82860731095b}\label{mtc__im__large_8h_a86b9a4b28be9dccbf53b82860731095b}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetContent@{Mtc\_ImLMsgGetContent}}
+\index{Mtc\_ImLMsgGetContent@{Mtc\_ImLMsgGetContent}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetContent()}{Mtc\_ImLMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get content from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a416d772d81260594078fdc79dd6b32c2}\label{mtc__im__large_8h_a416d772d81260594078fdc79dd6b32c2}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetContentType@{Mtc\_ImLMsgGetContentType}}
+\index{Mtc\_ImLMsgGetContentType@{Mtc\_ImLMsgGetContentType}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetContentType()}{Mtc\_ImLMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get content type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Content type, see \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}.... 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_aecfbaf3a6d64f82af92582f2a3c2c763}\label{mtc__im__large_8h_aecfbaf3a6d64f82af92582f2a3c2c763}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetContId@{Mtc\_ImLMsgGetContId}}
+\index{Mtc\_ImLMsgGetContId@{Mtc\_ImLMsgGetContId}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetContId()}{Mtc\_ImLMsgGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a912da979db6d18be66fb005e0b2a50fb}\label{mtc__im__large_8h_a912da979db6d18be66fb005e0b2a50fb}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetConvId@{Mtc\_ImLMsgGetConvId}}
+\index{Mtc\_ImLMsgGetConvId@{Mtc\_ImLMsgGetConvId}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetConvId()}{Mtc\_ImLMsgGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get conversation-\/id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a978ebb0d780fa413cbadc3e82e1efb76}\label{mtc__im__large_8h_a978ebb0d780fa413cbadc3e82e1efb76}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetCookie@{Mtc\_ImLMsgGetCookie}}
+\index{Mtc\_ImLMsgGetCookie@{Mtc\_ImLMsgGetCookie}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetCookie()}{Mtc\_ImLMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Im\+L\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get user cookie from a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User cookie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a25884976c75f2072f58f5a2855143247}\label{mtc__im__large_8h_a25884976c75f2072f58f5a2855143247}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetDateTime@{Mtc\_ImLMsgGetDateTime}}
+\index{Mtc\_ImLMsgGetDateTime@{Mtc\_ImLMsgGetDateTime}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetDateTime()}{Mtc\_ImLMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+L\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+large message date time(milliseconds), otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_affa219bafd10755f3eaf3d9aaee3a7f7}\label{mtc__im__large_8h_affa219bafd10755f3eaf3d9aaee3a7f7}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetDeviceId@{Mtc\_ImLMsgGetDeviceId}}
+\index{Mtc\_ImLMsgGetDeviceId@{Mtc\_ImLMsgGetDeviceId}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetDeviceId()}{Mtc\_ImLMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get device id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_af361f9981e728f391a0254892806ea5f}\label{mtc__im__large_8h_af361f9981e728f391a0254892806ea5f}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetFontInfo@{Mtc\_ImLMsgGetFontInfo}}
+\index{Mtc\_ImLMsgGetFontInfo@{Mtc\_ImLMsgGetFontInfo}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetFontInfo()}{Mtc\_ImLMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the font information from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Font} & information of message, otherwise N\+U\+LL. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a86ee64264237ebcfc5067bdf747bb024}\label{mtc__im__large_8h_a86ee64264237ebcfc5067bdf747bb024}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetImdnId@{Mtc\_ImLMsgGetImdnId}}
+\index{Mtc\_ImLMsgGetImdnId@{Mtc\_ImLMsgGetImdnId}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetImdnId()}{Mtc\_ImLMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the Imdn id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Imdn id of large message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a6ad8d7541169f22c96d976997637b589}\label{mtc__im__large_8h_a6ad8d7541169f22c96d976997637b589}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetIrtContId@{Mtc\_ImLMsgGetIrtContId}}
+\index{Mtc\_ImLMsgGetIrtContId@{Mtc\_ImLMsgGetIrtContId}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetIrtContId()}{Mtc\_ImLMsgGetIrtContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Irt\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get inreplyto-\/contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inreplyto-\/contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_af57b1793bd8d64c8461806ed57d927e3}\label{mtc__im__large_8h_af57b1793bd8d64c8461806ed57d927e3}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetMContent@{Mtc\_ImLMsgGetMContent}}
+\index{Mtc\_ImLMsgGetMContent@{Mtc\_ImLMsgGetMContent}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetMContent()}{Mtc\_ImLMsgGetMContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+M\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get multi-\/media content from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pp\+Data} & The multi-\/media message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Data\+Size} & The multi-\/media message content length.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a1b17b8ba3b68e79d95762738ff1185af}\label{mtc__im__large_8h_a1b17b8ba3b68e79d95762738ff1185af}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetOrigIdPartp@{Mtc\_ImLMsgGetOrigIdPartp}}
+\index{Mtc\_ImLMsgGetOrigIdPartp@{Mtc\_ImLMsgGetOrigIdPartp}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetOrigIdPartp()}{Mtc\_ImLMsgGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get original identity of participant from large message. 
+
+The participant is the session initiator who initialized large message session. It will return local U\+RI if local client is the session initiator. It will return identity uri if session invitation has P-\/\+Asserted-\/\+Identity information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a76ad0e2ff49d42dbdc1f67323408857e}\label{mtc__im__large_8h_a76ad0e2ff49d42dbdc1f67323408857e}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetOrigPartp@{Mtc\_ImLMsgGetOrigPartp}}
+\index{Mtc\_ImLMsgGetOrigPartp@{Mtc\_ImLMsgGetOrigPartp}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetOrigPartp()}{Mtc\_ImLMsgGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get original participant from large message. 
+
+The participant is the session initiator who initialized this large message. It will return local U\+RI if local client is the large message initiator. It will return From uri from large message invitation information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_acadd6b012c0127a31887f4c8ba0e49f4}\label{mtc__im__large_8h_acadd6b012c0127a31887f4c8ba0e49f4}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetPartp@{Mtc\_ImLMsgGetPartp}}
+\index{Mtc\_ImLMsgGetPartp@{Mtc\_ImLMsgGetPartp}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetPartp()}{Mtc\_ImLMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant information from large message. Get receiver information from fetion carbon copy large message. 
+
+The participant is the remote client who sent large message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a37560edfb0113543603f6a4602ed5285}\label{mtc__im__large_8h_a37560edfb0113543603f6a4602ed5285}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetPartpLst@{Mtc\_ImLMsgGetPartpLst}}
+\index{Mtc\_ImLMsgGetPartpLst@{Mtc\_ImLMsgGetPartpLst}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetPartpLst()}{Mtc\_ImLMsgGetPartpLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant list id from large message. 
+
+The participant list id is all remote clients who sent large message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Participant list id. The caller is responsible for freeing it by \mbox{\hyperlink{mtc__partp_8h_a47276b69ad0ae6bba452f1e933e4c1ec}{Mtc\+\_\+\+Partp\+Lst\+Delete}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a1dfd4eaf492acd77ddcca4f8acd432d7}\label{mtc__im__large_8h_a1dfd4eaf492acd77ddcca4f8acd432d7}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetPartpType@{Mtc\_ImLMsgGetPartpType}}
+\index{Mtc\_ImLMsgGetPartpType@{Mtc\_ImLMsgGetPartpType}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetPartpType()}{Mtc\_ImLMsgGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of large message participant, see \mbox{\hyperlink{mtc__partp_8h_abe66ab722861a8aced34488e887e7663}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}.
+\end{DoxyReturn}
+If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by \mbox{\hyperlink{mtc__im__large_8h_acadd6b012c0127a31887f4c8ba0e49f4}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp}}. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by \mbox{\hyperlink{mtc__im__large_8h_acadd6b012c0127a31887f4c8ba0e49f4}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp}}. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by \mbox{\hyperlink{mtc__im__large_8h_a37560edfb0113543603f6a4602ed5285}{Mtc\+\_\+\+Im\+L\+Msg\+Get\+Partp\+Lst}}. \mbox{\Hypertarget{mtc__im__large_8h_af2cd4fb3720071e99cab520dc74c69a4}\label{mtc__im__large_8h_af2cd4fb3720071e99cab520dc74c69a4}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetRevokeFromAddr@{Mtc\_ImLMsgGetRevokeFromAddr}}
+\index{Mtc\_ImLMsgGetRevokeFromAddr@{Mtc\_ImLMsgGetRevokeFromAddr}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetRevokeFromAddr()}{Mtc\_ImLMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke from addr from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_aba0b3c5932057e347513aeae5f5f6660}\label{mtc__im__large_8h_aba0b3c5932057e347513aeae5f5f6660}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetRevokeMsgId@{Mtc\_ImLMsgGetRevokeMsgId}}
+\index{Mtc\_ImLMsgGetRevokeMsgId@{Mtc\_ImLMsgGetRevokeMsgId}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetRevokeMsgId()}{Mtc\_ImLMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke message-\/id from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_ab979fb1dc4dce26209731f19d29f7547}\label{mtc__im__large_8h_ab979fb1dc4dce26209731f19d29f7547}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetRevokeResult@{Mtc\_ImLMsgGetRevokeResult}}
+\index{Mtc\_ImLMsgGetRevokeResult@{Mtc\_ImLMsgGetRevokeResult}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetRevokeResult()}{Mtc\_ImLMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke result from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a2aded3aaca87c691698810a73bd6844f}\label{mtc__im__large_8h_a2aded3aaca87c691698810a73bd6844f}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetRevokeToAddr@{Mtc\_ImLMsgGetRevokeToAddr}}
+\index{Mtc\_ImLMsgGetRevokeToAddr@{Mtc\_ImLMsgGetRevokeToAddr}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetRevokeToAddr()}{Mtc\_ImLMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+L\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke to addr from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a95f515138a98572c1d89596439024205}\label{mtc__im__large_8h_a95f515138a98572c1d89596439024205}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetSipCode@{Mtc\_ImLMsgGetSipCode}}
+\index{Mtc\_ImLMsgGetSipCode@{Mtc\_ImLMsgGetSipCode}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetSipCode()}{Mtc\_ImLMsgGetSipCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Sip\+Code (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get sip code from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get sip code successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get sip code failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a8962fe77fb660a80133981ba7390013c}\label{mtc__im__large_8h_a8962fe77fb660a80133981ba7390013c}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgGetSysDateTime@{Mtc\_ImLMsgGetSysDateTime}}
+\index{Mtc\_ImLMsgGetSysDateTime@{Mtc\_ImLMsgGetSysDateTime}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgGetSysDateTime()}{Mtc\_ImLMsgGetSysDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Get\+Sys\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{\mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_acdd61756ec4079cc116a903a592d7779}\label{mtc__im__large_8h_acdd61756ec4079cc116a903a592d7779}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasBurnInd@{Mtc\_ImLMsgHasBurnInd}}
+\index{Mtc\_ImLMsgHasBurnInd@{Mtc\_ImLMsgHasBurnInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasBurnInd()}{Mtc\_ImLMsgHasBurnInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Burn\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get burn after reading messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has burn after reading messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a3364cb43b534ca4c91f5fca6badffb6d}\label{mtc__im__large_8h_a3364cb43b534ca4c91f5fca6badffb6d}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasCcInd@{Mtc\_ImLMsgHasCcInd}}
+\index{Mtc\_ImLMsgHasCcInd@{Mtc\_ImLMsgHasCcInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasCcInd()}{Mtc\_ImLMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get carbon copy messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has carbon copy messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a1fb1c3f8e1c52145898ca04d813235e5}\label{mtc__im__large_8h_a1fb1c3f8e1c52145898ca04d813235e5}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasDirectInd@{Mtc\_ImLMsgHasDirectInd}}
+\index{Mtc\_ImLMsgHasDirectInd@{Mtc\_ImLMsgHasDirectInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasDirectInd()}{Mtc\_ImLMsgHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get directional messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has directional messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_ada19da9fc8b4a8ef585164841c6b3b3c}\label{mtc__im__large_8h_ada19da9fc8b4a8ef585164841c6b3b3c}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasOffInd@{Mtc\_ImLMsgHasOffInd}}
+\index{Mtc\_ImLMsgHasOffInd@{Mtc\_ImLMsgHasOffInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasOffInd()}{Mtc\_ImLMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get offline messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has offline messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a2c5c22a5e08aa3b0e90cb74d91296070}\label{mtc__im__large_8h_a2c5c22a5e08aa3b0e90cb74d91296070}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasPubInd@{Mtc\_ImLMsgHasPubInd}}
+\index{Mtc\_ImLMsgHasPubInd@{Mtc\_ImLMsgHasPubInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasPubInd()}{Mtc\_ImLMsgHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get public messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_ad2fda27290bdc8f3edfd874fc015a737}\label{mtc__im__large_8h_ad2fda27290bdc8f3edfd874fc015a737}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasRevokeMsgInd@{Mtc\_ImLMsgHasRevokeMsgInd}}
+\index{Mtc\_ImLMsgHasRevokeMsgInd@{Mtc\_ImLMsgHasRevokeMsgInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasRevokeMsgInd()}{Mtc\_ImLMsgHasRevokeMsgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Revoke\+Msg\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has revoke message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_a6badf67dbf1b83b703c7aeff6ebe7824}\label{mtc__im__large_8h_a6badf67dbf1b83b703c7aeff6ebe7824}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasSilenceInd@{Mtc\_ImLMsgHasSilenceInd}}
+\index{Mtc\_ImLMsgHasSilenceInd@{Mtc\_ImLMsgHasSilenceInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasSilenceInd()}{Mtc\_ImLMsgHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get silence messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has silence messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_aa755661c046a12ea82d4f250ab993af6}\label{mtc__im__large_8h_aa755661c046a12ea82d4f250ab993af6}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgHasSpamInd@{Mtc\_ImLMsgHasSpamInd}}
+\index{Mtc\_ImLMsgHasSpamInd@{Mtc\_ImLMsgHasSpamInd}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgHasSpamInd()}{Mtc\_ImLMsgHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+L\+Msg\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get spam messgae indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has spam messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__large_8h_ac90360e6cf20ec79918115c01663cd51}\label{mtc__im__large_8h_ac90360e6cf20ec79918115c01663cd51}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgReply@{Mtc\_ImLMsgReply}}
+\index{Mtc\_ImLMsgReply@{Mtc\_ImLMsgReply}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgReply()}{Mtc\_ImLMsgReply()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Reply (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Reply to specific standalone large message. 
+
+If IM send successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adae83e4de9cc6f5788d45b0212710d4f}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a91ae06aedf45d1c59c20c14d22cead1d}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Failed}}.
+
+While receiving I\+M(large message), G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adbbc9550e1cf625b3a6098a186d32099}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id which reply to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The large message session id when send large message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_af1da28b12238019a7ad8fbab5ce2ab4f}\label{mtc__im__large_8h_af1da28b12238019a7ad8fbab5ce2ab4f}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgSend@{Mtc\_ImLMsgSend}}
+\index{Mtc\_ImLMsgSend@{Mtc\_ImLMsgSend}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgSend()}{Mtc\_ImLMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending Large Instant Message to One Participant. 
+
+If IM send successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adae83e4de9cc6f5788d45b0212710d4f}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a91ae06aedf45d1c59c20c14d22cead1d}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Failed}}.
+
+While receiving I\+M(large message), G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adbbc9550e1cf625b3a6098a186d32099}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message.\\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The large message session id when send large message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a71f691ea77bc605dbfef2c293c8ce249}\label{mtc__im__large_8h_a71f691ea77bc605dbfef2c293c8ce249}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgSendM@{Mtc\_ImLMsgSendM}}
+\index{Mtc\_ImLMsgSendM@{Mtc\_ImLMsgSendM}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgSendM()}{Mtc\_ImLMsgSendM()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+SendM (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending multi-\/media Message to One Participant. 
+
+If IM send successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adae83e4de9cc6f5788d45b0212710d4f}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a91ae06aedf45d1c59c20c14d22cead1d}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Failed}}.
+
+While receiving I\+M(large message), G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adbbc9550e1cf625b3a6098a186d32099}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The multi-\/media message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The multi-\/media message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The large message session id when send large message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_ac0019b9220a56aa9ed6fb4b928385030}\label{mtc__im__large_8h_ac0019b9220a56aa9ed6fb4b928385030}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgSendS@{Mtc\_ImLMsgSendS}}
+\index{Mtc\_ImLMsgSendS@{Mtc\_ImLMsgSendS}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgSendS()}{Mtc\_ImLMsgSendS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+SendS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending Large Instant Message to one participant with spam information. 
+
+If IM send successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_adae83e4de9cc6f5788d45b0212710d4f}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a91ae06aedf45d1c59c20c14d22cead1d}{Mtc\+\_\+\+Im\+Cb\+Set\+L\+Msg\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The large message session id when send large message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_a552c79cdc93003984fcf110895c9af77}\label{mtc__im__large_8h_a552c79cdc93003984fcf110895c9af77}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgSendU@{Mtc\_ImLMsgSendU}}
+\index{Mtc\_ImLMsgSendU@{Mtc\_ImLMsgSendU}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgSendU()}{Mtc\_ImLMsgSendU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+SendU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending Large Instant Message to U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__large_8h_aff51edd7e713a1bd7811c25b18be734d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The large message session id when send large message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__large_8h_aa3a23ed25b151dc58ee5ca7e9888f3e4}\label{mtc__im__large_8h_aa3a23ed25b151dc58ee5ca7e9888f3e4}} 
+\index{mtc\_im\_large.h@{mtc\_im\_large.h}!Mtc\_ImLMsgSetCookie@{Mtc\_ImLMsgSetCookie}}
+\index{Mtc\_ImLMsgSetCookie@{Mtc\_ImLMsgSetCookie}!mtc\_im\_large.h@{mtc\_im\_large.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImLMsgSetCookie()}{Mtc\_ImLMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+L\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC Set user cookie in a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}

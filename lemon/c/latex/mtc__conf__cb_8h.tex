@@ -1,0 +1,771 @@
+\hypertarget{mtc__conf__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+conf\+\_\+cb.h File Reference}
+\label{mtc__conf__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf\_cb.h}}
+
+
+M\+TC Conference Callback Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__conf__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}\label{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}) (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}\label{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for failed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}\label{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}\label{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+B\+O\+OL b\+Full\+Ntfy)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for notify participant updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}\label{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for notify video stream participant list updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}\label{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for notify video stream participant info updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}\label{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+S\+P\+K\+S\+T\+A\+T\+E\+U\+P\+DT}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for notify audio stream participant speak state updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a0c37d51eb4715b2a8a1f4494eab38941}\label{mtc__conf__cb_8h_a0c37d51eb4715b2a8a1f4494eab38941}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a0c37d51eb4715b2a8a1f4494eab38941}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+O\+P\+T\+P\+T\+S\+PK}}) (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for notify audio stream no participant speak. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}\label{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Send, Z\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for network status changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}\label{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}}) (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for notify error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}\label{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}}) (Z\+U\+I\+NT i\+Result\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for result code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}\label{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+Q\+U\+E\+R\+Y\+R\+E\+S\+U\+LT}}) (Z\+U\+I\+NT i\+Result\+Code, Z\+C\+H\+AR $\ast$pc\+Result, Z\+U\+I\+NT i\+Total\+Left\+Balance)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for query account result code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}\label{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}}) (Z\+U\+I\+NT i\+Rsp\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC conference callback for account failed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of client receive an incoming conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_aa8a58f4759e9241ee66d54f93170dd48}{Mtc\+\_\+\+Conf\+Cb\+Set\+Outgoing}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of client setup an outgoing conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a5e94996322fd7dc9b65e61061b7fb608}{Mtc\+\_\+\+Conf\+Cb\+Set\+Alerted}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of receive response during conference establish. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a70efad6407ea2f31794cd4a6fdd7571e}{Mtc\+\_\+\+Conf\+Cb\+Set\+Conned}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of conference has established. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a11babece7024c4eafa9bd160ad48f117}{Mtc\+\_\+\+Conf\+Cb\+Set\+Disced}} (\mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of disconnected from conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_ad100bf736196bdec302e162030c928f3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Ivt\+Acpt}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of the invited user has accepted invite. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a7b6f12c9cba3804f98c199d8774c2f20}{Mtc\+\_\+\+Conf\+Cb\+Set\+Ivt\+Fail}} (\mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of the invited user is failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_acf03b5aeedad1ef5d4384dbbc8389f38}{Mtc\+\_\+\+Conf\+Cb\+Set\+Kick\+Acpt}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of kick user is accepted. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a8226b30322b6fd524e16e54da9bd8810}{Mtc\+\_\+\+Conf\+Cb\+Set\+Kick\+Fail}} (\mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of kick user is failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a4999b32bfdaac95427e895d7fcc55e9e}{Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Updt}} (\mbox{\hyperlink{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s status updated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a63fd1934d852614ff92c0ced023648eb}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Ptpt\+Lst\+Updt}} (\mbox{\hyperlink{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant list updated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Ptpt\+Updt}} (\mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s video stream info updated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a209fc183c04b4af338ee62ae65a14427}{Mtc\+\_\+\+Conf\+Cb\+Set\+Mdfy\+Acpt}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference modifying accepted. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a15a6f0e915c02f6322915275f959c9ca}{Mtc\+\_\+\+Conf\+Cb\+Set\+Mdfyed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference modified. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_af06289f758d38fbe490366f081d982c2}{Mtc\+\_\+\+Conf\+Cb\+Set\+Hold\+Ok}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference hold OK. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_adacf7143435d408922750b464f48ce96}{Mtc\+\_\+\+Conf\+Cb\+Set\+Hold\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference hold failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a65c9bca8d50d0327f83d6fb25145ff44}{Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Hold\+Ok}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference un-\/hold OK. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a0c7d30266b1ea14d1793b87ad0975c2d}{Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Hold\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference un-\/hold failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a5d665abde269a95b19c6f7c6c949d5cc}{Mtc\+\_\+\+Conf\+Cb\+Set\+Held}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference was held by peer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a437ec628a149efaad9e72cb9a85e13e7}{Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Held}} (\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference was un-\/held by peer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_aea5777d280d4ef44cb929e701eaaf7af}{Mtc\+\_\+\+Conf\+Cb\+Set\+Net\+Sta\+Changed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s network status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a25488845838fee70f10f3c0950c41f25}{Mtc\+\_\+\+Conf\+Cb\+Set\+Error}} (\mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of error occurred during conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_ac6fdbbc365456dd59e694abdf09f3106}{Mtc\+\_\+\+Conf\+Cb\+Set\+Conf\+State\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of get conference state failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a1333a5fcc94c8b370cc345723b16344c}{Mtc\+\_\+\+Conf\+Cb\+Set\+Select\+Usr\+Ok}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of select user is accepted. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a9b42c6b6b87bbf828810dd79cd56b502}{Mtc\+\_\+\+Conf\+Cb\+Set\+Select\+Usr\+Fail}} (\mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of select user is failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a1b1d5a1b1f755facf5c2320fd1c3ad90}{Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Spk\+State\+Updt}} (\mbox{\hyperlink{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+S\+P\+K\+S\+T\+A\+T\+E\+U\+P\+DT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of participant is in speaking state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a17ca525d303fa722dbfb5d526ee216fc}{Mtc\+\_\+\+Conf\+Cb\+Set\+No\+Ptpt\+Spk}} (\mbox{\hyperlink{mtc__conf__cb_8h_a0c37d51eb4715b2a8a1f4494eab38941}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+O\+P\+T\+P\+T\+S\+PK}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of no participant is in speaking state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_af3d85b2b0e9372db5ba5fd407fdf22bf}{Mtc\+\_\+\+Conf\+Cb\+Set\+Create\+Account}} (\mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of create account result code(2xx response with result code in body). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a58979b4c1f6238f196b72bc2f2dc9abf}{Mtc\+\_\+\+Conf\+Cb\+Set\+Create\+Account\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of create account failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a8df25ec74a98941a8d1c2d44020010fb}{Mtc\+\_\+\+Conf\+Cb\+Set\+Del\+Account}} (\mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of delete account result code(2xx response with result code in body). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_abf87b6e3265a75bc73f338832d08002d}{Mtc\+\_\+\+Conf\+Cb\+Set\+Del\+Account\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of delete account failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_ae94c47d1536dbd1e42d8ebb9b1e0a153}{Mtc\+\_\+\+Conf\+Cb\+Set\+Charge}} (\mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of charge account result code(2xx response with result code in body). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a5436f1017796a2fb750112b39ad2d7ae}{Mtc\+\_\+\+Conf\+Cb\+Set\+Charge\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of charge account failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a17721e17efa2bb79fcabaa06d011f5f6}{Mtc\+\_\+\+Conf\+Cb\+Set\+Query}} (\mbox{\hyperlink{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+Q\+U\+E\+R\+Y\+R\+E\+S\+U\+LT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of query account result code(2xx response with result code in body). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_add2778328c728e5e5924a761590ab9ce}{Mtc\+\_\+\+Conf\+Cb\+Set\+Query\+Failed}} (\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of query account failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a5901ac25bef38667b2ef2daf373e020a}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Spk\+State\+Updt}} (\mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s video stream speak-\/state info updated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__conf__cb_8h_a48ffa0ab63092f5106f1907d62191572}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Rmv\+Win\+Updt}} (\mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s video stream remove-\/window info updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Conference Callback Interfaces. 
+
+This file includes conference callback interface function. Those function is used to manage sessions and conferences. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a5e94996322fd7dc9b65e61061b7fb608}\label{mtc__conf__cb_8h_a5e94996322fd7dc9b65e61061b7fb608}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetAlerted@{Mtc\_ConfCbSetAlerted}}
+\index{Mtc\_ConfCbSetAlerted@{Mtc\_ConfCbSetAlerted}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetAlerted()}{Mtc\_ConfCbSetAlerted()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Alerted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of receive response during conference establish. 
+
+This client try to establish a conference. And when receive 1xx response this callback will be invoked. G\+UI should update status of conference window. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_ae94c47d1536dbd1e42d8ebb9b1e0a153}\label{mtc__conf__cb_8h_ae94c47d1536dbd1e42d8ebb9b1e0a153}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetCharge@{Mtc\_ConfCbSetCharge}}
+\index{Mtc\_ConfCbSetCharge@{Mtc\_ConfCbSetCharge}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetCharge()}{Mtc\_ConfCbSetCharge()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Charge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of charge account result code(2xx response with result code in body). 
+
+This client want to know result code of charging account performed by \mbox{\hyperlink{mtc__conf_8h_ad0414a255866e85cdad5b42bc8421c81}{Mtc\+\_\+\+Conf\+Charge\+Account}}.
+
+\char`\"{}i\+Result\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}} is result code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a5436f1017796a2fb750112b39ad2d7ae}\label{mtc__conf__cb_8h_a5436f1017796a2fb750112b39ad2d7ae}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetChargeFailed@{Mtc\_ConfCbSetChargeFailed}}
+\index{Mtc\_ConfCbSetChargeFailed@{Mtc\_ConfCbSetChargeFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetChargeFailed()}{Mtc\_ConfCbSetChargeFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Charge\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of charge account failed. 
+
+This client want to know result code of charging account performed by \mbox{\hyperlink{mtc__conf_8h_ad0414a255866e85cdad5b42bc8421c81}{Mtc\+\_\+\+Conf\+Charge\+Account}}.
+
+\char`\"{}i\+Rsp\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} is responce status code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_ac6fdbbc365456dd59e694abdf09f3106}\label{mtc__conf__cb_8h_ac6fdbbc365456dd59e694abdf09f3106}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetConfStateFailed@{Mtc\_ConfCbSetConfStateFailed}}
+\index{Mtc\_ConfCbSetConfStateFailed@{Mtc\_ConfCbSetConfStateFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetConfStateFailed()}{Mtc\_ConfCbSetConfStateFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Conf\+State\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of get conference state failed. 
+
+This callback indicates error occurred during get conferen state. G\+UI should show the detail error information(english) to user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a70efad6407ea2f31794cd4a6fdd7571e}\label{mtc__conf__cb_8h_a70efad6407ea2f31794cd4a6fdd7571e}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetConned@{Mtc\_ConfCbSetConned}}
+\index{Mtc\_ConfCbSetConned@{Mtc\_ConfCbSetConned}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetConned()}{Mtc\_ConfCbSetConned()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Conned (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of conference has established. 
+
+This callback indicates conference has established. G\+UI should update status of conference window. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_af3d85b2b0e9372db5ba5fd407fdf22bf}\label{mtc__conf__cb_8h_af3d85b2b0e9372db5ba5fd407fdf22bf}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetCreateAccount@{Mtc\_ConfCbSetCreateAccount}}
+\index{Mtc\_ConfCbSetCreateAccount@{Mtc\_ConfCbSetCreateAccount}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetCreateAccount()}{Mtc\_ConfCbSetCreateAccount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Create\+Account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of create account result code(2xx response with result code in body). 
+
+This client want to know result code of creating account performed by \mbox{\hyperlink{mtc__conf_8h_a7d9e129ab2cc219d3ace61e3d1145bc8}{Mtc\+\_\+\+Conf\+Create\+Account}}.
+
+\char`\"{}i\+Result\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}} is result code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a58979b4c1f6238f196b72bc2f2dc9abf}\label{mtc__conf__cb_8h_a58979b4c1f6238f196b72bc2f2dc9abf}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetCreateAccountFailed@{Mtc\_ConfCbSetCreateAccountFailed}}
+\index{Mtc\_ConfCbSetCreateAccountFailed@{Mtc\_ConfCbSetCreateAccountFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetCreateAccountFailed()}{Mtc\_ConfCbSetCreateAccountFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Create\+Account\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of create account failed. 
+
+This client want to know response code of creating account performed by \mbox{\hyperlink{mtc__conf_8h_a7d9e129ab2cc219d3ace61e3d1145bc8}{Mtc\+\_\+\+Conf\+Create\+Account}}.
+
+\char`\"{}i\+Rsp\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} is responce status code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a8df25ec74a98941a8d1c2d44020010fb}\label{mtc__conf__cb_8h_a8df25ec74a98941a8d1c2d44020010fb}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetDelAccount@{Mtc\_ConfCbSetDelAccount}}
+\index{Mtc\_ConfCbSetDelAccount@{Mtc\_ConfCbSetDelAccount}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetDelAccount()}{Mtc\_ConfCbSetDelAccount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Del\+Account (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of delete account result code(2xx response with result code in body). 
+
+This client want to know result code of deleting account performed by \mbox{\hyperlink{mtc__conf_8h_a93d5532dce9b9beed06709210dee35fa}{Mtc\+\_\+\+Conf\+Del\+Account}}.
+
+\char`\"{}i\+Result\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a9915a63c7b38ff810ff68fc5243260fc}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+R\+E\+S\+U\+LT}} is result code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_abf87b6e3265a75bc73f338832d08002d}\label{mtc__conf__cb_8h_abf87b6e3265a75bc73f338832d08002d}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetDelAccountFailed@{Mtc\_ConfCbSetDelAccountFailed}}
+\index{Mtc\_ConfCbSetDelAccountFailed@{Mtc\_ConfCbSetDelAccountFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetDelAccountFailed()}{Mtc\_ConfCbSetDelAccountFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Del\+Account\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of delete account failed. 
+
+This client want to know response code of deleting account performed by \mbox{\hyperlink{mtc__conf_8h_a93d5532dce9b9beed06709210dee35fa}{Mtc\+\_\+\+Conf\+Del\+Account}}.
+
+\char`\"{}i\+Rsp\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} is responce status code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a11babece7024c4eafa9bd160ad48f117}\label{mtc__conf__cb_8h_a11babece7024c4eafa9bd160ad48f117}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetDisced@{Mtc\_ConfCbSetDisced}}
+\index{Mtc\_ConfCbSetDisced@{Mtc\_ConfCbSetDisced}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetDisced()}{Mtc\_ConfCbSetDisced()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Disced (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of disconnected from conference. 
+
+This callback indicates client has disconnected from conference. G\+UI should close conference window. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}} is the status error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a25488845838fee70f10f3c0950c41f25}\label{mtc__conf__cb_8h_a25488845838fee70f10f3c0950c41f25}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetError@{Mtc\_ConfCbSetError}}
+\index{Mtc\_ConfCbSetError@{Mtc\_ConfCbSetError}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetError()}{Mtc\_ConfCbSetError()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_acc2df7dc4fac869b75ddf17120817f18}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+E\+RR}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of error occurred during conference. 
+
+This callback indicates error occurred during call. G\+UI should show the detail error information(english) to user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a5d665abde269a95b19c6f7c6c949d5cc}\label{mtc__conf__cb_8h_a5d665abde269a95b19c6f7c6c949d5cc}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetHeld@{Mtc\_ConfCbSetHeld}}
+\index{Mtc\_ConfCbSetHeld@{Mtc\_ConfCbSetHeld}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetHeld()}{Mtc\_ConfCbSetHeld()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Held (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference was held by peer. 
+
+This callback indicates peer hold the conference. G\+UI should update conference status according to conference ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_adacf7143435d408922750b464f48ce96}\label{mtc__conf__cb_8h_adacf7143435d408922750b464f48ce96}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetHoldFailed@{Mtc\_ConfCbSetHoldFailed}}
+\index{Mtc\_ConfCbSetHoldFailed@{Mtc\_ConfCbSetHoldFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetHoldFailed()}{Mtc\_ConfCbSetHoldFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Hold\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference hold failed. 
+
+This callback indicates hold operation has been failed. G\+UI should update conference status according to conference ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_af06289f758d38fbe490366f081d982c2}\label{mtc__conf__cb_8h_af06289f758d38fbe490366f081d982c2}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetHoldOk@{Mtc\_ConfCbSetHoldOk}}
+\index{Mtc\_ConfCbSetHoldOk@{Mtc\_ConfCbSetHoldOk}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetHoldOk()}{Mtc\_ConfCbSetHoldOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Hold\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference hold OK. 
+
+This callback indicates hold operation has been completed successfully. G\+UI should update conference status according to conference ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}\label{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetIncoming@{Mtc\_ConfCbSetIncoming}}
+\index{Mtc\_ConfCbSetIncoming@{Mtc\_ConfCbSetIncoming}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetIncoming()}{Mtc\_ConfCbSetIncoming()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of client receive an incoming conference. 
+
+This callback indicates client receive an incoming conference. G\+UI should show the conference window. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should assign it to the corresponding window, use Mtc\+\_\+\+Conf\+Get\+Peer\+Uri to get detail information of conference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_ad100bf736196bdec302e162030c928f3}\label{mtc__conf__cb_8h_ad100bf736196bdec302e162030c928f3}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetIvtAcpt@{Mtc\_ConfCbSetIvtAcpt}}
+\index{Mtc\_ConfCbSetIvtAcpt@{Mtc\_ConfCbSetIvtAcpt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetIvtAcpt()}{Mtc\_ConfCbSetIvtAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Ivt\+Acpt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of the invited user has accepted invite. 
+
+This client add another user to the conference. This callback was invoked when that user accept the invite. Usually, callback which was set by Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Updt will be invoked sequentially. G\+UI should then update the participants of the conference. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the U\+RI of the participant invited which server has been accepted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a7b6f12c9cba3804f98c199d8774c2f20}\label{mtc__conf__cb_8h_a7b6f12c9cba3804f98c199d8774c2f20}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetIvtFail@{Mtc\_ConfCbSetIvtFail}}
+\index{Mtc\_ConfCbSetIvtFail@{Mtc\_ConfCbSetIvtFail}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetIvtFail()}{Mtc\_ConfCbSetIvtFail()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Ivt\+Fail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of the invited user is failed. 
+
+This client add another user to the conference. This callback was invoked when that invite user failed. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the U\+RI of the participant invited failed. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the status error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_acf03b5aeedad1ef5d4384dbbc8389f38}\label{mtc__conf__cb_8h_acf03b5aeedad1ef5d4384dbbc8389f38}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetKickAcpt@{Mtc\_ConfCbSetKickAcpt}}
+\index{Mtc\_ConfCbSetKickAcpt@{Mtc\_ConfCbSetKickAcpt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetKickAcpt()}{Mtc\_ConfCbSetKickAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Kick\+Acpt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of kick user is accepted. 
+
+This client want to remove a user from the conference. This callback was invoked when that user has been removed. Usually, callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a4999b32bfdaac95427e895d7fcc55e9e}{Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Updt}} will be invoked sequentially. G\+UI should then update the participants of the conference. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the U\+RI of the participant kicked which server has been accepted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a8226b30322b6fd524e16e54da9bd8810}\label{mtc__conf__cb_8h_a8226b30322b6fd524e16e54da9bd8810}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetKickFail@{Mtc\_ConfCbSetKickFail}}
+\index{Mtc\_ConfCbSetKickFail@{Mtc\_ConfCbSetKickFail}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetKickFail()}{Mtc\_ConfCbSetKickFail()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Kick\+Fail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of kick user is failed. 
+
+This client want to remove a user from the conference. This callback was invoked when that kick user failed. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the U\+RI of the participant kicked failed. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the status error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a209fc183c04b4af338ee62ae65a14427}\label{mtc__conf__cb_8h_a209fc183c04b4af338ee62ae65a14427}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetMdfyAcpt@{Mtc\_ConfCbSetMdfyAcpt}}
+\index{Mtc\_ConfCbSetMdfyAcpt@{Mtc\_ConfCbSetMdfyAcpt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetMdfyAcpt()}{Mtc\_ConfCbSetMdfyAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Mdfy\+Acpt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference modifying accepted. 
+
+To change the attribute of media stream is called conference modify, includes hold/unhold and add/remove media stream. This callback indicates the modification is accept by peer. G\+UI should check which service has been invoke by user. If user hold or unhold the call, show hold or unhold successfully. If user add video upon a voice call, then switch to video call window. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a15a6f0e915c02f6322915275f959c9ca}\label{mtc__conf__cb_8h_a15a6f0e915c02f6322915275f959c9ca}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetMdfyed@{Mtc\_ConfCbSetMdfyed}}
+\index{Mtc\_ConfCbSetMdfyed@{Mtc\_ConfCbSetMdfyed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetMdfyed()}{Mtc\_ConfCbSetMdfyed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Mdfyed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference modified. 
+
+This callback indicates modification was invoke by peer, and this modification is completed. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_aea5777d280d4ef44cb929e701eaaf7af}\label{mtc__conf__cb_8h_aea5777d280d4ef44cb929e701eaaf7af}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetNetStaChanged@{Mtc\_ConfCbSetNetStaChanged}}
+\index{Mtc\_ConfCbSetNetStaChanged@{Mtc\_ConfCbSetNetStaChanged}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetNetStaChanged()}{Mtc\_ConfCbSetNetStaChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Net\+Sta\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s network status. 
+
+This callback indicates the call\textquotesingle{}s network status. G\+UI should update session status according to session ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}b\+Send\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} indicate if the network status of sending direction is changed. \char`\"{}i\+Type\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a998d7ac51a6fe82f2deac92619e8e7f4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} indicate the network status type \mbox{\hyperlink{mtc__conf_8h_a7f43a6584caa12a2ffd7c945d292aa9d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Confback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a17ca525d303fa722dbfb5d526ee216fc}\label{mtc__conf__cb_8h_a17ca525d303fa722dbfb5d526ee216fc}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetNoPtptSpk@{Mtc\_ConfCbSetNoPtptSpk}}
+\index{Mtc\_ConfCbSetNoPtptSpk@{Mtc\_ConfCbSetNoPtptSpk}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetNoPtptSpk()}{Mtc\_ConfCbSetNoPtptSpk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+No\+Ptpt\+Spk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a0c37d51eb4715b2a8a1f4494eab38941}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+O\+P\+T\+P\+T\+S\+PK}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of no participant is in speaking state. 
+
+This client want to know which participant is in speaking state of the conference. This callback was invoked when no participant is in speaking state.
+
+\char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a0c37d51eb4715b2a8a1f4494eab38941}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+O\+P\+T\+P\+T\+S\+PK}} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_aa8a58f4759e9241ee66d54f93170dd48}\label{mtc__conf__cb_8h_aa8a58f4759e9241ee66d54f93170dd48}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetOutgoing@{Mtc\_ConfCbSetOutgoing}}
+\index{Mtc\_ConfCbSetOutgoing@{Mtc\_ConfCbSetOutgoing}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetOutgoing()}{Mtc\_ConfCbSetOutgoing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Outgoing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of client setup an outgoing conference. 
+
+This callback indicates client has setup an outgoing conference. G\+UI should not close the conference window, just update the client status in conference. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a1b1d5a1b1f755facf5c2320fd1c3ad90}\label{mtc__conf__cb_8h_a1b1d5a1b1f755facf5c2320fd1c3ad90}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetPtptSpkStateUpdt@{Mtc\_ConfCbSetPtptSpkStateUpdt}}
+\index{Mtc\_ConfCbSetPtptSpkStateUpdt@{Mtc\_ConfCbSetPtptSpkStateUpdt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetPtptSpkStateUpdt()}{Mtc\_ConfCbSetPtptSpkStateUpdt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Spk\+State\+Updt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+S\+P\+K\+S\+T\+A\+T\+E\+U\+P\+DT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of participant is in speaking state. 
+
+This client want to know which participant is in speaking state of the conference. This callback was invoked when one participant is in speaking state.
+
+\char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+S\+P\+K\+S\+T\+A\+T\+E\+U\+P\+DT}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a95c7eedbbe8f73d5c60593476898ae0b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+S\+P\+K\+S\+T\+A\+T\+E\+U\+P\+DT}} is the number(not uri) of the participant who is in speaking state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a4999b32bfdaac95427e895d7fcc55e9e}\label{mtc__conf__cb_8h_a4999b32bfdaac95427e895d7fcc55e9e}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetPtptUpdt@{Mtc\_ConfCbSetPtptUpdt}}
+\index{Mtc\_ConfCbSetPtptUpdt@{Mtc\_ConfCbSetPtptUpdt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetPtptUpdt()}{Mtc\_ConfCbSetPtptUpdt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Updt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s status updated. 
+
+G\+UI should update conference participant\textquotesingle{}s status. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT}} is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Partp\+Lst\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT}} is the participant list id of conference. \char`\"{}b\+Full\+Ntfy\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af251b16ac20f893d7b3d52618d3f698d}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT}} is the conference state full flag, T\+R\+UE for \char`\"{}full\char`\"{}, F\+A\+L\+SE for \char`\"{}partial\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a17721e17efa2bb79fcabaa06d011f5f6}\label{mtc__conf__cb_8h_a17721e17efa2bb79fcabaa06d011f5f6}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetQuery@{Mtc\_ConfCbSetQuery}}
+\index{Mtc\_ConfCbSetQuery@{Mtc\_ConfCbSetQuery}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetQuery()}{Mtc\_ConfCbSetQuery()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+Q\+U\+E\+R\+Y\+R\+E\+S\+U\+LT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of query account result code(2xx response with result code in body). 
+
+This client want to know result code of query account performed by \mbox{\hyperlink{mtc__conf_8h_a05497e00850e4eece27a3a26d57e0294}{Mtc\+\_\+\+Conf\+Query\+Account}}.
+
+\char`\"{}i\+Result\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+Q\+U\+E\+R\+Y\+R\+E\+S\+U\+LT}} is result code. G\+UI use it to check the result. \char`\"{}pc\+Result\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+Q\+U\+E\+R\+Y\+R\+E\+S\+U\+LT}} is the left balance list with different package. G\+UI use it to check the various left balance type. E.\+g. Leftbalance1$^\wedge$expirydate1$^\wedge$\+Type1 $^\wedge$\+Service\+Type1$\vert$ Leftbalance2$^\wedge$expirydate2$^\wedge$\+Type2$^\wedge$\+Service\+Type2, expiry date\+: Y\+Y\+Y\+Y\+M\+M\+DD, type\+: \mbox{\hyperlink{mtc__conf_8h_a759e7d452b2fcf95ac1d21ebc66770c7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE}}(see @mtc\+\_\+conf.h or Mtc\+Conf\+Constrants.\+java), Service\+Type\+: \mbox{\hyperlink{mtc__conf_8h_a7c5cbb3f10e1b380bc0f9725bc964b19}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}(see @mtc\+\_\+conf.h or Mtc\+Conf\+Constrants.\+java), \char`\"{}i\+Total\+Left\+Balance\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a12a4c2a3427006d34990d9f6701b5196}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+Q\+U\+E\+R\+Y\+R\+E\+S\+U\+LT}} is the total left balance(minutes). If server not return value of the parameter, the value will be 0, then UI can sum up the left balance list in \char`\"{}pc\+Result\char`\"{}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_add2778328c728e5e5924a761590ab9ce}\label{mtc__conf__cb_8h_add2778328c728e5e5924a761590ab9ce}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetQueryFailed@{Mtc\_ConfCbSetQueryFailed}}
+\index{Mtc\_ConfCbSetQueryFailed@{Mtc\_ConfCbSetQueryFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetQueryFailed()}{Mtc\_ConfCbSetQueryFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Query\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of query account failed. 
+
+This client want to know result code of query account performed by \mbox{\hyperlink{mtc__conf_8h_a05497e00850e4eece27a3a26d57e0294}{Mtc\+\_\+\+Conf\+Query\+Account}}.
+
+\char`\"{}i\+Rsp\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8377fccaf5c4e1f9aaee96f68d5c6859}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+A\+C\+C\+O\+U\+N\+T\+F\+A\+I\+L\+ED}} is responce status code. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a9b42c6b6b87bbf828810dd79cd56b502}\label{mtc__conf__cb_8h_a9b42c6b6b87bbf828810dd79cd56b502}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetSelectUsrFail@{Mtc\_ConfCbSetSelectUsrFail}}
+\index{Mtc\_ConfCbSetSelectUsrFail@{Mtc\_ConfCbSetSelectUsrFail}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetSelectUsrFail()}{Mtc\_ConfCbSetSelectUsrFail()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Select\+Usr\+Fail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of select user is failed. 
+
+This client want to select a user from the conference. This callback was invoked when that select user failed. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the U\+RI of the participant select failed. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_ae47b7c3b1a4db6920ec71f966a513e3f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+F\+A\+I\+L\+ED}} is the status error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a1333a5fcc94c8b370cc345723b16344c}\label{mtc__conf__cb_8h_a1333a5fcc94c8b370cc345723b16344c}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetSelectUsrOk@{Mtc\_ConfCbSetSelectUsrOk}}
+\index{Mtc\_ConfCbSetSelectUsrOk@{Mtc\_ConfCbSetSelectUsrOk}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetSelectUsrOk()}{Mtc\_ConfCbSetSelectUsrOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Select\+Usr\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of select user is accepted. 
+
+This client want to select a user from the conference. This callback was invoked when that user has been selected. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the U\+RI of the participant selected which server has been accepted. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a8521a1e1806870eff50f04f3bbb5fdbe}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+BX}} is the status error code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a437ec628a149efaad9e72cb9a85e13e7}\label{mtc__conf__cb_8h_a437ec628a149efaad9e72cb9a85e13e7}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetUnHeld@{Mtc\_ConfCbSetUnHeld}}
+\index{Mtc\_ConfCbSetUnHeld@{Mtc\_ConfCbSetUnHeld}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetUnHeld()}{Mtc\_ConfCbSetUnHeld()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Held (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference was un-\/held by peer. 
+
+This callback indicates un-\/held hold the conference. G\+UI should update conference status according to conference ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a0c7d30266b1ea14d1793b87ad0975c2d}\label{mtc__conf__cb_8h_a0c7d30266b1ea14d1793b87ad0975c2d}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetUnHoldFailed@{Mtc\_ConfCbSetUnHoldFailed}}
+\index{Mtc\_ConfCbSetUnHoldFailed@{Mtc\_ConfCbSetUnHoldFailed}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetUnHoldFailed()}{Mtc\_ConfCbSetUnHoldFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Hold\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference un-\/hold failed. 
+
+This callback indicates un-\/hold operation has been failed. G\+UI should update conference status according to conference ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a65c9bca8d50d0327f83d6fb25145ff44}\label{mtc__conf__cb_8h_a65c9bca8d50d0327f83d6fb25145ff44}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetUnHoldOk@{Mtc\_ConfCbSetUnHoldOk}}
+\index{Mtc\_ConfCbSetUnHoldOk@{Mtc\_ConfCbSetUnHoldOk}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetUnHoldOk()}{Mtc\_ConfCbSetUnHoldOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Hold\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference un-\/hold OK. 
+
+This callback indicates un-\/hold operation has been completed successfully. G\+UI should update conference status according to conference ID. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a4529d6d67dd9b370bc6e9271846e0c28}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+CB}} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a63fd1934d852614ff92c0ced023648eb}\label{mtc__conf__cb_8h_a63fd1934d852614ff92c0ced023648eb}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetVideoPtptLstUpdt@{Mtc\_ConfCbSetVideoPtptLstUpdt}}
+\index{Mtc\_ConfCbSetVideoPtptLstUpdt@{Mtc\_ConfCbSetVideoPtptLstUpdt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetVideoPtptLstUpdt()}{Mtc\_ConfCbSetVideoPtptLstUpdt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Ptpt\+Lst\+Updt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant list updated. 
+
+G\+UI should update conference participant list info. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT}} is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Partp\+Lst\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_a531d9f97df77296bd267f4d7bb580b6b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT}} is the participant list id of conference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}\label{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetVideoStrmPtptUpdt@{Mtc\_ConfCbSetVideoStrmPtptUpdt}}
+\index{Mtc\_ConfCbSetVideoStrmPtptUpdt@{Mtc\_ConfCbSetVideoStrmPtptUpdt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetVideoStrmPtptUpdt()}{Mtc\_ConfCbSetVideoStrmPtptUpdt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Ptpt\+Updt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s video stream info updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video stream info. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Strm\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} is the video stream id. \char`\"{}pc\+Uri\char`\"{} is the number(not uri) of the participant. If no participant, the U\+RI will be \char`\"{}clear\char`\"{}. if camera is off, the U\+RI will be \char`\"{}\+Number\+:\+P\+I\+C\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+P\+I\+C\char`\"{}. if user is removed, the U\+RI wii be \char`\"{}\+Number1\+:\+K\+I\+C\+K\+Number2\char`\"{}, e.\+g.\char`\"{}+8616000000313\+:\+K\+I\+C\+K+861380000000\char`\"{}, Number1 is chairman number, number2 is the number of removed participant. \mbox{\Hypertarget{mtc__conf__cb_8h_a48ffa0ab63092f5106f1907d62191572}\label{mtc__conf__cb_8h_a48ffa0ab63092f5106f1907d62191572}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetVideoStrmRmvWinUpdt@{Mtc\_ConfCbSetVideoStrmRmvWinUpdt}}
+\index{Mtc\_ConfCbSetVideoStrmRmvWinUpdt@{Mtc\_ConfCbSetVideoStrmRmvWinUpdt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetVideoStrmRmvWinUpdt()}{Mtc\_ConfCbSetVideoStrmRmvWinUpdt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Rmv\+Win\+Updt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s video stream remove-\/window info updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video stream remove-\/window info. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Strm\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} is the video stream id. \char`\"{}pc\+Uri\char`\"{} is the number(not uri) of the participant. if the chairman whose number is +8616000000313 removed the window of the participant whose number is +8613800000000, the U\+RI will be \char`\"{}\+Number\+:\+K\+I\+C\+K\+:+\+Number\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+K\+I\+C\+K\+:+13800000000\char`\"{}. \mbox{\Hypertarget{mtc__conf__cb_8h_a5901ac25bef38667b2ef2daf373e020a}\label{mtc__conf__cb_8h_a5901ac25bef38667b2ef2daf373e020a}} 
+\index{mtc\_conf\_cb.h@{mtc\_conf\_cb.h}!Mtc\_ConfCbSetVideoStrmSpkStateUpdt@{Mtc\_ConfCbSetVideoStrmSpkStateUpdt}}
+\index{Mtc\_ConfCbSetVideoStrmSpkStateUpdt@{Mtc\_ConfCbSetVideoStrmSpkStateUpdt}!mtc\_conf\_cb.h@{mtc\_conf\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCbSetVideoStrmSpkStateUpdt()}{Mtc\_ConfCbSetVideoStrmSpkStateUpdt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Spk\+State\+Updt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s video stream speak-\/state info updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video stream speak-\/state info. \char`\"{}i\+Conf\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Strm\+Id\char`\"{} in \mbox{\hyperlink{mtc__conf__cb_8h_af29bcd64581d82601ab47e31b0c53fe4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT}} is the video stream id. \char`\"{}pc\+Uri\char`\"{} is the number(not uri) of the participant. if the participant is speaking, the U\+RI will be \char`\"{}\+Number\+:\+V\+O\+L\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+V\+O\+L\char`\"{}. if the participant is not speaking, the U\+RI will be \char`\"{}\+Number\+:\+S\+L\+I\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+S\+L\+I\char`\"{}. 

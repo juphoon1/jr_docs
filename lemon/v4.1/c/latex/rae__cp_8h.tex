@@ -1,0 +1,501 @@
+\hypertarget{rae__cp_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rae/rae\+\_\+cp.h File Reference}
+\label{rae__cp_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rae/rae\_cp.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rae/rae\_cp.h}}
+
+
+R\+AE Cilent Provisioning Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rae__cp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rae__cp_8h_a2005218de646025705456212c890e026}\label{rae__cp_8h_a2005218de646025705456212c890e026}} 
+typedef enum E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE {\bfseries E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rae__cp_8h_a7397a7247e16a0ed1ae8fcb1a2ea01bb}\label{rae__cp_8h_a7397a7247e16a0ed1ae8fcb1a2ea01bb}} 
+enum {\bfseries E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE} \{ {\bfseries E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+A\+C\+PT}, 
+{\bfseries E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+D\+E\+CL}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a229c203c768e4b84c9cf2eef523841b8}{Rae\+\_\+\+Cp}} (Z\+U\+I\+NT i\+Net\+Type, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Srv\+Type, Z\+U\+I\+NT i\+Def\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning configure by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a129e9c1cc9325f36c9466713ee2076f8}{Rae\+\_\+\+CpX}} (Z\+U\+I\+NT i\+Net\+Type, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Times)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning configure by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a2ccd3c0e07bd529aefeb8509ed7f6425}{Rae\+\_\+\+Cp\+Re\+Cfg}} (Z\+U\+I\+NT i\+Net\+Type)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning reconfigure by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_a050c7aa0c2b2b2eead969c594b0f812d}{Rae\+\_\+\+Cp\+Act}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+U\+I\+NT i\+Act\+Type)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning action. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_a622a8937cea73c9a6f3c95a0853b5277}{Rae\+\_\+\+Cp\+Valid\+S\+MS}} (Z\+C\+H\+AR $\ast$pc\+S\+MS)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning validate S\+MS. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_a411d8539621d80d61e196ebe0f3b2265}{Rae\+\_\+\+Cp\+Prompt\+M\+S\+I\+S\+DN}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+Msisdn)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning prompt for M\+S\+I\+S\+DN by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_a79f66d99d51274f20c89db0e48be6689}{Rae\+\_\+\+Cp\+Prompt\+O\+TP}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+O\+TP)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning prompt for O\+TP by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_aa23cabbbb9434cd274f0f54c2561c999}{Rae\+\_\+\+Cp\+Prompt\+Token}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+Token)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning prompt for token by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_a23dfd0fbcd08777d90e684b729e23e7c}{Rae\+\_\+\+Cp\+E\+U\+C\+R\+Act}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Act\+Type, Z\+C\+H\+AR $\ast$pc\+P\+IN)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning end user confirmation request action by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a1b59a1e60675df7582139e52c85d63ec}{Rae\+\_\+\+Cp\+AD}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a8acba62f68760218cc65051f92232cc5}{Rae\+\_\+\+Cp\+A\+D\+With\+O\+TP}} (Z\+C\+H\+AR $\ast$pc\+O\+TP)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning by additional device with O\+TP. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_ac901fe3fb15129fe8670f4cc153f337a}{Rae\+\_\+\+Cp\+A\+D\+Prompt\+O\+TP}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+O\+TP)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning prompt for O\+TP by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_a15b6273e8e69ab856a1aff6b6ffc89bd}{Rae\+\_\+\+Cp\+A\+D\+Prompt\+P\+IN}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+P\+IN)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning prompt for P\+IN by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a891b7e9fa8d22410948549bc200adf7c}{Rae\+\_\+\+Cp\+Get\+Retry\+Time\+Len}} (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning get retry time len . \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{rae__cp_8h_a2892cce1d2850eb180dc644ea4d9bd1d}{Rae\+\_\+\+Cp\+Release}} (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em R\+AE Release Cilent provisioning connection, It will be destroied. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_aae3327b41310182172f3ca34aaf399f6}{Rae\+\_\+\+Cp\+Get\+Srv\+Type}} (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning get server type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a89a332fda04e3c9908edf73def6daa69}{Rae\+\_\+\+Cp\+Get\+Net\+Type}} (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning get network type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rae__cp_8h_a68594f57cb120449b03afab3a8cd2774}{Rae\+\_\+\+Cp\+Get\+Def\+Cp\+Id}} (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning get default server cp id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rae__cp_8h_abc5f449e23794e1c14529c352f2ec86c}{Rae\+\_\+\+Cp\+Parse\+Xml}} (Z\+C\+H\+AR $\ast$pc\+Xml)
+\begin{DoxyCompactList}\small\item\em R\+AE Cilent provisioning parse the config xml. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+AE Cilent Provisioning Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rae__cp_8h_a229c203c768e4b84c9cf2eef523841b8}\label{rae__cp_8h_a229c203c768e4b84c9cf2eef523841b8}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_Cp@{Rae\_Cp}}
+\index{Rae\_Cp@{Rae\_Cp}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_Cp()}{Rae\_Cp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Def\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning configure by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type,type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+E\+N\+\_\+\+M\+C\+F\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Type} & The server type, E\+N\+\_\+\+M\+C\+F\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Def\+Cp\+Id} & The default cp id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rae__cp_8h_a050c7aa0c2b2b2eead969c594b0f812d}\label{rae__cp_8h_a050c7aa0c2b2b2eead969c594b0f812d}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpAct@{Rae\_CpAct}}
+\index{Rae\_CpAct@{Rae\_CpAct}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpAct()}{Rae\_CpAct()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+Act (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Act\+Type }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning action. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Act\+Type,type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & enabling cilent provisioning successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & enabling cilent provisioning failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a1b59a1e60675df7582139e52c85d63ec}\label{rae__cp_8h_a1b59a1e60675df7582139e52c85d63ec}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpAD@{Rae\_CpAD}}
+\index{Rae\_CpAD@{Rae\_CpAD}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpAD()}{Rae\_CpAD()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+AD (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning by additional device. 
+
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rae__cp_8h_ac901fe3fb15129fe8670f4cc153f337a}\label{rae__cp_8h_ac901fe3fb15129fe8670f4cc153f337a}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpADPromptOTP@{Rae\_CpADPromptOTP}}
+\index{Rae\_CpADPromptOTP@{Rae\_CpADPromptOTP}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpADPromptOTP()}{Rae\_CpADPromptOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+A\+D\+Prompt\+O\+TP (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+O\+TP }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning prompt for O\+TP by additional device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+O\+TP} & The one-\/time password.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a15b6273e8e69ab856a1aff6b6ffc89bd}\label{rae__cp_8h_a15b6273e8e69ab856a1aff6b6ffc89bd}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpADPromptPIN@{Rae\_CpADPromptPIN}}
+\index{Rae\_CpADPromptPIN@{Rae\_CpADPromptPIN}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpADPromptPIN()}{Rae\_CpADPromptPIN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+A\+D\+Prompt\+P\+IN (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+P\+IN }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning prompt for P\+IN by additional device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+P\+IN} & The personal identification number.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a8acba62f68760218cc65051f92232cc5}\label{rae__cp_8h_a8acba62f68760218cc65051f92232cc5}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpADWithOTP@{Rae\_CpADWithOTP}}
+\index{Rae\_CpADWithOTP@{Rae\_CpADWithOTP}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpADWithOTP()}{Rae\_CpADWithOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+A\+D\+With\+O\+TP (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+O\+TP }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning by additional device with O\+TP. 
+
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rae__cp_8h_a23dfd0fbcd08777d90e684b729e23e7c}\label{rae__cp_8h_a23dfd0fbcd08777d90e684b729e23e7c}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpEUCRAct@{Rae\_CpEUCRAct}}
+\index{Rae\_CpEUCRAct@{Rae\_CpEUCRAct}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpEUCRAct()}{Rae\_CpEUCRAct()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+E\+U\+C\+R\+Act (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Act\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+P\+IN }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning end user confirmation request action by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The msg id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Act\+Type,type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+E\+N\+\_\+\+R\+A\+E\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+P\+IN} & The personal identification number.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a68594f57cb120449b03afab3a8cd2774}\label{rae__cp_8h_a68594f57cb120449b03afab3a8cd2774}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpGetDefCpId@{Rae\_CpGetDefCpId}}
+\index{Rae\_CpGetDefCpId@{Rae\_CpGetDefCpId}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpGetDefCpId()}{Rae\_CpGetDefCpId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+Get\+Def\+Cp\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning get default server cp id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em default} & server cp id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a89a332fda04e3c9908edf73def6daa69}\label{rae__cp_8h_a89a332fda04e3c9908edf73def6daa69}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpGetNetType@{Rae\_CpGetNetType}}
+\index{Rae\_CpGetNetType@{Rae\_CpGetNetType}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpGetNetType()}{Rae\_CpGetNetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+Get\+Net\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning get network type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em network} & type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a891b7e9fa8d22410948549bc200adf7c}\label{rae__cp_8h_a891b7e9fa8d22410948549bc200adf7c}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpGetRetryTimeLen@{Rae\_CpGetRetryTimeLen}}
+\index{Rae\_CpGetRetryTimeLen@{Rae\_CpGetRetryTimeLen}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpGetRetryTimeLen()}{Rae\_CpGetRetryTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+Get\+Retry\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning get retry time len . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em retry} & time len. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_aae3327b41310182172f3ca34aaf399f6}\label{rae__cp_8h_aae3327b41310182172f3ca34aaf399f6}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpGetSrvType@{Rae\_CpGetSrvType}}
+\index{Rae\_CpGetSrvType@{Rae\_CpGetSrvType}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpGetSrvType()}{Rae\_CpGetSrvType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+Get\+Srv\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning get server type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em server} & type, ref@\+E\+N\+\_\+\+M\+C\+F\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_abc5f449e23794e1c14529c352f2ec86c}\label{rae__cp_8h_abc5f449e23794e1c14529c352f2ec86c}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpParseXml@{Rae\_CpParseXml}}
+\index{Rae\_CpParseXml@{Rae\_CpParseXml}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpParseXml()}{Rae\_CpParseXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+Parse\+Xml (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Xml }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning parse the config xml. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Xml} & The content of config xml.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & parse xml successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & parse xml failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a411d8539621d80d61e196ebe0f3b2265}\label{rae__cp_8h_a411d8539621d80d61e196ebe0f3b2265}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpPromptMSISDN@{Rae\_CpPromptMSISDN}}
+\index{Rae\_CpPromptMSISDN@{Rae\_CpPromptMSISDN}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpPromptMSISDN()}{Rae\_CpPromptMSISDN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+Prompt\+M\+S\+I\+S\+DN (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msisdn }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning prompt for M\+S\+I\+S\+DN by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+M\+S\+I\+S\+DN} & The M\+S\+I\+S\+DN.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a79f66d99d51274f20c89db0e48be6689}\label{rae__cp_8h_a79f66d99d51274f20c89db0e48be6689}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpPromptOTP@{Rae\_CpPromptOTP}}
+\index{Rae\_CpPromptOTP@{Rae\_CpPromptOTP}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpPromptOTP()}{Rae\_CpPromptOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+Prompt\+O\+TP (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+O\+TP }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning prompt for O\+TP by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+O\+TP} & The one-\/time password.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_aa23cabbbb9434cd274f0f54c2561c999}\label{rae__cp_8h_aa23cabbbb9434cd274f0f54c2561c999}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpPromptToken@{Rae\_CpPromptToken}}
+\index{Rae\_CpPromptToken@{Rae\_CpPromptToken}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpPromptToken()}{Rae\_CpPromptToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+Prompt\+Token (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning prompt for token by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a2ccd3c0e07bd529aefeb8509ed7f6425}\label{rae__cp_8h_a2ccd3c0e07bd529aefeb8509ed7f6425}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpReCfg@{Rae\_CpReCfg}}
+\index{Rae\_CpReCfg@{Rae\_CpReCfg}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpReCfg()}{Rae\_CpReCfg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+Cp\+Re\+Cfg (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning reconfigure by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type,type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+E\+N\+\_\+\+M\+C\+F\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rae__cp_8h_a2892cce1d2850eb180dc644ea4d9bd1d}\label{rae__cp_8h_a2892cce1d2850eb180dc644ea4d9bd1d}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpRelease@{Rae\_CpRelease}}
+\index{Rae\_CpRelease@{Rae\_CpRelease}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpRelease()}{Rae\_CpRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Rae\+\_\+\+Cp\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+AE Release Cilent provisioning connection, It will be destroied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id.\\
+\hline
+\end{DoxyParams}
+rae release a client provisioning connection \mbox{\Hypertarget{rae__cp_8h_a622a8937cea73c9a6f3c95a0853b5277}\label{rae__cp_8h_a622a8937cea73c9a6f3c95a0853b5277}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpValidSMS@{Rae\_CpValidSMS}}
+\index{Rae\_CpValidSMS@{Rae\_CpValidSMS}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpValidSMS()}{Rae\_CpValidSMS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rae\+\_\+\+Cp\+Valid\+S\+MS (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+S\+MS }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning validate S\+MS. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+S\+MS} & The S\+MS received from configure server.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & validate successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & validate failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rae__cp_8h_a129e9c1cc9325f36c9466713ee2076f8}\label{rae__cp_8h_a129e9c1cc9325f36c9466713ee2076f8}} 
+\index{rae\_cp.h@{rae\_cp.h}!Rae\_CpX@{Rae\_CpX}}
+\index{Rae\_CpX@{Rae\_CpX}!rae\_cp.h@{rae\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Rae\_CpX()}{Rae\_CpX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rae\+\_\+\+CpX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+U\+I\+NT}]{i\+Times }\end{DoxyParamCaption})}
+
+
+
+R\+AE Cilent provisioning configure by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type,type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+E\+N\+\_\+\+M\+C\+F\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Times} & The times of invoking the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}

@@ -1,0 +1,321 @@
+\hypertarget{mtc__media_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+media.h File Reference}
+\label{mtc__media_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_media.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_media.h}}
+
+
+M\+TC Media Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__media_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__media_8h_abf08c56ac84363af5bee880619a6d220}\label{mtc__media_8h_abf08c56ac84363af5bee880619a6d220}} 
+typedef enum \mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__media_8h_abf08c56ac84363af5bee880619a6d220}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC media file type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__media_8h_a0f4169ca97c8823014339c77ac67c78f}\label{mtc__media_8h_a0f4169ca97c8823014339c77ac67c78f}} 
+typedef enum \mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{mtc__media_8h_a0f4169ca97c8823014339c77ac67c78f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC adaptive negotiation bitrate mode type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__media_8h_abe4f34e83d91d163f0ca214919324bcc}\label{mtc__media_8h_abe4f34e83d91d163f0ca214919324bcc}} 
+typedef enum \mbox{\hyperlink{mtc__media_8h_adc9e45d4ab5555423968d96e383e896c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+TY}} \mbox{\hyperlink{mtc__media_8h_abe4f34e83d91d163f0ca214919324bcc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+TY}}
+\begin{DoxyCompactList}\small\item\em Record video quality level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba153afa5cf17e0377d8e442e23f9cda6b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+U\+N\+K\+N\+OW}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827baf1b9947c59ce61f47548d65d100c5506}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+P\+CM}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba4f7dcb244deb1f2deb76e7f3ea4f237c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+AV}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827baef7c9c476be1dc230c52588eea4f491c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+CM}}, 
+\newline
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827baed0e9b1281c024ce824e7456b13d0ad5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+C\+MU}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba3d3566409f76992630d665e56a1de4f1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+C\+M\+\_\+32K}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827bac50561010b15711fb4acfbb3beecaeb2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+C\+MA}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba65dfedbc3168e48f048d0e3c0c7a8824}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+I\+L\+BC}}, 
+\newline
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba37d6f7d2999b52b22ea7d1807e68a0d5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+MR}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba0734c12710291e7f84738c0b0e68f2ca}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+VI}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827baa5ce6ff0423a6b16453d5b390ca9cf6a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+V\+I\+\_\+\+V\+P8}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827bac9418e8b6bbd150ca8dbac9cf5193254}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+V\+I\+\_\+\+I420}}, 
+\newline
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827bad116af89a8332fe43b1ba6ccb2215307}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+V\+I\+\_\+\+H264}}, 
+\mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827baf2b6d58b814ed9e950dde03849b4d257}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+M\+P4\+\_\+\+H264}}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC media file type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}} \{ \mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501a5c487e5253316c3fc60d93ca3b6bb900}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+U\+N\+K\+N\+OW}}, 
+\mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501a1ec02eae54520ea11079fd60156b6244}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+L\+OW}}, 
+\mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501abc689c4d77f859b4cdb6b097334431ec}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+ID}}, 
+\mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501aafe4c713a6cf6d23d0d5f72eb32a271f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+H\+I\+GH}}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC adaptive negotiation bitrate mode type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__media_8h_adc9e45d4ab5555423968d96e383e896c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+TY}} \{ \mbox{\hyperlink{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca99010e8eea98e974682172eb3cf7bfac}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+L\+OW}}, 
+\mbox{\hyperlink{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca305b5c11034455f6c92d06c3e558de2c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+M\+ID}}, 
+\mbox{\hyperlink{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca04e5fc9867617fb29409ba876534a19b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+H\+I\+GH}}
+ \}
+\begin{DoxyCompactList}\small\item\em Record video quality level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__media_8h_a74d4a5046b646917716dfc8d7afe037c}{Mtc\+\_\+\+Mdm\+An\+Set\+Send\+Bitrate\+Mode}} (Z\+U\+C\+H\+AR uc\+Mode)
+\begin{DoxyCompactList}\small\item\em Set an bitrate mode of sending direction. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__media_8h_a1da89894ebdc9853efdf13e22fef05d5}{Mtc\+\_\+\+Mdm\+An\+Set\+Bitrate\+Mode}} (Z\+U\+C\+H\+AR uc\+Mode)
+\begin{DoxyCompactList}\small\item\em Set video Adaptive negotiation bitrate mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__media_8h_a6f9095f00fbc8821b620e9579bcb55c5}{Mtc\+\_\+\+Mdm\+An\+Get\+Bitrate\+Mode}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get adaptive negotiation bitrate mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__media_8h_ab9580aff9460016ea121f03dfd3e84b1}{Mtc\+\_\+\+Media\+File\+Wav\+To\+Amr}} (Z\+C\+H\+AR $\ast$pc\+In\+File, Z\+C\+H\+AR $\ast$pc\+Out\+File)
+\begin{DoxyCompactList}\small\item\em Convert wav file to amr file. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__media_8h_aaf984724064915be7fadc8cb93a478da}{Mtc\+\_\+\+Media\+File\+Amr\+To\+Wav}} (Z\+C\+H\+AR $\ast$pc\+In\+File, Z\+C\+H\+AR $\ast$pc\+Out\+File)
+\begin{DoxyCompactList}\small\item\em Convert amr file to wav file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Media Interface Functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__media_8h_a3202349db81c166a91999f0f06817501}\label{mtc__media_8h_a3202349db81c166a91999f0f06817501}} 
+\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_AN\_MODE@{EN\_MTC\_AN\_MODE}}
+\index{EN\_MTC\_AN\_MODE@{EN\_MTC\_AN\_MODE}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_AN\_MODE}{EN\_MTC\_AN\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__media_8h_a3202349db81c166a91999f0f06817501}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}}}
+
+
+
+Type of M\+TC adaptive negotiation bitrate mode type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_AN\_UNKNOW@{EN\_MTC\_AN\_UNKNOW}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_AN\_UNKNOW@{EN\_MTC\_AN\_UNKNOW}}}\mbox{\Hypertarget{mtc__media_8h_a3202349db81c166a91999f0f06817501a5c487e5253316c3fc60d93ca3b6bb900}\label{mtc__media_8h_a3202349db81c166a91999f0f06817501a5c487e5253316c3fc60d93ca3b6bb900}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+U\+N\+K\+N\+OW&Invalid mode type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_AN\_LOW@{EN\_MTC\_AN\_LOW}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_AN\_LOW@{EN\_MTC\_AN\_LOW}}}\mbox{\Hypertarget{mtc__media_8h_a3202349db81c166a91999f0f06817501a1ec02eae54520ea11079fd60156b6244}\label{mtc__media_8h_a3202349db81c166a91999f0f06817501a1ec02eae54520ea11079fd60156b6244}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+L\+OW&Low bitrate mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_AN\_MID@{EN\_MTC\_AN\_MID}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_AN\_MID@{EN\_MTC\_AN\_MID}}}\mbox{\Hypertarget{mtc__media_8h_a3202349db81c166a91999f0f06817501abc689c4d77f859b4cdb6b097334431ec}\label{mtc__media_8h_a3202349db81c166a91999f0f06817501abc689c4d77f859b4cdb6b097334431ec}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+ID&Middle bitrate mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_AN\_HIGH@{EN\_MTC\_AN\_HIGH}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_AN\_HIGH@{EN\_MTC\_AN\_HIGH}}}\mbox{\Hypertarget{mtc__media_8h_a3202349db81c166a91999f0f06817501aafe4c713a6cf6d23d0d5f72eb32a271f}\label{mtc__media_8h_a3202349db81c166a91999f0f06817501aafe4c713a6cf6d23d0d5f72eb32a271f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+H\+I\+GH&High bitrate mode. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827b}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827b}} 
+\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_TYPE@{EN\_MTC\_MFILE\_TYPE}}
+\index{EN\_MTC\_MFILE\_TYPE@{EN\_MTC\_MFILE\_TYPE}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_MFILE\_TYPE}{EN\_MTC\_MFILE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__media_8h_af58e2673ff06c407ff202169fff0827b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}}}
+
+
+
+Type of M\+TC media file type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_UNKNOW@{EN\_MTC\_MFILE\_UNKNOW}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_UNKNOW@{EN\_MTC\_MFILE\_UNKNOW}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba153afa5cf17e0377d8e442e23f9cda6b}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba153afa5cf17e0377d8e442e23f9cda6b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+U\+N\+K\+N\+OW&Unknow file type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_PCM@{EN\_MTC\_MFILE\_PCM}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_PCM@{EN\_MTC\_MFILE\_PCM}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827baf1b9947c59ce61f47548d65d100c5506}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827baf1b9947c59ce61f47548d65d100c5506}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+P\+CM&P\+CM file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_WAV@{EN\_MTC\_MFILE\_WAV}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_WAV@{EN\_MTC\_MFILE\_WAV}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba4f7dcb244deb1f2deb76e7f3ea4f237c}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba4f7dcb244deb1f2deb76e7f3ea4f237c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+AV&W\+AV file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_WAV\_PCM@{EN\_MTC\_MFILE\_WAV\_PCM}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_WAV\_PCM@{EN\_MTC\_MFILE\_WAV\_PCM}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827baef7c9c476be1dc230c52588eea4f491c}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827baef7c9c476be1dc230c52588eea4f491c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+CM&W\+AV file with codec of P\+CM. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_WAV\_PCMU@{EN\_MTC\_MFILE\_WAV\_PCMU}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_WAV\_PCMU@{EN\_MTC\_MFILE\_WAV\_PCMU}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827baed0e9b1281c024ce824e7456b13d0ad5}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827baed0e9b1281c024ce824e7456b13d0ad5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+C\+MU&W\+AV file with codec of P\+C\+MU. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_WAV\_PCM\_32K@{EN\_MTC\_MFILE\_WAV\_PCM\_32K}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_WAV\_PCM\_32K@{EN\_MTC\_MFILE\_WAV\_PCM\_32K}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba3d3566409f76992630d665e56a1de4f1}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba3d3566409f76992630d665e56a1de4f1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+C\+M\+\_\+32K&W\+AV file with codec of L16-\/32k\+Hz. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_WAV\_PCMA@{EN\_MTC\_MFILE\_WAV\_PCMA}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_WAV\_PCMA@{EN\_MTC\_MFILE\_WAV\_PCMA}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827bac50561010b15711fb4acfbb3beecaeb2}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827bac50561010b15711fb4acfbb3beecaeb2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+W\+A\+V\+\_\+\+P\+C\+MA&W\+AV file with codec of P\+C\+MA. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_ILBC@{EN\_MTC\_MFILE\_ILBC}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_ILBC@{EN\_MTC\_MFILE\_ILBC}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba65dfedbc3168e48f048d0e3c0c7a8824}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba65dfedbc3168e48f048d0e3c0c7a8824}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+I\+L\+BC&W\+AV file with codec of i\+L\+BC. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_AMR@{EN\_MTC\_MFILE\_AMR}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_AMR@{EN\_MTC\_MFILE\_AMR}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba37d6f7d2999b52b22ea7d1807e68a0d5}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba37d6f7d2999b52b22ea7d1807e68a0d5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+MR&W\+AV file with codec of A\+MR. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_AVI@{EN\_MTC\_MFILE\_AVI}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_AVI@{EN\_MTC\_MFILE\_AVI}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba0734c12710291e7f84738c0b0e68f2ca}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827ba0734c12710291e7f84738c0b0e68f2ca}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+VI&A\+VI file. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_AVI\_VP8@{EN\_MTC\_MFILE\_AVI\_VP8}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_AVI\_VP8@{EN\_MTC\_MFILE\_AVI\_VP8}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827baa5ce6ff0423a6b16453d5b390ca9cf6a}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827baa5ce6ff0423a6b16453d5b390ca9cf6a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+V\+I\+\_\+\+V\+P8&A\+VI file with codec of V\+P8. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_AVI\_I420@{EN\_MTC\_MFILE\_AVI\_I420}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_AVI\_I420@{EN\_MTC\_MFILE\_AVI\_I420}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827bac9418e8b6bbd150ca8dbac9cf5193254}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827bac9418e8b6bbd150ca8dbac9cf5193254}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+V\+I\+\_\+\+I420&A\+VI file with codec of I420. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_AVI\_H264@{EN\_MTC\_MFILE\_AVI\_H264}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_AVI\_H264@{EN\_MTC\_MFILE\_AVI\_H264}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827bad116af89a8332fe43b1ba6ccb2215307}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827bad116af89a8332fe43b1ba6ccb2215307}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+A\+V\+I\+\_\+\+H264&A\+VI file with codec of H264. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_MFILE\_MP4\_H264@{EN\_MTC\_MFILE\_MP4\_H264}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_MFILE\_MP4\_H264@{EN\_MTC\_MFILE\_MP4\_H264}}}\mbox{\Hypertarget{mtc__media_8h_af58e2673ff06c407ff202169fff0827baf2b6d58b814ed9e950dde03849b4d257}\label{mtc__media_8h_af58e2673ff06c407ff202169fff0827baf2b6d58b814ed9e950dde03849b4d257}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+M\+P4\+\_\+\+H264&M\+P4 file with codec of H264. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__media_8h_adc9e45d4ab5555423968d96e383e896c}\label{mtc__media_8h_adc9e45d4ab5555423968d96e383e896c}} 
+\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_REC\_QUALITY@{EN\_MTC\_REC\_QUALITY}}
+\index{EN\_MTC\_REC\_QUALITY@{EN\_MTC\_REC\_QUALITY}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_REC\_QUALITY}{EN\_MTC\_REC\_QUALITY}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__media_8h_adc9e45d4ab5555423968d96e383e896c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+TY}}}
+
+
+
+Record video quality level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REC\_QUALITY\_LOW@{EN\_MTC\_REC\_QUALITY\_LOW}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_REC\_QUALITY\_LOW@{EN\_MTC\_REC\_QUALITY\_LOW}}}\mbox{\Hypertarget{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca99010e8eea98e974682172eb3cf7bfac}\label{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca99010e8eea98e974682172eb3cf7bfac}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+L\+OW&low record video quality using low bitrate \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REC\_QUALITY\_MID@{EN\_MTC\_REC\_QUALITY\_MID}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_REC\_QUALITY\_MID@{EN\_MTC\_REC\_QUALITY\_MID}}}\mbox{\Hypertarget{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca305b5c11034455f6c92d06c3e558de2c}\label{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca305b5c11034455f6c92d06c3e558de2c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+M\+ID&middle record video quality using middle bitrate \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REC\_QUALITY\_HIGH@{EN\_MTC\_REC\_QUALITY\_HIGH}!mtc\_media.h@{mtc\_media.h}}\index{mtc\_media.h@{mtc\_media.h}!EN\_MTC\_REC\_QUALITY\_HIGH@{EN\_MTC\_REC\_QUALITY\_HIGH}}}\mbox{\Hypertarget{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca04e5fc9867617fb29409ba876534a19b}\label{mtc__media_8h_adc9e45d4ab5555423968d96e383e896ca04e5fc9867617fb29409ba876534a19b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+C\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+H\+I\+GH&high record video quality using high bitrate \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__media_8h_a6f9095f00fbc8821b620e9579bcb55c5}\label{mtc__media_8h_a6f9095f00fbc8821b620e9579bcb55c5}} 
+\index{mtc\_media.h@{mtc\_media.h}!Mtc\_MdmAnGetBitrateMode@{Mtc\_MdmAnGetBitrateMode}}
+\index{Mtc\_MdmAnGetBitrateMode@{Mtc\_MdmAnGetBitrateMode}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MdmAnGetBitrateMode()}{Mtc\_MdmAnGetBitrateMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Mdm\+An\+Get\+Bitrate\+Mode (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get adaptive negotiation bitrate mode. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & adaptive negotiation bitrate mode, see \mbox{\hyperlink{mtc__media_8h_a0f4169ca97c8823014339c77ac67c78f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__media_8h_a1da89894ebdc9853efdf13e22fef05d5}\label{mtc__media_8h_a1da89894ebdc9853efdf13e22fef05d5}} 
+\index{mtc\_media.h@{mtc\_media.h}!Mtc\_MdmAnSetBitrateMode@{Mtc\_MdmAnSetBitrateMode}}
+\index{Mtc\_MdmAnSetBitrateMode@{Mtc\_MdmAnSetBitrateMode}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MdmAnSetBitrateMode()}{Mtc\_MdmAnSetBitrateMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Mdm\+An\+Set\+Bitrate\+Mode (\begin{DoxyParamCaption}\item[{Z\+U\+C\+H\+AR}]{uc\+Mode }\end{DoxyParamCaption})}
+
+
+
+Set video Adaptive negotiation bitrate mode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uc\+Mode} & Adaptive negotiation bitrate mode \mbox{\hyperlink{mtc__media_8h_a0f4169ca97c8823014339c77ac67c78f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__media_8h_a6f9095f00fbc8821b620e9579bcb55c5}{Mtc\+\_\+\+Mdm\+An\+Get\+Bitrate\+Mode}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__media_8h_a74d4a5046b646917716dfc8d7afe037c}\label{mtc__media_8h_a74d4a5046b646917716dfc8d7afe037c}} 
+\index{mtc\_media.h@{mtc\_media.h}!Mtc\_MdmAnSetSendBitrateMode@{Mtc\_MdmAnSetSendBitrateMode}}
+\index{Mtc\_MdmAnSetSendBitrateMode@{Mtc\_MdmAnSetSendBitrateMode}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MdmAnSetSendBitrateMode()}{Mtc\_MdmAnSetSendBitrateMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Mdm\+An\+Set\+Send\+Bitrate\+Mode (\begin{DoxyParamCaption}\item[{Z\+U\+C\+H\+AR}]{uc\+Mode }\end{DoxyParamCaption})}
+
+
+
+Set an bitrate mode of sending direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uc\+Mode} & \mbox{\hyperlink{mtc__media_8h_a0f4169ca97c8823014339c77ac67c78f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+N\+\_\+\+M\+O\+DE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__media_8h_aaf984724064915be7fadc8cb93a478da}\label{mtc__media_8h_aaf984724064915be7fadc8cb93a478da}} 
+\index{mtc\_media.h@{mtc\_media.h}!Mtc\_MediaFileAmrToWav@{Mtc\_MediaFileAmrToWav}}
+\index{Mtc\_MediaFileAmrToWav@{Mtc\_MediaFileAmrToWav}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MediaFileAmrToWav()}{Mtc\_MediaFileAmrToWav()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Media\+File\+Amr\+To\+Wav (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+In\+File,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Out\+File }\end{DoxyParamCaption})}
+
+
+
+Convert amr file to wav file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+In\+File} & Input amr file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Out\+File} & Output wav file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__media_8h_ab9580aff9460016ea121f03dfd3e84b1}\label{mtc__media_8h_ab9580aff9460016ea121f03dfd3e84b1}} 
+\index{mtc\_media.h@{mtc\_media.h}!Mtc\_MediaFileWavToAmr@{Mtc\_MediaFileWavToAmr}}
+\index{Mtc\_MediaFileWavToAmr@{Mtc\_MediaFileWavToAmr}!mtc\_media.h@{mtc\_media.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MediaFileWavToAmr()}{Mtc\_MediaFileWavToAmr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Media\+File\+Wav\+To\+Amr (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+In\+File,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Out\+File }\end{DoxyParamCaption})}
+
+
+
+Convert wav file to amr file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+In\+File} & Input wav file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Out\+File} & Output amr file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}

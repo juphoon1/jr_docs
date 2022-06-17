@@ -1,0 +1,75 @@
+\hypertarget{mtc__call__cfg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+call\+\_\+cfg.h File Reference}
+\label{mtc__call__cfg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_call\_cfg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_call\_cfg.h}}
+
+
+M\+TC Call Config Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__call__cfg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__call__cfg_8h_a348dbf57a5fd4faef055c6405ec96488}{Mtc\+\_\+\+Call\+Cfg\+Get\+Use\+Dft\+Log}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get using default call log management. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__call__cfg_8h_acf4c7840769b67595b0c87803329ea23}{Mtc\+\_\+\+Call\+Cfg\+Set\+Use\+Dft\+Log}} (Z\+B\+O\+OL b\+Use)
+\begin{DoxyCompactList}\small\item\em Set using default call log management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Call Config Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__call__cfg_8h_a348dbf57a5fd4faef055c6405ec96488}\label{mtc__call__cfg_8h_a348dbf57a5fd4faef055c6405ec96488}} 
+\index{mtc\_call\_cfg.h@{mtc\_call\_cfg.h}!Mtc\_CallCfgGetUseDftLog@{Mtc\_CallCfgGetUseDftLog}}
+\index{Mtc\_CallCfgGetUseDftLog@{Mtc\_CallCfgGetUseDftLog}!mtc\_call\_cfg.h@{mtc\_call\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCfgGetUseDftLog()}{Mtc\_CallCfgGetUseDftLog()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Call\+Cfg\+Get\+Use\+Dft\+Log (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get using default call log management. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & M\+TC provide call log management. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & M\+TC don\textquotesingle{}t have call log management.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__call__cfg_8h_acf4c7840769b67595b0c87803329ea23}{Mtc\+\_\+\+Call\+Cfg\+Set\+Use\+Dft\+Log}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__call__cfg_8h_acf4c7840769b67595b0c87803329ea23}\label{mtc__call__cfg_8h_acf4c7840769b67595b0c87803329ea23}} 
+\index{mtc\_call\_cfg.h@{mtc\_call\_cfg.h}!Mtc\_CallCfgSetUseDftLog@{Mtc\_CallCfgSetUseDftLog}}
+\index{Mtc\_CallCfgSetUseDftLog@{Mtc\_CallCfgSetUseDftLog}!mtc\_call\_cfg.h@{mtc\_call\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCfgSetUseDftLog()}{Mtc\_CallCfgSetUseDftLog()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Call\+Cfg\+Set\+Use\+Dft\+Log (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Use }\end{DoxyParamCaption})}
+
+
+
+Set using default call log management. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Use} & Use default call log management.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set use status successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set use status failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__call__cfg_8h_a348dbf57a5fd4faef055c6405ec96488}{Mtc\+\_\+\+Call\+Cfg\+Get\+Use\+Dft\+Log}} 
+\end{DoxySeeAlso}

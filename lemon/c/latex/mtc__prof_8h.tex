@@ -1,0 +1,324 @@
+\hypertarget{mtc__prof_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+prof.h File Reference}
+\label{mtc__prof_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prof.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prof.h}}
+
+
+M\+TC Profile Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__prof_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__prof_8h_ac8b0252405ccfe14c411cba2641fc077}\label{mtc__prof_8h_ac8b0252405ccfe14c411cba2641fc077}} 
+\#define \mbox{\hyperlink{mtc__prof_8h_ac8b0252405ccfe14c411cba2641fc077}{M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+A\+SK}}~0x\+Ff
+\begin{DoxyCompactList}\small\item\em The profile mode mask. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__prof_8h_a3383d2f4b8d7e8581e84a7921824089c}\label{mtc__prof_8h_a3383d2f4b8d7e8581e84a7921824089c}} 
+\#define {\bfseries M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+A\+SK}~0x\+F\+F00
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__prof_8h_ab941efd419bfea506d8716a9676365c8}\label{mtc__prof_8h_ab941efd419bfea506d8716a9676365c8}} 
+typedef enum \mbox{\hyperlink{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{mtc__prof_8h_ab941efd419bfea506d8716a9676365c8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+O\+DE}}
+\begin{DoxyCompactList}\small\item\em The profile media mode type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__prof_8h_a49fb4ebad6295d175d719f9377e8acc1}\label{mtc__prof_8h_a49fb4ebad6295d175d719f9377e8acc1}} 
+typedef enum \mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{mtc__prof_8h_a49fb4ebad6295d175d719f9377e8acc1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+O\+DE}}
+\begin{DoxyCompactList}\small\item\em The profile service mode type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+O\+DE}} \{ \mbox{\hyperlink{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79ad48b5543cd9d120eb2c1abe0073805d1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+B\+A\+SE}} = 0x00, 
+\mbox{\hyperlink{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79a705e375b9e9c56f77960e2ab2060e07f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+E\+N\+H\+A\+N\+CE}} = 0x01
+ \}
+\begin{DoxyCompactList}\small\item\em The profile media mode type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+O\+DE}} \{ \newline
+\mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda54790a6ad9b63b504a1245f5689421b7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+V\+O\+IP}} = 0x0000, 
+\mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda6c97257b4d4c518ce3f6973b58459ca7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+M\+T\+EL}} = 0x0100, 
+\mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda8ca1ea9c68bf7d940f4478f4048d2cac}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+C\+S5}} = 0x0200, 
+\mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda1c609a2f5f3a5570e13ebc8f5c6f7505}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+J\+O\+Y\+N\+\_\+\+HF}} = 0x0400, 
+\newline
+\mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda3bbca17d4118dc5061fcd569552caadf}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+J\+O\+Y\+N\+\_\+\+BB}} = 0x0800, 
+\mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda174bca14547519d3d14e6118d5671a85}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+M\+C\+C\+\_\+\+R\+CS}} = 0x1000
+ \}
+\begin{DoxyCompactList}\small\item\em The profile service mode type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prof_8h_af2933156dc4e77c4d34ae27ac90653ce}{Mtc\+\_\+\+Prof\+Get\+User\+Size}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get user count in profile management. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prof_8h_a3b75f922fb4f1c59115125899e9a9202}{Mtc\+\_\+\+Prof\+Get\+User}} (Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC profile get user name by index. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prof_8h_a964add14cbfb9323c59e1bfff9bcaa93}{Mtc\+\_\+\+Prof\+Get\+Cur\+User}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em M\+TC profile get current user. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prof_8h_ae8789a1b3377a4a51378e502ea01c80b}{Mtc\+\_\+\+Prof\+Create\+User}} (Z\+C\+H\+AR $\ast$pc\+User\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC profile create a user. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prof_8h_a508f16f32ffd23dc3df9035078fac818}{Mtc\+\_\+\+Prof\+Delete\+User}} (Z\+C\+H\+AR $\ast$pc\+User\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC profile delete a user. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prof_8h_aa80133e518b4ec8631ea9468142ff5e2}{Mtc\+\_\+\+Prof\+Exist\+User}} (Z\+C\+H\+AR $\ast$pc\+User\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC profile check exist the user. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prof_8h_a5eba3b248f1e51c2595b0aeac227a770}{Mtc\+\_\+\+Prof\+Save\+Provision}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em M\+TC profile save configuration of current user. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prof_8h_ad34ed00a8b677695ff9944c6d12dbc98}{Mtc\+\_\+\+Prof\+Reset\+Provision}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em M\+TC profile reset configuration of current user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Profile Interface Functions. 
+
+M\+TC provides profile management for multi-\/user environment. Each user will have his own configuration, contact and log information. They are stored in a sub-\/directory named with user\textquotesingle{}s name.
+
+To load profile of specific user, invoke \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} and \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}}. To load bob\textquotesingle{}s profile in \char`\"{}profiles\char`\"{} directory, use code\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//initialize the client}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\_CliInit}}(\textcolor{stringliteral}{"profiles"});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// initialize callback functions}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_afae76f71d49d125a9d6fd7973715e281}{Mtc\_CliCbSetPrint}}(print callback);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}{Mtc\_CliCbSetRegOk}}(\textcolor{keyword}{register} ok callback);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}{Mtc\_CliCbSetRegFailed}}(\textcolor{keyword}{register} failed callback);}
+\DoxyCodeLine{... (other callbacks)}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\_CliOpen}}(\textcolor{stringliteral}{"bob"});}
+\end{DoxyCode}
+
+
+It can also not to use profile management. Just use code\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//initialize the client}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\_CliInit}}(profile director);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// initialize callback functions}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_afae76f71d49d125a9d6fd7973715e281}{Mtc\_CliCbSetPrint}}(print callback);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}{Mtc\_CliCbSetRegOk}}(\textcolor{keyword}{register} ok callback);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}{Mtc\_CliCbSetRegFailed}}(\textcolor{keyword}{register} failed callback);}
+\DoxyCodeLine{... (other callbacks)}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\_CliOpen}}(ZNULL);}
+\end{DoxyCode}
+ Now the configuration is default. It may not work properly. So before \mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\+\_\+\+Cli\+Start}}, G\+UI should sets configuration using \mbox{\hyperlink{mtc__cli__db_8h}{mtc\+\_\+cli\+\_\+db.\+h}} etc \char`\"{}\+M\+T\+C D\+B Interfaces\char`\"{}. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79}\label{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_MEDIA\_MODE@{EN\_MTC\_PROF\_MEDIA\_MODE}}
+\index{EN\_MTC\_PROF\_MEDIA\_MODE@{EN\_MTC\_PROF\_MEDIA\_MODE}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PROF\_MEDIA\_MODE}{EN\_MTC\_PROF\_MEDIA\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+O\+DE}}}
+
+
+
+The profile media mode type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_MEDIA\_BASE@{EN\_MTC\_PROF\_MEDIA\_BASE}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_MEDIA\_BASE@{EN\_MTC\_PROF\_MEDIA\_BASE}}}\mbox{\Hypertarget{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79ad48b5543cd9d120eb2c1abe0073805d1}\label{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79ad48b5543cd9d120eb2c1abe0073805d1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+B\+A\+SE&media base \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_MEDIA\_ENHANCE@{EN\_MTC\_PROF\_MEDIA\_ENHANCE}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_MEDIA\_ENHANCE@{EN\_MTC\_PROF\_MEDIA\_ENHANCE}}}\mbox{\Hypertarget{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79a705e375b9e9c56f77960e2ab2060e07f}\label{mtc__prof_8h_ab508f8ce1cc80d86ccaa68feddad1c79a705e375b9e9c56f77960e2ab2060e07f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+E\+N\+H\+A\+N\+CE&media enhance \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cd}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cd}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_MODE@{EN\_MTC\_PROF\_SERVICE\_MODE}}
+\index{EN\_MTC\_PROF\_SERVICE\_MODE@{EN\_MTC\_PROF\_SERVICE\_MODE}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PROF\_SERVICE\_MODE}{EN\_MTC\_PROF\_SERVICE\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+O\+DE}}}
+
+
+
+The profile service mode type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_SERVICE\_VOIP@{EN\_MTC\_PROF\_SERVICE\_VOIP}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_VOIP@{EN\_MTC\_PROF\_SERVICE\_VOIP}}}\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda54790a6ad9b63b504a1245f5689421b7}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda54790a6ad9b63b504a1245f5689421b7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+V\+O\+IP&voip service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_SERVICE\_MMTEL@{EN\_MTC\_PROF\_SERVICE\_MMTEL}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_MMTEL@{EN\_MTC\_PROF\_SERVICE\_MMTEL}}}\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda6c97257b4d4c518ce3f6973b58459ca7}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda6c97257b4d4c518ce3f6973b58459ca7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+M\+T\+EL&mmtel service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_SERVICE\_RCS5@{EN\_MTC\_PROF\_SERVICE\_RCS5}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_RCS5@{EN\_MTC\_PROF\_SERVICE\_RCS5}}}\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda8ca1ea9c68bf7d940f4478f4048d2cac}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda8ca1ea9c68bf7d940f4478f4048d2cac}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+R\+C\+S5&rcs5 service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_SERVICE\_JOYN\_HF@{EN\_MTC\_PROF\_SERVICE\_JOYN\_HF}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_JOYN\_HF@{EN\_MTC\_PROF\_SERVICE\_JOYN\_HF}}}\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda1c609a2f5f3a5570e13ebc8f5c6f7505}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda1c609a2f5f3a5570e13ebc8f5c6f7505}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+J\+O\+Y\+N\+\_\+\+HF&joyn HF service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_SERVICE\_JOYN\_BB@{EN\_MTC\_PROF\_SERVICE\_JOYN\_BB}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_JOYN\_BB@{EN\_MTC\_PROF\_SERVICE\_JOYN\_BB}}}\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda3bbca17d4118dc5061fcd569552caadf}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda3bbca17d4118dc5061fcd569552caadf}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+J\+O\+Y\+N\+\_\+\+BB&joyn BB service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROF\_SERVICE\_CMCC\_RCS@{EN\_MTC\_PROF\_SERVICE\_CMCC\_RCS}!mtc\_prof.h@{mtc\_prof.h}}\index{mtc\_prof.h@{mtc\_prof.h}!EN\_MTC\_PROF\_SERVICE\_CMCC\_RCS@{EN\_MTC\_PROF\_SERVICE\_CMCC\_RCS}}}\mbox{\Hypertarget{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda174bca14547519d3d14e6118d5671a85}\label{mtc__prof_8h_a668da6566eaebb69f6e18395aba705cda174bca14547519d3d14e6118d5671a85}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+M\+C\+C\+\_\+\+R\+CS&cmcc rcs service \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__prof_8h_ae8789a1b3377a4a51378e502ea01c80b}\label{mtc__prof_8h_ae8789a1b3377a4a51378e502ea01c80b}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfCreateUser@{Mtc\_ProfCreateUser}}
+\index{Mtc\_ProfCreateUser@{Mtc\_ProfCreateUser}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfCreateUser()}{Mtc\_ProfCreateUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prof\+Create\+User (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile create a user. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} was called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+User\+Name} & The new user name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Create a user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Create a user failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__prof_8h_a508f16f32ffd23dc3df9035078fac818}\label{mtc__prof_8h_a508f16f32ffd23dc3df9035078fac818}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfDeleteUser@{Mtc\_ProfDeleteUser}}
+\index{Mtc\_ProfDeleteUser@{Mtc\_ProfDeleteUser}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfDeleteUser()}{Mtc\_ProfDeleteUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prof\+Delete\+User (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile delete a user. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} was called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+User\+Name} & The name of the user will be deleted.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Delete a user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Delete a user failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__prof_8h_aa80133e518b4ec8631ea9468142ff5e2}\label{mtc__prof_8h_aa80133e518b4ec8631ea9468142ff5e2}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfExistUser@{Mtc\_ProfExistUser}}
+\index{Mtc\_ProfExistUser@{Mtc\_ProfExistUser}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfExistUser()}{Mtc\_ProfExistUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prof\+Exist\+User (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile check exist the user. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} was called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+User\+Name} & The name of the user will be checked.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & The user is exist. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & The user is not exist. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__prof_8h_a964add14cbfb9323c59e1bfff9bcaa93}\label{mtc__prof_8h_a964add14cbfb9323c59e1bfff9bcaa93}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfGetCurUser@{Mtc\_ProfGetCurUser}}
+\index{Mtc\_ProfGetCurUser@{Mtc\_ProfGetCurUser}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfGetCurUser()}{Mtc\_ProfGetCurUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prof\+Get\+Cur\+User (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile get current user. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} and \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}} was called.
+
+\begin{DoxyReturn}{Returns}
+The current user string, if client is not open return Z\+N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prof_8h_a3b75f922fb4f1c59115125899e9a9202}\label{mtc__prof_8h_a3b75f922fb4f1c59115125899e9a9202}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfGetUser@{Mtc\_ProfGetUser}}
+\index{Mtc\_ProfGetUser@{Mtc\_ProfGetUser}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfGetUser()}{Mtc\_ProfGetUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prof\+Get\+User (\begin{DoxyParamCaption}\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile get user name by index. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} was called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Index} & The index in profile list, 0 to size -\/ 1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user name string. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prof_8h_af2933156dc4e77c4d34ae27ac90653ce}\label{mtc__prof_8h_af2933156dc4e77c4d34ae27ac90653ce}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfGetUserSize@{Mtc\_ProfGetUserSize}}
+\index{Mtc\_ProfGetUserSize@{Mtc\_ProfGetUserSize}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfGetUserSize()}{Mtc\_ProfGetUserSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prof\+Get\+User\+Size (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get user count in profile management. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} was called.
+
+\begin{DoxyReturn}{Returns}
+The profile user size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prof_8h_ad34ed00a8b677695ff9944c6d12dbc98}\label{mtc__prof_8h_ad34ed00a8b677695ff9944c6d12dbc98}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfResetProvision@{Mtc\_ProfResetProvision}}
+\index{Mtc\_ProfResetProvision@{Mtc\_ProfResetProvision}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfResetProvision()}{Mtc\_ProfResetProvision()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prof\+Reset\+Provision (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile reset configuration of current user. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} and \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}} was called.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reset provision successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reset provision failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__prof_8h_a5eba3b248f1e51c2595b0aeac227a770}\label{mtc__prof_8h_a5eba3b248f1e51c2595b0aeac227a770}} 
+\index{mtc\_prof.h@{mtc\_prof.h}!Mtc\_ProfSaveProvision@{Mtc\_ProfSaveProvision}}
+\index{Mtc\_ProfSaveProvision@{Mtc\_ProfSaveProvision}!mtc\_prof.h@{mtc\_prof.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfSaveProvision()}{Mtc\_ProfSaveProvision()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prof\+Save\+Provision (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC profile save configuration of current user. 
+
+This interface should be invoke after \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} and \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}} was called.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Save provision successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Save provision failed. \\
+\hline
+\end{DoxyRetVals}

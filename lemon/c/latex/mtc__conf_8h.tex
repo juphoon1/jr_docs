@@ -1,0 +1,2021 @@
+\hypertarget{mtc__conf_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+conf.h File Reference}
+\label{mtc__conf_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf.h}}
+
+
+M\+TC Conference Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__conf_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__conf_8h_acd35532aeceee56c9ae289f7b44a308c}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC conference status code(error no or terminated code). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a7790db4eddcc07de372a142f53cfec0b}\label{mtc__conf_8h_a7790db4eddcc07de372a142f53cfec0b}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a7790db4eddcc07de372a142f53cfec0b}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 1)
+\begin{DoxyCompactList}\small\item\em authentication failed, invalid user or password. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a7c55c451e737c5d4506d60ae9b68ebdc}\label{mtc__conf_8h_a7c55c451e737c5d4506d60ae9b68ebdc}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a7c55c451e737c5d4506d60ae9b68ebdc}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+S\+E\+S\+S\+\_\+\+T\+MR}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 2)
+\begin{DoxyCompactList}\small\item\em conference refresh error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_ac636a7ce5a005c1aa4d90351cc7be5d7}\label{mtc__conf_8h_ac636a7ce5a005c1aa4d90351cc7be5d7}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_ac636a7ce5a005c1aa4d90351cc7be5d7}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 3)
+\begin{DoxyCompactList}\small\item\em conference forbidden. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a97e60f2f426e671e6ef8392a49c866ce}\label{mtc__conf_8h_a97e60f2f426e671e6ef8392a49c866ce}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a97e60f2f426e671e6ef8392a49c866ce}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 4)
+\begin{DoxyCompactList}\small\item\em conference participant not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_aaa2619297e3e50eea894c4cd4fa353ef}\label{mtc__conf_8h_aaa2619297e3e50eea894c4cd4fa353ef}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_aaa2619297e3e50eea894c4cd4fa353ef}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+A\+C\+P\+T\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 5)
+\begin{DoxyCompactList}\small\item\em conference not accepted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a5b284b6c5952ec15c339de2913ee614c}\label{mtc__conf_8h_a5b284b6c5952ec15c339de2913ee614c}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a5b284b6c5952ec15c339de2913ee614c}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+T\+E\+M\+P\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 6)
+\begin{DoxyCompactList}\small\item\em conference participant temp unavailable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a7bd7140341c335a34d728c65bbe348ee}\label{mtc__conf_8h_a7bd7140341c335a34d728c65bbe348ee}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a7bd7140341c335a34d728c65bbe348ee}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+R\+E\+Q\+\_\+\+T\+E\+R\+M\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 7)
+\begin{DoxyCompactList}\small\item\em conference request terminated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a439fbfbfe02445edcb4b5c43cd589e4b}\label{mtc__conf_8h_a439fbfbfe02445edcb4b5c43cd589e4b}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a439fbfbfe02445edcb4b5c43cd589e4b}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 8)
+\begin{DoxyCompactList}\small\item\em server internal error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a29a897d65ff214f6e12bada6cb1ab708}\label{mtc__conf_8h_a29a897d65ff214f6e12bada6cb1ab708}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a29a897d65ff214f6e12bada6cb1ab708}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 9)
+\begin{DoxyCompactList}\small\item\em service unavailable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_af5daef644a5673fd724263e3130954a4}\label{mtc__conf_8h_af5daef644a5673fd724263e3130954a4}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_af5daef644a5673fd724263e3130954a4}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+C\+O\+V\+I\+B\+\_\+\+C\+A\+N\+C\+EL}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 10)
+\begin{DoxyCompactList}\small\item\em conference terminated co-\/vibration cancel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_ad8c0a5d260e48e73b4284d669ddfbfd4}\label{mtc__conf_8h_ad8c0a5d260e48e73b4284d669ddfbfd4}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_ad8c0a5d260e48e73b4284d669ddfbfd4}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+S\+A\+M\+E\+S\+I\+D\+E\+\_\+\+T\+A\+LK}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 11)
+\begin{DoxyCompactList}\small\item\em conference terminated by same side talk . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_ab34dfe39fe14452db221346489e6896b}\label{mtc__conf_8h_ab34dfe39fe14452db221346489e6896b}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_ab34dfe39fe14452db221346489e6896b}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+S\+U\+B\+S\+\_\+\+T\+E\+R\+M\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 12)
+\begin{DoxyCompactList}\small\item\em conference subscription terminated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a9eb2e8862672ff5b59ad35870537081a}\label{mtc__conf_8h_a9eb2e8862672ff5b59ad35870537081a}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a9eb2e8862672ff5b59ad35870537081a}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+E\+R\+M\+\_\+\+B\+YE}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 13)
+\begin{DoxyCompactList}\small\item\em conference terminated by bye . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a674c78d4d5a5417998b905c79ec742b3}\label{mtc__conf_8h_a674c78d4d5a5417998b905c79ec742b3}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a674c78d4d5a5417998b905c79ec742b3}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+E\+R\+M\+\_\+\+N\+E\+T\+W\+O\+RK}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 14)
+\begin{DoxyCompactList}\small\item\em conference terminated by network error . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a3d947072b76704860137bdd4fee35ccc}\label{mtc__conf_8h_a3d947072b76704860137bdd4fee35ccc}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a3d947072b76704860137bdd4fee35ccc}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+R\+EQ}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 15)
+\begin{DoxyCompactList}\small\item\em conference error by 400 bad request error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a7f2853e64915587236d5aaee56b2215a}\label{mtc__conf_8h_a7f2853e64915587236d5aaee56b2215a}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_a7f2853e64915587236d5aaee56b2215a}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+R\+C\+V\+\_\+\+R\+I\+NG}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 16)
+\begin{DoxyCompactList}\small\item\em cmcc conference donot receive 183 error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_aef7736b24635fe88da933db52b454317}\label{mtc__conf_8h_aef7736b24635fe88da933db52b454317}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_aef7736b24635fe88da933db52b454317}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+E\+R\+M\+\_\+\+C\+A\+N\+C\+EL}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 17)
+\begin{DoxyCompactList}\small\item\em conference terminated by cancel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_afa61b3a0a8379a36ac7a8ef8bb134b24}\label{mtc__conf_8h_afa61b3a0a8379a36ac7a8ef8bb134b24}} 
+\#define \mbox{\hyperlink{mtc__conf_8h_afa61b3a0a8379a36ac7a8ef8bb134b24}{M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 200)
+\begin{DoxyCompactList}\small\item\em other error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__conf_8h_aa7307be17debffd6d93f7ee8955b5dae}\label{mtc__conf_8h_aa7307be17debffd6d93f7ee8955b5dae}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}} {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{mtc__conf_8h_a7f43a6584caa12a2ffd7c945d292aa9d}\label{mtc__conf_8h_a7f43a6584caa12a2ffd7c945d292aa9d}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_a7f43a6584caa12a2ffd7c945d292aa9d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC conference network status. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a31b0246f0577e9277ae256a3f1353864}\label{mtc__conf_8h_a31b0246f0577e9277ae256a3f1353864}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a672c58b10715810e37dae6913533776e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{mtc__conf_8h_a31b0246f0577e9277ae256a3f1353864}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+M\+O\+DE}}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC conference video switch mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_ab680eaf84ef808f30584495bc3a388a0}\label{mtc__conf_8h_ab680eaf84ef808f30584495bc3a388a0}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{mtc__conf_8h_ab680eaf84ef808f30584495bc3a388a0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+M\+O\+DE}}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC conference multi-\/pic mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a6dfdf4e13c33dcffdc6e90ac6e2e4060}\label{mtc__conf_8h_a6dfdf4e13c33dcffdc6e90ac6e2e4060}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a56bfb4befa22543c4989228ce47babfe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_a6dfdf4e13c33dcffdc6e90ac6e2e4060}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc conference media type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a9779a473be0830c1d7fa61ece815ed37}\label{mtc__conf_8h_a9779a473be0830c1d7fa61ece815ed37}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_a9779a473be0830c1d7fa61ece815ed37}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc conference type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a759e7d452b2fcf95ac1d21ebc66770c7}\label{mtc__conf_8h_a759e7d452b2fcf95ac1d21ebc66770c7}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_a759e7d452b2fcf95ac1d21ebc66770c7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc conference charge type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a2917bf2e6192bf6e6d6f4e0cc7eb44e6}\label{mtc__conf_8h_a2917bf2e6192bf6e6d6f4e0cc7eb44e6}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_a2917bf2e6192bf6e6d6f4e0cc7eb44e6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc conference access type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a7c5cbb3f10e1b380bc0f9725bc964b19}\label{mtc__conf_8h_a7c5cbb3f10e1b380bc0f9725bc964b19}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_a7c5cbb3f10e1b380bc0f9725bc964b19}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc conference service type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_acd1fbfbf44d0493268b51e90ff5f1a82}\label{mtc__conf_8h_acd1fbfbf44d0493268b51e90ff5f1a82}} 
+typedef enum \mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__conf_8h_acd1fbfbf44d0493268b51e90ff5f1a82}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc conference account type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65faaae6e55640681e3e1763982c1d8bfc44}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fac3d926ce05d41aacab8602098779aff1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+IN}}, 
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa616b4de28d55e1f3c7a1d5650fb66c8c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+O\+UT}}, 
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa13742ee4d0e1cee9f3fa4de924e095ff}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa546ff0c1f6978ede659385b75064c46e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED}}, 
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65faf0b4c0341e239b041938fc946d33f247}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+N\+H\+O\+LD}}, 
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa314a76e5b60eadeb4d9f9112777849c6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG}}, 
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa4356aac56678db0ee6359809245b5a21}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED}}
+ \}
+\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4faf74422f631462c8a9a6079c8ad1a1785}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}} = -\/3, 
+\mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa87342053fc9b98ec90a8f5813994fc7f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+V\+E\+R\+Y\+\_\+\+B\+AD}} = -\/2, 
+\mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa79ce40ede161fd5fdf4171104b826ea2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+B\+AD}} = -\/1, 
+\mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fae1113b8bf30ff2757917913d0614d9c0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+R\+M\+AL}} = 0, 
+\newline
+\mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa960e162d8762a501d81af14bda80359b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+G\+O\+OD}} = 1, 
+\mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa8fde6c1025a0b5eafa84c5c1a5b0c6ca}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+V\+E\+R\+Y\+\_\+\+G\+O\+OD}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC conference network status. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a672c58b10715810e37dae6913533776e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+M\+O\+DE}} \{ \mbox{\hyperlink{mtc__conf_8h_a672c58b10715810e37dae6913533776eaf06b1ea4920a20dcefa3cf16df219112}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+O\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+DE}} = 1, 
+\mbox{\hyperlink{mtc__conf_8h_a672c58b10715810e37dae6913533776eabd7c80c49a0200ccc519a1598348ae80}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+DE}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC conference video switch mode. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+M\+O\+DE}} \{ \mbox{\hyperlink{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8aa3cf05fc8e480ab6e86da2a6877069fcf}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+O\+N\+E\+\_\+\+B\+IG}} = 0, 
+\mbox{\hyperlink{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8aa11b24b4322e289dc3b01e5701db267da}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+A\+L\+L\+\_\+\+S\+A\+ME}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Type of M\+TC conference multi-\/pic mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf_8h_a56bfb4befa22543c4989228ce47babfe}\label{mtc__conf_8h_a56bfb4befa22543c4989228ce47babfe}} 
+enum \mbox{\hyperlink{mtc__conf_8h_a56bfb4befa22543c4989228ce47babfe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+A\+U\+D\+IO}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+V\+I\+D\+EO}
+ \}
+\begin{DoxyCompactList}\small\item\em mtc conference media type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084ac3c63f3357f07f017d55d6328fb240ca}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+CS}}, 
+\mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a5e01a241401e5244bd4b19582b2dfba0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+CU}}, 
+\mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084afe42b0c43499bad649db89bff5721f63}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+V\+I\+D\+EO}}, 
+\mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a1f7e6939c7dcac806ae1d307d3dc28c3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+V\+O\+I\+CE}}, 
+\newline
+\mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a81c5268cce505d93d80ffcbd816261bf}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+O\+T\+H\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em mtc conference type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca5aa0f4fe0676b8a0ba2b3c15264b8430}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+F\+R\+E\+E\+\_\+\+T\+I\+ME}} = 1, 
+\mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca32738d1a77637c1b925fe04805180815}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+W\+I\+T\+H\+\_\+\+C\+A\+SH}} = 2, 
+\mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca3d4c10db66ecb2bf7fc1498652c6c010}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+P\+R\+E\+S\+E\+N\+T\+ED}} = 3, 
+\mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca57c9446d7285492623c7c3e2ff64bb25}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+P\+A\+C\+K\+A\+GE}} = 9
+ \}
+\begin{DoxyCompactList}\small\item\em mtc conference charge type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea1c0d780060789c40133b9f5ba7dfe4dd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+C\+S\+\_\+\+W\+EB}} = 1, 
+\mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea8332f807b91fa1ac933719dcda803751}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+N\+L\+I\+N\+E\+\_\+\+O\+F\+F\+I\+CE}} = 2, 
+\mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea4d982a720791c3d458a6d034df5071cc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+C\+K\+E\+T\+\_\+\+O\+F\+F\+I\+CE}} = 3, 
+\mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea64d4d3c4fcd830f736c229cd2cef0517}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+T\+H\+ER}} = 99
+ \}
+\begin{DoxyCompactList}\small\item\em mtc conference access type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76da57919b91789d07c0d524a785d78d44bd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P2P}} = 1, 
+\mbox{\hyperlink{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76da8e7923d71b0d004a241b95c6dfc65106}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+NF}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em mtc conference service type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a67d981c77255859c93be3a51ab183e29}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+M\+A\+IN}} = 0, 
+\mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8ab61e96f8c099d5722b1a92e772626901}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+C\+H\+I\+LD}} = 1, 
+\mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a662e7ac5789516f3cf22f0bc13dc4eea}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+E\+N\+T\+E\+R\+P\+R\+I\+SE}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em mtc conference account type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a03cebf3af1249b891e9fe63edeb3915a}{Mtc\+\_\+\+Conf\+Create}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC conference create. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC setup a new conference as the creator. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}{Mtc\+\_\+\+Conf\+Join}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+B\+O\+OL b\+Video)
+\begin{DoxyCompactList}\small\item\em M\+TC join an already existed conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a9eb16321357d65a30151d5f3d3567ee8}{Mtc\+\_\+\+Conf\+Alert}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC alert an incoming conference invite which is notified by callback function which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a6701c7b9f79a71c970ed536bccc04117}{Mtc\+\_\+\+Conf\+Acpt}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC accept an incoming conference invite which is notified by callback function which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_ac76658bbcb20c48eafcbb6bf9c2c2e4e}{Mtc\+\_\+\+Conf\+Hold}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Hold)
+\begin{DoxyCompactList}\small\item\em M\+TC conference hold. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a442b0eac3b58fe3a29150fd9979f7f38}{Mtc\+\_\+\+Conf\+Ivt\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant to conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a8c836887000b05a591938ced8baab06d}{Mtc\+\_\+\+Conf\+Ivt\+User\+Lst}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+B\+O\+OL b\+Video)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant list to a new conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}{Mtc\+\_\+\+Conf\+Kick\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC kick participant from conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a9a9b3781aebc4353694807566017de6d}{Mtc\+\_\+\+Conf\+Ivt\+Sess}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant, which you already have a session with, to conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a53892809a04d9802d250e164b9640d1d}{Mtc\+\_\+\+Conf\+Ivt\+Sess\+Lst}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Sess\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant list, which you already have a session with, to conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a937d9f0184f7165846e15592f65fd359}{Mtc\+\_\+\+Conf\+Term}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Reason, Z\+B\+O\+OL b\+Term\+Conf)
+\begin{DoxyCompactList}\small\item\em M\+TC conference terminate. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a3c9c4bed0b3fb1facf063c716eac97d5}{Mtc\+\_\+\+Conf\+Get\+State}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get conference state. As for CS conference, UI should call \mbox{\hyperlink{mtc__conf_8h_a98a020151f0303692082eb6269dd5485}{Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id}} to save conference id ~\newline
+ while receiving common template sip M\+E\+S\+S\+A\+GE. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_abb229f19175691ff780725d26039a314}{Mtc\+\_\+\+Conf\+Video\+Select\+Usr}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC select one participant as remote image. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a4f85ffb6bc54b916f127b83b8b23b5a9}{Mtc\+\_\+\+Conf\+Rmv\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Num)
+\begin{DoxyCompactList}\small\item\em M\+TC remove one participant from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by \mbox{\hyperlink{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Ptpt\+Updt}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a2f9414922a637db6b531abc425813f87}{Mtc\+\_\+\+Conf\+Rmv\+UserX}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC remove some participants from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by \mbox{\hyperlink{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Ptpt\+Updt}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_af9881197ea04c7ff4d32b42beee3a1ef}{Mtc\+\_\+\+Conf\+Rmv\+User\+Clear\+Data}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC clear the data of remove user before . If one participant kicked out from the conference, when chairman want to invite him. into the conference again, chairman should use this function to clear the data of remove the user before first. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__conf_8h_afa0990d3b650e2c79e514d61a80a6617}{Mtc\+\_\+\+Conf\+Get\+Cookie}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get cookie value. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a2b59759780fc1e31ba7ba64daa1867d7}{Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get peer U\+RI and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a957a70c603b1e81acc159c94def07243}{Mtc\+\_\+\+Conf\+Get\+Conf\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get conference U\+RI and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a62ebd7eb790635da45db0aeabba343ce}{Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get initiator U\+RI and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_aa5ce7960b92a3cf14596db5c63a3e56b}{Mtc\+\_\+\+Conf\+Get\+Partp\+Size}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get paticipant size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a932760d4cb644312118a4b3502e4df14}{Mtc\+\_\+\+Conf\+Get\+Partp\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get paticipant uri and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a13e7bcc58ee6391c5812d80046460e5b}{Mtc\+\_\+\+Conf\+Get\+Partp\+Stat}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get paticipant state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf_8h_afe5e5666e794ce42a2a5c9289a38aac2}{Mtc\+\_\+\+Conf\+Get\+Mic\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get the mute status of microphone. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a5339ce03cc42d09a264461fcfe24868a}{Mtc\+\_\+\+Conf\+Set\+Mic\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em M\+TC conference set the mute status of microphone. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf_8h_a87e26f0af68e9bf4fe3f005f213649fa}{Mtc\+\_\+\+Conf\+Get\+Spk\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get the mute status of speaker. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_afd3a5ccce232d2b4ec204926c3dc11de}{Mtc\+\_\+\+Conf\+Set\+Spk\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em M\+TC conference set the mute status of speaker. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a22d8fd919a5c465c0b40f890e5468e1d}{Mtc\+\_\+\+Conf\+Dtmf}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Dtmf\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC conference send D\+T\+MF info. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a864fc845b97b8e98709d2bcadaad0b13}{Mtc\+\_\+\+Conf\+Camera\+Attach}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC conference attach camera. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a893b1bacf522d6fd9f05a05f76770b80}{Mtc\+\_\+\+Conf\+Camera\+Detach}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference detach camera. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf_8h_a1fcd113a01ec46831be9b011fe959eb2}{Mtc\+\_\+\+Conf\+Get\+Strm\+Name}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference session name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a2eb4ffe2169f2b184f1cba7243488d38}{Mtc\+\_\+\+Conf\+Strm\+Id\+From\+Strm\+Name}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference stream ID from stream render name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a2f238bcebed92a6c42b846d1d2f18f70}{Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Count}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference video stream count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a1fd82a93ef53b44ac32b062ead4360aa}{Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Id\+By\+Index}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference video stream id by index. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf_8h_a629712accc85c51f6f11a26dc539ab32}{Mtc\+\_\+\+Conf\+Get\+Video\+Stat}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference video stream by stream id statistics. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf_8h_a2c7a53297ca4a9749b668c9eef785de8}{Mtc\+\_\+\+Conf\+Get\+Audio\+Stat}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference audio statistics. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a9cf5bd29453c63c74ff4250bd0b6fbda}{Mtc\+\_\+\+Conf\+Get\+Max\+Image\+Num}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference get max image number. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_aeb816206270ea0d6db776169b7410619}{Mtc\+\_\+\+Conf\+Get\+Video\+Swith\+Mode}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference get video switch mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a7dadc7d02d5674a96391094ff86e2a5b}{Mtc\+\_\+\+Conf\+Get\+Multi\+Pic\+Mode}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference get multi-\/picture mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a7b0e27553708e8876a3c729140a5f7ad}{Mtc\+\_\+\+Conf\+Enable\+Adaptive\+Aspect}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Enable, Z\+F\+L\+O\+AT f\+Fixed\+Aspect)
+\begin{DoxyCompactList}\small\item\em M\+TC conference enable/disable dynamic reset encoder to change video image aspect. The function should be called before \mbox{\hyperlink{mtc__conf_8h_a864fc845b97b8e98709d2bcadaad0b13}{Mtc\+\_\+\+Conf\+Camera\+Attach}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a0e62e529f49677740d3de4c2ac5ec811}{Mtc\+\_\+\+Conf\+Rec\+Mic\+Start}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+C\+H\+AR uc\+File\+Type)
+\begin{DoxyCompactList}\small\item\em Reccord mic start. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a7aa0cd5c03572f21a13a237cfb300d31}{Mtc\+\_\+\+Conf\+Rec\+Mic\+Stop}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Reccord Audio stop. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a9d0aea1fe6cbfe83ee7983e3d5d8a3c3}{Mtc\+\_\+\+Conf\+Rec\+Playout\+Start}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+C\+H\+AR uc\+File\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC session record playout. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_ae3eb1439b974852dc59fa7df0bae33b6}{Mtc\+\_\+\+Conf\+Rec\+Playout\+Stop}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC session stop record playout. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a26220b39ccbbd9beed36f4a2d48dae02}{Mtc\+\_\+\+Conf\+Snd\+Start\+Send}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+C\+H\+AR uc\+File\+Type, Z\+B\+O\+OL b\+Loop, Z\+B\+O\+OL b\+Mix)
+\begin{DoxyCompactList}\small\item\em M\+TC conference start send sound from file. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a2656bb1d8a0165509e10c34e531d1d76}{Mtc\+\_\+\+Conf\+Snd\+Stop\+Send}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference stop send sound. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_add2c3e4173996ce87586b0f771653783}{Mtc\+\_\+\+Conf\+File\+Play\+As\+Camera}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+I\+NT i\+Audio\+Strm\+Id, Z\+U\+I\+NT i\+Cycle)
+\begin{DoxyCompactList}\small\item\em M\+TC conference play file as camera. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a978c4e4b8b71e10f9163731ad89de7b2}{Mtc\+\_\+\+Conf\+File\+Play\+Stop}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC conference stop play file. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_ab251abfe4712b7e8cb78c4addfb5f92d}{Mtc\+\_\+\+Conf\+Get\+Strm\+Id}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+C\+H\+AR uc\+Strm\+Type)
+\begin{DoxyCompactList}\small\item\em Get stream ID of the conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf_8h_a204f22b969f7e7c7b1c92023126daa61}{Mtc\+\_\+\+Conf\+Get\+Media\+Server\+Ip\+Addr}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get media server ip address string. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__conf_8h_ae275e4240e6bf699dc993418d034c080}{Mtc\+\_\+\+Conf\+Get\+Conf\+Type}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get conference type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a98a020151f0303692082eb6269dd5485}{Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Serv\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference set server conference id. UI should set server conference id which in common-\/template M\+E\+S\+S\+A\+GE. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a70407e3420fca67fe43cc485c77dcaf8}{Mtc\+\_\+\+Conf\+Get\+Available\+Conf\+Id}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get available conference id. UI should use the ID to get conference state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a7d9e129ab2cc219d3ace61e3d1145bc8}{Mtc\+\_\+\+Conf\+Create\+Account}} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Pkg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference create account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a93d5532dce9b9beed06709210dee35fa}{Mtc\+\_\+\+Conf\+Del\+Account}} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token)
+\begin{DoxyCompactList}\small\item\em M\+TC conference delete account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_ad0414a255866e85cdad5b42bc8421c81}{Mtc\+\_\+\+Conf\+Charge\+Account}} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Balance, Z\+U\+C\+H\+AR uc\+Type, Z\+U\+C\+H\+AR uc\+Access\+Type, Z\+U\+C\+H\+AR uc\+Srv\+Type, Z\+C\+H\+AR $\ast$pc\+Exire\+Date)
+\begin{DoxyCompactList}\small\item\em M\+TC conference charge account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf_8h_a05497e00850e4eece27a3a26d57e0294}{Mtc\+\_\+\+Conf\+Query\+Account}} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Acc\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC conference query account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Conference Interfaces. 
+
+This file includes conference interface function. Those function is used to manage conferences. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__conf_8h_acd35532aeceee56c9ae289f7b44a308c}\label{mtc__conf_8h_acd35532aeceee56c9ae289f7b44a308c}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!MTC\_CONF\_ERR\_NO@{MTC\_CONF\_ERR\_NO}}
+\index{MTC\_CONF\_ERR\_NO@{MTC\_CONF\_ERR\_NO}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CONF\_ERR\_NO}{MTC\_CONF\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}} + 0)}
+
+
+
+M\+TC conference status code(error no or terminated code). 
+
+no error. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06e}\label{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06e}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCESS\_TYPE@{EN\_MTC\_CONF\_ACCESS\_TYPE}}
+\index{EN\_MTC\_CONF\_ACCESS\_TYPE@{EN\_MTC\_CONF\_ACCESS\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_ACCESS\_TYPE}{EN\_MTC\_CONF\_ACCESS\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc conference access type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCESS\_OCS\_WEB@{EN\_MTC\_CONF\_ACCESS\_OCS\_WEB}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCESS\_OCS\_WEB@{EN\_MTC\_CONF\_ACCESS\_OCS\_WEB}}}\mbox{\Hypertarget{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea1c0d780060789c40133b9f5ba7dfe4dd}\label{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea1c0d780060789c40133b9f5ba7dfe4dd}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+C\+S\+\_\+\+W\+EB&ocs web access type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCESS\_ONLINE\_OFFICE@{EN\_MTC\_CONF\_ACCESS\_ONLINE\_OFFICE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCESS\_ONLINE\_OFFICE@{EN\_MTC\_CONF\_ACCESS\_ONLINE\_OFFICE}}}\mbox{\Hypertarget{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea8332f807b91fa1ac933719dcda803751}\label{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea8332f807b91fa1ac933719dcda803751}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+N\+L\+I\+N\+E\+\_\+\+O\+F\+F\+I\+CE&online office access type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCESS\_POCKET\_OFFICE@{EN\_MTC\_CONF\_ACCESS\_POCKET\_OFFICE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCESS\_POCKET\_OFFICE@{EN\_MTC\_CONF\_ACCESS\_POCKET\_OFFICE}}}\mbox{\Hypertarget{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea4d982a720791c3d458a6d034df5071cc}\label{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea4d982a720791c3d458a6d034df5071cc}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+C\+K\+E\+T\+\_\+\+O\+F\+F\+I\+CE&packet office access type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCESS\_OTHER@{EN\_MTC\_CONF\_ACCESS\_OTHER}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCESS\_OTHER@{EN\_MTC\_CONF\_ACCESS\_OTHER}}}\mbox{\Hypertarget{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea64d4d3c4fcd830f736c229cd2cef0517}\label{mtc__conf_8h_a463748ca49e0b3e4c36b948125cba06ea64d4d3c4fcd830f736c229cd2cef0517}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+T\+H\+ER&other access type \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8}\label{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCOUNT\_TYPE@{EN\_MTC\_CONF\_ACCOUNT\_TYPE}}
+\index{EN\_MTC\_CONF\_ACCOUNT\_TYPE@{EN\_MTC\_CONF\_ACCOUNT\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_ACCOUNT\_TYPE}{EN\_MTC\_CONF\_ACCOUNT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc conference account type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCOUNT\_MAIN@{EN\_MTC\_CONF\_ACCOUNT\_MAIN}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCOUNT\_MAIN@{EN\_MTC\_CONF\_ACCOUNT\_MAIN}}}\mbox{\Hypertarget{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a67d981c77255859c93be3a51ab183e29}\label{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a67d981c77255859c93be3a51ab183e29}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+M\+A\+IN&main account \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCOUNT\_CHILD@{EN\_MTC\_CONF\_ACCOUNT\_CHILD}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCOUNT\_CHILD@{EN\_MTC\_CONF\_ACCOUNT\_CHILD}}}\mbox{\Hypertarget{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8ab61e96f8c099d5722b1a92e772626901}\label{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8ab61e96f8c099d5722b1a92e772626901}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+C\+H\+I\+LD&child acccount \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_ACCOUNT\_ENTERPRISE@{EN\_MTC\_CONF\_ACCOUNT\_ENTERPRISE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_ACCOUNT\_ENTERPRISE@{EN\_MTC\_CONF\_ACCOUNT\_ENTERPRISE}}}\mbox{\Hypertarget{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a662e7ac5789516f3cf22f0bc13dc4eea}\label{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a662e7ac5789516f3cf22f0bc13dc4eea}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+E\+N\+T\+E\+R\+P\+R\+I\+SE&enterprise acccount \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62c}\label{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62c}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CHARGE\_TYPE@{EN\_MTC\_CONF\_CHARGE\_TYPE}}
+\index{EN\_MTC\_CONF\_CHARGE\_TYPE@{EN\_MTC\_CONF\_CHARGE\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_CHARGE\_TYPE}{EN\_MTC\_CONF\_CHARGE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc conference charge type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_CHARGE\_FREE\_TIME@{EN\_MTC\_CONF\_CHARGE\_FREE\_TIME}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CHARGE\_FREE\_TIME@{EN\_MTC\_CONF\_CHARGE\_FREE\_TIME}}}\mbox{\Hypertarget{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca5aa0f4fe0676b8a0ba2b3c15264b8430}\label{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca5aa0f4fe0676b8a0ba2b3c15264b8430}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+F\+R\+E\+E\+\_\+\+T\+I\+ME&charge free time \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_CHARGE\_WITH\_CASH@{EN\_MTC\_CONF\_CHARGE\_WITH\_CASH}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CHARGE\_WITH\_CASH@{EN\_MTC\_CONF\_CHARGE\_WITH\_CASH}}}\mbox{\Hypertarget{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca32738d1a77637c1b925fe04805180815}\label{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca32738d1a77637c1b925fe04805180815}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+W\+I\+T\+H\+\_\+\+C\+A\+SH&charge with cash \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_CHARGE\_PRESENTED@{EN\_MTC\_CONF\_CHARGE\_PRESENTED}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CHARGE\_PRESENTED@{EN\_MTC\_CONF\_CHARGE\_PRESENTED}}}\mbox{\Hypertarget{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca3d4c10db66ecb2bf7fc1498652c6c010}\label{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca3d4c10db66ecb2bf7fc1498652c6c010}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+P\+R\+E\+S\+E\+N\+T\+ED&presented balance \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_CHARGE\_PACKAGE@{EN\_MTC\_CONF\_CHARGE\_PACKAGE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CHARGE\_PACKAGE@{EN\_MTC\_CONF\_CHARGE\_PACKAGE}}}\mbox{\Hypertarget{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca57c9446d7285492623c7c3e2ff64bb25}\label{mtc__conf_8h_a2c604c16530ee28e381d64b85713a62ca57c9446d7285492623c7c3e2ff64bb25}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+P\+A\+C\+K\+A\+GE&package recharge \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8a}\label{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8a}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_MULTI\_PIC\_MODE@{EN\_MTC\_CONF\_MULTI\_PIC\_MODE}}
+\index{EN\_MTC\_CONF\_MULTI\_PIC\_MODE@{EN\_MTC\_CONF\_MULTI\_PIC\_MODE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_MULTI\_PIC\_MODE}{EN\_MTC\_CONF\_MULTI\_PIC\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+M\+O\+DE}}}
+
+
+
+Type of M\+TC conference multi-\/pic mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_MULTI\_PIC\_ONE\_BIG@{EN\_MTC\_CONF\_MULTI\_PIC\_ONE\_BIG}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_MULTI\_PIC\_ONE\_BIG@{EN\_MTC\_CONF\_MULTI\_PIC\_ONE\_BIG}}}\mbox{\Hypertarget{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8aa3cf05fc8e480ab6e86da2a6877069fcf}\label{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8aa3cf05fc8e480ab6e86da2a6877069fcf}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+O\+N\+E\+\_\+\+B\+IG&One-\/big picture size mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_MULTI\_PIC\_ALL\_SAME@{EN\_MTC\_CONF\_MULTI\_PIC\_ALL\_SAME}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_MULTI\_PIC\_ALL\_SAME@{EN\_MTC\_CONF\_MULTI\_PIC\_ALL\_SAME}}}\mbox{\Hypertarget{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8aa11b24b4322e289dc3b01e5701db267da}\label{mtc__conf_8h_a7946f65c3230cd00f257db1da1224f8aa11b24b4322e289dc3b01e5701db267da}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+A\+L\+L\+\_\+\+S\+A\+ME&All same picture size mode. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4f}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4f}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_TYPE@{EN\_MTC\_CONF\_NET\_STATUS\_TYPE}}
+\index{EN\_MTC\_CONF\_NET\_STATUS\_TYPE@{EN\_MTC\_CONF\_NET\_STATUS\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_NET\_STATUS\_TYPE}{EN\_MTC\_CONF\_NET\_STATUS\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}}
+
+
+
+Type of M\+TC conference network status. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_NET\_STATUS\_DISCONNECTED@{EN\_MTC\_CONF\_NET\_STATUS\_DISCONNECTED}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_DISCONNECTED@{EN\_MTC\_CONF\_NET\_STATUS\_DISCONNECTED}}}\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4faf74422f631462c8a9a6079c8ad1a1785}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4faf74422f631462c8a9a6079c8ad1a1785}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED&Conference Disconnected from network. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_NET\_STATUS\_VERY\_BAD@{EN\_MTC\_CONF\_NET\_STATUS\_VERY\_BAD}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_VERY\_BAD@{EN\_MTC\_CONF\_NET\_STATUS\_VERY\_BAD}}}\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa87342053fc9b98ec90a8f5813994fc7f}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa87342053fc9b98ec90a8f5813994fc7f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+V\+E\+R\+Y\+\_\+\+B\+AD&Conference Network status is very bad. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_NET\_STATUS\_BAD@{EN\_MTC\_CONF\_NET\_STATUS\_BAD}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_BAD@{EN\_MTC\_CONF\_NET\_STATUS\_BAD}}}\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa79ce40ede161fd5fdf4171104b826ea2}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa79ce40ede161fd5fdf4171104b826ea2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+B\+AD&Conference Network status is bad. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_NET\_STATUS\_NORMAL@{EN\_MTC\_CONF\_NET\_STATUS\_NORMAL}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_NORMAL@{EN\_MTC\_CONF\_NET\_STATUS\_NORMAL}}}\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fae1113b8bf30ff2757917913d0614d9c0}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fae1113b8bf30ff2757917913d0614d9c0}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+N\+O\+R\+M\+AL&Conference Network status is normal. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_NET\_STATUS\_GOOD@{EN\_MTC\_CONF\_NET\_STATUS\_GOOD}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_GOOD@{EN\_MTC\_CONF\_NET\_STATUS\_GOOD}}}\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa960e162d8762a501d81af14bda80359b}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa960e162d8762a501d81af14bda80359b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+G\+O\+OD&Conference Network status is good. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_NET\_STATUS\_VERY\_GOOD@{EN\_MTC\_CONF\_NET\_STATUS\_VERY\_GOOD}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_NET\_STATUS\_VERY\_GOOD@{EN\_MTC\_CONF\_NET\_STATUS\_VERY\_GOOD}}}\mbox{\Hypertarget{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa8fde6c1025a0b5eafa84c5c1a5b0c6ca}\label{mtc__conf_8h_a28864218f9b5286cba5f63660bbc8d4fa8fde6c1025a0b5eafa84c5c1a5b0c6ca}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+V\+E\+R\+Y\+\_\+\+G\+O\+OD&Conference Network status is very good. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65f}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65f}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_TYPE@{EN\_MTC\_CONF\_PARTP\_STATE\_TYPE}}
+\index{EN\_MTC\_CONF\_PARTP\_STATE\_TYPE@{EN\_MTC\_CONF\_PARTP\_STATE\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_PARTP\_STATE\_TYPE}{EN\_MTC\_CONF\_PARTP\_STATE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_PENDING@{EN\_MTC\_CONF\_PARTP\_STATE\_PENDING}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_PENDING@{EN\_MTC\_CONF\_PARTP\_STATE\_PENDING}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65faaae6e55640681e3e1763982c1d8bfc44}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65faaae6e55640681e3e1763982c1d8bfc44}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG&Conference participant pending. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGIN@{EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGIN}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGIN@{EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGIN}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fac3d926ce05d41aacab8602098779aff1}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fac3d926ce05d41aacab8602098779aff1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+IN&Conference participant dialing in. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGOUT@{EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGOUT}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGOUT@{EN\_MTC\_CONF\_PARTP\_STATE\_DIALINGOUT}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa616b4de28d55e1f3c7a1d5650fb66c8c}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa616b4de28d55e1f3c7a1d5650fb66c8c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+O\+UT&Conference participant dialing out. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_ALERTING@{EN\_MTC\_CONF\_PARTP\_STATE\_ALERTING}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_ALERTING@{EN\_MTC\_CONF\_PARTP\_STATE\_ALERTING}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa13742ee4d0e1cee9f3fa4de924e095ff}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa13742ee4d0e1cee9f3fa4de924e095ff}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG&Conference participant alerting. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_CONNED@{EN\_MTC\_CONF\_PARTP\_STATE\_CONNED}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_CONNED@{EN\_MTC\_CONF\_PARTP\_STATE\_CONNED}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa546ff0c1f6978ede659385b75064c46e}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa546ff0c1f6978ede659385b75064c46e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED&Conference participant connected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_ONHOLD@{EN\_MTC\_CONF\_PARTP\_STATE\_ONHOLD}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_ONHOLD@{EN\_MTC\_CONF\_PARTP\_STATE\_ONHOLD}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65faf0b4c0341e239b041938fc946d33f247}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65faf0b4c0341e239b041938fc946d33f247}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+N\+H\+O\+LD&Conference participant onhold. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_DISCING@{EN\_MTC\_CONF\_PARTP\_STATE\_DISCING}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_DISCING@{EN\_MTC\_CONF\_PARTP\_STATE\_DISCING}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa314a76e5b60eadeb4d9f9112777849c6}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa314a76e5b60eadeb4d9f9112777849c6}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG&Conference participant disconnecting. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_PARTP\_STATE\_DISCED@{EN\_MTC\_CONF\_PARTP\_STATE\_DISCED}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_PARTP\_STATE\_DISCED@{EN\_MTC\_CONF\_PARTP\_STATE\_DISCED}}}\mbox{\Hypertarget{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa4356aac56678db0ee6359809245b5a21}\label{mtc__conf_8h_abe506da25d5709720ee1439be24dd65fa4356aac56678db0ee6359809245b5a21}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED&Conference participant disconnected. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76d}\label{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76d}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_SERVICE\_TYPE@{EN\_MTC\_CONF\_SERVICE\_TYPE}}
+\index{EN\_MTC\_CONF\_SERVICE\_TYPE@{EN\_MTC\_CONF\_SERVICE\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_SERVICE\_TYPE}{EN\_MTC\_CONF\_SERVICE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc conference service type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_SERVICE\_P2P@{EN\_MTC\_CONF\_SERVICE\_P2P}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_SERVICE\_P2P@{EN\_MTC\_CONF\_SERVICE\_P2P}}}\mbox{\Hypertarget{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76da57919b91789d07c0d524a785d78d44bd}\label{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76da57919b91789d07c0d524a785d78d44bd}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P2P&charge service p2p \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_SERVICE\_CONF@{EN\_MTC\_CONF\_SERVICE\_CONF}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_SERVICE\_CONF@{EN\_MTC\_CONF\_SERVICE\_CONF}}}\mbox{\Hypertarget{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76da8e7923d71b0d004a241b95c6dfc65106}\label{mtc__conf_8h_af76ec3afda98403e3e5347d4877ef76da8e7923d71b0d004a241b95c6dfc65106}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+O\+NF&charge service conference(multi-\/call) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084}\label{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_TYPE@{EN\_MTC\_CONF\_TYPE}}
+\index{EN\_MTC\_CONF\_TYPE@{EN\_MTC\_CONF\_TYPE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_TYPE}{EN\_MTC\_CONF\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc conference type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_CS@{EN\_MTC\_CONF\_CS}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CS@{EN\_MTC\_CONF\_CS}}}\mbox{\Hypertarget{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084ac3c63f3357f07f017d55d6328fb240ca}\label{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084ac3c63f3357f07f017d55d6328fb240ca}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+CS&cs http conference \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_MCU@{EN\_MTC\_CONF\_MCU}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_MCU@{EN\_MTC\_CONF\_MCU}}}\mbox{\Hypertarget{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a5e01a241401e5244bd4b19582b2dfba0}\label{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a5e01a241401e5244bd4b19582b2dfba0}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+CU&M\+CU sip conference. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_MULTI\_STREAM\_VIDEO@{EN\_MTC\_CONF\_MULTI\_STREAM\_VIDEO}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_MULTI\_STREAM\_VIDEO@{EN\_MTC\_CONF\_MULTI\_STREAM\_VIDEO}}}\mbox{\Hypertarget{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084afe42b0c43499bad649db89bff5721f63}\label{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084afe42b0c43499bad649db89bff5721f63}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+V\+I\+D\+EO&Multi-\/stream video http conference. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_MULTI\_STREAM\_VOICE@{EN\_MTC\_CONF\_MULTI\_STREAM\_VOICE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_MULTI\_STREAM\_VOICE@{EN\_MTC\_CONF\_MULTI\_STREAM\_VOICE}}}\mbox{\Hypertarget{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a1f7e6939c7dcac806ae1d307d3dc28c3}\label{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a1f7e6939c7dcac806ae1d307d3dc28c3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+V\+O\+I\+CE&Multi-\/stream voice http conference. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_OTHER@{EN\_MTC\_CONF\_OTHER}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_OTHER@{EN\_MTC\_CONF\_OTHER}}}\mbox{\Hypertarget{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a81c5268cce505d93d80ffcbd816261bf}\label{mtc__conf_8h_a6fdb613b2b5311e890dab0be6d6a0084a81c5268cce505d93d80ffcbd816261bf}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+O\+T\+H\+ER&Other conference. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__conf_8h_a672c58b10715810e37dae6913533776e}\label{mtc__conf_8h_a672c58b10715810e37dae6913533776e}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_VIDEO\_SWITCH\_MODE@{EN\_MTC\_CONF\_VIDEO\_SWITCH\_MODE}}
+\index{EN\_MTC\_CONF\_VIDEO\_SWITCH\_MODE@{EN\_MTC\_CONF\_VIDEO\_SWITCH\_MODE}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CONF\_VIDEO\_SWITCH\_MODE}{EN\_MTC\_CONF\_VIDEO\_SWITCH\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__conf_8h_a672c58b10715810e37dae6913533776e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+M\+O\+DE}}}
+
+
+
+Type of M\+TC conference video switch mode. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_VOICE\_CONTROL\_MODE@{EN\_MTC\_CONF\_VOICE\_CONTROL\_MODE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_VOICE\_CONTROL\_MODE@{EN\_MTC\_CONF\_VOICE\_CONTROL\_MODE}}}\mbox{\Hypertarget{mtc__conf_8h_a672c58b10715810e37dae6913533776eaf06b1ea4920a20dcefa3cf16df219112}\label{mtc__conf_8h_a672c58b10715810e37dae6913533776eaf06b1ea4920a20dcefa3cf16df219112}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+O\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+DE&Conference voice control mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CONF\_CHAIRMAN\_CONTROL\_MODE@{EN\_MTC\_CONF\_CHAIRMAN\_CONTROL\_MODE}!mtc\_conf.h@{mtc\_conf.h}}\index{mtc\_conf.h@{mtc\_conf.h}!EN\_MTC\_CONF\_CHAIRMAN\_CONTROL\_MODE@{EN\_MTC\_CONF\_CHAIRMAN\_CONTROL\_MODE}}}\mbox{\Hypertarget{mtc__conf_8h_a672c58b10715810e37dae6913533776eabd7c80c49a0200ccc519a1598348ae80}\label{mtc__conf_8h_a672c58b10715810e37dae6913533776eabd7c80c49a0200ccc519a1598348ae80}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+DE&Conference chairman control mode . \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__conf_8h_a6701c7b9f79a71c970ed536bccc04117}\label{mtc__conf_8h_a6701c7b9f79a71c970ed536bccc04117}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfAcpt@{Mtc\_ConfAcpt}}
+\index{Mtc\_ConfAcpt@{Mtc\_ConfAcpt}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfAcpt()}{Mtc\_ConfAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Acpt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC accept an incoming conference invite which is notified by callback function which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}. 
+
+If accept a conference invite, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a70efad6407ea2f31794cd4a6fdd7571e}{Mtc\+\_\+\+Conf\+Cb\+Set\+Conned}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to accept. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}, \mbox{\hyperlink{mtc__conf_8h_a9eb16321357d65a30151d5f3d3567ee8}{Mtc\+\_\+\+Conf\+Alert}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a9eb16321357d65a30151d5f3d3567ee8}\label{mtc__conf_8h_a9eb16321357d65a30151d5f3d3567ee8}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfAlert@{Mtc\_ConfAlert}}
+\index{Mtc\_ConfAlert@{Mtc\_ConfAlert}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfAlert()}{Mtc\_ConfAlert()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Alert (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC alert an incoming conference invite which is notified by callback function which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to join. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+This function is used to tell the conference initiator that you have received the invitation and give user an indication in UI layer. User should make a decision whether accept the conference invitation.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}, \mbox{\hyperlink{mtc__conf_8h_a6701c7b9f79a71c970ed536bccc04117}{Mtc\+\_\+\+Conf\+Acpt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a864fc845b97b8e98709d2bcadaad0b13}\label{mtc__conf_8h_a864fc845b97b8e98709d2bcadaad0b13}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfCameraAttach@{Mtc\_ConfCameraAttach}}
+\index{Mtc\_ConfCameraAttach@{Mtc\_ConfCameraAttach}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCameraAttach()}{Mtc\_ConfCameraAttach()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Camera\+Attach (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference attach camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The name string of camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a893b1bacf522d6fd9f05a05f76770b80}\label{mtc__conf_8h_a893b1bacf522d6fd9f05a05f76770b80}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfCameraDetach@{Mtc\_ConfCameraDetach}}
+\index{Mtc\_ConfCameraDetach@{Mtc\_ConfCameraDetach}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCameraDetach()}{Mtc\_ConfCameraDetach()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Camera\+Detach (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference detach camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_ad0414a255866e85cdad5b42bc8421c81}\label{mtc__conf_8h_ad0414a255866e85cdad5b42bc8421c81}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfChargeAccount@{Mtc\_ConfChargeAccount}}
+\index{Mtc\_ConfChargeAccount@{Mtc\_ConfChargeAccount}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfChargeAccount()}{Mtc\_ConfChargeAccount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Charge\+Account (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pwd,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+U\+I\+NT}]{i\+Balance,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Type,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Access\+Type,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Srv\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Exire\+Date }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference charge account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication.\\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Balance} & The charge balance in minutes. User can only make domestic calls. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Type} & The charging type, \mbox{\hyperlink{mtc__conf_8h_a759e7d452b2fcf95ac1d21ebc66770c7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Access\+Type} & The access type, \mbox{\hyperlink{mtc__conf_8h_a2917bf2e6192bf6e6d6f4e0cc7eb44e6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Srv\+Type} & Service type, \mbox{\hyperlink{mtc__conf_8h_a7c5cbb3f10e1b380bc0f9725bc964b19}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Exire\+Date} & The charge balance expire date, like Y\+Y\+Y\+Y\+M\+M\+DD.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a03cebf3af1249b891e9fe63edeb3915a}\label{mtc__conf_8h_a03cebf3af1249b891e9fe63edeb3915a}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfCreate@{Mtc\_ConfCreate}}
+\index{Mtc\_ConfCreate@{Mtc\_ConfCreate}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCreate()}{Mtc\_ConfCreate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Create (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference create. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The conference type, \mbox{\hyperlink{mtc__conf_8h_a9779a473be0830c1d7fa61ece815ed37}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of this new created conference on succeed, otherwise return Z\+M\+A\+X\+U\+I\+NT, if return Z\+M\+A\+X\+U\+I\+NT, should call Mtc\+\_\+\+Lcs\+Get\+Err\+Code.
+\end{DoxyReturn}
+Different with the method of session creation, this function only malloc the resource of conference. If you want to setup or join a conference, you need step ahead by calling other functions. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}{Mtc\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a7d9e129ab2cc219d3ace61e3d1145bc8}\label{mtc__conf_8h_a7d9e129ab2cc219d3ace61e3d1145bc8}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfCreateAccount@{Mtc\_ConfCreateAccount}}
+\index{Mtc\_ConfCreateAccount@{Mtc\_ConfCreateAccount}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCreateAccount()}{Mtc\_ConfCreateAccount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Create\+Account (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pwd,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pkg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference create account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pkg\+Id} & The package id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a93d5532dce9b9beed06709210dee35fa}\label{mtc__conf_8h_a93d5532dce9b9beed06709210dee35fa}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfDelAccount@{Mtc\_ConfDelAccount}}
+\index{Mtc\_ConfDelAccount@{Mtc\_ConfDelAccount}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDelAccount()}{Mtc\_ConfDelAccount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Del\+Account (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pwd,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference delete account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a22d8fd919a5c465c0b40f890e5468e1d}\label{mtc__conf_8h_a22d8fd919a5c465c0b40f890e5468e1d}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfDtmf@{Mtc\_ConfDtmf}}
+\index{Mtc\_ConfDtmf@{Mtc\_ConfDtmf}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDtmf()}{Mtc\_ConfDtmf()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Dtmf (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Dtmf\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference send D\+T\+MF info. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to send D\+T\+MF info. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Dtmf\+Type} & D\+T\+MF type which will be sent, see \mbox{\hyperlink{mtc__call_8h_a88c7f4a54a0b78437b4fb7809b348f7e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+D\+T\+M\+F\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a7b0e27553708e8876a3c729140a5f7ad}\label{mtc__conf_8h_a7b0e27553708e8876a3c729140a5f7ad}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfEnableAdaptiveAspect@{Mtc\_ConfEnableAdaptiveAspect}}
+\index{Mtc\_ConfEnableAdaptiveAspect@{Mtc\_ConfEnableAdaptiveAspect}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfEnableAdaptiveAspect()}{Mtc\_ConfEnableAdaptiveAspect()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Enable\+Adaptive\+Aspect (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Enable,  }\item[{Z\+F\+L\+O\+AT}]{f\+Fixed\+Aspect }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference enable/disable dynamic reset encoder to change video image aspect. The function should be called before \mbox{\hyperlink{mtc__conf_8h_a864fc845b97b8e98709d2bcadaad0b13}{Mtc\+\_\+\+Conf\+Camera\+Attach}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Enable} & Z\+T\+R\+UE to enable dynamic reset encoder, Z\+F\+A\+L\+SE to disable it \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Fixed\+Aspect,if} & $<$ 0 the outgoing video image will be adaptive the capture (camera, always 4\+:3) aspect, if =0 it will use codec settings(always 16\+:9, to be adaptive with the devices), if $>$0 will be with the setting fixed aspect(like 1.\+33, 1.\+77).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_add2c3e4173996ce87586b0f771653783}\label{mtc__conf_8h_add2c3e4173996ce87586b0f771653783}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfFilePlayAsCamera@{Mtc\_ConfFilePlayAsCamera}}
+\index{Mtc\_ConfFilePlayAsCamera@{Mtc\_ConfFilePlayAsCamera}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfFilePlayAsCamera()}{Mtc\_ConfFilePlayAsCamera()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+File\+Play\+As\+Camera (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Audio\+Strm\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Cycle }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference play file as camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & Video file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Audio\+Strm\+Id} & Audio stream id, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_ab251abfe4712b7e8cb78c4addfb5f92d}{Mtc\+\_\+\+Conf\+Get\+Strm\+Id}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cycle} & 0 to play once, otherwise to loop play .\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a978c4e4b8b71e10f9163731ad89de7b2}{Mtc\+\_\+\+Conf\+File\+Play\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a978c4e4b8b71e10f9163731ad89de7b2}\label{mtc__conf_8h_a978c4e4b8b71e10f9163731ad89de7b2}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfFilePlayStop@{Mtc\_ConfFilePlayStop}}
+\index{Mtc\_ConfFilePlayStop@{Mtc\_ConfFilePlayStop}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfFilePlayStop()}{Mtc\_ConfFilePlayStop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+File\+Play\+Stop (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference stop play file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & Video file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_add2c3e4173996ce87586b0f771653783}{Mtc\+\_\+\+Conf\+File\+Play\+As\+Camera}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a2c7a53297ca4a9749b668c9eef785de8}\label{mtc__conf_8h_a2c7a53297ca4a9749b668c9eef785de8}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetAudioStat@{Mtc\_ConfGetAudioStat}}
+\index{Mtc\_ConfGetAudioStat@{Mtc\_ConfGetAudioStat}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetAudioStat()}{Mtc\_ConfGetAudioStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Get\+Audio\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference audio statistics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em String} & of video statistics. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a70407e3420fca67fe43cc485c77dcaf8}\label{mtc__conf_8h_a70407e3420fca67fe43cc485c77dcaf8}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetAvailableConfId@{Mtc\_ConfGetAvailableConfId}}
+\index{Mtc\_ConfGetAvailableConfId@{Mtc\_ConfGetAvailableConfId}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetAvailableConfId()}{Mtc\_ConfGetAvailableConfId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Available\+Conf\+Id (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get available conference id. UI should use the ID to get conference state. 
+
+\begin{DoxyReturn}{Returns}
+The ID of exist conference.
+\end{DoxyReturn}
+\mbox{\hyperlink{mtc__conf_8h_a3c9c4bed0b3fb1facf063c716eac97d5}{Mtc\+\_\+\+Conf\+Get\+State}}, Mtc\+\_\+\+Conf\+CreateX \mbox{\Hypertarget{mtc__conf_8h_ae275e4240e6bf699dc993418d034c080}\label{mtc__conf_8h_ae275e4240e6bf699dc993418d034c080}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetConfType@{Mtc\_ConfGetConfType}}
+\index{Mtc\_ConfGetConfType@{Mtc\_ConfGetConfType}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetConfType()}{Mtc\_ConfGetConfType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Conf\+Get\+Conf\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get conference type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Conference type \mbox{\hyperlink{mtc__conf_8h_a9779a473be0830c1d7fa61ece815ed37}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_a957a70c603b1e81acc159c94def07243}\label{mtc__conf_8h_a957a70c603b1e81acc159c94def07243}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetConfUri@{Mtc\_ConfGetConfUri}}
+\index{Mtc\_ConfGetConfUri@{Mtc\_ConfGetConfUri}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetConfUri()}{Mtc\_ConfGetConfUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Get\+Conf\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get conference U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a2b59759780fc1e31ba7ba64daa1867d7}{Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}}, \mbox{\hyperlink{mtc__conf_8h_a62ebd7eb790635da45db0aeabba343ce}{Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_afa0990d3b650e2c79e514d61a80a6617}\label{mtc__conf_8h_afa0990d3b650e2c79e514d61a80a6617}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetCookie@{Mtc\_ConfGetCookie}}
+\index{Mtc\_ConfGetCookie@{Mtc\_ConfGetCookie}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetCookie()}{Mtc\_ConfGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Conf\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get cookie value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get cookie of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cookie of conference.
+\end{DoxyReturn}
+The cookie value could be set by \mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}{Mtc\+\_\+\+Conf\+Join}} or Mtc\+\_\+\+Conf\+Acpt previously.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}{Mtc\+\_\+\+Conf\+Join}}, \mbox{\hyperlink{mtc__conf_8h_a6701c7b9f79a71c970ed536bccc04117}{Mtc\+\_\+\+Conf\+Acpt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a62ebd7eb790635da45db0aeabba343ce}\label{mtc__conf_8h_a62ebd7eb790635da45db0aeabba343ce}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetInitiatorUri@{Mtc\_ConfGetInitiatorUri}}
+\index{Mtc\_ConfGetInitiatorUri@{Mtc\_ConfGetInitiatorUri}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetInitiatorUri()}{Mtc\_ConfGetInitiatorUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get initiator U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a2b59759780fc1e31ba7ba64daa1867d7}{Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}}, \mbox{\hyperlink{mtc__conf_8h_a957a70c603b1e81acc159c94def07243}{Mtc\+\_\+\+Conf\+Get\+Conf\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a9cf5bd29453c63c74ff4250bd0b6fbda}\label{mtc__conf_8h_a9cf5bd29453c63c74ff4250bd0b6fbda}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetMaxImageNum@{Mtc\_ConfGetMaxImageNum}}
+\index{Mtc\_ConfGetMaxImageNum@{Mtc\_ConfGetMaxImageNum}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMaxImageNum()}{Mtc\_ConfGetMaxImageNum()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Max\+Image\+Num (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference get max image number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em max} & image number of video conference. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a204f22b969f7e7c7b1c92023126daa61}\label{mtc__conf_8h_a204f22b969f7e7c7b1c92023126daa61}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetMediaServerIpAddr@{Mtc\_ConfGetMediaServerIpAddr}}
+\index{Mtc\_ConfGetMediaServerIpAddr@{Mtc\_ConfGetMediaServerIpAddr}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMediaServerIpAddr()}{Mtc\_ConfGetMediaServerIpAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Get\+Media\+Server\+Ip\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get media server ip address string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Media server ip address string, like \char`\"{}192.\+168.\+0.\+1\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_afe5e5666e794ce42a2a5c9289a38aac2}\label{mtc__conf_8h_afe5e5666e794ce42a2a5c9289a38aac2}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetMicMute@{Mtc\_ConfGetMicMute}}
+\index{Mtc\_ConfGetMicMute@{Mtc\_ConfGetMicMute}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMicMute()}{Mtc\_ConfGetMicMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Get\+Mic\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get the mute status of microphone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to get.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & on muted. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & on not muted.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a5339ce03cc42d09a264461fcfe24868a}{Mtc\+\_\+\+Conf\+Set\+Mic\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a7dadc7d02d5674a96391094ff86e2a5b}\label{mtc__conf_8h_a7dadc7d02d5674a96391094ff86e2a5b}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetMultiPicMode@{Mtc\_ConfGetMultiPicMode}}
+\index{Mtc\_ConfGetMultiPicMode@{Mtc\_ConfGetMultiPicMode}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMultiPicMode()}{Mtc\_ConfGetMultiPicMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Multi\+Pic\+Mode (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference get multi-\/picture mode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em video} & multi-\/picture mode of video conference, \mbox{\hyperlink{mtc__conf_8h_ab680eaf84ef808f30584495bc3a388a0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+M\+O\+DE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_aa5ce7960b92a3cf14596db5c63a3e56b}\label{mtc__conf_8h_aa5ce7960b92a3cf14596db5c63a3e56b}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetPartpSize@{Mtc\_ConfGetPartpSize}}
+\index{Mtc\_ConfGetPartpSize@{Mtc\_ConfGetPartpSize}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPartpSize()}{Mtc\_ConfGetPartpSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Get\+Partp\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get paticipant size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The paticipant size.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a932760d4cb644312118a4b3502e4df14}{Mtc\+\_\+\+Conf\+Get\+Partp\+Uri}}, \mbox{\hyperlink{mtc__conf_8h_a13e7bcc58ee6391c5812d80046460e5b}{Mtc\+\_\+\+Conf\+Get\+Partp\+Stat}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a13e7bcc58ee6391c5812d80046460e5b}\label{mtc__conf_8h_a13e7bcc58ee6391c5812d80046460e5b}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetPartpStat@{Mtc\_ConfGetPartpStat}}
+\index{Mtc\_ConfGetPartpStat@{Mtc\_ConfGetPartpStat}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPartpStat()}{Mtc\_ConfGetPartpStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Partp\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get paticipant state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The paticipant index.\\
+\hline
+\end{DoxyParams}
+@retrun The paticipant state, \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_abe506da25d5709720ee1439be24dd65f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}}.
+
+\mbox{\hyperlink{mtc__conf_8h_aa5ce7960b92a3cf14596db5c63a3e56b}{Mtc\+\_\+\+Conf\+Get\+Partp\+Size}}, \mbox{\hyperlink{mtc__conf_8h_a932760d4cb644312118a4b3502e4df14}{Mtc\+\_\+\+Conf\+Get\+Partp\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a932760d4cb644312118a4b3502e4df14}\label{mtc__conf_8h_a932760d4cb644312118a4b3502e4df14}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetPartpUri@{Mtc\_ConfGetPartpUri}}
+\index{Mtc\_ConfGetPartpUri@{Mtc\_ConfGetPartpUri}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPartpUri()}{Mtc\_ConfGetPartpUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Get\+Partp\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get paticipant uri and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The paticipant index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of paticipant. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The uri of paticipant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_aa5ce7960b92a3cf14596db5c63a3e56b}{Mtc\+\_\+\+Conf\+Get\+Partp\+Size}}, \mbox{\hyperlink{mtc__conf_8h_a13e7bcc58ee6391c5812d80046460e5b}{Mtc\+\_\+\+Conf\+Get\+Partp\+Stat}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a2b59759780fc1e31ba7ba64daa1867d7}\label{mtc__conf_8h_a2b59759780fc1e31ba7ba64daa1867d7}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetPeerUri@{Mtc\_ConfGetPeerUri}}
+\index{Mtc\_ConfGetPeerUri@{Mtc\_ConfGetPeerUri}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPeerUri()}{Mtc\_ConfGetPeerUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Get\+Peer\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get peer U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a957a70c603b1e81acc159c94def07243}{Mtc\+\_\+\+Conf\+Get\+Conf\+Uri}}, \mbox{\hyperlink{mtc__conf_8h_a62ebd7eb790635da45db0aeabba343ce}{Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a87e26f0af68e9bf4fe3f005f213649fa}\label{mtc__conf_8h_a87e26f0af68e9bf4fe3f005f213649fa}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetSpkMute@{Mtc\_ConfGetSpkMute}}
+\index{Mtc\_ConfGetSpkMute@{Mtc\_ConfGetSpkMute}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetSpkMute()}{Mtc\_ConfGetSpkMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Get\+Spk\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get the mute status of speaker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to get.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & on muted. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & on not muted.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_afd3a5ccce232d2b4ec204926c3dc11de}{Mtc\+\_\+\+Conf\+Set\+Spk\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a3c9c4bed0b3fb1facf063c716eac97d5}\label{mtc__conf_8h_a3c9c4bed0b3fb1facf063c716eac97d5}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetState@{Mtc\_ConfGetState}}
+\index{Mtc\_ConfGetState@{Mtc\_ConfGetState}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetState()}{Mtc\_ConfGetState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Get\+State (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference get conference state. As for CS conference, UI should call \mbox{\hyperlink{mtc__conf_8h_a98a020151f0303692082eb6269dd5485}{Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id}} to save conference id ~\newline
+ while receiving common template sip M\+E\+S\+S\+A\+GE. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get the conference state.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_ab251abfe4712b7e8cb78c4addfb5f92d}\label{mtc__conf_8h_ab251abfe4712b7e8cb78c4addfb5f92d}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetStrmId@{Mtc\_ConfGetStrmId}}
+\index{Mtc\_ConfGetStrmId@{Mtc\_ConfGetStrmId}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetStrmId()}{Mtc\_ConfGetStrmId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Strm\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Strm\+Type }\end{DoxyParamCaption})}
+
+
+
+Get stream ID of the conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Strm\+Type} & The stream type of conference, \mbox{\hyperlink{mtc__conf_8h_a6dfdf4e13c33dcffdc6e90ac6e2e4060}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The stream id of the conference on succeed, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_a1fcd113a01ec46831be9b011fe959eb2}\label{mtc__conf_8h_a1fcd113a01ec46831be9b011fe959eb2}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetStrmName@{Mtc\_ConfGetStrmName}}
+\index{Mtc\_ConfGetStrmName@{Mtc\_ConfGetStrmName}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetStrmName()}{Mtc\_ConfGetStrmName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Get\+Strm\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference session name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Render name string when found, otherwise \char`\"{}\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_a629712accc85c51f6f11a26dc539ab32}\label{mtc__conf_8h_a629712accc85c51f6f11a26dc539ab32}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetVideoStat@{Mtc\_ConfGetVideoStat}}
+\index{Mtc\_ConfGetVideoStat@{Mtc\_ConfGetVideoStat}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoStat()}{Mtc\_ConfGetVideoStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Get\+Video\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference video stream by stream id statistics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream. One conference may contains one more video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em String} & of video statistics. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a2f238bcebed92a6c42b846d1d2f18f70}\label{mtc__conf_8h_a2f238bcebed92a6c42b846d1d2f18f70}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetVideoStrmCount@{Mtc\_ConfGetVideoStrmCount}}
+\index{Mtc\_ConfGetVideoStrmCount@{Mtc\_ConfGetVideoStrmCount}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoStrmCount()}{Mtc\_ConfGetVideoStrmCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference video stream count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of conference video stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_a1fd82a93ef53b44ac32b062ead4360aa}\label{mtc__conf_8h_a1fd82a93ef53b44ac32b062ead4360aa}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetVideoStrmIdByIndex@{Mtc\_ConfGetVideoStrmIdByIndex}}
+\index{Mtc\_ConfGetVideoStrmIdByIndex@{Mtc\_ConfGetVideoStrmIdByIndex}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoStrmIdByIndex()}{Mtc\_ConfGetVideoStrmIdByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Id\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference video stream id by index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of conference video stream when found, otherwise Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_aeb816206270ea0d6db776169b7410619}\label{mtc__conf_8h_aeb816206270ea0d6db776169b7410619}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfGetVideoSwithMode@{Mtc\_ConfGetVideoSwithMode}}
+\index{Mtc\_ConfGetVideoSwithMode@{Mtc\_ConfGetVideoSwithMode}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoSwithMode()}{Mtc\_ConfGetVideoSwithMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Get\+Video\+Swith\+Mode (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference get video switch mode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em video} & switch mode of video conference, \mbox{\hyperlink{mtc__conf_8h_a31b0246f0577e9277ae256a3f1353864}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+M\+O\+DE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_ac76658bbcb20c48eafcbb6bf9c2c2e4e}\label{mtc__conf_8h_ac76658bbcb20c48eafcbb6bf9c2c2e4e}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfHold@{Mtc\_ConfHold}}
+\index{Mtc\_ConfHold@{Mtc\_ConfHold}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfHold()}{Mtc\_ConfHold()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Hold (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Hold }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference hold. 
+
+If hold the conference successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_af06289f758d38fbe490366f081d982c2}{Mtc\+\_\+\+Conf\+Cb\+Set\+Hold\+Ok}}
+
+If unhold the conference successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a65c9bca8d50d0327f83d6fb25145ff44}{Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Hold\+Ok}}
+
+If hold the conference failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_adacf7143435d408922750b464f48ce96}{Mtc\+\_\+\+Conf\+Cb\+Set\+Hold\+Failed}}
+
+If unhold the conference failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a0c7d30266b1ea14d1793b87ad0975c2d}{Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Hold\+Failed}}
+
+while receiving hold conference, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a5d665abde269a95b19c6f7c6c949d5cc}{Mtc\+\_\+\+Conf\+Cb\+Set\+Held}}
+
+while receiving unhold conference, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a437ec628a149efaad9e72cb9a85e13e7}{Mtc\+\_\+\+Conf\+Cb\+Set\+Un\+Held}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to hold or unhold. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Hold} & Indicate the willingness of hold or unhold.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a9a9b3781aebc4353694807566017de6d}\label{mtc__conf_8h_a9a9b3781aebc4353694807566017de6d}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfIvtSess@{Mtc\_ConfIvtSess}}
+\index{Mtc\_ConfIvtSess@{Mtc\_ConfIvtSess}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtSess()}{Mtc\_ConfIvtSess()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Ivt\+Sess (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC invite new participant, which you already have a session with, to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want to invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The id of the session which you have with the want-\/invited participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}{Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a53892809a04d9802d250e164b9640d1d}\label{mtc__conf_8h_a53892809a04d9802d250e164b9640d1d}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfIvtSessLst@{Mtc\_ConfIvtSessLst}}
+\index{Mtc\_ConfIvtSessLst@{Mtc\_ConfIvtSessLst}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtSessLst()}{Mtc\_ConfIvtSessLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Ivt\+Sess\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Sess\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC invite new participant list, which you already have a session with, to conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Lst\+Id} & The session list id which you have with the want-\/invited participant, UI shall use \mbox{\hyperlink{mtc__partp_8h_ab9c55634b840448ffa53fb8539678e2e}{Mtc\+\_\+\+Partp\+Lst\+Create}}, \mbox{\hyperlink{mtc__partp_8h_ac874d90bbd15c9ca9ddbf1db14b2b33e}{Mtc\+\_\+\+Partp\+Lst\+Add\+Partp}}, \mbox{\hyperlink{mtc__partp_8h_ace082c7fc843d10ef3fe699b77b0e8ac}{Mtc\+\_\+\+Partp\+Set\+Sess\+Id}} to create the id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}{Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a442b0eac3b58fe3a29150fd9979f7f38}\label{mtc__conf_8h_a442b0eac3b58fe3a29150fd9979f7f38}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfIvtUser@{Mtc\_ConfIvtUser}}
+\index{Mtc\_ConfIvtUser@{Mtc\_ConfIvtUser}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtUser()}{Mtc\_ConfIvtUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Ivt\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC invite new participant to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}{Mtc\+\_\+\+Conf\+Kick\+User}}, \mbox{\hyperlink{mtc__conf_8h_a9a9b3781aebc4353694807566017de6d}{Mtc\+\_\+\+Conf\+Ivt\+Sess}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a8c836887000b05a591938ced8baab06d}\label{mtc__conf_8h_a8c836887000b05a591938ced8baab06d}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfIvtUserLst@{Mtc\_ConfIvtUserLst}}
+\index{Mtc\_ConfIvtUserLst@{Mtc\_ConfIvtUserLst}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtUserLst()}{Mtc\_ConfIvtUserLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Ivt\+User\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Video }\end{DoxyParamCaption})}
+
+
+
+M\+TC invite new participant list to a new conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id, UI shall use \mbox{\hyperlink{mtc__partp_8h_ab9c55634b840448ffa53fb8539678e2e}{Mtc\+\_\+\+Partp\+Lst\+Create}}, \mbox{\hyperlink{mtc__partp_8h_ac874d90bbd15c9ca9ddbf1db14b2b33e}{Mtc\+\_\+\+Partp\+Lst\+Add\+Partp}} to create the id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Video} & The video conference flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}{Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}\label{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfJoin@{Mtc\_ConfJoin}}
+\index{Mtc\_ConfJoin@{Mtc\_ConfJoin}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfJoin()}{Mtc\_ConfJoin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Join (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+B\+O\+OL}]{b\+Video }\end{DoxyParamCaption})}
+
+
+
+M\+TC join an already existed conference. 
+
+If join a conference, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_aa8a58f4759e9241ee66d54f93170dd48}{Mtc\+\_\+\+Conf\+Cb\+Set\+Outgoing}}, \mbox{\hyperlink{mtc__conf__cb_8h_a5e94996322fd7dc9b65e61061b7fb608}{Mtc\+\_\+\+Conf\+Cb\+Set\+Alerted}}, \mbox{\hyperlink{mtc__conf__cb_8h_a70efad6407ea2f31794cd4a6fdd7571e}{Mtc\+\_\+\+Conf\+Cb\+Set\+Conned}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to join. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The U\+RI of existed conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Video} & The video conference flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a03cebf3af1249b891e9fe63edeb3915a}{Mtc\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}\label{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfKickUser@{Mtc\_ConfKickUser}}
+\index{Mtc\_ConfKickUser@{Mtc\_ConfKickUser}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfKickUser()}{Mtc\_ConfKickUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Kick\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC kick participant from conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want kick participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a442b0eac3b58fe3a29150fd9979f7f38}{Mtc\+\_\+\+Conf\+Ivt\+User}}, \mbox{\hyperlink{mtc__conf_8h_a9a9b3781aebc4353694807566017de6d}{Mtc\+\_\+\+Conf\+Ivt\+Sess}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a05497e00850e4eece27a3a26d57e0294}\label{mtc__conf_8h_a05497e00850e4eece27a3a26d57e0294}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfQueryAccount@{Mtc\_ConfQueryAccount}}
+\index{Mtc\_ConfQueryAccount@{Mtc\_ConfQueryAccount}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfQueryAccount()}{Mtc\_ConfQueryAccount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Query\+Account (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pwd,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+U\+I\+NT}]{i\+Acc\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference query account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Acc\+Type} & The account type \mbox{\hyperlink{mtc__conf_8h_acd1fbfbf44d0493268b51e90ff5f1a82}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+T\+Y\+PE}}(default \mbox{\hyperlink{mtc__conf_8h_a900dd21b3f769e5da919860556ef44b8a67d981c77255859c93be3a51ab183e29}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+M\+A\+IN}}).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a0e62e529f49677740d3de4c2ac5ec811}\label{mtc__conf_8h_a0e62e529f49677740d3de4c2ac5ec811}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRecMicStart@{Mtc\_ConfRecMicStart}}
+\index{Mtc\_ConfRecMicStart@{Mtc\_ConfRecMicStart}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecMicStart()}{Mtc\_ConfRecMicStart()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rec\+Mic\+Start (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+U\+C\+H\+AR}]{uc\+File\+Type }\end{DoxyParamCaption})}
+
+
+
+Reccord mic start. 
+
+It will reccord from mic to file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The reccord file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+File\+Type} & The reccord file type, \mbox{\hyperlink{mtc__media_8h_abf08c56ac84363af5bee880619a6d220}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Audio Reccord successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Audio Reccord failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a7aa0cd5c03572f21a13a237cfb300d31}{Mtc\+\_\+\+Conf\+Rec\+Mic\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a7aa0cd5c03572f21a13a237cfb300d31}\label{mtc__conf_8h_a7aa0cd5c03572f21a13a237cfb300d31}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRecMicStop@{Mtc\_ConfRecMicStop}}
+\index{Mtc\_ConfRecMicStop@{Mtc\_ConfRecMicStop}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecMicStop()}{Mtc\_ConfRecMicStop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rec\+Mic\+Stop (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Reccord Audio stop. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a0e62e529f49677740d3de4c2ac5ec811}{Mtc\+\_\+\+Conf\+Rec\+Mic\+Start}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a9d0aea1fe6cbfe83ee7983e3d5d8a3c3}\label{mtc__conf_8h_a9d0aea1fe6cbfe83ee7983e3d5d8a3c3}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRecPlayoutStart@{Mtc\_ConfRecPlayoutStart}}
+\index{Mtc\_ConfRecPlayoutStart@{Mtc\_ConfRecPlayoutStart}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecPlayoutStart()}{Mtc\_ConfRecPlayoutStart()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rec\+Playout\+Start (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+U\+C\+H\+AR}]{uc\+File\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC session record playout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to record, if i\+Conf\+Id is invalid, record the mix playout. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The reccord file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+File\+Type} & The reccord file type, \mbox{\hyperlink{mtc__media_8h_abf08c56ac84363af5bee880619a6d220}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_ae3eb1439b974852dc59fa7df0bae33b6}\label{mtc__conf_8h_ae3eb1439b974852dc59fa7df0bae33b6}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRecPlayoutStop@{Mtc\_ConfRecPlayoutStop}}
+\index{Mtc\_ConfRecPlayoutStop@{Mtc\_ConfRecPlayoutStop}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecPlayoutStop()}{Mtc\_ConfRecPlayoutStop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rec\+Playout\+Stop (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC session stop record playout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to stop record, if i\+Conf\+Id is invalid, stop record the mix playout.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a4f85ffb6bc54b916f127b83b8b23b5a9}\label{mtc__conf_8h_a4f85ffb6bc54b916f127b83b8b23b5a9}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRmvUser@{Mtc\_ConfRmvUser}}
+\index{Mtc\_ConfRmvUser@{Mtc\_ConfRmvUser}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRmvUser()}{Mtc\_ConfRmvUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rmv\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Num }\end{DoxyParamCaption})}
+
+
+
+M\+TC remove one participant from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by \mbox{\hyperlink{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Ptpt\+Updt}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want to remove. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Num} & The phone number(e.\+g. +8613800000000) of the removed participant with country code, neither T\+EL uri nor S\+IP U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_af9881197ea04c7ff4d32b42beee3a1ef}\label{mtc__conf_8h_af9881197ea04c7ff4d32b42beee3a1ef}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRmvUserClearData@{Mtc\_ConfRmvUserClearData}}
+\index{Mtc\_ConfRmvUserClearData@{Mtc\_ConfRmvUserClearData}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRmvUserClearData()}{Mtc\_ConfRmvUserClearData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rmv\+User\+Clear\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC clear the data of remove user before . If one participant kicked out from the conference, when chairman want to invite him. into the conference again, chairman should use this function to clear the data of remove the user before first. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a2f9414922a637db6b531abc425813f87}\label{mtc__conf_8h_a2f9414922a637db6b531abc425813f87}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfRmvUserX@{Mtc\_ConfRmvUserX}}
+\index{Mtc\_ConfRmvUserX@{Mtc\_ConfRmvUserX}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRmvUserX()}{Mtc\_ConfRmvUserX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Rmv\+UserX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC remove some participants from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by \mbox{\hyperlink{mtc__conf__cb_8h_a7f5f2cb927f933e49157443add13c927}{Mtc\+\_\+\+Conf\+Cb\+Set\+Video\+Strm\+Ptpt\+Updt}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want to remove. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id, UI shall use \mbox{\hyperlink{mtc__partp_8h_ab9c55634b840448ffa53fb8539678e2e}{Mtc\+\_\+\+Partp\+Lst\+Create}}, \mbox{\hyperlink{mtc__partp_8h_ac874d90bbd15c9ca9ddbf1db14b2b33e}{Mtc\+\_\+\+Partp\+Lst\+Add\+Partp}} to create the id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a5339ce03cc42d09a264461fcfe24868a}\label{mtc__conf_8h_a5339ce03cc42d09a264461fcfe24868a}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfSetMicMute@{Mtc\_ConfSetMicMute}}
+\index{Mtc\_ConfSetMicMute@{Mtc\_ConfSetMicMute}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetMicMute()}{Mtc\_ConfSetMicMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Set\+Mic\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference set the mute status of microphone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Indicate whether to mute the microphone.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_afe5e5666e794ce42a2a5c9289a38aac2}{Mtc\+\_\+\+Conf\+Get\+Mic\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a98a020151f0303692082eb6269dd5485}\label{mtc__conf_8h_a98a020151f0303692082eb6269dd5485}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfSetSeverConfId@{Mtc\_ConfSetSeverConfId}}
+\index{Mtc\_ConfSetSeverConfId@{Mtc\_ConfSetSeverConfId}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetSeverConfId()}{Mtc\_ConfSetSeverConfId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Serv\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference set server conference id. UI should set server conference id which in common-\/template M\+E\+S\+S\+A\+GE. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Serv\+Conf\+Id} & conference id in common-\/template message.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_afd3a5ccce232d2b4ec204926c3dc11de}\label{mtc__conf_8h_afd3a5ccce232d2b4ec204926c3dc11de}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfSetSpkMute@{Mtc\_ConfSetSpkMute}}
+\index{Mtc\_ConfSetSpkMute@{Mtc\_ConfSetSpkMute}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetSpkMute()}{Mtc\_ConfSetSpkMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Set\+Spk\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference set the mute status of speaker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Indicate whether to mute the speaker.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a87e26f0af68e9bf4fe3f005f213649fa}{Mtc\+\_\+\+Conf\+Get\+Spk\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a596b97498a402092935760c27f416fec}\label{mtc__conf_8h_a596b97498a402092935760c27f416fec}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfSetup@{Mtc\_ConfSetup}}
+\index{Mtc\_ConfSetup@{Mtc\_ConfSetup}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetup()}{Mtc\_ConfSetup()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Setup (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC setup a new conference as the creator. 
+
+If setup a new conference as the creator, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_aa8a58f4759e9241ee66d54f93170dd48}{Mtc\+\_\+\+Conf\+Cb\+Set\+Outgoing}}, \mbox{\hyperlink{mtc__conf__cb_8h_a5e94996322fd7dc9b65e61061b7fb608}{Mtc\+\_\+\+Conf\+Cb\+Set\+Alerted}}, \mbox{\hyperlink{mtc__conf__cb_8h_a70efad6407ea2f31794cd4a6fdd7571e}{Mtc\+\_\+\+Conf\+Cb\+Set\+Conned}}
+
+While receiving conference invitation, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__conf__cb_8h_a6842efca400a02a0067d6ced822dc7d3}{Mtc\+\_\+\+Conf\+Cb\+Set\+Incoming}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to setup. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a03cebf3af1249b891e9fe63edeb3915a}{Mtc\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}{Mtc\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_a26220b39ccbbd9beed36f4a2d48dae02}\label{mtc__conf_8h_a26220b39ccbbd9beed36f4a2d48dae02}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfSndStartSend@{Mtc\_ConfSndStartSend}}
+\index{Mtc\_ConfSndStartSend@{Mtc\_ConfSndStartSend}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSndStartSend()}{Mtc\_ConfSndStartSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Snd\+Start\+Send (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+U\+C\+H\+AR}]{uc\+File\+Type,  }\item[{Z\+B\+O\+OL}]{b\+Loop,  }\item[{Z\+B\+O\+OL}]{b\+Mix }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference start send sound from file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to start send sound from file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The reccord file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+File\+Type} & The reccord file type, \mbox{\hyperlink{mtc__media_8h_abf08c56ac84363af5bee880619a6d220}{E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+T\+Y\+PE}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Loop} & Z\+F\+A\+L\+SE if play once. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mix} & If false, microphone sound is replaced by file sound; if true, microphone sound is mixed with file sound\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a2656bb1d8a0165509e10c34e531d1d76}\label{mtc__conf_8h_a2656bb1d8a0165509e10c34e531d1d76}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfSndStopSend@{Mtc\_ConfSndStopSend}}
+\index{Mtc\_ConfSndStopSend@{Mtc\_ConfSndStopSend}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSndStopSend()}{Mtc\_ConfSndStopSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Snd\+Stop\+Send (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference stop send sound. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to stop send sound from file.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf_8h_a2eb4ffe2169f2b184f1cba7243488d38}\label{mtc__conf_8h_a2eb4ffe2169f2b184f1cba7243488d38}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfStrmIdFromStrmName@{Mtc\_ConfStrmIdFromStrmName}}
+\index{Mtc\_ConfStrmIdFromStrmName@{Mtc\_ConfStrmIdFromStrmName}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfStrmIdFromStrmName()}{Mtc\_ConfStrmIdFromStrmName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Strm\+Id\+From\+Strm\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC get conference stream ID from stream render name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Name} & Render name string of the video stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of conference video stream ID when found, otherwise Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf_8h_a937d9f0184f7165846e15592f65fd359}\label{mtc__conf_8h_a937d9f0184f7165846e15592f65fd359}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfTerm@{Mtc\_ConfTerm}}
+\index{Mtc\_ConfTerm@{Mtc\_ConfTerm}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfTerm()}{Mtc\_ConfTerm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Term (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Reason,  }\item[{Z\+B\+O\+OL}]{b\+Term\+Conf }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference terminate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to terminate. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & Indicate the terminate reason which may trigger some service in S-\/\+C\+S\+CF. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Term\+Conf} & the terminate conf flag. If Z\+T\+R\+UE, terminate the conferece (which means the other participants will receive B\+YE to terminate the conference); If Z\+F\+A\+L\+SE, only leave the conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+Actually Mtc\+\_\+\+Conf\+Term does not free all resource allocated for this conference. It only starts a terminating procedure. All resource will be freed automatically when the procedure ends.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a596b97498a402092935760c27f416fec}{Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{mtc__conf_8h_ab82facbb49695bb662cb96fabdb1d911}{Mtc\+\_\+\+Conf\+Join}}, \mbox{\hyperlink{mtc__call_8h_ae5fb07ac985ba8da91770a7140d26ad8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf_8h_abb229f19175691ff780725d26039a314}\label{mtc__conf_8h_abb229f19175691ff780725d26039a314}} 
+\index{mtc\_conf.h@{mtc\_conf.h}!Mtc\_ConfVideoSelectUsr@{Mtc\_ConfVideoSelectUsr}}
+\index{Mtc\_ConfVideoSelectUsr@{Mtc\_ConfVideoSelectUsr}!mtc\_conf.h@{mtc\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfVideoSelectUsr()}{Mtc\_ConfVideoSelectUsr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Video\+Select\+Usr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC select one participant as remote image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want select one participant as remote image. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of the selected participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}

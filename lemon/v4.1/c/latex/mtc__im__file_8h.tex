@@ -1,0 +1,1997 @@
+\hypertarget{mtc__im__file_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im\+\_\+file.h File Reference}
+\label{mtc__im__file_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_file.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_file.h}}
+
+
+M\+TC Instant Message File Transfer Interface Functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}~\char`\"{}text/plain\char`\"{}
+\begin{DoxyCompactList}\small\item\em M\+TC IM file transfer content type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a323cfb5efeaf749dc6153eaea991d7b7}\label{mtc__im__file_8h_a323cfb5efeaf749dc6153eaea991d7b7}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a323cfb5efeaf749dc6153eaea991d7b7}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+H\+T\+ML}}~\char`\"{}text/html\char`\"{}
+\begin{DoxyCompactList}\small\item\em text/html content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a2582b765c79a3e626dd8087bbd546310}\label{mtc__im__file_8h_a2582b765c79a3e626dd8087bbd546310}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a2582b765c79a3e626dd8087bbd546310}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+X\+\_\+\+V\+C\+A\+RD}}~\char`\"{}text/x-\/vcard\char`\"{}
+\begin{DoxyCompactList}\small\item\em text/x-\/vcard content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a0cf464b45f5f07d4bb0a895e8ef4f01a}\label{mtc__im__file_8h_a0cf464b45f5f07d4bb0a895e8ef4f01a}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a0cf464b45f5f07d4bb0a895e8ef4f01a}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+V\+C\+A\+RD}}~\char`\"{}text/vcard\char`\"{}
+\begin{DoxyCompactList}\small\item\em text/x-\/vcard content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_af1c473e6f2a8d764a605851d9fe51eef}\label{mtc__im__file_8h_af1c473e6f2a8d764a605851d9fe51eef}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_af1c473e6f2a8d764a605851d9fe51eef}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+J\+P\+EG}}~\char`\"{}image/jpeg\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/jpeg content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_acf9af8cd5ec4525e6665623880deecab}\label{mtc__im__file_8h_acf9af8cd5ec4525e6665623880deecab}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_acf9af8cd5ec4525e6665623880deecab}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+G\+IF}}~\char`\"{}image/gif\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/gif content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ab89ba19b5bf952d6ab7ad3f0dae1969c}\label{mtc__im__file_8h_ab89ba19b5bf952d6ab7ad3f0dae1969c}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ab89ba19b5bf952d6ab7ad3f0dae1969c}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+P\+NG}}~\char`\"{}image/png\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/png content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ae6d96918dfcaa396aa35fc105fab96cd}\label{mtc__im__file_8h_ae6d96918dfcaa396aa35fc105fab96cd}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ae6d96918dfcaa396aa35fc105fab96cd}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+B\+MP}}~\char`\"{}image/bmp\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/bmp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ac4bda1fbb55982e95336db1df0b38b58}\label{mtc__im__file_8h_ac4bda1fbb55982e95336db1df0b38b58}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ac4bda1fbb55982e95336db1df0b38b58}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+M\+S\+B\+MP}}~\char`\"{}image/x-\/ms-\/bmp\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/x-\/ms-\/bmp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a577c05d587f183c2ed739573d512a3b3}\label{mtc__im__file_8h_a577c05d587f183c2ed739573d512a3b3}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a577c05d587f183c2ed739573d512a3b3}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+W\+B\+MP}}~\char`\"{}image/vnd.\+wap.\+wbmp\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/vnd.\+wap.\+wbmp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a9a429643ef2174c754b96a13fa8cc6bd}\label{mtc__im__file_8h_a9a429643ef2174c754b96a13fa8cc6bd}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a9a429643ef2174c754b96a13fa8cc6bd}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+I\+M\+G\+\_\+\+W\+E\+BP}}~\char`\"{}image/webp\char`\"{}
+\begin{DoxyCompactList}\small\item\em image/webp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a2584eef962427e460b26437733813f52}\label{mtc__im__file_8h_a2584eef962427e460b26437733813f52}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a2584eef962427e460b26437733813f52}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M\+P3}}~\char`\"{}audio/mpeg\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/mpeg content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ae6d7cc2e512194dd17bbaeeda01d40bd}\label{mtc__im__file_8h_ae6d7cc2e512194dd17bbaeeda01d40bd}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ae6d7cc2e512194dd17bbaeeda01d40bd}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M4A}}~\char`\"{}audio/mp4\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/mp4 content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a82d9f28aff01c09b7aea7fb00378559c}\label{mtc__im__file_8h_a82d9f28aff01c09b7aea7fb00378559c}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a82d9f28aff01c09b7aea7fb00378559c}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+W\+AV}}~\char`\"{}audio/x-\/wav\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/x-\/wav content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_aa7663e0b433e8ddfdf6409ccfc149cb4}\label{mtc__im__file_8h_aa7663e0b433e8ddfdf6409ccfc149cb4}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_aa7663e0b433e8ddfdf6409ccfc149cb4}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+A\+MR}}~\char`\"{}audio/amr\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/amr content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a0b709d9311b9774aea3c0a8a76856b04}\label{mtc__im__file_8h_a0b709d9311b9774aea3c0a8a76856b04}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a0b709d9311b9774aea3c0a8a76856b04}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+A\+WB}}~\char`\"{}audio/amr-\/wb\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/amr-\/wb content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a76c311dec616b6da6b083ca511c6883e}\label{mtc__im__file_8h_a76c311dec616b6da6b083ca511c6883e}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a76c311dec616b6da6b083ca511c6883e}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+W\+MA}}~\char`\"{}audio/x-\/ms-\/wma\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/x-\/ms-\/wma content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a269c8b8c07d21fc821113df4b4f7c887}\label{mtc__im__file_8h_a269c8b8c07d21fc821113df4b4f7c887}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a269c8b8c07d21fc821113df4b4f7c887}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+3\+GP}}~\char`\"{}audio/3gpp\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/3gpp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_aa7303056f4be2602c54d0857ba176ab6}\label{mtc__im__file_8h_aa7303056f4be2602c54d0857ba176ab6}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_aa7303056f4be2602c54d0857ba176ab6}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+O\+GG}}~\char`\"{}audio/ogg\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/ogg content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a75d44e9546e942d08fe3f9fc3d6969bc}\label{mtc__im__file_8h_a75d44e9546e942d08fe3f9fc3d6969bc}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a75d44e9546e942d08fe3f9fc3d6969bc}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+A\+AC}}~\char`\"{}audio/aac\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/aac content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a5a8f46aecc90a8c662dde57c0a361666}\label{mtc__im__file_8h_a5a8f46aecc90a8c662dde57c0a361666}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a5a8f46aecc90a8c662dde57c0a361666}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+A\+D\+TS}}~\char`\"{}audio/aac-\/adts\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/aac-\/adts content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_afaaa1689e988224021ac09f051b0f664}\label{mtc__im__file_8h_afaaa1689e988224021ac09f051b0f664}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_afaaa1689e988224021ac09f051b0f664}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M\+KA}}~\char`\"{}audio/x-\/matroska\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/x-\/matroska content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a9f93d798390eba69495326423cb64a24}\label{mtc__im__file_8h_a9f93d798390eba69495326423cb64a24}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a9f93d798390eba69495326423cb64a24}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M\+ID}}~\char`\"{}audio/midi\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/midi content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a3fb9418499c49eb2e1944563f18a8923}\label{mtc__im__file_8h_a3fb9418499c49eb2e1944563f18a8923}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a3fb9418499c49eb2e1944563f18a8923}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+MF}}~\char`\"{}audio/sp-\/midi\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/sp-\/midi content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ab8b8299951da2e1e286bbbeffa4930e6}\label{mtc__im__file_8h_ab8b8299951da2e1e286bbbeffa4930e6}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ab8b8299951da2e1e286bbbeffa4930e6}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+I\+MY}}~\char`\"{}audio/imelody\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/imelody content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a257c9ae117563ab27d3d191953fc7386}\label{mtc__im__file_8h_a257c9ae117563ab27d3d191953fc7386}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a257c9ae117563ab27d3d191953fc7386}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+M3U}}~\char`\"{}audio/x-\/mpegurl\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/x-\/mpegurl content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_acb77e071078ad073b081a0f1fc29eac9}\label{mtc__im__file_8h_acb77e071078ad073b081a0f1fc29eac9}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_acb77e071078ad073b081a0f1fc29eac9}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+X\+M3U}}~\char`\"{}audio/mpegurl\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/mpegurl content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a498b617b5e442e71755bacd467ff1379}\label{mtc__im__file_8h_a498b617b5e442e71755bacd467ff1379}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a498b617b5e442e71755bacd467ff1379}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+U\+D\+I\+O\+\_\+\+P\+LS}}~\char`\"{}audio/x-\/scpls\char`\"{}
+\begin{DoxyCompactList}\small\item\em audio/x-\/scpls content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a42d6f2c45433492c535cf78c6c99f1b5}\label{mtc__im__file_8h_a42d6f2c45433492c535cf78c6c99f1b5}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a42d6f2c45433492c535cf78c6c99f1b5}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+PG}}~\char`\"{}video/mpeg\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/mpeg content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ae44f11c50a0bfaa7437c1462b24b0869}\label{mtc__im__file_8h_ae44f11c50a0bfaa7437c1462b24b0869}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ae44f11c50a0bfaa7437c1462b24b0869}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+P4}}~\char`\"{}video/mp4\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/mp4 content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_aeb52557c76d5f013501763c38b9eab60}\label{mtc__im__file_8h_aeb52557c76d5f013501763c38b9eab60}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_aeb52557c76d5f013501763c38b9eab60}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+3\+GP}}~\char`\"{}video/3gpp\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/3gpp content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_aa704a4c182b1407924f77eabbd68471c}\label{mtc__im__file_8h_aa704a4c182b1407924f77eabbd68471c}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_aa704a4c182b1407924f77eabbd68471c}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+3\+G2}}~\char`\"{}video/3gpp2\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/3gpp2 content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a462aedac6829a627adad037f25040272}\label{mtc__im__file_8h_a462aedac6829a627adad037f25040272}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a462aedac6829a627adad037f25040272}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+KV}}~\char`\"{}video/x-\/matroska\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/x-\/matroska content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a0cdb3f5bc2bce115b2ed4bf8ff781418}\label{mtc__im__file_8h_a0cdb3f5bc2bce115b2ed4bf8ff781418}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a0cdb3f5bc2bce115b2ed4bf8ff781418}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+W\+E\+BM}}~\char`\"{}video/webm\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/webm content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a173594bcad1e8d408b513ef37993f7e1}\label{mtc__im__file_8h_a173594bcad1e8d408b513ef37993f7e1}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a173594bcad1e8d408b513ef37993f7e1}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+P2\+TS}}~\char`\"{}video/mp2ts\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/mp2ts content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a205de916c6652b7332197d36287f7237}\label{mtc__im__file_8h_a205de916c6652b7332197d36287f7237}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a205de916c6652b7332197d36287f7237}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+A\+VI}}~\char`\"{}video/avi\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/avi content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ac999556fbcf96355aab37e10d6ec198e}\label{mtc__im__file_8h_ac999556fbcf96355aab37e10d6ec198e}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_ac999556fbcf96355aab37e10d6ec198e}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+W\+MV}}~\char`\"{}video/x-\/ms-\/wmv\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/x-\/ms-\/wmv content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a2f1c4366118f3a915bb311800607a82c}\label{mtc__im__file_8h_a2f1c4366118f3a915bb311800607a82c}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a2f1c4366118f3a915bb311800607a82c}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+A\+SF}}~\char`\"{}video/x-\/ms-\/asf\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/x-\/ms-\/asf content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a6bdce264c7dc589abbe8ae57813bdeab}\label{mtc__im__file_8h_a6bdce264c7dc589abbe8ae57813bdeab}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a6bdce264c7dc589abbe8ae57813bdeab}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+P2\+PS}}~\char`\"{}video/mp2p\char`\"{}
+\begin{DoxyCompactList}\small\item\em video/mp2p content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a4071eb7b22ea52fb8eebd40d6f66b3c8}\label{mtc__im__file_8h_a4071eb7b22ea52fb8eebd40d6f66b3c8}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a4071eb7b22ea52fb8eebd40d6f66b3c8}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+A\+P\+P\+\_\+\+O\+S\+T\+RM}}~\char`\"{}application/octet-\/stream\char`\"{}
+\begin{DoxyCompactList}\small\item\em application/octet-\/stream content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a3b2f1ae5969fd63fa8dd851893e52d90}\label{mtc__im__file_8h_a3b2f1ae5969fd63fa8dd851893e52d90}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a3b2f1ae5969fd63fa8dd851893e52d90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+U\+T\+\_\+\+G\+S\+\_\+\+G\+I\+N\+FO}}~\char`\"{}application/vnd.\+gsma.\+rcspushlocation+xml\char`\"{}
+\begin{DoxyCompactList}\small\item\em application/vnd.\+gsma.\+rcspushlocation+xml \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__im__file_8h_abdbb1dfa659d942d1be6d2bc8ca4f894}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN}}~0x0001
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer service flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a94668b1e7e6ab0211362c74496f7766b}\label{mtc__im__file_8h_a94668b1e7e6ab0211362c74496f7766b}} 
+\#define \mbox{\hyperlink{mtc__im__file_8h_a94668b1e7e6ab0211362c74496f7766b}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+R\+V\+\_\+\+P\+U\+B\+\_\+\+I\+ND}}~0x0002
+\begin{DoxyCompactList}\small\item\em The public message flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im__file_8h_a9eff76bb2ae574b796ec0e77be3e561c}\label{mtc__im__file_8h_a9eff76bb2ae574b796ec0e77be3e561c}} 
+typedef enum \mbox{\hyperlink{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__file_8h_a9eff76bb2ae574b796ec0e77be3e561c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer direct type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ad853281e01fe9759ce7bfcb7c36cc292}\label{mtc__im__file_8h_ad853281e01fe9759ce7bfcb7c36cc292}} 
+typedef enum \mbox{\hyperlink{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bff}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__file_8h_ad853281e01fe9759ce7bfcb7c36cc292}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC file session reject reason type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_ab69d9befedee30ac0e651da5a06bf22a}\label{mtc__im__file_8h_ab69d9befedee30ac0e651da5a06bf22a}} 
+typedef enum \mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__file_8h_ab69d9befedee30ac0e651da5a06bf22a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM file message spam type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__file_8h_aa30bb7e89a1c677ef7ddf9dbc2388043}\label{mtc__im__file_8h_aa30bb7e89a1c677ef7ddf9dbc2388043}} 
+typedef enum \mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaab}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__file_8h_aa30bb7e89a1c677ef7ddf9dbc2388043}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer status type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01acf031ed1e34bbada84b52a8a8e39d666}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01a377dd51e9d8ab315a73deffb1c4298fe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+S\+E\+N\+D\+ER}}, 
+\mbox{\hyperlink{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01a9053a45ffbfb22364fb2bf902f6d9b6e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+C\+V\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer direct type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bff}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffaeee03c3263c9084ba5a2d39cebe00796}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+N\+O\+R\+M\+AL}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffaa6041f22f9fc7bf0c38b83f9cd294351}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+F\+I\+L\+E\+\_\+\+T\+O\+O\+\_\+\+L\+A\+R\+GE}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffa2a3e34abb15a801d09f191242f66a04a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+F\+I\+L\+E\+\_\+\+E\+X\+I\+S\+T\+ED}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC file session reject reason type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+M\+IN}, 
+\mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a3583890b2c520e3e89da663a321f0164}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+P\+O\+L\+I\+T\+I\+C\+A\+L\+\_\+\+R\+U\+M\+OR}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a360094564cb77dec0472b40763882d0d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+J\+U\+R\+I\+S\+P\+R\+U\+D\+E\+N\+CE}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922ad05be503b927d269ad728a0272a0355a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+F\+R\+A\+UD}}, 
+\newline
+\mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a16f0f2a34690d1a428a3c43b3cdd3db0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+M\+A\+L\+I\+C\+I\+O\+U\+S\+\_\+\+M\+A\+R\+K\+E\+T\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a37a4afd71d29436ab793283c01a38fd5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+V\+I\+O\+L\+E\+N\+CE}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922afeeb10d3434f75e004ac7ed8f44dd868}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+O\+T\+H\+ER}} = 9, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+M\+AX}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM file message spam type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaab}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaabaef700a6a3b5a584dab5cd5b0cf810771}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+NO}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba2fd58cf9b1944e41044cf7f8e5fda212}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+A\+DY}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba778e4b2e14f7d90179acb79f5f1badfc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba12ed83dc985bcbb19753f79646b8edaf}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+C\+V\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba13363c8f4566b9550cff423c9dcc3e58}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+N\+D\+I\+NG}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC file transfer status type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a574b8e708649c1cd2d8b816d787e4afe}{Mtc\+\_\+\+Im\+File\+Trsf}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT i\+Srv\+Flag)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending a file to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a8768a368884c73138f227cfbaa86ec20}{Mtc\+\_\+\+Im\+File\+TrsfS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending a spam file to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_ae94bec31909bbec7fd9e25bbb937487e}{Mtc\+\_\+\+Im\+File\+TrsfU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending a file to U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a1413cc39fa3ea3f0ecf69aa9fce32422}{Mtc\+\_\+\+Im\+File\+TrsfX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending a file in a group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_abcd479e5d4a1db1535d64dc4979e58ca}{Mtc\+\_\+\+Im\+File\+Fw}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+File\+Hash\+Val, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT i\+Srv\+Flag)
+\begin{DoxyCompactList}\small\item\em M\+TC Forwarding a file to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a6acbe080e1146af21b0140d0892bafda}{Mtc\+\_\+\+Im\+File\+FwU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+File\+Hash\+Val, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Forwarding a file to U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a227f91bb7b8832a41e97a22fc0b797c0}{Mtc\+\_\+\+Im\+File\+FwX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+File\+Hash\+Val, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Forwarding a file in a group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a2966fb87ad4f216c173ce9128330323a}{Mtc\+\_\+\+Im\+File\+Resume\+By\+Sender}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+I\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT i\+Srv\+Flag)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file resume invitation to one participant by sender. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a2f164db3101c488b8ad3dacda8b99626}{Mtc\+\_\+\+Im\+File\+Resume\+By\+SenderS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+I\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spamtype)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending spam file resume invitation to one participant by sender. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a7af1ae0f7cbbbaa9e2c28cc5f2589aaa}{Mtc\+\_\+\+Im\+File\+Resume\+By\+SenderU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+I\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file resume invitation to participant list by sender. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_af171e8a01807337c4ef90c6ccc74b640}{Mtc\+\_\+\+Im\+File\+Resume\+By\+SenderX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+I\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file resume invitation to group chat by sender. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_ace38eba40bbabf87f675ac36c1329d2b}{Mtc\+\_\+\+Im\+File\+Resume\+By\+Recver}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset, Z\+U\+I\+NT i\+Srv\+Flag)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file resume invitation to one participant by receiver. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_ab5dd45eccb1d9e520ba5aa2b42a0ed7c}{Mtc\+\_\+\+Im\+File\+Resume\+By\+RecverX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file resume invitation to group chat by receiver. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a6da3396d854396871002ebb08d50142f}{Mtc\+\_\+\+Im\+File\+Fetch\+Via\+Msrp}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file fetch invitation to one participant via msrp. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a2e528f03e94a26b90b0db41f23912b65}{Mtc\+\_\+\+Im\+File\+Fetch\+Via\+MsrpX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC Sending file fetch invitation to group chat via msrp. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_aed2ddc2633ece3cb9b5d965c037d1610}{Mtc\+\_\+\+Im\+File\+Accept}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC Accept a file transfer invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a3161df7fddd1966f5d138d2501559c33}{Mtc\+\_\+\+Im\+File\+Accept\+Resume}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+I\+NT i\+Start\+Offset, Z\+U\+I\+NT i\+Stop\+Offset)
+\begin{DoxyCompactList}\small\item\em M\+TC Accept a file resume invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a6e1e4e0eccc61bed904705154befcbc3}{Mtc\+\_\+\+Im\+File\+Reject}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+U\+I\+NT i\+Reason)
+\begin{DoxyCompactList}\small\item\em M\+TC Reject a file transfer invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a95a1dba81ea197ec97a91d4a3d0388fe}{Mtc\+\_\+\+Im\+File\+Cancel}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Cancel a file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a29c4911f7a020e0e9348b0838411b799}{Mtc\+\_\+\+Im\+File\+Release}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Release a file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__im__file_8h_a46eda1386e032815675f0fd25d3ae5f6}{Mtc\+\_\+\+Im\+File\+Get\+Cookie}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get user cookie from a file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a9622716340d7535b8f028cc1517aa2e3}{Mtc\+\_\+\+Im\+File\+Set\+Cookie}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC Set user cookie in a file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a36b60db97ef93928e517c7a5b73ef34e}{Mtc\+\_\+\+Im\+File\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the Imdn id from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a69a8afd4e60c402e20fc2beb919757d2}{Mtc\+\_\+\+Im\+File\+Get\+Trsf\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file-\/transfer-\/id string of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a28f2dbd8959dbfa7681ef9d947bed723}{Mtc\+\_\+\+Im\+File\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group chat id from transfer id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a1c320bfe17dc6fa7b36ea476e7ccde62}{Mtc\+\_\+\+Im\+File\+Get\+Name}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file name from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a5dbcab1391bf9efc28f20ef16ae77bbb}{Mtc\+\_\+\+Im\+File\+Get\+Path}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file path from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a29234cd0e8c6bba2e9016b8efaa623ac}{Mtc\+\_\+\+Im\+File\+Get\+Type}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file type from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a784c0b8480b5a653606510020507fb68}{Mtc\+\_\+\+Im\+File\+Get\+Duration}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file duration from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a24ec727146f18ecdcc998fbdcda0a656}{Mtc\+\_\+\+Im\+File\+Get\+Size}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file size from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_ada4de2789cd9c7fc7633b8d805480ab4}{Mtc\+\_\+\+Im\+File\+Get\+Hash\+Value}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file hash value from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_aeb4deead1f8aa849a4606639de5bf395}{Mtc\+\_\+\+Im\+File\+Get\+Sent\+Size}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get sent file data size from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_ab232fbb366d7b6fcd2c2f7e24eeed522}{Mtc\+\_\+\+Im\+File\+Get\+Recv\+Size}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get received file data size from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a8e0b1fdf6042da4e5e52cfc08db6ca76}{Mtc\+\_\+\+Im\+File\+Get\+Start\+Offset}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file start offset from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a077150aee8acd37128d1aa7c9b5a9b06}{Mtc\+\_\+\+Im\+File\+Get\+Stop\+Offset}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file start offset from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a012b9712dafcb0ebdbcd1e18e0b3ae9e}{Mtc\+\_\+\+Im\+File\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant type from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a08552fc1f87571b83c74c2bb98f22d58}{Mtc\+\_\+\+Im\+File\+Get\+Partp}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant information from file transfer. Get receiver information from feion carbon copy file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a7b1b3a06914c212ba38c606e116da62a}{Mtc\+\_\+\+Im\+File\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant list id from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a680391d25de3d70c6349e09e2caa96ec}{Mtc\+\_\+\+Im\+File\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get original participant U\+RI from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a9ebf783db0e25a35574ebc868c028040}{Mtc\+\_\+\+Im\+File\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get original identity of participant from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a054aa00eaada7f1ae0aeb2f44ee7af23}{Mtc\+\_\+\+Im\+File\+Get\+Sys\+Date\+Time}} (Z\+U\+I\+NT i\+Trsf\+Id, \mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__file_8h_a04f7d60f8ae940b0bd3ba7542ce9fbef}{Mtc\+\_\+\+Im\+File\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a8d72f5ff7dd22d0d840d63428c8bcd7a}{Mtc\+\_\+\+Im\+File\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get conversation-\/id from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_a4f10868798efe660c92826e2c0d413ec}{Mtc\+\_\+\+Im\+File\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get contribution-\/id from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_ac0b9e028a1e7eada6c5d25824aa7a029}{Mtc\+\_\+\+Im\+File\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get device id from file transfer session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_a5f7e564669c9f1e4a8a76ea917cccdae}{Mtc\+\_\+\+Im\+File\+Has\+Thumb}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumbnail flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a43a0c3663d50c66293b0af8c33df1c55}{Mtc\+\_\+\+Im\+File\+Get\+Thumb\+Data}} (Z\+U\+I\+NT i\+Trsf\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Get thumbnail date from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a9e36538098ce7a91a49ae618c86d6f0c}{Mtc\+\_\+\+Im\+File\+Clr\+Thumb\+Data}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Clear thumbnail date. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_a0e56530ce2589c7daa34b67a2aec478d}{Mtc\+\_\+\+Im\+File\+Get\+Is\+Focus}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get Is\+Focus flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__file_8h_ad3df728615fa310df56b27ac6560aa68}{Mtc\+\_\+\+Im\+File\+Get\+Subject}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get subject from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a4e8afeca5418fb1df0220c76e2468c17}{Mtc\+\_\+\+Im\+File\+Get\+Trsf\+Direct}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get direct from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_a029a2a766b05436ee5fdbefdde1da0f8}{Mtc\+\_\+\+Im\+File\+Has\+Burn\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get burn after reading indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a523da0c373b2d611460f18eab573dbed}{Mtc\+\_\+\+Im\+File\+Get\+Burn\+Time\+Len}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get burn after reading time length from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_a81a4fa07e12fc2ab78d87d29202a4787}{Mtc\+\_\+\+Im\+File\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get public message indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_ad84a45fe4dd4e66b9839040d1dbeaca0}{Mtc\+\_\+\+Im\+File\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get spam indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_af4c154d1bddca16fad492e622d753bdf}{Mtc\+\_\+\+Im\+File\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get directional indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_aef5bd6c0954b5dd5c538512212fe5119}{Mtc\+\_\+\+Im\+File\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get carbon copy indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_aa03a58a64578c91e5c6444d0f17f2550}{Mtc\+\_\+\+Im\+File\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get silence indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__file_8h_a4662c421165ec8aa852617d6d2d9f217}{Mtc\+\_\+\+Im\+File\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get offline indication flag from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__file_8h_a28df962e9a80a5cd36895f88b2349dee}{Mtc\+\_\+\+Im\+File\+Get\+Trans\+State}} (Z\+C\+H\+AR $\ast$pc\+Trans\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get file transfer state from file transfer id string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Message File Transfer Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}\label{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!MTC\_IM\_FILE\_CONT\_TXT\_PLAIN@{MTC\_IM\_FILE\_CONT\_TXT\_PLAIN}}
+\index{MTC\_IM\_FILE\_CONT\_TXT\_PLAIN@{MTC\_IM\_FILE\_CONT\_TXT\_PLAIN}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_IM\_FILE\_CONT\_TXT\_PLAIN}{MTC\_IM\_FILE\_CONT\_TXT\_PLAIN}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN~\char`\"{}text/plain\char`\"{}}
+
+
+
+M\+TC IM file transfer content type. 
+
+text/plain content \mbox{\Hypertarget{mtc__im__file_8h_abdbb1dfa659d942d1be6d2bc8ca4f894}\label{mtc__im__file_8h_abdbb1dfa659d942d1be6d2bc8ca4f894}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!MTC\_IM\_FILE\_SRV\_BURN@{MTC\_IM\_FILE\_SRV\_BURN}}
+\index{MTC\_IM\_FILE\_SRV\_BURN@{MTC\_IM\_FILE\_SRV\_BURN}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_IM\_FILE\_SRV\_BURN}{MTC\_IM\_FILE\_SRV\_BURN}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN~0x0001}
+
+
+
+M\+TC file transfer service flag. 
+
+The burn after reading message flag 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01}\label{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_DIRECT\_TYPE@{EN\_MTC\_FILE\_DIRECT\_TYPE}}
+\index{EN\_MTC\_FILE\_DIRECT\_TYPE@{EN\_MTC\_FILE\_DIRECT\_TYPE}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_FILE\_DIRECT\_TYPE}{EN\_MTC\_FILE\_DIRECT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC file transfer direct type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_DIRECT\_UNKNOWN@{EN\_MTC\_FILE\_DIRECT\_UNKNOWN}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_DIRECT\_UNKNOWN@{EN\_MTC\_FILE\_DIRECT\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01acf031ed1e34bbada84b52a8a8e39d666}\label{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01acf031ed1e34bbada84b52a8a8e39d666}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+U\+N\+K\+N\+O\+WN&file transfer direct unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_DIRECT\_SENDER@{EN\_MTC\_FILE\_DIRECT\_SENDER}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_DIRECT\_SENDER@{EN\_MTC\_FILE\_DIRECT\_SENDER}}}\mbox{\Hypertarget{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01a377dd51e9d8ab315a73deffb1c4298fe}\label{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01a377dd51e9d8ab315a73deffb1c4298fe}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+S\+E\+N\+D\+ER&file transfer direct sender \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_DIRECT\_RECVER@{EN\_MTC\_FILE\_DIRECT\_RECVER}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_DIRECT\_RECVER@{EN\_MTC\_FILE\_DIRECT\_RECVER}}}\mbox{\Hypertarget{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01a9053a45ffbfb22364fb2bf902f6d9b6e}\label{mtc__im__file_8h_ac7305ac6cc4d08fcd8c28293a52e9d01a9053a45ffbfb22364fb2bf902f6d9b6e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+C\+V\+ER&file transfer direct receiver \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaab}\label{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaab}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_STATUS\_TYPE@{EN\_MTC\_FILE\_STATUS\_TYPE}}
+\index{EN\_MTC\_FILE\_STATUS\_TYPE@{EN\_MTC\_FILE\_STATUS\_TYPE}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_FILE\_STATUS\_TYPE}{EN\_MTC\_FILE\_STATUS\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaab}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC file transfer status type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_STATUS\_NO@{EN\_MTC\_FILE\_STATUS\_NO}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_STATUS\_NO@{EN\_MTC\_FILE\_STATUS\_NO}}}\mbox{\Hypertarget{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaabaef700a6a3b5a584dab5cd5b0cf810771}\label{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaabaef700a6a3b5a584dab5cd5b0cf810771}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+NO&file transfer status no \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_STATUS\_READY@{EN\_MTC\_FILE\_STATUS\_READY}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_STATUS\_READY@{EN\_MTC\_FILE\_STATUS\_READY}}}\mbox{\Hypertarget{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba2fd58cf9b1944e41044cf7f8e5fda212}\label{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba2fd58cf9b1944e41044cf7f8e5fda212}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+A\+DY&file transfer status ready \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_STATUS\_SENDING@{EN\_MTC\_FILE\_STATUS\_SENDING}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_STATUS\_SENDING@{EN\_MTC\_FILE\_STATUS\_SENDING}}}\mbox{\Hypertarget{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba778e4b2e14f7d90179acb79f5f1badfc}\label{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba778e4b2e14f7d90179acb79f5f1badfc}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+N\+D\+I\+NG&file transfer status sending \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_STATUS\_RECVING@{EN\_MTC\_FILE\_STATUS\_RECVING}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_STATUS\_RECVING@{EN\_MTC\_FILE\_STATUS\_RECVING}}}\mbox{\Hypertarget{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba12ed83dc985bcbb19753f79646b8edaf}\label{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba12ed83dc985bcbb19753f79646b8edaf}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+C\+V\+I\+NG&file transfer status recving \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_FILE\_STATUS\_ENDING@{EN\_MTC\_FILE\_STATUS\_ENDING}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_FILE\_STATUS\_ENDING@{EN\_MTC\_FILE\_STATUS\_ENDING}}}\mbox{\Hypertarget{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba13363c8f4566b9550cff423c9dcc3e58}\label{mtc__im__file_8h_a9038f2ade24e1503fd2af7dec85ceaaba13363c8f4566b9550cff423c9dcc3e58}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+E\+N\+D\+I\+NG&file transfer status ending \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bff}\label{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bff}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_REJECT\_REASON\_TYPE@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_TYPE}}
+\index{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_TYPE@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_TYPE}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_TYPE}{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bff}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC file session reject reason type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_NORMAL@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_NORMAL}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_REJECT\_REASON\_NORMAL@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_NORMAL}}}\mbox{\Hypertarget{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffaeee03c3263c9084ba5a2d39cebe00796}\label{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffaeee03c3263c9084ba5a2d39cebe00796}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+N\+O\+R\+M\+AL&normal \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_TOO\_LARGE@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_TOO\_LARGE}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_TOO\_LARGE@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_TOO\_LARGE}}}\mbox{\Hypertarget{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffaa6041f22f9fc7bf0c38b83f9cd294351}\label{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffaa6041f22f9fc7bf0c38b83f9cd294351}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+F\+I\+L\+E\+\_\+\+T\+O\+O\+\_\+\+L\+A\+R\+GE&file too large \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_EXISTED@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_EXISTED}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_EXISTED@{EN\_MTC\_IM\_FILE\_REJECT\_REASON\_FILE\_EXISTED}}}\mbox{\Hypertarget{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffa2a3e34abb15a801d09f191242f66a04a}\label{mtc__im__file_8h_a16694a8159c28529e4ddd49f56d40bffa2a3e34abb15a801d09f191242f66a04a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+F\+I\+L\+E\+\_\+\+E\+X\+I\+S\+T\+ED&file is existed \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_TYPE@{EN\_MTC\_IM\_FILE\_SPAM\_TYPE}}
+\index{EN\_MTC\_IM\_FILE\_SPAM\_TYPE@{EN\_MTC\_IM\_FILE\_SPAM\_TYPE}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_FILE\_SPAM\_TYPE}{EN\_MTC\_IM\_FILE\_SPAM\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM file message spam type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_SPAM\_POLITICAL\_RUMOR@{EN\_MTC\_IM\_FILE\_SPAM\_POLITICAL\_RUMOR}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_POLITICAL\_RUMOR@{EN\_MTC\_IM\_FILE\_SPAM\_POLITICAL\_RUMOR}}}\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a3583890b2c520e3e89da663a321f0164}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a3583890b2c520e3e89da663a321f0164}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+P\+O\+L\+I\+T\+I\+C\+A\+L\+\_\+\+R\+U\+M\+OR&political rumor msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_SPAM\_JURISPRUDENCE@{EN\_MTC\_IM\_FILE\_SPAM\_JURISPRUDENCE}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_JURISPRUDENCE@{EN\_MTC\_IM\_FILE\_SPAM\_JURISPRUDENCE}}}\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a360094564cb77dec0472b40763882d0d}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a360094564cb77dec0472b40763882d0d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+J\+U\+R\+I\+S\+P\+R\+U\+D\+E\+N\+CE&jurisprudence msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_SPAM\_FRAUD@{EN\_MTC\_IM\_FILE\_SPAM\_FRAUD}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_FRAUD@{EN\_MTC\_IM\_FILE\_SPAM\_FRAUD}}}\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922ad05be503b927d269ad728a0272a0355a}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922ad05be503b927d269ad728a0272a0355a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+F\+R\+A\+UD&fraud msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_SPAM\_MALICIOUS\_MARKETING@{EN\_MTC\_IM\_FILE\_SPAM\_MALICIOUS\_MARKETING}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_MALICIOUS\_MARKETING@{EN\_MTC\_IM\_FILE\_SPAM\_MALICIOUS\_MARKETING}}}\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a16f0f2a34690d1a428a3c43b3cdd3db0}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a16f0f2a34690d1a428a3c43b3cdd3db0}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+M\+A\+L\+I\+C\+I\+O\+U\+S\+\_\+\+M\+A\+R\+K\+E\+T\+I\+NG&malicious marketing msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_SPAM\_VIOLENCE@{EN\_MTC\_IM\_FILE\_SPAM\_VIOLENCE}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_VIOLENCE@{EN\_MTC\_IM\_FILE\_SPAM\_VIOLENCE}}}\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a37a4afd71d29436ab793283c01a38fd5}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922a37a4afd71d29436ab793283c01a38fd5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+V\+I\+O\+L\+E\+N\+CE&violence msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_FILE\_SPAM\_OTHER@{EN\_MTC\_IM\_FILE\_SPAM\_OTHER}!mtc\_im\_file.h@{mtc\_im\_file.h}}\index{mtc\_im\_file.h@{mtc\_im\_file.h}!EN\_MTC\_IM\_FILE\_SPAM\_OTHER@{EN\_MTC\_IM\_FILE\_SPAM\_OTHER}}}\mbox{\Hypertarget{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922afeeb10d3434f75e004ac7ed8f44dd868}\label{mtc__im__file_8h_a0d6f994fab244e57488ced369ec9e922afeeb10d3434f75e004ac7ed8f44dd868}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+S\+P\+A\+M\+\_\+\+O\+T\+H\+ER&other msg \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im__file_8h_aed2ddc2633ece3cb9b5d965c037d1610}\label{mtc__im__file_8h_aed2ddc2633ece3cb9b5d965c037d1610}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileAccept@{Mtc\_ImFileAccept}}
+\index{Mtc\_ImFileAccept@{Mtc\_ImFileAccept}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileAccept()}{Mtc\_ImFileAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+TC Accept a file transfer invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The local file name for save.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept file transfer invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept file transfer invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a3161df7fddd1966f5d138d2501559c33}\label{mtc__im__file_8h_a3161df7fddd1966f5d138d2501559c33}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileAcceptResume@{Mtc\_ImFileAcceptResume}}
+\index{Mtc\_ImFileAcceptResume@{Mtc\_ImFileAcceptResume}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileAcceptResume()}{Mtc\_ImFileAcceptResume()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Accept\+Resume (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset }\end{DoxyParamCaption})}
+
+
+
+M\+TC Accept a file resume invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The local file name for save. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset, value must bigger than 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset, value 0 means the end of whole file.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept file resume invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept file resume invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a95a1dba81ea197ec97a91d4a3d0388fe}\label{mtc__im__file_8h_a95a1dba81ea197ec97a91d4a3d0388fe}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileCancel@{Mtc\_ImFileCancel}}
+\index{Mtc\_ImFileCancel@{Mtc\_ImFileCancel}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileCancel()}{Mtc\_ImFileCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cancel a file transfer. 
+
+If IM participant canceled transfer invitation, Remote client will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_ade812e412e0f59510ace2c0494cf1d08}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Canceled}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancel file transfer invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancel file transfer invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a9e36538098ce7a91a49ae618c86d6f0c}\label{mtc__im__file_8h_a9e36538098ce7a91a49ae618c86d6f0c}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileClrThumbData@{Mtc\_ImFileClrThumbData}}
+\index{Mtc\_ImFileClrThumbData@{Mtc\_ImFileClrThumbData}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileClrThumbData()}{Mtc\_ImFileClrThumbData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Clr\+Thumb\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Clear thumbnail date. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Clear thumbnail date successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Clear thumbnail date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a6da3396d854396871002ebb08d50142f}\label{mtc__im__file_8h_a6da3396d854396871002ebb08d50142f}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileFetchViaMsrp@{Mtc\_ImFileFetchViaMsrp}}
+\index{Mtc\_ImFileFetchViaMsrp@{Mtc\_ImFileFetchViaMsrp}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileFetchViaMsrp()}{Mtc\_ImFileFetchViaMsrp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Fetch\+Via\+Msrp (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file fetch invitation to one participant via msrp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file fetch invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a2e528f03e94a26b90b0db41f23912b65}\label{mtc__im__file_8h_a2e528f03e94a26b90b0db41f23912b65}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileFetchViaMsrpX@{Mtc\_ImFileFetchViaMsrpX}}
+\index{Mtc\_ImFileFetchViaMsrpX@{Mtc\_ImFileFetchViaMsrpX}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileFetchViaMsrpX()}{Mtc\_ImFileFetchViaMsrpX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Fetch\+Via\+MsrpX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file fetch invitation to group chat via msrp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file fetch invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_abcd479e5d4a1db1535d64dc4979e58ca}\label{mtc__im__file_8h_abcd479e5d4a1db1535d64dc4979e58ca}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileFw@{Mtc\_ImFileFw}}
+\index{Mtc\_ImFileFw@{Mtc\_ImFileFw}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileFw()}{Mtc\_ImFileFw()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Fw (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Hash\+Val,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag }\end{DoxyParamCaption})}
+
+
+
+M\+TC Forwarding a file to one participant. 
+
+If IM participant receive transfer invitation successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_ab666652ae92c073d109805b4de51679d}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Acpted}} or \mbox{\hyperlink{mtc__im__cb_8h_ab7481b2ae59d81007923ffc172a7a685}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Rejected}}.
+
+If IM sending start, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_abcbb31586518931ae8bf674f4607b0ef}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Sending}} for report sending file status.
+
+If IM sent successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a038803bdbc06b8f35096eca37aa31daa}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a3c57b6369255d65a5228896dceaef585}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Failed}}.
+
+While receiving file transfer invitation, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a9c9358e8fb138f28ce89be151989e82c}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Ivt}}.
+
+While IM receiving start, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a66301546ea90e194030875ee16555bfe}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recving}}.
+
+While IM received done, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a1e11d3b024597288f34c0f421f6b6e7f}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Done}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}} etc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Hash\+Val} & The file hash value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, forward file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a6acbe080e1146af21b0140d0892bafda}\label{mtc__im__file_8h_a6acbe080e1146af21b0140d0892bafda}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileFwU@{Mtc\_ImFileFwU}}
+\index{Mtc\_ImFileFwU@{Mtc\_ImFileFwU}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileFwU()}{Mtc\_ImFileFwU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+FwU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Hash\+Val,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Forwarding a file to U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Hash\+Val} & The file hash value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, forward file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a227f91bb7b8832a41e97a22fc0b797c0}\label{mtc__im__file_8h_a227f91bb7b8832a41e97a22fc0b797c0}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileFwX@{Mtc\_ImFileFwX}}
+\index{Mtc\_ImFileFwX@{Mtc\_ImFileFwX}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileFwX()}{Mtc\_ImFileFwX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+FwX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Hash\+Val,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Forwarding a file in a group chat. 
+
+If IM participant receive transfer invitation successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_ab666652ae92c073d109805b4de51679d}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Acpted}} or \mbox{\hyperlink{mtc__im__cb_8h_ab7481b2ae59d81007923ffc172a7a685}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Rejected}}.
+
+If IM sending start, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_abcbb31586518931ae8bf674f4607b0ef}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Sending}} for report sending file status.
+
+If IM sent successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a038803bdbc06b8f35096eca37aa31daa}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a3c57b6369255d65a5228896dceaef585}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Failed}}.
+
+While receiving file transfer invitation, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a9c9358e8fb138f28ce89be151989e82c}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Ivt}}.
+
+While IM receiving start, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a66301546ea90e194030875ee16555bfe}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recving}}.
+
+While IM received done, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a1e11d3b024597288f34c0f421f6b6e7f}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Done}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The group chat U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}} etc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Hash\+Val} & The file hash value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, forward file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a523da0c373b2d611460f18eab573dbed}\label{mtc__im__file_8h_a523da0c373b2d611460f18eab573dbed}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetBurnTimeLen@{Mtc\_ImFileGetBurnTimeLen}}
+\index{Mtc\_ImFileGetBurnTimeLen@{Mtc\_ImFileGetBurnTimeLen}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetBurnTimeLen()}{Mtc\_ImFileGetBurnTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Burn\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get burn after reading time length from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+burn after reading time length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a4f10868798efe660c92826e2c0d413ec}\label{mtc__im__file_8h_a4f10868798efe660c92826e2c0d413ec}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetContId@{Mtc\_ImFileGetContId}}
+\index{Mtc\_ImFileGetContId@{Mtc\_ImFileGetContId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetContId()}{Mtc\_ImFileGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get contribution-\/id from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a8d72f5ff7dd22d0d840d63428c8bcd7a}\label{mtc__im__file_8h_a8d72f5ff7dd22d0d840d63428c8bcd7a}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetConvId@{Mtc\_ImFileGetConvId}}
+\index{Mtc\_ImFileGetConvId@{Mtc\_ImFileGetConvId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetConvId()}{Mtc\_ImFileGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get conversation-\/id from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a46eda1386e032815675f0fd25d3ae5f6}\label{mtc__im__file_8h_a46eda1386e032815675f0fd25d3ae5f6}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetCookie@{Mtc\_ImFileGetCookie}}
+\index{Mtc\_ImFileGetCookie@{Mtc\_ImFileGetCookie}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetCookie()}{Mtc\_ImFileGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Im\+File\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get user cookie from a file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User cookie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a04f7d60f8ae940b0bd3ba7542ce9fbef}\label{mtc__im__file_8h_a04f7d60f8ae940b0bd3ba7542ce9fbef}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetDateTime@{Mtc\_ImFileGetDateTime}}
+\index{Mtc\_ImFileGetDateTime@{Mtc\_ImFileGetDateTime}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetDateTime()}{Mtc\_ImFileGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+File\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file transfer date time(milliseconds), otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_ac0b9e028a1e7eada6c5d25824aa7a029}\label{mtc__im__file_8h_ac0b9e028a1e7eada6c5d25824aa7a029}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetDeviceId@{Mtc\_ImFileGetDeviceId}}
+\index{Mtc\_ImFileGetDeviceId@{Mtc\_ImFileGetDeviceId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetDeviceId()}{Mtc\_ImFileGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get device id from file transfer session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a784c0b8480b5a653606510020507fb68}\label{mtc__im__file_8h_a784c0b8480b5a653606510020507fb68}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetDuration@{Mtc\_ImFileGetDuration}}
+\index{Mtc\_ImFileGetDuration@{Mtc\_ImFileGetDuration}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetDuration()}{Mtc\_ImFileGetDuration()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Duration (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file duration from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file duration. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a28f2dbd8959dbfa7681ef9d947bed723}\label{mtc__im__file_8h_a28f2dbd8959dbfa7681ef9d947bed723}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetGrpChatId@{Mtc\_ImFileGetGrpChatId}}
+\index{Mtc\_ImFileGetGrpChatId@{Mtc\_ImFileGetGrpChatId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetGrpChatId()}{Mtc\_ImFileGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group chat id from transfer id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group chat id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_ada4de2789cd9c7fc7633b8d805480ab4}\label{mtc__im__file_8h_ada4de2789cd9c7fc7633b8d805480ab4}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetHashValue@{Mtc\_ImFileGetHashValue}}
+\index{Mtc\_ImFileGetHashValue@{Mtc\_ImFileGetHashValue}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetHashValue()}{Mtc\_ImFileGetHashValue()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Hash\+Value (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file hash value from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file hash value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a36b60db97ef93928e517c7a5b73ef34e}\label{mtc__im__file_8h_a36b60db97ef93928e517c7a5b73ef34e}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetImdnId@{Mtc\_ImFileGetImdnId}}
+\index{Mtc\_ImFileGetImdnId@{Mtc\_ImFileGetImdnId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetImdnId()}{Mtc\_ImFileGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the Imdn id from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Imdn id of file transfer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a0e56530ce2589c7daa34b67a2aec478d}\label{mtc__im__file_8h_a0e56530ce2589c7daa34b67a2aec478d}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetIsFocus@{Mtc\_ImFileGetIsFocus}}
+\index{Mtc\_ImFileGetIsFocus@{Mtc\_ImFileGetIsFocus}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetIsFocus()}{Mtc\_ImFileGetIsFocus()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Get\+Is\+Focus (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get Is\+Focus flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE file transfer in group chat \\
+\hline
+{\em return} & Z\+F\+A\+L\+SE file transfer in 1-\/1 chat. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a1c320bfe17dc6fa7b36ea476e7ccde62}\label{mtc__im__file_8h_a1c320bfe17dc6fa7b36ea476e7ccde62}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetName@{Mtc\_ImFileGetName}}
+\index{Mtc\_ImFileGetName@{Mtc\_ImFileGetName}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetName()}{Mtc\_ImFileGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file name from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File name. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a9ebf783db0e25a35574ebc868c028040}\label{mtc__im__file_8h_a9ebf783db0e25a35574ebc868c028040}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetOrigIdPartp@{Mtc\_ImFileGetOrigIdPartp}}
+\index{Mtc\_ImFileGetOrigIdPartp@{Mtc\_ImFileGetOrigIdPartp}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetOrigIdPartp()}{Mtc\_ImFileGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get original identity of participant from file transfer. 
+
+The participant is the file transfer initiator who initialized file transfer. It will return local U\+RI if local client is the file transfer initiator. It will return identity uri if file transfer invitation has P-\/\+Asserted-\/\+Identity information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a680391d25de3d70c6349e09e2caa96ec}\label{mtc__im__file_8h_a680391d25de3d70c6349e09e2caa96ec}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetOrigPartp@{Mtc\_ImFileGetOrigPartp}}
+\index{Mtc\_ImFileGetOrigPartp@{Mtc\_ImFileGetOrigPartp}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetOrigPartp()}{Mtc\_ImFileGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get original participant U\+RI from file transfer. 
+
+The participant is the session initiator who initialized this file transfer. It will return local U\+RI if local client is the file transfer initiator. It will return From uri from file transfer invitation information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a08552fc1f87571b83c74c2bb98f22d58}\label{mtc__im__file_8h_a08552fc1f87571b83c74c2bb98f22d58}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetPartp@{Mtc\_ImFileGetPartp}}
+\index{Mtc\_ImFileGetPartp@{Mtc\_ImFileGetPartp}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetPartp()}{Mtc\_ImFileGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant information from file transfer. Get receiver information from feion carbon copy file transfer. 
+
+The participant is the remote client who transferred file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a7b1b3a06914c212ba38c606e116da62a}\label{mtc__im__file_8h_a7b1b3a06914c212ba38c606e116da62a}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetPartpLstId@{Mtc\_ImFileGetPartpLstId}}
+\index{Mtc\_ImFileGetPartpLstId@{Mtc\_ImFileGetPartpLstId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetPartpLstId()}{Mtc\_ImFileGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant list id from file transfer. 
+
+The participant list id is all remote clients who transferred file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The participant list id on succeed or 0 on failed. The caller is responsible for freeing it by \mbox{\hyperlink{mtc__partp_8h_a47276b69ad0ae6bba452f1e933e4c1ec}{Mtc\+\_\+\+Partp\+Lst\+Delete}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a012b9712dafcb0ebdbcd1e18e0b3ae9e}\label{mtc__im__file_8h_a012b9712dafcb0ebdbcd1e18e0b3ae9e}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetPartpType@{Mtc\_ImFileGetPartpType}}
+\index{Mtc\_ImFileGetPartpType@{Mtc\_ImFileGetPartpType}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetPartpType()}{Mtc\_ImFileGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant type from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of IM file transfer participant, see \mbox{\hyperlink{mtc__partp_8h_abe66ab722861a8aced34488e887e7663}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by \mbox{\hyperlink{mtc__im__file_8h_a08552fc1f87571b83c74c2bb98f22d58}{Mtc\+\_\+\+Im\+File\+Get\+Partp}}. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by \mbox{\hyperlink{mtc__im__file_8h_a08552fc1f87571b83c74c2bb98f22d58}{Mtc\+\_\+\+Im\+File\+Get\+Partp}}. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by \mbox{\hyperlink{mtc__im__file_8h_a7b1b3a06914c212ba38c606e116da62a}{Mtc\+\_\+\+Im\+File\+Get\+Partp\+Lst\+Id}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a5dbcab1391bf9efc28f20ef16ae77bbb}\label{mtc__im__file_8h_a5dbcab1391bf9efc28f20ef16ae77bbb}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetPath@{Mtc\_ImFileGetPath}}
+\index{Mtc\_ImFileGetPath@{Mtc\_ImFileGetPath}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetPath()}{Mtc\_ImFileGetPath()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Path (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file path from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File path. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_ab232fbb366d7b6fcd2c2f7e24eeed522}\label{mtc__im__file_8h_ab232fbb366d7b6fcd2c2f7e24eeed522}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetRecvSize@{Mtc\_ImFileGetRecvSize}}
+\index{Mtc\_ImFileGetRecvSize@{Mtc\_ImFileGetRecvSize}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetRecvSize()}{Mtc\_ImFileGetRecvSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Recv\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get received file data size from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file data received size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_aeb4deead1f8aa849a4606639de5bf395}\label{mtc__im__file_8h_aeb4deead1f8aa849a4606639de5bf395}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetSentSize@{Mtc\_ImFileGetSentSize}}
+\index{Mtc\_ImFileGetSentSize@{Mtc\_ImFileGetSentSize}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetSentSize()}{Mtc\_ImFileGetSentSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Sent\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get sent file data size from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file data sent size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a24ec727146f18ecdcc998fbdcda0a656}\label{mtc__im__file_8h_a24ec727146f18ecdcc998fbdcda0a656}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetSize@{Mtc\_ImFileGetSize}}
+\index{Mtc\_ImFileGetSize@{Mtc\_ImFileGetSize}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetSize()}{Mtc\_ImFileGetSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file size from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a8e0b1fdf6042da4e5e52cfc08db6ca76}\label{mtc__im__file_8h_a8e0b1fdf6042da4e5e52cfc08db6ca76}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetStartOffset@{Mtc\_ImFileGetStartOffset}}
+\index{Mtc\_ImFileGetStartOffset@{Mtc\_ImFileGetStartOffset}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetStartOffset()}{Mtc\_ImFileGetStartOffset()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Start\+Offset (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file start offset from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file start offset. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a077150aee8acd37128d1aa7c9b5a9b06}\label{mtc__im__file_8h_a077150aee8acd37128d1aa7c9b5a9b06}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetStopOffset@{Mtc\_ImFileGetStopOffset}}
+\index{Mtc\_ImFileGetStopOffset@{Mtc\_ImFileGetStopOffset}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetStopOffset()}{Mtc\_ImFileGetStopOffset()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Stop\+Offset (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file start offset from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file stop offset. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_ad3df728615fa310df56b27ac6560aa68}\label{mtc__im__file_8h_ad3df728615fa310df56b27ac6560aa68}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetSubject@{Mtc\_ImFileGetSubject}}
+\index{Mtc\_ImFileGetSubject@{Mtc\_ImFileGetSubject}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetSubject()}{Mtc\_ImFileGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get subject from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Subject.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a054aa00eaada7f1ae0aeb2f44ee7af23}\label{mtc__im__file_8h_a054aa00eaada7f1ae0aeb2f44ee7af23}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetSysDateTime@{Mtc\_ImFileGetSysDateTime}}
+\index{Mtc\_ImFileGetSysDateTime@{Mtc\_ImFileGetSysDateTime}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetSysDateTime()}{Mtc\_ImFileGetSysDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Sys\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{\mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a43a0c3663d50c66293b0af8c33df1c55}\label{mtc__im__file_8h_a43a0c3663d50c66293b0af8c33df1c55}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetThumbData@{Mtc\_ImFileGetThumbData}}
+\index{Mtc\_ImFileGetThumbData@{Mtc\_ImFileGetThumbData}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetThumbData()}{Mtc\_ImFileGetThumbData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Thumb\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumbnail date from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pp\+Data} & thumbnail data. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Data\+Size} & thumbnail data size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get thumbnail date successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get thumbnail date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a28df962e9a80a5cd36895f88b2349dee}\label{mtc__im__file_8h_a28df962e9a80a5cd36895f88b2349dee}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetTransState@{Mtc\_ImFileGetTransState}}
+\index{Mtc\_ImFileGetTransState@{Mtc\_ImFileGetTransState}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetTransState()}{Mtc\_ImFileGetTransState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Trans\+State (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file transfer state from file transfer id string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer state, \mbox{\hyperlink{mtc__im__file_8h_aa30bb7e89a1c677ef7ddf9dbc2388043}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a4e8afeca5418fb1df0220c76e2468c17}\label{mtc__im__file_8h_a4e8afeca5418fb1df0220c76e2468c17}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetTrsfDirect@{Mtc\_ImFileGetTrsfDirect}}
+\index{Mtc\_ImFileGetTrsfDirect@{Mtc\_ImFileGetTrsfDirect}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetTrsfDirect()}{Mtc\_ImFileGetTrsfDirect()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Get\+Trsf\+Direct (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get direct from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+direct of file transfer, \mbox{\hyperlink{mtc__im__file_8h_a9eff76bb2ae574b796ec0e77be3e561c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+F\+I\+L\+E\+\_\+\+D\+I\+R\+E\+C\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a69a8afd4e60c402e20fc2beb919757d2}\label{mtc__im__file_8h_a69a8afd4e60c402e20fc2beb919757d2}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetTrsfId@{Mtc\_ImFileGetTrsfId}}
+\index{Mtc\_ImFileGetTrsfId@{Mtc\_ImFileGetTrsfId}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetTrsfId()}{Mtc\_ImFileGetTrsfId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Trsf\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file-\/transfer-\/id string of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file-\/transfer-\/id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a29234cd0e8c6bba2e9016b8efaa623ac}\label{mtc__im__file_8h_a29234cd0e8c6bba2e9016b8efaa623ac}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileGetType@{Mtc\_ImFileGetType}}
+\index{Mtc\_ImFileGetType@{Mtc\_ImFileGetType}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileGetType()}{Mtc\_ImFileGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+File\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get file type from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}.... The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a029a2a766b05436ee5fdbefdde1da0f8}\label{mtc__im__file_8h_a029a2a766b05436ee5fdbefdde1da0f8}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasBurnInd@{Mtc\_ImFileHasBurnInd}}
+\index{Mtc\_ImFileHasBurnInd@{Mtc\_ImFileHasBurnInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasBurnInd()}{Mtc\_ImFileHasBurnInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Burn\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get burn after reading indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has burn after reading file indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_aef5bd6c0954b5dd5c538512212fe5119}\label{mtc__im__file_8h_aef5bd6c0954b5dd5c538512212fe5119}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasCcInd@{Mtc\_ImFileHasCcInd}}
+\index{Mtc\_ImFileHasCcInd@{Mtc\_ImFileHasCcInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasCcInd()}{Mtc\_ImFileHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get carbon copy indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has carbon copy indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_af4c154d1bddca16fad492e622d753bdf}\label{mtc__im__file_8h_af4c154d1bddca16fad492e622d753bdf}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasDirectInd@{Mtc\_ImFileHasDirectInd}}
+\index{Mtc\_ImFileHasDirectInd@{Mtc\_ImFileHasDirectInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasDirectInd()}{Mtc\_ImFileHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get directional indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has directional indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a4662c421165ec8aa852617d6d2d9f217}\label{mtc__im__file_8h_a4662c421165ec8aa852617d6d2d9f217}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasOffInd@{Mtc\_ImFileHasOffInd}}
+\index{Mtc\_ImFileHasOffInd@{Mtc\_ImFileHasOffInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasOffInd()}{Mtc\_ImFileHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get offline indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has offline indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a81a4fa07e12fc2ab78d87d29202a4787}\label{mtc__im__file_8h_a81a4fa07e12fc2ab78d87d29202a4787}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasPubInd@{Mtc\_ImFileHasPubInd}}
+\index{Mtc\_ImFileHasPubInd@{Mtc\_ImFileHasPubInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasPubInd()}{Mtc\_ImFileHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get public message indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_aa03a58a64578c91e5c6444d0f17f2550}\label{mtc__im__file_8h_aa03a58a64578c91e5c6444d0f17f2550}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasSilenceInd@{Mtc\_ImFileHasSilenceInd}}
+\index{Mtc\_ImFileHasSilenceInd@{Mtc\_ImFileHasSilenceInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasSilenceInd()}{Mtc\_ImFileHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get silence indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has silence indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_ad84a45fe4dd4e66b9839040d1dbeaca0}\label{mtc__im__file_8h_ad84a45fe4dd4e66b9839040d1dbeaca0}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasSpamInd@{Mtc\_ImFileHasSpamInd}}
+\index{Mtc\_ImFileHasSpamInd@{Mtc\_ImFileHasSpamInd}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasSpamInd()}{Mtc\_ImFileHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get spam indication flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has spam indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a5f7e564669c9f1e4a8a76ea917cccdae}\label{mtc__im__file_8h_a5f7e564669c9f1e4a8a76ea917cccdae}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileHasThumb@{Mtc\_ImFileHasThumb}}
+\index{Mtc\_ImFileHasThumb@{Mtc\_ImFileHasThumb}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileHasThumb()}{Mtc\_ImFileHasThumb()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+File\+Has\+Thumb (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get thumbnail flag from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE if file transfer has thumbnail otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a6e1e4e0eccc61bed904705154befcbc3}\label{mtc__im__file_8h_a6e1e4e0eccc61bed904705154befcbc3}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileReject@{Mtc\_ImFileReject}}
+\index{Mtc\_ImFileReject@{Mtc\_ImFileReject}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileReject()}{Mtc\_ImFileReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Reason }\end{DoxyParamCaption})}
+
+
+
+M\+TC Reject a file transfer invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & The reason for rejection, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__im__file_8h_ad853281e01fe9759ce7bfcb7c36cc292}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+R\+E\+J\+E\+C\+T\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject file transfer invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject file transfer invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a29c4911f7a020e0e9348b0838411b799}\label{mtc__im__file_8h_a29c4911f7a020e0e9348b0838411b799}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileRelease@{Mtc\_ImFileRelease}}
+\index{Mtc\_ImFileRelease@{Mtc\_ImFileRelease}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileRelease()}{Mtc\_ImFileRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Release a file transfer. 
+
+If IM participant released file transfer, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a7b84fb7598ae029ec92800d58222d78c}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Released}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release file transfer successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release file transfer failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_ace38eba40bbabf87f675ac36c1329d2b}\label{mtc__im__file_8h_ace38eba40bbabf87f675ac36c1329d2b}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileResumeByRecver@{Mtc\_ImFileResumeByRecver}}
+\index{Mtc\_ImFileResumeByRecver@{Mtc\_ImFileResumeByRecver}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileResumeByRecver()}{Mtc\_ImFileResumeByRecver()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Resume\+By\+Recver (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file resume invitation to one participant by receiver. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset, value must bigger than 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset, value 0 means the end of whole file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file resume invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_ab5dd45eccb1d9e520ba5aa2b42a0ed7c}\label{mtc__im__file_8h_ab5dd45eccb1d9e520ba5aa2b42a0ed7c}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileResumeByRecverX@{Mtc\_ImFileResumeByRecverX}}
+\index{Mtc\_ImFileResumeByRecverX@{Mtc\_ImFileResumeByRecverX}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileResumeByRecverX()}{Mtc\_ImFileResumeByRecverX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Resume\+By\+RecverX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file resume invitation to group chat by receiver. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset, value must bigger than 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset, value 0 means the end of whole file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file resume invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a2966fb87ad4f216c173ce9128330323a}\label{mtc__im__file_8h_a2966fb87ad4f216c173ce9128330323a}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileResumeBySender@{Mtc\_ImFileResumeBySender}}
+\index{Mtc\_ImFileResumeBySender@{Mtc\_ImFileResumeBySender}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileResumeBySender()}{Mtc\_ImFileResumeBySender()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Resume\+By\+Sender (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+I\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file resume invitation to one participant by sender. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+I\+Msg\+Id} & The imdn-\/message-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset, value must bigger than 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset, value 0 means the end of whole file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file resume invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a2f164db3101c488b8ad3dacda8b99626}\label{mtc__im__file_8h_a2f164db3101c488b8ad3dacda8b99626}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileResumeBySenderS@{Mtc\_ImFileResumeBySenderS}}
+\index{Mtc\_ImFileResumeBySenderS@{Mtc\_ImFileResumeBySenderS}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileResumeBySenderS()}{Mtc\_ImFileResumeBySenderS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Resume\+By\+SenderS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+I\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spamtype }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending spam file resume invitation to one participant by sender. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+I\+Msg\+Id} & The imdn-\/message-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spamtype} & The spam information type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send burn after reading file resume invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a7af1ae0f7cbbbaa9e2c28cc5f2589aaa}\label{mtc__im__file_8h_a7af1ae0f7cbbbaa9e2c28cc5f2589aaa}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileResumeBySenderU@{Mtc\_ImFileResumeBySenderU}}
+\index{Mtc\_ImFileResumeBySenderU@{Mtc\_ImFileResumeBySenderU}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileResumeBySenderU()}{Mtc\_ImFileResumeBySenderU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Resume\+By\+SenderU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+I\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file resume invitation to participant list by sender. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+I\+Msg\+Id} & The imdn-\/message-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send burn after reading file resume invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_af171e8a01807337c4ef90c6ccc74b640}\label{mtc__im__file_8h_af171e8a01807337c4ef90c6ccc74b640}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileResumeBySenderX@{Mtc\_ImFileResumeBySenderX}}
+\index{Mtc\_ImFileResumeBySenderX@{Mtc\_ImFileResumeBySenderX}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileResumeBySenderX()}{Mtc\_ImFileResumeBySenderX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Resume\+By\+SenderX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Trans\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+I\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+U\+I\+NT}]{i\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+Stop\+Offset,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending file resume invitation to group chat by sender. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Trans\+Id} & The file-\/transfer-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+I\+Msg\+Id} & The imdn-\/message-\/id string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Start\+Offset} & The file start offset, value must bigger than 0. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stop\+Offset} & The file stop offset, value 0 means the end of whole file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file resume invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a9622716340d7535b8f028cc1517aa2e3}\label{mtc__im__file_8h_a9622716340d7535b8f028cc1517aa2e3}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileSetCookie@{Mtc\_ImFileSetCookie}}
+\index{Mtc\_ImFileSetCookie@{Mtc\_ImFileSetCookie}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileSetCookie()}{Mtc\_ImFileSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+File\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC Set user cookie in a file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__file_8h_a574b8e708649c1cd2d8b816d787e4afe}\label{mtc__im__file_8h_a574b8e708649c1cd2d8b816d787e4afe}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileTrsf@{Mtc\_ImFileTrsf}}
+\index{Mtc\_ImFileTrsf@{Mtc\_ImFileTrsf}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileTrsf()}{Mtc\_ImFileTrsf()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+Trsf (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending a file to one participant. 
+
+If IM participant receive transfer invitation successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_ab666652ae92c073d109805b4de51679d}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Acpted}} or \mbox{\hyperlink{mtc__im__cb_8h_ab7481b2ae59d81007923ffc172a7a685}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Rejected}}.
+
+If IM sending start, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_abcbb31586518931ae8bf674f4607b0ef}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Sending}} for report sending file status.
+
+If IM sent successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a038803bdbc06b8f35096eca37aa31daa}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a3c57b6369255d65a5228896dceaef585}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Failed}}.
+
+While receiving file transfer invitation, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a9c9358e8fb138f28ce89be151989e82c}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Ivt}}.
+
+While IM receiving start, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a66301546ea90e194030875ee16555bfe}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recving}}.
+
+While IM received done, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a1e11d3b024597288f34c0f421f6b6e7f}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Done}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}} etc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a8768a368884c73138f227cfbaa86ec20}\label{mtc__im__file_8h_a8768a368884c73138f227cfbaa86ec20}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileTrsfS@{Mtc\_ImFileTrsfS}}
+\index{Mtc\_ImFileTrsfS@{Mtc\_ImFileTrsfS}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileTrsfS()}{Mtc\_ImFileTrsfS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+TrsfS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending a spam file to one participant. 
+
+If IM participant receive transfer invitation successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_ab666652ae92c073d109805b4de51679d}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Acpted}} or \mbox{\hyperlink{mtc__im__cb_8h_ab7481b2ae59d81007923ffc172a7a685}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Rejected}}.
+
+If IM sending start, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_abcbb31586518931ae8bf674f4607b0ef}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Sending}} for report sending file status.
+
+If IM sent successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a038803bdbc06b8f35096eca37aa31daa}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a3c57b6369255d65a5228896dceaef585}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}} etc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_ae94bec31909bbec7fd9e25bbb937487e}\label{mtc__im__file_8h_ae94bec31909bbec7fd9e25bbb937487e}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileTrsfU@{Mtc\_ImFileTrsfU}}
+\index{Mtc\_ImFileTrsfU@{Mtc\_ImFileTrsfU}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileTrsfU()}{Mtc\_ImFileTrsfU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+TrsfU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending a file to U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__file_8h_a1413cc39fa3ea3f0ecf69aa9fce32422}\label{mtc__im__file_8h_a1413cc39fa3ea3f0ecf69aa9fce32422}} 
+\index{mtc\_im\_file.h@{mtc\_im\_file.h}!Mtc\_ImFileTrsfX@{Mtc\_ImFileTrsfX}}
+\index{Mtc\_ImFileTrsfX@{Mtc\_ImFileTrsfX}!mtc\_im\_file.h@{mtc\_im\_file.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImFileTrsfX()}{Mtc\_ImFileTrsfX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+File\+TrsfX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Sending a file in a group chat. 
+
+If IM participant receive transfer invitation successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_ab666652ae92c073d109805b4de51679d}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Acpted}} or \mbox{\hyperlink{mtc__im__cb_8h_ab7481b2ae59d81007923ffc172a7a685}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Rejected}}.
+
+If IM sending start, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_abcbb31586518931ae8bf674f4607b0ef}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Sending}} for report sending file status.
+
+If IM sent successfully, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a038803bdbc06b8f35096eca37aa31daa}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Ok}}.
+
+If IM send failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a3c57b6369255d65a5228896dceaef585}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Send\+Failed}}.
+
+While receiving file transfer invitation, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a9c9358e8fb138f28ce89be151989e82c}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Ivt}}.
+
+While IM receiving start, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a66301546ea90e194030875ee16555bfe}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recving}}.
+
+While IM received done, Remote G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a1e11d3b024597288f34c0f421f6b6e7f}{Mtc\+\_\+\+Im\+Cb\+Set\+File\+Recv\+Done}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The group chat U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type, see \mbox{\hyperlink{mtc__im__file_8h_a11a5f6d2dc3e358f145e7a3e41755e90}{M\+T\+C\+\_\+\+I\+M\+\_\+\+F\+I\+L\+E\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}} etc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file transfer id, send file transfer invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}

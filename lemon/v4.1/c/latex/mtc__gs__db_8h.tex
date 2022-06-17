@@ -1,0 +1,733 @@
+\hypertarget{mtc__gs__db_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+gs\+\_\+db.h File Reference}
+\label{mtc__gs__db_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gs\_db.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gs\_db.h}}
+
+
+M\+TC Geolocation Share Database Interface Functions.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__gs__db_8h_afa69411280fc1df2e6cc8b4fb2f339de}\label{mtc__gs__db_8h_afa69411280fc1df2e6cc8b4fb2f339de}} 
+typedef enum \mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__gs__db_8h_afa69411280fc1df2e6cc8b4fb2f339de}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC geolocation share pull service type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gs__db_8h_a36e02429d4ef70113444aa6e44b6ca85}\label{mtc__gs__db_8h_a36e02429d4ef70113444aa6e44b6ca85}} 
+typedef enum \mbox{\hyperlink{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__gs__db_8h_a36e02429d4ef70113444aa6e44b6ca85}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC geolocation share media protocol type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gs__db_8h_a1af3c37fd21c57e76c231b9b1bf8e95e}\label{mtc__gs__db_8h_a1af3c37fd21c57e76c231b9b1bf8e95e}} 
+typedef enum \mbox{\hyperlink{mtc__gs__db_8h_ac0e52c7046a878a77de39a73509f0910}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__gs__db_8h_a1af3c37fd21c57e76c231b9b1bf8e95e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC geolocation share allowed S\+MS type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6ad6e7256a842c63b5f1fc362959cd7cb7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a7f9acb374ed13ed9959add4c55176100}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+L\+B\+S\+\_\+\+O\+N\+LY}}, 
+\mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6abd5ac4f7fa6dcdbb03eb8c033aff5d06}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+F\+T\+\_\+\+O\+N\+LY}}, 
+\mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a8f375973e76ba3cde3def5008219c5f2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+L\+B\+S\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}, 
+\newline
+\mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a51fcadaa67e43fd787c163cc7dadff70}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+F\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC geolocation share pull service type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49a2b90576c82aa09e9527e4a12bdf86a58}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+M\+S\+R\+P\+\_\+\+T\+CP}}, 
+\mbox{\hyperlink{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49a95c74aba5434de58b5db8cb883dc08ef}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+M\+S\+R\+P\+\_\+\+T\+LS}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC geolocation share media protocol type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gs__db_8h_ac0e52c7046a878a77de39a73509f0910}\label{mtc__gs__db_8h_ac0e52c7046a878a77de39a73509f0910}} 
+enum \mbox{\hyperlink{mtc__gs__db_8h_ac0e52c7046a878a77de39a73509f0910}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+S\+E\+R\+V\+ER}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+Y\+ES}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+NO}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC geolocation share allowed S\+MS type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ae74b6c69fa5165ebc6a6579b18d1d4f5}{Mtc\+\_\+\+Gs\+Db\+Get\+Pull\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get pull service type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__gs__db_8h_a842d5ba54e7de9aba6b66367a81e98e5}{Mtc\+\_\+\+Gs\+Db\+Get\+Pull\+Open}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get pull pull open flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a372050b4706d90ecad0001da766634bf}{Mtc\+\_\+\+Gs\+Db\+Get\+Loc\+Info\+Max\+Valid\+Time}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get location information max valid time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ac99b69ae67ea531eeadd4637a557cd31}{Mtc\+\_\+\+Gs\+Db\+Get\+Block\+Timer}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get pull block timer length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a2a8acd7a18e39a2a20804031320624a9}{Mtc\+\_\+\+Gs\+Db\+Get\+Txt\+Max\+Len}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get text max length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gs__db_8h_a1c313aab84aafcf225bad4dbbd41bdf7}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Host}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get One\+A\+PI host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+S\+H\+O\+RT \mbox{\hyperlink{mtc__gs__db_8h_aea8cb81ddaf08aa587e11eff1961feff}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get One\+A\+PI host port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gs__db_8h_adf47f2b291d738c0e5bd5c096b78b937}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Root}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get One\+A\+PI root. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gs__db_8h_aa7420e349de7466925f5b80f4af76806}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Vers}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get One\+A\+PI version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gs__db_8h_ac00472c31de33812c238edbe1cd32060}{Mtc\+\_\+\+Gs\+Db\+Get\+Hslp\+Addr}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get address of the H-\/\+S\+LP. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gs__db_8h_a9955561d4bb1af258242526f8780dbe0}{Mtc\+\_\+\+Gs\+Db\+Get\+Hslp\+Addr\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get address type of the H-\/\+S\+LP. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ad3f9b82c48a9abc1273e6b497c1fc5f0}{Mtc\+\_\+\+Gs\+Db\+Get\+Media\+Proto\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get media protocal type,. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a7486049aa0cf0f279f6bb869562c11d2}{Mtc\+\_\+\+Gs\+Db\+Set\+Pull\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Set pull service type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ac1b81fad88772d01ba421ab480b195d3}{Mtc\+\_\+\+Gs\+Db\+Set\+Pull\+Open}} (Z\+B\+O\+OL b\+Open)
+\begin{DoxyCompactList}\small\item\em Set pull open flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ad8dd7e1ad907b2a143b281fa796e5c6b}{Mtc\+\_\+\+Gs\+Db\+Set\+Block\+Timer}} (Z\+U\+I\+NT i\+Block\+Timer\+Len)
+\begin{DoxyCompactList}\small\item\em Set pull block timer length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ab6c7fbd4224f15388fbc1144edffa840}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Host}} (Z\+C\+H\+AR $\ast$pc\+Host)
+\begin{DoxyCompactList}\small\item\em Set One\+A\+PI host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_acb2ac23703af315f95b1ba938c1001a5}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Port}} (Z\+S\+H\+O\+RT w\+Port)
+\begin{DoxyCompactList}\small\item\em Set One\+A\+PI host port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a2fd021e6d025f4500b7862b7e2820391}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Root}} (Z\+C\+H\+AR $\ast$pc\+Root)
+\begin{DoxyCompactList}\small\item\em Set One\+A\+PI root. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_af0bb2b7827fc7c5756469e674c95202a}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Vers}} (Z\+C\+H\+AR $\ast$pc\+Ver)
+\begin{DoxyCompactList}\small\item\em Set One\+A\+PI version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a11f3f2448c5f6f71078488cea8b43370}{Mtc\+\_\+\+Gs\+Db\+Set\+Media\+Proto\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Set media protocol type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a38805985fd1b19708a29cd1bd8c877c3}{Mtc\+\_\+\+Gs\+Db\+Set\+Allowed\+Sms\+Type}} (Z\+U\+I\+NT i\+Allowed\+Sms\+Type)
+\begin{DoxyCompactList}\small\item\em Set allowed sms type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_af8534af4e112581caa5475c344eb4cd0}{Mtc\+\_\+\+Gs\+Db\+Get\+Allowed\+Sms\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get allowed sms type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__gs__db_8h_a5f0beee2a016e38cf38749a188decbd4}{Mtc\+\_\+\+Gs\+Db\+Get\+Dm\+Geoloc\+Push\+Auth}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get DM config for the user to use the Geolocation P\+U\+SH service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a179f29f7bbfd0e32c128a93cad376073}{Mtc\+\_\+\+Gs\+Db\+Set\+Dm\+Geoloc\+Push\+Auth}} (Z\+B\+O\+OL b\+Dm\+Geoloc\+Push\+Auth)
+\begin{DoxyCompactList}\small\item\em Set DM config for the user to use the Geolocation P\+U\+SH service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__gs__db_8h_ae9e22fc5ccfb350569ff75f432ba8016}{Mtc\+\_\+\+Gs\+Db\+Get\+Ue\+Geoloc\+Push\+Auth}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get UE config for the user to use the Geolocation P\+U\+SH service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_a99dbbee14639a02930c8d20210bc87d9}{Mtc\+\_\+\+Gs\+Db\+Set\+Ue\+Geoloc\+Push\+Auth}} (Z\+B\+O\+OL b\+Dm\+Geoloc\+Push\+Auth)
+\begin{DoxyCompactList}\small\item\em Set UE config for the user to use the Geolocation P\+U\+SH service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__gs__db_8h_a9b36644eec0821c03e443f7448a8b87c}{Mtc\+\_\+\+Gs\+Db\+Get\+Ue\+Geo\+Sms}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get UE config for the user to use the Geolocation P\+U\+SH via S\+MS service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gs__db_8h_ad7c4838d19e633357da65a75c28a50e3}{Mtc\+\_\+\+Gs\+Db\+Set\+Ue\+Geo\+Sms}} (Z\+B\+O\+OL b\+Dm\+Geo\+Sms)
+\begin{DoxyCompactList}\small\item\em Set UE config for the user to use the Geolocation P\+U\+SH via S\+MS service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Geolocation Share Database Interface Functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49}\label{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PROTO\_TYPE@{EN\_MTC\_GS\_PROTO\_TYPE}}
+\index{EN\_MTC\_GS\_PROTO\_TYPE@{EN\_MTC\_GS\_PROTO\_TYPE}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_GS\_PROTO\_TYPE}{EN\_MTC\_GS\_PROTO\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC geolocation share media protocol type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PROTO\_MSRP\_TCP@{EN\_MTC\_GS\_PROTO\_MSRP\_TCP}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PROTO\_MSRP\_TCP@{EN\_MTC\_GS\_PROTO\_MSRP\_TCP}}}\mbox{\Hypertarget{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49a2b90576c82aa09e9527e4a12bdf86a58}\label{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49a2b90576c82aa09e9527e4a12bdf86a58}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+M\+S\+R\+P\+\_\+\+T\+CP&M\+S\+RP over T\+CP. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PROTO\_MSRP\_TLS@{EN\_MTC\_GS\_PROTO\_MSRP\_TLS}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PROTO\_MSRP\_TLS@{EN\_MTC\_GS\_PROTO\_MSRP\_TLS}}}\mbox{\Hypertarget{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49a95c74aba5434de58b5db8cb883dc08ef}\label{mtc__gs__db_8h_a98ec6a92c13b388fa35f72e577c57f49a95c74aba5434de58b5db8cb883dc08ef}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+M\+S\+R\+P\+\_\+\+T\+LS&M\+S\+RP over T\+LS. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6}\label{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PULL\_TYPE@{EN\_MTC\_GS\_PULL\_TYPE}}
+\index{EN\_MTC\_GS\_PULL\_TYPE@{EN\_MTC\_GS\_PULL\_TYPE}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_GS\_PULL\_TYPE}{EN\_MTC\_GS\_PULL\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC geolocation share pull service type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PULL\_NONE@{EN\_MTC\_GS\_PULL\_NONE}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PULL\_NONE@{EN\_MTC\_GS\_PULL\_NONE}}}\mbox{\Hypertarget{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6ad6e7256a842c63b5f1fc362959cd7cb7}\label{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6ad6e7256a842c63b5f1fc362959cd7cb7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+N\+O\+NE&disable pull service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PULL\_LBS\_ONLY@{EN\_MTC\_GS\_PULL\_LBS\_ONLY}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PULL\_LBS\_ONLY@{EN\_MTC\_GS\_PULL\_LBS\_ONLY}}}\mbox{\Hypertarget{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a7f9acb374ed13ed9959add4c55176100}\label{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a7f9acb374ed13ed9959add4c55176100}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+L\+B\+S\+\_\+\+O\+N\+LY&pull with only L\+BS technology \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PULL\_FT\_ONLY@{EN\_MTC\_GS\_PULL\_FT\_ONLY}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PULL\_FT\_ONLY@{EN\_MTC\_GS\_PULL\_FT\_ONLY}}}\mbox{\Hypertarget{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6abd5ac4f7fa6dcdbb03eb8c033aff5d06}\label{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6abd5ac4f7fa6dcdbb03eb8c033aff5d06}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+F\+T\+\_\+\+O\+N\+LY&pull with only FT technology \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PULL\_LBS\_PRIORITY@{EN\_MTC\_GS\_PULL\_LBS\_PRIORITY}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PULL\_LBS\_PRIORITY@{EN\_MTC\_GS\_PULL\_LBS\_PRIORITY}}}\mbox{\Hypertarget{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a8f375973e76ba3cde3def5008219c5f2}\label{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a8f375973e76ba3cde3def5008219c5f2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+L\+B\+S\+\_\+\+P\+R\+I\+O\+R\+I\+TY&pull both technologies with priority to L\+BS \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GS\_PULL\_FT\_PRIORITY@{EN\_MTC\_GS\_PULL\_FT\_PRIORITY}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!EN\_MTC\_GS\_PULL\_FT\_PRIORITY@{EN\_MTC\_GS\_PULL\_FT\_PRIORITY}}}\mbox{\Hypertarget{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a51fcadaa67e43fd787c163cc7dadff70}\label{mtc__gs__db_8h_ab942cce51672e902d49139353e037de6a51fcadaa67e43fd787c163cc7dadff70}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+F\+T\+\_\+\+P\+R\+I\+O\+R\+I\+TY&pull both technologies with priority to FT \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__gs__db_8h_af8534af4e112581caa5475c344eb4cd0}\label{mtc__gs__db_8h_af8534af4e112581caa5475c344eb4cd0}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetAllowedSmsType@{Mtc\_GsDbGetAllowedSmsType}}
+\index{Mtc\_GsDbGetAllowedSmsType@{Mtc\_GsDbGetAllowedSmsType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetAllowedSmsType()}{Mtc\_GsDbGetAllowedSmsType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gs\+Db\+Get\+Allowed\+Sms\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get allowed sms type. 
+
+\begin{DoxyReturn}{Returns}
+allowed sms type.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a38805985fd1b19708a29cd1bd8c877c3}{Mtc\+\_\+\+Gs\+Db\+Set\+Allowed\+Sms\+Type}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ac99b69ae67ea531eeadd4637a557cd31}\label{mtc__gs__db_8h_ac99b69ae67ea531eeadd4637a557cd31}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetBlockTimer@{Mtc\_GsDbGetBlockTimer}}
+\index{Mtc\_GsDbGetBlockTimer@{Mtc\_GsDbGetBlockTimer}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetBlockTimer()}{Mtc\_GsDbGetBlockTimer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gs\+Db\+Get\+Block\+Timer (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get pull block timer length. 
+
+\begin{DoxyReturn}{Returns}
+The pull block timer length.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ad8dd7e1ad907b2a143b281fa796e5c6b}{Mtc\+\_\+\+Gs\+Db\+Set\+Block\+Timer}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a5f0beee2a016e38cf38749a188decbd4}\label{mtc__gs__db_8h_a5f0beee2a016e38cf38749a188decbd4}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetDmGeolocPushAuth@{Mtc\_GsDbGetDmGeolocPushAuth}}
+\index{Mtc\_GsDbGetDmGeolocPushAuth@{Mtc\_GsDbGetDmGeolocPushAuth}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetDmGeolocPushAuth()}{Mtc\_GsDbGetDmGeolocPushAuth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Gs\+Db\+Get\+Dm\+Geoloc\+Push\+Auth (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get DM config for the user to use the Geolocation P\+U\+SH service. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Indicates that Geolocation P\+U\+SH service is enabled. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Indicates that Geolocation P\+U\+SH service is disabled.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Gs\+Db\+Dm\+Set\+Geoloc\+Push\+Auth. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ac00472c31de33812c238edbe1cd32060}\label{mtc__gs__db_8h_ac00472c31de33812c238edbe1cd32060}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetHslpAddr@{Mtc\_GsDbGetHslpAddr}}
+\index{Mtc\_GsDbGetHslpAddr@{Mtc\_GsDbGetHslpAddr}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetHslpAddr()}{Mtc\_GsDbGetHslpAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gs\+Db\+Get\+Hslp\+Addr (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get address of the H-\/\+S\+LP. 
+
+\begin{DoxyReturn}{Returns}
+The address of the H-\/\+S\+LP. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__gs__db_8h_a9955561d4bb1af258242526f8780dbe0}\label{mtc__gs__db_8h_a9955561d4bb1af258242526f8780dbe0}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetHslpAddrType@{Mtc\_GsDbGetHslpAddrType}}
+\index{Mtc\_GsDbGetHslpAddrType@{Mtc\_GsDbGetHslpAddrType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetHslpAddrType()}{Mtc\_GsDbGetHslpAddrType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gs\+Db\+Get\+Hslp\+Addr\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get address type of the H-\/\+S\+LP. 
+
+\begin{DoxyReturn}{Returns}
+The address type of the H-\/\+S\+LP. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__gs__db_8h_a372050b4706d90ecad0001da766634bf}\label{mtc__gs__db_8h_a372050b4706d90ecad0001da766634bf}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetLocInfoMaxValidTime@{Mtc\_GsDbGetLocInfoMaxValidTime}}
+\index{Mtc\_GsDbGetLocInfoMaxValidTime@{Mtc\_GsDbGetLocInfoMaxValidTime}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetLocInfoMaxValidTime()}{Mtc\_GsDbGetLocInfoMaxValidTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gs\+Db\+Get\+Loc\+Info\+Max\+Valid\+Time (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get location information max valid time. 
+
+\begin{DoxyReturn}{Returns}
+Location information max valid time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__gs__db_8h_ad3f9b82c48a9abc1273e6b497c1fc5f0}\label{mtc__gs__db_8h_ad3f9b82c48a9abc1273e6b497c1fc5f0}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetMediaProtoType@{Mtc\_GsDbGetMediaProtoType}}
+\index{Mtc\_GsDbGetMediaProtoType@{Mtc\_GsDbGetMediaProtoType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetMediaProtoType()}{Mtc\_GsDbGetMediaProtoType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gs\+Db\+Get\+Media\+Proto\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get media protocal type,. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a36e02429d4ef70113444aa6e44b6ca85}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The media protocal type.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a11f3f2448c5f6f71078488cea8b43370}{Mtc\+\_\+\+Gs\+Db\+Set\+Media\+Proto\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a1c313aab84aafcf225bad4dbbd41bdf7}\label{mtc__gs__db_8h_a1c313aab84aafcf225bad4dbbd41bdf7}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetOneApiHost@{Mtc\_GsDbGetOneApiHost}}
+\index{Mtc\_GsDbGetOneApiHost@{Mtc\_GsDbGetOneApiHost}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetOneApiHost()}{Mtc\_GsDbGetOneApiHost()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Host (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get One\+A\+PI host. 
+
+\begin{DoxyReturn}{Returns}
+The One\+A\+PI host.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ab6c7fbd4224f15388fbc1144edffa840}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Host}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_aea8cb81ddaf08aa587e11eff1961feff}\label{mtc__gs__db_8h_aea8cb81ddaf08aa587e11eff1961feff}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetOneApiPort@{Mtc\_GsDbGetOneApiPort}}
+\index{Mtc\_GsDbGetOneApiPort@{Mtc\_GsDbGetOneApiPort}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetOneApiPort()}{Mtc\_GsDbGetOneApiPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+S\+H\+O\+RT Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get One\+A\+PI host port. 
+
+\begin{DoxyReturn}{Returns}
+The One\+A\+PI host port.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_acb2ac23703af315f95b1ba938c1001a5}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Port}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_adf47f2b291d738c0e5bd5c096b78b937}\label{mtc__gs__db_8h_adf47f2b291d738c0e5bd5c096b78b937}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetOneApiRoot@{Mtc\_GsDbGetOneApiRoot}}
+\index{Mtc\_GsDbGetOneApiRoot@{Mtc\_GsDbGetOneApiRoot}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetOneApiRoot()}{Mtc\_GsDbGetOneApiRoot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Root (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get One\+A\+PI root. 
+
+\begin{DoxyReturn}{Returns}
+The One\+A\+PI root.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a2fd021e6d025f4500b7862b7e2820391}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Root}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_aa7420e349de7466925f5b80f4af76806}\label{mtc__gs__db_8h_aa7420e349de7466925f5b80f4af76806}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetOneApiVers@{Mtc\_GsDbGetOneApiVers}}
+\index{Mtc\_GsDbGetOneApiVers@{Mtc\_GsDbGetOneApiVers}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetOneApiVers()}{Mtc\_GsDbGetOneApiVers()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Vers (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get One\+A\+PI version. 
+
+\begin{DoxyReturn}{Returns}
+The One\+A\+PI version.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_af0bb2b7827fc7c5756469e674c95202a}{Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Vers}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a842d5ba54e7de9aba6b66367a81e98e5}\label{mtc__gs__db_8h_a842d5ba54e7de9aba6b66367a81e98e5}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetPullOpen@{Mtc\_GsDbGetPullOpen}}
+\index{Mtc\_GsDbGetPullOpen@{Mtc\_GsDbGetPullOpen}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetPullOpen()}{Mtc\_GsDbGetPullOpen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Gs\+Db\+Get\+Pull\+Open (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get pull pull open flag. 
+
+\begin{DoxyReturn}{Returns}
+The pull open flag, if Z\+T\+R\+UE indicate P\+U\+LL service can be used to attempt to obtain non-\/\+R\+CS users\textquotesingle{} location.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ac1b81fad88772d01ba421ab480b195d3}{Mtc\+\_\+\+Gs\+Db\+Set\+Pull\+Open}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ae74b6c69fa5165ebc6a6579b18d1d4f5}\label{mtc__gs__db_8h_ae74b6c69fa5165ebc6a6579b18d1d4f5}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetPullType@{Mtc\_GsDbGetPullType}}
+\index{Mtc\_GsDbGetPullType@{Mtc\_GsDbGetPullType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetPullType()}{Mtc\_GsDbGetPullType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gs\+Db\+Get\+Pull\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get pull service type. 
+
+\begin{DoxyReturn}{Returns}
+The pull service type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_afa69411280fc1df2e6cc8b4fb2f339de}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+T\+Y\+PE}}.
+
+\mbox{\hyperlink{mtc__gs__db_8h_a7486049aa0cf0f279f6bb869562c11d2}{Mtc\+\_\+\+Gs\+Db\+Set\+Pull\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a2a8acd7a18e39a2a20804031320624a9}\label{mtc__gs__db_8h_a2a8acd7a18e39a2a20804031320624a9}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetTxtMaxLen@{Mtc\_GsDbGetTxtMaxLen}}
+\index{Mtc\_GsDbGetTxtMaxLen@{Mtc\_GsDbGetTxtMaxLen}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetTxtMaxLen()}{Mtc\_GsDbGetTxtMaxLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gs\+Db\+Get\+Txt\+Max\+Len (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get text max length. 
+
+\begin{DoxyReturn}{Returns}
+The text max length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__gs__db_8h_ae9e22fc5ccfb350569ff75f432ba8016}\label{mtc__gs__db_8h_ae9e22fc5ccfb350569ff75f432ba8016}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetUeGeolocPushAuth@{Mtc\_GsDbGetUeGeolocPushAuth}}
+\index{Mtc\_GsDbGetUeGeolocPushAuth@{Mtc\_GsDbGetUeGeolocPushAuth}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetUeGeolocPushAuth()}{Mtc\_GsDbGetUeGeolocPushAuth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Gs\+Db\+Get\+Ue\+Geoloc\+Push\+Auth (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get UE config for the user to use the Geolocation P\+U\+SH service. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Indicates that Geolocation P\+U\+SH service is enabled. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Indicates that Geolocation P\+U\+SH service is disabled.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Gs\+Db\+Ue\+Set\+Geoloc\+Push\+Auth. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a9b36644eec0821c03e443f7448a8b87c}\label{mtc__gs__db_8h_a9b36644eec0821c03e443f7448a8b87c}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbGetUeGeoSms@{Mtc\_GsDbGetUeGeoSms}}
+\index{Mtc\_GsDbGetUeGeoSms@{Mtc\_GsDbGetUeGeoSms}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbGetUeGeoSms()}{Mtc\_GsDbGetUeGeoSms()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Gs\+Db\+Get\+Ue\+Geo\+Sms (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get UE config for the user to use the Geolocation P\+U\+SH via S\+MS service. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Indicates that Geo push via S\+MS service is enabled. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Indicates that Geo push via S\+MS service is disabled.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Gs\+Db\+Ue\+Set\+Geo\+Sms. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a38805985fd1b19708a29cd1bd8c877c3}\label{mtc__gs__db_8h_a38805985fd1b19708a29cd1bd8c877c3}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetAllowedSmsType@{Mtc\_GsDbSetAllowedSmsType}}
+\index{Mtc\_GsDbSetAllowedSmsType@{Mtc\_GsDbSetAllowedSmsType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetAllowedSmsType()}{Mtc\_GsDbSetAllowedSmsType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Allowed\+Sms\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Allowed\+Sms\+Type }\end{DoxyParamCaption})}
+
+
+
+Set allowed sms type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Allowed\+Sms\+Type} & the allowed sms type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a1af3c37fd21c57e76c231b9b1bf8e95e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+A\+L\+L\+O\+W\+E\+D\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set allowed sms type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set allowed sms type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_af8534af4e112581caa5475c344eb4cd0}{Mtc\+\_\+\+Gs\+Db\+Get\+Allowed\+Sms\+Type}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ad8dd7e1ad907b2a143b281fa796e5c6b}\label{mtc__gs__db_8h_ad8dd7e1ad907b2a143b281fa796e5c6b}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetBlockTimer@{Mtc\_GsDbSetBlockTimer}}
+\index{Mtc\_GsDbSetBlockTimer@{Mtc\_GsDbSetBlockTimer}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetBlockTimer()}{Mtc\_GsDbSetBlockTimer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Block\+Timer (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Block\+Timer\+Len }\end{DoxyParamCaption})}
+
+
+
+Set pull block timer length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Block\+Timer\+Len} & The pull block timer length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set pull block timer length successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set pull block timer length failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ac99b69ae67ea531eeadd4637a557cd31}{Mtc\+\_\+\+Gs\+Db\+Get\+Block\+Timer}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a179f29f7bbfd0e32c128a93cad376073}\label{mtc__gs__db_8h_a179f29f7bbfd0e32c128a93cad376073}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetDmGeolocPushAuth@{Mtc\_GsDbSetDmGeolocPushAuth}}
+\index{Mtc\_GsDbSetDmGeolocPushAuth@{Mtc\_GsDbSetDmGeolocPushAuth}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetDmGeolocPushAuth()}{Mtc\_GsDbSetDmGeolocPushAuth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Dm\+Geoloc\+Push\+Auth (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Dm\+Geoloc\+Push\+Auth }\end{DoxyParamCaption})}
+
+
+
+Set DM config for the user to use the Geolocation P\+U\+SH service. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Dm\+Geoloc\+Push\+Auth} & Geolocation P\+U\+SH service enable flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a5f0beee2a016e38cf38749a188decbd4}{Mtc\+\_\+\+Gs\+Db\+Get\+Dm\+Geoloc\+Push\+Auth}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a11f3f2448c5f6f71078488cea8b43370}\label{mtc__gs__db_8h_a11f3f2448c5f6f71078488cea8b43370}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetMediaProtoType@{Mtc\_GsDbSetMediaProtoType}}
+\index{Mtc\_GsDbSetMediaProtoType@{Mtc\_GsDbSetMediaProtoType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetMediaProtoType()}{Mtc\_GsDbSetMediaProtoType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Media\+Proto\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set media protocol type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The media protocol type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a36e02429d4ef70113444aa6e44b6ca85}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+R\+O\+T\+O\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set media protocol type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set media protocol type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ad3f9b82c48a9abc1273e6b497c1fc5f0}{Mtc\+\_\+\+Gs\+Db\+Get\+Media\+Proto\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ab6c7fbd4224f15388fbc1144edffa840}\label{mtc__gs__db_8h_ab6c7fbd4224f15388fbc1144edffa840}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetOneApiHost@{Mtc\_GsDbSetOneApiHost}}
+\index{Mtc\_GsDbSetOneApiHost@{Mtc\_GsDbSetOneApiHost}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetOneApiHost()}{Mtc\_GsDbSetOneApiHost()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Host (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Host }\end{DoxyParamCaption})}
+
+
+
+Set One\+A\+PI host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Host} & The One\+A\+PI host.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set One\+A\+PI host successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set One\+A\+PI host failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a1c313aab84aafcf225bad4dbbd41bdf7}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Host}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_acb2ac23703af315f95b1ba938c1001a5}\label{mtc__gs__db_8h_acb2ac23703af315f95b1ba938c1001a5}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetOneApiPort@{Mtc\_GsDbSetOneApiPort}}
+\index{Mtc\_GsDbSetOneApiPort@{Mtc\_GsDbSetOneApiPort}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetOneApiPort()}{Mtc\_GsDbSetOneApiPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Port (\begin{DoxyParamCaption}\item[{Z\+S\+H\+O\+RT}]{w\+Port }\end{DoxyParamCaption})}
+
+
+
+Set One\+A\+PI host port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em w\+Port} & The One\+A\+PI host port.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set One\+A\+PI host port successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set One\+A\+PI host port failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_aea8cb81ddaf08aa587e11eff1961feff}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Port}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a2fd021e6d025f4500b7862b7e2820391}\label{mtc__gs__db_8h_a2fd021e6d025f4500b7862b7e2820391}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetOneApiRoot@{Mtc\_GsDbSetOneApiRoot}}
+\index{Mtc\_GsDbSetOneApiRoot@{Mtc\_GsDbSetOneApiRoot}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetOneApiRoot()}{Mtc\_GsDbSetOneApiRoot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Root (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Root }\end{DoxyParamCaption})}
+
+
+
+Set One\+A\+PI root. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Root} & The One\+A\+PI root.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set One\+A\+PI root successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set One\+A\+PI root failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_adf47f2b291d738c0e5bd5c096b78b937}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Root}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_af0bb2b7827fc7c5756469e674c95202a}\label{mtc__gs__db_8h_af0bb2b7827fc7c5756469e674c95202a}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetOneApiVers@{Mtc\_GsDbSetOneApiVers}}
+\index{Mtc\_GsDbSetOneApiVers@{Mtc\_GsDbSetOneApiVers}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetOneApiVers()}{Mtc\_GsDbSetOneApiVers()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+One\+Api\+Vers (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ver }\end{DoxyParamCaption})}
+
+
+
+Set One\+A\+PI version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ver} & The One\+A\+PI version.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set One\+A\+PI version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set One\+A\+PI version failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_aa7420e349de7466925f5b80f4af76806}{Mtc\+\_\+\+Gs\+Db\+Get\+One\+Api\+Vers}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ac1b81fad88772d01ba421ab480b195d3}\label{mtc__gs__db_8h_ac1b81fad88772d01ba421ab480b195d3}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetPullOpen@{Mtc\_GsDbSetPullOpen}}
+\index{Mtc\_GsDbSetPullOpen@{Mtc\_GsDbSetPullOpen}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetPullOpen()}{Mtc\_GsDbSetPullOpen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Pull\+Open (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Open }\end{DoxyParamCaption})}
+
+
+
+Set pull open flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Open} & The pull open flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set pull open flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set pull open flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a842d5ba54e7de9aba6b66367a81e98e5}{Mtc\+\_\+\+Gs\+Db\+Get\+Pull\+Open}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a7486049aa0cf0f279f6bb869562c11d2}\label{mtc__gs__db_8h_a7486049aa0cf0f279f6bb869562c11d2}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetPullType@{Mtc\_GsDbSetPullType}}
+\index{Mtc\_GsDbSetPullType@{Mtc\_GsDbSetPullType}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetPullType()}{Mtc\_GsDbSetPullType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Pull\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set pull service type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The pull service type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_afa69411280fc1df2e6cc8b4fb2f339de}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+S\+\_\+\+P\+U\+L\+L\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set pull service type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set pull service type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ae74b6c69fa5165ebc6a6579b18d1d4f5}{Mtc\+\_\+\+Gs\+Db\+Get\+Pull\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_a99dbbee14639a02930c8d20210bc87d9}\label{mtc__gs__db_8h_a99dbbee14639a02930c8d20210bc87d9}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetUeGeolocPushAuth@{Mtc\_GsDbSetUeGeolocPushAuth}}
+\index{Mtc\_GsDbSetUeGeolocPushAuth@{Mtc\_GsDbSetUeGeolocPushAuth}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetUeGeolocPushAuth()}{Mtc\_GsDbSetUeGeolocPushAuth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Ue\+Geoloc\+Push\+Auth (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Dm\+Geoloc\+Push\+Auth }\end{DoxyParamCaption})}
+
+
+
+Set UE config for the user to use the Geolocation P\+U\+SH service. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Ue\+Geoloc\+Push\+Auth} & Geolocation P\+U\+SH service enable flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_ae9e22fc5ccfb350569ff75f432ba8016}{Mtc\+\_\+\+Gs\+Db\+Get\+Ue\+Geoloc\+Push\+Auth}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gs__db_8h_ad7c4838d19e633357da65a75c28a50e3}\label{mtc__gs__db_8h_ad7c4838d19e633357da65a75c28a50e3}} 
+\index{mtc\_gs\_db.h@{mtc\_gs\_db.h}!Mtc\_GsDbSetUeGeoSms@{Mtc\_GsDbSetUeGeoSms}}
+\index{Mtc\_GsDbSetUeGeoSms@{Mtc\_GsDbSetUeGeoSms}!mtc\_gs\_db.h@{mtc\_gs\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsDbSetUeGeoSms()}{Mtc\_GsDbSetUeGeoSms()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gs\+Db\+Set\+Ue\+Geo\+Sms (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Dm\+Geo\+Sms }\end{DoxyParamCaption})}
+
+
+
+Set UE config for the user to use the Geolocation P\+U\+SH via S\+MS service. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Dm\+Geo\+Sms} & Geo push via S\+MS service enable flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gs__db_8h_a9b36644eec0821c03e443f7448a8b87c}{Mtc\+\_\+\+Gs\+Db\+Get\+Ue\+Geo\+Sms}}. 
+\end{DoxySeeAlso}

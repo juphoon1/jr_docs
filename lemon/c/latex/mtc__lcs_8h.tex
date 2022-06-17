@@ -1,0 +1,233 @@
+\hypertarget{mtc__lcs_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+lcs.h File Reference}
+\label{mtc__lcs_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_lcs.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_lcs.h}}
+
+
+M\+TC lcs Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__lcs_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__lcs_8h_ac1938b02aa8c5be4d433c55a31dbec18}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC O\+MA buddy status code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_ab576fb249d00d7d1da1279782f4e4442}\label{mtc__lcs_8h_ab576fb249d00d7d1da1279782f4e4442}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_ab576fb249d00d7d1da1279782f4e4442}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+N\+E\+E\+D\+\_\+\+A\+C\+T\+\_\+\+L\+I\+C\+S\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 1)
+\begin{DoxyCompactList}\small\item\em not activate licsence, need activate it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a2ad03bfb8318ec8f2754e5e04f48e0d3}\label{mtc__lcs_8h_a2ad03bfb8318ec8f2754e5e04f48e0d3}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a2ad03bfb8318ec8f2754e5e04f48e0d3}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+G\+E\+T\+\_\+\+D\+E\+V\+I\+C\+E\+I\+D\+\_\+\+F\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 2)
+\begin{DoxyCompactList}\small\item\em get device id failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a5dd2382a8488477345a69d022913a463}\label{mtc__lcs_8h_a5dd2382a8488477345a69d022913a463}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a5dd2382a8488477345a69d022913a463}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+G\+E\+T\+\_\+\+I\+N\+I\+T\+\_\+\+F\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 3)
+\begin{DoxyCompactList}\small\item\em init failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a39b9a64a1f4a235218119aa9d7c8e0f9}\label{mtc__lcs_8h_a39b9a64a1f4a235218119aa9d7c8e0f9}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a39b9a64a1f4a235218119aa9d7c8e0f9}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+F\+I\+L\+E\+N\+O\+E\+X\+I\+ST}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 4)
+\begin{DoxyCompactList}\small\item\em check license not exist \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a1d87f7bb931d10628ebeef42ad695d8c}\label{mtc__lcs_8h_a1d87f7bb931d10628ebeef42ad695d8c}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a1d87f7bb931d10628ebeef42ad695d8c}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+\_\+\+F\+I\+LE}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 5)
+\begin{DoxyCompactList}\small\item\em check invalid license file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_af3ebcdc81e13daf3e1663379412c5168}\label{mtc__lcs_8h_af3ebcdc81e13daf3e1663379412c5168}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_af3ebcdc81e13daf3e1663379412c5168}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+\_\+\+A\+P\+P\+ID}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 6)
+\begin{DoxyCompactList}\small\item\em check invalid license App\+Id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a916ee1f69ff98d755b6f0e1c3a26d647}\label{mtc__lcs_8h_a916ee1f69ff98d755b6f0e1c3a26d647}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a916ee1f69ff98d755b6f0e1c3a26d647}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+E\+X\+P\+I\+R\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 7)
+\begin{DoxyCompactList}\small\item\em check license timeexpired \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a6343b982dc5c454fd682d6ce18f34bf3}\label{mtc__lcs_8h_a6343b982dc5c454fd682d6ce18f34bf3}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a6343b982dc5c454fd682d6ce18f34bf3}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+N\+T\+P\+\_\+\+R\+E\+Q\+\_\+\+F\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 8)
+\begin{DoxyCompactList}\small\item\em ntp request failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__lcs_8h_a5159f9724a581dff33b4dfb65d7bd760}\label{mtc__lcs_8h_a5159f9724a581dff33b4dfb65d7bd760}} 
+\#define \mbox{\hyperlink{mtc__lcs_8h_a5159f9724a581dff33b4dfb65d7bd760}{M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 200)
+\begin{DoxyCompactList}\small\item\em other license error \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__lcs_8h_accdc1ba0bb3c6ee5f9d7e0d6a7fa193f}{Mtc\+\_\+\+Lcs\+Activate}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Server, Z\+U\+I\+NT i\+Port, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Company\+Name, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Product\+Name)
+\begin{DoxyCompactList}\small\item\em activate the license \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__lcs_8h_a182824c0f843b2edce2919f98fd2c37e}{Mtc\+\_\+\+Lcs\+Has\+Audio\+Codec}} ()
+\begin{DoxyCompactList}\small\item\em check if license has audio codec \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__lcs_8h_a3a5218c094ea9dcac73e1c46e22587d4}{Mtc\+\_\+\+Lcs\+Get\+Specified\+Key\+Size}} (Z\+C\+H\+AR $\ast$pc\+Sect, Z\+C\+H\+AR $\ast$pc\+Key)
+\begin{DoxyCompactList}\small\item\em get specified key size \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__lcs_8h_ab5bf73cdbc7ea31cbde688673a6707ad}{Mtc\+\_\+\+Lcs\+Get\+Specified\+Key\+Val}} (Z\+C\+H\+AR $\ast$pc\+Sect, Z\+C\+H\+AR $\ast$pc\+Key, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em get specified key value by index \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__lcs_8h_a6ca95b2715ee5fd206a61bc8bba4be12}{Mtc\+\_\+\+Lcs\+Evnt\+Leave}} (Z\+B\+O\+OL b\+License\+Active)
+\begin{DoxyCompactList}\small\item\em mtc license event leave \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__lcs_8h_a029f1a3a33ffc98163b26f5f05890446}{Mtc\+\_\+\+Lcs\+Active\+Evnt}} (Z\+E\+V\+NT z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em mtc license active event \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__lcs_8h_ab8ecf2f95d43bbee5331713ee01e54e2}{Mtc\+\_\+\+Lcs\+Get\+Err\+Code}} ()
+\begin{DoxyCompactList}\small\item\em get license last error number, \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC lcs Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__lcs_8h_ac1938b02aa8c5be4d433c55a31dbec18}\label{mtc__lcs_8h_ac1938b02aa8c5be4d433c55a31dbec18}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!MTC\_LCS\_ERR\_NO@{MTC\_LCS\_ERR\_NO}}
+\index{MTC\_LCS\_ERR\_NO@{MTC\_LCS\_ERR\_NO}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_LCS\_ERR\_NO}{MTC\_LCS\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}} + 0)}
+
+
+
+M\+TC O\+MA buddy status code. 
+
+check license No Error 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__lcs_8h_accdc1ba0bb3c6ee5f9d7e0d6a7fa193f}\label{mtc__lcs_8h_accdc1ba0bb3c6ee5f9d7e0d6a7fa193f}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsActivate@{Mtc\_LcsActivate}}
+\index{Mtc\_LcsActivate@{Mtc\_LcsActivate}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsActivate()}{Mtc\_LcsActivate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Lcs\+Activate (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Server,  }\item[{Z\+U\+I\+NT}]{i\+Port,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Company\+Name,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Product\+Name }\end{DoxyParamCaption})}
+
+
+
+activate the license 
+
+The result will be notified by callbacks Mtc\+\_\+\+Lcs\+Cb\+Active\+Result, when pfn\+Proc.\+b\+Activated == Z\+T\+R\+UE, meaning activate license OK; else meaing activate license F\+A\+I\+L\+ED
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Server} & Server address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Port} & Server port. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The license request uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & License name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & Company name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Product\+Name} & Product name .\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & License active success \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & License active failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__lcs_8h_a029f1a3a33ffc98163b26f5f05890446}\label{mtc__lcs_8h_a029f1a3a33ffc98163b26f5f05890446}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsActiveEvnt@{Mtc\_LcsActiveEvnt}}
+\index{Mtc\_LcsActiveEvnt@{Mtc\_LcsActiveEvnt}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsActiveEvnt()}{Mtc\_LcsActiveEvnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Lcs\+Active\+Evnt (\begin{DoxyParamCaption}\item[{Z\+E\+V\+NT}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+mtc license active event 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & event id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & License active success \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__lcs_8h_a6ca95b2715ee5fd206a61bc8bba4be12}\label{mtc__lcs_8h_a6ca95b2715ee5fd206a61bc8bba4be12}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsEvntLeave@{Mtc\_LcsEvntLeave}}
+\index{Mtc\_LcsEvntLeave@{Mtc\_LcsEvntLeave}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsEvntLeave()}{Mtc\_LcsEvntLeave()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Lcs\+Evnt\+Leave (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+License\+Active }\end{DoxyParamCaption})}
+
+
+
+mtc license event leave 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+License\+Active} & license active.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & License active success \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & License active failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__lcs_8h_ab8ecf2f95d43bbee5331713ee01e54e2}\label{mtc__lcs_8h_ab8ecf2f95d43bbee5331713ee01e54e2}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsGetErrCode@{Mtc\_LcsGetErrCode}}
+\index{Mtc\_LcsGetErrCode@{Mtc\_LcsGetErrCode}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsGetErrCode()}{Mtc\_LcsGetErrCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Lcs\+Get\+Err\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get license last error number, 
+
+\begin{DoxyReturn}{Returns}
+get license last error number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__lcs_8h_a3a5218c094ea9dcac73e1c46e22587d4}\label{mtc__lcs_8h_a3a5218c094ea9dcac73e1c46e22587d4}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsGetSpecifiedKeySize@{Mtc\_LcsGetSpecifiedKeySize}}
+\index{Mtc\_LcsGetSpecifiedKeySize@{Mtc\_LcsGetSpecifiedKeySize}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsGetSpecifiedKeySize()}{Mtc\_LcsGetSpecifiedKeySize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Lcs\+Get\+Specified\+Key\+Size (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Sect,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Key }\end{DoxyParamCaption})}
+
+
+
+get specified key size 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Sect} & Section name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Key} & Key name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The key size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__lcs_8h_ab5bf73cdbc7ea31cbde688673a6707ad}\label{mtc__lcs_8h_ab5bf73cdbc7ea31cbde688673a6707ad}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsGetSpecifiedKeyVal@{Mtc\_LcsGetSpecifiedKeyVal}}
+\index{Mtc\_LcsGetSpecifiedKeyVal@{Mtc\_LcsGetSpecifiedKeyVal}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsGetSpecifiedKeyVal()}{Mtc\_LcsGetSpecifiedKeyVal()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Lcs\+Get\+Specified\+Key\+Val (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Sect,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Key,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+get specified key value by index 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Sect} & Section name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Key} & Key name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & Key index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The key value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__lcs_8h_a182824c0f843b2edce2919f98fd2c37e}\label{mtc__lcs_8h_a182824c0f843b2edce2919f98fd2c37e}} 
+\index{mtc\_lcs.h@{mtc\_lcs.h}!Mtc\_LcsHasAudioCodec@{Mtc\_LcsHasAudioCodec}}
+\index{Mtc\_LcsHasAudioCodec@{Mtc\_LcsHasAudioCodec}!mtc\_lcs.h@{mtc\_lcs.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsHasAudioCodec()}{Mtc\_LcsHasAudioCodec()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Lcs\+Has\+Audio\+Codec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if license has audio codec 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & License active success \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & License active failed. \\
+\hline
+\end{DoxyRetVals}

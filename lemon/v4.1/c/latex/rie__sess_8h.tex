@@ -1,0 +1,3062 @@
+\hypertarget{rie__sess_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rie/rie\+\_\+sess.h File Reference}
+\label{rie__sess_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_sess.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_sess.h}}
+
+
+R\+IE Session Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{rie__sess_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rie__sess_8h_a4da61dff9589141892392372d9286f58}\label{rie__sess_8h_a4da61dff9589141892392372d9286f58}} 
+typedef enum E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE {\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{rie__sess_8h_ab1058a518a33e28539340f32bb54f7aa}\label{rie__sess_8h_ab1058a518a33e28539340f32bb54f7aa}} 
+typedef enum R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE {\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rie__sess_8h_a8cf4af14389e497f8dff196ab9a1b4aa}\label{rie__sess_8h_a8cf4af14389e497f8dff196ab9a1b4aa}} 
+enum {\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE} \{ \newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE} = 1, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+I\+N\+V\+I\+T\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+J\+O\+I\+N\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+I\+N\+V\+I\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+O\+N\+G\+O\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+R\+E\+I\+N\+V\+I\+T\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+M\+D\+F\+Y\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+S\+T\+A\+T\+E\+\_\+\+T\+E\+R\+M\+ED}
+ \}
+\item 
+\mbox{\Hypertarget{rie__sess_8h_abdbc65db1f1b3db65880c9a2912ccd50}\label{rie__sess_8h_abdbc65db1f1b3db65880c9a2912ccd50}} 
+enum {\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE} \{ \newline
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+\_\+\+O\+UT}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+\_\+\+IN}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG}, 
+\newline
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+O\+N\+\_\+\+H\+O\+LD}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+M\+VF}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG}, 
+\newline
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED}, 
+{\bfseries R\+I\+E\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+P\+S\+T\+A\+T\+E\+\_\+\+U\+N\+K\+N\+O\+WN}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a2b708ff43f9a58660645893509ffde19}{Rie\+\_\+\+Sess\+Estab}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing message session with one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a1353fe1282cc3a3fb9730de57b1cb83e}{Rie\+\_\+\+Sess\+EstabM}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Sess\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing message session with one participant with the frist message in invite. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a8e216dc74fe8aff7afe95a32bdcc6a1a}{Rie\+\_\+\+Sess\+EstabU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Disp\+Name, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing message session(ad-\/hoc) with U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aaba3a525783bd857318f9c8191ed29d7}{Rie\+\_\+\+Sess\+EstabP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Grp\+Uri, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing message session with pre-\/defined group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a7f3f6a4d5ae455c94c1b57c0279b7f44}{Rie\+\_\+\+Sess\+Estab\+Pre\+Call}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing pre-\/call session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a3ea9cbf58e4ed409d0b5b18225629f65}{Rie\+\_\+\+Sess\+Estab\+Post\+Call}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing post-\/call session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_acfa41e9d277c58c58223ef1f131fabea}{Rie\+\_\+\+Sess\+Estab\+Shared\+Map}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing shared-\/map session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a4e71e6f7742f8ac7389717ac1b205927}{Rie\+\_\+\+Sess\+Estab\+Shared\+Sketch}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing shared-\/sketch session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a65bc3d598f4115076204ac7ff5a5dc0e}{Rie\+\_\+\+Sess\+Estab\+Chat\+Bot}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT i\+P\+Type, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Establishing chatbot session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a50d71fb03f08505a918a57594345ffaf}{Rie\+\_\+\+Sess\+Add\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Adding one user to an IM conference session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a02522d51ccdda32425235a2956c075fd}{Rie\+\_\+\+Sess\+Add\+PartpU}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Adding multi-\/users to an IM conference session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aad43998a30dda63550ec57e2cdcee157}{Rie\+\_\+\+Sess\+Epl\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Expeling one user from an IM conference session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a4cb5e2dcd3cee09dfa34028f454eceb5}{Rie\+\_\+\+Sess\+Epl\+PartpU}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Expeling muti-\/user from an IM conference session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a0f168b990abf14a8316b146435d784aa}{Rie\+\_\+\+Sess\+Extend}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+One2\+One\+Sess\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Extending session from one-\/to-\/one to one-\/to-\/many. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ad8f6f0f20d171a7e9981a1e86bb76688}{Rie\+\_\+\+Sess\+Re\+JoinG}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Disp\+Name, Z\+C\+H\+AR $\ast$pc\+Group\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Sess\+Identity, Z\+U\+I\+NT i\+Version\+Id, Z\+U\+I\+NT i\+Grp\+Type, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Rejoin a group session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a96e9e3b5c2d7bd3b7dd615835f92fcb8}{Rie\+\_\+\+Sess\+Re\+StartG}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Group\+Chat\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+U\+I\+NT $\ast$pi\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Restart a group session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aff37f64811410ebb097d75bd51f32ac7}{Rie\+\_\+\+Sess\+Accept}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Disp\+Name)
+\begin{DoxyCompactList}\small\item\em R\+IE Accept a message session invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ae7c58bea94eb32d5240bea68d4870f7b}{Rie\+\_\+\+Sess\+Reject}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Reason)
+\begin{DoxyCompactList}\small\item\em R\+IE Reject a message session invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a07797ecee99f63b17ebc8c6a7151d40c}{Rie\+\_\+\+Sess\+Cancel}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Cancel a message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a151102a8776cd248786fcb3194adfb60}{Rie\+\_\+\+Sess\+Leave}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Reason)
+\begin{DoxyCompactList}\small\item\em R\+IE Leaving a message session. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rie__sess_8h_a38120fb42486040016bc660be5917c50}\label{rie__sess_8h_a38120fb42486040016bc660be5917c50}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rie\+\_\+\+M\+Sess\+Off\+Release} (Z\+U\+I\+NT i\+Sess\+Id)
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a035314edf1f69bc5cc9933af4b89fc11}{Rie\+\_\+\+Sess\+Dissolve}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Dissolve a group chat message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_af8ba199bf71bd8420106e1b9798111b5}{Rie\+\_\+\+Sess\+Close}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Close a 1-\/1 chat message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a44a7bbc3ac4930606a8cc4d0219d534a}{Rie\+\_\+\+Sess\+Mdfy\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Subject)
+\begin{DoxyCompactList}\small\item\em R\+IE Modify a message session subject. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ae906464741a8fc8f98733d35b2d22563}{Rie\+\_\+\+Sess\+Mdfy\+Chair\+Man}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Modify a group chat message session chairman. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ae15b93242d206b9bce0b8aca1ef4ef23}{Rie\+\_\+\+Sess\+Acpt\+Mdfy\+Chair\+Man}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Accept modify a group chat message session chairman. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ac8522b3e653bf053d4b47bd45f1965b3}{Rie\+\_\+\+Sess\+Rjct\+Mdfy\+Chair\+Man}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Reject modify a group chat message session chairman. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ab805ce4732eba0f04ccf5ea7bc407c5a}{Rie\+\_\+\+Sess\+Mdfy\+Disp\+Name}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Disp\+Name)
+\begin{DoxyCompactList}\small\item\em R\+IE Modify own display name in a group chat message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{rie__sess_8h_a75d2ccfc7d48b52dab2f62daa0f36714}{Rie\+\_\+\+Sess\+Get\+Cookie}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user cookie from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a4350cd22405857886964b8e3c0e6b93a}{Rie\+\_\+\+Sess\+Set\+Cookie}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+IE Set user cookie in a message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a7da3fa475a533867c7404691183c6acf}{Rie\+\_\+\+Sess\+Get\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user subject from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a6bec945e68ae60253e83623d2cdcb742}{Rie\+\_\+\+Sess\+Set\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Subject)
+\begin{DoxyCompactList}\small\item\em R\+IE Set user subject in a message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aa677a885b10315667924ffb3782041ec}{Rie\+\_\+\+Sess\+Get\+Icon\+Data}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user icon data from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_ac56b820d9927c23d585d1769972a424f}{Rie\+\_\+\+Sess\+Get\+Icon\+Modified\+Partp\+Uri}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user icon modified participant uri from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{rie__sess_8h_a36678eb848b094ca736f2d4dc9ff83d9}{Rie\+\_\+\+Sess\+Get\+Icon\+Modified\+Timestamp}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get session icon modified timestamp from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a2165e2e52e5792231177a3af6bae481c}{Rie\+\_\+\+Sess\+Get\+State}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get session state from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a7704b3f462fc5bcc8d8191c051e794ee}{Rie\+\_\+\+Sess\+Get\+Disp\+Name}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user display name from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a4c6e25cb8ffeede580fd80e47082a681}{Rie\+\_\+\+Sess\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant type from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_afe09419d306b48038a360c9b38c9783c}{Rie\+\_\+\+Sess\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a48c4e29f309f48530cfad0ad3cb8d2b3}{Rie\+\_\+\+Sess\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant list id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a4d55f612c9e55fabff030467c8736187}{Rie\+\_\+\+Sess\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get original paticipant uri from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_abf057f86ec7b834a1bf36281fae3f1e2}{Rie\+\_\+\+Sess\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get original identity of participant U\+RI from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aa3bcb0f69b76277014a0908c7240f81a}{Rie\+\_\+\+Sess\+Get\+Grp\+Uri}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get group U\+RI from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_adcf49d06982cac6deb141f9e571f6dce}{Rie\+\_\+\+Sess\+Get\+Grp\+Ident}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group identity from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a0395049e8ab0101f565c266940a84b28}{Rie\+\_\+\+Sess\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get conversation-\/id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_ab6a85547ed59d425765ef1d59d07e53a}{Rie\+\_\+\+Sess\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get contribution-\/id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_ad9523f794d5a403ccea239823ae912fd}{Rie\+\_\+\+M\+Sess\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group chat id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_ada04edf4557820f0fff66a404b521ea5}{Rie\+\_\+\+Sess\+Get\+Rpl\+Sess\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get repleaced session(one to one session) id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_af40854091f4f08e6f79c18826d231e26}{Rie\+\_\+\+Sess\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em R\+IE Get date time from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a18a0d48690a0ad59ba9f0d0148694be1}{Rie\+\_\+\+Sess\+Get\+Outgoing}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get outgoing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ab98dde94decd796de5049086d468f7af}{Rie\+\_\+\+Sess\+Start\+Compsing}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+C\+Type)
+\begin{DoxyCompactList}\small\item\em Start composing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_ae762439c3360f2dcc4e11329c702c5dc}{Rie\+\_\+\+Sess\+Stop\+Compsing}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Stop composing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a35fdcfd4e72c538273e77498c7595f02}{Rie\+\_\+\+Sess\+Get\+Imdn\+Support}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get if message session support imdn. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a403f4577ca798e3887e4d6395b4bcb41}{Rie\+\_\+\+Sess\+Get\+Ft\+Http\+Support}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get if message session support F\+T\+H\+T\+TP. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_ae2cfe25a8a16ff3781b89bae49f7053b}{Rie\+\_\+\+Sess\+Has\+First\+Msg}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get establishing message session with first message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a8df863c292d38cc46684269b2eda3ae8}{Rie\+\_\+\+Sess\+Get\+Is\+Focus}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get message session session isfous. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a03cc633e6044be9806b1a2735b004abd}{Rie\+\_\+\+Sess\+Get\+Is\+Chairman}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get message session local is chairman. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a05298458c05dbcc06e21a97d104fda62}{Rie\+\_\+\+Sess\+Get\+Max\+Usr\+Cnt}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message session get max user count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a1f19e5ec6fc26b1771fa7fb149fba2e6}{Rie\+\_\+\+Sess\+Get\+Group\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message session get group type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a89d279eff6c1228513931a9820659fd2}{Rie\+\_\+\+Sess\+Get\+Usr\+Cnt}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message session get user count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_ad7ebd2f20fb031e092066f6cc72786e0}{Rie\+\_\+\+Sess\+Get\+Active}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get active flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a2ad3eff641cd7dacc9daec5fbd09a0c5}{Rie\+\_\+\+Sess\+Get\+Locked}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get locked flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_ad25eab61655048240fa55df9156a922e}{Rie\+\_\+\+Sess\+Get\+Offline}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get offline flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_aab9340776decb30e2b5391b5e3ed7a78}{Rie\+\_\+\+Sess\+Get\+Offline\+Ivt}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get offline invitation flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_af1ec47c7cde030897baa392673df498c}{Rie\+\_\+\+Sess\+Get\+Offline\+Msg}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get offline message flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rie__sess_8h_ac5bb3d0996d90e55e16b06c42428c7a3}{Rie\+\_\+\+Sess\+Get\+Grp\+Sess\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get group session type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a8f5169e013cabd2c52b798bf1aca6d96}{Rie\+\_\+\+Sess\+Get\+Sess\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get session type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_ad50bc42d0ac08c51de3816b1e32e3a59}{Rie\+\_\+\+Sess\+Get\+Version\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE message session get group chat version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a3feed62a6b4dbbe8421627a024a39479}{Rie\+\_\+\+Sess\+Set\+Version\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Ver)
+\begin{DoxyCompactList}\small\item\em R\+IE message session set group chat version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a082c1c15ae2c98bc5df4802cc7a2c8f4}{Rie\+\_\+\+Sess\+Msg\+Send}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+At\+Partp\+Lst\+Id, Z\+U\+I\+NT i\+At\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Traf\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending a message through session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a49006fde2d80c6245abaaf9232433160}{Rie\+\_\+\+Sess\+Msg\+SendO}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Peer\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending a message through session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a28c29ae9d9e06dbe8d9310baf65f309f}{Rie\+\_\+\+Sess\+Msg\+Send\+Geo\+Text}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Send geolocation free text through session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a9da5c151890965926f64461d209123be}{Rie\+\_\+\+Sess\+Msg\+Send\+Geo\+Coord}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Send geolocation coordinate through session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a602d34fca831bb5794549e8b8e24ed53}{Rie\+\_\+\+Sess\+Msg\+Send\+Geo\+Both}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Send geolocation both free text and coordinate through session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a80aadc19fd9892422ef4035f2261f5af}{Rie\+\_\+\+Sess\+Msg\+Release}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Release a message from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a7e6ec98511e4578e9ced9ea352f65d15}{Rie\+\_\+\+Sess\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get imdn id from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a58bbca70cb11b29e31b2704b54aede30}{Rie\+\_\+\+Sess\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get device id from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a9d63d5485b1872cf65d2b4b13f0f8328}{Rie\+\_\+\+Sess\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message content type from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_aa9c4a7acf3c1422742e5173ea242ff82}{Rie\+\_\+\+Sess\+Msg\+Get\+Content\+Len}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message content length from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aeaa8916fa9c2c6f2ffdfad49032452e2}{Rie\+\_\+\+Sess\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE Get the message content from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a99aa30731e0377d55247e506f6ee2229}{Rie\+\_\+\+Sess\+Msg\+Get\+Bot\+Sug}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get content from messaging session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_af5ea03c66c74066a77772d3369716df6}{Rie\+\_\+\+Sess\+Msg\+Get\+Bot\+Msg\+Content\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get content from messaging session. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rie__sess_8h_ac77f2ba02a6329abf951e2c9e8d089ca}\label{rie__sess_8h_ac77f2ba02a6329abf951e2c9e8d089ca}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rie\+\_\+\+Sess\+Msg\+Get\+Muti\+Content} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a13c9bec4408c859c38953d699a1f82fc}{Rie\+\_\+\+Sess\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a7b1eea2002b49989042bcd1599eacfd4}{Rie\+\_\+\+Sess\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message date time from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a2765e7a06caa3a20ea2efcc3757b9efe}{Rie\+\_\+\+Sess\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get font information of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_ae7c763f7ac4899abf8f66c82fb470a0b}{Rie\+\_\+\+Sess\+Msg\+Get\+Traffic\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get traffic type of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{rie__sess_8h_a00d8df274c3357641acfee54fafe9da9}{Rie\+\_\+\+Sess\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get user cookie from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a0763e68cbe2329017321eb3c4d1cfb02}{Rie\+\_\+\+Sess\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set user cookie in a message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_ad560ad620eb73b6e29d3e338cb0f4b3c}{Rie\+\_\+\+Sess\+Msg\+Get\+Ft\+Http\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get file transfer via http id in a session message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_af1dd2f7a91fcaf7aa25b78b3b90183f5}{Rie\+\_\+\+Sess\+Msg\+Get\+G\+Info\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get geolocation information id of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a9211fb5b590d87c0a713c62deda8d563}{Rie\+\_\+\+Sess\+Msg\+Get\+Silence\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get silence indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a031acc5f91b042838f8ca64032b95be1}{Rie\+\_\+\+Sess\+Msg\+Get\+At\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get at indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a2f051ecbc812480b56fb81094845c8eb}{Rie\+\_\+\+Sess\+Msg\+Get\+At\+All\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get at all indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_ae62a9c6b3d85954c5ff197eea509b85b}{Rie\+\_\+\+Sess\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get carbon copy indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a9277200dc2f9172275c3f266ebbf923c}{Rie\+\_\+\+Sess\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get offline indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a55c1dc328b82b28a3a9b28097f94901f}{Rie\+\_\+\+Sess\+Get\+Enter\+Prise\+Grp\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get enterprise group indication from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a0308fe07a40d73365b2510d84b646f9b}{Rie\+\_\+\+Sess\+Get\+Party\+Grp\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get party group indication from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a500061660513662cb49fe5f79d53d90d}{Rie\+\_\+\+Sess\+Get\+N\+F\+S\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Network Fallback to S\+MS indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a600d808f14201e54b9208d8e70b63a81}{Rie\+\_\+\+Sess\+Msg\+Has\+Msg\+Revoke\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message revoke indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_afbf682acd885ee228ee5ab153f7a54ed}{Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke message-\/id of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rie__sess_8h_a469a83607b1fc3ba50cea0d4e61ada44}{Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_aa7eea341456ac938b12432af36792ac7}{Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke from addr of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_aacbde168e2b48280e86f902dbc7141d7}{Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke to addr of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a43e48a58efa3077bfbe0853fb68aa88c}{Rie\+\_\+\+Sess\+Msg\+Format\+Call\+Data}} (Z\+C\+H\+AR $\ast$pc\+Subject, Z\+B\+O\+OL $\ast$pb\+Importance, Z\+C\+H\+AR $\ast$pc\+Location, Z\+C\+H\+AR $\ast$pc\+Picture\+Url, Z\+C\+H\+AR $\ast$pc\+Composer\+Id, Z\+C\+H\+AR $\ast$pc\+Note)
+\begin{DoxyCompactList}\small\item\em R\+IE session message format rcscalldata xml form enrichcall. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a4328cb324a11035531f50258367b905c}{Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get rcscalldata subject from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_a8cb346eea6065b52023a764b3c4ea90d}{Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Importance}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get rcscalldata subject from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_afefff5964746034d81718fee288a95fa}{Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Location}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get rcscalldata location from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a958daa038d6df8fd5296cebaf7bbfe15}{Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Composer\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get rcscalldata composerid from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a8832a2d8ad39649054131029d5b7963a}{Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Picture\+Url}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get rcscalldata picture url from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_ade9ce6d0f7af3336af4dc3cde753e972}{Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Note}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get rcscalldata note from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a469c155ce2dea411be4be1bfcadcac5f}{Rie\+\_\+\+Sess\+Msg\+Get\+Shared\+Data\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get shared data id from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a8abae79ef1e156cf23c881ef517e49de}{Rie\+\_\+\+Sess\+Msg\+Fmt\+Grp\+Data\+Subject}} (Z\+C\+H\+AR $\ast$pc\+Subject)
+\begin{DoxyCompactList}\small\item\em R\+IE session message format group data subject. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_aa5f6e4c0f9446d5949a84b7172d80768}{Rie\+\_\+\+M\+Sess\+Msg\+Fmt\+Grp\+Data\+Icon}} (Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em R\+IE session message get group data icon. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a044f34e80cfe5d7548d275d37c072d7a}{Rie\+\_\+\+Sess\+Msg\+Fmt\+Grp\+Data\+RoleA}} (Z\+C\+H\+AR $\ast$pc\+Partp\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE session message format group data role administrator. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_a06ff0d1811e78602ac9fe2d200b66594}{Rie\+\_\+\+Sess\+Msg\+Get\+Grp\+Data\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE session message get group data message type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__sess_8h_a3dfb52d4dc069e284d84bcbbdba2860d}{Rie\+\_\+\+Sess\+Msg\+Get\+Grp\+Data\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE session message get group data subject. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__sess_8h_a7dd96ca957a1ad0089b9c6d2296fc0ef}{Rie\+\_\+\+Sess\+Msg\+Get\+Grp\+Data\+Icon}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em R\+IE session message get group data icon. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__sess_8h_aa920320f8e8457af234adf69ce8dda19}{Rie\+\_\+\+Sess\+Get\+Privacy\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE privacy indication of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__sess_8h_ad85be7282366723dd19b799a2f1a2fe7}{Rie\+\_\+\+Sess\+Get\+Retry\+Len}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get session retry time len from message session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE Session Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rie__sess_8h_ad9523f794d5a403ccea239823ae912fd}\label{rie__sess_8h_ad9523f794d5a403ccea239823ae912fd}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_MSessGetGrpChatId@{Rie\_MSessGetGrpChatId}}
+\index{Rie\_MSessGetGrpChatId@{Rie\_MSessGetGrpChatId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_MSessGetGrpChatId()}{Rie\_MSessGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+M\+Sess\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group chat id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group chat id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_aa5f6e4c0f9446d5949a84b7172d80768}\label{rie__sess_8h_aa5f6e4c0f9446d5949a84b7172d80768}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_MSessMsgFmtGrpDataIcon@{Rie\_MSessMsgFmtGrpDataIcon}}
+\index{Rie\_MSessMsgFmtGrpDataIcon@{Rie\_MSessMsgFmtGrpDataIcon}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_MSessMsgFmtGrpDataIcon()}{Rie\_MSessMsgFmtGrpDataIcon()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+M\+Sess\+Msg\+Fmt\+Grp\+Data\+Icon (\begin{DoxyParamCaption}\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message get group data icon. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Data} & The icon data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The icon data length. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pp\+Data} & The formated icon data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Data\+Size} & The formated icon data length. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & format successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & format failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aff37f64811410ebb097d75bd51f32ac7}\label{rie__sess_8h_aff37f64811410ebb097d75bd51f32ac7}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessAccept@{Rie\_SessAccept}}
+\index{Rie\_SessAccept@{Rie\_SessAccept}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessAccept()}{Rie\_SessAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name }\end{DoxyParamCaption})}
+
+
+
+R\+IE Accept a message session invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own display name in the group chat.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept message session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept message session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ae15b93242d206b9bce0b8aca1ef4ef23}\label{rie__sess_8h_ae15b93242d206b9bce0b8aca1ef4ef23}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessAcptMdfyChairMan@{Rie\_SessAcptMdfyChairMan}}
+\index{Rie\_SessAcptMdfyChairMan@{Rie\_SessAcptMdfyChairMan}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessAcptMdfyChairMan()}{Rie\_SessAcptMdfyChairMan()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Acpt\+Mdfy\+Chair\+Man (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Accept modify a group chat message session chairman. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a50d71fb03f08505a918a57594345ffaf}\label{rie__sess_8h_a50d71fb03f08505a918a57594345ffaf}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessAddPartp@{Rie\_SessAddPartp}}
+\index{Rie\_SessAddPartp@{Rie\_SessAddPartp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessAddPartp()}{Rie\_SessAddPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Add\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Adding one user to an IM conference session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Adding one participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Adding one participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a02522d51ccdda32425235a2956c075fd}\label{rie__sess_8h_a02522d51ccdda32425235a2956c075fd}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessAddPartpU@{Rie\_SessAddPartpU}}
+\index{Rie\_SessAddPartpU@{Rie\_SessAddPartpU}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessAddPartpU()}{Rie\_SessAddPartpU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Add\+PartpU (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Adding multi-\/users to an IM conference session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Adding multi-\/users successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Adding multi-\/users failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a07797ecee99f63b17ebc8c6a7151d40c}\label{rie__sess_8h_a07797ecee99f63b17ebc8c6a7151d40c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessCancel@{Rie\_SessCancel}}
+\index{Rie\_SessCancel@{Rie\_SessCancel}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessCancel()}{Rie\_SessCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Cancel a message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancelling message session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancelling message session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_af8ba199bf71bd8420106e1b9798111b5}\label{rie__sess_8h_af8ba199bf71bd8420106e1b9798111b5}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessClose@{Rie\_SessClose}}
+\index{Rie\_SessClose@{Rie\_SessClose}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessClose()}{Rie\_SessClose()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Close (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Close a 1-\/1 chat message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Close group chat message session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Close group chat message session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a035314edf1f69bc5cc9933af4b89fc11}\label{rie__sess_8h_a035314edf1f69bc5cc9933af4b89fc11}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessDissolve@{Rie\_SessDissolve}}
+\index{Rie\_SessDissolve@{Rie\_SessDissolve}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessDissolve()}{Rie\_SessDissolve()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Dissolve (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Dissolve a group chat message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Dissolve group chat message session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Dissolve group chat message session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aad43998a30dda63550ec57e2cdcee157}\label{rie__sess_8h_aad43998a30dda63550ec57e2cdcee157}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEplPartp@{Rie\_SessEplPartp}}
+\index{Rie\_SessEplPartp@{Rie\_SessEplPartp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEplPartp()}{Rie\_SessEplPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Epl\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Expeling one user from an IM conference session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Expeling one user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Expeling one user failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a4cb5e2dcd3cee09dfa34028f454eceb5}\label{rie__sess_8h_a4cb5e2dcd3cee09dfa34028f454eceb5}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEplPartpU@{Rie\_SessEplPartpU}}
+\index{Rie\_SessEplPartpU@{Rie\_SessEplPartpU}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEplPartpU()}{Rie\_SessEplPartpU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Epl\+PartpU (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Expeling muti-\/user from an IM conference session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Expeling one user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Expeling one user failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a2b708ff43f9a58660645893509ffde19}\label{rie__sess_8h_a2b708ff43f9a58660645893509ffde19}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstab@{Rie\_SessEstab}}
+\index{Rie\_SessEstab@{Rie\_SessEstab}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstab()}{Rie\_SessEstab()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Estab (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing message session with one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for message session session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a65bc3d598f4115076204ac7ff5a5dc0e}\label{rie__sess_8h_a65bc3d598f4115076204ac7ff5a5dc0e}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabChatBot@{Rie\_SessEstabChatBot}}
+\index{Rie\_SessEstabChatBot@{Rie\_SessEstabChatBot}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabChatBot()}{Rie\_SessEstabChatBot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Estab\+Chat\+Bot (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT}]{i\+P\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing chatbot session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+P\+Type} & The privacy type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for chatbot session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send chatbot session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send chatbot session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a1353fe1282cc3a3fb9730de57b1cb83e}\label{rie__sess_8h_a1353fe1282cc3a3fb9730de57b1cb83e}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabM@{Rie\_SessEstabM}}
+\index{Rie\_SessEstabM@{Rie\_SessEstabM}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabM()}{Rie\_SessEstabM()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+EstabM (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing message session with one participant with the frist message in invite. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The user first message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for message session session. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id of msession.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aaba3a525783bd857318f9c8191ed29d7}\label{rie__sess_8h_aaba3a525783bd857318f9c8191ed29d7}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabP@{Rie\_SessEstabP}}
+\index{Rie\_SessEstabP@{Rie\_SessEstabP}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabP()}{Rie\_SessEstabP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+EstabP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing message session with pre-\/defined group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Uri} & The pre-\/defined group U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for message session session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a3ea9cbf58e4ed409d0b5b18225629f65}\label{rie__sess_8h_a3ea9cbf58e4ed409d0b5b18225629f65}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabPostCall@{Rie\_SessEstabPostCall}}
+\index{Rie\_SessEstabPostCall@{Rie\_SessEstabPostCall}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabPostCall()}{Rie\_SessEstabPostCall()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Estab\+Post\+Call (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing post-\/call session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message content; \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message length; \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message Type; \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send pre-\/call session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send pre-\/call session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a7f3f6a4d5ae455c94c1b57c0279b7f44}\label{rie__sess_8h_a7f3f6a4d5ae455c94c1b57c0279b7f44}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabPreCall@{Rie\_SessEstabPreCall}}
+\index{Rie\_SessEstabPreCall@{Rie\_SessEstabPreCall}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabPreCall()}{Rie\_SessEstabPreCall()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Estab\+Pre\+Call (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing pre-\/call session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for pre-\/call session session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send pre-\/call session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send pre-\/call session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_acfa41e9d277c58c58223ef1f131fabea}\label{rie__sess_8h_acfa41e9d277c58c58223ef1f131fabea}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabSharedMap@{Rie\_SessEstabSharedMap}}
+\index{Rie\_SessEstabSharedMap@{Rie\_SessEstabSharedMap}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabSharedMap()}{Rie\_SessEstabSharedMap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Estab\+Shared\+Map (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing shared-\/map session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for pre-\/call session session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send pre-\/call session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send pre-\/call session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a4e71e6f7742f8ac7389717ac1b205927}\label{rie__sess_8h_a4e71e6f7742f8ac7389717ac1b205927}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabSharedSketch@{Rie\_SessEstabSharedSketch}}
+\index{Rie\_SessEstabSharedSketch@{Rie\_SessEstabSharedSketch}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabSharedSketch()}{Rie\_SessEstabSharedSketch()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Estab\+Shared\+Sketch (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing shared-\/sketch session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for pre-\/call session session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send pre-\/call session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send pre-\/call session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a8e216dc74fe8aff7afe95a32bdcc6a1a}\label{rie__sess_8h_a8e216dc74fe8aff7afe95a32bdcc6a1a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessEstabU@{Rie\_SessEstabU}}
+\index{Rie\_SessEstabU@{Rie\_SessEstabU}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessEstabU()}{Rie\_SessEstabU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+EstabU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Establishing message session(ad-\/hoc) with U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own display name in ad-\/hoc. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for message session session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message session invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message session invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a0f168b990abf14a8316b146435d784aa}\label{rie__sess_8h_a0f168b990abf14a8316b146435d784aa}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessExtend@{Rie\_SessExtend}}
+\index{Rie\_SessExtend@{Rie\_SessExtend}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessExtend()}{Rie\_SessExtend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Extend (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+One2\+One\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Extending session from one-\/to-\/one to one-\/to-\/many. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+One2\+One\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for message session for 1-\/N adhoc session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Extending session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Extending session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ad7ebd2f20fb031e092066f6cc72786e0}\label{rie__sess_8h_ad7ebd2f20fb031e092066f6cc72786e0}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetActive@{Rie\_SessGetActive}}
+\index{Rie\_SessGetActive@{Rie\_SessGetActive}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetActive()}{Rie\_SessGetActive()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Active (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get active flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session active flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ab6a85547ed59d425765ef1d59d07e53a}\label{rie__sess_8h_ab6a85547ed59d425765ef1d59d07e53a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetContId@{Rie\_SessGetContId}}
+\index{Rie\_SessGetContId@{Rie\_SessGetContId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetContId()}{Rie\_SessGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get contribution-\/id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a0395049e8ab0101f565c266940a84b28}\label{rie__sess_8h_a0395049e8ab0101f565c266940a84b28}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetConvId@{Rie\_SessGetConvId}}
+\index{Rie\_SessGetConvId@{Rie\_SessGetConvId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetConvId()}{Rie\_SessGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get conversation-\/id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a75d2ccfc7d48b52dab2f62daa0f36714}\label{rie__sess_8h_a75d2ccfc7d48b52dab2f62daa0f36714}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetCookie@{Rie\_SessGetCookie}}
+\index{Rie\_SessGetCookie@{Rie\_SessGetCookie}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetCookie()}{Rie\_SessGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Rie\+\_\+\+Sess\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user cookie from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_af40854091f4f08e6f79c18826d231e26}\label{rie__sess_8h_af40854091f4f08e6f79c18826d231e26}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetDateTime@{Rie\_SessGetDateTime}}
+\index{Rie\_SessGetDateTime@{Rie\_SessGetDateTime}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetDateTime()}{Rie\_SessGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get date time from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a7704b3f462fc5bcc8d8191c051e794ee}\label{rie__sess_8h_a7704b3f462fc5bcc8d8191c051e794ee}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetDispName@{Rie\_SessGetDispName}}
+\index{Rie\_SessGetDispName@{Rie\_SessGetDispName}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetDispName()}{Rie\_SessGetDispName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Get\+Disp\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user display name from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & display name. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a55c1dc328b82b28a3a9b28097f94901f}\label{rie__sess_8h_a55c1dc328b82b28a3a9b28097f94901f}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetEnterPriseGrpInd@{Rie\_SessGetEnterPriseGrpInd}}
+\index{Rie\_SessGetEnterPriseGrpInd@{Rie\_SessGetEnterPriseGrpInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetEnterPriseGrpInd()}{Rie\_SessGetEnterPriseGrpInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Enter\+Prise\+Grp\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get enterprise group indication from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enterprise group indication. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a403f4577ca798e3887e4d6395b4bcb41}\label{rie__sess_8h_a403f4577ca798e3887e4d6395b4bcb41}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetFtHttpSupport@{Rie\_SessGetFtHttpSupport}}
+\index{Rie\_SessGetFtHttpSupport@{Rie\_SessGetFtHttpSupport}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetFtHttpSupport()}{Rie\_SessGetFtHttpSupport()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Ft\+Http\+Support (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get if message session support F\+T\+H\+T\+TP. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & support F\+T\+H\+T\+TP. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & do not support F\+T\+H\+T\+TP. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a1f19e5ec6fc26b1771fa7fb149fba2e6}\label{rie__sess_8h_a1f19e5ec6fc26b1771fa7fb149fba2e6}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetGroupType@{Rie\_SessGetGroupType}}
+\index{Rie\_SessGetGroupType@{Rie\_SessGetGroupType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetGroupType()}{Rie\_SessGetGroupType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Group\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message session get group type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session group type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_adcf49d06982cac6deb141f9e571f6dce}\label{rie__sess_8h_adcf49d06982cac6deb141f9e571f6dce}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetGrpIdent@{Rie\_SessGetGrpIdent}}
+\index{Rie\_SessGetGrpIdent@{Rie\_SessGetGrpIdent}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetGrpIdent()}{Rie\_SessGetGrpIdent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Get\+Grp\+Ident (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group identity from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group identity. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ac5bb3d0996d90e55e16b06c42428c7a3}\label{rie__sess_8h_ac5bb3d0996d90e55e16b06c42428c7a3}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetGrpSessType@{Rie\_SessGetGrpSessType}}
+\index{Rie\_SessGetGrpSessType@{Rie\_SessGetGrpSessType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetGrpSessType()}{Rie\_SessGetGrpSessType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rie\+\_\+\+Sess\+Get\+Grp\+Sess\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get group session type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session type @sess E\+N\+\_\+\+M\+M\+F\+\_\+\+I\+M\+\_\+\+G\+R\+P\+\_\+\+S\+E\+S\+S\+\_\+\+T\+Y\+PE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_aa3bcb0f69b76277014a0908c7240f81a}\label{rie__sess_8h_aa3bcb0f69b76277014a0908c7240f81a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetGrpUri@{Rie\_SessGetGrpUri}}
+\index{Rie\_SessGetGrpUri@{Rie\_SessGetGrpUri}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetGrpUri()}{Rie\_SessGetGrpUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Get\+Grp\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Get group U\+RI from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The group U\+RI.\\
+\hline
+\end{DoxyParams}
+ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get group uri successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get group uri failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aa677a885b10315667924ffb3782041ec}\label{rie__sess_8h_aa677a885b10315667924ffb3782041ec}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetIconData@{Rie\_SessGetIconData}}
+\index{Rie\_SessGetIconData@{Rie\_SessGetIconData}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetIconData()}{Rie\_SessGetIconData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Get\+Icon\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user icon data from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pp\+Data} & icon data. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Data\+Size} & icon data size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get session icon data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get session icon data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ac56b820d9927c23d585d1769972a424f}\label{rie__sess_8h_ac56b820d9927c23d585d1769972a424f}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetIconModifiedPartpUri@{Rie\_SessGetIconModifiedPartpUri}}
+\index{Rie\_SessGetIconModifiedPartpUri@{Rie\_SessGetIconModifiedPartpUri}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetIconModifiedPartpUri()}{Rie\_SessGetIconModifiedPartpUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Get\+Icon\+Modified\+Partp\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user icon modified participant uri from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & icon modified participant uri. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a36678eb848b094ca736f2d4dc9ff83d9}\label{rie__sess_8h_a36678eb848b094ca736f2d4dc9ff83d9}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetIconModifiedTimestamp@{Rie\_SessGetIconModifiedTimestamp}}
+\index{Rie\_SessGetIconModifiedTimestamp@{Rie\_SessGetIconModifiedTimestamp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetIconModifiedTimestamp()}{Rie\_SessGetIconModifiedTimestamp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Rie\+\_\+\+Sess\+Get\+Icon\+Modified\+Timestamp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get session icon modified timestamp from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Session icon modified timestamp. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a35fdcfd4e72c538273e77498c7595f02}\label{rie__sess_8h_a35fdcfd4e72c538273e77498c7595f02}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetImdnSupport@{Rie\_SessGetImdnSupport}}
+\index{Rie\_SessGetImdnSupport@{Rie\_SessGetImdnSupport}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetImdnSupport()}{Rie\_SessGetImdnSupport()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Imdn\+Support (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get if message session support imdn. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & support imdn. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & do not support imdn. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a03cc633e6044be9806b1a2735b004abd}\label{rie__sess_8h_a03cc633e6044be9806b1a2735b004abd}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetIsChairman@{Rie\_SessGetIsChairman}}
+\index{Rie\_SessGetIsChairman@{Rie\_SessGetIsChairman}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetIsChairman()}{Rie\_SessGetIsChairman()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Is\+Chairman (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get message session local is chairman. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Indicates local is chairman. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Indicates local is not chairman. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a8df863c292d38cc46684269b2eda3ae8}\label{rie__sess_8h_a8df863c292d38cc46684269b2eda3ae8}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetIsFocus@{Rie\_SessGetIsFocus}}
+\index{Rie\_SessGetIsFocus@{Rie\_SessGetIsFocus}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetIsFocus()}{Rie\_SessGetIsFocus()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Is\+Focus (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get message session session isfous. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & message session is group chat or pre-\/defined group. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & message session is 1-\/1 chat. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a2ad3eff641cd7dacc9daec5fbd09a0c5}\label{rie__sess_8h_a2ad3eff641cd7dacc9daec5fbd09a0c5}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetLocked@{Rie\_SessGetLocked}}
+\index{Rie\_SessGetLocked@{Rie\_SessGetLocked}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetLocked()}{Rie\_SessGetLocked()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Locked (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get locked flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session locked flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a05298458c05dbcc06e21a97d104fda62}\label{rie__sess_8h_a05298458c05dbcc06e21a97d104fda62}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetMaxUsrCnt@{Rie\_SessGetMaxUsrCnt}}
+\index{Rie\_SessGetMaxUsrCnt@{Rie\_SessGetMaxUsrCnt}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetMaxUsrCnt()}{Rie\_SessGetMaxUsrCnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Max\+Usr\+Cnt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message session get max user count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session max user count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a500061660513662cb49fe5f79d53d90d}\label{rie__sess_8h_a500061660513662cb49fe5f79d53d90d}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetNFSInd@{Rie\_SessGetNFSInd}}
+\index{Rie\_SessGetNFSInd@{Rie\_SessGetNFSInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetNFSInd()}{Rie\_SessGetNFSInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+N\+F\+S\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Network Fallback to S\+MS indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it has Network Fallback to S\+MS indication, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ad25eab61655048240fa55df9156a922e}\label{rie__sess_8h_ad25eab61655048240fa55df9156a922e}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetOffline@{Rie\_SessGetOffline}}
+\index{Rie\_SessGetOffline@{Rie\_SessGetOffline}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetOffline()}{Rie\_SessGetOffline()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Offline (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get offline flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session offline flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_aab9340776decb30e2b5391b5e3ed7a78}\label{rie__sess_8h_aab9340776decb30e2b5391b5e3ed7a78}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetOfflineIvt@{Rie\_SessGetOfflineIvt}}
+\index{Rie\_SessGetOfflineIvt@{Rie\_SessGetOfflineIvt}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetOfflineIvt()}{Rie\_SessGetOfflineIvt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Offline\+Ivt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get offline invitation flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session offline invitation flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_af1ec47c7cde030897baa392673df498c}\label{rie__sess_8h_af1ec47c7cde030897baa392673df498c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetOfflineMsg@{Rie\_SessGetOfflineMsg}}
+\index{Rie\_SessGetOfflineMsg@{Rie\_SessGetOfflineMsg}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetOfflineMsg()}{Rie\_SessGetOfflineMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Offline\+Msg (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get offline message flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session offline message flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_abf057f86ec7b834a1bf36281fae3f1e2}\label{rie__sess_8h_abf057f86ec7b834a1bf36281fae3f1e2}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetOrigIdPartp@{Rie\_SessGetOrigIdPartp}}
+\index{Rie\_SessGetOrigIdPartp@{Rie\_SessGetOrigIdPartp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetOrigIdPartp()}{Rie\_SessGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Get original identity of participant U\+RI from message session. 
+
+The participant is the session initiator who initialized this message session. It will return local U\+RI if local client is the session initiator. It will return identity uri if session invitation has P-\/\+Asserted-\/\+Identity information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a4d55f612c9e55fabff030467c8736187}\label{rie__sess_8h_a4d55f612c9e55fabff030467c8736187}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetOrigPartp@{Rie\_SessGetOrigPartp}}
+\index{Rie\_SessGetOrigPartp@{Rie\_SessGetOrigPartp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetOrigPartp()}{Rie\_SessGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get original paticipant uri from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a18a0d48690a0ad59ba9f0d0148694be1}\label{rie__sess_8h_a18a0d48690a0ad59ba9f0d0148694be1}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetOutgoing@{Rie\_SessGetOutgoing}}
+\index{Rie\_SessGetOutgoing@{Rie\_SessGetOutgoing}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetOutgoing()}{Rie\_SessGetOutgoing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Outgoing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get outgoing. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & outgoing session . \\
+\hline
+{\em Z\+F\+A\+L\+SE} & incoming session. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_afe09419d306b48038a360c9b38c9783c}\label{rie__sess_8h_afe09419d306b48038a360c9b38c9783c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetPartp@{Rie\_SessGetPartp}}
+\index{Rie\_SessGetPartp@{Rie\_SessGetPartp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetPartp()}{Rie\_SessGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a48c4e29f309f48530cfad0ad3cb8d2b3}\label{rie__sess_8h_a48c4e29f309f48530cfad0ad3cb8d2b3}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetPartpLstId@{Rie\_SessGetPartpLstId}}
+\index{Rie\_SessGetPartpLstId@{Rie\_SessGetPartpLstId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetPartpLstId()}{Rie\_SessGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant list id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant list id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a4c6e25cb8ffeede580fd80e47082a681}\label{rie__sess_8h_a4c6e25cb8ffeede580fd80e47082a681}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetPartpType@{Rie\_SessGetPartpType}}
+\index{Rie\_SessGetPartpType@{Rie\_SessGetPartpType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetPartpType()}{Rie\_SessGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant type from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im message session, E\+N\+\_\+\+R\+I\+E\+\_\+\+P\+A\+R\+T\+P\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a0308fe07a40d73365b2510d84b646f9b}\label{rie__sess_8h_a0308fe07a40d73365b2510d84b646f9b}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetPartyGrpInd@{Rie\_SessGetPartyGrpInd}}
+\index{Rie\_SessGetPartyGrpInd@{Rie\_SessGetPartyGrpInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetPartyGrpInd()}{Rie\_SessGetPartyGrpInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Party\+Grp\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get party group indication from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+party group indication. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_aa920320f8e8457af234adf69ce8dda19}\label{rie__sess_8h_aa920320f8e8457af234adf69ce8dda19}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetPrivacyInd@{Rie\_SessGetPrivacyInd}}
+\index{Rie\_SessGetPrivacyInd@{Rie\_SessGetPrivacyInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetPrivacyInd()}{Rie\_SessGetPrivacyInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Get\+Privacy\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE privacy indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if The session is Anonymized, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ad85be7282366723dd19b799a2f1a2fe7}\label{rie__sess_8h_ad85be7282366723dd19b799a2f1a2fe7}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetRetryLen@{Rie\_SessGetRetryLen}}
+\index{Rie\_SessGetRetryLen@{Rie\_SessGetRetryLen}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetRetryLen()}{Rie\_SessGetRetryLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Retry\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get session retry time len from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Session retry time len. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ada04edf4557820f0fff66a404b521ea5}\label{rie__sess_8h_ada04edf4557820f0fff66a404b521ea5}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetRplSessId@{Rie\_SessGetRplSessId}}
+\index{Rie\_SessGetRplSessId@{Rie\_SessGetRplSessId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetRplSessId()}{Rie\_SessGetRplSessId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Rpl\+Sess\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get repleaced session(one to one session) id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & repleaced session id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a8f5169e013cabd2c52b798bf1aca6d96}\label{rie__sess_8h_a8f5169e013cabd2c52b798bf1aca6d96}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetSessType@{Rie\_SessGetSessType}}
+\index{Rie\_SessGetSessType@{Rie\_SessGetSessType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetSessType()}{Rie\_SessGetSessType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Sess\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get session type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session type @sess E\+N\+\_\+\+M\+M\+F\+\_\+\+I\+M\+\_\+\+S\+E\+S\+S\+\_\+\+T\+Y\+PE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a2165e2e52e5792231177a3af6bae481c}\label{rie__sess_8h_a2165e2e52e5792231177a3af6bae481c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetState@{Rie\_SessGetState}}
+\index{Rie\_SessGetState@{Rie\_SessGetState}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetState()}{Rie\_SessGetState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+State (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get session state from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Session state, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mmf__msess_8h_a5e734451dfa185ec9e61fb043926193e}{E\+N\+\_\+\+M\+M\+F\+\_\+\+M\+S\+E\+S\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rie__sess_8h_a7da3fa475a533867c7404691183c6acf}\label{rie__sess_8h_a7da3fa475a533867c7404691183c6acf}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetSubject@{Rie\_SessGetSubject}}
+\index{Rie\_SessGetSubject@{Rie\_SessGetSubject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetSubject()}{Rie\_SessGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user subject from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & subject. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a89d279eff6c1228513931a9820659fd2}\label{rie__sess_8h_a89d279eff6c1228513931a9820659fd2}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetUsrCnt@{Rie\_SessGetUsrCnt}}
+\index{Rie\_SessGetUsrCnt@{Rie\_SessGetUsrCnt}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetUsrCnt()}{Rie\_SessGetUsrCnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Usr\+Cnt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message session get user count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session user count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ad50bc42d0ac08c51de3816b1e32e3a59}\label{rie__sess_8h_ad50bc42d0ac08c51de3816b1e32e3a59}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessGetVersionId@{Rie\_SessGetVersionId}}
+\index{Rie\_SessGetVersionId@{Rie\_SessGetVersionId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessGetVersionId()}{Rie\_SessGetVersionId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Get\+Version\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session get group chat version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+group chat version. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ae2cfe25a8a16ff3781b89bae49f7053b}\label{rie__sess_8h_ae2cfe25a8a16ff3781b89bae49f7053b}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessHasFirstMsg@{Rie\_SessHasFirstMsg}}
+\index{Rie\_SessHasFirstMsg@{Rie\_SessHasFirstMsg}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessHasFirstMsg()}{Rie\_SessHasFirstMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Has\+First\+Msg (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get establishing message session with first message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & establishing session with first message. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & establishing session with none. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a151102a8776cd248786fcb3194adfb60}\label{rie__sess_8h_a151102a8776cd248786fcb3194adfb60}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessLeave@{Rie\_SessLeave}}
+\index{Rie\_SessLeave@{Rie\_SessLeave}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessLeave()}{Rie\_SessLeave()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Leave (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Reason }\end{DoxyParamCaption})}
+
+
+
+R\+IE Leaving a message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & Indicate the reject reason.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Leaving message session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Leaving message session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ae906464741a8fc8f98733d35b2d22563}\label{rie__sess_8h_ae906464741a8fc8f98733d35b2d22563}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMdfyChairMan@{Rie\_SessMdfyChairMan}}
+\index{Rie\_SessMdfyChairMan@{Rie\_SessMdfyChairMan}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMdfyChairMan()}{Rie\_SessMdfyChairMan()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Mdfy\+Chair\+Man (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Modify a group chat message session chairman. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The Uri of new chairman,if the value is null, server will randomly assign a chairman.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Modify chairman successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Modify chairman failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ab805ce4732eba0f04ccf5ea7bc407c5a}\label{rie__sess_8h_ab805ce4732eba0f04ccf5ea7bc407c5a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMdfyDispName@{Rie\_SessMdfyDispName}}
+\index{Rie\_SessMdfyDispName@{Rie\_SessMdfyDispName}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMdfyDispName()}{Rie\_SessMdfyDispName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Mdfy\+Disp\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name }\end{DoxyParamCaption})}
+
+
+
+R\+IE Modify own display name in a group chat message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own new display name in group chat.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Modify display name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Modify display name failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a44a7bbc3ac4930606a8cc4d0219d534a}\label{rie__sess_8h_a44a7bbc3ac4930606a8cc4d0219d534a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMdfySubject@{Rie\_SessMdfySubject}}
+\index{Rie\_SessMdfySubject@{Rie\_SessMdfySubject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMdfySubject()}{Rie\_SessMdfySubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Mdfy\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject }\end{DoxyParamCaption})}
+
+
+
+R\+IE Modify a message session subject. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The session subject.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Modify subject successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Modify subject failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a044f34e80cfe5d7548d275d37c072d7a}\label{rie__sess_8h_a044f34e80cfe5d7548d275d37c072d7a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgFmtGrpDataRoleA@{Rie\_SessMsgFmtGrpDataRoleA}}
+\index{Rie\_SessMsgFmtGrpDataRoleA@{Rie\_SessMsgFmtGrpDataRoleA}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgFmtGrpDataRoleA()}{Rie\_SessMsgFmtGrpDataRoleA()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Fmt\+Grp\+Data\+RoleA (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Partp\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message format group data role administrator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The subject in xml.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & group data xml data. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a8abae79ef1e156cf23c881ef517e49de}\label{rie__sess_8h_a8abae79ef1e156cf23c881ef517e49de}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgFmtGrpDataSubject@{Rie\_SessMsgFmtGrpDataSubject}}
+\index{Rie\_SessMsgFmtGrpDataSubject@{Rie\_SessMsgFmtGrpDataSubject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgFmtGrpDataSubject()}{Rie\_SessMsgFmtGrpDataSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Fmt\+Grp\+Data\+Subject (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message format group data subject. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The subject in xml.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & group data xml data. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a43e48a58efa3077bfbe0853fb68aa88c}\label{rie__sess_8h_a43e48a58efa3077bfbe0853fb68aa88c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgFormatCallData@{Rie\_SessMsgFormatCallData}}
+\index{Rie\_SessMsgFormatCallData@{Rie\_SessMsgFormatCallData}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgFormatCallData()}{Rie\_SessMsgFormatCallData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Format\+Call\+Data (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+B\+O\+OL $\ast$}]{pb\+Importance,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Location,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Picture\+Url,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Composer\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Note }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message format rcscalldata xml form enrichcall. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The subject in rcscalldata xml. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pb\+Importance} & The importance in rcscalldata xml. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Location} & The location in rcscalldata xml. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Picture\+Url} & The picture url in rcscalldata xml. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Composer\+Id} & The composerid in rcscalldata xml. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Note} & The note in rcscalldata xml.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em To} & rcscalldata xml data. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a2f051ecbc812480b56fb81094845c8eb}\label{rie__sess_8h_a2f051ecbc812480b56fb81094845c8eb}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetAtAllInd@{Rie\_SessMsgGetAtAllInd}}
+\index{Rie\_SessMsgGetAtAllInd@{Rie\_SessMsgGetAtAllInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetAtAllInd()}{Rie\_SessMsgGetAtAllInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Get\+At\+All\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get at all indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has at all indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a031acc5f91b042838f8ca64032b95be1}\label{rie__sess_8h_a031acc5f91b042838f8ca64032b95be1}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetAtInd@{Rie\_SessMsgGetAtInd}}
+\index{Rie\_SessMsgGetAtInd@{Rie\_SessMsgGetAtInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetAtInd()}{Rie\_SessMsgGetAtInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Get\+At\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get at indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has at indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_af5ea03c66c74066a77772d3369716df6}\label{rie__sess_8h_af5ea03c66c74066a77772d3369716df6}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetBotMsgContentType@{Rie\_SessMsgGetBotMsgContentType}}
+\index{Rie\_SessMsgGetBotMsgContentType@{Rie\_SessMsgGetBotMsgContentType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetBotMsgContentType()}{Rie\_SessMsgGetBotMsgContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Bot\+Msg\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get content from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em E\+N\+\_\+\+M\+M\+F\+\_\+\+M\+S\+E\+S\+S\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+P\+E.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a99aa30731e0377d55247e506f6ee2229}\label{rie__sess_8h_a99aa30731e0377d55247e506f6ee2229}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetBotSug@{Rie\_SessMsgGetBotSug}}
+\index{Rie\_SessMsgGetBotSug@{Rie\_SessMsgGetBotSug}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetBotSug()}{Rie\_SessMsgGetBotSug()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Get\+Bot\+Sug (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get content from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & have botsuggestion. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & ont have botsuggestion. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a958daa038d6df8fd5296cebaf7bbfe15}\label{rie__sess_8h_a958daa038d6df8fd5296cebaf7bbfe15}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCallDataComposerId@{Rie\_SessMsgGetCallDataComposerId}}
+\index{Rie\_SessMsgGetCallDataComposerId@{Rie\_SessMsgGetCallDataComposerId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCallDataComposerId()}{Rie\_SessMsgGetCallDataComposerId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Composer\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get rcscalldata composerid from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & composerid. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a8cb346eea6065b52023a764b3c4ea90d}\label{rie__sess_8h_a8cb346eea6065b52023a764b3c4ea90d}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCallDataImportance@{Rie\_SessMsgGetCallDataImportance}}
+\index{Rie\_SessMsgGetCallDataImportance@{Rie\_SessMsgGetCallDataImportance}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCallDataImportance()}{Rie\_SessMsgGetCallDataImportance()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Importance (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get rcscalldata subject from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & Subject. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_afefff5964746034d81718fee288a95fa}\label{rie__sess_8h_afefff5964746034d81718fee288a95fa}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCallDataLocation@{Rie\_SessMsgGetCallDataLocation}}
+\index{Rie\_SessMsgGetCallDataLocation@{Rie\_SessMsgGetCallDataLocation}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCallDataLocation()}{Rie\_SessMsgGetCallDataLocation()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Location (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get rcscalldata location from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & location. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ade9ce6d0f7af3336af4dc3cde753e972}\label{rie__sess_8h_ade9ce6d0f7af3336af4dc3cde753e972}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCallDataNote@{Rie\_SessMsgGetCallDataNote}}
+\index{Rie\_SessMsgGetCallDataNote@{Rie\_SessMsgGetCallDataNote}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCallDataNote()}{Rie\_SessMsgGetCallDataNote()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Note (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get rcscalldata note from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & note. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a8832a2d8ad39649054131029d5b7963a}\label{rie__sess_8h_a8832a2d8ad39649054131029d5b7963a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCallDataPictureUrl@{Rie\_SessMsgGetCallDataPictureUrl}}
+\index{Rie\_SessMsgGetCallDataPictureUrl@{Rie\_SessMsgGetCallDataPictureUrl}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCallDataPictureUrl()}{Rie\_SessMsgGetCallDataPictureUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Picture\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get rcscalldata picture url from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & picture url. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a4328cb324a11035531f50258367b905c}\label{rie__sess_8h_a4328cb324a11035531f50258367b905c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCallDataSubject@{Rie\_SessMsgGetCallDataSubject}}
+\index{Rie\_SessMsgGetCallDataSubject@{Rie\_SessMsgGetCallDataSubject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCallDataSubject()}{Rie\_SessMsgGetCallDataSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Call\+Data\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get rcscalldata subject from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & Subject. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aeaa8916fa9c2c6f2ffdfad49032452e2}\label{rie__sess_8h_aeaa8916fa9c2c6f2ffdfad49032452e2}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetContent@{Rie\_SessMsgGetContent}}
+\index{Rie\_SessMsgGetContent@{Rie\_SessMsgGetContent}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetContent()}{Rie\_SessMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get the message content from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The message size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get message content successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get message content failed. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aa9c4a7acf3c1422742e5173ea242ff82}\label{rie__sess_8h_aa9c4a7acf3c1422742e5173ea242ff82}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetContentLen@{Rie\_SessMsgGetContentLen}}
+\index{Rie\_SessMsgGetContentLen@{Rie\_SessMsgGetContentLen}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetContentLen()}{Rie\_SessMsgGetContentLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Content\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message content length from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & message content length. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a9d63d5485b1872cf65d2b4b13f0f8328}\label{rie__sess_8h_a9d63d5485b1872cf65d2b4b13f0f8328}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetContentType@{Rie\_SessMsgGetContentType}}
+\index{Rie\_SessMsgGetContentType@{Rie\_SessMsgGetContentType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetContentType()}{Rie\_SessMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message content type from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im message. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a00d8df274c3357641acfee54fafe9da9}\label{rie__sess_8h_a00d8df274c3357641acfee54fafe9da9}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetCookie@{Rie\_SessMsgGetCookie}}
+\index{Rie\_SessMsgGetCookie@{Rie\_SessMsgGetCookie}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetCookie()}{Rie\_SessMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Rie\+\_\+\+Sess\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get user cookie from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User cookie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a7b1eea2002b49989042bcd1599eacfd4}\label{rie__sess_8h_a7b1eea2002b49989042bcd1599eacfd4}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetDateTime@{Rie\_SessMsgGetDateTime}}
+\index{Rie\_SessMsgGetDateTime@{Rie\_SessMsgGetDateTime}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetDateTime()}{Rie\_SessMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message date time from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a58bbca70cb11b29e31b2704b54aede30}\label{rie__sess_8h_a58bbca70cb11b29e31b2704b54aede30}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetDeviceId@{Rie\_SessMsgGetDeviceId}}
+\index{Rie\_SessMsgGetDeviceId@{Rie\_SessMsgGetDeviceId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetDeviceId()}{Rie\_SessMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get device id from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em device} & id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a2765e7a06caa3a20ea2efcc3757b9efe}\label{rie__sess_8h_a2765e7a06caa3a20ea2efcc3757b9efe}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetFontInfo@{Rie\_SessMsgGetFontInfo}}
+\index{Rie\_SessMsgGetFontInfo@{Rie\_SessMsgGetFontInfo}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetFontInfo()}{Rie\_SessMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get font information of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The font information. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ad560ad620eb73b6e29d3e338cb0f4b3c}\label{rie__sess_8h_ad560ad620eb73b6e29d3e338cb0f4b3c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetFtHttpId@{Rie\_SessMsgGetFtHttpId}}
+\index{Rie\_SessMsgGetFtHttpId@{Rie\_SessMsgGetFtHttpId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetFtHttpId()}{Rie\_SessMsgGetFtHttpId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Ft\+Http\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get file transfer via http id in a session message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & fthttp id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_af1dd2f7a91fcaf7aa25b78b3b90183f5}\label{rie__sess_8h_af1dd2f7a91fcaf7aa25b78b3b90183f5}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetGInfoId@{Rie\_SessMsgGetGInfoId}}
+\index{Rie\_SessMsgGetGInfoId@{Rie\_SessMsgGetGInfoId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetGInfoId()}{Rie\_SessMsgGetGInfoId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+G\+Info\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get geolocation information id of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The geolocation information id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a7dd96ca957a1ad0089b9c6d2296fc0ef}\label{rie__sess_8h_a7dd96ca957a1ad0089b9c6d2296fc0ef}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetGrpDataIcon@{Rie\_SessMsgGetGrpDataIcon}}
+\index{Rie\_SessMsgGetGrpDataIcon@{Rie\_SessMsgGetGrpDataIcon}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetGrpDataIcon()}{Rie\_SessMsgGetGrpDataIcon()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Grp\+Data\+Icon (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message get group data icon. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pp\+Data} & The icon data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Data\+Size} & The icon data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user id failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a3dfb52d4dc069e284d84bcbbdba2860d}\label{rie__sess_8h_a3dfb52d4dc069e284d84bcbbdba2860d}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetGrpDataSubject@{Rie\_SessMsgGetGrpDataSubject}}
+\index{Rie\_SessMsgGetGrpDataSubject@{Rie\_SessMsgGetGrpDataSubject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetGrpDataSubject()}{Rie\_SessMsgGetGrpDataSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Grp\+Data\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message get group data subject. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em group} & data message subject. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a06ff0d1811e78602ac9fe2d200b66594}\label{rie__sess_8h_a06ff0d1811e78602ac9fe2d200b66594}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetGrpDataType@{Rie\_SessMsgGetGrpDataType}}
+\index{Rie\_SessMsgGetGrpDataType@{Rie\_SessMsgGetGrpDataType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetGrpDataType()}{Rie\_SessMsgGetGrpDataType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Grp\+Data\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE session message get group data message type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em group} & data message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+S\+E\+S\+S\+\_\+\+G\+R\+P\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a7e6ec98511e4578e9ced9ea352f65d15}\label{rie__sess_8h_a7e6ec98511e4578e9ced9ea352f65d15}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetImdnId@{Rie\_SessMsgGetImdnId}}
+\index{Rie\_SessMsgGetImdnId@{Rie\_SessMsgGetImdnId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetImdnId()}{Rie\_SessMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get imdn id from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & message imdn id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a13c9bec4408c859c38953d699a1f82fc}\label{rie__sess_8h_a13c9bec4408c859c38953d699a1f82fc}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetPartp@{Rie\_SessMsgGetPartp}}
+\index{Rie\_SessMsgGetPartp@{Rie\_SessMsgGetPartp}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetPartp()}{Rie\_SessMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_aa7eea341456ac938b12432af36792ac7}\label{rie__sess_8h_aa7eea341456ac938b12432af36792ac7}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetRevokeFromAddr@{Rie\_SessMsgGetRevokeFromAddr}}
+\index{Rie\_SessMsgGetRevokeFromAddr@{Rie\_SessMsgGetRevokeFromAddr}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetRevokeFromAddr()}{Rie\_SessMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke from addr of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_afbf682acd885ee228ee5ab153f7a54ed}\label{rie__sess_8h_afbf682acd885ee228ee5ab153f7a54ed}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetRevokeMsgId@{Rie\_SessMsgGetRevokeMsgId}}
+\index{Rie\_SessMsgGetRevokeMsgId@{Rie\_SessMsgGetRevokeMsgId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetRevokeMsgId()}{Rie\_SessMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke message-\/id of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a469a83607b1fc3ba50cea0d4e61ada44}\label{rie__sess_8h_a469a83607b1fc3ba50cea0d4e61ada44}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetRevokeResult@{Rie\_SessMsgGetRevokeResult}}
+\index{Rie\_SessMsgGetRevokeResult@{Rie\_SessMsgGetRevokeResult}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetRevokeResult()}{Rie\_SessMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_aacbde168e2b48280e86f902dbc7141d7}\label{rie__sess_8h_aacbde168e2b48280e86f902dbc7141d7}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetRevokeToAddr@{Rie\_SessMsgGetRevokeToAddr}}
+\index{Rie\_SessMsgGetRevokeToAddr@{Rie\_SessMsgGetRevokeToAddr}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetRevokeToAddr()}{Rie\_SessMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke to addr of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a469c155ce2dea411be4be1bfcadcac5f}\label{rie__sess_8h_a469c155ce2dea411be4be1bfcadcac5f}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetSharedDataId@{Rie\_SessMsgGetSharedDataId}}
+\index{Rie\_SessMsgGetSharedDataId@{Rie\_SessMsgGetSharedDataId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetSharedDataId()}{Rie\_SessMsgGetSharedDataId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Sess\+Msg\+Get\+Shared\+Data\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get shared data id from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & shared data id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a9211fb5b590d87c0a713c62deda8d563}\label{rie__sess_8h_a9211fb5b590d87c0a713c62deda8d563}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetSilenceInd@{Rie\_SessMsgGetSilenceInd}}
+\index{Rie\_SessMsgGetSilenceInd@{Rie\_SessMsgGetSilenceInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetSilenceInd()}{Rie\_SessMsgGetSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Get\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get silence indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has silence indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ae7c763f7ac4899abf8f66c82fb470a0b}\label{rie__sess_8h_ae7c763f7ac4899abf8f66c82fb470a0b}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgGetTrafficType@{Rie\_SessMsgGetTrafficType}}
+\index{Rie\_SessMsgGetTrafficType@{Rie\_SessMsgGetTrafficType}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgGetTrafficType()}{Rie\_SessMsgGetTrafficType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Sess\+Msg\+Get\+Traffic\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get traffic type of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The traffic type. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_ae62a9c6b3d85954c5ff197eea509b85b}\label{rie__sess_8h_ae62a9c6b3d85954c5ff197eea509b85b}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgHasCcInd@{Rie\_SessMsgHasCcInd}}
+\index{Rie\_SessMsgHasCcInd@{Rie\_SessMsgHasCcInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgHasCcInd()}{Rie\_SessMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get carbon copy indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it has carbon copy message indication, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a600d808f14201e54b9208d8e70b63a81}\label{rie__sess_8h_a600d808f14201e54b9208d8e70b63a81}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgHasMsgRevokeInd@{Rie\_SessMsgHasMsgRevokeInd}}
+\index{Rie\_SessMsgHasMsgRevokeInd@{Rie\_SessMsgHasMsgRevokeInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgHasMsgRevokeInd()}{Rie\_SessMsgHasMsgRevokeInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Has\+Msg\+Revoke\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message revoke indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it has revoke message indication, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a9277200dc2f9172275c3f266ebbf923c}\label{rie__sess_8h_a9277200dc2f9172275c3f266ebbf923c}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgHasOffInd@{Rie\_SessMsgHasOffInd}}
+\index{Rie\_SessMsgHasOffInd@{Rie\_SessMsgHasOffInd}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgHasOffInd()}{Rie\_SessMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Sess\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get offline indication of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it has offline message indication, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__sess_8h_a80aadc19fd9892422ef4035f2261f5af}\label{rie__sess_8h_a80aadc19fd9892422ef4035f2261f5af}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgRelease@{Rie\_SessMsgRelease}}
+\index{Rie\_SessMsgRelease@{Rie\_SessMsgRelease}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgRelease()}{Rie\_SessMsgRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Release a message from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release session message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release session message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a082c1c15ae2c98bc5df4802cc7a2c8f4}\label{rie__sess_8h_a082c1c15ae2c98bc5df4802cc7a2c8f4}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgSend@{Rie\_SessMsgSend}}
+\index{Rie\_SessMsgSend@{Rie\_SessMsgSend}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgSend()}{Rie\_SessMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+At\+Partp\+Lst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+At\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Traf\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending a message through session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+At\+Partp\+Lst\+Id} & The participant this message at. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+At\+Type} & The at function type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Traf\+Type} & The Traffic identification. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. ~\newline
+ \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Sending a private message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Sending a private message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a602d34fca831bb5794549e8b8e24ed53}\label{rie__sess_8h_a602d34fca831bb5794549e8b8e24ed53}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgSendGeoBoth@{Rie\_SessMsgSendGeoBoth}}
+\index{Rie\_SessMsgSendGeoBoth@{Rie\_SessMsgSendGeoBoth}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgSendGeoBoth()}{Rie\_SessMsgSendGeoBoth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Send\+Geo\+Both (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Send geolocation both free text and coordinate through session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for geolocation message.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a9da5c151890965926f64461d209123be}\label{rie__sess_8h_a9da5c151890965926f64461d209123be}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgSendGeoCoord@{Rie\_SessMsgSendGeoCoord}}
+\index{Rie\_SessMsgSendGeoCoord@{Rie\_SessMsgSendGeoCoord}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgSendGeoCoord()}{Rie\_SessMsgSendGeoCoord()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Send\+Geo\+Coord (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Send geolocation coordinate through session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for geolocation message.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a28c29ae9d9e06dbe8d9310baf65f309f}\label{rie__sess_8h_a28c29ae9d9e06dbe8d9310baf65f309f}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgSendGeoText@{Rie\_SessMsgSendGeoText}}
+\index{Rie\_SessMsgSendGeoText@{Rie\_SessMsgSendGeoText}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgSendGeoText()}{Rie\_SessMsgSendGeoText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Send\+Geo\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Send geolocation free text through session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for geolocation message.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a49006fde2d80c6245abaaf9232433160}\label{rie__sess_8h_a49006fde2d80c6245abaaf9232433160}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgSendO@{Rie\_SessMsgSendO}}
+\index{Rie\_SessMsgSendO@{Rie\_SessMsgSendO}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgSendO()}{Rie\_SessMsgSendO()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+SendO (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Peer\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending a message through session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Peer\+Uri} & The peer uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Sending a private message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Sending a private message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a0763e68cbe2329017321eb3c4d1cfb02}\label{rie__sess_8h_a0763e68cbe2329017321eb3c4d1cfb02}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessMsgSetCookie@{Rie\_SessMsgSetCookie}}
+\index{Rie\_SessMsgSetCookie@{Rie\_SessMsgSetCookie}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessMsgSetCookie()}{Rie\_SessMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set user cookie in a message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie of message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ae7c58bea94eb32d5240bea68d4870f7b}\label{rie__sess_8h_ae7c58bea94eb32d5240bea68d4870f7b}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessReject@{Rie\_SessReject}}
+\index{Rie\_SessReject@{Rie\_SessReject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessReject()}{Rie\_SessReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Reason }\end{DoxyParamCaption})}
+
+
+
+R\+IE Reject a message session invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & Indicate the reject reason.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject message session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject message session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ad8f6f0f20d171a7e9981a1e86bb76688}\label{rie__sess_8h_ad8f6f0f20d171a7e9981a1e86bb76688}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessReJoinG@{Rie\_SessReJoinG}}
+\index{Rie\_SessReJoinG@{Rie\_SessReJoinG}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessReJoinG()}{Rie\_SessReJoinG()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Re\+JoinG (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Group\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Sess\+Identity,  }\item[{Z\+U\+I\+NT}]{i\+Version\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Grp\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Rejoin a group session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own display name in group chat. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Group\+Chat\+Id} & The group chat id(Contribution-\/\+ID or Conversation-\/\+ID). \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Sess\+Identity} & The focus Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Version\+Id} & The group chat version. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Type} & The group type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for the session of the rejoin group.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Rejoin a group session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Rejoin a group session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a96e9e3b5c2d7bd3b7dd615835f92fcb8}\label{rie__sess_8h_a96e9e3b5c2d7bd3b7dd615835f92fcb8}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessReStartG@{Rie\_SessReStartG}}
+\index{Rie\_SessReStartG@{Rie\_SessReStartG}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessReStartG()}{Rie\_SessReStartG()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Re\+StartG (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Group\+Chat\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Restart a group session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Group\+Chat\+Id} & The group chat id(Contribution-\/\+ID or Conversation-\/\+ID). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Sess\+Id} & The id for the session of the restart group.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Restart a group session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Restart a group session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ac8522b3e653bf053d4b47bd45f1965b3}\label{rie__sess_8h_ac8522b3e653bf053d4b47bd45f1965b3}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessRjctMdfyChairMan@{Rie\_SessRjctMdfyChairMan}}
+\index{Rie\_SessRjctMdfyChairMan@{Rie\_SessRjctMdfyChairMan}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessRjctMdfyChairMan()}{Rie\_SessRjctMdfyChairMan()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Rjct\+Mdfy\+Chair\+Man (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Reject modify a group chat message session chairman. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a4350cd22405857886964b8e3c0e6b93a}\label{rie__sess_8h_a4350cd22405857886964b8e3c0e6b93a}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessSetCookie@{Rie\_SessSetCookie}}
+\index{Rie\_SessSetCookie@{Rie\_SessSetCookie}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessSetCookie()}{Rie\_SessSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+IE Set user cookie in a message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie of message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a6bec945e68ae60253e83623d2cdcb742}\label{rie__sess_8h_a6bec945e68ae60253e83623d2cdcb742}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessSetSubject@{Rie\_SessSetSubject}}
+\index{Rie\_SessSetSubject@{Rie\_SessSetSubject}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessSetSubject()}{Rie\_SessSetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Set\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject }\end{DoxyParamCaption})}
+
+
+
+R\+IE Set user subject in a message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject of message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user subject successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user subject failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_a3feed62a6b4dbbe8421627a024a39479}\label{rie__sess_8h_a3feed62a6b4dbbe8421627a024a39479}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessSetVersionId@{Rie\_SessSetVersionId}}
+\index{Rie\_SessSetVersionId@{Rie\_SessSetVersionId}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessSetVersionId()}{Rie\_SessSetVersionId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Set\+Version\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Ver }\end{DoxyParamCaption})}
+
+
+
+R\+IE message session set group chat version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Ver} & The group chat version.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set version failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ab98dde94decd796de5049086d468f7af}\label{rie__sess_8h_ab98dde94decd796de5049086d468f7af}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessStartCompsing@{Rie\_SessStartCompsing}}
+\index{Rie\_SessStartCompsing@{Rie\_SessStartCompsing}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessStartCompsing()}{Rie\_SessStartCompsing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Start\+Compsing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+C\+Type }\end{DoxyParamCaption})}
+
+
+
+Start composing. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+C\+Type} & The content type which user is entering.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Start composing successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Start composing failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__sess_8h_ae762439c3360f2dcc4e11329c702c5dc}\label{rie__sess_8h_ae762439c3360f2dcc4e11329c702c5dc}} 
+\index{rie\_sess.h@{rie\_sess.h}!Rie\_SessStopCompsing@{Rie\_SessStopCompsing}}
+\index{Rie\_SessStopCompsing@{Rie\_SessStopCompsing}!rie\_sess.h@{rie\_sess.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_SessStopCompsing()}{Rie\_SessStopCompsing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Sess\+Stop\+Compsing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Stop composing. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Stop composing successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Stop composing failed. \\
+\hline
+\end{DoxyRetVals}

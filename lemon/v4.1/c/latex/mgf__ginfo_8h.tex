@@ -1,0 +1,2287 @@
+\hypertarget{mgf__ginfo_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/framework/mgf/mgf\+\_\+ginfo.h File Reference}
+\label{mgf__ginfo_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mgf/mgf\_ginfo.h@{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mgf/mgf\_ginfo.h}}
+
+
+M\+GF Geolocation Information Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mgf__ginfo_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mgf__ginfo_8h_a021236b4dc32806950f2ffa765805d10}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mgf geolocation information type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+U\+N\+K\+N\+O\+WN} = 0, 
+{\bfseries E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+F\+R\+E\+E\+\_\+\+T\+E\+XT} = 1, 
+{\bfseries E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+2\+D\+\_\+\+C\+I\+R\+C\+LE} = 2, 
+{\bfseries E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+B\+O\+TH} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em mgf geolocation information type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a1f199fa212bdedda76e94c8167e5a7cf}{Mgf\+\_\+\+G\+Info\+Push\+Text}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push free text to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a52d1289682c0ae3aa59bad3687c6fcca}{Mgf\+\_\+\+G\+Info\+Push\+TextP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push free text to public account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aa15f2fc06c0bdbb31b8a0301500ff29d}{Mgf\+\_\+\+G\+Info\+Push\+TextS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push spam free text to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aed715887af53556e77af8f55512e6d2e}{Mgf\+\_\+\+G\+Info\+Push\+TextU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push free text to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a5b194537952e8a9f1d707febd8b708de}{Mgf\+\_\+\+G\+Info\+Push\+TextX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push free text to group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_af7509060bc0be48ad4e5b2e758a2ff1a}{Mgf\+\_\+\+G\+Info\+Push\+Coord}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ade4d50b012fefc5a85e21e60bd4b97b3}{Mgf\+\_\+\+G\+Info\+Push\+CoordP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push coordinate to public account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ae320770d15a6890d36101d8ac28f7157}{Mgf\+\_\+\+G\+Info\+Push\+CoordS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push spam coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a7d985d464283d7a48f1941ae8e1d2aaf}{Mgf\+\_\+\+G\+Info\+Push\+CoordU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push coordinate to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a97fef00aaede35396b65775349eb2adf}{Mgf\+\_\+\+G\+Info\+Push\+CoordX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push coordinate to group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ac25101de5addc9902832f2e5b672ca74}{Mgf\+\_\+\+G\+Info\+Push\+Both}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push both free text and coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_adecfa0e8517a8afe63fff9d32e657ad8}{Mgf\+\_\+\+G\+Info\+Push\+BothP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push both free text and coordinate to public account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a4e92387607882139884f06de439c780e}{Mgf\+\_\+\+G\+Info\+Push\+BothS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push both free spam text and spam coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_adb523478bdc0a36d65122a0768d4d97c}{Mgf\+\_\+\+G\+Info\+Push\+BothU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push both free text and coordinate to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a72368e8644241e569c59aef4f813be8d}{Mgf\+\_\+\+G\+Info\+Push\+BothX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Push both free text and coordinate to group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a634404db2736e87ee0ce5ced342fe272}{Mgf\+\_\+\+G\+Info\+Re\+Push\+Text}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF re\+Push free text to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aeb4de529f243f2d014bfd7c93aafaab8}{Mgf\+\_\+\+G\+Info\+Re\+Push\+TextP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF re\+Push free text to public account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ab3498d161d4128c9df948a7038d3300c}{Mgf\+\_\+\+G\+Info\+Re\+Push\+TextS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF re\+Push spam free text to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_add35416d03288964175e90c13ce03596}{Mgf\+\_\+\+G\+Info\+Re\+Push\+TextU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF re\+Push free text to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ae3dcdfe0fdfcf95cb0bc9daae336a07d}{Mgf\+\_\+\+G\+Info\+Re\+Push\+TextX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF re\+Push free text to group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aaa0533ae386fbc67b4869925f41a206a}{Mgf\+\_\+\+G\+Info\+Re\+Push\+Coord}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF re\+Push coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aa620d26c99f18e0d1aaafa3b82fd4813}{Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push coordinate to public account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ab5975f0277111143400f9973183949e8}{Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push spam coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_adbb08629eb31e696ee54231a935bb21e}{Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push coordinate to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a3e14eb58f326c8860217d5a317768f02}{Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push coordinate to group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ae1411cbf0706add99b7529629f3d5239}{Mgf\+\_\+\+G\+Info\+Re\+Push\+Both}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push both free text and coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_abaf8675f89e96984e83675d1f671558d}{Mgf\+\_\+\+G\+Info\+Re\+Push\+BothP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push both free text and coordinate to public account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a0ed7fef8294c082c1963d0fce23b45fc}{Mgf\+\_\+\+G\+Info\+Re\+Push\+BothS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push both spam free text and spam coordinate to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aa8e9b1bc6e12ede6712944bbc8a6ccb1}{Mgf\+\_\+\+G\+Info\+Re\+Push\+BothU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push both free text and coordinate to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aa5e4b3c2c5dea851da5b1bea0fb333f2}{Mgf\+\_\+\+G\+Info\+Re\+Push\+BothX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+Re\+Trsf\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Msg\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Re\+Push both free text and coordinate to group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a86f26ac115b534b859cbb461974e67f9}{Mgf\+\_\+\+G\+Info\+Push\+Acpt}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Accept the push request from one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a944c566e7f01750df3f7f7b02e8c9762}{Mgf\+\_\+\+G\+Info\+Push\+Deny}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Deny the push request from one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a7577c0a159d99346088fbac540835e91}{Mgf\+\_\+\+G\+Info\+Pull\+Via\+Ft}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Pull geolocation information from one participant via file tranfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a837c469797e966cbccbf168823b4ba27}{Mgf\+\_\+\+G\+Info\+Pull\+Via\+Http}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Pull geolocation information from one participant via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a3b26de77588616b6117b0158e7704d84}{Mgf\+\_\+\+G\+Info\+Pull\+Acpt}} (Z\+U\+I\+NT i\+G\+Info\+Id, Z\+U\+I\+NT i\+G\+Info\+Type, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Label)
+\begin{DoxyCompactList}\small\item\em M\+GF Accept the pull request from one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a2c0dc3f48a39c295cf41782771ea94c2}{Mgf\+\_\+\+G\+Info\+Pull\+Deny}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Deny the pull request from one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a16510a56c51875cace740696e9e7fc30}{Mgf\+\_\+\+G\+Info\+Cancel}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Cancel the geolocation information transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mgf__ginfo_8h_a9e9bf23ac66169c67a7a964b395031e1}{Mgf\+\_\+\+G\+Info\+Release}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Release the geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mgf__ginfo_8h_a40d9fa7fa3365ae581ae8d82a23e6f70}{Mgf\+\_\+\+G\+Info\+Get\+Cookie}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get user cookie in a geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a87eceacd48e9d101e299e0826b0e2555}{Mgf\+\_\+\+G\+Info\+Set\+Cookie}} (Z\+U\+I\+NT i\+G\+Info\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+GF Set user cookie in a geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_abc376f9d02da12eeed1c57bb2941d5c5}{Mgf\+\_\+\+G\+Info\+Get\+Type}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get geolocation information type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_a23d6103baf8ee5a207a7383c67a8fc44}{Mgf\+\_\+\+G\+Info\+Get\+Free\+Text}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get free text from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+D\+O\+U\+B\+LE \mbox{\hyperlink{mgf__ginfo_8h_a5adce5efd7544201610b4664ba74b5cb}{Mgf\+\_\+\+G\+Info\+Get\+Latitude}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get latitude of user place from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+D\+O\+U\+B\+LE \mbox{\hyperlink{mgf__ginfo_8h_a57031e3fa4ede9fdb515cadbc09ada97}{Mgf\+\_\+\+G\+Info\+Get\+Longitude}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get longitude of user place from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+F\+L\+O\+AT \mbox{\hyperlink{mgf__ginfo_8h_a605f9f4100851e7ad1900f94059c464b}{Mgf\+\_\+\+G\+Info\+Get\+Radius}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get radius of user place from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_ac5cc624da148e7e3844e2cdc68596bc9}{Mgf\+\_\+\+G\+Info\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get participant type from the geolocation share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a171dee31c6ce5a7e3c3d38a41c555822}{Mgf\+\_\+\+G\+Info\+Get\+Partp}} (Z\+U\+I\+NT i\+G\+Info\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+GF Get participant from the geolocation share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a706d7333826504ba803b76225efd177b}{Mgf\+\_\+\+G\+Info\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get participant list id from the geolocation share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_aed15d85ea2857643044bb3ca00aea406}{Mgf\+\_\+\+G\+Info\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+G\+Info\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+GF Get original participant which initiate the geolocation share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a7fe09b9d1cdd23f5899358619653b187}{Mgf\+\_\+\+G\+Info\+Get\+Owner\+Partp}} (Z\+U\+I\+NT i\+G\+Info\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+GF Get participant uri which is the owner of geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a0d8b2d21c9024877d9d25b9cc0751f7f}{Mgf\+\_\+\+G\+Info\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+G\+Info\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+GF Get date time from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mgf__ginfo_8h_aed035d726b42f1fdadfb4235a866e75b}{Mgf\+\_\+\+G\+Info\+Get\+Timestamp}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get timestamp from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mgf__ginfo_8h_aea5056b1a737a91b50229b76563f8a2e}{Mgf\+\_\+\+G\+Info\+Get\+Until\+Time}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get until time from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_a97b397db75f5cabc619ab9f0ba7a2b95}{Mgf\+\_\+\+G\+Info\+Has\+Label}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get label flag from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_a5c747ed74c54288aeb67d58b431a300c}{Mgf\+\_\+\+G\+Info\+Get\+Label}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get label string from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_ae5839401cb3fba591e49e38f9dfcbae8}{Mgf\+\_\+\+G\+Info\+Get\+Trsf\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get file-\/transfer-\/id string from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_a86ffa06ed9716d20e6695a02d8bfe430}{Mgf\+\_\+\+G\+Info\+Get\+Is\+Focus}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get Is\+Focus flag from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_a33a88551ef2ea8211190dab035dc3260}{Mgf\+\_\+\+G\+Info\+Get\+Subject}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get subject from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_a77f27149a017299f164c7130fb41ca2d}{Mgf\+\_\+\+G\+Info\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get group chat id from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a4ac761da20d8f51eca77344c51d14f1a}{Mgf\+\_\+\+G\+Info\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get imdn idof IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_a4fd6d8b94e44a75f777b8ace1af49f2a}{Mgf\+\_\+\+G\+Info\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_a32114ee1d1c74aeec15b014cad0add5e}{Mgf\+\_\+\+G\+Info\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get public message indication flag from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_a2e8f07e479dde15570b6019da90dbc2f}{Mgf\+\_\+\+G\+Info\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get spam message indication flag from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_aae9c1e2b6bd5840c40bcb2bc7cd8958d}{Mgf\+\_\+\+G\+Info\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get silence indication flag from geolocation information. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_a2bd7591799c3f623886794bbd3c8d7b0}\label{mgf__ginfo_8h_a2bd7591799c3f623886794bbd3c8d7b0}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mgf\+\_\+\+G\+Info\+Has\+Offline\+Ind} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_aeca2439afe43082fc3258101725a803f}{Mgf\+\_\+\+G\+Info\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get direct message indication flag from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ginfo_8h_af17a4ba18b4ea9a5b94d26ff12c44337}{Mgf\+\_\+\+G\+Info\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get carbon copy message indication flag from geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_a2893b3fb554f572b46e47b7a9778f703}{Mgf\+\_\+\+G\+Info\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get conversation-\/id of geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mgf__ginfo_8h_acacc63e0e981f29d96c38809af122729}{Mgf\+\_\+\+G\+Info\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get contribution-\/id of geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a1ae406249cdc4c0cf0d035666fdf439d}{Mgf\+\_\+\+G\+Info\+Save\+Data}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+G\+Info\+Type, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$$\ast$ppc\+Data, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Save geolocation information data. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ginfo_8h_a0fb876d4d4f8a16236f57e02ba2a44fb}{Mgf\+\_\+\+G\+Info\+Load\+Data}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Data, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Load geolocation information data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_acb5a868ee7b3555956c8d3a2cf27d7c8}\label{mgf__ginfo_8h_acb5a868ee7b3555956c8d3a2cf27d7c8}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mgf\+\_\+\+Ginfo\+Parse\+File\+Gs} (Z\+T\+A\+S\+K\+ID z\+Task\+Id, Z\+U\+I\+NT i\+Msg\+Lst\+Id, Z\+V\+O\+ID $\ast$pst\+Content\+Sec)
+\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_a56f61d9a97a4e7f257202565f35daa33}\label{mgf__ginfo_8h_a56f61d9a97a4e7f257202565f35daa33}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mgf\+\_\+\+G\+Info\+Fetch\+Via\+MsrpX} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_ae55508e0a4e431152b25879f4dedbdac}\label{mgf__ginfo_8h_ae55508e0a4e431152b25879f4dedbdac}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mgf\+\_\+\+G\+Info\+Fetch\+Via\+Msrp} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Trans\+Id, Z\+U\+I\+NT $\ast$pi\+G\+Info\+Id)
+\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_a1d058bb6905b50d5a8601082888b9b9b}\label{mgf__ginfo_8h_a1d058bb6905b50d5a8601082888b9b9b}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mgf\+\_\+\+Create\+G\+Info\+Push\+Text\+File} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_a5938ede2149695a3f36472077c171ac9}\label{mgf__ginfo_8h_a5938ede2149695a3f36472077c171ac9}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mgf\+\_\+\+Create\+G\+Info\+Push\+Coord\+File} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\item 
+\mbox{\Hypertarget{mgf__ginfo_8h_ad483f40a665ce2992e7165cadbac18aa}\label{mgf__ginfo_8h_ad483f40a665ce2992e7165cadbac18aa}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mgf\+\_\+\+Create\+G\+Info\+Push\+Both\+File} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Free\+Text, Z\+D\+O\+U\+B\+LE d\+Latitude, Z\+D\+O\+U\+B\+LE d\+Longitude, Z\+F\+L\+O\+AT f\+Radius, Z\+C\+H\+AR $\ast$pc\+Label, Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+GF Geolocation Information Interfaces. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mgf__ginfo_8h_a021236b4dc32806950f2ffa765805d10}\label{mgf__ginfo_8h_a021236b4dc32806950f2ffa765805d10}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!EN\_MGF\_GINFO\_TYPE@{EN\_MGF\_GINFO\_TYPE}}
+\index{EN\_MGF\_GINFO\_TYPE@{EN\_MGF\_GINFO\_TYPE}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MGF\_GINFO\_TYPE}{EN\_MGF\_GINFO\_TYPE}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}}}
+
+
+
+mgf geolocation information type 
+
+$<$ 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}\label{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!EN\_MGF\_GINFO\_TYPE@{EN\_MGF\_GINFO\_TYPE}}
+\index{EN\_MGF\_GINFO\_TYPE@{EN\_MGF\_GINFO\_TYPE}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MGF\_GINFO\_TYPE}{EN\_MGF\_GINFO\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}}}
+
+
+
+mgf geolocation information type 
+
+$<$ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mgf__ginfo_8h_a16510a56c51875cace740696e9e7fc30}\label{mgf__ginfo_8h_a16510a56c51875cace740696e9e7fc30}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoCancel@{Mgf\_GInfoCancel}}
+\index{Mgf\_GInfoCancel@{Mgf\_GInfoCancel}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoCancel()}{Mgf\_GInfoCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Cancel the geolocation information transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mgf__ginfo_8h_acacc63e0e981f29d96c38809af122729}\label{mgf__ginfo_8h_acacc63e0e981f29d96c38809af122729}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetContId@{Mgf\_GInfoGetContId}}
+\index{Mgf\_GInfoGetContId@{Mgf\_GInfoGetContId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetContId()}{Mgf\_GInfoGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get contribution-\/id of geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mgf__ginfo_8h_a2893b3fb554f572b46e47b7a9778f703}\label{mgf__ginfo_8h_a2893b3fb554f572b46e47b7a9778f703}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetConvId@{Mgf\_GInfoGetConvId}}
+\index{Mgf\_GInfoGetConvId@{Mgf\_GInfoGetConvId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetConvId()}{Mgf\_GInfoGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get conversation-\/id of geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mgf__ginfo_8h_a40d9fa7fa3365ae581ae8d82a23e6f70}\label{mgf__ginfo_8h_a40d9fa7fa3365ae581ae8d82a23e6f70}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetCookie@{Mgf\_GInfoGetCookie}}
+\index{Mgf\_GInfoGetCookie@{Mgf\_GInfoGetCookie}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetCookie()}{Mgf\_GInfoGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mgf\+\_\+\+G\+Info\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get user cookie in a geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a0d8b2d21c9024877d9d25b9cc0751f7f}\label{mgf__ginfo_8h_a0d8b2d21c9024877d9d25b9cc0751f7f}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetDateTime@{Mgf\_GInfoGetDateTime}}
+\index{Mgf\_GInfoGetDateTime@{Mgf\_GInfoGetDateTime}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetDateTime()}{Mgf\_GInfoGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get date time from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a4fd6d8b94e44a75f777b8ace1af49f2a}\label{mgf__ginfo_8h_a4fd6d8b94e44a75f777b8ace1af49f2a}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetDeviceId@{Mgf\_GInfoGetDeviceId}}
+\index{Mgf\_GInfoGetDeviceId@{Mgf\_GInfoGetDeviceId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetDeviceId()}{Mgf\_GInfoGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+@brlef M\+GF Get device id of geolocation information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mgf__ginfo_8h_a23d6103baf8ee5a207a7383c67a8fc44}\label{mgf__ginfo_8h_a23d6103baf8ee5a207a7383c67a8fc44}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetFreeText@{Mgf\_GInfoGetFreeText}}
+\index{Mgf\_GInfoGetFreeText@{Mgf\_GInfoGetFreeText}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetFreeText()}{Mgf\_GInfoGetFreeText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Free\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get free text from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & free text. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a77f27149a017299f164c7130fb41ca2d}\label{mgf__ginfo_8h_a77f27149a017299f164c7130fb41ca2d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetGrpChatId@{Mgf\_GInfoGetGrpChatId}}
+\index{Mgf\_GInfoGetGrpChatId@{Mgf\_GInfoGetGrpChatId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetGrpChatId()}{Mgf\_GInfoGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get group chat id from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Geolocation} & group chat id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a4ac761da20d8f51eca77344c51d14f1a}\label{mgf__ginfo_8h_a4ac761da20d8f51eca77344c51d14f1a}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetImdnId@{Mgf\_GInfoGetImdnId}}
+\index{Mgf\_GInfoGetImdnId@{Mgf\_GInfoGetImdnId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetImdnId()}{Mgf\_GInfoGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get imdn idof IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The imdn id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mgf__ginfo_8h_a86ffa06ed9716d20e6695a02d8bfe430}\label{mgf__ginfo_8h_a86ffa06ed9716d20e6695a02d8bfe430}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetIsFocus@{Mgf\_GInfoGetIsFocus}}
+\index{Mgf\_GInfoGetIsFocus@{Mgf\_GInfoGetIsFocus}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetIsFocus()}{Mgf\_GInfoGetIsFocus()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Get\+Is\+Focus (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get Is\+Focus flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE geolocation in group chat \\
+\hline
+{\em return} & Z\+F\+A\+L\+SE geolocation in 1-\/1 chat. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a5c747ed74c54288aeb67d58b431a300c}\label{mgf__ginfo_8h_a5c747ed74c54288aeb67d58b431a300c}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetLabel@{Mgf\_GInfoGetLabel}}
+\index{Mgf\_GInfoGetLabel@{Mgf\_GInfoGetLabel}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetLabel()}{Mgf\_GInfoGetLabel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Label (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get label string from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & label string. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a5adce5efd7544201610b4664ba74b5cb}\label{mgf__ginfo_8h_a5adce5efd7544201610b4664ba74b5cb}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetLatitude@{Mgf\_GInfoGetLatitude}}
+\index{Mgf\_GInfoGetLatitude@{Mgf\_GInfoGetLatitude}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetLatitude()}{Mgf\_GInfoGetLatitude()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+D\+O\+U\+B\+LE Mgf\+\_\+\+G\+Info\+Get\+Latitude (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get latitude of user place from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & latitude of user place. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a57031e3fa4ede9fdb515cadbc09ada97}\label{mgf__ginfo_8h_a57031e3fa4ede9fdb515cadbc09ada97}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetLongitude@{Mgf\_GInfoGetLongitude}}
+\index{Mgf\_GInfoGetLongitude@{Mgf\_GInfoGetLongitude}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetLongitude()}{Mgf\_GInfoGetLongitude()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+D\+O\+U\+B\+LE Mgf\+\_\+\+G\+Info\+Get\+Longitude (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get longitude of user place from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & longitude of user place. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aed15d85ea2857643044bb3ca00aea406}\label{mgf__ginfo_8h_aed15d85ea2857643044bb3ca00aea406}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetOrigPartp@{Mgf\_GInfoGetOrigPartp}}
+\index{Mgf\_GInfoGetOrigPartp@{Mgf\_GInfoGetOrigPartp}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetOrigPartp()}{Mgf\_GInfoGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get original participant which initiate the geolocation share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a7fe09b9d1cdd23f5899358619653b187}\label{mgf__ginfo_8h_a7fe09b9d1cdd23f5899358619653b187}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetOwnerPartp@{Mgf\_GInfoGetOwnerPartp}}
+\index{Mgf\_GInfoGetOwnerPartp@{Mgf\_GInfoGetOwnerPartp}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetOwnerPartp()}{Mgf\_GInfoGetOwnerPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Owner\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get participant uri which is the owner of geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a171dee31c6ce5a7e3c3d38a41c555822}\label{mgf__ginfo_8h_a171dee31c6ce5a7e3c3d38a41c555822}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetPartp@{Mgf\_GInfoGetPartp}}
+\index{Mgf\_GInfoGetPartp@{Mgf\_GInfoGetPartp}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetPartp()}{Mgf\_GInfoGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get participant from the geolocation share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a706d7333826504ba803b76225efd177b}\label{mgf__ginfo_8h_a706d7333826504ba803b76225efd177b}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetPartpLstId@{Mgf\_GInfoGetPartpLstId}}
+\index{Mgf\_GInfoGetPartpLstId@{Mgf\_GInfoGetPartpLstId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetPartpLstId()}{Mgf\_GInfoGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get participant list id from the geolocation share. 
+
+The participant list id is all remote clients who shared geolocation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant list id. The caller is responsible for freeing it by Msf\+\_\+\+Partp\+Lst\+Delete \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ac5cc624da148e7e3844e2cdc68596bc9}\label{mgf__ginfo_8h_ac5cc624da148e7e3844e2cdc68596bc9}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetPartpType@{Mgf\_GInfoGetPartpType}}
+\index{Mgf\_GInfoGetPartpType@{Mgf\_GInfoGetPartpType}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetPartpType()}{Mgf\_GInfoGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get participant type from the geolocation share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im participant, E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyRetVals}
+If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by Mgf\+\_\+\+G\+Info\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by Mgf\+\_\+\+G\+Info\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by Mgf\+\_\+\+G\+Info\+Get\+Partp\+Lst\+Id. \mbox{\Hypertarget{mgf__ginfo_8h_a605f9f4100851e7ad1900f94059c464b}\label{mgf__ginfo_8h_a605f9f4100851e7ad1900f94059c464b}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetRadius@{Mgf\_GInfoGetRadius}}
+\index{Mgf\_GInfoGetRadius@{Mgf\_GInfoGetRadius}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetRadius()}{Mgf\_GInfoGetRadius()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+F\+L\+O\+AT Mgf\+\_\+\+G\+Info\+Get\+Radius (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get radius of user place from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & radius of user place. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a33a88551ef2ea8211190dab035dc3260}\label{mgf__ginfo_8h_a33a88551ef2ea8211190dab035dc3260}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetSubject@{Mgf\_GInfoGetSubject}}
+\index{Mgf\_GInfoGetSubject@{Mgf\_GInfoGetSubject}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetSubject()}{Mgf\_GInfoGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get subject from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Geolocation} & Subject. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aed035d726b42f1fdadfb4235a866e75b}\label{mgf__ginfo_8h_aed035d726b42f1fdadfb4235a866e75b}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetTimestamp@{Mgf\_GInfoGetTimestamp}}
+\index{Mgf\_GInfoGetTimestamp@{Mgf\_GInfoGetTimestamp}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetTimestamp()}{Mgf\_GInfoGetTimestamp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mgf\+\_\+\+G\+Info\+Get\+Timestamp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get timestamp from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & timestamp. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ae5839401cb3fba591e49e38f9dfcbae8}\label{mgf__ginfo_8h_ae5839401cb3fba591e49e38f9dfcbae8}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetTrsfId@{Mgf\_GInfoGetTrsfId}}
+\index{Mgf\_GInfoGetTrsfId@{Mgf\_GInfoGetTrsfId}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetTrsfId()}{Mgf\_GInfoGetTrsfId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mgf\+\_\+\+G\+Info\+Get\+Trsf\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get file-\/transfer-\/id string from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em file-\/transfer-\/id} & string. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_abc376f9d02da12eeed1c57bb2941d5c5}\label{mgf__ginfo_8h_abc376f9d02da12eeed1c57bb2941d5c5}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetType@{Mgf\_GInfoGetType}}
+\index{Mgf\_GInfoGetType@{Mgf\_GInfoGetType}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetType()}{Mgf\_GInfoGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mgf\+\_\+\+G\+Info\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get geolocation information type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of geolocation information, see \mbox{\hyperlink{mgf__ginfo_8h_a021236b4dc32806950f2ffa765805d10}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aea5056b1a737a91b50229b76563f8a2e}\label{mgf__ginfo_8h_aea5056b1a737a91b50229b76563f8a2e}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoGetUntilTime@{Mgf\_GInfoGetUntilTime}}
+\index{Mgf\_GInfoGetUntilTime@{Mgf\_GInfoGetUntilTime}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoGetUntilTime()}{Mgf\_GInfoGetUntilTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mgf\+\_\+\+G\+Info\+Get\+Until\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get until time from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & until time. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_af17a4ba18b4ea9a5b94d26ff12c44337}\label{mgf__ginfo_8h_af17a4ba18b4ea9a5b94d26ff12c44337}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoHasCcInd@{Mgf\_GInfoHasCcInd}}
+\index{Mgf\_GInfoHasCcInd@{Mgf\_GInfoHasCcInd}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoHasCcInd()}{Mgf\_GInfoHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get carbon copy message indication flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has carbon copy message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aeca2439afe43082fc3258101725a803f}\label{mgf__ginfo_8h_aeca2439afe43082fc3258101725a803f}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoHasDirectInd@{Mgf\_GInfoHasDirectInd}}
+\index{Mgf\_GInfoHasDirectInd@{Mgf\_GInfoHasDirectInd}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoHasDirectInd()}{Mgf\_GInfoHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get direct message indication flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has direct message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a97b397db75f5cabc619ab9f0ba7a2b95}\label{mgf__ginfo_8h_a97b397db75f5cabc619ab9f0ba7a2b95}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoHasLabel@{Mgf\_GInfoHasLabel}}
+\index{Mgf\_GInfoHasLabel@{Mgf\_GInfoHasLabel}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoHasLabel()}{Mgf\_GInfoHasLabel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Has\+Label (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get label flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it is a permanent location, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a32114ee1d1c74aeec15b014cad0add5e}\label{mgf__ginfo_8h_a32114ee1d1c74aeec15b014cad0add5e}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoHasPubInd@{Mgf\_GInfoHasPubInd}}
+\index{Mgf\_GInfoHasPubInd@{Mgf\_GInfoHasPubInd}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoHasPubInd()}{Mgf\_GInfoHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get public message indication flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aae9c1e2b6bd5840c40bcb2bc7cd8958d}\label{mgf__ginfo_8h_aae9c1e2b6bd5840c40bcb2bc7cd8958d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoHasSilenceInd@{Mgf\_GInfoHasSilenceInd}}
+\index{Mgf\_GInfoHasSilenceInd@{Mgf\_GInfoHasSilenceInd}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoHasSilenceInd()}{Mgf\_GInfoHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get silence indication flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has silence indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a2e8f07e479dde15570b6019da90dbc2f}\label{mgf__ginfo_8h_a2e8f07e479dde15570b6019da90dbc2f}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoHasSpamInd@{Mgf\_GInfoHasSpamInd}}
+\index{Mgf\_GInfoHasSpamInd@{Mgf\_GInfoHasSpamInd}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoHasSpamInd()}{Mgf\_GInfoHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+G\+Info\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get spam message indication flag from geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has spam message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a0fb876d4d4f8a16236f57e02ba2a44fb}\label{mgf__ginfo_8h_a0fb876d4d4f8a16236f57e02ba2a44fb}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoLoadData@{Mgf\_GInfoLoadData}}
+\index{Mgf\_GInfoLoadData@{Mgf\_GInfoLoadData}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoLoadData()}{Mgf\_GInfoLoadData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Load\+Data (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Load geolocation information data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Data} & The geolocation information data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Load geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Load geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a3b26de77588616b6117b0158e7704d84}\label{mgf__ginfo_8h_a3b26de77588616b6117b0158e7704d84}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPullAcpt@{Mgf\_GInfoPullAcpt}}
+\index{Mgf\_GInfoPullAcpt@{Mgf\_GInfoPullAcpt}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPullAcpt()}{Mgf\_GInfoPullAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Pull\+Acpt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id,  }\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label }\end{DoxyParamCaption})}
+
+
+
+M\+GF Accept the pull request from one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Type} & The geolocation information type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a2c0dc3f48a39c295cf41782771ea94c2}\label{mgf__ginfo_8h_a2c0dc3f48a39c295cf41782771ea94c2}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPullDeny@{Mgf\_GInfoPullDeny}}
+\index{Mgf\_GInfoPullDeny@{Mgf\_GInfoPullDeny}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPullDeny()}{Mgf\_GInfoPullDeny()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Pull\+Deny (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Deny the pull request from one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Decline successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Decline failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a7577c0a159d99346088fbac540835e91}\label{mgf__ginfo_8h_a7577c0a159d99346088fbac540835e91}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPullViaFt@{Mgf\_GInfoPullViaFt}}
+\index{Mgf\_GInfoPullViaFt@{Mgf\_GInfoPullViaFt}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPullViaFt()}{Mgf\_GInfoPullViaFt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Pull\+Via\+Ft (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Pull geolocation information from one participant via file tranfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Pull geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Pull geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a837c469797e966cbccbf168823b4ba27}\label{mgf__ginfo_8h_a837c469797e966cbccbf168823b4ba27}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPullViaHttp@{Mgf\_GInfoPullViaHttp}}
+\index{Mgf\_GInfoPullViaHttp@{Mgf\_GInfoPullViaHttp}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPullViaHttp()}{Mgf\_GInfoPullViaHttp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Pull\+Via\+Http (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Pull geolocation information from one participant via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Pull geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Pull geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a86f26ac115b534b859cbb461974e67f9}\label{mgf__ginfo_8h_a86f26ac115b534b859cbb461974e67f9}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushAcpt@{Mgf\_GInfoPushAcpt}}
+\index{Mgf\_GInfoPushAcpt@{Mgf\_GInfoPushAcpt}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushAcpt()}{Mgf\_GInfoPushAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+Acpt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Accept the push request from one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ac25101de5addc9902832f2e5b672ca74}\label{mgf__ginfo_8h_ac25101de5addc9902832f2e5b672ca74}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushBoth@{Mgf\_GInfoPushBoth}}
+\index{Mgf\_GInfoPushBoth@{Mgf\_GInfoPushBoth}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushBoth()}{Mgf\_GInfoPushBoth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+Both (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push both free text and coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_adecfa0e8517a8afe63fff9d32e657ad8}\label{mgf__ginfo_8h_adecfa0e8517a8afe63fff9d32e657ad8}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushBothP@{Mgf\_GInfoPushBothP}}
+\index{Mgf\_GInfoPushBothP@{Mgf\_GInfoPushBothP}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushBothP()}{Mgf\_GInfoPushBothP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+BothP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push both free text and coordinate to public account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a4e92387607882139884f06de439c780e}\label{mgf__ginfo_8h_a4e92387607882139884f06de439c780e}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushBothS@{Mgf\_GInfoPushBothS}}
+\index{Mgf\_GInfoPushBothS@{Mgf\_GInfoPushBothS}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushBothS()}{Mgf\_GInfoPushBothS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+BothS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push both free spam text and spam coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_adb523478bdc0a36d65122a0768d4d97c}\label{mgf__ginfo_8h_adb523478bdc0a36d65122a0768d4d97c}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushBothU@{Mgf\_GInfoPushBothU}}
+\index{Mgf\_GInfoPushBothU@{Mgf\_GInfoPushBothU}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushBothU()}{Mgf\_GInfoPushBothU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+BothU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push both free text and coordinate to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a72368e8644241e569c59aef4f813be8d}\label{mgf__ginfo_8h_a72368e8644241e569c59aef4f813be8d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushBothX@{Mgf\_GInfoPushBothX}}
+\index{Mgf\_GInfoPushBothX@{Mgf\_GInfoPushBothX}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushBothX()}{Mgf\_GInfoPushBothX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+BothX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push both free text and coordinate to group chat. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_af7509060bc0be48ad4e5b2e758a2ff1a}\label{mgf__ginfo_8h_af7509060bc0be48ad4e5b2e758a2ff1a}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushCoord@{Mgf\_GInfoPushCoord}}
+\index{Mgf\_GInfoPushCoord@{Mgf\_GInfoPushCoord}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushCoord()}{Mgf\_GInfoPushCoord()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+Coord (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ade4d50b012fefc5a85e21e60bd4b97b3}\label{mgf__ginfo_8h_ade4d50b012fefc5a85e21e60bd4b97b3}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushCoordP@{Mgf\_GInfoPushCoordP}}
+\index{Mgf\_GInfoPushCoordP@{Mgf\_GInfoPushCoordP}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushCoordP()}{Mgf\_GInfoPushCoordP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+CoordP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push coordinate to public account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ae320770d15a6890d36101d8ac28f7157}\label{mgf__ginfo_8h_ae320770d15a6890d36101d8ac28f7157}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushCoordS@{Mgf\_GInfoPushCoordS}}
+\index{Mgf\_GInfoPushCoordS@{Mgf\_GInfoPushCoordS}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushCoordS()}{Mgf\_GInfoPushCoordS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+CoordS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push spam coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a7d985d464283d7a48f1941ae8e1d2aaf}\label{mgf__ginfo_8h_a7d985d464283d7a48f1941ae8e1d2aaf}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushCoordU@{Mgf\_GInfoPushCoordU}}
+\index{Mgf\_GInfoPushCoordU@{Mgf\_GInfoPushCoordU}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushCoordU()}{Mgf\_GInfoPushCoordU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+CoordU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push coordinate to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a97fef00aaede35396b65775349eb2adf}\label{mgf__ginfo_8h_a97fef00aaede35396b65775349eb2adf}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushCoordX@{Mgf\_GInfoPushCoordX}}
+\index{Mgf\_GInfoPushCoordX@{Mgf\_GInfoPushCoordX}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushCoordX()}{Mgf\_GInfoPushCoordX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+CoordX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push coordinate to group chat. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a944c566e7f01750df3f7f7b02e8c9762}\label{mgf__ginfo_8h_a944c566e7f01750df3f7f7b02e8c9762}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushDeny@{Mgf\_GInfoPushDeny}}
+\index{Mgf\_GInfoPushDeny@{Mgf\_GInfoPushDeny}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushDeny()}{Mgf\_GInfoPushDeny()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+Deny (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Deny the push request from one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Decline successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Decline failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a1f199fa212bdedda76e94c8167e5a7cf}\label{mgf__ginfo_8h_a1f199fa212bdedda76e94c8167e5a7cf}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushText@{Mgf\_GInfoPushText}}
+\index{Mgf\_GInfoPushText@{Mgf\_GInfoPushText}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushText()}{Mgf\_GInfoPushText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+Text (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push free text to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a52d1289682c0ae3aa59bad3687c6fcca}\label{mgf__ginfo_8h_a52d1289682c0ae3aa59bad3687c6fcca}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushTextP@{Mgf\_GInfoPushTextP}}
+\index{Mgf\_GInfoPushTextP@{Mgf\_GInfoPushTextP}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushTextP()}{Mgf\_GInfoPushTextP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+TextP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push free text to public account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aa15f2fc06c0bdbb31b8a0301500ff29d}\label{mgf__ginfo_8h_aa15f2fc06c0bdbb31b8a0301500ff29d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushTextS@{Mgf\_GInfoPushTextS}}
+\index{Mgf\_GInfoPushTextS@{Mgf\_GInfoPushTextS}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushTextS()}{Mgf\_GInfoPushTextS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+TextS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push spam free text to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aed715887af53556e77af8f55512e6d2e}\label{mgf__ginfo_8h_aed715887af53556e77af8f55512e6d2e}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushTextU@{Mgf\_GInfoPushTextU}}
+\index{Mgf\_GInfoPushTextU@{Mgf\_GInfoPushTextU}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushTextU()}{Mgf\_GInfoPushTextU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+TextU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push free text to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a5b194537952e8a9f1d707febd8b708de}\label{mgf__ginfo_8h_a5b194537952e8a9f1d707febd8b708de}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoPushTextX@{Mgf\_GInfoPushTextX}}
+\index{Mgf\_GInfoPushTextX@{Mgf\_GInfoPushTextX}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoPushTextX()}{Mgf\_GInfoPushTextX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Push\+TextX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Push free text to group chat. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a9e9bf23ac66169c67a7a964b395031e1}\label{mgf__ginfo_8h_a9e9bf23ac66169c67a7a964b395031e1}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRelease@{Mgf\_GInfoRelease}}
+\index{Mgf\_GInfoRelease@{Mgf\_GInfoRelease}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRelease()}{Mgf\_GInfoRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mgf\+\_\+\+G\+Info\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Release the geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mgf__ginfo_8h_ae1411cbf0706add99b7529629f3d5239}\label{mgf__ginfo_8h_ae1411cbf0706add99b7529629f3d5239}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushBoth@{Mgf\_GInfoRePushBoth}}
+\index{Mgf\_GInfoRePushBoth@{Mgf\_GInfoRePushBoth}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushBoth()}{Mgf\_GInfoRePushBoth()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+Both (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push both free text and coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_abaf8675f89e96984e83675d1f671558d}\label{mgf__ginfo_8h_abaf8675f89e96984e83675d1f671558d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushBothP@{Mgf\_GInfoRePushBothP}}
+\index{Mgf\_GInfoRePushBothP@{Mgf\_GInfoRePushBothP}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushBothP()}{Mgf\_GInfoRePushBothP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+BothP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push both free text and coordinate to public account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a0ed7fef8294c082c1963d0fce23b45fc}\label{mgf__ginfo_8h_a0ed7fef8294c082c1963d0fce23b45fc}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushBothS@{Mgf\_GInfoRePushBothS}}
+\index{Mgf\_GInfoRePushBothS@{Mgf\_GInfoRePushBothS}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushBothS()}{Mgf\_GInfoRePushBothS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+BothS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push both spam free text and spam coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam oinformation type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aa8e9b1bc6e12ede6712944bbc8a6ccb1}\label{mgf__ginfo_8h_aa8e9b1bc6e12ede6712944bbc8a6ccb1}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushBothU@{Mgf\_GInfoRePushBothU}}
+\index{Mgf\_GInfoRePushBothU@{Mgf\_GInfoRePushBothU}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushBothU()}{Mgf\_GInfoRePushBothU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+BothU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push both free text and coordinate to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aa5e4b3c2c5dea851da5b1bea0fb333f2}\label{mgf__ginfo_8h_aa5e4b3c2c5dea851da5b1bea0fb333f2}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushBothX@{Mgf\_GInfoRePushBothX}}
+\index{Mgf\_GInfoRePushBothX@{Mgf\_GInfoRePushBothX}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushBothX()}{Mgf\_GInfoRePushBothX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+BothX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push both free text and coordinate to group chat. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aaa0533ae386fbc67b4869925f41a206a}\label{mgf__ginfo_8h_aaa0533ae386fbc67b4869925f41a206a}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushCoord@{Mgf\_GInfoRePushCoord}}
+\index{Mgf\_GInfoRePushCoord@{Mgf\_GInfoRePushCoord}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushCoord()}{Mgf\_GInfoRePushCoord()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+Coord (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF re\+Push coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aa620d26c99f18e0d1aaafa3b82fd4813}\label{mgf__ginfo_8h_aa620d26c99f18e0d1aaafa3b82fd4813}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushCoordP@{Mgf\_GInfoRePushCoordP}}
+\index{Mgf\_GInfoRePushCoordP@{Mgf\_GInfoRePushCoordP}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushCoordP()}{Mgf\_GInfoRePushCoordP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push coordinate to public account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ab5975f0277111143400f9973183949e8}\label{mgf__ginfo_8h_ab5975f0277111143400f9973183949e8}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushCoordS@{Mgf\_GInfoRePushCoordS}}
+\index{Mgf\_GInfoRePushCoordS@{Mgf\_GInfoRePushCoordS}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushCoordS()}{Mgf\_GInfoRePushCoordS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push spam coordinate to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_adbb08629eb31e696ee54231a935bb21e}\label{mgf__ginfo_8h_adbb08629eb31e696ee54231a935bb21e}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushCoordU@{Mgf\_GInfoRePushCoordU}}
+\index{Mgf\_GInfoRePushCoordU@{Mgf\_GInfoRePushCoordU}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushCoordU()}{Mgf\_GInfoRePushCoordU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push coordinate to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a3e14eb58f326c8860217d5a317768f02}\label{mgf__ginfo_8h_a3e14eb58f326c8860217d5a317768f02}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushCoordX@{Mgf\_GInfoRePushCoordX}}
+\index{Mgf\_GInfoRePushCoordX@{Mgf\_GInfoRePushCoordX}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushCoordX()}{Mgf\_GInfoRePushCoordX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+CoordX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Re\+Push coordinate to group chat. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+Note\+: if radius value is equal to 0, the coordinate is a point, if radius value is bigger than 0, the coordinate is a circle.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a634404db2736e87ee0ce5ced342fe272}\label{mgf__ginfo_8h_a634404db2736e87ee0ce5ced342fe272}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushText@{Mgf\_GInfoRePushText}}
+\index{Mgf\_GInfoRePushText@{Mgf\_GInfoRePushText}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushText()}{Mgf\_GInfoRePushText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+Text (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF re\+Push free text to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_aeb4de529f243f2d014bfd7c93aafaab8}\label{mgf__ginfo_8h_aeb4de529f243f2d014bfd7c93aafaab8}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushTextP@{Mgf\_GInfoRePushTextP}}
+\index{Mgf\_GInfoRePushTextP@{Mgf\_GInfoRePushTextP}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushTextP()}{Mgf\_GInfoRePushTextP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+TextP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF re\+Push free text to public account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ab3498d161d4128c9df948a7038d3300c}\label{mgf__ginfo_8h_ab3498d161d4128c9df948a7038d3300c}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushTextS@{Mgf\_GInfoRePushTextS}}
+\index{Mgf\_GInfoRePushTextS@{Mgf\_GInfoRePushTextS}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushTextS()}{Mgf\_GInfoRePushTextS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+TextS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF re\+Push spam free text to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_add35416d03288964175e90c13ce03596}\label{mgf__ginfo_8h_add35416d03288964175e90c13ce03596}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushTextU@{Mgf\_GInfoRePushTextU}}
+\index{Mgf\_GInfoRePushTextU@{Mgf\_GInfoRePushTextU}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushTextU()}{Mgf\_GInfoRePushTextU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+TextU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF re\+Push free text to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_ae3dcdfe0fdfcf95cb0bc9daae336a07d}\label{mgf__ginfo_8h_ae3dcdfe0fdfcf95cb0bc9daae336a07d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoRePushTextX@{Mgf\_GInfoRePushTextX}}
+\index{Mgf\_GInfoRePushTextX@{Mgf\_GInfoRePushTextX}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoRePushTextX()}{Mgf\_GInfoRePushTextX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Re\+Push\+TextX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Trsf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Msg\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF re\+Push free text to group chat. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The user subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The The group chat Session Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Trsf\+Id} & The resend file-\/transfer-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Msg\+Id} & The resend imdn message-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Push geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Push geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a1ae406249cdc4c0cf0d035666fdf439d}\label{mgf__ginfo_8h_a1ae406249cdc4c0cf0d035666fdf439d}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoSaveData@{Mgf\_GInfoSaveData}}
+\index{Mgf\_GInfoSaveData@{Mgf\_GInfoSaveData}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoSaveData()}{Mgf\_GInfoSaveData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Save\+Data (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Free\+Text,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Latitude,  }\item[{Z\+D\+O\+U\+B\+LE}]{d\+Longitude,  }\item[{Z\+F\+L\+O\+AT}]{f\+Radius,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Label,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+G\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Save geolocation information data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Type} & The geolocation information type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mgf__ginfo_8h_a3f3fe1703713bc9aa6457467502a863d}{E\+N\+\_\+\+M\+G\+F\+\_\+\+G\+I\+N\+F\+O\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Free\+Text} & The free text. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Latitude} & The latitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em d\+Longitude} & The longitude of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Radius} & The radius of user place. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Label} & The label string, if Z\+N\+U\+LL indicate user\textquotesingle{}s own position, else other position. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Data} & The geolocation information data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+G\+Info\+Id} & The geolocation information id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Save geolocation information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Save geolocation information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ginfo_8h_a87eceacd48e9d101e299e0826b0e2555}\label{mgf__ginfo_8h_a87eceacd48e9d101e299e0826b0e2555}} 
+\index{mgf\_ginfo.h@{mgf\_ginfo.h}!Mgf\_GInfoSetCookie@{Mgf\_GInfoSetCookie}}
+\index{Mgf\_GInfoSetCookie@{Mgf\_GInfoSetCookie}!mgf\_ginfo.h@{mgf\_ginfo.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_GInfoSetCookie()}{Mgf\_GInfoSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+G\+Info\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+G\+Info\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+GF Set user cookie in a geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+G\+Info\+Id} & The geolocation information id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}

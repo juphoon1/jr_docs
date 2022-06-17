@@ -1,0 +1,1720 @@
+\hypertarget{msf__partp_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/framework/msf/msf\+\_\+partp.h File Reference}
+\label{msf__partp_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/framework/msf/msf\_partp.h@{/media/psf/Home/code/rcs/sdk/lemon/src/framework/msf/msf\_partp.h}}
+
+
+M\+SF Participant Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{msf__partp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msf__partp_8h_aad2fb3a2772ee008aead8902b504c252}\label{msf__partp_8h_aad2fb3a2772ee008aead8902b504c252}} 
+\#define {\bfseries M\+S\+F\+\_\+\+D\+F\+T\+\_\+\+T\+M\+R\+\_\+\+W\+A\+I\+T\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+R\+E\+F\+R\+E\+\_\+\+L\+EN}~120
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{msf__partp_8h_a230e775811d3034e7adb9509cc6aa2f3}\label{msf__partp_8h_a230e775811d3034e7adb9509cc6aa2f3}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35ea}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{msf__partp_8h_a230e775811d3034e7adb9509cc6aa2f3}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant list type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_a0c05a348114842ed35368a11cfd934e4}\label{msf__partp_8h_a0c05a348114842ed35368a11cfd934e4}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{msf__partp_8h_a0c05a348114842ed35368a11cfd934e4}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant status type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_a2bfe140f052dba35475f1e7694d320d0}\label{msf__partp_8h_a2bfe140f052dba35475f1e7694d320d0}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+M\+C\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}} {\bfseries E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+M\+C\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{msf__partp_8h_aed0bd821c20791e33934bea14a294e46}\label{msf__partp_8h_aed0bd821c20791e33934bea14a294e46}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{msf__partp_8h_aed0bd821c20791e33934bea14a294e46}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant roles type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_a9e218fe385773b8b542f85370e368fa2}\label{msf__partp_8h_a9e218fe385773b8b542f85370e368fa2}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{msf__partp_8h_a9e218fe385773b8b542f85370e368fa2}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant etype type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_abf3f2c2633ac9933ede9b5f379ec50b8}\label{msf__partp_8h_abf3f2c2633ac9933ede9b5f379ec50b8}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_a09e06a74d95e611d01315f8d2a18e0bb}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{msf__partp_8h_abf3f2c2633ac9933ede9b5f379ec50b8}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant composing status type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_a8928f33d5ff6f22d3ff70d8e716cddf1}\label{msf__partp_8h_a8928f33d5ff6f22d3ff70d8e716cddf1}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eee}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{msf__partp_8h_a8928f33d5ff6f22d3ff70d8e716cddf1}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant access network type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_ae1cc121ed6b61d7ad206643e5494f028}\label{msf__partp_8h_ae1cc121ed6b61d7ad206643e5494f028}} 
+typedef enum \mbox{\hyperlink{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON}} \mbox{\hyperlink{msf__partp_8h_ae1cc121ed6b61d7ad206643e5494f028}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON}}
+\begin{DoxyCompactList}\small\item\em M\+SF participant status fail reason. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35ea}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa8949b06cb112cb18c08e1c76e41cf2e0}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE}}, 
+\mbox{\hyperlink{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa97c02e650a44ac54064da12f24edd967}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP}}, 
+\mbox{\hyperlink{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa2fc6d1d9cf928939bdf253b8a84fdb63}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant list type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3af494307b646a63478f45924d3d916b09}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+P\+E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3ab888b01ac34ed6c8a0513ffe96075ced}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+A\+C\+T\+I\+VE}}, 
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a4136984ca6a56a044efab23edcca20d9}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+I\+N\+A\+C\+I\+T\+VE}}, 
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a20d9e4ed9dcf1d43cf6921b10a4f5aee}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+D\+E\+P\+A\+R\+T\+ED}}, 
+\newline
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a71132fac574e87849182382fb0208b9a}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+B\+O\+O\+T\+ED}}, 
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3afc6d8860f554f6bbffc5a373d4fa5d18}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+F\+A\+I\+L\+ED}}, 
+\mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a2691c4b3946cdd6cf4886146664161f4}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+D\+E\+L\+E\+T\+ED}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant status type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+M\+C\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a162badeba75514f64ee8c32401ac11c1}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG}}, 
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a0f8293e5955669f847dc6fbee9836589}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+IN}}, 
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463ada09e887a73727aed99f6c3dc55d27ce}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+O\+UT}}, 
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a6709064c9bb456051aef431fd646c268}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a6bb6f21af128c39d0e4adf41851881cf}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED}}, 
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3d9225e1f4a9d428d07d869899a33fc7}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+N\+H\+O\+LD}}, 
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3a23584ae869e3eb937ebd422abeb077}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+U\+T\+ED}}, 
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a09695b1a13781ef69e447ade8b967a9a}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3fa01d5abec9169b65f7efc63c6ec660}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED}}
+ \}
+\item 
+enum \mbox{\hyperlink{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17a4cd07f88e6d5e8dd6a048ba5fae65735}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17ad4aa6c8975750bfd6fc1486dc33671b7}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+C\+H\+A\+I\+R\+M\+AN}}, 
+\mbox{\hyperlink{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17a8085c8c8c289cf2fc9dbe37307e79967}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+P\+A\+R\+TP}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant roles type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97a80c9c8ae221fef0f1501fc18d3905260}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97aa9ca37e244da5a52d1156c003a7cccf9}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+G\+P\+M\+A\+N\+A\+GE}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant etype type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{msf__partp_8h_a09e06a74d95e611d01315f8d2a18e0bb}\label{msf__partp_8h_a09e06a74d95e611d01315f8d2a18e0bb}} 
+enum \mbox{\hyperlink{msf__partp_8h_a09e06a74d95e611d01315f8d2a18e0bb}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN}, 
+{\bfseries E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+I\+D\+LE}, 
+{\bfseries E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+A\+C\+T\+I\+VE}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant composing status type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eee}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeea2f916e268b962377b2f0ab6f9ba54231}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+O\+T\+H\+ER}}, 
+\mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeaec99026a82d10ce3f721714606004337}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+A\+PP}}, 
+\mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeaf23289465b48e789c11af57e57cf1ddd}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+V\+O\+L\+TE}}, 
+\mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeabb12694d60cddbe85d8342f540f675ee}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+CS}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant access network type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON}} \{ \mbox{\hyperlink{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0abf0722980b9a13e67ba94fcf2e131829}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+NO}}, 
+\mbox{\hyperlink{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0aa3027f2bca75673101900b0ec5a3dc47}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+N\+O\+T\+\_\+\+M\+E\+M\+B\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+SF participant status fail reason. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a1bf12eea388ed4ab981012e989c5aa04}{Msf\+\_\+\+Partp\+Lst\+Create}} (Z\+U\+I\+NT i\+Type, Z\+U\+I\+NT $\ast$pi\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Create a participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a6944c523f5f8237584b943c00cdb53c2}{Msf\+\_\+\+Partp\+Lst\+CreateC}} (Z\+C\+B\+UF z\+Mem\+Buf, Z\+U\+I\+NT i\+Type, Z\+U\+I\+NT $\ast$pi\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Create a participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a1f7d93ed7de2a147b6dac07ab3618a7d}{Msf\+\_\+\+Partp\+Lst\+Delete}} (Z\+U\+I\+NT i\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Delete a participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_ad89ba77e69475a42622375060d9bff8b}{Msf\+\_\+\+Partp\+Lst\+Clone}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+U\+I\+NT $\ast$pi\+New\+Lst)
+\begin{DoxyCompactList}\small\item\em Clone a participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a63ed3904ae9ca1d8455f9119ae483388}{Msf\+\_\+\+Partp\+Lst\+CloneC}} (Z\+C\+B\+UF z\+Mem\+Buf, Z\+U\+I\+NT i\+Lst\+Id, Z\+U\+I\+NT $\ast$pi\+New\+Lst)
+\begin{DoxyCompactList}\small\item\em Clone a participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_aa7c7e5f309030af4c38faf2c7d6e2460}{Msf\+\_\+\+Partp\+Lst\+Clear}} (Z\+U\+I\+NT i\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Clear all participants from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a64d5d5a130efd6ba4de1ca1f24abc2c0}{Msf\+\_\+\+Partp\+Lst\+Get\+Type}} (Z\+U\+I\+NT i\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a469d739337b385c51442c70217d3ec31}{Msf\+\_\+\+Partp\+Lst\+Set\+Type}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Set participant list type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a7237900c20d874181aa0817b57c7fbb5}{Msf\+\_\+\+Partp\+Lst\+Get\+Size}} (Z\+U\+I\+NT i\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a4d53b1802bd6b691984d706808ae637c}{Msf\+\_\+\+Partp\+Lst\+Get\+Partp}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_acd426141e91229f81c94c150a6b2f45c}{Msf\+\_\+\+Partp\+Lst\+Add\+Partp}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Name, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Add a participant into participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a9da9bcfd0a8dd8eaf4d32d92dbf61b21}{Msf\+\_\+\+Partp\+Lst\+Add\+PartpX}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Name, Z\+U\+I\+NT i\+Name\+Len, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT i\+Uri\+Len, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Add a participant into participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_aa505670c0a31d4516d808acaa11656cf}{Msf\+\_\+\+Partp\+Lst\+Add\+Partp\+Lst}} (Z\+U\+I\+NT i\+Lst\+Dst\+Id, Z\+U\+I\+NT i\+Lst\+Src\+Id)
+\begin{DoxyCompactList}\small\item\em Add participant list into participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a6963993eccf8f9f831d2c877d5308b02}{Msf\+\_\+\+Partp\+Lst\+Rmv\+Partp}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Remove a participant from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{msf__partp_8h_a76913c2a24ee41a891ccfe0d9137785f}{Msf\+\_\+\+Partp\+Lst\+Find\+Partp}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Check a participant existed in participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{msf__partp_8h_a1a9cd0fadff57c00b56433ee1c0b17c1}{Msf\+\_\+\+Partp\+Lst\+Find\+PartpC}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+B\+O\+OL b\+Match\+User\+Part, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Check a participant existed in participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{msf__partp_8h_ae75c09950947087210483ca4e67f533c}{Msf\+\_\+\+Partp\+Lst\+Find\+PartpX}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+S\+H\+O\+RT w\+Len, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Check a participant existed in participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{msf__partp_8h_a67f19b0a023adc1d97eba8c78657936e}{Msf\+\_\+\+Partp\+Lst\+Find\+PartpU}} (Z\+U\+I\+NT i\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+S\+H\+O\+RT w\+Len, Z\+U\+I\+NT $\ast$pi\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Check a participant existed by user part in participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{msf__partp_8h_a73be5368aa816a66b63ec62b61be4c5d}{Msf\+\_\+\+Partp\+Get\+Name}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant name from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a9a1dbc0d4076be177e97ededfe761b9b}{Msf\+\_\+\+Partp\+Set\+Name}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em Set a participant name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a8c4abd06e9b1c12ec36aceed0e0abbe1}{Msf\+\_\+\+Partp\+Set\+NameX}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+C\+H\+AR $\ast$pc\+Name, Z\+U\+S\+H\+O\+RT w\+Len)
+\begin{DoxyCompactList}\small\item\em Set a participant name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{msf__partp_8h_a9c0bafe78b02905aad0310a772949287}{Msf\+\_\+\+Partp\+Get\+Uri}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant uri from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_aaaaf1a84d2def657ef3ae04000bcea98}{Msf\+\_\+\+Partp\+Set\+Uri}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Set a participant uri from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a8be1d586e0af7891b3d566b908db890a}{Msf\+\_\+\+Partp\+Set\+UriX}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+S\+H\+O\+RT w\+Len)
+\begin{DoxyCompactList}\small\item\em Set a participant uri from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_ad43eabbcd5560b2db92ab84343906e24}{Msf\+\_\+\+Partp\+Get\+Stat}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant status from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a6f29d50b35e2ab408f254cf626cf077e}{Msf\+\_\+\+Partp\+Set\+Stat}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Stat\+Type)
+\begin{DoxyCompactList}\small\item\em Set a participant status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a6a8f94d554a9f26e06a4cb6bb921e8d9}{Msf\+\_\+\+Partp\+Set\+Video\+Strm\+Id}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em Set a participant video stream id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_afb3bc47248e792a0c60333b1715cee9b}{Msf\+\_\+\+Partp\+Get\+Video\+Strm\+Id}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant video stream id from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a9089177b220c0e3f136ac86d1d2ca4b8}{Msf\+\_\+\+Partp\+Set\+Video\+Strm\+State}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+B\+O\+OL b\+State)
+\begin{DoxyCompactList}\small\item\em Set a participant video stream state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a624aa2391b5dc1d3761cfa2decbb8e24}{Msf\+\_\+\+Partp\+Get\+Video\+Strm\+State}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant video stream state from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a93e69b70158e621c65458d6a1c0a02ae}{Msf\+\_\+\+Partp\+Get\+Roles}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant roles type from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_afe79880b9ab940c6cc4e846418055b9c}{Msf\+\_\+\+Partp\+Set\+Roles}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Roles\+Type)
+\begin{DoxyCompactList}\small\item\em Set a participant status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_aa812732e221e9aa1b4d8b16bbe27f916}{Msf\+\_\+\+Partp\+Get\+Etype}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant etype from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a41baad6fb0a67eded1489935138c0831}{Msf\+\_\+\+Partp\+Set\+Etype}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Etype\+Type)
+\begin{DoxyCompactList}\small\item\em Set a participant etype. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a1ce1eea97b132b40854680d037012339}{Msf\+\_\+\+Partp\+Get\+User\+Level}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant user level from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a8af2f12ae3749be9f6beec1bd438fb01}{Msf\+\_\+\+Partp\+Set\+User\+Level}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+User\+Level)
+\begin{DoxyCompactList}\small\item\em Set a participant user level. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a99a83b5faafa1f4a59d930d6408dab49}{Msf\+\_\+\+Partp\+Get\+Reason}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant failed reason from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_ab0c5f3647e02e4143f66c8c56ed0c9fe}{Msf\+\_\+\+Partp\+Set\+Reason}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Reason)
+\begin{DoxyCompactList}\small\item\em Set a participant failed reason. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a1b69b3e856755e3268078453b2167620}{Msf\+\_\+\+Partp\+Get\+Acc\+Net\+Type}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant access network type from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a18a212573fa146e11afad7072e5bd024}{Msf\+\_\+\+Partp\+Set\+Acc\+Net\+Type}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Acc\+Net\+Type)
+\begin{DoxyCompactList}\small\item\em Set a participant access network type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{msf__partp_8h_af52772f03450ec7084b185f103d7f65a}{Msf\+\_\+\+Partp\+Get\+Selected}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant selected flag from participant id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_aaf1f64f899c39c537220c61baf9d377b}{Msf\+\_\+\+Partp\+Set\+Selected}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+B\+O\+OL b\+Selected)
+\begin{DoxyCompactList}\small\item\em Set a participant selected flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{msf__partp_8h_abd404a86b3968548ad70797a50ca157c}{Msf\+\_\+\+Partp\+Get\+Comps\+Stat}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant composing status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a7b6204b273a4dffe70702e0e66cb3a43}{Msf\+\_\+\+Partp\+Set\+Comps\+Stat}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+C\+H\+AR uc\+Stat\+Type)
+\begin{DoxyCompactList}\small\item\em Set a participant composing status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{msf__partp_8h_abbe6bf7e4204c4412caf79b5a15baba4}{Msf\+\_\+\+Partp\+Get\+Comps\+C\+Type}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant composing content type from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a9bdde5887dc9e46ecbc663da69179ab4}{Msf\+\_\+\+Partp\+Set\+Comps\+C\+Type}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+C\+H\+AR $\ast$pc\+C\+Type)
+\begin{DoxyCompactList}\small\item\em Get a participant composing content type from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{msf__partp_8h_a5b172f6cbcf9450f3cf44c61e335e8f7}{Msf\+\_\+\+Partp\+Get\+Comps\+Last\+Active}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant composing last active time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a6164b13942dce66933edb2e20535ac98}{Msf\+\_\+\+Partp\+Set\+Comps\+Last\+Active}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+T\+I\+M\+E\+\_\+T z\+Last\+Active)
+\begin{DoxyCompactList}\small\item\em Set a participant composing last active time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a1130279dd95d0352a03424408524542d}{Msf\+\_\+\+Partp\+Get\+Comps\+Refresh}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant composing refresh time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a74542ae67c755e6d55c57258d3bdec02}{Msf\+\_\+\+Partp\+Set\+Comps\+Refresh}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Refresh)
+\begin{DoxyCompactList}\small\item\em Set a participant composing refresh time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a0c53c22248682ae9c905c825e05d7345}{Msf\+\_\+\+Partp\+Get\+Cap\+Type}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant capability type from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a6b91c898539f02e6d8d2817de8c0f607}{Msf\+\_\+\+Partp\+Set\+Cap\+Type}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Cap\+Type)
+\begin{DoxyCompactList}\small\item\em Set a participant capability type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{msf__partp_8h_a40a93b822df43d43cd9ec6c2d95c095c}{Msf\+\_\+\+Partp\+Get\+Cookie}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant session id from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a154e0d16b1f4d4ef35b1b367cb32c77d}{Msf\+\_\+\+Partp\+Set\+Cookie}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set a participant session id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{msf__partp_8h_a8358a78f9b92ded81a2adfcc4bf3345c}{Msf\+\_\+\+Partp\+Get\+Log\+Id}} (Z\+U\+I\+NT i\+Partp\+Id)
+\begin{DoxyCompactList}\small\item\em Get a participant log id from participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{msf__partp_8h_a098203149225c5cae511af7c006ca567}{Msf\+\_\+\+Partp\+Set\+Log\+Id}} (Z\+U\+I\+NT i\+Partp\+Id, Z\+U\+I\+NT i\+Log\+Id)
+\begin{DoxyCompactList}\small\item\em Set a participant log id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+SF Participant Interface Functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CMCC\_CONF\_PARTP\_STATE\_TYPE@{EN\_MSF\_CMCC\_CONF\_PARTP\_STATE\_TYPE}}
+\index{EN\_MSF\_CMCC\_CONF\_PARTP\_STATE\_TYPE@{EN\_MSF\_CMCC\_CONF\_PARTP\_STATE\_TYPE}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_CMCC\_CONF\_PARTP\_STATE\_TYPE}{EN\_MSF\_CMCC\_CONF\_PARTP\_STATE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463}{E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+M\+C\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_PENDING@{EN\_MSF\_CONF\_PARTP\_STATE\_PENDING}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_PENDING@{EN\_MSF\_CONF\_PARTP\_STATE\_PENDING}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a162badeba75514f64ee8c32401ac11c1}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a162badeba75514f64ee8c32401ac11c1}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG&Conference participant pending. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGIN@{EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGIN}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGIN@{EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGIN}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a0f8293e5955669f847dc6fbee9836589}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a0f8293e5955669f847dc6fbee9836589}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+IN&Conference participant dialing in. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGOUT@{EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGOUT}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGOUT@{EN\_MSF\_CONF\_PARTP\_STATE\_DIALINGOUT}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463ada09e887a73727aed99f6c3dc55d27ce}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463ada09e887a73727aed99f6c3dc55d27ce}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+O\+UT&Conference participant dialing out. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_ALERTING@{EN\_MSF\_CONF\_PARTP\_STATE\_ALERTING}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_ALERTING@{EN\_MSF\_CONF\_PARTP\_STATE\_ALERTING}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a6709064c9bb456051aef431fd646c268}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a6709064c9bb456051aef431fd646c268}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG&Conference participant alerting. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_CONNED@{EN\_MSF\_CONF\_PARTP\_STATE\_CONNED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_CONNED@{EN\_MSF\_CONF\_PARTP\_STATE\_CONNED}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a6bb6f21af128c39d0e4adf41851881cf}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a6bb6f21af128c39d0e4adf41851881cf}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED&Conference participant connected. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_ONHOLD@{EN\_MSF\_CONF\_PARTP\_STATE\_ONHOLD}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_ONHOLD@{EN\_MSF\_CONF\_PARTP\_STATE\_ONHOLD}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3d9225e1f4a9d428d07d869899a33fc7}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3d9225e1f4a9d428d07d869899a33fc7}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+N\+H\+O\+LD&Conference participant onhold. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_MUTED@{EN\_MSF\_CONF\_PARTP\_STATE\_MUTED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_MUTED@{EN\_MSF\_CONF\_PARTP\_STATE\_MUTED}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3a23584ae869e3eb937ebd422abeb077}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3a23584ae869e3eb937ebd422abeb077}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+M\+U\+T\+ED&Conference participant muted. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_DISCING@{EN\_MSF\_CONF\_PARTP\_STATE\_DISCING}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_DISCING@{EN\_MSF\_CONF\_PARTP\_STATE\_DISCING}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a09695b1a13781ef69e447ade8b967a9a}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a09695b1a13781ef69e447ade8b967a9a}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG&Conference participant disconnecting. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_CONF\_PARTP\_STATE\_DISCED@{EN\_MSF\_CONF\_PARTP\_STATE\_DISCED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_CONF\_PARTP\_STATE\_DISCED@{EN\_MSF\_CONF\_PARTP\_STATE\_DISCED}}}\mbox{\Hypertarget{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3fa01d5abec9169b65f7efc63c6ec660}\label{msf__partp_8h_a28e20cf6255c0e33e7d2d20ba907a463a3fa01d5abec9169b65f7efc63c6ec660}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED&Conference participant disconnected. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eee}\label{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eee}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ACC\_NET\_TYPE@{EN\_MSF\_PARTP\_ACC\_NET\_TYPE}}
+\index{EN\_MSF\_PARTP\_ACC\_NET\_TYPE@{EN\_MSF\_PARTP\_ACC\_NET\_TYPE}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_PARTP\_ACC\_NET\_TYPE}{EN\_MSF\_PARTP\_ACC\_NET\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eee}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+SF participant access network type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ACC\_NET\_OTHER@{EN\_MSF\_PARTP\_ACC\_NET\_OTHER}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ACC\_NET\_OTHER@{EN\_MSF\_PARTP\_ACC\_NET\_OTHER}}}\mbox{\Hypertarget{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeea2f916e268b962377b2f0ab6f9ba54231}\label{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeea2f916e268b962377b2f0ab6f9ba54231}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+O\+T\+H\+ER&other access network type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ACC\_NET\_APP@{EN\_MSF\_PARTP\_ACC\_NET\_APP}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ACC\_NET\_APP@{EN\_MSF\_PARTP\_ACC\_NET\_APP}}}\mbox{\Hypertarget{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeaec99026a82d10ce3f721714606004337}\label{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeaec99026a82d10ce3f721714606004337}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+A\+PP&A\+PP access network type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ACC\_NET\_VOLTE@{EN\_MSF\_PARTP\_ACC\_NET\_VOLTE}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ACC\_NET\_VOLTE@{EN\_MSF\_PARTP\_ACC\_NET\_VOLTE}}}\mbox{\Hypertarget{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeaf23289465b48e789c11af57e57cf1ddd}\label{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeaf23289465b48e789c11af57e57cf1ddd}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+V\+O\+L\+TE&V\+O\+L\+TE access network type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ACC\_NET\_CS@{EN\_MSF\_PARTP\_ACC\_NET\_CS}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ACC\_NET\_CS@{EN\_MSF\_PARTP\_ACC\_NET\_CS}}}\mbox{\Hypertarget{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeabb12694d60cddbe85d8342f540f675ee}\label{msf__partp_8h_aebd637ee43d56bcb3d0c1593fb1c2eeeabb12694d60cddbe85d8342f540f675ee}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+CS&CS access network type. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97}\label{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ETYPE\_TYPE@{EN\_MSF\_PARTP\_ETYPE\_TYPE}}
+\index{EN\_MSF\_PARTP\_ETYPE\_TYPE@{EN\_MSF\_PARTP\_ETYPE\_TYPE}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_PARTP\_ETYPE\_TYPE}{EN\_MSF\_PARTP\_ETYPE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+SF participant etype type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ETYPE\_UNKNOWN@{EN\_MSF\_PARTP\_ETYPE\_UNKNOWN}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ETYPE\_UNKNOWN@{EN\_MSF\_PARTP\_ETYPE\_UNKNOWN}}}\mbox{\Hypertarget{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97a80c9c8ae221fef0f1501fc18d3905260}\label{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97a80c9c8ae221fef0f1501fc18d3905260}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+U\+N\+K\+N\+O\+WN&unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ETYPE\_GPMANAGE@{EN\_MSF\_PARTP\_ETYPE\_GPMANAGE}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ETYPE\_GPMANAGE@{EN\_MSF\_PARTP\_ETYPE\_GPMANAGE}}}\mbox{\Hypertarget{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97aa9ca37e244da5a52d1156c003a7cccf9}\label{msf__partp_8h_acfa76fd1ea0677bb516181ed786fbe97aa9ca37e244da5a52d1156c003a7cccf9}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+G\+P\+M\+A\+N\+A\+GE&gpmanage \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0}\label{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_FAILED\_REASON@{EN\_MSF\_PARTP\_FAILED\_REASON}}
+\index{EN\_MSF\_PARTP\_FAILED\_REASON@{EN\_MSF\_PARTP\_FAILED\_REASON}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_PARTP\_FAILED\_REASON}{EN\_MSF\_PARTP\_FAILED\_REASON}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+R\+E\+A\+S\+ON}}}
+
+
+
+M\+SF participant status fail reason. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_FAILED\_NO@{EN\_MSF\_PARTP\_FAILED\_NO}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_FAILED\_NO@{EN\_MSF\_PARTP\_FAILED\_NO}}}\mbox{\Hypertarget{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0abf0722980b9a13e67ba94fcf2e131829}\label{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0abf0722980b9a13e67ba94fcf2e131829}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+NO&no reason \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_FAILED\_NOT\_MEMBER@{EN\_MSF\_PARTP\_FAILED\_NOT\_MEMBER}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_FAILED\_NOT\_MEMBER@{EN\_MSF\_PARTP\_FAILED\_NOT\_MEMBER}}}\mbox{\Hypertarget{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0aa3027f2bca75673101900b0ec5a3dc47}\label{msf__partp_8h_a1ad60a0e260ed73a7455617f3179c1d0aa3027f2bca75673101900b0ec5a3dc47}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+N\+O\+T\+\_\+\+M\+E\+M\+B\+ER&not a member of the enterprise \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35ea}\label{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35ea}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_LST\_TYPE@{EN\_MSF\_PARTP\_LST\_TYPE}}
+\index{EN\_MSF\_PARTP\_LST\_TYPE@{EN\_MSF\_PARTP\_LST\_TYPE}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_PARTP\_LST\_TYPE}{EN\_MSF\_PARTP\_LST\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35ea}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+SF participant list type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_LST\_ONE@{EN\_MSF\_PARTP\_LST\_ONE}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_LST\_ONE@{EN\_MSF\_PARTP\_LST\_ONE}}}\mbox{\Hypertarget{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa8949b06cb112cb18c08e1c76e41cf2e0}\label{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa8949b06cb112cb18c08e1c76e41cf2e0}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE&one participant \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_LST\_PREDEF\_GRP@{EN\_MSF\_PARTP\_LST\_PREDEF\_GRP}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_LST\_PREDEF\_GRP@{EN\_MSF\_PARTP\_LST\_PREDEF\_GRP}}}\mbox{\Hypertarget{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa97c02e650a44ac54064da12f24edd967}\label{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa97c02e650a44ac54064da12f24edd967}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP&pre-\/defined group participants \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_LST\_URI\_LST@{EN\_MSF\_PARTP\_LST\_URI\_LST}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_LST\_URI\_LST@{EN\_MSF\_PARTP\_LST\_URI\_LST}}}\mbox{\Hypertarget{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa2fc6d1d9cf928939bdf253b8a84fdb63}\label{msf__partp_8h_aa15b394216fc7a4fd7fee69f28ce35eaa2fc6d1d9cf928939bdf253b8a84fdb63}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST&uri list participants \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17}\label{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ROLES\_TYPE@{EN\_MSF\_PARTP\_ROLES\_TYPE}}
+\index{EN\_MSF\_PARTP\_ROLES\_TYPE@{EN\_MSF\_PARTP\_ROLES\_TYPE}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_PARTP\_ROLES\_TYPE}{EN\_MSF\_PARTP\_ROLES\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+SF participant roles type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ROLES\_UNKNOWN@{EN\_MSF\_PARTP\_ROLES\_UNKNOWN}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ROLES\_UNKNOWN@{EN\_MSF\_PARTP\_ROLES\_UNKNOWN}}}\mbox{\Hypertarget{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17a4cd07f88e6d5e8dd6a048ba5fae65735}\label{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17a4cd07f88e6d5e8dd6a048ba5fae65735}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+U\+N\+K\+N\+O\+WN&unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ROLES\_CHAIRMAN@{EN\_MSF\_PARTP\_ROLES\_CHAIRMAN}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ROLES\_CHAIRMAN@{EN\_MSF\_PARTP\_ROLES\_CHAIRMAN}}}\mbox{\Hypertarget{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17ad4aa6c8975750bfd6fc1486dc33671b7}\label{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17ad4aa6c8975750bfd6fc1486dc33671b7}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+C\+H\+A\+I\+R\+M\+AN&chairman \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_ROLES\_PARTP@{EN\_MSF\_PARTP\_ROLES\_PARTP}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_ROLES\_PARTP@{EN\_MSF\_PARTP\_ROLES\_PARTP}}}\mbox{\Hypertarget{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17a8085c8c8c289cf2fc9dbe37307e79967}\label{msf__partp_8h_aa0f0ee5a6546006a3373609ca0116c17a8085c8c8c289cf2fc9dbe37307e79967}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+P\+A\+R\+TP&participant \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3}} 
+\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_TYPE@{EN\_MSF\_PARTP\_STAT\_TYPE}}
+\index{EN\_MSF\_PARTP\_STAT\_TYPE@{EN\_MSF\_PARTP\_STAT\_TYPE}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MSF\_PARTP\_STAT\_TYPE}{EN\_MSF\_PARTP\_STAT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+SF participant status type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_PENDING@{EN\_MSF\_PARTP\_STAT\_PENDING}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_PENDING@{EN\_MSF\_PARTP\_STAT\_PENDING}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3af494307b646a63478f45924d3d916b09}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3af494307b646a63478f45924d3d916b09}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+P\+E\+N\+D\+I\+NG&pending \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_ACTIVE@{EN\_MSF\_PARTP\_STAT\_ACTIVE}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_ACTIVE@{EN\_MSF\_PARTP\_STAT\_ACTIVE}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3ab888b01ac34ed6c8a0513ffe96075ced}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3ab888b01ac34ed6c8a0513ffe96075ced}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+A\+C\+T\+I\+VE&active \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_INACITVE@{EN\_MSF\_PARTP\_STAT\_INACITVE}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_INACITVE@{EN\_MSF\_PARTP\_STAT\_INACITVE}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a4136984ca6a56a044efab23edcca20d9}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a4136984ca6a56a044efab23edcca20d9}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+I\+N\+A\+C\+I\+T\+VE&inacitve \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_DEPARTED@{EN\_MSF\_PARTP\_STAT\_DEPARTED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_DEPARTED@{EN\_MSF\_PARTP\_STAT\_DEPARTED}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a20d9e4ed9dcf1d43cf6921b10a4f5aee}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a20d9e4ed9dcf1d43cf6921b10a4f5aee}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+D\+E\+P\+A\+R\+T\+ED&departed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_BOOTED@{EN\_MSF\_PARTP\_STAT\_BOOTED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_BOOTED@{EN\_MSF\_PARTP\_STAT\_BOOTED}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a71132fac574e87849182382fb0208b9a}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a71132fac574e87849182382fb0208b9a}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+B\+O\+O\+T\+ED&booted \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_FAILED@{EN\_MSF\_PARTP\_STAT\_FAILED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_FAILED@{EN\_MSF\_PARTP\_STAT\_FAILED}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3afc6d8860f554f6bbffc5a373d4fa5d18}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3afc6d8860f554f6bbffc5a373d4fa5d18}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+F\+A\+I\+L\+ED&failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MSF\_PARTP\_STAT\_DELETED@{EN\_MSF\_PARTP\_STAT\_DELETED}!msf\_partp.h@{msf\_partp.h}}\index{msf\_partp.h@{msf\_partp.h}!EN\_MSF\_PARTP\_STAT\_DELETED@{EN\_MSF\_PARTP\_STAT\_DELETED}}}\mbox{\Hypertarget{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a2691c4b3946cdd6cf4886146664161f4}\label{msf__partp_8h_ad839b4b0092aeb60ea69d90c67727dc3a2691c4b3946cdd6cf4886146664161f4}} 
+E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+D\+E\+L\+E\+T\+ED&deleted \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{msf__partp_8h_a1b69b3e856755e3268078453b2167620}\label{msf__partp_8h_a1b69b3e856755e3268078453b2167620}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetAccNetType@{Msf\_PartpGetAccNetType}}
+\index{Msf\_PartpGetAccNetType@{Msf\_PartpGetAccNetType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetAccNetType()}{Msf\_PartpGetAccNetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Acc\+Net\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant access network type from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant access network type, see \mbox{\hyperlink{msf__partp_8h_a8928f33d5ff6f22d3ff70d8e716cddf1}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a0c53c22248682ae9c905c825e05d7345}\label{msf__partp_8h_a0c53c22248682ae9c905c825e05d7345}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetCapType@{Msf\_PartpGetCapType}}
+\index{Msf\_PartpGetCapType@{Msf\_PartpGetCapType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetCapType()}{Msf\_PartpGetCapType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Cap\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant capability type from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant capability type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_abbe6bf7e4204c4412caf79b5a15baba4}\label{msf__partp_8h_abbe6bf7e4204c4412caf79b5a15baba4}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetCompsCType@{Msf\_PartpGetCompsCType}}
+\index{Msf\_PartpGetCompsCType@{Msf\_PartpGetCompsCType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetCompsCType()}{Msf\_PartpGetCompsCType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Msf\+\_\+\+Partp\+Get\+Comps\+C\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant composing content type from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant composing content type. It should be freed by Zos\+\_\+\+Sys\+Str\+Free. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a5b172f6cbcf9450f3cf44c61e335e8f7}\label{msf__partp_8h_a5b172f6cbcf9450f3cf44c61e335e8f7}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetCompsLastActive@{Msf\_PartpGetCompsLastActive}}
+\index{Msf\_PartpGetCompsLastActive@{Msf\_PartpGetCompsLastActive}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetCompsLastActive()}{Msf\_PartpGetCompsLastActive()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Msf\+\_\+\+Partp\+Get\+Comps\+Last\+Active (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant composing last active time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant composing last active time. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a1130279dd95d0352a03424408524542d}\label{msf__partp_8h_a1130279dd95d0352a03424408524542d}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetCompsRefresh@{Msf\_PartpGetCompsRefresh}}
+\index{Msf\_PartpGetCompsRefresh@{Msf\_PartpGetCompsRefresh}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetCompsRefresh()}{Msf\_PartpGetCompsRefresh()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Comps\+Refresh (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant composing refresh time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant composing refresh time. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_abd404a86b3968548ad70797a50ca157c}\label{msf__partp_8h_abd404a86b3968548ad70797a50ca157c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetCompsStat@{Msf\_PartpGetCompsStat}}
+\index{Msf\_PartpGetCompsStat@{Msf\_PartpGetCompsStat}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetCompsStat()}{Msf\_PartpGetCompsStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Msf\+\_\+\+Partp\+Get\+Comps\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant composing status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant composing status, see \mbox{\hyperlink{msf__partp_8h_abf3f2c2633ac9933ede9b5f379ec50b8}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+I\+S\+C\+O\+M\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a40a93b822df43d43cd9ec6c2d95c095c}\label{msf__partp_8h_a40a93b822df43d43cd9ec6c2d95c095c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetCookie@{Msf\_PartpGetCookie}}
+\index{Msf\_PartpGetCookie@{Msf\_PartpGetCookie}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetCookie()}{Msf\_PartpGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Msf\+\_\+\+Partp\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant session id from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant session id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_aa812732e221e9aa1b4d8b16bbe27f916}\label{msf__partp_8h_aa812732e221e9aa1b4d8b16bbe27f916}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetEtype@{Msf\_PartpGetEtype}}
+\index{Msf\_PartpGetEtype@{Msf\_PartpGetEtype}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetEtype()}{Msf\_PartpGetEtype()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Etype (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant etype from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant etype, see \mbox{\hyperlink{msf__partp_8h_a9e218fe385773b8b542f85370e368fa2}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a8358a78f9b92ded81a2adfcc4bf3345c}\label{msf__partp_8h_a8358a78f9b92ded81a2adfcc4bf3345c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetLogId@{Msf\_PartpGetLogId}}
+\index{Msf\_PartpGetLogId@{Msf\_PartpGetLogId}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetLogId()}{Msf\_PartpGetLogId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Log\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant log id from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant log id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a73be5368aa816a66b63ec62b61be4c5d}\label{msf__partp_8h_a73be5368aa816a66b63ec62b61be4c5d}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetName@{Msf\_PartpGetName}}
+\index{Msf\_PartpGetName@{Msf\_PartpGetName}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetName()}{Msf\_PartpGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Msf\+\_\+\+Partp\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant name from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant name.\\
+\hline
+\end{DoxyRetVals}
+it should be freed by Zos\+\_\+\+Sys\+Str\+Free. \mbox{\Hypertarget{msf__partp_8h_a99a83b5faafa1f4a59d930d6408dab49}\label{msf__partp_8h_a99a83b5faafa1f4a59d930d6408dab49}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetReason@{Msf\_PartpGetReason}}
+\index{Msf\_PartpGetReason@{Msf\_PartpGetReason}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetReason()}{Msf\_PartpGetReason()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Reason (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant failed reason from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant failed reason. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a93e69b70158e621c65458d6a1c0a02ae}\label{msf__partp_8h_a93e69b70158e621c65458d6a1c0a02ae}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetRoles@{Msf\_PartpGetRoles}}
+\index{Msf\_PartpGetRoles@{Msf\_PartpGetRoles}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetRoles()}{Msf\_PartpGetRoles()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Roles (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant roles type from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant roles type, see \mbox{\hyperlink{msf__partp_8h_aed0bd821c20791e33934bea14a294e46}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_af52772f03450ec7084b185f103d7f65a}\label{msf__partp_8h_af52772f03450ec7084b185f103d7f65a}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetSelected@{Msf\_PartpGetSelected}}
+\index{Msf\_PartpGetSelected@{Msf\_PartpGetSelected}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetSelected()}{Msf\_PartpGetSelected()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Msf\+\_\+\+Partp\+Get\+Selected (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant selected flag from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant selected flag(true or false). \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_ad43eabbcd5560b2db92ab84343906e24}\label{msf__partp_8h_ad43eabbcd5560b2db92ab84343906e24}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetStat@{Msf\_PartpGetStat}}
+\index{Msf\_PartpGetStat@{Msf\_PartpGetStat}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetStat()}{Msf\_PartpGetStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant status from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant status, see \mbox{\hyperlink{msf__partp_8h_a0c05a348114842ed35368a11cfd934e4}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a9c0bafe78b02905aad0310a772949287}\label{msf__partp_8h_a9c0bafe78b02905aad0310a772949287}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetUri@{Msf\_PartpGetUri}}
+\index{Msf\_PartpGetUri@{Msf\_PartpGetUri}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetUri()}{Msf\_PartpGetUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Msf\+\_\+\+Partp\+Get\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant uri from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant uri.\\
+\hline
+\end{DoxyRetVals}
+It should be freed by Zos\+\_\+\+Sys\+Str\+Free. \mbox{\Hypertarget{msf__partp_8h_a1ce1eea97b132b40854680d037012339}\label{msf__partp_8h_a1ce1eea97b132b40854680d037012339}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetUserLevel@{Msf\_PartpGetUserLevel}}
+\index{Msf\_PartpGetUserLevel@{Msf\_PartpGetUserLevel}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetUserLevel()}{Msf\_PartpGetUserLevel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+User\+Level (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant user level from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant user level. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_afb3bc47248e792a0c60333b1715cee9b}\label{msf__partp_8h_afb3bc47248e792a0c60333b1715cee9b}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetVideoStrmId@{Msf\_PartpGetVideoStrmId}}
+\index{Msf\_PartpGetVideoStrmId@{Msf\_PartpGetVideoStrmId}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetVideoStrmId()}{Msf\_PartpGetVideoStrmId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Video\+Strm\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant video stream id from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant video stream id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a624aa2391b5dc1d3761cfa2decbb8e24}\label{msf__partp_8h_a624aa2391b5dc1d3761cfa2decbb8e24}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpGetVideoStrmState@{Msf\_PartpGetVideoStrmState}}
+\index{Msf\_PartpGetVideoStrmState@{Msf\_PartpGetVideoStrmState}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpGetVideoStrmState()}{Msf\_PartpGetVideoStrmState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Get\+Video\+Strm\+State (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant video stream state from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant video stream state. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_acd426141e91229f81c94c150a6b2f45c}\label{msf__partp_8h_acd426141e91229f81c94c150a6b2f45c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstAddPartp@{Msf\_PartpLstAddPartp}}
+\index{Msf\_PartpLstAddPartp@{Msf\_PartpLstAddPartp}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstAddPartp()}{Msf\_PartpLstAddPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Add\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Add a participant into participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Add a participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Add a participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_aa505670c0a31d4516d808acaa11656cf}\label{msf__partp_8h_aa505670c0a31d4516d808acaa11656cf}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstAddPartpLst@{Msf\_PartpLstAddPartpLst}}
+\index{Msf\_PartpLstAddPartpLst@{Msf\_PartpLstAddPartpLst}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstAddPartpLst()}{Msf\_PartpLstAddPartpLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Add\+Partp\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Dst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Lst\+Src\+Id }\end{DoxyParamCaption})}
+
+
+
+Add participant list into participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Dst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Src\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Add participant list successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Add participant list failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a9da9bcfd0a8dd8eaf4d32d92dbf61b21}\label{msf__partp_8h_a9da9bcfd0a8dd8eaf4d32d92dbf61b21}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstAddPartpX@{Msf\_PartpLstAddPartpX}}
+\index{Msf\_PartpLstAddPartpX@{Msf\_PartpLstAddPartpX}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstAddPartpX()}{Msf\_PartpLstAddPartpX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Add\+PartpX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Name\+Len,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT}]{i\+Uri\+Len,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Add a participant into participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Name\+Len} & The participant name length. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Uri\+Len} & The participant uri length. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Add a participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Add a participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_aa7c7e5f309030af4c38faf2c7d6e2460}\label{msf__partp_8h_aa7c7e5f309030af4c38faf2c7d6e2460}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstClear@{Msf\_PartpLstClear}}
+\index{Msf\_PartpLstClear@{Msf\_PartpLstClear}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstClear()}{Msf\_PartpLstClear()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Clear (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Clear all participants from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Clear all participants successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Clear all participants failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_ad89ba77e69475a42622375060d9bff8b}\label{msf__partp_8h_ad89ba77e69475a42622375060d9bff8b}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstClone@{Msf\_PartpLstClone}}
+\index{Msf\_PartpLstClone@{Msf\_PartpLstClone}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstClone()}{Msf\_PartpLstClone()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Clone (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Lst }\end{DoxyParamCaption})}
+
+
+
+Clone a participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+New\+Lst} & The new list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Copy a participant list successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Copy a participant list failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a63ed3904ae9ca1d8455f9119ae483388}\label{msf__partp_8h_a63ed3904ae9ca1d8455f9119ae483388}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstCloneC@{Msf\_PartpLstCloneC}}
+\index{Msf\_PartpLstCloneC@{Msf\_PartpLstCloneC}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstCloneC()}{Msf\_PartpLstCloneC()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+CloneC (\begin{DoxyParamCaption}\item[{Z\+C\+B\+UF}]{z\+Mem\+Buf,  }\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Lst }\end{DoxyParamCaption})}
+
+
+
+Clone a participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Lst\+Id} & The new list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Copy a participant list successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Copy a participant list failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a1bf12eea388ed4ab981012e989c5aa04}\label{msf__partp_8h_a1bf12eea388ed4ab981012e989c5aa04}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstCreate@{Msf\_PartpLstCreate}}
+\index{Msf\_PartpLstCreate@{Msf\_PartpLstCreate}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstCreate()}{Msf\_PartpLstCreate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Create (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Create a participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The participant type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Lst\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Create a participant list successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Create a participant list failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a6944c523f5f8237584b943c00cdb53c2}\label{msf__partp_8h_a6944c523f5f8237584b943c00cdb53c2}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstCreateC@{Msf\_PartpLstCreateC}}
+\index{Msf\_PartpLstCreateC@{Msf\_PartpLstCreateC}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstCreateC()}{Msf\_PartpLstCreateC()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+CreateC (\begin{DoxyParamCaption}\item[{Z\+C\+B\+UF}]{z\+Mem\+Buf,  }\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Create a participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The participant type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Lst\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Create a participant list successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Create a participant list failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a1f7d93ed7de2a147b6dac07ab3618a7d}\label{msf__partp_8h_a1f7d93ed7de2a147b6dac07ab3618a7d}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstDelete@{Msf\_PartpLstDelete}}
+\index{Msf\_PartpLstDelete@{Msf\_PartpLstDelete}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstDelete()}{Msf\_PartpLstDelete()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Delete (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete a participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Delete a participant list successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Delete a participant list failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a76913c2a24ee41a891ccfe0d9137785f}\label{msf__partp_8h_a76913c2a24ee41a891ccfe0d9137785f}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstFindPartp@{Msf\_PartpLstFindPartp}}
+\index{Msf\_PartpLstFindPartp@{Msf\_PartpLstFindPartp}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstFindPartp()}{Msf\_PartpLstFindPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Msf\+\_\+\+Partp\+Lst\+Find\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Check a participant existed in participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if exist the participant, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a1a9cd0fadff57c00b56433ee1c0b17c1}\label{msf__partp_8h_a1a9cd0fadff57c00b56433ee1c0b17c1}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstFindPartpC@{Msf\_PartpLstFindPartpC}}
+\index{Msf\_PartpLstFindPartpC@{Msf\_PartpLstFindPartpC}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstFindPartpC()}{Msf\_PartpLstFindPartpC()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Msf\+\_\+\+Partp\+Lst\+Find\+PartpC (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+B\+O\+OL}]{b\+Match\+User\+Part,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Check a participant existed in participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Match\+User\+Part} & The match flag. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if exist the participant, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a67f19b0a023adc1d97eba8c78657936e}\label{msf__partp_8h_a67f19b0a023adc1d97eba8c78657936e}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstFindPartpU@{Msf\_PartpLstFindPartpU}}
+\index{Msf\_PartpLstFindPartpU@{Msf\_PartpLstFindPartpU}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstFindPartpU()}{Msf\_PartpLstFindPartpU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Msf\+\_\+\+Partp\+Lst\+Find\+PartpU (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Len,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Check a participant existed by user part in participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Len} & The participant uri length. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if exist the participant, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_ae75c09950947087210483ca4e67f533c}\label{msf__partp_8h_ae75c09950947087210483ca4e67f533c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstFindPartpX@{Msf\_PartpLstFindPartpX}}
+\index{Msf\_PartpLstFindPartpX@{Msf\_PartpLstFindPartpX}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstFindPartpX()}{Msf\_PartpLstFindPartpX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Msf\+\_\+\+Partp\+Lst\+Find\+PartpX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Len,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Check a participant existed in participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Len} & The participant uri length. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if exist the participant, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a4d53b1802bd6b691984d706808ae637c}\label{msf__partp_8h_a4d53b1802bd6b691984d706808ae637c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstGetPartp@{Msf\_PartpLstGetPartp}}
+\index{Msf\_PartpLstGetPartp@{Msf\_PartpLstGetPartp}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstGetPartp()}{Msf\_PartpLstGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Get a participant from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The index of participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ppc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get a participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get a participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a7237900c20d874181aa0817b57c7fbb5}\label{msf__partp_8h_a7237900c20d874181aa0817b57c7fbb5}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstGetSize@{Msf\_PartpLstGetSize}}
+\index{Msf\_PartpLstGetSize@{Msf\_PartpLstGetSize}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstGetSize()}{Msf\_PartpLstGetSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Lst\+Get\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Participant} & list size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a64d5d5a130efd6ba4de1ca1f24abc2c0}\label{msf__partp_8h_a64d5d5a130efd6ba4de1ca1f24abc2c0}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstGetType@{Msf\_PartpLstGetType}}
+\index{Msf\_PartpLstGetType@{Msf\_PartpLstGetType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstGetType()}{Msf\_PartpLstGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Msf\+\_\+\+Partp\+Lst\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Participant} & type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a6963993eccf8f9f831d2c877d5308b02}\label{msf__partp_8h_a6963993eccf8f9f831d2c877d5308b02}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstRmvPartp@{Msf\_PartpLstRmvPartp}}
+\index{Msf\_PartpLstRmvPartp@{Msf\_PartpLstRmvPartp}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstRmvPartp()}{Msf\_PartpLstRmvPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Rmv\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Id }\end{DoxyParamCaption})}
+
+
+
+Remove a participant from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Remove a participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Remove a participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a469d739337b385c51442c70217d3ec31}\label{msf__partp_8h_a469d739337b385c51442c70217d3ec31}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpLstSetType@{Msf\_PartpLstSetType}}
+\index{Msf\_PartpLstSetType@{Msf\_PartpLstSetType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpLstSetType()}{Msf\_PartpLstSetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Lst\+Set\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Lst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set participant list type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Lst\+Id} & The list id for participants. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Type} & The participant type.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set participant list type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set participant list type failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a18a212573fa146e11afad7072e5bd024}\label{msf__partp_8h_a18a212573fa146e11afad7072e5bd024}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetAccNetType@{Msf\_PartpSetAccNetType}}
+\index{Msf\_PartpSetAccNetType@{Msf\_PartpSetAccNetType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetAccNetType()}{Msf\_PartpSetAccNetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Acc\+Net\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Acc\+Net\+Type }\end{DoxyParamCaption})}
+
+
+
+Set a participant access network type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Acc\+Net\+Type} & The participant access network type, see \mbox{\hyperlink{msf__partp_8h_a8928f33d5ff6f22d3ff70d8e716cddf1}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+C\+C\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant access network type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant access network type failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a6b91c898539f02e6d8d2817de8c0f607}\label{msf__partp_8h_a6b91c898539f02e6d8d2817de8c0f607}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetCapType@{Msf\_PartpSetCapType}}
+\index{Msf\_PartpSetCapType@{Msf\_PartpSetCapType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetCapType()}{Msf\_PartpSetCapType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Cap\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Cap\+Type }\end{DoxyParamCaption})}
+
+
+
+Set a participant capability type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Cap\+Type} & The participant capability type.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant capability type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant capability type failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a9bdde5887dc9e46ecbc663da69179ab4}\label{msf__partp_8h_a9bdde5887dc9e46ecbc663da69179ab4}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetCompsCType@{Msf\_PartpSetCompsCType}}
+\index{Msf\_PartpSetCompsCType@{Msf\_PartpSetCompsCType}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetCompsCType()}{Msf\_PartpSetCompsCType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Comps\+C\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+C\+Type }\end{DoxyParamCaption})}
+
+
+
+Get a participant composing content type from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+C\+Type} & The composing content type.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant composing content type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant composing content type failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a6164b13942dce66933edb2e20535ac98}\label{msf__partp_8h_a6164b13942dce66933edb2e20535ac98}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetCompsLastActive@{Msf\_PartpSetCompsLastActive}}
+\index{Msf\_PartpSetCompsLastActive@{Msf\_PartpSetCompsLastActive}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetCompsLastActive()}{Msf\_PartpSetCompsLastActive()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Comps\+Last\+Active (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+T\+I\+M\+E\+\_\+T}]{z\+Last\+Active }\end{DoxyParamCaption})}
+
+
+
+Set a participant composing last active time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Last\+Active} & The last active time.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant composing last active time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant composing last active time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a74542ae67c755e6d55c57258d3bdec02}\label{msf__partp_8h_a74542ae67c755e6d55c57258d3bdec02}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetCompsRefresh@{Msf\_PartpSetCompsRefresh}}
+\index{Msf\_PartpSetCompsRefresh@{Msf\_PartpSetCompsRefresh}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetCompsRefresh()}{Msf\_PartpSetCompsRefresh()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Comps\+Refresh (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Refresh }\end{DoxyParamCaption})}
+
+
+
+Set a participant composing refresh time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Refresh} & The refresh time.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant composing refresh time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant composing refresh time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a7b6204b273a4dffe70702e0e66cb3a43}\label{msf__partp_8h_a7b6204b273a4dffe70702e0e66cb3a43}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetCompsStat@{Msf\_PartpSetCompsStat}}
+\index{Msf\_PartpSetCompsStat@{Msf\_PartpSetCompsStat}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetCompsStat()}{Msf\_PartpSetCompsStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Comps\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Stat\+Type }\end{DoxyParamCaption})}
+
+
+
+Set a participant composing status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Stat\+Type} & The composing status.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant composing status. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant composing status failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a154e0d16b1f4d4ef35b1b367cb32c77d}\label{msf__partp_8h_a154e0d16b1f4d4ef35b1b367cb32c77d}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetCookie@{Msf\_PartpSetCookie}}
+\index{Msf\_PartpSetCookie@{Msf\_PartpSetCookie}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetCookie()}{Msf\_PartpSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set a participant session id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The participant session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant session id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant session id failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a41baad6fb0a67eded1489935138c0831}\label{msf__partp_8h_a41baad6fb0a67eded1489935138c0831}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetEtype@{Msf\_PartpSetEtype}}
+\index{Msf\_PartpSetEtype@{Msf\_PartpSetEtype}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetEtype()}{Msf\_PartpSetEtype()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Etype (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Etype\+Type }\end{DoxyParamCaption})}
+
+
+
+Set a participant etype. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Etype\+Type} & The participant etype, see \mbox{\hyperlink{msf__partp_8h_a9e218fe385773b8b542f85370e368fa2}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+T\+Y\+P\+E\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant etype successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant etype failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a098203149225c5cae511af7c006ca567}\label{msf__partp_8h_a098203149225c5cae511af7c006ca567}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetLogId@{Msf\_PartpSetLogId}}
+\index{Msf\_PartpSetLogId@{Msf\_PartpSetLogId}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetLogId()}{Msf\_PartpSetLogId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Log\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Log\+Id }\end{DoxyParamCaption})}
+
+
+
+Set a participant log id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Log\+Id} & The participant log id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant log id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant log id failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a9a1dbc0d4076be177e97ededfe761b9b}\label{msf__partp_8h_a9a1dbc0d4076be177e97ededfe761b9b}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetName@{Msf\_PartpSetName}}
+\index{Msf\_PartpSetName@{Msf\_PartpSetName}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetName()}{Msf\_PartpSetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+Set a participant name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The participant name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant name failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a8c4abd06e9b1c12ec36aceed0e0abbe1}\label{msf__partp_8h_a8c4abd06e9b1c12ec36aceed0e0abbe1}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetNameX@{Msf\_PartpSetNameX}}
+\index{Msf\_PartpSetNameX@{Msf\_PartpSetNameX}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetNameX()}{Msf\_PartpSetNameX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+NameX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Len }\end{DoxyParamCaption})}
+
+
+
+Set a participant name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Len} & The participant name length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant name failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_ab0c5f3647e02e4143f66c8c56ed0c9fe}\label{msf__partp_8h_ab0c5f3647e02e4143f66c8c56ed0c9fe}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetReason@{Msf\_PartpSetReason}}
+\index{Msf\_PartpSetReason@{Msf\_PartpSetReason}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetReason()}{Msf\_PartpSetReason()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Reason (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Reason }\end{DoxyParamCaption})}
+
+
+
+Set a participant failed reason. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & The participant failed reason.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant failed reason successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant failed reason failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_afe79880b9ab940c6cc4e846418055b9c}\label{msf__partp_8h_afe79880b9ab940c6cc4e846418055b9c}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetRoles@{Msf\_PartpSetRoles}}
+\index{Msf\_PartpSetRoles@{Msf\_PartpSetRoles}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetRoles()}{Msf\_PartpSetRoles()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Roles (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Roles\+Type }\end{DoxyParamCaption})}
+
+
+
+Set a participant status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Roles\+Type} & The participant roles type, see \mbox{\hyperlink{msf__partp_8h_aed0bd821c20791e33934bea14a294e46}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+R\+O\+L\+E\+S\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant status successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant status failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_aaf1f64f899c39c537220c61baf9d377b}\label{msf__partp_8h_aaf1f64f899c39c537220c61baf9d377b}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetSelected@{Msf\_PartpSetSelected}}
+\index{Msf\_PartpSetSelected@{Msf\_PartpSetSelected}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetSelected()}{Msf\_PartpSetSelected()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Selected (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Selected }\end{DoxyParamCaption})}
+
+
+
+Set a participant selected flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Acc\+Net\+Type} & The participant selected flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant access network type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant access network type failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a6f29d50b35e2ab408f254cf626cf077e}\label{msf__partp_8h_a6f29d50b35e2ab408f254cf626cf077e}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetStat@{Msf\_PartpSetStat}}
+\index{Msf\_PartpSetStat@{Msf\_PartpSetStat}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetStat()}{Msf\_PartpSetStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Stat\+Type }\end{DoxyParamCaption})}
+
+
+
+Set a participant status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stat\+Type} & The participant status, see \mbox{\hyperlink{msf__partp_8h_a0c05a348114842ed35368a11cfd934e4}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant status successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant status failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_aaaaf1a84d2def657ef3ae04000bcea98}\label{msf__partp_8h_aaaaf1a84d2def657ef3ae04000bcea98}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetUri@{Msf\_PartpSetUri}}
+\index{Msf\_PartpSetUri@{Msf\_PartpSetUri}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetUri()}{Msf\_PartpSetUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Set a participant uri from participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant uri successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant uri failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a8be1d586e0af7891b3d566b908db890a}\label{msf__partp_8h_a8be1d586e0af7891b3d566b908db890a}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetUriX@{Msf\_PartpSetUriX}}
+\index{Msf\_PartpSetUriX@{Msf\_PartpSetUriX}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetUriX()}{Msf\_PartpSetUriX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+UriX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Len }\end{DoxyParamCaption})}
+
+
+
+Set a participant uri from participant id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Len} & The participant uri length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant uri successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant uri failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a8af2f12ae3749be9f6beec1bd438fb01}\label{msf__partp_8h_a8af2f12ae3749be9f6beec1bd438fb01}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetUserLevel@{Msf\_PartpSetUserLevel}}
+\index{Msf\_PartpSetUserLevel@{Msf\_PartpSetUserLevel}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetUserLevel()}{Msf\_PartpSetUserLevel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+User\+Level (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+User\+Level }\end{DoxyParamCaption})}
+
+
+
+Set a participant user level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Log\+Id} & The participant log id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant user level successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant user level failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a6a8f94d554a9f26e06a4cb6bb921e8d9}\label{msf__partp_8h_a6a8f94d554a9f26e06a4cb6bb921e8d9}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetVideoStrmId@{Msf\_PartpSetVideoStrmId}}
+\index{Msf\_PartpSetVideoStrmId@{Msf\_PartpSetVideoStrmId}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetVideoStrmId()}{Msf\_PartpSetVideoStrmId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Video\+Strm\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id }\end{DoxyParamCaption})}
+
+
+
+Set a participant video stream id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The participant video stream id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant video stream id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant video stream id failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{msf__partp_8h_a9089177b220c0e3f136ac86d1d2ca4b8}\label{msf__partp_8h_a9089177b220c0e3f136ac86d1d2ca4b8}} 
+\index{msf\_partp.h@{msf\_partp.h}!Msf\_PartpSetVideoStrmState@{Msf\_PartpSetVideoStrmState}}
+\index{Msf\_PartpSetVideoStrmState@{Msf\_PartpSetVideoStrmState}!msf\_partp.h@{msf\_partp.h}}
+\doxysubsubsection{\texorpdfstring{Msf\_PartpSetVideoStrmState()}{Msf\_PartpSetVideoStrmState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Msf\+\_\+\+Partp\+Set\+Video\+Strm\+State (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Id,  }\item[{Z\+B\+O\+OL}]{b\+State }\end{DoxyParamCaption})}
+
+
+
+Set a participant video stream state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Id} & The participant id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+State} & The participant video stream state(true for enable, false for disable).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set a participant video stream state successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set a participant video stream state failed. \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,66 @@
+\hypertarget{mtc__lcs__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+lcs\+\_\+cb.h File Reference}
+\label{mtc__lcs__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_lcs\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_lcs\_cb.h}}
+
+
+M\+TC License Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__lcs__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__lcs__cb_8h_a0c7ab3b3c544e96bacb0f1b1460bfe58}{P\+F\+N\+\_\+\+M\+T\+C\+L\+C\+S\+A\+C\+T\+I\+V\+E\+R\+E\+S\+U\+LT}}) (Z\+B\+O\+OL b\+Activated)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC license active result callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__lcs__cb_8h_a2293037d0c584c557fe706c59c9a98c2}{Mtc\+\_\+\+Lcs\+Cb\+Set\+Active\+Result}} (\mbox{\hyperlink{mtc__lcs__cb_8h_a0c7ab3b3c544e96bacb0f1b1460bfe58}{P\+F\+N\+\_\+\+M\+T\+C\+L\+C\+S\+A\+C\+T\+I\+V\+E\+R\+E\+S\+U\+LT}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set license active result callback. The callback will be notified when user to active the license. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC License Callback Interface Functions. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mtc__lcs__cb_8h_a0c7ab3b3c544e96bacb0f1b1460bfe58}\label{mtc__lcs__cb_8h_a0c7ab3b3c544e96bacb0f1b1460bfe58}} 
+\index{mtc\_lcs\_cb.h@{mtc\_lcs\_cb.h}!PFN\_MTCLCSACTIVERESULT@{PFN\_MTCLCSACTIVERESULT}}
+\index{PFN\_MTCLCSACTIVERESULT@{PFN\_MTCLCSACTIVERESULT}!mtc\_lcs\_cb.h@{mtc\_lcs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCLCSACTIVERESULT}{PFN\_MTCLCSACTIVERESULT}}
+{\footnotesize\ttfamily typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ P\+F\+N\+\_\+\+M\+T\+C\+L\+C\+S\+A\+C\+T\+I\+V\+E\+R\+E\+S\+U\+LT) (Z\+B\+O\+OL b\+Activated)}
+
+
+
+Type define of M\+TC license active result callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+License\+Active} & indicate if License active operation success or fail \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__lcs__cb_8h_a2293037d0c584c557fe706c59c9a98c2}\label{mtc__lcs__cb_8h_a2293037d0c584c557fe706c59c9a98c2}} 
+\index{mtc\_lcs\_cb.h@{mtc\_lcs\_cb.h}!Mtc\_LcsCbSetActiveResult@{Mtc\_LcsCbSetActiveResult}}
+\index{Mtc\_LcsCbSetActiveResult@{Mtc\_LcsCbSetActiveResult}!mtc\_lcs\_cb.h@{mtc\_lcs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_LcsCbSetActiveResult()}{Mtc\_LcsCbSetActiveResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Lcs\+Cb\+Set\+Active\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__lcs__cb_8h_a0c7ab3b3c544e96bacb0f1b1460bfe58}{P\+F\+N\+\_\+\+M\+T\+C\+L\+C\+S\+A\+C\+T\+I\+V\+E\+R\+E\+S\+U\+LT}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set license active result callback. The callback will be notified when user to active the license. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

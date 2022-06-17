@@ -1,0 +1,74 @@
+\hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Prof\+Cfg Class Reference}
+\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg}\index{com.juphoon.cmcc.app.lemon.MtcProfCfg@{com.juphoon.cmcc.app.lemon.MtcProfCfg}}
+
+
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg}{Mtc\+Prof\+Cfg}} interface.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a58eefc43ea42c33a62f6347c8d5b02c8}{Mtc\+\_\+\+Prof\+Cfg\+Get\+Use\+Dft}} ()
+\begin{DoxyCompactList}\small\item\em Get using default profile management. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a1f8737bb436188286ebd67ac32c46205}{Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft}} (boolean b\+Use)
+\begin{DoxyCompactList}\small\item\em Set using default profile management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg}{Mtc\+Prof\+Cfg}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a58eefc43ea42c33a62f6347c8d5b02c8}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a58eefc43ea42c33a62f6347c8d5b02c8}} 
+\index{com.juphoon.cmcc.app.lemon.MtcProfCfg@{com.juphoon.cmcc.app.lemon.MtcProfCfg}!Mtc\_ProfCfgGetUseDft@{Mtc\_ProfCfgGetUseDft}}
+\index{Mtc\_ProfCfgGetUseDft@{Mtc\_ProfCfgGetUseDft}!com.juphoon.cmcc.app.lemon.MtcProfCfg@{com.juphoon.cmcc.app.lemon.MtcProfCfg}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfCfgGetUseDft()}{Mtc\_ProfCfgGetUseDft()}}
+{\footnotesize\ttfamily static boolean com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Prof\+Cfg.\+Mtc\+\_\+\+Prof\+Cfg\+Get\+Use\+Dft (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get using default profile management. 
+
+M\+TC provide default profile management. Each account profile is stored in different directory under \char`\"{}profiles\char`\"{} directory. Every Account profile have provision.\+xml etc configuration files.
+
+If client using another profile management, client should close it by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a1f8737bb436188286ebd67ac32c46205}{Mtc\+Prof\+Cfg.\+Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft}}. After Mtc\+\_\+\+Cli\+Open, client should assign database configuration by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_cli_db_afaae24b05bfba6f6f516065349310131}{Mtc\+Cli\+Db.\+Mtc\+\_\+\+Cli\+Db\+Set\+Local\+Ip}} etc interfaces.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & M\+TC provide profile management. \\
+\hline
+{\em false} & M\+TC don\textquotesingle{}t have profile management.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a1f8737bb436188286ebd67ac32c46205}{Mtc\+Prof\+Cfg.\+Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a1f8737bb436188286ebd67ac32c46205}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a1f8737bb436188286ebd67ac32c46205}} 
+\index{com.juphoon.cmcc.app.lemon.MtcProfCfg@{com.juphoon.cmcc.app.lemon.MtcProfCfg}!Mtc\_ProfCfgSetUseDft@{Mtc\_ProfCfgSetUseDft}}
+\index{Mtc\_ProfCfgSetUseDft@{Mtc\_ProfCfgSetUseDft}!com.juphoon.cmcc.app.lemon.MtcProfCfg@{com.juphoon.cmcc.app.lemon.MtcProfCfg}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfCfgSetUseDft()}{Mtc\_ProfCfgSetUseDft()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Prof\+Cfg.\+Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft (\begin{DoxyParamCaption}\item[{boolean}]{b\+Use }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set using default profile management. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Use} & Use default profile management.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Set use status successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Set use status failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_prof_cfg_a58eefc43ea42c33a62f6347c8d5b02c8}{Mtc\+Prof\+Cfg.\+Mtc\+\_\+\+Prof\+Cfg\+Get\+Use\+Dft}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/\mbox{\hyperlink{_mtc_prof_cfg_8java}{Mtc\+Prof\+Cfg.\+java}}\end{DoxyCompactItemize}

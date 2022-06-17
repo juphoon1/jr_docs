@@ -1,0 +1,1812 @@
+\hypertarget{mtc__prov__db_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+prov\+\_\+db.h File Reference}
+\label{mtc__prov__db_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prov\_db.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prov\_db.h}}
+
+
+M\+TC Provision Database Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__prov__db_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__prov__db_8h_a8118d1b89f4d894e1b18dd6c42b25899}\label{mtc__prov__db_8h_a8118d1b89f4d894e1b18dd6c42b25899}} 
+typedef enum \mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__prov__db_8h_a8118d1b89f4d894e1b18dd6c42b25899}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc provision rcs version type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__prov__db_8h_ab48c538a1fa58a5e053cac76f81757e7}\label{mtc__prov__db_8h_ab48c538a1fa58a5e053cac76f81757e7}} 
+typedef enum \mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__prov__db_8h_ab48c538a1fa58a5e053cac76f81757e7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc provision rcs profile type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__prov__db_8h_acb230013fc30752417d47312a08af7d9}\label{mtc__prov__db_8h_acb230013fc30752417d47312a08af7d9}} 
+typedef enum \mbox{\hyperlink{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__prov__db_8h_acb230013fc30752417d47312a08af7d9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc provision device type \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__prov__db_8h_aabb14cf6577b76762f3accd05cd43fe8}\label{mtc__prov__db_8h_aabb14cf6577b76762f3accd05cd43fe8}} 
+typedef enum \mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__prov__db_8h_aabb14cf6577b76762f3accd05cd43fe8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em mtc provision server template type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca485cb44b709a3586197177266c985fe3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07cad731f6781af940fc5911f07d32296efa}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+5\+\_\+1}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07caeb4841b30a67ed3a0006bee6aad9d808}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+5\+\_\+1\+\_\+B}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca87a9bc5f95101b86a88ae2e4e5a43c0f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+6\+\_\+0}}, 
+\newline
+\mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca623818a52dd780f0f4fd22f6b95bde16}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+7\+\_\+0}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca865f8668238869ffe0450c4fcbea4a77}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+9\+\_\+0}}
+ \}
+\begin{DoxyCompactList}\small\item\em mtc provision rcs version type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0abec340d3536ef5949f8ad22461ab6bc1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a70754800bf42649af1f29280e536063c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+J\+O\+Y\+N\+\_\+\+B\+L\+A\+C\+K\+B\+I\+RD}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0ae372aee821015c32387f56623c373386}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+J\+O\+Y\+N\+\_\+\+H\+O\+T\+F\+I\+X\+ES}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0aa7c9acf93f0eff5eccb32c426b1b53da}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+1\+\_\+0}}, 
+\newline
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a39e8349e00d58aa73275b0c9ca11d925}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+T}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a3a666da17a5964fa89ff3530f20bf38f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+2\+\_\+0}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a951ed424ca016fd5cf0ab3cf3b586b21}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+2\+\_\+3}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a1dd8cb764da397b8e230f13b007f7ca8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+2\+\_\+4}}
+ \}
+\begin{DoxyCompactList}\small\item\em mtc provision rcs profile type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da100b975a144d5c6b60053709aeb3fae1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+A\+B\+L\+ET}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da6482e853ec01123aec396c93639fb22f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+PC}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da3378a5857cc552e9ee4116390877b9b5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+O\+T\+H\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em mtc provision device type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87ad378f745346f31019038869d0f1fb377}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87af1e56ef5c7614383cc2fa194868d2076}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+L\+O\+C\+AL}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87aa2831344a9e6001bfdbd7c8967217599}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+G\+L\+O\+B\+AL}}, 
+\mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87ad2768a44a376caf501f58d8692cf2f79}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+O\+T\+H\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em mtc provision server template type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a70125cc89567b9bd832c5ee328a55741}{Mtc\+\_\+\+Prov\+Db\+Flush}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Flush provision into database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a1a6beda8e57b5f3379060088a6865770}{Mtc\+\_\+\+Prov\+Db\+Get\+Login\+On\+PC}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the automatically start on PC option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_aaceab0bb2937118935b1e2f02b3ce801}{Mtc\+\_\+\+Prov\+Db\+Get\+Manual\+Ip}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the using manual local IP option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a4679743eedd6de8215069bff89baae7e}{Mtc\+\_\+\+Prov\+Db\+Get\+Gui\+Show\+Dbg}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the G\+UI show debug window option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a57df51cc9f152b15b5bc2f503d913fac}{Mtc\+\_\+\+Prov\+Db\+Get\+Mme\+Dump\+Dbg}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the M\+ME dump debug option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__prov__db_8h_a276c530cdbe1607049203628a1bf0d6b}{Mtc\+\_\+\+Prov\+Db\+Get\+Mme\+Log\+Level}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the M\+ME log level from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_ab867be62f2e57729c82e31c598a41afd}{Mtc\+\_\+\+Prov\+Db\+Get\+Mvc\+Rec\+Voice}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the mvc record voice option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a03389d39ecb1c1c518d3db747d14aaa9}{Mtc\+\_\+\+Prov\+Db\+Get\+Mvd\+Rec\+Video}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the mvd record video option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a69fbf6419debfda66e72c88a31c45184}{Mtc\+\_\+\+Prov\+Db\+Get\+Mvd\+Sync\+Audio}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the mvd sync audio option from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a4810528235ea115e6a4c6ff3126e472e}{Mtc\+\_\+\+Prov\+Db\+Get\+Cur\+Prof\+User}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the current profile user from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a1be8a35054b55c3ea700f12809d3ab0e}{Mtc\+\_\+\+Prov\+Db\+Get\+Emg\+Realm}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get emergency server realm. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a7c78e91ff768adca84405c0f65e76e68}{Mtc\+\_\+\+Prov\+Db\+Get\+Emg\+Addr}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the emergency server address from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_af6e35e8f2fe0efbbb4dd4e5c60cec078}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Reg\+Realm}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the default register realm from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_aa5c830711300477845ff9a767fc18224}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Proxy\+Addr}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the default proxy address from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_ac103513c1ba0078a731b2b1a5b8d97cd}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Auth\+Name\+In\+Realm}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the default authentication name in register realm from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a8b5ee44488a9278738ca59f0066cfcf8}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Sub\+Reg\+Evnt}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the default subscribe register event from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a5571c2657d6bb47ee434a27e1279048f}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Dtmf\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the default D\+T\+MF type from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_af6b56e9ef06121a80135774015797884}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Ring\+Dir}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the default ring directory. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__db_8h_a05591df5ad768639a9642252275ccfc0}{Mtc\+\_\+\+Prov\+Db\+Get\+Ring\+Mute}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get ring mute option. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_afc5d8a58bc20776a5db54b0b5770ea1c}{Mtc\+\_\+\+Prov\+Db\+Set\+Login\+On\+PC}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set automatically start on PC option. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a948760237f12953359e2f5d4fff17132}{Mtc\+\_\+\+Prov\+Db\+Set\+Manual\+Ip}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set using manual local IP option. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a0488a73b6b1d83333f539708a8fe28d2}{Mtc\+\_\+\+Prov\+Db\+Set\+Mme\+Dump\+Dbg}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set M\+ME dump information to file option. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_afebbc11638fd14b78386459d4e0533e0}{Mtc\+\_\+\+Prov\+Db\+Set\+Mme\+Log\+Level}} (Z\+U\+C\+H\+AR uc\+Level)
+\begin{DoxyCompactList}\small\item\em Set M\+ME log level. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a869f4cde86247df90c60fe0acbab4818}{Mtc\+\_\+\+Prov\+Db\+Set\+Cur\+Prof\+User}} (Z\+C\+H\+AR $\ast$pc\+User)
+\begin{DoxyCompactList}\small\item\em Set current profile user. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_ab43b6abccbd89ecf0c23f25c11e13120}{Mtc\+\_\+\+Prov\+Db\+Set\+Dft\+Ring\+Dir}} (Z\+C\+H\+AR $\ast$pc\+Dir)
+\begin{DoxyCompactList}\small\item\em Set default ring directory. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a993b1985ae7ae9140571e530054c2e24}{Mtc\+\_\+\+Prov\+Db\+Set\+Ring\+Mute}} (Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em Set ring mute option. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Parm)
+\begin{DoxyCompactList}\small\item\em Get extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_abb8b11683436b897040fd85cd5a37b37}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Bool}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+B\+O\+OL $\ast$pb\+Parm)
+\begin{DoxyCompactList}\small\item\em Get extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_aa66af0b2b699639930ce2b38fe73826d}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Int}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+I\+NT $\ast$pi\+Parm)
+\begin{DoxyCompactList}\small\item\em Get extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a1f0f87ce08d224e45ee36882dadc0889}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Uint}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+U\+I\+NT $\ast$pi\+Parm)
+\begin{DoxyCompactList}\small\item\em Get extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a133a2488dd8b4783a89baeac8f26bf1b}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+ParmX}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a7024a03cf0139f8bb47c7d544c533f25}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Count}} (Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em Get extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a18094ab74bf425c1dd3f128e70393c5f}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+C\+H\+AR $\ast$pc\+Val)
+\begin{DoxyCompactList}\small\item\em Set extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a15db9c96ddaf16d050aee4a72f80ea2b}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm\+Bool}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+B\+O\+OL b\+Val)
+\begin{DoxyCompactList}\small\item\em Set extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a932fa0d5bc842b6d87a5eae069830d72}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm\+Int}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+I\+NT i\+Val)
+\begin{DoxyCompactList}\small\item\em Set extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_ac0605bbac462e9e28e090bc1266f9b28}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm\+Uint}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+U\+I\+NT i\+Val)
+\begin{DoxyCompactList}\small\item\em Set extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a27828f38fd949f6d354b05fff2668245}{Mtc\+\_\+\+Prov\+Db\+Add\+Extn\+Parm}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+C\+H\+AR $\ast$pc\+Val)
+\begin{DoxyCompactList}\small\item\em Add extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a3db306d382ea392851b1d0008c65ab82}{Mtc\+\_\+\+Prov\+Db\+Add\+Extn\+ParmN}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+U\+S\+H\+O\+RT w\+Name\+Len, Z\+C\+H\+AR $\ast$pc\+Val, Z\+U\+S\+H\+O\+RT w\+Val\+Len)
+\begin{DoxyCompactList}\small\item\em Add extension parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a36bfb8ad8d98a1c83f6addea3fc8f690}{Mtc\+\_\+\+Prov\+Db\+Get\+Rcs\+Ver}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the R\+CS version from database. It is only mandatory from R\+CS 5.\+1 onwards. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_afae37179981b43fa4e03c65b3df1afac}{Mtc\+\_\+\+Prov\+Db\+Get\+Rcs\+Profile}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the R\+CS profile from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+S\+H\+O\+RT \mbox{\hyperlink{mtc__prov__db_8h_ab084ffd235c77c68a2ea471c0147e9d8}{Mtc\+\_\+\+Prov\+Db\+Get\+Device\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the device type from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+S\+H\+O\+RT \mbox{\hyperlink{mtc__prov__db_8h_ab6cb65c0d311e7460c45445694ca698e}{Mtc\+\_\+\+Prov\+Db\+Get\+Sms\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the S\+MS port from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a9122e045a9fc2dbbfcf195916be17a0a}{Mtc\+\_\+\+Prov\+Db\+Get\+Cli\+Vendor}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the client vendor from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_ab0eaa6888a65f2dfe497b2c82efe68c0}{Mtc\+\_\+\+Prov\+Db\+Get\+Cli\+Ver}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the client version from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_aebff042dc148c45ec6061048c358fd6d}{Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Vendor}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the terminal vendor from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_ab6d1523690efc460d1b19d7b356ae2ca}{Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Model}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the terminal model from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a5e9e4c1cd6b43aa31c94dc9d91fb790e}{Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Sw\+Ver}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the terminal software version from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_a8fedb4e0996fbc2991c7526198021fd9}{Mtc\+\_\+\+Prov\+Db\+Get\+Chnnl\+Id}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the channel id from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_af66a335f59f1987d775fd57c020b1538}{Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+Tmpl}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the server template from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_ae0b83bb50ef07f6dd9a9dc368a8609d5}{Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+TmplX}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the server template from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_af445b66b1b56cda56203c6688d71874a}{Mtc\+\_\+\+Prov\+Db\+Get\+Mcc}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the mobile country code from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_ab4cec2e0df7a45a625b098579ca6d26e}{Mtc\+\_\+\+Prov\+Db\+Get\+Mnc}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the mobile network code from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_aeff167ef9de4bc77ca6b8311a301649f}{Mtc\+\_\+\+Prov\+Db\+Get\+Imei}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the I\+M\+EI from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__db_8h_ae3345196a0538d4137f8d93d78613ab6}{Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the service type from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a87b348ba7ffa6e45211bf7d15f4fcafb}{Mtc\+\_\+\+Prov\+Db\+Set\+Rcs\+Ver}} (Z\+U\+I\+NT i\+Rcs\+Ver)
+\begin{DoxyCompactList}\small\item\em Set R\+CS version. It is only mandatory from R\+CS 5.\+1 onwards. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a258d9a55a80d07e6775866183bc5ff48}{Mtc\+\_\+\+Prov\+Db\+Set\+Rcs\+Profile}} (Z\+U\+I\+NT i\+Rcs\+Profile)
+\begin{DoxyCompactList}\small\item\em Set R\+CS profile. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a777ef8a76f31d37e2098eeee6ccf0d4a}{Mtc\+\_\+\+Prov\+Db\+Set\+Device\+Type}} (Z\+U\+S\+H\+O\+RT w\+Device\+Type)
+\begin{DoxyCompactList}\small\item\em Set device type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a05b33e8a3902b932b93a4db065f2ba62}{Mtc\+\_\+\+Prov\+Db\+Set\+Sms\+Port}} (Z\+U\+S\+H\+O\+RT w\+Port)
+\begin{DoxyCompactList}\small\item\em Set S\+MS port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_acf06406f3b1f3180ef3367c466b83c28}{Mtc\+\_\+\+Prov\+Db\+Set\+Cli\+Vendor}} (Z\+C\+H\+AR $\ast$pc\+Vendor)
+\begin{DoxyCompactList}\small\item\em Set client vendor. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a8cd25cb7d19adcf0e45189ee2bfa1c39}{Mtc\+\_\+\+Prov\+Db\+Set\+Cli\+Ver}} (Z\+C\+H\+AR $\ast$pc\+Ver)
+\begin{DoxyCompactList}\small\item\em Set client version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_aa7ad5f1ada39a8213fb1063332f61ca0}{Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Vendor}} (Z\+C\+H\+AR $\ast$pc\+Vendor)
+\begin{DoxyCompactList}\small\item\em Set terminal vendor. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a3adb0671d61a18aa8d27ee5d65480286}{Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Model}} (Z\+C\+H\+AR $\ast$pc\+Model)
+\begin{DoxyCompactList}\small\item\em Set terminal model. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a3ed22337158bb9bc37de79fc7a58fd0f}{Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Sw\+Ver}} (Z\+C\+H\+AR $\ast$pc\+Ver)
+\begin{DoxyCompactList}\small\item\em Set terminal software version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a7aa1a258a65195801f58e929194b43d5}{Mtc\+\_\+\+Prov\+Db\+Set\+Chnnl\+Id}} (Z\+C\+H\+AR $\ast$pc\+Chnnl\+Id)
+\begin{DoxyCompactList}\small\item\em Set channel id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a86d9618474aa0021a9b34a220283166f}{Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+Tmpl}} (Z\+U\+I\+NT i\+Srv\+Tmpl)
+\begin{DoxyCompactList}\small\item\em Set server template. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a37a7542de0f734a6b014a6f3f2437fd5}{Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+TmplX}} (Z\+C\+H\+AR $\ast$pc\+Srv\+Tmpl)
+\begin{DoxyCompactList}\small\item\em Set server template. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_ae496263ff84da335bee99ff2fa5b6b85}{Mtc\+\_\+\+Prov\+Db\+Set\+Mcc}} (Z\+C\+H\+AR $\ast$pc\+Mcc)
+\begin{DoxyCompactList}\small\item\em Set mobile country code. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_a1974c06b2dc4ba455264e84da1b60d20}{Mtc\+\_\+\+Prov\+Db\+Set\+Mnc}} (Z\+C\+H\+AR $\ast$pc\+Mnc)
+\begin{DoxyCompactList}\small\item\em Set mobile network code. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_ad159ccca45b2317dae5dfa119e269c09}{Mtc\+\_\+\+Prov\+Db\+Set\+Imei}} (Z\+C\+H\+AR $\ast$pc\+Imei)
+\begin{DoxyCompactList}\small\item\em Set I\+M\+EI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__db_8h_ae35da5751c9b99fb176b50ed931a44e3}{Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+Type}} (Z\+C\+H\+AR $\ast$pc\+Srv\+Type)
+\begin{DoxyCompactList}\small\item\em Set service type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Provision Database Interface Functions. 
+
+Provision Database contain client global configuration beside account profile. For example, auto run client when PC startup. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7d}\label{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7d}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_DEVICE\_TYPE@{EN\_MTC\_PROV\_DEVICE\_TYPE}}
+\index{EN\_MTC\_PROV\_DEVICE\_TYPE@{EN\_MTC\_PROV\_DEVICE\_TYPE}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PROV\_DEVICE\_TYPE}{EN\_MTC\_PROV\_DEVICE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc provision device type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_DEVICE\_TABLET@{EN\_MTC\_PROV\_DEVICE\_TABLET}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_DEVICE\_TABLET@{EN\_MTC\_PROV\_DEVICE\_TABLET}}}\mbox{\Hypertarget{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da100b975a144d5c6b60053709aeb3fae1}\label{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da100b975a144d5c6b60053709aeb3fae1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+A\+B\+L\+ET&tablet device type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_DEVICE\_PC@{EN\_MTC\_PROV\_DEVICE\_PC}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_DEVICE\_PC@{EN\_MTC\_PROV\_DEVICE\_PC}}}\mbox{\Hypertarget{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da6482e853ec01123aec396c93639fb22f}\label{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da6482e853ec01123aec396c93639fb22f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+PC&pc device type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_DEVICE\_OTHER@{EN\_MTC\_PROV\_DEVICE\_OTHER}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_DEVICE\_OTHER@{EN\_MTC\_PROV\_DEVICE\_OTHER}}}\mbox{\Hypertarget{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da3378a5857cc552e9ee4116390877b9b5}\label{mtc__prov__db_8h_aaaa93464b7090684c81d7e3584327f7da3378a5857cc552e9ee4116390877b9b5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+O\+T\+H\+ER&other device type \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_TYPE@{EN\_MTC\_PROV\_RCS\_PROF\_TYPE}}
+\index{EN\_MTC\_PROV\_RCS\_PROF\_TYPE@{EN\_MTC\_PROV\_RCS\_PROF\_TYPE}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PROV\_RCS\_PROF\_TYPE}{EN\_MTC\_PROV\_RCS\_PROF\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc provision rcs profile type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_UNKNOWN@{EN\_MTC\_PROV\_RCS\_PROF\_UNKNOWN}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_UNKNOWN@{EN\_MTC\_PROV\_RCS\_PROF\_UNKNOWN}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0abec340d3536ef5949f8ad22461ab6bc1}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0abec340d3536ef5949f8ad22461ab6bc1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+N\+K\+N\+O\+WN&unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_BLACKBIRD@{EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_BLACKBIRD}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_BLACKBIRD@{EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_BLACKBIRD}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a70754800bf42649af1f29280e536063c}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a70754800bf42649af1f29280e536063c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+J\+O\+Y\+N\+\_\+\+B\+L\+A\+C\+K\+B\+I\+RD&joyn blackbird \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_HOTFIXES@{EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_HOTFIXES}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_HOTFIXES@{EN\_MTC\_PROV\_RCS\_PROF\_JOYN\_HOTFIXES}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0ae372aee821015c32387f56623c373386}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0ae372aee821015c32387f56623c373386}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+J\+O\+Y\+N\+\_\+\+H\+O\+T\+F\+I\+X\+ES&joyn hotfixes \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_UP\_1\_0@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_1\_0}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_UP\_1\_0@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_1\_0}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0aa7c9acf93f0eff5eccb32c426b1b53da}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0aa7c9acf93f0eff5eccb32c426b1b53da}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+1\+\_\+0&U\+P\+\_\+1.\+0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_UP\_T@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_T}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_UP\_T@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_T}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a39e8349e00d58aa73275b0c9ca11d925}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a39e8349e00d58aa73275b0c9ca11d925}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+T&U\+P\+\_\+T. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_0@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_0}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_0@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_0}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a3a666da17a5964fa89ff3530f20bf38f}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a3a666da17a5964fa89ff3530f20bf38f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+2\+\_\+0&U\+P\+\_\+2.\+0. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_3@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_3}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_3@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_3}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a951ed424ca016fd5cf0ab3cf3b586b21}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a951ed424ca016fd5cf0ab3cf3b586b21}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+2\+\_\+3&U\+P\+\_\+2.\+3. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_4@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_4}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_4@{EN\_MTC\_PROV\_RCS\_PROF\_UP\_2\_4}}}\mbox{\Hypertarget{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a1dd8cb764da397b8e230f13b007f7ca8}\label{mtc__prov__db_8h_a46c45f3ab07661b1339d36927d91e3b0a1dd8cb764da397b8e230f13b007f7ca8}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+U\+P\+\_\+2\+\_\+4&U\+P\+\_\+2.\+4. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07c}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07c}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_TYPE@{EN\_MTC\_PROV\_RCS\_VER\_TYPE}}
+\index{EN\_MTC\_PROV\_RCS\_VER\_TYPE@{EN\_MTC\_PROV\_RCS\_VER\_TYPE}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PROV\_RCS\_VER\_TYPE}{EN\_MTC\_PROV\_RCS\_VER\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc provision rcs version type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_VER\_UNKNOWN@{EN\_MTC\_PROV\_RCS\_VER\_UNKNOWN}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_UNKNOWN@{EN\_MTC\_PROV\_RCS\_VER\_UNKNOWN}}}\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca485cb44b709a3586197177266c985fe3}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca485cb44b709a3586197177266c985fe3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+U\+N\+K\+N\+O\+WN&unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_VER\_5\_1@{EN\_MTC\_PROV\_RCS\_VER\_5\_1}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_5\_1@{EN\_MTC\_PROV\_RCS\_VER\_5\_1}}}\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07cad731f6781af940fc5911f07d32296efa}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07cad731f6781af940fc5911f07d32296efa}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+5\+\_\+1&rcs5.\+1\+\_\+v1.\+0(5.\+1) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_VER\_5\_1\_B@{EN\_MTC\_PROV\_RCS\_VER\_5\_1\_B}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_5\_1\_B@{EN\_MTC\_PROV\_RCS\_VER\_5\_1\_B}}}\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07caeb4841b30a67ed3a0006bee6aad9d808}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07caeb4841b30a67ed3a0006bee6aad9d808}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+5\+\_\+1\+\_\+B&rcs5.\+1\+\_\+v2.\+0(5.\+1B) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_VER\_6\_0@{EN\_MTC\_PROV\_RCS\_VER\_6\_0}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_6\_0@{EN\_MTC\_PROV\_RCS\_VER\_6\_0}}}\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca87a9bc5f95101b86a88ae2e4e5a43c0f}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca87a9bc5f95101b86a88ae2e4e5a43c0f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+6\+\_\+0&rcs6.\+0(6.\+0) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_VER\_7\_0@{EN\_MTC\_PROV\_RCS\_VER\_7\_0}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_7\_0@{EN\_MTC\_PROV\_RCS\_VER\_7\_0}}}\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca623818a52dd780f0f4fd22f6b95bde16}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca623818a52dd780f0f4fd22f6b95bde16}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+7\+\_\+0&rcs7.\+0(7.\+0) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_RCS\_VER\_9\_0@{EN\_MTC\_PROV\_RCS\_VER\_9\_0}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_RCS\_VER\_9\_0@{EN\_MTC\_PROV\_RCS\_VER\_9\_0}}}\mbox{\Hypertarget{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca865f8668238869ffe0450c4fcbea4a77}\label{mtc__prov__db_8h_a3339e10fcd524f5f02ad4b953cfac07ca865f8668238869ffe0450c4fcbea4a77}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+9\+\_\+0&rcs7.\+0(9.\+0) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87}\label{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_SRV\_TMPL\_TYPE@{EN\_MTC\_PROV\_SRV\_TMPL\_TYPE}}
+\index{EN\_MTC\_PROV\_SRV\_TMPL\_TYPE@{EN\_MTC\_PROV\_SRV\_TMPL\_TYPE}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PROV\_SRV\_TMPL\_TYPE}{EN\_MTC\_PROV\_SRV\_TMPL\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+T\+Y\+PE}}}
+
+
+
+mtc provision server template type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_SRV\_TMPL\_UNKNOWN@{EN\_MTC\_PROV\_SRV\_TMPL\_UNKNOWN}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_SRV\_TMPL\_UNKNOWN@{EN\_MTC\_PROV\_SRV\_TMPL\_UNKNOWN}}}\mbox{\Hypertarget{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87ad378f745346f31019038869d0f1fb377}\label{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87ad378f745346f31019038869d0f1fb377}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+U\+N\+K\+N\+O\+WN&unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_SRV\_TMPL\_LOCAL@{EN\_MTC\_PROV\_SRV\_TMPL\_LOCAL}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_SRV\_TMPL\_LOCAL@{EN\_MTC\_PROV\_SRV\_TMPL\_LOCAL}}}\mbox{\Hypertarget{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87af1e56ef5c7614383cc2fa194868d2076}\label{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87af1e56ef5c7614383cc2fa194868d2076}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+L\+O\+C\+AL&config.\+rcs.\+mnc\+X\+X\+X.\+mcc\+X\+X\+X.\+pub.\+3gppnetwork.\+org \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_SRV\_TMPL\_GLOBAL@{EN\_MTC\_PROV\_SRV\_TMPL\_GLOBAL}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_SRV\_TMPL\_GLOBAL@{EN\_MTC\_PROV\_SRV\_TMPL\_GLOBAL}}}\mbox{\Hypertarget{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87aa2831344a9e6001bfdbd7c8967217599}\label{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87aa2831344a9e6001bfdbd7c8967217599}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+G\+L\+O\+B\+AL&global.\+config.\+rcs.\+mnc\+X\+X\+X.\+mcc\+X\+X\+X.\+pub.\+3gppnetwork.\+org \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PROV\_SRV\_TMPL\_OTHER@{EN\_MTC\_PROV\_SRV\_TMPL\_OTHER}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!EN\_MTC\_PROV\_SRV\_TMPL\_OTHER@{EN\_MTC\_PROV\_SRV\_TMPL\_OTHER}}}\mbox{\Hypertarget{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87ad2768a44a376caf501f58d8692cf2f79}\label{mtc__prov__db_8h_a96632d470905af21dbe3bdae0c237a87ad2768a44a376caf501f58d8692cf2f79}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+O\+T\+H\+ER&other \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__prov__db_8h_a27828f38fd949f6d354b05fff2668245}\label{mtc__prov__db_8h_a27828f38fd949f6d354b05fff2668245}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbAddExtnParm@{Mtc\_ProvDbAddExtnParm}}
+\index{Mtc\_ProvDbAddExtnParm@{Mtc\_ProvDbAddExtnParm}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbAddExtnParm()}{Mtc\_ProvDbAddExtnParm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Add\+Extn\+Parm (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Val }\end{DoxyParamCaption})}
+
+
+
+Add extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Val} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Add the parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Add the parameter failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a3db306d382ea392851b1d0008c65ab82}\label{mtc__prov__db_8h_a3db306d382ea392851b1d0008c65ab82}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbAddExtnParmN@{Mtc\_ProvDbAddExtnParmN}}
+\index{Mtc\_ProvDbAddExtnParmN@{Mtc\_ProvDbAddExtnParmN}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbAddExtnParmN()}{Mtc\_ProvDbAddExtnParmN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Add\+Extn\+ParmN (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Name\+Len,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Val,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Val\+Len }\end{DoxyParamCaption})}
+
+
+
+Add extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Name\+Len} & The parameter name length. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Val} & The parameter value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Val\+Len} & The parameter value length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Add the parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Add the parameter failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a70125cc89567b9bd832c5ee328a55741}\label{mtc__prov__db_8h_a70125cc89567b9bd832c5ee328a55741}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbFlush@{Mtc\_ProvDbFlush}}
+\index{Mtc\_ProvDbFlush@{Mtc\_ProvDbFlush}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbFlush()}{Mtc\_ProvDbFlush()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Flush (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Flush provision into database. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the flush successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the flush failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__prov__db_8h_a8fedb4e0996fbc2991c7526198021fd9}\label{mtc__prov__db_8h_a8fedb4e0996fbc2991c7526198021fd9}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetChnnlId@{Mtc\_ProvDbGetChnnlId}}
+\index{Mtc\_ProvDbGetChnnlId@{Mtc\_ProvDbGetChnnlId}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetChnnlId()}{Mtc\_ProvDbGetChnnlId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Chnnl\+Id (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the channel id from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of channel id.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a7aa1a258a65195801f58e929194b43d5}{Mtc\+\_\+\+Prov\+Db\+Set\+Chnnl\+Id}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a9122e045a9fc2dbbfcf195916be17a0a}\label{mtc__prov__db_8h_a9122e045a9fc2dbbfcf195916be17a0a}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetCliVendor@{Mtc\_ProvDbGetCliVendor}}
+\index{Mtc\_ProvDbGetCliVendor@{Mtc\_ProvDbGetCliVendor}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetCliVendor()}{Mtc\_ProvDbGetCliVendor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Cli\+Vendor (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the client vendor from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of client vendor.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_acf06406f3b1f3180ef3367c466b83c28}{Mtc\+\_\+\+Prov\+Db\+Set\+Cli\+Vendor}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab0eaa6888a65f2dfe497b2c82efe68c0}\label{mtc__prov__db_8h_ab0eaa6888a65f2dfe497b2c82efe68c0}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetCliVer@{Mtc\_ProvDbGetCliVer}}
+\index{Mtc\_ProvDbGetCliVer@{Mtc\_ProvDbGetCliVer}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetCliVer()}{Mtc\_ProvDbGetCliVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Cli\+Ver (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the client version from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of client version.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8cd25cb7d19adcf0e45189ee2bfa1c39}{Mtc\+\_\+\+Prov\+Db\+Set\+Cli\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a4810528235ea115e6a4c6ff3126e472e}\label{mtc__prov__db_8h_a4810528235ea115e6a4c6ff3126e472e}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetCurProfUser@{Mtc\_ProvDbGetCurProfUser}}
+\index{Mtc\_ProvDbGetCurProfUser@{Mtc\_ProvDbGetCurProfUser}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetCurProfUser()}{Mtc\_ProvDbGetCurProfUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Cur\+Prof\+User (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the current profile user from database. 
+
+\begin{DoxyReturn}{Returns}
+Current profile user. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab084ffd235c77c68a2ea471c0147e9d8}\label{mtc__prov__db_8h_ab084ffd235c77c68a2ea471c0147e9d8}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDeviceType@{Mtc\_ProvDbGetDeviceType}}
+\index{Mtc\_ProvDbGetDeviceType@{Mtc\_ProvDbGetDeviceType}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDeviceType()}{Mtc\_ProvDbGetDeviceType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+S\+H\+O\+RT Mtc\+\_\+\+Prov\+Db\+Get\+Device\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the device type from database. 
+
+\begin{DoxyReturn}{Returns}
+The device type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_acb230013fc30752417d47312a08af7d9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}.
+
+\mbox{\hyperlink{mtc__prov__db_8h_a777ef8a76f31d37e2098eeee6ccf0d4a}{Mtc\+\_\+\+Prov\+Db\+Set\+Device\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ac103513c1ba0078a731b2b1a5b8d97cd}\label{mtc__prov__db_8h_ac103513c1ba0078a731b2b1a5b8d97cd}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDftAuthNameInRealm@{Mtc\_ProvDbGetDftAuthNameInRealm}}
+\index{Mtc\_ProvDbGetDftAuthNameInRealm@{Mtc\_ProvDbGetDftAuthNameInRealm}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDftAuthNameInRealm()}{Mtc\_ProvDbGetDftAuthNameInRealm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Auth\+Name\+In\+Realm (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the default authentication name in register realm from database. 
+
+\begin{DoxyReturn}{Returns}
+Default authentication name in realm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a5571c2657d6bb47ee434a27e1279048f}\label{mtc__prov__db_8h_a5571c2657d6bb47ee434a27e1279048f}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDftDtmfType@{Mtc\_ProvDbGetDftDtmfType}}
+\index{Mtc\_ProvDbGetDftDtmfType@{Mtc\_ProvDbGetDftDtmfType}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDftDtmfType()}{Mtc\_ProvDbGetDftDtmfType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Dtmf\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the default D\+T\+MF type from database. 
+
+\begin{DoxyReturn}{Returns}
+Default D\+T\+MF type, see \mbox{\hyperlink{mtc__call__db_8h_adfb56b79070d5daf842ed8ff7749e00d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+B\+\_\+\+D\+T\+M\+F\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_aa5c830711300477845ff9a767fc18224}\label{mtc__prov__db_8h_aa5c830711300477845ff9a767fc18224}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDftProxyAddr@{Mtc\_ProvDbGetDftProxyAddr}}
+\index{Mtc\_ProvDbGetDftProxyAddr@{Mtc\_ProvDbGetDftProxyAddr}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDftProxyAddr()}{Mtc\_ProvDbGetDftProxyAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Proxy\+Addr (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the default proxy address from database. 
+
+\begin{DoxyReturn}{Returns}
+Default proxy address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_af6e35e8f2fe0efbbb4dd4e5c60cec078}\label{mtc__prov__db_8h_af6e35e8f2fe0efbbb4dd4e5c60cec078}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDftRegRealm@{Mtc\_ProvDbGetDftRegRealm}}
+\index{Mtc\_ProvDbGetDftRegRealm@{Mtc\_ProvDbGetDftRegRealm}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDftRegRealm()}{Mtc\_ProvDbGetDftRegRealm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Reg\+Realm (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the default register realm from database. 
+
+\begin{DoxyReturn}{Returns}
+Default register realm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_af6b56e9ef06121a80135774015797884}\label{mtc__prov__db_8h_af6b56e9ef06121a80135774015797884}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDftRingDir@{Mtc\_ProvDbGetDftRingDir}}
+\index{Mtc\_ProvDbGetDftRingDir@{Mtc\_ProvDbGetDftRingDir}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDftRingDir()}{Mtc\_ProvDbGetDftRingDir()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Ring\+Dir (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the default ring directory. 
+
+\begin{DoxyReturn}{Returns}
+Default ring directory. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a8b5ee44488a9278738ca59f0066cfcf8}\label{mtc__prov__db_8h_a8b5ee44488a9278738ca59f0066cfcf8}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetDftSubRegEvnt@{Mtc\_ProvDbGetDftSubRegEvnt}}
+\index{Mtc\_ProvDbGetDftSubRegEvnt@{Mtc\_ProvDbGetDftSubRegEvnt}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetDftSubRegEvnt()}{Mtc\_ProvDbGetDftSubRegEvnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Sub\+Reg\+Evnt (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the default subscribe register event from database. 
+
+\begin{DoxyReturn}{Returns}
+Default subscribe register event. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a7c78e91ff768adca84405c0f65e76e68}\label{mtc__prov__db_8h_a7c78e91ff768adca84405c0f65e76e68}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetEmgAddr@{Mtc\_ProvDbGetEmgAddr}}
+\index{Mtc\_ProvDbGetEmgAddr@{Mtc\_ProvDbGetEmgAddr}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetEmgAddr()}{Mtc\_ProvDbGetEmgAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Emg\+Addr (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the emergency server address from database. 
+
+\begin{DoxyReturn}{Returns}
+Default emergency server address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a1be8a35054b55c3ea700f12809d3ab0e}\label{mtc__prov__db_8h_a1be8a35054b55c3ea700f12809d3ab0e}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetEmgRealm@{Mtc\_ProvDbGetEmgRealm}}
+\index{Mtc\_ProvDbGetEmgRealm@{Mtc\_ProvDbGetEmgRealm}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetEmgRealm()}{Mtc\_ProvDbGetEmgRealm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Emg\+Realm (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get emergency server realm. 
+
+The general emergency call flow is like below\+:
+\begin{DoxyEnumerate}
+\item No any account has logined
+\item initialize the client
+\item Mtc\+\_\+\+Cli\+Init(profile director);
+\item initialize callback functions
+\item Mtc\+\_\+\+Cli\+Cb\+Set\+Print(print callback);
+\item Mtc\+\_\+\+Call\+Cb\+Set\+Alerted(alerted callback);
+\item Mtc\+\_\+\+Call\+Cb\+Set\+Talking(talking callback);
+\item Mtc\+\_\+\+Call\+Cb\+Set\+Termed(terminated callback);
+\item Mtc\+\_\+\+Call\+Cb\+Set\+Error(error callback);
+\item Open an null account Mtc\+\_\+\+Cli\+Open(\+Z\+N\+U\+L\+L)
+\item Start client service \mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\+\_\+\+Cli\+Start()}}
+\item Get Emergency server info by \mbox{\hyperlink{mtc__prov__db_8h_a7c78e91ff768adca84405c0f65e76e68}{Mtc\+\_\+\+Prov\+Db\+Get\+Emg\+Addr}}
+\item Set local and server parameters\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_ad4f2ff0241496b6a063ae3a41f545700}{Mtc\_CliDbSetSipLclTcpPort}}(5060);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_ad4f2ff0241496b6a063ae3a41f545700}{Mtc\_CliDbSetSipLclTcpPort}}(5060);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_ad5541357e8efa34b4066c285ad7cd386}{Mtc\_CliDbSetSipRegIp}}(pcProxyAddr);}
+\DoxyCodeLine{Mtc\_CliDbSetSipRegPort(5060);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_aa48a19abd45390c5c98b62f9ee6617ae}{Mtc\_CliDbSetSipRegRealm}}(pcProxyRealm);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_a1c2512863efb6cb0cfc75df9f5b8357c}{Mtc\_CliDbSetSipRegTpt}}(EN\_MSP\_TPT\_UDP);}
+\DoxyCodeLine{Mtc\_CliDbSetUserReg(ZTRUE);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_a9ff7b9fca95976794f13e15fbda9d6ce}{Mtc\_CliDbSetAuthName}}(\textcolor{stringliteral}{"unknown"});}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_a404856d125323afb594e719bc8de9ce8}{Mtc\_CliDbSetAuthPass}}(\textcolor{stringliteral}{"unknown"});}
+\end{DoxyCode}
+
+\end{DoxyEnumerate}
+
+\begin{DoxyReturn}{Returns}
+Default emergency server realm. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}\label{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetExtnParm@{Mtc\_ProvDbGetExtnParm}}
+\index{Mtc\_ProvDbGetExtnParm@{Mtc\_ProvDbGetExtnParm}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetExtnParm()}{Mtc\_ProvDbGetExtnParm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Parm }\end{DoxyParamCaption})}
+
+
+
+Get extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Parm} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get extension parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get extension parameter failed, the extension parameter is not exist.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a18094ab74bf425c1dd3f128e70393c5f}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_abb8b11683436b897040fd85cd5a37b37}\label{mtc__prov__db_8h_abb8b11683436b897040fd85cd5a37b37}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetExtnParmBool@{Mtc\_ProvDbGetExtnParmBool}}
+\index{Mtc\_ProvDbGetExtnParmBool@{Mtc\_ProvDbGetExtnParmBool}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetExtnParmBool()}{Mtc\_ProvDbGetExtnParmBool()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Bool (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+B\+O\+OL $\ast$}]{pb\+Parm }\end{DoxyParamCaption})}
+
+
+
+Get extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pb\+Parm} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get extension parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get extension parameter failed, the extension parameter is not exist.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a7024a03cf0139f8bb47c7d544c533f25}\label{mtc__prov__db_8h_a7024a03cf0139f8bb47c7d544c533f25}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetExtnParmCount@{Mtc\_ProvDbGetExtnParmCount}}
+\index{Mtc\_ProvDbGetExtnParmCount@{Mtc\_ProvDbGetExtnParmCount}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetExtnParmCount()}{Mtc\_ProvDbGetExtnParmCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Count (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+Get extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get the parameter count successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get the parameter count failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a18094ab74bf425c1dd3f128e70393c5f}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_aa66af0b2b699639930ce2b38fe73826d}\label{mtc__prov__db_8h_aa66af0b2b699639930ce2b38fe73826d}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetExtnParmInt@{Mtc\_ProvDbGetExtnParmInt}}
+\index{Mtc\_ProvDbGetExtnParmInt@{Mtc\_ProvDbGetExtnParmInt}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetExtnParmInt()}{Mtc\_ProvDbGetExtnParmInt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Int (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+I\+NT $\ast$}]{pi\+Parm }\end{DoxyParamCaption})}
+
+
+
+Get extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Parm} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get extension parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get extension parameter failed, the extension parameter is not exist.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a1f0f87ce08d224e45ee36882dadc0889}\label{mtc__prov__db_8h_a1f0f87ce08d224e45ee36882dadc0889}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetExtnParmUint@{Mtc\_ProvDbGetExtnParmUint}}
+\index{Mtc\_ProvDbGetExtnParmUint@{Mtc\_ProvDbGetExtnParmUint}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetExtnParmUint()}{Mtc\_ProvDbGetExtnParmUint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm\+Uint (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Parm }\end{DoxyParamCaption})}
+
+
+
+Get extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Parm} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get extension parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get extension parameter failed, the extension parameter is not exist.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a133a2488dd8b4783a89baeac8f26bf1b}\label{mtc__prov__db_8h_a133a2488dd8b4783a89baeac8f26bf1b}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetExtnParmX@{Mtc\_ProvDbGetExtnParmX}}
+\index{Mtc\_ProvDbGetExtnParmX@{Mtc\_ProvDbGetExtnParmX}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetExtnParmX()}{Mtc\_ProvDbGetExtnParmX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+ParmX (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The parameter index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter value when get extension parameter successfully, otherwise return empty string.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a18094ab74bf425c1dd3f128e70393c5f}{Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a4679743eedd6de8215069bff89baae7e}\label{mtc__prov__db_8h_a4679743eedd6de8215069bff89baae7e}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetGuiShowDbg@{Mtc\_ProvDbGetGuiShowDbg}}
+\index{Mtc\_ProvDbGetGuiShowDbg@{Mtc\_ProvDbGetGuiShowDbg}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetGuiShowDbg()}{Mtc\_ProvDbGetGuiShowDbg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Gui\+Show\+Dbg (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the G\+UI show debug window option from database. 
+
+\begin{DoxyReturn}{Returns}
+Show debug window option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_aeff167ef9de4bc77ca6b8311a301649f}\label{mtc__prov__db_8h_aeff167ef9de4bc77ca6b8311a301649f}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetImei@{Mtc\_ProvDbGetImei}}
+\index{Mtc\_ProvDbGetImei@{Mtc\_ProvDbGetImei}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetImei()}{Mtc\_ProvDbGetImei()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Imei (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the I\+M\+EI from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of I\+M\+EI.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ad159ccca45b2317dae5dfa119e269c09}{Mtc\+\_\+\+Prov\+Db\+Set\+Imei}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a1a6beda8e57b5f3379060088a6865770}\label{mtc__prov__db_8h_a1a6beda8e57b5f3379060088a6865770}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetLoginOnPC@{Mtc\_ProvDbGetLoginOnPC}}
+\index{Mtc\_ProvDbGetLoginOnPC@{Mtc\_ProvDbGetLoginOnPC}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetLoginOnPC()}{Mtc\_ProvDbGetLoginOnPC()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Login\+On\+PC (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the automatically start on PC option from database. 
+
+\begin{DoxyReturn}{Returns}
+Automatically start on PC option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_aaceab0bb2937118935b1e2f02b3ce801}\label{mtc__prov__db_8h_aaceab0bb2937118935b1e2f02b3ce801}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetManualIp@{Mtc\_ProvDbGetManualIp}}
+\index{Mtc\_ProvDbGetManualIp@{Mtc\_ProvDbGetManualIp}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetManualIp()}{Mtc\_ProvDbGetManualIp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Manual\+Ip (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the using manual local IP option from database. 
+
+\begin{DoxyReturn}{Returns}
+Automatically start on PC option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_af445b66b1b56cda56203c6688d71874a}\label{mtc__prov__db_8h_af445b66b1b56cda56203c6688d71874a}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMcc@{Mtc\_ProvDbGetMcc}}
+\index{Mtc\_ProvDbGetMcc@{Mtc\_ProvDbGetMcc}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMcc()}{Mtc\_ProvDbGetMcc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Mcc (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the mobile country code from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of mobile country code.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ae496263ff84da335bee99ff2fa5b6b85}{Mtc\+\_\+\+Prov\+Db\+Set\+Mcc}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a57df51cc9f152b15b5bc2f503d913fac}\label{mtc__prov__db_8h_a57df51cc9f152b15b5bc2f503d913fac}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMmeDumpDbg@{Mtc\_ProvDbGetMmeDumpDbg}}
+\index{Mtc\_ProvDbGetMmeDumpDbg@{Mtc\_ProvDbGetMmeDumpDbg}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMmeDumpDbg()}{Mtc\_ProvDbGetMmeDumpDbg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Mme\+Dump\+Dbg (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the M\+ME dump debug option from database. 
+
+\begin{DoxyReturn}{Returns}
+M\+ME dump debug option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a276c530cdbe1607049203628a1bf0d6b}\label{mtc__prov__db_8h_a276c530cdbe1607049203628a1bf0d6b}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMmeLogLevel@{Mtc\_ProvDbGetMmeLogLevel}}
+\index{Mtc\_ProvDbGetMmeLogLevel@{Mtc\_ProvDbGetMmeLogLevel}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMmeLogLevel()}{Mtc\_ProvDbGetMmeLogLevel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Prov\+Db\+Get\+Mme\+Log\+Level (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the M\+ME log level from database. 
+
+\begin{DoxyReturn}{Returns}
+M\+ME log level number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab4cec2e0df7a45a625b098579ca6d26e}\label{mtc__prov__db_8h_ab4cec2e0df7a45a625b098579ca6d26e}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMnc@{Mtc\_ProvDbGetMnc}}
+\index{Mtc\_ProvDbGetMnc@{Mtc\_ProvDbGetMnc}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMnc()}{Mtc\_ProvDbGetMnc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Mnc (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the mobile network code from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of mobile network code.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a1974c06b2dc4ba455264e84da1b60d20}{Mtc\+\_\+\+Prov\+Db\+Set\+Mnc}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab867be62f2e57729c82e31c598a41afd}\label{mtc__prov__db_8h_ab867be62f2e57729c82e31c598a41afd}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMvcRecVoice@{Mtc\_ProvDbGetMvcRecVoice}}
+\index{Mtc\_ProvDbGetMvcRecVoice@{Mtc\_ProvDbGetMvcRecVoice}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMvcRecVoice()}{Mtc\_ProvDbGetMvcRecVoice()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Mvc\+Rec\+Voice (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the mvc record voice option from database. 
+
+\begin{DoxyReturn}{Returns}
+mvc record debug option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a03389d39ecb1c1c518d3db747d14aaa9}\label{mtc__prov__db_8h_a03389d39ecb1c1c518d3db747d14aaa9}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMvdRecVideo@{Mtc\_ProvDbGetMvdRecVideo}}
+\index{Mtc\_ProvDbGetMvdRecVideo@{Mtc\_ProvDbGetMvdRecVideo}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMvdRecVideo()}{Mtc\_ProvDbGetMvdRecVideo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Mvd\+Rec\+Video (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the mvd record video option from database. 
+
+\begin{DoxyReturn}{Returns}
+mvd record debug option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_a69fbf6419debfda66e72c88a31c45184}\label{mtc__prov__db_8h_a69fbf6419debfda66e72c88a31c45184}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetMvdSyncAudio@{Mtc\_ProvDbGetMvdSyncAudio}}
+\index{Mtc\_ProvDbGetMvdSyncAudio@{Mtc\_ProvDbGetMvdSyncAudio}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetMvdSyncAudio()}{Mtc\_ProvDbGetMvdSyncAudio()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Mvd\+Sync\+Audio (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the mvd sync audio option from database. 
+
+\begin{DoxyReturn}{Returns}
+mvc record debug option. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__prov__db_8h_afae37179981b43fa4e03c65b3df1afac}\label{mtc__prov__db_8h_afae37179981b43fa4e03c65b3df1afac}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetRcsProfile@{Mtc\_ProvDbGetRcsProfile}}
+\index{Mtc\_ProvDbGetRcsProfile@{Mtc\_ProvDbGetRcsProfile}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetRcsProfile()}{Mtc\_ProvDbGetRcsProfile()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Rcs\+Profile (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the R\+CS profile from database. 
+
+\begin{DoxyReturn}{Returns}
+The type of R\+CS profile, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab48c538a1fa58a5e053cac76f81757e7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+T\+Y\+PE}}.
+
+\mbox{\hyperlink{mtc__prov__db_8h_a258d9a55a80d07e6775866183bc5ff48}{Mtc\+\_\+\+Prov\+Db\+Set\+Rcs\+Profile}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a36bfb8ad8d98a1c83f6addea3fc8f690}\label{mtc__prov__db_8h_a36bfb8ad8d98a1c83f6addea3fc8f690}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetRcsVer@{Mtc\_ProvDbGetRcsVer}}
+\index{Mtc\_ProvDbGetRcsVer@{Mtc\_ProvDbGetRcsVer}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetRcsVer()}{Mtc\_ProvDbGetRcsVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Rcs\+Ver (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the R\+CS version from database. It is only mandatory from R\+CS 5.\+1 onwards. 
+
+\begin{DoxyReturn}{Returns}
+The type of R\+CS version, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8118d1b89f4d894e1b18dd6c42b25899}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+T\+Y\+PE}}.
+
+\mbox{\hyperlink{mtc__prov__db_8h_a87b348ba7ffa6e45211bf7d15f4fcafb}{Mtc\+\_\+\+Prov\+Db\+Set\+Rcs\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a05591df5ad768639a9642252275ccfc0}\label{mtc__prov__db_8h_a05591df5ad768639a9642252275ccfc0}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetRingMute@{Mtc\_ProvDbGetRingMute}}
+\index{Mtc\_ProvDbGetRingMute@{Mtc\_ProvDbGetRingMute}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetRingMute()}{Mtc\_ProvDbGetRingMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Db\+Get\+Ring\+Mute (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get ring mute option. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Mute ring. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Not to mute ring.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a993b1985ae7ae9140571e530054c2e24}{Mtc\+\_\+\+Prov\+Db\+Set\+Ring\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab6cb65c0d311e7460c45445694ca698e}\label{mtc__prov__db_8h_ab6cb65c0d311e7460c45445694ca698e}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetSmsPort@{Mtc\_ProvDbGetSmsPort}}
+\index{Mtc\_ProvDbGetSmsPort@{Mtc\_ProvDbGetSmsPort}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetSmsPort()}{Mtc\_ProvDbGetSmsPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+S\+H\+O\+RT Mtc\+\_\+\+Prov\+Db\+Get\+Sms\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the S\+MS port from database. 
+
+\begin{DoxyReturn}{Returns}
+The S\+MS port.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a05b33e8a3902b932b93a4db065f2ba62}{Mtc\+\_\+\+Prov\+Db\+Set\+Sms\+Port}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_af66a335f59f1987d775fd57c020b1538}\label{mtc__prov__db_8h_af66a335f59f1987d775fd57c020b1538}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetSrvTmpl@{Mtc\_ProvDbGetSrvTmpl}}
+\index{Mtc\_ProvDbGetSrvTmpl@{Mtc\_ProvDbGetSrvTmpl}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetSrvTmpl()}{Mtc\_ProvDbGetSrvTmpl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+Tmpl (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the server template from database. 
+
+\begin{DoxyReturn}{Returns}
+The type of server template, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_aabb14cf6577b76762f3accd05cd43fe8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+T\+Y\+PE}}.
+
+\mbox{\hyperlink{mtc__prov__db_8h_a86d9618474aa0021a9b34a220283166f}{Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+Tmpl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ae0b83bb50ef07f6dd9a9dc368a8609d5}\label{mtc__prov__db_8h_ae0b83bb50ef07f6dd9a9dc368a8609d5}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetSrvTmplX@{Mtc\_ProvDbGetSrvTmplX}}
+\index{Mtc\_ProvDbGetSrvTmplX@{Mtc\_ProvDbGetSrvTmplX}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetSrvTmplX()}{Mtc\_ProvDbGetSrvTmplX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+TmplX (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the server template from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of server template.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a37a7542de0f734a6b014a6f3f2437fd5}{Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+TmplX}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ae3345196a0538d4137f8d93d78613ab6}\label{mtc__prov__db_8h_ae3345196a0538d4137f8d93d78613ab6}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetSrvType@{Mtc\_ProvDbGetSrvType}}
+\index{Mtc\_ProvDbGetSrvType@{Mtc\_ProvDbGetSrvType}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetSrvType()}{Mtc\_ProvDbGetSrvType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the service type from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of service type.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ae35da5751c9b99fb176b50ed931a44e3}{Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab6d1523690efc460d1b19d7b356ae2ca}\label{mtc__prov__db_8h_ab6d1523690efc460d1b19d7b356ae2ca}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetTmnlModel@{Mtc\_ProvDbGetTmnlModel}}
+\index{Mtc\_ProvDbGetTmnlModel@{Mtc\_ProvDbGetTmnlModel}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetTmnlModel()}{Mtc\_ProvDbGetTmnlModel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Model (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the terminal model from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of terminal model.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a3adb0671d61a18aa8d27ee5d65480286}{Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Model}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a5e9e4c1cd6b43aa31c94dc9d91fb790e}\label{mtc__prov__db_8h_a5e9e4c1cd6b43aa31c94dc9d91fb790e}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetTmnlSwVer@{Mtc\_ProvDbGetTmnlSwVer}}
+\index{Mtc\_ProvDbGetTmnlSwVer@{Mtc\_ProvDbGetTmnlSwVer}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetTmnlSwVer()}{Mtc\_ProvDbGetTmnlSwVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Sw\+Ver (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the terminal software version from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of terminal software version.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a3ed22337158bb9bc37de79fc7a58fd0f}{Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Sw\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_aebff042dc148c45ec6061048c358fd6d}\label{mtc__prov__db_8h_aebff042dc148c45ec6061048c358fd6d}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbGetTmnlVendor@{Mtc\_ProvDbGetTmnlVendor}}
+\index{Mtc\_ProvDbGetTmnlVendor@{Mtc\_ProvDbGetTmnlVendor}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbGetTmnlVendor()}{Mtc\_ProvDbGetTmnlVendor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Vendor (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the terminal vendor from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of terminal vendor.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_aa7ad5f1ada39a8213fb1063332f61ca0}{Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Vendor}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a7aa1a258a65195801f58e929194b43d5}\label{mtc__prov__db_8h_a7aa1a258a65195801f58e929194b43d5}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetChnnlId@{Mtc\_ProvDbSetChnnlId}}
+\index{Mtc\_ProvDbSetChnnlId@{Mtc\_ProvDbSetChnnlId}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetChnnlId()}{Mtc\_ProvDbSetChnnlId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Chnnl\+Id (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Chnnl\+Id }\end{DoxyParamCaption})}
+
+
+
+Set channel id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Chnnl\+Id} & channel id string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set channel id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set channel id failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8fedb4e0996fbc2991c7526198021fd9}{Mtc\+\_\+\+Prov\+Db\+Get\+Chnnl\+Id}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_acf06406f3b1f3180ef3367c466b83c28}\label{mtc__prov__db_8h_acf06406f3b1f3180ef3367c466b83c28}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetCliVendor@{Mtc\_ProvDbSetCliVendor}}
+\index{Mtc\_ProvDbSetCliVendor@{Mtc\_ProvDbSetCliVendor}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetCliVendor()}{Mtc\_ProvDbSetCliVendor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Cli\+Vendor (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Vendor }\end{DoxyParamCaption})}
+
+
+
+Set client vendor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Vendor} & Client vendor string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set client vendor successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set client vendor failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a9122e045a9fc2dbbfcf195916be17a0a}{Mtc\+\_\+\+Prov\+Db\+Get\+Cli\+Vendor}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a8cd25cb7d19adcf0e45189ee2bfa1c39}\label{mtc__prov__db_8h_a8cd25cb7d19adcf0e45189ee2bfa1c39}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetCliVer@{Mtc\_ProvDbSetCliVer}}
+\index{Mtc\_ProvDbSetCliVer@{Mtc\_ProvDbSetCliVer}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetCliVer()}{Mtc\_ProvDbSetCliVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Cli\+Ver (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ver }\end{DoxyParamCaption})}
+
+
+
+Set client version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ver} & client version string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set client version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set client version failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab0eaa6888a65f2dfe497b2c82efe68c0}{Mtc\+\_\+\+Prov\+Db\+Get\+Cli\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a869f4cde86247df90c60fe0acbab4818}\label{mtc__prov__db_8h_a869f4cde86247df90c60fe0acbab4818}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetCurProfUser@{Mtc\_ProvDbSetCurProfUser}}
+\index{Mtc\_ProvDbSetCurProfUser@{Mtc\_ProvDbSetCurProfUser}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetCurProfUser()}{Mtc\_ProvDbSetCurProfUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Cur\+Prof\+User (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+User }\end{DoxyParamCaption})}
+
+
+
+Set current profile user. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+User} & The profile user name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the profile user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the profile user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a4810528235ea115e6a4c6ff3126e472e}{Mtc\+\_\+\+Prov\+Db\+Get\+Cur\+Prof\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a777ef8a76f31d37e2098eeee6ccf0d4a}\label{mtc__prov__db_8h_a777ef8a76f31d37e2098eeee6ccf0d4a}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetDeviceType@{Mtc\_ProvDbSetDeviceType}}
+\index{Mtc\_ProvDbSetDeviceType@{Mtc\_ProvDbSetDeviceType}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetDeviceType()}{Mtc\_ProvDbSetDeviceType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Device\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+S\+H\+O\+RT}]{w\+Device\+Type }\end{DoxyParamCaption})}
+
+
+
+Set device type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em w\+Device\+Type} & device type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_acb230013fc30752417d47312a08af7d9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set device type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set device type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab084ffd235c77c68a2ea471c0147e9d8}{Mtc\+\_\+\+Prov\+Db\+Get\+Device\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ab43b6abccbd89ecf0c23f25c11e13120}\label{mtc__prov__db_8h_ab43b6abccbd89ecf0c23f25c11e13120}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetDftRingDir@{Mtc\_ProvDbSetDftRingDir}}
+\index{Mtc\_ProvDbSetDftRingDir@{Mtc\_ProvDbSetDftRingDir}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetDftRingDir()}{Mtc\_ProvDbSetDftRingDir()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Dft\+Ring\+Dir (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Dir }\end{DoxyParamCaption})}
+
+
+
+Set default ring directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Dir} & The default ring directory.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the default ring directory successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the default ring directory failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_af6b56e9ef06121a80135774015797884}{Mtc\+\_\+\+Prov\+Db\+Get\+Dft\+Ring\+Dir}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a18094ab74bf425c1dd3f128e70393c5f}\label{mtc__prov__db_8h_a18094ab74bf425c1dd3f128e70393c5f}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetExtnParm@{Mtc\_ProvDbSetExtnParm}}
+\index{Mtc\_ProvDbSetExtnParm@{Mtc\_ProvDbSetExtnParm}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetExtnParm()}{Mtc\_ProvDbSetExtnParm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Val }\end{DoxyParamCaption})}
+
+
+
+Set extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Val} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the parameter failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a15db9c96ddaf16d050aee4a72f80ea2b}\label{mtc__prov__db_8h_a15db9c96ddaf16d050aee4a72f80ea2b}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetExtnParmBool@{Mtc\_ProvDbSetExtnParmBool}}
+\index{Mtc\_ProvDbSetExtnParmBool@{Mtc\_ProvDbSetExtnParmBool}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetExtnParmBool()}{Mtc\_ProvDbSetExtnParmBool()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm\+Bool (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+B\+O\+OL}]{b\+Val }\end{DoxyParamCaption})}
+
+
+
+Set extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Val} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the parameter failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a932fa0d5bc842b6d87a5eae069830d72}\label{mtc__prov__db_8h_a932fa0d5bc842b6d87a5eae069830d72}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetExtnParmInt@{Mtc\_ProvDbSetExtnParmInt}}
+\index{Mtc\_ProvDbSetExtnParmInt@{Mtc\_ProvDbSetExtnParmInt}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetExtnParmInt()}{Mtc\_ProvDbSetExtnParmInt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm\+Int (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+I\+NT}]{i\+Val }\end{DoxyParamCaption})}
+
+
+
+Set extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Val} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the parameter failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ac0605bbac462e9e28e090bc1266f9b28}\label{mtc__prov__db_8h_ac0605bbac462e9e28e090bc1266f9b28}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetExtnParmUint@{Mtc\_ProvDbSetExtnParmUint}}
+\index{Mtc\_ProvDbSetExtnParmUint@{Mtc\_ProvDbSetExtnParmUint}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetExtnParmUint()}{Mtc\_ProvDbSetExtnParmUint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Extn\+Parm\+Uint (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Val }\end{DoxyParamCaption})}
+
+
+
+Set extension parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The parameter name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Val} & The parameter value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the parameter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the parameter failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8eb9ff7c0bb92c9179f75fe9e7a97edd}{Mtc\+\_\+\+Prov\+Db\+Get\+Extn\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ad159ccca45b2317dae5dfa119e269c09}\label{mtc__prov__db_8h_ad159ccca45b2317dae5dfa119e269c09}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetImei@{Mtc\_ProvDbSetImei}}
+\index{Mtc\_ProvDbSetImei@{Mtc\_ProvDbSetImei}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetImei()}{Mtc\_ProvDbSetImei()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Imei (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Imei }\end{DoxyParamCaption})}
+
+
+
+Set I\+M\+EI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Imei} & I\+M\+EI string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set I\+M\+EI successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set I\+M\+EI failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_aeff167ef9de4bc77ca6b8311a301649f}{Mtc\+\_\+\+Prov\+Db\+Get\+Imei}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_afc5d8a58bc20776a5db54b0b5770ea1c}\label{mtc__prov__db_8h_afc5d8a58bc20776a5db54b0b5770ea1c}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetLoginOnPC@{Mtc\_ProvDbSetLoginOnPC}}
+\index{Mtc\_ProvDbSetLoginOnPC@{Mtc\_ProvDbSetLoginOnPC}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetLoginOnPC()}{Mtc\_ProvDbSetLoginOnPC()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Login\+On\+PC (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set automatically start on PC option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & The boolean value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a1a6beda8e57b5f3379060088a6865770}{Mtc\+\_\+\+Prov\+Db\+Get\+Login\+On\+PC}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a948760237f12953359e2f5d4fff17132}\label{mtc__prov__db_8h_a948760237f12953359e2f5d4fff17132}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetManualIp@{Mtc\_ProvDbSetManualIp}}
+\index{Mtc\_ProvDbSetManualIp@{Mtc\_ProvDbSetManualIp}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetManualIp()}{Mtc\_ProvDbSetManualIp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Manual\+Ip (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set using manual local IP option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & The boolean value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_aaceab0bb2937118935b1e2f02b3ce801}{Mtc\+\_\+\+Prov\+Db\+Get\+Manual\+Ip}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ae496263ff84da335bee99ff2fa5b6b85}\label{mtc__prov__db_8h_ae496263ff84da335bee99ff2fa5b6b85}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetMcc@{Mtc\_ProvDbSetMcc}}
+\index{Mtc\_ProvDbSetMcc@{Mtc\_ProvDbSetMcc}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetMcc()}{Mtc\_ProvDbSetMcc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Mcc (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Mcc }\end{DoxyParamCaption})}
+
+
+
+Set mobile country code. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Mcc} & mobile country code string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set mobile country code successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set mobile country code failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_af445b66b1b56cda56203c6688d71874a}{Mtc\+\_\+\+Prov\+Db\+Get\+Mcc}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a0488a73b6b1d83333f539708a8fe28d2}\label{mtc__prov__db_8h_a0488a73b6b1d83333f539708a8fe28d2}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetMmeDumpDbg@{Mtc\_ProvDbSetMmeDumpDbg}}
+\index{Mtc\_ProvDbSetMmeDumpDbg@{Mtc\_ProvDbSetMmeDumpDbg}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetMmeDumpDbg()}{Mtc\_ProvDbSetMmeDumpDbg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Mme\+Dump\+Dbg (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set M\+ME dump information to file option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & The boolean value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a57df51cc9f152b15b5bc2f503d913fac}{Mtc\+\_\+\+Prov\+Db\+Get\+Mme\+Dump\+Dbg}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_afebbc11638fd14b78386459d4e0533e0}\label{mtc__prov__db_8h_afebbc11638fd14b78386459d4e0533e0}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetMmeLogLevel@{Mtc\_ProvDbSetMmeLogLevel}}
+\index{Mtc\_ProvDbSetMmeLogLevel@{Mtc\_ProvDbSetMmeLogLevel}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetMmeLogLevel()}{Mtc\_ProvDbSetMmeLogLevel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Mme\+Log\+Level (\begin{DoxyParamCaption}\item[{Z\+U\+C\+H\+AR}]{uc\+Level }\end{DoxyParamCaption})}
+
+
+
+Set M\+ME log level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em uc\+Level} & Log level number, 0 is no log, bigger number for more log.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a57df51cc9f152b15b5bc2f503d913fac}{Mtc\+\_\+\+Prov\+Db\+Get\+Mme\+Dump\+Dbg}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a1974c06b2dc4ba455264e84da1b60d20}\label{mtc__prov__db_8h_a1974c06b2dc4ba455264e84da1b60d20}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetMnc@{Mtc\_ProvDbSetMnc}}
+\index{Mtc\_ProvDbSetMnc@{Mtc\_ProvDbSetMnc}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetMnc()}{Mtc\_ProvDbSetMnc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Mnc (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Mnc }\end{DoxyParamCaption})}
+
+
+
+Set mobile network code. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Mnc} & mobile network code string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set mobile network code successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set mobile network code failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab4cec2e0df7a45a625b098579ca6d26e}{Mtc\+\_\+\+Prov\+Db\+Get\+Mnc}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a258d9a55a80d07e6775866183bc5ff48}\label{mtc__prov__db_8h_a258d9a55a80d07e6775866183bc5ff48}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetRcsProfile@{Mtc\_ProvDbSetRcsProfile}}
+\index{Mtc\_ProvDbSetRcsProfile@{Mtc\_ProvDbSetRcsProfile}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetRcsProfile()}{Mtc\_ProvDbSetRcsProfile()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Rcs\+Profile (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rcs\+Profile }\end{DoxyParamCaption})}
+
+
+
+Set R\+CS profile. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rcs\+Profile} & R\+CS profile type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab48c538a1fa58a5e053cac76f81757e7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+P\+R\+O\+F\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set R\+CS profile successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set R\+CS profile failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_afae37179981b43fa4e03c65b3df1afac}{Mtc\+\_\+\+Prov\+Db\+Get\+Rcs\+Profile}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a87b348ba7ffa6e45211bf7d15f4fcafb}\label{mtc__prov__db_8h_a87b348ba7ffa6e45211bf7d15f4fcafb}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetRcsVer@{Mtc\_ProvDbSetRcsVer}}
+\index{Mtc\_ProvDbSetRcsVer@{Mtc\_ProvDbSetRcsVer}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetRcsVer()}{Mtc\_ProvDbSetRcsVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Rcs\+Ver (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rcs\+Ver }\end{DoxyParamCaption})}
+
+
+
+Set R\+CS version. It is only mandatory from R\+CS 5.\+1 onwards. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rcs\+Ver} & R\+CS version type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a8118d1b89f4d894e1b18dd6c42b25899}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+R\+C\+S\+\_\+\+V\+E\+R\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set R\+CS version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set R\+CS version failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a36bfb8ad8d98a1c83f6addea3fc8f690}{Mtc\+\_\+\+Prov\+Db\+Get\+Rcs\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a993b1985ae7ae9140571e530054c2e24}\label{mtc__prov__db_8h_a993b1985ae7ae9140571e530054c2e24}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetRingMute@{Mtc\_ProvDbSetRingMute}}
+\index{Mtc\_ProvDbSetRingMute@{Mtc\_ProvDbSetRingMute}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetRingMute()}{Mtc\_ProvDbSetRingMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Ring\+Mute (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+Set ring mute option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Z\+T\+R\+UE to mute ring.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set ring mute option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set ring mute option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a05591df5ad768639a9642252275ccfc0}{Mtc\+\_\+\+Prov\+Db\+Get\+Ring\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a05b33e8a3902b932b93a4db065f2ba62}\label{mtc__prov__db_8h_a05b33e8a3902b932b93a4db065f2ba62}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetSmsPort@{Mtc\_ProvDbSetSmsPort}}
+\index{Mtc\_ProvDbSetSmsPort@{Mtc\_ProvDbSetSmsPort}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetSmsPort()}{Mtc\_ProvDbSetSmsPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Sms\+Port (\begin{DoxyParamCaption}\item[{Z\+U\+S\+H\+O\+RT}]{w\+Port }\end{DoxyParamCaption})}
+
+
+
+Set S\+MS port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em w\+Port} & S\+MS port.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set S\+MS port successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set S\+MS port failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab6cb65c0d311e7460c45445694ca698e}{Mtc\+\_\+\+Prov\+Db\+Get\+Sms\+Port}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a86d9618474aa0021a9b34a220283166f}\label{mtc__prov__db_8h_a86d9618474aa0021a9b34a220283166f}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetSrvTmpl@{Mtc\_ProvDbSetSrvTmpl}}
+\index{Mtc\_ProvDbSetSrvTmpl@{Mtc\_ProvDbSetSrvTmpl}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetSrvTmpl()}{Mtc\_ProvDbSetSrvTmpl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+Tmpl (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Srv\+Tmpl }\end{DoxyParamCaption})}
+
+
+
+Set server template. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Tmpl} & server template, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_aabb14cf6577b76762f3accd05cd43fe8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+R\+O\+V\+\_\+\+S\+R\+V\+\_\+\+T\+M\+P\+L\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set server template successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set server template failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_af66a335f59f1987d775fd57c020b1538}{Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+Tmpl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a37a7542de0f734a6b014a6f3f2437fd5}\label{mtc__prov__db_8h_a37a7542de0f734a6b014a6f3f2437fd5}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetSrvTmplX@{Mtc\_ProvDbSetSrvTmplX}}
+\index{Mtc\_ProvDbSetSrvTmplX@{Mtc\_ProvDbSetSrvTmplX}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetSrvTmplX()}{Mtc\_ProvDbSetSrvTmplX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+TmplX (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Srv\+Tmpl }\end{DoxyParamCaption})}
+
+
+
+Set server template. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Srv\+Tmpl} & server template.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set server template successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set server template failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ae0b83bb50ef07f6dd9a9dc368a8609d5}{Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+TmplX}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_ae35da5751c9b99fb176b50ed931a44e3}\label{mtc__prov__db_8h_ae35da5751c9b99fb176b50ed931a44e3}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetSrvType@{Mtc\_ProvDbSetSrvType}}
+\index{Mtc\_ProvDbSetSrvType@{Mtc\_ProvDbSetSrvType}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetSrvType()}{Mtc\_ProvDbSetSrvType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Srv\+Type (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Srv\+Type }\end{DoxyParamCaption})}
+
+
+
+Set service type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Srv\+Type} & service type string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set service type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set tservice type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ae3345196a0538d4137f8d93d78613ab6}{Mtc\+\_\+\+Prov\+Db\+Get\+Srv\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a3adb0671d61a18aa8d27ee5d65480286}\label{mtc__prov__db_8h_a3adb0671d61a18aa8d27ee5d65480286}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetTmnlModel@{Mtc\_ProvDbSetTmnlModel}}
+\index{Mtc\_ProvDbSetTmnlModel@{Mtc\_ProvDbSetTmnlModel}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetTmnlModel()}{Mtc\_ProvDbSetTmnlModel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Model (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Model }\end{DoxyParamCaption})}
+
+
+
+Set terminal model. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Model} & terminal model string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set terminal model successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set terminal model failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_ab6d1523690efc460d1b19d7b356ae2ca}{Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Model}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_a3ed22337158bb9bc37de79fc7a58fd0f}\label{mtc__prov__db_8h_a3ed22337158bb9bc37de79fc7a58fd0f}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetTmnlSwVer@{Mtc\_ProvDbSetTmnlSwVer}}
+\index{Mtc\_ProvDbSetTmnlSwVer@{Mtc\_ProvDbSetTmnlSwVer}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetTmnlSwVer()}{Mtc\_ProvDbSetTmnlSwVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Sw\+Ver (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ver }\end{DoxyParamCaption})}
+
+
+
+Set terminal software version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ver} & terminal software version string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set terminal software version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set terminal software version failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_a5e9e4c1cd6b43aa31c94dc9d91fb790e}{Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Sw\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__db_8h_aa7ad5f1ada39a8213fb1063332f61ca0}\label{mtc__prov__db_8h_aa7ad5f1ada39a8213fb1063332f61ca0}} 
+\index{mtc\_prov\_db.h@{mtc\_prov\_db.h}!Mtc\_ProvDbSetTmnlVendor@{Mtc\_ProvDbSetTmnlVendor}}
+\index{Mtc\_ProvDbSetTmnlVendor@{Mtc\_ProvDbSetTmnlVendor}!mtc\_prov\_db.h@{mtc\_prov\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvDbSetTmnlVendor()}{Mtc\_ProvDbSetTmnlVendor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Db\+Set\+Tmnl\+Vendor (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Vendor }\end{DoxyParamCaption})}
+
+
+
+Set terminal vendor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Vendor} & terminal vendor string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set terminal vendor successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set terminal vendor failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__db_8h_aebff042dc148c45ec6061048c358fd6d}{Mtc\+\_\+\+Prov\+Db\+Get\+Tmnl\+Vendor}} 
+\end{DoxySeeAlso}

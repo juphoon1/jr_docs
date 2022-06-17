@@ -1,0 +1,592 @@
+\hypertarget{mtc__ring_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+ring.h File Reference}
+\label{mtc__ring_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_ring.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_ring.h}}
+
+
+M\+TC Ring Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__ring_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__ring_8h_a8fa9ba79c93ea234c7e9a9eb03fd62c9}\label{mtc__ring_8h_a8fa9ba79c93ea234c7e9a9eb03fd62c9}} 
+\#define \mbox{\hyperlink{mtc__ring_8h_a8fa9ba79c93ea234c7e9a9eb03fd62c9}{M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+F\+O\+R\+E\+V\+ER}}~0
+\begin{DoxyCompactList}\small\item\em Macro for playing ring forever. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__ring_8h_a0c58b46f57dfe3c12a90c76326c5342b}\label{mtc__ring_8h_a0c58b46f57dfe3c12a90c76326c5342b}} 
+\#define \mbox{\hyperlink{mtc__ring_8h_a0c58b46f57dfe3c12a90c76326c5342b}{M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+D\+T\+M\+F\+\_\+\+L\+EN}}~200
+\begin{DoxyCompactList}\small\item\em Macro for playing D\+T\+MF time length in milliseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__ring_8h_a36f13b74aa3199d05ea40e4418fc5ada}\label{mtc__ring_8h_a36f13b74aa3199d05ea40e4418fc5ada}} 
+\#define \mbox{\hyperlink{mtc__ring_8h_a36f13b74aa3199d05ea40e4418fc5ada}{M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+A\+L\+E\+R\+T\+\_\+\+L\+EN}}~500
+\begin{DoxyCompactList}\small\item\em Macro for playing alert event time length in milliseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__ring_8h_a6ef402f00984fa69b48303da76059107}\label{mtc__ring_8h_a6ef402f00984fa69b48303da76059107}} 
+\#define \mbox{\hyperlink{mtc__ring_8h_a6ef402f00984fa69b48303da76059107}{M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+E\+R\+M\+\_\+\+L\+EN}}~2000
+\begin{DoxyCompactList}\small\item\em Macro for playing terminated event time length in milliseconds. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__ring_8h_abcc9500f2c9bfad35e13e44b239ed322}\label{mtc__ring_8h_abcc9500f2c9bfad35e13e44b239ed322}} 
+\#define \mbox{\hyperlink{mtc__ring_8h_abcc9500f2c9bfad35e13e44b239ed322}{M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+A\+S\+S\+E\+T\+\_\+\+M\+A\+SK}}~0x80000000
+\begin{DoxyCompactList}\small\item\em Mask for use resource in asset for Android. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}\label{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}} 
+typedef enum \mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC ring type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+0}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+1}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+2}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+3}}, 
+\newline
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+4}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+5}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+6}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+7}}, 
+\newline
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+8}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+9}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+\+S\+T\+AR}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+\+P\+O\+U\+ND}}, 
+\newline
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+R\+I\+NG}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+R\+I\+N\+G\+\_\+\+B\+A\+CK}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+B\+U\+SY}}, 
+\newline
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+C\+A\+L\+L\+\_\+\+W\+A\+IT}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+F\+O\+R\+W\+A\+RD}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+E\+RM}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+H\+E\+LD}}, 
+\newline
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+M\+S\+G\+\_\+\+R\+E\+CV}}, 
+\mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+S\+I\+ZE}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC ring type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}{Mtc\+\_\+\+Ring\+Play}} (Z\+U\+I\+NT i\+Type, Z\+U\+I\+NT i\+Milli\+Seconds)
+\begin{DoxyCompactList}\small\item\em Play ring, and ring type see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a8447f8dff6def194fbd4e2e67ff53b85}{Mtc\+\_\+\+Ring\+Play\+No\+Loop}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Play ring with no loop, and ring type see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a3d8f47f61f511e1bd431aaac7aac6d62}{Mtc\+\_\+\+Ring\+PlayX}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+I\+NT i\+Milli\+Seconds)
+\begin{DoxyCompactList}\small\item\em Play ring file. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__ring_8h_a592aa69498f5298664ae50954402266e}{Mtc\+\_\+\+Ring\+Stop}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Audio stop playback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__ring_8h_af59aa232583e4d9592b9afd64bab71ad}{Mtc\+\_\+\+Ring\+Is\+Play}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Audio is playing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__ring_8h_ae2dcd1b1b2a63e9adaf132a5fd21632f}{Mtc\+\_\+\+Ring\+Get\+Mute}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get mute status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a8a57156448c1035a584cdb56f92415ad}{Mtc\+\_\+\+Ring\+Set\+Mute}} (Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em Set mute status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__ring_8h_a3a1e4034dd4e1ad573387bc5aa0025f2}{Mtc\+\_\+\+Ring\+Get\+Mute\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Get mute status of specific type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a7ed7d8238922772ca94a77c84af3b6e8}{Mtc\+\_\+\+Ring\+Set\+Mute\+Type}} (Z\+U\+I\+NT i\+Type, Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em Set mute status of specific type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__ring_8h_a299ce752e742599a0918c2c8c8f86e70}{Mtc\+\_\+\+Ring\+Get\+Name}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Get ring name by type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__ring_8h_a5102d218e3655e3b153037f7e12ba554}{Mtc\+\_\+\+Ring\+Get\+Desc}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Get ring description by type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a3d1244e24a85ed3c1c8372da791c2647}{Mtc\+\_\+\+Ring\+Get\+Type}} (Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em Get ring type by name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__ring_8h_a747354bf8acb322d548bed880cb8d4a6}{Mtc\+\_\+\+Ring\+Get\+Ctm\+Name}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Get custom ring file name by type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ring_8h_a9b05a1c2c092e41c7197ea2280bb7ff3}{Mtc\+\_\+\+Ring\+Set\+Ctm\+Name}} (Z\+U\+I\+NT i\+Type, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em Set custom ring file name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__ring_8h_a4869eef547f3fda06d45f371d38cabae}{Mtc\+\_\+\+Ring\+Get\+Dir}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get directory for default ring file. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__ring_8h_ab6410217cd98dd72fbbe1f6b366a1d65}{Mtc\+\_\+\+Ring\+Set\+Dir}} (Z\+C\+H\+AR $\ast$pc\+Name, Z\+U\+S\+H\+O\+RT w\+Len)
+\begin{DoxyCompactList}\small\item\em Set directory for default ring file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Ring Interface Functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TYPE@{EN\_MTC\_RING\_TYPE}}
+\index{EN\_MTC\_RING\_TYPE@{EN\_MTC\_RING\_TYPE}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_RING\_TYPE}{EN\_MTC\_RING\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC ring type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_0@{EN\_MTC\_RING\_TONE\_0}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_0@{EN\_MTC\_RING\_TONE\_0}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+0&tone 0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_1@{EN\_MTC\_RING\_TONE\_1}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_1@{EN\_MTC\_RING\_TONE\_1}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+1&tone 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_2@{EN\_MTC\_RING\_TONE\_2}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_2@{EN\_MTC\_RING\_TONE\_2}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+2&tone 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_3@{EN\_MTC\_RING\_TONE\_3}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_3@{EN\_MTC\_RING\_TONE\_3}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+3&tone 3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_4@{EN\_MTC\_RING\_TONE\_4}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_4@{EN\_MTC\_RING\_TONE\_4}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+4&tone 4 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_5@{EN\_MTC\_RING\_TONE\_5}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_5@{EN\_MTC\_RING\_TONE\_5}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+5&tone 5 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_6@{EN\_MTC\_RING\_TONE\_6}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_6@{EN\_MTC\_RING\_TONE\_6}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+6&tone 6 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_7@{EN\_MTC\_RING\_TONE\_7}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_7@{EN\_MTC\_RING\_TONE\_7}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+7&tone 7 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_8@{EN\_MTC\_RING\_TONE\_8}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_8@{EN\_MTC\_RING\_TONE\_8}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+8&tone 8 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_9@{EN\_MTC\_RING\_TONE\_9}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_9@{EN\_MTC\_RING\_TONE\_9}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+9&tone 9 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_STAR@{EN\_MTC\_RING\_TONE\_STAR}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_STAR@{EN\_MTC\_RING\_TONE\_STAR}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+\+S\+T\+AR&tone $\ast$ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TONE\_POUND@{EN\_MTC\_RING\_TONE\_POUND}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TONE\_POUND@{EN\_MTC\_RING\_TONE\_POUND}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+O\+N\+E\+\_\+\+P\+O\+U\+ND&tone \# \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_RING@{EN\_MTC\_RING\_RING}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_RING@{EN\_MTC\_RING\_RING}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+R\+I\+NG&ring \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_RING\_BACK@{EN\_MTC\_RING\_RING\_BACK}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_RING\_BACK@{EN\_MTC\_RING\_RING\_BACK}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+R\+I\+N\+G\+\_\+\+B\+A\+CK&ring back \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_CALL\_FAILED@{EN\_MTC\_RING\_CALL\_FAILED}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_CALL\_FAILED@{EN\_MTC\_RING\_CALL\_FAILED}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED&call failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_BUSY@{EN\_MTC\_RING\_BUSY}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_BUSY@{EN\_MTC\_RING\_BUSY}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+B\+U\+SY&busy \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_CALL\_WAIT@{EN\_MTC\_RING\_CALL\_WAIT}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_CALL\_WAIT@{EN\_MTC\_RING\_CALL\_WAIT}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+C\+A\+L\+L\+\_\+\+W\+A\+IT&call waiting \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_FORWARD@{EN\_MTC\_RING\_FORWARD}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_FORWARD@{EN\_MTC\_RING\_FORWARD}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+F\+O\+R\+W\+A\+RD&forwarding \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_TERM@{EN\_MTC\_RING\_TERM}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_TERM@{EN\_MTC\_RING\_TERM}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+E\+RM&call terminated \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_HELD@{EN\_MTC\_RING\_HELD}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_HELD@{EN\_MTC\_RING\_HELD}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+H\+E\+LD&call held \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_MSG\_RECV@{EN\_MTC\_RING\_MSG\_RECV}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_MSG\_RECV@{EN\_MTC\_RING\_MSG\_RECV}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+M\+S\+G\+\_\+\+R\+E\+CV&message received \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_RING\_SIZE@{EN\_MTC\_RING\_SIZE}!mtc\_ring.h@{mtc\_ring.h}}\index{mtc\_ring.h@{mtc\_ring.h}!EN\_MTC\_RING\_SIZE@{EN\_MTC\_RING\_SIZE}}}\mbox{\Hypertarget{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f}\label{mtc__ring_8h_a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+S\+I\+ZE&ring size \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__ring_8h_a747354bf8acb322d548bed880cb8d4a6}\label{mtc__ring_8h_a747354bf8acb322d548bed880cb8d4a6}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetCtmName@{Mtc\_RingGetCtmName}}
+\index{Mtc\_RingGetCtmName@{Mtc\_RingGetCtmName}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetCtmName()}{Mtc\_RingGetCtmName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Ring\+Get\+Ctm\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Get custom ring file name by type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ring custom ring file name if found, otherwise return empty string.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a9b05a1c2c092e41c7197ea2280bb7ff3}{Mtc\+\_\+\+Ring\+Set\+Ctm\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a5102d218e3655e3b153037f7e12ba554}\label{mtc__ring_8h_a5102d218e3655e3b153037f7e12ba554}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetDesc@{Mtc\_RingGetDesc}}
+\index{Mtc\_RingGetDesc@{Mtc\_RingGetDesc}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetDesc()}{Mtc\_RingGetDesc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Ring\+Get\+Desc (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Get ring description by type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ring description if found, otherwise return empty string.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a3d1244e24a85ed3c1c8372da791c2647}{Mtc\+\_\+\+Ring\+Get\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a4869eef547f3fda06d45f371d38cabae}\label{mtc__ring_8h_a4869eef547f3fda06d45f371d38cabae}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetDir@{Mtc\_RingGetDir}}
+\index{Mtc\_RingGetDir@{Mtc\_RingGetDir}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetDir()}{Mtc\_RingGetDir()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Ring\+Get\+Dir (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get directory for default ring file. 
+
+\begin{DoxyReturn}{Returns}
+The directory for default ring file.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_ab6410217cd98dd72fbbe1f6b366a1d65}{Mtc\+\_\+\+Ring\+Set\+Dir}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_ae2dcd1b1b2a63e9adaf132a5fd21632f}\label{mtc__ring_8h_ae2dcd1b1b2a63e9adaf132a5fd21632f}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetMute@{Mtc\_RingGetMute}}
+\index{Mtc\_RingGetMute@{Mtc\_RingGetMute}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetMute()}{Mtc\_RingGetMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Ring\+Get\+Mute (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get mute status. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & In mute. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & In unmute.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a8a57156448c1035a584cdb56f92415ad}{Mtc\+\_\+\+Ring\+Set\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a3a1e4034dd4e1ad573387bc5aa0025f2}\label{mtc__ring_8h_a3a1e4034dd4e1ad573387bc5aa0025f2}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetMuteType@{Mtc\_RingGetMuteType}}
+\index{Mtc\_RingGetMuteType@{Mtc\_RingGetMuteType}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetMuteType()}{Mtc\_RingGetMuteType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Ring\+Get\+Mute\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Get mute status of specific type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & Ring type, \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & In mute. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & In unmute.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a7ed7d8238922772ca94a77c84af3b6e8}{Mtc\+\_\+\+Ring\+Set\+Mute\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a299ce752e742599a0918c2c8c8f86e70}\label{mtc__ring_8h_a299ce752e742599a0918c2c8c8f86e70}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetName@{Mtc\_RingGetName}}
+\index{Mtc\_RingGetName@{Mtc\_RingGetName}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetName()}{Mtc\_RingGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Ring\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Get ring name by type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ring name if found, otherwise return empty string.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a3d1244e24a85ed3c1c8372da791c2647}{Mtc\+\_\+\+Ring\+Get\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a3d1244e24a85ed3c1c8372da791c2647}\label{mtc__ring_8h_a3d1244e24a85ed3c1c8372da791c2647}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingGetType@{Mtc\_RingGetType}}
+\index{Mtc\_RingGetType@{Mtc\_RingGetType}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingGetType()}{Mtc\_RingGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+Get ring type by name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The ring name string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ring type if found. Or return -\/1.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a299ce752e742599a0918c2c8c8f86e70}{Mtc\+\_\+\+Ring\+Get\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_af59aa232583e4d9592b9afd64bab71ad}\label{mtc__ring_8h_af59aa232583e4d9592b9afd64bab71ad}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingIsPlay@{Mtc\_RingIsPlay}}
+\index{Mtc\_RingIsPlay@{Mtc\_RingIsPlay}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingIsPlay()}{Mtc\_RingIsPlay()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Ring\+Is\+Play (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Audio is playing. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Audio is playing. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Audio is not playing.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}{Mtc\+\_\+\+Ring\+Play}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}\label{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingPlay@{Mtc\_RingPlay}}
+\index{Mtc\_RingPlay@{Mtc\_RingPlay}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingPlay()}{Mtc\_RingPlay()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+Play (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Milli\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Play ring, and ring type see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. 
+
+It will play the custom set file if found. Or it will try to play the default ring file. The default ring file path formed by the directory set by \mbox{\hyperlink{mtc__ring_8h_ab6410217cd98dd72fbbe1f6b366a1d65}{Mtc\+\_\+\+Ring\+Set\+Dir}}, the ring name and \char`\"{}.\+wav\char`\"{} for extension name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Milli\+Seconds} & The playing time length in milliseconds, 0 is for forever.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Audio plays ring successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Audio plays ring failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a3d8f47f61f511e1bd431aaac7aac6d62}{Mtc\+\_\+\+Ring\+PlayX}} \mbox{\hyperlink{mtc__ring_8h_a592aa69498f5298664ae50954402266e}{Mtc\+\_\+\+Ring\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a8447f8dff6def194fbd4e2e67ff53b85}\label{mtc__ring_8h_a8447f8dff6def194fbd4e2e67ff53b85}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingPlayNoLoop@{Mtc\_RingPlayNoLoop}}
+\index{Mtc\_RingPlayNoLoop@{Mtc\_RingPlayNoLoop}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingPlayNoLoop()}{Mtc\_RingPlayNoLoop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+Play\+No\+Loop (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Play ring with no loop, and ring type see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. 
+
+It will play the custom set file if found. Or it will try to play the default ring file. The default ring file path formed by the directory set by \mbox{\hyperlink{mtc__ring_8h_ab6410217cd98dd72fbbe1f6b366a1d65}{Mtc\+\_\+\+Ring\+Set\+Dir}}, the ring name and \char`\"{}.\+wav\char`\"{} for extension name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Audio plays ring successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Audio plays ring failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}{Mtc\+\_\+\+Ring\+Play}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a3d8f47f61f511e1bd431aaac7aac6d62}\label{mtc__ring_8h_a3d8f47f61f511e1bd431aaac7aac6d62}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingPlayX@{Mtc\_RingPlayX}}
+\index{Mtc\_RingPlayX@{Mtc\_RingPlayX}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingPlayX()}{Mtc\_RingPlayX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+PlayX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Milli\+Seconds }\end{DoxyParamCaption})}
+
+
+
+Play ring file. 
+
+The ring name and \char`\"{}.\+wav\char`\"{} for extension name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & File name of ring file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Milli\+Seconds} & The playing time length in milliseconds, 0 is for forever.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Audio plays ring successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Audio plays ring failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}{Mtc\+\_\+\+Ring\+Play}} \mbox{\hyperlink{mtc__ring_8h_a592aa69498f5298664ae50954402266e}{Mtc\+\_\+\+Ring\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a9b05a1c2c092e41c7197ea2280bb7ff3}\label{mtc__ring_8h_a9b05a1c2c092e41c7197ea2280bb7ff3}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingSetCtmName@{Mtc\_RingSetCtmName}}
+\index{Mtc\_RingSetCtmName@{Mtc\_RingSetCtmName}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingSetCtmName()}{Mtc\_RingSetCtmName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+Set\+Ctm\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+Set custom ring file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The ring file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set custom ring file name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set custom ring file name failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a747354bf8acb322d548bed880cb8d4a6}{Mtc\+\_\+\+Ring\+Get\+Ctm\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_ab6410217cd98dd72fbbe1f6b366a1d65}\label{mtc__ring_8h_ab6410217cd98dd72fbbe1f6b366a1d65}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingSetDir@{Mtc\_RingSetDir}}
+\index{Mtc\_RingSetDir@{Mtc\_RingSetDir}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingSetDir()}{Mtc\_RingSetDir()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Ring\+Set\+Dir (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Name,  }\item[{Z\+U\+S\+H\+O\+RT}]{w\+Len }\end{DoxyParamCaption})}
+
+
+
+Set directory for default ring file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The directory name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em w\+Len} & The string length of directory name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set directory for default ring file successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set directory for default ring file failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a4869eef547f3fda06d45f371d38cabae}{Mtc\+\_\+\+Ring\+Get\+Dir}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a8a57156448c1035a584cdb56f92415ad}\label{mtc__ring_8h_a8a57156448c1035a584cdb56f92415ad}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingSetMute@{Mtc\_RingSetMute}}
+\index{Mtc\_RingSetMute@{Mtc\_RingSetMute}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingSetMute()}{Mtc\_RingSetMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+Set\+Mute (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+Set mute status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Z\+T\+R\+UE to mute ring, Z\+F\+A\+L\+SE to unmute ring.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set mute status successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set mute status failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_ae2dcd1b1b2a63e9adaf132a5fd21632f}{Mtc\+\_\+\+Ring\+Get\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a7ed7d8238922772ca94a77c84af3b6e8}\label{mtc__ring_8h_a7ed7d8238922772ca94a77c84af3b6e8}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingSetMuteType@{Mtc\_RingSetMuteType}}
+\index{Mtc\_RingSetMuteType@{Mtc\_RingSetMuteType}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingSetMuteType()}{Mtc\_RingSetMuteType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ring\+Set\+Mute\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+Set mute status of specific type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & Ring type, \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Z\+T\+R\+UE to mute ring, Z\+F\+A\+L\+SE to unmute ring.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set mute status successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set mute status failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a3a1e4034dd4e1ad573387bc5aa0025f2}{Mtc\+\_\+\+Ring\+Get\+Mute\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__ring_8h_a592aa69498f5298664ae50954402266e}\label{mtc__ring_8h_a592aa69498f5298664ae50954402266e}} 
+\index{mtc\_ring.h@{mtc\_ring.h}!Mtc\_RingStop@{Mtc\_RingStop}}
+\index{Mtc\_RingStop@{Mtc\_RingStop}!mtc\_ring.h@{mtc\_ring.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_RingStop()}{Mtc\_RingStop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Ring\+Stop (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Audio stop playback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The ring Type, see \mbox{\hyperlink{mtc__ring_8h_a39d55965bd7ae39a04b56827eadabc9e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+I\+N\+G\+\_\+\+T\+Y\+PE}}. Z\+M\+A\+X\+U\+I\+NT to stop every ring play.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__ring_8h_a4b45373e73cd061e02c3b83c5a44d220}{Mtc\+\_\+\+Ring\+Play}} \mbox{\hyperlink{mtc__ring_8h_a3d8f47f61f511e1bd431aaac7aac6d62}{Mtc\+\_\+\+Ring\+PlayX}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,842 @@
+\hypertarget{mtc__conf__db_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+conf\+\_\+db.h File Reference}
+\label{mtc__conf__db_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf\_db.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf\_db.h}}
+
+
+M\+TC Conference Database Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__conf__db_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_ad7c26f65ec928e5400e992a922bd4e64}\label{mtc__conf__db_8h_ad7c26f65ec928e5400e992a922bd4e64}} 
+typedef enum E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+\+T\+Y\+PE {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_ab036ad08e545075d2159f72475f53421}\label{mtc__conf__db_8h_ab036ad08e545075d2159f72475f53421}} 
+enum {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+\+T\+Y\+PE} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+\+D\+E\+F\+A\+U\+LT}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+288P}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+480P}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+720P}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+D\+B\+\_\+\+R\+E\+S\+\_\+\+R\+A\+T\+I\+O\+\_\+1080P}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_a6e18afa4dd66d758e0e326f1e4a8cf2a}{Mtc\+\_\+\+Conf\+Db\+Get\+Fact\+Uri}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get conference factory U\+RI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a1e86279b2065b2eb72f28c31bcec3b01}{Mtc\+\_\+\+Conf\+Db\+Set\+Fact\+Uri}} (Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Set conference factory U\+RI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_a14e1175c53dc176add76cdcc37eeea8b}{Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Fact\+Uri}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get video conference factory U\+RI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_abb5c380cad6ab85a9dd2eda696e53f3e}{Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Fact\+Uri}} (Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Set video conference factory U\+RI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_a7caa4f3ca3ef8f5427789895ed553794}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Control\+Uri}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get conference control U\+RI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a15f60b6deb2134fc77a435004f1885e7}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Control\+Uri}} (Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Set conference control U\+RI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_a737770176f124e53be5572767222e1bb}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+App\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get conference A\+PP ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a2af22616b0a49a0c002f3cd02eece385}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+App\+Id}} (Z\+C\+H\+AR $\ast$pc\+App\+Id)
+\begin{DoxyCompactList}\small\item\em Set conference A\+PP ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_a27195afbb06d78c6b1aaa33d2db5fcf3}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Pwd}} ()
+\begin{DoxyCompactList}\small\item\em Get conference A\+PP password. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a0a6ccac5cf7694b3b22c9f949741cce6}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Pwd}} (Z\+C\+H\+AR $\ast$pc\+Pwd)
+\begin{DoxyCompactList}\small\item\em Set conference A\+PP password. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_ac764f97fb66b67f37e4e0610fab4eed9}{Mtc\+\_\+\+Conf\+Set\+Mcu\+Prefix}} (Z\+C\+H\+AR $\ast$pc\+Mcu\+Prefix)
+\begin{DoxyCompactList}\small\item\em Set conference mcu prefix. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_ae333ccdda169adaffaca6c2fee42f321}{Mtc\+\_\+\+Conf\+Get\+Mcu\+Prefix}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get conference mcu prefix. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_af550bbd5345aaa3aba845739a13fbc63}{Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Switch\+Mode}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get http conference video switch mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a9629f4f2df871425dec8a03a48bb5b9c}{Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Switch\+Mode}} (Z\+U\+I\+NT i\+Mode)
+\begin{DoxyCompactList}\small\item\em Set http conference video switch mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__conf__db_8h_a163e633d255c9488fd03c89b40337efc}{Mtc\+\_\+\+Conf\+Db\+Get\+Http\+Conf\+Token}} ()
+\begin{DoxyCompactList}\small\item\em Get http conf token. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a0b63b61d4ff03006aa08561cb89bc2cb}{Mtc\+\_\+\+Conf\+Db\+Set\+Http\+Conf\+Token}} (Z\+C\+H\+AR $\ast$pc\+Token)
+\begin{DoxyCompactList}\small\item\em Set http conf token. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf__db_8h_a72750af8ba3730f12316be81b9da5a56}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Https\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get use https conf enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a9905fc88aa12bd48b2927fa5a6470418}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Https\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set use https conf enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a4bd2c7348fb0d5e46137933087f3999e}{Mtc\+\_\+\+Conf\+Db\+Get\+Max\+Partp\+Count}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get http conf video max partp count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a9e5eda46eb6957b3a9534b42c292ea59}{Mtc\+\_\+\+Conf\+Db\+Set\+Max\+Partp\+Count}} (Z\+U\+I\+NT i\+Count)
+\begin{DoxyCompactList}\small\item\em Set http conference video participants count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a87051da766bc6725458a8d80865d9a20}{Mtc\+\_\+\+Conf\+Db\+Get\+Max\+Image\+Count}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get http conf video max remote image count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a496c1bb1f875249c1fb8e3b4bb4e7dff}{Mtc\+\_\+\+Conf\+Db\+Set\+Max\+Image\+Count}} (Z\+U\+I\+NT i\+Count)
+\begin{DoxyCompactList}\small\item\em Set http conference video remote image count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a97edb9c121b93aed0690f265a5371133}{Mtc\+\_\+\+Conf\+Db\+Set\+Audio\+Rec\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set http conf video conference enable record audio flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf__db_8h_a8121dc9f4149b62f1b01b28cbbd1dfb4}{Mtc\+\_\+\+Conf\+Db\+Get\+Audio\+Rec\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get http conf video conference enable record audio flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf__db_8h_a218ef6e0a732e42c0185324e9fafcfa1}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Subs\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get conference subscribe enable flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_aa026ac55976d7d5a9d7f6d49a56941fd}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Subs\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set conference subscribe enable flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a5e25466b6d4e792f0defe610cef0f555}{Mtc\+\_\+\+Conf\+Db\+Set\+Mcu\+Conf\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set M\+CU conference enablee flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf__db_8h_a26e4876f77b0bdc39938208c943a9956}{Mtc\+\_\+\+Conf\+Db\+Get\+Mcu\+Conf\+Enable}} ()
+\begin{DoxyCompactList}\small\item\em Get M\+CU conference enable flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a30cda09b4934dfb73357ff0de674f9b6}{Mtc\+\_\+\+Conf\+Db\+Set\+Res\+Ratio\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Set resolution ratio type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a91a2baae8cefc4dff2475dea4b30745a}{Mtc\+\_\+\+Conf\+Db\+Get\+Res\+Ratio\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get resolution ratio type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a332c0e9094653a4f347c899cafb947cb}{Mtc\+\_\+\+Mcu\+Conf\+Db\+Set\+Res\+Ratio\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Set resolution ratio type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_aaf1594196fc2296e16bd5dda03ac8b92}{Mtc\+\_\+\+Mcu\+Conf\+Db\+Get\+Res\+Ratio\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get resolution ratio type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__db_8h_a03bda1bd15d24b55f34bfe8eba1166c2}{Mtc\+\_\+\+Conf\+Db\+Set\+Auto\+Http\+Qry}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set auto start http query enable flag in muti-\/conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__conf__db_8h_a0c1e38d98fb7bd05afcdcbd15d1ace16}{Mtc\+\_\+\+Conf\+Db\+Get\+Auto\+Http\+Qry}} ()
+\begin{DoxyCompactList}\small\item\em Get auto start http query enable flag in muti-\/conference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_a29c2ec99147396694ad535abe70b8623}\label{mtc__conf__db_8h_a29c2ec99147396694ad535abe70b8623}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mtc\+\_\+\+Conf\+Db\+Get\+Rpsi\+Enable} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_ae059fce4dee78832626135d34096f1ed}\label{mtc__conf__db_8h_ae059fce4dee78832626135d34096f1ed}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Conf\+Db\+Set\+Rpsi\+Enable} (Z\+B\+O\+OL b\+Enable)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_a9d2cdae96e0f781eab25b041592f8559}\label{mtc__conf__db_8h_a9d2cdae96e0f781eab25b041592f8559}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mtc\+\_\+\+Conf\+Db\+Get\+Resolution\+Control} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_a345319cf890134794c0311ee205ad40b}\label{mtc__conf__db_8h_a345319cf890134794c0311ee205ad40b}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Conf\+Db\+Set\+Resolution\+Control} (Z\+B\+O\+OL b\+Enable)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_acbc6ee080ac4742fa6d504f6cdc75432}\label{mtc__conf__db_8h_acbc6ee080ac4742fa6d504f6cdc75432}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mtc\+\_\+\+Conf\+Db\+Get\+Framerate\+Control} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_a7dd5736c0704155a3934481304cf1f49}\label{mtc__conf__db_8h_a7dd5736c0704155a3934481304cf1f49}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Conf\+Db\+Set\+Framerate\+Control} (Z\+B\+O\+OL b\+Enable)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_a6f8dda479303e766158d02cdbd31f88e}\label{mtc__conf__db_8h_a6f8dda479303e766158d02cdbd31f88e}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Ars} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_ae12197c732011edb87def83022cf38fe}\label{mtc__conf__db_8h_ae12197c732011edb87def83022cf38fe}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Ars} (Z\+B\+O\+OL b\+Enable)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_acc0d5ba86284eef982b0cf0c1f83fc61}\label{mtc__conf__db_8h_acc0d5ba86284eef982b0cf0c1f83fc61}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mtc\+\_\+\+Conf\+Db\+Get\+Mdm\+Enable} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\item 
+\mbox{\Hypertarget{mtc__conf__db_8h_a89225c388a3b3e4d3bbb5fba35b3b70b}\label{mtc__conf__db_8h_a89225c388a3b3e4d3bbb5fba35b3b70b}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Conf\+Db\+Set\+Mdm\+Enable} (Z\+B\+O\+OL b\+Enable)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Conference Database Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__conf__db_8h_a8121dc9f4149b62f1b01b28cbbd1dfb4}\label{mtc__conf__db_8h_a8121dc9f4149b62f1b01b28cbbd1dfb4}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetAudioRecEnable@{Mtc\_ConfDbGetAudioRecEnable}}
+\index{Mtc\_ConfDbGetAudioRecEnable@{Mtc\_ConfDbGetAudioRecEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetAudioRecEnable()}{Mtc\_ConfDbGetAudioRecEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Db\+Get\+Audio\+Rec\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get http conf video conference enable record audio flag. 
+
+\begin{DoxyReturn}{Returns}
+The video http conference enable record audio flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a97edb9c121b93aed0690f265a5371133}{Mtc\+\_\+\+Conf\+Db\+Set\+Audio\+Rec\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a0c1e38d98fb7bd05afcdcbd15d1ace16}\label{mtc__conf__db_8h_a0c1e38d98fb7bd05afcdcbd15d1ace16}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetAutoHttpQry@{Mtc\_ConfDbGetAutoHttpQry}}
+\index{Mtc\_ConfDbGetAutoHttpQry@{Mtc\_ConfDbGetAutoHttpQry}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetAutoHttpQry()}{Mtc\_ConfDbGetAutoHttpQry()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Db\+Get\+Auto\+Http\+Qry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get auto start http query enable flag in muti-\/conference. 
+
+\begin{DoxyReturn}{Returns}
+The auto start http query enable flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a0c1e38d98fb7bd05afcdcbd15d1ace16}{Mtc\+\_\+\+Conf\+Db\+Get\+Auto\+Http\+Qry}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a737770176f124e53be5572767222e1bb}\label{mtc__conf__db_8h_a737770176f124e53be5572767222e1bb}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetConfAppId@{Mtc\_ConfDbGetConfAppId}}
+\index{Mtc\_ConfDbGetConfAppId@{Mtc\_ConfDbGetConfAppId}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetConfAppId()}{Mtc\_ConfDbGetConfAppId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+App\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get conference A\+PP ID. 
+
+\begin{DoxyReturn}{Returns}
+The string of conference A\+PP ID.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a2af22616b0a49a0c002f3cd02eece385}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+App\+Id}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a7caa4f3ca3ef8f5427789895ed553794}\label{mtc__conf__db_8h_a7caa4f3ca3ef8f5427789895ed553794}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetConfControlUri@{Mtc\_ConfDbGetConfControlUri}}
+\index{Mtc\_ConfDbGetConfControlUri@{Mtc\_ConfDbGetConfControlUri}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetConfControlUri()}{Mtc\_ConfDbGetConfControlUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Control\+Uri (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get conference control U\+RI. 
+
+\begin{DoxyReturn}{Returns}
+The string of conference control U\+RI.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a15f60b6deb2134fc77a435004f1885e7}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Control\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a72750af8ba3730f12316be81b9da5a56}\label{mtc__conf__db_8h_a72750af8ba3730f12316be81b9da5a56}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetConfHttpsEnable@{Mtc\_ConfDbGetConfHttpsEnable}}
+\index{Mtc\_ConfDbGetConfHttpsEnable@{Mtc\_ConfDbGetConfHttpsEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetConfHttpsEnable()}{Mtc\_ConfDbGetConfHttpsEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Https\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get use https conf enable. 
+
+\begin{DoxyReturn}{Returns}
+The https conference enable flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a9905fc88aa12bd48b2927fa5a6470418}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Https\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a27195afbb06d78c6b1aaa33d2db5fcf3}\label{mtc__conf__db_8h_a27195afbb06d78c6b1aaa33d2db5fcf3}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetConfPwd@{Mtc\_ConfDbGetConfPwd}}
+\index{Mtc\_ConfDbGetConfPwd@{Mtc\_ConfDbGetConfPwd}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetConfPwd()}{Mtc\_ConfDbGetConfPwd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Pwd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get conference A\+PP password. 
+
+\begin{DoxyReturn}{Returns}
+The string of conference A\+PP password.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a0a6ccac5cf7694b3b22c9f949741cce6}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Pwd}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a218ef6e0a732e42c0185324e9fafcfa1}\label{mtc__conf__db_8h_a218ef6e0a732e42c0185324e9fafcfa1}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetConfSubsEnable@{Mtc\_ConfDbGetConfSubsEnable}}
+\index{Mtc\_ConfDbGetConfSubsEnable@{Mtc\_ConfDbGetConfSubsEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetConfSubsEnable()}{Mtc\_ConfDbGetConfSubsEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Subs\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get conference subscribe enable flag. 
+
+\begin{DoxyReturn}{Returns}
+The conference subscribe enable flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_aa026ac55976d7d5a9d7f6d49a56941fd}{Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Subs\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a6e18afa4dd66d758e0e326f1e4a8cf2a}\label{mtc__conf__db_8h_a6e18afa4dd66d758e0e326f1e4a8cf2a}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetFactUri@{Mtc\_ConfDbGetFactUri}}
+\index{Mtc\_ConfDbGetFactUri@{Mtc\_ConfDbGetFactUri}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetFactUri()}{Mtc\_ConfDbGetFactUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Db\+Get\+Fact\+Uri (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get conference factory U\+RI. 
+
+\begin{DoxyReturn}{Returns}
+The string of conference factory U\+RI.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a1e86279b2065b2eb72f28c31bcec3b01}{Mtc\+\_\+\+Conf\+Db\+Set\+Fact\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a163e633d255c9488fd03c89b40337efc}\label{mtc__conf__db_8h_a163e633d255c9488fd03c89b40337efc}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetHttpConfToken@{Mtc\_ConfDbGetHttpConfToken}}
+\index{Mtc\_ConfDbGetHttpConfToken@{Mtc\_ConfDbGetHttpConfToken}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetHttpConfToken()}{Mtc\_ConfDbGetHttpConfToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Db\+Get\+Http\+Conf\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get http conf token. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+C\+H\+AR} & $\ast$ the http conf token.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a0b63b61d4ff03006aa08561cb89bc2cb}{Mtc\+\_\+\+Conf\+Db\+Set\+Http\+Conf\+Token}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a87051da766bc6725458a8d80865d9a20}\label{mtc__conf__db_8h_a87051da766bc6725458a8d80865d9a20}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetMaxImageCount@{Mtc\_ConfDbGetMaxImageCount}}
+\index{Mtc\_ConfDbGetMaxImageCount@{Mtc\_ConfDbGetMaxImageCount}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetMaxImageCount()}{Mtc\_ConfDbGetMaxImageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Db\+Get\+Max\+Image\+Count (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get http conf video max remote image count. 
+
+\begin{DoxyReturn}{Returns}
+The video max remote image count(default 4) of http conference.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a496c1bb1f875249c1fb8e3b4bb4e7dff}{Mtc\+\_\+\+Conf\+Db\+Set\+Max\+Image\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a4bd2c7348fb0d5e46137933087f3999e}\label{mtc__conf__db_8h_a4bd2c7348fb0d5e46137933087f3999e}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetMaxPartpCount@{Mtc\_ConfDbGetMaxPartpCount}}
+\index{Mtc\_ConfDbGetMaxPartpCount@{Mtc\_ConfDbGetMaxPartpCount}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetMaxPartpCount()}{Mtc\_ConfDbGetMaxPartpCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Db\+Get\+Max\+Partp\+Count (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get http conf video max partp count. 
+
+\begin{DoxyReturn}{Returns}
+The video max participants count(default 5) of http conference.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a9e5eda46eb6957b3a9534b42c292ea59}{Mtc\+\_\+\+Conf\+Db\+Set\+Max\+Partp\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a26e4876f77b0bdc39938208c943a9956}\label{mtc__conf__db_8h_a26e4876f77b0bdc39938208c943a9956}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetMcuConfEnable@{Mtc\_ConfDbGetMcuConfEnable}}
+\index{Mtc\_ConfDbGetMcuConfEnable@{Mtc\_ConfDbGetMcuConfEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetMcuConfEnable()}{Mtc\_ConfDbGetMcuConfEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Conf\+Db\+Get\+Mcu\+Conf\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get M\+CU conference enable flag. 
+
+\begin{DoxyReturn}{Returns}
+The M\+CU conference enable flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a5e25466b6d4e792f0defe610cef0f555}{Mtc\+\_\+\+Conf\+Db\+Set\+Mcu\+Conf\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a91a2baae8cefc4dff2475dea4b30745a}\label{mtc__conf__db_8h_a91a2baae8cefc4dff2475dea4b30745a}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetResRatioType@{Mtc\_ConfDbGetResRatioType}}
+\index{Mtc\_ConfDbGetResRatioType@{Mtc\_ConfDbGetResRatioType}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetResRatioType()}{Mtc\_ConfDbGetResRatioType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Db\+Get\+Res\+Ratio\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get resolution ratio type. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & conf video resolution ratio type.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a91a2baae8cefc4dff2475dea4b30745a}{Mtc\+\_\+\+Conf\+Db\+Get\+Res\+Ratio\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a14e1175c53dc176add76cdcc37eeea8b}\label{mtc__conf__db_8h_a14e1175c53dc176add76cdcc37eeea8b}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetVideoFactUri@{Mtc\_ConfDbGetVideoFactUri}}
+\index{Mtc\_ConfDbGetVideoFactUri@{Mtc\_ConfDbGetVideoFactUri}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetVideoFactUri()}{Mtc\_ConfDbGetVideoFactUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Fact\+Uri (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get video conference factory U\+RI. 
+
+\begin{DoxyReturn}{Returns}
+The string of video conference factory U\+RI.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_abb5c380cad6ab85a9dd2eda696e53f3e}{Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Fact\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_af550bbd5345aaa3aba845739a13fbc63}\label{mtc__conf__db_8h_af550bbd5345aaa3aba845739a13fbc63}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbGetVideoSwitchMode@{Mtc\_ConfDbGetVideoSwitchMode}}
+\index{Mtc\_ConfDbGetVideoSwitchMode@{Mtc\_ConfDbGetVideoSwitchMode}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbGetVideoSwitchMode()}{Mtc\_ConfDbGetVideoSwitchMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Switch\+Mode (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get http conference video switch mode. 
+
+\begin{DoxyReturn}{Returns}
+The video switch mode of http conference.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a9629f4f2df871425dec8a03a48bb5b9c}{Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Switch\+Mode}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a97edb9c121b93aed0690f265a5371133}\label{mtc__conf__db_8h_a97edb9c121b93aed0690f265a5371133}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetAudioRecEnable@{Mtc\_ConfDbSetAudioRecEnable}}
+\index{Mtc\_ConfDbSetAudioRecEnable@{Mtc\_ConfDbSetAudioRecEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetAudioRecEnable()}{Mtc\_ConfDbSetAudioRecEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Audio\+Rec\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set http conf video conference enable record audio flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & enable video conference record audio.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable video conference record audio successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable video conference record audio failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a8121dc9f4149b62f1b01b28cbbd1dfb4}{Mtc\+\_\+\+Conf\+Db\+Get\+Audio\+Rec\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a03bda1bd15d24b55f34bfe8eba1166c2}\label{mtc__conf__db_8h_a03bda1bd15d24b55f34bfe8eba1166c2}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetAutoHttpQry@{Mtc\_ConfDbSetAutoHttpQry}}
+\index{Mtc\_ConfDbSetAutoHttpQry@{Mtc\_ConfDbSetAutoHttpQry}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetAutoHttpQry()}{Mtc\_ConfDbSetAutoHttpQry()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Auto\+Http\+Qry (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set auto start http query enable flag in muti-\/conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & enable auto start http query.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable auto start http query successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set auto start http query failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a03bda1bd15d24b55f34bfe8eba1166c2}{Mtc\+\_\+\+Conf\+Db\+Set\+Auto\+Http\+Qry}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a2af22616b0a49a0c002f3cd02eece385}\label{mtc__conf__db_8h_a2af22616b0a49a0c002f3cd02eece385}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetConfAppId@{Mtc\_ConfDbSetConfAppId}}
+\index{Mtc\_ConfDbSetConfAppId@{Mtc\_ConfDbSetConfAppId}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetConfAppId()}{Mtc\_ConfDbSetConfAppId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+App\+Id (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Id }\end{DoxyParamCaption})}
+
+
+
+Set conference A\+PP ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & Conference A\+PP ID(set app id for multi-\/stream, 47 for testing environment, 34 for business environment). As for CS conference, app id is 203 for testing environment, 121 for business environment.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference A\+PP ID successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference A\+PP ID failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a737770176f124e53be5572767222e1bb}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+App\+Id}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a15f60b6deb2134fc77a435004f1885e7}\label{mtc__conf__db_8h_a15f60b6deb2134fc77a435004f1885e7}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetConfControlUri@{Mtc\_ConfDbSetConfControlUri}}
+\index{Mtc\_ConfDbSetConfControlUri@{Mtc\_ConfDbSetConfControlUri}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetConfControlUri()}{Mtc\_ConfDbSetConfControlUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Control\+Uri (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Set conference control U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & Conference control U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference control U\+RI successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference control U\+RI failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a7caa4f3ca3ef8f5427789895ed553794}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Control\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a9905fc88aa12bd48b2927fa5a6470418}\label{mtc__conf__db_8h_a9905fc88aa12bd48b2927fa5a6470418}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetConfHttpsEnable@{Mtc\_ConfDbSetConfHttpsEnable}}
+\index{Mtc\_ConfDbSetConfHttpsEnable@{Mtc\_ConfDbSetConfHttpsEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetConfHttpsEnable()}{Mtc\_ConfDbSetConfHttpsEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Https\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set use https conf enable. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & enable https conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable https conference successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable https conference failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a72750af8ba3730f12316be81b9da5a56}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Https\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a0a6ccac5cf7694b3b22c9f949741cce6}\label{mtc__conf__db_8h_a0a6ccac5cf7694b3b22c9f949741cce6}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetConfPwd@{Mtc\_ConfDbSetConfPwd}}
+\index{Mtc\_ConfDbSetConfPwd@{Mtc\_ConfDbSetConfPwd}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetConfPwd()}{Mtc\_ConfDbSetConfPwd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Pwd (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pwd }\end{DoxyParamCaption})}
+
+
+
+Set conference A\+PP password. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & Conference A\+PP password.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference A\+PP password successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference A\+PP password failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a27195afbb06d78c6b1aaa33d2db5fcf3}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Pwd}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_aa026ac55976d7d5a9d7f6d49a56941fd}\label{mtc__conf__db_8h_aa026ac55976d7d5a9d7f6d49a56941fd}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetConfSubsEnable@{Mtc\_ConfDbSetConfSubsEnable}}
+\index{Mtc\_ConfDbSetConfSubsEnable@{Mtc\_ConfDbSetConfSubsEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetConfSubsEnable()}{Mtc\_ConfDbSetConfSubsEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Conf\+Subs\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set conference subscribe enable flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & enable conference subscribe enable.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable conference subscribe successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable conference subscribe failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a218ef6e0a732e42c0185324e9fafcfa1}{Mtc\+\_\+\+Conf\+Db\+Get\+Conf\+Subs\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a1e86279b2065b2eb72f28c31bcec3b01}\label{mtc__conf__db_8h_a1e86279b2065b2eb72f28c31bcec3b01}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetFactUri@{Mtc\_ConfDbSetFactUri}}
+\index{Mtc\_ConfDbSetFactUri@{Mtc\_ConfDbSetFactUri}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetFactUri()}{Mtc\_ConfDbSetFactUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Fact\+Uri (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Set conference factory U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & Conference factory U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference factory U\+RI successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference factory U\+RI failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a6e18afa4dd66d758e0e326f1e4a8cf2a}{Mtc\+\_\+\+Conf\+Db\+Get\+Fact\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a0b63b61d4ff03006aa08561cb89bc2cb}\label{mtc__conf__db_8h_a0b63b61d4ff03006aa08561cb89bc2cb}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetHttpConfToken@{Mtc\_ConfDbSetHttpConfToken}}
+\index{Mtc\_ConfDbSetHttpConfToken@{Mtc\_ConfDbSetHttpConfToken}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetHttpConfToken()}{Mtc\_ConfDbSetHttpConfToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Http\+Conf\+Token (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token }\end{DoxyParamCaption})}
+
+
+
+Set http conf token. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the http conf token successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set the http conf token failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a163e633d255c9488fd03c89b40337efc}{Mtc\+\_\+\+Conf\+Db\+Get\+Http\+Conf\+Token}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a496c1bb1f875249c1fb8e3b4bb4e7dff}\label{mtc__conf__db_8h_a496c1bb1f875249c1fb8e3b4bb4e7dff}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetMaxImageCount@{Mtc\_ConfDbSetMaxImageCount}}
+\index{Mtc\_ConfDbSetMaxImageCount@{Mtc\_ConfDbSetMaxImageCount}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetMaxImageCount()}{Mtc\_ConfDbSetMaxImageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Max\+Image\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Count }\end{DoxyParamCaption})}
+
+
+
+Set http conference video remote image count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Count(default} & 4) video max remote image count(0 or not set for server\textquotesingle{}s max value (at present server supports 9 participants including chairman, which means ~\newline
+ server supports 8 remote images).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference video max remote image count successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference video max remote image count failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a87051da766bc6725458a8d80865d9a20}{Mtc\+\_\+\+Conf\+Db\+Get\+Max\+Image\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a9e5eda46eb6957b3a9534b42c292ea59}\label{mtc__conf__db_8h_a9e5eda46eb6957b3a9534b42c292ea59}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetMaxPartpCount@{Mtc\_ConfDbSetMaxPartpCount}}
+\index{Mtc\_ConfDbSetMaxPartpCount@{Mtc\_ConfDbSetMaxPartpCount}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetMaxPartpCount()}{Mtc\_ConfDbSetMaxPartpCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Max\+Partp\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Count }\end{DoxyParamCaption})}
+
+
+
+Set http conference video participants count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Count(default} & 5) video max participant count(0 or not set for server\textquotesingle{}s max value (at present server supports 9 participants including chairman).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference video max participants count successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference video max participants count failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a4bd2c7348fb0d5e46137933087f3999e}{Mtc\+\_\+\+Conf\+Db\+Get\+Max\+Partp\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a5e25466b6d4e792f0defe610cef0f555}\label{mtc__conf__db_8h_a5e25466b6d4e792f0defe610cef0f555}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetMcuConfEnable@{Mtc\_ConfDbSetMcuConfEnable}}
+\index{Mtc\_ConfDbSetMcuConfEnable@{Mtc\_ConfDbSetMcuConfEnable}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetMcuConfEnable()}{Mtc\_ConfDbSetMcuConfEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Mcu\+Conf\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set M\+CU conference enablee flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & enable M\+CU conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set enable M\+CU conference successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set enable M\+CU conference failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a26e4876f77b0bdc39938208c943a9956}{Mtc\+\_\+\+Conf\+Db\+Get\+Mcu\+Conf\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a30cda09b4934dfb73357ff0de674f9b6}\label{mtc__conf__db_8h_a30cda09b4934dfb73357ff0de674f9b6}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetResRatioType@{Mtc\_ConfDbSetResRatioType}}
+\index{Mtc\_ConfDbSetResRatioType@{Mtc\_ConfDbSetResRatioType}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetResRatioType()}{Mtc\_ConfDbSetResRatioType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Res\+Ratio\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set resolution ratio type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & the type of resolution ratio.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set resolution ratio type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set resolution ratio type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a30cda09b4934dfb73357ff0de674f9b6}{Mtc\+\_\+\+Conf\+Db\+Set\+Res\+Ratio\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_abb5c380cad6ab85a9dd2eda696e53f3e}\label{mtc__conf__db_8h_abb5c380cad6ab85a9dd2eda696e53f3e}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetVideoFactUri@{Mtc\_ConfDbSetVideoFactUri}}
+\index{Mtc\_ConfDbSetVideoFactUri@{Mtc\_ConfDbSetVideoFactUri}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetVideoFactUri()}{Mtc\_ConfDbSetVideoFactUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Fact\+Uri (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Set video conference factory U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & Video Conference factory U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set video conference factory U\+RI successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set video conference factory U\+RI failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a14e1175c53dc176add76cdcc37eeea8b}{Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Fact\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a9629f4f2df871425dec8a03a48bb5b9c}\label{mtc__conf__db_8h_a9629f4f2df871425dec8a03a48bb5b9c}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfDbSetVideoSwitchMode@{Mtc\_ConfDbSetVideoSwitchMode}}
+\index{Mtc\_ConfDbSetVideoSwitchMode@{Mtc\_ConfDbSetVideoSwitchMode}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDbSetVideoSwitchMode()}{Mtc\_ConfDbSetVideoSwitchMode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Db\+Set\+Video\+Switch\+Mode (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Mode }\end{DoxyParamCaption})}
+
+
+
+Set http conference video switch mode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Mode} & video switch mode \mbox{\hyperlink{mtc__conf_8h_a31b0246f0577e9277ae256a3f1353864}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+I\+D\+E\+O\+\_\+\+S\+W\+I\+T\+C\+H\+\_\+\+M\+O\+DE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference video switch mode successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference video switch mode failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_af550bbd5345aaa3aba845739a13fbc63}{Mtc\+\_\+\+Conf\+Db\+Get\+Video\+Switch\+Mode}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_ae333ccdda169adaffaca6c2fee42f321}\label{mtc__conf__db_8h_ae333ccdda169adaffaca6c2fee42f321}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfGetMcuPrefix@{Mtc\_ConfGetMcuPrefix}}
+\index{Mtc\_ConfGetMcuPrefix@{Mtc\_ConfGetMcuPrefix}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMcuPrefix()}{Mtc\_ConfGetMcuPrefix()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Conf\+Get\+Mcu\+Prefix (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get conference mcu prefix. 
+
+\begin{DoxyReturn}{Returns}
+The conference mcu prefix.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_ac764f97fb66b67f37e4e0610fab4eed9}{Mtc\+\_\+\+Conf\+Set\+Mcu\+Prefix}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_ac764f97fb66b67f37e4e0610fab4eed9}\label{mtc__conf__db_8h_ac764f97fb66b67f37e4e0610fab4eed9}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_ConfSetMcuPrefix@{Mtc\_ConfSetMcuPrefix}}
+\index{Mtc\_ConfSetMcuPrefix@{Mtc\_ConfSetMcuPrefix}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetMcuPrefix()}{Mtc\_ConfSetMcuPrefix()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Set\+Mcu\+Prefix (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Mcu\+Prefix }\end{DoxyParamCaption})}
+
+
+
+Set conference mcu prefix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Mcu\+Prefix} & Conference mcu prefix.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set conference mcu prefix successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set conference mcu prefix failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_ae333ccdda169adaffaca6c2fee42f321}{Mtc\+\_\+\+Conf\+Get\+Mcu\+Prefix}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_aaf1594196fc2296e16bd5dda03ac8b92}\label{mtc__conf__db_8h_aaf1594196fc2296e16bd5dda03ac8b92}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_McuConfDbGetResRatioType@{Mtc\_McuConfDbGetResRatioType}}
+\index{Mtc\_McuConfDbGetResRatioType@{Mtc\_McuConfDbGetResRatioType}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_McuConfDbGetResRatioType()}{Mtc\_McuConfDbGetResRatioType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Mcu\+Conf\+Db\+Get\+Res\+Ratio\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get resolution ratio type. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & mcu conf video resolution ratio type.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_aaf1594196fc2296e16bd5dda03ac8b92}{Mtc\+\_\+\+Mcu\+Conf\+Db\+Get\+Res\+Ratio\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__db_8h_a332c0e9094653a4f347c899cafb947cb}\label{mtc__conf__db_8h_a332c0e9094653a4f347c899cafb947cb}} 
+\index{mtc\_conf\_db.h@{mtc\_conf\_db.h}!Mtc\_McuConfDbSetResRatioType@{Mtc\_McuConfDbSetResRatioType}}
+\index{Mtc\_McuConfDbSetResRatioType@{Mtc\_McuConfDbSetResRatioType}!mtc\_conf\_db.h@{mtc\_conf\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_McuConfDbSetResRatioType()}{Mtc\_McuConfDbSetResRatioType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Mcu\+Conf\+Db\+Set\+Res\+Ratio\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set resolution ratio type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & the type of resolution ratio.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set resolution ratio type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set resolution ratio type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__db_8h_a332c0e9094653a4f347c899cafb947cb}{Mtc\+\_\+\+Mcu\+Conf\+Db\+Set\+Res\+Ratio\+Type}} 
+\end{DoxySeeAlso}

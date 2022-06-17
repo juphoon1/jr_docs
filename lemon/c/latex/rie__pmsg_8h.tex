@@ -1,0 +1,1834 @@
+\hypertarget{rie__pmsg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rie/rie\+\_\+pmsg.h File Reference}
+\label{rie__pmsg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_pmsg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_pmsg.h}}
+
+
+R\+IE Page-\/\+Mode Message Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{rie__pmsg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_ab86d6bebab5332e9e63a59a5cb581f42}{Rie\+\_\+\+P\+Msg\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Traf\+Type, Z\+C\+H\+AR $\ast$pc\+In\+Reply\+To, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Instant Message to one participant. IM wll send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a8f6bbbec85ecf8c593b7f6b23429740f}{Rie\+\_\+\+P\+Msg\+SendU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Instant Message to participant list. IM wll send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_aae41728e17c85c0df5bccf6b96a1b8f8}{Rie\+\_\+\+P\+Msg\+SendS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Re\+Sending Instant Message to one participant with spam information. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a792dbfb996bfd1c9e6215a5392f3d9af}{Rie\+\_\+\+P\+Msg\+Send\+GM}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Instant Message to one group for group management. IM wll send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a9df2ddc250daf2fd07683f51f2b09c18}{Rie\+\_\+\+P\+Msg\+SendM}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending multi-\/media Message to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a4bded041988284e9e0042ff181157a64}{Rie\+\_\+\+P\+Msg\+SendG}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+P\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+U\+I\+NT i\+At\+Partp\+Lst\+Id, Z\+U\+I\+NT i\+At\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Instant Message to one Group. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a523b026af0f907137ddcd693ee83697a}{Rie\+\_\+\+P\+Msg\+Reply}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Reply to specific standalone message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_aaba0fa05fcb5d96bece6adf59196fbfb}{Rie\+\_\+\+P\+Msg\+Revoke}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Revoke to specific standalone message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a82ebd8e252b252e35d9edfbf2a88ac4f}{Rie\+\_\+\+P\+Msg\+Response}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Sip\+Code)
+\begin{DoxyCompactList}\small\item\em Response to specific standalone page mode message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{rie__pmsg_8h_a215bc8a4f45d976c8c752c613a10da20}{Rie\+\_\+\+P\+Msg\+Release}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Release a page message, It will be destroied. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{rie__pmsg_8h_ac6859925a6e99af82ff6e1cc512111c1}{Rie\+\_\+\+P\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user cookie from a page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_af1d9e2fd9b662a8a5a2d830872bc4424}{Rie\+\_\+\+P\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+IE Set user cookie in a page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_ad693aa2ccad2a69adfa9ee16d1360c06}{Rie\+\_\+\+P\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get imdn id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_a6ac9ed41de59d3541ca6c5e013b1c1ad}{Rie\+\_\+\+P\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE get device id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a38200fae82f8bc810c11a11ce309f599}{Rie\+\_\+\+P\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get content type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a96feecaae72f395a533669d7d34b118b}{Rie\+\_\+\+P\+Msg\+Get\+Content\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message content length from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_ad2513a1dd4b2498513d688c39a617660}{Rie\+\_\+\+P\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE get the content from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a75009476a2fd62e921ca0340623f7f66}{Rie\+\_\+\+P\+Msg\+Get\+Bot\+Msg\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get chatbot result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a08018979e853e99a1ca5cce6fe317b2e}{Rie\+\_\+\+P\+Msg\+Get\+Muti\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE Get chatbot result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_ad090e9fd7d3e7909b60f7ab66b666e12}{Rie\+\_\+\+P\+Msg\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get participant type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a7b7ba42154e15b80d5b3d35dc8c1e9b4}{Rie\+\_\+\+P\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a4a1ce720a03b7d57b383e1d675a7819e}{Rie\+\_\+\+P\+Msg\+Get\+Cpim\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a2de01084938e773feeca1474a5593cfd}{Rie\+\_\+\+P\+Msg\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant list id from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a52e9f5a228ec7a07ba14d14a2a171243}{Rie\+\_\+\+P\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em R\+IE Get date time from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_a38c0fb0635ff886ef04821fc477900d7}{Rie\+\_\+\+P\+Msg\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get conversation-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_ac3589defe5e744db755bfeb6ec2c7b4e}{Rie\+\_\+\+P\+Msg\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_a246ee85f3008b9302d5599ca78b7fe99}{Rie\+\_\+\+P\+Msg\+Get\+Irt\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get inreplyto-\/contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a7956d5ff0f960760f51ace8ce5fdcc89}{Rie\+\_\+\+P\+Msg\+Get\+Sip\+Code}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get sip code of outgoing IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a1900578d3ffb3411dde86c4cb8c11673}{Rie\+\_\+\+P\+Msg\+Get\+Burn\+Time\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get burn after reading time length from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_ab86e92d25d3c269d048c08da8b29e621}{Rie\+\_\+\+P\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get font information from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_aaa718b95d00b07364883469a9502f22e}{Rie\+\_\+\+P\+Msg\+Get\+Traffic\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get Traffic Type from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_a33ec52e5f3072c96d8b2d7f6071d71b7}{Rie\+\_\+\+P\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke message-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rie__pmsg_8h_a6b68f7d40607b1723b6c092f54c6dc2f}{Rie\+\_\+\+P\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke result from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_a3cb0e468d97ea6bf3cffc9312f44e81d}{Rie\+\_\+\+P\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke from addr from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__pmsg_8h_a04869638679c2eb8b9c37c98fdc859fc}{Rie\+\_\+\+P\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke to addr from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a069366d0fa8a6512d50f45b401218462}{Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Grp\+Name}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE get qrcode group-\/name from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a77e72ebe7038953097f351b20caa11ea}{Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Grp\+Uri}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE get qrcode group-\/uri from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_af355a1c9acc10e628967d015274f6e4d}{Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Grp\+Proposer}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE get qrcode group-\/proposer from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a529d9666a1b5887fff41205b4b3bc81e}{Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Reason}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE get qrcode reason from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rie__pmsg_8h_ae8c3c5c5df5f07eeb7798b1cdb2cc3b9}{Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Option\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get qrcode option type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rie__pmsg_8h_a46e7397321f119c66dd139e9b565c463}{Rie\+\_\+\+P\+Msg\+Get\+Grp\+Man\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group manage set result from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_ab37346bf8cfc6dbb62284d30e0f74549}{Rie\+\_\+\+P\+Msg\+Get\+Grp\+Data\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group data id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a16b6aa034301f53593def2419cdb55aa}{Rie\+\_\+\+P\+Msg\+Get\+App\+Push\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get app push type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_adca4067dfa93c534630b714741f6c79e}{Rie\+\_\+\+P\+Msg\+Get\+Ft\+Http\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get fthttp id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_ab944987419d893e16a55a7a2a3a5a5cb}{Rie\+\_\+\+P\+Msg\+Has\+Oma\+Im}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get O\+MA IM flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_aa0ec2071cba68e36b0c6e9b731cef9d0}{Rie\+\_\+\+P\+Msg\+Has\+Oma\+Im\+Sys}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get O\+MA IM flag from im system message. O\+MA IM system message flag exist in accept header +g.\+oma.\+sip-\/im.\+system-\/message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_ae520304471c2ae4e2d9465b112b67427}{Rie\+\_\+\+P\+Msg\+Has\+Rcs\+Sms}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get R\+CS S\+MS flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a5547a99685a5d4d234e3038e342219ae}{Rie\+\_\+\+P\+Msg\+Has\+Sms\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get S\+MS indication flag from page message. It has \char`\"{}sms;operation=submit\char`\"{} in \char`\"{}\+P-\/\+Message-\/\+Type-\/\+Indicator\char`\"{}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a268d4fe6faf946f2b553ef534c4e5535}{Rie\+\_\+\+P\+Msg\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get public message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a5e25e179e4380137a46b1a8839276f7f}{Rie\+\_\+\+P\+Msg\+Has\+Grp\+M\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group manage message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a603333204909ae4f57cf9285b1a1145f}{Rie\+\_\+\+P\+Msg\+Has\+Grp\+Data\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group data message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a89947f2b1f4de385d9c1e2c08508a793}{Rie\+\_\+\+P\+Msg\+Has\+Call\+Com\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get callcomposer message indication flag from im message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rie__pmsg_8h_afdabe23731f6709dbd60c508b625d4d0}\label{rie__pmsg_8h_afdabe23731f6709dbd60c508b625d4d0}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Rie\+\_\+\+P\+Msg\+Has\+Revoke\+Msg\+Ind} (Z\+U\+I\+NT i\+Msg\+Id)
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_afa31436c3368d3c267ff148ba0d5525d}{Rie\+\_\+\+P\+Msg\+Supt\+Msg\+Revoke}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE support message revoke from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a1b7cd7217cdc6fdf2872e2cca80620ae}{Rie\+\_\+\+P\+Msg\+Has\+Burn\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get burn after reading indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a888c73af50ff0fe84d4f65a1f339357c}{Rie\+\_\+\+P\+Msg\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get spam indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a7add544ec41e0ca3a87538e21fa92220}{Rie\+\_\+\+P\+Msg\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get silence indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a6a64a0ff15c77c5ac37366d9ee394f7d}{Rie\+\_\+\+P\+Msg\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get direct indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_ab40848b4ebe9d837e0b24592f2cf4c57}{Rie\+\_\+\+P\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get carbon copy indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_ae81d748700aa535e40917ba378451104}{Rie\+\_\+\+P\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get offline msg indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a7a5fa46d15caf94bdb677668ee048d6b}{Rie\+\_\+\+P\+Msg\+Get\+Is\+Chat\+Bot}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get is chatbot message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a31c05688433db2186d71bede0fe4cef1}{Rie\+\_\+\+P\+Msg\+Has\+Grp\+Msg\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get group message indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_a7a723ff25d90f00cfd5d68adf82db05d}{Rie\+\_\+\+P\+Msg\+Has\+At\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em mtcf M\+TC Get at indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__pmsg_8h_aa7e02b7260ef71ce50c34fcdbefea91c}{Rie\+\_\+\+P\+Msg\+Get\+Is\+Pre\+Call}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get is pre-\/call message from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a33614ddb2e116435fce61488b142ab37}{Rie\+\_\+\+P\+Msg\+Create\+Revoke\+Xml}} (Z\+C\+H\+AR $\ast$pc\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+Revoke\+Result, Z\+C\+H\+AR $\ast$pc\+From\+Addr, Z\+C\+H\+AR $\ast$pc\+To\+Addr, Z\+C\+H\+AR $\ast$$\ast$ppc\+Xml)
+\begin{DoxyCompactList}\small\item\em R\+IE create revoke xml content. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_af8504b5b7a6c08b00715952819383a3b}{Rie\+\_\+\+P\+Msg\+Create\+Grp\+Data\+Xml}} (Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+C\+H\+AR uc\+Data\+Type, Z\+C\+H\+AR $\ast$$\ast$ppc\+Xml)
+\begin{DoxyCompactList}\small\item\em R\+IE create groupdata xml content. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_aa217a2c55bc1d022cf276cf9eed98ed4}{Rie\+\_\+\+P\+Msg\+Get\+Retry\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get retry time len from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_ad969d3c3e10f713713072eedbb06b1c2}{Rie\+\_\+\+P\+Msg\+Send\+Sms}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Smsc, Z\+C\+H\+AR $\ast$pc\+Phone, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Srv\+Flag, Z\+U\+I\+NT i\+Re\+Try, Z\+U\+I\+NT i\+Msg\+Ref, Z\+B\+O\+OL b\+T\+P\+DU, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Instant Message to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a2a54a8b03d094de488e46e0e1879c7de}{Rie\+\_\+\+P\+Msg\+Send\+Sms\+Ack}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Smsc, Z\+U\+I\+NT i\+Srv\+Flag, Z\+U\+I\+NT i\+Msg\+Ref, Z\+U\+I\+NT error\+Code, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending S\+MS A\+CK to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a59895cfb0f84949ff0a403225ba70d9d}{Rie\+\_\+\+Pmsg\+Send\+Sms\+AckX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Call\+Id\+Number, Z\+C\+H\+AR $\ast$pc\+Call\+Id\+Host, Z\+C\+H\+AR $\ast$pc\+Peer\+Uri, Z\+U\+I\+NT i\+Srv\+Flag, Z\+U\+I\+NT ii\+Msg\+Ref, Z\+U\+I\+NT error\+Code, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending S\+MS A\+C\+KX to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a4b2127518d6344382ed60cc9f90f6fbe}{Rie\+\_\+\+P\+Msg\+Send\+Sms\+Smma}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Smsc, Z\+U\+I\+NT i\+Srv\+Flag, Z\+U\+I\+NT i\+Msg\+Ref, Z\+B\+O\+OL b\+Available, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending S\+MS S\+M\+MA to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_aba40622420e2cc02279f6f50f1a8de4a}{Rie\+\_\+\+P\+Msg\+Re\+SendS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT i\+Spam\+Type, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Instant Message to one participant with spam information. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__pmsg_8h_a0fe89d20c615aeed0b48af1bf0c0c696}{Rie\+\_\+\+P\+Msg\+Get\+Sms\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get sms type from page message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE Page-\/\+Mode Message Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rie__pmsg_8h_af8504b5b7a6c08b00715952819383a3b}\label{rie__pmsg_8h_af8504b5b7a6c08b00715952819383a3b}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgCreateGrpDataXml@{Rie\_PMsgCreateGrpDataXml}}
+\index{Rie\_PMsgCreateGrpDataXml@{Rie\_PMsgCreateGrpDataXml}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgCreateGrpDataXml()}{Rie\_PMsgCreateGrpDataXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Create\+Grp\+Data\+Xml (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Data\+Type,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Xml }\end{DoxyParamCaption})}
+
+
+
+R\+IE create groupdata xml content. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The groupdata target msg. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Data\+Type} & The groupdata type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Xml} & The groupdata xml content.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em groupdata} & id The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a33614ddb2e116435fce61488b142ab37}\label{rie__pmsg_8h_a33614ddb2e116435fce61488b142ab37}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgCreateRevokeXml@{Rie\_PMsgCreateRevokeXml}}
+\index{Rie\_PMsgCreateRevokeXml@{Rie\_PMsgCreateRevokeXml}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgCreateRevokeXml()}{Rie\_PMsgCreateRevokeXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Create\+Revoke\+Xml (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Revoke\+Result,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Addr,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Addr,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Xml }\end{DoxyParamCaption})}
+
+
+
+R\+IE create revoke xml content. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Msg\+Id} & The revoke message-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Revoke\+Result} & message revoke result. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Addr} & message revoke from addr. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Addr} & message revoke to addr. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Xml} & The revoke xml content.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & create revoke xml content successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & create revoke xml content failed. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a16b6aa034301f53593def2419cdb55aa}\label{rie__pmsg_8h_a16b6aa034301f53593def2419cdb55aa}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetAppPushType@{Rie\_PMsgGetAppPushType}}
+\index{Rie\_PMsgGetAppPushType@{Rie\_PMsgGetAppPushType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetAppPushType()}{Rie\_PMsgGetAppPushType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+App\+Push\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get app push type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em App} & push type if it is a page messge, otherwise return Z\+M\+A\+X\+U\+I\+NT. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a75009476a2fd62e921ca0340623f7f66}\label{rie__pmsg_8h_a75009476a2fd62e921ca0340623f7f66}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetBotMsgContentType@{Rie\_PMsgGetBotMsgContentType}}
+\index{Rie\_PMsgGetBotMsgContentType@{Rie\_PMsgGetBotMsgContentType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetBotMsgContentType()}{Rie\_PMsgGetBotMsgContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Bot\+Msg\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get chatbot result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The chatbot result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a1900578d3ffb3411dde86c4cb8c11673}\label{rie__pmsg_8h_a1900578d3ffb3411dde86c4cb8c11673}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetBurnTimeLen@{Rie\_PMsgGetBurnTimeLen}}
+\index{Rie\_PMsgGetBurnTimeLen@{Rie\_PMsgGetBurnTimeLen}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetBurnTimeLen()}{Rie\_PMsgGetBurnTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Burn\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get burn after reading time length from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+burn after reading time length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ad2513a1dd4b2498513d688c39a617660}\label{rie__pmsg_8h_ad2513a1dd4b2498513d688c39a617660}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetContent@{Rie\_PMsgGetContent}}
+\index{Rie\_PMsgGetContent@{Rie\_PMsgGetContent}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetContent()}{Rie\_PMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE get the content from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get the message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get the message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a96feecaae72f395a533669d7d34b118b}\label{rie__pmsg_8h_a96feecaae72f395a533669d7d34b118b}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetContentLen@{Rie\_PMsgGetContentLen}}
+\index{Rie\_PMsgGetContentLen@{Rie\_PMsgGetContentLen}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetContentLen()}{Rie\_PMsgGetContentLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Content\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message content length from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & message content length. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a38200fae82f8bc810c11a11ce309f599}\label{rie__pmsg_8h_a38200fae82f8bc810c11a11ce309f599}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetContentType@{Rie\_PMsgGetContentType}}
+\index{Rie\_PMsgGetContentType@{Rie\_PMsgGetContentType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetContentType()}{Rie\_PMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get content type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of page message, E\+N\+\_\+\+R\+I\+E\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ac3589defe5e744db755bfeb6ec2c7b4e}\label{rie__pmsg_8h_ac3589defe5e744db755bfeb6ec2c7b4e}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetContId@{Rie\_PMsgGetContId}}
+\index{Rie\_PMsgGetContId@{Rie\_PMsgGetContId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetContId()}{Rie\_PMsgGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a38c0fb0635ff886ef04821fc477900d7}\label{rie__pmsg_8h_a38c0fb0635ff886ef04821fc477900d7}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetConvId@{Rie\_PMsgGetConvId}}
+\index{Rie\_PMsgGetConvId@{Rie\_PMsgGetConvId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetConvId()}{Rie\_PMsgGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get conversation-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ac6859925a6e99af82ff6e1cc512111c1}\label{rie__pmsg_8h_ac6859925a6e99af82ff6e1cc512111c1}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetCookie@{Rie\_PMsgGetCookie}}
+\index{Rie\_PMsgGetCookie@{Rie\_PMsgGetCookie}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetCookie()}{Rie\_PMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Rie\+\_\+\+P\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user cookie from a page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie.\\
+\hline
+\end{DoxyRetVals}
+rie get user cookie from a page message. \mbox{\Hypertarget{rie__pmsg_8h_a4a1ce720a03b7d57b383e1d675a7819e}\label{rie__pmsg_8h_a4a1ce720a03b7d57b383e1d675a7819e}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetCpimPartp@{Rie\_PMsgGetCpimPartp}}
+\index{Rie\_PMsgGetCpimPartp@{Rie\_PMsgGetCpimPartp}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetCpimPartp()}{Rie\_PMsgGetCpimPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Cpim\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a52e9f5a228ec7a07ba14d14a2a171243}\label{rie__pmsg_8h_a52e9f5a228ec7a07ba14d14a2a171243}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetDateTime@{Rie\_PMsgGetDateTime}}
+\index{Rie\_PMsgGetDateTime@{Rie\_PMsgGetDateTime}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetDateTime()}{Rie\_PMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get date time from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a6ac9ed41de59d3541ca6c5e013b1c1ad}\label{rie__pmsg_8h_a6ac9ed41de59d3541ca6c5e013b1c1ad}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetDeviceId@{Rie\_PMsgGetDeviceId}}
+\index{Rie\_PMsgGetDeviceId@{Rie\_PMsgGetDeviceId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetDeviceId()}{Rie\_PMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE get device id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message device id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ab86e92d25d3c269d048c08da8b29e621}\label{rie__pmsg_8h_ab86e92d25d3c269d048c08da8b29e621}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetFontInfo@{Rie\_PMsgGetFontInfo}}
+\index{Rie\_PMsgGetFontInfo@{Rie\_PMsgGetFontInfo}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetFontInfo()}{Rie\_PMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get font information from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & font information. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_adca4067dfa93c534630b714741f6c79e}\label{rie__pmsg_8h_adca4067dfa93c534630b714741f6c79e}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetFtHttpId@{Rie\_PMsgGetFtHttpId}}
+\index{Rie\_PMsgGetFtHttpId@{Rie\_PMsgGetFtHttpId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetFtHttpId()}{Rie\_PMsgGetFtHttpId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Ft\+Http\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get fthttp id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fthttp id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ab37346bf8cfc6dbb62284d30e0f74549}\label{rie__pmsg_8h_ab37346bf8cfc6dbb62284d30e0f74549}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetGrpDataId@{Rie\_PMsgGetGrpDataId}}
+\index{Rie\_PMsgGetGrpDataId@{Rie\_PMsgGetGrpDataId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetGrpDataId()}{Rie\_PMsgGetGrpDataId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Grp\+Data\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group data id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group data id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a46e7397321f119c66dd139e9b565c463}\label{rie__pmsg_8h_a46e7397321f119c66dd139e9b565c463}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetGrpManResult@{Rie\_PMsgGetGrpManResult}}
+\index{Rie\_PMsgGetGrpManResult@{Rie\_PMsgGetGrpManResult}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetGrpManResult()}{Rie\_PMsgGetGrpManResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rie\+\_\+\+P\+Msg\+Get\+Grp\+Man\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group manage set result from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group manage set result. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ad693aa2ccad2a69adfa9ee16d1360c06}\label{rie__pmsg_8h_ad693aa2ccad2a69adfa9ee16d1360c06}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetImdnId@{Rie\_PMsgGetImdnId}}
+\index{Rie\_PMsgGetImdnId@{Rie\_PMsgGetImdnId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetImdnId()}{Rie\_PMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get imdn id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em imdn} & id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a246ee85f3008b9302d5599ca78b7fe99}\label{rie__pmsg_8h_a246ee85f3008b9302d5599ca78b7fe99}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetIrtContId@{Rie\_PMsgGetIrtContId}}
+\index{Rie\_PMsgGetIrtContId@{Rie\_PMsgGetIrtContId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetIrtContId()}{Rie\_PMsgGetIrtContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Irt\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get inreplyto-\/contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inreplyto-\/contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a7a5fa46d15caf94bdb677668ee048d6b}\label{rie__pmsg_8h_a7a5fa46d15caf94bdb677668ee048d6b}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetIsChatBot@{Rie\_PMsgGetIsChatBot}}
+\index{Rie\_PMsgGetIsChatBot@{Rie\_PMsgGetIsChatBot}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetIsChatBot()}{Rie\_PMsgGetIsChatBot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Get\+Is\+Chat\+Bot (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get is chatbot message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The is chatbot message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_aa7e02b7260ef71ce50c34fcdbefea91c}\label{rie__pmsg_8h_aa7e02b7260ef71ce50c34fcdbefea91c}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetIsPreCall@{Rie\_PMsgGetIsPreCall}}
+\index{Rie\_PMsgGetIsPreCall@{Rie\_PMsgGetIsPreCall}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetIsPreCall()}{Rie\_PMsgGetIsPreCall()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Get\+Is\+Pre\+Call (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get is pre-\/call message from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The is pre-\/call message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a08018979e853e99a1ca5cce6fe317b2e}\label{rie__pmsg_8h_a08018979e853e99a1ca5cce6fe317b2e}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetMutiContent@{Rie\_PMsgGetMutiContent}}
+\index{Rie\_PMsgGetMutiContent@{Rie\_PMsgGetMutiContent}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetMutiContent()}{Rie\_PMsgGetMutiContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Muti\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get chatbot result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The chatbot result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a7b7ba42154e15b80d5b3d35dc8c1e9b4}\label{rie__pmsg_8h_a7b7ba42154e15b80d5b3d35dc8c1e9b4}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetPartp@{Rie\_PMsgGetPartp}}
+\index{Rie\_PMsgGetPartp@{Rie\_PMsgGetPartp}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetPartp()}{Rie\_PMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a2de01084938e773feeca1474a5593cfd}\label{rie__pmsg_8h_a2de01084938e773feeca1474a5593cfd}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetPartpLstId@{Rie\_PMsgGetPartpLstId}}
+\index{Rie\_PMsgGetPartpLstId@{Rie\_PMsgGetPartpLstId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetPartpLstId()}{Rie\_PMsgGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant list id from im message. 
+
+The participant list id is all remote clients who are received message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant list id. The caller is responsible for freeing it by Msf\+\_\+\+Partp\+Lst\+Delete \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ad090e9fd7d3e7909b60f7ab66b666e12}\label{rie__pmsg_8h_ad090e9fd7d3e7909b60f7ab66b666e12}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetPartpType@{Rie\_PMsgGetPartpType}}
+\index{Rie\_PMsgGetPartpType@{Rie\_PMsgGetPartpType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetPartpType()}{Rie\_PMsgGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get participant type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of page message participant, see \mbox{\hyperlink{msf__partp_8h_a230e775811d3034e7adb9509cc6aa2f3}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyRetVals}
+If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by Mmf\+\_\+\+P\+Msg\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by Mmf\+\_\+\+P\+Msg\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by Mmf\+\_\+\+P\+Msg\+Get\+Partp\+Lst\+Id. \mbox{\Hypertarget{rie__pmsg_8h_a069366d0fa8a6512d50f45b401218462}\label{rie__pmsg_8h_a069366d0fa8a6512d50f45b401218462}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetQrcodeGrpName@{Rie\_PMsgGetQrcodeGrpName}}
+\index{Rie\_PMsgGetQrcodeGrpName@{Rie\_PMsgGetQrcodeGrpName}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetQrcodeGrpName()}{Rie\_PMsgGetQrcodeGrpName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Grp\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE get qrcode group-\/name from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get the message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get the message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_af355a1c9acc10e628967d015274f6e4d}\label{rie__pmsg_8h_af355a1c9acc10e628967d015274f6e4d}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetQrcodeGrpProposer@{Rie\_PMsgGetQrcodeGrpProposer}}
+\index{Rie\_PMsgGetQrcodeGrpProposer@{Rie\_PMsgGetQrcodeGrpProposer}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetQrcodeGrpProposer()}{Rie\_PMsgGetQrcodeGrpProposer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Grp\+Proposer (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE get qrcode group-\/proposer from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get the message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get the message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a77e72ebe7038953097f351b20caa11ea}\label{rie__pmsg_8h_a77e72ebe7038953097f351b20caa11ea}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetQrcodeGrpUri@{Rie\_PMsgGetQrcodeGrpUri}}
+\index{Rie\_PMsgGetQrcodeGrpUri@{Rie\_PMsgGetQrcodeGrpUri}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetQrcodeGrpUri()}{Rie\_PMsgGetQrcodeGrpUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Grp\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE get qrcode group-\/uri from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get the message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get the message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ae8c3c5c5df5f07eeb7798b1cdb2cc3b9}\label{rie__pmsg_8h_ae8c3c5c5df5f07eeb7798b1cdb2cc3b9}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetQrcodeOptionType@{Rie\_PMsgGetQrcodeOptionType}}
+\index{Rie\_PMsgGetQrcodeOptionType@{Rie\_PMsgGetQrcodeOptionType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetQrcodeOptionType()}{Rie\_PMsgGetQrcodeOptionType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Option\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get qrcode option type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of page message, E\+N\+\_\+\+M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a529d9666a1b5887fff41205b4b3bc81e}\label{rie__pmsg_8h_a529d9666a1b5887fff41205b4b3bc81e}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetQrcodeReason@{Rie\_PMsgGetQrcodeReason}}
+\index{Rie\_PMsgGetQrcodeReason@{Rie\_PMsgGetQrcodeReason}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetQrcodeReason()}{Rie\_PMsgGetQrcodeReason()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Qrcode\+Reason (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE get qrcode reason from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get the message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get the message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_aa217a2c55bc1d022cf276cf9eed98ed4}\label{rie__pmsg_8h_aa217a2c55bc1d022cf276cf9eed98ed4}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetRetryLen@{Rie\_PMsgGetRetryLen}}
+\index{Rie\_PMsgGetRetryLen@{Rie\_PMsgGetRetryLen}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetRetryLen()}{Rie\_PMsgGetRetryLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Retry\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get retry time len from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The retry time len. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a3cb0e468d97ea6bf3cffc9312f44e81d}\label{rie__pmsg_8h_a3cb0e468d97ea6bf3cffc9312f44e81d}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetRevokeFromAddr@{Rie\_PMsgGetRevokeFromAddr}}
+\index{Rie\_PMsgGetRevokeFromAddr@{Rie\_PMsgGetRevokeFromAddr}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetRevokeFromAddr()}{Rie\_PMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke from addr from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a33ec52e5f3072c96d8b2d7f6071d71b7}\label{rie__pmsg_8h_a33ec52e5f3072c96d8b2d7f6071d71b7}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetRevokeMsgId@{Rie\_PMsgGetRevokeMsgId}}
+\index{Rie\_PMsgGetRevokeMsgId@{Rie\_PMsgGetRevokeMsgId}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetRevokeMsgId()}{Rie\_PMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke message-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a6b68f7d40607b1723b6c092f54c6dc2f}\label{rie__pmsg_8h_a6b68f7d40607b1723b6c092f54c6dc2f}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetRevokeResult@{Rie\_PMsgGetRevokeResult}}
+\index{Rie\_PMsgGetRevokeResult@{Rie\_PMsgGetRevokeResult}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetRevokeResult()}{Rie\_PMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rie\+\_\+\+P\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke result from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a04869638679c2eb8b9c37c98fdc859fc}\label{rie__pmsg_8h_a04869638679c2eb8b9c37c98fdc859fc}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetRevokeToAddr@{Rie\_PMsgGetRevokeToAddr}}
+\index{Rie\_PMsgGetRevokeToAddr@{Rie\_PMsgGetRevokeToAddr}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetRevokeToAddr()}{Rie\_PMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke to addr from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a7956d5ff0f960760f51ace8ce5fdcc89}\label{rie__pmsg_8h_a7956d5ff0f960760f51ace8ce5fdcc89}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetSipCode@{Rie\_PMsgGetSipCode}}
+\index{Rie\_PMsgGetSipCode@{Rie\_PMsgGetSipCode}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetSipCode()}{Rie\_PMsgGetSipCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Sip\+Code (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get sip code of outgoing IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sip code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a0fe89d20c615aeed0b48af1bf0c0c696}\label{rie__pmsg_8h_a0fe89d20c615aeed0b48af1bf0c0c696}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetSmsType@{Rie\_PMsgGetSmsType}}
+\index{Rie\_PMsgGetSmsType@{Rie\_PMsgGetSmsType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetSmsType()}{Rie\_PMsgGetSmsType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Get\+Sms\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get sms type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{rie__pmsg_8h_aaa718b95d00b07364883469a9502f22e}\label{rie__pmsg_8h_aaa718b95d00b07364883469a9502f22e}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgGetTrafficType@{Rie\_PMsgGetTrafficType}}
+\index{Rie\_PMsgGetTrafficType@{Rie\_PMsgGetTrafficType}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgGetTrafficType()}{Rie\_PMsgGetTrafficType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+P\+Msg\+Get\+Traffic\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get Traffic Type from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & Traffic Type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a7a723ff25d90f00cfd5d68adf82db05d}\label{rie__pmsg_8h_a7a723ff25d90f00cfd5d68adf82db05d}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasAtInd@{Rie\_PMsgHasAtInd}}
+\index{Rie\_PMsgHasAtInd@{Rie\_PMsgHasAtInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasAtInd()}{Rie\_PMsgHasAtInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+At\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+mtcf M\+TC Get at indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The at indication. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a1b7cd7217cdc6fdf2872e2cca80620ae}\label{rie__pmsg_8h_a1b7cd7217cdc6fdf2872e2cca80620ae}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasBurnInd@{Rie\_PMsgHasBurnInd}}
+\index{Rie\_PMsgHasBurnInd@{Rie\_PMsgHasBurnInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasBurnInd()}{Rie\_PMsgHasBurnInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Burn\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get burn after reading indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a burn after reading message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a89947f2b1f4de385d9c1e2c08508a793}\label{rie__pmsg_8h_a89947f2b1f4de385d9c1e2c08508a793}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasCallComInd@{Rie\_PMsgHasCallComInd}}
+\index{Rie\_PMsgHasCallComInd@{Rie\_PMsgHasCallComInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasCallComInd()}{Rie\_PMsgHasCallComInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Call\+Com\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get callcomposer message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has callcomposer message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ab40848b4ebe9d837e0b24592f2cf4c57}\label{rie__pmsg_8h_ab40848b4ebe9d837e0b24592f2cf4c57}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasCcInd@{Rie\_PMsgHasCcInd}}
+\index{Rie\_PMsgHasCcInd@{Rie\_PMsgHasCcInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasCcInd()}{Rie\_PMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get carbon copy indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a carbon copy message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a6a64a0ff15c77c5ac37366d9ee394f7d}\label{rie__pmsg_8h_a6a64a0ff15c77c5ac37366d9ee394f7d}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasDirectInd@{Rie\_PMsgHasDirectInd}}
+\index{Rie\_PMsgHasDirectInd@{Rie\_PMsgHasDirectInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasDirectInd()}{Rie\_PMsgHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get direct indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a direct message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a603333204909ae4f57cf9285b1a1145f}\label{rie__pmsg_8h_a603333204909ae4f57cf9285b1a1145f}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasGrpDataInd@{Rie\_PMsgHasGrpDataInd}}
+\index{Rie\_PMsgHasGrpDataInd@{Rie\_PMsgHasGrpDataInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasGrpDataInd()}{Rie\_PMsgHasGrpDataInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Grp\+Data\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group data message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has group data message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a5e25e179e4380137a46b1a8839276f7f}\label{rie__pmsg_8h_a5e25e179e4380137a46b1a8839276f7f}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasGrpMInd@{Rie\_PMsgHasGrpMInd}}
+\index{Rie\_PMsgHasGrpMInd@{Rie\_PMsgHasGrpMInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasGrpMInd()}{Rie\_PMsgHasGrpMInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Grp\+M\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group manage message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has group manage message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a31c05688433db2186d71bede0fe4cef1}\label{rie__pmsg_8h_a31c05688433db2186d71bede0fe4cef1}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasGrpMsgInd@{Rie\_PMsgHasGrpMsgInd}}
+\index{Rie\_PMsgHasGrpMsgInd@{Rie\_PMsgHasGrpMsgInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasGrpMsgInd()}{Rie\_PMsgHasGrpMsgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Grp\+Msg\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get group message indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a group message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ae81d748700aa535e40917ba378451104}\label{rie__pmsg_8h_ae81d748700aa535e40917ba378451104}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasOffInd@{Rie\_PMsgHasOffInd}}
+\index{Rie\_PMsgHasOffInd@{Rie\_PMsgHasOffInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasOffInd()}{Rie\_PMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get offline msg indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a offline message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_ab944987419d893e16a55a7a2a3a5a5cb}\label{rie__pmsg_8h_ab944987419d893e16a55a7a2a3a5a5cb}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasOmaIm@{Rie\_PMsgHasOmaIm}}
+\index{Rie\_PMsgHasOmaIm@{Rie\_PMsgHasOmaIm}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasOmaIm()}{Rie\_PMsgHasOmaIm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Oma\+Im (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get O\+MA IM flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it is a O\+MA IM message, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_aa0ec2071cba68e36b0c6e9b731cef9d0}\label{rie__pmsg_8h_aa0ec2071cba68e36b0c6e9b731cef9d0}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasOmaImSys@{Rie\_PMsgHasOmaImSys}}
+\index{Rie\_PMsgHasOmaImSys@{Rie\_PMsgHasOmaImSys}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasOmaImSys()}{Rie\_PMsgHasOmaImSys()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Oma\+Im\+Sys (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get O\+MA IM flag from im system message. O\+MA IM system message flag exist in accept header +g.\+oma.\+sip-\/im.\+system-\/message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it is a O\+MA IM system message, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a268d4fe6faf946f2b553ef534c4e5535}\label{rie__pmsg_8h_a268d4fe6faf946f2b553ef534c4e5535}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasPubInd@{Rie\_PMsgHasPubInd}}
+\index{Rie\_PMsgHasPubInd@{Rie\_PMsgHasPubInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasPubInd()}{Rie\_PMsgHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get public message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ae520304471c2ae4e2d9465b112b67427}\label{rie__pmsg_8h_ae520304471c2ae4e2d9465b112b67427}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasRcsSms@{Rie\_PMsgHasRcsSms}}
+\index{Rie\_PMsgHasRcsSms@{Rie\_PMsgHasRcsSms}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasRcsSms()}{Rie\_PMsgHasRcsSms()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Rcs\+Sms (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get R\+CS S\+MS flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it is a R\+CS S\+MS message, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a7add544ec41e0ca3a87538e21fa92220}\label{rie__pmsg_8h_a7add544ec41e0ca3a87538e21fa92220}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasSilenceInd@{Rie\_PMsgHasSilenceInd}}
+\index{Rie\_PMsgHasSilenceInd@{Rie\_PMsgHasSilenceInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasSilenceInd()}{Rie\_PMsgHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get silence indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a silence message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a5547a99685a5d4d234e3038e342219ae}\label{rie__pmsg_8h_a5547a99685a5d4d234e3038e342219ae}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasSmsInd@{Rie\_PMsgHasSmsInd}}
+\index{Rie\_PMsgHasSmsInd@{Rie\_PMsgHasSmsInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasSmsInd()}{Rie\_PMsgHasSmsInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Sms\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get S\+MS indication flag from page message. It has \char`\"{}sms;operation=submit\char`\"{} in \char`\"{}\+P-\/\+Message-\/\+Type-\/\+Indicator\char`\"{}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a R\+CS S\+MS message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a888c73af50ff0fe84d4f65a1f339357c}\label{rie__pmsg_8h_a888c73af50ff0fe84d4f65a1f339357c}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgHasSpamInd@{Rie\_PMsgHasSpamInd}}
+\index{Rie\_PMsgHasSpamInd@{Rie\_PMsgHasSpamInd}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgHasSpamInd()}{Rie\_PMsgHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get spam indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a spam message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__pmsg_8h_a215bc8a4f45d976c8c752c613a10da20}\label{rie__pmsg_8h_a215bc8a4f45d976c8c752c613a10da20}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgRelease@{Rie\_PMsgRelease}}
+\index{Rie\_PMsgRelease@{Rie\_PMsgRelease}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgRelease()}{Rie\_PMsgRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Rie\+\_\+\+P\+Msg\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Release a page message, It will be destroied. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+rie release a page message. \mbox{\Hypertarget{rie__pmsg_8h_a523b026af0f907137ddcd693ee83697a}\label{rie__pmsg_8h_a523b026af0f907137ddcd693ee83697a}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgReply@{Rie\_PMsgReply}}
+\index{Rie\_PMsgReply@{Rie\_PMsgReply}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgReply()}{Rie\_PMsgReply()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Reply (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Reply to specific standalone message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id reply to. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_aba40622420e2cc02279f6f50f1a8de4a}\label{rie__pmsg_8h_aba40622420e2cc02279f6f50f1a8de4a}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgReSendS@{Rie\_PMsgReSendS}}
+\index{Rie\_PMsgReSendS@{Rie\_PMsgReSendS}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgReSendS()}{Rie\_PMsgReSendS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Re\+SendS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Instant Message to one participant with spam information. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+C\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags, combination of M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+O\+M\+A\+\_\+\+IM... \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a82ebd8e252b252e35d9edfbf2a88ac4f}\label{rie__pmsg_8h_a82ebd8e252b252e35d9edfbf2a88ac4f}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgResponse@{Rie\_PMsgResponse}}
+\index{Rie\_PMsgResponse@{Rie\_PMsgResponse}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgResponse()}{Rie\_PMsgResponse()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Response (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Sip\+Code }\end{DoxyParamCaption})}
+
+
+
+Response to specific standalone page mode message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sip\+Code} & The sip status code.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Response successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Response failed.\\
+\hline
+\end{DoxyRetVals}
+rie response a page message. \mbox{\Hypertarget{rie__pmsg_8h_aaba0fa05fcb5d96bece6adf59196fbfb}\label{rie__pmsg_8h_aaba0fa05fcb5d96bece6adf59196fbfb}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgRevoke@{Rie\_PMsgRevoke}}
+\index{Rie\_PMsgRevoke@{Rie\_PMsgRevoke}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgRevoke()}{Rie\_PMsgRevoke()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Revoke (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Revoke to specific standalone message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ab86d6bebab5332e9e63a59a5cb581f42}\label{rie__pmsg_8h_ab86d6bebab5332e9e63a59a5cb581f42}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSend@{Rie\_PMsgSend}}
+\index{Rie\_PMsgSend@{Rie\_PMsgSend}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSend()}{Rie\_PMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+P\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Traf\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+In\+Reply\+To,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Instant Message to one participant. IM wll send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message content type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags, combination of M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+O\+M\+A\+\_\+\+IM... \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Traf\+Type} & The Traffic identification. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+In\+Reply\+To} & The In\+Reply\+To-\/\+Contriabution-\/\+ID. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a4bded041988284e9e0042ff181157a64}\label{rie__pmsg_8h_a4bded041988284e9e0042ff181157a64}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendG@{Rie\_PMsgSendG}}
+\index{Rie\_PMsgSendG@{Rie\_PMsgSendG}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendG()}{Rie\_PMsgSendG()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+SendG (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+P\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+U\+I\+NT}]{i\+At\+Partp\+Lst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+At\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Instant Message to one Group. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+P\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Ident} & The group identity(group uri). \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags, combination of M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+O\+M\+A\+\_\+\+IM... \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+At\+Type} & The at function type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. ~\newline
+ \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a792dbfb996bfd1c9e6215a5392f3d9af}\label{rie__pmsg_8h_a792dbfb996bfd1c9e6215a5392f3d9af}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendGM@{Rie\_PMsgSendGM}}
+\index{Rie\_PMsgSendGM@{Rie\_PMsgSendGM}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendGM()}{Rie\_PMsgSendGM()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Send\+GM (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Instant Message to one group for group management. IM wll send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message content type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a9df2ddc250daf2fd07683f51f2b09c18}\label{rie__pmsg_8h_a9df2ddc250daf2fd07683f51f2b09c18}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendM@{Rie\_PMsgSendM}}
+\index{Rie\_PMsgSendM@{Rie\_PMsgSendM}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendM()}{Rie\_PMsgSendM()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+SendM (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending multi-\/media Message to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The multi-\/media message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The multi-\/media message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message content type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. ~\newline
+ \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_aae41728e17c85c0df5bccf6b96a1b8f8}\label{rie__pmsg_8h_aae41728e17c85c0df5bccf6b96a1b8f8}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendS@{Rie\_PMsgSendS}}
+\index{Rie\_PMsgSendS@{Rie\_PMsgSendS}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendS()}{Rie\_PMsgSendS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+SendS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Re\+Sending Instant Message to one participant with spam information. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+C\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. ~\newline
+ \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_ad969d3c3e10f713713072eedbb06b1c2}\label{rie__pmsg_8h_ad969d3c3e10f713713072eedbb06b1c2}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendSms@{Rie\_PMsgSendSms}}
+\index{Rie\_PMsgSendSms@{Rie\_PMsgSendSms}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendSms()}{Rie\_PMsgSendSms()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Send\+Sms (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Smsc,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Phone,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+U\+I\+NT}]{i\+Re\+Try,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+B\+O\+OL}]{b\+T\+P\+DU,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Instant Message to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Smsc} & The message center uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Phone} & The callee uri . \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message srv flag. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Re\+Try} & The retry times. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Mes\+Ref} & The message ref. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+T\+P\+DU} & indicate tpdu or text. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & send sms ok. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & send sms failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a2a54a8b03d094de488e46e0e1879c7de}\label{rie__pmsg_8h_a2a54a8b03d094de488e46e0e1879c7de}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendSmsAck@{Rie\_PMsgSendSmsAck}}
+\index{Rie\_PMsgSendSmsAck@{Rie\_PMsgSendSmsAck}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendSmsAck()}{Rie\_PMsgSendSmsAck()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Send\+Sms\+Ack (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Smsc,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+U\+I\+NT}]{error\+Code,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending S\+MS A\+CK to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Smsc} & The message center uri . \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message srv flag. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Mes\+Ref} & The message ref. \\
+\hline
+\mbox{\texttt{ in}}  & {\em error\+Code} & The message error code. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & send sms ack ok. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & send sms ack failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a59895cfb0f84949ff0a403225ba70d9d}\label{rie__pmsg_8h_a59895cfb0f84949ff0a403225ba70d9d}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PmsgSendSmsAckX@{Rie\_PmsgSendSmsAckX}}
+\index{Rie\_PmsgSendSmsAckX@{Rie\_PmsgSendSmsAckX}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PmsgSendSmsAckX()}{Rie\_PmsgSendSmsAckX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Pmsg\+Send\+Sms\+AckX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Call\+Id\+Number,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Call\+Id\+Host,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Peer\+Uri,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+U\+I\+NT}]{ii\+Msg\+Ref,  }\item[{Z\+U\+I\+NT}]{error\+Code,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending S\+MS A\+C\+KX to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Call\+Id\+Number} & The Call\+Id Number . \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Call\+Id\+Host} & The Call\+Id Host. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Peer\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message srv flag. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Mes\+Ref} & The message ref. \\
+\hline
+\mbox{\texttt{ in}}  & {\em error\+Code} & The message error code. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a4b2127518d6344382ed60cc9f90f6fbe}\label{rie__pmsg_8h_a4b2127518d6344382ed60cc9f90f6fbe}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendSmsSmma@{Rie\_PMsgSendSmsSmma}}
+\index{Rie\_PMsgSendSmsSmma@{Rie\_PMsgSendSmsSmma}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendSmsSmma()}{Rie\_PMsgSendSmsSmma()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Send\+Sms\+Smma (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Smsc,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+B\+O\+OL}]{b\+Available,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending S\+MS S\+M\+MA to one participant. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_a8f6bbbec85ecf8c593b7f6b23429740f}\label{rie__pmsg_8h_a8f6bbbec85ecf8c593b7f6b23429740f}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSendU@{Rie\_PMsgSendU}}
+\index{Rie\_PMsgSendU@{Rie\_PMsgSendU}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSendU()}{Rie\_PMsgSendU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+SendU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Instant Message to participant list. IM wll send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message content type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags, combination of M\+M\+F\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+O\+M\+A\+\_\+\+IM... ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_af1d9e2fd9b662a8a5a2d830872bc4424}\label{rie__pmsg_8h_af1d9e2fd9b662a8a5a2d830872bc4424}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSetCookie@{Rie\_PMsgSetCookie}}
+\index{Rie\_PMsgSetCookie@{Rie\_PMsgSetCookie}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSetCookie()}{Rie\_PMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+P\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+IE Set user cookie in a page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__pmsg_8h_afa31436c3368d3c267ff148ba0d5525d}\label{rie__pmsg_8h_afa31436c3368d3c267ff148ba0d5525d}} 
+\index{rie\_pmsg.h@{rie\_pmsg.h}!Rie\_PMsgSuptMsgRevoke@{Rie\_PMsgSuptMsgRevoke}}
+\index{Rie\_PMsgSuptMsgRevoke@{Rie\_PMsgSuptMsgRevoke}!rie\_pmsg.h@{rie\_pmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_PMsgSuptMsgRevoke()}{Rie\_PMsgSuptMsgRevoke()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+P\+Msg\+Supt\+Msg\+Revoke (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE support message revoke from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it supports message revoke, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}

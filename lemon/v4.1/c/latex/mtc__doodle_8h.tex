@@ -1,0 +1,686 @@
+\hypertarget{mtc__doodle_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+doodle.h File Reference}
+\label{mtc__doodle_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_doodle.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_doodle.h}}
+
+
+M\+TC Doodle Interface Functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga7251016fe80b7d02cd534cb8dd146856}{Mtc\+Doodle\+Image\+Type\+Key}}~\char`\"{}Mtc\+Doodle\+Image\+Type\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the type of image, \mbox{\hyperlink{mtc__doodle_8h_ae957f3be19c1db21c63b6af8b77ead6d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_gac15fb88d77c99e51f68fa3485388d491}{Mtc\+Doodle\+Image\+Name\+Key}}~\char`\"{}Mtc\+Doodle\+Image\+Name\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a string object reflecting the image name. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_gac6b0b0758c66f289eca9fd8483cc52fb}{Mtc\+Doodle\+Image\+Uri\+Key}}~\char`\"{}Mtc\+Doodle\+Image\+Uri\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a string object reflecting the image U\+RI. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga506a632e226a182a62756dad7cf53337}{Mtc\+Doodle\+Resolution\+Key}}~\char`\"{}Mtc\+Doodle\+Resolution\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a array object contains 2 number object reflecting the resolution in pixels. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga52ff34b4def6ab444cc320844a59b593}{Mtc\+Doodle\+Position\+Key}}~\char`\"{}Mtc\+Doodle\+Position\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a array object contains 2 number object reflecting the position of point, which value is from -\/1 to 1. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga160a9b6979f6dbdbd719bf294a390ce7}{Mtc\+Doodle\+Action\+Type\+Key}}~\char`\"{}Mtc\+Doodle\+Action\+Type\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the type of action, \mbox{\hyperlink{mtc__doodle_8h_aa6d9e9017fac0e8eb6abb22a17251fc5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga65cc43052a0e6d99da765061a396ef93}{Mtc\+Doodle\+Seq\+No\+Key}}~\char`\"{}Mtc\+Doodle\+Seq\+No\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the sequence of action. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga30d261107f9b5fdac0abf880f4bf51c4}{Mtc\+Doodle\+Brush\+Key}}~\char`\"{}Mtc\+Doodle\+Brush\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a object reflecting the brush\textquotesingle{}s info, contains \mbox{\hyperlink{group___mtc_doodle_key_gad28bc9998484421932ee7a6f3c93a6fd}{Mtc\+Doodle\+Width\+Key}}, \mbox{\hyperlink{group___mtc_doodle_key_gab4ede57cf81dd015210464318481c0ea}{Mtc\+Doodle\+Color\+Key}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_gad28bc9998484421932ee7a6f3c93a6fd}{Mtc\+Doodle\+Width\+Key}}~\char`\"{}Mtc\+Doodle\+Width\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the width in pixels. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_gab4ede57cf81dd015210464318481c0ea}{Mtc\+Doodle\+Color\+Key}}~\char`\"{}Mtc\+Doodle\+Color\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the color. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga22198c5463954ffa4bbc98805772478a}{Mtc\+Doodle\+Page\+Id\+Key}}~\char`\"{}Mtc\+Doodle\+Page\+Id\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the index of page. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga42f24ac230d37e6c2a6b19f93de21b1d}{Mtc\+Doodle\+Page\+Count\+Key}}~\char`\"{}Mtc\+Doodle\+Page\+Count\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a number object reflecting the count of page. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_gaeb4d2082f7ec965b133f7c36029fce0a}{Mtc\+Doodle\+User\+Uri\+Key}}~\char`\"{}Mtc\+Doodle\+User\+Uri\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a string object reflecting the user\textquotesingle{}s U\+RI. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___mtc_doodle_key_ga455e93db7ec0b92e586b1664defb94f5}{Mtc\+Doodle\+Content\+Key}}~\char`\"{}Mtc\+Doodle\+Content\+Key\char`\"{}
+\begin{DoxyCompactList}\small\item\em A key whose value is a string object reflecting the action\textquotesingle{}s content. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__doodle_8h_a51e0a3755e971ec425bb75f4d4db7b89}\label{mtc__doodle_8h_a51e0a3755e971ec425bb75f4d4db7b89}} 
+typedef size\+\_\+t {\bfseries M\+T\+C\+\_\+\+I\+MG}
+\item 
+\mbox{\Hypertarget{mtc__doodle_8h_af99dbd00502f66dfc9e3d3a3d18b24a6}\label{mtc__doodle_8h_af99dbd00502f66dfc9e3d3a3d18b24a6}} 
+typedef size\+\_\+t {\bfseries M\+T\+C\+\_\+\+A\+CT}
+\item 
+\mbox{\Hypertarget{mtc__doodle_8h_a40013ae9addbb1ffffb17588c7d24213}\label{mtc__doodle_8h_a40013ae9addbb1ffffb17588c7d24213}} 
+typedef size\+\_\+t {\bfseries M\+T\+C\+\_\+\+S\+E\+SS}
+\item 
+\mbox{\Hypertarget{mtc__doodle_8h_ae957f3be19c1db21c63b6af8b77ead6d}\label{mtc__doodle_8h_ae957f3be19c1db21c63b6af8b77ead6d}} 
+typedef enum \mbox{\hyperlink{mtc__doodle_8h_a14ce93425ecb983142d79cba3458e64e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__doodle_8h_ae957f3be19c1db21c63b6af8b77ead6d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em The type of image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__doodle_8h_aa6d9e9017fac0e8eb6abb22a17251fc5}\label{mtc__doodle_8h_aa6d9e9017fac0e8eb6abb22a17251fc5}} 
+typedef enum \mbox{\hyperlink{mtc__doodle_8h_a8ab7cc1cff77b6430c7338d175cd46fe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__doodle_8h_aa6d9e9017fac0e8eb6abb22a17251fc5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em The type of action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__doodle_8h_a14ce93425ecb983142d79cba3458e64e}\label{mtc__doodle_8h_a14ce93425ecb983142d79cba3458e64e}} 
+enum \mbox{\hyperlink{mtc__doodle_8h_a14ce93425ecb983142d79cba3458e64e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+P\+NG} = 1, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP}
+ \}
+\begin{DoxyCompactList}\small\item\em The type of image. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__doodle_8h_a8ab7cc1cff77b6430c7338d175cd46fe}\label{mtc__doodle_8h_a8ab7cc1cff77b6430c7338d175cd46fe}} 
+enum \mbox{\hyperlink{mtc__doodle_8h_a8ab7cc1cff77b6430c7338d175cd46fe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+D\+R\+AW}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+E\+R\+A\+SE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+C\+L\+E\+AN}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+N\+DO}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+A\+GE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+S\+T\+OP}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+L\+A\+S\+E\+R\+\_\+\+P\+O\+I\+NT}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+A\+R\+R\+OW}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+D\+R\+A\+W\+\_\+\+R\+E\+C\+T\+A\+N\+G\+LE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+D\+R\+A\+W\+\_\+\+E\+L\+L\+I\+P\+SE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+O\+O\+D\+L\+E\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+E\+XT}
+ \}
+\begin{DoxyCompactList}\small\item\em The type of action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+I\+MG \mbox{\hyperlink{mtc__doodle_8h_a54a3c5692a3e110be832e4b7ce6629d3}{Mtc\+\_\+\+Doodle\+Create\+Image}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Create image object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__doodle_8h_a5f3d3e8472c1382885070ce8c3a03ea7}{Mtc\+\_\+\+Doodle\+Delete\+Image}} (M\+T\+C\+\_\+\+I\+MG z\+Image)
+\begin{DoxyCompactList}\small\item\em Delete image object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+I\+MG \mbox{\hyperlink{mtc__doodle_8h_a5687f6b73c415b536d52099b73443ba7}{Mtc\+\_\+\+Doodle\+Parse\+Image}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Msg)
+\begin{DoxyCompactList}\small\item\em Create image object from text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__doodle_8h_a5e1ccce802a61854d64d9a45fd04aa79}{Mtc\+\_\+\+Doodle\+Print\+Image}} (M\+T\+C\+\_\+\+I\+MG z\+Image)
+\begin{DoxyCompactList}\small\item\em Save image object to text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a650cbb10a0e805076626058d3f722761}{Mtc\+\_\+\+Doodle\+Set\+Image\+Attr}} (M\+T\+C\+\_\+\+I\+MG z\+Image, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Info)
+\begin{DoxyCompactList}\small\item\em Set image attributes. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__doodle_8h_a811e012305646a9d83543b363559d7f7}{Mtc\+\_\+\+Doodle\+Get\+Image\+Attr}} (M\+T\+C\+\_\+\+I\+MG z\+Image)
+\begin{DoxyCompactList}\small\item\em Get image attributes. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+A\+CT \mbox{\hyperlink{mtc__doodle_8h_a422ff0085b14c16dbeec2662a9d2e427}{Mtc\+\_\+\+Doodle\+Create\+Action}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Create action object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__doodle_8h_ae27fb7c1eccda31735ecf6e7fd6c0285}{Mtc\+\_\+\+Doodle\+Delete\+Action}} (M\+T\+C\+\_\+\+A\+CT z\+Action)
+\begin{DoxyCompactList}\small\item\em Delete action object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+A\+CT \mbox{\hyperlink{mtc__doodle_8h_a1cf710cab59636d3025ac7caf3542042}{Mtc\+\_\+\+Doodle\+Parse\+Action}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Msg)
+\begin{DoxyCompactList}\small\item\em Create action object from text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__doodle_8h_a8e81b4b0256051926ee3eba941ee2ef3}{Mtc\+\_\+\+Doodle\+Print\+Action}} (M\+T\+C\+\_\+\+A\+CT z\+Action)
+\begin{DoxyCompactList}\small\item\em Save action object to text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a8d8adf0842cb021cdc8ca9159b93a350}{Mtc\+\_\+\+Doodle\+Set\+Action\+Attr}} (M\+T\+C\+\_\+\+A\+CT z\+Action, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Info)
+\begin{DoxyCompactList}\small\item\em Set action attributes. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__doodle_8h_aaca0612e7eb1972409a806d18d984667}{Mtc\+\_\+\+Doodle\+Get\+Action\+Attr}} (M\+T\+C\+\_\+\+A\+CT z\+Action)
+\begin{DoxyCompactList}\small\item\em Get action attributes. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a3d3b5f69c2c35bad8e0fbf8cb1953ee2}{Mtc\+\_\+\+Doodle\+Add\+Action\+Position}} (M\+T\+C\+\_\+\+A\+CT z\+Action, Z\+F\+L\+O\+AT fX, Z\+F\+L\+O\+AT fY)
+\begin{DoxyCompactList}\small\item\em Add action position. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a712e3a59e15488975368dd99b23bcbf0}{Mtc\+\_\+\+Doodle\+Add\+Action\+PositionX}} (M\+T\+C\+\_\+\+A\+CT z\+Action, Z\+F\+L\+O\+AT fX, Z\+F\+L\+O\+AT fY, Z\+U\+I\+NT i\+Int\+Val)
+\begin{DoxyCompactList}\small\item\em Set action positions. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_ae73071bf86ba621dbbc91e0b8fde7f59}{Mtc\+\_\+\+Doodle\+Get\+Action\+Position\+Count}} (M\+T\+C\+\_\+\+A\+CT z\+Action)
+\begin{DoxyCompactList}\small\item\em Get count of positions in action object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a533e9ded2f8f41c121833dbbee79dfa6}{Mtc\+\_\+\+Doodle\+Get\+Action\+Intval}} (M\+T\+C\+\_\+\+A\+CT z\+Action, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get the interval of position. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+F\+L\+O\+AT \mbox{\hyperlink{mtc__doodle_8h_a737f5ac9f7df406d525532d98da44e63}{Mtc\+\_\+\+Doodle\+Get\+Action\+PositionX}} (M\+T\+C\+\_\+\+A\+CT z\+Action, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get the X value of position. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+F\+L\+O\+AT \mbox{\hyperlink{mtc__doodle_8h_ac9aad073f5a0ef28517f5f1a30df10ea}{Mtc\+\_\+\+Doodle\+Get\+Action\+PositionY}} (M\+T\+C\+\_\+\+A\+CT z\+Action, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get the Y value of position. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__doodle_8h_a542fab7d2c7f49bc003367826cca43a5}{Mtc\+\_\+\+Doodle\+Get\+Action\+Path}} (M\+T\+C\+\_\+\+A\+CT z\+Action)
+\begin{DoxyCompactList}\small\item\em Get the path of action. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+S\+E\+SS \mbox{\hyperlink{mtc__doodle_8h_a285668ebbbfee3516e7613aca7e861db}{Mtc\+\_\+\+Doodle\+Create\+Session}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Create session object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__doodle_8h_ab623030c9cb343c34cbbc9d3facfeacb}{Mtc\+\_\+\+Doodle\+Delete\+Session}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session)
+\begin{DoxyCompactList}\small\item\em Delete session object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a8790dc88babe1c74fcad174e56196429}{Mtc\+\_\+\+Doodle\+Session\+Set\+Page\+Count}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session, Z\+I\+NT i\+Count)
+\begin{DoxyCompactList}\small\item\em Set page count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_ac38754d33aaf6a856bbb3a51b4d6f438}{Mtc\+\_\+\+Doodle\+Session\+Add\+Image}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session, M\+T\+C\+\_\+\+I\+MG z\+Image)
+\begin{DoxyCompactList}\small\item\em Add image object to session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_a12c646c5361ff1789faf9896a5eb9a78}{Mtc\+\_\+\+Doodle\+Session\+Get\+Image\+Count}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session)
+\begin{DoxyCompactList}\small\item\em Get the count of image. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+I\+MG \mbox{\hyperlink{mtc__doodle_8h_a53d687683373458614ac4048767e2f92}{Mtc\+\_\+\+Doodle\+Session\+Enum\+Image}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Enumrate the image object. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_aacb72964b892b0e31bab4a7a68c8914b}{Mtc\+\_\+\+Doodle\+Session\+Add\+Action}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session, Z\+B\+O\+OL b\+Self, M\+T\+C\+\_\+\+A\+CT z\+Action)
+\begin{DoxyCompactList}\small\item\em Add action object to session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__doodle_8h_aaa5791d2f12032a2f37a4e978fdbcae5}{Mtc\+\_\+\+Doodle\+Session\+Get\+Action\+Count}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session)
+\begin{DoxyCompactList}\small\item\em Get count of actions. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC M\+T\+C\+\_\+\+A\+CT \mbox{\hyperlink{mtc__doodle_8h_a7a0afd03d14a201d947a9458177594a1}{Mtc\+\_\+\+Doodle\+Session\+Enum\+Action}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Enumrate the actions in session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__doodle_8h_a0dc1a92a5a1d1c23ed9c1d8be273f804}{Mtc\+\_\+\+Doodle\+Session\+Enum\+Self}} (M\+T\+C\+\_\+\+S\+E\+SS z\+Session, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Enumrate the self flags in session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Doodle Interface Functions. 
+
+This file includes doodle interface function. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__doodle_8h_a3d3b5f69c2c35bad8e0fbf8cb1953ee2}\label{mtc__doodle_8h_a3d3b5f69c2c35bad8e0fbf8cb1953ee2}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleAddActionPosition@{Mtc\_DoodleAddActionPosition}}
+\index{Mtc\_DoodleAddActionPosition@{Mtc\_DoodleAddActionPosition}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleAddActionPosition()}{Mtc\_DoodleAddActionPosition()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Add\+Action\+Position (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action,  }\item[{Z\+F\+L\+O\+AT}]{fX,  }\item[{Z\+F\+L\+O\+AT}]{fY }\end{DoxyParamCaption})}
+
+
+
+Add action position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+{\em fX} & The X value from -\/1.\+0 to 1.\+0. \\
+\hline
+{\em fY} & The Y value from -\/1.\+0 to 1.\+0. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a712e3a59e15488975368dd99b23bcbf0}\label{mtc__doodle_8h_a712e3a59e15488975368dd99b23bcbf0}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleAddActionPositionX@{Mtc\_DoodleAddActionPositionX}}
+\index{Mtc\_DoodleAddActionPositionX@{Mtc\_DoodleAddActionPositionX}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleAddActionPositionX()}{Mtc\_DoodleAddActionPositionX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Add\+Action\+PositionX (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action,  }\item[{Z\+F\+L\+O\+AT}]{fX,  }\item[{Z\+F\+L\+O\+AT}]{fY,  }\item[{Z\+U\+I\+NT}]{i\+Int\+Val }\end{DoxyParamCaption})}
+
+
+
+Set action positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+{\em fX} & The value from -\/1.\+0 to 1.\+0. \\
+\hline
+{\em fY} & The value from -\/1.\+0 to 1.\+0. \\
+\hline
+{\em i\+Int\+Val} & The interval. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a422ff0085b14c16dbeec2662a9d2e427}\label{mtc__doodle_8h_a422ff0085b14c16dbeec2662a9d2e427}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleCreateAction@{Mtc\_DoodleCreateAction}}
+\index{Mtc\_DoodleCreateAction@{Mtc\_DoodleCreateAction}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleCreateAction()}{Mtc\_DoodleCreateAction()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+A\+CT Mtc\+\_\+\+Doodle\+Create\+Action (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Create action object. 
+
+\begin{DoxyReturn}{Returns}
+The action object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a54a3c5692a3e110be832e4b7ce6629d3}\label{mtc__doodle_8h_a54a3c5692a3e110be832e4b7ce6629d3}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleCreateImage@{Mtc\_DoodleCreateImage}}
+\index{Mtc\_DoodleCreateImage@{Mtc\_DoodleCreateImage}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleCreateImage()}{Mtc\_DoodleCreateImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+I\+MG Mtc\+\_\+\+Doodle\+Create\+Image (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Create image object. 
+
+\begin{DoxyReturn}{Returns}
+Image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a285668ebbbfee3516e7613aca7e861db}\label{mtc__doodle_8h_a285668ebbbfee3516e7613aca7e861db}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleCreateSession@{Mtc\_DoodleCreateSession}}
+\index{Mtc\_DoodleCreateSession@{Mtc\_DoodleCreateSession}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleCreateSession()}{Mtc\_DoodleCreateSession()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+S\+E\+SS Mtc\+\_\+\+Doodle\+Create\+Session (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Create session object. 
+
+\begin{DoxyReturn}{Returns}
+The session object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_ae27fb7c1eccda31735ecf6e7fd6c0285}\label{mtc__doodle_8h_ae27fb7c1eccda31735ecf6e7fd6c0285}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleDeleteAction@{Mtc\_DoodleDeleteAction}}
+\index{Mtc\_DoodleDeleteAction@{Mtc\_DoodleDeleteAction}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleDeleteAction()}{Mtc\_DoodleDeleteAction()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Doodle\+Delete\+Action (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action }\end{DoxyParamCaption})}
+
+
+
+Delete action object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__doodle_8h_a5f3d3e8472c1382885070ce8c3a03ea7}\label{mtc__doodle_8h_a5f3d3e8472c1382885070ce8c3a03ea7}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleDeleteImage@{Mtc\_DoodleDeleteImage}}
+\index{Mtc\_DoodleDeleteImage@{Mtc\_DoodleDeleteImage}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleDeleteImage()}{Mtc\_DoodleDeleteImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Doodle\+Delete\+Image (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+I\+MG}]{z\+Image }\end{DoxyParamCaption})}
+
+
+
+Delete image object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Image} & The image object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__doodle_8h_ab623030c9cb343c34cbbc9d3facfeacb}\label{mtc__doodle_8h_ab623030c9cb343c34cbbc9d3facfeacb}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleDeleteSession@{Mtc\_DoodleDeleteSession}}
+\index{Mtc\_DoodleDeleteSession@{Mtc\_DoodleDeleteSession}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleDeleteSession()}{Mtc\_DoodleDeleteSession()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Doodle\+Delete\+Session (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session }\end{DoxyParamCaption})}
+
+
+
+Delete session object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__doodle_8h_aaca0612e7eb1972409a806d18d984667}\label{mtc__doodle_8h_aaca0612e7eb1972409a806d18d984667}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetActionAttr@{Mtc\_DoodleGetActionAttr}}
+\index{Mtc\_DoodleGetActionAttr@{Mtc\_DoodleGetActionAttr}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetActionAttr()}{Mtc\_DoodleGetActionAttr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Doodle\+Get\+Action\+Attr (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action }\end{DoxyParamCaption})}
+
+
+
+Get action attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The attributes in J\+S\+ON format which contains \mbox{\hyperlink{group___mtc_doodle_key_ga160a9b6979f6dbdbd719bf294a390ce7}{Mtc\+Doodle\+Action\+Type\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga65cc43052a0e6d99da765061a396ef93}{Mtc\+Doodle\+Seq\+No\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga30d261107f9b5fdac0abf880f4bf51c4}{Mtc\+Doodle\+Brush\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga22198c5463954ffa4bbc98805772478a}{Mtc\+Doodle\+Page\+Id\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga455e93db7ec0b92e586b1664defb94f5}{Mtc\+Doodle\+Content\+Key}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a533e9ded2f8f41c121833dbbee79dfa6}\label{mtc__doodle_8h_a533e9ded2f8f41c121833dbbee79dfa6}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetActionIntval@{Mtc\_DoodleGetActionIntval}}
+\index{Mtc\_DoodleGetActionIntval@{Mtc\_DoodleGetActionIntval}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetActionIntval()}{Mtc\_DoodleGetActionIntval()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Get\+Action\+Intval (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get the interval of position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+{\em i\+Index} & The index of position, from 0 to count-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The interval in milliseconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a542fab7d2c7f49bc003367826cca43a5}\label{mtc__doodle_8h_a542fab7d2c7f49bc003367826cca43a5}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetActionPath@{Mtc\_DoodleGetActionPath}}
+\index{Mtc\_DoodleGetActionPath@{Mtc\_DoodleGetActionPath}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetActionPath()}{Mtc\_DoodleGetActionPath()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Doodle\+Get\+Action\+Path (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action }\end{DoxyParamCaption})}
+
+
+
+Get the path of action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The path in J\+S\+ON format which is array contains all positions. Each position is array of number. First number is interval in milliseoncds. Second number is X value of position. Third number is Y value of position. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_ae73071bf86ba621dbbc91e0b8fde7f59}\label{mtc__doodle_8h_ae73071bf86ba621dbbc91e0b8fde7f59}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetActionPositionCount@{Mtc\_DoodleGetActionPositionCount}}
+\index{Mtc\_DoodleGetActionPositionCount@{Mtc\_DoodleGetActionPositionCount}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetActionPositionCount()}{Mtc\_DoodleGetActionPositionCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Get\+Action\+Position\+Count (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action }\end{DoxyParamCaption})}
+
+
+
+Get count of positions in action object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of positions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a737f5ac9f7df406d525532d98da44e63}\label{mtc__doodle_8h_a737f5ac9f7df406d525532d98da44e63}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetActionPositionX@{Mtc\_DoodleGetActionPositionX}}
+\index{Mtc\_DoodleGetActionPositionX@{Mtc\_DoodleGetActionPositionX}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetActionPositionX()}{Mtc\_DoodleGetActionPositionX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+F\+L\+O\+AT Mtc\+\_\+\+Doodle\+Get\+Action\+PositionX (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get the X value of position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+{\em i\+Index} & The index of position, from 0 to count-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The X value of postion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_ac9aad073f5a0ef28517f5f1a30df10ea}\label{mtc__doodle_8h_ac9aad073f5a0ef28517f5f1a30df10ea}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetActionPositionY@{Mtc\_DoodleGetActionPositionY}}
+\index{Mtc\_DoodleGetActionPositionY@{Mtc\_DoodleGetActionPositionY}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetActionPositionY()}{Mtc\_DoodleGetActionPositionY()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+F\+L\+O\+AT Mtc\+\_\+\+Doodle\+Get\+Action\+PositionY (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get the Y value of position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+{\em i\+Index} & The index of position, from 0 to count-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Y value of postion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a811e012305646a9d83543b363559d7f7}\label{mtc__doodle_8h_a811e012305646a9d83543b363559d7f7}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleGetImageAttr@{Mtc\_DoodleGetImageAttr}}
+\index{Mtc\_DoodleGetImageAttr@{Mtc\_DoodleGetImageAttr}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleGetImageAttr()}{Mtc\_DoodleGetImageAttr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Doodle\+Get\+Image\+Attr (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+I\+MG}]{z\+Image }\end{DoxyParamCaption})}
+
+
+
+Get image attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Image} & The image object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The attributes in J\+S\+ON format which contains \mbox{\hyperlink{group___mtc_doodle_key_ga22198c5463954ffa4bbc98805772478a}{Mtc\+Doodle\+Page\+Id\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga7251016fe80b7d02cd534cb8dd146856}{Mtc\+Doodle\+Image\+Type\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_gac15fb88d77c99e51f68fa3485388d491}{Mtc\+Doodle\+Image\+Name\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_gac6b0b0758c66f289eca9fd8483cc52fb}{Mtc\+Doodle\+Image\+Uri\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga506a632e226a182a62756dad7cf53337}{Mtc\+Doodle\+Resolution\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga52ff34b4def6ab444cc320844a59b593}{Mtc\+Doodle\+Position\+Key}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a1cf710cab59636d3025ac7caf3542042}\label{mtc__doodle_8h_a1cf710cab59636d3025ac7caf3542042}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleParseAction@{Mtc\_DoodleParseAction}}
+\index{Mtc\_DoodleParseAction@{Mtc\_DoodleParseAction}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleParseAction()}{Mtc\_DoodleParseAction()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+A\+CT Mtc\+\_\+\+Doodle\+Parse\+Action (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Msg }\end{DoxyParamCaption})}
+
+
+
+Create action object from text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Msg} & The text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The action object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a5687f6b73c415b536d52099b73443ba7}\label{mtc__doodle_8h_a5687f6b73c415b536d52099b73443ba7}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleParseImage@{Mtc\_DoodleParseImage}}
+\index{Mtc\_DoodleParseImage@{Mtc\_DoodleParseImage}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleParseImage()}{Mtc\_DoodleParseImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+I\+MG Mtc\+\_\+\+Doodle\+Parse\+Image (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Msg }\end{DoxyParamCaption})}
+
+
+
+Create image object from text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Msg} & The text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a8e81b4b0256051926ee3eba941ee2ef3}\label{mtc__doodle_8h_a8e81b4b0256051926ee3eba941ee2ef3}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodlePrintAction@{Mtc\_DoodlePrintAction}}
+\index{Mtc\_DoodlePrintAction@{Mtc\_DoodlePrintAction}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodlePrintAction()}{Mtc\_DoodlePrintAction()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Doodle\+Print\+Action (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action }\end{DoxyParamCaption})}
+
+
+
+Save action object to text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The text string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a5e1ccce802a61854d64d9a45fd04aa79}\label{mtc__doodle_8h_a5e1ccce802a61854d64d9a45fd04aa79}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodlePrintImage@{Mtc\_DoodlePrintImage}}
+\index{Mtc\_DoodlePrintImage@{Mtc\_DoodlePrintImage}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodlePrintImage()}{Mtc\_DoodlePrintImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Doodle\+Print\+Image (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+I\+MG}]{z\+Image }\end{DoxyParamCaption})}
+
+
+
+Save image object to text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Image} & The image object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The text string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_aacb72964b892b0e31bab4a7a68c8914b}\label{mtc__doodle_8h_aacb72964b892b0e31bab4a7a68c8914b}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionAddAction@{Mtc\_DoodleSessionAddAction}}
+\index{Mtc\_DoodleSessionAddAction@{Mtc\_DoodleSessionAddAction}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionAddAction()}{Mtc\_DoodleSessionAddAction()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Session\+Add\+Action (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session,  }\item[{Z\+B\+O\+OL}]{b\+Self,  }\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action }\end{DoxyParamCaption})}
+
+
+
+Add action object to session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+{\em b\+Self} & Z\+T\+R\+UE indicates the action was taken by self. Otherwise the actions was taken by peer. \\
+\hline
+{\em z\+Action} & The action object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_ac38754d33aaf6a856bbb3a51b4d6f438}\label{mtc__doodle_8h_ac38754d33aaf6a856bbb3a51b4d6f438}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionAddImage@{Mtc\_DoodleSessionAddImage}}
+\index{Mtc\_DoodleSessionAddImage@{Mtc\_DoodleSessionAddImage}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionAddImage()}{Mtc\_DoodleSessionAddImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Session\+Add\+Image (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session,  }\item[{M\+T\+C\+\_\+\+I\+MG}]{z\+Image }\end{DoxyParamCaption})}
+
+
+
+Add image object to session. 
+
+You must not delete image after add this image to the session. The image will replace the exist one with same Mtc\+Doodle\+Page\+Id\+Key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+{\em z\+Image} & The image object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a7a0afd03d14a201d947a9458177594a1}\label{mtc__doodle_8h_a7a0afd03d14a201d947a9458177594a1}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionEnumAction@{Mtc\_DoodleSessionEnumAction}}
+\index{Mtc\_DoodleSessionEnumAction@{Mtc\_DoodleSessionEnumAction}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionEnumAction()}{Mtc\_DoodleSessionEnumAction()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+A\+CT Mtc\+\_\+\+Doodle\+Session\+Enum\+Action (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Enumrate the actions in session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+{\em i\+Index} & The index of action, from 0 to count-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The action object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a53d687683373458614ac4048767e2f92}\label{mtc__doodle_8h_a53d687683373458614ac4048767e2f92}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionEnumImage@{Mtc\_DoodleSessionEnumImage}}
+\index{Mtc\_DoodleSessionEnumImage@{Mtc\_DoodleSessionEnumImage}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionEnumImage()}{Mtc\_DoodleSessionEnumImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC M\+T\+C\+\_\+\+I\+MG Mtc\+\_\+\+Doodle\+Session\+Enum\+Image (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Enumrate the image object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+{\em i\+Index} & The index of image, from 0 to count-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a0dc1a92a5a1d1c23ed9c1d8be273f804}\label{mtc__doodle_8h_a0dc1a92a5a1d1c23ed9c1d8be273f804}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionEnumSelf@{Mtc\_DoodleSessionEnumSelf}}
+\index{Mtc\_DoodleSessionEnumSelf@{Mtc\_DoodleSessionEnumSelf}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionEnumSelf()}{Mtc\_DoodleSessionEnumSelf()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Doodle\+Session\+Enum\+Self (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Enumrate the self flags in session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+{\em i\+Index} & The index of action, from 0 to count-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The self flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_aaa5791d2f12032a2f37a4e978fdbcae5}\label{mtc__doodle_8h_aaa5791d2f12032a2f37a4e978fdbcae5}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionGetActionCount@{Mtc\_DoodleSessionGetActionCount}}
+\index{Mtc\_DoodleSessionGetActionCount@{Mtc\_DoodleSessionGetActionCount}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionGetActionCount()}{Mtc\_DoodleSessionGetActionCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Session\+Get\+Action\+Count (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session }\end{DoxyParamCaption})}
+
+
+
+Get count of actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of actions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a12c646c5361ff1789faf9896a5eb9a78}\label{mtc__doodle_8h_a12c646c5361ff1789faf9896a5eb9a78}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionGetImageCount@{Mtc\_DoodleSessionGetImageCount}}
+\index{Mtc\_DoodleSessionGetImageCount@{Mtc\_DoodleSessionGetImageCount}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionGetImageCount()}{Mtc\_DoodleSessionGetImageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Session\+Get\+Image\+Count (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session }\end{DoxyParamCaption})}
+
+
+
+Get the count of image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of images. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a8790dc88babe1c74fcad174e56196429}\label{mtc__doodle_8h_a8790dc88babe1c74fcad174e56196429}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSessionSetPageCount@{Mtc\_DoodleSessionSetPageCount}}
+\index{Mtc\_DoodleSessionSetPageCount@{Mtc\_DoodleSessionSetPageCount}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSessionSetPageCount()}{Mtc\_DoodleSessionSetPageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Session\+Set\+Page\+Count (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+S\+E\+SS}]{z\+Session,  }\item[{Z\+I\+NT}]{i\+Count }\end{DoxyParamCaption})}
+
+
+
+Set page count. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Session} & The session object. \\
+\hline
+{\em i\+Count} & The count of pages. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a8d8adf0842cb021cdc8ca9159b93a350}\label{mtc__doodle_8h_a8d8adf0842cb021cdc8ca9159b93a350}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSetActionAttr@{Mtc\_DoodleSetActionAttr}}
+\index{Mtc\_DoodleSetActionAttr@{Mtc\_DoodleSetActionAttr}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSetActionAttr()}{Mtc\_DoodleSetActionAttr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Set\+Action\+Attr (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+A\+CT}]{z\+Action,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Info }\end{DoxyParamCaption})}
+
+
+
+Set action attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Action} & The action object. \\
+\hline
+{\em pc\+Info} & The attributes in J\+S\+ON format which contains \mbox{\hyperlink{group___mtc_doodle_key_ga160a9b6979f6dbdbd719bf294a390ce7}{Mtc\+Doodle\+Action\+Type\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga65cc43052a0e6d99da765061a396ef93}{Mtc\+Doodle\+Seq\+No\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga30d261107f9b5fdac0abf880f4bf51c4}{Mtc\+Doodle\+Brush\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga22198c5463954ffa4bbc98805772478a}{Mtc\+Doodle\+Page\+Id\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga455e93db7ec0b92e586b1664defb94f5}{Mtc\+Doodle\+Content\+Key}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__doodle_8h_a650cbb10a0e805076626058d3f722761}\label{mtc__doodle_8h_a650cbb10a0e805076626058d3f722761}} 
+\index{mtc\_doodle.h@{mtc\_doodle.h}!Mtc\_DoodleSetImageAttr@{Mtc\_DoodleSetImageAttr}}
+\index{Mtc\_DoodleSetImageAttr@{Mtc\_DoodleSetImageAttr}!mtc\_doodle.h@{mtc\_doodle.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_DoodleSetImageAttr()}{Mtc\_DoodleSetImageAttr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Doodle\+Set\+Image\+Attr (\begin{DoxyParamCaption}\item[{M\+T\+C\+\_\+\+I\+MG}]{z\+Image,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Info }\end{DoxyParamCaption})}
+
+
+
+Set image attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z\+Image} & The image object. \\
+\hline
+{\em pc\+Info} & The attributes in J\+S\+ON format which contains \mbox{\hyperlink{group___mtc_doodle_key_ga22198c5463954ffa4bbc98805772478a}{Mtc\+Doodle\+Page\+Id\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga7251016fe80b7d02cd534cb8dd146856}{Mtc\+Doodle\+Image\+Type\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_gac15fb88d77c99e51f68fa3485388d491}{Mtc\+Doodle\+Image\+Name\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_gac6b0b0758c66f289eca9fd8483cc52fb}{Mtc\+Doodle\+Image\+Uri\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga506a632e226a182a62756dad7cf53337}{Mtc\+Doodle\+Resolution\+Key}} \mbox{\hyperlink{group___mtc_doodle_key_ga52ff34b4def6ab444cc320844a59b593}{Mtc\+Doodle\+Position\+Key}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK on succeed, otherwise failed. 
+\end{DoxyReturn}

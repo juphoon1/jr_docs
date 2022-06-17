@@ -1,0 +1,19 @@
+<map id="/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rsd/rsd_evnt.h" name="/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rsd/rsd_evnt.h">
+<area shape="rect" id="node1" title="Rsd Event Interfaces." alt="" coords="447,5,641,61"/>
+<area shape="rect" id="node2" href="$rsd_8h.html" title="Rich Service Dispatcher." alt="" coords="447,109,641,165"/>
+<area shape="rect" id="node3" href="$rae_8h.html" title="Rich Client Provisioning Enabler." alt="" coords="701,317,894,373"/>
+<area shape="rect" id="node10" href="$rie_8h.html" title="Rich Instant Message Enabler." alt="" coords="314,317,507,373"/>
+<area shape="rect" id="node11" href="$rle_8h.html" title=" " alt="" coords="246,213,439,269"/>
+<area shape="rect" id="node12" href="$rme_8h.html" title="MMTel Client." alt="" coords="29,213,222,269"/>
+<area shape="rect" id="node13" href="$rse_8h.html" title="Rich Session Enabler." alt="" coords="29,317,222,373"/>
+<area shape="rect" id="node15" href="$rne_8h.html" title="Rich Network Enabler." alt="" coords="918,317,1111,373"/>
+<area shape="rect" id="node16" href="$roe_8h.html" title="Rich Contact Enabler." alt="" coords="515,213,709,269"/>
+<area shape="rect" id="node17" href="$rre_8h.html" title="Rich Register Enabler." alt="" coords="733,213,926,269"/>
+<area shape="rect" id="node4" href="$mtc__prv_8h_source.html" title=" " alt="" coords="567,421,758,477"/>
+<area shape="rect" id="node5" href="$mtc__call__db__mock_8h_source.html" title=" " alt="" coords="191,525,361,581"/>
+<area shape="rect" id="node6" href="$mtc__call__mock_8h_source.html" title=" " alt="" coords="385,525,554,581"/>
+<area shape="rect" id="node7" href="$mtc__cli__mock_8h_source.html" title=" " alt="" coords="578,525,747,581"/>
+<area shape="rect" id="node8" href="$mtc__cli__db__mock_8h_source.html" title=" " alt="" coords="771,525,941,581"/>
+<area shape="rect" id="node9" href="$mtc__cp__mock_8h_source.html" title=" " alt="" coords="965,525,1134,581"/>
+<area shape="rect" id="node14" href="$rse__sess__mock_8h_source.html" title=" " alt="" coords="41,421,210,477"/>
+</map>

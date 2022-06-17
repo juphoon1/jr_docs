@@ -1,0 +1,1212 @@
+\hypertarget{mmf__lmsg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/framework/mmf/mmf\+\_\+lmsg.h File Reference}
+\label{mmf__lmsg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mmf/mmf\_lmsg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mmf/mmf\_lmsg.h}}
+
+
+M\+MF Large Message Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mmf__lmsg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mmf__lmsg_8h_a39343c4b16e8ee7adf64dd0f64788962}{M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN}}~0x0001
+\begin{DoxyCompactList}\small\item\em mmf large message service flag \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mmf__lmsg_8h_a68c9f5df3f81c7201037616b8e3980ed}{M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+P\+U\+B\+\_\+\+I\+ND}}~0x0002
+\begin{DoxyCompactList}\small\item\em The public message flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mmf__lmsg_8h_ac685a38c35d8ed99e697960fc3827f04}\label{mmf__lmsg_8h_ac685a38c35d8ed99e697960fc3827f04}} 
+typedef enum \mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7d}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}} {\bfseries E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7d}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da890b0adba05d72960413f2849c4d0272}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}} = M\+M\+F\+\_\+\+C\+O\+M\+P\+\_\+\+L\+M\+S\+G\+\_\+\+E\+N\+U\+M\+E\+\_\+\+B\+A\+SE, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da4e8ed260114bf811f48d67f46be9346d}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dacf7f62ce3f5b35c16a6c26475f7ae27a}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+O\+M\+A\+P\+U\+SH}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dae75a0433beb0e1e1e5470f5bca2fda35}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+P\+IM}}, 
+\newline
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da0dde55450a3bed93a0c563abf130c3ed}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da04510b291b2e0daeee92c674bc78a71f}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da9f8ffab481eda189ee9857d958d62881}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7daba89fe9e36c0b71d68d69daaa62f534a}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+DN}}, 
+\newline
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da3eb4df376acb7d6d1283c4cec557f5cd}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7daf7c7bbbddfc28fb67bb915e7e6cf8a5f}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da004a27df153dad2731db5838bdffdb56}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1739c0907d0242d0da3c5cc019a0c986}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG}}, 
+\newline
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1210b669e1da8250db94689d34d40303}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dafc06154bf4f795cee05d832e67f20097}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dab5f556c8c430b7facb371da4ceb07cca}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+S\+MS}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1962d2308fe12a9f8948421ff621859a}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP}}, 
+\newline
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dadb748ad487dcbdce70f0dacee1ee4ebb}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE}}, 
+\mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da81f3c05b535be03c33b3b2caec4a5b48}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_ab2292ca72e4c9aafbd0c030c25093671}{Mmf\+\_\+\+L\+Msg\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Large Instant Message to One Participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_ac5d25a0bbbd72cdcf21c41f574dd9d7e}{Mmf\+\_\+\+L\+Msg\+SendU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Large Instant Message to U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_ab2b3ea236c5de6c8100b9392f0fb4449}{Mmf\+\_\+\+L\+Msg\+SendS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Large Instant Message to One Participant with spam information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a80517a3fff11ad4e67215e4f5b75b9ba}{Mmf\+\_\+\+L\+Msg\+Reply}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Reply to specific standalone large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a2b67ac67807da9c444add08ed947ecec}{Mmf\+\_\+\+L\+Msg\+Accept}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Accept a large message invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_abeb7e49cee24763cca719b34efc34f4c}{Mmf\+\_\+\+L\+Msg\+Reject}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Reject a large large message invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a4182da1311eb51b4d38e118683545590}{Mmf\+\_\+\+L\+Msg\+Cancel}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Cancel a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_aa52119fa7053d655b056c631ef0c2439}{Mmf\+\_\+\+L\+Msg\+Release}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Release a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a9dd911e8de14d3ec365a777d9538e850}{Mmf\+\_\+\+L\+Msg\+Off\+Release}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Offline Release a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mmf__lmsg_8h_ac7d495a010a51516916ce61b5304ad3f}{Mmf\+\_\+\+L\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get user cookie from a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a6d06022bfadfeb84000cf62fa75b4a41}{Mmf\+\_\+\+L\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set user cookie in a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a9bad752dfa7caf6489e0d5e4bbdffc7e}{Mmf\+\_\+\+L\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get imdn id of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_ad84bb96725c419b339969019aca38cc8}{Mmf\+\_\+\+L\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get device id of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a14088cfafedae13a027019ead6aa6130}{Mmf\+\_\+\+L\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get content type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a6f09ea8bc9a1d88cb6e2dc7a51ef94d8}{Mmf\+\_\+\+L\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em M\+MF Get content from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_aecf1c9da44b77648397dfcd4f6ad33f9}{Mmf\+\_\+\+L\+Msg\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get participant type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a610ddc4a3163b8c1c913f706b4892276}{Mmf\+\_\+\+L\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+MF Get paticipant information from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a466563b0d26526aaab8f23abd33d3b61}{Mmf\+\_\+\+L\+Msg\+Get\+Partp\+Lst}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get participant list id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a66b9dec6eda5e7efde7771115c5d6ae6}{Mmf\+\_\+\+L\+Msg\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+MF Get original paticipant from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a8729189a80266b6ad9ad2dd66b1b41b0}{Mmf\+\_\+\+L\+Msg\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+MF Get original identity of paticipant from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a70a9c94801db7ec71f346503f63ebbf2}{Mmf\+\_\+\+L\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+MF Get date time from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_aefa235f81759edc35ecf5cfde5458009}{Mmf\+\_\+\+L\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get the font information from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_a9851646ee79433a35c3dc053c29c4d39}{Mmf\+\_\+\+L\+Msg\+Get\+Outgoing}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get the outgoing status from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_a2465bd04d6bf492b21c454d915d4d455}{Mmf\+\_\+\+L\+Msg\+Get\+Miss\+Comp}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get the mission complete status from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_ad7708b71245c70509bbe21778d5766eb}{Mmf\+\_\+\+L\+Msg\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get conversation-\/id of C\+PM large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_a0be62532847f77a21290439c599e8428}{Mmf\+\_\+\+L\+Msg\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get contribution-\/id of C\+PM large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_a98884ed1c2ccfab63a954b652bb91c55}{Mmf\+\_\+\+L\+Msg\+Get\+Irt\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get inreplyto-\/contribution-\/id of C\+PM large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_ac01af3f0b55db2627a5ea274f4ae7c85}{Mmf\+\_\+\+L\+Msg\+Get\+Burn\+Time\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get burn after reading time length from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_a110aaf641e21ce72e36aed7ec143fbe0}{Mmf\+\_\+\+L\+Msg\+Get\+App\+Push\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get app push type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_adb61d3a04be5cbc2e68b865b36e20d81}{Mmf\+\_\+\+L\+Msg\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get public messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_ab662496b94075a1a3db1fb1e707ce966}{Mmf\+\_\+\+L\+Msg\+Has\+Burn\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get burn after reading message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_aadcc9dfce921d8459aa59624fcf7205c}{Mmf\+\_\+\+L\+Msg\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get spam message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_a9ea71313fa8bb34c418eb13c1a183d79}{Mmf\+\_\+\+L\+Msg\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get silence message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_a875061106b2baab2022ba461836b95bf}{Mmf\+\_\+\+L\+Msg\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get direct message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_a522bc0ab995c2480f1e575319bdfd1bc}{Mmf\+\_\+\+L\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get carbon copy message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_aeffbc494dae41045c18c500082c79751}{Mmf\+\_\+\+L\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get offline message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__lmsg_8h_a4143d99d075c9197992fe933e0de9b08}{Mmf\+\_\+\+L\+Msg\+Has\+Revoke\+Msg\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get revoke message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_ae2613153aeb24c273f7c89055bd7df7d}{Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get revoke message-\/id of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mmf__lmsg_8h_aaf654ce52ca1f7bf3278e6aa33699a7f}{Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get revoke result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_a2a6a0cda50e36b639de3cb9e14707a3a}{Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF large Get revoke from addr of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__lmsg_8h_a5e6dc577554dda52db3c0e937099c30c}{Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF large Get revoke to addr of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__lmsg_8h_ab8bfaadb08d263742ee0fcf3a04a64bc}{Mmf\+\_\+\+L\+Msg\+Get\+Sip\+Code}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get sip code of large message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+MF Large Message Interfaces. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mmf__lmsg_8h_a39343c4b16e8ee7adf64dd0f64788962}\label{mmf__lmsg_8h_a39343c4b16e8ee7adf64dd0f64788962}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!MMF\_LMSG\_SRV\_BURN@{MMF\_LMSG\_SRV\_BURN}}
+\index{MMF\_LMSG\_SRV\_BURN@{MMF\_LMSG\_SRV\_BURN}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{MMF\_LMSG\_SRV\_BURN}{MMF\_LMSG\_SRV\_BURN}}
+{\footnotesize\ttfamily \#define M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN~0x0001}
+
+
+
+mmf large message service flag 
+
+$<$
+
+The burn after reading message flag \mbox{\Hypertarget{mmf__lmsg_8h_a68c9f5df3f81c7201037616b8e3980ed}\label{mmf__lmsg_8h_a68c9f5df3f81c7201037616b8e3980ed}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!MMF\_LMSG\_SRV\_PUB\_IND@{MMF\_LMSG\_SRV\_PUB\_IND}}
+\index{MMF\_LMSG\_SRV\_PUB\_IND@{MMF\_LMSG\_SRV\_PUB\_IND}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{MMF\_LMSG\_SRV\_PUB\_IND}{MMF\_LMSG\_SRV\_PUB\_IND}}
+{\footnotesize\ttfamily \#define M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+P\+U\+B\+\_\+\+I\+ND~0x0002}
+
+
+
+The public message flag. 
+
+mmf large message content type 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7d}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7d}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_TYPE@{EN\_MMF\_LMSG\_CONT\_TYPE}}
+\index{EN\_MMF\_LMSG\_CONT\_TYPE@{EN\_MMF\_LMSG\_CONT\_TYPE}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MMF\_LMSG\_CONT\_TYPE}{EN\_MMF\_LMSG\_CONT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7d}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_UNKNOWN@{EN\_MMF\_LMSG\_CONT\_UNKNOWN}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_UNKNOWN@{EN\_MMF\_LMSG\_CONT\_UNKNOWN}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da890b0adba05d72960413f2849c4d0272}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da890b0adba05d72960413f2849c4d0272}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&content type of unknown \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_TXT\_PLAIN@{EN\_MMF\_LMSG\_CONT\_TXT\_PLAIN}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_TXT\_PLAIN@{EN\_MMF\_LMSG\_CONT\_TXT\_PLAIN}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da4e8ed260114bf811f48d67f46be9346d}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da4e8ed260114bf811f48d67f46be9346d}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&content type of \char`\"{}text/plain\char`\"{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_OMAPUSH@{EN\_MMF\_LMSG\_CONT\_OMAPUSH}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_OMAPUSH@{EN\_MMF\_LMSG\_CONT\_OMAPUSH}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dacf7f62ce3f5b35c16a6c26475f7ae27a}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dacf7f62ce3f5b35c16a6c26475f7ae27a}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+O\+M\+A\+P\+U\+SH&content type of \char`\"{}application/vnd.\+oma.\+push\char`\"{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_CPIM@{EN\_MMF\_LMSG\_CONT\_MSG\_CPIM}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_CPIM@{EN\_MMF\_LMSG\_CONT\_MSG\_CPIM}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dae75a0433beb0e1e1e5470f5bca2fda35}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dae75a0433beb0e1e1e5470f5bca2fda35}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+P\+IM&content type of \char`\"{}unknown\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_PLAIN}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_PLAIN}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da0dde55450a3bed93a0c563abf130c3ed}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da0dde55450a3bed93a0c563abf130c3ed}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&content type of \char`\"{}text/plain\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_JPEG}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_JPEG}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da04510b291b2e0daeee92c674bc78a71f}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da04510b291b2e0daeee92c674bc78a71f}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG&content type of \char`\"{}image/jpeg\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_BMP@{EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_BMP}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_BMP@{EN\_MMF\_LMSG\_CONT\_MSG\_IMAGE\_BMP}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da9f8ffab481eda189ee9857d958d62881}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da9f8ffab481eda189ee9857d958d62881}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP&content type of \char`\"{}image/bmp\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_IMDN@{EN\_MMF\_LMSG\_CONT\_MSG\_IMDN}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_IMDN@{EN\_MMF\_LMSG\_CONT\_MSG\_IMDN}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7daba89fe9e36c0b71d68d69daaa62f534a}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7daba89fe9e36c0b71d68d69daaa62f534a}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+DN&content type of \char`\"{}message/imdn+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_VEMOTICON@{EN\_MMF\_LMSG\_CONT\_MSG\_VEMOTICON}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_VEMOTICON@{EN\_MMF\_LMSG\_CONT\_MSG\_VEMOTICON}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da3eb4df376acb7d6d1283c4cec557f5cd}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da3eb4df376acb7d6d1283c4cec557f5cd}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON&content type of \char`\"{}message/vemoticon+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MMF\_LMSG\_CONT\_MSG\_CLOUD\_FILE}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MMF\_LMSG\_CONT\_MSG\_CLOUD\_FILE}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7daf7c7bbbddfc28fb67bb915e7e6cf8a5f}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7daf7c7bbbddfc28fb67bb915e7e6cf8a5f}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE&content type of \char`\"{}message/cloudfile+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MMF\_LMSG\_CONT\_MSG\_CMRED\_BAG}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MMF\_LMSG\_CONT\_MSG\_CMRED\_BAG}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da004a27df153dad2731db5838bdffdb56}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da004a27df153dad2731db5838bdffdb56}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}message/cmredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MMF\_LMSG\_CONT\_MSG\_CHRED\_BAG}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MMF\_LMSG\_CONT\_MSG\_CHRED\_BAG}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1739c0907d0242d0da3c5cc019a0c986}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1739c0907d0242d0da3c5cc019a0c986}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}message/cmredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_CARD@{EN\_MMF\_LMSG\_CONT\_MSG\_CARD}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_CARD@{EN\_MMF\_LMSG\_CONT\_MSG\_CARD}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1210b669e1da8250db94689d34d40303}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1210b669e1da8250db94689d34d40303}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD&content type of \char`\"{}message/card+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_139MAIL\_NEW@{EN\_MMF\_LMSG\_CONT\_MSG\_139MAIL\_NEW}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_139MAIL\_NEW@{EN\_MMF\_LMSG\_CONT\_MSG\_139MAIL\_NEW}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dafc06154bf4f795cee05d832e67f20097}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dafc06154bf4f795cee05d832e67f20097}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW&content type of \char`\"{}application/commonextension+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_SMS@{EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_SMS}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_SMS@{EN\_MMF\_LMSG\_CONT\_MSG\_TXT\_SMS}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dab5f556c8c430b7facb371da4ceb07cca}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dab5f556c8c430b7facb371da4ceb07cca}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+S\+MS&content type of \char`\"{}text/sms\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MMF\_LMSG\_CONT\_MSG\_COM\_TEMP}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MMF\_LMSG\_CONT\_MSG\_COM\_TEMP}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1962d2308fe12a9f8948421ff621859a}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da1962d2308fe12a9f8948421ff621859a}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP&content type of \char`\"{}application/commontemplate+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_REVOKE@{EN\_MMF\_LMSG\_CONT\_MSG\_REVOKE}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_REVOKE@{EN\_MMF\_LMSG\_CONT\_MSG\_REVOKE}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dadb748ad487dcbdce70f0dacee1ee4ebb}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7dadb748ad487dcbdce70f0dacee1ee4ebb}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE&content type of \char`\"{}application/vnd.\+gsma.\+rcsrevoke+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MMF\_LMSG\_CONT\_MSG\_FTHTTP@{EN\_MMF\_LMSG\_CONT\_MSG\_FTHTTP}!mmf\_lmsg.h@{mmf\_lmsg.h}}\index{mmf\_lmsg.h@{mmf\_lmsg.h}!EN\_MMF\_LMSG\_CONT\_MSG\_FTHTTP@{EN\_MMF\_LMSG\_CONT\_MSG\_FTHTTP}}}\mbox{\Hypertarget{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da81f3c05b535be03c33b3b2caec4a5b48}\label{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7da81f3c05b535be03c33b3b2caec4a5b48}} 
+E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP&content type of \char`\"{}application/vnd.\+gsma.\+rcs-\/ft-\/http+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mmf__lmsg_8h_a2b67ac67807da9c444add08ed947ecec}\label{mmf__lmsg_8h_a2b67ac67807da9c444add08ed947ecec}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgAccept@{Mmf\_LMsgAccept}}
+\index{Mmf\_LMsgAccept@{Mmf\_LMsgAccept}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgAccept()}{Mmf\_LMsgAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Accept a large message invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a4182da1311eb51b4d38e118683545590}\label{mmf__lmsg_8h_a4182da1311eb51b4d38e118683545590}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgCancel@{Mmf\_LMsgCancel}}
+\index{Mmf\_LMsgCancel@{Mmf\_LMsgCancel}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgCancel()}{Mmf\_LMsgCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Cancel a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancel large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancel large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a110aaf641e21ce72e36aed7ec143fbe0}\label{mmf__lmsg_8h_a110aaf641e21ce72e36aed7ec143fbe0}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetAppPushType@{Mmf\_LMsgGetAppPushType}}
+\index{Mmf\_LMsgGetAppPushType@{Mmf\_LMsgGetAppPushType}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetAppPushType()}{Mmf\_LMsgGetAppPushType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+App\+Push\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get app push type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em app} & push type if it is a oma push message, otherwise return Z\+M\+A\+X\+U\+I\+NT. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_ac01af3f0b55db2627a5ea274f4ae7c85}\label{mmf__lmsg_8h_ac01af3f0b55db2627a5ea274f4ae7c85}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetBurnTimeLen@{Mmf\_LMsgGetBurnTimeLen}}
+\index{Mmf\_LMsgGetBurnTimeLen@{Mmf\_LMsgGetBurnTimeLen}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetBurnTimeLen()}{Mmf\_LMsgGetBurnTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Burn\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get burn after reading time length from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em burn} & after reading time length. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a6f09ea8bc9a1d88cb6e2dc7a51ef94d8}\label{mmf__lmsg_8h_a6f09ea8bc9a1d88cb6e2dc7a51ef94d8}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetContent@{Mmf\_LMsgGetContent}}
+\index{Mmf\_LMsgGetContent@{Mmf\_LMsgGetContent}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetContent()}{Mmf\_LMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get content from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get content successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get content failed. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a14088cfafedae13a027019ead6aa6130}\label{mmf__lmsg_8h_a14088cfafedae13a027019ead6aa6130}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetContentType@{Mmf\_LMsgGetContentType}}
+\index{Mmf\_LMsgGetContentType@{Mmf\_LMsgGetContentType}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetContentType()}{Mmf\_LMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get content type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im message, see \mbox{\hyperlink{mmf__lmsg_8h_a12029962ba578864215fddd55b1dfe7d}{E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a0be62532847f77a21290439c599e8428}\label{mmf__lmsg_8h_a0be62532847f77a21290439c599e8428}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetContId@{Mmf\_LMsgGetContId}}
+\index{Mmf\_LMsgGetContId@{Mmf\_LMsgGetContId}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetContId()}{Mmf\_LMsgGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get contribution-\/id of C\+PM large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_ad7708b71245c70509bbe21778d5766eb}\label{mmf__lmsg_8h_ad7708b71245c70509bbe21778d5766eb}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetConvId@{Mmf\_LMsgGetConvId}}
+\index{Mmf\_LMsgGetConvId@{Mmf\_LMsgGetConvId}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetConvId()}{Mmf\_LMsgGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get conversation-\/id of C\+PM large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_ac7d495a010a51516916ce61b5304ad3f}\label{mmf__lmsg_8h_ac7d495a010a51516916ce61b5304ad3f}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetCookie@{Mmf\_LMsgGetCookie}}
+\index{Mmf\_LMsgGetCookie@{Mmf\_LMsgGetCookie}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetCookie()}{Mmf\_LMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mmf\+\_\+\+L\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get user cookie from a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a70a9c94801db7ec71f346503f63ebbf2}\label{mmf__lmsg_8h_a70a9c94801db7ec71f346503f63ebbf2}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetDateTime@{Mmf\_LMsgGetDateTime}}
+\index{Mmf\_LMsgGetDateTime@{Mmf\_LMsgGetDateTime}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetDateTime()}{Mmf\_LMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get date time from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_ad84bb96725c419b339969019aca38cc8}\label{mmf__lmsg_8h_ad84bb96725c419b339969019aca38cc8}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetDeviceId@{Mmf\_LMsgGetDeviceId}}
+\index{Mmf\_LMsgGetDeviceId@{Mmf\_LMsgGetDeviceId}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetDeviceId()}{Mmf\_LMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get device id of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_aefa235f81759edc35ecf5cfde5458009}\label{mmf__lmsg_8h_aefa235f81759edc35ecf5cfde5458009}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetFontInfo@{Mmf\_LMsgGetFontInfo}}
+\index{Mmf\_LMsgGetFontInfo@{Mmf\_LMsgGetFontInfo}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetFontInfo()}{Mmf\_LMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get the font information from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Font} & information of message, otherwise 0. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a9bad752dfa7caf6489e0d5e4bbdffc7e}\label{mmf__lmsg_8h_a9bad752dfa7caf6489e0d5e4bbdffc7e}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetImdnId@{Mmf\_LMsgGetImdnId}}
+\index{Mmf\_LMsgGetImdnId@{Mmf\_LMsgGetImdnId}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetImdnId()}{Mmf\_LMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get imdn id of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The imdn id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_a98884ed1c2ccfab63a954b652bb91c55}\label{mmf__lmsg_8h_a98884ed1c2ccfab63a954b652bb91c55}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetIrtContId@{Mmf\_LMsgGetIrtContId}}
+\index{Mmf\_LMsgGetIrtContId@{Mmf\_LMsgGetIrtContId}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetIrtContId()}{Mmf\_LMsgGetIrtContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Irt\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get inreplyto-\/contribution-\/id of C\+PM large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inreplyto-\/contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_a2465bd04d6bf492b21c454d915d4d455}\label{mmf__lmsg_8h_a2465bd04d6bf492b21c454d915d4d455}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetMissComp@{Mmf\_LMsgGetMissComp}}
+\index{Mmf\_LMsgGetMissComp@{Mmf\_LMsgGetMissComp}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetMissComp()}{Mmf\_LMsgGetMissComp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Get\+Miss\+Comp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get the mission complete status from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mission} & complete status, return Z\+T\+R\+UE if user send ok or received data. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a8729189a80266b6ad9ad2dd66b1b41b0}\label{mmf__lmsg_8h_a8729189a80266b6ad9ad2dd66b1b41b0}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetOrigIdPartp@{Mmf\_LMsgGetOrigIdPartp}}
+\index{Mmf\_LMsgGetOrigIdPartp@{Mmf\_LMsgGetOrigIdPartp}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetOrigIdPartp()}{Mmf\_LMsgGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get original identity of paticipant from large message. 
+
+The paticipant is the session initiator who sent this large message. It will return local uri if local client who sent this large message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a66b9dec6eda5e7efde7771115c5d6ae6}\label{mmf__lmsg_8h_a66b9dec6eda5e7efde7771115c5d6ae6}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetOrigPartp@{Mmf\_LMsgGetOrigPartp}}
+\index{Mmf\_LMsgGetOrigPartp@{Mmf\_LMsgGetOrigPartp}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetOrigPartp()}{Mmf\_LMsgGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get original paticipant from large message. 
+
+The paticipant is the session initiator who sent this large message. It will return local uri if local client who sent this large message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a9851646ee79433a35c3dc053c29c4d39}\label{mmf__lmsg_8h_a9851646ee79433a35c3dc053c29c4d39}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetOutgoing@{Mmf\_LMsgGetOutgoing}}
+\index{Mmf\_LMsgGetOutgoing@{Mmf\_LMsgGetOutgoing}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetOutgoing()}{Mmf\_LMsgGetOutgoing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Get\+Outgoing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get the outgoing status from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Outgoing} & status status, return Z\+T\+R\+UE if mission is send message. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a610ddc4a3163b8c1c913f706b4892276}\label{mmf__lmsg_8h_a610ddc4a3163b8c1c913f706b4892276}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetPartp@{Mmf\_LMsgGetPartp}}
+\index{Mmf\_LMsgGetPartp@{Mmf\_LMsgGetPartp}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetPartp()}{Mmf\_LMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get paticipant information from large message. 
+
+The participant is the remote client who sent large message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a466563b0d26526aaab8f23abd33d3b61}\label{mmf__lmsg_8h_a466563b0d26526aaab8f23abd33d3b61}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetPartpLst@{Mmf\_LMsgGetPartpLst}}
+\index{Mmf\_LMsgGetPartpLst@{Mmf\_LMsgGetPartpLst}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetPartpLst()}{Mmf\_LMsgGetPartpLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Partp\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get participant list id from large message. 
+
+The participant list id is all remote clients who sent large message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Participant} & list id. The caller is responsible for freeing it by Msf\+\_\+\+Partp\+Lst\+Delete \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_aecf1c9da44b77648397dfcd4f6ad33f9}\label{mmf__lmsg_8h_aecf1c9da44b77648397dfcd4f6ad33f9}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetPartpType@{Mmf\_LMsgGetPartpType}}
+\index{Mmf\_LMsgGetPartpType@{Mmf\_LMsgGetPartpType}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetPartpType()}{Mmf\_LMsgGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get participant type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of large message participant, see \mbox{\hyperlink{msf__partp_8h_a230e775811d3034e7adb9509cc6aa2f3}{E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyRetVals}
+If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by Mmf\+\_\+\+L\+Msg\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by Mmf\+\_\+\+L\+Msg\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by Mmf\+\_\+\+L\+Msg\+Get\+Partp\+Lst. \mbox{\Hypertarget{mmf__lmsg_8h_a2a6a0cda50e36b639de3cb9e14707a3a}\label{mmf__lmsg_8h_a2a6a0cda50e36b639de3cb9e14707a3a}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetRevokeFromAddr@{Mmf\_LMsgGetRevokeFromAddr}}
+\index{Mmf\_LMsgGetRevokeFromAddr@{Mmf\_LMsgGetRevokeFromAddr}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetRevokeFromAddr()}{Mmf\_LMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF large Get revoke from addr of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_ae2613153aeb24c273f7c89055bd7df7d}\label{mmf__lmsg_8h_ae2613153aeb24c273f7c89055bd7df7d}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetRevokeMsgId@{Mmf\_LMsgGetRevokeMsgId}}
+\index{Mmf\_LMsgGetRevokeMsgId@{Mmf\_LMsgGetRevokeMsgId}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetRevokeMsgId()}{Mmf\_LMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get revoke message-\/id of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_aaf654ce52ca1f7bf3278e6aa33699a7f}\label{mmf__lmsg_8h_aaf654ce52ca1f7bf3278e6aa33699a7f}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetRevokeResult@{Mmf\_LMsgGetRevokeResult}}
+\index{Mmf\_LMsgGetRevokeResult@{Mmf\_LMsgGetRevokeResult}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetRevokeResult()}{Mmf\_LMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get revoke result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_a5e6dc577554dda52db3c0e937099c30c}\label{mmf__lmsg_8h_a5e6dc577554dda52db3c0e937099c30c}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetRevokeToAddr@{Mmf\_LMsgGetRevokeToAddr}}
+\index{Mmf\_LMsgGetRevokeToAddr@{Mmf\_LMsgGetRevokeToAddr}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetRevokeToAddr()}{Mmf\_LMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+L\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF large Get revoke to addr of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_ab8bfaadb08d263742ee0fcf3a04a64bc}\label{mmf__lmsg_8h_ab8bfaadb08d263742ee0fcf3a04a64bc}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgGetSipCode@{Mmf\_LMsgGetSipCode}}
+\index{Mmf\_LMsgGetSipCode@{Mmf\_LMsgGetSipCode}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgGetSipCode()}{Mmf\_LMsgGetSipCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+L\+Msg\+Get\+Sip\+Code (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get sip code of large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sip code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mmf__lmsg_8h_ab662496b94075a1a3db1fb1e707ce966}\label{mmf__lmsg_8h_ab662496b94075a1a3db1fb1e707ce966}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasBurnInd@{Mmf\_LMsgHasBurnInd}}
+\index{Mmf\_LMsgHasBurnInd@{Mmf\_LMsgHasBurnInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasBurnInd()}{Mmf\_LMsgHasBurnInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Burn\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get burn after reading message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has burn after reading message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a522bc0ab995c2480f1e575319bdfd1bc}\label{mmf__lmsg_8h_a522bc0ab995c2480f1e575319bdfd1bc}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasCcInd@{Mmf\_LMsgHasCcInd}}
+\index{Mmf\_LMsgHasCcInd@{Mmf\_LMsgHasCcInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasCcInd()}{Mmf\_LMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get carbon copy message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has carbon copy message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a875061106b2baab2022ba461836b95bf}\label{mmf__lmsg_8h_a875061106b2baab2022ba461836b95bf}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasDirectInd@{Mmf\_LMsgHasDirectInd}}
+\index{Mmf\_LMsgHasDirectInd@{Mmf\_LMsgHasDirectInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasDirectInd()}{Mmf\_LMsgHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get direct message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has direct message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_aeffbc494dae41045c18c500082c79751}\label{mmf__lmsg_8h_aeffbc494dae41045c18c500082c79751}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasOffInd@{Mmf\_LMsgHasOffInd}}
+\index{Mmf\_LMsgHasOffInd@{Mmf\_LMsgHasOffInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasOffInd()}{Mmf\_LMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get offline message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has offline message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_adb61d3a04be5cbc2e68b865b36e20d81}\label{mmf__lmsg_8h_adb61d3a04be5cbc2e68b865b36e20d81}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasPubInd@{Mmf\_LMsgHasPubInd}}
+\index{Mmf\_LMsgHasPubInd@{Mmf\_LMsgHasPubInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasPubInd()}{Mmf\_LMsgHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get public messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public messgae indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a4143d99d075c9197992fe933e0de9b08}\label{mmf__lmsg_8h_a4143d99d075c9197992fe933e0de9b08}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasRevokeMsgInd@{Mmf\_LMsgHasRevokeMsgInd}}
+\index{Mmf\_LMsgHasRevokeMsgInd@{Mmf\_LMsgHasRevokeMsgInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasRevokeMsgInd()}{Mmf\_LMsgHasRevokeMsgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Revoke\+Msg\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get revoke message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has revoke message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a9ea71313fa8bb34c418eb13c1a183d79}\label{mmf__lmsg_8h_a9ea71313fa8bb34c418eb13c1a183d79}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasSilenceInd@{Mmf\_LMsgHasSilenceInd}}
+\index{Mmf\_LMsgHasSilenceInd@{Mmf\_LMsgHasSilenceInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasSilenceInd()}{Mmf\_LMsgHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get silence message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has silence message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_aadcc9dfce921d8459aa59624fcf7205c}\label{mmf__lmsg_8h_aadcc9dfce921d8459aa59624fcf7205c}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgHasSpamInd@{Mmf\_LMsgHasSpamInd}}
+\index{Mmf\_LMsgHasSpamInd@{Mmf\_LMsgHasSpamInd}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgHasSpamInd()}{Mmf\_LMsgHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+L\+Msg\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get spam message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has spam message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a9dd911e8de14d3ec365a777d9538e850}\label{mmf__lmsg_8h_a9dd911e8de14d3ec365a777d9538e850}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgOffRelease@{Mmf\_LMsgOffRelease}}
+\index{Mmf\_LMsgOffRelease@{Mmf\_LMsgOffRelease}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgOffRelease()}{Mmf\_LMsgOffRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Off\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Offline Release a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_abeb7e49cee24763cca719b34efc34f4c}\label{mmf__lmsg_8h_abeb7e49cee24763cca719b34efc34f4c}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgReject@{Mmf\_LMsgReject}}
+\index{Mmf\_LMsgReject@{Mmf\_LMsgReject}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgReject()}{Mmf\_LMsgReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Reject a large large message invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_aa52119fa7053d655b056c631ef0c2439}\label{mmf__lmsg_8h_aa52119fa7053d655b056c631ef0c2439}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgRelease@{Mmf\_LMsgRelease}}
+\index{Mmf\_LMsgRelease@{Mmf\_LMsgRelease}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgRelease()}{Mmf\_LMsgRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Release a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a80517a3fff11ad4e67215e4f5b75b9ba}\label{mmf__lmsg_8h_a80517a3fff11ad4e67215e4f5b75b9ba}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgReply@{Mmf\_LMsgReply}}
+\index{Mmf\_LMsgReply@{Mmf\_LMsgReply}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgReply()}{Mmf\_LMsgReply()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Reply (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Reply to specific standalone large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id which reply to. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_ab2292ca72e4c9aafbd0c030c25093671}\label{mmf__lmsg_8h_ab2292ca72e4c9aafbd0c030c25093671}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgSend@{Mmf\_LMsgSend}}
+\index{Mmf\_LMsgSend@{Mmf\_LMsgSend}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgSend()}{Mmf\_LMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Large Instant Message to One Participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags, combination of M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+P\+U\+B\+\_\+\+I\+ND... ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_ab2b3ea236c5de6c8100b9392f0fb4449}\label{mmf__lmsg_8h_ab2b3ea236c5de6c8100b9392f0fb4449}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgSendS@{Mmf\_LMsgSendS}}
+\index{Mmf\_LMsgSendS@{Mmf\_LMsgSendS}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgSendS()}{Mmf\_LMsgSendS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+SendS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Large Instant Message to One Participant with spam information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Uri} & The pre-\/defined group uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_ac5d25a0bbbd72cdcf21c41f574dd9d7e}\label{mmf__lmsg_8h_ac5d25a0bbbd72cdcf21c41f574dd9d7e}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgSendU@{Mmf\_LMsgSendU}}
+\index{Mmf\_LMsgSendU@{Mmf\_LMsgSendU}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgSendU()}{Mmf\_LMsgSendU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+SendU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Large Instant Message to U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see E\+N\+\_\+\+M\+M\+F\+\_\+\+L\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__lmsg_8h_a6d06022bfadfeb84000cf62fa75b4a41}\label{mmf__lmsg_8h_a6d06022bfadfeb84000cf62fa75b4a41}} 
+\index{mmf\_lmsg.h@{mmf\_lmsg.h}!Mmf\_LMsgSetCookie@{Mmf\_LMsgSetCookie}}
+\index{Mmf\_LMsgSetCookie@{Mmf\_LMsgSetCookie}!mmf\_lmsg.h@{mmf\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_LMsgSetCookie()}{Mmf\_LMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+L\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set user cookie in a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}

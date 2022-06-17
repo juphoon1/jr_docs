@@ -1,0 +1,1295 @@
+\hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback Interface Reference}
+\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+
+
+M\+TC call callbacks.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aca367f4c7d7add2bd9f9c10358f8e716}{mtc\+Call\+Cb\+Incoming}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate received a new call. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2c58a9c2adce899dd1edc927b87a4f2f}{mtc\+Call\+Cb\+Outgoing}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate send a new call. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a9d8ba740f766393d4a60ae3e9892cfd4}{mtc\+Call\+Cb\+Alerted}} (int dw\+Sess\+Id, int dw\+Alert\+Type)
+\begin{DoxyCompactList}\small\item\em callback of indicate the callee is ringing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a537fd090d5dfeda1066859a83f837873}{mtc\+Call\+Cb\+Pracked}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate the callee receive prack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aeaafbeb86cd523f1b6345afeadf85f8a}{mtc\+Call\+Cb\+Talking}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate the call has established. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a63a8124162aa065f1bf94918ac0ed0f3}{mtc\+Call\+Cb\+Termed}} (int dw\+Sess\+Id, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em callback of indicate call is terminated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a85be262c36666bae4aeb66793ee0b26b}{mtc\+Call\+Cb\+Mdfy\+Acpt}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call modifying accepted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a7920a9336f24a3464741726e0cdbcde5}{mtc\+Call\+Cb\+Mdfyed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call modifyed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a757e85af107cddc97886699677bce186}{mtc\+Call\+Cb\+Mdfy\+Req}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call modify request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a535ebf744789b6ebcbc3c5b2754c3251}{mtc\+Call\+Cb\+Hold\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call hold successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a3b12ffdb08409530be11a043221e6e75}{mtc\+Call\+Cb\+Hold\+Failed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call hold failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad6eaec8daf6eb76e6e253349369638ff}{mtc\+Call\+Cb\+Un\+Hold\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call un-\/hold successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a523d93b701ea28b6353c552d29084d0f}{mtc\+Call\+Cb\+Un\+Hold\+Failed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call un-\/hold failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a7ecf849542c7c85253ccc386dacf819c}{mtc\+Call\+Cb\+Held}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call was held by peer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab02ffa4614425784867ad2770e40d1ac}{mtc\+Call\+Cb\+Un\+Held}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call was un-\/held by peer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a3e58147dd616c6ddcd99662fbf4d5ce8}{mtc\+Call\+Cb\+Add\+Audio\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate adding voice stream has been completed successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aa014f5edfb14bff3f2f6bdd2453f82be}{mtc\+Call\+Cb\+Add\+Audio\+Failed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate adding voice stream failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a19051204ac6378140a428b529c843306}{mtc\+Call\+Cb\+Rmv\+Audio\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate removing voice stream has been completed successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a8de06fc604545637cecfb667e59e6e78}{mtc\+Call\+Cb\+Rmv\+Audio\+Failed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate removing voice stream has been failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aed664d6e5d431bbbe1bc044a68f338d0}{mtc\+Call\+Cb\+Add\+Audio\+Req}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate receiving request of adding voice stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a566cc7be395a05db3d5da689746fa829}{mtc\+Call\+Cb\+Add\+Video\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate adding video stream has been completed successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1700bb6c57203fcb466c9ba88891d4d1}{mtc\+Call\+Cb\+Add\+Video\+Failed}} (int dw\+Sess\+Id, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em callback of indicate adding video stream has been failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a92a2ccfbd7cf1931cb62e1bc68f5f187}{mtc\+Call\+Cb\+Rmv\+Video\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate removing video stream has been completed successfully. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_afc7fe0e7d1e6f2e0bac46694b80c2afc}{mtc\+Call\+Cb\+Rmv\+Video\+Failed}} (int dw\+Sess\+Id, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em callback of indicate removing video stream has been failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aee940486b5bd695553a8ad4a259f8eba}{mtc\+Call\+Cb\+Add\+Video\+Req}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate receiving request of adding video stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a83891cb19e480884efef9cfbae9ac095}{mtc\+Call\+Cb\+Refered}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call refered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a748f930ead01be2551faec0ea0281d8b}{mtc\+Call\+Cb\+Trsf\+Acpt}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call transferred accepted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a11b78c785b433e0e2ff21f5deeecbebd}{mtc\+Call\+Cb\+Trsf\+Term}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call transferred terminated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_afa3c5e53e08d3e2b19861ef90c28880f}{mtc\+Call\+Cb\+Trsf\+Failed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call transferred failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ade177770d9ca0d27ea477aafde636223}{mtc\+Call\+Cb\+Redirect}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate call redirected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab0dc72842586ea51f0dbb529ccd55a7d}{mtc\+Call\+Cb\+Info}} (int dw\+Sess\+Id, String info)
+\begin{DoxyCompactList}\small\item\em callback of indicate receive info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad98e6d0377e0719a8914b86a07f3527e}{mtc\+Call\+Cb\+InfoX}} (String pc\+Uri, String info)
+\begin{DoxyCompactList}\small\item\em callback of indicate receive info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_add681f1f08679423f38d4957dad21958}{mtc\+Call\+Cb\+Replaced}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replaced. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_af39c1f59e8ab4ce1a0d8858dff9b51b2}{mtc\+Call\+Cb\+Replace\+Ok}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replace ok. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ade7eefb800d0008f86cb3b6c607fa347}{mtc\+Call\+Cb\+Replace\+Failed}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replace failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a42423ea21117f4f14ca78ab9b4773dbd}{mtc\+Call\+Cb\+Set\+Rtp\+Connectivity}} (int dw\+Sess\+Id, boolean b\+Connected)
+\begin{DoxyCompactList}\small\item\em callback of indicate rtp connectivity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1dda5c3b927cda40f9a8ca27ab325524}{mtc\+Call\+Cb\+Cam\+Disconned}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate camera has discinnected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a33ccd79833778b2678ec2ce27fe836f6}{mtc\+Call\+Cb\+Video\+Size}} (int dw\+Sess\+Id, int dw\+Width, int dw\+Height, int dw\+Orientation)
+\begin{DoxyCompactList}\small\item\em callback of indicate call\textquotesingle{}s video size changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab495f422f92b0c67ba79dd03ba9a3d75}{mtc\+Call\+Cb\+Net\+Sta\+Changed}} (int dw\+Sess\+Id, boolean b\+Video, boolean b\+Send, int i\+Type)
+\begin{DoxyCompactList}\small\item\em callback of indicate call\textquotesingle{}s network status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a12068a0d4b944509a6a85c60c1217255}{mtc\+Call\+Cb\+Video\+Incoming\+Sta}} (int dw\+Sess\+Id, int dw\+Parm1, int dw\+Parm2)
+\begin{DoxyCompactList}\small\item\em callback of indicate call\textquotesingle{}s video incoming status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aa83536419f1d5b472f44824e4769e34d}{mtc\+Call\+Cb\+Video\+Outgoing\+Sta}} (int dw\+Sess\+Id, int dw\+Parm1, int dw\+Parm2)
+\begin{DoxyCompactList}\small\item\em callback of indicate call\textquotesingle{}s video outgoing status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad65298507f6ccaeae7be429ee73b5cd6}{mtc\+Call\+Cb\+Video\+Protect\+Sta}} (int dw\+Sess\+Id, int dw\+Parm1, int dw\+Parm2)
+\begin{DoxyCompactList}\small\item\em callback of indicate call\textquotesingle{}s video protection status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a95a0cd082c0944df35357693f3bd9c3b}{mtc\+Call\+Cb\+Capture\+Framerate}} (int dw\+Sess\+Id, int dw\+Parm)
+\begin{DoxyCompactList}\small\item\em callback of indicate capture framerate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aeb7dc940418357446eb8e9ca58a0c12d}{Mtc\+Call\+Cb\+Capture\+Size}} (int dw\+Sess\+Id, int dw\+Width, int dw\+Height)
+\begin{DoxyCompactList}\small\item\em callback of indicate capture framerate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_acf3d35a43097cf371f1dd65df070cff3}{Mtc\+Call\+Cb\+Partp\+Updted}} (int dw\+Conf\+Id, int dw\+Stat\+Code, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate session participant\textquotesingle{}s status updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2b587c6fb72726e8eccafaf19624cc50}{mtc\+Call\+Cb\+Set\+Error}} (int dw\+Sess\+Id, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em callback of indicate call error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_abde80d2cc365fa1b9badd8542e3ae3d8}{mtc\+Call\+Cb\+Add\+Audio\+Cancel}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate cancel request of adding voice stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a4c39b18483a2089f3120e4b17a47b1ed}{mtc\+Call\+Cb\+Add\+Video\+Cancel}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate cancel request of adding video stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aaec178a0490d4cf4e39b880ac5d3fb30}{mtc\+Call\+Cb\+Crypto\+Sta\+Changed}} (int i\+Sess\+Id, int i\+Status\+Type, boolean b\+Video)
+\begin{DoxyCompactList}\small\item\em callback of indicate call\textquotesingle{}s crypto status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad6b78038b395a08c3cf41d8c9dec5342}{mtc\+Call\+Cb\+Send\+Rtp\+Packet}} (int i\+Tpt\+Id, String pc\+Rmt\+Addr, byte\mbox{[}$\,$\mbox{]} p\+Data)
+\begin{DoxyCompactList}\small\item\em callback of indicate sending a rtp packtet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_adc0702af9dff65942a7b408fad29da84}{mtc\+Call\+Cb\+Recv\+Rtp\+Packet}} (int i\+Strm\+Id, boolean b\+Video, byte\mbox{[}$\,$\mbox{]} puc\+Data)
+\begin{DoxyCompactList}\small\item\em callback of indicate receiving a rtp packtet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1bf80e76f36be4415d49c70caae346c9}{mtc\+Call\+Cb\+Set\+File\+Play\+Stoppedx}} (int dw\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate stream file play stoppedx. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2f0a998c490445f94e15ca6c0b27c186}{mtc\+Call\+Cb\+Subs\+Ok}} (int i\+Subs\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate subscription ok. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a344a24ccaa7ed948fbf8e57adf14708a}{mtc\+Call\+Cb\+Subs\+Failed}} (int i\+Subs\+Id, int i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate subscription failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a4f3a63eab0b6a3a6d0b4787742fb0858}{mtc\+Call\+Cb\+Subs\+Info}} (int i\+Subs\+Id, String info)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive subs info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a07e6b3971fd4b1c08473ef577548d82f}{mtc\+Call\+Cb\+Subs\+Req}} (int i\+Subs\+Id, String info)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive subscribe request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a0fbe5490d5e09ebe664a01a3f503991a}{mtc\+Call\+Cb\+Refer\+Call\+Ok}} (int i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate receiving request of referring call ok. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad01df8a33cfc86712bb60f191b91a057}{mtc\+Call\+Cb\+Refer\+Call\+Failed}} (int i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em callback of indicate receiving request of referring call failed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_abdb5275c779d4ffede14151be9026be1}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_abdb5275c779d4ffede14151be9026be1}} 
+void {\bfseries mtc\+Call\+Cb\+Recv\+Dtmf} (int i\+Sess\+Id, int i\+Dtmf\+Type)
+\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a144e631f78b6df2e4c13e25e3acadca2}{mtc\+Call\+Cb\+Ptt\+Recvd}} (int i\+Sess\+Id, int i\+Ptt\+Type, int i\+Ptt\+Id, boolean b\+Squ, boolean b\+Ptt\+Mute, int i\+Ptt\+Sum, int i\+Sct, int i\+Add\+Type, int i\+Add\+Value)
+\begin{DoxyCompactList}\small\item\em callback of receiving ptt event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC call callbacks. 
+
+In order to receive M\+TC call callbacks, user should implement this interface, then use Mtc\+Call\+Cb.\+set\+Callback to register callbacks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_abde80d2cc365fa1b9badd8542e3ae3d8}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_abde80d2cc365fa1b9badd8542e3ae3d8}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddAudioCancel@{mtcCallCbAddAudioCancel}}
+\index{mtcCallCbAddAudioCancel@{mtcCallCbAddAudioCancel}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddAudioCancel()}{mtcCallCbAddAudioCancel()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Audio\+Cancel (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate cancel request of adding voice stream. 
+
+This callback indicates cancel request of adding voice stream which was invoked by peer. G\+UI should cancel showed message box. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of the session which occurs error. call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aa014f5edfb14bff3f2f6bdd2453f82be}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aa014f5edfb14bff3f2f6bdd2453f82be}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddAudioFailed@{mtcCallCbAddAudioFailed}}
+\index{mtcCallCbAddAudioFailed@{mtcCallCbAddAudioFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddAudioFailed()}{mtcCallCbAddAudioFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Audio\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate adding voice stream failed. 
+
+This callback indicates failed to add voice stream to the call. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a3e58147dd616c6ddcd99662fbf4d5ce8}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a3e58147dd616c6ddcd99662fbf4d5ce8}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddAudioOk@{mtcCallCbAddAudioOk}}
+\index{mtcCallCbAddAudioOk@{mtcCallCbAddAudioOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddAudioOk()}{mtcCallCbAddAudioOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Audio\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate adding voice stream has been completed successfully. 
+
+This callback indicates the operation of adding voice stream to the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aed664d6e5d431bbbe1bc044a68f338d0}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aed664d6e5d431bbbe1bc044a68f338d0}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddAudioReq@{mtcCallCbAddAudioReq}}
+\index{mtcCallCbAddAudioReq@{mtcCallCbAddAudioReq}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddAudioReq()}{mtcCallCbAddAudioReq()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Audio\+Req (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receiving request of adding voice stream. 
+
+This callback indicates receiving request of adding voice stream which was invoked by peer. G\+UI should show a message box to inform user this information, and wait for user to accept or reject this requst. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a4c39b18483a2089f3120e4b17a47b1ed}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a4c39b18483a2089f3120e4b17a47b1ed}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddVideoCancel@{mtcCallCbAddVideoCancel}}
+\index{mtcCallCbAddVideoCancel@{mtcCallCbAddVideoCancel}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddVideoCancel()}{mtcCallCbAddVideoCancel()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Video\+Cancel (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate cancel request of adding video stream. 
+
+This callback indicates cancel request of adding video stream which was invoked by peer. G\+UI should cancel showed message box. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of the session which occurs error. call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1700bb6c57203fcb466c9ba88891d4d1}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1700bb6c57203fcb466c9ba88891d4d1}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddVideoFailed@{mtcCallCbAddVideoFailed}}
+\index{mtcCallCbAddVideoFailed@{mtcCallCbAddVideoFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddVideoFailed()}{mtcCallCbAddVideoFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Video\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+callback of indicate adding video stream has been failed. 
+
+\char`\"{}dw\+Stat\+Code\char`\"{}has below values.
+\begin{DoxyItemize}
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+R\+E\+J\+E\+C\+T\+ED Failed by remote rejected
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK Failed by network disconnected
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT Failed by timeout for request This callback indicates failed to add video stream to the call. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Stat\+Code} & The Status code of adding video failed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a566cc7be395a05db3d5da689746fa829}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a566cc7be395a05db3d5da689746fa829}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddVideoOk@{mtcCallCbAddVideoOk}}
+\index{mtcCallCbAddVideoOk@{mtcCallCbAddVideoOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddVideoOk()}{mtcCallCbAddVideoOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Video\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate adding video stream has been completed successfully. 
+
+This callback indicates the operation of adding video stream to the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aee940486b5bd695553a8ad4a259f8eba}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aee940486b5bd695553a8ad4a259f8eba}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAddVideoReq@{mtcCallCbAddVideoReq}}
+\index{mtcCallCbAddVideoReq@{mtcCallCbAddVideoReq}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAddVideoReq()}{mtcCallCbAddVideoReq()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Add\+Video\+Req (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receiving request of adding video stream. 
+
+This callback indicates receiving request of adding video stream which was invoked by peer. G\+UI should show a message box to inform user this information, and wait for user to accept or reject this requst. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a9d8ba740f766393d4a60ae3e9892cfd4}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a9d8ba740f766393d4a60ae3e9892cfd4}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbAlerted@{mtcCallCbAlerted}}
+\index{mtcCallCbAlerted@{mtcCallCbAlerted}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbAlerted()}{mtcCallCbAlerted()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Alerted (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Alert\+Type }\end{DoxyParamCaption})}
+
+
+
+callback of indicate the callee is ringing. 
+
+G\+UI should update the status of outgoing call window \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. 
+
+
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_ae7884c6db51facfbb16b42e96224ec5e}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Get\+Early\+Media\+Status}} and \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a5c07dc42781da5a4c967f5eb21f83e6f}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Video}} to check if there is a video early media. If so, use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_aa08b4a02121a9b974585060ec2a39088}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Offer\+Answer}} to check if offer answer exchanged is completed. If so, G\+UI should invoke \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a0b88f56a94988393c611a500a6991760}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Video\+Start}} to start receive video early media.
+\end{DoxyItemize}
+
+\char`\"{}dw\+Alert\+Type\char`\"{} has below values\+:
+\begin{DoxyItemize}
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+L\+E\+R\+T\+\_\+\+R\+I\+NG Alerted by 180 ringing.
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+L\+E\+R\+T\+\_\+\+Q\+U\+E\+UE Alerted by 182 queued.
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+L\+E\+R\+T\+\_\+\+P\+R\+O\+G\+R\+E\+SS Alerted by 183 session progress.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Alert\+Type} & The alter type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1dda5c3b927cda40f9a8ca27ab325524}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1dda5c3b927cda40f9a8ca27ab325524}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbCamDisconned@{mtcCallCbCamDisconned}}
+\index{mtcCallCbCamDisconned@{mtcCallCbCamDisconned}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbCamDisconned()}{mtcCallCbCamDisconned()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Cam\+Disconned (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate camera has discinnected. 
+
+This callback indicates the camera has disconnected with this call. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a95a0cd082c0944df35357693f3bd9c3b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a95a0cd082c0944df35357693f3bd9c3b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbCaptureFramerate@{mtcCallCbCaptureFramerate}}
+\index{mtcCallCbCaptureFramerate@{mtcCallCbCaptureFramerate}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbCaptureFramerate()}{mtcCallCbCaptureFramerate()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Capture\+Framerate (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Parm }\end{DoxyParamCaption})}
+
+
+
+callback of indicate capture framerate. 
+
+This callback indicates the capture statistics. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}dw\+Parm\char`\"{} indicate the framerate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Parm} & The framerate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aeb7dc940418357446eb8e9ca58a0c12d}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aeb7dc940418357446eb8e9ca58a0c12d}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!MtcCallCbCaptureSize@{MtcCallCbCaptureSize}}
+\index{MtcCallCbCaptureSize@{MtcCallCbCaptureSize}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{MtcCallCbCaptureSize()}{MtcCallCbCaptureSize()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+Mtc\+Call\+Cb\+Capture\+Size (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Width,  }\item[{int}]{dw\+Height }\end{DoxyParamCaption})}
+
+
+
+callback of indicate capture framerate. 
+
+This callback indicates the capture size. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}dw\+Width\char`\"{} indicate capture width. \char`\"{}dw\+Height\char`\"{} indicate capture height.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Width} & The capture width. \\
+\hline
+{\em dw\+Height} & The capture height. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aaec178a0490d4cf4e39b880ac5d3fb30}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aaec178a0490d4cf4e39b880ac5d3fb30}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbCryptoStaChanged@{mtcCallCbCryptoStaChanged}}
+\index{mtcCallCbCryptoStaChanged@{mtcCallCbCryptoStaChanged}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbCryptoStaChanged()}{mtcCallCbCryptoStaChanged()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Crypto\+Sta\+Changed (\begin{DoxyParamCaption}\item[{int}]{i\+Sess\+Id,  }\item[{int}]{i\+Status\+Type,  }\item[{boolean}]{b\+Video }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call\textquotesingle{}s crypto status. 
+
+This callback indicates the call\textquotesingle{}s crypto status. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Status\+Type\char`\"{} indicate the crypto status type \char`\"{}b\+Video\char`\"{} indicate if the crypto status of video stream is changed. \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_constants_a899cf27358775e0249d575791fc6968b}{Mtc\+Call\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+N\+O\+\_\+\+C\+R\+Y\+P\+TO}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Sess\+Id} & The ID of session. \\
+\hline
+{\em i\+Status\+Type} & The crypto status type. \\
+\hline
+{\em b\+Video} & The video crypto status flag. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a7ecf849542c7c85253ccc386dacf819c}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a7ecf849542c7c85253ccc386dacf819c}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbHeld@{mtcCallCbHeld}}
+\index{mtcCallCbHeld@{mtcCallCbHeld}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbHeld()}{mtcCallCbHeld()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Held (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call was held by peer. 
+
+This callback indicates peer hold the call. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a3b12ffdb08409530be11a043221e6e75}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a3b12ffdb08409530be11a043221e6e75}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbHoldFailed@{mtcCallCbHoldFailed}}
+\index{mtcCallCbHoldFailed@{mtcCallCbHoldFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbHoldFailed()}{mtcCallCbHoldFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Hold\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call hold failed. 
+
+This callback indicates hold operation has been failed. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a535ebf744789b6ebcbc3c5b2754c3251}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a535ebf744789b6ebcbc3c5b2754c3251}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbHoldOk@{mtcCallCbHoldOk}}
+\index{mtcCallCbHoldOk@{mtcCallCbHoldOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbHoldOk()}{mtcCallCbHoldOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Hold\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call hold successfully. 
+
+This callback indicates hold operation has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aca367f4c7d7add2bd9f9c10358f8e716}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aca367f4c7d7add2bd9f9c10358f8e716}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbIncoming@{mtcCallCbIncoming}}
+\index{mtcCallCbIncoming@{mtcCallCbIncoming}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbIncoming()}{mtcCallCbIncoming()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Incoming (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate received a new call. 
+
+G\+UI use like \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a2e62d06df5772bc2e8b5ec72968cfc42}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}, to get detail information and present those to user. And wait for user action, accept or decline. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to get session status. 
+
+
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a295ec6e5e0c45cbcc66fc75ad8d904c2}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Peer\+Offer\+Video}} to check if incoming call has video request.
+\begin{DoxyItemize}
+\item Has video, show video call alert window with 3 options
+\begin{DoxyItemize}
+\item accept
+\item accept with video
+\item decline
+\end{DoxyItemize}
+\item No Video, show voice call alert window with 2 options
+\begin{DoxyItemize}
+\item accept
+\item decline
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Assign dw\+Sess\+Id to alert window. It will be used when invoke \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a7f4b7d2c1efd3e7d6b2358fe2ff9ebc8}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Answer}} or \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a80e9e497931e50618b3e6da90dd8c975}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Term}}.
+\item Get peer information by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a2e62d06df5772bc2e8b5ec72968cfc42}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. G\+UI should use it to get session status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab0dc72842586ea51f0dbb529ccd55a7d}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab0dc72842586ea51f0dbb529ccd55a7d}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbInfo@{mtcCallCbInfo}}
+\index{mtcCallCbInfo@{mtcCallCbInfo}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbInfo()}{mtcCallCbInfo()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Info (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{String}]{info }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receive info. 
+
+This callback indicates the call has received info message. G\+UI should update the I\+N\+FO information. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session, G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em info} & The info string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad98e6d0377e0719a8914b86a07f3527e}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad98e6d0377e0719a8914b86a07f3527e}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbInfoX@{mtcCallCbInfoX}}
+\index{mtcCallCbInfoX@{mtcCallCbInfoX}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbInfoX()}{mtcCallCbInfoX()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+InfoX (\begin{DoxyParamCaption}\item[{String}]{pc\+Uri,  }\item[{String}]{info }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receive info. 
+
+This callback indicates the call has received info message. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Uri} & The U\+R\+I(\+S\+I\+P or Tel U\+R\+I) where the info message from. \\
+\hline
+{\em info} & The info string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a85be262c36666bae4aeb66793ee0b26b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a85be262c36666bae4aeb66793ee0b26b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbMdfyAcpt@{mtcCallCbMdfyAcpt}}
+\index{mtcCallCbMdfyAcpt@{mtcCallCbMdfyAcpt}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbMdfyAcpt()}{mtcCallCbMdfyAcpt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Mdfy\+Acpt (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call modifying accepted. 
+
+To change the attribute of media stream is called call modify, includes hold and add or remove media stream. This callback indicates the modification is accept by peer. G\+UI should check which service has been invoke by user. If user hold or un-\/hold the call, show hold or un-\/hold successfully. If user add video upon a voice call, then switch to video call window. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a7920a9336f24a3464741726e0cdbcde5}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a7920a9336f24a3464741726e0cdbcde5}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbMdfyed@{mtcCallCbMdfyed}}
+\index{mtcCallCbMdfyed@{mtcCallCbMdfyed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbMdfyed()}{mtcCallCbMdfyed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Mdfyed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call modifyed. 
+
+This callback indicates modification was invoke by peer, and this modification is completed. G\+UI use like \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a5c07dc42781da5a4c967f5eb21f83e6f}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Video}}, check media status. And then show corresponding changes. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a757e85af107cddc97886699677bce186}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a757e85af107cddc97886699677bce186}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbMdfyReq@{mtcCallCbMdfyReq}}
+\index{mtcCallCbMdfyReq@{mtcCallCbMdfyReq}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbMdfyReq()}{mtcCallCbMdfyReq()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Mdfy\+Req (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call modify request. 
+
+This callback indicates modification was invoke by peer, and this modification is waiting for user\textquotesingle{}s confirm. G\+UI use like \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_ac9b249c778b6ccebe1dff5f79b15112a}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Audio}} and \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a5c07dc42781da5a4c967f5eb21f83e6f}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Video}}, to check media status and make a decision whether accept one or all of active these streams. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab495f422f92b0c67ba79dd03ba9a3d75}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab495f422f92b0c67ba79dd03ba9a3d75}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbNetStaChanged@{mtcCallCbNetStaChanged}}
+\index{mtcCallCbNetStaChanged@{mtcCallCbNetStaChanged}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbNetStaChanged()}{mtcCallCbNetStaChanged()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Net\+Sta\+Changed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{boolean}]{b\+Video,  }\item[{boolean}]{b\+Send,  }\item[{int}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call\textquotesingle{}s network status. 
+
+This callback indicates the call\textquotesingle{}s network status. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}b\+Video\char`\"{} indicate if the network status of video stream is changed. \char`\"{}b\+Send\char`\"{} indicate if the network status of sending direction is changed. \char`\"{}i\+Type\char`\"{} indicate the network status type Mtc\+Media\+Constants\+::\+E\+N\+\_\+\+M\+T\+C\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+B\+AD.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em b\+Video} & The video network status flag. \\
+\hline
+{\em b\+Send} & The sending direction network status flag. \\
+\hline
+{\em i\+Type} & The network status type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2c58a9c2adce899dd1edc927b87a4f2f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2c58a9c2adce899dd1edc927b87a4f2f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbOutgoing@{mtcCallCbOutgoing}}
+\index{mtcCallCbOutgoing@{mtcCallCbOutgoing}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbOutgoing()}{mtcCallCbOutgoing()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Outgoing (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate send a new call. 
+
+G\+UI use like \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a2e62d06df5772bc2e8b5ec72968cfc42}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}, to get detail information and present those to user. And show a outgoing call window. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to get session status. 
+
+
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a5c07dc42781da5a4c967f5eb21f83e6f}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Video}} to check if outgoing call has video request.
+\begin{DoxyItemize}
+\item Has video, show video call window
+\item No Video, show voice call window
+\end{DoxyItemize}
+\item Get peer information by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a2e62d06df5772bc2e8b5ec72968cfc42}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_acf3d35a43097cf371f1dd65df070cff3}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_acf3d35a43097cf371f1dd65df070cff3}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!MtcCallCbPartpUpdted@{MtcCallCbPartpUpdted}}
+\index{MtcCallCbPartpUpdted@{MtcCallCbPartpUpdted}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{MtcCallCbPartpUpdted()}{MtcCallCbPartpUpdted()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+Mtc\+Call\+Cb\+Partp\+Updted (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{int}]{dw\+Stat\+Code,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate session participant\textquotesingle{}s status updated. 
+
+G\+UI should update session participant\textquotesingle{}s status. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant which status has been updated. \char`\"{}dw\+State\char`\"{} see below values\+: -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG Unconfirmed state -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+IN Creating or join a session -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+O\+UT Being invited to a session -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG Being invited and is alerting -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED Attend to a session successfully -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+N\+H\+O\+LD In hold state -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG Leaving a session -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED Already leave a session
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Stat\+Code} & Status code. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a537fd090d5dfeda1066859a83f837873}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a537fd090d5dfeda1066859a83f837873}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbPracked@{mtcCallCbPracked}}
+\index{mtcCallCbPracked@{mtcCallCbPracked}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbPracked()}{mtcCallCbPracked()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Pracked (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate the callee receive prack. 
+
+G\+UI may use reliable provision response to check if peer is still alive. If do so, G\+UI should show a incoming call view in this callback instead incoming callback. G\+UI should update the status of outgoing call window. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a144e631f78b6df2e4c13e25e3acadca2}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a144e631f78b6df2e4c13e25e3acadca2}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbPttRecvd@{mtcCallCbPttRecvd}}
+\index{mtcCallCbPttRecvd@{mtcCallCbPttRecvd}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbPttRecvd()}{mtcCallCbPttRecvd()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Ptt\+Recvd (\begin{DoxyParamCaption}\item[{int}]{i\+Sess\+Id,  }\item[{int}]{i\+Ptt\+Type,  }\item[{int}]{i\+Ptt\+Id,  }\item[{boolean}]{b\+Squ,  }\item[{boolean}]{b\+Ptt\+Mute,  }\item[{int}]{i\+Ptt\+Sum,  }\item[{int}]{i\+Sct,  }\item[{int}]{i\+Add\+Type,  }\item[{int}]{i\+Add\+Value }\end{DoxyParamCaption})}
+
+
+
+callback of receiving ptt event. 
+
+This callback indicates receiving ptt event callback. G\+UI should show a dialog to inform user, current call receives a ptt event.
+
+\char`\"{}i\+Sess\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is ID of session. G\+UI should use it to locate call window.
+
+\char`\"{}i\+Ptt\+Type\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT type E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+T\+T\+\_\+\+T\+Y\+PE.
+
+\char`\"{}i\+Ptt\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT ID.
+
+\char`\"{}b\+Squ\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT squelch indication flag.
+
+\char`\"{}b\+Ptt\+Mute\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT mute flag.
+
+\char`\"{}i\+Ptt\+Sum\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT summation.
+
+\char`\"{}i\+Sct\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT simultaneous call transmissions.
+
+\char`\"{}i\+Add\+Type\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT additional feature type E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+T\+T\+\_\+\+R\+X\+\_\+\+A\+D\+D\+\_\+\+T\+Y\+PE.
+
+\char`\"{}i\+Add\+Value\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD is P\+TT additional feature value. \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_adc0702af9dff65942a7b408fad29da84}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_adc0702af9dff65942a7b408fad29da84}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRecvRtpPacket@{mtcCallCbRecvRtpPacket}}
+\index{mtcCallCbRecvRtpPacket@{mtcCallCbRecvRtpPacket}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRecvRtpPacket()}{mtcCallCbRecvRtpPacket()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Recv\+Rtp\+Packet (\begin{DoxyParamCaption}\item[{int}]{i\+Strm\+Id,  }\item[{boolean}]{b\+Video,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{puc\+Data }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receiving a rtp packtet. 
+
+This callback indicates receiving a R\+TP packtet.
+
+\char`\"{}i\+Strm\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET is the ID of stream(audio or video).
+
+\char`\"{}b\+Video\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET is Z\+T\+R\+UE indicates R\+TP packet is video packet, Z\+F\+A\+L\+SE indicate the rtp packet is audio packet.
+
+\char`\"{}p\+Data\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET is the R\+TP packet data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ade177770d9ca0d27ea477aafde636223}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ade177770d9ca0d27ea477aafde636223}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRedirect@{mtcCallCbRedirect}}
+\index{mtcCallCbRedirect@{mtcCallCbRedirect}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRedirect()}{mtcCallCbRedirect()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Redirect (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call redirected. 
+
+This callback indicates the outgoing call was forwarded to another number. G\+UI should update call status. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad01df8a33cfc86712bb60f191b91a057}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad01df8a33cfc86712bb60f191b91a057}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbReferCallFailed@{mtcCallCbReferCallFailed}}
+\index{mtcCallCbReferCallFailed@{mtcCallCbReferCallFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbReferCallFailed()}{mtcCallCbReferCallFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Refer\+Call\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receiving request of referring call failed. 
+
+This callback indicates receiving a refer call failed callback. G\+UI should show a dialog to inform user, current call was refered failed.
+
+\char`\"{}i\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a0fbe5490d5e09ebe664a01a3f503991a}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a0fbe5490d5e09ebe664a01a3f503991a}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbReferCallOk@{mtcCallCbReferCallOk}}
+\index{mtcCallCbReferCallOk@{mtcCallCbReferCallOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbReferCallOk()}{mtcCallCbReferCallOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Refer\+Call\+Ok (\begin{DoxyParamCaption}\item[{int}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate receiving request of referring call ok. 
+
+This callback indicates receiving a refer call ok callback. G\+UI should show a dialog to inform user, current call was refered ok.
+
+\char`\"{}i\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a83891cb19e480884efef9cfbae9ac095}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a83891cb19e480884efef9cfbae9ac095}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRefered@{mtcCallCbRefered}}
+\index{mtcCallCbRefered@{mtcCallCbRefered}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRefered()}{mtcCallCbRefered()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Refered (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call refered. 
+
+This callback indicates the session is transfered by peer to a new destination. The new session will be indicated by callback of \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2c58a9c2adce899dd1edc927b87a4f2f}{mtc\+Call\+Cb\+Outgoing}}. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_add681f1f08679423f38d4957dad21958}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_add681f1f08679423f38d4957dad21958}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbReplaced@{mtcCallCbReplaced}}
+\index{mtcCallCbReplaced@{mtcCallCbReplaced}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbReplaced()}{mtcCallCbReplaced()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Replaced (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replaced. 
+
+This callback indicates the call has replaced by another call, which should happen when previous call was transfered to another peer. G\+UI should update the peer information. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session replaced, G\+UI should use it to locate call window. \char`\"{}dw\+New\+Sess\+Id\char`\"{} is the new session ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Sess\+Id} & session id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ade7eefb800d0008f86cb3b6c607fa347}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ade7eefb800d0008f86cb3b6c607fa347}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbReplaceFailed@{mtcCallCbReplaceFailed}}
+\index{mtcCallCbReplaceFailed@{mtcCallCbReplaceFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbReplaceFailed()}{mtcCallCbReplaceFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Replace\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replace failed. 
+
+This callback indicates the call has replace failed by another call, which should happen when previous call was transfered to another peer. G\+UI should update the peer information. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session replace failed, G\+UI should use it to locate call window. \char`\"{}dw\+New\+Sess\+Id\char`\"{} is the new session ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Sess\+Id} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_af39c1f59e8ab4ce1a0d8858dff9b51b2}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_af39c1f59e8ab4ce1a0d8858dff9b51b2}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbReplaceOk@{mtcCallCbReplaceOk}}
+\index{mtcCallCbReplaceOk@{mtcCallCbReplaceOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbReplaceOk()}{mtcCallCbReplaceOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Replace\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replace ok. 
+
+This callback indicates the call has replace ok by another call, which should happen when previous call was transfered to another peer. G\+UI should update the peer information. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session replace ok, G\+UI should use it to locate call window. \char`\"{}dw\+New\+Sess\+Id\char`\"{} is the new session ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Sess\+Id} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a8de06fc604545637cecfb667e59e6e78}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a8de06fc604545637cecfb667e59e6e78}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRmvAudioFailed@{mtcCallCbRmvAudioFailed}}
+\index{mtcCallCbRmvAudioFailed@{mtcCallCbRmvAudioFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRmvAudioFailed()}{mtcCallCbRmvAudioFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Rmv\+Audio\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate removing voice stream has been failed. 
+
+This callback indicates failed to remove voice stream of the call. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a19051204ac6378140a428b529c843306}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a19051204ac6378140a428b529c843306}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRmvAudioOk@{mtcCallCbRmvAudioOk}}
+\index{mtcCallCbRmvAudioOk@{mtcCallCbRmvAudioOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRmvAudioOk()}{mtcCallCbRmvAudioOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Rmv\+Audio\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate removing voice stream has been completed successfully. 
+
+This callback indicates the operation of removing voice stream of the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_afc7fe0e7d1e6f2e0bac46694b80c2afc}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_afc7fe0e7d1e6f2e0bac46694b80c2afc}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRmvVideoFailed@{mtcCallCbRmvVideoFailed}}
+\index{mtcCallCbRmvVideoFailed@{mtcCallCbRmvVideoFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRmvVideoFailed()}{mtcCallCbRmvVideoFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Rmv\+Video\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+callback of indicate removing video stream has been failed. 
+
+\char`\"{}dw\+Stat\+Code\char`\"{}has below values.
+\begin{DoxyItemize}
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+R\+E\+J\+E\+C\+T\+ED Failed by remote rejected
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK Failed by network disconnected
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT Failed by timeout for request This callback indicates failed to remove video stream of the call. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Stat\+Code} & The Status code of removing video failed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a92a2ccfbd7cf1931cb62e1bc68f5f187}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a92a2ccfbd7cf1931cb62e1bc68f5f187}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbRmvVideoOk@{mtcCallCbRmvVideoOk}}
+\index{mtcCallCbRmvVideoOk@{mtcCallCbRmvVideoOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbRmvVideoOk()}{mtcCallCbRmvVideoOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Rmv\+Video\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate removing video stream has been completed successfully. 
+
+This callback indicates the operation of removing video stream of the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad6b78038b395a08c3cf41d8c9dec5342}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad6b78038b395a08c3cf41d8c9dec5342}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSendRtpPacket@{mtcCallCbSendRtpPacket}}
+\index{mtcCallCbSendRtpPacket@{mtcCallCbSendRtpPacket}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSendRtpPacket()}{mtcCallCbSendRtpPacket()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Send\+Rtp\+Packet (\begin{DoxyParamCaption}\item[{int}]{i\+Tpt\+Id,  }\item[{String}]{pc\+Rmt\+Addr,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{p\+Data }\end{DoxyParamCaption})}
+
+
+
+callback of indicate sending a rtp packtet. 
+
+This callback indicates sending a R\+TP packtet report.
+
+\char`\"{}i\+Tpt\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET is the ID of transport id.
+
+\char`\"{}pc\+Rmt\+Addr\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET indicates R\+TP packet will be sent the the remote addr
+
+\char`\"{}p\+Data\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET is the R\+TP packet data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2b587c6fb72726e8eccafaf19624cc50}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2b587c6fb72726e8eccafaf19624cc50}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSetError@{mtcCallCbSetError}}
+\index{mtcCallCbSetError@{mtcCallCbSetError}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSetError()}{mtcCallCbSetError()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Set\+Error (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call error. 
+
+This callback indicates error occured during call. G\+UI should show the detail error information to user. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of the session which occurs error. \char`\"{}dw\+Stat\+Code\char`\"{} is the error code, it can be
+\begin{DoxyItemize}
+\item If dw\+Stat\+Code $<$ 0x1000, contains S\+IP response status code, use Sip\+\_\+\+Reason\+From\+Code to get description string
+\item Otherwise, use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a7063b216b77ff92cbfcad73471c4ccbd}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Get\+Stat\+Desc}} to get description string
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Stat\+Code} & The error code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1bf80e76f36be4415d49c70caae346c9}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a1bf80e76f36be4415d49c70caae346c9}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSetFilePlayStoppedx@{mtcCallCbSetFilePlayStoppedx}}
+\index{mtcCallCbSetFilePlayStoppedx@{mtcCallCbSetFilePlayStoppedx}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSetFilePlayStoppedx()}{mtcCallCbSetFilePlayStoppedx()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Set\+File\+Play\+Stoppedx (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate stream file play stoppedx. 
+
+This callback indicates stream file play stoppedx occured during call. G\+UI should show the detail information to user.
+
+\char`\"{}dw\+Sess\+Id\char`\"{} is the ID of the session which occurs error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a42423ea21117f4f14ca78ab9b4773dbd}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a42423ea21117f4f14ca78ab9b4773dbd}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSetRtpConnectivity@{mtcCallCbSetRtpConnectivity}}
+\index{mtcCallCbSetRtpConnectivity@{mtcCallCbSetRtpConnectivity}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSetRtpConnectivity()}{mtcCallCbSetRtpConnectivity()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Set\+Rtp\+Connectivity (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{boolean}]{b\+Connected }\end{DoxyParamCaption})}
+
+
+
+callback of indicate rtp connectivity. 
+
+This callback indicates the R\+TP connectivity status is changed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & is the ID of session, G\+UI should use it to locate call window.\\
+\hline
+{\em b\+Conned} & When Z\+T\+R\+UE indicate media engine detected R\+TP packet received, Z\+F\+A\+L\+SE indicate media engine hasn\textquotesingle{}t detected R\+TP packet received for about 20 seconds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a344a24ccaa7ed948fbf8e57adf14708a}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a344a24ccaa7ed948fbf8e57adf14708a}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSubsFailed@{mtcCallCbSubsFailed}}
+\index{mtcCallCbSubsFailed@{mtcCallCbSubsFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSubsFailed()}{mtcCallCbSubsFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Subs\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Subs\+Id,  }\item[{int}]{i\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate subscription failed. 
+
+This callback indicates the subscription failed.
+
+\char`\"{}i\+Subs\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+F\+A\+I\+L\+ED is the ID of subscription. G\+UI should use it to locate call window.
+
+\char`\"{}i\+Stat\+Code\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+F\+A\+I\+L\+ED is the error code(see M\+S\+F\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+O), it can be
+\begin{DoxyItemize}
+\item If i\+Stat\+Code $<$ 0x1000, contains S\+IP response status code, use Sip\+\_\+\+Reason\+From\+Code to get description string
+\item Otherwise, use Mtc\+\_\+\+Sess\+Get\+Stat\+Desc to get description string
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a4f3a63eab0b6a3a6d0b4787742fb0858}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a4f3a63eab0b6a3a6d0b4787742fb0858}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSubsInfo@{mtcCallCbSubsInfo}}
+\index{mtcCallCbSubsInfo@{mtcCallCbSubsInfo}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSubsInfo()}{mtcCallCbSubsInfo()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Subs\+Info (\begin{DoxyParamCaption}\item[{int}]{i\+Subs\+Id,  }\item[{String}]{info }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive subs info. 
+
+This callback indicates the call has received subs info message. G\+UI should update the subscription info information.
+
+\char`\"{}i\+Subs\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO is the ID of subscription, \char`\"{}pc\+Info\char`\"{} is the subs info string. \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2f0a998c490445f94e15ca6c0b27c186}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a2f0a998c490445f94e15ca6c0b27c186}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSubsOk@{mtcCallCbSubsOk}}
+\index{mtcCallCbSubsOk@{mtcCallCbSubsOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSubsOk()}{mtcCallCbSubsOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Subs\+Ok (\begin{DoxyParamCaption}\item[{int}]{i\+Subs\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate subscription ok. 
+
+This callback indicates the subscription ok.
+
+\char`\"{}i\+Subs\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+OK is the ID of subscription. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback}{Callback}} function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a07e6b3971fd4b1c08473ef577548d82f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a07e6b3971fd4b1c08473ef577548d82f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbSubsReq@{mtcCallCbSubsReq}}
+\index{mtcCallCbSubsReq@{mtcCallCbSubsReq}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbSubsReq()}{mtcCallCbSubsReq()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Subs\+Req (\begin{DoxyParamCaption}\item[{int}]{i\+Subs\+Id,  }\item[{String}]{info }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive subscribe request. 
+
+This callback indicates the call has received subs request. G\+UI should notify the subscription state to the subscriber with N\+O\+T\+I\+FY response.
+
+\char`\"{}i\+Subs\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO is the ID of subscription, \char`\"{}pc\+Info\char`\"{} is the subs info string. \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aeaafbeb86cd523f1b6345afeadf85f8a}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aeaafbeb86cd523f1b6345afeadf85f8a}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbTalking@{mtcCallCbTalking}}
+\index{mtcCallCbTalking@{mtcCallCbTalking}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbTalking()}{mtcCallCbTalking()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Talking (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate the call has established. 
+
+The call can be a received call or a send out call. G\+UI should switch to talking window. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a5c07dc42781da5a4c967f5eb21f83e6f}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Has\+Video}} to check if there is a video media. If so, G\+UI should invoke \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_a0b88f56a94988393c611a500a6991760}{Mtc\+Call.\+Mtc\+\_\+\+Sess\+Video\+Start}} to start send and receive video media.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a63a8124162aa065f1bf94918ac0ed0f3}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a63a8124162aa065f1bf94918ac0ed0f3}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbTermed@{mtcCallCbTermed}}
+\index{mtcCallCbTermed@{mtcCallCbTermed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbTermed()}{mtcCallCbTermed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Termed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call is terminated. 
+
+\char`\"{}dw\+Stat\+Code\char`\"{} has below values.
+\begin{DoxyItemize}
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+B\+YE Terminated by remote B\+YE
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+C\+A\+N\+C\+EL Terminated by remote C\+A\+N\+C\+EL
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+SY Terminated by 486 Busy Here
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+D\+E\+C\+L\+I\+NE Terminated by 603 Decline
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN Terminated by 403 Forbidden
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND Terminated by 404 Not Found
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+A\+C\+P\+T\+ED Terminated by 406 Not Acceptable or 488 Not Acceptable Here
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+R\+E\+Q\+\_\+\+T\+E\+R\+M\+ED Terminated by 487 Request Terminated
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+RR Terminated by 500 Server Internal Error
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL Terminated by 503 Service Unavailable
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST Terminated by 604 Does Not Exist Anywhere The call can be a received call or a send out call. G\+UI should show the reason why the call was terminated for a few seconds, and switch to main working window. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Stat\+Code} & The terminate state code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a748f930ead01be2551faec0ea0281d8b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a748f930ead01be2551faec0ea0281d8b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbTrsfAcpt@{mtcCallCbTrsfAcpt}}
+\index{mtcCallCbTrsfAcpt@{mtcCallCbTrsfAcpt}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbTrsfAcpt()}{mtcCallCbTrsfAcpt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Trsf\+Acpt (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call transferred accepted. 
+
+This callback indicates receiving a transfer request. G\+UI should show a dialog to inform user, current call was transfered. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_afa3c5e53e08d3e2b19861ef90c28880f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_afa3c5e53e08d3e2b19861ef90c28880f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbTrsfFailed@{mtcCallCbTrsfFailed}}
+\index{mtcCallCbTrsfFailed@{mtcCallCbTrsfFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbTrsfFailed()}{mtcCallCbTrsfFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Trsf\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call transferred failed. 
+
+This callback indicates transfer failed. G\+UI should show a dialog to inform user, current call was transfered. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a11b78c785b433e0e2ff21f5deeecbebd}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a11b78c785b433e0e2ff21f5deeecbebd}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbTrsfTerm@{mtcCallCbTrsfTerm}}
+\index{mtcCallCbTrsfTerm@{mtcCallCbTrsfTerm}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbTrsfTerm()}{mtcCallCbTrsfTerm()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Trsf\+Term (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call transferred terminated. 
+
+For extension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab02ffa4614425784867ad2770e40d1ac}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ab02ffa4614425784867ad2770e40d1ac}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbUnHeld@{mtcCallCbUnHeld}}
+\index{mtcCallCbUnHeld@{mtcCallCbUnHeld}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbUnHeld()}{mtcCallCbUnHeld()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Un\+Held (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call was un-\/held by peer. 
+
+This callback indicates un-\/held hold the call. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a523d93b701ea28b6353c552d29084d0f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a523d93b701ea28b6353c552d29084d0f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbUnHoldFailed@{mtcCallCbUnHoldFailed}}
+\index{mtcCallCbUnHoldFailed@{mtcCallCbUnHoldFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbUnHoldFailed()}{mtcCallCbUnHoldFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Un\+Hold\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call un-\/hold failed. 
+
+This callback indicates un-\/hold operation has been failed. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad6eaec8daf6eb76e6e253349369638ff}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad6eaec8daf6eb76e6e253349369638ff}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbUnHoldOk@{mtcCallCbUnHoldOk}}
+\index{mtcCallCbUnHoldOk@{mtcCallCbUnHoldOk}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbUnHoldOk()}{mtcCallCbUnHoldOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Un\+Hold\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call un-\/hold successfully. 
+
+This callback indicates un-\/hold operation has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a12068a0d4b944509a6a85c60c1217255}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a12068a0d4b944509a6a85c60c1217255}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbVideoIncomingSta@{mtcCallCbVideoIncomingSta}}
+\index{mtcCallCbVideoIncomingSta@{mtcCallCbVideoIncomingSta}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbVideoIncomingSta()}{mtcCallCbVideoIncomingSta()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Video\+Incoming\+Sta (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Parm1,  }\item[{int}]{dw\+Parm2 }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call\textquotesingle{}s video incoming status. 
+
+This callback indicates the call\textquotesingle{}s video incoming status. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}dw\+Parm1\char`\"{} indicate the framerate. \char`\"{}dw\+Parm2\char`\"{} indicate the bitrate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Parm1} & The framerate. \\
+\hline
+{\em dw\+Parm2} & The bitrate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aa83536419f1d5b472f44824e4769e34d}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_aa83536419f1d5b472f44824e4769e34d}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbVideoOutgoingSta@{mtcCallCbVideoOutgoingSta}}
+\index{mtcCallCbVideoOutgoingSta@{mtcCallCbVideoOutgoingSta}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbVideoOutgoingSta()}{mtcCallCbVideoOutgoingSta()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Video\+Outgoing\+Sta (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Parm1,  }\item[{int}]{dw\+Parm2 }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call\textquotesingle{}s video outgoing status. 
+
+This callback indicates the call\textquotesingle{}s video outgoing status. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}dw\+Parm1\char`\"{} indicate the framerate. \char`\"{}dw\+Parm2\char`\"{} indicate the bitrate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Parm1} & The framerate. \\
+\hline
+{\em dw\+Parm2} & The bitrate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad65298507f6ccaeae7be429ee73b5cd6}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_ad65298507f6ccaeae7be429ee73b5cd6}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbVideoProtectSta@{mtcCallCbVideoProtectSta}}
+\index{mtcCallCbVideoProtectSta@{mtcCallCbVideoProtectSta}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbVideoProtectSta()}{mtcCallCbVideoProtectSta()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Video\+Protect\+Sta (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Parm1,  }\item[{int}]{dw\+Parm2 }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call\textquotesingle{}s video protection status. 
+
+This callback indicates the call\textquotesingle{}s video protection status. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}dw\+Parm1\char`\"{} indicate the F\+EC bitrate in kbps. \char`\"{}dw\+Parm2\char`\"{} indicate the N\+A\+CK bitrate in kbps.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Parm1} & The F\+EC bitrate in kbps. \\
+\hline
+{\em dw\+Parm2} & The N\+A\+CK bitrate in kbps. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a33ccd79833778b2678ec2ce27fe836f6}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_call_cb_1_1_callback_a33ccd79833778b2678ec2ce27fe836f6}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}!mtcCallCbVideoSize@{mtcCallCbVideoSize}}
+\index{mtcCallCbVideoSize@{mtcCallCbVideoSize}!com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCallCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCallCbVideoSize()}{mtcCallCbVideoSize()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Call\+Cb.\+Callback.\+mtc\+Call\+Cb\+Video\+Size (\begin{DoxyParamCaption}\item[{int}]{dw\+Sess\+Id,  }\item[{int}]{dw\+Width,  }\item[{int}]{dw\+Height,  }\item[{int}]{dw\+Orientation }\end{DoxyParamCaption})}
+
+
+
+callback of indicate call\textquotesingle{}s video size changed. 
+
+This callback indicates the call\textquotesingle{}s video size changed. \char`\"{}dw\+Sess\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}dw\+Width\char`\"{} indicate the width of frame. \char`\"{}dw\+Height\char`\"{} indicate the height of frame. \char`\"{}dw\+Orientation\char`\"{} indicate the orientation. Mtc\+Media\+Constants\+::\+E\+N\+\_\+\+M\+T\+C\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+\+P\+O\+R\+T\+R\+A\+IT
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Sess\+Id} & The ID of session. \\
+\hline
+{\em dw\+Width} & The width of frame. \\
+\hline
+{\em dw\+Height} & The height of frame. \\
+\hline
+{\em dw\+Orientation} & The orientation. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/callback/\mbox{\hyperlink{_mtc_call_cb_8java}{Mtc\+Call\+Cb.\+java}}\end{DoxyCompactItemize}

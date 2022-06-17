@@ -1,0 +1,79 @@
+\hypertarget{mtc__prof__cfg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+prof\+\_\+cfg.h File Reference}
+\label{mtc__prof__cfg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prof\_cfg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prof\_cfg.h}}
+
+
+M\+TC Profile Config Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__prof__cfg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prof__cfg_8h_a6401d956dbd410571377b9949ecd4bea}{Mtc\+\_\+\+Prof\+Cfg\+Get\+Use\+Dft}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get using default profile management. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prof__cfg_8h_a3c796ca0e9ed96bd2e28f7b48e3cdffe}{Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft}} (Z\+B\+O\+OL b\+Use)
+\begin{DoxyCompactList}\small\item\em Set using default profile management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Profile Config Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__prof__cfg_8h_a6401d956dbd410571377b9949ecd4bea}\label{mtc__prof__cfg_8h_a6401d956dbd410571377b9949ecd4bea}} 
+\index{mtc\_prof\_cfg.h@{mtc\_prof\_cfg.h}!Mtc\_ProfCfgGetUseDft@{Mtc\_ProfCfgGetUseDft}}
+\index{Mtc\_ProfCfgGetUseDft@{Mtc\_ProfCfgGetUseDft}!mtc\_prof\_cfg.h@{mtc\_prof\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfCfgGetUseDft()}{Mtc\_ProfCfgGetUseDft()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prof\+Cfg\+Get\+Use\+Dft (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get using default profile management. 
+
+M\+TC provide default profile management. Each account profile is stored in different directory under \char`\"{}profiles\char`\"{} directory. Every Account profile have provision.\+xml etc configuration files.
+
+If client using another profile management, client should close it by \mbox{\hyperlink{mtc__prof__cfg_8h_a3c796ca0e9ed96bd2e28f7b48e3cdffe}{Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft}}. After \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}}, client should assign database configuration by \mbox{\hyperlink{mtc__cli__db_8h_a53256079d5a07a5dffb3ae2080793034}{Mtc\+\_\+\+Cli\+Db\+Set\+Local\+Ip}} etc interfaces.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & M\+TC provide profile management. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & M\+TC don\textquotesingle{}t have profile management.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prof__cfg_8h_a3c796ca0e9ed96bd2e28f7b48e3cdffe}{Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prof__cfg_8h_a3c796ca0e9ed96bd2e28f7b48e3cdffe}\label{mtc__prof__cfg_8h_a3c796ca0e9ed96bd2e28f7b48e3cdffe}} 
+\index{mtc\_prof\_cfg.h@{mtc\_prof\_cfg.h}!Mtc\_ProfCfgSetUseDft@{Mtc\_ProfCfgSetUseDft}}
+\index{Mtc\_ProfCfgSetUseDft@{Mtc\_ProfCfgSetUseDft}!mtc\_prof\_cfg.h@{mtc\_prof\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProfCfgSetUseDft()}{Mtc\_ProfCfgSetUseDft()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prof\+Cfg\+Set\+Use\+Dft (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Use }\end{DoxyParamCaption})}
+
+
+
+Set using default profile management. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Use} & Use default profile management.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set use status successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set use status failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prof__cfg_8h_a6401d956dbd410571377b9949ecd4bea}{Mtc\+\_\+\+Prof\+Cfg\+Get\+Use\+Dft}} 
+\end{DoxySeeAlso}

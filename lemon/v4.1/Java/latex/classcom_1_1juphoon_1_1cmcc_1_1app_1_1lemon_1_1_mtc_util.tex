@@ -1,0 +1,645 @@
+\hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util Class Reference}
+\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util}\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+
+
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util}{Mtc\+Util}} interface.  
+
+
+
+
+Inheritance diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ad32451b7a63649c7f5b63ad8dff96a16}{Mtc\+\_\+\+Any\+Log\+Err\+Str}} (String pc\+Log\+Name, String pc\+Format)
+\begin{DoxyCompactList}\small\item\em Print E\+R\+R\+OR log with format string information. User can specific log name as the log module prefix Log print level can be set by Mtc\+\_\+\+Cli\+Db\+Set\+Log\+Level. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a6075f56aa715691182239996690887d5}{Mtc\+\_\+\+Any\+Log\+Info\+Str}} (String pc\+Log\+Name, String pc\+Format)
+\begin{DoxyCompactList}\small\item\em Print I\+N\+FO log with format string information. User can specific log name as the log module prefix Log print level can be set by Mtc\+\_\+\+Cli\+Db\+Set\+Log\+Level. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a69d002fa63f2b4a5fde1009449aca7cb}{Mtc\+\_\+\+Any\+Log\+Dbg\+Str}} (String pc\+Log\+Name, String pc\+Format)
+\begin{DoxyCompactList}\small\item\em Print D\+E\+B\+UG log with format string information. User can specific log name as the log module prefix Log print level can be set by Mtc\+\_\+\+Db\+Set\+Log\+Level. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ae82f0a07400ade8ef1e22eb9ec0cc198}{Mtc\+\_\+\+Any\+Log\+Flush}} ()
+\begin{DoxyCompactList}\small\item\em This function flushs buffer into log file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a32c10768812564fc807b9f92813b5fad}{Mtc\+\_\+\+Get\+Lcl\+Ip\+Cnt}} ()
+\begin{DoxyCompactList}\small\item\em Get local ip count. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_abd0d26e0aac3c26321c28570ccccb452}{Mtc\+\_\+\+Get\+Lcl\+Ip}} (int i\+Index)
+\begin{DoxyCompactList}\small\item\em Get local ip. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa61ca5bd4818573b05b12da8cffb6fce}{Mtc\+\_\+\+Get\+Access\+Net\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get access network type. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa69b9932520a8c6c79c1b82107c3d1b9}{Mtc\+\_\+\+Timer\+Create}} (int i\+Timer\+Type, boolean b\+Cycle, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__f__unsigned__int__size__t____void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+f\+\_\+unsigned\+\_\+int\+\_\+size\+\_\+t\+\_\+\+\_\+void}} pfn\+Active, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_number}{Mtc\+Number}} pz\+Timer\+Id)
+\begin{DoxyCompactList}\small\item\em Create a new timer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06cbba2f360bdd6244a4834dbcfa87f6}{Mtc\+\_\+\+Timer\+Delete}} (int z\+Timer\+Id)
+\begin{DoxyCompactList}\small\item\em Delete a timer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a77eac30c0e38e436b62d2e866bc29941}{Mtc\+\_\+\+Timer\+Start}} (int z\+Timer\+Id, int i\+Time\+Len)
+\begin{DoxyCompactList}\small\item\em Start a timer. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a54fe2d3c13282478358863493fa0a8ce}{Mtc\+\_\+\+Timer\+Stop}} (int z\+Timer\+Id)
+\begin{DoxyCompactList}\small\item\em Stop a timer. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a20146cd1ed294c4db80e182c1b01bc94}{Mtc\+\_\+\+Timer\+Is\+Run}} (int z\+Timer\+Id)
+\begin{DoxyCompactList}\small\item\em Check if a timer is running. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a46426c4306ffb5aea65fe908014d12d6}{Mtc\+\_\+\+Timer\+Schedule}} (int i\+Timer\+Type, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__f__size__t____void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+f\+\_\+size\+\_\+t\+\_\+\+\_\+void}} pfn\+Schedule, int i\+Time\+Len)
+\begin{DoxyCompactList}\small\item\em Schedule a new timer after some seconds. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_afe09a5a37bf8fa8da2d10aa84be33bec}{Mtc\+\_\+\+Time2\+Sys\+Time}} (int z\+Time, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} pst\+Time)
+\begin{DoxyCompactList}\small\item\em Convert time value from Z\+T\+I\+M\+E\+\_\+T to \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} structure. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aba5689fab5d1719b652b640d56b23a43}{Mtc\+\_\+\+Sys\+Time2\+Time}} (\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} pst\+Time, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_number}{Mtc\+Number}} pz\+Time)
+\begin{DoxyCompactList}\small\item\em Convert time value from \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} structure to Z\+T\+I\+M\+E\+\_\+T. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a0e7322b06bbc82b405b44c6526300179}{Mtc\+\_\+\+Cmd\+Run}} (String pc\+Cmd)
+\begin{DoxyCompactList}\small\item\em Run debug command. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a835f9eeda7f0a599b5724ceeff52286b}{Mtc\+\_\+\+Test\+Sip\+Decode}} (String pc\+Data)
+\begin{DoxyCompactList}\small\item\em Test sip decode. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a51a9f5e212d5fe1250f7195008c771a5}{Mtc\+\_\+\+Test\+Http\+Decode}} (String pc\+Data)
+\begin{DoxyCompactList}\small\item\em Test http decode. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa6a387507c5c64b527c5d5089dccdd06}{Mtc\+\_\+\+Zjson\+Parse}} (\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} z\+Mem\+Buf, String pc\+Text, int i\+Len)
+\begin{DoxyCompactList}\small\item\em json prase \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ab26b137abeefa05ffdff14c0be996581}{Mtc\+\_\+\+Zjson\+Object\+Get}} (\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} z\+Object, String pc\+Name)
+\begin{DoxyCompactList}\small\item\em json prase \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ac7bd41fa0401f8944d06981bd2c2e990}{Mtc\+\_\+\+Zjson\+Object\+Get\+String}} (\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} z\+Object, String pc\+Name)
+\begin{DoxyCompactList}\small\item\em json prase \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a5825b49a7d90ab43e26c7c9b561ea60f}{Mtc\+\_\+\+Zjson\+Object\+Get\+Number}} (\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} z\+Object, String pc\+Name)
+\begin{DoxyCompactList}\small\item\em json prase \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06bda3027aabc5fa628b9bfe721b9293}{Mtc\+\_\+\+Get\+Imdn\+Msg\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get imdn msg id. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a298aa87fbe39e1e24f943209f16bf8f7}{Mtc\+\_\+\+Util\+Leave}} (\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} p\+Serv, long z\+Evnt\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util}{Mtc\+Util}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a69d002fa63f2b4a5fde1009449aca7cb}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a69d002fa63f2b4a5fde1009449aca7cb}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_AnyLogDbgStr@{Mtc\_AnyLogDbgStr}}
+\index{Mtc\_AnyLogDbgStr@{Mtc\_AnyLogDbgStr}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_AnyLogDbgStr()}{Mtc\_AnyLogDbgStr()}}
+{\footnotesize\ttfamily static void com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Dbg\+Str (\begin{DoxyParamCaption}\item[{String}]{pc\+Log\+Name,  }\item[{String}]{pc\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print D\+E\+B\+UG log with format string information. User can specific log name as the log module prefix Log print level can be set by Mtc\+\_\+\+Db\+Set\+Log\+Level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Log\+Name} & The log name. Default name is \char`\"{}\+Z\+O\+S\char`\"{} if no log name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Format} & String format. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ...} & String vars.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a6075f56aa715691182239996690887d5}{Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Info\+Str}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ad32451b7a63649c7f5b63ad8dff96a16}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ad32451b7a63649c7f5b63ad8dff96a16}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_AnyLogErrStr@{Mtc\_AnyLogErrStr}}
+\index{Mtc\_AnyLogErrStr@{Mtc\_AnyLogErrStr}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_AnyLogErrStr()}{Mtc\_AnyLogErrStr()}}
+{\footnotesize\ttfamily static void com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Err\+Str (\begin{DoxyParamCaption}\item[{String}]{pc\+Log\+Name,  }\item[{String}]{pc\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print E\+R\+R\+OR log with format string information. User can specific log name as the log module prefix Log print level can be set by Mtc\+\_\+\+Cli\+Db\+Set\+Log\+Level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Log\+Name} & The log name. Default name is \char`\"{}\+Z\+O\+S\char`\"{} if no log name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Format} & String format. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ...} & String vars.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a6075f56aa715691182239996690887d5}{Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Info\+Str}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ae82f0a07400ade8ef1e22eb9ec0cc198}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ae82f0a07400ade8ef1e22eb9ec0cc198}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_AnyLogFlush@{Mtc\_AnyLogFlush}}
+\index{Mtc\_AnyLogFlush@{Mtc\_AnyLogFlush}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_AnyLogFlush()}{Mtc\_AnyLogFlush()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This function flushs buffer into log file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Log\+Id} & The log ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Flush operation successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Flush operation failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a6075f56aa715691182239996690887d5}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a6075f56aa715691182239996690887d5}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_AnyLogInfoStr@{Mtc\_AnyLogInfoStr}}
+\index{Mtc\_AnyLogInfoStr@{Mtc\_AnyLogInfoStr}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_AnyLogInfoStr()}{Mtc\_AnyLogInfoStr()}}
+{\footnotesize\ttfamily static void com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Info\+Str (\begin{DoxyParamCaption}\item[{String}]{pc\+Log\+Name,  }\item[{String}]{pc\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print I\+N\+FO log with format string information. User can specific log name as the log module prefix Log print level can be set by Mtc\+\_\+\+Cli\+Db\+Set\+Log\+Level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Log\+Name} & The log name. Default name is \char`\"{}\+Z\+O\+S\char`\"{} if no log name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Format} & String format. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ...} & String vars.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ad32451b7a63649c7f5b63ad8dff96a16}{Mtc\+Util.\+Mtc\+\_\+\+Any\+Log\+Err\+Str}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a0e7322b06bbc82b405b44c6526300179}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a0e7322b06bbc82b405b44c6526300179}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_CmdRun@{Mtc\_CmdRun}}
+\index{Mtc\_CmdRun@{Mtc\_CmdRun}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CmdRun()}{Mtc\_CmdRun()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Cmd\+Run (\begin{DoxyParamCaption}\item[{String}]{pc\+Cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Run debug command. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Cmd} & Command string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Run command successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Run command failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa61ca5bd4818573b05b12da8cffb6fce}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa61ca5bd4818573b05b12da8cffb6fce}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_GetAccessNetType@{Mtc\_GetAccessNetType}}
+\index{Mtc\_GetAccessNetType@{Mtc\_GetAccessNetType}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GetAccessNetType()}{Mtc\_GetAccessNetType()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Get\+Access\+Net\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get access network type. 
+
+\begin{DoxyReturn}{Returns}
+Access network type successfully, otherwise return M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+U\+N\+K\+N\+O\+WN. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06bda3027aabc5fa628b9bfe721b9293}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06bda3027aabc5fa628b9bfe721b9293}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_GetImdnMsgId@{Mtc\_GetImdnMsgId}}
+\index{Mtc\_GetImdnMsgId@{Mtc\_GetImdnMsgId}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GetImdnMsgId()}{Mtc\_GetImdnMsgId()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Get\+Imdn\+Msg\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get imdn msg id. 
+
+\begin{DoxyReturn}{Returns}
+imdn msg id string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_abd0d26e0aac3c26321c28570ccccb452}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_abd0d26e0aac3c26321c28570ccccb452}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_GetLclIp@{Mtc\_GetLclIp}}
+\index{Mtc\_GetLclIp@{Mtc\_GetLclIp}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GetLclIp()}{Mtc\_GetLclIp()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Get\+Lcl\+Ip (\begin{DoxyParamCaption}\item[{int}]{i\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get local ip. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Index} & Local ip index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Local ip successfully, otherwise return loopback address. the caller must copy it, then use.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a32c10768812564fc807b9f92813b5fad}{Mtc\+Util.\+Mtc\+\_\+\+Get\+Lcl\+Ip\+Cnt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a32c10768812564fc807b9f92813b5fad}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a32c10768812564fc807b9f92813b5fad}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_GetLclIpCnt@{Mtc\_GetLclIpCnt}}
+\index{Mtc\_GetLclIpCnt@{Mtc\_GetLclIpCnt}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GetLclIpCnt()}{Mtc\_GetLclIpCnt()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Get\+Lcl\+Ip\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get local ip count. 
+
+\begin{DoxyReturn}{Returns}
+Local ip count successfully, otherwise retrun 0.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_abd0d26e0aac3c26321c28570ccccb452}{Mtc\+Util.\+Mtc\+\_\+\+Get\+Lcl\+Ip}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aba5689fab5d1719b652b640d56b23a43}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aba5689fab5d1719b652b640d56b23a43}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_SysTime2Time@{Mtc\_SysTime2Time}}
+\index{Mtc\_SysTime2Time@{Mtc\_SysTime2Time}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_SysTime2Time()}{Mtc\_SysTime2Time()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Sys\+Time2\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}}}]{pst\+Time,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_number}{Mtc\+Number}}}]{pz\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert time value from \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} structure to Z\+T\+I\+M\+E\+\_\+T. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pst\+Time} & Time value in \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} structure. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pz\+Time} & Time value in Z\+T\+I\+M\+E\+\_\+T structure.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Convert successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Convert failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a51a9f5e212d5fe1250f7195008c771a5}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a51a9f5e212d5fe1250f7195008c771a5}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TestHttpDecode@{Mtc\_TestHttpDecode}}
+\index{Mtc\_TestHttpDecode@{Mtc\_TestHttpDecode}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TestHttpDecode()}{Mtc\_TestHttpDecode()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Test\+Http\+Decode (\begin{DoxyParamCaption}\item[{String}]{pc\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Test http decode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Data} & H\+T\+TP data string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Test successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Test failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a835f9eeda7f0a599b5724ceeff52286b}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a835f9eeda7f0a599b5724ceeff52286b}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TestSipDecode@{Mtc\_TestSipDecode}}
+\index{Mtc\_TestSipDecode@{Mtc\_TestSipDecode}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TestSipDecode()}{Mtc\_TestSipDecode()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Test\+Sip\+Decode (\begin{DoxyParamCaption}\item[{String}]{pc\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Test sip decode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Data} & S\+IP data string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Test successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Test failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_afe09a5a37bf8fa8da2d10aa84be33bec}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_afe09a5a37bf8fa8da2d10aa84be33bec}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_Time2SysTime@{Mtc\_Time2SysTime}}
+\index{Mtc\_Time2SysTime@{Mtc\_Time2SysTime}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_Time2SysTime()}{Mtc\_Time2SysTime()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Time2\+Sys\+Time (\begin{DoxyParamCaption}\item[{int}]{z\+Time,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}}}]{pst\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert time value from Z\+T\+I\+M\+E\+\_\+T to \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} structure. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Time} & Time value. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pst\+Time} & Time value in \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_t___m_t_c___s_y_s___t_i_m_e}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} structure.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Convert successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Convert failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa69b9932520a8c6c79c1b82107c3d1b9}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa69b9932520a8c6c79c1b82107c3d1b9}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TimerCreate@{Mtc\_TimerCreate}}
+\index{Mtc\_TimerCreate@{Mtc\_TimerCreate}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TimerCreate()}{Mtc\_TimerCreate()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Timer\+Create (\begin{DoxyParamCaption}\item[{int}]{i\+Timer\+Type,  }\item[{boolean}]{b\+Cycle,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__f__unsigned__int__size__t____void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+f\+\_\+unsigned\+\_\+int\+\_\+size\+\_\+t\+\_\+\+\_\+void}}}]{pfn\+Active,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_number}{Mtc\+Number}}}]{pz\+Timer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new timer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Timer\+Type} & User defined timer type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Cycle} & Timer mode, cycle or once a time. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pfn\+Active} & Timer active callback. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pz\+Timer\+Id} & Timer ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Timer create successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Timer create failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06cbba2f360bdd6244a4834dbcfa87f6}{Mtc\+Util.\+Mtc\+\_\+\+Timer\+Delete}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06cbba2f360bdd6244a4834dbcfa87f6}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a06cbba2f360bdd6244a4834dbcfa87f6}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TimerDelete@{Mtc\_TimerDelete}}
+\index{Mtc\_TimerDelete@{Mtc\_TimerDelete}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TimerDelete()}{Mtc\_TimerDelete()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Timer\+Delete (\begin{DoxyParamCaption}\item[{int}]{z\+Timer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delete a timer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Timer\+Id} & Timer ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Timer delete successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Timer delete failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa69b9932520a8c6c79c1b82107c3d1b9}{Mtc\+Util.\+Mtc\+\_\+\+Timer\+Create}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a20146cd1ed294c4db80e182c1b01bc94}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a20146cd1ed294c4db80e182c1b01bc94}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TimerIsRun@{Mtc\_TimerIsRun}}
+\index{Mtc\_TimerIsRun@{Mtc\_TimerIsRun}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TimerIsRun()}{Mtc\_TimerIsRun()}}
+{\footnotesize\ttfamily static boolean com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Timer\+Is\+Run (\begin{DoxyParamCaption}\item[{int}]{z\+Timer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a timer is running. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Timer\+Id} & Timer ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & Timer has been started and still in counting. \\
+\hline
+{\em false} & Otherwise.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a77eac30c0e38e436b62d2e866bc29941}{Mtc\+Util.\+Mtc\+\_\+\+Timer\+Start}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a46426c4306ffb5aea65fe908014d12d6}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a46426c4306ffb5aea65fe908014d12d6}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TimerSchedule@{Mtc\_TimerSchedule}}
+\index{Mtc\_TimerSchedule@{Mtc\_TimerSchedule}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TimerSchedule()}{Mtc\_TimerSchedule()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Timer\+Schedule (\begin{DoxyParamCaption}\item[{int}]{i\+Timer\+Type,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__f__size__t____void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+f\+\_\+size\+\_\+t\+\_\+\+\_\+void}}}]{pfn\+Schedule,  }\item[{int}]{i\+Time\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Schedule a new timer after some seconds. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Timer\+Type} & User defined timer type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pfn\+Schedule} & User defined schedule callback. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Time\+Len} & Time interval in milliseconds.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Timer start successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Timer start failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Timer must not in running state.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa69b9932520a8c6c79c1b82107c3d1b9}{Mtc\+Util.\+Mtc\+\_\+\+Timer\+Create}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a77eac30c0e38e436b62d2e866bc29941}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a77eac30c0e38e436b62d2e866bc29941}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TimerStart@{Mtc\_TimerStart}}
+\index{Mtc\_TimerStart@{Mtc\_TimerStart}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TimerStart()}{Mtc\_TimerStart()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Timer\+Start (\begin{DoxyParamCaption}\item[{int}]{z\+Timer\+Id,  }\item[{int}]{i\+Time\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Start a timer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Timer\+Id} & Timer ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Time\+Len} & Time interval in milliseconds.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Timer start successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Timer start failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+Timer must not in running state.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a54fe2d3c13282478358863493fa0a8ce}{Mtc\+Util.\+Mtc\+\_\+\+Timer\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a54fe2d3c13282478358863493fa0a8ce}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a54fe2d3c13282478358863493fa0a8ce}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_TimerStop@{Mtc\_TimerStop}}
+\index{Mtc\_TimerStop@{Mtc\_TimerStop}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_TimerStop()}{Mtc\_TimerStop()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Timer\+Stop (\begin{DoxyParamCaption}\item[{int}]{z\+Timer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop a timer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Timer\+Id} & Timer ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Timer stop successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Timer stop failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a77eac30c0e38e436b62d2e866bc29941}{Mtc\+Util.\+Mtc\+\_\+\+Timer\+Start}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a298aa87fbe39e1e24f943209f16bf8f7}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a298aa87fbe39e1e24f943209f16bf8f7}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_UtilLeave@{Mtc\_UtilLeave}}
+\index{Mtc\_UtilLeave@{Mtc\_UtilLeave}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UtilLeave()}{Mtc\_UtilLeave()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Util\+Leave (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}}}]{p\+Serv,  }\item[{long}]{z\+Evnt\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Serv} & service event \\
+\hline
+\mbox{\texttt{ in}}  & {\em event} & id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Run successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Run failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ab26b137abeefa05ffdff14c0be996581}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ab26b137abeefa05ffdff14c0be996581}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_ZjsonObjectGet@{Mtc\_ZjsonObjectGet}}
+\index{Mtc\_ZjsonObjectGet@{Mtc\_ZjsonObjectGet}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ZjsonObjectGet()}{Mtc\_ZjsonObjectGet()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Zjson\+Object\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}}}]{z\+Object,  }\item[{String}]{pc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+json prase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em json} & object. \\
+\hline
+\mbox{\texttt{ in}}  & {\em need} & find name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em prase} & json. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a5825b49a7d90ab43e26c7c9b561ea60f}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_a5825b49a7d90ab43e26c7c9b561ea60f}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_ZjsonObjectGetNumber@{Mtc\_ZjsonObjectGetNumber}}
+\index{Mtc\_ZjsonObjectGetNumber@{Mtc\_ZjsonObjectGetNumber}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ZjsonObjectGetNumber()}{Mtc\_ZjsonObjectGetNumber()}}
+{\footnotesize\ttfamily static long com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Zjson\+Object\+Get\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}}}]{z\+Object,  }\item[{String}]{pc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+json prase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em json} & object. \\
+\hline
+\mbox{\texttt{ in}}  & {\em need} & find name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em number.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ac7bd41fa0401f8944d06981bd2c2e990}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_ac7bd41fa0401f8944d06981bd2c2e990}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_ZjsonObjectGetString@{Mtc\_ZjsonObjectGetString}}
+\index{Mtc\_ZjsonObjectGetString@{Mtc\_ZjsonObjectGetString}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ZjsonObjectGetString()}{Mtc\_ZjsonObjectGetString()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Zjson\+Object\+Get\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}}}]{z\+Object,  }\item[{String}]{pc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+json prase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em json} & object. \\
+\hline
+\mbox{\texttt{ in}}  & {\em need} & find name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em string.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa6a387507c5c64b527c5d5089dccdd06}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_util_aa6a387507c5c64b527c5d5089dccdd06}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}!Mtc\_ZjsonParse@{Mtc\_ZjsonParse}}
+\index{Mtc\_ZjsonParse@{Mtc\_ZjsonParse}!com.juphoon.cmcc.app.lemon.MtcUtil@{com.juphoon.cmcc.app.lemon.MtcUtil}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ZjsonParse()}{Mtc\_ZjsonParse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}} com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Util.\+Mtc\+\_\+\+Zjson\+Parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_s_w_i_g_t_y_p_e__p__void}{S\+W\+I\+G\+T\+Y\+P\+E\+\_\+p\+\_\+void}}}]{z\+Mem\+Buf,  }\item[{String}]{pc\+Text,  }\item[{int}]{i\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+json prase 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em zmbuf.} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em need} & prase string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em need} & prase string length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em prase} & json. \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/\mbox{\hyperlink{_mtc_util_8java}{Mtc\+Util.\+java}}\end{DoxyCompactItemize}

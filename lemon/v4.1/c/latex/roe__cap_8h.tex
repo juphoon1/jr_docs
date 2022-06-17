@@ -1,0 +1,194 @@
+\hypertarget{roe__cap_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/roe/roe\+\_\+cap.h File Reference}
+\label{roe__cap_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/roe/roe\_cap.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/roe/roe\_cap.h}}
+
+
+R\+IE capability Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{roe__cap_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{roe__cap_8h_a932584b4cdaf67d2cad5ba13406f7b5f}{Roe\+\_\+\+Cap\+Qry\+Opt}} (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+OE query the capability to one participant immediately. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{roe__cap_8h_ab90c177a307ba7c2b7e54bd0bfbad2ac}{Roe\+\_\+\+Cap\+Qry\+One\+Imd}} (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+B\+O\+OL b\+Once)
+\begin{DoxyCompactList}\small\item\em R\+OE query the capability to one participant immediately. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{roe__cap_8h_a25e0f540cafae808bfa7364d5c2baa0f}{Roe\+\_\+\+Cap\+Qry\+One}} (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+B\+O\+OL b\+Once)
+\begin{DoxyCompactList}\small\item\em R\+OE query the capability to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{roe__cap_8h_ad282e70f5225d4a01a0fd1625e5178d6}{Roe\+\_\+\+Cap\+Qry\+Lst}} (Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+B\+O\+OL b\+Once)
+\begin{DoxyCompactList}\small\item\em R\+OE query the capability to participant list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{roe__cap_8h_a8eae3ae57eb55dc36d0614182eee337c}{Roe\+\_\+\+Cap\+Qry\+Pause}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em R\+OE Pause capability query. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{roe__cap_8h_ac3074d92d8b6a2b297a6578c397c5956}{Roe\+\_\+\+Cap\+Qry\+Resume}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em R\+OE Resume capability query. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{roe__cap_8h_a1a70599c34625066442f166ea3d0b25e}{Roe\+\_\+\+Cap\+Get\+Cap\+Type}} (Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+OE get participant capability type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE capability Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{roe__cap_8h_a1a70599c34625066442f166ea3d0b25e}\label{roe__cap_8h_a1a70599c34625066442f166ea3d0b25e}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapGetCapType@{Roe\_CapGetCapType}}
+\index{Roe\_CapGetCapType@{Roe\_CapGetCapType}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapGetCapType()}{Roe\_CapGetCapType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Roe\+\_\+\+Cap\+Get\+Cap\+Type (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+OE get participant capability type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Capability type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{roe__cap_8h_ad282e70f5225d4a01a0fd1625e5178d6}\label{roe__cap_8h_ad282e70f5225d4a01a0fd1625e5178d6}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapQryLst@{Roe\_CapQryLst}}
+\index{Roe\_CapQryLst@{Roe\_CapQryLst}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapQryLst()}{Roe\_CapQryLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Roe\+\_\+\+Cap\+Qry\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+B\+O\+OL}]{b\+Once }\end{DoxyParamCaption})}
+
+
+
+R\+OE query the capability to participant list. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Once} & query once flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability query will be running. It will trigger the callback\+:Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok, Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & capability query failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{roe__cap_8h_a25e0f540cafae808bfa7364d5c2baa0f}\label{roe__cap_8h_a25e0f540cafae808bfa7364d5c2baa0f}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapQryOne@{Roe\_CapQryOne}}
+\index{Roe\_CapQryOne@{Roe\_CapQryOne}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapQryOne()}{Roe\_CapQryOne()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Roe\+\_\+\+Cap\+Qry\+One (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+B\+O\+OL}]{b\+Once }\end{DoxyParamCaption})}
+
+
+
+R\+OE query the capability to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Once} & query once flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability query will be running. It will trigger the callback\+:Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok, Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & capability query failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{roe__cap_8h_ab90c177a307ba7c2b7e54bd0bfbad2ac}\label{roe__cap_8h_ab90c177a307ba7c2b7e54bd0bfbad2ac}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapQryOneImd@{Roe\_CapQryOneImd}}
+\index{Roe\_CapQryOneImd@{Roe\_CapQryOneImd}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapQryOneImd()}{Roe\_CapQryOneImd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Roe\+\_\+\+Cap\+Qry\+One\+Imd (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+B\+O\+OL}]{b\+Once }\end{DoxyParamCaption})}
+
+
+
+R\+OE query the capability to one participant immediately. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Once} & query once flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & capability query will be running. It will trigger the callback\+:Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok, Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & capability query failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{roe__cap_8h_a932584b4cdaf67d2cad5ba13406f7b5f}\label{roe__cap_8h_a932584b4cdaf67d2cad5ba13406f7b5f}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapQryOpt@{Roe\_CapQryOpt}}
+\index{Roe\_CapQryOpt@{Roe\_CapQryOpt}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapQryOpt()}{Roe\_CapQryOpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Roe\+\_\+\+Cap\+Qry\+Opt (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+OE query the capability to one participant immediately. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & query capability option ok \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & query capability option failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{roe__cap_8h_a8eae3ae57eb55dc36d0614182eee337c}\label{roe__cap_8h_a8eae3ae57eb55dc36d0614182eee337c}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapQryPause@{Roe\_CapQryPause}}
+\index{Roe\_CapQryPause@{Roe\_CapQryPause}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapQryPause()}{Roe\_CapQryPause()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Roe\+\_\+\+Cap\+Qry\+Pause (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+R\+OE Pause capability query. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Pause successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Pause failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{roe__cap_8h_ac3074d92d8b6a2b297a6578c397c5956}\label{roe__cap_8h_ac3074d92d8b6a2b297a6578c397c5956}} 
+\index{roe\_cap.h@{roe\_cap.h}!Roe\_CapQryResume@{Roe\_CapQryResume}}
+\index{Roe\_CapQryResume@{Roe\_CapQryResume}!roe\_cap.h@{roe\_cap.h}}
+\doxysubsubsection{\texorpdfstring{Roe\_CapQryResume()}{Roe\_CapQryResume()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Roe\+\_\+\+Cap\+Qry\+Resume (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+R\+OE Resume capability query. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Resume successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Resume failed. \\
+\hline
+\end{DoxyRetVals}

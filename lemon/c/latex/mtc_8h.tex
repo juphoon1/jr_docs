@@ -1,0 +1,131 @@
+\hypertarget{mtc_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc.h File Reference}
+\label{mtc_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc.h}}
+
+
+Multimedia Talk Client.  
+
+
+{\ttfamily \#include \char`\"{}zos\+\_\+type.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+limit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cli.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cli\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cli\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cli\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cap\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cap\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+prof.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+prof\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+prof\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+prov\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+prov\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+gba.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+gba\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+mwi.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+mwi\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+lcs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+acv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+acv\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+partp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+uri.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+ver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+lcs\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+ntp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+ntp\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+mod\+\_\+com.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cp\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+cp\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+mod\+\_\+cp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+call.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+call\+\_\+rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+call\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+call\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+call\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+ring.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+conf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+conf\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+conf\+\_\+db.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+conf\+\_\+cmcc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+conf\+\_\+cmcc\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+media.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+media\+\_\+cb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mtc\+\_\+mod\+\_\+voip.\+h\char`\"{}}\newline
+Include dependency graph for mtc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc_8h__dep__incl}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Detailed Description}
+Multimedia Talk Client. 
+
+To include the definitions of M\+TC, use the following directive\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "\mbox{\hyperlink{mtc_8h}{mtc.h}}"}}
+\end{DoxyCode}
+
+
+Detail description of files in module\+:
+\begin{DoxyEnumerate}
+\item \mbox{\hyperlink{mtc__cli_8h}{M\+TC Client Interfaces }}
+\item \mbox{\hyperlink{mtc__cli__cfg_8h}{M\+TC Client Config Interfaces }}
+\item \mbox{\hyperlink{mtc__cli__cb_8h}{M\+TC Client Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__cli__db_8h}{M\+TC Client Database Interfaces }}
+\item \mbox{\hyperlink{mtc__call_8h}{M\+TC Call Interfaces }}
+\item \mbox{\hyperlink{mtc__call__cfg_8h}{M\+TC Call Config Interfaces }}
+\item \mbox{\hyperlink{mtc__call__cb_8h}{M\+TC Call Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__call__db_8h}{M\+TC Call Database Interfaces }}
+\item \mbox{\hyperlink{mtc__conf_8h}{M\+TC Conference Session Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__cb_8h}{M\+TC Conference Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__db_8h}{M\+TC Conference Database Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__cmcc_8h}{M\+TC Conference Session Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__cmcc__cb_8h_source}{M\+TC Conference Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__partp_8h}{M\+TC Participant Interfaces }}
+\item \mbox{\hyperlink{mtc__im_8h}{M\+TC IM Page Message Interfaces }}
+\item \mbox{\hyperlink{mtc__im__cb_8h}{M\+TC IM Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__im__db_8h}{M\+TC IM Database Interfaces }}
+\item \mbox{\hyperlink{mtc__im__large_8h}{M\+TC IM Large Message Interfaces }}
+\item \mbox{\hyperlink{mtc__im__sess_8h}{M\+TC IM Session Interfaces }}
+\item \mbox{\hyperlink{mtc__im__stfwd_8h}{M\+TC IM Store And Forward Interfaces }}
+\item \mbox{\hyperlink{mtc__im__file_8h}{M\+TC IM File Transfer Interfaces }}
+\item \mbox{\hyperlink{mtc__im__fthttp_8h}{M\+TC IM File Transfer Via Http Interfaces }}
+\item \mbox{\hyperlink{mtc__mwi_8h}{M\+TC M\+WI Interfaces }}
+\item \mbox{\hyperlink{mtc__mwi__cb_8h}{M\+TC M\+WI Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__prof_8h}{M\+TC Profile Interfaces }}
+\item \mbox{\hyperlink{mtc__prof__cfg_8h}{M\+TC Profile Config Interfaces }}
+\item \mbox{\hyperlink{mtc__prof__db_8h}{M\+TC Profile Database Interfaces }}
+\item \mbox{\hyperlink{mtc__prov__cfg_8h}{M\+TC Provision Config Interfaces }}
+\item \mbox{\hyperlink{mtc__prov__db_8h}{M\+TC Provision Database Interfaces }}
+\item \mbox{\hyperlink{mtc__media_8h}{M\+TC Media Interfaces }}
+\item \mbox{\hyperlink{mtc__media__cb_8h}{M\+TC Media Callback Interface }}
+\item \mbox{\hyperlink{mtc__cap_8h}{M\+TC Capability Interface }}
+\item \mbox{\hyperlink{mtc__cap__cb_8h}{M\+TC Capability Callback Interface }}
+\item \mbox{\hyperlink{mtc__cap__db_8h}{M\+TC Capability Database Interface }}
+\item \mbox{\hyperlink{mtc__cp_8h}{M\+TC Client Provisioning Interface }}
+\item \mbox{\hyperlink{mtc__cp__cb_8h}{M\+TC Client Provisioning Callback Interface }}
+\item \mbox{\hyperlink{mtc__cp__db_8h}{M\+TC Client Provisioning Database Interface }}
+\item \mbox{\hyperlink{mtc__gs__ginfo_8h}{M\+TC Geolocation Share Interface }}
+\item \mbox{\hyperlink{mtc__gs__cb_8h}{M\+TC Geolocation Share Callback Interface }}
+\item \mbox{\hyperlink{mtc__gs__db_8h}{M\+TC Geolocation Share Database Interface }}
+\item \mbox{\hyperlink{mtc__ring_8h}{M\+TC Ring Interfaces }}
+\item \mbox{\hyperlink{mtc__uri_8h}{M\+TC U\+RI Interfaces }}
+\item \mbox{\hyperlink{mtc__lcs_8h}{M\+TC License Interfaces }}
+\item \mbox{\hyperlink{mtc__util_8h}{M\+TC Utility Interfaces }}
+\item \mbox{\hyperlink{mtc__ver_8h}{M\+TC Version Interfaces }}
+\item \mbox{\hyperlink{mtc__doodle_8h}{M\+TC doodle interfaces }}
+\item \mbox{\hyperlink{mtc__d2_8h}{M\+TC doodle interfaces version 2 }} 
+\end{DoxyEnumerate}

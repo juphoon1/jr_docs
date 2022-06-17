@@ -1,0 +1,607 @@
+\hypertarget{rie__stfwd_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rie/rie\+\_\+stfwd.h File Reference}
+\label{rie__stfwd_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_stfwd.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_stfwd.h}}
+
+
+R\+IE Store and Forward Session Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{rie__stfwd_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a8fb8a85e1547ab74c6cf67c7d97e63e9}{Rie\+\_\+\+St\+Fwd\+Accept}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Accept a store and forward session invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_ab69f87f48e63b9354f17c20e9f77e720}{Rie\+\_\+\+St\+Fwd\+Reject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Reject a store and forward session invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__stfwd_8h_a85000f9df3251e978b2c2e25ecdef944}{Rie\+\_\+\+St\+Fwd\+Get\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user subject from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a01afb8a64ed7c193de1fd2e46f7fdbea}{Rie\+\_\+\+St\+Fwd\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant type from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_abcfa5170b5d988255cd17934cc5e0d4c}{Rie\+\_\+\+St\+Fwd\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a614c35a5cf3daa192792736eaa1670fa}{Rie\+\_\+\+St\+Fwd\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant list id from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a2edd6147d7857e046d85e4b02d409099}{Rie\+\_\+\+St\+Fwd\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get original paticipant uri from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a53b0ba2e812e94e38f4dce787b69afd9}{Rie\+\_\+\+St\+Fwd\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get original identity of participant U\+RI from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a55a910f5e342c7f21fbe02c4145783c9}{Rie\+\_\+\+St\+Fwd\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em R\+IE Get date time from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__stfwd_8h_af74da798a37af4ba8ff694ee434c05a5}{Rie\+\_\+\+St\+Fwd\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get contribution-\/id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__stfwd_8h_ac01fc23cc60dd26d2a8d84763f43851e}{Rie\+\_\+\+St\+Fwd\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get conversation-\/id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a977d41d355a216ba9876af0388f97045}{Rie\+\_\+\+St\+Fwd\+Msg\+Release}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Release a message from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a8d3481a9503866615a3301b70d620f22}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message imdn id from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__stfwd_8h_a5073fcc9927c09a7efc33f1d4ca0fe26}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get the device id from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a82cd363fde50db543502a7374e0c59c1}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message content type from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a78a6b529bab3131cd991874e23fc8ed9}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Content\+Len}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message content length from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_ae6ce412651ecd5f220963572b32fcf28}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE Get the message content from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_aa3022fafea743525686f6a3088c0610b}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_ab6d7ab62adbe41f9d1b59cb7925bae74}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message date time from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a9d78c876f360df48a561092c217c4178}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+G\+Info\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get geolocation information id of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a993c4bfb1e05c252dd16aa611ca3f76c}{Rie\+\_\+\+St\+Fwd\+Get\+Sess\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get session type from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__stfwd_8h_a639aebf77e2bb6734c69f69316b538af}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Bot\+Sug}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get botsug flag from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__stfwd_8h_a674e120b65f7698a9b4447141d4d1b0d}{Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Bot\+Msg\+Content\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get content from messaging session. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rie__stfwd_8h_ad13300327ac83d49209571d23c137bbf}\label{rie__stfwd_8h_ad13300327ac83d49209571d23c137bbf}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Muti\+Content} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE Store and Forward Session Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rie__stfwd_8h_a8fb8a85e1547ab74c6cf67c7d97e63e9}\label{rie__stfwd_8h_a8fb8a85e1547ab74c6cf67c7d97e63e9}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdAccept@{Rie\_StFwdAccept}}
+\index{Rie\_StFwdAccept@{Rie\_StFwdAccept}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdAccept()}{Rie\_StFwdAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Accept a store and forward session invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept store and forward session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept store and forward session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_af74da798a37af4ba8ff694ee434c05a5}\label{rie__stfwd_8h_af74da798a37af4ba8ff694ee434c05a5}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetContId@{Rie\_StFwdGetContId}}
+\index{Rie\_StFwdGetContId@{Rie\_StFwdGetContId}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetContId()}{Rie\_StFwdGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+St\+Fwd\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get contribution-\/id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__stfwd_8h_ac01fc23cc60dd26d2a8d84763f43851e}\label{rie__stfwd_8h_ac01fc23cc60dd26d2a8d84763f43851e}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetConvId@{Rie\_StFwdGetConvId}}
+\index{Rie\_StFwdGetConvId@{Rie\_StFwdGetConvId}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetConvId()}{Rie\_StFwdGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+St\+Fwd\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get conversation-\/id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__stfwd_8h_a55a910f5e342c7f21fbe02c4145783c9}\label{rie__stfwd_8h_a55a910f5e342c7f21fbe02c4145783c9}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetDateTime@{Rie\_StFwdGetDateTime}}
+\index{Rie\_StFwdGetDateTime@{Rie\_StFwdGetDateTime}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetDateTime()}{Rie\_StFwdGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get date time from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a53b0ba2e812e94e38f4dce787b69afd9}\label{rie__stfwd_8h_a53b0ba2e812e94e38f4dce787b69afd9}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetOrigIdPartp@{Rie\_StFwdGetOrigIdPartp}}
+\index{Rie\_StFwdGetOrigIdPartp@{Rie\_StFwdGetOrigIdPartp}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetOrigIdPartp()}{Rie\_StFwdGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Get original identity of participant U\+RI from store and forward session. 
+
+The participant is the session initiator who initialized this store and forward session. It will return identity uri if session invitation has P-\/\+Asserted-\/\+Identity information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a2edd6147d7857e046d85e4b02d409099}\label{rie__stfwd_8h_a2edd6147d7857e046d85e4b02d409099}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetOrigPartp@{Rie\_StFwdGetOrigPartp}}
+\index{Rie\_StFwdGetOrigPartp@{Rie\_StFwdGetOrigPartp}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetOrigPartp()}{Rie\_StFwdGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get original paticipant uri from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_abcfa5170b5d988255cd17934cc5e0d4c}\label{rie__stfwd_8h_abcfa5170b5d988255cd17934cc5e0d4c}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetPartp@{Rie\_StFwdGetPartp}}
+\index{Rie\_StFwdGetPartp@{Rie\_StFwdGetPartp}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetPartp()}{Rie\_StFwdGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a614c35a5cf3daa192792736eaa1670fa}\label{rie__stfwd_8h_a614c35a5cf3daa192792736eaa1670fa}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetPartpLstId@{Rie\_StFwdGetPartpLstId}}
+\index{Rie\_StFwdGetPartpLstId@{Rie\_StFwdGetPartpLstId}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetPartpLstId()}{Rie\_StFwdGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant list id from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant list id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a01afb8a64ed7c193de1fd2e46f7fdbea}\label{rie__stfwd_8h_a01afb8a64ed7c193de1fd2e46f7fdbea}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetPartpType@{Rie\_StFwdGetPartpType}}
+\index{Rie\_StFwdGetPartpType@{Rie\_StFwdGetPartpType}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetPartpType()}{Rie\_StFwdGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant type from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im store and forward session, E\+N\+\_\+\+R\+I\+E\+\_\+\+P\+A\+R\+T\+P\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a993c4bfb1e05c252dd16aa611ca3f76c}\label{rie__stfwd_8h_a993c4bfb1e05c252dd16aa611ca3f76c}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetSessType@{Rie\_StFwdGetSessType}}
+\index{Rie\_StFwdGetSessType@{Rie\_StFwdGetSessType}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetSessType()}{Rie\_StFwdGetSessType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Get\+Sess\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get session type from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em session} & type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a85000f9df3251e978b2c2e25ecdef944}\label{rie__stfwd_8h_a85000f9df3251e978b2c2e25ecdef944}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdGetSubject@{Rie\_StFwdGetSubject}}
+\index{Rie\_StFwdGetSubject@{Rie\_StFwdGetSubject}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdGetSubject()}{Rie\_StFwdGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+St\+Fwd\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user subject from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & subject. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a674e120b65f7698a9b4447141d4d1b0d}\label{rie__stfwd_8h_a674e120b65f7698a9b4447141d4d1b0d}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetBotMsgContentType@{Rie\_StFwdMsgGetBotMsgContentType}}
+\index{Rie\_StFwdMsgGetBotMsgContentType@{Rie\_StFwdMsgGetBotMsgContentType}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetBotMsgContentType()}{Rie\_StFwdMsgGetBotMsgContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Bot\+Msg\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get content from messaging session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em E\+N\+\_\+\+M\+M\+F\+\_\+\+M\+S\+E\+S\+S\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+P\+E.} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a639aebf77e2bb6734c69f69316b538af}\label{rie__stfwd_8h_a639aebf77e2bb6734c69f69316b538af}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetBotSug@{Rie\_StFwdMsgGetBotSug}}
+\index{Rie\_StFwdMsgGetBotSug@{Rie\_StFwdMsgGetBotSug}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetBotSug()}{Rie\_StFwdMsgGetBotSug()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Bot\+Sug (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get botsug flag from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & have botsuggestion. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & ont have botsuggestion. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_ae6ce412651ecd5f220963572b32fcf28}\label{rie__stfwd_8h_ae6ce412651ecd5f220963572b32fcf28}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetContent@{Rie\_StFwdMsgGetContent}}
+\index{Rie\_StFwdMsgGetContent@{Rie\_StFwdMsgGetContent}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetContent()}{Rie\_StFwdMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get the message content from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Cont\+Len} & The message size. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get message content successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get message content failed. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a78a6b529bab3131cd991874e23fc8ed9}\label{rie__stfwd_8h_a78a6b529bab3131cd991874e23fc8ed9}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetContentLen@{Rie\_StFwdMsgGetContentLen}}
+\index{Rie\_StFwdMsgGetContentLen@{Rie\_StFwdMsgGetContentLen}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetContentLen()}{Rie\_StFwdMsgGetContentLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Content\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message content length from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & message content length. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a82cd363fde50db543502a7374e0c59c1}\label{rie__stfwd_8h_a82cd363fde50db543502a7374e0c59c1}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetContentType@{Rie\_StFwdMsgGetContentType}}
+\index{Rie\_StFwdMsgGetContentType@{Rie\_StFwdMsgGetContentType}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetContentType()}{Rie\_StFwdMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message content type from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im message. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_ab6d7ab62adbe41f9d1b59cb7925bae74}\label{rie__stfwd_8h_ab6d7ab62adbe41f9d1b59cb7925bae74}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetDateTime@{Rie\_StFwdMsgGetDateTime}}
+\index{Rie\_StFwdMsgGetDateTime@{Rie\_StFwdMsgGetDateTime}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetDateTime()}{Rie\_StFwdMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message date time from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a5073fcc9927c09a7efc33f1d4ca0fe26}\label{rie__stfwd_8h_a5073fcc9927c09a7efc33f1d4ca0fe26}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetDeviceId@{Rie\_StFwdMsgGetDeviceId}}
+\index{Rie\_StFwdMsgGetDeviceId@{Rie\_StFwdMsgGetDeviceId}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetDeviceId()}{Rie\_StFwdMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get the device id from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. Message should be freed by Zos\+\_\+\+Sys\+Str\+Free.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em device} & id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a9d78c876f360df48a561092c217c4178}\label{rie__stfwd_8h_a9d78c876f360df48a561092c217c4178}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetGInfoId@{Rie\_StFwdMsgGetGInfoId}}
+\index{Rie\_StFwdMsgGetGInfoId@{Rie\_StFwdMsgGetGInfoId}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetGInfoId()}{Rie\_StFwdMsgGetGInfoId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+G\+Info\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get geolocation information id of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The geolocation information id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__stfwd_8h_a8d3481a9503866615a3301b70d620f22}\label{rie__stfwd_8h_a8d3481a9503866615a3301b70d620f22}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetImdnId@{Rie\_StFwdMsgGetImdnId}}
+\index{Rie\_StFwdMsgGetImdnId@{Rie\_StFwdMsgGetImdnId}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetImdnId()}{Rie\_StFwdMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message imdn id from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Id} & of imdn. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_aa3022fafea743525686f6a3088c0610b}\label{rie__stfwd_8h_aa3022fafea743525686f6a3088c0610b}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgGetPartp@{Rie\_StFwdMsgGetPartp}}
+\index{Rie\_StFwdMsgGetPartp@{Rie\_StFwdMsgGetPartp}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgGetPartp()}{Rie\_StFwdMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_a977d41d355a216ba9876af0388f97045}\label{rie__stfwd_8h_a977d41d355a216ba9876af0388f97045}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdMsgRelease@{Rie\_StFwdMsgRelease}}
+\index{Rie\_StFwdMsgRelease@{Rie\_StFwdMsgRelease}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdMsgRelease()}{Rie\_StFwdMsgRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Msg\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Release a message from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release session message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release session message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__stfwd_8h_ab69f87f48e63b9354f17c20e9f77e720}\label{rie__stfwd_8h_ab69f87f48e63b9354f17c20e9f77e720}} 
+\index{rie\_stfwd.h@{rie\_stfwd.h}!Rie\_StFwdReject@{Rie\_StFwdReject}}
+\index{Rie\_StFwdReject@{Rie\_StFwdReject}!rie\_stfwd.h@{rie\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_StFwdReject()}{Rie\_StFwdReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+St\+Fwd\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Reject a store and forward session invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject store and forward session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject store and forward session failed. \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,2629 @@
+\hypertarget{mtc__pa_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+pa.h File Reference}
+\label{mtc__pa_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_pa.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_pa.h}}
+
+
+M\+TC C\+M\+CC Public Account Interface Functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__pa_8h_a0b22b8762f7a643f6d52dbc686ddd5fb}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC public account status code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_ac38db895a304164c11afb60ef5cc03dd}\label{mtc__pa_8h_ac38db895a304164c11afb60ef5cc03dd}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_ac38db895a304164c11afb60ef5cc03dd}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 1)
+\begin{DoxyCompactList}\small\item\em authentication failed, invalid user or password \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a93dc3a7aa71b43cd95db33a515c84a33}\label{mtc__pa_8h_a93dc3a7aa71b43cd95db33a515c84a33}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_a93dc3a7aa71b43cd95db33a515c84a33}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 2)
+\begin{DoxyCompactList}\small\item\em transport connect failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_af322ad147b4c915380fb407cddfc2a27}\label{mtc__pa_8h_af322ad147b4c915380fb407cddfc2a27}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_af322ad147b4c915380fb407cddfc2a27}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 3)
+\begin{DoxyCompactList}\small\item\em transport send failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a9948b1b96a95ac577cc10dac784c334f}\label{mtc__pa_8h_a9948b1b96a95ac577cc10dac784c334f}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_a9948b1b96a95ac577cc10dac784c334f}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+R\+E\+C\+V\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 4)
+\begin{DoxyCompactList}\small\item\em transport received failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_ad5d375f9e3a4431e4b8c592ef5aa2173}\label{mtc__pa_8h_ad5d375f9e3a4431e4b8c592ef5aa2173}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_ad5d375f9e3a4431e4b8c592ef5aa2173}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+S\+E\+R\+V\+\_\+\+D\+I\+S\+C\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 5)
+\begin{DoxyCompactList}\small\item\em transport disconnected by server \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a7223d7abf4a3da52186422940a131b04}\label{mtc__pa_8h_a7223d7abf4a3da52186422940a131b04}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_a7223d7abf4a3da52186422940a131b04}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+S\+E\+R\+V\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 6)
+\begin{DoxyCompactList}\small\item\em server internal error \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a9b2b3a2ea297418628ac72f1ed839a9c}\label{mtc__pa_8h_a9b2b3a2ea297418628ac72f1ed839a9c}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_a9b2b3a2ea297418628ac72f1ed839a9c}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+R\+E\+Q\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 7)
+\begin{DoxyCompactList}\small\item\em request timeout \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_ac91f4674f500bb508a2fb187d3d9bedb}\label{mtc__pa_8h_ac91f4674f500bb508a2fb187d3d9bedb}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_ac91f4674f500bb508a2fb187d3d9bedb}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+X\+M\+L\+\_\+\+M\+SG}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 8)
+\begin{DoxyCompactList}\small\item\em bad xml message \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_ad47ce1c50c3d0dde8158e36b45a0d61f}\label{mtc__pa_8h_ad47ce1c50c3d0dde8158e36b45a0d61f}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_ad47ce1c50c3d0dde8158e36b45a0d61f}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 9)
+\begin{DoxyCompactList}\small\item\em forbidden \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a09c90f7e04a2994533c61d18cb501c5f}\label{mtc__pa_8h_a09c90f7e04a2994533c61d18cb501c5f}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_a09c90f7e04a2994533c61d18cb501c5f}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+R\+E\+S\+U\+LT}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 10)
+\begin{DoxyCompactList}\small\item\em server result \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a6595083de837defd94181a8fef40ab0f}\label{mtc__pa_8h_a6595083de837defd94181a8fef40ab0f}} 
+\#define \mbox{\hyperlink{mtc__pa_8h_a6595083de837defd94181a8fef40ab0f}{M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 11)
+\begin{DoxyCompactList}\small\item\em other \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__pa_8h_a686928373c4fdcdb4afb19f596ac196d}\label{mtc__pa_8h_a686928373c4fdcdb4afb19f596ac196d}} 
+typedef enum \mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__pa_8h_a686928373c4fdcdb4afb19f596ac196d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC public account media type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a6c0aec46ed1579b4da1bcf2e5169cdf1}\label{mtc__pa_8h_a6c0aec46ed1579b4da1bcf2e5169cdf1}} 
+typedef enum \mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__pa_8h_a6c0aec46ed1579b4da1bcf2e5169cdf1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC pubilc account type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_ab2ad24193a85aade962da3f35f4526f1}\label{mtc__pa_8h_ab2ad24193a85aade962da3f35f4526f1}} 
+typedef enum \mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__pa_8h_ab2ad24193a85aade962da3f35f4526f1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC pubilc account recommand level type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a2fddc40d18e26f0156d539a60d7b12a9}\label{mtc__pa_8h_a2fddc40d18e26f0156d539a60d7b12a9}} 
+typedef enum \mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__pa_8h_a2fddc40d18e26f0156d539a60d7b12a9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC pubilc account menu command type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a2447cce2755b648cdf14dab7de8963a7}\label{mtc__pa_8h_a2447cce2755b648cdf14dab7de8963a7}} 
+typedef enum \mbox{\hyperlink{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__pa_8h_a2447cce2755b648cdf14dab7de8963a7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC public account id type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}\label{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}} 
+typedef enum \mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC public account color type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa1257e1190d6feb35975153a8ab7718cb}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aae00df6898cae245912990d85bf5caed0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+XT}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa260c9d813a799d557e3bf48572f14002}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+M\+PL}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaea0e929ceed27c5999cf6a4246850123}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+V\+C\+A\+RD}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa4013ff379eee3800161ba33f20c5459a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+G\+EO}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa942edaf51244d2d797fc93241e61bfe5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+P\+IC}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaaef69197ac2c3611ee52bb42eb84eb65}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+V\+I\+D\+EO}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaedcc97d10b5fb9af91bfc938a253a0f7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+A\+U\+D\+IO}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aae8e2b6b8ab84fec586581645698497c2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+S\+A\+RT}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa218bb20386c1c8e490d295cfbf6ec819}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+A\+RT}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa3c97a9a57c625d12ba3ea8598cda7e92}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+C\+A\+RD}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa54506cae6b029d9b77cee7dc107ce33c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+S\+MS}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa9e859e2d5415837d3ec75a751f920539}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+S\+U\+B\+L\+S\+T\+\_\+\+U\+P\+DT}}, 
+\mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa4e8a40dc0e8af9e3479892bacc05934c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+U\+P\+DT}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC public account media type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a6f58cb8316a57d6b140f69a2a49535c1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240ae36bc2859902780c74a4e2578c90da67}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+H\+OT}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a89744f9b1d09824af5b7f8924969337d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+AD}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240abc6cd9b6acdfea915465a4e277c8f6f2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+S\+T\+AR}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a7296b0a14e41d0ad5a65a77c28368876}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+F\+O\+OD}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a9cebb3ad930648f75d9bf7c5ca2e1718}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+RP}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a33ddb36f71d411f819b6c8301d4a44c8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+S\+O\+C\+A\+IL}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a1270b80b0050a42a1015f58e54b8da03}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+G\+A\+ME}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a5b766ff9ea353bfa3b68835fccea0eb9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+U\+S\+IC}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240afd64e44b0d405c3ae33a80eb73be3abe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+DU}}, 
+\mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a4f32bc16092c37878934e5edf1254806}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+O\+T\+H\+ER}} = 99
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC pubilc account type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a5c4fed1bab4088835719816e8e6a54a1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a3dc8e3dd04f0753fc2654e1ca9e6e165}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+O\+NE}}, 
+\mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203aa1df14b9b1e33e1bcfed560d62ca05d9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+WO}}, 
+\mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a34fcf78dbc9521c62db7d4289279945d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+H\+R\+EE}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a5d0057e3a0b5559c68d15dc4ab5452b2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+F\+O\+UR}}, 
+\mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203afdf22100fb75517045c9f9596362de21}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+F\+I\+VE}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC pubilc account recommand level type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4aaffb4a0811564f86a5d373182dfdb900}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+S\+M\+L\+T\+\_\+\+M\+SG}}, 
+\mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4aa43034c83d289d6083dee03455ed46b6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+L\+I\+NK}}, 
+\mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4a962601f4957dc655b3b0cdaccbc32381}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+D\+E\+V\+\_\+\+A\+PI}}, 
+\mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4a4debfc30fad24042d12beaf1d851218b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+A\+P\+P\+\_\+\+A\+PI}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC pubilc account menu command type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9a6d18fd361de62a0937629507e76252ab}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9adf0f23802df61404bf6f57f7a45c359f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+C\+O\+M\+P\+A\+NY}}, 
+\mbox{\hyperlink{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9a6803f560134f4cbddd30bbba9882ae5b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+AL}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC public account id type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ad8f8290e777667f09914e68781a2565d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a824ea8d4e32dc9106d13d0d9672a1c00}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ac15f48cb9d6c41349de2b57a6e497627}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+R\+ED}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4af835e6e210b7b6ca7bfaa0568f56924e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+O\+R\+A\+N\+GE}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ab4f19d16aa47268bd99bdedf803bfcde}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+Y\+E\+L\+L\+OW}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a54fe4c4027948aa186ecc664064eae4e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a1073a0edc74d1065b7526389dd484e72}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a876a9c627e93bcbf4b63cbe3d02fb27c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+B\+L\+UE}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4aff79f02d5d118f16f68d74cf2ff8af07}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+U\+R\+P\+LE}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a802a14ac853759deb12b0ea7538a8e2a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+I\+NK}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4af66dc771f8a4061e4e348f8ca0ae3a53}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+E\+E\+P\+P\+I\+NK}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a6dba8e6bd6a3109288770e2bd080d2c9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+AY}}, 
+\newline
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a374b9705caf30a738f36e50cfba30ad9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+G\+R\+AY}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ad2683a982c6d875516d93074ba7e30f6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK}}, 
+\mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a2a38b1500c57200238a96bbffcbe3d67}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+W\+H\+I\+TE}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC public account color type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}{Mtc\+\_\+\+Pa\+Sess\+Add\+Subs}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid)
+\begin{DoxyCompactList}\small\item\em The public account add subscribe. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}{Mtc\+\_\+\+Pa\+Sess\+Cancel\+Subs}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid)
+\begin{DoxyCompactList}\small\item\em The public account cancle subscribe. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}{Mtc\+\_\+\+Pa\+Sess\+Qry\+Usr\+Subs}} (Z\+U\+I\+NT i\+Order, Z\+U\+I\+NT i\+Page\+Size, Z\+U\+I\+NT i\+Page\+Num)
+\begin{DoxyCompactList}\small\item\em The public accounts query user subscribed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst}} (Z\+C\+H\+AR $\ast$pc\+Keyword, Z\+U\+I\+NT i\+Order, Z\+U\+I\+NT i\+Page\+Size, Z\+U\+I\+NT i\+Page\+Num)
+\begin{DoxyCompactList}\small\item\em The public account get public list. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst\+Recmd}} (Z\+U\+I\+NT i\+Type, Z\+U\+I\+NT i\+Page\+Size, Z\+U\+I\+NT i\+Page\+Num)
+\begin{DoxyCompactList}\small\item\em The public account get public list recommend. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Detail}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid, Z\+T\+I\+M\+E\+\_\+T z\+Upd\+Time)
+\begin{DoxyCompactList}\small\item\em The public account get public detail. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Menu}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid, Z\+T\+I\+M\+E\+\_\+T z\+Timestamp)
+\begin{DoxyCompactList}\small\item\em The public account get public menu. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}{Mtc\+\_\+\+Pa\+Sess\+Get\+Prev\+Msg}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid, Z\+T\+I\+M\+E\+\_\+T z\+Timestamp, Z\+U\+I\+NT i\+Order, Z\+U\+I\+NT i\+Page\+Size, Z\+U\+I\+NT i\+Page\+Num)
+\begin{DoxyCompactList}\small\item\em The public accounts get previous message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}{Mtc\+\_\+\+Pa\+Sess\+Complain\+Pub}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid, Z\+U\+I\+NT i\+Type, Z\+C\+H\+AR $\ast$pc\+Reason, Z\+C\+H\+AR $\ast$pc\+Data, Z\+C\+H\+AR $\ast$pc\+Desc)
+\begin{DoxyCompactList}\small\item\em The public accounts complain public. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}{Mtc\+\_\+\+Pa\+Sess\+Set\+Acpt\+Stat}} (Z\+C\+H\+AR $\ast$pc\+Pa\+Uuid, Z\+B\+O\+OL b\+Acpt\+Stat)
+\begin{DoxyCompactList}\small\item\em The public accounts set accept status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ad13bdf23c22790398c57b8dc86effef5}{Mtc\+\_\+\+Pa\+Sess\+Encode\+Msg}} (Z\+C\+H\+AR $\ast$pc\+Text)
+\begin{DoxyCompactList}\small\item\em The public accounts format text to xml message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a227ff077399b894e5eb7c80ec69a7b31}{Mtc\+\_\+\+Pa\+Sess\+Decode\+Msg}} (Z\+C\+H\+AR $\ast$pc\+Xml\+Msg)
+\begin{DoxyCompactList}\small\item\em The public accounts decode public account xml message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa_8h_a9b84cfd621dfee7c10b52d7e74fb8c9b}{Mtc\+\_\+\+Pa\+Sess\+Release}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public accounts session release. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_acb4eff8682c0624b937a1ee112163d96}{Mtc\+\_\+\+Pa\+Sess\+Get\+Xml\+Msg}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public accounts get xml message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a67480eaaaa1c2af3d362ed8a6b4797cb}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pa\+Size}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public accounts get pa size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a76308bec48d68f0648fa547932a06efd}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pa\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em The public accounts get pa size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a2b69ff91ffcf6e290bb54ec7c5b2bba2}{Mtc\+\_\+\+Pa\+Sess\+Get\+Menu\+Size}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account the menu size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a53e42a9d64e48d90ffae88cc39851399}{Mtc\+\_\+\+Pa\+Sess\+Get\+Menu\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get public account menu id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a8006fbdbe8a1cee0b97a7c4ae94128dc}{Mtc\+\_\+\+Pa\+Sess\+Get\+Msg\+Size}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account the message size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_adec93fdf589e4bd4cf26ce82731c2b8e}{Mtc\+\_\+\+Pa\+Sess\+Get\+Msg\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get public account message id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a5a27885add43362d1f248de7a5eb068b}{Mtc\+\_\+\+Pa\+Sess\+Get\+Result}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account session result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a0255e4f649439b0f005c96015cee765c}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pa\+Uuid}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account session pa uuid. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__pa_8h_a9e624c91494983828d6836fe758c349e}{Mtc\+\_\+\+Pa\+Sess\+Has\+Data}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Check public account session has data. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a8cae2b86ca50fe45bc889374bf1c28ce}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Pa\+Uuid}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account uuid. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_aa8012fc4258549367bb399eabce6c699}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Name}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a82b4b0b1647a341f90c6a2d555e99ee0}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Recmd\+Lv}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account recommend level. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ad30518ff5139d0cb997207cbfa53b761}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Logo\+Url}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account logo url. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ae2c4513ea5b9e2c238f511143b813b3c}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Intro}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account introduce. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a092a06f7bebdebc496b1c53832f2c399}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Id\+Type}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account id type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_aae302de600baeb523bf94b178b8f985e}{Mtc\+\_\+\+Pa\+Bsc\+Get\+Subs\+Stat}} (Z\+U\+I\+NT i\+Pa\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account subscribe status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a25bc71e85458a807ceac870b516d8e1c}{Mtc\+\_\+\+Pa\+Detail\+Get\+Pa\+Uuid}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account uuid. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a1c739c7c887cb7df728c7a6a4fbdd0bf}{Mtc\+\_\+\+Pa\+Detail\+Get\+Name}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_af0f0d3abaa9fc436ea149013de5fdae0}{Mtc\+\_\+\+Pa\+Detail\+Get\+Company}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account authentication company. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a5aaf3712f4669ac928ffcca64367a3e6}{Mtc\+\_\+\+Pa\+Detail\+Get\+Intro}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account introduce. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__pa_8h_a2eeaa89762f191512ff83718181186f1}{Mtc\+\_\+\+Pa\+Detail\+Get\+Upd\+Time}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account the last information update time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__pa_8h_a04063f87b11ff2d59241e8e2a1130896}{Mtc\+\_\+\+Pa\+Detail\+Get\+Menu\+Timestamp}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account the menu timestamp. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a0b750e3413e90ad41f4a425235754dbd}{Mtc\+\_\+\+Pa\+Detail\+Get\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_af61a1beda729fef9168775b17c6e83a9}{Mtc\+\_\+\+Pa\+Detail\+Get\+Recmd\+Lv}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account recommend level type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a46128f280ab8b744150c1811fb1a7eb1}{Mtc\+\_\+\+Pa\+Detail\+Get\+Id\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account id type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a9b58f4bffbe1638fc3455bfdc38115b3}{Mtc\+\_\+\+Pa\+Detail\+Get\+Menu\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account menu type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a058cc30fccd60af4bad178d4ed075b66}{Mtc\+\_\+\+Pa\+Detail\+Get\+Subs\+Stat}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account subscribe status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_ac3d46ae027d5a68d0fac32ff9a55c5e7}{Mtc\+\_\+\+Pa\+Detail\+Get\+Acpt\+Stat}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account accept satus. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_ac0708eab0c2e81f2683ea2368391ba71}{Mtc\+\_\+\+Pa\+Detail\+Get\+Active\+Stat}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account active satus. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a0a3e59487bab89fe8ba842ae0710bc0a}{Mtc\+\_\+\+Pa\+Detail\+Get\+Tel}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account tel. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_aa4068c9e1297266a06c6058d936d7a64}{Mtc\+\_\+\+Pa\+Detail\+Get\+Email}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account email. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_add25468541e5f7216d5cae6f3856ea91}{Mtc\+\_\+\+Pa\+Detail\+Get\+Zip}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account zip. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a0f263d37368942ba198c9d339a10b4d8}{Mtc\+\_\+\+Pa\+Detail\+Get\+Addr}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account address. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a097fd52363201657b4cb199e6bfbf863}{Mtc\+\_\+\+Pa\+Detail\+Get\+Field}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em The public account field. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a5f10cb366998c2316960b33bbfc39358}{Mtc\+\_\+\+Pa\+Detail\+Get\+Logo\+Url}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account logo url. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a30897630ff532c003f1a28f0d43b2ecf}{Mtc\+\_\+\+Pa\+Detail\+Get\+Qr\+Code}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account qrcode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ab17ba86414e37fe89f87f24602926cb8}{Mtc\+\_\+\+Pa\+Menu\+Get\+Cmd\+Id}} (Z\+U\+I\+NT i\+Menu\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account menu command id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a87112c063c3483114a253bca873c1877}{Mtc\+\_\+\+Pa\+Menu\+Get\+Cmd\+Type}} (Z\+U\+I\+NT i\+Menu\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account menu command type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_af1677f3543ee18745d2cde0a6f554ded}{Mtc\+\_\+\+Pa\+Menu\+Get\+Title}} (Z\+U\+I\+NT i\+Menu\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account menu title. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_aa57654f640da4ff8805c72bfa3b2b6cc}{Mtc\+\_\+\+Pa\+Menu\+Get\+Priority}} (Z\+U\+I\+NT i\+Menu\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account menu priority. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_acf6199c140612279e60bce8316b2c781}{Mtc\+\_\+\+Pa\+Menu\+Get\+Submenu\+Size}} (Z\+U\+I\+NT i\+Menu\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account submenu size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a03f16ebb8ce36d3730aa3bda2eae4d10}{Mtc\+\_\+\+Pa\+Menu\+Get\+Submenu\+Id}} (Z\+U\+I\+NT i\+Menu\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get public account submenu size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_aea67c01ff3b8510db0eaa2cd48d74e00}{Mtc\+\_\+\+Pa\+Msg\+Get\+Media\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account message media type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_aac61923dd9de19ae6b8ea42e5fceb884}{Mtc\+\_\+\+Pa\+Msg\+Get\+Msg\+Uuid}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account message unique id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a388932ddd52f18a21fe97a9f296e929c}{Mtc\+\_\+\+Pa\+Msg\+Get\+Pa\+Uuid}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account unique id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ac8ab625be30a9fd497f07e53e60b5b09}{Mtc\+\_\+\+Pa\+Msg\+Get\+Sms\+Digest}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account short message digest. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_abb5b21115e06fab9ca75cb221963081a}{Mtc\+\_\+\+Pa\+Msg\+Get\+Text}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account text message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__pa_8h_a0ba075ce28c7d8b2729936a82c04e9a5}{Mtc\+\_\+\+Pa\+Msg\+Get\+Create\+Time}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account message create time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_ac67738038e7357d594961cd6bd9798f0}{Mtc\+\_\+\+Pa\+Msg\+Get\+Active\+Stat}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account message active status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a8e3380b1880a36449e837bb2a66595fa}{Mtc\+\_\+\+Pa\+Msg\+Get\+Fwdable}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account message forwordable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a9eddc11aa25aaac8374368b9d5f45d2c}{Mtc\+\_\+\+Pa\+Msg\+Get\+G\+Info\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account geolocation information id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__pa_8h_ab912f084a28c1247c51302d6ff789561}{Mtc\+\_\+\+Pa\+Msg\+Get\+Art\+Msg\+Size}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a4cc292fc2e6aebf4f745648264da8e75}{Mtc\+\_\+\+Pa\+Msg\+Get\+Art\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get public account article message size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ad71ea41a0f40ed680305bd1cb7de77fe}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Title}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message title. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ac00f6d8016cb711923ef8a2ea8d1b08b}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Author}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message author. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_afba7a866828998328ce6f8171e3f1760}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Thumb\+Link}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message thumb link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a4977851248f09d23a9c1bfcf4c052c05}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Orig\+Link}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message original link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_af2ec34bec3d9c76300c8d3bf7505eba8}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Body\+Link}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message body link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ae19ba1423ca8c51713c613165aeb69f8}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Src\+Link}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message source link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a9db5f2741f2a3d4b31e24c2e8c91cd37}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Main\+Text}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message main text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_acdae41b1bede63fe13dd9c1affd17d1e}{Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Media\+Uuid}} (Z\+U\+I\+NT i\+Art\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account article message media unique id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_aeb0c2326d38e2c7878470ea4c481eb5f}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Title}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message title. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a5857e8e54b2dc6cb65e11b6bfb8d782b}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+File\+Size}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message file size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a7c5d0c7f5542853758ac40955088d539}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+File\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message file type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a16d4aef3b9fcabdd08e446e9668bf052}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+File\+Duration}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message file duration. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a173d87e9caa708e2dd947cf77c482e80}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Thumb\+Link}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message thumb link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_aa1e56471021e90b80f381bf01f3abb9c}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Orig\+Link}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message original link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a2d42852d21f59e1154742882a335d0af}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Media\+Uuid}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message media unique id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__pa_8h_a4e983bdc252ba6c290453e05c09ebff0}{Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Create\+Time}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account basic message create time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a46dade46fead512b645047d3ef91eb3c}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Title}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message title. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a10f8a8021b98f0e09066cf2182c88181}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Author}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message author. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a11ad31aa88f4a3a0f2ae19f6cb25a101}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Thumb\+Link}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message thumb link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ac37afe0242c33867c093d5292cd3a758}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Orig\+Link}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message original link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ad40c00d801e4ecd3c90cbcb1098eb32f}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Body\+Link}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message body link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ad8438a9395ce0215e93d99dabe9e5af7}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Src\+Link}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message source link. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a64ca488067d9e762e3ecd204673e959c}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Main\+Text}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message main text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a4f8358f63fd96e07105167842d80436b}{Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Media\+Uuid}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account card message media unique id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_aaa4cbcb7cc6d92c9c846ca05b727d901}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Top\+Color}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message top color. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ad23ea765ffad09174c56834c8904a01e}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Title}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message title. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a569d104f09a2b79adc7931b3da010107}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+First\+Text}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message first text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_ad3e2f236d6e5699397334c24bd013ad3}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+First\+Color}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message first color. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_adc71a9a6bf1c044a22cc983f35559a73}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Last\+Text}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message last text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a0179635db448c35d3f9b963128f9679a}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Last\+Color}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message last color. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ac2b426ff4d856ca80756d62904feeb93}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Url}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message url. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a398951f4ea974a6aaef34b302d6562fa}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Key\+Note\+Size}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message key note size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_a3fbec4cf4005fc3ebe13703ec4321987}{Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Key\+Note\+Id}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em Get public account template message key note size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_a200448cd94e7454f5ba66ad105c41252}{Mtc\+\_\+\+Pa\+Key\+Note\+Get\+Name}} (Z\+U\+I\+NT i\+Note\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message key note name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__pa_8h_ac4834f2cb10cb30ca2a9a4584b322506}{Mtc\+\_\+\+Pa\+Key\+Note\+Get\+Value\+Text}} (Z\+U\+I\+NT i\+Note\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message key note value text. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__pa_8h_adbbf0c8be613009cdb50d03e6a026079}{Mtc\+\_\+\+Pa\+Key\+Note\+Get\+Value\+Color}} (Z\+U\+I\+NT i\+Note\+Id)
+\begin{DoxyCompactList}\small\item\em Get public account template message key note value color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC C\+M\+CC Public Account Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__pa_8h_a0b22b8762f7a643f6d52dbc686ddd5fb}\label{mtc__pa_8h_a0b22b8762f7a643f6d52dbc686ddd5fb}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!MTC\_PA\_ERR\_NO@{MTC\_PA\_ERR\_NO}}
+\index{MTC\_PA\_ERR\_NO@{MTC\_PA\_ERR\_NO}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_PA\_ERR\_NO}{MTC\_PA\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}} + 0)}
+
+
+
+M\+TC public account status code. 
+
+no error 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_TYPE@{EN\_MTC\_PA\_COLOR\_TYPE}}
+\index{EN\_MTC\_PA\_COLOR\_TYPE@{EN\_MTC\_PA\_COLOR\_TYPE}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PA\_COLOR\_TYPE}{EN\_MTC\_PA\_COLOR\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC public account color type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_UNKNOWN@{EN\_MTC\_PA\_COLOR\_UNKNOWN}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_UNKNOWN@{EN\_MTC\_PA\_COLOR\_UNKNOWN}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ad8f8290e777667f09914e68781a2565d}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ad8f8290e777667f09914e68781a2565d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+U\+N\+K\+N\+O\+WN&unknown type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_RED@{EN\_MTC\_PA\_COLOR\_RED}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_RED@{EN\_MTC\_PA\_COLOR\_RED}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a824ea8d4e32dc9106d13d0d9672a1c00}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a824ea8d4e32dc9106d13d0d9672a1c00}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+R\+ED&R\+G\+B(255,0,24) \#ff0018. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_DARKRED@{EN\_MTC\_PA\_COLOR\_DARKRED}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_DARKRED@{EN\_MTC\_PA\_COLOR\_DARKRED}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ac15f48cb9d6c41349de2b57a6e497627}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ac15f48cb9d6c41349de2b57a6e497627}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+R\+ED&R\+G\+B(152,42,42) \#982a2a. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_ORANGE@{EN\_MTC\_PA\_COLOR\_ORANGE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_ORANGE@{EN\_MTC\_PA\_COLOR\_ORANGE}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4af835e6e210b7b6ca7bfaa0568f56924e}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4af835e6e210b7b6ca7bfaa0568f56924e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+O\+R\+A\+N\+GE&R\+G\+B(255,120,0) \#ff7800. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_YELLOW@{EN\_MTC\_PA\_COLOR\_YELLOW}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_YELLOW@{EN\_MTC\_PA\_COLOR\_YELLOW}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ab4f19d16aa47268bd99bdedf803bfcde}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ab4f19d16aa47268bd99bdedf803bfcde}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+Y\+E\+L\+L\+OW&R\+G\+B(255,192,0) \#ffc000. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_GREEN@{EN\_MTC\_PA\_COLOR\_GREEN}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_GREEN@{EN\_MTC\_PA\_COLOR\_GREEN}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a54fe4c4027948aa186ecc664064eae4e}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a54fe4c4027948aa186ecc664064eae4e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN&R\+G\+B(0,213,85) \#00d555. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_BLUE@{EN\_MTC\_PA\_COLOR\_BLUE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_BLUE@{EN\_MTC\_PA\_COLOR\_BLUE}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a1073a0edc74d1065b7526389dd484e72}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a1073a0edc74d1065b7526389dd484e72}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+UE&R\+G\+B(0,120,255) \#0078ff. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_DARKBLUE@{EN\_MTC\_PA\_COLOR\_DARKBLUE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_DARKBLUE@{EN\_MTC\_PA\_COLOR\_DARKBLUE}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a876a9c627e93bcbf4b63cbe3d02fb27c}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a876a9c627e93bcbf4b63cbe3d02fb27c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+B\+L\+UE&R\+G\+B(29,50,155) \#1d3273. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_PURPLE@{EN\_MTC\_PA\_COLOR\_PURPLE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_PURPLE@{EN\_MTC\_PA\_COLOR\_PURPLE}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4aff79f02d5d118f16f68d74cf2ff8af07}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4aff79f02d5d118f16f68d74cf2ff8af07}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+U\+R\+P\+LE&R\+G\+B(154,72,255) \#9a48ff. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_PINK@{EN\_MTC\_PA\_COLOR\_PINK}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_PINK@{EN\_MTC\_PA\_COLOR\_PINK}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a802a14ac853759deb12b0ea7538a8e2a}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a802a14ac853759deb12b0ea7538a8e2a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+I\+NK&R\+G\+B(253,93,255) \#fd5dff. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_DEEPPINK@{EN\_MTC\_PA\_COLOR\_DEEPPINK}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_DEEPPINK@{EN\_MTC\_PA\_COLOR\_DEEPPINK}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4af66dc771f8a4061e4e348f8ca0ae3a53}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4af66dc771f8a4061e4e348f8ca0ae3a53}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+E\+E\+P\+P\+I\+NK&R\+G\+B(190,39,128) \#be2780. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_GRAY@{EN\_MTC\_PA\_COLOR\_GRAY}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_GRAY@{EN\_MTC\_PA\_COLOR\_GRAY}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a6dba8e6bd6a3109288770e2bd080d2c9}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a6dba8e6bd6a3109288770e2bd080d2c9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+AY&R\+G\+B(204,204,204) \#\+C\+C\+C\+C\+CC. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_DARKGRAY@{EN\_MTC\_PA\_COLOR\_DARKGRAY}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_DARKGRAY@{EN\_MTC\_PA\_COLOR\_DARKGRAY}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a374b9705caf30a738f36e50cfba30ad9}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a374b9705caf30a738f36e50cfba30ad9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+G\+R\+AY&R\+G\+B(133,133,133) \#858585. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_BLACK@{EN\_MTC\_PA\_COLOR\_BLACK}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_BLACK@{EN\_MTC\_PA\_COLOR\_BLACK}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ad2683a982c6d875516d93074ba7e30f6}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4ad2683a982c6d875516d93074ba7e30f6}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK&R\+G\+B(0,0,0) \#000000. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_COLOR\_WHITE@{EN\_MTC\_PA\_COLOR\_WHITE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_COLOR\_WHITE@{EN\_MTC\_PA\_COLOR\_WHITE}}}\mbox{\Hypertarget{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a2a38b1500c57200238a96bbffcbe3d67}\label{mtc__pa_8h_a196a6407529c054f76803cccb65a2cb4a2a38b1500c57200238a96bbffcbe3d67}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+W\+H\+I\+TE&R\+G\+B(255,255,255) \#ffffff. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9}\label{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_ID\_TYPE@{EN\_MTC\_PA\_ID\_TYPE}}
+\index{EN\_MTC\_PA\_ID\_TYPE@{EN\_MTC\_PA\_ID\_TYPE}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PA\_ID\_TYPE}{EN\_MTC\_PA\_ID\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC public account id type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_ID\_UNKNOWN@{EN\_MTC\_PA\_ID\_UNKNOWN}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_ID\_UNKNOWN@{EN\_MTC\_PA\_ID\_UNKNOWN}}}\mbox{\Hypertarget{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9a6d18fd361de62a0937629507e76252ab}\label{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9a6d18fd361de62a0937629507e76252ab}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+U\+N\+K\+N\+O\+WN&unknown type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_ID\_COMPANY@{EN\_MTC\_PA\_ID\_COMPANY}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_ID\_COMPANY@{EN\_MTC\_PA\_ID\_COMPANY}}}\mbox{\Hypertarget{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9adf0f23802df61404bf6f57f7a45c359f}\label{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9adf0f23802df61404bf6f57f7a45c359f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+C\+O\+M\+P\+A\+NY&company type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_ID\_PERSONAL@{EN\_MTC\_PA\_ID\_PERSONAL}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_ID\_PERSONAL@{EN\_MTC\_PA\_ID\_PERSONAL}}}\mbox{\Hypertarget{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9a6803f560134f4cbddd30bbba9882ae5b}\label{mtc__pa_8h_a1dec74d68f79636f4f228f3cdf05d9c9a6803f560134f4cbddd30bbba9882ae5b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+P\+E\+R\+S\+O\+N\+AL&personal type \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701a}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701a}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_TYPE@{EN\_MTC\_PA\_MEDIA\_TYPE}}
+\index{EN\_MTC\_PA\_MEDIA\_TYPE@{EN\_MTC\_PA\_MEDIA\_TYPE}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PA\_MEDIA\_TYPE}{EN\_MTC\_PA\_MEDIA\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC public account media type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_UNKNOWN@{EN\_MTC\_PA\_MEDIA\_UNKNOWN}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_UNKNOWN@{EN\_MTC\_PA\_MEDIA\_UNKNOWN}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa1257e1190d6feb35975153a8ab7718cb}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa1257e1190d6feb35975153a8ab7718cb}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+U\+N\+K\+N\+O\+WN&unknown message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_TXT@{EN\_MTC\_PA\_MEDIA\_TXT}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_TXT@{EN\_MTC\_PA\_MEDIA\_TXT}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aae00df6898cae245912990d85bf5caed0}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aae00df6898cae245912990d85bf5caed0}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+XT&text message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_TMPL@{EN\_MTC\_PA\_MEDIA\_TMPL}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_TMPL@{EN\_MTC\_PA\_MEDIA\_TMPL}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa260c9d813a799d557e3bf48572f14002}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa260c9d813a799d557e3bf48572f14002}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+M\+PL&template message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_VCARD@{EN\_MTC\_PA\_MEDIA\_VCARD}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_VCARD@{EN\_MTC\_PA\_MEDIA\_VCARD}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaea0e929ceed27c5999cf6a4246850123}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaea0e929ceed27c5999cf6a4246850123}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+V\+C\+A\+RD&v\+Card message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_GEO@{EN\_MTC\_PA\_MEDIA\_GEO}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_GEO@{EN\_MTC\_PA\_MEDIA\_GEO}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa4013ff379eee3800161ba33f20c5459a}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa4013ff379eee3800161ba33f20c5459a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+G\+EO&geolocation message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_PIC@{EN\_MTC\_PA\_MEDIA\_PIC}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_PIC@{EN\_MTC\_PA\_MEDIA\_PIC}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa942edaf51244d2d797fc93241e61bfe5}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa942edaf51244d2d797fc93241e61bfe5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+P\+IC&picture message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_VIDEO@{EN\_MTC\_PA\_MEDIA\_VIDEO}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_VIDEO@{EN\_MTC\_PA\_MEDIA\_VIDEO}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaaef69197ac2c3611ee52bb42eb84eb65}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaaef69197ac2c3611ee52bb42eb84eb65}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+V\+I\+D\+EO&video message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_AUDIO@{EN\_MTC\_PA\_MEDIA\_AUDIO}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_AUDIO@{EN\_MTC\_PA\_MEDIA\_AUDIO}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaedcc97d10b5fb9af91bfc938a253a0f7}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aaedcc97d10b5fb9af91bfc938a253a0f7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+A\+U\+D\+IO&audio message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_SART@{EN\_MTC\_PA\_MEDIA\_SART}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_SART@{EN\_MTC\_PA\_MEDIA\_SART}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aae8e2b6b8ab84fec586581645698497c2}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aae8e2b6b8ab84fec586581645698497c2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+S\+A\+RT&single article message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_MART@{EN\_MTC\_PA\_MEDIA\_MART}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_MART@{EN\_MTC\_PA\_MEDIA\_MART}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa218bb20386c1c8e490d295cfbf6ec819}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa218bb20386c1c8e490d295cfbf6ec819}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+M\+A\+RT&multi-\/article message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_CARD@{EN\_MTC\_PA\_MEDIA\_CARD}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_CARD@{EN\_MTC\_PA\_MEDIA\_CARD}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa3c97a9a57c625d12ba3ea8598cda7e92}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa3c97a9a57c625d12ba3ea8598cda7e92}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+C\+A\+RD&card message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_SMS@{EN\_MTC\_PA\_MEDIA\_SMS}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_SMS@{EN\_MTC\_PA\_MEDIA\_SMS}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa54506cae6b029d9b77cee7dc107ce33c}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa54506cae6b029d9b77cee7dc107ce33c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+S\+MS&S\+MS message. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_SUBLST\_UPDT@{EN\_MTC\_PA\_MEDIA\_SUBLST\_UPDT}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_SUBLST\_UPDT@{EN\_MTC\_PA\_MEDIA\_SUBLST\_UPDT}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa9e859e2d5415837d3ec75a751f920539}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa9e859e2d5415837d3ec75a751f920539}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+S\+U\+B\+L\+S\+T\+\_\+\+U\+P\+DT&subsribe list update message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MEDIA\_DETAIL\_UPDT@{EN\_MTC\_PA\_MEDIA\_DETAIL\_UPDT}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MEDIA\_DETAIL\_UPDT@{EN\_MTC\_PA\_MEDIA\_DETAIL\_UPDT}}}\mbox{\Hypertarget{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa4e8a40dc0e8af9e3479892bacc05934c}\label{mtc__pa_8h_a00ca900d26932e4dc67952d1bdf5701aa4e8a40dc0e8af9e3479892bacc05934c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+D\+E\+T\+A\+I\+L\+\_\+\+U\+P\+DT&detail update message \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4}\label{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MENU\_CMD\_TYPE@{EN\_MTC\_PA\_MENU\_CMD\_TYPE}}
+\index{EN\_MTC\_PA\_MENU\_CMD\_TYPE@{EN\_MTC\_PA\_MENU\_CMD\_TYPE}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PA\_MENU\_CMD\_TYPE}{EN\_MTC\_PA\_MENU\_CMD\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC pubilc account menu command type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MENU\_CMD\_SMLT\_MSG@{EN\_MTC\_PA\_MENU\_CMD\_SMLT\_MSG}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MENU\_CMD\_SMLT\_MSG@{EN\_MTC\_PA\_MENU\_CMD\_SMLT\_MSG}}}\mbox{\Hypertarget{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4aaffb4a0811564f86a5d373182dfdb900}\label{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4aaffb4a0811564f86a5d373182dfdb900}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+S\+M\+L\+T\+\_\+\+M\+SG&simulative message type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MENU\_CMD\_LINK@{EN\_MTC\_PA\_MENU\_CMD\_LINK}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MENU\_CMD\_LINK@{EN\_MTC\_PA\_MENU\_CMD\_LINK}}}\mbox{\Hypertarget{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4aa43034c83d289d6083dee03455ed46b6}\label{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4aa43034c83d289d6083dee03455ed46b6}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+L\+I\+NK&link type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MENU\_CMD\_DEV\_API@{EN\_MTC\_PA\_MENU\_CMD\_DEV\_API}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MENU\_CMD\_DEV\_API@{EN\_MTC\_PA\_MENU\_CMD\_DEV\_API}}}\mbox{\Hypertarget{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4a962601f4957dc655b3b0cdaccbc32381}\label{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4a962601f4957dc655b3b0cdaccbc32381}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+D\+E\+V\+\_\+\+A\+PI&device A\+PI type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MENU\_CMD\_APP\_API@{EN\_MTC\_PA\_MENU\_CMD\_APP\_API}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MENU\_CMD\_APP\_API@{EN\_MTC\_PA\_MENU\_CMD\_APP\_API}}}\mbox{\Hypertarget{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4a4debfc30fad24042d12beaf1d851218b}\label{mtc__pa_8h_a80193bb1e90cde11390764acacf6b3f4a4debfc30fad24042d12beaf1d851218b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+A\+P\+P\+\_\+\+A\+PI&application A\+PI type \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_TYPE@{EN\_MTC\_PA\_RECMD\_LV\_TYPE}}
+\index{EN\_MTC\_PA\_RECMD\_LV\_TYPE@{EN\_MTC\_PA\_RECMD\_LV\_TYPE}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PA\_RECMD\_LV\_TYPE}{EN\_MTC\_PA\_RECMD\_LV\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC pubilc account recommand level type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_RECMD\_LV\_UNKNOWN@{EN\_MTC\_PA\_RECMD\_LV\_UNKNOWN}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_UNKNOWN@{EN\_MTC\_PA\_RECMD\_LV\_UNKNOWN}}}\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a5c4fed1bab4088835719816e8e6a54a1}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a5c4fed1bab4088835719816e8e6a54a1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+U\+N\+K\+N\+O\+WN&level unknown type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_RECMD\_LV\_ONE@{EN\_MTC\_PA\_RECMD\_LV\_ONE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_ONE@{EN\_MTC\_PA\_RECMD\_LV\_ONE}}}\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a3dc8e3dd04f0753fc2654e1ca9e6e165}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a3dc8e3dd04f0753fc2654e1ca9e6e165}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+O\+NE&level one type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_RECMD\_LV\_TWO@{EN\_MTC\_PA\_RECMD\_LV\_TWO}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_TWO@{EN\_MTC\_PA\_RECMD\_LV\_TWO}}}\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203aa1df14b9b1e33e1bcfed560d62ca05d9}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203aa1df14b9b1e33e1bcfed560d62ca05d9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+WO&level two type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_RECMD\_LV\_THREE@{EN\_MTC\_PA\_RECMD\_LV\_THREE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_THREE@{EN\_MTC\_PA\_RECMD\_LV\_THREE}}}\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a34fcf78dbc9521c62db7d4289279945d}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a34fcf78dbc9521c62db7d4289279945d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+H\+R\+EE&level three type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_RECMD\_LV\_FOUR@{EN\_MTC\_PA\_RECMD\_LV\_FOUR}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_FOUR@{EN\_MTC\_PA\_RECMD\_LV\_FOUR}}}\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a5d0057e3a0b5559c68d15dc4ab5452b2}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203a5d0057e3a0b5559c68d15dc4ab5452b2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+F\+O\+UR&level four type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_RECMD\_LV\_FIVE@{EN\_MTC\_PA\_RECMD\_LV\_FIVE}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_RECMD\_LV\_FIVE@{EN\_MTC\_PA\_RECMD\_LV\_FIVE}}}\mbox{\Hypertarget{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203afdf22100fb75517045c9f9596362de21}\label{mtc__pa_8h_ad74bf6ffb1ccbafe2abf1a43eb3c4203afdf22100fb75517045c9f9596362de21}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+F\+I\+VE&level five type \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_TYPE@{EN\_MTC\_PA\_TYPE}}
+\index{EN\_MTC\_PA\_TYPE@{EN\_MTC\_PA\_TYPE}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PA\_TYPE}{EN\_MTC\_PA\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC pubilc account type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_UNKNOWN@{EN\_MTC\_PA\_UNKNOWN}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_UNKNOWN@{EN\_MTC\_PA\_UNKNOWN}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a6f58cb8316a57d6b140f69a2a49535c1}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a6f58cb8316a57d6b140f69a2a49535c1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+U\+N\+K\+N\+O\+WN&unknown type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_HOT@{EN\_MTC\_PA\_HOT}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_HOT@{EN\_MTC\_PA\_HOT}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240ae36bc2859902780c74a4e2578c90da67}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240ae36bc2859902780c74a4e2578c90da67}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+H\+OT&hot type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_READ@{EN\_MTC\_PA\_READ}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_READ@{EN\_MTC\_PA\_READ}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a89744f9b1d09824af5b7f8924969337d}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a89744f9b1d09824af5b7f8924969337d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+AD&read type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_STAR@{EN\_MTC\_PA\_STAR}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_STAR@{EN\_MTC\_PA\_STAR}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240abc6cd9b6acdfea915465a4e277c8f6f2}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240abc6cd9b6acdfea915465a4e277c8f6f2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+S\+T\+AR&star type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_FOOD@{EN\_MTC\_PA\_FOOD}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_FOOD@{EN\_MTC\_PA\_FOOD}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a7296b0a14e41d0ad5a65a77c28368876}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a7296b0a14e41d0ad5a65a77c28368876}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+F\+O\+OD&food type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_CORP@{EN\_MTC\_PA\_CORP}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_CORP@{EN\_MTC\_PA\_CORP}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a9cebb3ad930648f75d9bf7c5ca2e1718}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a9cebb3ad930648f75d9bf7c5ca2e1718}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+RP&corporation type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_SOCAIL@{EN\_MTC\_PA\_SOCAIL}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_SOCAIL@{EN\_MTC\_PA\_SOCAIL}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a33ddb36f71d411f819b6c8301d4a44c8}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a33ddb36f71d411f819b6c8301d4a44c8}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+S\+O\+C\+A\+IL&social type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_GAME@{EN\_MTC\_PA\_GAME}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_GAME@{EN\_MTC\_PA\_GAME}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a1270b80b0050a42a1015f58e54b8da03}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a1270b80b0050a42a1015f58e54b8da03}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+G\+A\+ME&game type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_MUSIC@{EN\_MTC\_PA\_MUSIC}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_MUSIC@{EN\_MTC\_PA\_MUSIC}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a5b766ff9ea353bfa3b68835fccea0eb9}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a5b766ff9ea353bfa3b68835fccea0eb9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+U\+S\+IC&music type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_EDU@{EN\_MTC\_PA\_EDU}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_EDU@{EN\_MTC\_PA\_EDU}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240afd64e44b0d405c3ae33a80eb73be3abe}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240afd64e44b0d405c3ae33a80eb73be3abe}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+E\+DU&education type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PA\_OTHER@{EN\_MTC\_PA\_OTHER}!mtc\_pa.h@{mtc\_pa.h}}\index{mtc\_pa.h@{mtc\_pa.h}!EN\_MTC\_PA\_OTHER@{EN\_MTC\_PA\_OTHER}}}\mbox{\Hypertarget{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a4f32bc16092c37878934e5edf1254806}\label{mtc__pa_8h_a904b8c6f8f7c617f99cc9785c25bd240a4f32bc16092c37878934e5edf1254806}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+O\+T\+H\+ER&other type \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__pa_8h_ac00f6d8016cb711923ef8a2ea8d1b08b}\label{mtc__pa_8h_ac00f6d8016cb711923ef8a2ea8d1b08b}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetAuthor@{Mtc\_PaArtMsgGetAuthor}}
+\index{Mtc\_PaArtMsgGetAuthor@{Mtc\_PaArtMsgGetAuthor}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetAuthor()}{Mtc\_PaArtMsgGetAuthor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Author (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message author. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message author. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_af2ec34bec3d9c76300c8d3bf7505eba8}\label{mtc__pa_8h_af2ec34bec3d9c76300c8d3bf7505eba8}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetBodyLink@{Mtc\_PaArtMsgGetBodyLink}}
+\index{Mtc\_PaArtMsgGetBodyLink@{Mtc\_PaArtMsgGetBodyLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetBodyLink()}{Mtc\_PaArtMsgGetBodyLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Body\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message body link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message body link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a9db5f2741f2a3d4b31e24c2e8c91cd37}\label{mtc__pa_8h_a9db5f2741f2a3d4b31e24c2e8c91cd37}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetMainText@{Mtc\_PaArtMsgGetMainText}}
+\index{Mtc\_PaArtMsgGetMainText@{Mtc\_PaArtMsgGetMainText}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetMainText()}{Mtc\_PaArtMsgGetMainText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Main\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message main text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message main text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_acdae41b1bede63fe13dd9c1affd17d1e}\label{mtc__pa_8h_acdae41b1bede63fe13dd9c1affd17d1e}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetMediaUuid@{Mtc\_PaArtMsgGetMediaUuid}}
+\index{Mtc\_PaArtMsgGetMediaUuid@{Mtc\_PaArtMsgGetMediaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetMediaUuid()}{Mtc\_PaArtMsgGetMediaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Media\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message media unique id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message media unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a4977851248f09d23a9c1bfcf4c052c05}\label{mtc__pa_8h_a4977851248f09d23a9c1bfcf4c052c05}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetOrigLink@{Mtc\_PaArtMsgGetOrigLink}}
+\index{Mtc\_PaArtMsgGetOrigLink@{Mtc\_PaArtMsgGetOrigLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetOrigLink()}{Mtc\_PaArtMsgGetOrigLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Orig\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message original link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message original link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ae19ba1423ca8c51713c613165aeb69f8}\label{mtc__pa_8h_ae19ba1423ca8c51713c613165aeb69f8}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetSrcLink@{Mtc\_PaArtMsgGetSrcLink}}
+\index{Mtc\_PaArtMsgGetSrcLink@{Mtc\_PaArtMsgGetSrcLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetSrcLink()}{Mtc\_PaArtMsgGetSrcLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Src\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message source link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message source link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_afba7a866828998328ce6f8171e3f1760}\label{mtc__pa_8h_afba7a866828998328ce6f8171e3f1760}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetThumbLink@{Mtc\_PaArtMsgGetThumbLink}}
+\index{Mtc\_PaArtMsgGetThumbLink@{Mtc\_PaArtMsgGetThumbLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetThumbLink()}{Mtc\_PaArtMsgGetThumbLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Thumb\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message thumb link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message thumb link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad71ea41a0f40ed680305bd1cb7de77fe}\label{mtc__pa_8h_ad71ea41a0f40ed680305bd1cb7de77fe}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaArtMsgGetTitle@{Mtc\_PaArtMsgGetTitle}}
+\index{Mtc\_PaArtMsgGetTitle@{Mtc\_PaArtMsgGetTitle}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaArtMsgGetTitle()}{Mtc\_PaArtMsgGetTitle()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Art\+Msg\+Get\+Title (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Art\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message title. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Art\+Msg\+Id} & The article message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message title. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a092a06f7bebdebc496b1c53832f2c399}\label{mtc__pa_8h_a092a06f7bebdebc496b1c53832f2c399}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetIdType@{Mtc\_PaBscGetIdType}}
+\index{Mtc\_PaBscGetIdType@{Mtc\_PaBscGetIdType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetIdType()}{Mtc\_PaBscGetIdType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Bsc\+Get\+Id\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account id type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account id type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ae2c4513ea5b9e2c238f511143b813b3c}\label{mtc__pa_8h_ae2c4513ea5b9e2c238f511143b813b3c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetIntro@{Mtc\_PaBscGetIntro}}
+\index{Mtc\_PaBscGetIntro@{Mtc\_PaBscGetIntro}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetIntro()}{Mtc\_PaBscGetIntro()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Get\+Intro (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account introduce. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account introduce. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad30518ff5139d0cb997207cbfa53b761}\label{mtc__pa_8h_ad30518ff5139d0cb997207cbfa53b761}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetLogoUrl@{Mtc\_PaBscGetLogoUrl}}
+\index{Mtc\_PaBscGetLogoUrl@{Mtc\_PaBscGetLogoUrl}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetLogoUrl()}{Mtc\_PaBscGetLogoUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Get\+Logo\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account logo url. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account logo url. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_aa8012fc4258549367bb399eabce6c699}\label{mtc__pa_8h_aa8012fc4258549367bb399eabce6c699}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetName@{Mtc\_PaBscGetName}}
+\index{Mtc\_PaBscGetName@{Mtc\_PaBscGetName}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetName()}{Mtc\_PaBscGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a8cae2b86ca50fe45bc889374bf1c28ce}\label{mtc__pa_8h_a8cae2b86ca50fe45bc889374bf1c28ce}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetPaUuid@{Mtc\_PaBscGetPaUuid}}
+\index{Mtc\_PaBscGetPaUuid@{Mtc\_PaBscGetPaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetPaUuid()}{Mtc\_PaBscGetPaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Get\+Pa\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account uuid. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a82b4b0b1647a341f90c6a2d555e99ee0}\label{mtc__pa_8h_a82b4b0b1647a341f90c6a2d555e99ee0}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetRecmdLv@{Mtc\_PaBscGetRecmdLv}}
+\index{Mtc\_PaBscGetRecmdLv@{Mtc\_PaBscGetRecmdLv}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetRecmdLv()}{Mtc\_PaBscGetRecmdLv()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Bsc\+Get\+Recmd\+Lv (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account recommend level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account recommend level, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_ab2ad24193a85aade962da3f35f4526f1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_aae302de600baeb523bf94b178b8f985e}\label{mtc__pa_8h_aae302de600baeb523bf94b178b8f985e}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscGetSubsStat@{Mtc\_PaBscGetSubsStat}}
+\index{Mtc\_PaBscGetSubsStat@{Mtc\_PaBscGetSubsStat}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscGetSubsStat()}{Mtc\_PaBscGetSubsStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Bsc\+Get\+Subs\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Pa\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account subscribe status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Pa\+Id} & The public account id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 when public account have subscribed, otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a4e983bdc252ba6c290453e05c09ebff0}\label{mtc__pa_8h_a4e983bdc252ba6c290453e05c09ebff0}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetCreateTime@{Mtc\_PaBscMsgGetCreateTime}}
+\index{Mtc\_PaBscMsgGetCreateTime@{Mtc\_PaBscMsgGetCreateTime}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetCreateTime()}{Mtc\_PaBscMsgGetCreateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Create\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message create time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message create time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a16d4aef3b9fcabdd08e446e9668bf052}\label{mtc__pa_8h_a16d4aef3b9fcabdd08e446e9668bf052}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetFileDuration@{Mtc\_PaBscMsgGetFileDuration}}
+\index{Mtc\_PaBscMsgGetFileDuration@{Mtc\_PaBscMsgGetFileDuration}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetFileDuration()}{Mtc\_PaBscMsgGetFileDuration()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+File\+Duration (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message file duration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message file duration. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a5857e8e54b2dc6cb65e11b6bfb8d782b}\label{mtc__pa_8h_a5857e8e54b2dc6cb65e11b6bfb8d782b}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetFileSize@{Mtc\_PaBscMsgGetFileSize}}
+\index{Mtc\_PaBscMsgGetFileSize@{Mtc\_PaBscMsgGetFileSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetFileSize()}{Mtc\_PaBscMsgGetFileSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+File\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message file size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message file size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a7c5d0c7f5542853758ac40955088d539}\label{mtc__pa_8h_a7c5d0c7f5542853758ac40955088d539}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetFileType@{Mtc\_PaBscMsgGetFileType}}
+\index{Mtc\_PaBscMsgGetFileType@{Mtc\_PaBscMsgGetFileType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetFileType()}{Mtc\_PaBscMsgGetFileType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+File\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message file type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message file type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a2d42852d21f59e1154742882a335d0af}\label{mtc__pa_8h_a2d42852d21f59e1154742882a335d0af}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetMediaUuid@{Mtc\_PaBscMsgGetMediaUuid}}
+\index{Mtc\_PaBscMsgGetMediaUuid@{Mtc\_PaBscMsgGetMediaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetMediaUuid()}{Mtc\_PaBscMsgGetMediaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Media\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message media unique id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message media unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_aa1e56471021e90b80f381bf01f3abb9c}\label{mtc__pa_8h_aa1e56471021e90b80f381bf01f3abb9c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetOrigLink@{Mtc\_PaBscMsgGetOrigLink}}
+\index{Mtc\_PaBscMsgGetOrigLink@{Mtc\_PaBscMsgGetOrigLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetOrigLink()}{Mtc\_PaBscMsgGetOrigLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Orig\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message original link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message original link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a173d87e9caa708e2dd947cf77c482e80}\label{mtc__pa_8h_a173d87e9caa708e2dd947cf77c482e80}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetThumbLink@{Mtc\_PaBscMsgGetThumbLink}}
+\index{Mtc\_PaBscMsgGetThumbLink@{Mtc\_PaBscMsgGetThumbLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetThumbLink()}{Mtc\_PaBscMsgGetThumbLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Thumb\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message thumb link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message thumb link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_aeb0c2326d38e2c7878470ea4c481eb5f}\label{mtc__pa_8h_aeb0c2326d38e2c7878470ea4c481eb5f}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaBscMsgGetTitle@{Mtc\_PaBscMsgGetTitle}}
+\index{Mtc\_PaBscMsgGetTitle@{Mtc\_PaBscMsgGetTitle}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaBscMsgGetTitle()}{Mtc\_PaBscMsgGetTitle()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Bsc\+Msg\+Get\+Title (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account basic message title. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account basic message title. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a10f8a8021b98f0e09066cf2182c88181}\label{mtc__pa_8h_a10f8a8021b98f0e09066cf2182c88181}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetAuthor@{Mtc\_PaCardMsgGetAuthor}}
+\index{Mtc\_PaCardMsgGetAuthor@{Mtc\_PaCardMsgGetAuthor}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetAuthor()}{Mtc\_PaCardMsgGetAuthor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Author (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message author. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message author. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad40c00d801e4ecd3c90cbcb1098eb32f}\label{mtc__pa_8h_ad40c00d801e4ecd3c90cbcb1098eb32f}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetBodyLink@{Mtc\_PaCardMsgGetBodyLink}}
+\index{Mtc\_PaCardMsgGetBodyLink@{Mtc\_PaCardMsgGetBodyLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetBodyLink()}{Mtc\_PaCardMsgGetBodyLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Body\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message body link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message body link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a64ca488067d9e762e3ecd204673e959c}\label{mtc__pa_8h_a64ca488067d9e762e3ecd204673e959c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetMainText@{Mtc\_PaCardMsgGetMainText}}
+\index{Mtc\_PaCardMsgGetMainText@{Mtc\_PaCardMsgGetMainText}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetMainText()}{Mtc\_PaCardMsgGetMainText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Main\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message main text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message main text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a4f8358f63fd96e07105167842d80436b}\label{mtc__pa_8h_a4f8358f63fd96e07105167842d80436b}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetMediaUuid@{Mtc\_PaCardMsgGetMediaUuid}}
+\index{Mtc\_PaCardMsgGetMediaUuid@{Mtc\_PaCardMsgGetMediaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetMediaUuid()}{Mtc\_PaCardMsgGetMediaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Media\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message media unique id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message media unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ac37afe0242c33867c093d5292cd3a758}\label{mtc__pa_8h_ac37afe0242c33867c093d5292cd3a758}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetOrigLink@{Mtc\_PaCardMsgGetOrigLink}}
+\index{Mtc\_PaCardMsgGetOrigLink@{Mtc\_PaCardMsgGetOrigLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetOrigLink()}{Mtc\_PaCardMsgGetOrigLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Orig\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message original link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message original link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad8438a9395ce0215e93d99dabe9e5af7}\label{mtc__pa_8h_ad8438a9395ce0215e93d99dabe9e5af7}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetSrcLink@{Mtc\_PaCardMsgGetSrcLink}}
+\index{Mtc\_PaCardMsgGetSrcLink@{Mtc\_PaCardMsgGetSrcLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetSrcLink()}{Mtc\_PaCardMsgGetSrcLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Src\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message source link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message source link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a11ad31aa88f4a3a0f2ae19f6cb25a101}\label{mtc__pa_8h_a11ad31aa88f4a3a0f2ae19f6cb25a101}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetThumbLink@{Mtc\_PaCardMsgGetThumbLink}}
+\index{Mtc\_PaCardMsgGetThumbLink@{Mtc\_PaCardMsgGetThumbLink}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetThumbLink()}{Mtc\_PaCardMsgGetThumbLink()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Thumb\+Link (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message thumb link. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message thumb link. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a46dade46fead512b645047d3ef91eb3c}\label{mtc__pa_8h_a46dade46fead512b645047d3ef91eb3c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaCardMsgGetTitle@{Mtc\_PaCardMsgGetTitle}}
+\index{Mtc\_PaCardMsgGetTitle@{Mtc\_PaCardMsgGetTitle}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCardMsgGetTitle()}{Mtc\_PaCardMsgGetTitle()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Card\+Msg\+Get\+Title (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account card message title. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The card message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account card message title. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ac3d46ae027d5a68d0fac32ff9a55c5e7}\label{mtc__pa_8h_ac3d46ae027d5a68d0fac32ff9a55c5e7}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetAcptStat@{Mtc\_PaDetailGetAcptStat}}
+\index{Mtc\_PaDetailGetAcptStat@{Mtc\_PaDetailGetAcptStat}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetAcptStat()}{Mtc\_PaDetailGetAcptStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Detail\+Get\+Acpt\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account accept satus. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 when client accept public account pushed, otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ac0708eab0c2e81f2683ea2368391ba71}\label{mtc__pa_8h_ac0708eab0c2e81f2683ea2368391ba71}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetActiveStat@{Mtc\_PaDetailGetActiveStat}}
+\index{Mtc\_PaDetailGetActiveStat@{Mtc\_PaDetailGetActiveStat}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetActiveStat()}{Mtc\_PaDetailGetActiveStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Detail\+Get\+Active\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account active satus. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & Indicates public account is active status, \\
+\hline
+{\em 1} & Indicates public account is paused status. \\
+\hline
+{\em 2} & Indicates public account is closed status. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__pa_8h_a0f263d37368942ba198c9d339a10b4d8}\label{mtc__pa_8h_a0f263d37368942ba198c9d339a10b4d8}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetAddr@{Mtc\_PaDetailGetAddr}}
+\index{Mtc\_PaDetailGetAddr@{Mtc\_PaDetailGetAddr}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetAddr()}{Mtc\_PaDetailGetAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account address. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_af0f0d3abaa9fc436ea149013de5fdae0}\label{mtc__pa_8h_af0f0d3abaa9fc436ea149013de5fdae0}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetCompany@{Mtc\_PaDetailGetCompany}}
+\index{Mtc\_PaDetailGetCompany@{Mtc\_PaDetailGetCompany}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetCompany()}{Mtc\_PaDetailGetCompany()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Company (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account authentication company. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account authentication company. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_aa4068c9e1297266a06c6058d936d7a64}\label{mtc__pa_8h_aa4068c9e1297266a06c6058d936d7a64}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetEmail@{Mtc\_PaDetailGetEmail}}
+\index{Mtc\_PaDetailGetEmail@{Mtc\_PaDetailGetEmail}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetEmail()}{Mtc\_PaDetailGetEmail()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Email (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account email. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account email. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a097fd52363201657b4cb199e6bfbf863}\label{mtc__pa_8h_a097fd52363201657b4cb199e6bfbf863}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetField@{Mtc\_PaDetailGetField}}
+\index{Mtc\_PaDetailGetField@{Mtc\_PaDetailGetField}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetField()}{Mtc\_PaDetailGetField()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Field (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account field. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account field. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a46128f280ab8b744150c1811fb1a7eb1}\label{mtc__pa_8h_a46128f280ab8b744150c1811fb1a7eb1}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetIdType@{Mtc\_PaDetailGetIdType}}
+\index{Mtc\_PaDetailGetIdType@{Mtc\_PaDetailGetIdType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetIdType()}{Mtc\_PaDetailGetIdType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Detail\+Get\+Id\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account id type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account id type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a2447cce2755b648cdf14dab7de8963a7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_a5aaf3712f4669ac928ffcca64367a3e6}\label{mtc__pa_8h_a5aaf3712f4669ac928ffcca64367a3e6}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetIntro@{Mtc\_PaDetailGetIntro}}
+\index{Mtc\_PaDetailGetIntro@{Mtc\_PaDetailGetIntro}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetIntro()}{Mtc\_PaDetailGetIntro()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Intro (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account introduce. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account introduce. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a5f10cb366998c2316960b33bbfc39358}\label{mtc__pa_8h_a5f10cb366998c2316960b33bbfc39358}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetLogoUrl@{Mtc\_PaDetailGetLogoUrl}}
+\index{Mtc\_PaDetailGetLogoUrl@{Mtc\_PaDetailGetLogoUrl}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetLogoUrl()}{Mtc\_PaDetailGetLogoUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Logo\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account logo url. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account logo url. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a04063f87b11ff2d59241e8e2a1130896}\label{mtc__pa_8h_a04063f87b11ff2d59241e8e2a1130896}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetMenuTimestamp@{Mtc\_PaDetailGetMenuTimestamp}}
+\index{Mtc\_PaDetailGetMenuTimestamp@{Mtc\_PaDetailGetMenuTimestamp}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetMenuTimestamp()}{Mtc\_PaDetailGetMenuTimestamp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Pa\+Detail\+Get\+Menu\+Timestamp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account the menu timestamp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account menu timestamp. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a9b58f4bffbe1638fc3455bfdc38115b3}\label{mtc__pa_8h_a9b58f4bffbe1638fc3455bfdc38115b3}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetMenuType@{Mtc\_PaDetailGetMenuType}}
+\index{Mtc\_PaDetailGetMenuType@{Mtc\_PaDetailGetMenuType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetMenuType()}{Mtc\_PaDetailGetMenuType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Detail\+Get\+Menu\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account menu type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 when public account have menu setting, otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a1c739c7c887cb7df728c7a6a4fbdd0bf}\label{mtc__pa_8h_a1c739c7c887cb7df728c7a6a4fbdd0bf}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetName@{Mtc\_PaDetailGetName}}
+\index{Mtc\_PaDetailGetName@{Mtc\_PaDetailGetName}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetName()}{Mtc\_PaDetailGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a25bc71e85458a807ceac870b516d8e1c}\label{mtc__pa_8h_a25bc71e85458a807ceac870b516d8e1c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetPaUuid@{Mtc\_PaDetailGetPaUuid}}
+\index{Mtc\_PaDetailGetPaUuid@{Mtc\_PaDetailGetPaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetPaUuid()}{Mtc\_PaDetailGetPaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Pa\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account uuid. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a30897630ff532c003f1a28f0d43b2ecf}\label{mtc__pa_8h_a30897630ff532c003f1a28f0d43b2ecf}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetQrCode@{Mtc\_PaDetailGetQrCode}}
+\index{Mtc\_PaDetailGetQrCode@{Mtc\_PaDetailGetQrCode}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetQrCode()}{Mtc\_PaDetailGetQrCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Qr\+Code (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account qrcode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account qrcode. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_af61a1beda729fef9168775b17c6e83a9}\label{mtc__pa_8h_af61a1beda729fef9168775b17c6e83a9}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetRecmdLv@{Mtc\_PaDetailGetRecmdLv}}
+\index{Mtc\_PaDetailGetRecmdLv@{Mtc\_PaDetailGetRecmdLv}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetRecmdLv()}{Mtc\_PaDetailGetRecmdLv()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Detail\+Get\+Recmd\+Lv (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account recommend level type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account recommend level type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_ab2ad24193a85aade962da3f35f4526f1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+R\+E\+C\+M\+D\+\_\+\+L\+V\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_a058cc30fccd60af4bad178d4ed075b66}\label{mtc__pa_8h_a058cc30fccd60af4bad178d4ed075b66}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetSubsStat@{Mtc\_PaDetailGetSubsStat}}
+\index{Mtc\_PaDetailGetSubsStat@{Mtc\_PaDetailGetSubsStat}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetSubsStat()}{Mtc\_PaDetailGetSubsStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Detail\+Get\+Subs\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account subscribe status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 when public account have subscribed, otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a0a3e59487bab89fe8ba842ae0710bc0a}\label{mtc__pa_8h_a0a3e59487bab89fe8ba842ae0710bc0a}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetTel@{Mtc\_PaDetailGetTel}}
+\index{Mtc\_PaDetailGetTel@{Mtc\_PaDetailGetTel}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetTel()}{Mtc\_PaDetailGetTel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Tel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account tel. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account tel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a0b750e3413e90ad41f4a425235754dbd}\label{mtc__pa_8h_a0b750e3413e90ad41f4a425235754dbd}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetType@{Mtc\_PaDetailGetType}}
+\index{Mtc\_PaDetailGetType@{Mtc\_PaDetailGetType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetType()}{Mtc\_PaDetailGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a2eeaa89762f191512ff83718181186f1}\label{mtc__pa_8h_a2eeaa89762f191512ff83718181186f1}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetUpdTime@{Mtc\_PaDetailGetUpdTime}}
+\index{Mtc\_PaDetailGetUpdTime@{Mtc\_PaDetailGetUpdTime}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetUpdTime()}{Mtc\_PaDetailGetUpdTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Pa\+Detail\+Get\+Upd\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account the last information update time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account update time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_add25468541e5f7216d5cae6f3856ea91}\label{mtc__pa_8h_add25468541e5f7216d5cae6f3856ea91}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaDetailGetZip@{Mtc\_PaDetailGetZip}}
+\index{Mtc\_PaDetailGetZip@{Mtc\_PaDetailGetZip}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaDetailGetZip()}{Mtc\_PaDetailGetZip()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Detail\+Get\+Zip (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public account zip. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account zip. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a200448cd94e7454f5ba66ad105c41252}\label{mtc__pa_8h_a200448cd94e7454f5ba66ad105c41252}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaKeyNoteGetName@{Mtc\_PaKeyNoteGetName}}
+\index{Mtc\_PaKeyNoteGetName@{Mtc\_PaKeyNoteGetName}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaKeyNoteGetName()}{Mtc\_PaKeyNoteGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Key\+Note\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Note\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message key note name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message key note name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_adbbf0c8be613009cdb50d03e6a026079}\label{mtc__pa_8h_adbbf0c8be613009cdb50d03e6a026079}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaKeyNoteGetValueColor@{Mtc\_PaKeyNoteGetValueColor}}
+\index{Mtc\_PaKeyNoteGetValueColor@{Mtc\_PaKeyNoteGetValueColor}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaKeyNoteGetValueColor()}{Mtc\_PaKeyNoteGetValueColor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Key\+Note\+Get\+Value\+Color (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Note\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message key note value color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message key note value color, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_ac4834f2cb10cb30ca2a9a4584b322506}\label{mtc__pa_8h_ac4834f2cb10cb30ca2a9a4584b322506}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaKeyNoteGetValueText@{Mtc\_PaKeyNoteGetValueText}}
+\index{Mtc\_PaKeyNoteGetValueText@{Mtc\_PaKeyNoteGetValueText}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaKeyNoteGetValueText()}{Mtc\_PaKeyNoteGetValueText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Key\+Note\+Get\+Value\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Note\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message key note value text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message key note value text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ab17ba86414e37fe89f87f24602926cb8}\label{mtc__pa_8h_ab17ba86414e37fe89f87f24602926cb8}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMenuGetCmdId@{Mtc\_PaMenuGetCmdId}}
+\index{Mtc\_PaMenuGetCmdId@{Mtc\_PaMenuGetCmdId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMenuGetCmdId()}{Mtc\_PaMenuGetCmdId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Menu\+Get\+Cmd\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Menu\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account menu command id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Menu\+Id} & The menu id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account menu command id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a87112c063c3483114a253bca873c1877}\label{mtc__pa_8h_a87112c063c3483114a253bca873c1877}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMenuGetCmdType@{Mtc\_PaMenuGetCmdType}}
+\index{Mtc\_PaMenuGetCmdType@{Mtc\_PaMenuGetCmdType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMenuGetCmdType()}{Mtc\_PaMenuGetCmdType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Menu\+Get\+Cmd\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Menu\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account menu command type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Menu\+Id} & The menu id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account menu command type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a2fddc40d18e26f0156d539a60d7b12a9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+N\+U\+\_\+\+C\+M\+D\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_aa57654f640da4ff8805c72bfa3b2b6cc}\label{mtc__pa_8h_aa57654f640da4ff8805c72bfa3b2b6cc}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMenuGetPriority@{Mtc\_PaMenuGetPriority}}
+\index{Mtc\_PaMenuGetPriority@{Mtc\_PaMenuGetPriority}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMenuGetPriority()}{Mtc\_PaMenuGetPriority()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Menu\+Get\+Priority (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Menu\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account menu priority. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Menu\+Id} & The menu id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account menu priority. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a03f16ebb8ce36d3730aa3bda2eae4d10}\label{mtc__pa_8h_a03f16ebb8ce36d3730aa3bda2eae4d10}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMenuGetSubmenuId@{Mtc\_PaMenuGetSubmenuId}}
+\index{Mtc\_PaMenuGetSubmenuId@{Mtc\_PaMenuGetSubmenuId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMenuGetSubmenuId()}{Mtc\_PaMenuGetSubmenuId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Menu\+Get\+Submenu\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Menu\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get public account submenu size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Menu\+Id} & The menu id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The submenu index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account submenu id successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_acf6199c140612279e60bce8316b2c781}\label{mtc__pa_8h_acf6199c140612279e60bce8316b2c781}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMenuGetSubmenuSize@{Mtc\_PaMenuGetSubmenuSize}}
+\index{Mtc\_PaMenuGetSubmenuSize@{Mtc\_PaMenuGetSubmenuSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMenuGetSubmenuSize()}{Mtc\_PaMenuGetSubmenuSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Menu\+Get\+Submenu\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Menu\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account submenu size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Menu\+Id} & The menu id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account submenu size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_af1677f3543ee18745d2cde0a6f554ded}\label{mtc__pa_8h_af1677f3543ee18745d2cde0a6f554ded}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMenuGetTitle@{Mtc\_PaMenuGetTitle}}
+\index{Mtc\_PaMenuGetTitle@{Mtc\_PaMenuGetTitle}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMenuGetTitle()}{Mtc\_PaMenuGetTitle()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Menu\+Get\+Title (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Menu\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account menu title. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Menu\+Id} & The menu id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account menu title. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ac67738038e7357d594961cd6bd9798f0}\label{mtc__pa_8h_ac67738038e7357d594961cd6bd9798f0}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetActiveStat@{Mtc\_PaMsgGetActiveStat}}
+\index{Mtc\_PaMsgGetActiveStat@{Mtc\_PaMsgGetActiveStat}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetActiveStat()}{Mtc\_PaMsgGetActiveStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Msg\+Get\+Active\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account message active status. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & Indicates public account is active status, \\
+\hline
+{\em 1} & Indicates public account is paused status. \\
+\hline
+{\em 2} & Indicates public account is closed status. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__pa_8h_a4cc292fc2e6aebf4f745648264da8e75}\label{mtc__pa_8h_a4cc292fc2e6aebf4f745648264da8e75}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetArtMsgId@{Mtc\_PaMsgGetArtMsgId}}
+\index{Mtc\_PaMsgGetArtMsgId@{Mtc\_PaMsgGetArtMsgId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetArtMsgId()}{Mtc\_PaMsgGetArtMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Msg\+Get\+Art\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get public account article message size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Thepublic account article message id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ab912f084a28c1247c51302d6ff789561}\label{mtc__pa_8h_ab912f084a28c1247c51302d6ff789561}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetArtMsgSize@{Mtc\_PaMsgGetArtMsgSize}}
+\index{Mtc\_PaMsgGetArtMsgSize@{Mtc\_PaMsgGetArtMsgSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetArtMsgSize()}{Mtc\_PaMsgGetArtMsgSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Pa\+Msg\+Get\+Art\+Msg\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account article message size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account article message size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a0ba075ce28c7d8b2729936a82c04e9a5}\label{mtc__pa_8h_a0ba075ce28c7d8b2729936a82c04e9a5}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetCreateTime@{Mtc\_PaMsgGetCreateTime}}
+\index{Mtc\_PaMsgGetCreateTime@{Mtc\_PaMsgGetCreateTime}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetCreateTime()}{Mtc\_PaMsgGetCreateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Pa\+Msg\+Get\+Create\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account message create time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account message create time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a8e3380b1880a36449e837bb2a66595fa}\label{mtc__pa_8h_a8e3380b1880a36449e837bb2a66595fa}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetFwdable@{Mtc\_PaMsgGetFwdable}}
+\index{Mtc\_PaMsgGetFwdable@{Mtc\_PaMsgGetFwdable}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetFwdable()}{Mtc\_PaMsgGetFwdable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Msg\+Get\+Fwdable (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account message forwordable. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when message is forwordable, otherwise return 1. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a9eddc11aa25aaac8374368b9d5f45d2c}\label{mtc__pa_8h_a9eddc11aa25aaac8374368b9d5f45d2c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetGInfoId@{Mtc\_PaMsgGetGInfoId}}
+\index{Mtc\_PaMsgGetGInfoId@{Mtc\_PaMsgGetGInfoId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetGInfoId()}{Mtc\_PaMsgGetGInfoId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Msg\+Get\+G\+Info\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account geolocation information id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account geolocation information id on succeed, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_aea67c01ff3b8510db0eaa2cd48d74e00}\label{mtc__pa_8h_aea67c01ff3b8510db0eaa2cd48d74e00}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetMediaType@{Mtc\_PaMsgGetMediaType}}
+\index{Mtc\_PaMsgGetMediaType@{Mtc\_PaMsgGetMediaType}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetMediaType()}{Mtc\_PaMsgGetMediaType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Msg\+Get\+Media\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account message media type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account message media type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a686928373c4fdcdb4afb19f596ac196d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_aac61923dd9de19ae6b8ea42e5fceb884}\label{mtc__pa_8h_aac61923dd9de19ae6b8ea42e5fceb884}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetMsgUuid@{Mtc\_PaMsgGetMsgUuid}}
+\index{Mtc\_PaMsgGetMsgUuid@{Mtc\_PaMsgGetMsgUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetMsgUuid()}{Mtc\_PaMsgGetMsgUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Msg\+Get\+Msg\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account message unique id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account message unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a388932ddd52f18a21fe97a9f296e929c}\label{mtc__pa_8h_a388932ddd52f18a21fe97a9f296e929c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetPaUuid@{Mtc\_PaMsgGetPaUuid}}
+\index{Mtc\_PaMsgGetPaUuid@{Mtc\_PaMsgGetPaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetPaUuid()}{Mtc\_PaMsgGetPaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Msg\+Get\+Pa\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account unique id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account unique id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ac8ab625be30a9fd497f07e53e60b5b09}\label{mtc__pa_8h_ac8ab625be30a9fd497f07e53e60b5b09}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetSmsDigest@{Mtc\_PaMsgGetSmsDigest}}
+\index{Mtc\_PaMsgGetSmsDigest@{Mtc\_PaMsgGetSmsDigest}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetSmsDigest()}{Mtc\_PaMsgGetSmsDigest()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Msg\+Get\+Sms\+Digest (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account short message digest. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account short message digest. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_abb5b21115e06fab9ca75cb221963081a}\label{mtc__pa_8h_abb5b21115e06fab9ca75cb221963081a}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaMsgGetText@{Mtc\_PaMsgGetText}}
+\index{Mtc\_PaMsgGetText@{Mtc\_PaMsgGetText}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaMsgGetText()}{Mtc\_PaMsgGetText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Msg\+Get\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account text message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account text message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}\label{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessAddSubs@{Mtc\_PaSessAddSubs}}
+\index{Mtc\_PaSessAddSubs@{Mtc\_PaSessAddSubs}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessAddSubs()}{Mtc\_PaSessAddSubs()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Add\+Subs (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid }\end{DoxyParamCaption})}
+
+
+
+The public account add subscribe. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_acb63a2bee352e17af20f057c95614b19}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Add\+Subs\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a34ea9b1f9394ebb5e2ad65c96080ce5b}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Add\+Subs\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The pa uuid.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}\label{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessCancelSubs@{Mtc\_PaSessCancelSubs}}
+\index{Mtc\_PaSessCancelSubs@{Mtc\_PaSessCancelSubs}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessCancelSubs()}{Mtc\_PaSessCancelSubs()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Cancel\+Subs (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid }\end{DoxyParamCaption})}
+
+
+
+The public account cancle subscribe. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_ac5a9be3f941157ebb1a817ed4c9c0791}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Cancel\+Subs\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a61b1aef49ca9acea768ac3da3f6fe25f}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Cancel\+Subs\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The pa uuid.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}\label{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessComplainPub@{Mtc\_PaSessComplainPub}}
+\index{Mtc\_PaSessComplainPub@{Mtc\_PaSessComplainPub}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessComplainPub()}{Mtc\_PaSessComplainPub()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Complain\+Pub (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid,  }\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Reason,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Data,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Desc }\end{DoxyParamCaption})}
+
+
+
+The public accounts complain public. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_adaace5c0ffbed9e68b15ff26926a4b8f}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a79001a847d4df052d8e0a0fa4ea8cb67}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The public account unique id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Type} & The public account complain type, value 1 indicates complain public account, value 2 indicates complain public message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Reason} & The public account complain reason. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Data} & The public message data, mandatory if i\+Type euqal 2. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Desc} & The public account behavior description, option.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a227ff077399b894e5eb7c80ec69a7b31}\label{mtc__pa_8h_a227ff077399b894e5eb7c80ec69a7b31}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessDecodeMsg@{Mtc\_PaSessDecodeMsg}}
+\index{Mtc\_PaSessDecodeMsg@{Mtc\_PaSessDecodeMsg}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessDecodeMsg()}{Mtc\_PaSessDecodeMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Decode\+Msg (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Xml\+Msg }\end{DoxyParamCaption})}
+
+
+
+The public accounts decode public account xml message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The public account xml message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. When used completely, caller must release session, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a9b84cfd621dfee7c10b52d7e74fb8c9b}{Mtc\+\_\+\+Pa\+Sess\+Release}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_ad13bdf23c22790398c57b8dc86effef5}\label{mtc__pa_8h_ad13bdf23c22790398c57b8dc86effef5}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessEncodeMsg@{Mtc\_PaSessEncodeMsg}}
+\index{Mtc\_PaSessEncodeMsg@{Mtc\_PaSessEncodeMsg}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessEncodeMsg()}{Mtc\_PaSessEncodeMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Sess\+Encode\+Msg (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Text }\end{DoxyParamCaption})}
+
+
+
+The public accounts format text to xml message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Text} & The text message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The xml message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a53e42a9d64e48d90ffae88cc39851399}\label{mtc__pa_8h_a53e42a9d64e48d90ffae88cc39851399}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetMenuId@{Mtc\_PaSessGetMenuId}}
+\index{Mtc\_PaSessGetMenuId@{Mtc\_PaSessGetMenuId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetMenuId()}{Mtc\_PaSessGetMenuId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Menu\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get public account menu id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The menu index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The menu id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a2b69ff91ffcf6e290bb54ec7c5b2bba2}\label{mtc__pa_8h_a2b69ff91ffcf6e290bb54ec7c5b2bba2}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetMenuSize@{Mtc\_PaSessGetMenuSize}}
+\index{Mtc\_PaSessGetMenuSize@{Mtc\_PaSessGetMenuSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetMenuSize()}{Mtc\_PaSessGetMenuSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Menu\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account the menu size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The menu size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_adec93fdf589e4bd4cf26ce82731c2b8e}\label{mtc__pa_8h_adec93fdf589e4bd4cf26ce82731c2b8e}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetMsgId@{Mtc\_PaSessGetMsgId}}
+\index{Mtc\_PaSessGetMsgId@{Mtc\_PaSessGetMsgId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetMsgId()}{Mtc\_PaSessGetMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get public account message id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The message index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a8006fbdbe8a1cee0b97a7c4ae94128dc}\label{mtc__pa_8h_a8006fbdbe8a1cee0b97a7c4ae94128dc}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetMsgSize@{Mtc\_PaSessGetMsgSize}}
+\index{Mtc\_PaSessGetMsgSize@{Mtc\_PaSessGetMsgSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetMsgSize()}{Mtc\_PaSessGetMsgSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Msg\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account the message size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a76308bec48d68f0648fa547932a06efd}\label{mtc__pa_8h_a76308bec48d68f0648fa547932a06efd}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPaId@{Mtc\_PaSessGetPaId}}
+\index{Mtc\_PaSessGetPaId@{Mtc\_PaSessGetPaId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPaId()}{Mtc\_PaSessGetPaId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Pa\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+The public accounts get pa size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The pa index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pa id successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a67480eaaaa1c2af3d362ed8a6b4797cb}\label{mtc__pa_8h_a67480eaaaa1c2af3d362ed8a6b4797cb}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPaSize@{Mtc\_PaSessGetPaSize}}
+\index{Mtc\_PaSessGetPaSize@{Mtc\_PaSessGetPaSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPaSize()}{Mtc\_PaSessGetPaSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Pa\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public accounts get pa size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pa size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a0255e4f649439b0f005c96015cee765c}\label{mtc__pa_8h_a0255e4f649439b0f005c96015cee765c}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPaUuid@{Mtc\_PaSessGetPaUuid}}
+\index{Mtc\_PaSessGetPaUuid@{Mtc\_PaSessGetPaUuid}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPaUuid()}{Mtc\_PaSessGetPaUuid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Sess\+Get\+Pa\+Uuid (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account session pa uuid. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account uuid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}\label{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPrevMsg@{Mtc\_PaSessGetPrevMsg}}
+\index{Mtc\_PaSessGetPrevMsg@{Mtc\_PaSessGetPrevMsg}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPrevMsg()}{Mtc\_PaSessGetPrevMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Prev\+Msg (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid,  }\item[{Z\+T\+I\+M\+E\+\_\+T}]{z\+Timestamp,  }\item[{Z\+U\+I\+NT}]{i\+Order,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Num }\end{DoxyParamCaption})}
+
+
+
+The public accounts get previous message. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_a585b9150f3af5899b63f8635d527480a}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Prev\+Msg\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a393a99fa254e8b40f1a8937521964328}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Prev\+Msg\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The public account unique id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Timestamp} & The public account query message start time. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Order} & The public account query message time direction. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Size} & The public account id number each page. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Num} & The public account query message number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}\label{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPubDetail@{Mtc\_PaSessGetPubDetail}}
+\index{Mtc\_PaSessGetPubDetail@{Mtc\_PaSessGetPubDetail}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPubDetail()}{Mtc\_PaSessGetPubDetail()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Detail (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid,  }\item[{Z\+T\+I\+M\+E\+\_\+T}]{z\+Upd\+Time }\end{DoxyParamCaption})}
+
+
+
+The public account get public detail. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_a8ade701a7f88a8b8b7fcc12351641ef1}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Detail\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_adda9064ff8bbe0b7ad451d360a343359}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Detail\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The public account unique id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Upd\+Time} & The public account detail last update time.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}\label{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPubLst@{Mtc\_PaSessGetPubLst}}
+\index{Mtc\_PaSessGetPubLst@{Mtc\_PaSessGetPubLst}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPubLst()}{Mtc\_PaSessGetPubLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Keyword,  }\item[{Z\+U\+I\+NT}]{i\+Order,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Num }\end{DoxyParamCaption})}
+
+
+
+The public account get public list. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_af293dc37675cd25f25aaade86a6bd015}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a06ab176056e71e2bcdb8e36aea2373d4}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Keyword} & The public account search keyword. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Order} & The public account list sorting strategy. value 0 indicates order by subscribed time desc, value 1 indicates ordey by name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Size} & The public account id number each page. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Num} & The public account list pagination.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}\label{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPubLstRecmd@{Mtc\_PaSessGetPubLstRecmd}}
+\index{Mtc\_PaSessGetPubLstRecmd@{Mtc\_PaSessGetPubLstRecmd}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPubLstRecmd()}{Mtc\_PaSessGetPubLstRecmd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst\+Recmd (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Num }\end{DoxyParamCaption})}
+
+
+
+The public account get public list recommend. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_a470129f8921e5a3283fce83018ee77bf}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Recmd\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_af4b8bfb9b2443fdf8108aa33243d87c6}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Recmd\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The public source type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a6c0aec46ed1579b4da1bcf2e5169cdf1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Page\+Size} & The public account id number each page. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Num} & The public account list pagination.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}\label{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetPubMenu@{Mtc\_PaSessGetPubMenu}}
+\index{Mtc\_PaSessGetPubMenu@{Mtc\_PaSessGetPubMenu}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetPubMenu()}{Mtc\_PaSessGetPubMenu()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Menu (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid,  }\item[{Z\+T\+I\+M\+E\+\_\+T}]{z\+Timestamp }\end{DoxyParamCaption})}
+
+
+
+The public account get public menu. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_a5a3e9de97b2eb8b34805ece70d663b84}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Menu\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a02d86cdb6f1e081ddb698ccf353eecb7}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Menu\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The public account unique id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Timestamp} & The public account menu last update time.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a5a27885add43362d1f248de7a5eb068b}\label{mtc__pa_8h_a5a27885add43362d1f248de7a5eb068b}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetResult@{Mtc\_PaSessGetResult}}
+\index{Mtc\_PaSessGetResult@{Mtc\_PaSessGetResult}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetResult()}{Mtc\_PaSessGetResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Sess\+Get\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account session result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_acb4eff8682c0624b937a1ee112163d96}\label{mtc__pa_8h_acb4eff8682c0624b937a1ee112163d96}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessGetXmlMsg@{Mtc\_PaSessGetXmlMsg}}
+\index{Mtc\_PaSessGetXmlMsg@{Mtc\_PaSessGetXmlMsg}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessGetXmlMsg()}{Mtc\_PaSessGetXmlMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Sess\+Get\+Xml\+Msg (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public accounts get xml message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The xml message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a9e624c91494983828d6836fe758c349e}\label{mtc__pa_8h_a9e624c91494983828d6836fe758c349e}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessHasData@{Mtc\_PaSessHasData}}
+\index{Mtc\_PaSessHasData@{Mtc\_PaSessHasData}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessHasData()}{Mtc\_PaSessHasData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Pa\+Sess\+Has\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Check public account session has data. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The has data flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}\label{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessQryUsrSubs@{Mtc\_PaSessQryUsrSubs}}
+\index{Mtc\_PaSessQryUsrSubs@{Mtc\_PaSessQryUsrSubs}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessQryUsrSubs()}{Mtc\_PaSessQryUsrSubs()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Qry\+Usr\+Subs (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Order,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Page\+Num }\end{DoxyParamCaption})}
+
+
+
+The public accounts query user subscribed. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_aa8c4b8d61f550c421dd358931a508da6}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Qry\+Usr\+Subs\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_ae25c3984a5e241eb63cf9d673334f1cd}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Qry\+Usr\+Subs\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Order} & The public account list sorting strategy, value 0 indicates order by subscribed time desc, value 1 indicates ordey by name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Size} & The public account id number each page. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Page\+Num} & The public account list pagination.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a9b84cfd621dfee7c10b52d7e74fb8c9b}\label{mtc__pa_8h_a9b84cfd621dfee7c10b52d7e74fb8c9b}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessRelease@{Mtc\_PaSessRelease}}
+\index{Mtc\_PaSessRelease@{Mtc\_PaSessRelease}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessRelease()}{Mtc\_PaSessRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Sess\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+The public accounts session release. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}\label{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaSessSetAcptStat@{Mtc\_PaSessSetAcptStat}}
+\index{Mtc\_PaSessSetAcptStat@{Mtc\_PaSessSetAcptStat}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaSessSetAcptStat()}{Mtc\_PaSessSetAcptStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Sess\+Set\+Acpt\+Stat (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pa\+Uuid,  }\item[{Z\+B\+O\+OL}]{b\+Acpt\+Stat }\end{DoxyParamCaption})}
+
+
+
+The public accounts set accept status. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__pa__cb_8h_adaace5c0ffbed9e68b15ff26926a4b8f}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Ok}} or \mbox{\hyperlink{mtc__pa__cb_8h_a79001a847d4df052d8e0a0fa4ea8cb67}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Pa\+Uuid} & The public account unique id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Reason} & The public account complain reason. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Desc} & The public account behavior description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account session id when successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad3e2f236d6e5699397334c24bd013ad3}\label{mtc__pa_8h_ad3e2f236d6e5699397334c24bd013ad3}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetFirstColor@{Mtc\_PaTmplMsgGetFirstColor}}
+\index{Mtc\_PaTmplMsgGetFirstColor@{Mtc\_PaTmplMsgGetFirstColor}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetFirstColor()}{Mtc\_PaTmplMsgGetFirstColor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+First\+Color (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message first color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message first color, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_a569d104f09a2b79adc7931b3da010107}\label{mtc__pa_8h_a569d104f09a2b79adc7931b3da010107}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetFirstText@{Mtc\_PaTmplMsgGetFirstText}}
+\index{Mtc\_PaTmplMsgGetFirstText@{Mtc\_PaTmplMsgGetFirstText}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetFirstText()}{Mtc\_PaTmplMsgGetFirstText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+First\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message first text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message first text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a3fbec4cf4005fc3ebe13703ec4321987}\label{mtc__pa_8h_a3fbec4cf4005fc3ebe13703ec4321987}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetKeyNoteId@{Mtc\_PaTmplMsgGetKeyNoteId}}
+\index{Mtc\_PaTmplMsgGetKeyNoteId@{Mtc\_PaTmplMsgGetKeyNoteId}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetKeyNoteId()}{Mtc\_PaTmplMsgGetKeyNoteId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Key\+Note\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+Get public account template message key note size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Thepublic account template message key note id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a398951f4ea974a6aaef34b302d6562fa}\label{mtc__pa_8h_a398951f4ea974a6aaef34b302d6562fa}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetKeyNoteSize@{Mtc\_PaTmplMsgGetKeyNoteSize}}
+\index{Mtc\_PaTmplMsgGetKeyNoteSize@{Mtc\_PaTmplMsgGetKeyNoteSize}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetKeyNoteSize()}{Mtc\_PaTmplMsgGetKeyNoteSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Key\+Note\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message key note size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message key note size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_a0179635db448c35d3f9b963128f9679a}\label{mtc__pa_8h_a0179635db448c35d3f9b963128f9679a}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetLastColor@{Mtc\_PaTmplMsgGetLastColor}}
+\index{Mtc\_PaTmplMsgGetLastColor@{Mtc\_PaTmplMsgGetLastColor}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetLastColor()}{Mtc\_PaTmplMsgGetLastColor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Last\+Color (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message last color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message last color, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_adc71a9a6bf1c044a22cc983f35559a73}\label{mtc__pa_8h_adc71a9a6bf1c044a22cc983f35559a73}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetLastText@{Mtc\_PaTmplMsgGetLastText}}
+\index{Mtc\_PaTmplMsgGetLastText@{Mtc\_PaTmplMsgGetLastText}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetLastText()}{Mtc\_PaTmplMsgGetLastText()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Last\+Text (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message last text. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message last text. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_ad23ea765ffad09174c56834c8904a01e}\label{mtc__pa_8h_ad23ea765ffad09174c56834c8904a01e}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetTitle@{Mtc\_PaTmplMsgGetTitle}}
+\index{Mtc\_PaTmplMsgGetTitle@{Mtc\_PaTmplMsgGetTitle}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetTitle()}{Mtc\_PaTmplMsgGetTitle()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Title (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message title. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message title. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__pa_8h_aaa4cbcb7cc6d92c9c846ca05b727d901}\label{mtc__pa_8h_aaa4cbcb7cc6d92c9c846ca05b727d901}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetTopColor@{Mtc\_PaTmplMsgGetTopColor}}
+\index{Mtc\_PaTmplMsgGetTopColor@{Mtc\_PaTmplMsgGetTopColor}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetTopColor()}{Mtc\_PaTmplMsgGetTopColor()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Top\+Color (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message top color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message top color, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__pa_8h_a10096a92051d2deef5935177b60a0b31}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__pa_8h_ac2b426ff4d856ca80756d62904feeb93}\label{mtc__pa_8h_ac2b426ff4d856ca80756d62904feeb93}} 
+\index{mtc\_pa.h@{mtc\_pa.h}!Mtc\_PaTmplMsgGetUrl@{Mtc\_PaTmplMsgGetUrl}}
+\index{Mtc\_PaTmplMsgGetUrl@{Mtc\_PaTmplMsgGetUrl}!mtc\_pa.h@{mtc\_pa.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaTmplMsgGetUrl()}{Mtc\_PaTmplMsgGetUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Pa\+Tmpl\+Msg\+Get\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get public account template message url. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The public account template message url. 
+\end{DoxyReturn}

@@ -1,0 +1,1200 @@
+\hypertarget{mtc__cli_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cli.h File Reference}
+\label{mtc__cli_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cli.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cli.h}}
+
+
+M\+TC Client Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cli_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__cli_8h_a61e4cf0dada15119e2da0b698ce2a5de}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}~0
+\begin{DoxyCompactList}\small\item\em M\+TC state of R\+E\+G\+I\+S\+T\+ER. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ac023451ff2b2a6cef0d37853607ecf41}\label{mtc__cli_8h_ac023451ff2b2a6cef0d37853607ecf41}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ac023451ff2b2a6cef0d37853607ecf41}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+G\+I\+NG}}~1
+\begin{DoxyCompactList}\small\item\em Register registering state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a6d68645b1fd5ae18716a4e5dfd9e59d4}\label{mtc__cli_8h_a6d68645b1fd5ae18716a4e5dfd9e59d4}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a6d68645b1fd5ae18716a4e5dfd9e59d4}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+G\+ED}}~2
+\begin{DoxyCompactList}\small\item\em Register registered state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a0804f8d914475beb54608e15953d5926}\label{mtc__cli_8h_a0804f8d914475beb54608e15953d5926}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a0804f8d914475beb54608e15953d5926}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+R\+E\+G\+I\+NG}}~3
+\begin{DoxyCompactList}\small\item\em Register unregistering state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ad841c85b10d3aff9e0662100e837ed71}\label{mtc__cli_8h_ad841c85b10d3aff9e0662100e837ed71}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ad841c85b10d3aff9e0662100e837ed71}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+T\+R\+Y\+I\+NG}}~4
+\begin{DoxyCompactList}\small\item\em Register retry registering state. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}}~0x\+E000
+\begin{DoxyCompactList}\small\item\em M\+TC error/status code base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}\label{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}}~0x\+E100
+\begin{DoxyCompactList}\small\item\em R\+EG error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ab1a81e3b610c0b8b29fdbb8f6d72c784}\label{mtc__cli_8h_ab1a81e3b610c0b8b29fdbb8f6d72c784}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ab1a81e3b610c0b8b29fdbb8f6d72c784}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+A\+LL}}~0x\+E200
+\begin{DoxyCompactList}\small\item\em C\+A\+LL error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}\label{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a00a90c7f1c74677b8af2e5a29960e983}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+AP}}~0x\+E400
+\begin{DoxyCompactList}\small\item\em C\+AP error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}\label{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_acc96ab00b7ea31c182a7d717ccb8ddcd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+C\+O\+NF}}~0x\+E700
+\begin{DoxyCompactList}\small\item\em C\+O\+NF error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_af8abf7c2770f187058ee373c568eb355}\label{mtc__cli_8h_af8abf7c2770f187058ee373c568eb355}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_af8abf7c2770f187058ee373c568eb355}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+GS}}~0x\+E800
+\begin{DoxyCompactList}\small\item\em GS error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}\label{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}}~0x\+E\+A00
+\begin{DoxyCompactList}\small\item\em IM error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}\label{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_aabfcc35e4ae5eca9c6eef36c665aa7ec}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+L\+CS}}~0x\+E\+B00
+\begin{DoxyCompactList}\small\item\em L\+CS error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}\label{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a89bd8ac98e3e06dc686e797d42be54ad}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+PA}}~0x\+E\+C00
+\begin{DoxyCompactList}\small\item\em PA error base. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}\label{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}}~0x\+E\+E00
+\begin{DoxyCompactList}\small\item\em G\+BA error base. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__cli_8h_a92b694505198c04a366510609d9ffbcb}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC status code of R\+E\+G\+I\+S\+T\+ER. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a1045813fc5218e0ec28e7a9c958a6200}\label{mtc__cli_8h_a1045813fc5218e0ec28e7a9c958a6200}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a1045813fc5218e0ec28e7a9c958a6200}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+L\+C\+L\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 1)
+\begin{DoxyCompactList}\small\item\em Local request error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a3b09700637df4f6fde0d7afd7d1c404f}\label{mtc__cli_8h_a3b09700637df4f6fde0d7afd7d1c404f}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a3b09700637df4f6fde0d7afd7d1c404f}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+S\+E\+N\+D\+\_\+\+M\+SG}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 2)
+\begin{DoxyCompactList}\small\item\em Send message error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a7610fd6b44e157aa611eccfd7a2e4140}\label{mtc__cli_8h_a7610fd6b44e157aa611eccfd7a2e4140}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a7610fd6b44e157aa611eccfd7a2e4140}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 3)
+\begin{DoxyCompactList}\small\item\em Register authentication failed, invalid user or password. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a7e7a2e8ee85e45ef5e7b6a6b4cde764e}\label{mtc__cli_8h_a7e7a2e8ee85e45ef5e7b6a6b4cde764e}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a7e7a2e8ee85e45ef5e7b6a6b4cde764e}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+U\+S\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 4)
+\begin{DoxyCompactList}\small\item\em Register using invalid user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ac17c83f4800ae038e0e904f4714efc1d}\label{mtc__cli_8h_ac17c83f4800ae038e0e904f4714efc1d}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ac17c83f4800ae038e0e904f4714efc1d}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 5)
+\begin{DoxyCompactList}\small\item\em Register timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ab9392feb50c2db7e9278c2949cc66d7d}\label{mtc__cli_8h_ab9392feb50c2db7e9278c2949cc66d7d}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ab9392feb50c2db7e9278c2949cc66d7d}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+S\+E\+R\+V\+\_\+\+B\+U\+SY}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 6)
+\begin{DoxyCompactList}\small\item\em Register server busy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a6ec7fc233c19d9cd627bcf805e72f30c}\label{mtc__cli_8h_a6ec7fc233c19d9cd627bcf805e72f30c}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a6ec7fc233c19d9cd627bcf805e72f30c}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+S\+E\+R\+V\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+CH}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 7)
+\begin{DoxyCompactList}\small\item\em Register server not reached. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a5c6a7afba71659ea374da185922da309}\label{mtc__cli_8h_a5c6a7afba71659ea374da185922da309}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a5c6a7afba71659ea374da185922da309}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+S\+R\+V\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 8)
+\begin{DoxyCompactList}\small\item\em Register forbidden. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a409ebc6cc9de306f5d364a93d0aa12cf}\label{mtc__cli_8h_a409ebc6cc9de306f5d364a93d0aa12cf}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a409ebc6cc9de306f5d364a93d0aa12cf}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 9)
+\begin{DoxyCompactList}\small\item\em Register unavailable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a87fef46d97e3319ed937c9b4ada47b0e}\label{mtc__cli_8h_a87fef46d97e3319ed937c9b4ada47b0e}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a87fef46d97e3319ed937c9b4ada47b0e}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+D\+N\+S\+\_\+\+Q\+RY}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 10)
+\begin{DoxyCompactList}\small\item\em Register dns query error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ad2c9af1fd4a4ad519ebb6267c1b8188f}\label{mtc__cli_8h_ad2c9af1fd4a4ad519ebb6267c1b8188f}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ad2c9af1fd4a4ad519ebb6267c1b8188f}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 11)
+\begin{DoxyCompactList}\small\item\em Register network error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ade7ebbd42108c82e1e1d3fb5c581249c}\label{mtc__cli_8h_ade7ebbd42108c82e1e1d3fb5c581249c}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ade7ebbd42108c82e1e1d3fb5c581249c}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+D\+E\+A\+C\+T\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 12)
+\begin{DoxyCompactList}\small\item\em Register deactived. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_abe671e4fb3ecaca26380e22b16d92be5}\label{mtc__cli_8h_abe671e4fb3ecaca26380e22b16d92be5}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_abe671e4fb3ecaca26380e22b16d92be5}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+P\+R\+O\+B\+A\+T\+I\+ON}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 13)
+\begin{DoxyCompactList}\small\item\em Register probation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a60b8f2536b721f16dfb8a1fd35e68031}\label{mtc__cli_8h_a60b8f2536b721f16dfb8a1fd35e68031}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a60b8f2536b721f16dfb8a1fd35e68031}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+N\+T\+E\+R\+N\+AL}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 14)
+\begin{DoxyCompactList}\small\item\em Register internal error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a0159bb522d8a9d5533822b394e7a726a}\label{mtc__cli_8h_a0159bb522d8a9d5533822b394e7a726a}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a0159bb522d8a9d5533822b394e7a726a}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+R\+E\+S\+O\+U\+R\+CE}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 15)
+\begin{DoxyCompactList}\small\item\em Register no resource. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a422eae24e2b4463f470d11b3623f59ef}\label{mtc__cli_8h_a422eae24e2b4463f470d11b3623f59ef}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a422eae24e2b4463f470d11b3623f59ef}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+R\+E\+J\+E\+C\+T\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 16)
+\begin{DoxyCompactList}\small\item\em Register be rejected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a8ab5761621bb62b280067719280cc3bb}\label{mtc__cli_8h_a8ab5761621bb62b280067719280cc3bb}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a8ab5761621bb62b280067719280cc3bb}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+S\+I\+P\+\_\+\+S\+E\+SS}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 17)
+\begin{DoxyCompactList}\small\item\em Register sip session error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a7a28a5b183754cdabef7939bbe13ae6b}\label{mtc__cli_8h_a7a28a5b183754cdabef7939bbe13ae6b}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a7a28a5b183754cdabef7939bbe13ae6b}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+U\+N\+R\+EG}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 18)
+\begin{DoxyCompactList}\small\item\em Register stop or unregsiter error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a7b8ed9ce8d6fb60e09d126a0d69696b5}\label{mtc__cli_8h_a7b8ed9ce8d6fb60e09d126a0d69696b5}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a7b8ed9ce8d6fb60e09d126a0d69696b5}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+A\+D\+DR}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 19)
+\begin{DoxyCompactList}\small\item\em Register using invalid ip addr. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a1a4e0b756c3899b21c20e01e3c701aad}\label{mtc__cli_8h_a1a4e0b756c3899b21c20e01e3c701aad}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a1a4e0b756c3899b21c20e01e3c701aad}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+W\+A\+I\+T\+\_\+\+P\+WD}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 20)
+\begin{DoxyCompactList}\small\item\em Register wait prompt password timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ac148cbcbe5ea3600c6db1285f800307b}\label{mtc__cli_8h_ac148cbcbe5ea3600c6db1285f800307b}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ac148cbcbe5ea3600c6db1285f800307b}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 21)
+\begin{DoxyCompactList}\small\item\em Register not found user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a6121bc6ed0d6394d3f4865f7a9f50491}\label{mtc__cli_8h_a6121bc6ed0d6394d3f4865f7a9f50491}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a6121bc6ed0d6394d3f4865f7a9f50491}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+R\+E\+J\+E\+CT}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 22)
+\begin{DoxyCompactList}\small\item\em Register authentication rejected, rorbidden to user register in hss. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_aebd54d25796ec8337cc935d4cae9d123}\label{mtc__cli_8h_aebd54d25796ec8337cc935d4cae9d123}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_aebd54d25796ec8337cc935d4cae9d123}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+D\+\_\+\+N\+O\+T\+\_\+\+M\+A\+T\+CH}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 23)
+\begin{DoxyCompactList}\small\item\em Register identities don\textquotesingle{}t match, the pvi of user not inconformity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ae76b16bd401f81a51cbe0bd384edc3ce}\label{mtc__cli_8h_ae76b16bd401f81a51cbe0bd384edc3ce}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ae76b16bd401f81a51cbe0bd384edc3ce}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+U\+S\+E\+R\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 24)
+\begin{DoxyCompactList}\small\item\em Register user not exist. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a3cca4dc7ad09a847318ef010e11f6162}\label{mtc__cli_8h_a3cca4dc7ad09a847318ef010e11f6162}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a3cca4dc7ad09a847318ef010e11f6162}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+C\+O\+M\+\_\+\+N\+O\+T\+\_\+\+M\+A\+T\+CH}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 25)
+\begin{DoxyCompactList}\small\item\em Register company don\textquotesingle{}t match. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_aaf43f47b0cb79016c451a1ec323b56eb}\label{mtc__cli_8h_aaf43f47b0cb79016c451a1ec323b56eb}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_aaf43f47b0cb79016c451a1ec323b56eb}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+R\+E\+Q\+U\+E\+ST}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 26)
+\begin{DoxyCompactList}\small\item\em Register company don\textquotesingle{}t match. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a93fcc22e9ee0c889cf0d332b644f3777}\label{mtc__cli_8h_a93fcc22e9ee0c889cf0d332b644f3777}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a93fcc22e9ee0c889cf0d332b644f3777}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+D\+A\+T\+A\+\_\+\+M\+I\+SS}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 27)
+\begin{DoxyCompactList}\small\item\em Auth-\/data missing. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a6e5aca1f17c6f244205a6a9d3b112edb}\label{mtc__cli_8h_a6e5aca1f17c6f244205a6a9d3b112edb}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a6e5aca1f17c6f244205a6a9d3b112edb}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+H\+O\+M\+E\+\_\+\+D\+O\+M\+A\+I\+N\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 28)
+\begin{DoxyCompactList}\small\item\em Unable to find home domain. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_aea4fbc7bb77dd70d5e354a0d6d8f86d1}\label{mtc__cli_8h_aea4fbc7bb77dd70d5e354a0d6d8f86d1}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_aea4fbc7bb77dd70d5e354a0d6d8f86d1}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+R\+O\+U\+T\+E\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 29)
+\begin{DoxyCompactList}\small\item\em Unable to route. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_aadf2f1c0ebc446f7d916b9530f8125cd}\label{mtc__cli_8h_aadf2f1c0ebc446f7d916b9530f8125cd}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_aadf2f1c0ebc446f7d916b9530f8125cd}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+D\+A\+T\+A\+\_\+\+N\+O\+T\+\_\+\+M\+A\+T\+CH}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 30)
+\begin{DoxyCompactList}\small\item\em Auth-\/data does not match. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a35a6ed9ed829b363ee63e2190b817ddc}\label{mtc__cli_8h_a35a6ed9ed829b363ee63e2190b817ddc}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a35a6ed9ed829b363ee63e2190b817ddc}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+M\+P\+I\+\_\+\+I\+S\+\_\+\+B\+A\+R\+R\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 31)
+\begin{DoxyCompactList}\small\item\em I\+M\+PI is barred. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ad6fa6f1c2f4a8f7cc8ef6a0a1897c594}\label{mtc__cli_8h_ad6fa6f1c2f4a8f7cc8ef6a0a1897c594}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ad6fa6f1c2f4a8f7cc8ef6a0a1897c594}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+M\+P\+U\+\_\+\+I\+S\+\_\+\+B\+A\+R\+R\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 32)
+\begin{DoxyCompactList}\small\item\em I\+M\+PU is barred. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a823a2fa664c7367caa2e73556c5a143e}\label{mtc__cli_8h_a823a2fa664c7367caa2e73556c5a143e}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a823a2fa664c7367caa2e73556c5a143e}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+S\+C\+H\+E\+M\+E\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+T\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 33)
+\begin{DoxyCompactList}\small\item\em Auth-\/scheme is not supported. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_acec67c874d622ca8ffd73616e959c09b}\label{mtc__cli_8h_acec67c874d622ca8ffd73616e959c09b}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_acec67c874d622ca8ffd73616e959c09b}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+R\+O\+A\+M\+I\+N\+G\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+W\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 34)
+\begin{DoxyCompactList}\small\item\em Roaming is not allowed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ac1a002f920fb590671917fec9e5bf194}\label{mtc__cli_8h_ac1a002f920fb590671917fec9e5bf194}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_ac1a002f920fb590671917fec9e5bf194}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+I\+M\+P\+U\+\_\+\+I\+M\+P\+I\+\_\+\+N\+O\+T\+\_\+\+M\+A\+T\+CH}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 35)
+\begin{DoxyCompactList}\small\item\em I\+M\+PU and I\+M\+PI do not match. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a2fc1ed5588a08be519518c7831e8fc42}\label{mtc__cli_8h_a2fc1ed5588a08be519518c7831e8fc42}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a2fc1ed5588a08be519518c7831e8fc42}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+P\+U\+I\+\_\+\+P\+V\+I\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 36)
+\begin{DoxyCompactList}\small\item\em P\+UI or P\+VI does not exist. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a97c67fa73b60d6d501013102bcb3266a}\label{mtc__cli_8h_a97c67fa73b60d6d501013102bcb3266a}} 
+\#define \mbox{\hyperlink{mtc__cli_8h_a97c67fa73b60d6d501013102bcb3266a}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+R\+E\+G\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 200)
+\begin{DoxyCompactList}\small\item\em Other register error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__cli_8h_a2d15ae45951abb979313d278334f059e}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+O\+P\+E\+N\+\_\+\+L\+A\+ST}}(\+\_\+ret)
+\begin{DoxyCompactList}\small\item\em M\+TC client open the last profile. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__cli_8h_afd91284690665f71998850cb939eae03}{M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+C\+H\+K\+\_\+\+R\+E\+G\+ED}}(\+\_\+ret)
+\begin{DoxyCompactList}\small\item\em M\+TC client check if registered. \end{DoxyCompactList}\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}~0x\+F\+F\+F\+F\+F\+F\+FE
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+U\+N\+K\+N\+O\+WN}~0x\+F\+F\+F\+F\+F\+F\+FF
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+LE}~0x0000
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+G\+P\+RS}~0x0001
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+E\+D\+GE}~0x0002
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+U\+M\+TS}~0x0003
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+C\+D\+MA}~0x0004
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+E\+V\+D\+O\+\_\+0}~0x0005
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+E\+V\+D\+O\+\_\+A}~0x0006
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+1\+X\+R\+TT}~0x0007
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+H\+S\+D\+PA}~0x0008
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+H\+S\+U\+PA}~0x0009
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+H\+S\+PA}~0x000A
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+I\+D\+EN}~0x000B
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+E\+V\+D\+O\+\_\+B}~0x000C
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+L\+TE}~0x000D
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+E\+H\+R\+PD}~0x000E
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+O\+B\+I\+L\+E\+\_\+\+H\+S\+P\+AP}~0x000F
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+W\+I\+FI}~0x0100
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+W\+I\+M\+AX}~0x0600
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+B\+L\+U\+E\+T\+O\+O\+TH}~0x0700
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+E\+T\+H\+E\+R\+N\+ET}~0x0900
+\item 
+\#define {\bfseries M\+T\+C\+\_\+\+A\+N\+E\+T\+\_\+\+M\+A\+S\+K\+\_\+\+C\+A\+T\+E\+G\+O\+RY}~0x\+F\+F00
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cli_8h_a809e2a1fa4dfed089723111e74dd7ec8}\label{mtc__cli_8h_a809e2a1fa4dfed089723111e74dd7ec8}} 
+typedef enum \mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384}{tag\+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli_8h_a809e2a1fa4dfed089723111e74dd7ec8}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC http sync status code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a0659d01caf0d2bedb22c59514f820028}\label{mtc__cli_8h_a0659d01caf0d2bedb22c59514f820028}} 
+typedef enum \mbox{\hyperlink{mtc__cli_8h_a4f6d052bd162b232a0e3b03926904557}{E\+N\+\_\+\+M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli_8h_a0659d01caf0d2bedb22c59514f820028}{E\+N\+\_\+\+M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC use server type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a0b3f02e5af65418703316f4a81e53024}\label{mtc__cli_8h_a0b3f02e5af65418703316f4a81e53024}} 
+typedef enum \mbox{\hyperlink{mtc__cli_8h_a273f8dde4006044c59ece2f6384f4fa2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli_8h_a0b3f02e5af65418703316f4a81e53024}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC get device ID type only for android devices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a8b12b6a3a753195c601acf9b20d8a659}\label{mtc__cli_8h_a8b12b6a3a753195c601acf9b20d8a659}} 
+typedef enum \mbox{\hyperlink{mtc__cli_8h_a390bc7d4b1bf832e9dfbf43008bbde60}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli_8h_a8b12b6a3a753195c601acf9b20d8a659}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC get authorization parameter type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a08097ca09b911897331522504a9d56ee}\label{mtc__cli_8h_a08097ca09b911897331522504a9d56ee}} 
+typedef enum \mbox{\hyperlink{mtc__cli_8h_ab8603900b360d54c0dc76826d6c71993}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli_8h_a08097ca09b911897331522504a9d56ee}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC register subscribe state type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384}{tag\+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384aa833cb8cd1349f2e8d324f05ef7ca43d}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+RT}} = 0, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a286b947f06925268a25ef44652a559a7}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a7cef3a37e220adc12beccf0a4bb00d93}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a06e5bafc9bc28c0cacf638bc9a2cd428}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+ED}}, 
+\newline
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a6fa22cb0d98b0ba3fa714cb5ecc1a6ad}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a79ac27f9469dbf7d1206629c0000646d}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+R\+E\+C\+V\+\_\+\+F\+A\+I\+L\+ED}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a41e3a7da6dcbe1e8bc87664a66dbf942}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+V\+\_\+\+D\+I\+S\+C\+ED}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a0bf4008defd23d8353b6d18945e05cc4}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+E\+R\+V\+\_\+\+E\+RR}}, 
+\newline
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a6833515112d9dfbc7bb41a2ede9b8b4a}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+R\+E\+Q\+\_\+\+T\+I\+M\+E\+O\+UT}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a55324488550df6c24e4f1e207f30597c}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a4f9314457eea3417d72244631ea75f94}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+A\+IL}}, 
+\mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384ad98e2a046f73a3ac8db0e4ca8164b6ef}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC http sync status code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a4f6d052bd162b232a0e3b03926904557}\label{mtc__cli_8h_a4f6d052bd162b232a0e3b03926904557}} 
+enum \mbox{\hyperlink{mtc__cli_8h_a4f6d052bd162b232a0e3b03926904557}{E\+N\+\_\+\+M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+\+S\+BC}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+1\+S\+T\+\_\+\+S\+TG}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+2\+N\+D\+\_\+\+S\+TG}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC use server type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a273f8dde4006044c59ece2f6384f4fa2}\label{mtc__cli_8h_a273f8dde4006044c59ece2f6384f4fa2}} 
+enum \mbox{\hyperlink{mtc__cli_8h_a273f8dde4006044c59ece2f6384f4fa2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+S\+E\+R\+I\+AL} = 0, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+M\+A\+C\+A\+D\+DR}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+ID}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC get device ID type only for android devices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a390bc7d4b1bf832e9dfbf43008bbde60}\label{mtc__cli_8h_a390bc7d4b1bf832e9dfbf43008bbde60}} 
+enum \mbox{\hyperlink{mtc__cli_8h_a390bc7d4b1bf832e9dfbf43008bbde60}{E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+R\+E\+A\+LM}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+N\+O\+N\+CE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+U\+S\+E\+R\+N\+A\+ME}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+U\+RI}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+NC}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+A\+L\+G\+O\+R\+I\+T\+HM}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+Q\+OP}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+M\+E\+T\+H\+OD}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+A\+T\+Y\+PE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+R\+E\+S\+P\+O\+N\+CE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+C\+N\+O\+N\+CE}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC get authorization parameter type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_ab8603900b360d54c0dc76826d6c71993}\label{mtc__cli_8h_ab8603900b360d54c0dc76826d6c71993}} 
+enum \mbox{\hyperlink{mtc__cli_8h_ab8603900b360d54c0dc76826d6c71993}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+E\+RR}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+A\+C\+T\+I\+VE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+C\+V\+\_\+\+N\+O\+T\+I\+FY}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+E\+RM}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC register subscribe state type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} (Z\+C\+H\+AR $\ast$pc\+Prof\+Dir)
+\begin{DoxyCompactList}\small\item\em Initialize Client Resource. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}{Mtc\+\_\+\+Cli\+Destroy}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Destroy Client Resource. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}} (Z\+C\+H\+AR $\ast$pc\+User\+Name)
+\begin{DoxyCompactList}\small\item\em Open a account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}{Mtc\+\_\+\+Cli\+Close}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Close current account. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\+\_\+\+Cli\+Start}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Start Client Service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}{Mtc\+\_\+\+Cli\+Stop}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Stop Client Service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} (Z\+U\+I\+NT i\+Acc\+Net\+Type, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Acc\+Net\+Ip)
+\begin{DoxyCompactList}\small\item\em Start to Login Client. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_aa2156dbaceead91d46c67b38816e343b}{Mtc\+\_\+\+Cli\+Relogin}} (Z\+U\+I\+NT i\+Acc\+Net\+Type, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Acc\+Net\+Ip)
+\begin{DoxyCompactList}\small\item\em Start to Re-\/\+Login Client. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a758560ca2b1ae6f6259efc7b26215737}{Mtc\+\_\+\+Cli\+Enter\+Aka\+Rsp}} (Z\+U\+I\+NT i\+Reg\+Id, Z\+C\+H\+AR $\ast$pc\+Rsp, Z\+C\+H\+AR $\ast$pc\+Ck, Z\+C\+H\+AR $\ast$pc\+Ik, Z\+C\+H\+AR $\ast$pc\+Auts)
+\begin{DoxyCompactList}\small\item\em Enter aka response to Login Client again. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a4c8b34f9914145ba5f97cfb72abfebae}{Mtc\+\_\+\+Cli\+Enter\+Dgst\+Pwd}} (Z\+U\+I\+NT i\+Reg\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd)
+\begin{DoxyCompactList}\small\item\em Enter digest password to Login Client again. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}{Mtc\+\_\+\+Cli\+Refresh}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Refresh the registration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_a16395f1ece6ac58f27bec32e40e005d2}\label{mtc__cli_8h_a16395f1ece6ac58f27bec32e40e005d2}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Keep\+Alive} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Start to Logout Client. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_ae46d9518a7dac934ff1350a28f71f4aa}{Mtc\+\_\+\+Cli\+Info}} (Z\+C\+H\+AR $\ast$pc\+Type, Z\+C\+H\+AR $\ast$pc\+Info)
+\begin{DoxyCompactList}\small\item\em Send I\+N\+FO message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a978a39257580b9f9372f5e1255bd6d41}{Mtc\+\_\+\+Cli\+Subs\+Reg}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Start subscribe register state. subscribe result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}{Mtc\+\_\+\+Cli\+Cb\+Set\+Subs\+Stat\+Changed}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a7127ab4866872141525181ca3b493b3d}{Mtc\+\_\+\+Cli\+Un\+Subs\+Reg}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Start unsubscribe register state. subscribe result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}{Mtc\+\_\+\+Cli\+Cb\+Set\+Subs\+Stat\+Changed}}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli_8h_ab0ca275019352c8f9963d892637a2ec7}{Mtc\+\_\+\+Cli\+Get\+Reg\+State}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User Register State. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli_8h_aec1a62ef3a3dc017f9c84f55d54b007d}{Mtc\+\_\+\+Cli\+Get\+Reg\+Serv\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User Register Server Type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__cli_8h_aefd13831cf5a68fd7a17ff265081b0a8}{Mtc\+\_\+\+Cli\+Get\+Reg\+Date}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User Register Date. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a31010426b35546800572dda92309b63e}{Mtc\+\_\+\+Cli\+Get\+Reg\+Sip\+Code}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User Register sip status code. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli_8h_a57eb62016425f3fac4bfd8c6c90f137d}{Mtc\+\_\+\+Cli\+Get\+Did\+Reg}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User did register flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a89d7a73e994d19e72a2b8702cc318668}{Mtc\+\_\+\+Cli\+Drive}} (Z\+E\+V\+NT z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Client Drive Service. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli_8h_ad8451115510e969ed960af4bc485ab24}{Mtc\+\_\+\+Cli\+Det\+Lcl\+Ip}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Detect available local IP address. It is available in register mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_ab3263468ff9c40dcb163c4d4d1d3f530}{Mtc\+\_\+\+Cli\+Det\+Lcl\+Ipv6}} (Z\+U\+C\+H\+AR $\ast$puc\+Ipv6)
+\begin{DoxyCompactList}\small\item\em Detect available local I\+Pv6 address. It is available in register mode. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a21cf9abea5780e15a1a67d03362230ac}{Mtc\+\_\+\+Cli\+Set\+Lcl\+Ip\+Addr\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Detect and set the use ip address type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli_8h_a1a955dd8ca8f1ada1f3d6ca2dc2bbebe}{Mtc\+\_\+\+Cli\+Get\+Dev\+Id}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get Device Id string. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli_8h_affc0473de54c24b504ff57adc686c121}{Mtc\+\_\+\+Cli\+Get\+Dev\+IdX}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Get Device Id with type . \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a5d92dbec4dc92d24f8dff8b351200645}{Mtc\+\_\+\+Cli\+Net\+Unavailable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Network unavailable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_aced01e0eae9e43d7d7f6ec9c07f7da29}{Mtc\+\_\+\+Cli\+Chk\+App}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Check App. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli_8h_abd5c74dcc9b7a1d318e43fc411cdd054}\label{mtc__cli_8h_abd5c74dcc9b7a1d318e43fc411cdd054}} 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_abd5c74dcc9b7a1d318e43fc411cdd054}{Mtc\+\_\+\+Cli\+Reg\+Disc}} ()
+\begin{DoxyCompactList}\small\item\em Force disconnect register connection. G\+UI no need to call this function, only for fixing U\+DP fake register. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a7e21db8ac4609d8e28c8217889aa3a8b}{Mtc\+\_\+\+Cli\+Get\+Sync\+Result}} ()
+\begin{DoxyCompactList}\small\item\em Get http sync result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_abddb4e3fedc20cc835a7c1e9422de921}{Mtc\+\_\+\+Cli\+Call\+Cb\+Net\+Changed}} (Z\+U\+I\+NT i\+Net\+Type)
+\begin{DoxyCompactList}\small\item\em UI call cb net changed, for android. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a26b44be990da2c9d3ae0f538c812364a}{Mtc\+\_\+\+Cli\+Get\+Time\+Diff}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User time diff with local. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_ac60ec5a73381ac469c3a174e819e797b}{Mtc\+\_\+\+Cli\+Init\+Heartbeat\+Detect}} (Z\+U\+I\+NT i\+Net\+Type)
+\begin{DoxyCompactList}\small\item\em Init heartbeat detect. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli_8h_a6bc3ef5f1d9dcea435442dce948b1167}{Mtc\+\_\+\+Cli\+Is\+Local\+Login}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User local logined flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli_8h_a1ba8cc5a1edc04e72f9f6134d91fc31d}{Mtc\+\_\+\+Cli\+Is\+Server\+Login}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get User server logined flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli_8h_ad9e18cf68e0c9240b27986f849147a7d}{Mtc\+\_\+\+Cli\+Get\+Auth\+Parm}} (Z\+U\+I\+NT i\+Parm\+Type)
+\begin{DoxyCompactList}\small\item\em Get authorization parameter. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli_8h_a893de4ea54fa1617fc1eff68a57bd6fc}{Mtc\+\_\+\+Cli\+Set\+Auth\+Parm}} (Z\+U\+I\+NT i\+Parm\+Type, Z\+C\+H\+AR $\ast$pc\+Parm\+Val)
+\begin{DoxyCompactList}\small\item\em Set authorization parameter to Login Client again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Client Interface Functions. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{The MTC client startup procedure like below:}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\_CliInit}}    -\/-\/-\/   init system resource}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\_CliOpen}}    -\/-\/-\/   open an user \textcolor{keywordflow}{for} config provision}
+\DoxyCodeLine{    Using \mbox{\hyperlink{mtc__cli__db_8h_a53256079d5a07a5dffb3ae2080793034}{Mtc\_CliDbSetLocalIp}} etc db APIs \textcolor{keywordflow}{for} set provision}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\_CliStart}}   -\/-\/-\/   start client service}
+\DoxyCodeLine{}
+\DoxyCodeLine{The MTC client halt procedure like below:}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}{Mtc\_CliStop}}    -\/-\/-\/   stop client service}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}{Mtc\_CliClose}}   -\/-\/-\/   close client user}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}{Mtc\_CliDestroy}} -\/-\/-\/   destroy system resource.}
+\DoxyCodeLine{}
+\DoxyCodeLine{The MTC client \textcolor{keywordflow}{for} support multi-\/user \textcolor{keywordflow}{switch} procedure like below:}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}{Mtc\_CliStop}}    -\/-\/-\/   stop client service}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}{Mtc\_CliClose}}   -\/-\/-\/   close current user provision}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\_CliOpen}}    -\/-\/-\/   open another user config provision}
+\DoxyCodeLine{    Using \mbox{\hyperlink{mtc__cli__db_8h_a53256079d5a07a5dffb3ae2080793034}{Mtc\_CliDbSetLocalIp}} etc db APIs \textcolor{keywordflow}{for} set provision}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\_CliStart}}   -\/-\/-\/   start client service}
+\end{DoxyCode}
+
+
+If Zos\+\_\+\+Cfg\+Get\+Mod\+Drv\+Mode value is Z\+T\+R\+UE, it means M\+TC and M\+SF are running in different threads, User should implement callback which was set by \mbox{\hyperlink{mtc__cli__cb_8h_a93b868b61b162347e1f2276833f01065}{Mtc\+\_\+\+Cli\+Cb\+Set\+Evnt}} and post event to UI thread. The UI thread should Mtc\+\_\+\+Cli\+Drive explicitly after receive event.
+
+If Zos\+\_\+\+Cfg\+Get\+Mod\+Drv\+Mode value is Z\+F\+A\+L\+SE, it means M\+TC and M\+SF are running in the same thread, M\+TC will call Mtc\+\_\+\+Cli\+Drive implicitly. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__cli_8h_afd91284690665f71998850cb939eae03}\label{mtc__cli_8h_afd91284690665f71998850cb939eae03}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_CLI\_CHK\_REGED@{MTC\_CLI\_CHK\_REGED}}
+\index{MTC\_CLI\_CHK\_REGED@{MTC\_CLI\_CHK\_REGED}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CLI\_CHK\_REGED}{MTC\_CLI\_CHK\_REGED}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+C\+H\+K\+\_\+\+R\+E\+G\+ED(\begin{DoxyParamCaption}\item[{}]{\+\_\+ret }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do}                                                                             \(\backslash\)}
+\DoxyCodeLine{    \{                                                                              \(\backslash\)}
+\DoxyCodeLine{        ZUINT iState = \mbox{\hyperlink{mtc__cli_8h_ab0ca275019352c8f9963d892637a2ec7}{Mtc\_CliGetRegState}}();                                       \(\backslash\)}
+\DoxyCodeLine{        if (iState != \mbox{\hyperlink{mtc__cli_8h_a6d68645b1fd5ae18716a4e5dfd9e59d4}{MTC\_REG\_STATE\_REGED}})                                         \(\backslash\)}
+\DoxyCodeLine{        \{                                                                          \(\backslash\)}
+\DoxyCodeLine{            MSF\_LOG\_WARN(MTC\_LOGID, \textcolor{stringliteral}{"MTC\_CLI\_CHK\_REGED not registed \%d."}, iState); \(\backslash\)}
+\DoxyCodeLine{            return \_ret;                                                           \(\backslash\)}
+\DoxyCodeLine{        \}                                                                          \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+M\+TC client check if registered. 
+
+\mbox{\Hypertarget{mtc__cli_8h_a92b694505198c04a366510609d9ffbcb}\label{mtc__cli_8h_a92b694505198c04a366510609d9ffbcb}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_CLI\_ERR\_NO@{MTC\_CLI\_ERR\_NO}}
+\index{MTC\_CLI\_ERR\_NO@{MTC\_CLI\_ERR\_NO}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CLI\_ERR\_NO}{MTC\_CLI\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_a01f7116dfe10f3f8f4ff7c2a10f124cd}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+R\+EG}} + 0)}
+
+
+
+M\+TC status code of R\+E\+G\+I\+S\+T\+ER. 
+
+No error. \mbox{\Hypertarget{mtc__cli_8h_a2d15ae45951abb979313d278334f059e}\label{mtc__cli_8h_a2d15ae45951abb979313d278334f059e}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_CLI\_OPEN\_LAST@{MTC\_CLI\_OPEN\_LAST}}
+\index{MTC\_CLI\_OPEN\_LAST@{MTC\_CLI\_OPEN\_LAST}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CLI\_OPEN\_LAST}{MTC\_CLI\_OPEN\_LAST}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+O\+P\+E\+N\+\_\+\+L\+A\+ST(\begin{DoxyParamCaption}\item[{}]{\+\_\+ret }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do}                                                                   \(\backslash\)}
+\DoxyCodeLine{    \{                                                                    \(\backslash\)}
+\DoxyCodeLine{        \textcolor{comment}{/* get current profile user */}                                   \(\backslash\)}
+\DoxyCodeLine{        ZCHAR *pcCurUser = \mbox{\hyperlink{mtc__prov__db_8h_a4810528235ea115e6a4c6ff3126e472e}{Mtc\_ProvDbGetCurProfUser}}();                   \(\backslash\)}
+\DoxyCodeLine{        \textcolor{comment}{/* check the profile is exist, then open client if it is exist*/} \(\backslash\)}
+\DoxyCodeLine{        if (!ZOS\_ISEMPTY\_STR(pcCurUser) \&\& \mbox{\hyperlink{mtc__prof_8h_aa80133e518b4ec8631ea9468142ff5e2}{Mtc\_ProfExistUser}}(pcCurUser)) \(\backslash\)}
+\DoxyCodeLine{            \_ret = \mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\_CliOpen}}(pcCurUser);                               \(\backslash\)}
+\DoxyCodeLine{        else                                                             \(\backslash\)}
+\DoxyCodeLine{            \_ret = ZFAILED;                                              \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+M\+TC client open the last profile. 
+
+\mbox{\Hypertarget{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}\label{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_EBASE\_CP@{MTC\_EBASE\_CP}}
+\index{MTC\_EBASE\_CP@{MTC\_EBASE\_CP}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_EBASE\_CP}{MTC\_EBASE\_CP}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP~0x\+E000}
+
+
+
+M\+TC error/status code base. 
+
+CP error base \mbox{\Hypertarget{mtc__cli_8h_a61e4cf0dada15119e2da0b698ce2a5de}\label{mtc__cli_8h_a61e4cf0dada15119e2da0b698ce2a5de}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_REG\_STATE\_IDLE@{MTC\_REG\_STATE\_IDLE}}
+\index{MTC\_REG\_STATE\_IDLE@{MTC\_REG\_STATE\_IDLE}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_REG\_STATE\_IDLE}{MTC\_REG\_STATE\_IDLE}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE~0}
+
+
+
+M\+TC state of R\+E\+G\+I\+S\+T\+ER. 
+
+Register idle state 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!tagMTC\_SYNC\_ERR\_TYPE@{tagMTC\_SYNC\_ERR\_TYPE}}
+\index{tagMTC\_SYNC\_ERR\_TYPE@{tagMTC\_SYNC\_ERR\_TYPE}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{tagMTC\_SYNC\_ERR\_TYPE}{tagMTC\_SYNC\_ERR\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384}{tag\+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC http sync status code. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_NOT\_START@{MTC\_SYNC\_NOT\_START}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_NOT\_START@{MTC\_SYNC\_NOT\_START}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384aa833cb8cd1349f2e8d324f05ef7ca43d}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384aa833cb8cd1349f2e8d324f05ef7ca43d}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+T\+A\+RT&http sync not start \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_SUCCESS@{MTC\_SYNC\_SUCCESS}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_SUCCESS@{MTC\_SYNC\_SUCCESS}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a286b947f06925268a25ef44652a559a7}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a286b947f06925268a25ef44652a559a7}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+U\+C\+C\+E\+SS&http sync success \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_AUTH\_FAILED@{MTC\_SYNC\_AUTH\_FAILED}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_AUTH\_FAILED@{MTC\_SYNC\_AUTH\_FAILED}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a7cef3a37e220adc12beccf0a4bb00d93}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a7cef3a37e220adc12beccf0a4bb00d93}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED&authentication failed, invalid user or password \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_CONN\_FAILED@{MTC\_SYNC\_CONN\_FAILED}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_CONN\_FAILED@{MTC\_SYNC\_CONN\_FAILED}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a06e5bafc9bc28c0cacf638bc9a2cd428}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a06e5bafc9bc28c0cacf638bc9a2cd428}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+ED&transport connect failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_SEND\_FAILED@{MTC\_SYNC\_SEND\_FAILED}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_SEND\_FAILED@{MTC\_SYNC\_SEND\_FAILED}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a6fa22cb0d98b0ba3fa714cb5ecc1a6ad}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a6fa22cb0d98b0ba3fa714cb5ecc1a6ad}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED&transport send failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_RECV\_FAILED@{MTC\_SYNC\_RECV\_FAILED}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_RECV\_FAILED@{MTC\_SYNC\_RECV\_FAILED}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a79ac27f9469dbf7d1206629c0000646d}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a79ac27f9469dbf7d1206629c0000646d}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+R\+E\+C\+V\+\_\+\+F\+A\+I\+L\+ED&transport received failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_ERV\_DISCED@{MTC\_SYNC\_ERV\_DISCED}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_ERV\_DISCED@{MTC\_SYNC\_ERV\_DISCED}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a41e3a7da6dcbe1e8bc87664a66dbf942}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a41e3a7da6dcbe1e8bc87664a66dbf942}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+V\+\_\+\+D\+I\+S\+C\+ED&transport disconnected by server \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_SERV\_ERR@{MTC\_SYNC\_SERV\_ERR}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_SERV\_ERR@{MTC\_SYNC\_SERV\_ERR}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a0bf4008defd23d8353b6d18945e05cc4}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a0bf4008defd23d8353b6d18945e05cc4}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+S\+E\+R\+V\+\_\+\+E\+RR&server internal error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_REQ\_TIMEOUT@{MTC\_SYNC\_REQ\_TIMEOUT}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_REQ\_TIMEOUT@{MTC\_SYNC\_REQ\_TIMEOUT}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a6833515112d9dfbc7bb41a2ede9b8b4a}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a6833515112d9dfbc7bb41a2ede9b8b4a}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+R\+E\+Q\+\_\+\+T\+I\+M\+E\+O\+UT&request timeout \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_FORBIDDEN@{MTC\_SYNC\_FORBIDDEN}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_FORBIDDEN@{MTC\_SYNC\_FORBIDDEN}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a55324488550df6c24e4f1e207f30597c}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a55324488550df6c24e4f1e207f30597c}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN&forbidden \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_FAIL@{MTC\_SYNC\_FAIL}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_FAIL@{MTC\_SYNC\_FAIL}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a4f9314457eea3417d72244631ea75f94}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384a4f9314457eea3417d72244631ea75f94}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+F\+A\+IL&http sync number failed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MTC\_SYNC\_ERR\_OTHER@{MTC\_SYNC\_ERR\_OTHER}!mtc\_cli.h@{mtc\_cli.h}}\index{mtc\_cli.h@{mtc\_cli.h}!MTC\_SYNC\_ERR\_OTHER@{MTC\_SYNC\_ERR\_OTHER}}}\mbox{\Hypertarget{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384ad98e2a046f73a3ac8db0e4ca8164b6ef}\label{mtc__cli_8h_a563b132ac60612aa23d6d995b2de5384ad98e2a046f73a3ac8db0e4ca8164b6ef}} 
+M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER&other \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cli_8h_abddb4e3fedc20cc835a7c1e9422de921}\label{mtc__cli_8h_abddb4e3fedc20cc835a7c1e9422de921}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliCallCbNetChanged@{Mtc\_CliCallCbNetChanged}}
+\index{Mtc\_CliCallCbNetChanged@{Mtc\_CliCallCbNetChanged}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCallCbNetChanged()}{Mtc\_CliCallCbNetChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Call\+Cb\+Net\+Changed (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type }\end{DoxyParamCaption})}
+
+
+
+UI call cb net changed, for android. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type} & The new network type E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli_8h_aced01e0eae9e43d7d7f6ec9c07f7da29}\label{mtc__cli_8h_aced01e0eae9e43d7d7f6ec9c07f7da29}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliChkApp@{Mtc\_CliChkApp}}
+\index{Mtc\_CliChkApp@{Mtc\_CliChkApp}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliChkApp()}{Mtc\_CliChkApp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Chk\+App (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Check App. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Check App successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Check App failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}\label{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliClose@{Mtc\_CliClose}}
+\index{Mtc\_CliClose@{Mtc\_CliClose}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliClose()}{Mtc\_CliClose()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Close (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Close current account. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\+\_\+\+Cli\+Open}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}\label{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliDestroy@{Mtc\_CliDestroy}}
+\index{Mtc\_CliDestroy@{Mtc\_CliDestroy}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDestroy()}{Mtc\_CliDestroy()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Destroy (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Destroy Client Resource. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\+\_\+\+Cli\+Init}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_ad8451115510e969ed960af4bc485ab24}\label{mtc__cli_8h_ad8451115510e969ed960af4bc485ab24}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliDetLclIp@{Mtc\_CliDetLclIp}}
+\index{Mtc\_CliDetLclIp@{Mtc\_CliDetLclIp}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDetLclIp()}{Mtc\_CliDetLclIp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Det\+Lcl\+Ip (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Detect available local IP address. It is available in register mode. 
+
+If user open it by \mbox{\hyperlink{mtc__cli__cfg_8h_aef2b14319bc39e71cfe9387bac47b97b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Det\+Lcl\+Ip}}, Client will automatic call it before start services and login.
+
+\begin{DoxyReturn}{Returns}
+Available local IP detected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_ab3263468ff9c40dcb163c4d4d1d3f530}\label{mtc__cli_8h_ab3263468ff9c40dcb163c4d4d1d3f530}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliDetLclIpv6@{Mtc\_CliDetLclIpv6}}
+\index{Mtc\_CliDetLclIpv6@{Mtc\_CliDetLclIpv6}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDetLclIpv6()}{Mtc\_CliDetLclIpv6()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Det\+Lcl\+Ipv6 (\begin{DoxyParamCaption}\item[{Z\+U\+C\+H\+AR $\ast$}]{puc\+Ipv6 }\end{DoxyParamCaption})}
+
+
+
+Detect available local I\+Pv6 address. It is available in register mode. 
+
+If user open it by \mbox{\hyperlink{mtc__cli__cfg_8h_aef2b14319bc39e71cfe9387bac47b97b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Det\+Lcl\+Ip}}, Client will automatic call it before start services and login.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em puc\+Ipv6} & available local IP detected.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & successfully. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_a89d7a73e994d19e72a2b8702cc318668}\label{mtc__cli_8h_a89d7a73e994d19e72a2b8702cc318668}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliDrive@{Mtc\_CliDrive}}
+\index{Mtc\_CliDrive@{Mtc\_CliDrive}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDrive()}{Mtc\_CliDrive()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Drive (\begin{DoxyParamCaption}\item[{Z\+E\+V\+NT}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Client Drive Service. 
+
+M\+TC service was implemented by M\+SF, for multi-\/thread mode, M\+SF is running in independent thread, G\+UI is another one generally. M\+TC implmented service login in G\+UI, so it is running in G\+UI. When M\+SF need notify status to G\+UI, the event should transfered in two threads. For thread safety, service event was posted by G\+UI callback \mbox{\hyperlink{mtc__cli__cb_8h_a93b868b61b162347e1f2276833f01065}{Mtc\+\_\+\+Cli\+Cb\+Set\+Evnt}} from M\+SF to G\+UI. Then G\+UI drive M\+TC by this service event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Service Event from R\+SD.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Drive Service successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Drive Service failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_a758560ca2b1ae6f6259efc7b26215737}\label{mtc__cli_8h_a758560ca2b1ae6f6259efc7b26215737}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliEnterAkaRsp@{Mtc\_CliEnterAkaRsp}}
+\index{Mtc\_CliEnterAkaRsp@{Mtc\_CliEnterAkaRsp}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliEnterAkaRsp()}{Mtc\_CliEnterAkaRsp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Enter\+Aka\+Rsp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Reg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Rsp,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ck,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ik,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Auts }\end{DoxyParamCaption})}
+
+
+
+Enter aka response to Login Client again. 
+
+If \mbox{\hyperlink{mtc__cli__db_8h_a2675bf35ba478faba1cf2e79eb4fd019}{Mtc\+\_\+\+Cli\+Db\+Get\+Auth\+Type}} returns E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+S\+\_\+\+A\+U\+T\+H\+\_\+\+I\+M\+S\+\_\+\+A\+KA, Login result will be notified by callback which was set by \mbox{\hyperlink{mtc__cli__cb_8h_a29d333bc96d8d9c7fe65c06f1cc705ec}{Mtc\+\_\+\+Cli\+Cb\+Set\+Auth\+Ind}}, then client must enter aka response to login again.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Client is logining. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Client login failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a4c8b34f9914145ba5f97cfb72abfebae}\label{mtc__cli_8h_a4c8b34f9914145ba5f97cfb72abfebae}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliEnterDgstPwd@{Mtc\_CliEnterDgstPwd}}
+\index{Mtc\_CliEnterDgstPwd@{Mtc\_CliEnterDgstPwd}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliEnterDgstPwd()}{Mtc\_CliEnterDgstPwd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Enter\+Dgst\+Pwd (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Reg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Pwd }\end{DoxyParamCaption})}
+
+
+
+Enter digest password to Login Client again. 
+
+If \mbox{\hyperlink{mtc__cli__db_8h_a2675bf35ba478faba1cf2e79eb4fd019}{Mtc\+\_\+\+Cli\+Db\+Get\+Auth\+Type}} returns E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+S\+\_\+\+A\+U\+T\+H\+\_\+\+S\+I\+P\+\_\+\+D\+I\+G\+E\+ST, Login result will be notified by callback which was set by \mbox{\hyperlink{mtc__cli__cb_8h_a29d333bc96d8d9c7fe65c06f1cc705ec}{Mtc\+\_\+\+Cli\+Cb\+Set\+Auth\+Ind}} if no password was avaliable before, then client must enter digest password to login again.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Client is logining. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Client login failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_ad9e18cf68e0c9240b27986f849147a7d}\label{mtc__cli_8h_ad9e18cf68e0c9240b27986f849147a7d}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetAuthParm@{Mtc\_CliGetAuthParm}}
+\index{Mtc\_CliGetAuthParm@{Mtc\_CliGetAuthParm}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetAuthParm()}{Mtc\_CliGetAuthParm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Get\+Auth\+Parm (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Parm\+Type }\end{DoxyParamCaption})}
+
+
+
+Get authorization parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Parm\+Type} & The authorization parameter type, see E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+authorization parameter.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a893de4ea54fa1617fc1eff68a57bd6fc}{Mtc\+\_\+\+Cli\+Set\+Auth\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a1a955dd8ca8f1ada1f3d6ca2dc2bbebe}\label{mtc__cli_8h_a1a955dd8ca8f1ada1f3d6ca2dc2bbebe}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetDevId@{Mtc\_CliGetDevId}}
+\index{Mtc\_CliGetDevId@{Mtc\_CliGetDevId}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetDevId()}{Mtc\_CliGetDevId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Get\+Dev\+Id (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Device Id string. 
+
+\begin{DoxyReturn}{Returns}
+Device Id string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_affc0473de54c24b504ff57adc686c121}\label{mtc__cli_8h_affc0473de54c24b504ff57adc686c121}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetDevIdX@{Mtc\_CliGetDevIdX}}
+\index{Mtc\_CliGetDevIdX@{Mtc\_CliGetDevIdX}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetDevIdX()}{Mtc\_CliGetDevIdX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Get\+Dev\+IdX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Get Device Id with type . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The device id type E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Device Id string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a57eb62016425f3fac4bfd8c6c90f137d}\label{mtc__cli_8h_a57eb62016425f3fac4bfd8c6c90f137d}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetDidReg@{Mtc\_CliGetDidReg}}
+\index{Mtc\_CliGetDidReg@{Mtc\_CliGetDidReg}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetDidReg()}{Mtc\_CliGetDidReg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Get\+Did\+Reg (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User did register flag. 
+
+\begin{DoxyReturn}{Returns}
+did register flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_aefd13831cf5a68fd7a17ff265081b0a8}\label{mtc__cli_8h_aefd13831cf5a68fd7a17ff265081b0a8}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetRegDate@{Mtc\_CliGetRegDate}}
+\index{Mtc\_CliGetRegDate@{Mtc\_CliGetRegDate}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetRegDate()}{Mtc\_CliGetRegDate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Cli\+Get\+Reg\+Date (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User Register Date. 
+
+\begin{DoxyReturn}{Returns}
+Register Date. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_aec1a62ef3a3dc017f9c84f55d54b007d}\label{mtc__cli_8h_aec1a62ef3a3dc017f9c84f55d54b007d}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetRegServType@{Mtc\_CliGetRegServType}}
+\index{Mtc\_CliGetRegServType@{Mtc\_CliGetRegServType}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetRegServType()}{Mtc\_CliGetRegServType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Get\+Reg\+Serv\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User Register Server Type. 
+
+\begin{DoxyReturn}{Returns}
+Register Server Type. State see M\+T\+C\+\_\+\+U\+S\+E\+\_\+\+S\+E\+R\+V\+\_\+\+T\+Y\+PE... 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a31010426b35546800572dda92309b63e}\label{mtc__cli_8h_a31010426b35546800572dda92309b63e}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetRegSipCode@{Mtc\_CliGetRegSipCode}}
+\index{Mtc\_CliGetRegSipCode@{Mtc\_CliGetRegSipCode}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetRegSipCode()}{Mtc\_CliGetRegSipCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Get\+Reg\+Sip\+Code (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User Register sip status code. 
+
+\begin{DoxyReturn}{Returns}
+sip code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_ab0ca275019352c8f9963d892637a2ec7}\label{mtc__cli_8h_ab0ca275019352c8f9963d892637a2ec7}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetRegState@{Mtc\_CliGetRegState}}
+\index{Mtc\_CliGetRegState@{Mtc\_CliGetRegState}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetRegState()}{Mtc\_CliGetRegState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Get\+Reg\+State (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User Register State. 
+
+\begin{DoxyReturn}{Returns}
+Register State. State see \mbox{\hyperlink{mtc__cli_8h_a61e4cf0dada15119e2da0b698ce2a5de}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}... 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a7e21db8ac4609d8e28c8217889aa3a8b}\label{mtc__cli_8h_a7e21db8ac4609d8e28c8217889aa3a8b}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetSyncResult@{Mtc\_CliGetSyncResult}}
+\index{Mtc\_CliGetSyncResult@{Mtc\_CliGetSyncResult}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetSyncResult()}{Mtc\_CliGetSyncResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Get\+Sync\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get http sync result. 
+
+\begin{DoxyReturn}{Returns}
+Register State. State see \mbox{\hyperlink{mtc__cli_8h_a809e2a1fa4dfed089723111e74dd7ec8}{M\+T\+C\+\_\+\+S\+Y\+N\+C\+\_\+\+E\+R\+R\+\_\+\+T\+Y\+PE}}... 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a26b44be990da2c9d3ae0f538c812364a}\label{mtc__cli_8h_a26b44be990da2c9d3ae0f538c812364a}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliGetTimeDiff@{Mtc\_CliGetTimeDiff}}
+\index{Mtc\_CliGetTimeDiff@{Mtc\_CliGetTimeDiff}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliGetTimeDiff()}{Mtc\_CliGetTimeDiff()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Get\+Time\+Diff (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User time diff with local. 
+
+\begin{DoxyReturn}{Returns}
+time diff with local. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_ae46d9518a7dac934ff1350a28f71f4aa}\label{mtc__cli_8h_ae46d9518a7dac934ff1350a28f71f4aa}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliInfo@{Mtc\_CliInfo}}
+\index{Mtc\_CliInfo@{Mtc\_CliInfo}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliInfo()}{Mtc\_CliInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Info (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Info }\end{DoxyParamCaption})}
+
+
+
+Send I\+N\+FO message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Type} & Body type string, Z\+N\+U\+LL for \char`\"{}plain\char`\"{}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Info} & I\+N\+FO message body string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send info ok. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send info failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}\label{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliInit@{Mtc\_CliInit}}
+\index{Mtc\_CliInit@{Mtc\_CliInit}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliInit()}{Mtc\_CliInit()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Init (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Prof\+Dir }\end{DoxyParamCaption})}
+
+
+
+Initialize Client Resource. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Prof\+Dir} & Profile directory\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Initialize client resource successfully. \\
+\hline
+{\em M\+T\+C\+\_\+\+L\+C\+S\+\_\+\+E\+R\+R\+\_\+\+N\+E\+E\+D\+\_\+\+A\+C\+T\+\_\+\+L\+I\+C\+S\+EN,Initialize} & client resource failed, you should call Mtc\+\_\+lcs\+Activate activate licenser . \&retval Z\+F\+A\+I\+L\+ED, Initialize client resource failed. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}{Mtc\+\_\+\+Cli\+Destroy}} \mbox{\hyperlink{mtc__cli__cfg_8h_aa0982f8bc3ca7d7d35b47a64c9a6aca9}{Mtc\+\_\+\+Cli\+Cfg\+Set\+License\+File\+Name}} first 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_ac60ec5a73381ac469c3a174e819e797b}\label{mtc__cli_8h_ac60ec5a73381ac469c3a174e819e797b}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliInitHeartbeatDetect@{Mtc\_CliInitHeartbeatDetect}}
+\index{Mtc\_CliInitHeartbeatDetect@{Mtc\_CliInitHeartbeatDetect}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliInitHeartbeatDetect()}{Mtc\_CliInitHeartbeatDetect()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Init\+Heartbeat\+Detect (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type }\end{DoxyParamCaption})}
+
+
+
+Init heartbeat detect. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type} & The access network type from Mtc\+\_\+\+Get\+Access\+Net\+Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+OK Init heartbeat detect successfully. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a6bc3ef5f1d9dcea435442dce948b1167}\label{mtc__cli_8h_a6bc3ef5f1d9dcea435442dce948b1167}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliIsLocalLogin@{Mtc\_CliIsLocalLogin}}
+\index{Mtc\_CliIsLocalLogin@{Mtc\_CliIsLocalLogin}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliIsLocalLogin()}{Mtc\_CliIsLocalLogin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Is\+Local\+Login (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User local logined flag. 
+
+\begin{DoxyReturn}{Returns}
+local logined flag(true or false). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a1ba8cc5a1edc04e72f9f6134d91fc31d}\label{mtc__cli_8h_a1ba8cc5a1edc04e72f9f6134d91fc31d}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliIsServerLogin@{Mtc\_CliIsServerLogin}}
+\index{Mtc\_CliIsServerLogin@{Mtc\_CliIsServerLogin}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliIsServerLogin()}{Mtc\_CliIsServerLogin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Is\+Server\+Login (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get User server logined flag. 
+
+\begin{DoxyReturn}{Returns}
+server logined flag(true or false). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}\label{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliLogin@{Mtc\_CliLogin}}
+\index{Mtc\_CliLogin@{Mtc\_CliLogin}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliLogin()}{Mtc\_CliLogin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Login (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Acc\+Net\+Type,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Acc\+Net\+Ip }\end{DoxyParamCaption})}
+
+
+
+Start to Login Client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Acc\+Net\+Type} & The access network type from Mtc\+\_\+\+Get\+Access\+Net\+Type \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Acc\+Net\+Ip} & The access network IP string. If \mbox{\hyperlink{mtc__cli__db_8h_a87a5a12f9a9159b887434321995cfeed}{Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg\+Type}} returns E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+E\+R\+V\+ER, Login result notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Ok}}, \mbox{\hyperlink{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Failed}}, \mbox{\hyperlink{mtc__cli__cb_8h_a891188a9ad7d75499033bef5706367a0}{Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Login\+Ok}} or \mbox{\hyperlink{mtc__cli__cb_8h_aeba9e3608b3f2abd6d5773b4e6a15a92}{Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Login\+Ok}} or \mbox{\hyperlink{mtc__cli__cb_8h_a62c384428eae21ee51710170316fd2da}{Mtc\+\_\+\+Cli\+Cb\+Set\+Login\+Failed}} or Mtc\+\_\+\+Cli\+Cb\+Set\+Auth\+Ind. Otherwise, it means client needn\textquotesingle{}t login to remote server, and will return immediately without any G\+UI callback.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Client is logining. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Client login failed, if failed should call Mtc\+\_\+\+Lcs\+Get\+Err\+Code \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}\label{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliLogout@{Mtc\_CliLogout}}
+\index{Mtc\_CliLogout@{Mtc\_CliLogout}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliLogout()}{Mtc\_CliLogout()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Logout (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Start to Logout Client. 
+
+If Mtc\+\_\+\+Db\+Get\+User\+Reg returns Z\+T\+R\+UE, Logout result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_afa3a78f7eaca94e2f4e1160a1c78e6e1}{Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Logout}} and \mbox{\hyperlink{mtc__cli__cb_8h_adb985259dd72323c8914591cc53e1240}{Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Logout}}.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Client is logouting. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Client logout failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a5d92dbec4dc92d24f8dff8b351200645}\label{mtc__cli_8h_a5d92dbec4dc92d24f8dff8b351200645}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliNetUnavailable@{Mtc\_CliNetUnavailable}}
+\index{Mtc\_CliNetUnavailable@{Mtc\_CliNetUnavailable}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliNetUnavailable()}{Mtc\_CliNetUnavailable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Net\+Unavailable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Network unavailable. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Network unavailable successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Network unavailable failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}\label{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliOpen@{Mtc\_CliOpen}}
+\index{Mtc\_CliOpen@{Mtc\_CliOpen}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliOpen()}{Mtc\_CliOpen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Open (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Name }\end{DoxyParamCaption})}
+
+
+
+Open a account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+User\+Name} & The account name. If account name is Z\+N\+U\+LL, it will load default profile information. For change parameter, call \mbox{\hyperlink{mtc__cli__db_8h_a53256079d5a07a5dffb3ae2080793034}{Mtc\+\_\+\+Cli\+Db\+Set\+Local\+Ip}} etc functions.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Open a account successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Initialize a account failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}{Mtc\+\_\+\+Cli\+Close}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}\label{mtc__cli_8h_a02b60da461ec555f72098dbbbe0b5822}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliRefresh@{Mtc\_CliRefresh}}
+\index{Mtc\_CliRefresh@{Mtc\_CliRefresh}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliRefresh()}{Mtc\_CliRefresh()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Refresh (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Refresh the registration. 
+
+This interface is try to send re-\/\+R\+E\+G\+I\+S\+T\+RE message to refresh the registration information on the server. Although the S\+DK will send re-\/\+R\+E\+G\+I\+S\+T\+ER automatically accroding to the expire time length, there still be in some condition which the client wants to send re-\/\+R\+E\+G\+I\+S\+T\+ER to keep registration information valid. Like on mobile phone platfrom, the S\+DK may not be able to send re-\/\+R\+E\+G\+I\+S\+T\+ER on time during background mode. In these cases, the application should invoke this interface to send re-\/\+R\+E\+G\+I\+S\+T\+ER manually to discover errors maybe occured during background mode. This interface must only be invoked after client has logined, \mbox{\hyperlink{mtc__cli__cb_8h_aeba9e3608b3f2abd6d5773b4e6a15a92}{Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Login\+Ok}}.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Client send re-\/\+R\+E\+G\+I\+S\+T\+ER ok. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Client send re-\/\+R\+E\+G\+I\+S\+T\+ER failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a4fddb28df048e9b1ecdb2482d3d9076b}{Mtc\+\_\+\+Cli\+Login}} \mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_aa2156dbaceead91d46c67b38816e343b}\label{mtc__cli_8h_aa2156dbaceead91d46c67b38816e343b}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliRelogin@{Mtc\_CliRelogin}}
+\index{Mtc\_CliRelogin@{Mtc\_CliRelogin}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliRelogin()}{Mtc\_CliRelogin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Relogin (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Acc\+Net\+Type,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Acc\+Net\+Ip }\end{DoxyParamCaption})}
+
+
+
+Start to Re-\/\+Login Client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Acc\+Net\+Type} & The access network type from Mtc\+\_\+\+Get\+Access\+Net\+Type \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Acc\+Net\+Ip} & The access network IP string. If \mbox{\hyperlink{mtc__cli__db_8h_a87a5a12f9a9159b887434321995cfeed}{Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg\+Type}} returns E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+E\+R\+V\+ER, Login result notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Ok}}, \mbox{\hyperlink{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}{Mtc\+\_\+\+Cli\+Cb\+Set\+Reg\+Failed}}, \mbox{\hyperlink{mtc__cli__cb_8h_a891188a9ad7d75499033bef5706367a0}{Mtc\+\_\+\+Cli\+Cb\+Set\+Serv\+Login\+Ok}} or \mbox{\hyperlink{mtc__cli__cb_8h_aeba9e3608b3f2abd6d5773b4e6a15a92}{Mtc\+\_\+\+Cli\+Cb\+Set\+Lcl\+Login\+Ok}} or \mbox{\hyperlink{mtc__cli__cb_8h_a62c384428eae21ee51710170316fd2da}{Mtc\+\_\+\+Cli\+Cb\+Set\+Login\+Failed}} or Mtc\+\_\+\+Cli\+Cb\+Set\+Auth\+Ind. Otherwise, it means client needn\textquotesingle{}t login to remote server, and will return immediately without any G\+UI callback.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Client is logining. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Client login failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a7fed271a002d964c7e12daa079efaddb}{Mtc\+\_\+\+Cli\+Logout}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a893de4ea54fa1617fc1eff68a57bd6fc}\label{mtc__cli_8h_a893de4ea54fa1617fc1eff68a57bd6fc}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliSetAuthParm@{Mtc\_CliSetAuthParm}}
+\index{Mtc\_CliSetAuthParm@{Mtc\_CliSetAuthParm}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliSetAuthParm()}{Mtc\_CliSetAuthParm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Set\+Auth\+Parm (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Parm\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Parm\+Val }\end{DoxyParamCaption})}
+
+
+
+Set authorization parameter to Login Client again. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Parm\+Type} & The authorization parameter type, see E\+N\+\_\+\+M\+T\+C\+\_\+\+A\+U\+T\+H\+\_\+\+P\+A\+R\+M\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & set failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_ad9e18cf68e0c9240b27986f849147a7d}{Mtc\+\_\+\+Cli\+Get\+Auth\+Parm}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a21cf9abea5780e15a1a67d03362230ac}\label{mtc__cli_8h_a21cf9abea5780e15a1a67d03362230ac}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliSetLclIpAddrType@{Mtc\_CliSetLclIpAddrType}}
+\index{Mtc\_CliSetLclIpAddrType@{Mtc\_CliSetLclIpAddrType}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliSetLclIpAddrType()}{Mtc\_CliSetLclIpAddrType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Set\+Lcl\+Ip\+Addr\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Detect and set the use ip address type. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & detect and set the use ip address type successfully. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}\label{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliStart@{Mtc\_CliStart}}
+\index{Mtc\_CliStart@{Mtc\_CliStart}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliStart()}{Mtc\_CliStart()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Start (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Start Client Service. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Start client service successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Start client service failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}{Mtc\+\_\+\+Cli\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}\label{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliStop@{Mtc\_CliStop}}
+\index{Mtc\_CliStop@{Mtc\_CliStop}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliStop()}{Mtc\_CliStop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Stop (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Stop Client Service. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\+\_\+\+Cli\+Start}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli_8h_a978a39257580b9f9372f5e1255bd6d41}\label{mtc__cli_8h_a978a39257580b9f9372f5e1255bd6d41}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliSubsReg@{Mtc\_CliSubsReg}}
+\index{Mtc\_CliSubsReg@{Mtc\_CliSubsReg}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliSubsReg()}{Mtc\_CliSubsReg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Subs\+Reg (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Start subscribe register state. subscribe result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}{Mtc\+\_\+\+Cli\+Cb\+Set\+Subs\+Stat\+Changed}}. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Start ok. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Start failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli_8h_a7127ab4866872141525181ca3b493b3d}\label{mtc__cli_8h_a7127ab4866872141525181ca3b493b3d}} 
+\index{mtc\_cli.h@{mtc\_cli.h}!Mtc\_CliUnSubsReg@{Mtc\_CliUnSubsReg}}
+\index{Mtc\_CliUnSubsReg@{Mtc\_CliUnSubsReg}!mtc\_cli.h@{mtc\_cli.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliUnSubsReg()}{Mtc\_CliUnSubsReg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Un\+Subs\+Reg (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Start unsubscribe register state. subscribe result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__cli__cb_8h_a6d936dada689904d66fd9d0a40136d2c}{Mtc\+\_\+\+Cli\+Cb\+Set\+Subs\+Stat\+Changed}}. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Start ok. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Start failed. \\
+\hline
+\end{DoxyRetVals}

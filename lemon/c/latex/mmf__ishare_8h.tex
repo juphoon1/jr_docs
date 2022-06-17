@@ -1,0 +1,590 @@
+\hypertarget{mmf__ishare_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/framework/mmf/mmf\+\_\+ishare.h File Reference}
+\label{mmf__ishare_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mmf/mmf\_ishare.h@{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mmf/mmf\_ishare.h}}
+
+
+M\+MF Image Share Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mmf__ishare_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a1f39d3ab852b3ba5ac962860c5ce3620}{Mmf\+\_\+\+I\+Share\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT $\ast$pi\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Sending image to one participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_acfc83e82cb2892af4a85cb1504df1678}{Mmf\+\_\+\+I\+Share\+SendU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT $\ast$pi\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Sending image to U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_adb0aad37f390f928a08a83a41f0d6266}{Mmf\+\_\+\+I\+Share\+SendP}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Grp\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT $\ast$pi\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Sending image to pre-\/defined group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_ae968f880e25f1e5abb0c83dc0ec65f7f}{Mmf\+\_\+\+I\+Share\+Accept}} (Z\+U\+I\+NT i\+Share\+Id, Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\begin{DoxyCompactList}\small\item\em M\+MF Accept a image share invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a2f9d308a7d1768eb6d90a5cd391f1c0a}{Mmf\+\_\+\+I\+Share\+Reject}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Reject a image share invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_aafb8507225a42e456263d3850a33757f}{Mmf\+\_\+\+I\+Share\+Cancel}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Cancel a image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a475a2a0d0784f84e47e133f2e16b5e5e}{Mmf\+\_\+\+I\+Share\+Release}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Release a image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mmf__ishare_8h_a9af822c9f837487c8a1f02acabcd31bf}{Mmf\+\_\+\+I\+Share\+Get\+Cookie}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get user cookie from a image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a658be62f9ca5b9302419b26ec5a3177a}{Mmf\+\_\+\+I\+Share\+Set\+Cookie}} (Z\+U\+I\+NT i\+Share\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+MF Set user cookie in a image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__ishare_8h_ac5c810cdc6ae2c5ebf847375fdb6e152}{Mmf\+\_\+\+I\+Share\+Get\+Name}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get image name from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__ishare_8h_a14f207e36170cb33029a857e0b2ec6cd}{Mmf\+\_\+\+I\+Share\+Get\+Path}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get image path from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mmf__ishare_8h_af35d496ab509283ced4e8c2b043685e9}{Mmf\+\_\+\+I\+Share\+Get\+Type}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get image type from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a0ec27be4045e4697ceed024d191b93b7}{Mmf\+\_\+\+I\+Share\+Get\+Size}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get image size from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_aec4353bbe80dc58dfcea8fb024354623}{Mmf\+\_\+\+I\+Share\+Get\+Sent\+Size}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get image data sent size from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a656d09d437142ff454974c926caad5ab}{Mmf\+\_\+\+I\+Share\+Get\+Recv\+Size}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get image data received size from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a37d9ace080daa57504b26642e1efe8be}{Mmf\+\_\+\+I\+Share\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get participant type from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a1f5f7eda6412e0dd0ef1f72ae1aa436d}{Mmf\+\_\+\+I\+Share\+Get\+Partp}} (Z\+U\+I\+NT i\+Share\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+MF Get paticipant information from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_aa2ee03c285dd182eaa00645e80079cf7}{Mmf\+\_\+\+I\+Share\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get participant list id from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a76f0db084e7836cc57a314c3e0beefda}{Mmf\+\_\+\+I\+Share\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Share\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+MF Get original paticipant uri from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_a351fd6bb8a77e9aef3ddb06b90c1c5f6}{Mmf\+\_\+\+I\+Share\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Share\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+MF Get original identity of paticipant uri from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mmf__ishare_8h_af636285c8d3134176ff7c767e57efd81}{Mmf\+\_\+\+I\+Share\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Share\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+MF Get date time from image share. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mmf__ishare_8h_a3741fff7be3acdb0270aea276340444b}{Mmf\+\_\+\+I\+Share\+Get\+Outgoing}} (Z\+U\+I\+NT i\+Share\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get the outgoing status from image share. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+MF Image Share Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mmf__ishare_8h_ae968f880e25f1e5abb0c83dc0ec65f7f}\label{mmf__ishare_8h_ae968f880e25f1e5abb0c83dc0ec65f7f}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareAccept@{Mmf\_IShareAccept}}
+\index{Mmf\_IShareAccept@{Mmf\_IShareAccept}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareAccept()}{Mmf\_IShareAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+M\+MF Accept a image share invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The local file name for save.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept image share invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept image share invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_aafb8507225a42e456263d3850a33757f}\label{mmf__ishare_8h_aafb8507225a42e456263d3850a33757f}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareCancel@{Mmf\_IShareCancel}}
+\index{Mmf\_IShareCancel@{Mmf\_IShareCancel}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareCancel()}{Mmf\_IShareCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Cancel a image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancel image share invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancel image share invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a9af822c9f837487c8a1f02acabcd31bf}\label{mmf__ishare_8h_a9af822c9f837487c8a1f02acabcd31bf}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetCookie@{Mmf\_IShareGetCookie}}
+\index{Mmf\_IShareGetCookie@{Mmf\_IShareGetCookie}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetCookie()}{Mmf\_IShareGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mmf\+\_\+\+I\+Share\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get user cookie from a image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_af636285c8d3134176ff7c767e57efd81}\label{mmf__ishare_8h_af636285c8d3134176ff7c767e57efd81}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetDateTime@{Mmf\_IShareGetDateTime}}
+\index{Mmf\_IShareGetDateTime@{Mmf\_IShareGetDateTime}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetDateTime()}{Mmf\_IShareGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get date time from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_ac5c810cdc6ae2c5ebf847375fdb6e152}\label{mmf__ishare_8h_ac5c810cdc6ae2c5ebf847375fdb6e152}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetName@{Mmf\_IShareGetName}}
+\index{Mmf\_IShareGetName@{Mmf\_IShareGetName}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetName()}{Mmf\_IShareGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+I\+Share\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get image name from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & image file name. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a351fd6bb8a77e9aef3ddb06b90c1c5f6}\label{mmf__ishare_8h_a351fd6bb8a77e9aef3ddb06b90c1c5f6}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetOrigIdPartp@{Mmf\_IShareGetOrigIdPartp}}
+\index{Mmf\_IShareGetOrigIdPartp@{Mmf\_IShareGetOrigIdPartp}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetOrigIdPartp()}{Mmf\_IShareGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get original identity of paticipant uri from image share. 
+
+The paticipant is the session initiator who shared image. It will return local uri if local client is the session initiator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a76f0db084e7836cc57a314c3e0beefda}\label{mmf__ishare_8h_a76f0db084e7836cc57a314c3e0beefda}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetOrigPartp@{Mmf\_IShareGetOrigPartp}}
+\index{Mmf\_IShareGetOrigPartp@{Mmf\_IShareGetOrigPartp}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetOrigPartp()}{Mmf\_IShareGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get original paticipant uri from image share. 
+
+The paticipant is the session initiator who shared image. It will return local uri if local client is the session initiator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a3741fff7be3acdb0270aea276340444b}\label{mmf__ishare_8h_a3741fff7be3acdb0270aea276340444b}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetOutgoing@{Mmf\_IShareGetOutgoing}}
+\index{Mmf\_IShareGetOutgoing@{Mmf\_IShareGetOutgoing}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetOutgoing()}{Mmf\_IShareGetOutgoing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mmf\+\_\+\+I\+Share\+Get\+Outgoing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get the outgoing status from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Outgoing} & status status, return Z\+T\+R\+UE if mission is send message. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a1f5f7eda6412e0dd0ef1f72ae1aa436d}\label{mmf__ishare_8h_a1f5f7eda6412e0dd0ef1f72ae1aa436d}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetPartp@{Mmf\_IShareGetPartp}}
+\index{Mmf\_IShareGetPartp@{Mmf\_IShareGetPartp}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetPartp()}{Mmf\_IShareGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get paticipant information from image share. 
+
+The participant is the remote client who shared image.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_aa2ee03c285dd182eaa00645e80079cf7}\label{mmf__ishare_8h_aa2ee03c285dd182eaa00645e80079cf7}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetPartpLstId@{Mmf\_IShareGetPartpLstId}}
+\index{Mmf\_IShareGetPartpLstId@{Mmf\_IShareGetPartpLstId}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetPartpLstId()}{Mmf\_IShareGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get participant list id from image share. 
+
+The participant list id is all remote clients who shared image.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant list id. The caller is responsible for freeing it by Msf\+\_\+\+Partp\+Lst\+Delete \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a37d9ace080daa57504b26642e1efe8be}\label{mmf__ishare_8h_a37d9ace080daa57504b26642e1efe8be}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetPartpType@{Mmf\_IShareGetPartpType}}
+\index{Mmf\_IShareGetPartpType@{Mmf\_IShareGetPartpType}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetPartpType()}{Mmf\_IShareGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get participant type from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im participant, E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyRetVals}
+If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by Mmf\+\_\+\+File\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by Mmf\+\_\+\+File\+Get\+Partp. If type is E\+N\+\_\+\+M\+S\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by Mmf\+\_\+\+File\+Get\+Partp\+Lst\+Id. \mbox{\Hypertarget{mmf__ishare_8h_a14f207e36170cb33029a857e0b2ec6cd}\label{mmf__ishare_8h_a14f207e36170cb33029a857e0b2ec6cd}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetPath@{Mmf\_IShareGetPath}}
+\index{Mmf\_IShareGetPath@{Mmf\_IShareGetPath}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetPath()}{Mmf\_IShareGetPath()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+I\+Share\+Get\+Path (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get image path from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & image file name. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a656d09d437142ff454974c926caad5ab}\label{mmf__ishare_8h_a656d09d437142ff454974c926caad5ab}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetRecvSize@{Mmf\_IShareGetRecvSize}}
+\index{Mmf\_IShareGetRecvSize@{Mmf\_IShareGetRecvSize}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetRecvSize()}{Mmf\_IShareGetRecvSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Recv\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get image data received size from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & image file data received size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_aec4353bbe80dc58dfcea8fb024354623}\label{mmf__ishare_8h_aec4353bbe80dc58dfcea8fb024354623}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetSentSize@{Mmf\_IShareGetSentSize}}
+\index{Mmf\_IShareGetSentSize@{Mmf\_IShareGetSentSize}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetSentSize()}{Mmf\_IShareGetSentSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Sent\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get image data sent size from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & image file data sent size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a0ec27be4045e4697ceed024d191b93b7}\label{mmf__ishare_8h_a0ec27be4045e4697ceed024d191b93b7}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetSize@{Mmf\_IShareGetSize}}
+\index{Mmf\_IShareGetSize@{Mmf\_IShareGetSize}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetSize()}{Mmf\_IShareGetSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mmf\+\_\+\+I\+Share\+Get\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get image size from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & image file size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_af35d496ab509283ced4e8c2b043685e9}\label{mmf__ishare_8h_af35d496ab509283ced4e8c2b043685e9}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareGetType@{Mmf\_IShareGetType}}
+\index{Mmf\_IShareGetType@{Mmf\_IShareGetType}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareGetType()}{Mmf\_IShareGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mmf\+\_\+\+I\+Share\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get image type from image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & image file type. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a2f9d308a7d1768eb6d90a5cd391f1c0a}\label{mmf__ishare_8h_a2f9d308a7d1768eb6d90a5cd391f1c0a}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareReject@{Mmf\_IShareReject}}
+\index{Mmf\_IShareReject@{Mmf\_IShareReject}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareReject()}{Mmf\_IShareReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Reject a image share invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject image share invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject image share invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a475a2a0d0784f84e47e133f2e16b5e5e}\label{mmf__ishare_8h_a475a2a0d0784f84e47e133f2e16b5e5e}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareRelease@{Mmf\_IShareRelease}}
+\index{Mmf\_IShareRelease@{Mmf\_IShareRelease}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareRelease()}{Mmf\_IShareRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Release a image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release image share successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release image share failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a1f39d3ab852b3ba5ac962860c5ce3620}\label{mmf__ishare_8h_a1f39d3ab852b3ba5ac962860c5ce3620}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareSend@{Mmf\_IShareSend}}
+\index{Mmf\_IShareSend@{Mmf\_IShareSend}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareSend()}{Mmf\_IShareSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Sending image to one participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send image share invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send image share invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_adb0aad37f390f928a08a83a41f0d6266}\label{mmf__ishare_8h_adb0aad37f390f928a08a83a41f0d6266}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareSendP@{Mmf\_IShareSendP}}
+\index{Mmf\_IShareSendP@{Mmf\_IShareSendP}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareSendP()}{Mmf\_IShareSendP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+SendP (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Sending image to pre-\/defined group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Uri} & The pre-\/defined group U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send image share invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send image share invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_acfc83e82cb2892af4a85cb1504df1678}\label{mmf__ishare_8h_acfc83e82cb2892af4a85cb1504df1678}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareSendU@{Mmf\_IShareSendU}}
+\index{Mmf\_IShareSendU@{Mmf\_IShareSendU}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareSendU()}{Mmf\_IShareSendU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+SendU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Share\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Sending image to U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Share\+Id} & The image share id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send image share invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send image share invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mmf__ishare_8h_a658be62f9ca5b9302419b26ec5a3177a}\label{mmf__ishare_8h_a658be62f9ca5b9302419b26ec5a3177a}} 
+\index{mmf\_ishare.h@{mmf\_ishare.h}!Mmf\_IShareSetCookie@{Mmf\_IShareSetCookie}}
+\index{Mmf\_IShareSetCookie@{Mmf\_IShareSetCookie}!mmf\_ishare.h@{mmf\_ishare.h}}
+\doxysubsubsection{\texorpdfstring{Mmf\_IShareSetCookie()}{Mmf\_IShareSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mmf\+\_\+\+I\+Share\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Share\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+MF Set user cookie in a image share. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Share\+Id} & The image share id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}

@@ -1,0 +1,125 @@
+\hypertarget{mtc__mwi_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+mwi.h File Reference}
+\label{mtc__mwi_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_mwi.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_mwi.h}}
+
+
+M\+TC Message Wait Indication Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__mwi_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__mwi_8h_a4a45a5b7c265ff99c7a8aa216178226d}{Mtc\+\_\+\+Mwi\+Get\+Voice\+Message\+Count}} (Z\+U\+I\+NT $\ast$pi\+New\+Count, Z\+U\+I\+NT $\ast$pi\+Old\+Count, Z\+U\+I\+NT $\ast$pi\+New\+Emg\+Count, Z\+U\+I\+NT $\ast$pi\+Old\+Emg\+Count)
+\begin{DoxyCompactList}\small\item\em Get voice message count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__mwi_8h_acac47a7d828ccea4290441f907b722e8}{Mtc\+\_\+\+Mwi\+Get\+Video\+Message\+Count}} (Z\+U\+I\+NT $\ast$pi\+New\+Count, Z\+U\+I\+NT $\ast$pi\+Old\+Count, Z\+U\+I\+NT $\ast$pi\+New\+Emg\+Count, Z\+U\+I\+NT $\ast$pi\+Old\+Emg\+Count)
+\begin{DoxyCompactList}\small\item\em Get video message count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__mwi_8h_ae96fb63cc909d3bbd6345688905d5f4f}{Mtc\+\_\+\+Mwi\+Get\+Fax\+Message\+Count}} (Z\+U\+I\+NT $\ast$pi\+New\+Count, Z\+U\+I\+NT $\ast$pi\+Old\+Count, Z\+U\+I\+NT $\ast$pi\+New\+Emg\+Count, Z\+U\+I\+NT $\ast$pi\+Old\+Emg\+Count)
+\begin{DoxyCompactList}\small\item\em Get fax message count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Message Wait Indication Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__mwi_8h_ae96fb63cc909d3bbd6345688905d5f4f}\label{mtc__mwi_8h_ae96fb63cc909d3bbd6345688905d5f4f}} 
+\index{mtc\_mwi.h@{mtc\_mwi.h}!Mtc\_MwiGetFaxMessageCount@{Mtc\_MwiGetFaxMessageCount}}
+\index{Mtc\_MwiGetFaxMessageCount@{Mtc\_MwiGetFaxMessageCount}!mtc\_mwi.h@{mtc\_mwi.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MwiGetFaxMessageCount()}{Mtc\_MwiGetFaxMessageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Mwi\+Get\+Fax\+Message\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Old\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Emg\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Old\+Emg\+Count }\end{DoxyParamCaption})}
+
+
+
+Get fax message count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em pi\+New\+Count} & The new fax message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Old\+Count} & The old fax message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+New\+Emg\+Count} & The new emergency fax message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Old\+Emg\+Count} & The old emergency fax message count.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get message count successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get message count failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__mwi_8h_a4a45a5b7c265ff99c7a8aa216178226d}{Mtc\+\_\+\+Mwi\+Get\+Voice\+Message\+Count}}, \mbox{\hyperlink{mtc__mwi_8h_acac47a7d828ccea4290441f907b722e8}{Mtc\+\_\+\+Mwi\+Get\+Video\+Message\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__mwi_8h_acac47a7d828ccea4290441f907b722e8}\label{mtc__mwi_8h_acac47a7d828ccea4290441f907b722e8}} 
+\index{mtc\_mwi.h@{mtc\_mwi.h}!Mtc\_MwiGetVideoMessageCount@{Mtc\_MwiGetVideoMessageCount}}
+\index{Mtc\_MwiGetVideoMessageCount@{Mtc\_MwiGetVideoMessageCount}!mtc\_mwi.h@{mtc\_mwi.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MwiGetVideoMessageCount()}{Mtc\_MwiGetVideoMessageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Mwi\+Get\+Video\+Message\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Old\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Emg\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Old\+Emg\+Count }\end{DoxyParamCaption})}
+
+
+
+Get video message count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em pi\+New\+Count} & The new video message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Old\+Count} & The old video message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+New\+Emg\+Count} & The new emergency video message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Old\+Emg\+Count} & The old emergency video message count.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get message count successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get message count failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__mwi_8h_a4a45a5b7c265ff99c7a8aa216178226d}{Mtc\+\_\+\+Mwi\+Get\+Voice\+Message\+Count}}, \mbox{\hyperlink{mtc__mwi_8h_ae96fb63cc909d3bbd6345688905d5f4f}{Mtc\+\_\+\+Mwi\+Get\+Fax\+Message\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__mwi_8h_a4a45a5b7c265ff99c7a8aa216178226d}\label{mtc__mwi_8h_a4a45a5b7c265ff99c7a8aa216178226d}} 
+\index{mtc\_mwi.h@{mtc\_mwi.h}!Mtc\_MwiGetVoiceMessageCount@{Mtc\_MwiGetVoiceMessageCount}}
+\index{Mtc\_MwiGetVoiceMessageCount@{Mtc\_MwiGetVoiceMessageCount}!mtc\_mwi.h@{mtc\_mwi.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MwiGetVoiceMessageCount()}{Mtc\_MwiGetVoiceMessageCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Mwi\+Get\+Voice\+Message\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Old\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+New\+Emg\+Count,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Old\+Emg\+Count }\end{DoxyParamCaption})}
+
+
+
+Get voice message count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em pi\+New\+Count} & The new voice message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Old\+Count} & The old voice message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+New\+Emg\+Count} & The new emergency voice message count. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Old\+Emg\+Count} & The old emergency voice message count.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get message count successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get message count failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__mwi_8h_acac47a7d828ccea4290441f907b722e8}{Mtc\+\_\+\+Mwi\+Get\+Video\+Message\+Count}}, \mbox{\hyperlink{mtc__mwi_8h_ae96fb63cc909d3bbd6345688905d5f4f}{Mtc\+\_\+\+Mwi\+Get\+Fax\+Message\+Count}} 
+\end{DoxySeeAlso}

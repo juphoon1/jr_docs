@@ -1,0 +1,1911 @@
+\hypertarget{mtc__im__cmcc_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im\+\_\+cmcc.h File Reference}
+\label{mtc__im__cmcc_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_cmcc.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_cmcc.h}}
+
+
+M\+TC Instant Messaging Interface Functions In C\+M\+CC Model.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ae2375e4ee7c2e7a522610263d5cba676}\label{mtc__im__cmcc_8h_ae2375e4ee7c2e7a522610263d5cba676}} 
+typedef enum \mbox{\hyperlink{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+\_\+\+I\+V\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__cmcc_8h_ae2375e4ee7c2e7a522610263d5cba676}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+\_\+\+I\+V\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM cmcc group type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_adee1e3665ec399f0b048b7356c6def9b}\label{mtc__im__cmcc_8h_adee1e3665ec399f0b048b7356c6def9b}} 
+typedef enum \mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__cmcc_8h_adee1e3665ec399f0b048b7356c6def9b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message content type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_af869ab9f2fd3790f5ce12096eb54da97}\label{mtc__im__cmcc_8h_af869ab9f2fd3790f5ce12096eb54da97}} 
+typedef enum \mbox{\hyperlink{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__cmcc_8h_af869ab9f2fd3790f5ce12096eb54da97}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message At type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4952ee4f5780a1b49bc89e8b52069aa0}\label{mtc__im__cmcc_8h_a4952ee4f5780a1b49bc89e8b52069aa0}} 
+typedef enum \mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__cmcc_8h_a4952ee4f5780a1b49bc89e8b52069aa0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+I\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message imdn type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a6ab9606f3e72d52421ab3e1fbe808374}\label{mtc__im__cmcc_8h_a6ab9606f3e72d52421ab3e1fbe808374}} 
+typedef enum E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a757e5ad614e06e138e22a0f15a63f379}\label{mtc__im__cmcc_8h_a757e5ad614e06e138e22a0f15a63f379}} 
+typedef enum E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+M\+A\+N\+\_\+\+R\+E\+S\+U\+LT {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+M\+A\+N\+\_\+\+R\+E\+S\+U\+LT}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+\_\+\+I\+V\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3a2b2ed5b8a0271b3fc446273d1ae1dc2a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+I\+V\+T\+\_\+\+O\+N\+L\+I\+N\+E\+\_\+\+C\+R\+E\+A\+TE}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3ab5b84346a7e45d06cc96a522b19cf659}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+I\+V\+T\+\_\+\+A\+C\+T\+I\+V\+A\+TE}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3aced1874d7ab489498f60509aa60bbb07}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+I\+V\+T\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+C\+R\+E\+A\+TE}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM cmcc group type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a424c65d7245cddd9ec006a59c5392439}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36af5189e0a091e0bded9949405a982c12d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36ad76296944273e2951cf715bea9d0dbd7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36add1053998f38558e2d439822b9b89fee}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE}}, 
+\newline
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a84f1e78fbb1a6b10bd296f03bf383b28}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a6599aadf8cc2cf6dea4a75af2cdda316}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36adc3de5bfc78359e654742646c9b7df22}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36ad998228adb3ad55661a1e205b8a200fd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP}}, 
+\newline
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a0057d7d5741eacaf81094b3c2ab6a0a1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a9c498bc04e354d77df2ce03d9ab17ec0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+G\+R\+P\+\_\+\+D\+A\+TA}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a42db406adebfd9e333c8ec011b4775b6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message content type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326aa2662d791e6bb1174bbfa880e7b4ace1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326a34afe0e751efbe449e94f1c42a88caa1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+P\+A\+R\+T\+I\+AL}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326a36d3243da855c32f52376e76df374444}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+A\+LL}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message At type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a273f5e656f67166c0662112afb47437a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a8a8afe354a10e7c244db0302710521fd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+R\+EG}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a525239ccdc68dca0ece82806036e7c5f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+LI}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a561e15490643d49227d4ee071b2a1ec4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+SP}}, 
+\newline
+\mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a333c812bb34b6f55ac4e555478603fee}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+B\+O\+TH}}, 
+\mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290aded00ac68a8a31f4f511a220af7cf400}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+B\+U\+RN}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message imdn type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a8d9fe5d4469d0bafee95fc380a9c615b}\label{mtc__im__cmcc_8h_a8d9fe5d4469d0bafee95fc380a9c615b}} 
+enum {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+N\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+S\+U\+B\+J\+E\+CT}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+C\+H\+A\+I\+R\+M\+AN}
+ \}
+\item 
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ad003370b7dcecd5011801efd71651a9f}\label{mtc__im__cmcc_8h_ad003370b7dcecd5011801efd71651a9f}} 
+enum {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+M\+A\+N\+\_\+\+R\+E\+S\+U\+LT} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+M\+A\+N\+\_\+\+N\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+M\+A\+N\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+M\+A\+N\+\_\+\+F\+A\+IL}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_ae2b49025d8cdee1f83e1d57b370dd6ef}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Creat}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Disp\+Name, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Creating cmcc group(ad-\/hoc) with U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a34c5f16e4c1559c657cb000c5aff42b5}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Accept}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Disp\+Name)
+\begin{DoxyCompactList}\small\item\em Accept a cmcc group invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a60510400ad7d9a2c148f89f2469481fa}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Reject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Reject a cmcc group invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a19b0d27fac488499b1a20754afceb3e5}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Cancel}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Cancel a cmcc group in creating. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a8ed4fc4a2c7407e7c9b4493540a24927}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Re\+Join}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Disp\+Name, Z\+C\+H\+AR $\ast$pc\+Group\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Grp\+Identity, Z\+U\+I\+NT i\+Version\+Id)
+\begin{DoxyCompactList}\small\item\em Rejoin a cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a5277776df696f83287b8fd8f795a5771}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Silence}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Silencing a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_aaa8bd71fa112d152aed4009bb2d1ec85}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Leave}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Leaving a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a50497e5680a34114fccf457bf2633d75}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Dissolve}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Dissolve a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_abc41a592d782dd5f4aa7d0a98665c4e7}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Add\+Partp}} (Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Adding one user to a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_abca8166681d22e6d5bb72dd659c9ef3a}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Add\+PartpU}} (Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Adding multi-\/users to a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a3e5cbfb7796c083a4519794cfcb734fa}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Epl\+Partp}} (Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Expelling one user from a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a10163de5b2fb8444772e14c8cf214c87}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Epl\+PartpU}} (Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Expelling muti-\/user from a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a4b016290c163c0e3879724e278fcc98a}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Mdfy\+Chair\+Man}} (Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Chair\+Man)
+\begin{DoxyCompactList}\small\item\em Modify a cmcc group chat chairman. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a6aa9b82b6f2577535d808d88d19c3fcf}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Mdfy\+Disp\+Name}} (Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Disp\+Name)
+\begin{DoxyCompactList}\small\item\em Modify own display name in a cmcc group chat. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a2065c0f8b157781aea796559e13ee186}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Grp\+Ident}} (Z\+U\+I\+NT i\+Rfer\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group chat identity from message refer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_aaf1461778da51e7e52e026ff1d613aa3}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+Rfer\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group chat id from message refer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_aa2da35ac5d19fd94f2be7627b56e1ff1}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Rfer\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a37a7a59ce6719ce8dc1422e8e377b2af}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Chair\+Man}} (Z\+U\+I\+NT i\+Rfer\+Id)
+\begin{DoxyCompactList}\small\item\em Get the modify chair man from message refer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a8f3e987287d11f09e9f5230c326805b6}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Disp\+Name}} (Z\+U\+I\+NT i\+Rfer\+Id)
+\begin{DoxyCompactList}\small\item\em Get the modify display name from message refer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__im__cmcc_8h_ac990f7bd2d543fc253368f528df72647}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Cookie}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get user cookie from cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a0f6fc2fe74fc8702b32c88645e7a1dfb}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Set\+Cookie}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set user cookie in a cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a8dd529dbe9ee4525d5591973231a2598}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Ivt\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc group get invite type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a555398e3de83e7ab24ec1762bac52362}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get subject from cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a472f8512f305ac0a0b3dce237272f747}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Disp\+Name}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get user display name from cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_ae0338e716f2bc172bae15c8619af5d8d}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Grp\+Ident}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get group Identity(group uri) from cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a423348f5423f59e94030aa8a5307a8e9}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group chat id from cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a687ab9511405a6daf873aa2bcc11ddca}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant information from cmcc group.. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a449b712446fe59b81327e97674ed6283}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get original identity of participant U\+RI from cmcc group. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_ab77af13056fb71116dacef6054decd6a}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Version\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get group chat version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a4eeb136b6aba1ef92400d9e0a2ac865d}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Set\+Version\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Ver)
+\begin{DoxyCompactList}\small\item\em M\+TC set group chat version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_ac032a3e8f65039092daa2789afca9801}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Enter\+Prise\+Grp\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get enterprise group indication. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_a9007413d7652d7a2c02aefa37301d533}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Party\+Grp\+Ind}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get party group indication from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a7534790b0f0e780a22b0dca663798e0e}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_aebe26fa427001e25b251993bf2825858}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Sys\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, \mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__cmcc_8h_aaaf3c0dbbfff5998b9bc2e8c62fb5414}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_ac3a34b9dd605c6acf0bc3b53308b9b45}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Subject}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em Get subject from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a00415622a032cf7cc16efeccdbfec001}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em Get group chat id from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a86758ca8f920858ba4f4bf1418fabb37}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Grp\+Ident}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em Get group Identity(group uri) from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_afec0f3d1cb819bef0be3a32a65e698d4}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Version}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em Get group version from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_ad4e52081bb3feaacd84934328b902e64}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list id from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a99958017fd15201810757030e5892422}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Max\+Usr\+Cnt}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get max user count from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a2f3b27c4050f2034983456016dd30b9f}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Group\+Type}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group type from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_ac6149f0ff47ec3b4aea66f8f025ca539}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Usr\+Cnt}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get user count from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_a694c5fb4a0a418370417fc5d8f980bff}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Active}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get active flag from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_ac01ae862e4767bb11611618edf3c1850}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Locked}} (Z\+U\+I\+NT i\+Grp\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get locked flag from cmcc group information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_ad916bc76008e88ecf656010be92cd0eb}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+At\+Partp\+Lst\+Id, Z\+U\+I\+NT i\+At\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending pager instant message to cmcc group chat. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a15df69765e0f9e25ba0882be2a50188f}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+SendO}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+P\+Uri, Z\+C\+H\+AR $\ast$pc\+Grp\+Ident, Z\+C\+H\+AR $\ast$pc\+Grp\+Chat\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending pager instant message to one participant in group. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__im__cmcc_8h_a4c76d05ca9e3d0908f61e5ba4b64b24b}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em Get user cookie in a cmcc group page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_abddcc6dccdc3152a5c1583c775ea2458}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set user cookie in a cmcc group page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a5c750c5623cf7c4a5bd85f067e4bc6e7}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Grp\+Ident}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get group identity from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a3ce63d95ab6f1f9c21f8e7a394455df7}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Grp\+Chat\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get group chat id from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__cmcc_8h_afe2924434fa73b65b9847d8f3f156d89}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a93f633305ff89e90ba65b4453d74d740}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the content type from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a57a48ffa713b5df00fed775ee881c43c}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the Imdn id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_ad15c11fe85e50ef92374fa867ebbf210}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the content from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a8d6b8a8c1ee0f44a82f7cc8c91033d2b}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Peer\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get peer information from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_a4b752402a657a22080b733cce1fda9af}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get carbon copy indication flag from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_ab64229f152bb32c0f2678c2e68bd196b}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get silence indication flag from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_a0b0c32e85509d498d6ecf91b80f5eabd}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+At\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em mtcf M\+TC Get at indication flag from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_aec29678fdc490b82d44e2c751858b1b5}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Grp\+Data\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group data message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_abba79fb89f4973c9fa7af24859fb408b}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get offline indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a9f7db077fda26cb7cf90966899186f72}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get conversation-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_abe345fb64944e9948338ab1bdcd8e210}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a6ede543453b026ae2f9092ed5be8c542}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke message-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__im__cmcc_8h_ac6b792a43a363f3767e901ded88b44bc}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke result from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a11bdd14514f85395a00a2b5838745138}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke from addr from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_ab24a5588e19f49bda991a4e4ef653d08}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke to addr from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__cmcc_8h_a16620dd326c485cfa04161128d02629f}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Revoke\+Msg\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a52cf5de5b473c9b100e48708c91db3fc}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+Create\+Grp\+Data\+Xml}} (Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+C\+H\+AR uc\+Data\+Type, Z\+C\+H\+AR $\ast$$\ast$ppc\+Grp\+Data\+Xml)
+\begin{DoxyCompactList}\small\item\em M\+TC create groupdata xml content. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__im__cmcc_8h_a4c4d5141627d86dbd83822d26263e571}{Mtc\+\_\+\+Im\+Cmcc\+Get\+Grp\+Man\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group manage set result from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_aab8af7f480ac62bc31cd56dfc058a1a5}{Mtc\+\_\+\+Im\+Cmcc\+Get\+Grp\+Data\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group data id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__cmcc_8h_a86897f2416fd4215716e81c3ded69c44}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get font information from cmcc group pager message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__cmcc_8h_a8fac1a2b43500912ccdfc899a7744c6e}{Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Conver\+C\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Mtc group pager msg conver type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Messaging Interface Functions In C\+M\+CC Model. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326}\label{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_AT\_TYPE@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_TYPE}}
+\index{EN\_MTC\_CMCCGRP\_PMSG\_AT\_TYPE@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_TYPE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CMCCGRP\_PMSG\_AT\_TYPE}{EN\_MTC\_CMCCGRP\_PMSG\_AT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM page message At type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_AT\_NONE@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_NONE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_AT\_NONE@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_NONE}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326aa2662d791e6bb1174bbfa880e7b4ace1}\label{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326aa2662d791e6bb1174bbfa880e7b4ace1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+N\+O\+NE&user @ no body in the group \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_AT\_PARTIAL@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_PARTIAL}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_AT\_PARTIAL@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_PARTIAL}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326a34afe0e751efbe449e94f1c42a88caa1}\label{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326a34afe0e751efbe449e94f1c42a88caa1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+P\+A\+R\+T\+I\+AL&user @ some members in the group \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_AT\_ALL@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_ALL}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_AT\_ALL@{EN\_MTC\_CMCCGRP\_PMSG\_AT\_ALL}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326a36d3243da855c32f52376e76df374444}\label{mtc__im__cmcc_8h_ae9e9cf10032f72495034f0acce221326a36d3243da855c32f52376e76df374444}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+A\+LL&user @ all members in the group \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CTYPE@{EN\_MTC\_CMCCGRP\_PMSG\_CTYPE}}
+\index{EN\_MTC\_CMCCGRP\_PMSG\_CTYPE@{EN\_MTC\_CMCCGRP\_PMSG\_CTYPE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CMCCGRP\_PMSG\_CTYPE}{EN\_MTC\_CMCCGRP\_PMSG\_CTYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}}
+
+
+
+M\+TC IM page message content type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_UNKNOWN@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_UNKNOWN}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_UNKNOWN@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a424c65d7245cddd9ec006a59c5392439}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a424c65d7245cddd9ec006a59c5392439}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&unknown content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_TXT\_PLAIN}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36af5189e0a091e0bded9949405a982c12d}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36af5189e0a091e0bded9949405a982c12d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&content type of \char`\"{}text/plain\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_VEMOTICON@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_VEMOTICON}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_VEMOTICON@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_VEMOTICON}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36ad76296944273e2951cf715bea9d0dbd7}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36ad76296944273e2951cf715bea9d0dbd7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON&content type of \char`\"{}application/vemoticon+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CLOUD\_FILE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CLOUD\_FILE}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36add1053998f38558e2d439822b9b89fee}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36add1053998f38558e2d439822b9b89fee}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE&content type of \char`\"{}application/cloudfile+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CMRED\_BAG}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CMRED\_BAG}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a84f1e78fbb1a6b10bd296f03bf383b28}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a84f1e78fbb1a6b10bd296f03bf383b28}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}application/cmredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CHRED\_BAG}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CHRED\_BAG}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a6599aadf8cc2cf6dea4a75af2cdda316}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a6599aadf8cc2cf6dea4a75af2cdda316}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}application/chredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CARD@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CARD}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CARD@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_CARD}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36adc3de5bfc78359e654742646c9b7df22}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36adc3de5bfc78359e654742646c9b7df22}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD&content type of \char`\"{}application/card+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_COM\_TEMP}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_COM\_TEMP}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36ad998228adb3ad55661a1e205b8a200fd}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36ad998228adb3ad55661a1e205b8a200fd}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP&content type of \char`\"{}application/commontemplate+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_REVOKE@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_REVOKE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_REVOKE@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_REVOKE}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a0057d7d5741eacaf81094b3c2ab6a0a1}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a0057d7d5741eacaf81094b3c2ab6a0a1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE&content type of \char`\"{}application/vnd.\+gsma.\+rcsrevoke+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_GRP\_DATA@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_GRP\_DATA}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_GRP\_DATA@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_GRP\_DATA}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a9c498bc04e354d77df2ce03d9ab17ec0}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a9c498bc04e354d77df2ce03d9ab17ec0}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+G\+R\+P\+\_\+\+D\+A\+TA&content type of \char`\"{}application/vnd.\+oma.\+cpm-\/groupdata+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_FTHTTP@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_FTHTTP}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_FTHTTP@{EN\_MTC\_CMCCGRP\_PMSG\_CONT\_MSG\_FTHTTP}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a42db406adebfd9e333c8ec011b4775b6}\label{mtc__im__cmcc_8h_a4dc8b056365625c2665e203a9242ec36a42db406adebfd9e333c8ec011b4775b6}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP&content type of \char`\"{}application/vnd.\+gsma.\+rcs-\/ft-\/http+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_TYPE@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_TYPE}}
+\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_TYPE@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_TYPE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_TYPE}{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM page message imdn type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_UNKNOWN@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_UNKNOWN}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_UNKNOWN@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a273f5e656f67166c0662112afb47437a}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a273f5e656f67166c0662112afb47437a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+U\+N\+K\+N\+O\+WN&display notification unknown imdn \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_REG@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_REG}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_REG@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_REG}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a8a8afe354a10e7c244db0302710521fd}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a8a8afe354a10e7c244db0302710521fd}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+R\+EG&regular message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DELI@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DELI}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DELI@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DELI}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a525239ccdc68dca0ece82806036e7c5f}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a525239ccdc68dca0ece82806036e7c5f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+LI&message with delivery notification request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DISP@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DISP}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DISP@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_DISP}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a561e15490643d49227d4ee071b2a1ec4}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a561e15490643d49227d4ee071b2a1ec4}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+SP&message with display notification request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BOTH@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BOTH}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BOTH@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BOTH}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a333c812bb34b6f55ac4e555478603fee}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290a333c812bb34b6f55ac4e555478603fee}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+B\+O\+TH&message with delivery \& display notification request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BURN@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BURN}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BURN@{EN\_MTC\_CMCCGRP\_PMSG\_IMDN\_BURN}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290aded00ac68a8a31f4f511a220af7cf400}\label{mtc__im__cmcc_8h_a9ad96af1ffd9995c5a443b90c2027290aded00ac68a8a31f4f511a220af7cf400}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+I\+M\+D\+N\+\_\+\+B\+U\+RN&message with burn after reading notification request \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3}\label{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_IM\_CMCC\_IVT\_TYPE@{EN\_MTC\_IM\_CMCC\_IVT\_TYPE}}
+\index{EN\_MTC\_IM\_CMCC\_IVT\_TYPE@{EN\_MTC\_IM\_CMCC\_IVT\_TYPE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_CMCC\_IVT\_TYPE}{EN\_MTC\_IM\_CMCC\_IVT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+\_\+\+I\+V\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM cmcc group type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_CMCCGRP\_IVT\_ONLINE\_CREATE@{EN\_MTC\_IM\_CMCCGRP\_IVT\_ONLINE\_CREATE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_IM\_CMCCGRP\_IVT\_ONLINE\_CREATE@{EN\_MTC\_IM\_CMCCGRP\_IVT\_ONLINE\_CREATE}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3a2b2ed5b8a0271b3fc446273d1ae1dc2a}\label{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3a2b2ed5b8a0271b3fc446273d1ae1dc2a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+I\+V\+T\+\_\+\+O\+N\+L\+I\+N\+E\+\_\+\+C\+R\+E\+A\+TE&online create invitation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_CMCCGRP\_IVT\_ACTIVATE@{EN\_MTC\_IM\_CMCCGRP\_IVT\_ACTIVATE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_IM\_CMCCGRP\_IVT\_ACTIVATE@{EN\_MTC\_IM\_CMCCGRP\_IVT\_ACTIVATE}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3ab5b84346a7e45d06cc96a522b19cf659}\label{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3ab5b84346a7e45d06cc96a522b19cf659}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+I\+V\+T\+\_\+\+A\+C\+T\+I\+V\+A\+TE&activate invitation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_CMCCGRP\_IVT\_OFFLINE\_CREATE@{EN\_MTC\_IM\_CMCCGRP\_IVT\_OFFLINE\_CREATE}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!EN\_MTC\_IM\_CMCCGRP\_IVT\_OFFLINE\_CREATE@{EN\_MTC\_IM\_CMCCGRP\_IVT\_OFFLINE\_CREATE}}}\mbox{\Hypertarget{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3aced1874d7ab489498f60509aa60bbb07}\label{mtc__im__cmcc_8h_a482520e6e92a76a518dee7063d1699c3aced1874d7ab489498f60509aa60bbb07}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+I\+V\+T\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+C\+R\+E\+A\+TE&offline create invitation \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aab8af7f480ac62bc31cd56dfc058a1a5}\label{mtc__im__cmcc_8h_aab8af7f480ac62bc31cd56dfc058a1a5}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGetGrpDataId@{Mtc\_ImCmccGetGrpDataId}}
+\index{Mtc\_ImCmccGetGrpDataId@{Mtc\_ImCmccGetGrpDataId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGetGrpDataId()}{Mtc\_ImCmccGetGrpDataId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Get\+Grp\+Data\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group data id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group data id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4c4d5141627d86dbd83822d26263e571}\label{mtc__im__cmcc_8h_a4c4d5141627d86dbd83822d26263e571}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGetGrpManResult@{Mtc\_ImCmccGetGrpManResult}}
+\index{Mtc\_ImCmccGetGrpManResult@{Mtc\_ImCmccGetGrpManResult}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGetGrpManResult()}{Mtc\_ImCmccGetGrpManResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Im\+Cmcc\+Get\+Grp\+Man\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group manage set result from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group manage set result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a34c5f16e4c1559c657cb000c5aff42b5}\label{mtc__im__cmcc_8h_a34c5f16e4c1559c657cb000c5aff42b5}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpAccept@{Mtc\_ImCmccGrpAccept}}
+\index{Mtc\_ImCmccGrpAccept@{Mtc\_ImCmccGrpAccept}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpAccept()}{Mtc\_ImCmccGrpAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name }\end{DoxyParamCaption})}
+
+
+
+Accept a cmcc group invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own display name in the group chat.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept cmcc group successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept cmcc group failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_abc41a592d782dd5f4aa7d0a98665c4e7}\label{mtc__im__cmcc_8h_abc41a592d782dd5f4aa7d0a98665c4e7}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpAddPartp@{Mtc\_ImCmccGrpAddPartp}}
+\index{Mtc\_ImCmccGrpAddPartp@{Mtc\_ImCmccGrpAddPartp}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpAddPartp()}{Mtc\_ImCmccGrpAddPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Add\+Partp (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Adding one user to a cmcc group chat. 
+
+If IM add successfully, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Add\+Ok.
+
+If IM add failed, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Add\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The refer id when send add partp invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_abca8166681d22e6d5bb72dd659c9ef3a}\label{mtc__im__cmcc_8h_abca8166681d22e6d5bb72dd659c9ef3a}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpAddPartpU@{Mtc\_ImCmccGrpAddPartpU}}
+\index{Mtc\_ImCmccGrpAddPartpU@{Mtc\_ImCmccGrpAddPartpU}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpAddPartpU()}{Mtc\_ImCmccGrpAddPartpU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Add\+PartpU (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Adding multi-\/users to a cmcc group chat. 
+
+If IM add successfully, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Add\+Ok.
+
+If IM add failed, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Add\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The refer id when send add partp invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a19b0d27fac488499b1a20754afceb3e5}\label{mtc__im__cmcc_8h_a19b0d27fac488499b1a20754afceb3e5}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpCancel@{Mtc\_ImCmccGrpCancel}}
+\index{Mtc\_ImCmccGrpCancel@{Mtc\_ImCmccGrpCancel}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpCancel()}{Mtc\_ImCmccGrpCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Cancel a cmcc group in creating. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Canceling cmcc group successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Canceling cmcc group failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ae2b49025d8cdee1f83e1d57b370dd6ef}\label{mtc__im__cmcc_8h_ae2b49025d8cdee1f83e1d57b370dd6ef}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpCreat@{Mtc\_ImCmccGrpCreat}}
+\index{Mtc\_ImCmccGrpCreat@{Mtc\_ImCmccGrpCreat}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpCreat()}{Mtc\_ImCmccGrpCreat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Creat (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Creating cmcc group(ad-\/hoc) with U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The group subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own display name in the cmcc group. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The (cmcc group) session id when send creat invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a52cf5de5b473c9b100e48708c91db3fc}\label{mtc__im__cmcc_8h_a52cf5de5b473c9b100e48708c91db3fc}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpCreateGrpDataXml@{Mtc\_ImCmccGrpCreateGrpDataXml}}
+\index{Mtc\_ImCmccGrpCreateGrpDataXml@{Mtc\_ImCmccGrpCreateGrpDataXml}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpCreateGrpDataXml()}{Mtc\_ImCmccGrpCreateGrpDataXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Create\+Grp\+Data\+Xml (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Data\+Type,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Grp\+Data\+Xml }\end{DoxyParamCaption})}
+
+
+
+M\+TC create groupdata xml content. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The groupdata target msg. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Data\+Type} & The groupdata type E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+D\+A\+T\+A\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ out}}  & {\em The} & groupdata xml content. The caller must copy it, then use.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em groupdata} & id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a50497e5680a34114fccf457bf2633d75}\label{mtc__im__cmcc_8h_a50497e5680a34114fccf457bf2633d75}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpDissolve@{Mtc\_ImCmccGrpDissolve}}
+\index{Mtc\_ImCmccGrpDissolve@{Mtc\_ImCmccGrpDissolve}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpDissolve()}{Mtc\_ImCmccGrpDissolve()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Dissolve (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Dissolve a cmcc group chat. 
+
+The result will be notified by callbacks which were set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Dissolve\+Ok or Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Dissolve\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Dissolve cmcc group chat successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Dissolve cmcc group chat failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a3e5cbfb7796c083a4519794cfcb734fa}\label{mtc__im__cmcc_8h_a3e5cbfb7796c083a4519794cfcb734fa}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpEplPartp@{Mtc\_ImCmccGrpEplPartp}}
+\index{Mtc\_ImCmccGrpEplPartp@{Mtc\_ImCmccGrpEplPartp}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpEplPartp()}{Mtc\_ImCmccGrpEplPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Epl\+Partp (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Expelling one user from a cmcc group chat. 
+
+If IM expel successfully, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Epl\+Ok.
+
+If IM expel failed, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Epl\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The refer id when send epl partp invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a10163de5b2fb8444772e14c8cf214c87}\label{mtc__im__cmcc_8h_a10163de5b2fb8444772e14c8cf214c87}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpEplPartpU@{Mtc\_ImCmccGrpEplPartpU}}
+\index{Mtc\_ImCmccGrpEplPartpU@{Mtc\_ImCmccGrpEplPartpU}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpEplPartpU()}{Mtc\_ImCmccGrpEplPartpU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Epl\+PartpU (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Expelling muti-\/user from a cmcc group chat. 
+
+If IM expel successfully, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Epl\+Ok.
+
+If IM expel failed, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Partp\+Epl\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The refer id when send epl partp invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ac990f7bd2d543fc253368f528df72647}\label{mtc__im__cmcc_8h_ac990f7bd2d543fc253368f528df72647}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetCookie@{Mtc\_ImCmccGrpGetCookie}}
+\index{Mtc\_ImCmccGrpGetCookie@{Mtc\_ImCmccGrpGetCookie}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetCookie()}{Mtc\_ImCmccGrpGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get user cookie from cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User cookie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aaaf3c0dbbfff5998b9bc2e8c62fb5414}\label{mtc__im__cmcc_8h_aaaf3c0dbbfff5998b9bc2e8c62fb5414}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetDateTime@{Mtc\_ImCmccGrpGetDateTime}}
+\index{Mtc\_ImCmccGrpGetDateTime@{Mtc\_ImCmccGrpGetDateTime}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetDateTime()}{Mtc\_ImCmccGrpGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+message session date time(milliseconds), otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a472f8512f305ac0a0b3dce237272f747}\label{mtc__im__cmcc_8h_a472f8512f305ac0a0b3dce237272f747}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetDispName@{Mtc\_ImCmccGrpGetDispName}}
+\index{Mtc\_ImCmccGrpGetDispName@{Mtc\_ImCmccGrpGetDispName}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetDispName()}{Mtc\_ImCmccGrpGetDispName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Disp\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get user display name from cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User display name. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ac032a3e8f65039092daa2789afca9801}\label{mtc__im__cmcc_8h_ac032a3e8f65039092daa2789afca9801}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetEnterPriseGrpInd@{Mtc\_ImCmccGrpGetEnterPriseGrpInd}}
+\index{Mtc\_ImCmccGrpGetEnterPriseGrpInd@{Mtc\_ImCmccGrpGetEnterPriseGrpInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetEnterPriseGrpInd()}{Mtc\_ImCmccGrpGetEnterPriseGrpInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Enter\+Prise\+Grp\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get enterprise group indication. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+enterprise group indication. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a423348f5423f59e94030aa8a5307a8e9}\label{mtc__im__cmcc_8h_a423348f5423f59e94030aa8a5307a8e9}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetGrpChatId@{Mtc\_ImCmccGrpGetGrpChatId}}
+\index{Mtc\_ImCmccGrpGetGrpChatId@{Mtc\_ImCmccGrpGetGrpChatId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetGrpChatId()}{Mtc\_ImCmccGrpGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group chat id from cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group chat id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ae0338e716f2bc172bae15c8619af5d8d}\label{mtc__im__cmcc_8h_ae0338e716f2bc172bae15c8619af5d8d}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetGrpIdent@{Mtc\_ImCmccGrpGetGrpIdent}}
+\index{Mtc\_ImCmccGrpGetGrpIdent@{Mtc\_ImCmccGrpGetGrpIdent}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetGrpIdent()}{Mtc\_ImCmccGrpGetGrpIdent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Grp\+Ident (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get group Identity(group uri) from cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Group Identity when get group successfully, otherwise return empty string.
+\end{DoxyReturn}
+The caller must copy it, then use. \mbox{\Hypertarget{mtc__im__cmcc_8h_a8dd529dbe9ee4525d5591973231a2598}\label{mtc__im__cmcc_8h_a8dd529dbe9ee4525d5591973231a2598}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetIvtType@{Mtc\_ImCmccGrpGetIvtType}}
+\index{Mtc\_ImCmccGrpGetIvtType@{Mtc\_ImCmccGrpGetIvtType}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetIvtType()}{Mtc\_ImCmccGrpGetIvtType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Ivt\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc group get invite type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+invite type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__im__cmcc_8h_ae2375e4ee7c2e7a522610263d5cba676}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+C\+M\+C\+C\+\_\+\+I\+V\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a449b712446fe59b81327e97674ed6283}\label{mtc__im__cmcc_8h_a449b712446fe59b81327e97674ed6283}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetOrigIdPartp@{Mtc\_ImCmccGrpGetOrigIdPartp}}
+\index{Mtc\_ImCmccGrpGetOrigIdPartp@{Mtc\_ImCmccGrpGetOrigIdPartp}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetOrigIdPartp()}{Mtc\_ImCmccGrpGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Get original identity of participant U\+RI from cmcc group. 
+
+The participant is the initiator who initialized this cmcc group. It will return local U\+RI if local client is the session initiator. It will return identity uri if invitation has P-\/\+Asserted-\/\+Identity information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a687ab9511405a6daf873aa2bcc11ddca}\label{mtc__im__cmcc_8h_a687ab9511405a6daf873aa2bcc11ddca}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetPartp@{Mtc\_ImCmccGrpGetPartp}}
+\index{Mtc\_ImCmccGrpGetPartp@{Mtc\_ImCmccGrpGetPartp}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetPartp()}{Mtc\_ImCmccGrpGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant information from cmcc group.. 
+
+The participant is the remote client who is joining session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a7534790b0f0e780a22b0dca663798e0e}\label{mtc__im__cmcc_8h_a7534790b0f0e780a22b0dca663798e0e}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetPartpLstId@{Mtc\_ImCmccGrpGetPartpLstId}}
+\index{Mtc\_ImCmccGrpGetPartpLstId@{Mtc\_ImCmccGrpGetPartpLstId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetPartpLstId()}{Mtc\_ImCmccGrpGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list id. 
+
+The participant list id is all remote clients who are joining session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The participant list id on succeed or 0 on failed.
+\end{DoxyReturn}
+The caller is responsible for freeing it by \mbox{\hyperlink{mtc__partp_8h_a47276b69ad0ae6bba452f1e933e4c1ec}{Mtc\+\_\+\+Partp\+Lst\+Delete}}. \mbox{\Hypertarget{mtc__im__cmcc_8h_a9007413d7652d7a2c02aefa37301d533}\label{mtc__im__cmcc_8h_a9007413d7652d7a2c02aefa37301d533}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetPartyGrpInd@{Mtc\_ImCmccGrpGetPartyGrpInd}}
+\index{Mtc\_ImCmccGrpGetPartyGrpInd@{Mtc\_ImCmccGrpGetPartyGrpInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetPartyGrpInd()}{Mtc\_ImCmccGrpGetPartyGrpInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Party\+Grp\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get party group indication from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+party group indication. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a555398e3de83e7ab24ec1762bac52362}\label{mtc__im__cmcc_8h_a555398e3de83e7ab24ec1762bac52362}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetSubject@{Mtc\_ImCmccGrpGetSubject}}
+\index{Mtc\_ImCmccGrpGetSubject@{Mtc\_ImCmccGrpGetSubject}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetSubject()}{Mtc\_ImCmccGrpGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get subject from cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & cmcc group The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group subject. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aebe26fa427001e25b251993bf2825858}\label{mtc__im__cmcc_8h_aebe26fa427001e25b251993bf2825858}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetSysDateTime@{Mtc\_ImCmccGrpGetSysDateTime}}
+\index{Mtc\_ImCmccGrpGetSysDateTime@{Mtc\_ImCmccGrpGetSysDateTime}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetSysDateTime()}{Mtc\_ImCmccGrpGetSysDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Sys\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{\mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ab77af13056fb71116dacef6054decd6a}\label{mtc__im__cmcc_8h_ab77af13056fb71116dacef6054decd6a}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpGetVersionId@{Mtc\_ImCmccGrpGetVersionId}}
+\index{Mtc\_ImCmccGrpGetVersionId@{Mtc\_ImCmccGrpGetVersionId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpGetVersionId()}{Mtc\_ImCmccGrpGetVersionId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Get\+Version\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get group chat version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+group chat version. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a694c5fb4a0a418370417fc5d8f980bff}\label{mtc__im__cmcc_8h_a694c5fb4a0a418370417fc5d8f980bff}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetActive@{Mtc\_ImCmccGrpInfoGetActive}}
+\index{Mtc\_ImCmccGrpInfoGetActive@{Mtc\_ImCmccGrpInfoGetActive}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetActive()}{Mtc\_ImCmccGrpInfoGetActive()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Active (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get active flag from cmcc group information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group active flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a2f3b27c4050f2034983456016dd30b9f}\label{mtc__im__cmcc_8h_a2f3b27c4050f2034983456016dd30b9f}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetGroupType@{Mtc\_ImCmccGrpInfoGetGroupType}}
+\index{Mtc\_ImCmccGrpInfoGetGroupType@{Mtc\_ImCmccGrpInfoGetGroupType}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetGroupType()}{Mtc\_ImCmccGrpInfoGetGroupType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Group\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group type from cmcc group information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group type, 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__im_8h_a3eea462411747a666cdd790b673c3c06}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+PE}}.. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a00415622a032cf7cc16efeccdbfec001}\label{mtc__im__cmcc_8h_a00415622a032cf7cc16efeccdbfec001}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetGrpChatId@{Mtc\_ImCmccGrpInfoGetGrpChatId}}
+\index{Mtc\_ImCmccGrpInfoGetGrpChatId@{Mtc\_ImCmccGrpInfoGetGrpChatId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetGrpChatId()}{Mtc\_ImCmccGrpInfoGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+Get group chat id from cmcc group information. 
+
+This method should used when callback Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Info\+Update notified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group chat id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a86758ca8f920858ba4f4bf1418fabb37}\label{mtc__im__cmcc_8h_a86758ca8f920858ba4f4bf1418fabb37}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetGrpIdent@{Mtc\_ImCmccGrpInfoGetGrpIdent}}
+\index{Mtc\_ImCmccGrpInfoGetGrpIdent@{Mtc\_ImCmccGrpInfoGetGrpIdent}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetGrpIdent()}{Mtc\_ImCmccGrpInfoGetGrpIdent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Grp\+Ident (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+Get group Identity(group uri) from cmcc group information. 
+
+This method should used when callback Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Info\+Update notified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group Identity. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ac01ae862e4767bb11611618edf3c1850}\label{mtc__im__cmcc_8h_ac01ae862e4767bb11611618edf3c1850}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetLocked@{Mtc\_ImCmccGrpInfoGetLocked}}
+\index{Mtc\_ImCmccGrpInfoGetLocked@{Mtc\_ImCmccGrpInfoGetLocked}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetLocked()}{Mtc\_ImCmccGrpInfoGetLocked()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Locked (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC get locked flag from cmcc group information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group locked flag. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a99958017fd15201810757030e5892422}\label{mtc__im__cmcc_8h_a99958017fd15201810757030e5892422}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetMaxUsrCnt@{Mtc\_ImCmccGrpInfoGetMaxUsrCnt}}
+\index{Mtc\_ImCmccGrpInfoGetMaxUsrCnt@{Mtc\_ImCmccGrpInfoGetMaxUsrCnt}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetMaxUsrCnt()}{Mtc\_ImCmccGrpInfoGetMaxUsrCnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Max\+Usr\+Cnt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get max user count from cmcc group information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group max user count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ad4e52081bb3feaacd84934328b902e64}\label{mtc__im__cmcc_8h_ad4e52081bb3feaacd84934328b902e64}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetPartpLstId@{Mtc\_ImCmccGrpInfoGetPartpLstId}}
+\index{Mtc\_ImCmccGrpInfoGetPartpLstId@{Mtc\_ImCmccGrpInfoGetPartpLstId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetPartpLstId()}{Mtc\_ImCmccGrpInfoGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list id from cmcc group information. 
+
+This method should used when callback Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Info\+Update notified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+participant list id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ac3a34b9dd605c6acf0bc3b53308b9b45}\label{mtc__im__cmcc_8h_ac3a34b9dd605c6acf0bc3b53308b9b45}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetSubject@{Mtc\_ImCmccGrpInfoGetSubject}}
+\index{Mtc\_ImCmccGrpInfoGetSubject@{Mtc\_ImCmccGrpInfoGetSubject}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetSubject()}{Mtc\_ImCmccGrpInfoGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+Get subject from cmcc group information. 
+
+This method should used when callback Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Info\+Update notified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group subject. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ac6149f0ff47ec3b4aea66f8f025ca539}\label{mtc__im__cmcc_8h_ac6149f0ff47ec3b4aea66f8f025ca539}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetUsrCnt@{Mtc\_ImCmccGrpInfoGetUsrCnt}}
+\index{Mtc\_ImCmccGrpInfoGetUsrCnt@{Mtc\_ImCmccGrpInfoGetUsrCnt}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetUsrCnt()}{Mtc\_ImCmccGrpInfoGetUsrCnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Usr\+Cnt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get user count from cmcc group information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group user count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_afec0f3d1cb819bef0be3a32a65e698d4}\label{mtc__im__cmcc_8h_afec0f3d1cb819bef0be3a32a65e698d4}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpInfoGetVersion@{Mtc\_ImCmccGrpInfoGetVersion}}
+\index{Mtc\_ImCmccGrpInfoGetVersion@{Mtc\_ImCmccGrpInfoGetVersion}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpInfoGetVersion()}{Mtc\_ImCmccGrpInfoGetVersion()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Info\+Get\+Version (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Grp\+Info\+Id }\end{DoxyParamCaption})}
+
+
+
+Get group version from cmcc group information. 
+
+This method should used when callback Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Info\+Update notified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Grp\+Info\+Id} & The cmcc group information session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cmcc group version. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aaa8bd71fa112d152aed4009bb2d1ec85}\label{mtc__im__cmcc_8h_aaa8bd71fa112d152aed4009bb2d1ec85}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpLeave@{Mtc\_ImCmccGrpLeave}}
+\index{Mtc\_ImCmccGrpLeave@{Mtc\_ImCmccGrpLeave}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpLeave()}{Mtc\_ImCmccGrpLeave()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Leave (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Leaving a cmcc group chat. 
+
+The result will be notified by callbacks which were set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Leave\+Ok or Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Leave\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Leaving cmcc group successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Leaving cmcc group failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4b016290c163c0e3879724e278fcc98a}\label{mtc__im__cmcc_8h_a4b016290c163c0e3879724e278fcc98a}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpMdfyChairMan@{Mtc\_ImCmccGrpMdfyChairMan}}
+\index{Mtc\_ImCmccGrpMdfyChairMan@{Mtc\_ImCmccGrpMdfyChairMan}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpMdfyChairMan()}{Mtc\_ImCmccGrpMdfyChairMan()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Mdfy\+Chair\+Man (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Chair\+Man }\end{DoxyParamCaption})}
+
+
+
+Modify a cmcc group chat chairman. 
+
+If IM expel successfully, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Chair\+Man\+Mdfy\+Ok.
+
+If IM expel failed, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Chair\+Man\+Mdfy\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The Uri of new chairman.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The refer id when send modify chairman invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a6aa9b82b6f2577535d808d88d19c3fcf}\label{mtc__im__cmcc_8h_a6aa9b82b6f2577535d808d88d19c3fcf}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpMdfyDispName@{Mtc\_ImCmccGrpMdfyDispName}}
+\index{Mtc\_ImCmccGrpMdfyDispName@{Mtc\_ImCmccGrpMdfyDispName}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpMdfyDispName()}{Mtc\_ImCmccGrpMdfyDispName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Mdfy\+Disp\+Name (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name }\end{DoxyParamCaption})}
+
+
+
+Modify own display name in a cmcc group chat. 
+
+If IM expel successfully, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Disp\+Name\+Mdfy\+Ok.
+
+If IM expel failed, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Disp\+Name\+Mdfy\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own new display name in group chat.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The refer id when send modify dispname invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a8fac1a2b43500912ccdfc899a7744c6e}\label{mtc__im__cmcc_8h_a8fac1a2b43500912ccdfc899a7744c6e}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgConverCType@{Mtc\_ImCmccGrpPMsgConverCType}}
+\index{Mtc\_ImCmccGrpPMsgConverCType@{Mtc\_ImCmccGrpPMsgConverCType}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgConverCType()}{Mtc\_ImCmccGrpPMsgConverCType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Conver\+C\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Mtc group pager msg conver type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The old mtc msg type.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em new} & mmf msg type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ad15c11fe85e50ef92374fa867ebbf210}\label{mtc__im__cmcc_8h_ad15c11fe85e50ef92374fa867ebbf210}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetContent@{Mtc\_ImCmccGrpPMsgGetContent}}
+\index{Mtc\_ImCmccGrpPMsgGetContent@{Mtc\_ImCmccGrpPMsgGetContent}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetContent()}{Mtc\_ImCmccGrpPMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the content from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cmcc group pager message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a93f633305ff89e90ba65b4453d74d740}\label{mtc__im__cmcc_8h_a93f633305ff89e90ba65b4453d74d740}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetContentType@{Mtc\_ImCmccGrpPMsgGetContentType}}
+\index{Mtc\_ImCmccGrpPMsgGetContentType@{Mtc\_ImCmccGrpPMsgGetContentType}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetContentType()}{Mtc\_ImCmccGrpPMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the content type from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of page message, \mbox{\hyperlink{mtc__im__cmcc_8h_adee1e3665ec399f0b048b7356c6def9b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_abe345fb64944e9948338ab1bdcd8e210}\label{mtc__im__cmcc_8h_abe345fb64944e9948338ab1bdcd8e210}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetContId@{Mtc\_ImCmccGrpPMsgGetContId}}
+\index{Mtc\_ImCmccGrpPMsgGetContId@{Mtc\_ImCmccGrpPMsgGetContId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetContId()}{Mtc\_ImCmccGrpPMsgGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a9f7db077fda26cb7cf90966899186f72}\label{mtc__im__cmcc_8h_a9f7db077fda26cb7cf90966899186f72}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetConvId@{Mtc\_ImCmccGrpPMsgGetConvId}}
+\index{Mtc\_ImCmccGrpPMsgGetConvId@{Mtc\_ImCmccGrpPMsgGetConvId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetConvId()}{Mtc\_ImCmccGrpPMsgGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get conversation-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4c76d05ca9e3d0908f61e5ba4b64b24b}\label{mtc__im__cmcc_8h_a4c76d05ca9e3d0908f61e5ba4b64b24b}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetCookie@{Mtc\_ImCmccGrpPMsgGetCookie}}
+\index{Mtc\_ImCmccGrpPMsgGetCookie@{Mtc\_ImCmccGrpPMsgGetCookie}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetCookie()}{Mtc\_ImCmccGrpPMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+Get user cookie in a cmcc group page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_afe2924434fa73b65b9847d8f3f156d89}\label{mtc__im__cmcc_8h_afe2924434fa73b65b9847d8f3f156d89}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetDateTime@{Mtc\_ImCmccGrpPMsgGetDateTime}}
+\index{Mtc\_ImCmccGrpPMsgGetDateTime@{Mtc\_ImCmccGrpPMsgGetDateTime}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetDateTime()}{Mtc\_ImCmccGrpPMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cmcc group pager message date time(milliseconds), otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a86897f2416fd4215716e81c3ded69c44}\label{mtc__im__cmcc_8h_a86897f2416fd4215716e81c3ded69c44}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetFontInfo@{Mtc\_ImCmccGrpPMsgGetFontInfo}}
+\index{Mtc\_ImCmccGrpPMsgGetFontInfo@{Mtc\_ImCmccGrpPMsgGetFontInfo}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetFontInfo()}{Mtc\_ImCmccGrpPMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get font information from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & font information. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a3ce63d95ab6f1f9c21f8e7a394455df7}\label{mtc__im__cmcc_8h_a3ce63d95ab6f1f9c21f8e7a394455df7}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetGrpChatId@{Mtc\_ImCmccGrpPMsgGetGrpChatId}}
+\index{Mtc\_ImCmccGrpPMsgGetGrpChatId@{Mtc\_ImCmccGrpPMsgGetGrpChatId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetGrpChatId()}{Mtc\_ImCmccGrpPMsgGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get group chat id from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group chat id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a5c750c5623cf7c4a5bd85f067e4bc6e7}\label{mtc__im__cmcc_8h_a5c750c5623cf7c4a5bd85f067e4bc6e7}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetGrpIdent@{Mtc\_ImCmccGrpPMsgGetGrpIdent}}
+\index{Mtc\_ImCmccGrpPMsgGetGrpIdent@{Mtc\_ImCmccGrpPMsgGetGrpIdent}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetGrpIdent()}{Mtc\_ImCmccGrpPMsgGetGrpIdent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Grp\+Ident (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get group identity from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group identity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a57a48ffa713b5df00fed775ee881c43c}\label{mtc__im__cmcc_8h_a57a48ffa713b5df00fed775ee881c43c}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetImdnId@{Mtc\_ImCmccGrpPMsgGetImdnId}}
+\index{Mtc\_ImCmccGrpPMsgGetImdnId@{Mtc\_ImCmccGrpPMsgGetImdnId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetImdnId()}{Mtc\_ImCmccGrpPMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the Imdn id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+imdn id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a8d6b8a8c1ee0f44a82f7cc8c91033d2b}\label{mtc__im__cmcc_8h_a8d6b8a8c1ee0f44a82f7cc8c91033d2b}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetPeerPartp@{Mtc\_ImCmccGrpPMsgGetPeerPartp}}
+\index{Mtc\_ImCmccGrpPMsgGetPeerPartp@{Mtc\_ImCmccGrpPMsgGetPeerPartp}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetPeerPartp()}{Mtc\_ImCmccGrpPMsgGetPeerPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Peer\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get peer information from cmcc group pager message. 
+
+Get receiver information when Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Cc\+Ind is true or Get sender information when Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Cc\+Ind is false.
+
+The participant is the remote client who sent message or the own multi client who carbon copy message
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri must copy it, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a11bdd14514f85395a00a2b5838745138}\label{mtc__im__cmcc_8h_a11bdd14514f85395a00a2b5838745138}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetRevokeFromAddr@{Mtc\_ImCmccGrpPMsgGetRevokeFromAddr}}
+\index{Mtc\_ImCmccGrpPMsgGetRevokeFromAddr@{Mtc\_ImCmccGrpPMsgGetRevokeFromAddr}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetRevokeFromAddr()}{Mtc\_ImCmccGrpPMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke from addr from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a6ede543453b026ae2f9092ed5be8c542}\label{mtc__im__cmcc_8h_a6ede543453b026ae2f9092ed5be8c542}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetRevokeMsgId@{Mtc\_ImCmccGrpPMsgGetRevokeMsgId}}
+\index{Mtc\_ImCmccGrpPMsgGetRevokeMsgId@{Mtc\_ImCmccGrpPMsgGetRevokeMsgId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetRevokeMsgId()}{Mtc\_ImCmccGrpPMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke message-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ac6b792a43a363f3767e901ded88b44bc}\label{mtc__im__cmcc_8h_ac6b792a43a363f3767e901ded88b44bc}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetRevokeResult@{Mtc\_ImCmccGrpPMsgGetRevokeResult}}
+\index{Mtc\_ImCmccGrpPMsgGetRevokeResult@{Mtc\_ImCmccGrpPMsgGetRevokeResult}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetRevokeResult()}{Mtc\_ImCmccGrpPMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke result from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ab24a5588e19f49bda991a4e4ef653d08}\label{mtc__im__cmcc_8h_ab24a5588e19f49bda991a4e4ef653d08}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgGetRevokeToAddr@{Mtc\_ImCmccGrpPMsgGetRevokeToAddr}}
+\index{Mtc\_ImCmccGrpPMsgGetRevokeToAddr@{Mtc\_ImCmccGrpPMsgGetRevokeToAddr}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgGetRevokeToAddr()}{Mtc\_ImCmccGrpPMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke to addr from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a0b0c32e85509d498d6ecf91b80f5eabd}\label{mtc__im__cmcc_8h_a0b0c32e85509d498d6ecf91b80f5eabd}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgHasAtInd@{Mtc\_ImCmccGrpPMsgHasAtInd}}
+\index{Mtc\_ImCmccGrpPMsgHasAtInd@{Mtc\_ImCmccGrpPMsgHasAtInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgHasAtInd()}{Mtc\_ImCmccGrpPMsgHasAtInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+At\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+mtcf M\+TC Get at indication flag from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it has at indication, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4b752402a657a22080b733cce1fda9af}\label{mtc__im__cmcc_8h_a4b752402a657a22080b733cce1fda9af}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgHasCcInd@{Mtc\_ImCmccGrpPMsgHasCcInd}}
+\index{Mtc\_ImCmccGrpPMsgHasCcInd@{Mtc\_ImCmccGrpPMsgHasCcInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgHasCcInd()}{Mtc\_ImCmccGrpPMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get carbon copy indication flag from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a carbon copy message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aec29678fdc490b82d44e2c751858b1b5}\label{mtc__im__cmcc_8h_aec29678fdc490b82d44e2c751858b1b5}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgHasGrpDataInd@{Mtc\_ImCmccGrpPMsgHasGrpDataInd}}
+\index{Mtc\_ImCmccGrpPMsgHasGrpDataInd@{Mtc\_ImCmccGrpPMsgHasGrpDataInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgHasGrpDataInd()}{Mtc\_ImCmccGrpPMsgHasGrpDataInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Grp\+Data\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group data message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has group data message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_abba79fb89f4973c9fa7af24859fb408b}\label{mtc__im__cmcc_8h_abba79fb89f4973c9fa7af24859fb408b}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgHasOffInd@{Mtc\_ImCmccGrpPMsgHasOffInd}}
+\index{Mtc\_ImCmccGrpPMsgHasOffInd@{Mtc\_ImCmccGrpPMsgHasOffInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgHasOffInd()}{Mtc\_ImCmccGrpPMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get offline indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a offline message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a16620dd326c485cfa04161128d02629f}\label{mtc__im__cmcc_8h_a16620dd326c485cfa04161128d02629f}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgHasRevokeMsgInd@{Mtc\_ImCmccGrpPMsgHasRevokeMsgInd}}
+\index{Mtc\_ImCmccGrpPMsgHasRevokeMsgInd@{Mtc\_ImCmccGrpPMsgHasRevokeMsgInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgHasRevokeMsgInd()}{Mtc\_ImCmccGrpPMsgHasRevokeMsgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Revoke\+Msg\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has revoke message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ab64229f152bb32c0f2678c2e68bd196b}\label{mtc__im__cmcc_8h_ab64229f152bb32c0f2678c2e68bd196b}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgHasSilenceInd@{Mtc\_ImCmccGrpPMsgHasSilenceInd}}
+\index{Mtc\_ImCmccGrpPMsgHasSilenceInd@{Mtc\_ImCmccGrpPMsgHasSilenceInd}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgHasSilenceInd()}{Mtc\_ImCmccGrpPMsgHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get silence indication flag from cmcc group pager message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a silence message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_ad916bc76008e88ecf656010be92cd0eb}\label{mtc__im__cmcc_8h_ad916bc76008e88ecf656010be92cd0eb}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgSend@{Mtc\_ImCmccGrpPMsgSend}}
+\index{Mtc\_ImCmccGrpPMsgSend@{Mtc\_ImCmccGrpPMsgSend}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgSend()}{Mtc\_ImCmccGrpPMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+At\+Partp\+Lst\+Id,  }\item[{Z\+U\+I\+NT}]{i\+At\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending pager instant message to cmcc group chat. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+P\+Msg\+Send\+Ok or Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+P\+Msg\+Send\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Peer\+Uri} & The peer uri in group. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Ident} & The group identity(group uri). \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__cmcc_8h_adee1e3665ec399f0b048b7356c6def9b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+At\+Type} & The at function type, see E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+A\+T\+\_\+\+T\+Y\+PE. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a15df69765e0f9e25ba0882be2a50188f}\label{mtc__im__cmcc_8h_a15df69765e0f9e25ba0882be2a50188f}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgSendO@{Mtc\_ImCmccGrpPMsgSendO}}
+\index{Mtc\_ImCmccGrpPMsgSendO@{Mtc\_ImCmccGrpPMsgSendO}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgSendO()}{Mtc\_ImCmccGrpPMsgSendO()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+SendO (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+P\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Ident,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending pager instant message to one participant in group. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+P\+Msg\+Send\+Ok or Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+P\+Msg\+Send\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+P\+Uri} & The peer uri in group. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Ident} & The group identity(group uri). \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im__cmcc_8h_adee1e3665ec399f0b048b7356c6def9b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_abddcc6dccdc3152a5c1583c775ea2458}\label{mtc__im__cmcc_8h_abddcc6dccdc3152a5c1583c775ea2458}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpPMsgSetCookie@{Mtc\_ImCmccGrpPMsgSetCookie}}
+\index{Mtc\_ImCmccGrpPMsgSetCookie@{Mtc\_ImCmccGrpPMsgSetCookie}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpPMsgSetCookie()}{Mtc\_ImCmccGrpPMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+P\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set user cookie in a cmcc group page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a60510400ad7d9a2c148f89f2469481fa}\label{mtc__im__cmcc_8h_a60510400ad7d9a2c148f89f2469481fa}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpReject@{Mtc\_ImCmccGrpReject}}
+\index{Mtc\_ImCmccGrpReject@{Mtc\_ImCmccGrpReject}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpReject()}{Mtc\_ImCmccGrpReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Reject a cmcc group invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject cmcc group successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject cmcc group failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a8ed4fc4a2c7407e7c9b4493540a24927}\label{mtc__im__cmcc_8h_a8ed4fc4a2c7407e7c9b4493540a24927}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpReJoin@{Mtc\_ImCmccGrpReJoin}}
+\index{Mtc\_ImCmccGrpReJoin@{Mtc\_ImCmccGrpReJoin}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpReJoin()}{Mtc\_ImCmccGrpReJoin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Re\+Join (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Subject,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Group\+Chat\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Grp\+Identity,  }\item[{Z\+U\+I\+NT}]{i\+Version\+Id }\end{DoxyParamCaption})}
+
+
+
+Rejoin a cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Subject} & The group subject. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disp\+Name} & The own display name in group chat. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Group\+Chat\+Id} & The group chat id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Identity} & The focus Group Identity. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Version\+Id} & The group chat version.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rejoin group session id when send cmcc group invitation successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a37a7a59ce6719ce8dc1422e8e377b2af}\label{mtc__im__cmcc_8h_a37a7a59ce6719ce8dc1422e8e377b2af}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpRferGetChairMan@{Mtc\_ImCmccGrpRferGetChairMan}}
+\index{Mtc\_ImCmccGrpRferGetChairMan@{Mtc\_ImCmccGrpRferGetChairMan}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpRferGetChairMan()}{Mtc\_ImCmccGrpRferGetChairMan()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Chair\+Man (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rfer\+Id }\end{DoxyParamCaption})}
+
+
+
+Get the modify chair man from message refer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rfer\+Id} & The refer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modify chair man. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a8f3e987287d11f09e9f5230c326805b6}\label{mtc__im__cmcc_8h_a8f3e987287d11f09e9f5230c326805b6}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpRferGetDispName@{Mtc\_ImCmccGrpRferGetDispName}}
+\index{Mtc\_ImCmccGrpRferGetDispName@{Mtc\_ImCmccGrpRferGetDispName}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpRferGetDispName()}{Mtc\_ImCmccGrpRferGetDispName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Disp\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rfer\+Id }\end{DoxyParamCaption})}
+
+
+
+Get the modify display name from message refer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rfer\+Id} & The refer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The modify display name. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aaf1461778da51e7e52e026ff1d613aa3}\label{mtc__im__cmcc_8h_aaf1461778da51e7e52e026ff1d613aa3}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpRferGetGrpChatId@{Mtc\_ImCmccGrpRferGetGrpChatId}}
+\index{Mtc\_ImCmccGrpRferGetGrpChatId@{Mtc\_ImCmccGrpRferGetGrpChatId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpRferGetGrpChatId()}{Mtc\_ImCmccGrpRferGetGrpChatId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Grp\+Chat\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rfer\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group chat id from message refer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rfer\+Id} & The refer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group chat id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a2065c0f8b157781aea796559e13ee186}\label{mtc__im__cmcc_8h_a2065c0f8b157781aea796559e13ee186}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpRferGetGrpIdent@{Mtc\_ImCmccGrpRferGetGrpIdent}}
+\index{Mtc\_ImCmccGrpRferGetGrpIdent@{Mtc\_ImCmccGrpRferGetGrpIdent}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpRferGetGrpIdent()}{Mtc\_ImCmccGrpRferGetGrpIdent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Grp\+Ident (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rfer\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group chat identity from message refer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rfer\+Id} & The refer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The group chat identity. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_aa2da35ac5d19fd94f2be7627b56e1ff1}\label{mtc__im__cmcc_8h_aa2da35ac5d19fd94f2be7627b56e1ff1}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpRferGetPartpLstId@{Mtc\_ImCmccGrpRferGetPartpLstId}}
+\index{Mtc\_ImCmccGrpRferGetPartpLstId@{Mtc\_ImCmccGrpRferGetPartpLstId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpRferGetPartpLstId()}{Mtc\_ImCmccGrpRferGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Rfer\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Rfer\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list id. 
+
+The participant list id is all remote clients who are added or epled group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rfer\+Id} & The refer id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The participant list id on succeed or 0 on failed.
+\end{DoxyReturn}
+The caller is responsible for freeing it by \mbox{\hyperlink{mtc__partp_8h_a47276b69ad0ae6bba452f1e933e4c1ec}{Mtc\+\_\+\+Partp\+Lst\+Delete}}. \mbox{\Hypertarget{mtc__im__cmcc_8h_a0f6fc2fe74fc8702b32c88645e7a1dfb}\label{mtc__im__cmcc_8h_a0f6fc2fe74fc8702b32c88645e7a1dfb}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpSetCookie@{Mtc\_ImCmccGrpSetCookie}}
+\index{Mtc\_ImCmccGrpSetCookie@{Mtc\_ImCmccGrpSetCookie}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpSetCookie()}{Mtc\_ImCmccGrpSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set user cookie in a cmcc group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie of cmcc group.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a4eeb136b6aba1ef92400d9e0a2ac865d}\label{mtc__im__cmcc_8h_a4eeb136b6aba1ef92400d9e0a2ac865d}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpSetVersionId@{Mtc\_ImCmccGrpSetVersionId}}
+\index{Mtc\_ImCmccGrpSetVersionId@{Mtc\_ImCmccGrpSetVersionId}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpSetVersionId()}{Mtc\_ImCmccGrpSetVersionId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Set\+Version\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Ver }\end{DoxyParamCaption})}
+
+
+
+M\+TC set group chat version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Ver} & The group chat version.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set version failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__cmcc_8h_a5277776df696f83287b8fd8f795a5771}\label{mtc__im__cmcc_8h_a5277776df696f83287b8fd8f795a5771}} 
+\index{mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}!Mtc\_ImCmccGrpSilence@{Mtc\_ImCmccGrpSilence}}
+\index{Mtc\_ImCmccGrpSilence@{Mtc\_ImCmccGrpSilence}!mtc\_im\_cmcc.h@{mtc\_im\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImCmccGrpSilence()}{Mtc\_ImCmccGrpSilence()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Cmcc\+Grp\+Silence (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Silencing a cmcc group chat. 
+
+The method should be used when creat or join a cmcc group successfully, by Mtc\+\_\+\+Im\+Cb\+Set\+Cmcc\+Grp\+Acpted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The cmcc group session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Silencing cmcc group successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Silencing cmcc group failed. \\
+\hline
+\end{DoxyRetVals}

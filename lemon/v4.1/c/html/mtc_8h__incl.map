@@ -1,0 +1,50 @@
+<map id="/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc.h" name="/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc.h">
+<area shape="rect" id="node1" title="Multimedia Talk Client." alt="" coords="2855,5,3045,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,97,136"/>
+<area shape="rect" id="node3" href="$mtc__limit_8h_source.html" title=" " alt="" coords="122,109,218,136"/>
+<area shape="rect" id="node4" href="$mtc__util_8h.html" title="MTC Utility Interface Functions." alt="" coords="243,109,329,136"/>
+<area shape="rect" id="node5" href="$mtc__cli_8h.html" title="MTC Client Interface Functions." alt="" coords="353,109,435,136"/>
+<area shape="rect" id="node6" href="$mtc__cli__cfg_8h.html" title="MTC Client Config Interface Functions." alt="" coords="459,109,567,136"/>
+<area shape="rect" id="node7" href="$mtc__cli__cb_8h.html" title="MTC Client Callback Interface Functions." alt="" coords="591,109,693,136"/>
+<area shape="rect" id="node8" href="$mtc__cli__db_8h.html" title="MTC Client Database Interface Functions." alt="" coords="718,109,822,136"/>
+<area shape="rect" id="node9" href="$mtc__cap_8h.html" title="MTC Capability Qurey Interface Functions." alt="" coords="847,109,936,136"/>
+<area shape="rect" id="node10" href="$mtc__cap__cb_8h.html" title="MTC Capability Qurey Callback Interface Functions." alt="" coords="960,109,1071,136"/>
+<area shape="rect" id="node11" href="$mtc__cap__db_8h.html" title="MTC capability Database Interface Functions." alt="" coords="1095,109,1207,136"/>
+<area shape="rect" id="node12" href="$mtc__prof_8h.html" title="MTC Profile Interface Functions." alt="" coords="1231,109,1322,136"/>
+<area shape="rect" id="node13" href="$mtc__prof__cfg_8h.html" title="MTC Profile Config Interface Functions." alt="" coords="1347,109,1465,136"/>
+<area shape="rect" id="node14" href="$mtc__prof__db_8h.html" title="MTC Profile Database Interface Functions." alt="" coords="1490,109,1605,136"/>
+<area shape="rect" id="node15" href="$mtc__prov__cfg_8h.html" title="MTC Provision Config Interface Functions." alt="" coords="1629,109,1751,136"/>
+<area shape="rect" id="node16" href="$mtc__prov__db_8h.html" title="MTC Provision Database Interface Functions." alt="" coords="1776,109,1895,136"/>
+<area shape="rect" id="node17" href="$mtc__gba_8h.html" title="MTC GBA Interface Functions." alt="" coords="1919,109,2010,136"/>
+<area shape="rect" id="node18" href="$mtc__gba__cb_8h.html" title="MTC GBA Callback Interface Functions." alt="" coords="2034,109,2146,136"/>
+<area shape="rect" id="node19" href="$mtc__mwi_8h.html" title="MTC Message Wait Indication Interface Functions." alt="" coords="2171,109,2265,136"/>
+<area shape="rect" id="node20" href="$mtc__mwi__cb_8h.html" title="MTC Message Wait Indication Callback Interface Functions." alt="" coords="2289,109,2405,136"/>
+<area shape="rect" id="node21" href="$mtc__lcs_8h.html" title="MTC lcs Interface Functions." alt="" coords="2429,109,2513,136"/>
+<area shape="rect" id="node22" href="$mtc__acv_8h.html" title="MTC archive Interface Functions." alt="" coords="2538,109,2626,136"/>
+<area shape="rect" id="node23" href="$mtc__acv__db_8h.html" title="MTC archive db Interface Functions." alt="" coords="2650,109,2762,136"/>
+<area shape="rect" id="node24" href="$mtc__partp_8h.html" title="MTC Participant Interface Functions." alt="" coords="2785,109,2885,136"/>
+<area shape="rect" id="node25" href="$mtc__uri_8h.html" title="MTC URI Interface Functions." alt="" coords="2909,109,2991,136"/>
+<area shape="rect" id="node26" href="$mtc__ver_8h.html" title="MTC Version Interface Functions." alt="" coords="3016,109,3103,136"/>
+<area shape="rect" id="node27" href="$mtc__lcs__cb_8h.html" title="MTC License Callback Interface Functions." alt="" coords="3127,109,3234,136"/>
+<area shape="rect" id="node28" href="$mtc__ntp_8h.html" title="MTC ntp Interface Functions." alt="" coords="3259,109,3345,136"/>
+<area shape="rect" id="node29" href="$mtc__ntp__cb_8h.html" title="MTC NTP Callback Interface Functions." alt="" coords="3370,109,3479,136"/>
+<area shape="rect" id="node30" href="$mtc__mod__com_8h.html" title="MTC module common Interface Functions." alt="" coords="3503,109,3634,136"/>
+<area shape="rect" id="node31" href="$mtc__cp_8h.html" title="MTC Client Provisioning Interface Functions." alt="" coords="3659,109,3740,136"/>
+<area shape="rect" id="node32" href="$mtc__cp__cb_8h.html" title="MTC Client Provisioning Callback Interface Functions." alt="" coords="3764,109,3867,136"/>
+<area shape="rect" id="node33" href="$mtc__cp__db_8h.html" title="MTC Client Provisioning Database Interface Functions." alt="" coords="3891,109,3995,136"/>
+<area shape="rect" id="node34" href="$mtc__mod__cp_8h.html" title="MTC module client provisioning Interface Functions." alt="" coords="4019,109,4137,136"/>
+<area shape="rect" id="node35" href="$mtc__call_8h.html" title="MTC Call Interface Functions." alt="" coords="4161,109,4251,136"/>
+<area shape="rect" id="node36" href="$mtc__call__rtc_8h_source.html" title=" " alt="" coords="4275,109,4388,136"/>
+<area shape="rect" id="node37" href="$mtc__call__cfg_8h.html" title="MTC Call Config Interface Functions." alt="" coords="4412,109,4528,136"/>
+<area shape="rect" id="node38" href="$mtc__call__cb_8h.html" title="MTC Call Callback Interface Functions." alt="" coords="4552,109,4663,136"/>
+<area shape="rect" id="node39" href="$mtc__call__db_8h.html" title="MTC Call Database Interface Functions." alt="" coords="4687,109,4799,136"/>
+<area shape="rect" id="node40" href="$mtc__ring_8h.html" title="MTC Ring Interface Functions." alt="" coords="4823,109,4914,136"/>
+<area shape="rect" id="node41" href="$mtc__conf_8h.html" title="MTC Conference Interfaces." alt="" coords="4938,109,5031,136"/>
+<area shape="rect" id="node42" href="$mtc__conf__cb_8h.html" title="MTC Conference Callback Interfaces." alt="" coords="5056,109,5172,136"/>
+<area shape="rect" id="node43" href="$mtc__conf__db_8h.html" title="MTC Conference Database Interface Functions." alt="" coords="5197,109,5314,136"/>
+<area shape="rect" id="node44" href="$mtc__conf__cmcc_8h.html" title="MTC Cmcc Conference Manage Interface Functions." alt="" coords="5339,109,5473,136"/>
+<area shape="rect" id="node45" href="$mtc__conf__cmcc__cb_8h_source.html" title=" " alt="" coords="5498,109,5655,136"/>
+<area shape="rect" id="node46" href="$mtc__media_8h.html" title="MTC Media Interface Functions." alt="" coords="5679,109,5786,136"/>
+<area shape="rect" id="node47" href="$mtc__media__cb_8h.html" title="MTC media Callback Interface Functions." alt="" coords="5811,109,5940,136"/>
+<area shape="rect" id="node48" href="$mtc__mod__voip_8h.html" title="MTC voip module register Interface Functions." alt="" coords="5965,109,6095,136"/>
+</map>

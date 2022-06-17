@@ -1,0 +1,1613 @@
+\hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf Class Reference}
+\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf}\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+
+
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf}{Mtc\+Conf}} interface.  
+
+
+
+
+Inheritance diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afe4bc7d97244616d60320be3c6cd2143}{Mtc\+\_\+\+Conf\+Create}} (int i\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC conference create. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+\_\+\+Conf\+Setup}} (int i\+Conf\+Id, Object z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC setup a new conference as the creator. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}{Mtc\+\_\+\+Conf\+Join}} (int i\+Conf\+Id, Object z\+Cookie, String pc\+Uri, boolean b\+Video)
+\begin{DoxyCompactList}\small\item\em M\+TC join an already existed conference. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2ead0e6f91b1a765e052eb7f7c3b890c}{Mtc\+\_\+\+Conf\+Alert}} (int i\+Conf\+Id, Object z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC alert an incoming conference invite which is notified by callback function which was set by mtc\+Conf\+Cb\+Incoming. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3c841ab5d35cecd89122b09b53853632}{Mtc\+\_\+\+Conf\+Acpt}} (int i\+Conf\+Id, Object z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC accept an incoming conference invite which is notified by callback function which was set by mtc\+Conf\+Cb\+Incoming. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a8d0b9e22143371ff313093b5eb1eaff5}{Mtc\+\_\+\+Conf\+Hold}} (int i\+Conf\+Id, boolean b\+Hold)
+\begin{DoxyCompactList}\small\item\em M\+TC conference hold. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a07b35830ff13fefd089e2f7347ece203}{Mtc\+\_\+\+Conf\+Ivt\+User}} (int i\+Conf\+Id, String pc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant to conference. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a37e437ab88969b61590448f4d536fe96}{Mtc\+\_\+\+Conf\+Ivt\+User\+Lst}} (int i\+Conf\+Id, Object z\+Cookie, int i\+Partp\+Lst\+Id, boolean b\+Video)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant list to a new conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}{Mtc\+\_\+\+Conf\+Kick\+User}} (int i\+Conf\+Id, String pc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC kick participant from conference. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aec4460fe2f7a0de55b395905db5441ea}{Mtc\+\_\+\+Conf\+Ivt\+Sess}} (int i\+Conf\+Id, int i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant, which you already have a session with, to conference. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aaf3355f09ee8bad87d4eaee7b53a015b}{Mtc\+\_\+\+Conf\+Ivt\+Sess\+Lst}} (int i\+Conf\+Id, Object z\+Cookie, int i\+Sess\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant list, which you already have a session with, to conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af1ee0bd125f4bf3ac25ae1d8bf8440ee}{Mtc\+\_\+\+Conf\+Term}} (int i\+Conf\+Id, int i\+Reason, boolean b\+Term\+Conf)
+\begin{DoxyCompactList}\small\item\em M\+TC conference terminate. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5b76a58c295bb7a774275f93215dc126}{Mtc\+\_\+\+Conf\+Get\+State}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get conference state. As for CS conference, UI should call \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cc972ce501d4b107b0227d8bb877bd7}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id}} to save conference id ~\newline
+ while receiving common template sip M\+E\+S\+S\+A\+GE. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9152ed1c65277afb7cb4e11d619906bc}{Mtc\+\_\+\+Conf\+Video\+Select\+Usr}} (int i\+Conf\+Id, String pc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC select one participant as remote image. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41e84943d841bd407cb42e6c38727a1f}{Mtc\+\_\+\+Conf\+Rmv\+User}} (int i\+Conf\+Id, String pc\+Num)
+\begin{DoxyCompactList}\small\item\em M\+TC remove one participant from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by mtc\+Conf\+Cb\+Video\+Strm\+Ptpt\+Updt. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aaf0fab2c0ae0fd3308f2a81278464127}{Mtc\+\_\+\+Conf\+Rmv\+UserX}} (int i\+Conf\+Id, int i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC remove some participants from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by mtc\+Conf\+Cb\+Video\+Strm\+Ptpt\+Updt. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af930d59751ded4b2688fe5092a515000}{Mtc\+\_\+\+Conf\+Rmv\+User\+Clear\+Data}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC clear the data of remove user before . If one participant kicked out from the conference, when chairman want to invite him. into the conference again, chairman should use this function to clear the data of remove the user before first. \end{DoxyCompactList}\item 
+static Object \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a71c4031dee64184148dcdc24d8e33c58}{Mtc\+\_\+\+Conf\+Get\+Cookie}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get cookie value. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad72b5b126664d7014f454fb6d2cafade}{Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}} (int i\+Conf\+Id, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Disp\+Name, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get peer U\+RI and display name. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af77f625750d6b5b7b72fc8c6f74e77c8}{Mtc\+\_\+\+Conf\+Get\+Conf\+Uri}} (int i\+Conf\+Id, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Disp\+Name, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get conference U\+RI and display name. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_abeeec73602aa18302d7bbf06a8c3a40a}{Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri}} (int i\+Conf\+Id, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Disp\+Name, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get initiator U\+RI and display name. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a62bdd7382199bdcec9a1255b88ac3d1a}{Mtc\+\_\+\+Conf\+Get\+Partp\+Size}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get paticipant size. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5cf5d56fec4fe8a420199463d51f5bfd}{Mtc\+\_\+\+Conf\+Get\+Partp\+Uri}} (int i\+Conf\+Id, int i\+Index, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Disp\+Name, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}} ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get paticipant uri and display name. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2a3ff6649df82483f3052279550b1f5f}{Mtc\+\_\+\+Conf\+Get\+Partp\+Stat}} (int i\+Conf\+Id, int i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get paticipant state. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a571f2d171ccdd433936068197b3f724c}{Mtc\+\_\+\+Conf\+Get\+Mic\+Mute}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get the mute status of microphone. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa0831c5a0c26d593533306a6e4b8741d}{Mtc\+\_\+\+Conf\+Set\+Mic\+Mute}} (int i\+Conf\+Id, boolean b\+Mute)
+\begin{DoxyCompactList}\small\item\em M\+TC conference set the mute status of microphone. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae992335b19eaf57a2b6f32fad66d2c4f}{Mtc\+\_\+\+Conf\+Get\+Spk\+Mute}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get the mute status of speaker. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4d8dc079a4e1cbbc8287ce1f0a59d514}{Mtc\+\_\+\+Conf\+Set\+Spk\+Mute}} (int i\+Conf\+Id, boolean b\+Mute)
+\begin{DoxyCompactList}\small\item\em M\+TC conference set the mute status of speaker. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a02c4e5e07339f7f68caa68f6801aac20}{Mtc\+\_\+\+Conf\+Dtmf}} (int i\+Conf\+Id, int i\+Dtmf\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC conference send D\+T\+MF info. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9597de0b8d666e077e205069cda2a976}{Mtc\+\_\+\+Conf\+Camera\+Attach}} (int i\+Conf\+Id, int i\+Strm\+Id, String pc\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC conference attach camera. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad96e80c312b06e2159153cdedf3e879c}{Mtc\+\_\+\+Conf\+Camera\+Detach}} (int i\+Conf\+Id, int i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference detach camera. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aab31770c572b8d801759d3dccd203dbb}{Mtc\+\_\+\+Conf\+Get\+Strm\+Name}} (int i\+Conf\+Id, int i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference session name. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aea0ec6f89a050f320b1344a335598844}{Mtc\+\_\+\+Conf\+Strm\+Id\+From\+Strm\+Name}} (int i\+Conf\+Id, String pc\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference stream ID from stream render name. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3249b89eb2b9eaff6502a991ed8ae5d3}{Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Count}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference video stream count. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa2467459dba91ed71df6a588e534c296}{Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Id\+By\+Index}} (int i\+Conf\+Id, int i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference video stream id by index. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cdd1a468ecc363d2e10283dc98fb42e}{Mtc\+\_\+\+Conf\+Get\+Video\+Stat}} (int i\+Conf\+Id, int i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference video stream by stream id statistics. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a891d669541ca42388a8239ea169c12d5}{Mtc\+\_\+\+Conf\+Get\+Audio\+Stat}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference audio statistics. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae7ef5c38afcd7d4cd498a79a2d6f7a6a}{Mtc\+\_\+\+Conf\+Get\+Max\+Image\+Num}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference get max image number. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac61ad6a1aa517415b5dc0816cb871779}{Mtc\+\_\+\+Conf\+Get\+Video\+Swith\+Mode}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference get video switch mode. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a7563b6591eeda9842cfdd0aecdf79da0}{Mtc\+\_\+\+Conf\+Get\+Multi\+Pic\+Mode}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC get conference get multi-\/picture mode. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af604af568fc99008e477cc335c6b31d2}{Mtc\+\_\+\+Conf\+Enable\+Adaptive\+Aspect}} (int i\+Conf\+Id, boolean b\+Enable, float f\+Fixed\+Aspect)
+\begin{DoxyCompactList}\small\item\em M\+TC conference enable/disable dynamic reset encoder to change video image aspect. The function should be called before \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9597de0b8d666e077e205069cda2a976}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Camera\+Attach}}. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a070ad779cb5b83c55fd357d2b941fc34}{Mtc\+\_\+\+Conf\+Rec\+Mic\+Start}} (String pc\+File\+Name, short uc\+File\+Type)
+\begin{DoxyCompactList}\small\item\em Reccord mic start. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61fc5a00010fb910d1c4ed8d96e74b5a}{Mtc\+\_\+\+Conf\+Rec\+Mic\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em Reccord Audio stop. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a15834d169e214cd2f8013c214b33da26}{Mtc\+\_\+\+Conf\+Rec\+Playout\+Start}} (int i\+Conf\+Id, String pc\+File\+Name, short uc\+File\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC session record playout. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a860eebb65bbe78c5c07cfb75f19bc748}{Mtc\+\_\+\+Conf\+Rec\+Playout\+Stop}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC session stop record playout. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a421695e10c45d7230ed0bcd15ab6bde5}{Mtc\+\_\+\+Conf\+Snd\+Start\+Send}} (int i\+Conf\+Id, String pc\+File\+Name, short uc\+File\+Type, boolean b\+Loop, boolean b\+Mix)
+\begin{DoxyCompactList}\small\item\em M\+TC conference start send sound from file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61073119f6977ec2a4165c66c014070d}{Mtc\+\_\+\+Conf\+Snd\+Stop\+Send}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference stop send sound. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac4b336b1be6c1bf148fd7195dcdb0c21}{Mtc\+\_\+\+Conf\+File\+Play\+As\+Camera}} (String pc\+File\+Name, int i\+Audio\+Strm\+Id, int i\+Cycle)
+\begin{DoxyCompactList}\small\item\em M\+TC conference play file as camera. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9415879f5f2e345e4327f67dadcf0f2c}{Mtc\+\_\+\+Conf\+File\+Play\+Stop}} (String pc\+File\+Name)
+\begin{DoxyCompactList}\small\item\em M\+TC conference stop play file. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41b42ccd44ee767c3e3fec4363652623}{Mtc\+\_\+\+Conf\+Get\+Strm\+Id}} (int i\+Conf\+Id, short uc\+Strm\+Type)
+\begin{DoxyCompactList}\small\item\em Get stream ID of the conference. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afad55492e0f2254042ca4b473fce6f53}{Mtc\+\_\+\+Conf\+Get\+Media\+Server\+Ip\+Addr}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get media server ip address string. \end{DoxyCompactList}\item 
+static short \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0e3996cc21f452d74b4df765dd8d45cd}{Mtc\+\_\+\+Conf\+Get\+Conf\+Type}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference get conference type. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cc972ce501d4b107b0227d8bb877bd7}{Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id}} (int i\+Conf\+Id, String pc\+Serv\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference set server conference id. UI should set server conference id which in common-\/template M\+E\+S\+S\+A\+GE. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a6360844255d035471b92453447c7c681}{Mtc\+\_\+\+Conf\+Get\+Available\+Conf\+Id}} ()
+\begin{DoxyCompactList}\small\item\em M\+TC conference get available conference id. UI should use the ID to get conference state. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2f8dbcc402701f4a0269849c13a29291}{Mtc\+\_\+\+Conf\+Create\+Account}} (String pc\+App\+Id, String pc\+Pwd, String pc\+Token, String pc\+Pkg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC conference create account. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a6080cf3ace70797443d0490f7f2f0e8f}{Mtc\+\_\+\+Conf\+Del\+Account}} (String pc\+App\+Id, String pc\+Pwd, String pc\+Token)
+\begin{DoxyCompactList}\small\item\em M\+TC conference delete account. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4eede9cde7c47032ab224a8254af3a52}{Mtc\+\_\+\+Conf\+Charge\+Account}} (String pc\+App\+Id, String pc\+Pwd, String pc\+Token, int i\+Balance, short uc\+Type, short uc\+Access\+Type, short uc\+Srv\+Type, String pc\+Exire\+Date)
+\begin{DoxyCompactList}\small\item\em M\+TC conference charge account. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9269a57cdd7ac11292ea539de91a3aee}{Mtc\+\_\+\+Conf\+Query\+Account}} (String pc\+App\+Id, String pc\+Pwd, String pc\+Token, int i\+Acc\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC conference query account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf}{Mtc\+Conf}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3c841ab5d35cecd89122b09b53853632}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3c841ab5d35cecd89122b09b53853632}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfAcpt@{Mtc\_ConfAcpt}}
+\index{Mtc\_ConfAcpt@{Mtc\_ConfAcpt}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfAcpt()}{Mtc\_ConfAcpt()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Acpt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{Object}]{z\+Cookie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC accept an incoming conference invite which is notified by callback function which was set by mtc\+Conf\+Cb\+Incoming. 
+
+If accept a conference invite, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Conned
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to accept. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+mtc\+Conf\+Cb\+Incoming, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2ead0e6f91b1a765e052eb7f7c3b890c}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Alert}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2ead0e6f91b1a765e052eb7f7c3b890c}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2ead0e6f91b1a765e052eb7f7c3b890c}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfAlert@{Mtc\_ConfAlert}}
+\index{Mtc\_ConfAlert@{Mtc\_ConfAlert}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfAlert()}{Mtc\_ConfAlert()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Alert (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{Object}]{z\+Cookie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC alert an incoming conference invite which is notified by callback function which was set by mtc\+Conf\+Cb\+Incoming. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to join. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+This function is used to tell the conference initiator that you have received the invitation and give user an indication in UI layer. User should make a decision whether accept the conference invitation.
+
+\begin{DoxySeeAlso}{See also}
+mtc\+Conf\+Cb\+Incoming, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3c841ab5d35cecd89122b09b53853632}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Acpt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9597de0b8d666e077e205069cda2a976}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9597de0b8d666e077e205069cda2a976}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfCameraAttach@{Mtc\_ConfCameraAttach}}
+\index{Mtc\_ConfCameraAttach@{Mtc\_ConfCameraAttach}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCameraAttach()}{Mtc\_ConfCameraAttach()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Camera\+Attach (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id,  }\item[{String}]{pc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference attach camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The name string of camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad96e80c312b06e2159153cdedf3e879c}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad96e80c312b06e2159153cdedf3e879c}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfCameraDetach@{Mtc\_ConfCameraDetach}}
+\index{Mtc\_ConfCameraDetach@{Mtc\_ConfCameraDetach}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCameraDetach()}{Mtc\_ConfCameraDetach()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Camera\+Detach (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference detach camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4eede9cde7c47032ab224a8254af3a52}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4eede9cde7c47032ab224a8254af3a52}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfChargeAccount@{Mtc\_ConfChargeAccount}}
+\index{Mtc\_ConfChargeAccount@{Mtc\_ConfChargeAccount}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfChargeAccount()}{Mtc\_ConfChargeAccount()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Charge\+Account (\begin{DoxyParamCaption}\item[{String}]{pc\+App\+Id,  }\item[{String}]{pc\+Pwd,  }\item[{String}]{pc\+Token,  }\item[{int}]{i\+Balance,  }\item[{short}]{uc\+Type,  }\item[{short}]{uc\+Access\+Type,  }\item[{short}]{uc\+Srv\+Type,  }\item[{String}]{pc\+Exire\+Date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference charge account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication.\\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Balance} & The charge balance in minutes. User can only make domestic calls. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Type} & The charging type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a499bcd4839ea6717050c8c719225a2f0}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+F\+R\+E\+E\+\_\+\+T\+I\+ME}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Access\+Type} & The access type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_ace57405cd57e99c3841109ee8a0284fa}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+E\+S\+S\+\_\+\+O\+C\+S\+\_\+\+W\+EB}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Srv\+Type} & Service type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a424316356ecbaf7b8e1da12bb6c92830}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P2P}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Exire\+Date} & The charge balance expire date, like Y\+Y\+Y\+Y\+M\+M\+DD.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afe4bc7d97244616d60320be3c6cd2143}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afe4bc7d97244616d60320be3c6cd2143}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfCreate@{Mtc\_ConfCreate}}
+\index{Mtc\_ConfCreate@{Mtc\_ConfCreate}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCreate()}{Mtc\_ConfCreate()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Create (\begin{DoxyParamCaption}\item[{int}]{i\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference create. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The conference type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a06045026b943726e46cfaa5e82601abc}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+CS}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of this new created conference on succeed, otherwise return Z\+M\+A\+X\+U\+I\+NT, if return Z\+M\+A\+X\+U\+I\+NT, should call Mtc\+\_\+\+Lcs\+Get\+Err\+Code.
+\end{DoxyReturn}
+Different with the method of session creation, this function only malloc the resource of conference. If you want to setup or join a conference, you need step ahead by calling other functions. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2f8dbcc402701f4a0269849c13a29291}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2f8dbcc402701f4a0269849c13a29291}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfCreateAccount@{Mtc\_ConfCreateAccount}}
+\index{Mtc\_ConfCreateAccount@{Mtc\_ConfCreateAccount}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCreateAccount()}{Mtc\_ConfCreateAccount()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Create\+Account (\begin{DoxyParamCaption}\item[{String}]{pc\+App\+Id,  }\item[{String}]{pc\+Pwd,  }\item[{String}]{pc\+Token,  }\item[{String}]{pc\+Pkg\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference create account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pkg\+Id} & The package id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a6080cf3ace70797443d0490f7f2f0e8f}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a6080cf3ace70797443d0490f7f2f0e8f}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfDelAccount@{Mtc\_ConfDelAccount}}
+\index{Mtc\_ConfDelAccount@{Mtc\_ConfDelAccount}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDelAccount()}{Mtc\_ConfDelAccount()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Del\+Account (\begin{DoxyParamCaption}\item[{String}]{pc\+App\+Id,  }\item[{String}]{pc\+Pwd,  }\item[{String}]{pc\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference delete account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a02c4e5e07339f7f68caa68f6801aac20}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a02c4e5e07339f7f68caa68f6801aac20}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfDtmf@{Mtc\_ConfDtmf}}
+\index{Mtc\_ConfDtmf@{Mtc\_ConfDtmf}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfDtmf()}{Mtc\_ConfDtmf()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Dtmf (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Dtmf\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference send D\+T\+MF info. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to send D\+T\+MF info. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Dtmf\+Type} & D\+T\+MF type which will be sent, see \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_constants_a27d29138fa05f0118678d8367d02d46f}{Mtc\+Call\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+D\+T\+M\+F\+\_\+0}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af604af568fc99008e477cc335c6b31d2}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af604af568fc99008e477cc335c6b31d2}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfEnableAdaptiveAspect@{Mtc\_ConfEnableAdaptiveAspect}}
+\index{Mtc\_ConfEnableAdaptiveAspect@{Mtc\_ConfEnableAdaptiveAspect}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfEnableAdaptiveAspect()}{Mtc\_ConfEnableAdaptiveAspect()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Enable\+Adaptive\+Aspect (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{boolean}]{b\+Enable,  }\item[{float}]{f\+Fixed\+Aspect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference enable/disable dynamic reset encoder to change video image aspect. The function should be called before \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9597de0b8d666e077e205069cda2a976}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Camera\+Attach}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Enable} & true to enable dynamic reset encoder, false to disable it \\
+\hline
+\mbox{\texttt{ in}}  & {\em f\+Fixed\+Aspect,if} & $<$ 0 the outgoing video image will be adaptive the capture (camera, always 4\+:3) aspect, if =0 it will use codec settings(always 16\+:9, to be adaptive with the devices), if $>$0 will be with the setting fixed aspect(like 1.\+33, 1.\+77).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac4b336b1be6c1bf148fd7195dcdb0c21}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac4b336b1be6c1bf148fd7195dcdb0c21}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfFilePlayAsCamera@{Mtc\_ConfFilePlayAsCamera}}
+\index{Mtc\_ConfFilePlayAsCamera@{Mtc\_ConfFilePlayAsCamera}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfFilePlayAsCamera()}{Mtc\_ConfFilePlayAsCamera()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+File\+Play\+As\+Camera (\begin{DoxyParamCaption}\item[{String}]{pc\+File\+Name,  }\item[{int}]{i\+Audio\+Strm\+Id,  }\item[{int}]{i\+Cycle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference play file as camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & Video file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Audio\+Strm\+Id} & Audio stream id, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41b42ccd44ee767c3e3fec4363652623}{Mtc\+Conf\+::\+Mtc\+\_\+\+Conf\+Get\+Strm\+Id}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cycle} & 0 to play once, otherwise to loop play .\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9415879f5f2e345e4327f67dadcf0f2c}{Mtc\+Conf\+::\+Mtc\+\_\+\+Conf\+File\+Play\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9415879f5f2e345e4327f67dadcf0f2c}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9415879f5f2e345e4327f67dadcf0f2c}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfFilePlayStop@{Mtc\_ConfFilePlayStop}}
+\index{Mtc\_ConfFilePlayStop@{Mtc\_ConfFilePlayStop}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfFilePlayStop()}{Mtc\_ConfFilePlayStop()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+File\+Play\+Stop (\begin{DoxyParamCaption}\item[{String}]{pc\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference stop play file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & Video file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac4b336b1be6c1bf148fd7195dcdb0c21}{Mtc\+Conf\+::\+Mtc\+\_\+\+Conf\+File\+Play\+As\+Camera}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a891d669541ca42388a8239ea169c12d5}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a891d669541ca42388a8239ea169c12d5}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetAudioStat@{Mtc\_ConfGetAudioStat}}
+\index{Mtc\_ConfGetAudioStat@{Mtc\_ConfGetAudioStat}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetAudioStat()}{Mtc\_ConfGetAudioStat()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Audio\+Stat (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference audio statistics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em String} & of video statistics. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a6360844255d035471b92453447c7c681}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a6360844255d035471b92453447c7c681}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetAvailableConfId@{Mtc\_ConfGetAvailableConfId}}
+\index{Mtc\_ConfGetAvailableConfId@{Mtc\_ConfGetAvailableConfId}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetAvailableConfId()}{Mtc\_ConfGetAvailableConfId()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Available\+Conf\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get available conference id. UI should use the ID to get conference state. 
+
+\begin{DoxyReturn}{Returns}
+The ID of exist conference.
+\end{DoxyReturn}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5b76a58c295bb7a774275f93215dc126}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+State}}, Mtc\+\_\+\+Conf\+CreateX \mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0e3996cc21f452d74b4df765dd8d45cd}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0e3996cc21f452d74b4df765dd8d45cd}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetConfType@{Mtc\_ConfGetConfType}}
+\index{Mtc\_ConfGetConfType@{Mtc\_ConfGetConfType}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetConfType()}{Mtc\_ConfGetConfType()}}
+{\footnotesize\ttfamily static short com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Conf\+Type (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get conference type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Conference type \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a06045026b943726e46cfaa5e82601abc}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+CS}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af77f625750d6b5b7b72fc8c6f74e77c8}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af77f625750d6b5b7b72fc8c6f74e77c8}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetConfUri@{Mtc\_ConfGetConfUri}}
+\index{Mtc\_ConfGetConfUri@{Mtc\_ConfGetConfUri}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetConfUri()}{Mtc\_ConfGetConfUri()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Conf\+Uri (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Disp\+Name,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get conference U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad72b5b126664d7014f454fb6d2cafade}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_abeeec73602aa18302d7bbf06a8c3a40a}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a71c4031dee64184148dcdc24d8e33c58}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a71c4031dee64184148dcdc24d8e33c58}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetCookie@{Mtc\_ConfGetCookie}}
+\index{Mtc\_ConfGetCookie@{Mtc\_ConfGetCookie}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetCookie()}{Mtc\_ConfGetCookie()}}
+{\footnotesize\ttfamily static Object com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Cookie (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get cookie value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get cookie of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cookie of conference.
+\end{DoxyReturn}
+The cookie value could be set by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Join}} or Mtc\+\_\+\+Conf\+Acpt previously.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Join}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3c841ab5d35cecd89122b09b53853632}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Acpt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_abeeec73602aa18302d7bbf06a8c3a40a}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_abeeec73602aa18302d7bbf06a8c3a40a}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetInitiatorUri@{Mtc\_ConfGetInitiatorUri}}
+\index{Mtc\_ConfGetInitiatorUri@{Mtc\_ConfGetInitiatorUri}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetInitiatorUri()}{Mtc\_ConfGetInitiatorUri()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Disp\+Name,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get initiator U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad72b5b126664d7014f454fb6d2cafade}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af77f625750d6b5b7b72fc8c6f74e77c8}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Conf\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae7ef5c38afcd7d4cd498a79a2d6f7a6a}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae7ef5c38afcd7d4cd498a79a2d6f7a6a}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetMaxImageNum@{Mtc\_ConfGetMaxImageNum}}
+\index{Mtc\_ConfGetMaxImageNum@{Mtc\_ConfGetMaxImageNum}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMaxImageNum()}{Mtc\_ConfGetMaxImageNum()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Max\+Image\+Num (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference get max image number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em max} & image number of video conference. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afad55492e0f2254042ca4b473fce6f53}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afad55492e0f2254042ca4b473fce6f53}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetMediaServerIpAddr@{Mtc\_ConfGetMediaServerIpAddr}}
+\index{Mtc\_ConfGetMediaServerIpAddr@{Mtc\_ConfGetMediaServerIpAddr}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMediaServerIpAddr()}{Mtc\_ConfGetMediaServerIpAddr()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Media\+Server\+Ip\+Addr (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get media server ip address string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Media server ip address string, like \char`\"{}192.\+168.\+0.\+1\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a571f2d171ccdd433936068197b3f724c}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a571f2d171ccdd433936068197b3f724c}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetMicMute@{Mtc\_ConfGetMicMute}}
+\index{Mtc\_ConfGetMicMute@{Mtc\_ConfGetMicMute}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMicMute()}{Mtc\_ConfGetMicMute()}}
+{\footnotesize\ttfamily static boolean com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Mic\+Mute (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get the mute status of microphone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to get.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & on muted. \\
+\hline
+{\em false} & on not muted.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa0831c5a0c26d593533306a6e4b8741d}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Mic\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a7563b6591eeda9842cfdd0aecdf79da0}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a7563b6591eeda9842cfdd0aecdf79da0}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetMultiPicMode@{Mtc\_ConfGetMultiPicMode}}
+\index{Mtc\_ConfGetMultiPicMode@{Mtc\_ConfGetMultiPicMode}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetMultiPicMode()}{Mtc\_ConfGetMultiPicMode()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Multi\+Pic\+Mode (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference get multi-\/picture mode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em video} & multi-\/picture mode of video conference, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a99f43ade4ec7bbe8aee15fd6341bf855}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+U\+L\+T\+I\+\_\+\+P\+I\+C\+\_\+\+O\+N\+E\+\_\+\+B\+IG}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a62bdd7382199bdcec9a1255b88ac3d1a}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a62bdd7382199bdcec9a1255b88ac3d1a}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetPartpSize@{Mtc\_ConfGetPartpSize}}
+\index{Mtc\_ConfGetPartpSize@{Mtc\_ConfGetPartpSize}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPartpSize()}{Mtc\_ConfGetPartpSize()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Size (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get paticipant size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The paticipant size.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5cf5d56fec4fe8a420199463d51f5bfd}{Mtc\+Conf\+::\+Mtc\+\_\+\+Conf\+Get\+Partp\+Uri}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2a3ff6649df82483f3052279550b1f5f}{Mtc\+\_\+\+Conf\+Get\+Partp\+Stat}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2a3ff6649df82483f3052279550b1f5f}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2a3ff6649df82483f3052279550b1f5f}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetPartpStat@{Mtc\_ConfGetPartpStat}}
+\index{Mtc\_ConfGetPartpStat@{Mtc\_ConfGetPartpStat}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPartpStat()}{Mtc\_ConfGetPartpStat()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Stat (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get paticipant state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The paticipant index.\\
+\hline
+\end{DoxyParams}
+@retrun The paticipant state, \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_aa7e940192717758e64f10004e2d642ec}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG}}.
+
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a62bdd7382199bdcec9a1255b88ac3d1a}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Size}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5cf5d56fec4fe8a420199463d51f5bfd}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5cf5d56fec4fe8a420199463d51f5bfd}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5cf5d56fec4fe8a420199463d51f5bfd}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetPartpUri@{Mtc\_ConfGetPartpUri}}
+\index{Mtc\_ConfGetPartpUri@{Mtc\_ConfGetPartpUri}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPartpUri()}{Mtc\_ConfGetPartpUri()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Uri (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Index,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Disp\+Name,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get paticipant uri and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The paticipant index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of paticipant. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The uri of paticipant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a62bdd7382199bdcec9a1255b88ac3d1a}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Size}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a2a3ff6649df82483f3052279550b1f5f}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Partp\+Stat}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad72b5b126664d7014f454fb6d2cafade}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad72b5b126664d7014f454fb6d2cafade}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetPeerUri@{Mtc\_ConfGetPeerUri}}
+\index{Mtc\_ConfGetPeerUri@{Mtc\_ConfGetPeerUri}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetPeerUri()}{Mtc\_ConfGetPeerUri()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Peer\+Uri (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Disp\+Name,  }\item[{\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_string}{Mtc\+String}}}]{ppc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get peer U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af77f625750d6b5b7b72fc8c6f74e77c8}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Conf\+Uri}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_abeeec73602aa18302d7bbf06a8c3a40a}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Initiator\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae992335b19eaf57a2b6f32fad66d2c4f}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae992335b19eaf57a2b6f32fad66d2c4f}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetSpkMute@{Mtc\_ConfGetSpkMute}}
+\index{Mtc\_ConfGetSpkMute@{Mtc\_ConfGetSpkMute}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetSpkMute()}{Mtc\_ConfGetSpkMute()}}
+{\footnotesize\ttfamily static boolean com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Spk\+Mute (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get the mute status of speaker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to get.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & on muted. \\
+\hline
+{\em false} & on not muted.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4d8dc079a4e1cbbc8287ce1f0a59d514}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Spk\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5b76a58c295bb7a774275f93215dc126}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a5b76a58c295bb7a774275f93215dc126}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetState@{Mtc\_ConfGetState}}
+\index{Mtc\_ConfGetState@{Mtc\_ConfGetState}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetState()}{Mtc\_ConfGetState()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+State (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference get conference state. As for CS conference, UI should call \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cc972ce501d4b107b0227d8bb877bd7}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id}} to save conference id ~\newline
+ while receiving common template sip M\+E\+S\+S\+A\+GE. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get the conference state.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41b42ccd44ee767c3e3fec4363652623}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41b42ccd44ee767c3e3fec4363652623}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetStrmId@{Mtc\_ConfGetStrmId}}
+\index{Mtc\_ConfGetStrmId@{Mtc\_ConfGetStrmId}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetStrmId()}{Mtc\_ConfGetStrmId()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Strm\+Id (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{short}]{uc\+Strm\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get stream ID of the conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Strm\+Type} & The stream type of conference, E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+M\+E\+D\+I\+A\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The stream id of the conference on succeed, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aab31770c572b8d801759d3dccd203dbb}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aab31770c572b8d801759d3dccd203dbb}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetStrmName@{Mtc\_ConfGetStrmName}}
+\index{Mtc\_ConfGetStrmName@{Mtc\_ConfGetStrmName}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetStrmName()}{Mtc\_ConfGetStrmName()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Strm\+Name (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference session name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Render name string when found, otherwise \char`\"{}\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cdd1a468ecc363d2e10283dc98fb42e}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cdd1a468ecc363d2e10283dc98fb42e}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetVideoStat@{Mtc\_ConfGetVideoStat}}
+\index{Mtc\_ConfGetVideoStat@{Mtc\_ConfGetVideoStat}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoStat()}{Mtc\_ConfGetVideoStat()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Video\+Stat (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference video stream by stream id statistics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream. One conference may contains one more video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em String} & of video statistics. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3249b89eb2b9eaff6502a991ed8ae5d3}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a3249b89eb2b9eaff6502a991ed8ae5d3}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetVideoStrmCount@{Mtc\_ConfGetVideoStrmCount}}
+\index{Mtc\_ConfGetVideoStrmCount@{Mtc\_ConfGetVideoStrmCount}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoStrmCount()}{Mtc\_ConfGetVideoStrmCount()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Count (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference video stream count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of conference video stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa2467459dba91ed71df6a588e534c296}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa2467459dba91ed71df6a588e534c296}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetVideoStrmIdByIndex@{Mtc\_ConfGetVideoStrmIdByIndex}}
+\index{Mtc\_ConfGetVideoStrmIdByIndex@{Mtc\_ConfGetVideoStrmIdByIndex}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoStrmIdByIndex()}{Mtc\_ConfGetVideoStrmIdByIndex()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Video\+Strm\+Id\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference video stream id by index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of conference video stream when found, otherwise Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac61ad6a1aa517415b5dc0816cb871779}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ac61ad6a1aa517415b5dc0816cb871779}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfGetVideoSwithMode@{Mtc\_ConfGetVideoSwithMode}}
+\index{Mtc\_ConfGetVideoSwithMode@{Mtc\_ConfGetVideoSwithMode}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfGetVideoSwithMode()}{Mtc\_ConfGetVideoSwithMode()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Video\+Swith\+Mode (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference get video switch mode. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em video} & switch mode of video conference, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a80ca75f91a3128d0717fffda2daf0302}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+V\+O\+I\+C\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+DE}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a8d0b9e22143371ff313093b5eb1eaff5}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a8d0b9e22143371ff313093b5eb1eaff5}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfHold@{Mtc\_ConfHold}}
+\index{Mtc\_ConfHold@{Mtc\_ConfHold}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfHold()}{Mtc\_ConfHold()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Hold (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{boolean}]{b\+Hold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference hold. 
+
+If hold the conference successfully, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Hold\+Ok
+
+If unhold the conference successfully, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Un\+Hold\+Ok
+
+If hold the conference failed, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Hold\+Failed
+
+If unhold the conference failed, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Un\+Hold\+Failed
+
+while receiving hold conference, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Held
+
+while receiving unhold conference, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Un\+Held
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to hold or unhold. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Hold} & Indicate the willingness of hold or unhold.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aec4460fe2f7a0de55b395905db5441ea}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aec4460fe2f7a0de55b395905db5441ea}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfIvtSess@{Mtc\_ConfIvtSess}}
+\index{Mtc\_ConfIvtSess@{Mtc\_ConfIvtSess}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtSess()}{Mtc\_ConfIvtSess()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+Sess (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Sess\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC invite new participant, which you already have a session with, to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want to invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The id of the session which you have with the want-\/invited participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aaf3355f09ee8bad87d4eaee7b53a015b}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aaf3355f09ee8bad87d4eaee7b53a015b}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfIvtSessLst@{Mtc\_ConfIvtSessLst}}
+\index{Mtc\_ConfIvtSessLst@{Mtc\_ConfIvtSessLst}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtSessLst()}{Mtc\_ConfIvtSessLst()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+Sess\+Lst (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{Object}]{z\+Cookie,  }\item[{int}]{i\+Sess\+Lst\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC invite new participant list, which you already have a session with, to conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Lst\+Id} & The session list id which you have with the want-\/invited participant, UI shall use Mtc\+\_\+\+Partp\+Lst\+Create, Mtc\+\_\+\+Partp\+Lst\+Add\+Partp, Mtc\+\_\+\+Partp\+Set\+Sess\+Id to create the id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a07b35830ff13fefd089e2f7347ece203}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a07b35830ff13fefd089e2f7347ece203}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfIvtUser@{Mtc\_ConfIvtUser}}
+\index{Mtc\_ConfIvtUser@{Mtc\_ConfIvtUser}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtUser()}{Mtc\_ConfIvtUser()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+User (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC invite new participant to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Kick\+User}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aec4460fe2f7a0de55b395905db5441ea}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+Sess}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a37e437ab88969b61590448f4d536fe96}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a37e437ab88969b61590448f4d536fe96}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfIvtUserLst@{Mtc\_ConfIvtUserLst}}
+\index{Mtc\_ConfIvtUserLst@{Mtc\_ConfIvtUserLst}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfIvtUserLst()}{Mtc\_ConfIvtUserLst()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+User\+Lst (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{Object}]{z\+Cookie,  }\item[{int}]{i\+Partp\+Lst\+Id,  }\item[{boolean}]{b\+Video }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC invite new participant list to a new conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id, UI shall use Mtc\+\_\+\+Partp\+Lst\+Create, Mtc\+\_\+\+Partp\+Lst\+Add\+Partp to create the id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Video} & The video conference flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfJoin@{Mtc\_ConfJoin}}
+\index{Mtc\_ConfJoin@{Mtc\_ConfJoin}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfJoin()}{Mtc\_ConfJoin()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Join (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{Object}]{z\+Cookie,  }\item[{String}]{pc\+Uri,  }\item[{boolean}]{b\+Video }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC join an already existed conference. 
+
+If join a conference, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Outgoing, mtc\+Conf\+Cb\+Alerted, mtc\+Conf\+Cb\+Conned
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to join. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The U\+RI of existed conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Video} & The video conference flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afe4bc7d97244616d60320be3c6cd2143}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ab2fe9857738e3678e7042d47e03d0822}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfKickUser@{Mtc\_ConfKickUser}}
+\index{Mtc\_ConfKickUser@{Mtc\_ConfKickUser}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfKickUser()}{Mtc\_ConfKickUser()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Kick\+User (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC kick participant from conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want kick participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a07b35830ff13fefd089e2f7347ece203}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+User}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aec4460fe2f7a0de55b395905db5441ea}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Ivt\+Sess}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9269a57cdd7ac11292ea539de91a3aee}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9269a57cdd7ac11292ea539de91a3aee}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfQueryAccount@{Mtc\_ConfQueryAccount}}
+\index{Mtc\_ConfQueryAccount@{Mtc\_ConfQueryAccount}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfQueryAccount()}{Mtc\_ConfQueryAccount()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Query\+Account (\begin{DoxyParamCaption}\item[{String}]{pc\+App\+Id,  }\item[{String}]{pc\+Pwd,  }\item[{String}]{pc\+Token,  }\item[{int}]{i\+Acc\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference query account. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & The A\+PP ID of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Pwd} & The password of the application. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The token from C\+M\+CC unified authentication. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Acc\+Type} & The account type \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a0381f7e86c8d92ba167e12288fd98ff6}{Mtc\+Conf\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+M\+A\+IN}}(default \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_constants_a0381f7e86c8d92ba167e12288fd98ff6}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+A\+C\+C\+O\+U\+N\+T\+\_\+\+M\+A\+IN}}).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a070ad779cb5b83c55fd357d2b941fc34}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a070ad779cb5b83c55fd357d2b941fc34}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRecMicStart@{Mtc\_ConfRecMicStart}}
+\index{Mtc\_ConfRecMicStart@{Mtc\_ConfRecMicStart}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecMicStart()}{Mtc\_ConfRecMicStart()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rec\+Mic\+Start (\begin{DoxyParamCaption}\item[{String}]{pc\+File\+Name,  }\item[{short}]{uc\+File\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reccord mic start. 
+
+It will reccord from mic to file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The reccord file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+File\+Type} & The reccord file type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_media_constants_a31472ecd1fb4bfd82feea97c236ffe8d}{Mtc\+Media\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+U\+N\+K\+N\+OW}}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & Audio Reccord successfully. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & Audio Reccord failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61fc5a00010fb910d1c4ed8d96e74b5a}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rec\+Mic\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61fc5a00010fb910d1c4ed8d96e74b5a}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61fc5a00010fb910d1c4ed8d96e74b5a}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRecMicStop@{Mtc\_ConfRecMicStop}}
+\index{Mtc\_ConfRecMicStop@{Mtc\_ConfRecMicStop}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecMicStop()}{Mtc\_ConfRecMicStop()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rec\+Mic\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reccord Audio stop. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a070ad779cb5b83c55fd357d2b941fc34}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rec\+Mic\+Start}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a15834d169e214cd2f8013c214b33da26}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a15834d169e214cd2f8013c214b33da26}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRecPlayoutStart@{Mtc\_ConfRecPlayoutStart}}
+\index{Mtc\_ConfRecPlayoutStart@{Mtc\_ConfRecPlayoutStart}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecPlayoutStart()}{Mtc\_ConfRecPlayoutStart()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rec\+Playout\+Start (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+File\+Name,  }\item[{short}]{uc\+File\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC session record playout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to record, if i\+Conf\+Id is invalid, record the mix playout. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The reccord file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+File\+Type} & The reccord file type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_media_constants_a31472ecd1fb4bfd82feea97c236ffe8d}{Mtc\+Media\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+U\+N\+K\+N\+OW}}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a860eebb65bbe78c5c07cfb75f19bc748}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a860eebb65bbe78c5c07cfb75f19bc748}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRecPlayoutStop@{Mtc\_ConfRecPlayoutStop}}
+\index{Mtc\_ConfRecPlayoutStop@{Mtc\_ConfRecPlayoutStop}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRecPlayoutStop()}{Mtc\_ConfRecPlayoutStop()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rec\+Playout\+Stop (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC session stop record playout. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to stop record, if i\+Conf\+Id is invalid, stop record the mix playout.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41e84943d841bd407cb42e6c38727a1f}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a41e84943d841bd407cb42e6c38727a1f}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRmvUser@{Mtc\_ConfRmvUser}}
+\index{Mtc\_ConfRmvUser@{Mtc\_ConfRmvUser}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRmvUser()}{Mtc\_ConfRmvUser()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rmv\+User (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC remove one participant from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by mtc\+Conf\+Cb\+Video\+Strm\+Ptpt\+Updt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want to remove. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Num} & The phone number(e.\+g. +8613800000000) of the removed participant with country code, neither T\+EL uri nor S\+IP U\+RI.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af930d59751ded4b2688fe5092a515000}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af930d59751ded4b2688fe5092a515000}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRmvUserClearData@{Mtc\_ConfRmvUserClearData}}
+\index{Mtc\_ConfRmvUserClearData@{Mtc\_ConfRmvUserClearData}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRmvUserClearData()}{Mtc\_ConfRmvUserClearData()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rmv\+User\+Clear\+Data (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC clear the data of remove user before . If one participant kicked out from the conference, when chairman want to invite him. into the conference again, chairman should use this function to clear the data of remove the user before first. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aaf0fab2c0ae0fd3308f2a81278464127}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aaf0fab2c0ae0fd3308f2a81278464127}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfRmvUserX@{Mtc\_ConfRmvUserX}}
+\index{Mtc\_ConfRmvUserX@{Mtc\_ConfRmvUserX}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfRmvUserX()}{Mtc\_ConfRmvUserX()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Rmv\+UserX (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC remove some participants from conference. If one participant kicked out from the conference, its video image window still exist. Chairman should use this function to remove its video image window. The participants would receive callbacks set by mtc\+Conf\+Cb\+Video\+Strm\+Ptpt\+Updt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want to remove. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id, UI shall use Mtc\+\_\+\+Partp\+Lst\+Create, Mtc\+\_\+\+Partp\+Lst\+Add\+Partp to create the id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa0831c5a0c26d593533306a6e4b8741d}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aa0831c5a0c26d593533306a6e4b8741d}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfSetMicMute@{Mtc\_ConfSetMicMute}}
+\index{Mtc\_ConfSetMicMute@{Mtc\_ConfSetMicMute}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetMicMute()}{Mtc\_ConfSetMicMute()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Mic\+Mute (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{boolean}]{b\+Mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference set the mute status of microphone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Indicate whether to mute the microphone.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a571f2d171ccdd433936068197b3f724c}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Mic\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cc972ce501d4b107b0227d8bb877bd7}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a0cc972ce501d4b107b0227d8bb877bd7}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfSetSeverConfId@{Mtc\_ConfSetSeverConfId}}
+\index{Mtc\_ConfSetSeverConfId@{Mtc\_ConfSetSeverConfId}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetSeverConfId()}{Mtc\_ConfSetSeverConfId()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Sever\+Conf\+Id (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+Serv\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference set server conference id. UI should set server conference id which in common-\/template M\+E\+S\+S\+A\+GE. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Serv\+Conf\+Id} & conference id in common-\/template message.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4d8dc079a4e1cbbc8287ce1f0a59d514}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a4d8dc079a4e1cbbc8287ce1f0a59d514}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfSetSpkMute@{Mtc\_ConfSetSpkMute}}
+\index{Mtc\_ConfSetSpkMute@{Mtc\_ConfSetSpkMute}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetSpkMute()}{Mtc\_ConfSetSpkMute()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Set\+Spk\+Mute (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{boolean}]{b\+Mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference set the mute status of speaker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Indicate whether to mute the speaker.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ae992335b19eaf57a2b6f32fad66d2c4f}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Get\+Spk\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfSetup@{Mtc\_ConfSetup}}
+\index{Mtc\_ConfSetup@{Mtc\_ConfSetup}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSetup()}{Mtc\_ConfSetup()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{Object}]{z\+Cookie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC setup a new conference as the creator. 
+
+If setup a new conference as the creator, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Outgoing, mtc\+Conf\+Cb\+Alerted, mtc\+Conf\+Cb\+Conned
+
+While receiving conference invitation, G\+UI will be notified by callback which was set by mtc\+Conf\+Cb\+Incoming.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to setup. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_afe4bc7d97244616d60320be3c6cd2143}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a421695e10c45d7230ed0bcd15ab6bde5}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a421695e10c45d7230ed0bcd15ab6bde5}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfSndStartSend@{Mtc\_ConfSndStartSend}}
+\index{Mtc\_ConfSndStartSend@{Mtc\_ConfSndStartSend}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSndStartSend()}{Mtc\_ConfSndStartSend()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Snd\+Start\+Send (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+File\+Name,  }\item[{short}]{uc\+File\+Type,  }\item[{boolean}]{b\+Loop,  }\item[{boolean}]{b\+Mix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference start send sound from file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to start send sound from file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The reccord file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+File\+Type} & The reccord file type, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_media_constants_a31472ecd1fb4bfd82feea97c236ffe8d}{Mtc\+Media\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+M\+F\+I\+L\+E\+\_\+\+U\+N\+K\+N\+OW}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Loop} & false if play once. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mix} & If false, microphone sound is replaced by file sound; if true, microphone sound is mixed with file sound\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61073119f6977ec2a4165c66c014070d}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a61073119f6977ec2a4165c66c014070d}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfSndStopSend@{Mtc\_ConfSndStopSend}}
+\index{Mtc\_ConfSndStopSend@{Mtc\_ConfSndStopSend}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfSndStopSend()}{Mtc\_ConfSndStopSend()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Snd\+Stop\+Send (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference stop send sound. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want to stop send sound from file.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aea0ec6f89a050f320b1344a335598844}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_aea0ec6f89a050f320b1344a335598844}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfStrmIdFromStrmName@{Mtc\_ConfStrmIdFromStrmName}}
+\index{Mtc\_ConfStrmIdFromStrmName@{Mtc\_ConfStrmIdFromStrmName}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfStrmIdFromStrmName()}{Mtc\_ConfStrmIdFromStrmName()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Strm\+Id\+From\+Strm\+Name (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC get conference stream ID from stream render name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Name} & Render name string of the video stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of conference video stream ID when found, otherwise Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af1ee0bd125f4bf3ac25ae1d8bf8440ee}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_af1ee0bd125f4bf3ac25ae1d8bf8440ee}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfTerm@{Mtc\_ConfTerm}}
+\index{Mtc\_ConfTerm@{Mtc\_ConfTerm}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfTerm()}{Mtc\_ConfTerm()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Term (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Reason,  }\item[{boolean}]{b\+Term\+Conf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC conference terminate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to terminate. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & Indicate the terminate reason which may trigger some service in S-\/\+C\+S\+CF. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Term\+Conf} & the terminate conf flag. If true, terminate the conferece (which means the other participants will receive B\+YE to terminate the conference); If false, only leave the conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+Actually Mtc\+\_\+\+Conf\+Term does not free all resource allocated for this conference. It only starts a terminating procedure. All resource will be freed automatically when the procedure ends.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a48b4759ff18d7ed2fc3bee4390c125c5}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a980c5e7d43e2d6e83bf9a3754bece70b}{Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Join}}, \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_call_constants_abbbee08b006a2d7a0d4fef29e89ae7fe}{Mtc\+Call\+Constants.\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+N\+O\+R\+M\+AL}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9152ed1c65277afb7cb4e11d619906bc}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_a9152ed1c65277afb7cb4e11d619906bc}} 
+\index{com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}!Mtc\_ConfVideoSelectUsr@{Mtc\_ConfVideoSelectUsr}}
+\index{Mtc\_ConfVideoSelectUsr@{Mtc\_ConfVideoSelectUsr}!com.juphoon.cmcc.app.lemon.MtcConf@{com.juphoon.cmcc.app.lemon.MtcConf}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfVideoSelectUsr()}{Mtc\_ConfVideoSelectUsr()}}
+{\footnotesize\ttfamily static int com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Conf.\+Mtc\+\_\+\+Conf\+Video\+Select\+Usr (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{pc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+M\+TC select one participant as remote image. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want select one participant as remote image. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of the selected participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mtc\+Common\+Constants\+::\+Z\+OK} & on succeed. \\
+\hline
+{\em Mtc\+Common\+Constants\+::\+Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/\mbox{\hyperlink{_mtc_conf_8java}{Mtc\+Conf.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,290 @@
+\hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri Class Reference}
+\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri}\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+
+
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri}{Mtc\+Uri}} interface.  
+
+
+
+
+Inheritance diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a1002490972e33596191c9b4bffe22019}{Mtc\+\_\+\+Uri\+Is\+Valid}} (String pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Check U\+RI is valid. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a18cccf34b34b784a1f9a16a5f11b082b}{Mtc\+\_\+\+Uri\+Format}} (String pc\+Early\+Uri, String pc\+Realm, boolean b\+User\+Phone)
+\begin{DoxyCompactList}\small\item\em Format early U\+RI to a valid U\+RI. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a4c63af9666cb7f039142d5fab6bffb66}{Mtc\+\_\+\+Uri\+Web\+Format}} (String pc\+Early\+Uri)
+\begin{DoxyCompactList}\small\item\em Format early U\+RI to a valid U\+RI. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_abdb41d0253a7478a4136749f9f535575}{Mtc\+\_\+\+Uri\+FormatX}} (String pc\+Early\+Uri, boolean b\+User\+Phone)
+\begin{DoxyCompactList}\small\item\em Format early U\+RI to a valid U\+RI. It will automatically fill realm by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_cli_db_ac6cc011f29111d5d92b644c8a61c7d66}{Mtc\+Cli\+Db.\+Mtc\+\_\+\+Cli\+Db\+Get\+Sip\+Reg\+Realm}}. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a996c351c16b75612debe18a4fa7ac520}{Mtc\+\_\+\+Uri\+Format\+Tel\+Uri}} (String pc\+Phone)
+\begin{DoxyCompactList}\small\item\em Format a T\+EL U\+RI from phone. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a3cb022bb6b85338ab79d5affac100912}{Mtc\+\_\+\+Uri\+Format\+Nat}} (String pc\+Phone)
+\begin{DoxyCompactList}\small\item\em Format a national U\+RI from phone. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a920fc4abd9322b5af5a17f49c52544ee}{Mtc\+\_\+\+Uri\+Format\+Int}} (String pc\+Phone)
+\begin{DoxyCompactList}\small\item\em Format a international U\+RI from phone. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a9540a4e8bdd9e19473389c29abc877ec}{Mtc\+\_\+\+Uri\+Get\+Name}} (String pc\+Uri, int i\+Len)
+\begin{DoxyCompactList}\small\item\em Get user part from S\+IP or T\+EL U\+RI. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_ae4e53cb0dda2b925494abff8ec7ac548}{Mtc\+\_\+\+Uri\+Get\+User\+Part}} (String pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get user part(ex\+: phone number) of U\+R\+I(\+S\+I\+P or T\+E\+L U\+R\+I). \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a5cad07f84c132d4ae1debf2083f57599}{Mtc\+\_\+\+Uri\+Get\+Host\+Part}} (String pc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get user part(ex\+: phone number) of U\+R\+I(\+S\+I\+P or T\+E\+L U\+R\+I). \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_aabfde420e2a6ae0406da3f642a9cf402}{Mtc\+\_\+\+Uri\+Get\+Direct\+Uri}} (String pc\+Tmnl\+Type)
+\begin{DoxyCompactList}\small\item\em Get direct uri. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a7ffba2e7f7a70d9e78496596fef44b51}{Mtc\+\_\+\+Uri\+Get\+Tmnl\+Type}} (String pc\+User\+Uri)
+\begin{DoxyCompactList}\small\item\em Get terminal type of uri. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri}{Mtc\+Uri}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a18cccf34b34b784a1f9a16a5f11b082b}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a18cccf34b34b784a1f9a16a5f11b082b}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriFormat@{Mtc\_UriFormat}}
+\index{Mtc\_UriFormat@{Mtc\_UriFormat}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriFormat()}{Mtc\_UriFormat()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Format (\begin{DoxyParamCaption}\item[{String}]{pc\+Early\+Uri,  }\item[{String}]{pc\+Realm,  }\item[{boolean}]{b\+User\+Phone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Format early U\+RI to a valid U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Early\+Uri} & The early U\+RI, it can be phone number, sip U\+RI or tel U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Realm} & The S\+IP server realm. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+User\+Phone} & The option of add user=phone parameter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The format result otherwise return Z\+N\+U\+LL The caller must copy it parameter, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a920fc4abd9322b5af5a17f49c52544ee}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a920fc4abd9322b5af5a17f49c52544ee}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriFormatInt@{Mtc\_UriFormatInt}}
+\index{Mtc\_UriFormatInt@{Mtc\_UriFormatInt}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriFormatInt()}{Mtc\_UriFormatInt()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Format\+Int (\begin{DoxyParamCaption}\item[{String}]{pc\+Phone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Format a international U\+RI from phone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Phone} & The phone number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The T\+EL U\+RI string otherwise return Z\+N\+U\+LL. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a3cb022bb6b85338ab79d5affac100912}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a3cb022bb6b85338ab79d5affac100912}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriFormatNat@{Mtc\_UriFormatNat}}
+\index{Mtc\_UriFormatNat@{Mtc\_UriFormatNat}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriFormatNat()}{Mtc\_UriFormatNat()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Format\+Nat (\begin{DoxyParamCaption}\item[{String}]{pc\+Phone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Format a national U\+RI from phone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Phone} & The phone number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The T\+EL U\+RI string otherwise return Z\+N\+U\+LL. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a996c351c16b75612debe18a4fa7ac520}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a996c351c16b75612debe18a4fa7ac520}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriFormatTelUri@{Mtc\_UriFormatTelUri}}
+\index{Mtc\_UriFormatTelUri@{Mtc\_UriFormatTelUri}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriFormatTelUri()}{Mtc\_UriFormatTelUri()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Format\+Tel\+Uri (\begin{DoxyParamCaption}\item[{String}]{pc\+Phone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Format a T\+EL U\+RI from phone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Phone} & The phone number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The T\+EL U\+RI string otherwise return Z\+N\+U\+LL. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_abdb41d0253a7478a4136749f9f535575}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_abdb41d0253a7478a4136749f9f535575}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriFormatX@{Mtc\_UriFormatX}}
+\index{Mtc\_UriFormatX@{Mtc\_UriFormatX}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriFormatX()}{Mtc\_UriFormatX()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+FormatX (\begin{DoxyParamCaption}\item[{String}]{pc\+Early\+Uri,  }\item[{boolean}]{b\+User\+Phone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Format early U\+RI to a valid U\+RI. It will automatically fill realm by \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_cli_db_ac6cc011f29111d5d92b644c8a61c7d66}{Mtc\+Cli\+Db.\+Mtc\+\_\+\+Cli\+Db\+Get\+Sip\+Reg\+Realm}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Early\+Uri} & The early U\+RI, it can be phone number, sip U\+RI or tel U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+User\+Phone} & The option of add user=phone paramter.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The format result otherwise return Z\+N\+U\+LL The caller must copy it parameter, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_aabfde420e2a6ae0406da3f642a9cf402}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_aabfde420e2a6ae0406da3f642a9cf402}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriGetDirectUri@{Mtc\_UriGetDirectUri}}
+\index{Mtc\_UriGetDirectUri@{Mtc\_UriGetDirectUri}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriGetDirectUri()}{Mtc\_UriGetDirectUri()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Get\+Direct\+Uri (\begin{DoxyParamCaption}\item[{String}]{pc\+Tmnl\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get direct uri. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Tmnl\+Type} & The type of direct terminal.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The direct uri string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a5cad07f84c132d4ae1debf2083f57599}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a5cad07f84c132d4ae1debf2083f57599}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriGetHostPart@{Mtc\_UriGetHostPart}}
+\index{Mtc\_UriGetHostPart@{Mtc\_UriGetHostPart}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriGetHostPart()}{Mtc\_UriGetHostPart()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Get\+Host\+Part (\begin{DoxyParamCaption}\item[{String}]{pc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get user part(ex\+: phone number) of U\+R\+I(\+S\+I\+P or T\+E\+L U\+R\+I). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The U\+RI string otherwise return Z\+N\+U\+LL.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The host port string. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a9540a4e8bdd9e19473389c29abc877ec}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a9540a4e8bdd9e19473389c29abc877ec}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriGetName@{Mtc\_UriGetName}}
+\index{Mtc\_UriGetName@{Mtc\_UriGetName}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriGetName()}{Mtc\_UriGetName()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Get\+Name (\begin{DoxyParamCaption}\item[{String}]{pc\+Uri,  }\item[{int}]{i\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get user part from S\+IP or T\+EL U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The S\+IP or T\+EL U\+RI string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Len} & The user part name buffer length.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user part name string otherwise return Z\+N\+UL. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a7ffba2e7f7a70d9e78496596fef44b51}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a7ffba2e7f7a70d9e78496596fef44b51}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriGetTmnlType@{Mtc\_UriGetTmnlType}}
+\index{Mtc\_UriGetTmnlType@{Mtc\_UriGetTmnlType}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriGetTmnlType()}{Mtc\_UriGetTmnlType()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Get\+Tmnl\+Type (\begin{DoxyParamCaption}\item[{String}]{pc\+User\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get terminal type of uri. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+User\+Uri} & The U\+RI string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The terminal type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_ae4e53cb0dda2b925494abff8ec7ac548}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_ae4e53cb0dda2b925494abff8ec7ac548}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriGetUserPart@{Mtc\_UriGetUserPart}}
+\index{Mtc\_UriGetUserPart@{Mtc\_UriGetUserPart}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriGetUserPart()}{Mtc\_UriGetUserPart()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Get\+User\+Part (\begin{DoxyParamCaption}\item[{String}]{pc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get user part(ex\+: phone number) of U\+R\+I(\+S\+I\+P or T\+E\+L U\+R\+I). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The U\+RI string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user part string otherwise return Z\+N\+U\+LL. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a1002490972e33596191c9b4bffe22019}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a1002490972e33596191c9b4bffe22019}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriIsValid@{Mtc\_UriIsValid}}
+\index{Mtc\_UriIsValid@{Mtc\_UriIsValid}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriIsValid()}{Mtc\_UriIsValid()}}
+{\footnotesize\ttfamily static boolean com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Is\+Valid (\begin{DoxyParamCaption}\item[{String}]{pc\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check U\+RI is valid. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The U\+RI string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if U\+RI is valid S\+IP U\+RI or T\+EL U\+RI, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a4c63af9666cb7f039142d5fab6bffb66}\label{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_uri_a4c63af9666cb7f039142d5fab6bffb66}} 
+\index{com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}!Mtc\_UriWebFormat@{Mtc\_UriWebFormat}}
+\index{Mtc\_UriWebFormat@{Mtc\_UriWebFormat}!com.juphoon.cmcc.app.lemon.MtcUri@{com.juphoon.cmcc.app.lemon.MtcUri}}
+\doxysubsubsection{\texorpdfstring{Mtc\_UriWebFormat()}{Mtc\_UriWebFormat()}}
+{\footnotesize\ttfamily static String com.\+juphoon.\+cmcc.\+app.\+lemon.\+Mtc\+Uri.\+Mtc\+\_\+\+Uri\+Web\+Format (\begin{DoxyParamCaption}\item[{String}]{pc\+Early\+Uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Format early U\+RI to a valid U\+RI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Early\+Uri} & The early U\+RI, it can be phone number, sip U\+RI or tel U\+RI.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The format result otherwise return Z\+N\+U\+LL The caller must copy it parameter, then use. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/\mbox{\hyperlink{_mtc_uri_8java}{Mtc\+Uri.\+java}}\end{DoxyCompactItemize}

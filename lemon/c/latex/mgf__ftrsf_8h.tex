@@ -1,0 +1,213 @@
+\hypertarget{mgf__ftrsf_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/framework/mgf/mgf\+\_\+ftrsf.h File Reference}
+\label{mgf__ftrsf_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mgf/mgf\_ftrsf.h@{/media/psf/Home/code/rcs/sdk/lemon/src/framework/mgf/mgf\_ftrsf.h}}
+
+
+M\+GF File Transfer Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mgf__ftrsf_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ftrsf_8h_aabf02c88d3984042a40e66494c52b5f0}{Mgf\+\_\+\+File\+Release}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Release a file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ftrsf_8h_af4a3c9ba1bcac87e90bb5b1fda286b83}{Mgf\+\_\+\+File\+Delete}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Delete a file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ftrsf_8h_a859b5b03a46377d46ab1c20f5c5c715c}{Mgf\+\_\+\+File\+Is\+G\+Info\+Push}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get the geolocation information push service flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ftrsf_8h_a1cd040090231f06746447bcc6f31254f}{Mgf\+\_\+\+File\+Is\+G\+Info\+Pull}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get the geolocation information pull service flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mgf__ftrsf_8h_a56faf27bab65a26abfcda2afdceaaf2a}\label{mgf__ftrsf_8h_a56faf27bab65a26abfcda2afdceaaf2a}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Mgf\+\_\+\+File\+Is\+G\+Info\+Fetch} (Z\+U\+I\+NT i\+Trsf\+Id)
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mgf__ftrsf_8h_a66b66a51b92691bc19c7da2568e98a94}{Mgf\+\_\+\+File\+Get\+G\+Info}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get the geolocation information id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ftrsf_8h_adeb1ac4c24528119cda9dc2ff81322a9}{Mgf\+\_\+\+File\+Get\+Outgoing}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get the outgoing status from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mgf__ftrsf_8h_ac2ab25ef7b470efc2257c3d97c88cc6e}{Mgf\+\_\+\+File\+Get\+Miss\+Comp}} (Z\+U\+I\+NT i\+Trsf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+GF Get the mission complete status from file transfer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mgf__ftrsf_8h_ad27b42320e1c6f7032ab5e1b93dd0c9c}{Mgf\+\_\+\+File\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Trsf\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+GF Get date time from file transfer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+GF File Transfer Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mgf__ftrsf_8h_af4a3c9ba1bcac87e90bb5b1fda286b83}\label{mgf__ftrsf_8h_af4a3c9ba1bcac87e90bb5b1fda286b83}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileDelete@{Mgf\_FileDelete}}
+\index{Mgf\_FileDelete@{Mgf\_FileDelete}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileDelete()}{Mgf\_FileDelete()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+File\+Delete (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Delete a file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Delete file transfer successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Delete file transfer failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_ad27b42320e1c6f7032ab5e1b93dd0c9c}\label{mgf__ftrsf_8h_ad27b42320e1c6f7032ab5e1b93dd0c9c}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileGetDateTime@{Mgf\_FileGetDateTime}}
+\index{Mgf\_FileGetDateTime@{Mgf\_FileGetDateTime}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileGetDateTime()}{Mgf\_FileGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+File\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get date time from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_a66b66a51b92691bc19c7da2568e98a94}\label{mgf__ftrsf_8h_a66b66a51b92691bc19c7da2568e98a94}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileGetGInfo@{Mgf\_FileGetGInfo}}
+\index{Mgf\_FileGetGInfo@{Mgf\_FileGetGInfo}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileGetGInfo()}{Mgf\_FileGetGInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mgf\+\_\+\+File\+Get\+G\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get the geolocation information id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & geolocation information id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_ac2ab25ef7b470efc2257c3d97c88cc6e}\label{mgf__ftrsf_8h_ac2ab25ef7b470efc2257c3d97c88cc6e}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileGetMissComp@{Mgf\_FileGetMissComp}}
+\index{Mgf\_FileGetMissComp@{Mgf\_FileGetMissComp}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileGetMissComp()}{Mgf\_FileGetMissComp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+File\+Get\+Miss\+Comp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get the mission complete status from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Mission} & complete status, return Z\+T\+R\+UE if user send ok or received data. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_adeb1ac4c24528119cda9dc2ff81322a9}\label{mgf__ftrsf_8h_adeb1ac4c24528119cda9dc2ff81322a9}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileGetOutgoing@{Mgf\_FileGetOutgoing}}
+\index{Mgf\_FileGetOutgoing@{Mgf\_FileGetOutgoing}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileGetOutgoing()}{Mgf\_FileGetOutgoing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+File\+Get\+Outgoing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get the outgoing status from file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Outgoing} & status, return Z\+T\+R\+UE if mission is send message. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_a1cd040090231f06746447bcc6f31254f}\label{mgf__ftrsf_8h_a1cd040090231f06746447bcc6f31254f}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileIsGInfoPull@{Mgf\_FileIsGInfoPull}}
+\index{Mgf\_FileIsGInfoPull@{Mgf\_FileIsGInfoPull}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileIsGInfoPull()}{Mgf\_FileIsGInfoPull()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+File\+Is\+G\+Info\+Pull (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get the geolocation information pull service flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it is geolocation information pull service, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_a859b5b03a46377d46ab1c20f5c5c715c}\label{mgf__ftrsf_8h_a859b5b03a46377d46ab1c20f5c5c715c}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileIsGInfoPush@{Mgf\_FileIsGInfoPush}}
+\index{Mgf\_FileIsGInfoPush@{Mgf\_FileIsGInfoPush}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileIsGInfoPush()}{Mgf\_FileIsGInfoPush()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mgf\+\_\+\+File\+Is\+G\+Info\+Push (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Get the geolocation information push service flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it is geolocation information push service, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mgf__ftrsf_8h_aabf02c88d3984042a40e66494c52b5f0}\label{mgf__ftrsf_8h_aabf02c88d3984042a40e66494c52b5f0}} 
+\index{mgf\_ftrsf.h@{mgf\_ftrsf.h}!Mgf\_FileRelease@{Mgf\_FileRelease}}
+\index{Mgf\_FileRelease@{Mgf\_FileRelease}!mgf\_ftrsf.h@{mgf\_ftrsf.h}}
+\doxysubsubsection{\texorpdfstring{Mgf\_FileRelease()}{Mgf\_FileRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mgf\+\_\+\+File\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Trsf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+GF Release a file transfer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Trsf\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release file transfer successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release file transfer failed. \\
+\hline
+\end{DoxyRetVals}

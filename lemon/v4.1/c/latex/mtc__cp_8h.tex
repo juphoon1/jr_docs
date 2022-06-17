@@ -1,0 +1,643 @@
+\hypertarget{mtc__cp_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cp.h File Reference}
+\label{mtc__cp_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cp.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cp.h}}
+
+
+M\+TC Client Provisioning Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__cp_8h_a717e358d5aec01be3b6c826fe5bd157e}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC cp status code(error no or terminated code). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a0870361e5a4564f52a499a3120791ea8}\label{mtc__cp_8h_a0870361e5a4564f52a499a3120791ea8}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a0870361e5a4564f52a499a3120791ea8}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 1)
+\begin{DoxyCompactList}\small\item\em connect timeout \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a93574ef892f465ff8221ed31e2ad13e6}\label{mtc__cp_8h_a93574ef892f465ff8221ed31e2ad13e6}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a93574ef892f465ff8221ed31e2ad13e6}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 2)
+\begin{DoxyCompactList}\small\item\em network error \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_acb0489b9f0dfb8c94653282ca4b33dc7}\label{mtc__cp_8h_acb0489b9f0dfb8c94653282ca4b33dc7}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_acb0489b9f0dfb8c94653282ca4b33dc7}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 3)
+\begin{DoxyCompactList}\small\item\em request forbidden \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a69cffbe5df4935512e9db0034f404303}\label{mtc__cp_8h_a69cffbe5df4935512e9db0034f404303}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a69cffbe5df4935512e9db0034f404303}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 4)
+\begin{DoxyCompactList}\small\item\em server internal error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a1e2bd57ffce609a25c4e93547403fdca}\label{mtc__cp_8h_a1e2bd57ffce609a25c4e93547403fdca}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a1e2bd57ffce609a25c4e93547403fdca}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+C\+O\+R\+R\+E\+T\+\_\+\+X\+ML}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 5)
+\begin{DoxyCompactList}\small\item\em incorret configuration xml. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a843ebc61de91072490b62b33cd6d273a}\label{mtc__cp_8h_a843ebc61de91072490b62b33cd6d273a}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a843ebc61de91072490b62b33cd6d273a}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+T\+E\+MP}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 6)
+\begin{DoxyCompactList}\small\item\em service disabled temporarily. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_ab833967d172563fb8e93c9cf6b809b2a}\label{mtc__cp_8h_ab833967d172563fb8e93c9cf6b809b2a}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_ab833967d172563fb8e93c9cf6b809b2a}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+D\+I\+S\+A\+B\+L\+E\+D\+\_\+\+P\+E\+RM}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 7)
+\begin{DoxyCompactList}\small\item\em service disabled permanently. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a33adfddbc14ae35a6d6613b95437a5e5}\label{mtc__cp_8h_a33adfddbc14ae35a6d6613b95437a5e5}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a33adfddbc14ae35a6d6613b95437a5e5}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+D\+E\+C\+L\+I\+NE}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 8)
+\begin{DoxyCompactList}\small\item\em user decline \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a55d1ee3dcda9bb607cd6c582bbecc773}\label{mtc__cp_8h_a55d1ee3dcda9bb607cd6c582bbecc773}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a55d1ee3dcda9bb607cd6c582bbecc773}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+O\+TP}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 9)
+\begin{DoxyCompactList}\small\item\em invalid otp \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a1454e1193a7868b8fe7d4d9aae371e83}\label{mtc__cp_8h_a1454e1193a7868b8fe7d4d9aae371e83}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a1454e1193a7868b8fe7d4d9aae371e83}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+O\+K\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 10)
+\begin{DoxyCompactList}\small\item\em invalid token \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a4c9110407068141e4a2ae98535d4a5c6}\label{mtc__cp_8h_a4c9110407068141e4a2ae98535d4a5c6}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a4c9110407068141e4a2ae98535d4a5c6}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+N\+U\+M\+B\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 11)
+\begin{DoxyCompactList}\small\item\em invalid number \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a42de5ebd346a134d711c732d72543714}\label{mtc__cp_8h_a42de5ebd346a134d711c732d72543714}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a42de5ebd346a134d711c732d72543714}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+A\+F\+T\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 12)
+\begin{DoxyCompactList}\small\item\em retry after \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a5ad704006d4f475abc51c3355d1a3d15}\label{mtc__cp_8h_a5ad704006d4f475abc51c3355d1a3d15}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a5ad704006d4f475abc51c3355d1a3d15}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+B\+O\+S\+S\+\_\+\+E\+R\+R\+OR}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 13)
+\begin{DoxyCompactList}\small\item\em B\+O\+SS error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_ac0f84f36a79eae5e2257f88a36be8eef}\label{mtc__cp_8h_ac0f84f36a79eae5e2257f88a36be8eef}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_ac0f84f36a79eae5e2257f88a36be8eef}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+W\+H\+I\+T\+E\+\_\+\+U\+S\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 14)
+\begin{DoxyCompactList}\small\item\em no white user \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a410fdf8fdd7907ccd4b76089e388cd98}\label{mtc__cp_8h_a410fdf8fdd7907ccd4b76089e388cd98}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a410fdf8fdd7907ccd4b76089e388cd98}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+B\+O\+S\+S\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 15)
+\begin{DoxyCompactList}\small\item\em B\+O\+SS timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a163394467acdc45cdfeb48436f13fbc0}\label{mtc__cp_8h_a163394467acdc45cdfeb48436f13fbc0}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a163394467acdc45cdfeb48436f13fbc0}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+P\+R\+O\+M\+P\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 16)
+\begin{DoxyCompactList}\small\item\em prompt timeout \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a036049251d2f7741897e472fbd433d58}\label{mtc__cp_8h_a036049251d2f7741897e472fbd433d58}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a036049251d2f7741897e472fbd433d58}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+H\+A\+S\+\_\+\+B\+O\+DY}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 17)
+\begin{DoxyCompactList}\small\item\em first H\+T\+T\+P\+\_\+\+R\+S\+P\+\_\+200\+\_\+\+OK has body \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a10d063e3846f6a4fb1c13fbaa3cbe2ee}\label{mtc__cp_8h_a10d063e3846f6a4fb1c13fbaa3cbe2ee}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a10d063e3846f6a4fb1c13fbaa3cbe2ee}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+301\+\_\+\+E\+X\+C\+E\+E\+D\+\_\+\+L\+I\+M\+IT}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 18)
+\begin{DoxyCompactList}\small\item\em receive 301 times exceed the limit \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a322fcf62befc03ba29106ba6e93dcc3d}\label{mtc__cp_8h_a322fcf62befc03ba29106ba6e93dcc3d}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a322fcf62befc03ba29106ba6e93dcc3d}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+E\+RS}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 19)
+\begin{DoxyCompactList}\small\item\em invalid version \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a6c5446c9a8dc1d29e8ece4c1b1a71f88}\label{mtc__cp_8h_a6c5446c9a8dc1d29e8ece4c1b1a71f88}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a6c5446c9a8dc1d29e8ece4c1b1a71f88}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+D\+I\+S\+A\+\_\+\+C\+\_\+\+R\+E\+E\+N\+A\+B\+LE}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 20)
+\begin{DoxyCompactList}\small\item\em service disabled can reenable \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_ac8a834e9fffc41d74fb49889e2df72e5}\label{mtc__cp_8h_ac8a834e9fffc41d74fb49889e2df72e5}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_ac8a834e9fffc41d74fb49889e2df72e5}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+I\+N\+\_\+\+D\+O\+R\+M\+A\+NT}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 21)
+\begin{DoxyCompactList}\small\item\em client in dormant state \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_ad393ab231ba731465c66519892eea8ba}\label{mtc__cp_8h_ad393ab231ba731465c66519892eea8ba}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_ad393ab231ba731465c66519892eea8ba}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+C\+O\+O\+K\+IE}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 22)
+\begin{DoxyCompactList}\small\item\em second H\+T\+T\+P\+\_\+\+R\+S\+P\+\_\+200\+\_\+\+OK has no cookie \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a7439ea1a2081951003dab1a5232b1e52}\label{mtc__cp_8h_a7439ea1a2081951003dab1a5232b1e52}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a7439ea1a2081951003dab1a5232b1e52}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 23)
+\begin{DoxyCompactList}\small\item\em authentication failed, invalid user or password \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a7ea56e60b1f884e535616aa09f8ce41d}\label{mtc__cp_8h_a7ea56e60b1f884e535616aa09f8ce41d}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a7ea56e60b1f884e535616aa09f8ce41d}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+E\+E\+D\+\_\+\+P\+S\+\_\+\+A\+C\+C\+E\+SS}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 24)
+\begin{DoxyCompactList}\small\item\em need PS access \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a439b6c88cc2777394d4e55c2f22da5b0}\label{mtc__cp_8h_a439b6c88cc2777394d4e55c2f22da5b0}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a439b6c88cc2777394d4e55c2f22da5b0}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+A\+D\+D\+L\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 25)
+\begin{DoxyCompactList}\small\item\em additional server cp failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a743857d616a121fee828a799012cc171}\label{mtc__cp_8h_a743857d616a121fee828a799012cc171}} 
+\#define \mbox{\hyperlink{mtc__cp_8h_a743857d616a121fee828a799012cc171}{M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 200)
+\begin{DoxyCompactList}\small\item\em other error \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cp_8h_a02fb582fa1cb1c31ad1ea9da99c5b96a}\label{mtc__cp_8h_a02fb582fa1cb1c31ad1ea9da99c5b96a}} 
+typedef enum \mbox{\hyperlink{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cp_8h_a02fb582fa1cb1c31ad1ea9da99c5b96a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC Client Provisioning Action Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_a6af050886dd4c068fdc82a45f243c27e}\label{mtc__cp_8h_a6af050886dd4c068fdc82a45f243c27e}} 
+typedef enum \mbox{\hyperlink{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cp_8h_a6af050886dd4c068fdc82a45f243c27e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC Client Provisioning Network Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp_8h_ab74e823b20d6900c08947622fcbc2206}\label{mtc__cp_8h_ab74e823b20d6900c08947622fcbc2206}} 
+typedef enum \mbox{\hyperlink{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cp_8h_ab74e823b20d6900c08947622fcbc2206}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC Client Provisioning Expire Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+A\+C\+PT}}, 
+\mbox{\hyperlink{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+D\+E\+CL}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC Client Provisioning Action Type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+PS}}, 
+\mbox{\hyperlink{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+W\+I\+FI}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC Client Provisioning Network Type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+V\+ER}}, 
+\mbox{\hyperlink{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+O\+K\+EN}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC Client Provisioning Expire Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp_8h_ae013da1f324e1d5a040ed1736b34d24d}{Mtc\+\_\+\+Cp}} (Z\+U\+I\+NT i\+Net\+Type, Z\+C\+H\+AR $\ast$pc\+Token)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning configure by primary device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a842c9ba3636eda63a501632884b787ce}{Mtc\+\_\+\+CpX}} (Z\+U\+I\+NT i\+Net\+Type, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Times)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning configure by primary device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a03cbf16ed603f55e4f9bd1a311866c43}{Mtc\+\_\+\+Cp\+Ctcc}} (Z\+C\+H\+AR $\ast$pc\+Ctei, Z\+C\+H\+AR $\ast$pc\+Bind\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning confiure with ctcc C\+T\+EI and bundle\+\_\+id. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp_8h_ad1c851be10b3dc1895d3af1315931a95}{Mtc\+\_\+\+Cp\+Re\+Cfg}} (Z\+U\+I\+NT i\+Net\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning reconfigure by primary device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a4e7990fd009b3e1342be41f01f2830e0}{Mtc\+\_\+\+Cp\+Act}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+U\+I\+NT i\+Act\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning action. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a09bc438aa05d380999988cf98cce825b}{Mtc\+\_\+\+Cp\+Valid\+S\+MS}} (Z\+C\+H\+AR $\ast$pc\+S\+MS)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning validate S\+MS. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a47c823682a5f51f1220563a063042d68}{Mtc\+\_\+\+Cp\+Prompt\+M\+S\+I\+S\+DN}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+Msisdn)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning prompt for M\+S\+I\+S\+DN by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a3ebe1d71b8d779b333b9826b6df50b75}{Mtc\+\_\+\+Cp\+Prompt\+O\+TP}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+O\+TP)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning prompt for O\+TP by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a1a137f870b489018fe79f8ab2446cb83}{Mtc\+\_\+\+Cp\+Prompt\+Token}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+Token)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning prompt for token by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a9a5fb624d28f2141f1633cc6f342f0af}{Mtc\+\_\+\+Cp\+E\+U\+C\+R\+Act}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Act\+Type, Z\+C\+H\+AR $\ast$pc\+P\+IN)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning end user confirmation request action by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp_8h_ac7d67a110d0c3eb20f0b4a88be71ae79}{Mtc\+\_\+\+Cp\+AD}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning by additional device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp_8h_aa6b3d176f414f1ab191701c4595dbca7}{Mtc\+\_\+\+Cp\+A\+D\+With\+O\+TP}} (Z\+C\+H\+AR $\ast$pc\+O\+TP)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning by additional device with O\+TP. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a31ef80027beb6d621e38f629be591dae}{Mtc\+\_\+\+Cp\+A\+D\+Prompt\+O\+TP}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+O\+TP)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning prompt for O\+TP by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a4e2eb5bf444e42c5ae1bf0c89155acb5}{Mtc\+\_\+\+Cp\+A\+D\+Prompt\+P\+IN}} (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+P\+IN)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning prompt for P\+IN by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_acd3d244b7146ee0e36e55664996661bb}{Mtc\+\_\+\+Cp\+Get\+Retry\+Time\+Len}} (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning get retry time len. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp_8h_a1d091d7033609737bab1b48f46796c4b}{Mtc\+\_\+\+Cp\+Parse\+Xml}} (Z\+C\+H\+AR $\ast$pc\+Xml)
+\begin{DoxyCompactList}\small\item\em M\+TC Cilent provisioning parse the config xml. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Client Provisioning Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__cp_8h_a717e358d5aec01be3b6c826fe5bd157e}\label{mtc__cp_8h_a717e358d5aec01be3b6c826fe5bd157e}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!MTC\_CP\_STAT\_ERR\_NO@{MTC\_CP\_STAT\_ERR\_NO}}
+\index{MTC\_CP\_STAT\_ERR\_NO@{MTC\_CP\_STAT\_ERR\_NO}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CP\_STAT\_ERR\_NO}{MTC\_CP\_STAT\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_a7761fa6858085ae63ebf0201e78c5fc3}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+CP}} + 0)}
+
+
+
+M\+TC cp status code(error no or terminated code). 
+
+no error 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418}\label{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_ACT\_TYPE@{EN\_MTC\_CP\_ACT\_TYPE}}
+\index{EN\_MTC\_CP\_ACT\_TYPE@{EN\_MTC\_CP\_ACT\_TYPE}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CP\_ACT\_TYPE}{EN\_MTC\_CP\_ACT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC Client Provisioning Action Type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_ACT\_ACPT@{EN\_MTC\_CP\_ACT\_ACPT}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_ACT\_ACPT@{EN\_MTC\_CP\_ACT\_ACPT}}}\mbox{\Hypertarget{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def}\label{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+A\+C\+PT&Client provisioning accept action. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_ACT\_DECL@{EN\_MTC\_CP\_ACT\_DECL}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_ACT\_DECL@{EN\_MTC\_CP\_ACT\_DECL}}}\mbox{\Hypertarget{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d}\label{mtc__cp_8h_adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+D\+E\+CL&Client provisioning decline action. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21}\label{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_EXPIRE\_TYPE@{EN\_MTC\_CP\_EXPIRE\_TYPE}}
+\index{EN\_MTC\_CP\_EXPIRE\_TYPE@{EN\_MTC\_CP\_EXPIRE\_TYPE}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CP\_EXPIRE\_TYPE}{EN\_MTC\_CP\_EXPIRE\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC Client Provisioning Expire Type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_EXPIRE\_VER@{EN\_MTC\_CP\_EXPIRE\_VER}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_EXPIRE\_VER@{EN\_MTC\_CP\_EXPIRE\_VER}}}\mbox{\Hypertarget{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a}\label{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+V\+ER&version expire \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_EXPIRE\_TOKEN@{EN\_MTC\_CP\_EXPIRE\_TOKEN}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_EXPIRE\_TOKEN@{EN\_MTC\_CP\_EXPIRE\_TOKEN}}}\mbox{\Hypertarget{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9}\label{mtc__cp_8h_a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+O\+K\+EN&token expire \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76}\label{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_NET\_TYPE@{EN\_MTC\_CP\_NET\_TYPE}}
+\index{EN\_MTC\_CP\_NET\_TYPE@{EN\_MTC\_CP\_NET\_TYPE}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_CP\_NET\_TYPE}{EN\_MTC\_CP\_NET\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC Client Provisioning Network Type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_NET\_UNKNOWN@{EN\_MTC\_CP\_NET\_UNKNOWN}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_NET\_UNKNOWN@{EN\_MTC\_CP\_NET\_UNKNOWN}}}\mbox{\Hypertarget{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99}\label{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+U\+N\+K\+N\+O\+WN&unknown network \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_NET\_PS@{EN\_MTC\_CP\_NET\_PS}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_NET\_PS@{EN\_MTC\_CP\_NET\_PS}}}\mbox{\Hypertarget{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55}\label{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+PS&PS network. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_CP\_NET\_WIFI@{EN\_MTC\_CP\_NET\_WIFI}!mtc\_cp.h@{mtc\_cp.h}}\index{mtc\_cp.h@{mtc\_cp.h}!EN\_MTC\_CP\_NET\_WIFI@{EN\_MTC\_CP\_NET\_WIFI}}}\mbox{\Hypertarget{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b}\label{mtc__cp_8h_ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+W\+I\+FI&W\+I\+FI network. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cp_8h_ae013da1f324e1d5a040ed1736b34d24d}\label{mtc__cp_8h_ae013da1f324e1d5a040ed1736b34d24d}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_Cp@{Mtc\_Cp}}
+\index{Mtc\_Cp@{Mtc\_Cp}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_Cp()}{Mtc\_Cp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning configure by primary device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. 
+
+While client provisioning ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}}.
+
+While client provisioning failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}}.
+
+While client provisioning receive message only if no working configuration was avaliable before, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}}.
+
+While client provisioning take place over non-\/3\+G\+PP accsess, and M\+S\+I\+S\+DN is unavailable or I\+M\+SI is not accessible, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_ade14d7fc22145f38fa0e00168654451a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+M\+S\+I\+S\+DN}}.
+
+While client provisioning take place over non-\/3\+G\+PP accsess, and client not support S\+MS U\+DH procedure, server will send a standard S\+MS with O\+TP to client, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_abdf731c2436a4d0140d2d6b7bfc77b43}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+TP}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type} & The network type, \mbox{\hyperlink{mtc__cp_8h_a6af050886dd4c068fdc82a45f243c27e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token, used when network type is E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+W\+I\+FI.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cp id successfully, client provisioning will be running otherwise @retuval Z\+M\+A\+X\+U\+I\+NT cp failed, if failed should call Mtc\+\_\+\+Lcs\+Get\+Err\+Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp_8h_a4e7990fd009b3e1342be41f01f2830e0}\label{mtc__cp_8h_a4e7990fd009b3e1342be41f01f2830e0}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpAct@{Mtc\_CpAct}}
+\index{Mtc\_CpAct@{Mtc\_CpAct}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpAct()}{Mtc\_CpAct()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Act (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Act\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning action. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Act\+Type} & The action type, \mbox{\hyperlink{mtc__cp_8h_a02fb582fa1cb1c31ad1ea9da99c5b96a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & enabling cilent provisioning successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & enabling cilent provisioning failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_ac7d67a110d0c3eb20f0b4a88be71ae79}\label{mtc__cp_8h_ac7d67a110d0c3eb20f0b4a88be71ae79}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpAD@{Mtc\_CpAD}}
+\index{Mtc\_CpAD@{Mtc\_CpAD}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpAD()}{Mtc\_CpAD()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+AD (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning by additional device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. 
+
+While client provisioning ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}}.
+
+While client provisioning failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}}.
+
+While client provisioning receive message only if no working configuration was avaliable before, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}}.
+
+While client provisioning take place and the Service Provider use sending a standard S\+MS to primary user to confirm the identity of the user, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a850e7cfd19d3cce4ab812023d29e4585}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+T\+P\+S\+MS}}.
+
+While client provisioning take place and the Service Provider use the End User Confirmation Request instead of S\+MS to confirm the identity of the user and the primary user have an option to enter a P\+IN, if entered, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a48557916dd977008103e56f8415fb9ee}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+T\+P\+P\+IN}}.
+
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp_8h_a31ef80027beb6d621e38f629be591dae}\label{mtc__cp_8h_a31ef80027beb6d621e38f629be591dae}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpADPromptOTP@{Mtc\_CpADPromptOTP}}
+\index{Mtc\_CpADPromptOTP@{Mtc\_CpADPromptOTP}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpADPromptOTP()}{Mtc\_CpADPromptOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+A\+D\+Prompt\+O\+TP (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+O\+TP }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning prompt for O\+TP by additional device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+O\+TP} & The one-\/time password.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_a4e2eb5bf444e42c5ae1bf0c89155acb5}\label{mtc__cp_8h_a4e2eb5bf444e42c5ae1bf0c89155acb5}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpADPromptPIN@{Mtc\_CpADPromptPIN}}
+\index{Mtc\_CpADPromptPIN@{Mtc\_CpADPromptPIN}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpADPromptPIN()}{Mtc\_CpADPromptPIN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+A\+D\+Prompt\+P\+IN (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+P\+IN }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning prompt for P\+IN by additional device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+P\+IN} & The personal identification number.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & prompt successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & prompt failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_aa6b3d176f414f1ab191701c4595dbca7}\label{mtc__cp_8h_aa6b3d176f414f1ab191701c4595dbca7}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpADWithOTP@{Mtc\_CpADWithOTP}}
+\index{Mtc\_CpADWithOTP@{Mtc\_CpADWithOTP}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpADWithOTP()}{Mtc\_CpADWithOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+A\+D\+With\+O\+TP (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+O\+TP }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning by additional device with O\+TP. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. 
+
+While client provisioning ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}}.
+
+While client provisioning failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}}.
+
+While client provisioning receive message only if no working configuration was avaliable before, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}}.
+
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp_8h_a03cbf16ed603f55e4f9bd1a311866c43}\label{mtc__cp_8h_a03cbf16ed603f55e4f9bd1a311866c43}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpCtcc@{Mtc\_CpCtcc}}
+\index{Mtc\_CpCtcc@{Mtc\_CpCtcc}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCtcc()}{Mtc\_CpCtcc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+Ctcc (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ctei,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Bind\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning confiure with ctcc C\+T\+EI and bundle\+\_\+id. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. 
+
+While client provisioning ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}}.
+
+While client provisioning failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}}.
+
+While client provisioning receive message only if no working configuration was avaliable before, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ctei} & The C\+T\+EI info. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Bind\+Id} & The bind ID info.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp_8h_a9a5fb624d28f2141f1633cc6f342f0af}\label{mtc__cp_8h_a9a5fb624d28f2141f1633cc6f342f0af}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpEUCRAct@{Mtc\_CpEUCRAct}}
+\index{Mtc\_CpEUCRAct@{Mtc\_CpEUCRAct}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpEUCRAct()}{Mtc\_CpEUCRAct()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+E\+U\+C\+R\+Act (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Act\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+P\+IN }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning end user confirmation request action by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The msg id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Act\+Type} & \mbox{\hyperlink{mtc__cp_8h_a02fb582fa1cb1c31ad1ea9da99c5b96a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+A\+C\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+P\+IN} & The personal identification number.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_acd3d244b7146ee0e36e55664996661bb}\label{mtc__cp_8h_acd3d244b7146ee0e36e55664996661bb}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpGetRetryTimeLen@{Mtc\_CpGetRetryTimeLen}}
+\index{Mtc\_CpGetRetryTimeLen@{Mtc\_CpGetRetryTimeLen}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpGetRetryTimeLen()}{Mtc\_CpGetRetryTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Get\+Retry\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning get retry time len. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get retry time len. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_a1d091d7033609737bab1b48f46796c4b}\label{mtc__cp_8h_a1d091d7033609737bab1b48f46796c4b}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpParseXml@{Mtc\_CpParseXml}}
+\index{Mtc\_CpParseXml@{Mtc\_CpParseXml}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpParseXml()}{Mtc\_CpParseXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Parse\+Xml (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Xml }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning parse the config xml. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Xml} & The content of config xml.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & parse xml successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & parse xml failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_a47c823682a5f51f1220563a063042d68}\label{mtc__cp_8h_a47c823682a5f51f1220563a063042d68}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpPromptMSISDN@{Mtc\_CpPromptMSISDN}}
+\index{Mtc\_CpPromptMSISDN@{Mtc\_CpPromptMSISDN}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpPromptMSISDN()}{Mtc\_CpPromptMSISDN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Prompt\+M\+S\+I\+S\+DN (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msisdn }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning prompt for M\+S\+I\+S\+DN by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msisdn} & The M\+S\+I\+S\+DN.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_a3ebe1d71b8d779b333b9826b6df50b75}\label{mtc__cp_8h_a3ebe1d71b8d779b333b9826b6df50b75}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpPromptOTP@{Mtc\_CpPromptOTP}}
+\index{Mtc\_CpPromptOTP@{Mtc\_CpPromptOTP}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpPromptOTP()}{Mtc\_CpPromptOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Prompt\+O\+TP (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+O\+TP }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning prompt for O\+TP by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+O\+TP} & The one-\/time password.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_a1a137f870b489018fe79f8ab2446cb83}\label{mtc__cp_8h_a1a137f870b489018fe79f8ab2446cb83}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpPromptToken@{Mtc\_CpPromptToken}}
+\index{Mtc\_CpPromptToken@{Mtc\_CpPromptToken}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpPromptToken()}{Mtc\_CpPromptToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Prompt\+Token (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cp\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning prompt for token by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cp\+Id} & The cp id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_ad1c851be10b3dc1895d3af1315931a95}\label{mtc__cp_8h_ad1c851be10b3dc1895d3af1315931a95}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpReCfg@{Mtc\_CpReCfg}}
+\index{Mtc\_CpReCfg@{Mtc\_CpReCfg}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpReCfg()}{Mtc\_CpReCfg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+Re\+Cfg (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning reconfigure by primary device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. 
+
+While client provisioning ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}}.
+
+While client provisioning failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}}.
+
+While client provisioning receive message only if no working configuration was avaliable before, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}}.
+
+While client provisioning take place over non-\/3\+G\+PP accsess, and M\+S\+I\+S\+DN is unavailable or I\+M\+SI is not accessible, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_ade14d7fc22145f38fa0e00168654451a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+M\+S\+I\+S\+DN}}.
+
+While client provisioning take place over non-\/3\+G\+PP accsess, and client not support S\+MS U\+DH procedure, server will send a standard S\+MS with O\+TP to client, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_abdf731c2436a4d0140d2d6b7bfc77b43}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+TP}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type} & The network type, \mbox{\hyperlink{mtc__cp_8h_a6af050886dd4c068fdc82a45f243c27e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp_8h_a09bc438aa05d380999988cf98cce825b}\label{mtc__cp_8h_a09bc438aa05d380999988cf98cce825b}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpValidSMS@{Mtc\_CpValidSMS}}
+\index{Mtc\_CpValidSMS@{Mtc\_CpValidSMS}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpValidSMS()}{Mtc\_CpValidSMS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Valid\+S\+MS (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+S\+MS }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning validate S\+MS. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+S\+MS} & The S\+MS received from configure server.\\
+\hline
+\end{DoxyParams}
+While validate ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_ac467f3acd171c36ec82b604b40e00f7d}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Cfg\+Ind}} or \mbox{\hyperlink{mtc__cp__cb_8h_a887a8a1d4f0c5b01535cd4b731c73dfb}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Re\+Cfg\+Ind}}, then G\+UI must logout client if registered, and invoke \mbox{\hyperlink{mtc__cp_8h_ae013da1f324e1d5a040ed1736b34d24d}{Mtc\+\_\+\+Cp}} or \mbox{\hyperlink{mtc__cp_8h_ad1c851be10b3dc1895d3af1315931a95}{Mtc\+\_\+\+Cp\+Re\+Cfg}}.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & validate successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & validate failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp_8h_a842c9ba3636eda63a501632884b787ce}\label{mtc__cp_8h_a842c9ba3636eda63a501632884b787ce}} 
+\index{mtc\_cp.h@{mtc\_cp.h}!Mtc\_CpX@{Mtc\_CpX}}
+\index{Mtc\_CpX@{Mtc\_CpX}!mtc\_cp.h@{mtc\_cp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpX()}{Mtc\_CpX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+CpX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Net\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+U\+I\+NT}]{i\+Times }\end{DoxyParamCaption})}
+
+
+
+M\+TC Cilent provisioning configure by primary device. Sending request mesaage to R\+CS configuration server. Request will be sent by H\+T\+TP and H\+T\+T\+PS M\+E\+S\+S\+A\+GE method. 
+
+While client provisioning ok, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}}.
+
+While client provisioning failed, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}}.
+
+While client provisioning receive message only if no working configuration was avaliable before, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}}.
+
+While client provisioning take place over non-\/3\+G\+PP accsess, and M\+S\+I\+S\+DN is unavailable or I\+M\+SI is not accessible, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_ade14d7fc22145f38fa0e00168654451a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+M\+S\+I\+S\+DN}}.
+
+While client provisioning take place over non-\/3\+G\+PP accsess, and client not support S\+MS U\+DH procedure, server will send a standard S\+MS with O\+TP to client, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__cp__cb_8h_abdf731c2436a4d0140d2d6b7bfc77b43}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+TP}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Net\+Type} & The network type, \mbox{\hyperlink{mtc__cp_8h_a6af050886dd4c068fdc82a45f243c27e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token, used when network type is E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+N\+E\+T\+\_\+\+W\+I\+FI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Times} & The times of invoking the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cp id successfully or Z\+M\+A\+X\+U\+I\+NT failed, client provisioning will be running. 
+\end{DoxyReturn}

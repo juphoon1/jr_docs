@@ -1,0 +1,328 @@
+\hypertarget{mtc__cp__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cp\+\_\+cb.h File Reference}
+\label{mtc__cp__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cp\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cp\_cb.h}}
+
+
+M\+TC Client Provisioning Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cp__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}\label{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+CB}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}\label{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}}) (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning ok callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_a0a68e1057802a0c325f58fad98319c1f}\label{mtc__cp__cb_8h_a0a68e1057802a0c325f58fad98319c1f}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_a0a68e1057802a0c325f58fad98319c1f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+F\+A\+I\+L\+E\+D\+CB}}) (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+Rsp\+Code, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning failed callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_aff3a56e5da0e4afa0f3780d85024c7f0}\label{mtc__cp__cb_8h_aff3a56e5da0e4afa0f3780d85024c7f0}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_aff3a56e5da0e4afa0f3780d85024c7f0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+R\+E\+C\+V\+M\+S\+G\+CB}}) (Z\+U\+I\+NT i\+Cp\+Id, Z\+C\+H\+AR $\ast$pc\+Title, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+C\+H\+AR $\ast$pc\+Acpt\+Btn, Z\+C\+H\+AR $\ast$pc\+Decl\+Btn)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning receive message callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}\label{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}}) (Z\+U\+I\+NT i\+Cp\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning prompt callback. \end{DoxyCompactList}\item 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_a07c67d6efe65b0e444006975d0666371}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+X\+P\+I\+R\+E\+CB}}) (Z\+U\+I\+NT i\+Expire\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning expire callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_ad3d66793e7f5d4eff1a25bc3e470aeaa}\label{mtc__cp__cb_8h_ad3d66793e7f5d4eff1a25bc3e470aeaa}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_ad3d66793e7f5d4eff1a25bc3e470aeaa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+R\+E\+Q\+CB}}) (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Text, Z\+C\+H\+AR $\ast$pc\+Acpt\+Btn\+Txt, Z\+C\+H\+AR $\ast$pc\+Decl\+Btn\+Txt, Z\+B\+O\+OL b\+Need\+P\+IN)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning end user message confirmation request callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_a3a75098b231e9c2a38bb22c5dfc31beb}\label{mtc__cp__cb_8h_a3a75098b231e9c2a38bb22c5dfc31beb}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_a3a75098b231e9c2a38bb22c5dfc31beb}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+A\+C\+K\+CB}}) (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Text)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning end user message confirmation ack callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cp__cb_8h_a65436cd898e916fae48a897e38f663b4}\label{mtc__cp__cb_8h_a65436cd898e916fae48a897e38f663b4}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__cp__cb_8h_a65436cd898e916fae48a897e38f663b4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+N\+T\+F\+Y\+CB}}) (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+Subject, Z\+C\+H\+AR $\ast$pc\+Text, Z\+C\+H\+AR $\ast$pc\+O\+K\+Btn\+Txt)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC client provisioning end user message notification callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok}} (\mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning ok callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed}} (\mbox{\hyperlink{mtc__cp__cb_8h_a0a68e1057802a0c325f58fad98319c1f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+F\+A\+I\+L\+E\+D\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning failed callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a4aa93531d37306950d57a095990b7f75}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Expire}} (\mbox{\hyperlink{mtc__cp__cb_8h_a07c67d6efe65b0e444006975d0666371}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+X\+P\+I\+R\+E\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning expire callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_ac467f3acd171c36ec82b604b40e00f7d}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Cfg\+Ind}} (\mbox{\hyperlink{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning configure indication callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a887a8a1d4f0c5b01535cd4b731c73dfb}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Re\+Cfg\+Ind}} (\mbox{\hyperlink{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning reconfigure indication callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_ad0045067305951621c5b2833beb9a62b}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Auth\+Ind}} (\mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning authorizaiton indication callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_abcbf44b18c7313a0288926708c0bc909}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Auto\+Auth\+Ind}} (\mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC auto client provisioning authorizaiton indication callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg}} (\mbox{\hyperlink{mtc__cp__cb_8h_aff3a56e5da0e4afa0f3780d85024c7f0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+R\+E\+C\+V\+M\+S\+G\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning receive message callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_ade14d7fc22145f38fa0e00168654451a}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+M\+S\+I\+S\+DN}} (\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning prompt for O\+TP callback by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_abdf731c2436a4d0140d2d6b7bfc77b43}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+TP}} (\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning prompt for O\+TP callback over S\+MS by primary device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a850e7cfd19d3cce4ab812023d29e4585}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+T\+P\+S\+MS}} (\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning prompt for O\+TP callback over S\+MS by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a48557916dd977008103e56f8415fb9ee}{Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+T\+P\+P\+IN}} (\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning prompt for O\+TP callback over P\+IN by additional device. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a4870e8c8d0d3740944550d8e6c052b83}{Mtc\+\_\+\+Cp\+Cb\+Set\+E\+Msg\+Req}} (\mbox{\hyperlink{mtc__cp__cb_8h_ad3d66793e7f5d4eff1a25bc3e470aeaa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+R\+E\+Q\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning receive end user message confirmation request. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_a471b691ab3321a88cc8fc7d26efe0fb1}{Mtc\+\_\+\+Cp\+Cb\+Set\+E\+Msg\+Ack}} (\mbox{\hyperlink{mtc__cp__cb_8h_a3a75098b231e9c2a38bb22c5dfc31beb}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+A\+C\+K\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning receive end user message confirmation ack. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cp__cb_8h_ad46fda455e140df447854e37c3b1aee2}{Mtc\+\_\+\+Cp\+Cb\+Set\+E\+Msg\+Ntfy}} (\mbox{\hyperlink{mtc__cp__cb_8h_a65436cd898e916fae48a897e38f663b4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+N\+T\+F\+Y\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC client provisioning receive end user message notification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Client Provisioning Callback Interface Functions. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a07c67d6efe65b0e444006975d0666371}\label{mtc__cp__cb_8h_a07c67d6efe65b0e444006975d0666371}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!PFN\_MTCCPEXPIRECB@{PFN\_MTCCPEXPIRECB}}
+\index{PFN\_MTCCPEXPIRECB@{PFN\_MTCCPEXPIRECB}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{PFN\_MTCCPEXPIRECB}{PFN\_MTCCPEXPIRECB}}
+{\footnotesize\ttfamily typedef Z\+V\+O\+ID($\ast$ P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+X\+P\+I\+R\+E\+CB) (Z\+U\+I\+NT i\+Expire\+Type)}
+
+
+
+Type define of M\+TC client provisioning expire callback. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Expire\+Type} & The expire type(see \mbox{\hyperlink{mtc__cp_8h_ab74e823b20d6900c08947622fcbc2206}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+E\+X\+P\+I\+R\+E\+\_\+\+T\+Y\+PE}}). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cp__cb_8h_ad0045067305951621c5b2833beb9a62b}\label{mtc__cp__cb_8h_ad0045067305951621c5b2833beb9a62b}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpAuthInd@{Mtc\_CpCbSetCpAuthInd}}
+\index{Mtc\_CpCbSetCpAuthInd@{Mtc\_CpCbSetCpAuthInd}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpAuthInd()}{Mtc\_CpCbSetCpAuthInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Auth\+Ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning authorizaiton indication callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning authorizaiton indication. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_abcbf44b18c7313a0288926708c0bc909}\label{mtc__cp__cb_8h_abcbf44b18c7313a0288926708c0bc909}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpAutoAuthInd@{Mtc\_CpCbSetCpAutoAuthInd}}
+\index{Mtc\_CpCbSetCpAutoAuthInd@{Mtc\_CpCbSetCpAutoAuthInd}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpAutoAuthInd()}{Mtc\_CpCbSetCpAutoAuthInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Auto\+Auth\+Ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC auto client provisioning authorizaiton indication callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning authorizaiton indication. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_ac467f3acd171c36ec82b604b40e00f7d}\label{mtc__cp__cb_8h_ac467f3acd171c36ec82b604b40e00f7d}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpCfgInd@{Mtc\_CpCbSetCpCfgInd}}
+\index{Mtc\_CpCbSetCpCfgInd@{Mtc\_CpCbSetCpCfgInd}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpCfgInd()}{Mtc\_CpCbSetCpCfgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Cfg\+Ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning configure indication callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning configure indication. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a4aa93531d37306950d57a095990b7f75}\label{mtc__cp__cb_8h_a4aa93531d37306950d57a095990b7f75}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpExpire@{Mtc\_CpCbSetCpExpire}}
+\index{Mtc\_CpCbSetCpExpire@{Mtc\_CpCbSetCpExpire}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpExpire()}{Mtc\_CpCbSetCpExpire()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Expire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a07c67d6efe65b0e444006975d0666371}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+X\+P\+I\+R\+E\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning expire callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning expire. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}\label{mtc__cp__cb_8h_a20207fbf89781161bffa1da2b741586b}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpFailed@{Mtc\_CpCbSetCpFailed}}
+\index{Mtc\_CpCbSetCpFailed@{Mtc\_CpCbSetCpFailed}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpFailed()}{Mtc\_CpCbSetCpFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a0a68e1057802a0c325f58fad98319c1f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+F\+A\+I\+L\+E\+D\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning failed callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning failed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}\label{mtc__cp__cb_8h_a325130e92d2998992cf3dd18dd45004a}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpOk@{Mtc\_CpCbSetCpOk}}
+\index{Mtc\_CpCbSetCpOk@{Mtc\_CpCbSetCpOk}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpOk()}{Mtc\_CpCbSetCpOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a81da9cd9ae8f1c17e8f7734962fe0469}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+O\+K\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning ok callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning ok. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_ade14d7fc22145f38fa0e00168654451a}\label{mtc__cp__cb_8h_ade14d7fc22145f38fa0e00168654451a}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpPromptMSISDN@{Mtc\_CpCbSetCpPromptMSISDN}}
+\index{Mtc\_CpCbSetCpPromptMSISDN@{Mtc\_CpCbSetCpPromptMSISDN}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpPromptMSISDN()}{Mtc\_CpCbSetCpPromptMSISDN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+M\+S\+I\+S\+DN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning prompt for O\+TP callback by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning prompt for M\+S\+I\+S\+DN. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_abdf731c2436a4d0140d2d6b7bfc77b43}\label{mtc__cp__cb_8h_abdf731c2436a4d0140d2d6b7bfc77b43}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpPromptOTP@{Mtc\_CpCbSetCpPromptOTP}}
+\index{Mtc\_CpCbSetCpPromptOTP@{Mtc\_CpCbSetCpPromptOTP}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpPromptOTP()}{Mtc\_CpCbSetCpPromptOTP()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+TP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning prompt for O\+TP callback over S\+MS by primary device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning prompt for O\+TP. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a48557916dd977008103e56f8415fb9ee}\label{mtc__cp__cb_8h_a48557916dd977008103e56f8415fb9ee}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpPromptOTPPIN@{Mtc\_CpCbSetCpPromptOTPPIN}}
+\index{Mtc\_CpCbSetCpPromptOTPPIN@{Mtc\_CpCbSetCpPromptOTPPIN}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpPromptOTPPIN()}{Mtc\_CpCbSetCpPromptOTPPIN()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+T\+P\+P\+IN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning prompt for O\+TP callback over P\+IN by additional device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning prompt for O\+TP. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a850e7cfd19d3cce4ab812023d29e4585}\label{mtc__cp__cb_8h_a850e7cfd19d3cce4ab812023d29e4585}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpPromptOTPSMS@{Mtc\_CpCbSetCpPromptOTPSMS}}
+\index{Mtc\_CpCbSetCpPromptOTPSMS@{Mtc\_CpCbSetCpPromptOTPSMS}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpPromptOTPSMS()}{Mtc\_CpCbSetCpPromptOTPSMS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Prompt\+O\+T\+P\+S\+MS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a39626ebe2c2d9c2ebe87661cbadd6090}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+P\+R\+O\+M\+P\+T\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning prompt for O\+TP callback over S\+MS by additional device. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning prompt for O\+TP. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a887a8a1d4f0c5b01535cd4b731c73dfb}\label{mtc__cp__cb_8h_a887a8a1d4f0c5b01535cd4b731c73dfb}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpReCfgInd@{Mtc\_CpCbSetCpReCfgInd}}
+\index{Mtc\_CpCbSetCpReCfgInd@{Mtc\_CpCbSetCpReCfgInd}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpReCfgInd()}{Mtc\_CpCbSetCpReCfgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Re\+Cfg\+Ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_ae86bb399e646b7e16b6c63608f6af9af}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning reconfigure indication callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning reconfigure indication. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}\label{mtc__cp__cb_8h_a8b027faaf71564c210be994a0bcf41db}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetCpRecvMsg@{Mtc\_CpCbSetCpRecvMsg}}
+\index{Mtc\_CpCbSetCpRecvMsg@{Mtc\_CpCbSetCpRecvMsg}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetCpRecvMsg()}{Mtc\_CpCbSetCpRecvMsg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+Cp\+Recv\+Msg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_aff3a56e5da0e4afa0f3780d85024c7f0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+R\+E\+C\+V\+M\+S\+G\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning receive message callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify provisioning receive message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a471b691ab3321a88cc8fc7d26efe0fb1}\label{mtc__cp__cb_8h_a471b691ab3321a88cc8fc7d26efe0fb1}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetEMsgAck@{Mtc\_CpCbSetEMsgAck}}
+\index{Mtc\_CpCbSetEMsgAck@{Mtc\_CpCbSetEMsgAck}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetEMsgAck()}{Mtc\_CpCbSetEMsgAck()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+E\+Msg\+Ack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a3a75098b231e9c2a38bb22c5dfc31beb}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+A\+C\+K\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning receive end user message confirmation ack. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify when receive end user message confirmation ack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_ad46fda455e140df447854e37c3b1aee2}\label{mtc__cp__cb_8h_ad46fda455e140df447854e37c3b1aee2}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetEMsgNtfy@{Mtc\_CpCbSetEMsgNtfy}}
+\index{Mtc\_CpCbSetEMsgNtfy@{Mtc\_CpCbSetEMsgNtfy}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetEMsgNtfy()}{Mtc\_CpCbSetEMsgNtfy()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+E\+Msg\+Ntfy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_a65436cd898e916fae48a897e38f663b4}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+N\+T\+F\+Y\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning receive end user message notification. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify when receive end user message notification. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cp__cb_8h_a4870e8c8d0d3740944550d8e6c052b83}\label{mtc__cp__cb_8h_a4870e8c8d0d3740944550d8e6c052b83}} 
+\index{mtc\_cp\_cb.h@{mtc\_cp\_cb.h}!Mtc\_CpCbSetEMsgReq@{Mtc\_CpCbSetEMsgReq}}
+\index{Mtc\_CpCbSetEMsgReq@{Mtc\_CpCbSetEMsgReq}!mtc\_cp\_cb.h@{mtc\_cp\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpCbSetEMsgReq()}{Mtc\_CpCbSetEMsgReq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cp\+Cb\+Set\+E\+Msg\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cp__cb_8h_ad3d66793e7f5d4eff1a25bc3e470aeaa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+P\+E\+M\+S\+G\+R\+E\+Q\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC client provisioning receive end user message confirmation request. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify when receive end user message confirmation request. \\
+\hline
+\end{DoxyParams}

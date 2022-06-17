@@ -1,0 +1,2321 @@
+\hypertarget{mtc__cli__cfg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cli\+\_\+cfg.h File Reference}
+\label{mtc__cli__cfg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cli\_cfg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cli\_cfg.h}}
+
+
+M\+TC Client Config Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cli__cfg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a6746db77b54653a858288e9fa38b56e0}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+U\+LL}}~0
+\begin{DoxyCompactList}\small\item\em \{ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aa03574d21355b16541e28c1e72c95ed2}\label{mtc__cli__cfg_8h_aa03574d21355b16541e28c1e72c95ed2}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_aa03574d21355b16541e28c1e72c95ed2}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+Q\+V\+AL}}~1
+\begin{DoxyCompactList}\small\item\em qvalue \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a4f742e25efe61891084d0257db1963a5}\label{mtc__cli__cfg_8h_a4f742e25efe61891084d0257db1963a5}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a4f742e25efe61891084d0257db1963a5}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+P\+M\+\_\+\+FT}}~2
+\begin{DoxyCompactList}\small\item\em C\+PM file transfer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a69773cda15ceadf078848bf4d6546b6b}\label{mtc__cli__cfg_8h_a69773cda15ceadf078848bf4d6546b6b}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a69773cda15ceadf078848bf4d6546b6b}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+I\+S\+H\+A\+RE}}~3
+\begin{DoxyCompactList}\small\item\em I\+MS Image Share. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a13f5ecca46a02731baf7e5815b194397}\label{mtc__cli__cfg_8h_a13f5ecca46a02731baf7e5815b194397}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a13f5ecca46a02731baf7e5815b194397}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+IM}}~4
+\begin{DoxyCompactList}\small\item\em O\+MA IM. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ad3c149c30bf7d4d0b0656e092b7265cc}\label{mtc__cli__cfg_8h_ad3c149c30bf7d4d0b0656e092b7265cc}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ad3c149c30bf7d4d0b0656e092b7265cc}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+I\+M\+\_\+\+L\+M\+SG}}~5
+\begin{DoxyCompactList}\small\item\em O\+MA Large Message ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a15234c4e412b224fdf521daa0ea2fad3}\label{mtc__cli__cfg_8h_a15234c4e412b224fdf521daa0ea2fad3}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a15234c4e412b224fdf521daa0ea2fad3}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+R\+C\+S\+\_\+\+CS}}~6
+\begin{DoxyCompactList}\small\item\em R\+CS cs telephony. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a412ed7a265a309edd535b79cfac14c23}\label{mtc__cli__cfg_8h_a412ed7a265a309edd535b79cfac14c23}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a412ed7a265a309edd535b79cfac14c23}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+S\+M\+S\+\_\+\+IP}}~7
+\begin{DoxyCompactList}\small\item\em 3G\+PP S\+MS over IP \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ab68d0d7e935383738ccdfac2a9a2b8f7}\label{mtc__cli__cfg_8h_ab68d0d7e935383738ccdfac2a9a2b8f7}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ab68d0d7e935383738ccdfac2a9a2b8f7}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+A\+LL}}~Z\+M\+A\+X\+U\+I\+NT
+\begin{DoxyCompactList}\small\item\em all capabilties. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a5341c653bc0bc8148a4beabf651f2861}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+U\+LL}}~0
+\begin{DoxyCompactList}\small\item\em \{ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a7b3af74834d41c12a8133cc140b27284}\label{mtc__cli__cfg_8h_a7b3af74834d41c12a8133cc140b27284}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a7b3af74834d41c12a8133cc140b27284}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+B\+U\+RN}}~1
+\begin{DoxyCompactList}\small\item\em burn after read \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a90a9386d9af7412344375544d8bd4d03}\label{mtc__cli__cfg_8h_a90a9386d9af7412344375544d8bd4d03}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a90a9386d9af7412344375544d8bd4d03}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+G\+R\+P\+\_\+\+M\+AN}}~2
+\begin{DoxyCompactList}\small\item\em group manage \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ae72da3e1be65e575749efe2a77707f69}\label{mtc__cli__cfg_8h_ae72da3e1be65e575749efe2a77707f69}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ae72da3e1be65e575749efe2a77707f69}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE}}~3
+\begin{DoxyCompactList}\small\item\em cloud file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a5b9ee5c7dcc5eaf6c628a3abf8bc7ae2}\label{mtc__cli__cfg_8h_a5b9ee5c7dcc5eaf6c628a3abf8bc7ae2}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a5b9ee5c7dcc5eaf6c628a3abf8bc7ae2}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+V\+EM}}~4
+\begin{DoxyCompactList}\small\item\em vemoticon \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ad2fde529c5af6fec2b304198422fc768}\label{mtc__cli__cfg_8h_ad2fde529c5af6fec2b304198422fc768}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ad2fde529c5af6fec2b304198422fc768}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG}}~5
+\begin{DoxyCompactList}\small\item\em cmcc redbag \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a92be8ea4b8de7185698db7274fc04f43}\label{mtc__cli__cfg_8h_a92be8ea4b8de7185698db7274fc04f43}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a92be8ea4b8de7185698db7274fc04f43}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+A\+R\+D\+\_\+\+M\+SG}}~6
+\begin{DoxyCompactList}\small\item\em cmcc cardmsg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a414b15d57ba3a895ba0d80fd29045b13}\label{mtc__cli__cfg_8h_a414b15d57ba3a895ba0d80fd29045b13}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a414b15d57ba3a895ba0d80fd29045b13}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+O\+F\+F\+\_\+\+M\+SG}}~7
+\begin{DoxyCompactList}\small\item\em 3G\+PP offline msg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a523df4b10842d430e79af62f55e263f9}\label{mtc__cli__cfg_8h_a523df4b10842d430e79af62f55e263f9}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a523df4b10842d430e79af62f55e263f9}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW}}~8
+\begin{DoxyCompactList}\small\item\em cmcc 139 new mail notify msg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ab1cf815bb66e62301f9b5f1730951626}\label{mtc__cli__cfg_8h_ab1cf815bb66e62301f9b5f1730951626}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ab1cf815bb66e62301f9b5f1730951626}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+G\+R\+P\+\_\+\+Q\+R\+C\+O\+DE}}~9
+\begin{DoxyCompactList}\small\item\em group qrcode ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ade8a459ecce09a86ce38f8e52a0a34c6}\label{mtc__cli__cfg_8h_ade8a459ecce09a86ce38f8e52a0a34c6}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ade8a459ecce09a86ce38f8e52a0a34c6}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+E\+X\+V\+C\+A\+R\+D\+\_\+\+M\+SG}}~10
+\begin{DoxyCompactList}\small\item\em x-\/vcard msg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a77cebd9f23b01c64d501177233a79fa4}\label{mtc__cli__cfg_8h_a77cebd9f23b01c64d501177233a79fa4}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a77cebd9f23b01c64d501177233a79fa4}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+O\+M\+A\+P\+U\+SH}}~11
+\begin{DoxyCompactList}\small\item\em cmcc push msg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a03f8872574d339f24e697f5642737035}\label{mtc__cli__cfg_8h_a03f8872574d339f24e697f5642737035}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a03f8872574d339f24e697f5642737035}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP}}~12
+\begin{DoxyCompactList}\small\item\em cmcc common template \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a3bd3aeadb8faae9a5864a64aa498ef9d}\label{mtc__cli__cfg_8h_a3bd3aeadb8faae9a5864a64aa498ef9d}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a3bd3aeadb8faae9a5864a64aa498ef9d}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE}}~13
+\begin{DoxyCompactList}\small\item\em cmcc message revoke \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a9bc81d3472f91d277ef9e5078bf655ff}\label{mtc__cli__cfg_8h_a9bc81d3472f91d277ef9e5078bf655ff}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a9bc81d3472f91d277ef9e5078bf655ff}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG}}~14
+\begin{DoxyCompactList}\small\item\em cmcc redbag \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a0418e00e8d7f4dc16dc980c97de24843}\label{mtc__cli__cfg_8h_a0418e00e8d7f4dc16dc980c97de24843}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a0418e00e8d7f4dc16dc980c97de24843}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+P\+U\+B\+\_\+\+M\+SG}}~15
+\begin{DoxyCompactList}\small\item\em cmcc pub msg \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a3c8e57456e32eef6f2944501df05ba5f}\label{mtc__cli__cfg_8h_a3c8e57456e32eef6f2944501df05ba5f}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a3c8e57456e32eef6f2944501df05ba5f}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+A\+L\+O\+NE}}~16
+\begin{DoxyCompactList}\small\item\em C\+M\+CC group chat alone=1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ab0e447a740652c963242c4f302e482d0}\label{mtc__cli__cfg_8h_ab0e447a740652c963242c4f302e482d0}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ab0e447a740652c963242c4f302e482d0}{M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+A\+LL}}~Z\+M\+A\+X\+U\+I\+NT
+\begin{DoxyCompactList}\small\item\em all capabilties. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_af0e6ffefb3fd59492f7f185c3ea62c95}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+U\+LL}}~0x00000000
+\begin{DoxyCompactList}\small\item\em \{ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ae3e8fb057329dd78feae43fe403d6b34}\label{mtc__cli__cfg_8h_ae3e8fb057329dd78feae43fe403d6b34}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ae3e8fb057329dd78feae43fe403d6b34}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+AL}}~0x00000001
+\begin{DoxyCompactList}\small\item\em fatal message to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac25005e7b3b985deb590a01ba4f7efab}\label{mtc__cli__cfg_8h_ac25005e7b3b985deb590a01ba4f7efab}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_ac25005e7b3b985deb590a01ba4f7efab}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}}~0x00000002
+\begin{DoxyCompactList}\small\item\em error message to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a836a541ca5a6c387fa1334b5abd4e144}\label{mtc__cli__cfg_8h_a836a541ca5a6c387fa1334b5abd4e144}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a836a541ca5a6c387fa1334b5abd4e144}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN}}~0x00000004
+\begin{DoxyCompactList}\small\item\em warning message to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a6111cedff731fbbf645cca813bc1a11f}\label{mtc__cli__cfg_8h_a6111cedff731fbbf645cca813bc1a11f}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a6111cedff731fbbf645cca813bc1a11f}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}~0x00000008
+\begin{DoxyCompactList}\small\item\em info message to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a7be49c28db296deadeda2f91ef1892ae}\label{mtc__cli__cfg_8h_a7be49c28db296deadeda2f91ef1892ae}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a7be49c28db296deadeda2f91ef1892ae}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+BG}}~0x00000010
+\begin{DoxyCompactList}\small\item\em debug message to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a48ff405fe3c8dfe39f0efc71f291bb14}\label{mtc__cli__cfg_8h_a48ff405fe3c8dfe39f0efc71f291bb14}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a48ff405fe3c8dfe39f0efc71f291bb14}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+U\+NC}}~0x00000100
+\begin{DoxyCompactList}\small\item\em function trace to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a6289d8621a9226320cac7ada74b96a54}\label{mtc__cli__cfg_8h_a6289d8621a9226320cac7ada74b96a54}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a6289d8621a9226320cac7ada74b96a54}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+A\+LL}}~0x000001\+FF
+\begin{DoxyCompactList}\small\item\em all message to be logged \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a092e9eeac8fcb30a893c303998c04803}\label{mtc__cli__cfg_8h_a092e9eeac8fcb30a893c303998c04803}} 
+\#define \mbox{\hyperlink{mtc__cli__cfg_8h_a092e9eeac8fcb30a893c303998c04803}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+A\+PP}}~\char`\"{}A\+PP\char`\"{}
+\begin{DoxyCompactList}\small\item\em \{ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af60c2958336ad3853bb353fecaadabe1}\label{mtc__cli__cfg_8h_af60c2958336ad3853bb353fecaadabe1}} 
+\#define {\bfseries M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+PC}~\char`\"{}PC\char`\"{}
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_abc8b72f3c765d66215ec1e2dc8a0e857}\label{mtc__cli__cfg_8h_abc8b72f3c765d66215ec1e2dc8a0e857}} 
+\#define {\bfseries M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+M\+AC}~\char`\"{}M\+AC\char`\"{}
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a69e7c79cca4d08e88f28113d3b741a8d}\label{mtc__cli__cfg_8h_a69e7c79cca4d08e88f28113d3b741a8d}} 
+\#define {\bfseries M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+P\+AD}~\char`\"{}P\+AD\char`\"{}
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac93606c16edc2958b553a5ab3616ba7b}\label{mtc__cli__cfg_8h_ac93606c16edc2958b553a5ab3616ba7b}} 
+\#define {\bfseries M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+W\+EB}~\char`\"{}W\+EB\char`\"{}
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a117f07f6ad988a1226c3ca620643a917}\label{mtc__cli__cfg_8h_a117f07f6ad988a1226c3ca620643a917}} 
+\#define {\bfseries M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+N\+A\+T\+I\+VE}~\char`\"{}N\+A\+T\+I\+VE\char`\"{}
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aa3be4df97912ee4a8dbffa85311a7c32}\label{mtc__cli__cfg_8h_aa3be4df97912ee4a8dbffa85311a7c32}} 
+\#define {\bfseries M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+W\+A\+T\+CH}~\char`\"{}W\+A\+T\+CH\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aa971c22fafbb5b2182482eefa09a10a7}\label{mtc__cli__cfg_8h_aa971c22fafbb5b2182482eefa09a10a7}} 
+typedef Z\+V\+O\+ID $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_aa971c22fafbb5b2182482eefa09a10a7}{Z\+A\+P\+P\+C\+O\+N\+T\+E\+XT}}
+\begin{DoxyCompactList}\small\item\em Application context type definition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a2f2017e5da97109f0a3728c4bbcdba44}\label{mtc__cli__cfg_8h_a2f2017e5da97109f0a3728c4bbcdba44}} 
+typedef enum \mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli__cfg_8h_a2f2017e5da97109f0a3728c4bbcdba44}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC service type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af54b42bf18992fe2c655f7df2322d25b}\label{mtc__cli__cfg_8h_af54b42bf18992fe2c655f7df2322d25b}} 
+typedef enum \mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli__cfg_8h_af54b42bf18992fe2c655f7df2322d25b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC log level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a4b7d049e7dbd5030c5d387f50a131007}\label{mtc__cli__cfg_8h_a4b7d049e7dbd5030c5d387f50a131007}} 
+typedef enum \mbox{\hyperlink{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__cli__cfg_8h_a4b7d049e7dbd5030c5d387f50a131007}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC Domain type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aabcf91b20027a524ffbf05c5c8aeaf5fb}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+V\+O\+IP}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa40bd932433f884677080ee173374c155}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+V\+O\+L\+TE}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aae1f583f182702cad577ec64875c08038}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+R\+C\+S5}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa2a2b3e9829a82fc7d33c883a6a03c939}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+J\+O\+Y\+N\+\_\+\+HF}}, 
+\newline
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aaf097fec8260d7960768d0bd42e84cb4c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+J\+O\+Y\+N\+\_\+\+BB}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa945e72c780f0d6e4f58d866a23bfadb7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+C\+M\+C\+C\+\_\+\+R\+CS}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa4e28dc87cb2b1255530cddb90e2882f3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P1\+\_\+0}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa6b7be7f462c61f586b64046ce83a3c20}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P2\+\_\+0}}, 
+\newline
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aac113f16f91fcb4a9a0cb25ddcd2b3110}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P2\+\_\+3}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa48246b84868e54612980301650780e17}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P2\+\_\+4}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC service type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+I\+S\+A\+B\+LE} = 0, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2ab84d11a0eb65d702404bfa061b5b368e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2a1ee1b1aff0995113607f77bcbb5c81aa}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2a8f392766f0170b45358d861f5a080284}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}}, 
+\newline
+\mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2adeff2e5da422f8b54f58d07584773f20}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC log level. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8abc80138715f4d9ae23210e1f47936ddd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+A\+N\+D\+F\+E\+T\+I\+ON}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8ad502c06680149a4823024400605f1554}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+M\+E\+E\+T\+Y\+OU}}, 
+\mbox{\hyperlink{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8a9a9a60702a4636b2121fd55400e64cd3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+H\+E\+M\+I\+AO}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC Domain type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cfg_8h_a77640398475a4239a6b8ff8a392f4937}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Level}} (Z\+U\+I\+NT i\+Level)
+\begin{DoxyCompactList}\small\item\em Set log level. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cli__cfg_8h_a10129f50a5b028251fbf22ffffbde1a3}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+LevelX}} (Z\+U\+I\+NT i\+Level)
+\begin{DoxyCompactList}\small\item\em Set log level. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_acc8e2244e8a73edb8d756f656a5c2a26}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Print}} (Z\+B\+O\+OL b\+Print)
+\begin{DoxyCompactList}\small\item\em Set log print. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a838ae177f7ec5ae8925528f296b08bda}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Use\+Det\+Lcl\+Ip}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get using detect local IP when client start and login. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aef2b14319bc39e71cfe9387bac47b97b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Det\+Lcl\+Ip}} (Z\+B\+O\+OL b\+Detect)
+\begin{DoxyCompactList}\small\item\em Set using detect local IP when client start and login. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a88d36f40af7d654b753a5843664f53e4}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Net\+Detect}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get support ability of network detection when client has logined. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ae2b8964ee37bc8e72f8160dead4c9cba}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Net\+Detect}} (Z\+B\+O\+OL b\+Supt)
+\begin{DoxyCompactList}\small\item\em Set support ability of network detection when client has logined. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ac426773928e9978b244bac44e52d56d9}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Enc\+Pwd}} ()
+\begin{DoxyCompactList}\small\item\em Get support ability of encrypt password. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a10d5a3a70be735cafe3f8d2b87360bc2}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Enc\+Pwd}} (Z\+B\+O\+OL b\+Supt)
+\begin{DoxyCompactList}\small\item\em Set support ability of encrypt password. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a3edfddc5ad82d4ba86beafcd678bf15f}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Cap}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get R\+E\+G\+I\+S\+T\+ER capability flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a18933ddda1b90b232b550ea86cd5dcc7}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Reg\+Cap}} (Z\+U\+I\+NT i\+Cap\+Opt)
+\begin{DoxyCompactList}\small\item\em Set R\+E\+G\+I\+S\+T\+ER capability flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a4d4c3d1538332c05142115168f0995a2}{Mtc\+\_\+\+Cli\+Cfg\+Clr\+Reg\+Cap}} (Z\+U\+I\+NT i\+Cap\+Opt)
+\begin{DoxyCompactList}\small\item\em Clear R\+E\+G\+I\+S\+T\+ER capability flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a790ee04a3a2b986eea1d3c988cff8105}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Cmcc\+Ext\+Reg\+Cap}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get Cmcc\+Ext\+Register extern capability flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a6ac51a2ca27d47ccb34ab9b06d0fddd7}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Cmcc\+Ext\+Reg\+Cap}} (Z\+U\+I\+NT i\+Cap\+Opt)
+\begin{DoxyCompactList}\small\item\em Set Cmcc\+Ext\+Register extern capability flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ad9a58cb79086c233f5e5a1289a8faa01}{Mtc\+\_\+\+Cli\+Cfg\+Clr\+Cmcc\+Ext\+Reg\+Cap}} (Z\+U\+I\+NT i\+Cap\+Opt)
+\begin{DoxyCompactList}\small\item\em Clear Cmcc\+Ext\+Register extern capability flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a73ba207f77d05f292bfe4f9c8a1b1fe3}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Dir}} (Z\+C\+H\+AR $\ast$pc\+Dir)
+\begin{DoxyCompactList}\small\item\em Set Log file directory. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_a27d4aa45913315d7b6cf5a2460fae490}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Dir}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get Log file directory. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aee58b00bf644c7cda3c15651507a9961}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+File\+Size}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get log file size from configuration. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a94c531457c85feed26c5298e622f1c75}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+File\+Size}} (Z\+U\+I\+NT i\+Log\+File\+Size)
+\begin{DoxyCompactList}\small\item\em Set log file size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a0809ff1e860b1778a0a56c7ebd21ab84}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+File\+Count}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get log file count from configuration. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a79ea1443bf88d155bc028098c137eff6}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+File\+Count}} (Z\+U\+I\+NT i\+Log\+File\+Count)
+\begin{DoxyCompactList}\small\item\em Set log file count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aa0982f8bc3ca7d7d35b47a64c9a6aca9}{Mtc\+\_\+\+Cli\+Cfg\+Set\+License\+File\+Name}} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Set license file name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aeeaa42bf3bece44e9148d3f37dc4bcf2}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Context}} (\mbox{\hyperlink{mtc__cli__cfg_8h_aa971c22fafbb5b2182482eefa09a10a7}{Z\+A\+P\+P\+C\+O\+N\+T\+E\+XT}} z\+Context)
+\begin{DoxyCompactList}\small\item\em Set license context. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a003a5a0183c5f3e34907e2bce0e1f9ed}{Mtc\+\_\+\+Cli\+Cfg\+Get\+File\+Encrypt}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get file encryption from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a163633e1dff20e48a927e042f06d06fc}{Mtc\+\_\+\+Cli\+Cfg\+Set\+File\+Encrypt}} (Z\+B\+O\+OL b\+File\+Encrypt)
+\begin{DoxyCompactList}\small\item\em Set file encryption. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a0825b840d69305f1349db76cab305998}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Srv\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get register service type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a9b1366121ab389792ebd31540b167036}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Reg\+Srv\+Type}} (Z\+U\+I\+NT i\+Srv\+Type)
+\begin{DoxyCompactList}\small\item\em Set register service type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_acfdbc0100ff5c2df9bd4e6f06d4ce815}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Tmr\+Len\+Wait\+Reg}} ()
+\begin{DoxyCompactList}\small\item\em Get wait register timer length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a2a07b6fa9b439eaa451286884adf1b2a}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Tmr\+Len\+Wait\+Reg}} (Z\+U\+I\+NT i\+Tmr\+Len)
+\begin{DoxyCompactList}\small\item\em Set wait register timer length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_afef3413abfca3e2f7905a67075b90875}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Refresh\+Bef\+Expr}} ()
+\begin{DoxyCompactList}\small\item\em Get support refresh before expire. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aadbef2995043223bc8c9e5bc87b6f32d}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Refresh\+Bef\+Expr}} (Z\+B\+O\+OL b\+Supt)
+\begin{DoxyCompactList}\small\item\em Set support refresh before expire. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a602e16a4121b679f50108391b5de2678}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Chk\+Dev\+Id\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Set check device ID type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_aefd39dc284f9f16eaee98fc10bce3836}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Timer\+Self\+Drv\+Enable}} ()
+\begin{DoxyCompactList}\small\item\em Get timer self drive enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a40af72af67116a017dfa6de12ccd8339}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Timer\+Self\+Drv\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set timer self drive enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a89d59cc802132b33804293921898a803}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Logcat\+Print}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get logcat print flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_af9f9f6838a8655b27bab83d160e98304}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Logcat\+Print}} (Z\+B\+O\+OL b\+Print)
+\begin{DoxyCompactList}\small\item\em Set logcat print flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ac23a6dc203c867e3067d12f9f1854d28}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Socket\+Reuse\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get socket reuse address enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a8cfe7fc38ce20f5ced89fdf6df318d66}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Socket\+Reuse\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set socket reuse address enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a0df1d9d271f78c6820e7102a5da48ee1}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Udp\+Connect\+Enable}} ()
+\begin{DoxyCompactList}\small\item\em Get udp socket connect enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a8d7f7866a904d8a8e886a469883f0dab}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Udp\+Connect\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set udp socket connect enable. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a86e7acf60a1f9166e4b7b687b89b2230}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Use\+Mobile}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get use mobile. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ad57103715dfc7adbc0cea3961a0433c5}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Mobile}} (Z\+B\+O\+OL b\+Set\+Use\+Mobile)
+\begin{DoxyCompactList}\small\item\em Set use mobile. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_aaff3651c6b7b2e1c2e37d2286a75c920}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Buried\+Data\+Point\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client buried data point enable option(default Z\+F\+A\+L\+S\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a98e242244d33a1491e555e31288c9529}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Buried\+Data\+Point\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set client buried data point enable option(default Z\+F\+A\+L\+S\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_ac84dc3e84f8aaf997f02109e84fcd38c}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Buried\+Data\+Point\+Server\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Get buried data point server address with port(e.\+g. 192.\+168.\+1.\+4\+:9000). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a6926a441ed120824375983216af5aa27}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Buried\+Data\+Point\+Server\+Addr}} (Z\+C\+H\+AR $\ast$pc\+Serv\+Addr)
+\begin{DoxyCompactList}\small\item\em Set buried data point server address. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a5475cc917fa72550f9378dc4b64b6c6c}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Upload\+Log\+File\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client uploading buried data log file enable option(default Z\+F\+A\+L\+S\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aa2e1b55c9d903dcb572e68e64259542b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Upload\+Log\+File\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set client uploading buried data log file enable option(default Z\+F\+A\+L\+S\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ac1d6d776a4588fee56d548075c671797}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Sts\+Https\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client uploading buried data point by https option(default Z\+T\+R\+U\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ae0fb68b929b238392adfd5c8cb71923d}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Sts\+Https\+Enable}} (Z\+B\+O\+OL b\+Enable)
+\begin{DoxyCompactList}\small\item\em Set client uploading buried data point by https enable option(default Z\+T\+R\+U\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__cli__cfg_8h_a1994f9fb02bb9e7f766a32e28354585e}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Tcp\+Last\+Keep\+Alive\+Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Get tcp last keep alive timestamp in seconds. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a76780d8f4efb5a59389672dc89d6ee8c}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Phone\+Vage}} ()
+\begin{DoxyCompactList}\small\item\em Get log file desensitization on-\/off. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a1f8701bc123ce7eb28bc93e0a65dacc8}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Phone\+Vague}} (Z\+B\+O\+OL b\+Open)
+\begin{DoxyCompactList}\small\item\em Set log file desensitization on-\/off. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a246beddc1f49ce42ef5ec3b3392056ee}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Lcs\+App\+Name}} (Z\+C\+H\+AR $\ast$pc\+App\+Name)
+\begin{DoxyCompactList}\small\item\em set package name apply to linux system . \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ac3fa5a1d28b67ed0558e8399103832bd}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Mtc\+Log\+Print}} (Z\+B\+O\+OL b\+Print)
+\begin{DoxyCompactList}\small\item\em Set Mtc Log file Print Flags. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ade1e9659426aa04fb30e35913b451eb1}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Mtc\+Log\+Print}} ()
+\begin{DoxyCompactList}\small\item\em Get Mtc Log file Print Flags. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a3c408be0b6855cd0802e68cba0b2f956}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Mix\+Check\+License\+Flag}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Unicom Voip License Check (App\+Id ,Time) Flags. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ae4bf40127a0f224d9f001ebb6c828289}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Mix\+Check\+License\+Flag}} (Z\+B\+O\+OL b\+Check)
+\begin{DoxyCompactList}\small\item\em Unicom Voip Set License(\+App\+Id, Time) Check Flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a3dc8646fa27ad62d89d22acb8f68dd02}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Dms\+Self\+Algorithm}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Sending encode get request to R\+CS configuration server. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a1395714d718750a08eb3a672a807f61d}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Dms\+Self\+Algorithm}} (Z\+B\+O\+OL b\+Encode)
+\begin{DoxyCompactList}\small\item\em Sending encode get request to R\+CS configuration server. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a8883cef19ab80e1dfc064f0c0abae1b4}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Smp\+Srv\+Hst}} (Z\+C\+H\+AR $\ast$pc\+Host)
+\begin{DoxyCompactList}\small\item\em Set ntp sdk management platform server host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a9708e4d2f8e64b6ea0193086eb8b2487}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Dms\+Srv\+Hst}} (Z\+C\+H\+AR $\ast$pc\+Host)
+\begin{DoxyCompactList}\small\item\em Set ntp dms server host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ac61316c34d84b12afff2df6b911fc99c}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Pblc\+Srv\+Hst}} (Z\+C\+H\+AR $\ast$pc\+Host)
+\begin{DoxyCompactList}\small\item\em Set ntp public server host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_aeb099d385a08206a325b3f50c24cb15d}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Smp\+Srv\+Hst}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get ntp sdk management platform server host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_a36cd67229d49a6e592ce65934b60897b}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Dms\+Srv\+Hst}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get ntp dms server host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_aae4c7a4de0235bab77b8e360936ad831}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Pblc\+Srv\+Hst}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get ntp public server host. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_af2982ea7e7f01093e827435fc89865c5}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Time\+Out}} (Z\+U\+I\+NT i\+Timeout)
+\begin{DoxyCompactList}\small\item\em Set the value of Ntp Request timeout. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_afa94bcf08780a33b242d1d8a88a02cff}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Smp\+Srv\+Port}} (Z\+U\+I\+NT i\+Port)
+\begin{DoxyCompactList}\small\item\em Set the S\+DK managment platform server port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aeb8859703659d4d08c259d0dc24f44ea}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Smp\+Srv\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the S\+DK managment platform server port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ac50520677fa481d3a54efa3b7b5ec4f1}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Dms\+Srv\+Port}} (Z\+U\+I\+NT i\+Port)
+\begin{DoxyCompactList}\small\item\em Set the dms server port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aba027eb236fb0accfa1874c539a82426}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Dms\+Srv\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the dms server port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a96c7f49b8a0d740e64fbedc8aa75b5ec}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Pblc\+Srv\+Port}} (Z\+U\+I\+NT i\+Port)
+\begin{DoxyCompactList}\small\item\em Set the public server port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_af720b2e9721bb1fe0a8e67814cc8709a}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Pblc\+Srv\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the public server port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_aecb293d6fe0120330e14b2cfbb225274}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Os\+Get\+Host}} (Z\+B\+O\+OL b\+Supt)
+\begin{DoxyCompactList}\small\item\em mtc config set using OS gethostbyname option. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_af0f75c28b9fc78bb2413175c1af99724}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Mme\+Log\+File}} (Z\+U\+I\+NT i\+Log\+File\+Size, Z\+U\+I\+NT i\+File\+Count)
+\begin{DoxyCompactList}\small\item\em Set mme log file size and count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ae5333f16fed834ed17115df26f15d526}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Msrp\+Supt\+Tptls\+Serv}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client msrp tcp/tls server support flag(default Z\+F\+A\+L\+S\+E). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a2a80c3e1037de8bfc4910243dc553edb}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Msrp\+Supt\+Tptls\+Serv}} (Z\+B\+O\+OL b\+Supt)
+\begin{DoxyCompactList}\small\item\em Set msrp tcp/tls server support flag(default Z\+F\+A\+L\+S\+E). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a2bec60d0accc236d88f55aec3b0ba570}\label{mtc__cli__cfg_8h_a2bec60d0accc236d88f55aec3b0ba570}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+L\+T\+S\+V\+More\+Info} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Info)
+\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_a83aaf35a7beb1ca9c991a334738d81b1}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+L\+T\+S\+V\+More\+Info}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the more info of Labeled Tab-\/separated Values (L\+T\+SV) format log. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a28a45042deac97ceef9e1b62f3ecb263}\label{mtc__cli__cfg_8h_a28a45042deac97ceef9e1b62f3ecb263}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Check\+L\+T\+S\+V\+Enable} (Z\+B\+O\+OL b\+Enable)
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_a4fbc003a8e3182e66035613991f20287}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Check\+L\+T\+S\+V\+Enable}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get log check L\+T\+SV format enable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ab06ac9fba963841f7d0d08a6a1f0a595}\label{mtc__cli__cfg_8h_ab06ac9fba963841f7d0d08a6a1f0a595}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Dm\+Type} (Z\+U\+I\+NT i\+Dm\+Type)
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a71bfea9d11cde9eba7531d940e527168}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Dm\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get domain type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_ab97d8a243d50a3e89b74497c75c0e79b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Tmnl\+Type}} (Z\+C\+H\+AR $\ast$pc\+Tmnl\+Type)
+\begin{DoxyCompactList}\small\item\em Set teminal type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cli__cfg_8h_a54dac1a11a35860f285c3bd1472e43cf}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Tmnl\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get terminal type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_af252dc2ff14bd1fceb545ddfbe61b955}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Timer\+Count}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get system timer number(default 2000). \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cli__cfg_8h_a3b4259e49ca8e79149d57580d7991aa9}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Timer\+Count}} (Z\+U\+I\+NT i\+Timer\+Count)
+\begin{DoxyCompactList}\small\item\em Set system timer number. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cli__cfg_8h_ad8548585c179b70cacf9c44f57373875}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Sip\+Extern\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Get sip support external transport flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_afc85040db6c7a24905a79bd9043c92dc}\label{mtc__cli__cfg_8h_afc85040db6c7a24905a79bd9043c92dc}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Sip\+Extern\+Transport} (Z\+B\+O\+OL b\+Enable)
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac8160440733a219c3fbe56aebba69885}\label{mtc__cli__cfg_8h_ac8160440733a219c3fbe56aebba69885}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Sip\+Extern\+Local\+Addr} (Z\+U\+C\+H\+AR uc\+Tpt, Z\+C\+H\+AR $\ast$pc\+Ip, Z\+U\+I\+NT i\+Port)
+\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__cli__cfg_8h_af0d555d930496368499933edac31b9c8}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Sip\+Extern\+Addr\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get sip external address type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a8ca5a1730b4c94fca509833f3214d77e}\label{mtc__cli__cfg_8h_a8ca5a1730b4c94fca509833f3214d77e}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Sip\+Extern\+Remote\+Addr} (Z\+U\+C\+H\+AR uc\+Tpt, Z\+C\+H\+AR $\ast$pc\+Ip, Z\+U\+I\+NT i\+Port)
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a8de76659301d42f43ba3ac5bdbfe6a87}\label{mtc__cli__cfg_8h_a8de76659301d42f43ba3ac5bdbfe6a87}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Sip\+Extern\+Public\+Ip} (Z\+C\+H\+AR $\ast$pc\+Ip)
+\item 
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a62d2689979f77e8a3593a6d4defd8de4}\label{mtc__cli__cfg_8h_a62d2689979f77e8a3593a6d4defd8de4}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Force\+Route} (Z\+B\+O\+OL b\+Force)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Client Config Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a5341c653bc0bc8148a4beabf651f2861}\label{mtc__cli__cfg_8h_a5341c653bc0bc8148a4beabf651f2861}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!MTC\_CMCC\_EXT\_REG\_CAP\_OPT\_NULL@{MTC\_CMCC\_EXT\_REG\_CAP\_OPT\_NULL}}
+\index{MTC\_CMCC\_EXT\_REG\_CAP\_OPT\_NULL@{MTC\_CMCC\_EXT\_REG\_CAP\_OPT\_NULL}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_CMCC\_EXT\_REG\_CAP\_OPT\_NULL}{MTC\_CMCC\_EXT\_REG\_CAP\_OPT\_NULL}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+C\+M\+C\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+U\+LL~0}
+
+
+
+\{ 
+
+no capability. \mbox{\Hypertarget{mtc__cli__cfg_8h_af0e6ffefb3fd59492f7f185c3ea62c95}\label{mtc__cli__cfg_8h_af0e6ffefb3fd59492f7f185c3ea62c95}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!MTC\_LOG\_LEVEL\_NULL@{MTC\_LOG\_LEVEL\_NULL}}
+\index{MTC\_LOG\_LEVEL\_NULL@{MTC\_LOG\_LEVEL\_NULL}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_LOG\_LEVEL\_NULL}{MTC\_LOG\_LEVEL\_NULL}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+U\+LL~0x00000000}
+
+
+
+\{ 
+
+null to be logged \mbox{\Hypertarget{mtc__cli__cfg_8h_a6746db77b54653a858288e9fa38b56e0}\label{mtc__cli__cfg_8h_a6746db77b54653a858288e9fa38b56e0}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!MTC\_REG\_CAP\_OPT\_NULL@{MTC\_REG\_CAP\_OPT\_NULL}}
+\index{MTC\_REG\_CAP\_OPT\_NULL@{MTC\_REG\_CAP\_OPT\_NULL}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_REG\_CAP\_OPT\_NULL}{MTC\_REG\_CAP\_OPT\_NULL}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+N\+U\+LL~0}
+
+
+
+\{ 
+
+no capability. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8}\label{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_DM\_TYPE@{EN\_MTC\_DM\_TYPE}}
+\index{EN\_MTC\_DM\_TYPE@{EN\_MTC\_DM\_TYPE}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_DM\_TYPE}{EN\_MTC\_DM\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC Domain type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_DM\_ANDFETION@{EN\_MTC\_DM\_ANDFETION}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_DM\_ANDFETION@{EN\_MTC\_DM\_ANDFETION}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8abc80138715f4d9ae23210e1f47936ddd}\label{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8abc80138715f4d9ae23210e1f47936ddd}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+A\+N\+D\+F\+E\+T\+I\+ON&andfetion domain \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_DM\_MEETYOU@{EN\_MTC\_DM\_MEETYOU}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_DM\_MEETYOU@{EN\_MTC\_DM\_MEETYOU}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8ad502c06680149a4823024400605f1554}\label{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8ad502c06680149a4823024400605f1554}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+M\+E\+E\+T\+Y\+OU&meetyou domain \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_DM\_HEMIAO@{EN\_MTC\_DM\_HEMIAO}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_DM\_HEMIAO@{EN\_MTC\_DM\_HEMIAO}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8a9a9a60702a4636b2121fd55400e64cd3}\label{mtc__cli__cfg_8h_add7f42a8b366d66eac7ec61e2ff17fb8a9a9a60702a4636b2121fd55400e64cd3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+M\+\_\+\+H\+E\+M\+I\+AO&hemiao domain \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2}\label{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_LOG\_LEVEL\_TYPE@{EN\_MTC\_LOG\_LEVEL\_TYPE}}
+\index{EN\_MTC\_LOG\_LEVEL\_TYPE@{EN\_MTC\_LOG\_LEVEL\_TYPE}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_LOG\_LEVEL\_TYPE}{EN\_MTC\_LOG\_LEVEL\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC log level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_LOG\_LEVEL\_ERROR@{EN\_MTC\_LOG\_LEVEL\_ERROR}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_LOG\_LEVEL\_ERROR@{EN\_MTC\_LOG\_LEVEL\_ERROR}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2ab84d11a0eb65d702404bfa061b5b368e}\label{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2ab84d11a0eb65d702404bfa061b5b368e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR&Disable log output. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_LOG\_LEVEL\_INFO@{EN\_MTC\_LOG\_LEVEL\_INFO}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_LOG\_LEVEL\_INFO@{EN\_MTC\_LOG\_LEVEL\_INFO}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2a1ee1b1aff0995113607f77bcbb5c81aa}\label{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2a1ee1b1aff0995113607f77bcbb5c81aa}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO&Only error message. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_LOG\_LEVEL\_DEBUG@{EN\_MTC\_LOG\_LEVEL\_DEBUG}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_LOG\_LEVEL\_DEBUG@{EN\_MTC\_LOG\_LEVEL\_DEBUG}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2a8f392766f0170b45358d861f5a080284}\label{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2a8f392766f0170b45358d861f5a080284}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG&Include error, info message. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_LOG\_LEVEL\_FUNCTION@{EN\_MTC\_LOG\_LEVEL\_FUNCTION}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_LOG\_LEVEL\_FUNCTION@{EN\_MTC\_LOG\_LEVEL\_FUNCTION}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2adeff2e5da422f8b54f58d07584773f20}\label{mtc__cli__cfg_8h_a11c02a6861636fd80c734eb65a7874c2adeff2e5da422f8b54f58d07584773f20}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+F\+U\+N\+C\+T\+I\+ON&Inlcude error, info and debug message. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997a}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997a}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_TYPE@{EN\_MTC\_REG\_SRV\_TYPE}}
+\index{EN\_MTC\_REG\_SRV\_TYPE@{EN\_MTC\_REG\_SRV\_TYPE}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_REG\_SRV\_TYPE}{EN\_MTC\_REG\_SRV\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC service type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_VOIP@{EN\_MTC\_REG\_SRV\_VOIP}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_VOIP@{EN\_MTC\_REG\_SRV\_VOIP}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aabcf91b20027a524ffbf05c5c8aeaf5fb}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aabcf91b20027a524ffbf05c5c8aeaf5fb}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+V\+O\+IP&voip service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_VOLTE@{EN\_MTC\_REG\_SRV\_VOLTE}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_VOLTE@{EN\_MTC\_REG\_SRV\_VOLTE}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa40bd932433f884677080ee173374c155}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa40bd932433f884677080ee173374c155}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+V\+O\+L\+TE&3G\+PP Vo\+L\+TE service \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_RCS5@{EN\_MTC\_REG\_SRV\_RCS5}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_RCS5@{EN\_MTC\_REG\_SRV\_RCS5}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aae1f583f182702cad577ec64875c08038}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aae1f583f182702cad577ec64875c08038}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+R\+C\+S5&G\+S\+MA R\+C\+S5 service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_JOYN\_HF@{EN\_MTC\_REG\_SRV\_JOYN\_HF}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_JOYN\_HF@{EN\_MTC\_REG\_SRV\_JOYN\_HF}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa2a2b3e9829a82fc7d33c883a6a03c939}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa2a2b3e9829a82fc7d33c883a6a03c939}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+J\+O\+Y\+N\+\_\+\+HF&G\+S\+MA joyn hotfixes service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_JOYN\_BB@{EN\_MTC\_REG\_SRV\_JOYN\_BB}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_JOYN\_BB@{EN\_MTC\_REG\_SRV\_JOYN\_BB}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aaf097fec8260d7960768d0bd42e84cb4c}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aaf097fec8260d7960768d0bd42e84cb4c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+J\+O\+Y\+N\+\_\+\+BB&G\+S\+MA joyn blackbird service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_CMCC\_RCS@{EN\_MTC\_REG\_SRV\_CMCC\_RCS}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_CMCC\_RCS@{EN\_MTC\_REG\_SRV\_CMCC\_RCS}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa945e72c780f0d6e4f58d866a23bfadb7}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa945e72c780f0d6e4f58d866a23bfadb7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+C\+M\+C\+C\+\_\+\+R\+CS&C\+M\+CC R\+CS service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_GSMA\_UP1\_0@{EN\_MTC\_REG\_SRV\_GSMA\_UP1\_0}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_GSMA\_UP1\_0@{EN\_MTC\_REG\_SRV\_GSMA\_UP1\_0}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa4e28dc87cb2b1255530cddb90e2882f3}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa4e28dc87cb2b1255530cddb90e2882f3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P1\+\_\+0&G\+S\+MA U\+P1.\+0 service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_0@{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_0}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_GSMA\_UP2\_0@{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_0}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa6b7be7f462c61f586b64046ce83a3c20}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa6b7be7f462c61f586b64046ce83a3c20}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P2\+\_\+0&G\+S\+MA U\+P2.\+0 service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_3@{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_3}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_GSMA\_UP2\_3@{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_3}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aac113f16f91fcb4a9a0cb25ddcd2b3110}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aac113f16f91fcb4a9a0cb25ddcd2b3110}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P2\+\_\+3&G\+S\+MA U\+P2.\+3 service. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_4@{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_4}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!EN\_MTC\_REG\_SRV\_GSMA\_UP2\_4@{EN\_MTC\_REG\_SRV\_GSMA\_UP2\_4}}}\mbox{\Hypertarget{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa48246b84868e54612980301650780e17}\label{mtc__cli__cfg_8h_a919fdbc296c85907163d055e6a40997aa48246b84868e54612980301650780e17}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+G\+S\+M\+A\+\_\+\+U\+P2\+\_\+4&G\+S\+MA U\+P2.\+4 service. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ad9a58cb79086c233f5e5a1289a8faa01}\label{mtc__cli__cfg_8h_ad9a58cb79086c233f5e5a1289a8faa01}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgClrCmccExtRegCap@{Mtc\_CliCfgClrCmccExtRegCap}}
+\index{Mtc\_CliCfgClrCmccExtRegCap@{Mtc\_CliCfgClrCmccExtRegCap}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgClrCmccExtRegCap()}{Mtc\_CliCfgClrCmccExtRegCap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Clr\+Cmcc\+Ext\+Reg\+Cap (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cap\+Opt }\end{DoxyParamCaption})}
+
+
+
+Clear Cmcc\+Ext\+Register extern capability flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cap\+Opt} & Cmcc\+Ext\+Register extern capability flag, see M\+T\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG etc.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Clear extern capability option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Clear extern capability option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a790ee04a3a2b986eea1d3c988cff8105}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Cmcc\+Ext\+Reg\+Cap}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a4d4c3d1538332c05142115168f0995a2}\label{mtc__cli__cfg_8h_a4d4c3d1538332c05142115168f0995a2}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgClrRegCap@{Mtc\_CliCfgClrRegCap}}
+\index{Mtc\_CliCfgClrRegCap@{Mtc\_CliCfgClrRegCap}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgClrRegCap()}{Mtc\_CliCfgClrRegCap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Clr\+Reg\+Cap (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cap\+Opt }\end{DoxyParamCaption})}
+
+
+
+Clear R\+E\+G\+I\+S\+T\+ER capability flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cap\+Opt} & R\+E\+G\+I\+S\+T\+ER capability flag, see \mbox{\hyperlink{mtc__cli__cfg_8h_a13f5ecca46a02731baf7e5815b194397}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+IM}} etc.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Clear capability option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Clear capability option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a3edfddc5ad82d4ba86beafcd678bf15f}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Cap}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aaff3651c6b7b2e1c2e37d2286a75c920}\label{mtc__cli__cfg_8h_aaff3651c6b7b2e1c2e37d2286a75c920}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetBuriedDataPointEnable@{Mtc\_CliCfgGetBuriedDataPointEnable}}
+\index{Mtc\_CliCfgGetBuriedDataPointEnable@{Mtc\_CliCfgGetBuriedDataPointEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetBuriedDataPointEnable()}{Mtc\_CliCfgGetBuriedDataPointEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Buried\+Data\+Point\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client buried data point enable option(default Z\+F\+A\+L\+S\+E). 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Support buried data point enable option. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Do not Support buried data point enable option.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a98e242244d33a1491e555e31288c9529}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Buried\+Data\+Point\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac84dc3e84f8aaf997f02109e84fcd38c}\label{mtc__cli__cfg_8h_ac84dc3e84f8aaf997f02109e84fcd38c}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetBuriedDataPointServerAddr@{Mtc\_CliCfgGetBuriedDataPointServerAddr}}
+\index{Mtc\_CliCfgGetBuriedDataPointServerAddr@{Mtc\_CliCfgGetBuriedDataPointServerAddr}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetBuriedDataPointServerAddr()}{Mtc\_CliCfgGetBuriedDataPointServerAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Buried\+Data\+Point\+Server\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get buried data point server address with port(e.\+g. 192.\+168.\+1.\+4\+:9000). 
+
+\begin{DoxyReturn}{Returns}
+buried data point server address.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a6926a441ed120824375983216af5aa27}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Buried\+Data\+Point\+Server\+Addr}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a790ee04a3a2b986eea1d3c988cff8105}\label{mtc__cli__cfg_8h_a790ee04a3a2b986eea1d3c988cff8105}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetCmccExtRegCap@{Mtc\_CliCfgGetCmccExtRegCap}}
+\index{Mtc\_CliCfgGetCmccExtRegCap@{Mtc\_CliCfgGetCmccExtRegCap}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetCmccExtRegCap()}{Mtc\_CliCfgGetCmccExtRegCap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Cmcc\+Ext\+Reg\+Cap (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Cmcc\+Ext\+Register extern capability flag. 
+
+\begin{DoxyReturn}{Returns}
+Cmcc\+Ext\+Register extern capability, see M\+T\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG etc.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a6ac51a2ca27d47ccb34ab9b06d0fddd7}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Cmcc\+Ext\+Reg\+Cap}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a3dc8646fa27ad62d89d22acb8f68dd02}\label{mtc__cli__cfg_8h_a3dc8646fa27ad62d89d22acb8f68dd02}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetDmsSelfAlgorithm@{Mtc\_CliCfgGetDmsSelfAlgorithm}}
+\index{Mtc\_CliCfgGetDmsSelfAlgorithm@{Mtc\_CliCfgGetDmsSelfAlgorithm}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetDmsSelfAlgorithm()}{Mtc\_CliCfgGetDmsSelfAlgorithm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Dms\+Self\+Algorithm (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Sending encode get request to R\+CS configuration server. 
+
+\begin{DoxyReturn}{Returns}
+whether encode get request.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+@ref\+Mtc\+\_\+\+Cli\+Cfg\+Get\+Dms\+Self\+Algorithm. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a71bfea9d11cde9eba7531d940e527168}\label{mtc__cli__cfg_8h_a71bfea9d11cde9eba7531d940e527168}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetDmType@{Mtc\_CliCfgGetDmType}}
+\index{Mtc\_CliCfgGetDmType@{Mtc\_CliCfgGetDmType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetDmType()}{Mtc\_CliCfgGetDmType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Dm\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get domain type. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & domain type.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a71bfea9d11cde9eba7531d940e527168}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Dm\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a003a5a0183c5f3e34907e2bce0e1f9ed}\label{mtc__cli__cfg_8h_a003a5a0183c5f3e34907e2bce0e1f9ed}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetFileEncrypt@{Mtc\_CliCfgGetFileEncrypt}}
+\index{Mtc\_CliCfgGetFileEncrypt@{Mtc\_CliCfgGetFileEncrypt}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetFileEncrypt()}{Mtc\_CliCfgGetFileEncrypt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+File\+Encrypt (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get file encryption from database. 
+
+\begin{DoxyReturn}{Returns}
+The file encryption.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a163633e1dff20e48a927e042f06d06fc}{Mtc\+\_\+\+Cli\+Cfg\+Set\+File\+Encrypt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a89d59cc802132b33804293921898a803}\label{mtc__cli__cfg_8h_a89d59cc802132b33804293921898a803}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogcatPrint@{Mtc\_CliCfgGetLogcatPrint}}
+\index{Mtc\_CliCfgGetLogcatPrint@{Mtc\_CliCfgGetLogcatPrint}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogcatPrint()}{Mtc\_CliCfgGetLogcatPrint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Logcat\+Print (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get logcat print flag. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & logcat print. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & logcat not print.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_af9f9f6838a8655b27bab83d160e98304}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Logcat\+Print}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a4fbc003a8e3182e66035613991f20287}\label{mtc__cli__cfg_8h_a4fbc003a8e3182e66035613991f20287}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogCheckLTSVEnable@{Mtc\_CliCfgGetLogCheckLTSVEnable}}
+\index{Mtc\_CliCfgGetLogCheckLTSVEnable@{Mtc\_CliCfgGetLogCheckLTSVEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogCheckLTSVEnable()}{Mtc\_CliCfgGetLogCheckLTSVEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Check\+L\+T\+S\+V\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get log check L\+T\+SV format enable. 
+
+\begin{DoxyReturn}{Returns}
+the value of log check L\+T\+SV format enable.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Check\+L\+T\+S\+V\+Enable 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a27d4aa45913315d7b6cf5a2460fae490}\label{mtc__cli__cfg_8h_a27d4aa45913315d7b6cf5a2460fae490}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogDir@{Mtc\_CliCfgGetLogDir}}
+\index{Mtc\_CliCfgGetLogDir@{Mtc\_CliCfgGetLogDir}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogDir()}{Mtc\_CliCfgGetLogDir()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Dir (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Log file directory. 
+
+\begin{DoxyReturn}{Returns}
+The log file directory, default \char`\"{}\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a0809ff1e860b1778a0a56c7ebd21ab84}\label{mtc__cli__cfg_8h_a0809ff1e860b1778a0a56c7ebd21ab84}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogFileCount@{Mtc\_CliCfgGetLogFileCount}}
+\index{Mtc\_CliCfgGetLogFileCount@{Mtc\_CliCfgGetLogFileCount}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogFileCount()}{Mtc\_CliCfgGetLogFileCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+File\+Count (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get log file count from configuration. 
+
+\begin{DoxyReturn}{Returns}
+The log file count(default 10 log files).
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a79ea1443bf88d155bc028098c137eff6}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+File\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aee58b00bf644c7cda3c15651507a9961}\label{mtc__cli__cfg_8h_aee58b00bf644c7cda3c15651507a9961}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogFileSize@{Mtc\_CliCfgGetLogFileSize}}
+\index{Mtc\_CliCfgGetLogFileSize@{Mtc\_CliCfgGetLogFileSize}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogFileSize()}{Mtc\_CliCfgGetLogFileSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+File\+Size (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get log file size from configuration. 
+
+\begin{DoxyReturn}{Returns}
+The log file size in byte(default 5\+M\+B).
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a94c531457c85feed26c5298e622f1c75}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+File\+Size}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a83aaf35a7beb1ca9c991a334738d81b1}\label{mtc__cli__cfg_8h_a83aaf35a7beb1ca9c991a334738d81b1}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogLTSVMoreInfo@{Mtc\_CliCfgGetLogLTSVMoreInfo}}
+\index{Mtc\_CliCfgGetLogLTSVMoreInfo@{Mtc\_CliCfgGetLogLTSVMoreInfo}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogLTSVMoreInfo()}{Mtc\_CliCfgGetLogLTSVMoreInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+L\+T\+S\+V\+More\+Info (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the more info of Labeled Tab-\/separated Values (L\+T\+SV) format log. 
+
+\begin{DoxyReturn}{Returns}
+The L\+T\+SV more info of log.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+L\+T\+S\+V\+More\+Info 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a76780d8f4efb5a59389672dc89d6ee8c}\label{mtc__cli__cfg_8h_a76780d8f4efb5a59389672dc89d6ee8c}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetLogPhoneVage@{Mtc\_CliCfgGetLogPhoneVage}}
+\index{Mtc\_CliCfgGetLogPhoneVage@{Mtc\_CliCfgGetLogPhoneVage}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetLogPhoneVage()}{Mtc\_CliCfgGetLogPhoneVage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Phone\+Vage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get log file desensitization on-\/off. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get log file on-\/off flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get log file on-\/off flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a76780d8f4efb5a59389672dc89d6ee8c}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+Phone\+Vage}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a3c408be0b6855cd0802e68cba0b2f956}\label{mtc__cli__cfg_8h_a3c408be0b6855cd0802e68cba0b2f956}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetMixCheckLicenseFlag@{Mtc\_CliCfgGetMixCheckLicenseFlag}}
+\index{Mtc\_CliCfgGetMixCheckLicenseFlag@{Mtc\_CliCfgGetMixCheckLicenseFlag}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetMixCheckLicenseFlag()}{Mtc\_CliCfgGetMixCheckLicenseFlag()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Mix\+Check\+License\+Flag (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Unicom Voip License Check (App\+Id ,Time) Flags. 
+
+\begin{DoxyReturn}{Returns}
+License Check Flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cli\+Cfg\+Get\+Unicom\+License\+Flags 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ae5333f16fed834ed17115df26f15d526}\label{mtc__cli__cfg_8h_ae5333f16fed834ed17115df26f15d526}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetMsrpSuptTptlsServ@{Mtc\_CliCfgGetMsrpSuptTptlsServ}}
+\index{Mtc\_CliCfgGetMsrpSuptTptlsServ@{Mtc\_CliCfgGetMsrpSuptTptlsServ}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetMsrpSuptTptlsServ()}{Mtc\_CliCfgGetMsrpSuptTptlsServ()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Msrp\+Supt\+Tptls\+Serv (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client msrp tcp/tls server support flag(default Z\+F\+A\+L\+S\+E). 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Support msrp tcp/tls server. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Do not Support msrp tcp/tls server.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a2a80c3e1037de8bfc4910243dc553edb}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Msrp\+Supt\+Tptls\+Serv}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ade1e9659426aa04fb30e35913b451eb1}\label{mtc__cli__cfg_8h_ade1e9659426aa04fb30e35913b451eb1}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetMtcLogPrint@{Mtc\_CliCfgGetMtcLogPrint}}
+\index{Mtc\_CliCfgGetMtcLogPrint@{Mtc\_CliCfgGetMtcLogPrint}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetMtcLogPrint()}{Mtc\_CliCfgGetMtcLogPrint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Mtc\+Log\+Print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Mtc Log file Print Flags. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Supprot Mtc log file print info. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & not Supprot Mtc log file Print info . \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a36cd67229d49a6e592ce65934b60897b}\label{mtc__cli__cfg_8h_a36cd67229d49a6e592ce65934b60897b}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetNtpDmsSrvHst@{Mtc\_CliCfgGetNtpDmsSrvHst}}
+\index{Mtc\_CliCfgGetNtpDmsSrvHst@{Mtc\_CliCfgGetNtpDmsSrvHst}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetNtpDmsSrvHst()}{Mtc\_CliCfgGetNtpDmsSrvHst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Dms\+Srv\+Hst (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get ntp dms server host. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & dms server host value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a9708e4d2f8e64b6ea0193086eb8b2487}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Dms\+Srv\+Hst}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aba027eb236fb0accfa1874c539a82426}\label{mtc__cli__cfg_8h_aba027eb236fb0accfa1874c539a82426}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetNtpDmsSrvPort@{Mtc\_CliCfgGetNtpDmsSrvPort}}
+\index{Mtc\_CliCfgGetNtpDmsSrvPort@{Mtc\_CliCfgGetNtpDmsSrvPort}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetNtpDmsSrvPort()}{Mtc\_CliCfgGetNtpDmsSrvPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Dms\+Srv\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the dms server port. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & value of dms server port.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ac50520677fa481d3a54efa3b7b5ec4f1}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Dms\+Srv\+Port}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aae4c7a4de0235bab77b8e360936ad831}\label{mtc__cli__cfg_8h_aae4c7a4de0235bab77b8e360936ad831}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetNtpPblcSrvHst@{Mtc\_CliCfgGetNtpPblcSrvHst}}
+\index{Mtc\_CliCfgGetNtpPblcSrvHst@{Mtc\_CliCfgGetNtpPblcSrvHst}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetNtpPblcSrvHst()}{Mtc\_CliCfgGetNtpPblcSrvHst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Pblc\+Srv\+Hst (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get ntp public server host. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & ntp public server host. value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ac61316c34d84b12afff2df6b911fc99c}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Pblc\+Srv\+Hst}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af720b2e9721bb1fe0a8e67814cc8709a}\label{mtc__cli__cfg_8h_af720b2e9721bb1fe0a8e67814cc8709a}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetNtpPblcSrvPort@{Mtc\_CliCfgGetNtpPblcSrvPort}}
+\index{Mtc\_CliCfgGetNtpPblcSrvPort@{Mtc\_CliCfgGetNtpPblcSrvPort}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetNtpPblcSrvPort()}{Mtc\_CliCfgGetNtpPblcSrvPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Pblc\+Srv\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the public server port. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & value of public server port.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a96c7f49b8a0d740e64fbedc8aa75b5ec}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Pblc\+Srv\+Port}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aeb099d385a08206a325b3f50c24cb15d}\label{mtc__cli__cfg_8h_aeb099d385a08206a325b3f50c24cb15d}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetNtpSmpSrvHst@{Mtc\_CliCfgGetNtpSmpSrvHst}}
+\index{Mtc\_CliCfgGetNtpSmpSrvHst@{Mtc\_CliCfgGetNtpSmpSrvHst}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetNtpSmpSrvHst()}{Mtc\_CliCfgGetNtpSmpSrvHst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Smp\+Srv\+Hst (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get ntp sdk management platform server host. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & sdk management platform server host value\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a8883cef19ab80e1dfc064f0c0abae1b4}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Smp\+Srv\+Hst}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aeb8859703659d4d08c259d0dc24f44ea}\label{mtc__cli__cfg_8h_aeb8859703659d4d08c259d0dc24f44ea}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetNtpSmpSrvPort@{Mtc\_CliCfgGetNtpSmpSrvPort}}
+\index{Mtc\_CliCfgGetNtpSmpSrvPort@{Mtc\_CliCfgGetNtpSmpSrvPort}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetNtpSmpSrvPort()}{Mtc\_CliCfgGetNtpSmpSrvPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Smp\+Srv\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the S\+DK managment platform server port. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & value of S\+DK management platform.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_afa94bcf08780a33b242d1d8a88a02cff}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Smp\+Srv\+Port}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a3edfddc5ad82d4ba86beafcd678bf15f}\label{mtc__cli__cfg_8h_a3edfddc5ad82d4ba86beafcd678bf15f}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetRegCap@{Mtc\_CliCfgGetRegCap}}
+\index{Mtc\_CliCfgGetRegCap@{Mtc\_CliCfgGetRegCap}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetRegCap()}{Mtc\_CliCfgGetRegCap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Cap (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get R\+E\+G\+I\+S\+T\+ER capability flag. 
+
+\begin{DoxyReturn}{Returns}
+R\+E\+G\+I\+S\+T\+ER capability, see \mbox{\hyperlink{mtc__cli__cfg_8h_a13f5ecca46a02731baf7e5815b194397}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+IM}} etc.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a18933ddda1b90b232b550ea86cd5dcc7}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Reg\+Cap}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a0825b840d69305f1349db76cab305998}\label{mtc__cli__cfg_8h_a0825b840d69305f1349db76cab305998}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetRegSrvType@{Mtc\_CliCfgGetRegSrvType}}
+\index{Mtc\_CliCfgGetRegSrvType@{Mtc\_CliCfgGetRegSrvType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetRegSrvType()}{Mtc\_CliCfgGetRegSrvType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Srv\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get register service type. 
+
+\begin{DoxyReturn}{Returns}
+register service type, see \mbox{\hyperlink{mtc__cli__cfg_8h_a2f2017e5da97109f0a3728c4bbcdba44}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}} etc.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a9b1366121ab389792ebd31540b167036}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Reg\+Srv\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af0d555d930496368499933edac31b9c8}\label{mtc__cli__cfg_8h_af0d555d930496368499933edac31b9c8}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetSipExternAddrType@{Mtc\_CliCfgGetSipExternAddrType}}
+\index{Mtc\_CliCfgGetSipExternAddrType@{Mtc\_CliCfgGetSipExternAddrType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetSipExternAddrType()}{Mtc\_CliCfgGetSipExternAddrType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Cli\+Cfg\+Get\+Sip\+Extern\+Addr\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get sip external address type. 
+
+\begin{DoxyReturn}{Returns}
+Sip external address type, \mbox{\hyperlink{mtc__cli__db_8h_ae852581e939d9f492850f153ea18b5de}{E\+N\+\_\+\+M\+T\+C\+\_\+\+T\+P\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ad8548585c179b70cacf9c44f57373875}\label{mtc__cli__cfg_8h_ad8548585c179b70cacf9c44f57373875}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetSipExternTransport@{Mtc\_CliCfgGetSipExternTransport}}
+\index{Mtc\_CliCfgGetSipExternTransport@{Mtc\_CliCfgGetSipExternTransport}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetSipExternTransport()}{Mtc\_CliCfgGetSipExternTransport()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Sip\+Extern\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get sip support external transport flag. 
+
+\begin{DoxyReturn}{Returns}
+Sip support external transport flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cli\+Cfg\+Set\+Sip\+Extern\+Transport 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac23a6dc203c867e3067d12f9f1854d28}\label{mtc__cli__cfg_8h_ac23a6dc203c867e3067d12f9f1854d28}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetSocketReuseEnable@{Mtc\_CliCfgGetSocketReuseEnable}}
+\index{Mtc\_CliCfgGetSocketReuseEnable@{Mtc\_CliCfgGetSocketReuseEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetSocketReuseEnable()}{Mtc\_CliCfgGetSocketReuseEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Socket\+Reuse\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get socket reuse address enable. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & enable socket reuse address. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & disable socket reuse address.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a8cfe7fc38ce20f5ced89fdf6df318d66}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Socket\+Reuse\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac1d6d776a4588fee56d548075c671797}\label{mtc__cli__cfg_8h_ac1d6d776a4588fee56d548075c671797}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetStsHttpsEnable@{Mtc\_CliCfgGetStsHttpsEnable}}
+\index{Mtc\_CliCfgGetStsHttpsEnable@{Mtc\_CliCfgGetStsHttpsEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetStsHttpsEnable()}{Mtc\_CliCfgGetStsHttpsEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Sts\+Https\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client uploading buried data point by https option(default Z\+T\+R\+U\+E). 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Support uploading buried data point by https option. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Do not Support uploading buried data point by https option.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ae0fb68b929b238392adfd5c8cb71923d}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Sts\+Https\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac426773928e9978b244bac44e52d56d9}\label{mtc__cli__cfg_8h_ac426773928e9978b244bac44e52d56d9}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetSuptEncPwd@{Mtc\_CliCfgGetSuptEncPwd}}
+\index{Mtc\_CliCfgGetSuptEncPwd@{Mtc\_CliCfgGetSuptEncPwd}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetSuptEncPwd()}{Mtc\_CliCfgGetSuptEncPwd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Enc\+Pwd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get support ability of encrypt password. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Password saved in crypto. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Password save in plain text.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a10d5a3a70be735cafe3f8d2b87360bc2}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Enc\+Pwd}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a88d36f40af7d654b753a5843664f53e4}\label{mtc__cli__cfg_8h_a88d36f40af7d654b753a5843664f53e4}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetSuptNetDetect@{Mtc\_CliCfgGetSuptNetDetect}}
+\index{Mtc\_CliCfgGetSuptNetDetect@{Mtc\_CliCfgGetSuptNetDetect}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetSuptNetDetect()}{Mtc\_CliCfgGetSuptNetDetect()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Net\+Detect (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get support ability of network detection when client has logined. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Detect network available. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Not detect available.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ae2b8964ee37bc8e72f8160dead4c9cba}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Net\+Detect}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_afef3413abfca3e2f7905a67075b90875}\label{mtc__cli__cfg_8h_afef3413abfca3e2f7905a67075b90875}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetSuptRefreshBefExpr@{Mtc\_CliCfgGetSuptRefreshBefExpr}}
+\index{Mtc\_CliCfgGetSuptRefreshBefExpr@{Mtc\_CliCfgGetSuptRefreshBefExpr}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetSuptRefreshBefExpr()}{Mtc\_CliCfgGetSuptRefreshBefExpr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Refresh\+Bef\+Expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get support refresh before expire. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & refresh before expire. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & refresh when expire.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aadbef2995043223bc8c9e5bc87b6f32d}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Refresh\+Bef\+Expr}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a1994f9fb02bb9e7f766a32e28354585e}\label{mtc__cli__cfg_8h_a1994f9fb02bb9e7f766a32e28354585e}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetTcpLastKeepAliveTimestamp@{Mtc\_CliCfgGetTcpLastKeepAliveTimestamp}}
+\index{Mtc\_CliCfgGetTcpLastKeepAliveTimestamp@{Mtc\_CliCfgGetTcpLastKeepAliveTimestamp}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetTcpLastKeepAliveTimestamp()}{Mtc\_CliCfgGetTcpLastKeepAliveTimestamp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Cli\+Cfg\+Get\+Tcp\+Last\+Keep\+Alive\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get tcp last keep alive timestamp in seconds. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em tcp} & last keep alive timestamp in seconds, 0 means hava not started keep alive. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af252dc2ff14bd1fceb545ddfbe61b955}\label{mtc__cli__cfg_8h_af252dc2ff14bd1fceb545ddfbe61b955}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetTimerCount@{Mtc\_CliCfgGetTimerCount}}
+\index{Mtc\_CliCfgGetTimerCount@{Mtc\_CliCfgGetTimerCount}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetTimerCount()}{Mtc\_CliCfgGetTimerCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Timer\+Count (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get system timer number(default 2000). 
+
+\begin{DoxyReturn}{Returns}
+System timer number.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a3b4259e49ca8e79149d57580d7991aa9}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Timer\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aefd39dc284f9f16eaee98fc10bce3836}\label{mtc__cli__cfg_8h_aefd39dc284f9f16eaee98fc10bce3836}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetTimerSelfDrvEnable@{Mtc\_CliCfgGetTimerSelfDrvEnable}}
+\index{Mtc\_CliCfgGetTimerSelfDrvEnable@{Mtc\_CliCfgGetTimerSelfDrvEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetTimerSelfDrvEnable()}{Mtc\_CliCfgGetTimerSelfDrvEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Timer\+Self\+Drv\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get timer self drive enable. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & enable timer self drive. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & disable timer self drive.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a40af72af67116a017dfa6de12ccd8339}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Timer\+Self\+Drv\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a54dac1a11a35860f285c3bd1472e43cf}\label{mtc__cli__cfg_8h_a54dac1a11a35860f285c3bd1472e43cf}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetTmnlType@{Mtc\_CliCfgGetTmnlType}}
+\index{Mtc\_CliCfgGetTmnlType@{Mtc\_CliCfgGetTmnlType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetTmnlType()}{Mtc\_CliCfgGetTmnlType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cli\+Cfg\+Get\+Tmnl\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get terminal type. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & terminal type.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a54dac1a11a35860f285c3bd1472e43cf}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Tmnl\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_acfdbc0100ff5c2df9bd4e6f06d4ce815}\label{mtc__cli__cfg_8h_acfdbc0100ff5c2df9bd4e6f06d4ce815}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetTmrLenWaitReg@{Mtc\_CliCfgGetTmrLenWaitReg}}
+\index{Mtc\_CliCfgGetTmrLenWaitReg@{Mtc\_CliCfgGetTmrLenWaitReg}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetTmrLenWaitReg()}{Mtc\_CliCfgGetTmrLenWaitReg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Get\+Tmr\+Len\+Wait\+Reg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get wait register timer length. 
+
+\begin{DoxyReturn}{Returns}
+wait register timer length.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a2a07b6fa9b439eaa451286884adf1b2a}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Tmr\+Len\+Wait\+Reg}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a0df1d9d271f78c6820e7102a5da48ee1}\label{mtc__cli__cfg_8h_a0df1d9d271f78c6820e7102a5da48ee1}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetUdpConnectEnable@{Mtc\_CliCfgGetUdpConnectEnable}}
+\index{Mtc\_CliCfgGetUdpConnectEnable@{Mtc\_CliCfgGetUdpConnectEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetUdpConnectEnable()}{Mtc\_CliCfgGetUdpConnectEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Udp\+Connect\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get udp socket connect enable. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & enable udp socket connect. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & disable udp socket connect.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a8d7f7866a904d8a8e886a469883f0dab}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Udp\+Connect\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a5475cc917fa72550f9378dc4b64b6c6c}\label{mtc__cli__cfg_8h_a5475cc917fa72550f9378dc4b64b6c6c}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetUploadLogFileEnable@{Mtc\_CliCfgGetUploadLogFileEnable}}
+\index{Mtc\_CliCfgGetUploadLogFileEnable@{Mtc\_CliCfgGetUploadLogFileEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetUploadLogFileEnable()}{Mtc\_CliCfgGetUploadLogFileEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Upload\+Log\+File\+Enable (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client uploading buried data log file enable option(default Z\+F\+A\+L\+S\+E). 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Support uploading buried data log file enable option. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Do not Support uploading buried data log file enable option.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aa2e1b55c9d903dcb572e68e64259542b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Upload\+Log\+File\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a838ae177f7ec5ae8925528f296b08bda}\label{mtc__cli__cfg_8h_a838ae177f7ec5ae8925528f296b08bda}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetUseDetLclIp@{Mtc\_CliCfgGetUseDetLclIp}}
+\index{Mtc\_CliCfgGetUseDetLclIp@{Mtc\_CliCfgGetUseDetLclIp}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetUseDetLclIp()}{Mtc\_CliCfgGetUseDetLclIp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Use\+Det\+Lcl\+Ip (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get using detect local IP when client start and login. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Detect local IP. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Not detect local IP.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aef2b14319bc39e71cfe9387bac47b97b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Det\+Lcl\+Ip}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a86e7acf60a1f9166e4b7b687b89b2230}\label{mtc__cli__cfg_8h_a86e7acf60a1f9166e4b7b687b89b2230}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgGetUseMobile@{Mtc\_CliCfgGetUseMobile}}
+\index{Mtc\_CliCfgGetUseMobile@{Mtc\_CliCfgGetUseMobile}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgGetUseMobile()}{Mtc\_CliCfgGetUseMobile()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Get\+Use\+Mobile (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get use mobile. 
+
+\begin{DoxyReturn}{Returns}
+use mobile.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ad57103715dfc7adbc0cea3961a0433c5}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Mobile}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a98e242244d33a1491e555e31288c9529}\label{mtc__cli__cfg_8h_a98e242244d33a1491e555e31288c9529}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetBuriedDataPointEnable@{Mtc\_CliCfgSetBuriedDataPointEnable}}
+\index{Mtc\_CliCfgSetBuriedDataPointEnable@{Mtc\_CliCfgSetBuriedDataPointEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetBuriedDataPointEnable()}{Mtc\_CliCfgSetBuriedDataPointEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Buried\+Data\+Point\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set client buried data point enable option(default Z\+F\+A\+L\+S\+E). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & If Z\+T\+R\+UE, client support uploading buried data point to server. Otherwise it needn\textquotesingle{}t buried data point.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set client buried data point enable option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set client buried data point enable option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aaff3651c6b7b2e1c2e37d2286a75c920}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Buried\+Data\+Point\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a6926a441ed120824375983216af5aa27}\label{mtc__cli__cfg_8h_a6926a441ed120824375983216af5aa27}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetBuriedDataPointServerAddr@{Mtc\_CliCfgSetBuriedDataPointServerAddr}}
+\index{Mtc\_CliCfgSetBuriedDataPointServerAddr@{Mtc\_CliCfgSetBuriedDataPointServerAddr}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetBuriedDataPointServerAddr()}{Mtc\_CliCfgSetBuriedDataPointServerAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Buried\+Data\+Point\+Server\+Addr (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Serv\+Addr }\end{DoxyParamCaption})}
+
+
+
+Set buried data point server address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Serv\+Addr} & The server address with port(e.\+g. 192.\+168.\+1.\+4\+:9000).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set server address successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set server address failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ac84dc3e84f8aaf997f02109e84fcd38c}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Buried\+Data\+Point\+Server\+Addr}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a602e16a4121b679f50108391b5de2678}\label{mtc__cli__cfg_8h_a602e16a4121b679f50108391b5de2678}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetChkDevIdType@{Mtc\_CliCfgSetChkDevIdType}}
+\index{Mtc\_CliCfgSetChkDevIdType@{Mtc\_CliCfgSetChkDevIdType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetChkDevIdType()}{Mtc\_CliCfgSetChkDevIdType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Chk\+Dev\+Id\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set check device ID type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The device ID type \mbox{\hyperlink{mtc__cli_8h_a0b3f02e5af65418703316f4a81e53024}{E\+N\+\_\+\+M\+T\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+Y\+PE}}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set check device ID type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set check device ID type failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a6ac51a2ca27d47ccb34ab9b06d0fddd7}\label{mtc__cli__cfg_8h_a6ac51a2ca27d47ccb34ab9b06d0fddd7}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetCmccExtRegCap@{Mtc\_CliCfgSetCmccExtRegCap}}
+\index{Mtc\_CliCfgSetCmccExtRegCap@{Mtc\_CliCfgSetCmccExtRegCap}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetCmccExtRegCap()}{Mtc\_CliCfgSetCmccExtRegCap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Cmcc\+Ext\+Reg\+Cap (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cap\+Opt }\end{DoxyParamCaption})}
+
+
+
+Set Cmcc\+Ext\+Register extern capability flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cap\+Opt} & Cmcc\+Ext\+Register extern capability flag, see M\+T\+C\+\_\+\+E\+X\+T\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG etc.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set extern capability option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set extern capability option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a790ee04a3a2b986eea1d3c988cff8105}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Cmcc\+Ext\+Reg\+Cap}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aeeaa42bf3bece44e9148d3f37dc4bcf2}\label{mtc__cli__cfg_8h_aeeaa42bf3bece44e9148d3f37dc4bcf2}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetContext@{Mtc\_CliCfgSetContext}}
+\index{Mtc\_CliCfgSetContext@{Mtc\_CliCfgSetContext}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetContext()}{Mtc\_CliCfgSetContext()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cli__cfg_8h_aa971c22fafbb5b2182482eefa09a10a7}{Z\+A\+P\+P\+C\+O\+N\+T\+E\+XT}}}]{z\+Context }\end{DoxyParamCaption})}
+
+
+
+Set license context. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Context} & The application context, only avaliable on Android.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set file name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set file name failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a1395714d718750a08eb3a672a807f61d}\label{mtc__cli__cfg_8h_a1395714d718750a08eb3a672a807f61d}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetDmsSelfAlgorithm@{Mtc\_CliCfgSetDmsSelfAlgorithm}}
+\index{Mtc\_CliCfgSetDmsSelfAlgorithm@{Mtc\_CliCfgSetDmsSelfAlgorithm}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetDmsSelfAlgorithm()}{Mtc\_CliCfgSetDmsSelfAlgorithm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Set\+Dms\+Self\+Algorithm (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Encode }\end{DoxyParamCaption})}
+
+
+
+Sending encode get request to R\+CS configuration server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Algorithm} & is Z\+T\+R\+UE, encode get request.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Set encode get request successfully. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Set encode get request failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a1395714d718750a08eb3a672a807f61d}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Dms\+Self\+Algorithm}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a163633e1dff20e48a927e042f06d06fc}\label{mtc__cli__cfg_8h_a163633e1dff20e48a927e042f06d06fc}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetFileEncrypt@{Mtc\_CliCfgSetFileEncrypt}}
+\index{Mtc\_CliCfgSetFileEncrypt@{Mtc\_CliCfgSetFileEncrypt}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetFileEncrypt()}{Mtc\_CliCfgSetFileEncrypt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+File\+Encrypt (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+File\+Encrypt }\end{DoxyParamCaption})}
+
+
+
+Set file encryption. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+File\+Encrypt} & The file encryption.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set file encryption successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set file encryption failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a003a5a0183c5f3e34907e2bce0e1f9ed}{Mtc\+\_\+\+Cli\+Cfg\+Get\+File\+Encrypt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a246beddc1f49ce42ef5ec3b3392056ee}\label{mtc__cli__cfg_8h_a246beddc1f49ce42ef5ec3b3392056ee}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLcsAppName@{Mtc\_CliCfgSetLcsAppName}}
+\index{Mtc\_CliCfgSetLcsAppName@{Mtc\_CliCfgSetLcsAppName}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLcsAppName()}{Mtc\_CliCfgSetLcsAppName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Lcs\+App\+Name (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Name }\end{DoxyParamCaption})}
+
+
+
+set package name apply to linux system . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Name} & linux system Application Name. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aa0982f8bc3ca7d7d35b47a64c9a6aca9}\label{mtc__cli__cfg_8h_aa0982f8bc3ca7d7d35b47a64c9a6aca9}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLicenseFileName@{Mtc\_CliCfgSetLicenseFileName}}
+\index{Mtc\_CliCfgSetLicenseFileName@{Mtc\_CliCfgSetLicenseFileName}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLicenseFileName()}{Mtc\_CliCfgSetLicenseFileName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+License\+File\+Name (\begin{DoxyParamCaption}\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Set license file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The license file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set file name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set file name failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af9f9f6838a8655b27bab83d160e98304}\label{mtc__cli__cfg_8h_af9f9f6838a8655b27bab83d160e98304}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogcatPrint@{Mtc\_CliCfgSetLogcatPrint}}
+\index{Mtc\_CliCfgSetLogcatPrint@{Mtc\_CliCfgSetLogcatPrint}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogcatPrint()}{Mtc\_CliCfgSetLogcatPrint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Logcat\+Print (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Print }\end{DoxyParamCaption})}
+
+
+
+Set logcat print flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Print} & logcat print.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set logcat print flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set logcat print flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a89d59cc802132b33804293921898a803}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Logcat\+Print}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a73ba207f77d05f292bfe4f9c8a1b1fe3}\label{mtc__cli__cfg_8h_a73ba207f77d05f292bfe4f9c8a1b1fe3}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogDir@{Mtc\_CliCfgSetLogDir}}
+\index{Mtc\_CliCfgSetLogDir@{Mtc\_CliCfgSetLogDir}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogDir()}{Mtc\_CliCfgSetLogDir()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Dir (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Dir }\end{DoxyParamCaption})}
+
+
+
+Set Log file directory. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Dir} & The log file directory.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set directory successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set directory failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a79ea1443bf88d155bc028098c137eff6}\label{mtc__cli__cfg_8h_a79ea1443bf88d155bc028098c137eff6}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogFileCount@{Mtc\_CliCfgSetLogFileCount}}
+\index{Mtc\_CliCfgSetLogFileCount@{Mtc\_CliCfgSetLogFileCount}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogFileCount()}{Mtc\_CliCfgSetLogFileCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+File\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Log\+File\+Count }\end{DoxyParamCaption})}
+
+
+
+Set log file count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Log\+File\+Count} & The log file count(default 10 log files).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set log file size successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set log file size failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a0809ff1e860b1778a0a56c7ebd21ab84}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+File\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a94c531457c85feed26c5298e622f1c75}\label{mtc__cli__cfg_8h_a94c531457c85feed26c5298e622f1c75}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogFileSize@{Mtc\_CliCfgSetLogFileSize}}
+\index{Mtc\_CliCfgSetLogFileSize@{Mtc\_CliCfgSetLogFileSize}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogFileSize()}{Mtc\_CliCfgSetLogFileSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+File\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Log\+File\+Size }\end{DoxyParamCaption})}
+
+
+
+Set log file size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Log\+File\+Size} & The log file size in byte(default 5\+M\+B)..\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set log file size successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set log file size failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aee58b00bf644c7cda3c15651507a9961}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Log\+File\+Size}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a77640398475a4239a6b8ff8a392f4937}\label{mtc__cli__cfg_8h_a77640398475a4239a6b8ff8a392f4937}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogLevel@{Mtc\_CliCfgSetLogLevel}}
+\index{Mtc\_CliCfgSetLogLevel@{Mtc\_CliCfgSetLogLevel}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogLevel()}{Mtc\_CliCfgSetLogLevel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Level (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Level }\end{DoxyParamCaption})}
+
+
+
+Set log level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Level} & Log level, 0 for no log, larger value for more log, type see \mbox{\hyperlink{mtc__cli__cfg_8h_af54b42bf18992fe2c655f7df2322d25b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+Y\+PE}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a10129f50a5b028251fbf22ffffbde1a3}\label{mtc__cli__cfg_8h_a10129f50a5b028251fbf22ffffbde1a3}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogLevelX@{Mtc\_CliCfgSetLogLevelX}}
+\index{Mtc\_CliCfgSetLogLevelX@{Mtc\_CliCfgSetLogLevelX}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogLevelX()}{Mtc\_CliCfgSetLogLevelX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+LevelX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Level }\end{DoxyParamCaption})}
+
+
+
+Set log level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Level} & Log level, M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+U\+LL for no log, larger value (e.\+g. M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR \& M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO) for more log, type see \mbox{\hyperlink{mtc__cli__cfg_8h_af0e6ffefb3fd59492f7f185c3ea62c95}{M\+T\+C\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+U\+LL}}... \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_acc8e2244e8a73edb8d756f656a5c2a26}\label{mtc__cli__cfg_8h_acc8e2244e8a73edb8d756f656a5c2a26}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetLogPrint@{Mtc\_CliCfgSetLogPrint}}
+\index{Mtc\_CliCfgSetLogPrint@{Mtc\_CliCfgSetLogPrint}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetLogPrint()}{Mtc\_CliCfgSetLogPrint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Log\+Print (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Print }\end{DoxyParamCaption})}
+
+
+
+Set log print. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Print} & log print.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ae4bf40127a0f224d9f001ebb6c828289}\label{mtc__cli__cfg_8h_ae4bf40127a0f224d9f001ebb6c828289}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetMixCheckLicenseFlag@{Mtc\_CliCfgSetMixCheckLicenseFlag}}
+\index{Mtc\_CliCfgSetMixCheckLicenseFlag@{Mtc\_CliCfgSetMixCheckLicenseFlag}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetMixCheckLicenseFlag()}{Mtc\_CliCfgSetMixCheckLicenseFlag()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cli\+Cfg\+Set\+Mix\+Check\+License\+Flag (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Check }\end{DoxyParamCaption})}
+
+
+
+Unicom Voip Set License(\+App\+Id, Time) Check Flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Check} & .\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Set License Double Check successfully. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Set Double Check failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cli\+Cfg\+Set\+Unicom\+License\+Flags 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af0f75c28b9fc78bb2413175c1af99724}\label{mtc__cli__cfg_8h_af0f75c28b9fc78bb2413175c1af99724}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetMmeLogFile@{Mtc\_CliCfgSetMmeLogFile}}
+\index{Mtc\_CliCfgSetMmeLogFile@{Mtc\_CliCfgSetMmeLogFile}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetMmeLogFile()}{Mtc\_CliCfgSetMmeLogFile()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Mme\+Log\+File (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Log\+File\+Size,  }\item[{Z\+U\+I\+NT}]{i\+File\+Count }\end{DoxyParamCaption})}
+
+
+
+Set mme log file size and count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+File\+Count} & M\+ME log file max split number. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Log\+File\+Size} & M\+ME log file max size in KB, default 4000KB, max 5MB. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Count} & File count. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set mme log successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set mme log failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a2a80c3e1037de8bfc4910243dc553edb}\label{mtc__cli__cfg_8h_a2a80c3e1037de8bfc4910243dc553edb}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetMsrpSuptTptlsServ@{Mtc\_CliCfgSetMsrpSuptTptlsServ}}
+\index{Mtc\_CliCfgSetMsrpSuptTptlsServ@{Mtc\_CliCfgSetMsrpSuptTptlsServ}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetMsrpSuptTptlsServ()}{Mtc\_CliCfgSetMsrpSuptTptlsServ()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Msrp\+Supt\+Tptls\+Serv (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Supt }\end{DoxyParamCaption})}
+
+
+
+Set msrp tcp/tls server support flag(default Z\+F\+A\+L\+S\+E). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Supt} & If Z\+T\+R\+UE, client support msrp tcp/tls server. Otherwise it do not support msrp tcp/tls server.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set msrp tcp/tls server flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set msrp tcp/tls server flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ae5333f16fed834ed17115df26f15d526}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Msrp\+Supt\+Tptls\+Serv}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac3fa5a1d28b67ed0558e8399103832bd}\label{mtc__cli__cfg_8h_ac3fa5a1d28b67ed0558e8399103832bd}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetMtcLogPrint@{Mtc\_CliCfgSetMtcLogPrint}}
+\index{Mtc\_CliCfgSetMtcLogPrint@{Mtc\_CliCfgSetMtcLogPrint}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetMtcLogPrint()}{Mtc\_CliCfgSetMtcLogPrint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Mtc\+Log\+Print (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Print }\end{DoxyParamCaption})}
+
+
+
+Set Mtc Log file Print Flags. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Print} & Support mtc log print info.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set operation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set operation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a9708e4d2f8e64b6ea0193086eb8b2487}\label{mtc__cli__cfg_8h_a9708e4d2f8e64b6ea0193086eb8b2487}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpDmsSrvHst@{Mtc\_CliCfgSetNtpDmsSrvHst}}
+\index{Mtc\_CliCfgSetNtpDmsSrvHst@{Mtc\_CliCfgSetNtpDmsSrvHst}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpDmsSrvHst()}{Mtc\_CliCfgSetNtpDmsSrvHst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Dms\+Srv\+Hst (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Host }\end{DoxyParamCaption})}
+
+
+
+Set ntp dms server host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Host} & The dms server host value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a36cd67229d49a6e592ce65934b60897b}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Dms\+Srv\+Hst}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac50520677fa481d3a54efa3b7b5ec4f1}\label{mtc__cli__cfg_8h_ac50520677fa481d3a54efa3b7b5ec4f1}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpDmsSrvPort@{Mtc\_CliCfgSetNtpDmsSrvPort}}
+\index{Mtc\_CliCfgSetNtpDmsSrvPort@{Mtc\_CliCfgSetNtpDmsSrvPort}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpDmsSrvPort()}{Mtc\_CliCfgSetNtpDmsSrvPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Dms\+Srv\+Port (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Port }\end{DoxyParamCaption})}
+
+
+
+Set the dms server port. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aba027eb236fb0accfa1874c539a82426}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Dms\+Srv\+Port}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ac61316c34d84b12afff2df6b911fc99c}\label{mtc__cli__cfg_8h_ac61316c34d84b12afff2df6b911fc99c}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpPblcSrvHst@{Mtc\_CliCfgSetNtpPblcSrvHst}}
+\index{Mtc\_CliCfgSetNtpPblcSrvHst@{Mtc\_CliCfgSetNtpPblcSrvHst}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpPblcSrvHst()}{Mtc\_CliCfgSetNtpPblcSrvHst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Pblc\+Srv\+Hst (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Host }\end{DoxyParamCaption})}
+
+
+
+Set ntp public server host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Host} & The public server host value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aae4c7a4de0235bab77b8e360936ad831}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Pblc\+Srv\+Hst}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a96c7f49b8a0d740e64fbedc8aa75b5ec}\label{mtc__cli__cfg_8h_a96c7f49b8a0d740e64fbedc8aa75b5ec}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpPblcSrvPort@{Mtc\_CliCfgSetNtpPblcSrvPort}}
+\index{Mtc\_CliCfgSetNtpPblcSrvPort@{Mtc\_CliCfgSetNtpPblcSrvPort}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpPblcSrvPort()}{Mtc\_CliCfgSetNtpPblcSrvPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Pblc\+Srv\+Port (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Port }\end{DoxyParamCaption})}
+
+
+
+Set the public server port. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_af720b2e9721bb1fe0a8e67814cc8709a}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Pblc\+Srv\+Port}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a8883cef19ab80e1dfc064f0c0abae1b4}\label{mtc__cli__cfg_8h_a8883cef19ab80e1dfc064f0c0abae1b4}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpSmpSrvHst@{Mtc\_CliCfgSetNtpSmpSrvHst}}
+\index{Mtc\_CliCfgSetNtpSmpSrvHst@{Mtc\_CliCfgSetNtpSmpSrvHst}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpSmpSrvHst()}{Mtc\_CliCfgSetNtpSmpSrvHst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Smp\+Srv\+Hst (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Host }\end{DoxyParamCaption})}
+
+
+
+Set ntp sdk management platform server host. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Host} & The sdk management platform server host value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aeb099d385a08206a325b3f50c24cb15d}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Smp\+Srv\+Hst}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_afa94bcf08780a33b242d1d8a88a02cff}\label{mtc__cli__cfg_8h_afa94bcf08780a33b242d1d8a88a02cff}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpSmpSrvPort@{Mtc\_CliCfgSetNtpSmpSrvPort}}
+\index{Mtc\_CliCfgSetNtpSmpSrvPort@{Mtc\_CliCfgSetNtpSmpSrvPort}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpSmpSrvPort()}{Mtc\_CliCfgSetNtpSmpSrvPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Smp\+Srv\+Port (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Port }\end{DoxyParamCaption})}
+
+
+
+Set the S\+DK managment platform server port. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aeb8859703659d4d08c259d0dc24f44ea}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Ntp\+Smp\+Srv\+Port}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_af2982ea7e7f01093e827435fc89865c5}\label{mtc__cli__cfg_8h_af2982ea7e7f01093e827435fc89865c5}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetNtpTimeOut@{Mtc\_CliCfgSetNtpTimeOut}}
+\index{Mtc\_CliCfgSetNtpTimeOut@{Mtc\_CliCfgSetNtpTimeOut}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetNtpTimeOut()}{Mtc\_CliCfgSetNtpTimeOut()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Ntp\+Time\+Out (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Timeout }\end{DoxyParamCaption})}
+
+
+
+Set the value of Ntp Request timeout. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set value failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a1f8701bc123ce7eb28bc93e0a65dacc8}\label{mtc__cli__cfg_8h_a1f8701bc123ce7eb28bc93e0a65dacc8}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetPhoneVague@{Mtc\_CliCfgSetPhoneVague}}
+\index{Mtc\_CliCfgSetPhoneVague@{Mtc\_CliCfgSetPhoneVague}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetPhoneVague()}{Mtc\_CliCfgSetPhoneVague()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Phone\+Vague (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Open }\end{DoxyParamCaption})}
+
+
+
+Set log file desensitization on-\/off. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em set} & open log densensitization flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set log file on-\/off flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & log file on-\/off flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a1f8701bc123ce7eb28bc93e0a65dacc8}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Phone\+Vague}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a18933ddda1b90b232b550ea86cd5dcc7}\label{mtc__cli__cfg_8h_a18933ddda1b90b232b550ea86cd5dcc7}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetRegCap@{Mtc\_CliCfgSetRegCap}}
+\index{Mtc\_CliCfgSetRegCap@{Mtc\_CliCfgSetRegCap}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetRegCap()}{Mtc\_CliCfgSetRegCap()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Reg\+Cap (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Cap\+Opt }\end{DoxyParamCaption})}
+
+
+
+Set R\+E\+G\+I\+S\+T\+ER capability flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cap\+Opt} & R\+E\+G\+I\+S\+T\+ER capability flag, see \mbox{\hyperlink{mtc__cli__cfg_8h_a13f5ecca46a02731baf7e5815b194397}{M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+A\+P\+\_\+\+O\+P\+T\+\_\+\+IM}} etc.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set capability option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set capability option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a3edfddc5ad82d4ba86beafcd678bf15f}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Cap}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a9b1366121ab389792ebd31540b167036}\label{mtc__cli__cfg_8h_a9b1366121ab389792ebd31540b167036}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetRegSrvType@{Mtc\_CliCfgSetRegSrvType}}
+\index{Mtc\_CliCfgSetRegSrvType@{Mtc\_CliCfgSetRegSrvType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetRegSrvType()}{Mtc\_CliCfgSetRegSrvType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Reg\+Srv\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Srv\+Type }\end{DoxyParamCaption})}
+
+
+
+Set register service type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Type} & register service type, see \mbox{\hyperlink{mtc__cli__cfg_8h_a2f2017e5da97109f0a3728c4bbcdba44}{E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}} etc.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set register service type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set register service type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a0825b840d69305f1349db76cab305998}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Reg\+Srv\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a8cfe7fc38ce20f5ced89fdf6df318d66}\label{mtc__cli__cfg_8h_a8cfe7fc38ce20f5ced89fdf6df318d66}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetSocketReuseEnable@{Mtc\_CliCfgSetSocketReuseEnable}}
+\index{Mtc\_CliCfgSetSocketReuseEnable@{Mtc\_CliCfgSetSocketReuseEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetSocketReuseEnable()}{Mtc\_CliCfgSetSocketReuseEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Socket\+Reuse\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set socket reuse address enable. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & Enable socket reuse address.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set socket reuse address enable successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set socket reuse address enable failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ac23a6dc203c867e3067d12f9f1854d28}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Socket\+Reuse\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ae0fb68b929b238392adfd5c8cb71923d}\label{mtc__cli__cfg_8h_ae0fb68b929b238392adfd5c8cb71923d}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetStsHttpsEnable@{Mtc\_CliCfgSetStsHttpsEnable}}
+\index{Mtc\_CliCfgSetStsHttpsEnable@{Mtc\_CliCfgSetStsHttpsEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetStsHttpsEnable()}{Mtc\_CliCfgSetStsHttpsEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Sts\+Https\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set client uploading buried data point by https enable option(default Z\+T\+R\+U\+E). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & If Z\+T\+R\+UE, client support uploading buried data point by https. Otherwise it needn\textquotesingle{}t upload buried data point by http.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set client uploading buried data point by https option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set client uploading buried data point by https option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ac1d6d776a4588fee56d548075c671797}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Sts\+Https\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a10d5a3a70be735cafe3f8d2b87360bc2}\label{mtc__cli__cfg_8h_a10d5a3a70be735cafe3f8d2b87360bc2}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetSuptEncPwd@{Mtc\_CliCfgSetSuptEncPwd}}
+\index{Mtc\_CliCfgSetSuptEncPwd@{Mtc\_CliCfgSetSuptEncPwd}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetSuptEncPwd()}{Mtc\_CliCfgSetSuptEncPwd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Enc\+Pwd (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Supt }\end{DoxyParamCaption})}
+
+
+
+Set support ability of encrypt password. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Supt} & Support encrypt password.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set encrypt password successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set encrypt password failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ac426773928e9978b244bac44e52d56d9}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Enc\+Pwd}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ae2b8964ee37bc8e72f8160dead4c9cba}\label{mtc__cli__cfg_8h_ae2b8964ee37bc8e72f8160dead4c9cba}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetSuptNetDetect@{Mtc\_CliCfgSetSuptNetDetect}}
+\index{Mtc\_CliCfgSetSuptNetDetect@{Mtc\_CliCfgSetSuptNetDetect}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetSuptNetDetect()}{Mtc\_CliCfgSetSuptNetDetect()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Net\+Detect (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Supt }\end{DoxyParamCaption})}
+
+
+
+Set support ability of network detection when client has logined. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Supt} & Support network detection.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set network detection successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set network detection failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a88d36f40af7d654b753a5843664f53e4}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Net\+Detect}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aecb293d6fe0120330e14b2cfbb225274}\label{mtc__cli__cfg_8h_aecb293d6fe0120330e14b2cfbb225274}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetSuptOsGetHost@{Mtc\_CliCfgSetSuptOsGetHost}}
+\index{Mtc\_CliCfgSetSuptOsGetHost@{Mtc\_CliCfgSetSuptOsGetHost}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetSuptOsGetHost()}{Mtc\_CliCfgSetSuptOsGetHost()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Os\+Get\+Host (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Supt }\end{DoxyParamCaption})}
+
+
+
+mtc config set using OS gethostbyname option. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Supt} & The using OS gethostbyname option.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set the option successful, otherwise Z\+F\+A\+I\+L\+ED. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aadbef2995043223bc8c9e5bc87b6f32d}\label{mtc__cli__cfg_8h_aadbef2995043223bc8c9e5bc87b6f32d}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetSuptRefreshBefExpr@{Mtc\_CliCfgSetSuptRefreshBefExpr}}
+\index{Mtc\_CliCfgSetSuptRefreshBefExpr@{Mtc\_CliCfgSetSuptRefreshBefExpr}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetSuptRefreshBefExpr()}{Mtc\_CliCfgSetSuptRefreshBefExpr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Supt\+Refresh\+Bef\+Expr (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Supt }\end{DoxyParamCaption})}
+
+
+
+Set support refresh before expire. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Supt} & Support refresh before expire.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set refresh before expire successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set refresh before expire failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_afef3413abfca3e2f7905a67075b90875}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Supt\+Refresh\+Bef\+Expr}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a3b4259e49ca8e79149d57580d7991aa9}\label{mtc__cli__cfg_8h_a3b4259e49ca8e79149d57580d7991aa9}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetTimerCount@{Mtc\_CliCfgSetTimerCount}}
+\index{Mtc\_CliCfgSetTimerCount@{Mtc\_CliCfgSetTimerCount}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetTimerCount()}{Mtc\_CliCfgSetTimerCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Timer\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Timer\+Count }\end{DoxyParamCaption})}
+
+
+
+Set system timer number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Timer\+Count} & System timer number.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set system timer number successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set system timer number failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_af252dc2ff14bd1fceb545ddfbe61b955}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Timer\+Count}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a40af72af67116a017dfa6de12ccd8339}\label{mtc__cli__cfg_8h_a40af72af67116a017dfa6de12ccd8339}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetTimerSelfDrvEnable@{Mtc\_CliCfgSetTimerSelfDrvEnable}}
+\index{Mtc\_CliCfgSetTimerSelfDrvEnable@{Mtc\_CliCfgSetTimerSelfDrvEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetTimerSelfDrvEnable()}{Mtc\_CliCfgSetTimerSelfDrvEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Timer\+Self\+Drv\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set timer self drive enable. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & Enable timer self drive.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set timer self drive enable successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set timer self drive enable failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_aefd39dc284f9f16eaee98fc10bce3836}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Timer\+Self\+Drv\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ab97d8a243d50a3e89b74497c75c0e79b}\label{mtc__cli__cfg_8h_ab97d8a243d50a3e89b74497c75c0e79b}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetTmnlType@{Mtc\_CliCfgSetTmnlType}}
+\index{Mtc\_CliCfgSetTmnlType@{Mtc\_CliCfgSetTmnlType}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetTmnlType()}{Mtc\_CliCfgSetTmnlType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Tmnl\+Type (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Tmnl\+Type }\end{DoxyParamCaption})}
+
+
+
+Set teminal type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Tmnl\+Type,see} & @\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+T\+M\+N\+L\+\_\+\+A\+PP, or other terminal type string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set teminal successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set teminal failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ab97d8a243d50a3e89b74497c75c0e79b}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Tmnl\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a2a07b6fa9b439eaa451286884adf1b2a}\label{mtc__cli__cfg_8h_a2a07b6fa9b439eaa451286884adf1b2a}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetTmrLenWaitReg@{Mtc\_CliCfgSetTmrLenWaitReg}}
+\index{Mtc\_CliCfgSetTmrLenWaitReg@{Mtc\_CliCfgSetTmrLenWaitReg}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetTmrLenWaitReg()}{Mtc\_CliCfgSetTmrLenWaitReg()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Tmr\+Len\+Wait\+Reg (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Tmr\+Len }\end{DoxyParamCaption})}
+
+
+
+Set wait register timer length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Tmr\+Len} & wait register timer length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set wait register timer length successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & wait register timer length failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_acfdbc0100ff5c2df9bd4e6f06d4ce815}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Tmr\+Len\+Wait\+Reg}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_a8d7f7866a904d8a8e886a469883f0dab}\label{mtc__cli__cfg_8h_a8d7f7866a904d8a8e886a469883f0dab}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetUdpConnectEnable@{Mtc\_CliCfgSetUdpConnectEnable}}
+\index{Mtc\_CliCfgSetUdpConnectEnable@{Mtc\_CliCfgSetUdpConnectEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetUdpConnectEnable()}{Mtc\_CliCfgSetUdpConnectEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Udp\+Connect\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set udp socket connect enable. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & Enable udp socket connect.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set udp socket connect enable successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set udp socket connect enable failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a0df1d9d271f78c6820e7102a5da48ee1}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Udp\+Connect\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aa2e1b55c9d903dcb572e68e64259542b}\label{mtc__cli__cfg_8h_aa2e1b55c9d903dcb572e68e64259542b}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetUploadLogFileEnable@{Mtc\_CliCfgSetUploadLogFileEnable}}
+\index{Mtc\_CliCfgSetUploadLogFileEnable@{Mtc\_CliCfgSetUploadLogFileEnable}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetUploadLogFileEnable()}{Mtc\_CliCfgSetUploadLogFileEnable()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Upload\+Log\+File\+Enable (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Enable }\end{DoxyParamCaption})}
+
+
+
+Set client uploading buried data log file enable option(default Z\+F\+A\+L\+S\+E). 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Enable} & If Z\+T\+R\+UE, client support uploading buried data point log file to server. Otherwise it needn\textquotesingle{}t upload buried data point log file.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set client uploading buried data point log file enable option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set client uploading buried data point log file enable option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a5475cc917fa72550f9378dc4b64b6c6c}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Upload\+Log\+File\+Enable}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_aef2b14319bc39e71cfe9387bac47b97b}\label{mtc__cli__cfg_8h_aef2b14319bc39e71cfe9387bac47b97b}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetUseDetLclIp@{Mtc\_CliCfgSetUseDetLclIp}}
+\index{Mtc\_CliCfgSetUseDetLclIp@{Mtc\_CliCfgSetUseDetLclIp}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetUseDetLclIp()}{Mtc\_CliCfgSetUseDetLclIp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Det\+Lcl\+Ip (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Detect }\end{DoxyParamCaption})}
+
+
+
+Set using detect local IP when client start and login. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Detect} & Use default profile management.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set detect option successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set detect option failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_a838ae177f7ec5ae8925528f296b08bda}{Mtc\+\_\+\+Cli\+Cfg\+Get\+Use\+Det\+Lcl\+Ip}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cli__cfg_8h_ad57103715dfc7adbc0cea3961a0433c5}\label{mtc__cli__cfg_8h_ad57103715dfc7adbc0cea3961a0433c5}} 
+\index{mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}!Mtc\_CliCfgSetUseMobile@{Mtc\_CliCfgSetUseMobile}}
+\index{Mtc\_CliCfgSetUseMobile@{Mtc\_CliCfgSetUseMobile}!mtc\_cli\_cfg.h@{mtc\_cli\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliCfgSetUseMobile()}{Mtc\_CliCfgSetUseMobile()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Mobile (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Set\+Use\+Mobile }\end{DoxyParamCaption})}
+
+
+
+Set use mobile. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Set\+Use\+Mobile} & use mobile.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set use mobile successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set use monile failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cli__cfg_8h_ad57103715dfc7adbc0cea3961a0433c5}{Mtc\+\_\+\+Cli\+Cfg\+Set\+Use\+Mobile}} 
+\end{DoxySeeAlso}

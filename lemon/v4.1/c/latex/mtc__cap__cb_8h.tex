@@ -1,0 +1,137 @@
+\hypertarget{mtc__cap__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cap\+\_\+cb.h File Reference}
+\label{mtc__cap__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cap\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cap\_cb.h}}
+
+
+M\+TC Capability Qurey Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cap__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cap__cb_8h_a8337b58ae16b3ba7cb03dbf34b6a6ea3}\label{mtc__cap__cb_8h_a8337b58ae16b3ba7cb03dbf34b6a6ea3}} 
+typedef Z\+I\+NT($\ast$ \mbox{\hyperlink{mtc__cap__cb_8h_a8337b58ae16b3ba7cb03dbf34b6a6ea3}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+O\+K\+CB}}) (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Cap\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC capability ok callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap__cb_8h_aeaf3870c91df22250356e233245bd970}\label{mtc__cap__cb_8h_aeaf3870c91df22250356e233245bd970}} 
+typedef Z\+I\+NT($\ast$ \mbox{\hyperlink{mtc__cap__cb_8h_aeaf3870c91df22250356e233245bd970}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+F\+A\+I\+L\+E\+D\+CB}}) (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC capability failed callback, status code see \mbox{\hyperlink{mtc__cap_8h_a019713c615b2ac6c21a8040ebd8cb71b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+A\+P\+\_\+\+N\+O\+\_\+\+E\+RR}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap__cb_8h_ab87a506b19527ae84898bc7de9b68193}\label{mtc__cap__cb_8h_ab87a506b19527ae84898bc7de9b68193}} 
+typedef Z\+I\+NT($\ast$ \mbox{\hyperlink{mtc__cap__cb_8h_ab87a506b19527ae84898bc7de9b68193}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+U\+P\+D\+A\+T\+E\+CB}}) (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT i\+Cap\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC capability update callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__cap__cb_8h_a5c7b08f82d6375e58a57605189e0ad20}\label{mtc__cap__cb_8h_a5c7b08f82d6375e58a57605189e0ad20}} 
+typedef Z\+I\+NT($\ast$ \mbox{\hyperlink{mtc__cap__cb_8h_a5c7b08f82d6375e58a57605189e0ad20}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+O\+P\+T\+CB}}) (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Cap\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC capability option callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cap__cb_8h_ab40c61161dd08b4e2bd76653a1e03d15}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok}} (\mbox{\hyperlink{mtc__cap__cb_8h_a8337b58ae16b3ba7cb03dbf34b6a6ea3}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+O\+K\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC capability query ok callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed}} (\mbox{\hyperlink{mtc__cap__cb_8h_aeaf3870c91df22250356e233245bd970}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+F\+A\+I\+L\+E\+D\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC capability query failed callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cap__cb_8h_a4afe5d5b25fc0f0ff2e9cdf87c636f92}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Update}} (\mbox{\hyperlink{mtc__cap__cb_8h_ab87a506b19527ae84898bc7de9b68193}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+U\+P\+D\+A\+T\+E\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC capability query update callback. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__cap__cb_8h_aa73c0dd9679205b851e23272556c9f11}{Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Opt\+Ok}} (\mbox{\hyperlink{mtc__cap__cb_8h_a5c7b08f82d6375e58a57605189e0ad20}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+O\+P\+T\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em M\+TC capability option query callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Capability Qurey Callback Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cap__cb_8h_aa73c0dd9679205b851e23272556c9f11}\label{mtc__cap__cb_8h_aa73c0dd9679205b851e23272556c9f11}} 
+\index{mtc\_cap\_cb.h@{mtc\_cap\_cb.h}!Mtc\_CapCbSetCapOptOk@{Mtc\_CapCbSetCapOptOk}}
+\index{Mtc\_CapCbSetCapOptOk@{Mtc\_CapCbSetCapOptOk}!mtc\_cap\_cb.h@{mtc\_cap\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapCbSetCapOptOk()}{Mtc\_CapCbSetCapOptOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Opt\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cap__cb_8h_a5c7b08f82d6375e58a57605189e0ad20}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+O\+P\+T\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability option query callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify capability opton query ok.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}\label{mtc__cap__cb_8h_ab872ba730c7e2aca5a86cbc1c5fd2f33}} 
+\index{mtc\_cap\_cb.h@{mtc\_cap\_cb.h}!Mtc\_CapCbSetCapQFailed@{Mtc\_CapCbSetCapQFailed}}
+\index{Mtc\_CapCbSetCapQFailed@{Mtc\_CapCbSetCapQFailed}!mtc\_cap\_cb.h@{mtc\_cap\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapCbSetCapQFailed()}{Mtc\_CapCbSetCapQFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cap__cb_8h_aeaf3870c91df22250356e233245bd970}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+F\+A\+I\+L\+E\+D\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability query failed callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify capability query failed.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap__cb_8h_ab40c61161dd08b4e2bd76653a1e03d15}\label{mtc__cap__cb_8h_ab40c61161dd08b4e2bd76653a1e03d15}} 
+\index{mtc\_cap\_cb.h@{mtc\_cap\_cb.h}!Mtc\_CapCbSetCapQOk@{Mtc\_CapCbSetCapQOk}}
+\index{Mtc\_CapCbSetCapQOk@{Mtc\_CapCbSetCapQOk}!mtc\_cap\_cb.h@{mtc\_cap\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapCbSetCapQOk()}{Mtc\_CapCbSetCapQOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Q\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cap__cb_8h_a8337b58ae16b3ba7cb03dbf34b6a6ea3}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+O\+K\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability query ok callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify capability query ok.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cap__cb_8h_a4afe5d5b25fc0f0ff2e9cdf87c636f92}\label{mtc__cap__cb_8h_a4afe5d5b25fc0f0ff2e9cdf87c636f92}} 
+\index{mtc\_cap\_cb.h@{mtc\_cap\_cb.h}!Mtc\_CapCbSetCapUpdate@{Mtc\_CapCbSetCapUpdate}}
+\index{Mtc\_CapCbSetCapUpdate@{Mtc\_CapCbSetCapUpdate}!mtc\_cap\_cb.h@{mtc\_cap\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CapCbSetCapUpdate()}{Mtc\_CapCbSetCapUpdate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Cap\+Cb\+Set\+Cap\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__cap__cb_8h_ab87a506b19527ae84898bc7de9b68193}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+P\+U\+P\+D\+A\+T\+E\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+M\+TC capability query update callback. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & The callback will be notify capability query ok.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & failed. \\
+\hline
+\end{DoxyRetVals}

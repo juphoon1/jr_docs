@@ -1,0 +1,982 @@
+\hypertarget{rie__lmsg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rie/rie\+\_\+lmsg.h File Reference}
+\label{rie__lmsg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_lmsg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_lmsg.h}}
+
+
+R\+IE Large Message Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{rie__lmsg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_aacf59fe7eff005c6681c9d38f8508dce}{Rie\+\_\+\+L\+Msg\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Large Instant Message to One Participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_abe7f4b96b537b5c7d5ff05c898fcd5a5}{Rie\+\_\+\+L\+Msg\+SendU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Large Instant Message to U\+R\+I-\/\+List. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_aa35566ea28bece5a81cd7e8980031f91}{Rie\+\_\+\+L\+Msg\+SendS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Sending Large Instant Message to one participant with spam information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_aee585a56b88ce7007fb5414b67d13d5a}{Rie\+\_\+\+L\+Msg\+Reply}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id, Z\+U\+I\+NT $\ast$pi\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE reply to specific standalone large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_af1cf8089b2f138e768df2830fde2fda8}{Rie\+\_\+\+L\+Msg\+Accept}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Accept a large message invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a144d58f302ccc64fbb534b562b2f65e7}{Rie\+\_\+\+L\+Msg\+Reject}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Reject a large message invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a9e55bec75e572bcb2be5bac69df3e421}{Rie\+\_\+\+L\+Msg\+Cancel}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Cancel a large message invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a78d8f166e3f9c434cb8fdcbea55b326d}{Rie\+\_\+\+L\+Msg\+Release}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Release a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{rie__lmsg_8h_a8493b1d422f23314e3bdc9c141166c57}{Rie\+\_\+\+L\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user cookie from a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a2a0351f4a49fd8fadd28a02058bec50b}{Rie\+\_\+\+L\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+IE Set user cookie in a large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a80ba2bb8e2f5a0f39f1555911af2b2fa}{Rie\+\_\+\+L\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get imdn id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_ae3f3290d56e4ddc5ca3dc9c1a547b282}{Rie\+\_\+\+L\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get device id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_af2f03a40de51e8f05690a08b22046a61}{Rie\+\_\+\+L\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get content type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_af68016839a463f83e3e2e93eaae7029f}{Rie\+\_\+\+L\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Cont\+Len)
+\begin{DoxyCompactList}\small\item\em R\+IE Get content from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a7f24c88de8c408d5ad229b7cc8e3ed57}{Rie\+\_\+\+L\+Msg\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_ad870a37aa790eca547d08e70a12be04c}{Rie\+\_\+\+L\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get paticipant information from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_ab823d15566522cfa40fd2e07b23a13c2}{Rie\+\_\+\+L\+Msg\+Get\+Partp\+Lst}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get participant list id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_ad47a9b7f9c950af06c46fe63fad9872d}{Rie\+\_\+\+L\+Msg\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get original paticipant uri from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a565ca4be15a78f56acc356ba626df1e5}{Rie\+\_\+\+L\+Msg\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+IE Get original identity of paticipant uri from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a2bf94affcf2d230a56aec99d8a5b4500}{Rie\+\_\+\+L\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id, S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em R\+IE Get date time from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_a30d4346c66df37b6dd7e58585fccc0a9}{Rie\+\_\+\+L\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get the font information from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_adc646f8f1f304517cd9886454a79c9e6}{Rie\+\_\+\+L\+Msg\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get conversation-\/id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_a5a32541d5a5af445de624d134fd331dd}{Rie\+\_\+\+L\+Msg\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get contribution-\/id from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_a19be134b07b1f44a20892018335871c9}{Rie\+\_\+\+L\+Msg\+Get\+Irt\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get inreplyto-\/contribution-\/id large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a4ae68ba4332251941a67bcb0a81fcd21}{Rie\+\_\+\+L\+Msg\+Get\+Burn\+Time\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get burn after reading time length from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a7bae44ed6fa12ad631b872eddbdf016b}{Rie\+\_\+\+L\+Msg\+Get\+App\+Push\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get app push type from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_aa20300573224a442029c13f59f713134}{Rie\+\_\+\+L\+Msg\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get public messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_a428cd7ef5f194c0a8dc8661c126f9bf7}{Rie\+\_\+\+L\+Msg\+Has\+Burn\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get burn after reading messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_a8c497fc723bcf8def812ba522383d76e}{Rie\+\_\+\+L\+Msg\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get spam messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_ae505bc778ded3bc59872018c203c0ca4}{Rie\+\_\+\+L\+Msg\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get silence messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_a90ad11117602064002588d3e184e6c05}{Rie\+\_\+\+L\+Msg\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get direct messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_a0738fc1409acfcd2e674d1c22050fd2a}{Rie\+\_\+\+L\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get carbon copy messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_a24cc48d0e56ed694fd242c9cde7b6e6e}{Rie\+\_\+\+L\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get offline messgae indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__lmsg_8h_a36a28eb9a8d4d89312d4c0117cdfa112}{Rie\+\_\+\+L\+Msg\+Has\+Revoke\+Msg\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke message indication flag from large message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_a45b89070e7c838bd446b6f4d81078d2b}{Rie\+\_\+\+L\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke message-\/id of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rie__lmsg_8h_a32c0f754b8dfb2d61ed64ec11c2c5b15}{Rie\+\_\+\+L\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get revoke result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_af9d708bf8b28f4e8d5b37be5deb5f3a7}{Rie\+\_\+\+L\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE large Get revoke from addr of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__lmsg_8h_a79f24d665f5f76b2e1fda14781036bc8}{Rie\+\_\+\+L\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE large Get revoke to addr of revoke message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__lmsg_8h_a6ad6f7ec73fbd7f8cb87eea68bfd00e8}{Rie\+\_\+\+L\+Msg\+Get\+Sip\+Code}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get sip code of large message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE Large Message Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rie__lmsg_8h_af1cf8089b2f138e768df2830fde2fda8}\label{rie__lmsg_8h_af1cf8089b2f138e768df2830fde2fda8}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgAccept@{Rie\_LMsgAccept}}
+\index{Rie\_LMsgAccept@{Rie\_LMsgAccept}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgAccept()}{Rie\_LMsgAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Accept a large message invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a9e55bec75e572bcb2be5bac69df3e421}\label{rie__lmsg_8h_a9e55bec75e572bcb2be5bac69df3e421}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgCancel@{Rie\_LMsgCancel}}
+\index{Rie\_LMsgCancel@{Rie\_LMsgCancel}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgCancel()}{Rie\_LMsgCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Cancel a large message invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancel large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancel large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a7bae44ed6fa12ad631b872eddbdf016b}\label{rie__lmsg_8h_a7bae44ed6fa12ad631b872eddbdf016b}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetAppPushType@{Rie\_LMsgGetAppPushType}}
+\index{Rie\_LMsgGetAppPushType@{Rie\_LMsgGetAppPushType}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetAppPushType()}{Rie\_LMsgGetAppPushType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+App\+Push\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get app push type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em app} & push type if it is a oma push message, otherwise return Z\+M\+A\+X\+U\+I\+NT. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a4ae68ba4332251941a67bcb0a81fcd21}\label{rie__lmsg_8h_a4ae68ba4332251941a67bcb0a81fcd21}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetBurnTimeLen@{Rie\_LMsgGetBurnTimeLen}}
+\index{Rie\_LMsgGetBurnTimeLen@{Rie\_LMsgGetBurnTimeLen}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetBurnTimeLen()}{Rie\_LMsgGetBurnTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Burn\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get burn after reading time length from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+burn after reading time length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_af68016839a463f83e3e2e93eaae7029f}\label{rie__lmsg_8h_af68016839a463f83e3e2e93eaae7029f}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetContent@{Rie\_LMsgGetContent}}
+\index{Rie\_LMsgGetContent@{Rie\_LMsgGetContent}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetContent()}{Rie\_LMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Cont\+Len }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get content from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Content} & of im message. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_af2f03a40de51e8f05690a08b22046a61}\label{rie__lmsg_8h_af2f03a40de51e8f05690a08b22046a61}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetContentType@{Rie\_LMsgGetContentType}}
+\index{Rie\_LMsgGetContentType@{Rie\_LMsgGetContentType}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetContentType()}{Rie\_LMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get content type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of im message. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a5a32541d5a5af445de624d134fd331dd}\label{rie__lmsg_8h_a5a32541d5a5af445de624d134fd331dd}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetContId@{Rie\_LMsgGetContId}}
+\index{Rie\_LMsgGetContId@{Rie\_LMsgGetContId}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetContId()}{Rie\_LMsgGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get contribution-\/id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_adc646f8f1f304517cd9886454a79c9e6}\label{rie__lmsg_8h_adc646f8f1f304517cd9886454a79c9e6}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetConvId@{Rie\_LMsgGetConvId}}
+\index{Rie\_LMsgGetConvId@{Rie\_LMsgGetConvId}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetConvId()}{Rie\_LMsgGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get conversation-\/id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a8493b1d422f23314e3bdc9c141166c57}\label{rie__lmsg_8h_a8493b1d422f23314e3bdc9c141166c57}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetCookie@{Rie\_LMsgGetCookie}}
+\index{Rie\_LMsgGetCookie@{Rie\_LMsgGetCookie}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetCookie()}{Rie\_LMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Rie\+\_\+\+L\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user cookie from a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a2bf94affcf2d230a56aec99d8a5b4500}\label{rie__lmsg_8h_a2bf94affcf2d230a56aec99d8a5b4500}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetDateTime@{Rie\_LMsgGetDateTime}}
+\index{Rie\_LMsgGetDateTime@{Rie\_LMsgGetDateTime}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetDateTime()}{Rie\_LMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{S\+T\+\_\+\+Z\+O\+S\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get date time from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_ae3f3290d56e4ddc5ca3dc9c1a547b282}\label{rie__lmsg_8h_ae3f3290d56e4ddc5ca3dc9c1a547b282}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetDeviceId@{Rie\_LMsgGetDeviceId}}
+\index{Rie\_LMsgGetDeviceId@{Rie\_LMsgGetDeviceId}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetDeviceId()}{Rie\_LMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get device id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em device} & id of large message. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a30d4346c66df37b6dd7e58585fccc0a9}\label{rie__lmsg_8h_a30d4346c66df37b6dd7e58585fccc0a9}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetFontInfo@{Rie\_LMsgGetFontInfo}}
+\index{Rie\_LMsgGetFontInfo@{Rie\_LMsgGetFontInfo}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetFontInfo()}{Rie\_LMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get the font information from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Font} & information of message, otherwise N\+U\+LL. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a80ba2bb8e2f5a0f39f1555911af2b2fa}\label{rie__lmsg_8h_a80ba2bb8e2f5a0f39f1555911af2b2fa}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetImdnId@{Rie\_LMsgGetImdnId}}
+\index{Rie\_LMsgGetImdnId@{Rie\_LMsgGetImdnId}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetImdnId()}{Rie\_LMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get imdn id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Imdn} & id of large message \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a19be134b07b1f44a20892018335871c9}\label{rie__lmsg_8h_a19be134b07b1f44a20892018335871c9}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetIrtContId@{Rie\_LMsgGetIrtContId}}
+\index{Rie\_LMsgGetIrtContId@{Rie\_LMsgGetIrtContId}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetIrtContId()}{Rie\_LMsgGetIrtContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Irt\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get inreplyto-\/contribution-\/id large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inreplyto-\/contribution-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a565ca4be15a78f56acc356ba626df1e5}\label{rie__lmsg_8h_a565ca4be15a78f56acc356ba626df1e5}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetOrigIdPartp@{Rie\_LMsgGetOrigIdPartp}}
+\index{Rie\_LMsgGetOrigIdPartp@{Rie\_LMsgGetOrigIdPartp}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetOrigIdPartp()}{Rie\_LMsgGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get original identity of paticipant uri from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_ad47a9b7f9c950af06c46fe63fad9872d}\label{rie__lmsg_8h_ad47a9b7f9c950af06c46fe63fad9872d}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetOrigPartp@{Rie\_LMsgGetOrigPartp}}
+\index{Rie\_LMsgGetOrigPartp@{Rie\_LMsgGetOrigPartp}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetOrigPartp()}{Rie\_LMsgGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get original paticipant uri from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original paticipant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original paticipant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_ad870a37aa790eca547d08e70a12be04c}\label{rie__lmsg_8h_ad870a37aa790eca547d08e70a12be04c}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetPartp@{Rie\_LMsgGetPartp}}
+\index{Rie\_LMsgGetPartp@{Rie\_LMsgGetPartp}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetPartp()}{Rie\_LMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get paticipant information from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant uri.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri should be freed by Zos\+\_\+\+Sys\+Str\+Free.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get paticipant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get paticipant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_ab823d15566522cfa40fd2e07b23a13c2}\label{rie__lmsg_8h_ab823d15566522cfa40fd2e07b23a13c2}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetPartpLst@{Rie\_LMsgGetPartpLst}}
+\index{Rie\_LMsgGetPartpLst@{Rie\_LMsgGetPartpLst}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetPartpLst()}{Rie\_LMsgGetPartpLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Partp\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant list id from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Participant} & list id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a7f24c88de8c408d5ad229b7cc8e3ed57}\label{rie__lmsg_8h_a7f24c88de8c408d5ad229b7cc8e3ed57}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetPartpType@{Rie\_LMsgGetPartpType}}
+\index{Rie\_LMsgGetPartpType@{Rie\_LMsgGetPartpType}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetPartpType()}{Rie\_LMsgGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get participant type from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of large message participant, E\+N\+\_\+\+R\+I\+E\+\_\+\+P\+A\+R\+T\+P\+\_\+\+T\+Y\+PE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_af9d708bf8b28f4e8d5b37be5deb5f3a7}\label{rie__lmsg_8h_af9d708bf8b28f4e8d5b37be5deb5f3a7}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetRevokeFromAddr@{Rie\_LMsgGetRevokeFromAddr}}
+\index{Rie\_LMsgGetRevokeFromAddr@{Rie\_LMsgGetRevokeFromAddr}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetRevokeFromAddr()}{Rie\_LMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE large Get revoke from addr of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a45b89070e7c838bd446b6f4d81078d2b}\label{rie__lmsg_8h_a45b89070e7c838bd446b6f4d81078d2b}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetRevokeMsgId@{Rie\_LMsgGetRevokeMsgId}}
+\index{Rie\_LMsgGetRevokeMsgId@{Rie\_LMsgGetRevokeMsgId}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetRevokeMsgId()}{Rie\_LMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke message-\/id of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a32c0f754b8dfb2d61ed64ec11c2c5b15}\label{rie__lmsg_8h_a32c0f754b8dfb2d61ed64ec11c2c5b15}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetRevokeResult@{Rie\_LMsgGetRevokeResult}}
+\index{Rie\_LMsgGetRevokeResult@{Rie\_LMsgGetRevokeResult}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetRevokeResult()}{Rie\_LMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rie\+\_\+\+L\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a79f24d665f5f76b2e1fda14781036bc8}\label{rie__lmsg_8h_a79f24d665f5f76b2e1fda14781036bc8}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetRevokeToAddr@{Rie\_LMsgGetRevokeToAddr}}
+\index{Rie\_LMsgGetRevokeToAddr@{Rie\_LMsgGetRevokeToAddr}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetRevokeToAddr()}{Rie\_LMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+L\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE large Get revoke to addr of revoke message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a6ad6f7ec73fbd7f8cb87eea68bfd00e8}\label{rie__lmsg_8h_a6ad6f7ec73fbd7f8cb87eea68bfd00e8}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgGetSipCode@{Rie\_LMsgGetSipCode}}
+\index{Rie\_LMsgGetSipCode@{Rie\_LMsgGetSipCode}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgGetSipCode()}{Rie\_LMsgGetSipCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+L\+Msg\+Get\+Sip\+Code (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get sip code of large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sip code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__lmsg_8h_a428cd7ef5f194c0a8dc8661c126f9bf7}\label{rie__lmsg_8h_a428cd7ef5f194c0a8dc8661c126f9bf7}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasBurnInd@{Rie\_LMsgHasBurnInd}}
+\index{Rie\_LMsgHasBurnInd@{Rie\_LMsgHasBurnInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasBurnInd()}{Rie\_LMsgHasBurnInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Burn\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get burn after reading messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has burn after reading message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a0738fc1409acfcd2e674d1c22050fd2a}\label{rie__lmsg_8h_a0738fc1409acfcd2e674d1c22050fd2a}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasCcInd@{Rie\_LMsgHasCcInd}}
+\index{Rie\_LMsgHasCcInd@{Rie\_LMsgHasCcInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasCcInd()}{Rie\_LMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get carbon copy messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has carbon copy message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a90ad11117602064002588d3e184e6c05}\label{rie__lmsg_8h_a90ad11117602064002588d3e184e6c05}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasDirectInd@{Rie\_LMsgHasDirectInd}}
+\index{Rie\_LMsgHasDirectInd@{Rie\_LMsgHasDirectInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasDirectInd()}{Rie\_LMsgHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get direct messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has direct message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a24cc48d0e56ed694fd242c9cde7b6e6e}\label{rie__lmsg_8h_a24cc48d0e56ed694fd242c9cde7b6e6e}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasOffInd@{Rie\_LMsgHasOffInd}}
+\index{Rie\_LMsgHasOffInd@{Rie\_LMsgHasOffInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasOffInd()}{Rie\_LMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get offline messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has offline message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_aa20300573224a442029c13f59f713134}\label{rie__lmsg_8h_aa20300573224a442029c13f59f713134}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasPubInd@{Rie\_LMsgHasPubInd}}
+\index{Rie\_LMsgHasPubInd@{Rie\_LMsgHasPubInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasPubInd()}{Rie\_LMsgHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get public messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a36a28eb9a8d4d89312d4c0117cdfa112}\label{rie__lmsg_8h_a36a28eb9a8d4d89312d4c0117cdfa112}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasRevokeMsgInd@{Rie\_LMsgHasRevokeMsgInd}}
+\index{Rie\_LMsgHasRevokeMsgInd@{Rie\_LMsgHasRevokeMsgInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasRevokeMsgInd()}{Rie\_LMsgHasRevokeMsgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Revoke\+Msg\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get revoke message indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has revoke message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_ae505bc778ded3bc59872018c203c0ca4}\label{rie__lmsg_8h_ae505bc778ded3bc59872018c203c0ca4}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasSilenceInd@{Rie\_LMsgHasSilenceInd}}
+\index{Rie\_LMsgHasSilenceInd@{Rie\_LMsgHasSilenceInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasSilenceInd()}{Rie\_LMsgHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get silence messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has silence message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a8c497fc723bcf8def812ba522383d76e}\label{rie__lmsg_8h_a8c497fc723bcf8def812ba522383d76e}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgHasSpamInd@{Rie\_LMsgHasSpamInd}}
+\index{Rie\_LMsgHasSpamInd@{Rie\_LMsgHasSpamInd}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgHasSpamInd()}{Rie\_LMsgHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+L\+Msg\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get spam messgae indication flag from large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has spam message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a144d58f302ccc64fbb534b562b2f65e7}\label{rie__lmsg_8h_a144d58f302ccc64fbb534b562b2f65e7}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgReject@{Rie\_LMsgReject}}
+\index{Rie\_LMsgReject@{Rie\_LMsgReject}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgReject()}{Rie\_LMsgReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Reject a large message invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a78d8f166e3f9c434cb8fdcbea55b326d}\label{rie__lmsg_8h_a78d8f166e3f9c434cb8fdcbea55b326d}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgRelease@{Rie\_LMsgRelease}}
+\index{Rie\_LMsgRelease@{Rie\_LMsgRelease}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgRelease()}{Rie\_LMsgRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Release a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_aee585a56b88ce7007fb5414b67d13d5a}\label{rie__lmsg_8h_aee585a56b88ce7007fb5414b67d13d5a}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgReply@{Rie\_LMsgReply}}
+\index{Rie\_LMsgReply@{Rie\_LMsgReply}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgReply()}{Rie\_LMsgReply()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Reply (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE reply to specific standalone large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id which reply to. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_aacf59fe7eff005c6681c9d38f8508dce}\label{rie__lmsg_8h_aacf59fe7eff005c6681c9d38f8508dce}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgSend@{Rie\_LMsgSend}}
+\index{Rie\_LMsgSend@{Rie\_LMsgSend}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgSend()}{Rie\_LMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Large Instant Message to One Participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_aa35566ea28bece5a81cd7e8980031f91}\label{rie__lmsg_8h_aa35566ea28bece5a81cd7e8980031f91}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgSendS@{Rie\_LMsgSendS}}
+\index{Rie\_LMsgSendS@{Rie\_LMsgSendS}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgSendS()}{Rie\_LMsgSendS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+SendS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Large Instant Message to one participant with spam information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Grp\+Uri} & The pre-\/defined group uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_abe7f4b96b537b5c7d5ff05c898fcd5a5}\label{rie__lmsg_8h_abe7f4b96b537b5c7d5ff05c898fcd5a5}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgSendU@{Rie\_LMsgSendU}}
+\index{Rie\_LMsgSendU@{Rie\_LMsgSendU}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgSendU()}{Rie\_LMsgSendU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+SendU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Sending Large Instant Message to U\+R\+I-\/\+List. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Msg\+Id} & The id for large message session.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send large message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send large message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__lmsg_8h_a2a0351f4a49fd8fadd28a02058bec50b}\label{rie__lmsg_8h_a2a0351f4a49fd8fadd28a02058bec50b}} 
+\index{rie\_lmsg.h@{rie\_lmsg.h}!Rie\_LMsgSetCookie@{Rie\_LMsgSetCookie}}
+\index{Rie\_LMsgSetCookie@{Rie\_LMsgSetCookie}!rie\_lmsg.h@{rie\_lmsg.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_LMsgSetCookie()}{Rie\_LMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+L\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+IE Set user cookie in a large message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The large message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}

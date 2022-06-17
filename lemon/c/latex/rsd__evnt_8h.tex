@@ -1,0 +1,795 @@
+\hypertarget{rsd__evnt_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rsd/rsd\+\_\+evnt.h File Reference}
+\label{rsd__evnt_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rsd/rsd\_evnt.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rsd/rsd\_evnt.h}}
+
+
+Rsd Event Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rsd__evnt_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}\label{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}} 
+typedef Z\+V\+O\+ID $\ast$ \mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}
+\begin{DoxyCompactList}\small\item\em Rsd event id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC \mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} \mbox{\hyperlink{rsd__evnt_8h_a6acb24681ba65f296d10b2af6c1ef792}{Rsd\+\_\+\+Evnt\+Create}} (Z\+U\+I\+NT i\+Evnt\+Type)
+\begin{DoxyCompactList}\small\item\em Create a new event. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC \mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} \mbox{\hyperlink{rsd__evnt_8h_afd056f5936fa364284527ff1645644fb}{Rsd\+\_\+\+Evnt\+CreateX}} (Z\+U\+I\+NT i\+App\+Type, Z\+U\+I\+NT i\+Evnt\+Type)
+\begin{DoxyCompactList}\small\item\em Create a new event. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{rsd__evnt_8h_a5b01c1f201085dd8c94c0f8421c4a272}{Rsd\+\_\+\+Evnt\+Delete}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Delete a event, all memory allocate from it will also be freeed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_afc051b7365aab9e6d7bfcce8d2d685ca}{Rsd\+\_\+\+Evnt\+Get\+App\+Type}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Get application type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a3ee71d9f9f71588dd2b41385ba371243}{Rsd\+\_\+\+Evnt\+Get\+Evnt\+Type}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Get event type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a20c36358fa84b735b084542f5dfbf32b}{Rsd\+\_\+\+Evnt\+Get\+Elem\+Id}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Get element ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a2045b080d8b6d523a596c8b81ad2a79b}{Rsd\+\_\+\+Evnt\+Set\+Elem\+Id}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Elem\+Id)
+\begin{DoxyCompactList}\small\item\em Set element ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_aecf8bd0b214af9e391db19d0c3af87ad}{Rsd\+\_\+\+Evnt\+Get\+Partp\+Lst\+Id}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a3515e5844922e6f98ef74e1cc313577e}{Rsd\+\_\+\+Evnt\+Set\+Partp\+Lst\+Id}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Set participant list ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a226c94777c8cc6e552a091d079566f24}{Rsd\+\_\+\+Evnt\+Get\+Stat\+Code}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Get status code. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a0a287a3db5983294e5a7f35db7a12b3b}{Rsd\+\_\+\+Evnt\+Set\+Stat\+Code}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set status code. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rsd__evnt_8h_a07c5b46e3ad079221279e299f72d4d6d}{Rsd\+\_\+\+Evnt\+Get\+Elem\+Bool}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\begin{DoxyCompactList}\small\item\em Get bool value. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a5b33e0b1efc70745447f59e59be6144c}{Rsd\+\_\+\+Evnt\+Set\+Elem\+Bool}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+B\+O\+OL b\+Bool)
+\begin{DoxyCompactList}\small\item\em Set is\+Focus flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a5db1f4577257d734bb0f4ce3e9b8cffe}{Rsd\+\_\+\+Evnt\+Get\+Field\+Int}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+I\+NT type value of spcific name ID. If there are many, get the first one. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a183626ce6873cb5212122fc27a6cf77d}{Rsd\+\_\+\+Evnt\+Get\+Field\+Uint}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+U\+I\+NT type value of spcific name ID. If there are many, get the first one. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+L\+O\+NG \mbox{\hyperlink{rsd__evnt_8h_a78fc3d0369c302afdd68754c4e550a0a}{Rsd\+\_\+\+Evnt\+Get\+Field\+Long}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+L\+O\+NG type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+L\+O\+NG \mbox{\hyperlink{rsd__evnt_8h_a00219bfed6795af3987fb51a0fab9b7a}{Rsd\+\_\+\+Evnt\+Get\+Field\+Ulong}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+U\+L\+O\+NG type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rsd__evnt_8h_a11c7a99dcced6446f96c2530f27745bc}{Rsd\+\_\+\+Evnt\+Get\+Field\+Bool}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+B\+O\+OL type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rsd__evnt_8h_aa6da0ac46b5e8399e0b7a41136d1302e}{Rsd\+\_\+\+Evnt\+Get\+Field\+Str}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+C\+H\+AR type string value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID $\ast$ \mbox{\hyperlink{rsd__evnt_8h_a90bda977daa0a5e8da3b7b601d779233}{Rsd\+\_\+\+Evnt\+Get\+Field\+Ptr}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get pointer value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{rsd__evnt_8h_a4ff536454c352a414c99dc47a9d3254c}{Rsd\+\_\+\+Evnt\+Get\+Field\+Cookie}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get cookie value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_adbc48a11c1d499791dbf1bbf6559b48e}{Rsd\+\_\+\+Evnt\+Set\+Field\+Int}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+I\+NT i\+Val)
+\begin{DoxyCompactList}\small\item\em Set a exist Z\+I\+NT type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a63d85452eb858980410495454c6ab411}{Rsd\+\_\+\+Evnt\+Set\+Field\+Uint}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+U\+I\+NT i\+Val)
+\begin{DoxyCompactList}\small\item\em Set a exist Z\+U\+C\+H\+AR type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a4594d18b703a33469f413f11be641288}{Rsd\+\_\+\+Evnt\+Set\+Field\+Long}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+L\+O\+NG dw\+Val)
+\begin{DoxyCompactList}\small\item\em Set a exist Z\+L\+O\+NG type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_ade2275371ddd60bdd472b69435bad229}{Rsd\+\_\+\+Evnt\+Set\+Field\+Ulong}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+U\+L\+O\+NG dw\+Val)
+\begin{DoxyCompactList}\small\item\em Set a exist Z\+U\+L\+O\+NG type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a5c80367608080f6dcaa7ff2b2b4961fd}{Rsd\+\_\+\+Evnt\+Set\+Field\+Bool}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+B\+O\+OL b\+Val)
+\begin{DoxyCompactList}\small\item\em Set a exist Z\+B\+O\+OL type value of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_af04e8e8027a3fbec51509584a955fbad}{Rsd\+\_\+\+Evnt\+Set\+Field\+Str}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+C\+H\+AR $\ast$pc\+Val)
+\begin{DoxyCompactList}\small\item\em Set a Z\+C\+H\+AR type string of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_ae13c0f51b799f55fe4aca1f2bff37f27}{Rsd\+\_\+\+Evnt\+Set\+Field\+Ptr}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+V\+O\+ID $\ast$p\+Val)
+\begin{DoxyCompactList}\small\item\em Set a pointer type string of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_a32014afc2fc805b10236a9adca3bf018}{Rsd\+\_\+\+Evnt\+Set\+Field\+Cookie}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set a pointer type string of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rsd__evnt_8h_abb24f3f7418f765b910fb8a7957bdee7}{Rsd\+\_\+\+Evnt\+Set\+Field\+Uchar}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name, Z\+U\+C\+H\+AR uc\+Val)
+\begin{DoxyCompactList}\small\item\em Set a a uchar field of spcific name ID. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{rsd__evnt_8h_adf3e58deb2bcfd53e6a66322c71b23d4}{Rsd\+\_\+\+Evnt\+Get\+Field\+Uchar}} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id, Z\+U\+I\+NT i\+Name)
+\begin{DoxyCompactList}\small\item\em Get Z\+U\+C\+H\+AR type value of spcific name ID. If there are many, get the first one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rsd Event Interfaces. 
+
+Event provides ability to manage multi {\bfseries{Name}} {\bfseries{Value}} pairs. This buffer is designed for exchange data between modules.
+
+Traditionally, modules exchange data using data structure, which reduce the flexibility of interfaces. When one module\textquotesingle{}s data structure is changed, other modules must also modify its interface. This bring extra workload and bug risk.
+
+In event, data was managed by {\bfseries{Name}} {\bfseries{Value}} pairs. {\bfseries{Name}} is user defined number, like enumeration. {\bfseries{Value}} is the actual value of that {\bfseries{Name}}. It can be number, string or etc. User can also add multi value to the same {\bfseries{Name}}.
+
+Convergency buffer is not thread safe. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rsd__evnt_8h_a6acb24681ba65f296d10b2af6c1ef792}\label{rsd__evnt_8h_a6acb24681ba65f296d10b2af6c1ef792}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntCreate@{Rsd\_EvntCreate}}
+\index{Rsd\_EvntCreate@{Rsd\_EvntCreate}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntCreate()}{Rsd\_EvntCreate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC \mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} Rsd\+\_\+\+Evnt\+Create (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Evnt\+Type }\end{DoxyParamCaption})}
+
+
+
+Create a new event. 
+
+\begin{DoxyReturn}{Returns}
+New event ID, or return Z\+N\+U\+LL.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rsd__evnt_8h_afd056f5936fa364284527ff1645644fb}{Rsd\+\_\+\+Evnt\+CreateX}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rsd__evnt_8h_afd056f5936fa364284527ff1645644fb}\label{rsd__evnt_8h_afd056f5936fa364284527ff1645644fb}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntCreateX@{Rsd\_EvntCreateX}}
+\index{Rsd\_EvntCreateX@{Rsd\_EvntCreateX}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntCreateX()}{Rsd\_EvntCreateX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC \mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} Rsd\+\_\+\+Evnt\+CreateX (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+App\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Evnt\+Type }\end{DoxyParamCaption})}
+
+
+
+Create a new event. 
+
+\begin{DoxyReturn}{Returns}
+New event ID, or return Z\+N\+U\+LL.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rsd__evnt_8h_afd056f5936fa364284527ff1645644fb}{Rsd\+\_\+\+Evnt\+CreateX}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rsd__evnt_8h_a5b01c1f201085dd8c94c0f8421c4a272}\label{rsd__evnt_8h_a5b01c1f201085dd8c94c0f8421c4a272}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntDelete@{Rsd\_EvntDelete}}
+\index{Rsd\_EvntDelete@{Rsd\_EvntDelete}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntDelete()}{Rsd\_EvntDelete()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Rsd\+\_\+\+Evnt\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete a event, all memory allocate from it will also be freeed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt to delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}none\mbox{]}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Rsd\+\_\+\+Evnt\+Clean 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rsd__evnt_8h_afc051b7365aab9e6d7bfcce8d2d685ca}\label{rsd__evnt_8h_afc051b7365aab9e6d7bfcce8d2d685ca}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetAppType@{Rsd\_EvntGetAppType}}
+\index{Rsd\_EvntGetAppType@{Rsd\_EvntGetAppType}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetAppType()}{Rsd\_EvntGetAppType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rsd\+\_\+\+Evnt\+Get\+App\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Get application type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Application} & type if successfully, or return Z\+M\+A\+X\+U\+I\+NT. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a07c5b46e3ad079221279e299f72d4d6d}\label{rsd__evnt_8h_a07c5b46e3ad079221279e299f72d4d6d}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetElemBool@{Rsd\_EvntGetElemBool}}
+\index{Rsd\_EvntGetElemBool@{Rsd\_EvntGetElemBool}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetElemBool()}{Rsd\_EvntGetElemBool()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rsd\+\_\+\+Evnt\+Get\+Elem\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Get bool value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & value if successfully, or return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a20c36358fa84b735b084542f5dfbf32b}\label{rsd__evnt_8h_a20c36358fa84b735b084542f5dfbf32b}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetElemId@{Rsd\_EvntGetElemId}}
+\index{Rsd\_EvntGetElemId@{Rsd\_EvntGetElemId}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetElemId()}{Rsd\_EvntGetElemId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rsd\+\_\+\+Evnt\+Get\+Elem\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Get element ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Element} & id if successfully, or return 0. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a3ee71d9f9f71588dd2b41385ba371243}\label{rsd__evnt_8h_a3ee71d9f9f71588dd2b41385ba371243}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetEvntType@{Rsd\_EvntGetEvntType}}
+\index{Rsd\_EvntGetEvntType@{Rsd\_EvntGetEvntType}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetEvntType()}{Rsd\_EvntGetEvntType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rsd\+\_\+\+Evnt\+Get\+Evnt\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Get event type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Event} & type if successfully, or return Z\+M\+A\+X\+U\+I\+NT. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a11c7a99dcced6446f96c2530f27745bc}\label{rsd__evnt_8h_a11c7a99dcced6446f96c2530f27745bc}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldBool@{Rsd\_EvntGetFieldBool}}
+\index{Rsd\_EvntGetFieldBool@{Rsd\_EvntGetFieldBool}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldBool()}{Rsd\_EvntGetFieldBool()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rsd\+\_\+\+Evnt\+Get\+Field\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+B\+O\+OL type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Boolean} & value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a4ff536454c352a414c99dc47a9d3254c}\label{rsd__evnt_8h_a4ff536454c352a414c99dc47a9d3254c}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldCookie@{Rsd\_EvntGetFieldCookie}}
+\index{Rsd\_EvntGetFieldCookie@{Rsd\_EvntGetFieldCookie}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldCookie()}{Rsd\_EvntGetFieldCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Rsd\+\_\+\+Evnt\+Get\+Field\+Cookie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get cookie value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em cookie} & value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a5db1f4577257d734bb0f4ce3e9b8cffe}\label{rsd__evnt_8h_a5db1f4577257d734bb0f4ce3e9b8cffe}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldInt@{Rsd\_EvntGetFieldInt}}
+\index{Rsd\_EvntGetFieldInt@{Rsd\_EvntGetFieldInt}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldInt()}{Rsd\_EvntGetFieldInt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Get\+Field\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+I\+NT type value of spcific name ID. If there are many, get the first one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Signed} & int value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a78fc3d0369c302afdd68754c4e550a0a}\label{rsd__evnt_8h_a78fc3d0369c302afdd68754c4e550a0a}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldLong@{Rsd\_EvntGetFieldLong}}
+\index{Rsd\_EvntGetFieldLong@{Rsd\_EvntGetFieldLong}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldLong()}{Rsd\_EvntGetFieldLong()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+L\+O\+NG Rsd\+\_\+\+Evnt\+Get\+Field\+Long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+L\+O\+NG type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em signed} & long value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a90bda977daa0a5e8da3b7b601d779233}\label{rsd__evnt_8h_a90bda977daa0a5e8da3b7b601d779233}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldPtr@{Rsd\_EvntGetFieldPtr}}
+\index{Rsd\_EvntGetFieldPtr@{Rsd\_EvntGetFieldPtr}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldPtr()}{Rsd\_EvntGetFieldPtr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID$\ast$ Rsd\+\_\+\+Evnt\+Get\+Field\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get pointer value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em pointer} & value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_aa6da0ac46b5e8399e0b7a41136d1302e}\label{rsd__evnt_8h_aa6da0ac46b5e8399e0b7a41136d1302e}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldStr@{Rsd\_EvntGetFieldStr}}
+\index{Rsd\_EvntGetFieldStr@{Rsd\_EvntGetFieldStr}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldStr()}{Rsd\_EvntGetFieldStr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rsd\+\_\+\+Evnt\+Get\+Field\+Str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+C\+H\+AR type string value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em String} & value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_adf3e58deb2bcfd53e6a66322c71b23d4}\label{rsd__evnt_8h_adf3e58deb2bcfd53e6a66322c71b23d4}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldUchar@{Rsd\_EvntGetFieldUchar}}
+\index{Rsd\_EvntGetFieldUchar@{Rsd\_EvntGetFieldUchar}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldUchar()}{Rsd\_EvntGetFieldUchar()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Rsd\+\_\+\+Evnt\+Get\+Field\+Uchar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+U\+C\+H\+AR type value of spcific name ID. If there are many, get the first one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em unsigned} & char value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a183626ce6873cb5212122fc27a6cf77d}\label{rsd__evnt_8h_a183626ce6873cb5212122fc27a6cf77d}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldUint@{Rsd\_EvntGetFieldUint}}
+\index{Rsd\_EvntGetFieldUint@{Rsd\_EvntGetFieldUint}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldUint()}{Rsd\_EvntGetFieldUint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rsd\+\_\+\+Evnt\+Get\+Field\+Uint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+U\+I\+NT type value of spcific name ID. If there are many, get the first one. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em unsigned} & int value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a00219bfed6795af3987fb51a0fab9b7a}\label{rsd__evnt_8h_a00219bfed6795af3987fb51a0fab9b7a}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetFieldUlong@{Rsd\_EvntGetFieldUlong}}
+\index{Rsd\_EvntGetFieldUlong@{Rsd\_EvntGetFieldUlong}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetFieldUlong()}{Rsd\_EvntGetFieldUlong()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+L\+O\+NG Rsd\+\_\+\+Evnt\+Get\+Field\+Ulong (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name }\end{DoxyParamCaption})}
+
+
+
+Get Z\+U\+L\+O\+NG type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Unsigned} & long value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_aecf8bd0b214af9e391db19d0c3af87ad}\label{rsd__evnt_8h_aecf8bd0b214af9e391db19d0c3af87ad}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetPartpLstId@{Rsd\_EvntGetPartpLstId}}
+\index{Rsd\_EvntGetPartpLstId@{Rsd\_EvntGetPartpLstId}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetPartpLstId()}{Rsd\_EvntGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rsd\+\_\+\+Evnt\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Participant} & list id if successfully, or return 0. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a226c94777c8cc6e552a091d079566f24}\label{rsd__evnt_8h_a226c94777c8cc6e552a091d079566f24}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntGetStatCode@{Rsd\_EvntGetStatCode}}
+\index{Rsd\_EvntGetStatCode@{Rsd\_EvntGetStatCode}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntGetStatCode()}{Rsd\_EvntGetStatCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rsd\+\_\+\+Evnt\+Get\+Stat\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id }\end{DoxyParamCaption})}
+
+
+
+Get status code. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em status} & code if successfully, or return Z\+M\+A\+X\+U\+L\+O\+NG. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a5b33e0b1efc70745447f59e59be6144c}\label{rsd__evnt_8h_a5b33e0b1efc70745447f59e59be6144c}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetElemBool@{Rsd\_EvntSetElemBool}}
+\index{Rsd\_EvntSetElemBool@{Rsd\_EvntSetElemBool}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetElemBool()}{Rsd\_EvntSetElemBool()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Elem\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Bool }\end{DoxyParamCaption})}
+
+
+
+Set is\+Focus flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Bool} & bool value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set bool value successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set bool value failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a2045b080d8b6d523a596c8b81ad2a79b}\label{rsd__evnt_8h_a2045b080d8b6d523a596c8b81ad2a79b}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetElemId@{Rsd\_EvntSetElemId}}
+\index{Rsd\_EvntSetElemId@{Rsd\_EvntSetElemId}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetElemId()}{Rsd\_EvntSetElemId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Elem\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Elem\+Id }\end{DoxyParamCaption})}
+
+
+
+Set element ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set element id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set element id failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a5c80367608080f6dcaa7ff2b2b4961fd}\label{rsd__evnt_8h_a5c80367608080f6dcaa7ff2b2b4961fd}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldBool@{Rsd\_EvntSetFieldBool}}
+\index{Rsd\_EvntSetFieldBool@{Rsd\_EvntSetFieldBool}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldBool()}{Rsd\_EvntSetFieldBool()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+B\+O\+OL}]{b\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a exist Z\+B\+O\+OL type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a32014afc2fc805b10236a9adca3bf018}\label{rsd__evnt_8h_a32014afc2fc805b10236a9adca3bf018}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldCookie@{Rsd\_EvntSetFieldCookie}}
+\index{Rsd\_EvntSetFieldCookie@{Rsd\_EvntSetFieldCookie}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldCookie()}{Rsd\_EvntSetFieldCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Cookie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set a pointer type string of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_adbc48a11c1d499791dbf1bbf6559b48e}\label{rsd__evnt_8h_adbc48a11c1d499791dbf1bbf6559b48e}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldInt@{Rsd\_EvntSetFieldInt}}
+\index{Rsd\_EvntSetFieldInt@{Rsd\_EvntSetFieldInt}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldInt()}{Rsd\_EvntSetFieldInt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+I\+NT}]{i\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a exist Z\+I\+NT type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a4594d18b703a33469f413f11be641288}\label{rsd__evnt_8h_a4594d18b703a33469f413f11be641288}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldLong@{Rsd\_EvntSetFieldLong}}
+\index{Rsd\_EvntSetFieldLong@{Rsd\_EvntSetFieldLong}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldLong()}{Rsd\_EvntSetFieldLong()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Long (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+L\+O\+NG}]{dw\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a exist Z\+L\+O\+NG type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_ae13c0f51b799f55fe4aca1f2bff37f27}\label{rsd__evnt_8h_ae13c0f51b799f55fe4aca1f2bff37f27}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldPtr@{Rsd\_EvntSetFieldPtr}}
+\index{Rsd\_EvntSetFieldPtr@{Rsd\_EvntSetFieldPtr}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldPtr()}{Rsd\_EvntSetFieldPtr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a pointer type string of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_af04e8e8027a3fbec51509584a955fbad}\label{rsd__evnt_8h_af04e8e8027a3fbec51509584a955fbad}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldStr@{Rsd\_EvntSetFieldStr}}
+\index{Rsd\_EvntSetFieldStr@{Rsd\_EvntSetFieldStr}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldStr()}{Rsd\_EvntSetFieldStr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a Z\+C\+H\+AR type string of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_abb24f3f7418f765b910fb8a7957bdee7}\label{rsd__evnt_8h_abb24f3f7418f765b910fb8a7957bdee7}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldUchar@{Rsd\_EvntSetFieldUchar}}
+\index{Rsd\_EvntSetFieldUchar@{Rsd\_EvntSetFieldUchar}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldUchar()}{Rsd\_EvntSetFieldUchar()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Uchar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a a uchar field of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a63d85452eb858980410495454c6ab411}\label{rsd__evnt_8h_a63d85452eb858980410495454c6ab411}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldUint@{Rsd\_EvntSetFieldUint}}
+\index{Rsd\_EvntSetFieldUint@{Rsd\_EvntSetFieldUint}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldUint()}{Rsd\_EvntSetFieldUint()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Uint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+U\+I\+NT}]{i\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a exist Z\+U\+C\+H\+AR type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_ade2275371ddd60bdd472b69435bad229}\label{rsd__evnt_8h_ade2275371ddd60bdd472b69435bad229}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetFieldUlong@{Rsd\_EvntSetFieldUlong}}
+\index{Rsd\_EvntSetFieldUlong@{Rsd\_EvntSetFieldUlong}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetFieldUlong()}{Rsd\_EvntSetFieldUlong()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Field\+Ulong (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Name,  }\item[{Z\+U\+L\+O\+NG}]{dw\+Val }\end{DoxyParamCaption})}
+
+
+
+Set a exist Z\+U\+L\+O\+NG type value of spcific name ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Name} & Name ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Val} & New value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a3515e5844922e6f98ef74e1cc313577e}\label{rsd__evnt_8h_a3515e5844922e6f98ef74e1cc313577e}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetPartpLstId@{Rsd\_EvntSetPartpLstId}}
+\index{Rsd\_EvntSetPartpLstId@{Rsd\_EvntSetPartpLstId}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetPartpLstId()}{Rsd\_EvntSetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Set participant list ID. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set participant list id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set participant list id failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rsd__evnt_8h_a0a287a3db5983294e5a7f35db7a12b3b}\label{rsd__evnt_8h_a0a287a3db5983294e5a7f35db7a12b3b}} 
+\index{rsd\_evnt.h@{rsd\_evnt.h}!Rsd\_EvntSetStatCode@{Rsd\_EvntSetStatCode}}
+\index{Rsd\_EvntSetStatCode@{Rsd\_EvntSetStatCode}!rsd\_evnt.h@{rsd\_evnt.h}}
+\doxysubsubsection{\texorpdfstring{Rsd\_EvntSetStatCode()}{Rsd\_EvntSetStatCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rsd\+\_\+\+Evnt\+Set\+Stat\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}}}]{z\+Evnt\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set status code. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Evnt\+Id} & Evnt ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set status code successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set status code failed. \\
+\hline
+\end{DoxyRetVals}

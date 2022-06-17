@@ -1,0 +1,126 @@
+\hypertarget{mtc__prov__cfg_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+prov\+\_\+cfg.h File Reference}
+\label{mtc__prov__cfg_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prov\_cfg.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_prov\_cfg.h}}
+
+
+M\+TC Provision Config Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__prov__cfg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__prov__cfg_8h_a6d6b0c9d429b0ef6d4cec9b1b4413421}{Mtc\+\_\+\+Prov\+Cfg\+Get\+Use\+Dft}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get using default provision. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__prov__cfg_8h_aa9b03b1d4866405cdcc28414ba957b5b}{Mtc\+\_\+\+Prov\+Cfg\+Get\+File\+Name}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get provision file name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__cfg_8h_ab9bd796820bcd21c2ff3bbd9619aba9a}{Mtc\+\_\+\+Prov\+Cfg\+Set\+Use\+Dft}} (Z\+B\+O\+OL b\+Use)
+\begin{DoxyCompactList}\small\item\em Set using default provision management. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__prov__cfg_8h_a37d7649a47eef2f54e0cf8939433cd5c}{Mtc\+\_\+\+Prov\+Cfg\+Set\+File\+Name}} (Z\+C\+H\+AR $\ast$pc\+File)
+\begin{DoxyCompactList}\small\item\em Set provision file name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Provision Config Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__prov__cfg_8h_aa9b03b1d4866405cdcc28414ba957b5b}\label{mtc__prov__cfg_8h_aa9b03b1d4866405cdcc28414ba957b5b}} 
+\index{mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}!Mtc\_ProvCfgGetFileName@{Mtc\_ProvCfgGetFileName}}
+\index{Mtc\_ProvCfgGetFileName@{Mtc\_ProvCfgGetFileName}!mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvCfgGetFileName()}{Mtc\_ProvCfgGetFileName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Prov\+Cfg\+Get\+File\+Name (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get provision file name. 
+
+M\+TC provide default provision management. If client using another provision management, just ignore it.
+
+\begin{DoxyReturn}{Returns}
+provision file name.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__cfg_8h_a37d7649a47eef2f54e0cf8939433cd5c}{Mtc\+\_\+\+Prov\+Cfg\+Set\+File\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__cfg_8h_a6d6b0c9d429b0ef6d4cec9b1b4413421}\label{mtc__prov__cfg_8h_a6d6b0c9d429b0ef6d4cec9b1b4413421}} 
+\index{mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}!Mtc\_ProvCfgGetUseDft@{Mtc\_ProvCfgGetUseDft}}
+\index{Mtc\_ProvCfgGetUseDft@{Mtc\_ProvCfgGetUseDft}!mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvCfgGetUseDft()}{Mtc\_ProvCfgGetUseDft()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Prov\+Cfg\+Get\+Use\+Dft (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get using default provision. 
+
+Default 
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & Detect local IP. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & Not detect local IP.\\
+\hline
+{\em Z\+T\+R\+UE} & M\+TC provide provision management. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & M\+TC don\textquotesingle{}t have provision management.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__cfg_8h_ab9bd796820bcd21c2ff3bbd9619aba9a}{Mtc\+\_\+\+Prov\+Cfg\+Set\+Use\+Dft}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__cfg_8h_a37d7649a47eef2f54e0cf8939433cd5c}\label{mtc__prov__cfg_8h_a37d7649a47eef2f54e0cf8939433cd5c}} 
+\index{mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}!Mtc\_ProvCfgSetFileName@{Mtc\_ProvCfgSetFileName}}
+\index{Mtc\_ProvCfgSetFileName@{Mtc\_ProvCfgSetFileName}!mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvCfgSetFileName()}{Mtc\_ProvCfgSetFileName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Cfg\+Set\+File\+Name (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+File }\end{DoxyParamCaption})}
+
+
+
+Set provision file name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+File} & The provision file name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set provision file name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set provision file name failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__cfg_8h_aa9b03b1d4866405cdcc28414ba957b5b}{Mtc\+\_\+\+Prov\+Cfg\+Get\+File\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__prov__cfg_8h_ab9bd796820bcd21c2ff3bbd9619aba9a}\label{mtc__prov__cfg_8h_ab9bd796820bcd21c2ff3bbd9619aba9a}} 
+\index{mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}!Mtc\_ProvCfgSetUseDft@{Mtc\_ProvCfgSetUseDft}}
+\index{Mtc\_ProvCfgSetUseDft@{Mtc\_ProvCfgSetUseDft}!mtc\_prov\_cfg.h@{mtc\_prov\_cfg.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ProvCfgSetUseDft()}{Mtc\_ProvCfgSetUseDft()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Prov\+Cfg\+Set\+Use\+Dft (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Use }\end{DoxyParamCaption})}
+
+
+
+Set using default provision management. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Use} & Use default provision management.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set use provision successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set use provision failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__prov__cfg_8h_a6d6b0c9d429b0ef6d4cec9b1b4413421}{Mtc\+\_\+\+Prov\+Cfg\+Get\+Use\+Dft}} 
+\end{DoxySeeAlso}

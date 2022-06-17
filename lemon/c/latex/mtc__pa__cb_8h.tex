@@ -1,0 +1,367 @@
+\hypertarget{mtc__pa__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+pa\+\_\+cb.h File Reference}
+\label{mtc__pa__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_pa\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_pa\_cb.h}}
+
+
+M\+TC C\+M\+CC Public Account Callback Interface Functions.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}\label{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}) (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC public account operation ok. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}\label{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC public account operation failed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_acb63a2bee352e17af20f057c95614b19}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Add\+Subs\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account add subscribe successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}{Mtc\+\_\+\+Pa\+Sess\+Add\+Subs}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a34ea9b1f9394ebb5e2ad65c96080ce5b}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Add\+Subs\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account add subscribe failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}{Mtc\+\_\+\+Pa\+Sess\+Add\+Subs}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_ac5a9be3f941157ebb1a817ed4c9c0791}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Cancel\+Subs\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account cancel subscribe successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}{Mtc\+\_\+\+Pa\+Sess\+Cancel\+Subs}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a61b1aef49ca9acea768ac3da3f6fe25f}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Cancel\+Subs\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the publia account cancel subscribe failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}{Mtc\+\_\+\+Pa\+Sess\+Cancel\+Subs}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_aa8c4b8d61f550c421dd358931a508da6}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Qry\+Usr\+Subs\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account query user subscribed successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}{Mtc\+\_\+\+Pa\+Sess\+Qry\+Usr\+Subs}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_ae25c3984a5e241eb63cf9d673334f1cd}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Qry\+Usr\+Subs\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account query user subscribed failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}{Mtc\+\_\+\+Pa\+Sess\+Qry\+Usr\+Subs}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_af293dc37675cd25f25aaade86a6bd015}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public list successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a06ab176056e71e2bcdb8e36aea2373d4}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public list failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a470129f8921e5a3283fce83018ee77bf}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Recmd\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public list recommend successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst\+Recmd}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_af4b8bfb9b2443fdf8108aa33243d87c6}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Recmd\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public list recommend failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst\+Recmd}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a8ade701a7f88a8b8b7fcc12351641ef1}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Detail\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public detail successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Detail}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_adda9064ff8bbe0b7ad451d360a343359}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Detail\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public detail failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Detail}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a5a3e9de97b2eb8b34805ece70d663b84}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Menu\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public menu successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Menu}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a02d86cdb6f1e081ddb698ccf353eecb7}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Menu\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get public menu failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Menu}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a585b9150f3af5899b63f8635d527480a}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Prev\+Msg\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get previous message successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}{Mtc\+\_\+\+Pa\+Sess\+Get\+Prev\+Msg}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a393a99fa254e8b40f1a8937521964328}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Prev\+Msg\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account get previous message failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}{Mtc\+\_\+\+Pa\+Sess\+Get\+Prev\+Msg}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_adaace5c0ffbed9e68b15ff26926a4b8f}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account complain public successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}{Mtc\+\_\+\+Pa\+Sess\+Complain\+Pub}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a79001a847d4df052d8e0a0fa4ea8cb67}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account complain public failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}{Mtc\+\_\+\+Pa\+Sess\+Complain\+Pub}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_ad68b1fe9b733fbcf1a8099b0c5f47db4}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Set\+Acpt\+Stat\+Ok}} (\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account set accept status successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}{Mtc\+\_\+\+Pa\+Sess\+Set\+Acpt\+Stat}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__pa__cb_8h_a5cfa2fc7ffd7d21c4a8eb59377a3d94b}{Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Set\+Acpt\+Stat\+Failed}} (\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the public account set accept status failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}{Mtc\+\_\+\+Pa\+Sess\+Set\+Acpt\+Stat}} results. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC C\+M\+CC Public Account Callback Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a34ea9b1f9394ebb5e2ad65c96080ce5b}\label{mtc__pa__cb_8h_a34ea9b1f9394ebb5e2ad65c96080ce5b}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaAddSubsFailed@{Mtc\_PaCbSetPaAddSubsFailed}}
+\index{Mtc\_PaCbSetPaAddSubsFailed@{Mtc\_PaCbSetPaAddSubsFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaAddSubsFailed()}{Mtc\_PaCbSetPaAddSubsFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Add\+Subs\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account add subscribe failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}{Mtc\+\_\+\+Pa\+Sess\+Add\+Subs}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_acb63a2bee352e17af20f057c95614b19}\label{mtc__pa__cb_8h_acb63a2bee352e17af20f057c95614b19}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaAddSubsOk@{Mtc\_PaCbSetPaAddSubsOk}}
+\index{Mtc\_PaCbSetPaAddSubsOk@{Mtc\_PaCbSetPaAddSubsOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaAddSubsOk()}{Mtc\_PaCbSetPaAddSubsOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Add\+Subs\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account add subscribe successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a4983a1eed8853144d0046ab2f0b68f0a}{Mtc\+\_\+\+Pa\+Sess\+Add\+Subs}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a61b1aef49ca9acea768ac3da3f6fe25f}\label{mtc__pa__cb_8h_a61b1aef49ca9acea768ac3da3f6fe25f}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaCancelSubsFailed@{Mtc\_PaCbSetPaCancelSubsFailed}}
+\index{Mtc\_PaCbSetPaCancelSubsFailed@{Mtc\_PaCbSetPaCancelSubsFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaCancelSubsFailed()}{Mtc\_PaCbSetPaCancelSubsFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Cancel\+Subs\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the publia account cancel subscribe failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}{Mtc\+\_\+\+Pa\+Sess\+Cancel\+Subs}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_ac5a9be3f941157ebb1a817ed4c9c0791}\label{mtc__pa__cb_8h_ac5a9be3f941157ebb1a817ed4c9c0791}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaCancelSubsOk@{Mtc\_PaCbSetPaCancelSubsOk}}
+\index{Mtc\_PaCbSetPaCancelSubsOk@{Mtc\_PaCbSetPaCancelSubsOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaCancelSubsOk()}{Mtc\_PaCbSetPaCancelSubsOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Cancel\+Subs\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account cancel subscribe successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a7083d6d8374a144a34e8d3c89490b65a}{Mtc\+\_\+\+Pa\+Sess\+Cancel\+Subs}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a79001a847d4df052d8e0a0fa4ea8cb67}\label{mtc__pa__cb_8h_a79001a847d4df052d8e0a0fa4ea8cb67}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaComplainPubFailed@{Mtc\_PaCbSetPaComplainPubFailed}}
+\index{Mtc\_PaCbSetPaComplainPubFailed@{Mtc\_PaCbSetPaComplainPubFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaComplainPubFailed()}{Mtc\_PaCbSetPaComplainPubFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account complain public failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}{Mtc\+\_\+\+Pa\+Sess\+Complain\+Pub}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_adaace5c0ffbed9e68b15ff26926a4b8f}\label{mtc__pa__cb_8h_adaace5c0ffbed9e68b15ff26926a4b8f}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaComplainPubOk@{Mtc\_PaCbSetPaComplainPubOk}}
+\index{Mtc\_PaCbSetPaComplainPubOk@{Mtc\_PaCbSetPaComplainPubOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaComplainPubOk()}{Mtc\_PaCbSetPaComplainPubOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Complain\+Pub\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account complain public successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a6c4beb6c1dc3c331fadf816b619a61f9}{Mtc\+\_\+\+Pa\+Sess\+Complain\+Pub}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a393a99fa254e8b40f1a8937521964328}\label{mtc__pa__cb_8h_a393a99fa254e8b40f1a8937521964328}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPrevMsgFailed@{Mtc\_PaCbSetPaGetPrevMsgFailed}}
+\index{Mtc\_PaCbSetPaGetPrevMsgFailed@{Mtc\_PaCbSetPaGetPrevMsgFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPrevMsgFailed()}{Mtc\_PaCbSetPaGetPrevMsgFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Prev\+Msg\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get previous message failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}{Mtc\+\_\+\+Pa\+Sess\+Get\+Prev\+Msg}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a585b9150f3af5899b63f8635d527480a}\label{mtc__pa__cb_8h_a585b9150f3af5899b63f8635d527480a}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPrevMsgOk@{Mtc\_PaCbSetPaGetPrevMsgOk}}
+\index{Mtc\_PaCbSetPaGetPrevMsgOk@{Mtc\_PaCbSetPaGetPrevMsgOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPrevMsgOk()}{Mtc\_PaCbSetPaGetPrevMsgOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Prev\+Msg\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get previous message successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a01e3e8acf07e2ddae237f8565e867b7d}{Mtc\+\_\+\+Pa\+Sess\+Get\+Prev\+Msg}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_adda9064ff8bbe0b7ad451d360a343359}\label{mtc__pa__cb_8h_adda9064ff8bbe0b7ad451d360a343359}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubDetailFailed@{Mtc\_PaCbSetPaGetPubDetailFailed}}
+\index{Mtc\_PaCbSetPaGetPubDetailFailed@{Mtc\_PaCbSetPaGetPubDetailFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubDetailFailed()}{Mtc\_PaCbSetPaGetPubDetailFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Detail\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public detail failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Detail}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a8ade701a7f88a8b8b7fcc12351641ef1}\label{mtc__pa__cb_8h_a8ade701a7f88a8b8b7fcc12351641ef1}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubDetailOk@{Mtc\_PaCbSetPaGetPubDetailOk}}
+\index{Mtc\_PaCbSetPaGetPubDetailOk@{Mtc\_PaCbSetPaGetPubDetailOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubDetailOk()}{Mtc\_PaCbSetPaGetPubDetailOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Detail\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public detail successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_ad1f668af80f7a66ef81f4f8fbf40b5d5}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Detail}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a06ab176056e71e2bcdb8e36aea2373d4}\label{mtc__pa__cb_8h_a06ab176056e71e2bcdb8e36aea2373d4}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubLstFailed@{Mtc\_PaCbSetPaGetPubLstFailed}}
+\index{Mtc\_PaCbSetPaGetPubLstFailed@{Mtc\_PaCbSetPaGetPubLstFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubLstFailed()}{Mtc\_PaCbSetPaGetPubLstFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public list failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_af293dc37675cd25f25aaade86a6bd015}\label{mtc__pa__cb_8h_af293dc37675cd25f25aaade86a6bd015}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubLstOk@{Mtc\_PaCbSetPaGetPubLstOk}}
+\index{Mtc\_PaCbSetPaGetPubLstOk@{Mtc\_PaCbSetPaGetPubLstOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubLstOk()}{Mtc\_PaCbSetPaGetPubLstOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public list successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_af4813ecc9292ea11ac758e71252a7a72}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_af4b8bfb9b2443fdf8108aa33243d87c6}\label{mtc__pa__cb_8h_af4b8bfb9b2443fdf8108aa33243d87c6}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubLstRecmdFailed@{Mtc\_PaCbSetPaGetPubLstRecmdFailed}}
+\index{Mtc\_PaCbSetPaGetPubLstRecmdFailed@{Mtc\_PaCbSetPaGetPubLstRecmdFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubLstRecmdFailed()}{Mtc\_PaCbSetPaGetPubLstRecmdFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Recmd\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public list recommend failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst\+Recmd}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a470129f8921e5a3283fce83018ee77bf}\label{mtc__pa__cb_8h_a470129f8921e5a3283fce83018ee77bf}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubLstRecmdOk@{Mtc\_PaCbSetPaGetPubLstRecmdOk}}
+\index{Mtc\_PaCbSetPaGetPubLstRecmdOk@{Mtc\_PaCbSetPaGetPubLstRecmdOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubLstRecmdOk()}{Mtc\_PaCbSetPaGetPubLstRecmdOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Lst\+Recmd\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public list recommend successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a079175eb73b37cfb9fcae1a02a8467aa}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Lst\+Recmd}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a02d86cdb6f1e081ddb698ccf353eecb7}\label{mtc__pa__cb_8h_a02d86cdb6f1e081ddb698ccf353eecb7}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubMenuFailed@{Mtc\_PaCbSetPaGetPubMenuFailed}}
+\index{Mtc\_PaCbSetPaGetPubMenuFailed@{Mtc\_PaCbSetPaGetPubMenuFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubMenuFailed()}{Mtc\_PaCbSetPaGetPubMenuFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Menu\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public menu failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Menu}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a5a3e9de97b2eb8b34805ece70d663b84}\label{mtc__pa__cb_8h_a5a3e9de97b2eb8b34805ece70d663b84}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaGetPubMenuOk@{Mtc\_PaCbSetPaGetPubMenuOk}}
+\index{Mtc\_PaCbSetPaGetPubMenuOk@{Mtc\_PaCbSetPaGetPubMenuOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaGetPubMenuOk()}{Mtc\_PaCbSetPaGetPubMenuOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Get\+Pub\+Menu\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account get public menu successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a3aced7be3e8b8adda011d7039eabc467}{Mtc\+\_\+\+Pa\+Sess\+Get\+Pub\+Menu}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_ae25c3984a5e241eb63cf9d673334f1cd}\label{mtc__pa__cb_8h_ae25c3984a5e241eb63cf9d673334f1cd}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaQryUsrSubsFailed@{Mtc\_PaCbSetPaQryUsrSubsFailed}}
+\index{Mtc\_PaCbSetPaQryUsrSubsFailed@{Mtc\_PaCbSetPaQryUsrSubsFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaQryUsrSubsFailed()}{Mtc\_PaCbSetPaQryUsrSubsFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Qry\+Usr\+Subs\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account query user subscribed failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}{Mtc\+\_\+\+Pa\+Sess\+Qry\+Usr\+Subs}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_aa8c4b8d61f550c421dd358931a508da6}\label{mtc__pa__cb_8h_aa8c4b8d61f550c421dd358931a508da6}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaQryUsrSubsOk@{Mtc\_PaCbSetPaQryUsrSubsOk}}
+\index{Mtc\_PaCbSetPaQryUsrSubsOk@{Mtc\_PaCbSetPaQryUsrSubsOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaQryUsrSubsOk()}{Mtc\_PaCbSetPaQryUsrSubsOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Qry\+Usr\+Subs\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account query user subscribed successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a2bb1d37a1dae73f582a0f57d17becd36}{Mtc\+\_\+\+Pa\+Sess\+Qry\+Usr\+Subs}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_a5cfa2fc7ffd7d21c4a8eb59377a3d94b}\label{mtc__pa__cb_8h_a5cfa2fc7ffd7d21c4a8eb59377a3d94b}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaSetAcptStatFailed@{Mtc\_PaCbSetPaSetAcptStatFailed}}
+\index{Mtc\_PaCbSetPaSetAcptStatFailed@{Mtc\_PaCbSetPaSetAcptStatFailed}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaSetAcptStatFailed()}{Mtc\_PaCbSetPaSetAcptStatFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Set\+Acpt\+Stat\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_a84fbd5f811911e4bd65b3acf6f2e4414}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account set accept status failed callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}{Mtc\+\_\+\+Pa\+Sess\+Set\+Acpt\+Stat}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__pa__cb_8h_ad68b1fe9b733fbcf1a8099b0c5f47db4}\label{mtc__pa__cb_8h_ad68b1fe9b733fbcf1a8099b0c5f47db4}} 
+\index{mtc\_pa\_cb.h@{mtc\_pa\_cb.h}!Mtc\_PaCbSetPaSetAcptStatOk@{Mtc\_PaCbSetPaSetAcptStatOk}}
+\index{Mtc\_PaCbSetPaSetAcptStatOk@{Mtc\_PaCbSetPaSetAcptStatOk}!mtc\_pa\_cb.h@{mtc\_pa\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PaCbSetPaSetAcptStatOk()}{Mtc\_PaCbSetPaSetAcptStatOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Pa\+Cb\+Set\+Pa\+Set\+Acpt\+Stat\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__pa__cb_8h_aa6b533c8024d75f045248be50eb53503}{P\+F\+N\+\_\+\+M\+T\+C\+P\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the public account set accept status successfully callback. The callback is one of \mbox{\hyperlink{mtc__pa_8h_a59398621d39ca61beb9f44e3172a6ec7}{Mtc\+\_\+\+Pa\+Sess\+Set\+Acpt\+Stat}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

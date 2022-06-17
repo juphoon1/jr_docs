@@ -1,0 +1,1422 @@
+\hypertarget{mtc__call__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+call\+\_\+cb.h File Reference}
+\label{mtc__call__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_call\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_call\_cb.h}}
+
+
+M\+TC Call Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__call__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}\label{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}) (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}\label{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+R\+T\+C\+CB}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Evnt\+Type, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Sdp)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}\label{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+A\+L\+E\+R\+T\+ED}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Alert\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify alerted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}\label{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify terminated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}\label{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}}) (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify replaced. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}\label{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Info)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify receive info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a6ce230c4f76425d803156645b3252d9f}\label{mtc__call__cb_8h_a6ce230c4f76425d803156645b3252d9f}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a6ce230c4f76425d803156645b3252d9f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+F\+OX}}) (Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Info)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify receive info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}\label{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+E\+RR}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}\label{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Parm1, Z\+U\+I\+NT i\+Parm2)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for video status change. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a7ab9c753d8c8e4e590ff8c7253595326}\label{mtc__call__cb_8h_a7ab9c753d8c8e4e590ff8c7253595326}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a7ab9c753d8c8e4e590ff8c7253595326}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+I\+ZE}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Width, Z\+U\+I\+NT i\+Height, Z\+I\+NT i\+Orientation)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for video size change. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}\label{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+RE}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Parm)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for capture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}\label{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+R\+E\+S\+I\+ZE}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Width, Z\+U\+I\+NT i\+Height)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for capture size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}\label{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+B\+O\+OL b\+Video, Z\+B\+O\+OL b\+Send, Z\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for network status changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}\label{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+T\+P\+C\+O\+N\+N\+E\+C\+T\+I\+V\+I\+TY}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+B\+O\+OL b\+Connected)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for rtp connectivity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}\label{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+P\+A\+R\+T\+P\+U\+P\+D\+T\+ED}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+U\+I\+NT i\+State)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC session callback for notify participant updated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}\label{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+R\+Y\+P\+T\+O\+S\+T\+A\+C\+H\+A\+N\+G\+ED}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+State\+Type, Z\+B\+O\+OL b\+Video)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for crypto status change. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}\label{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}}) (Z\+U\+I\+NT i\+Strm\+Id, Z\+B\+O\+OL b\+Video, Z\+C\+H\+AR $\ast$pc\+Data, Z\+U\+I\+NT i\+Len)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for recving rtp packet ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}\label{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}}) (Z\+U\+I\+NT i\+Tpt\+Id, Z\+C\+H\+AR $\ast$pc\+Rmt\+Addr, Z\+C\+H\+AR $\ast$pc\+Data, Z\+U\+I\+NT i\+Len)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for sending rtp packet ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a709484127ac1bf24ccbe985f51547ba9}\label{mtc__call__cb_8h_a709484127ac1bf24ccbe985f51547ba9}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a709484127ac1bf24ccbe985f51547ba9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+F\+I\+L\+E\+P\+L\+A\+Y\+S\+T\+O\+P\+P\+E\+DX}}) (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for stream file play stoopedx. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_ac476dfb47f1fcb893421a9dc569894e4}\label{mtc__call__cb_8h_ac476dfb47f1fcb893421a9dc569894e4}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_ac476dfb47f1fcb893421a9dc569894e4}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+OK}}) (Z\+U\+I\+NT i\+Subs\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC subscription callback for subscription ok . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a261f0f953405e715bf73251fbda93075}\label{mtc__call__cb_8h_a261f0f953405e715bf73251fbda93075}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a261f0f953405e715bf73251fbda93075}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+F\+A\+I\+L\+ED}}) (Z\+U\+I\+NT i\+Subs\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC subscription callback for subscription failed . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}\label{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}}) (Z\+U\+I\+NT i\+Subs\+Id, Z\+C\+H\+AR $\ast$pc\+Info)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for notify receive subs info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}\label{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}}) (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC refer call callback. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a82c3bc4c693c5eefaf205a3efbfb928f}\label{mtc__call__cb_8h_a82c3bc4c693c5eefaf205a3efbfb928f}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a82c3bc4c693c5eefaf205a3efbfb928f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+D\+T\+MF}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Dtmf\+Type)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC call callback for dmtf received. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}\label{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}} 
+typedef Z\+V\+O\+ID(\+\_\+\+\_\+stdcall $\ast$ \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}}) (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Ptt\+Type, Z\+U\+I\+NT i\+Ptt\+Id, Z\+B\+O\+OL b\+Squ, Z\+B\+O\+OL b\+Ptt\+Mute, Z\+U\+I\+NT i\+Ptt\+Sum, Z\+U\+I\+NT i\+Sct, Z\+U\+I\+NT i\+Add\+Type, Z\+U\+I\+NT i\+Add\+Value)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC receive ptt event callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a84ef4abd17f6905ff80581ff472ccbdf}{Mtc\+\_\+\+Call\+Cb\+Set\+Incoming}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate received a new call. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a7ed0936c87752443d17b079e4a913edb}{Mtc\+\_\+\+Call\+Cb\+Set\+Outgoing}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate send a new call. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ac297651a626b8dd68be2b3d1f59a82f1}{Mtc\+\_\+\+Call\+Cb\+Set\+Alerted}} (\mbox{\hyperlink{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+A\+L\+E\+R\+T\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate the callee is ringing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a09850334b7c87971f38662d5017dc659}{Mtc\+\_\+\+Call\+Cb\+Set\+Forwarded}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate the call is forwarded. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a0de57c2892ce63e45fe64ffcc63aeff8}{Mtc\+\_\+\+Call\+Cb\+Set\+Pracked}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate the callee receive prack. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a7c24ecb4dd0f6ed06a932a42cd94406c}{Mtc\+\_\+\+Call\+Cb\+Set\+Talking}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate the call has established. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aa0ce0761081a423a5650337435381fb9}{Mtc\+\_\+\+Call\+Cb\+Set\+Termed}} (\mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call is terminated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a169bec3ef3079b38a23b0285cdc767c2}{Mtc\+\_\+\+Call\+Cb\+Set\+Mdfy\+Acpt}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call modifying accepted. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a90b32c36d76ae1188ea4b079d1cd0b5c}{Mtc\+\_\+\+Call\+Cb\+Set\+Mdfyed}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call modifyed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a7f3cb2bc5a087e3084c7bfdd63f7269c}{Mtc\+\_\+\+Call\+Cb\+Set\+Mdfy\+Req}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call modify request. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a0f4d2896fa468956e546702db7809a4a}{Mtc\+\_\+\+Call\+Cb\+Set\+Hold\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call hold successfully. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a0291c814dd0e96fc291aaa696ab98248}{Mtc\+\_\+\+Call\+Cb\+Set\+Hold\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call hold failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a4a43bd5076bb86d0c1eb76a252487aae}{Mtc\+\_\+\+Call\+Cb\+Set\+Un\+Hold\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call un-\/hold successfully. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ad84ebc0606e89ef2512a238186c24ac7}{Mtc\+\_\+\+Call\+Cb\+Set\+Un\+Hold\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call un-\/hold failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a1e2f744c1e0c4c2d67e7fdb31f61890c}{Mtc\+\_\+\+Call\+Cb\+Set\+Held}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call was held by peer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_acc18d6769ecb915474aaa97e43510029}{Mtc\+\_\+\+Call\+Cb\+Set\+Un\+Held}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call was un-\/held by peer. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a0902f3050c167c41988f33255a8c1087}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate adding voice stream has been completed successfully. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a37329c68a463535409e969d5cfa2fb70}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate adding voice stream failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ad7ec5c5ebbab4ef69a9ebb3a3f816814}{Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Audio\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate removing voice stream has been completed successfully. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a09a0a4ba62599fd02d7dd3342d94adb9}{Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Audio\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate removing voice stream has been failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a2666cb46807fce1c6f392638a696ed22}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Req}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receiving request of adding voice stream. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aa7f6f19baec6c3f94cea73f2d84349a9}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Cancel}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate cancel request of adding voice stream. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a30882b46bf16676d8ff0ab7126e31e9b}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate adding video stream has been completed successfully. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ad8ca7e8aa5cf0fc6958ccec2dce9caed}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate adding video stream has been failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aa9acf8c14544000ec7fec87c4ffd6a4e}{Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Video\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate removing video stream has been completed successfully. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a3d8317853118671fd39a34f78848f5f6}{Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Video\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate removing video stream has been failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aae4565cdeb267d628032c7ad0f2636b5}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Req}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receiving request of adding video stream. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ac674a1fd8c91328a21edab58990821cf}{Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Cancel}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate cancel request of adding video stream. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a28920432c7627f4e7f202035a047a785}{Mtc\+\_\+\+Call\+Cb\+Set\+Refered}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call refered. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a49e6136bd7de50a1a8451f0b4aea020e}{Mtc\+\_\+\+Call\+Cb\+Set\+Trsf\+Acpt}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call transferred accepted. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a8745820d02835897c1120b8d9e7c8bae}{Mtc\+\_\+\+Call\+Cb\+Set\+Trsf\+Term}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call transferred terminated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a5cdef3f924f34531defcfab8cdf07db8}{Mtc\+\_\+\+Call\+Cb\+Set\+Trsf\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call transferred failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aa808e84f6972c6566057b7a02e1ba942}{Mtc\+\_\+\+Call\+Cb\+Set\+Redirected}} (\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call redirected. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aa5e2d289c20b03b34069e3ab15f08354}{Mtc\+\_\+\+Call\+Cb\+Set\+Replaced}} (\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replaced. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a73562490cf4d41bcbd7f6e5a86d74a23}{Mtc\+\_\+\+Call\+Cb\+Set\+Replace\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replace ok. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a492885db4407a79a5ef798d241c6ea1b}{Mtc\+\_\+\+Call\+Cb\+Set\+Replace\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replace failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a32a999148c366457230e92f3c10f8f41}{Mtc\+\_\+\+Call\+Cb\+Set\+Info}} (\mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive info. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a80c5411b0b0c4b03cd034cc0f7a97bcc}{Mtc\+\_\+\+Call\+Cb\+Set\+InfoX}} (\mbox{\hyperlink{mtc__call__cb_8h_a6ce230c4f76425d803156645b3252d9f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+F\+OX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive info. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a51726b7544b0571e586fcd56020f248e}{Mtc\+\_\+\+Call\+Cb\+Set\+Rtp\+Connectivity}} (\mbox{\hyperlink{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+T\+P\+C\+O\+N\+N\+E\+C\+T\+I\+V\+I\+TY}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate rtp connectivity. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a243e89bf1210c24248fd9ac040acfe0e}{Mtc\+\_\+\+Call\+Cb\+Set\+Cam\+Disconned}} (\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call replaced. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ac4761255e8b6e582311dc87e52dc5ced}{Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Size}} (\mbox{\hyperlink{mtc__call__cb_8h_a7ab9c753d8c8e4e590ff8c7253595326}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+I\+ZE}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s video size changed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a4d2a50dd7be50861bcf633c083bef4db}{Mtc\+\_\+\+Call\+Cb\+Set\+Net\+Sta\+Changed}} (\mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s network status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a10665d5032fd84336ba10b6bd0c8ebde}{Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Incoming\+Sta}} (\mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s video incoming status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a29a25cbfa496dcceb2fa64a8c3f3dea4}{Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Outgoing\+Sta}} (\mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s video outgoing status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a9cf67b02d1245b8cc27e92064b171c4c}{Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Protect\+Sta}} (\mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s video protection status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ac53002a3c6c265b92c2f6673aee02792}{Mtc\+\_\+\+Call\+Cb\+Set\+Capture\+Framerate}} (\mbox{\hyperlink{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+RE}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate capture framerate. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a1dde5674c73ae540e70735d210a06199}{Mtc\+\_\+\+Call\+Cb\+Set\+Capture\+Size}} (\mbox{\hyperlink{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+R\+E\+S\+I\+ZE}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate capture framerate. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a3deed1d67aaf88a3c0f032b69c3d39f9}{Mtc\+\_\+\+Call\+Cb\+Set\+Partp\+Updted}} (\mbox{\hyperlink{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+P\+A\+R\+T\+P\+U\+P\+D\+T\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate session participant\textquotesingle{}s status updated. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a6454ce483ca8fea873afc89a3a8f9712}{Mtc\+\_\+\+Call\+Cb\+Set\+File\+Play\+Stoppedx}} (\mbox{\hyperlink{mtc__call__cb_8h_a709484127ac1bf24ccbe985f51547ba9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+F\+I\+L\+E\+P\+L\+A\+Y\+S\+T\+O\+P\+P\+E\+DX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate file play stoppedx. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aaba9b25b72e2766e27788a3c70fee600}{Mtc\+\_\+\+Call\+Cb\+Set\+Error}} (\mbox{\hyperlink{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+E\+RR}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call error. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a05794403f623d3834f386ccec3a83e72}{Mtc\+\_\+\+Call\+Cb\+Set\+Crypto\+Sta\+Changed}} (\mbox{\hyperlink{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+R\+Y\+P\+T\+O\+S\+T\+A\+C\+H\+A\+N\+G\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s crypto status. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_af221bfd6196d43f35b2acbc22b22bd22}{Mtc\+\_\+\+Call\+Cb\+Set\+Recv\+Rtp\+Packet}} (\mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receiving a rtp packtet. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_af7f6fd425b33d8921b837c79f28a5b45}{Mtc\+\_\+\+Call\+Cb\+Set\+Send\+Rtp\+Packet}} (\mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate sending a rtp packtet. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_abbbd615ad36d88593c496897c4cae1e8}{Mtc\+\_\+\+Call\+Cb\+Add\+Info}} (\mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive info. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a9ecf0fc074693e82521405df26245e39}{Mtc\+\_\+\+Call\+Cb\+Rmv\+Info}} (\mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em remove callback of indicate receive info. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__call__cb_8h_aaaeb5cb9b758574da65f4326ef625c7d}\label{mtc__call__cb_8h_aaaeb5cb9b758574da65f4326ef625c7d}} 
+Z\+F\+U\+NC Z\+V\+O\+ID {\bfseries Mtc\+\_\+\+Call\+Cb\+Set\+Recv\+Dtmf} (\mbox{\hyperlink{mtc__call__cb_8h_a82c3bc4c693c5eefaf205a3efbfb928f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+D\+T\+MF}} pfn\+Cb)
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_aabcd52605d1bdceda6b371584579d2ae}{Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_ac476dfb47f1fcb893421a9dc569894e4}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+OK}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate subscription ok. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a4dd03a7f7204c18475a8e5b63836eec4}{Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a261f0f953405e715bf73251fbda93075}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+F\+A\+I\+L\+ED}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate subscription failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a22d0cbc38ace8d30069aa3a664242f1b}{Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Info}} (\mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive subs info. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a4adee5173029e4c8f1091e616d5bb845}{Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Req}} (\mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate receive subscribe request. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ab4e14cdb5c0f67c1b2e15da5e45fb5a5}{Mtc\+\_\+\+Call\+Cb\+Set\+Refer\+Call\+Ok}} (\mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of refer call ok. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a69be533dfac65331d344e48808794db8}{Mtc\+\_\+\+Call\+Cb\+Set\+Refer\+Call\+Failed}} (\mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of refer call failed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_ad2c7da725b0efd80987a45a61e788e43}{Mtc\+\_\+\+Call\+Cb\+Set\+Ptt\+Recvd}} (\mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of receiving ptt event. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__call__cb_8h_a6d87384271ff8aeb98cb507b0fbb8b77}{Mtc\+\_\+\+Call\+Cb\+Set\+Rtc\+Call}} (\mbox{\hyperlink{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+R\+T\+C\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback for a rtc call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Call Callback Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__call__cb_8h_abbbd615ad36d88593c496897c4cae1e8}\label{mtc__call__cb_8h_abbbd615ad36d88593c496897c4cae1e8}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbAddInfo@{Mtc\_CallCbAddInfo}}
+\index{Mtc\_CallCbAddInfo@{Mtc\_CallCbAddInfo}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbAddInfo()}{Mtc\_CallCbAddInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Add\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive info. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a9ecf0fc074693e82521405df26245e39}\label{mtc__call__cb_8h_a9ecf0fc074693e82521405df26245e39}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbRmvInfo@{Mtc\_CallCbRmvInfo}}
+\index{Mtc\_CallCbRmvInfo@{Mtc\_CallCbRmvInfo}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbRmvInfo()}{Mtc\_CallCbRmvInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Rmv\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+remove callback of indicate receive info. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aa7f6f19baec6c3f94cea73f2d84349a9}\label{mtc__call__cb_8h_aa7f6f19baec6c3f94cea73f2d84349a9}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddAudioCancel@{Mtc\_CallCbSetAddAudioCancel}}
+\index{Mtc\_CallCbSetAddAudioCancel@{Mtc\_CallCbSetAddAudioCancel}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddAudioCancel()}{Mtc\_CallCbSetAddAudioCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Cancel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate cancel request of adding voice stream. 
+
+This callback indicates cancel request of adding voice stream which was invoked by peer. G\+UI should cancel showed message box. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a37329c68a463535409e969d5cfa2fb70}\label{mtc__call__cb_8h_a37329c68a463535409e969d5cfa2fb70}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddAudioFailed@{Mtc\_CallCbSetAddAudioFailed}}
+\index{Mtc\_CallCbSetAddAudioFailed@{Mtc\_CallCbSetAddAudioFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddAudioFailed()}{Mtc\_CallCbSetAddAudioFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate adding voice stream failed. 
+
+This callback indicates failed to add voice stream to the call. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a0902f3050c167c41988f33255a8c1087}\label{mtc__call__cb_8h_a0902f3050c167c41988f33255a8c1087}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddAudioOk@{Mtc\_CallCbSetAddAudioOk}}
+\index{Mtc\_CallCbSetAddAudioOk@{Mtc\_CallCbSetAddAudioOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddAudioOk()}{Mtc\_CallCbSetAddAudioOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate adding voice stream has been completed successfully. 
+
+This callback indicates the operation of adding voice stream to the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a2666cb46807fce1c6f392638a696ed22}\label{mtc__call__cb_8h_a2666cb46807fce1c6f392638a696ed22}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddAudioReq@{Mtc\_CallCbSetAddAudioReq}}
+\index{Mtc\_CallCbSetAddAudioReq@{Mtc\_CallCbSetAddAudioReq}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddAudioReq()}{Mtc\_CallCbSetAddAudioReq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Audio\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receiving request of adding voice stream. 
+
+This callback indicates receiving request of adding voice stream which was invoked by peer. G\+UI should show a message box to inform user this information, and wait for user to accept or reject this requst. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ac674a1fd8c91328a21edab58990821cf}\label{mtc__call__cb_8h_ac674a1fd8c91328a21edab58990821cf}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddVideoCancel@{Mtc\_CallCbSetAddVideoCancel}}
+\index{Mtc\_CallCbSetAddVideoCancel@{Mtc\_CallCbSetAddVideoCancel}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddVideoCancel()}{Mtc\_CallCbSetAddVideoCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Cancel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate cancel request of adding video stream. 
+
+This callback indicates cancel request of adding video stream which was invoked by peer. G\+UI should cancel showed message box. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ad8ca7e8aa5cf0fc6958ccec2dce9caed}\label{mtc__call__cb_8h_ad8ca7e8aa5cf0fc6958ccec2dce9caed}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddVideoFailed@{Mtc\_CallCbSetAddVideoFailed}}
+\index{Mtc\_CallCbSetAddVideoFailed@{Mtc\_CallCbSetAddVideoFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddVideoFailed()}{Mtc\_CallCbSetAddVideoFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate adding video stream has been failed. 
+
+This callback indicates failed to add video stream to the call. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} is the ID of session. G\+UI should use it to locate call window.
+
+\char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} has below values.
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{mtc__call_8h_aee1b31e6fcaacaf189d4ecd8247deb88}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+R\+E\+J\+E\+C\+T\+ED}} Failed by remote rejected
+\item \mbox{\hyperlink{mtc__call_8h_aabb013b980b447da5204e72d1ee0b270}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK}} Failed by network disconnected
+\item \mbox{\hyperlink{mtc__call_8h_a0aded210af72758eea5e4c6b0d57ee9f}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}} Failed by timeout for request 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{mtc__call__cb_8h_a30882b46bf16676d8ff0ab7126e31e9b}\label{mtc__call__cb_8h_a30882b46bf16676d8ff0ab7126e31e9b}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddVideoOk@{Mtc\_CallCbSetAddVideoOk}}
+\index{Mtc\_CallCbSetAddVideoOk@{Mtc\_CallCbSetAddVideoOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddVideoOk()}{Mtc\_CallCbSetAddVideoOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate adding video stream has been completed successfully. 
+
+This callback indicates the operation of adding video stream to the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aae4565cdeb267d628032c7ad0f2636b5}\label{mtc__call__cb_8h_aae4565cdeb267d628032c7ad0f2636b5}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAddVideoReq@{Mtc\_CallCbSetAddVideoReq}}
+\index{Mtc\_CallCbSetAddVideoReq@{Mtc\_CallCbSetAddVideoReq}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAddVideoReq()}{Mtc\_CallCbSetAddVideoReq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Add\+Video\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receiving request of adding video stream. 
+
+This callback indicates receiving request of adding video stream which was invoked by peer. G\+UI should show a message box to inform user this information, and wait for user to accept or reject this requst. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ac297651a626b8dd68be2b3d1f59a82f1}\label{mtc__call__cb_8h_ac297651a626b8dd68be2b3d1f59a82f1}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetAlerted@{Mtc\_CallCbSetAlerted}}
+\index{Mtc\_CallCbSetAlerted@{Mtc\_CallCbSetAlerted}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetAlerted()}{Mtc\_CallCbSetAlerted()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Alerted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+A\+L\+E\+R\+T\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate the callee is ringing. 
+
+G\+UI should update the status of outgoing call window \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+A\+L\+E\+R\+T\+ED}} is the ID of session. G\+UI should use it to locate call window.
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{mtc__call_8h_a4c090136f04358410f2c134a3faf7d10}{Mtc\+\_\+\+Sess\+Get\+Early\+Media\+Status}} and \mbox{\hyperlink{mtc__call_8h_a858ead61a26b3d9e5c6fa7eedadb1b0f}{Mtc\+\_\+\+Sess\+Has\+Video}} to check if there is a video early media. If so, use \mbox{\hyperlink{mtc__call_8h_a93e3f8b55ad19cac4d2b640ede15b625}{Mtc\+\_\+\+Sess\+Has\+Offer\+Answer}} to check if offer answer exchanged is completed. If so, G\+UI should invoke \mbox{\hyperlink{mtc__call_8h_a323e8acd3bdfcb6e1361c2d63f3b714d}{Mtc\+\_\+\+Sess\+Video\+Start}} to start receive video early media.
+\end{DoxyItemize}
+
+\char`\"{}i\+Alert\+Type\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a25d88b3762c83753adb5c8fda69f4da6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+A\+L\+E\+R\+T\+ED}} has below values\+:
+\begin{DoxyItemize}
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+L\+E\+R\+T\+\_\+\+R\+I\+NG Alerted by 180 ringing.
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+L\+E\+R\+T\+\_\+\+Q\+U\+E\+UE Alerted by 182 queued.
+\item M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+A\+L\+E\+R\+T\+\_\+\+P\+R\+O\+G\+R\+E\+SS Alerted by 183 session progress.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a243e89bf1210c24248fd9ac040acfe0e}\label{mtc__call__cb_8h_a243e89bf1210c24248fd9ac040acfe0e}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetCamDisconned@{Mtc\_CallCbSetCamDisconned}}
+\index{Mtc\_CallCbSetCamDisconned@{Mtc\_CallCbSetCamDisconned}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetCamDisconned()}{Mtc\_CallCbSetCamDisconned()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Cam\+Disconned (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replaced. 
+
+This callback indicates the camera has disconnected with this call. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ac53002a3c6c265b92c2f6673aee02792}\label{mtc__call__cb_8h_ac53002a3c6c265b92c2f6673aee02792}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetCaptureFramerate@{Mtc\_CallCbSetCaptureFramerate}}
+\index{Mtc\_CallCbSetCaptureFramerate@{Mtc\_CallCbSetCaptureFramerate}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetCaptureFramerate()}{Mtc\_CallCbSetCaptureFramerate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Capture\+Framerate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+RE}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate capture framerate. 
+
+This callback indicates the capture statistics. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+RE}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Parm\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a7c8c0ffcbfa67fa9be1ca811849fe50a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+RE}} indicate the framerate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a1dde5674c73ae540e70735d210a06199}\label{mtc__call__cb_8h_a1dde5674c73ae540e70735d210a06199}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetCaptureSize@{Mtc\_CallCbSetCaptureSize}}
+\index{Mtc\_CallCbSetCaptureSize@{Mtc\_CallCbSetCaptureSize}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetCaptureSize()}{Mtc\_CallCbSetCaptureSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Capture\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+R\+E\+S\+I\+ZE}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate capture framerate. 
+
+This callback indicates the capture size. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+R\+E\+S\+I\+ZE}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Width\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+R\+E\+S\+I\+ZE}} indicate capture width. \char`\"{}i\+Height\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ae528168edaaf4b11b4fc228aa086a684}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+A\+P\+T\+U\+R\+E\+S\+I\+ZE}} indicate capture height.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a05794403f623d3834f386ccec3a83e72}\label{mtc__call__cb_8h_a05794403f623d3834f386ccec3a83e72}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetCryptoStaChanged@{Mtc\_CallCbSetCryptoStaChanged}}
+\index{Mtc\_CallCbSetCryptoStaChanged@{Mtc\_CallCbSetCryptoStaChanged}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetCryptoStaChanged()}{Mtc\_CallCbSetCryptoStaChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Crypto\+Sta\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+R\+Y\+P\+T\+O\+S\+T\+A\+C\+H\+A\+N\+G\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s crypto status. 
+
+This callback indicates the call\textquotesingle{}s crypto status. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+R\+Y\+P\+T\+O\+S\+T\+A\+C\+H\+A\+N\+G\+ED}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+State\+Type\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+R\+Y\+P\+T\+O\+S\+T\+A\+C\+H\+A\+N\+G\+ED}} indicate the crypto status type \mbox{\hyperlink{mtc__call_8h_a43877e3ac0d52a25d44d3953f3548a82}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+C\+R\+Y\+P\+T\+O\+\_\+\+S\+T\+A\+T\+E\+\_\+\+T\+Y\+PE}}. \char`\"{}b\+Video\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa154c2f8b299c2c18e7f9640c4a02bde}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+C\+R\+Y\+P\+T\+O\+S\+T\+A\+C\+H\+A\+N\+G\+ED}} indicate if the crypto status of video stream is changed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aaba9b25b72e2766e27788a3c70fee600}\label{mtc__call__cb_8h_aaba9b25b72e2766e27788a3c70fee600}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetError@{Mtc\_CallCbSetError}}
+\index{Mtc\_CallCbSetError@{Mtc\_CallCbSetError}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetError()}{Mtc\_CallCbSetError()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+E\+RR}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call error. 
+
+This callback indicates error occured during call. G\+UI should show the detail error information to user. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+E\+RR}} is the ID of the session which occurs error. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+E\+RR}} is the error code(see M\+S\+F\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+O), it can be
+\begin{DoxyItemize}
+\item If i\+Stat\+Code $<$ 0x1000, contains S\+IP response status code, use Sip\+\_\+\+Reason\+From\+Code to get description string
+\item Otherwise, use \mbox{\hyperlink{mtc__call_8h_ad6f677fb6d97ef1e58ac50649ac4c215}{Mtc\+\_\+\+Sess\+Get\+Stat\+Desc}} to get description string
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a6454ce483ca8fea873afc89a3a8f9712}\label{mtc__call__cb_8h_a6454ce483ca8fea873afc89a3a8f9712}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetFilePlayStoppedx@{Mtc\_CallCbSetFilePlayStoppedx}}
+\index{Mtc\_CallCbSetFilePlayStoppedx@{Mtc\_CallCbSetFilePlayStoppedx}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetFilePlayStoppedx()}{Mtc\_CallCbSetFilePlayStoppedx()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+File\+Play\+Stoppedx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a709484127ac1bf24ccbe985f51547ba9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+F\+I\+L\+E\+P\+L\+A\+Y\+S\+T\+O\+P\+P\+E\+DX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate file play stoppedx. 
+
+This callback indicates the capture size. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a709484127ac1bf24ccbe985f51547ba9}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+F\+I\+L\+E\+P\+L\+A\+Y\+S\+T\+O\+P\+P\+E\+DX}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a09850334b7c87971f38662d5017dc659}\label{mtc__call__cb_8h_a09850334b7c87971f38662d5017dc659}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetForwarded@{Mtc\_CallCbSetForwarded}}
+\index{Mtc\_CallCbSetForwarded@{Mtc\_CallCbSetForwarded}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetForwarded()}{Mtc\_CallCbSetForwarded()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Forwarded (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate the call is forwarded. 
+
+G\+UI should update the status of outgoing call window \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a1e2f744c1e0c4c2d67e7fdb31f61890c}\label{mtc__call__cb_8h_a1e2f744c1e0c4c2d67e7fdb31f61890c}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetHeld@{Mtc\_CallCbSetHeld}}
+\index{Mtc\_CallCbSetHeld@{Mtc\_CallCbSetHeld}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetHeld()}{Mtc\_CallCbSetHeld()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Held (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call was held by peer. 
+
+This callback indicates peer hold the call. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a0291c814dd0e96fc291aaa696ab98248}\label{mtc__call__cb_8h_a0291c814dd0e96fc291aaa696ab98248}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetHoldFailed@{Mtc\_CallCbSetHoldFailed}}
+\index{Mtc\_CallCbSetHoldFailed@{Mtc\_CallCbSetHoldFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetHoldFailed()}{Mtc\_CallCbSetHoldFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Hold\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call hold failed. 
+
+This callback indicates hold operation has been failed. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a0f4d2896fa468956e546702db7809a4a}\label{mtc__call__cb_8h_a0f4d2896fa468956e546702db7809a4a}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetHoldOk@{Mtc\_CallCbSetHoldOk}}
+\index{Mtc\_CallCbSetHoldOk@{Mtc\_CallCbSetHoldOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetHoldOk()}{Mtc\_CallCbSetHoldOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Hold\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call hold successfully. 
+
+This callback indicates hold operation has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a84ef4abd17f6905ff80581ff472ccbdf}\label{mtc__call__cb_8h_a84ef4abd17f6905ff80581ff472ccbdf}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetIncoming@{Mtc\_CallCbSetIncoming}}
+\index{Mtc\_CallCbSetIncoming@{Mtc\_CallCbSetIncoming}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetIncoming()}{Mtc\_CallCbSetIncoming()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Incoming (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate received a new call. 
+
+G\+UI use \mbox{\hyperlink{mtc__call_8h}{M\+TC Session Interfaces}}, like \mbox{\hyperlink{mtc__call_8h_a88a5a550390b2637dac3da143f2d876e}{Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}, to get detail information and present those to user. And wait for user action, accept or decline. i\+Sess\+Id in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to get session status.
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{mtc__call_8h_a1420a15d1459227f56a1ac111c538a09}{Mtc\+\_\+\+Sess\+Peer\+Offer\+Video}} to check if incoming call has video request.
+\begin{DoxyItemize}
+\item Has video, show video call alert window with 3 options
+\begin{DoxyItemize}
+\item accept
+\item accept with video
+\item decline
+\end{DoxyItemize}
+\item No Video, show voice call alert window with 2 options
+\begin{DoxyItemize}
+\item accept
+\item decline
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item Assign i\+Sess\+Id to alert window. It will be used when invoke \mbox{\hyperlink{mtc__call_8h_a98cc54b4aab2670b1ad94d18348c03e4}{Mtc\+\_\+\+Sess\+Answer}} or \mbox{\hyperlink{mtc__call_8h_af7daa98eb9eb1a79c716ff7129dcab26}{Mtc\+\_\+\+Sess\+Term}}.
+\item Get peer information by \mbox{\hyperlink{mtc__call_8h_a88a5a550390b2637dac3da143f2d876e}{Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a32a999148c366457230e92f3c10f8f41}\label{mtc__call__cb_8h_a32a999148c366457230e92f3c10f8f41}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetInfo@{Mtc\_CallCbSetInfo}}
+\index{Mtc\_CallCbSetInfo@{Mtc\_CallCbSetInfo}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetInfo()}{Mtc\_CallCbSetInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive info. 
+
+This callback indicates the call has received info message. G\+UI should update the I\+N\+FO information. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a97e988d3dd855acdfc1686d16629f87c}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+FO}} is the ID of session replaced, G\+UI should use it to locate call window. \char`\"{}pc\+Info\char`\"{} is the info string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a80c5411b0b0c4b03cd034cc0f7a97bcc}\label{mtc__call__cb_8h_a80c5411b0b0c4b03cd034cc0f7a97bcc}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetInfoX@{Mtc\_CallCbSetInfoX}}
+\index{Mtc\_CallCbSetInfoX@{Mtc\_CallCbSetInfoX}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetInfoX()}{Mtc\_CallCbSetInfoX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+InfoX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a6ce230c4f76425d803156645b3252d9f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+F\+OX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive info. 
+
+This callback indicates the call has received info message \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a6ce230c4f76425d803156645b3252d9f}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+I\+N\+F\+OX}} is the ID of session, G\+UI should use it to locate call window. \char`\"{}pc\+Uri\char`\"{} is the U\+R\+I(\+S\+I\+P or T\+E\+L U\+R\+I) info where the message from. \char`\"{}pc\+Info\char`\"{} is the info string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a169bec3ef3079b38a23b0285cdc767c2}\label{mtc__call__cb_8h_a169bec3ef3079b38a23b0285cdc767c2}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetMdfyAcpt@{Mtc\_CallCbSetMdfyAcpt}}
+\index{Mtc\_CallCbSetMdfyAcpt@{Mtc\_CallCbSetMdfyAcpt}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetMdfyAcpt()}{Mtc\_CallCbSetMdfyAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Mdfy\+Acpt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call modifying accepted. 
+
+To change the attribute of media stream is called call modify, includes hold and add or remove media stream. This callback indicates the modification is accept by peer. G\+UI should check which service has been invoke by user. If user hold or un-\/hold the call, show hold or un-\/hold successfully. If user add video upon a voice call, then switch to video call window. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a90b32c36d76ae1188ea4b079d1cd0b5c}\label{mtc__call__cb_8h_a90b32c36d76ae1188ea4b079d1cd0b5c}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetMdfyed@{Mtc\_CallCbSetMdfyed}}
+\index{Mtc\_CallCbSetMdfyed@{Mtc\_CallCbSetMdfyed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetMdfyed()}{Mtc\_CallCbSetMdfyed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Mdfyed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call modifyed. 
+
+This callback indicates modification was invoke by peer, and this modification is completed. G\+UI use \mbox{\hyperlink{mtc__call_8h}{M\+TC Session Interfaces}}, like \mbox{\hyperlink{mtc__call_8h_a858ead61a26b3d9e5c6fa7eedadb1b0f}{Mtc\+\_\+\+Sess\+Has\+Video}}, check media status. And then show corresponding changes. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a7f3cb2bc5a087e3084c7bfdd63f7269c}\label{mtc__call__cb_8h_a7f3cb2bc5a087e3084c7bfdd63f7269c}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetMdfyReq@{Mtc\_CallCbSetMdfyReq}}
+\index{Mtc\_CallCbSetMdfyReq@{Mtc\_CallCbSetMdfyReq}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetMdfyReq()}{Mtc\_CallCbSetMdfyReq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Mdfy\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call modify request. 
+
+This callback indicates modification was invoke by peer, and this modification is waiting for user\textquotesingle{}s confirm. G\+UI use \mbox{\hyperlink{mtc__call_8h}{M\+TC Session Interfaces}}, like \mbox{\hyperlink{mtc__call_8h_a2bd1341985ec161cd4d460963e59c5ce}{Mtc\+\_\+\+Sess\+Has\+Audio}} and \mbox{\hyperlink{mtc__call_8h_a858ead61a26b3d9e5c6fa7eedadb1b0f}{Mtc\+\_\+\+Sess\+Has\+Video}}, to check media status and make a decision whether accept one or all of active these streams. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a4d2a50dd7be50861bcf633c083bef4db}\label{mtc__call__cb_8h_a4d2a50dd7be50861bcf633c083bef4db}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetNetStaChanged@{Mtc\_CallCbSetNetStaChanged}}
+\index{Mtc\_CallCbSetNetStaChanged@{Mtc\_CallCbSetNetStaChanged}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetNetStaChanged()}{Mtc\_CallCbSetNetStaChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Net\+Sta\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s network status. 
+
+This callback indicates the call\textquotesingle{}s network status. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}b\+Video\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} indicate if the network status of video stream is changed. \char`\"{}b\+Send\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} indicate if the network status of sending direction is changed. \char`\"{}i\+Type\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ab88032d482ce501c3724c7d1ab1a11d8}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+N\+E\+T\+S\+T\+A\+T\+U\+S\+C\+H\+A\+N\+G\+ED}} indicate the network status type \mbox{\hyperlink{mtc__call_8h_a5dd71400b254e6165e9e282500671443}{E\+N\+\_\+\+M\+T\+C\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a7ed0936c87752443d17b079e4a913edb}\label{mtc__call__cb_8h_a7ed0936c87752443d17b079e4a913edb}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetOutgoing@{Mtc\_CallCbSetOutgoing}}
+\index{Mtc\_CallCbSetOutgoing@{Mtc\_CallCbSetOutgoing}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetOutgoing()}{Mtc\_CallCbSetOutgoing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Outgoing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate send a new call. 
+
+G\+UI use \mbox{\hyperlink{mtc__call_8h}{M\+TC Session Interfaces}}, like \mbox{\hyperlink{mtc__call_8h_a88a5a550390b2637dac3da143f2d876e}{Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}, to get detail information and present those to user. And show a outgoing call window. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to get session status.
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{mtc__call_8h_a858ead61a26b3d9e5c6fa7eedadb1b0f}{Mtc\+\_\+\+Sess\+Has\+Video}} to check if outgoing call has video request.
+\begin{DoxyItemize}
+\item Has video, show video call window
+\item No Video, show voice call window
+\end{DoxyItemize}
+\item Get peer information by \mbox{\hyperlink{mtc__call_8h_a88a5a550390b2637dac3da143f2d876e}{Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a3deed1d67aaf88a3c0f032b69c3d39f9}\label{mtc__call__cb_8h_a3deed1d67aaf88a3c0f032b69c3d39f9}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetPartpUpdted@{Mtc\_CallCbSetPartpUpdted}}
+\index{Mtc\_CallCbSetPartpUpdted@{Mtc\_CallCbSetPartpUpdted}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetPartpUpdted()}{Mtc\_CallCbSetPartpUpdted()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Partp\+Updted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+P\+A\+R\+T\+P\+U\+P\+D\+T\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate session participant\textquotesingle{}s status updated. 
+
+G\+UI should update session participant\textquotesingle{}s status. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+P\+A\+R\+T\+P\+U\+P\+D\+T\+ED}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}pc\+Uri\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+P\+A\+R\+T\+P\+U\+P\+D\+T\+ED}} is the U\+RI of the participant which status has been updated. \char`\"{}i\+State\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa35f219a8d5706080e082fb3012e4186}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+P\+A\+R\+T\+P\+U\+P\+D\+T\+ED}} see below values\+: -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+P\+E\+N\+D\+I\+NG Unconfirmed state -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+IN Creating or join a session -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+A\+L\+I\+N\+G\+O\+UT Being invited to a session -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+A\+L\+E\+R\+T\+I\+NG Being invited and is alerting -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+C\+O\+N\+N\+ED Attend to a session successfully -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+O\+N\+H\+O\+LD In hold state -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+I\+NG Leaving a session -\/E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+T\+E\+\_\+\+D\+I\+S\+C\+ED Already leave a session
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a0de57c2892ce63e45fe64ffcc63aeff8}\label{mtc__call__cb_8h_a0de57c2892ce63e45fe64ffcc63aeff8}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetPracked@{Mtc\_CallCbSetPracked}}
+\index{Mtc\_CallCbSetPracked@{Mtc\_CallCbSetPracked}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetPracked()}{Mtc\_CallCbSetPracked()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Pracked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate the callee receive prack. 
+
+G\+UI may use reliable provision response to check if peer is still alive. If do so, G\+UI should show a incoming call view in this callback instead incoming callback. G\+UI should update the status of outgoing call window. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ad2c7da725b0efd80987a45a61e788e43}\label{mtc__call__cb_8h_ad2c7da725b0efd80987a45a61e788e43}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetPttRecvd@{Mtc\_CallCbSetPttRecvd}}
+\index{Mtc\_CallCbSetPttRecvd@{Mtc\_CallCbSetPttRecvd}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetPttRecvd()}{Mtc\_CallCbSetPttRecvd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Ptt\+Recvd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of receiving ptt event. 
+
+This callback indicates receiving ptt event callback. G\+UI should show a dialog to inform user, current call receives a ptt event.
+
+\char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is ID of session. G\+UI should use it to locate call window.
+
+\char`\"{}i\+Ptt\+Type\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT type \mbox{\hyperlink{mtc__call_8h_ab1a75164dec3f7e4ffb6c80203bda7cc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+T\+T\+\_\+\+T\+Y\+PE}}.
+
+\char`\"{}i\+Ptt\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT ID.
+
+\char`\"{}b\+Squ\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT squelch indication flag.
+
+\char`\"{}b\+Ptt\+Mute\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT mute flag.
+
+\char`\"{}i\+Ptt\+Sum\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT summation.
+
+\char`\"{}i\+Sct\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT simultaneous call transmissions.
+
+\char`\"{}i\+Add\+Type\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT additional feature type \mbox{\hyperlink{mtc__call_8h_afd3713cb0f646f667c4b10f043a550a5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+T\+T\+\_\+\+R\+X\+\_\+\+A\+D\+D\+\_\+\+T\+Y\+PE}}.
+
+\char`\"{}i\+Add\+Value\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a1a14c376fc6c6e141d13f8688159c3d6}{P\+F\+N\+\_\+\+M\+T\+C\+P\+T\+T\+R\+E\+C\+VD}} is P\+TT additional feature value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_af221bfd6196d43f35b2acbc22b22bd22}\label{mtc__call__cb_8h_af221bfd6196d43f35b2acbc22b22bd22}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRecvRtpPacket@{Mtc\_CallCbSetRecvRtpPacket}}
+\index{Mtc\_CallCbSetRecvRtpPacket@{Mtc\_CallCbSetRecvRtpPacket}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRecvRtpPacket()}{Mtc\_CallCbSetRecvRtpPacket()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Recv\+Rtp\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receiving a rtp packtet. 
+
+This callback indicates receiving a R\+TP packtet.
+
+\char`\"{}i\+Strm\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}} is the ID of stream(audio or video).
+
+\char`\"{}b\+Video\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}} is Z\+T\+R\+UE indicates R\+TP packet is video packet, Z\+F\+A\+L\+SE indicate the rtp packet is audio packet.
+
+\char`\"{}pc\+Data\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}} is the R\+TP packet data.
+
+\char`\"{}i\+Len\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a0b5641233cf64939c9b264869db7f7b0}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+C\+V\+R\+T\+P\+P\+A\+C\+K\+ET}} is the R\+TP packet data length.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aa808e84f6972c6566057b7a02e1ba942}\label{mtc__call__cb_8h_aa808e84f6972c6566057b7a02e1ba942}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRedirected@{Mtc\_CallCbSetRedirected}}
+\index{Mtc\_CallCbSetRedirected@{Mtc\_CallCbSetRedirected}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRedirected()}{Mtc\_CallCbSetRedirected()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Redirected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call redirected. 
+
+This callback indicates the outgoing call was forwarded to another number. G\+UI should update call status. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a69be533dfac65331d344e48808794db8}\label{mtc__call__cb_8h_a69be533dfac65331d344e48808794db8}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetReferCallFailed@{Mtc\_CallCbSetReferCallFailed}}
+\index{Mtc\_CallCbSetReferCallFailed@{Mtc\_CallCbSetReferCallFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetReferCallFailed()}{Mtc\_CallCbSetReferCallFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Refer\+Call\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of refer call failed. 
+
+This callback indicates receiving a refer call failed callback. G\+UI should show a dialog to inform user, current call was refered failed.
+
+\char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ab4e14cdb5c0f67c1b2e15da5e45fb5a5}\label{mtc__call__cb_8h_ab4e14cdb5c0f67c1b2e15da5e45fb5a5}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetReferCallOk@{Mtc\_CallCbSetReferCallOk}}
+\index{Mtc\_CallCbSetReferCallOk@{Mtc\_CallCbSetReferCallOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetReferCallOk()}{Mtc\_CallCbSetReferCallOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Refer\+Call\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of refer call ok. 
+
+This callback indicates receiving a refer call ok callback. G\+UI should show a dialog to inform user, current call was refered ok.
+
+\char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a9ecf9998c4bd825d26fc91b4eb5676a4}{P\+F\+N\+\_\+\+M\+T\+C\+R\+E\+F\+E\+R\+C\+A\+LL}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a28920432c7627f4e7f202035a047a785}\label{mtc__call__cb_8h_a28920432c7627f4e7f202035a047a785}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRefered@{Mtc\_CallCbSetRefered}}
+\index{Mtc\_CallCbSetRefered@{Mtc\_CallCbSetRefered}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRefered()}{Mtc\_CallCbSetRefered()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Refered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call refered. 
+
+This callback indicates the session is transfered by peer to a new destination. The new session will be indicated by callback which was set by \mbox{\hyperlink{mtc__call__cb_8h_a7ed0936c87752443d17b079e4a913edb}{Mtc\+\_\+\+Call\+Cb\+Set\+Outgoing}}. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aa5e2d289c20b03b34069e3ab15f08354}\label{mtc__call__cb_8h_aa5e2d289c20b03b34069e3ab15f08354}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetReplaced@{Mtc\_CallCbSetReplaced}}
+\index{Mtc\_CallCbSetReplaced@{Mtc\_CallCbSetReplaced}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetReplaced()}{Mtc\_CallCbSetReplaced()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Replaced (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replaced. 
+
+This callback indicates the call has replaced by another call, which should happen when previous call was transfered to another peer. G\+UI should update the peer information. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} is the ID of session replaced, G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a492885db4407a79a5ef798d241c6ea1b}\label{mtc__call__cb_8h_a492885db4407a79a5ef798d241c6ea1b}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetReplaceFailed@{Mtc\_CallCbSetReplaceFailed}}
+\index{Mtc\_CallCbSetReplaceFailed@{Mtc\_CallCbSetReplaceFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetReplaceFailed()}{Mtc\_CallCbSetReplaceFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Replace\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replace failed. 
+
+This callback indicates the call has replace failed by another call, which should happen when previous call was transfered to another peer. G\+UI should update the peer information. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} is the ID of session replace failed, G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a73562490cf4d41bcbd7f6e5a86d74a23}\label{mtc__call__cb_8h_a73562490cf4d41bcbd7f6e5a86d74a23}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetReplaceOk@{Mtc\_CallCbSetReplaceOk}}
+\index{Mtc\_CallCbSetReplaceOk@{Mtc\_CallCbSetReplaceOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetReplaceOk()}{Mtc\_CallCbSetReplaceOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Replace\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call replace ok. 
+
+This callback indicates the call has replace ok by another call, which should happen when previous call was transfered to another peer. G\+UI should update the peer information. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a77365f22007e1f3514bfe043c80faea2}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+E\+P\+L\+A\+C\+ED}} is the ID of session replace ok, G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a09a0a4ba62599fd02d7dd3342d94adb9}\label{mtc__call__cb_8h_a09a0a4ba62599fd02d7dd3342d94adb9}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRmvAudioFailed@{Mtc\_CallCbSetRmvAudioFailed}}
+\index{Mtc\_CallCbSetRmvAudioFailed@{Mtc\_CallCbSetRmvAudioFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRmvAudioFailed()}{Mtc\_CallCbSetRmvAudioFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Audio\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate removing voice stream has been failed. 
+
+This callback indicates failed to remove voice stream of the call. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ad7ec5c5ebbab4ef69a9ebb3a3f816814}\label{mtc__call__cb_8h_ad7ec5c5ebbab4ef69a9ebb3a3f816814}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRmvAudioOk@{Mtc\_CallCbSetRmvAudioOk}}
+\index{Mtc\_CallCbSetRmvAudioOk@{Mtc\_CallCbSetRmvAudioOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRmvAudioOk()}{Mtc\_CallCbSetRmvAudioOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Audio\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate removing voice stream has been completed successfully. 
+
+This callback indicates the operation of removing voice stream of the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a3d8317853118671fd39a34f78848f5f6}\label{mtc__call__cb_8h_a3d8317853118671fd39a34f78848f5f6}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRmvVideoFailed@{Mtc\_CallCbSetRmvVideoFailed}}
+\index{Mtc\_CallCbSetRmvVideoFailed@{Mtc\_CallCbSetRmvVideoFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRmvVideoFailed()}{Mtc\_CallCbSetRmvVideoFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Video\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate removing video stream has been failed. 
+
+This callback indicates failed to remove video stream of the call. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} is the ID of session. G\+UI should use it to locate call window.
+
+\char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} has below values.
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{mtc__call_8h_aee1b31e6fcaacaf189d4ecd8247deb88}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+R\+E\+J\+E\+C\+T\+ED}} Failed by remote rejected
+\item \mbox{\hyperlink{mtc__call_8h_aabb013b980b447da5204e72d1ee0b270}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK}} Failed by network disconnected
+\item \mbox{\hyperlink{mtc__call_8h_a0aded210af72758eea5e4c6b0d57ee9f}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}} Failed by timeout for request 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{mtc__call__cb_8h_aa9acf8c14544000ec7fec87c4ffd6a4e}\label{mtc__call__cb_8h_aa9acf8c14544000ec7fec87c4ffd6a4e}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRmvVideoOk@{Mtc\_CallCbSetRmvVideoOk}}
+\index{Mtc\_CallCbSetRmvVideoOk@{Mtc\_CallCbSetRmvVideoOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRmvVideoOk()}{Mtc\_CallCbSetRmvVideoOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Rmv\+Video\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate removing video stream has been completed successfully. 
+
+This callback indicates the operation of removing video stream of the call has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a6d87384271ff8aeb98cb507b0fbb8b77}\label{mtc__call__cb_8h_a6d87384271ff8aeb98cb507b0fbb8b77}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRtcCall@{Mtc\_CallCbSetRtcCall}}
+\index{Mtc\_CallCbSetRtcCall@{Mtc\_CallCbSetRtcCall}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRtcCall()}{Mtc\_CallCbSetRtcCall()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Rtc\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+R\+T\+C\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback for a rtc call. 
+
+G\+UI use \mbox{\hyperlink{mtc__call_8h}{M\+TC Session Interfaces}}, like \mbox{\hyperlink{mtc__call_8h_a88a5a550390b2637dac3da143f2d876e}{Mtc\+\_\+\+Sess\+Get\+Peer\+Uri}}, to get detail information and present those to user. And wait for user action, accept or decline. i\+Sess\+Id in \mbox{\hyperlink{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+R\+T\+C\+CB}} is the ID of session. G\+UI should use it to get session status. i\+Evnt\+Type in \mbox{\hyperlink{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+R\+T\+C\+CB}} is call event type E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+Y\+PE of session.
+
+pc\+Sdp in \mbox{\hyperlink{mtc__call__cb_8h_abf5a53b5125834790a1601dfbcb42f12}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+R\+T\+C\+CB}} is the S\+DP string of the session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a51726b7544b0571e586fcd56020f248e}\label{mtc__call__cb_8h_a51726b7544b0571e586fcd56020f248e}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetRtpConnectivity@{Mtc\_CallCbSetRtpConnectivity}}
+\index{Mtc\_CallCbSetRtpConnectivity@{Mtc\_CallCbSetRtpConnectivity}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetRtpConnectivity()}{Mtc\_CallCbSetRtpConnectivity()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Rtp\+Connectivity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+T\+P\+C\+O\+N\+N\+E\+C\+T\+I\+V\+I\+TY}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate rtp connectivity. 
+
+This callback indicates the R\+TP connectivity status is changed.
+
+\char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+T\+P\+C\+O\+N\+N\+E\+C\+T\+I\+V\+I\+TY}} is the ID of session, G\+UI should use it to locate call window.
+
+When \char`\"{}b\+Conned\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a7d1615ee74f08499c30521fad8ba0380}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+R\+T\+P\+C\+O\+N\+N\+E\+C\+T\+I\+V\+I\+TY}} is Z\+T\+R\+UE indicate media engine detected R\+TP packet received, Z\+F\+A\+L\+SE indicate media engine hasn\textquotesingle{}t detected R\+TP packet received for about 20 seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_af7f6fd425b33d8921b837c79f28a5b45}\label{mtc__call__cb_8h_af7f6fd425b33d8921b837c79f28a5b45}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetSendRtpPacket@{Mtc\_CallCbSetSendRtpPacket}}
+\index{Mtc\_CallCbSetSendRtpPacket@{Mtc\_CallCbSetSendRtpPacket}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetSendRtpPacket()}{Mtc\_CallCbSetSendRtpPacket()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Send\+Rtp\+Packet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate sending a rtp packtet. 
+
+This callback indicates sending a R\+TP packtet report.
+
+\char`\"{}i\+Tpt\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}} is the ID of transport id.
+
+\char`\"{}pc\+Rmt\+Addr\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}} indicates R\+TP packet will be sent the the remote addr
+
+\char`\"{}pc\+Data\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}} is the R\+TP packet data.
+
+\char`\"{}i\+Len\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a8eade58bfdd7503e18e288e7aa215efa}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+E\+N\+D\+R\+T\+P\+P\+A\+C\+K\+ET}} is the R\+TP packet data length.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a4dd03a7f7204c18475a8e5b63836eec4}\label{mtc__call__cb_8h_a4dd03a7f7204c18475a8e5b63836eec4}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetSubsFailed@{Mtc\_CallCbSetSubsFailed}}
+\index{Mtc\_CallCbSetSubsFailed@{Mtc\_CallCbSetSubsFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetSubsFailed()}{Mtc\_CallCbSetSubsFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a261f0f953405e715bf73251fbda93075}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+F\+A\+I\+L\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate subscription failed. 
+
+This callback indicates the subscription failed. \char`\"{}i\+Subs\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a261f0f953405e715bf73251fbda93075}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+F\+A\+I\+L\+ED}} is the ID of subscription. \char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ad0e81fee2a408dfecb9780560c82214b}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+E\+RR}} is the error code(see M\+S\+F\+\_\+\+S\+T\+A\+T\+\_\+\+E\+R\+R\+\_\+\+N\+O), it can be
+\begin{DoxyItemize}
+\item If i\+Stat\+Code $<$ 0x1000, contains S\+IP response status code, use Sip\+\_\+\+Reason\+From\+Code to get description string
+\item Otherwise, use \mbox{\hyperlink{mtc__call_8h_ad6f677fb6d97ef1e58ac50649ac4c215}{Mtc\+\_\+\+Sess\+Get\+Stat\+Desc}} to get description string
+\end{DoxyItemize}
+
+G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a22d0cbc38ace8d30069aa3a664242f1b}\label{mtc__call__cb_8h_a22d0cbc38ace8d30069aa3a664242f1b}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetSubsInfo@{Mtc\_CallCbSetSubsInfo}}
+\index{Mtc\_CallCbSetSubsInfo@{Mtc\_CallCbSetSubsInfo}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetSubsInfo()}{Mtc\_CallCbSetSubsInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive subs info. 
+
+This callback indicates the call has received subs info message. G\+UI should update the subscription info information.
+
+\char`\"{}i\+Subs\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}} is the ID of subscription, \char`\"{}pc\+Info\char`\"{} is the subs info string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aabcd52605d1bdceda6b371584579d2ae}\label{mtc__call__cb_8h_aabcd52605d1bdceda6b371584579d2ae}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetSubsOk@{Mtc\_CallCbSetSubsOk}}
+\index{Mtc\_CallCbSetSubsOk@{Mtc\_CallCbSetSubsOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetSubsOk()}{Mtc\_CallCbSetSubsOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_ac476dfb47f1fcb893421a9dc569894e4}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+OK}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate subscription ok. 
+
+This callback indicates the subscription ok. \char`\"{}i\+Subs\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_ac476dfb47f1fcb893421a9dc569894e4}{P\+F\+N\+\_\+\+M\+T\+C\+S\+U\+B\+S\+OK}} is the ID of subscription. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a4adee5173029e4c8f1091e616d5bb845}\label{mtc__call__cb_8h_a4adee5173029e4c8f1091e616d5bb845}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetSubsReq@{Mtc\_CallCbSetSubsReq}}
+\index{Mtc\_CallCbSetSubsReq@{Mtc\_CallCbSetSubsReq}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetSubsReq()}{Mtc\_CallCbSetSubsReq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Subs\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate receive subscribe request. 
+
+This callback indicates the call has received subs request. G\+UI should notify the subscription state to the subscriber with N\+O\+T\+I\+FY response.
+
+\char`\"{}i\+Subs\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a34e3b0f0f2807f239629cc63d0a44245}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+S\+U\+B\+S\+I\+N\+FO}} is the ID of subscription, \char`\"{}pc\+Info\char`\"{} is the subs info string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a7c24ecb4dd0f6ed06a932a42cd94406c}\label{mtc__call__cb_8h_a7c24ecb4dd0f6ed06a932a42cd94406c}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetTalking@{Mtc\_CallCbSetTalking}}
+\index{Mtc\_CallCbSetTalking@{Mtc\_CallCbSetTalking}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetTalking()}{Mtc\_CallCbSetTalking()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Talking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate the call has established. 
+
+The call can be a received call or a send out call. G\+UI should switch to talking window. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+\begin{DoxyItemize}
+\item Use \mbox{\hyperlink{mtc__call_8h_a858ead61a26b3d9e5c6fa7eedadb1b0f}{Mtc\+\_\+\+Sess\+Has\+Video}} to check if there is a video media. If so, G\+UI should invoke \mbox{\hyperlink{mtc__call_8h_a323e8acd3bdfcb6e1361c2d63f3b714d}{Mtc\+\_\+\+Sess\+Video\+Start}} to start send and receive video media.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_aa0ce0761081a423a5650337435381fb9}\label{mtc__call__cb_8h_aa0ce0761081a423a5650337435381fb9}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetTermed@{Mtc\_CallCbSetTermed}}
+\index{Mtc\_CallCbSetTermed@{Mtc\_CallCbSetTermed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetTermed()}{Mtc\_CallCbSetTermed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Termed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call is terminated. 
+
+\char`\"{}i\+Stat\+Code\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} has below values.
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{mtc__call_8h_a24dba5183620e847d3512cf921d47bff}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+B\+YE}} Terminated by remote B\+YE
+\item \mbox{\hyperlink{mtc__call_8h_a3191af483242698605fe36f3dfb0f210}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+C\+A\+N\+C\+EL}} Terminated by remote C\+A\+N\+C\+EL
+\item \mbox{\hyperlink{mtc__call_8h_abd01be1e1f2c7510c525ffe33a678862}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+B\+U\+SY}} Terminated by 486 Busy Here
+\item \mbox{\hyperlink{mtc__call_8h_af35d12c2b38132f8db8905af5ccf0d06}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+T\+E\+R\+M\+\_\+\+D\+E\+C\+L\+I\+NE}} Terminated by 603 Decline
+\item \mbox{\hyperlink{mtc__call_8h_a9cb4d438605ed2226aaff0ad1e8dcf98}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}} Terminated by 403 Forbidden
+\item \mbox{\hyperlink{mtc__call_8h_a758bbcc8e320f5bef04e534583943e50}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}} Terminated by 404 Not Found
+\item \mbox{\hyperlink{mtc__call_8h_a519d1a1dc8484bf605a033a8dc20e8f7}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+A\+C\+P\+T\+ED}} Terminated by 406 Not Acceptable or 488 Not Acceptable Here
+\item \mbox{\hyperlink{mtc__call_8h_a27895c05f7558bf4975a7abe8b45a61d}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+R\+E\+Q\+\_\+\+T\+E\+R\+M\+ED}} Terminated by 487 Request Terminated
+\item \mbox{\hyperlink{mtc__call_8h_a81855cea1e7d186bfb24703ff3676deb}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+RR}} Terminated by 500 Server Internal Error
+\item \mbox{\hyperlink{mtc__call_8h_a014fa868baa4398bb42132af335abb11}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL}} Terminated by 503 Service Unavailable
+\item \mbox{\hyperlink{mtc__call_8h_aa0060fa0f96234ccfe5669d5c28dfe74}{M\+T\+C\+\_\+\+C\+A\+L\+L\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}} Terminated by 604 Does Not Exist Anywhere The call can be a received call or a send out call. G\+UI should show the reason why the call was terminated for a few seconds, and switch to main working window. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_aa9b5a2dc6e789358105df5ee9bafc023}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+T\+E\+R\+M\+ED}} is the ID of session. G\+UI should use it to locate call window.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a49e6136bd7de50a1a8451f0b4aea020e}\label{mtc__call__cb_8h_a49e6136bd7de50a1a8451f0b4aea020e}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetTrsfAcpt@{Mtc\_CallCbSetTrsfAcpt}}
+\index{Mtc\_CallCbSetTrsfAcpt@{Mtc\_CallCbSetTrsfAcpt}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetTrsfAcpt()}{Mtc\_CallCbSetTrsfAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Trsf\+Acpt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call transferred accepted. 
+
+This callback indicates receiving a transfer request. G\+UI should show a dialog to inform user, current call was transfered. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a5cdef3f924f34531defcfab8cdf07db8}\label{mtc__call__cb_8h_a5cdef3f924f34531defcfab8cdf07db8}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetTrsfFailed@{Mtc\_CallCbSetTrsfFailed}}
+\index{Mtc\_CallCbSetTrsfFailed@{Mtc\_CallCbSetTrsfFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetTrsfFailed()}{Mtc\_CallCbSetTrsfFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Trsf\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call transferred failed. 
+
+This callback indicates transfer failed. G\+UI should show a dialog to inform user, current call was transfered. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a8745820d02835897c1120b8d9e7c8bae}\label{mtc__call__cb_8h_a8745820d02835897c1120b8d9e7c8bae}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetTrsfTerm@{Mtc\_CallCbSetTrsfTerm}}
+\index{Mtc\_CallCbSetTrsfTerm@{Mtc\_CallCbSetTrsfTerm}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetTrsfTerm()}{Mtc\_CallCbSetTrsfTerm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Trsf\+Term (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call transferred terminated. 
+
+For extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_acc18d6769ecb915474aaa97e43510029}\label{mtc__call__cb_8h_acc18d6769ecb915474aaa97e43510029}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetUnHeld@{Mtc\_CallCbSetUnHeld}}
+\index{Mtc\_CallCbSetUnHeld@{Mtc\_CallCbSetUnHeld}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetUnHeld()}{Mtc\_CallCbSetUnHeld()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Un\+Held (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call was un-\/held by peer. 
+
+This callback indicates un-\/held hold the call. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ad84ebc0606e89ef2512a238186c24ac7}\label{mtc__call__cb_8h_ad84ebc0606e89ef2512a238186c24ac7}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetUnHoldFailed@{Mtc\_CallCbSetUnHoldFailed}}
+\index{Mtc\_CallCbSetUnHoldFailed@{Mtc\_CallCbSetUnHoldFailed}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetUnHoldFailed()}{Mtc\_CallCbSetUnHoldFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Un\+Hold\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call un-\/hold failed. 
+
+This callback indicates un-\/hold operation has been failed. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a4a43bd5076bb86d0c1eb76a252487aae}\label{mtc__call__cb_8h_a4a43bd5076bb86d0c1eb76a252487aae}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetUnHoldOk@{Mtc\_CallCbSetUnHoldOk}}
+\index{Mtc\_CallCbSetUnHoldOk@{Mtc\_CallCbSetUnHoldOk}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetUnHoldOk()}{Mtc\_CallCbSetUnHoldOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Un\+Hold\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call un-\/hold successfully. 
+
+This callback indicates un-\/hold operation has been completed successfully. G\+UI should update session status according to session ID. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a065d6e5a6ae8d49bf936bb31d263e6c6}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+CB}} is the ID of session. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a10665d5032fd84336ba10b6bd0c8ebde}\label{mtc__call__cb_8h_a10665d5032fd84336ba10b6bd0c8ebde}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetVideoIncomingSta@{Mtc\_CallCbSetVideoIncomingSta}}
+\index{Mtc\_CallCbSetVideoIncomingSta@{Mtc\_CallCbSetVideoIncomingSta}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetVideoIncomingSta()}{Mtc\_CallCbSetVideoIncomingSta()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Incoming\+Sta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s video incoming status. 
+
+This callback indicates the call\textquotesingle{}s video incoming status. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Parm1\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the framerate. \char`\"{}i\+Parm2\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the bitrate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a29a25cbfa496dcceb2fa64a8c3f3dea4}\label{mtc__call__cb_8h_a29a25cbfa496dcceb2fa64a8c3f3dea4}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetVideoOutgoingSta@{Mtc\_CallCbSetVideoOutgoingSta}}
+\index{Mtc\_CallCbSetVideoOutgoingSta@{Mtc\_CallCbSetVideoOutgoingSta}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetVideoOutgoingSta()}{Mtc\_CallCbSetVideoOutgoingSta()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Outgoing\+Sta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s video outgoing status. 
+
+This callback indicates the call\textquotesingle{}s video outgoing status. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Parm1\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the framerate. \char`\"{}i\+Parm2\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the bitrate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_a9cf67b02d1245b8cc27e92064b171c4c}\label{mtc__call__cb_8h_a9cf67b02d1245b8cc27e92064b171c4c}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetVideoProtectSta@{Mtc\_CallCbSetVideoProtectSta}}
+\index{Mtc\_CallCbSetVideoProtectSta@{Mtc\_CallCbSetVideoProtectSta}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetVideoProtectSta()}{Mtc\_CallCbSetVideoProtectSta()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Protect\+Sta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s video protection status. 
+
+This callback indicates the call\textquotesingle{}s video protection status. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Parm1\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the F\+EC bitrate in kbps. \char`\"{}i\+Parm2\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the N\+A\+CK bitrate in kbps.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__call__cb_8h_ac4761255e8b6e582311dc87e52dc5ced}\label{mtc__call__cb_8h_ac4761255e8b6e582311dc87e52dc5ced}} 
+\index{mtc\_call\_cb.h@{mtc\_call\_cb.h}!Mtc\_CallCbSetVideoSize@{Mtc\_CallCbSetVideoSize}}
+\index{Mtc\_CallCbSetVideoSize@{Mtc\_CallCbSetVideoSize}!mtc\_call\_cb.h@{mtc\_call\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CallCbSetVideoSize()}{Mtc\_CallCbSetVideoSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Call\+Cb\+Set\+Video\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__call__cb_8h_a7ab9c753d8c8e4e590ff8c7253595326}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+I\+ZE}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s video size changed. 
+
+This callback indicates the call\textquotesingle{}s video size changed. \char`\"{}i\+Sess\+Id\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} is the ID of session. G\+UI should use it to locate call window. \char`\"{}i\+Width\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the width of frame. \char`\"{}i\+Height\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the height of frame. \char`\"{}i\+Orientation\char`\"{} in \mbox{\hyperlink{mtc__call__cb_8h_a85f0642b29026f7700d03545448cf18a}{P\+F\+N\+\_\+\+M\+T\+C\+C\+A\+L\+L\+C\+B\+V\+I\+D\+E\+O\+S\+T\+A\+T\+US}} indicate the orientation. \mbox{\hyperlink{mtc__call_8h_ac599d2c6c31e213051ab3e3f04fc56d9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

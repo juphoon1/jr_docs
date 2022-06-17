@@ -1,0 +1,758 @@
+\hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback Interface Reference}
+\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback}\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+
+
+M\+TC conference callbacks.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a4e540f40f10050c666b1b3e41ed584cb}{mtc\+Conf\+Cb\+Incoming}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of client receive an incoming conference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a75f76d33c467a158588f5cff16f9ab4f}{mtc\+Conf\+Cb\+Outgoing}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of client setup an outgoing conference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af0a240f9ff2206a5919db242c9efef05}{mtc\+Conf\+Cb\+Alerted}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of receive response during conference establish. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_aa2865d5858899378c833bb6167004f2e}{mtc\+Conf\+Cb\+Conned}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of conference has established. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_aa887c2f9f433099538737e9d4efc2ff5}{mtc\+Conf\+Cb\+Disced}} (int dw\+Conf\+Id, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of disconnected from conference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a30f7cfce6d4dc97cd7d1259e8cd0a15b}{mtc\+Conf\+Cb\+Ivt\+Acpt}} (int dw\+Conf\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of the invited user has accepted invite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a28e36ff0d76ab69fbd18d2922f44709e}{mtc\+Conf\+Cb\+Ivt\+Fail}} (int dw\+Conf\+Id, String uri, int i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of the invited user is failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a7c1c8684ac38f855a1c771021952ec71}{mtc\+Conf\+Cb\+Kick\+Acpt}} (int dw\+Conf\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of kick user is accepted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a08f93f026e7d2bfa3511cf3e9909c1d6}{mtc\+Conf\+Cb\+Kick\+Fail}} (int dw\+Conf\+Id, String uri, int i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of kick user is failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a4d72cb653294d014322d9d41bec0116a}{mtc\+Conf\+Cb\+Select\+Usr\+Ok}} (int dw\+Conf\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of select user is accepted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a3a09e5a763ebb0cd866f2c5fffbbdfdb}{mtc\+Conf\+Cb\+Select\+Usr\+Fail}} (int dw\+Conf\+Id, String uri, int i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of select user is failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af2561df3fc2742bbb3adeb89a1d838dc}{mtc\+Conf\+Cb\+Ptpt\+Updt}} (int i\+Conf\+Id, int i\+Partp\+Lst\+Id, boolean b\+Full\+Ntfy)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s status updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ad6510fd4312f3db704e26ebac241f1ef}{mtc\+Conf\+Cb\+Video\+Ptpt\+Lst\+Updt}} (int i\+Conf\+Id, int i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference video partp list updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac236d946cc91c403e0c4dd7676e42624}{mtc\+Conf\+Cb\+Video\+Strm\+Ptpt\+Updt}} (int i\+Conf\+Id, int i\+Strm\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s video stream info updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ae2c1a3861daf98aa42ed33d0d7fdd972}{mtc\+Conf\+Cb\+Ptpt\+Spk\+State\+Updt}} (int i\+Conf\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate participant is in speaking state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a487e0a43664220909fbb68fc3ad7ae8b}{mtc\+Conf\+Cb\+No\+Ptpt\+Spk}} (int i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of no participant is in speaking state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a43ef607fdf33c26c55ff33d52885ab9f}{mtc\+Conf\+Cb\+Mdfy\+Acpt}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference modifying accepted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac4b845d90c24a4266e66db72414a52b0}{mtc\+Conf\+Cb\+Mdfyed}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference modified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a9e7700b50c0755d183aebaca2b4ffc4d}{mtc\+Conf\+Cb\+Hold\+Ok}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference hold OK. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a2d91428253c21519adb07b7959d77992}{mtc\+Conf\+Cb\+Hold\+Failed}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference hold failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a1eb7597fd2ba30464a582580cf885e66}{mtc\+Conf\+Cb\+Un\+Hold\+Ok}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference un-\/hold OK. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a54d00126f2485584b45260c4258f1177}{mtc\+Conf\+Cb\+Un\+Hold\+Failed}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference un-\/hold failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab5f5a50a04c743bd466571c93aea57b7}{mtc\+Conf\+Cb\+Held}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference was held by peer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a8f34ef13a5e51888ec494dba98bbb50a}{mtc\+Conf\+Cb\+Un\+Held}} (int dw\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference was un-\/held by peer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af44e4588ae6e12fbce99a89d6ccb431a}{mtc\+Conf\+Cb\+Net\+Sta\+Changed}} (int dw\+Conf\+Id, boolean b\+Send, int i\+Type)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate call\textquotesingle{}s network status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab7e29dd09df3460373116dc2f5491283}{mtc\+Conf\+Cb\+Get\+Conf\+State\+Failed}} (int i\+Conf\+Id, int i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of error occurred during getting conference state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a564eb8ee1a3baeb762c911fbdb4ed241}{mtc\+Conf\+Cb\+Error}} (int dw\+Conf\+Id, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of error occurred during conference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a1508b1d54eafcb76b1bd3b4e309b8c46}{mtc\+Conf\+Cb\+Create\+Account}} (int i\+Result\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of create account result code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a5c359a18d5d5235c8c3d96fb3e91ba1d}{mtc\+Conf\+Cb\+Create\+Account\+Failed}} (int i\+Rsp\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of create account failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac0cf07c71865b9e56a7be3376f54be19}{mtc\+Conf\+Cb\+Delete\+Account}} (int i\+Result\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of delete account result code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af6406262f504014e8cdb7d53f2fbfa01}{mtc\+Conf\+Cb\+Delete\+Account\+Failed}} (int i\+Rsp\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of delete account failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_afc629d173378b713e9479153b5d8c2fe}{mtc\+Conf\+Cb\+Charge\+Account}} (int i\+Result\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of charge account result code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a6e182c4aa27ccd986528e62e7e57cf39}{mtc\+Conf\+Cb\+Charge\+Account\+Failed}} (int i\+Rsp\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of charge account failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab2d606d6f69daa82993186dbe5afb91b}{mtc\+Conf\+Cb\+Query\+Account}} (int i\+Result\+Code, String s\+Result, int i\+Total\+Left\+Balance)
+\begin{DoxyCompactList}\small\item\em Set callback of query account result code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ae6836f2dbd5d90a7823d4777ef8dd918}{mtc\+Conf\+Cb\+Query\+Account\+Failed}} (int i\+Rsp\+Code)
+\begin{DoxyCompactList}\small\item\em Set callback of query account failed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a3085ef2b4f30a8cb4b2c58ff40e7d2cf}{mtc\+Conf\+Cb\+Video\+Strm\+Spk\+State\+Updt}} (int i\+Conf\+Id, int i\+Strm\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s video stream speak-\/state info updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_adbd0ffd31bfed004d729200a837b9ca3}{mtc\+Conf\+Cb\+Video\+Strm\+Rmv\+Win\+Updt}} (int i\+Conf\+Id, int i\+Strm\+Id, String uri)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate conference participant\textquotesingle{}s video stream remove-\/window info updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC conference callbacks. 
+
+In order to receive M\+TC conference callbacks, user should implement this interface, then use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_a7f3ff0e2cefbd8099dc27dcf37ee81fa}{Mtc\+Conf\+Cb.\+set\+Callback}} to register callbacks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af0a240f9ff2206a5919db242c9efef05}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af0a240f9ff2206a5919db242c9efef05}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbAlerted@{mtcConfCbAlerted}}
+\index{mtcConfCbAlerted@{mtcConfCbAlerted}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbAlerted()}{mtcConfCbAlerted()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Alerted (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of receive response during conference establish. 
+
+This client try to establish a conference. And when receive 1xx response this callback will be invoked. G\+UI should update status of conference window. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_afc629d173378b713e9479153b5d8c2fe}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_afc629d173378b713e9479153b5d8c2fe}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbChargeAccount@{mtcConfCbChargeAccount}}
+\index{mtcConfCbChargeAccount@{mtcConfCbChargeAccount}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbChargeAccount()}{mtcConfCbChargeAccount()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Charge\+Account (\begin{DoxyParamCaption}\item[{int}]{i\+Result\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of charge account result code. 
+
+This callback indicates charge account result code performed by Mtc\+\_\+\+Conf\+Charge\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Result\+Code} & result code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a6e182c4aa27ccd986528e62e7e57cf39}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a6e182c4aa27ccd986528e62e7e57cf39}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbChargeAccountFailed@{mtcConfCbChargeAccountFailed}}
+\index{mtcConfCbChargeAccountFailed@{mtcConfCbChargeAccountFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbChargeAccountFailed()}{mtcConfCbChargeAccountFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Charge\+Account\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Rsp\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of charge account failed. 
+
+This callback indicates charge account failed performed by Mtc\+\_\+\+Conf\+Charge\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Rsp\+Code} & response code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_aa2865d5858899378c833bb6167004f2e}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_aa2865d5858899378c833bb6167004f2e}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbConned@{mtcConfCbConned}}
+\index{mtcConfCbConned@{mtcConfCbConned}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbConned()}{mtcConfCbConned()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Conned (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of conference has established. 
+
+This callback indicates conference has established. G\+UI should update status of conference window. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a1508b1d54eafcb76b1bd3b4e309b8c46}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a1508b1d54eafcb76b1bd3b4e309b8c46}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbCreateAccount@{mtcConfCbCreateAccount}}
+\index{mtcConfCbCreateAccount@{mtcConfCbCreateAccount}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbCreateAccount()}{mtcConfCbCreateAccount()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Create\+Account (\begin{DoxyParamCaption}\item[{int}]{i\+Result\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of create account result code. 
+
+This callback indicates create account result code performed by Mtc\+\_\+\+Conf\+Create\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Result\+Code} & result code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a5c359a18d5d5235c8c3d96fb3e91ba1d}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a5c359a18d5d5235c8c3d96fb3e91ba1d}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbCreateAccountFailed@{mtcConfCbCreateAccountFailed}}
+\index{mtcConfCbCreateAccountFailed@{mtcConfCbCreateAccountFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbCreateAccountFailed()}{mtcConfCbCreateAccountFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Create\+Account\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Rsp\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of create account failed. 
+
+This callback indicates create account failed performed by Mtc\+\_\+\+Conf\+Create\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Rsp\+Code} & response code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac0cf07c71865b9e56a7be3376f54be19}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac0cf07c71865b9e56a7be3376f54be19}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbDeleteAccount@{mtcConfCbDeleteAccount}}
+\index{mtcConfCbDeleteAccount@{mtcConfCbDeleteAccount}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbDeleteAccount()}{mtcConfCbDeleteAccount()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Delete\+Account (\begin{DoxyParamCaption}\item[{int}]{i\+Result\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of delete account result code. 
+
+This callback indicates delete account result code performed by Mtc\+\_\+\+Conf\+Del\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Result\+Code} & result code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af6406262f504014e8cdb7d53f2fbfa01}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af6406262f504014e8cdb7d53f2fbfa01}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbDeleteAccountFailed@{mtcConfCbDeleteAccountFailed}}
+\index{mtcConfCbDeleteAccountFailed@{mtcConfCbDeleteAccountFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbDeleteAccountFailed()}{mtcConfCbDeleteAccountFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Delete\+Account\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Rsp\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of delete account failed. 
+
+This callback indicates delete account failed performed by Mtc\+\_\+\+Conf\+Del\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rsp\+Code} & response status code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_aa887c2f9f433099538737e9d4efc2ff5}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_aa887c2f9f433099538737e9d4efc2ff5}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbDisced@{mtcConfCbDisced}}
+\index{mtcConfCbDisced@{mtcConfCbDisced}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbDisced()}{mtcConfCbDisced()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Disced (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of disconnected from conference. 
+
+This callback indicates client has disconnected from conference. G\+UI should close conference window. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Stat\+Code} & Error code. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a564eb8ee1a3baeb762c911fbdb4ed241}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a564eb8ee1a3baeb762c911fbdb4ed241}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbError@{mtcConfCbError}}
+\index{mtcConfCbError@{mtcConfCbError}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbError()}{mtcConfCbError()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Error (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of error occurred during conference. 
+
+This callback indicates error occurred during conference. G\+UI should show the detail error information(english) to user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Stat\+Code} & Error code. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab7e29dd09df3460373116dc2f5491283}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab7e29dd09df3460373116dc2f5491283}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbGetConfStateFailed@{mtcConfCbGetConfStateFailed}}
+\index{mtcConfCbGetConfStateFailed@{mtcConfCbGetConfStateFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbGetConfStateFailed()}{mtcConfCbGetConfStateFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Get\+Conf\+State\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of error occurred during getting conference state. 
+
+This callback indicates error occurred during getting conference state. G\+UI should show the detail error information(english) to user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stat\+Code} & Error code. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab5f5a50a04c743bd466571c93aea57b7}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab5f5a50a04c743bd466571c93aea57b7}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbHeld@{mtcConfCbHeld}}
+\index{mtcConfCbHeld@{mtcConfCbHeld}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbHeld()}{mtcConfCbHeld()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Held (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference was held by peer. 
+
+This callback indicates peer hold the conference. G\+UI should update conference status according to conference ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a2d91428253c21519adb07b7959d77992}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a2d91428253c21519adb07b7959d77992}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbHoldFailed@{mtcConfCbHoldFailed}}
+\index{mtcConfCbHoldFailed@{mtcConfCbHoldFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbHoldFailed()}{mtcConfCbHoldFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Hold\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference hold failed. 
+
+This callback indicates hold operation has been failed. G\+UI should update conference status according to conference ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a9e7700b50c0755d183aebaca2b4ffc4d}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a9e7700b50c0755d183aebaca2b4ffc4d}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbHoldOk@{mtcConfCbHoldOk}}
+\index{mtcConfCbHoldOk@{mtcConfCbHoldOk}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbHoldOk()}{mtcConfCbHoldOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Hold\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference hold OK. 
+
+This callback indicates hold operation has been completed successfully. G\+UI should update conference status according to conference ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a4e540f40f10050c666b1b3e41ed584cb}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a4e540f40f10050c666b1b3e41ed584cb}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbIncoming@{mtcConfCbIncoming}}
+\index{mtcConfCbIncoming@{mtcConfCbIncoming}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbIncoming()}{mtcConfCbIncoming()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Incoming (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of client receive an incoming conference. 
+
+This callback indicates client receive an incoming conference. G\+UI should show the conference window. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should assign it to the corresponding window, use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_conf_ad72b5b126664d7014f454fb6d2cafade}{Mtc\+Conf\+::\+Mtc\+\_\+\+Conf\+Get\+Peer\+Uri}} to get detail information of conference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a30f7cfce6d4dc97cd7d1259e8cd0a15b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a30f7cfce6d4dc97cd7d1259e8cd0a15b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbIvtAcpt@{mtcConfCbIvtAcpt}}
+\index{mtcConfCbIvtAcpt@{mtcConfCbIvtAcpt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbIvtAcpt()}{mtcConfCbIvtAcpt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Ivt\+Acpt (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of the invited user has accepted invite. 
+
+This client add another user to the conference. This callback was invoked when that user accept the invite. Usually, callback which was set by Mtc\+Conf\+::\+Mtc\+\_\+\+Conf\+Cb\+Set\+Ptpt\+Updt will be invoked sequentially. G\+UI should then update the participants of the conference. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant invited which server has been accepted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a28e36ff0d76ab69fbd18d2922f44709e}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a28e36ff0d76ab69fbd18d2922f44709e}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbIvtFail@{mtcConfCbIvtFail}}
+\index{mtcConfCbIvtFail@{mtcConfCbIvtFail}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbIvtFail()}{mtcConfCbIvtFail()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Ivt\+Fail (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{String}]{uri,  }\item[{int}]{i\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of the invited user is failed. 
+
+This client add another user to the conference. This callback was invoked when that invite user failed. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant invited failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stat\+Code} & Error code. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a7c1c8684ac38f855a1c771021952ec71}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a7c1c8684ac38f855a1c771021952ec71}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbKickAcpt@{mtcConfCbKickAcpt}}
+\index{mtcConfCbKickAcpt@{mtcConfCbKickAcpt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbKickAcpt()}{mtcConfCbKickAcpt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Kick\+Acpt (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of kick user is accepted. 
+
+This client want to remove a user from the conference. This callback was invoked when that user has been removed. Usually, callback which was set by \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af2561df3fc2742bbb3adeb89a1d838dc}{mtc\+Conf\+Cb\+Ptpt\+Updt}} will be invoked sequentially. G\+UI should then update the participants of the conference. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant kicked which server has been accepted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a08f93f026e7d2bfa3511cf3e9909c1d6}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a08f93f026e7d2bfa3511cf3e9909c1d6}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbKickFail@{mtcConfCbKickFail}}
+\index{mtcConfCbKickFail@{mtcConfCbKickFail}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbKickFail()}{mtcConfCbKickFail()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Kick\+Fail (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{String}]{uri,  }\item[{int}]{i\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of kick user is failed. 
+
+This client want to remove a user from the conference. This callback was invoked when that kick user failed. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant kicked failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stat\+Code} & Error code. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a43ef607fdf33c26c55ff33d52885ab9f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a43ef607fdf33c26c55ff33d52885ab9f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbMdfyAcpt@{mtcConfCbMdfyAcpt}}
+\index{mtcConfCbMdfyAcpt@{mtcConfCbMdfyAcpt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbMdfyAcpt()}{mtcConfCbMdfyAcpt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Mdfy\+Acpt (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference modifying accepted. 
+
+To change the attribute of media stream is called conference modify, includes hold/unhold and add/remove media stream. This callback indicates the modification is accept by peer. G\+UI should check which service has been invoke by user. If user hold or unhold the call, show hold or unhold successfully. If user add video upon a voice call, then switch to video call window. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac4b845d90c24a4266e66db72414a52b0}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac4b845d90c24a4266e66db72414a52b0}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbMdfyed@{mtcConfCbMdfyed}}
+\index{mtcConfCbMdfyed@{mtcConfCbMdfyed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbMdfyed()}{mtcConfCbMdfyed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Mdfyed (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference modified. 
+
+This callback indicates modification was invoke by peer, and this modification is completed. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af44e4588ae6e12fbce99a89d6ccb431a}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af44e4588ae6e12fbce99a89d6ccb431a}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbNetStaChanged@{mtcConfCbNetStaChanged}}
+\index{mtcConfCbNetStaChanged@{mtcConfCbNetStaChanged}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbNetStaChanged()}{mtcConfCbNetStaChanged()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Net\+Sta\+Changed (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{boolean}]{b\+Send,  }\item[{int}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate call\textquotesingle{}s network status. 
+
+This callback indicates the call\textquotesingle{}s network status. G\+UI should update session status according to session ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of session. G\+UI should use it to locate call window. \char`\"{}b\+Send\char`\"{} indicate if the network status of sending direction is changed. \char`\"{}i\+Type\char`\"{} indicate the network status type E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+N\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+Y\+PE.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Confback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a487e0a43664220909fbb68fc3ad7ae8b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a487e0a43664220909fbb68fc3ad7ae8b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbNoPtptSpk@{mtcConfCbNoPtptSpk}}
+\index{mtcConfCbNoPtptSpk@{mtcConfCbNoPtptSpk}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbNoPtptSpk()}{mtcConfCbNoPtptSpk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+No\+Ptpt\+Spk (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of no participant is in speaking state. 
+
+G\+UI should update conference participant\textquotesingle{}s speaking state. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+N\+O\+P\+T\+P\+T\+S\+PK is the id of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a75f76d33c467a158588f5cff16f9ab4f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a75f76d33c467a158588f5cff16f9ab4f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbOutgoing@{mtcConfCbOutgoing}}
+\index{mtcConfCbOutgoing@{mtcConfCbOutgoing}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbOutgoing()}{mtcConfCbOutgoing()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Outgoing (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of client setup an outgoing conference. 
+
+This callback indicates client has setup an outgoing conference. G\+UI should not close the conference window, just update the client status in conference. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ae2c1a3861daf98aa42ed33d0d7fdd972}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ae2c1a3861daf98aa42ed33d0d7fdd972}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbPtptSpkStateUpdt@{mtcConfCbPtptSpkStateUpdt}}
+\index{mtcConfCbPtptSpkStateUpdt@{mtcConfCbPtptSpkStateUpdt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbPtptSpkStateUpdt()}{mtcConfCbPtptSpkStateUpdt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Ptpt\+Spk\+State\+Updt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate participant is in speaking state. 
+
+G\+UI should update conference participant\textquotesingle{}s speaking state info. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+S\+P\+K\+S\+T\+A\+T\+E\+P\+T\+P\+T\+U\+P\+DT is the id of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the number(not uri) of the participant.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & the number(not uri) of the participant. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af2561df3fc2742bbb3adeb89a1d838dc}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_af2561df3fc2742bbb3adeb89a1d838dc}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbPtptUpdt@{mtcConfCbPtptUpdt}}
+\index{mtcConfCbPtptUpdt@{mtcConfCbPtptUpdt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbPtptUpdt()}{mtcConfCbPtptUpdt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Ptpt\+Updt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Partp\+Lst\+Id,  }\item[{boolean}]{b\+Full\+Ntfy }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s status updated. 
+
+G\+UI should update conference participant\textquotesingle{}s status. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+B\+P\+T\+P\+T\+U\+P\+DT is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Partp\+Lst\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+B\+P\+T\+P\+T\+U\+P\+DT is the participant list id of conference. \char`\"{}b\+Full\+Ntfy\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+P\+T\+P\+T\+U\+P\+DT is the conference state full flag, T\+R\+UE for \char`\"{}full\char`\"{}, F\+A\+L\+SE for \char`\"{}partial\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Full\+Ntfy} & full notify flag. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab2d606d6f69daa82993186dbe5afb91b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ab2d606d6f69daa82993186dbe5afb91b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbQueryAccount@{mtcConfCbQueryAccount}}
+\index{mtcConfCbQueryAccount@{mtcConfCbQueryAccount}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbQueryAccount()}{mtcConfCbQueryAccount()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Query\+Account (\begin{DoxyParamCaption}\item[{int}]{i\+Result\+Code,  }\item[{String}]{s\+Result,  }\item[{int}]{i\+Total\+Left\+Balance }\end{DoxyParamCaption})}
+
+
+
+Set callback of query account result code. 
+
+This callback indicates query account result code performed by Mtc\+\_\+\+Conf\+Query\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Result\+Code} & Result code. G\+UI use it to check the result. \\
+\hline
+\mbox{\texttt{ out}}  & {\em s\+Result} & The left balance list with different package. G\+UI use it to check the various left balance type. E.\+g. Leftbalance1$^\wedge$expirydate1$^\wedge$\+Type1 $^\wedge$\+Service\+Type1$\vert$ Leftbalance2$^\wedge$expirydate2$^\wedge$\+Type2$^\wedge$\+Service\+Type2, expiry date\+: Y\+Y\+Y\+Y\+M\+M\+DD, type\+: E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+C\+H\+A\+R\+G\+E\+\_\+\+T\+Y\+PE(see @mtc\+\_\+conf.h or Mtc\+Conf\+Constrants.\+java), Service\+Type\+: E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+O\+N\+F\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+PE(see @mtc\+\_\+conf.h or Mtc\+Conf\+Constrants.\+java), \\
+\hline
+\mbox{\texttt{ out}}  & {\em i\+Total\+Left\+Balance} & The total left balance(minutes). If server not return value of the parameter, the value will be 0, then UI can sum up the left balance list in \char`\"{}pc\+Result\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ae6836f2dbd5d90a7823d4777ef8dd918}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ae6836f2dbd5d90a7823d4777ef8dd918}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbQueryAccountFailed@{mtcConfCbQueryAccountFailed}}
+\index{mtcConfCbQueryAccountFailed@{mtcConfCbQueryAccountFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbQueryAccountFailed()}{mtcConfCbQueryAccountFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Query\+Account\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Rsp\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of query account failed. 
+
+This callback indicates query account failed performed by Mtc\+\_\+\+Conf\+Query\+Account. G\+UI use it to check the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em i\+Rsp\+Code} & response staus code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a3a09e5a763ebb0cd866f2c5fffbbdfdb}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a3a09e5a763ebb0cd866f2c5fffbbdfdb}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbSelectUsrFail@{mtcConfCbSelectUsrFail}}
+\index{mtcConfCbSelectUsrFail@{mtcConfCbSelectUsrFail}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbSelectUsrFail()}{mtcConfCbSelectUsrFail()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Select\+Usr\+Fail (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{String}]{uri,  }\item[{int}]{i\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set callback of select user is failed. 
+
+This client want to select a user from the conference. This callback was invoked when that select user failed. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant select failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Stat\+Code} & Error code. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a4d72cb653294d014322d9d41bec0116a}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a4d72cb653294d014322d9d41bec0116a}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbSelectUsrOk@{mtcConfCbSelectUsrOk}}
+\index{mtcConfCbSelectUsrOk@{mtcConfCbSelectUsrOk}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbSelectUsrOk()}{mtcConfCbSelectUsrOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Select\+Usr\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of select user is accepted. 
+
+This client want to select a user from the conference as the remote image. This callback was invoked when that user has been selected. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI use it to locate the conference window. \char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant selected which server has been accepted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & participant uri. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a8f34ef13a5e51888ec494dba98bbb50a}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a8f34ef13a5e51888ec494dba98bbb50a}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbUnHeld@{mtcConfCbUnHeld}}
+\index{mtcConfCbUnHeld@{mtcConfCbUnHeld}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbUnHeld()}{mtcConfCbUnHeld()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Un\+Held (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference was un-\/held by peer. 
+
+This callback indicates un-\/held hold the conference. G\+UI should update conference status according to conference ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a54d00126f2485584b45260c4258f1177}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a54d00126f2485584b45260c4258f1177}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbUnHoldFailed@{mtcConfCbUnHoldFailed}}
+\index{mtcConfCbUnHoldFailed@{mtcConfCbUnHoldFailed}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbUnHoldFailed()}{mtcConfCbUnHoldFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Un\+Hold\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference un-\/hold failed. 
+
+This callback indicates un-\/hold operation has been failed. G\+UI should update conference status according to conference ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a1eb7597fd2ba30464a582580cf885e66}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a1eb7597fd2ba30464a582580cf885e66}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbUnHoldOk@{mtcConfCbUnHoldOk}}
+\index{mtcConfCbUnHoldOk@{mtcConfCbUnHoldOk}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbUnHoldOk()}{mtcConfCbUnHoldOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Un\+Hold\+Ok (\begin{DoxyParamCaption}\item[{int}]{dw\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference un-\/hold OK. 
+
+This callback indicates un-\/hold operation has been completed successfully. G\+UI should update conference status according to conference ID. \char`\"{}dw\+Conf\+Id\char`\"{} is the ID of conference. G\+UI should use it to locate call window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dw\+Conf\+Id} & conference Id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ad6510fd4312f3db704e26ebac241f1ef}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ad6510fd4312f3db704e26ebac241f1ef}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbVideoPtptLstUpdt@{mtcConfCbVideoPtptLstUpdt}}
+\index{mtcConfCbVideoPtptLstUpdt@{mtcConfCbVideoPtptLstUpdt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbVideoPtptLstUpdt()}{mtcConfCbVideoPtptLstUpdt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Video\+Ptpt\+Lst\+Updt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference video partp list updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video partp list info. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Partp\+Lst\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+P\+T\+P\+T\+L\+S\+T\+I\+U\+P\+DT is the participant list id of conference.
+
+\char`\"{}pc\+Uri\char`\"{} is the U\+RI of the participant select failed. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & participant list id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac236d946cc91c403e0c4dd7676e42624}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_ac236d946cc91c403e0c4dd7676e42624}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbVideoStrmPtptUpdt@{mtcConfCbVideoStrmPtptUpdt}}
+\index{mtcConfCbVideoStrmPtptUpdt@{mtcConfCbVideoStrmPtptUpdt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbVideoStrmPtptUpdt()}{mtcConfCbVideoStrmPtptUpdt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Video\+Strm\+Ptpt\+Updt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s video stream info updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video stream info. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Strm\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT is the video stream id. \char`\"{}pc\+Uri\char`\"{} is the number(not uri) of the participant. If no participant, the U\+RI will be \char`\"{}clear\char`\"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & conference Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & video stream id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uri} & the number(not uri) of the participant. If no participant, the U\+RI will be \char`\"{}clear\char`\"{}. if camera is off, the U\+RI will be \char`\"{}\+Number\+:\+P\+I\+C\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+P\+I\+C\char`\"{}. if user is removed, the U\+RI wii be \char`\"{}\+Number1\+:\+K\+I\+C\+K\+Number2\char`\"{}, e.\+g.\char`\"{}+8616000000313\+:\+K\+I\+C\+K1380000000\char`\"{}, Number1 is chairman number, number2 is the number of removed participant. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_adbd0ffd31bfed004d729200a837b9ca3}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_adbd0ffd31bfed004d729200a837b9ca3}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbVideoStrmRmvWinUpdt@{mtcConfCbVideoStrmRmvWinUpdt}}
+\index{mtcConfCbVideoStrmRmvWinUpdt@{mtcConfCbVideoStrmRmvWinUpdt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbVideoStrmRmvWinUpdt()}{mtcConfCbVideoStrmRmvWinUpdt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Video\+Strm\+Rmv\+Win\+Updt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s video stream remove-\/window info updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video stream remove-\/window info. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Strm\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT is the video stream id. \char`\"{}pc\+Uri\char`\"{} is the number(not uri) of the participant. if the chairman whose number is +8616000000313 removed the window of the participant whose number is +8613800000000, the U\+RI will be \char`\"{}\+Number\+:\+K\+I\+C\+K\+:+\+Number\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+K\+I\+C\+K\+:+13800000000\char`\"{}. \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a3085ef2b4f30a8cb4b2c58ff40e7d2cf}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_conf_cb_1_1_callback_a3085ef2b4f30a8cb4b2c58ff40e7d2cf}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}!mtcConfCbVideoStrmSpkStateUpdt@{mtcConfCbVideoStrmSpkStateUpdt}}
+\index{mtcConfCbVideoStrmSpkStateUpdt@{mtcConfCbVideoStrmSpkStateUpdt}!com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcConfCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcConfCbVideoStrmSpkStateUpdt()}{mtcConfCbVideoStrmSpkStateUpdt()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Conf\+Cb.\+Callback.\+mtc\+Conf\+Cb\+Video\+Strm\+Spk\+State\+Updt (\begin{DoxyParamCaption}\item[{int}]{i\+Conf\+Id,  }\item[{int}]{i\+Strm\+Id,  }\item[{String}]{uri }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate conference participant\textquotesingle{}s video stream speak-\/state info updated. 
+
+G\+UI should update conference participant\textquotesingle{}s video stream speak-\/state info. \char`\"{}i\+Conf\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT is the id of conference. G\+UI use it to locate the conference window. \char`\"{}i\+Strm\+Id\char`\"{} in P\+F\+N\+\_\+\+M\+T\+C\+C\+O\+N\+F\+C\+B\+V\+I\+D\+E\+O\+S\+T\+R\+M\+P\+T\+P\+T\+U\+P\+DT is the video stream id. \char`\"{}uri\char`\"{} is the number(not uri) of the participant. if the participant is speaking, the U\+RI will be \char`\"{}\+Number\+:\+V\+O\+L\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+V\+O\+L\char`\"{}. if the participant is not speaking, the U\+RI will be \char`\"{}\+Number\+:\+S\+L\+I\char`\"{}, e.\+g. \char`\"{}+8616000000313\+:\+S\+L\+I\char`\"{}. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/callback/\mbox{\hyperlink{_mtc_conf_cb_8java}{Mtc\+Conf\+Cb.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{mtc__media__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+media\+\_\+cb.h File Reference}
+\label{mtc__media__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_media\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_media\_cb.h}}
+
+
+M\+TC media Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__media__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}\label{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}}) ()
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC media callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__media__cb_8h_a22cb0514642bfae2fdbe72121031f0f1}{Mtc\+\_\+\+Media\+Cb\+Set\+Audio\+Dev\+Interrupted}} (\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate audio device was used by another application. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__media__cb_8h_a4daad64234f6a1e0e24f7b2a0a7c522d}{Mtc\+\_\+\+Media\+Cb\+Set\+Audio\+Dev\+Changed}} (\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate audio device list changed. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__media__cb_8h_aee914e5039d463b45198fc62b1fd3cf4}{Mtc\+\_\+\+Media\+Cb\+Set\+Audio\+Rec\+Did\+Finish\+Playing}} (\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate audio record did finish playing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__media__cb_8h_afecafb70c87a5fe22988745c9b011ecf}{Mtc\+\_\+\+Media\+Cb\+Set\+Video\+Dev\+Changed}} (\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set callback of indicate video device list changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC media Callback Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__media__cb_8h_a4daad64234f6a1e0e24f7b2a0a7c522d}\label{mtc__media__cb_8h_a4daad64234f6a1e0e24f7b2a0a7c522d}} 
+\index{mtc\_media\_cb.h@{mtc\_media\_cb.h}!Mtc\_MediaCbSetAudioDevChanged@{Mtc\_MediaCbSetAudioDevChanged}}
+\index{Mtc\_MediaCbSetAudioDevChanged@{Mtc\_MediaCbSetAudioDevChanged}!mtc\_media\_cb.h@{mtc\_media\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MediaCbSetAudioDevChanged()}{Mtc\_MediaCbSetAudioDevChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Media\+Cb\+Set\+Audio\+Dev\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate audio device list changed. 
+
+G\+UI use \mbox{\hyperlink{mtc__media_8h}{M\+TC Media Interfaces}} to refresh the audio devcie list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__media__cb_8h_a22cb0514642bfae2fdbe72121031f0f1}\label{mtc__media__cb_8h_a22cb0514642bfae2fdbe72121031f0f1}} 
+\index{mtc\_media\_cb.h@{mtc\_media\_cb.h}!Mtc\_MediaCbSetAudioDevInterrupted@{Mtc\_MediaCbSetAudioDevInterrupted}}
+\index{Mtc\_MediaCbSetAudioDevInterrupted@{Mtc\_MediaCbSetAudioDevInterrupted}!mtc\_media\_cb.h@{mtc\_media\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MediaCbSetAudioDevInterrupted()}{Mtc\_MediaCbSetAudioDevInterrupted()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Media\+Cb\+Set\+Audio\+Dev\+Interrupted (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate audio device was used by another application. 
+
+G\+UI should terminate all call session for there is no resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__media__cb_8h_aee914e5039d463b45198fc62b1fd3cf4}\label{mtc__media__cb_8h_aee914e5039d463b45198fc62b1fd3cf4}} 
+\index{mtc\_media\_cb.h@{mtc\_media\_cb.h}!Mtc\_MediaCbSetAudioRecDidFinishPlaying@{Mtc\_MediaCbSetAudioRecDidFinishPlaying}}
+\index{Mtc\_MediaCbSetAudioRecDidFinishPlaying@{Mtc\_MediaCbSetAudioRecDidFinishPlaying}!mtc\_media\_cb.h@{mtc\_media\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MediaCbSetAudioRecDidFinishPlaying()}{Mtc\_MediaCbSetAudioRecDidFinishPlaying()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Media\+Cb\+Set\+Audio\+Rec\+Did\+Finish\+Playing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate audio record did finish playing. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__media__cb_8h_afecafb70c87a5fe22988745c9b011ecf}\label{mtc__media__cb_8h_afecafb70c87a5fe22988745c9b011ecf}} 
+\index{mtc\_media\_cb.h@{mtc\_media\_cb.h}!Mtc\_MediaCbSetVideoDevChanged@{Mtc\_MediaCbSetVideoDevChanged}}
+\index{Mtc\_MediaCbSetVideoDevChanged@{Mtc\_MediaCbSetVideoDevChanged}!mtc\_media\_cb.h@{mtc\_media\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_MediaCbSetVideoDevChanged()}{Mtc\_MediaCbSetVideoDevChanged()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Media\+Cb\+Set\+Video\+Dev\+Changed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__media__cb_8h_a442a4e41a1bb575aa2c56b3794f8a569}{P\+F\+N\+\_\+\+M\+T\+C\+M\+E\+D\+I\+A\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set callback of indicate video device list changed. 
+
+G\+UI use \mbox{\hyperlink{mtc__media_8h}{M\+TC Media Interfaces}} to refresh the video devcie list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

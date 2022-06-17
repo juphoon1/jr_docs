@@ -1,0 +1,978 @@
+\hypertarget{rie__fthttp_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rie/rie\+\_\+fthttp.h File Reference}
+\label{rie__fthttp_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_fthttp.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_fthttp.h}}
+
+
+R\+IE File Transfer Via Http Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{rie__fthttp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_af730750937b8e5044e0f47d9df5b1288}{Rie\+\_\+\+Ft\+Http\+Upload}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+Duration, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+C\+H\+AR $\ast$pc\+Disposition, Z\+U\+I\+NT $\ast$pi\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Uploading a file via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_ab0e6795ee7a95febe1eb0e7e4d1c392e}{Rie\+\_\+\+Ft\+Http\+Download}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+B\+O\+OL b\+Get\+Thumb, Z\+U\+I\+NT $\ast$pi\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Downloading a file via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_aa2307e4753c19cd29896fb86c142055f}{Rie\+\_\+\+Ft\+Http\+Resume\+Up}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+U\+I\+NT i\+Duration, Z\+C\+H\+AR $\ast$pc\+Disposition, Z\+U\+I\+NT $\ast$pi\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Resume upload a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a01ec620fac7dbafa3b2287a67046a7bb}{Rie\+\_\+\+Ft\+Http\+Resume\+Down}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Start\+Offset, Z\+U\+I\+NT i\+File\+Stop\+Offset, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+U\+I\+NT $\ast$pi\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Resume download a file transfer via http . \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a546173ba9f808e037198c871a1adb919}{Rie\+\_\+\+Ft\+Http\+Refresh}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Hash\+Val, Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+C\+H\+AR $\ast$pc\+File\+Type, Z\+U\+I\+NT i\+File\+Size, Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT $\ast$pi\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Refresh a file on server via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_ab9fce21d2a547118d709eda886cd41ba}{Rie\+\_\+\+Ft\+Http\+Cancel}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Cancel a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a59f340f755ef13b0078c72ee8549de46}{Rie\+\_\+\+Ft\+Http\+Release}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Release a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{rie__fthttp_8h_a8b26e82a21c33af01904f77393e63fa1}{Rie\+\_\+\+Ft\+Http\+Get\+Cookie}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get user cookie from a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a138121d7b9792fc70b14bbe0f86f4af1}{Rie\+\_\+\+Ft\+Http\+Set\+Cookie}} (Z\+U\+I\+NT i\+Ft\+Http\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set user cookie in a file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a25104346ef93a0f1222142ab68d6b75d}{Rie\+\_\+\+Ft\+Http\+Get\+Msg\+Data}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get message data from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a6232da0a586d34074baccc68acfdf561}{Rie\+\_\+\+Ft\+Http\+Get\+Url}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file url from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{rie__fthttp_8h_a1b5a18b9e68b612a7c7759455172d5d9}{Rie\+\_\+\+Ft\+Http\+Get\+Validity}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file validity from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a7ca2e7d198a990e76c57d1d96ea8cd4c}{Rie\+\_\+\+Ft\+Http\+Get\+Trans\+Id}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file transfer via http get file Transaction ID string. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_ac9a0e9fd0c4104f28dc680ff52341256}{Rie\+\_\+\+Ft\+Http\+Get\+Name}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file name from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a3dc026c879da9c4e58e4aa25ea85cd2f}{Rie\+\_\+\+Ft\+Http\+Get\+Path}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file path from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_afecae561d0029bc23f33fb0e5883e669}{Rie\+\_\+\+Ft\+Http\+Get\+Type}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file type from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a86d3b1fd7ef85b55764c3ada046f5beb}{Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Type}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get thumb type from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_ac1dd9d679d06d2720bad5b2b6cda4e43}{Rie\+\_\+\+Ft\+Http\+Get\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a872db3c0146ebe06e82299ee360c2db5}{Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get thumb size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a0872c68bda3d842b4fe1baae5d2cfa90}{Rie\+\_\+\+Ft\+Http\+Get\+Sent\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em Get file data sent size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_ad133a4b870bbe8d874ea18cfc93bdd7c}{Rie\+\_\+\+Ft\+Http\+Get\+Recv\+Size}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file data received size from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_ae05b524c982997139bfe2978d7436c50}{Rie\+\_\+\+Ft\+Http\+Get\+Start\+Offset}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file start offset from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_ad30fd26c2a9a6561dbc20d457176cc9f}{Rie\+\_\+\+Ft\+Http\+Get\+Stop\+Offset}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file start offset from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__fthttp_8h_a3d7152cf30c78d6811c0112b93b2bfac}{Rie\+\_\+\+Ft\+Http\+Has\+Thumb}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get thumbnail flag from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__fthttp_8h_a35d92e000b913c7fd96189304f6d7605}{Rie\+\_\+\+Ft\+Http\+Is\+Thumb}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get download file thumbnail flag from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rie__fthttp_8h_a043a356ee3c446df010bc3f6b729bb65}{Rie\+\_\+\+Ft\+Http\+Allow\+Resume}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get allow resume flag from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a9a84c2ee0f2c3f667ca7a74c56721bd9}{Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Data}} (Z\+U\+I\+NT i\+Ft\+Http\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em R\+IE Get thumbnail date from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a2711f4eea1da96886d3817040315c343}{Rie\+\_\+\+Ft\+Http\+Clr\+Thumb\+Data}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Clear thumbnail date. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a379bc608c7c11f35747cea100101fc68}{Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Url}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get thumb url from file transfer via http. \end{DoxyCompactList}\item 
+Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{rie__fthttp_8h_ae58cccb002e256ffeea5176e2315dff9}{Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Validity}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get thumb validity from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_ab8f650133e018b6c84db100bd9863c66}{Rie\+\_\+\+Ft\+Http\+Get\+Hash\+Value}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file hash value from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a41722dd02271f2830a5f87b917bf7e4f}{Rie\+\_\+\+Ft\+Http\+Get\+Duration}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file duration from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_adc12e0f22b202bcd13d2aace9f90594e}{Rie\+\_\+\+Ft\+Http\+Get\+Disposition}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file disposition from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_accaf2a9667fcb2f6dff6717b96b143fe}{Rie\+\_\+\+Ft\+Http\+Get\+File\+Info\+Xml}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file info(xml) string from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a2bab77dc6f79687987d4abb7a63f8237}{Rie\+\_\+\+Ft\+Http\+Get\+Ginfo\+Id}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get ginfo id from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_a5cd2e38d95fc99e93dde64a3bd83455e}{Rie\+\_\+\+Ft\+Http\+Get\+Trans\+State}} (Z\+C\+H\+AR $\ast$pc\+Ft\+Http\+T\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get file transfer state from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rie__fthttp_8h_a2f75a75db82648bfebcc87407a3d2a15}{Rie\+\_\+\+Ft\+Http\+Get\+Token}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get token from file transfer via http. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rie__fthttp_8h_aacf52d8685d447d6877412c6b9e9b348}{Rie\+\_\+\+Ft\+Http\+Get\+Retry\+Time\+Len}} (Z\+U\+I\+NT i\+Ft\+Http\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE File Transfer Via Http Interfaces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rie__fthttp_8h_a043a356ee3c446df010bc3f6b729bb65}\label{rie__fthttp_8h_a043a356ee3c446df010bc3f6b729bb65}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpAllowResume@{Rie\_FtHttpAllowResume}}
+\index{Rie\_FtHttpAllowResume@{Rie\_FtHttpAllowResume}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpAllowResume()}{Rie\_FtHttpAllowResume()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Ft\+Http\+Allow\+Resume (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get allow resume flag from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE if allow resume upload otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ab9fce21d2a547118d709eda886cd41ba}\label{rie__fthttp_8h_ab9fce21d2a547118d709eda886cd41ba}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpCancel@{Rie\_FtHttpCancel}}
+\index{Rie\_FtHttpCancel@{Rie\_FtHttpCancel}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpCancel()}{Rie\_FtHttpCancel()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Cancel (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Cancel a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Cancel file transfer via http invitation successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Cancel file transfer via http invitation failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a2711f4eea1da96886d3817040315c343}\label{rie__fthttp_8h_a2711f4eea1da96886d3817040315c343}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpClrThumbData@{Rie\_FtHttpClrThumbData}}
+\index{Rie\_FtHttpClrThumbData@{Rie\_FtHttpClrThumbData}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpClrThumbData()}{Rie\_FtHttpClrThumbData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Clr\+Thumb\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Clear thumbnail date. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Clear thumbnail date successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Clear thumbnail date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ab0e6795ee7a95febe1eb0e7e4d1c392e}\label{rie__fthttp_8h_ab0e6795ee7a95febe1eb0e7e4d1c392e}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpDownload@{Rie\_FtHttpDownload}}
+\index{Rie\_FtHttpDownload@{Rie\_FtHttpDownload}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpDownload()}{Rie\_FtHttpDownload()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Download (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Get\+Thumb,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Downloading a file via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The participant U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Start\+Offset} & The waitting for fetching file start offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Stop\+Offset} & The waitting for fetching file stop offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for download. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Get\+Thumb} & get thumb. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Ft\+Http\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Download file transfer via http successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Download file transfer via http failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a8b26e82a21c33af01904f77393e63fa1}\label{rie__fthttp_8h_a8b26e82a21c33af01904f77393e63fa1}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetCookie@{Rie\_FtHttpGetCookie}}
+\index{Rie\_FtHttpGetCookie@{Rie\_FtHttpGetCookie}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetCookie()}{Rie\_FtHttpGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Rie\+\_\+\+Ft\+Http\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get user cookie from a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em User} & cookie. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_adc12e0f22b202bcd13d2aace9f90594e}\label{rie__fthttp_8h_adc12e0f22b202bcd13d2aace9f90594e}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetDisposition@{Rie\_FtHttpGetDisposition}}
+\index{Rie\_FtHttpGetDisposition@{Rie\_FtHttpGetDisposition}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetDisposition()}{Rie\_FtHttpGetDisposition()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Disposition (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file disposition from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em file} & disposition. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a41722dd02271f2830a5f87b917bf7e4f}\label{rie__fthttp_8h_a41722dd02271f2830a5f87b917bf7e4f}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetDuration@{Rie\_FtHttpGetDuration}}
+\index{Rie\_FtHttpGetDuration@{Rie\_FtHttpGetDuration}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetDuration()}{Rie\_FtHttpGetDuration()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Duration (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file duration from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file duration. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_accaf2a9667fcb2f6dff6717b96b143fe}\label{rie__fthttp_8h_accaf2a9667fcb2f6dff6717b96b143fe}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetFileInfoXml@{Rie\_FtHttpGetFileInfoXml}}
+\index{Rie\_FtHttpGetFileInfoXml@{Rie\_FtHttpGetFileInfoXml}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetFileInfoXml()}{Rie\_FtHttpGetFileInfoXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+File\+Info\+Xml (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file info(xml) string from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em file} & info(xml) string. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a2bab77dc6f79687987d4abb7a63f8237}\label{rie__fthttp_8h_a2bab77dc6f79687987d4abb7a63f8237}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetGinfoId@{Rie\_FtHttpGetGinfoId}}
+\index{Rie\_FtHttpGetGinfoId@{Rie\_FtHttpGetGinfoId}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetGinfoId()}{Rie\_FtHttpGetGinfoId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Ginfo\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get ginfo id from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em ginfo} & id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ab8f650133e018b6c84db100bd9863c66}\label{rie__fthttp_8h_ab8f650133e018b6c84db100bd9863c66}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetHashValue@{Rie\_FtHttpGetHashValue}}
+\index{Rie\_FtHttpGetHashValue@{Rie\_FtHttpGetHashValue}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetHashValue()}{Rie\_FtHttpGetHashValue()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Hash\+Value (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file hash value from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em hash} & value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a25104346ef93a0f1222142ab68d6b75d}\label{rie__fthttp_8h_a25104346ef93a0f1222142ab68d6b75d}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetMsgData@{Rie\_FtHttpGetMsgData}}
+\index{Rie\_FtHttpGetMsgData@{Rie\_FtHttpGetMsgData}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetMsgData()}{Rie\_FtHttpGetMsgData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Msg\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get message data from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em message} & data. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ac9a0e9fd0c4104f28dc680ff52341256}\label{rie__fthttp_8h_ac9a0e9fd0c4104f28dc680ff52341256}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetName@{Rie\_FtHttpGetName}}
+\index{Rie\_FtHttpGetName@{Rie\_FtHttpGetName}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetName()}{Rie\_FtHttpGetName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file name from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & name. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a3dc026c879da9c4e58e4aa25ea85cd2f}\label{rie__fthttp_8h_a3dc026c879da9c4e58e4aa25ea85cd2f}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetPath@{Rie\_FtHttpGetPath}}
+\index{Rie\_FtHttpGetPath@{Rie\_FtHttpGetPath}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetPath()}{Rie\_FtHttpGetPath()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Path (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file path from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & path. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ad133a4b870bbe8d874ea18cfc93bdd7c}\label{rie__fthttp_8h_ad133a4b870bbe8d874ea18cfc93bdd7c}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetRecvSize@{Rie\_FtHttpGetRecvSize}}
+\index{Rie\_FtHttpGetRecvSize@{Rie\_FtHttpGetRecvSize}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetRecvSize()}{Rie\_FtHttpGetRecvSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Recv\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file data received size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file data received size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_aacf52d8685d447d6877412c6b9e9b348}\label{rie__fthttp_8h_aacf52d8685d447d6877412c6b9e9b348}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetRetryTimeLen@{Rie\_FtHttpGetRetryTimeLen}}
+\index{Rie\_FtHttpGetRetryTimeLen@{Rie\_FtHttpGetRetryTimeLen}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetRetryTimeLen()}{Rie\_FtHttpGetRetryTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Retry\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+@brlef R\+IE Get retry time length from file transfer via http.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em retry} & time length. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a0872c68bda3d842b4fe1baae5d2cfa90}\label{rie__fthttp_8h_a0872c68bda3d842b4fe1baae5d2cfa90}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetSentSize@{Rie\_FtHttpGetSentSize}}
+\index{Rie\_FtHttpGetSentSize@{Rie\_FtHttpGetSentSize}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetSentSize()}{Rie\_FtHttpGetSentSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Sent\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+Get file data sent size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file data sent size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ac1dd9d679d06d2720bad5b2b6cda4e43}\label{rie__fthttp_8h_ac1dd9d679d06d2720bad5b2b6cda4e43}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetSize@{Rie\_FtHttpGetSize}}
+\index{Rie\_FtHttpGetSize@{Rie\_FtHttpGetSize}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetSize()}{Rie\_FtHttpGetSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ae05b524c982997139bfe2978d7436c50}\label{rie__fthttp_8h_ae05b524c982997139bfe2978d7436c50}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetStartOffset@{Rie\_FtHttpGetStartOffset}}
+\index{Rie\_FtHttpGetStartOffset@{Rie\_FtHttpGetStartOffset}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetStartOffset()}{Rie\_FtHttpGetStartOffset()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Start\+Offset (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file start offset from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file start offset. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ad30fd26c2a9a6561dbc20d457176cc9f}\label{rie__fthttp_8h_ad30fd26c2a9a6561dbc20d457176cc9f}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetStopOffset@{Rie\_FtHttpGetStopOffset}}
+\index{Rie\_FtHttpGetStopOffset@{Rie\_FtHttpGetStopOffset}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetStopOffset()}{Rie\_FtHttpGetStopOffset()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Stop\+Offset (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file start offset from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file stop offset. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a9a84c2ee0f2c3f667ca7a74c56721bd9}\label{rie__fthttp_8h_a9a84c2ee0f2c3f667ca7a74c56721bd9}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetThumbData@{Rie\_FtHttpGetThumbData}}
+\index{Rie\_FtHttpGetThumbData@{Rie\_FtHttpGetThumbData}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetThumbData()}{Rie\_FtHttpGetThumbData()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Data (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get thumbnail date from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pp\+Data} & thumbnail data. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pi\+Data\+Size} & thumbnail data size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get thumbnail date successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get thumbnail date failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a872db3c0146ebe06e82299ee360c2db5}\label{rie__fthttp_8h_a872db3c0146ebe06e82299ee360c2db5}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetThumbSize@{Rie\_FtHttpGetThumbSize}}
+\index{Rie\_FtHttpGetThumbSize@{Rie\_FtHttpGetThumbSize}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetThumbSize()}{Rie\_FtHttpGetThumbSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get thumb size from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & thumb size. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a86d3b1fd7ef85b55764c3ada046f5beb}\label{rie__fthttp_8h_a86d3b1fd7ef85b55764c3ada046f5beb}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetThumbType@{Rie\_FtHttpGetThumbType}}
+\index{Rie\_FtHttpGetThumbType@{Rie\_FtHttpGetThumbType}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetThumbType()}{Rie\_FtHttpGetThumbType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get thumb type from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & thumb type. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a379bc608c7c11f35747cea100101fc68}\label{rie__fthttp_8h_a379bc608c7c11f35747cea100101fc68}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetThumbUrl@{Rie\_FtHttpGetThumbUrl}}
+\index{Rie\_FtHttpGetThumbUrl@{Rie\_FtHttpGetThumbUrl}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetThumbUrl()}{Rie\_FtHttpGetThumbUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get thumb url from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Thumb} & url. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_ae58cccb002e256ffeea5176e2315dff9}\label{rie__fthttp_8h_ae58cccb002e256ffeea5176e2315dff9}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetThumbValidity@{Rie\_FtHttpGetThumbValidity}}
+\index{Rie\_FtHttpGetThumbValidity@{Rie\_FtHttpGetThumbValidity}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetThumbValidity()}{Rie\_FtHttpGetThumbValidity()}}
+{\footnotesize\ttfamily Z\+T\+I\+M\+E\+\_\+T Rie\+\_\+\+Ft\+Http\+Get\+Thumb\+Validity (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get thumb validity from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Thumb} & validity. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a2f75a75db82648bfebcc87407a3d2a15}\label{rie__fthttp_8h_a2f75a75db82648bfebcc87407a3d2a15}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetToken@{Rie\_FtHttpGetToken}}
+\index{Rie\_FtHttpGetToken@{Rie\_FtHttpGetToken}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetToken()}{Rie\_FtHttpGetToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Token (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get token from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em token} & value. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a7ca2e7d198a990e76c57d1d96ea8cd4c}\label{rie__fthttp_8h_a7ca2e7d198a990e76c57d1d96ea8cd4c}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetTransId@{Rie\_FtHttpGetTransId}}
+\index{Rie\_FtHttpGetTransId@{Rie\_FtHttpGetTransId}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetTransId()}{Rie\_FtHttpGetTransId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Trans\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file transfer via http get file Transaction ID string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The file Transaction ID. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rie__fthttp_8h_a5cd2e38d95fc99e93dde64a3bd83455e}\label{rie__fthttp_8h_a5cd2e38d95fc99e93dde64a3bd83455e}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetTransState@{Rie\_FtHttpGetTransState}}
+\index{Rie\_FtHttpGetTransState@{Rie\_FtHttpGetTransState}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetTransState()}{Rie\_FtHttpGetTransState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rie\+\_\+\+Ft\+Http\+Get\+Trans\+State (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file transfer state from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & file transfer state. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_afecae561d0029bc23f33fb0e5883e669}\label{rie__fthttp_8h_afecae561d0029bc23f33fb0e5883e669}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetType@{Rie\_FtHttpGetType}}
+\index{Rie\_FtHttpGetType@{Rie\_FtHttpGetType}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetType()}{Rie\_FtHttpGetType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file type from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & type. The caller is responsible for freeing it by Zos\+\_\+\+Sys\+Str\+Free \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a6232da0a586d34074baccc68acfdf561}\label{rie__fthttp_8h_a6232da0a586d34074baccc68acfdf561}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetUrl@{Rie\_FtHttpGetUrl}}
+\index{Rie\_FtHttpGetUrl@{Rie\_FtHttpGetUrl}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetUrl()}{Rie\_FtHttpGetUrl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Rie\+\_\+\+Ft\+Http\+Get\+Url (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file url from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & url. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a1b5a18b9e68b612a7c7759455172d5d9}\label{rie__fthttp_8h_a1b5a18b9e68b612a7c7759455172d5d9}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpGetValidity@{Rie\_FtHttpGetValidity}}
+\index{Rie\_FtHttpGetValidity@{Rie\_FtHttpGetValidity}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpGetValidity()}{Rie\_FtHttpGetValidity()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Rie\+\_\+\+Ft\+Http\+Get\+Validity (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get file validity from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em File} & validity. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a3d7152cf30c78d6811c0112b93b2bfac}\label{rie__fthttp_8h_a3d7152cf30c78d6811c0112b93b2bfac}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpHasThumb@{Rie\_FtHttpHasThumb}}
+\index{Rie\_FtHttpHasThumb@{Rie\_FtHttpHasThumb}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpHasThumb()}{Rie\_FtHttpHasThumb()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Ft\+Http\+Has\+Thumb (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get thumbnail flag from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE if file transfer via http has thumbnail otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a35d92e000b913c7fd96189304f6d7605}\label{rie__fthttp_8h_a35d92e000b913c7fd96189304f6d7605}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpIsThumb@{Rie\_FtHttpIsThumb}}
+\index{Rie\_FtHttpIsThumb@{Rie\_FtHttpIsThumb}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpIsThumb()}{Rie\_FtHttpIsThumb()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rie\+\_\+\+Ft\+Http\+Is\+Thumb (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get download file thumbnail flag from file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & Z\+T\+R\+UE if download file is thumbnail otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a546173ba9f808e037198c871a1adb919}\label{rie__fthttp_8h_a546173ba9f808e037198c871a1adb919}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpRefresh@{Rie\_FtHttpRefresh}}
+\index{Rie\_FtHttpRefresh@{Rie\_FtHttpRefresh}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpRefresh()}{Rie\_FtHttpRefresh()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Refresh (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Hash\+Val,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Refresh a file on server via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Hash\+Val} & The file hash value. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for refresh. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB ~\newline
+ \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Ft\+Http\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & refresh file via http successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & refresh file via http failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a59f340f755ef13b0078c72ee8549de46}\label{rie__fthttp_8h_a59f340f755ef13b0078c72ee8549de46}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpRelease@{Rie\_FtHttpRelease}}
+\index{Rie\_FtHttpRelease@{Rie\_FtHttpRelease}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpRelease()}{Rie\_FtHttpRelease()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Release (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Release a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Release file transfer via http successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Release file transfer via http failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a01ec620fac7dbafa3b2287a67046a7bb}\label{rie__fthttp_8h_a01ec620fac7dbafa3b2287a67046a7bb}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpResumeDown@{Rie\_FtHttpResumeDown}}
+\index{Rie\_FtHttpResumeDown@{Rie\_FtHttpResumeDown}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpResumeDown()}{Rie\_FtHttpResumeDown()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Resume\+Down (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+File\+Start\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+File\+Stop\+Offset,  }\item[{Z\+U\+I\+NT}]{i\+File\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Resume download a file transfer via http . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The file uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Start\+Offset} & The waitting for fetching file start offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Stop\+Offset} & The waitting for fetching file stop offset. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+File\+Size} & The file size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for resume download. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Ft\+Http\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & file resume download transfer via http successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & file resume download transfer via http failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_aa2307e4753c19cd29896fb86c142055f}\label{rie__fthttp_8h_aa2307e4753c19cd29896fb86c142055f}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpResumeUp@{Rie\_FtHttpResumeUp}}
+\index{Rie\_FtHttpResumeUp@{Rie\_FtHttpResumeUp}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpResumeUp()}{Rie\_FtHttpResumeUp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Resume\+Up (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ft\+Http\+T\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disposition,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Resume upload a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ft\+Http\+T\+Id} & file Transaction ID for resume. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disposition} & The file Disposition. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Ft\+Http\+Id} & The file transfer via http id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & file resume upload to one participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & file resume upload to one participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_a138121d7b9792fc70b14bbe0f86f4af1}\label{rie__fthttp_8h_a138121d7b9792fc70b14bbe0f86f4af1}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpSetCookie@{Rie\_FtHttpSetCookie}}
+\index{Rie\_FtHttpSetCookie@{Rie\_FtHttpSetCookie}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpSetCookie()}{Rie\_FtHttpSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Ft\+Http\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set user cookie in a file transfer via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ft\+Http\+Id} & The file transfer via http id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rie__fthttp_8h_af730750937b8e5044e0f47d9df5b1288}\label{rie__fthttp_8h_af730750937b8e5044e0f47d9df5b1288}} 
+\index{rie\_fthttp.h@{rie\_fthttp.h}!Rie\_FtHttpUpload@{Rie\_FtHttpUpload}}
+\index{Rie\_FtHttpUpload@{Rie\_FtHttpUpload}!rie\_fthttp.h@{rie\_fthttp.h}}
+\doxysubsubsection{\texorpdfstring{Rie\_FtHttpUpload()}{Rie\_FtHttpUpload()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rie\+\_\+\+Ft\+Http\+Upload (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+File\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Duration,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Disposition,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Ft\+Http\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Uploading a file via http. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Token} & The unified authentication token. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Name} & The file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+File\+Type} & The file type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Duration} & The file duration. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The file thumbnail data. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The file thumbnail size, thumbnail shall be smaller than 10 kB \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Disposition} & The file Disposition. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Ft\+Http\+Id} & The file transfer id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Upload file transfer via http successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Upload file transfer via http failed. \\
+\hline
+\end{DoxyRetVals}

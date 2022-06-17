@@ -1,0 +1,794 @@
+\hypertarget{mtc__im__stfwd_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im\+\_\+stfwd.h File Reference}
+\label{mtc__im__stfwd_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_stfwd.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_stfwd.h}}
+
+
+M\+TC Instant Store And Forward Session Interface Functions.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a70e0753283c38f2d4a4ea7bf5a827dd4}\label{mtc__im__stfwd_8h_a70e0753283c38f2d4a4ea7bf5a827dd4}} 
+typedef enum \mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__stfwd_8h_a70e0753283c38f2d4a4ea7bf5a827dd4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM store and forward session content type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a6d274d4eac9035c29103131eab5bd816}\label{mtc__im__stfwd_8h_a6d274d4eac9035c29103131eab5bd816}} 
+typedef enum \mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__stfwd_8h_a6d274d4eac9035c29103131eab5bd816}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM store and forward session imdn request type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im__stfwd_8h_ac8a839815227a452a242cb0895b8ddf0}\label{mtc__im__stfwd_8h_ac8a839815227a452a242cb0895b8ddf0}} 
+typedef enum \mbox{\hyperlink{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__stfwd_8h_ac8a839815227a452a242cb0895b8ddf0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM store and forward session type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a38add92c652c79c4a0ea74568a2e7a25}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a089427f945a3667c47ece32712399dee}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a5018928d308b2d23c8ad2c7ac7d24947}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a5d004b4b741b63cbd78b1aef00627fe7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG}}, 
+\newline
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a2f0e6495011128f9966fce8d4679a351}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41abe46feb9150d04b757b9a17545622bed}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41ad636b70c37318731eef3fc369515a89d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+L\+O\+C\+A\+T\+I\+ON}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a0272d5e36cfa5bab0472a08a4674efc2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+M\+SG}}, 
+\newline
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a1839251dc434fac844bec14e55215b7a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+UG}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a74a3c06a5ee1b83eb04c15a558027044}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+M\+U\+TI}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM store and forward session content type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a1a7e0ac186817285180c77b1e20c5261}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a842c36d310a73e6d637c8d9e0b7ec6c9}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+R\+EG}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811ad25e375966cc8e425ceba86b805a8419}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+LI}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a29b6e57147633f2a2db7172c01010438}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+SP}}, 
+\newline
+\mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a83116fd26f11684ea9ca01f94839c155}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+B\+O\+TH}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM store and forward session imdn request type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417a74d19549694a9b84799092c8e4470d28}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+H\+A\+T\+B\+OT}}, 
+\mbox{\hyperlink{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417ad02c4620c5c0d0cac821908049003296}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+U\+N\+K\+O\+WN}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM store and forward session type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a45b44d7c0adfad0cb6c53ef38e69d57e}{Mtc\+\_\+\+Im\+St\+Fwd\+Accept}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Accept a store and forward session invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a4ca5a7d40e0a8cb399345f86f4abfef1}{Mtc\+\_\+\+Im\+St\+Fwd\+Reject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Reject a store and forward session invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__stfwd_8h_a24e1950b84d1aeadab9f46f13594c786}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Subject}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get user subject from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_ae0546c48c292d593813d9d2aa28d930e}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant type from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a9c13901e5d4398498543245a3a2a81f6}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant information from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_abb24c419056975a39f1ccc2d356f515a}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em Get participant list id from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a1f7ed9c52b52e74bec3580ae2d952ccc}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Orig\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get original participant U\+RI from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_ac76f99ae05c150d6b1c4578271097252}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Orig\+Id\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em Get original identity of participant U\+RI from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a2b78de73ead60488edea2f0c2ef1def6}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Sys\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, \mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__stfwd_8h_a27b5df022bc89d233c921a68a9d618ad}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get contribution-\/id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__stfwd_8h_a95dd03e366ebb995bba88bdec23e3e21}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get conversation-\/id from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__stfwd_8h_a29874501872518c804f44b07a1bfe1a6}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a0ab4a597ad88b65b5cc83216373ad447}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message Imdn id from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__stfwd_8h_a0d1125af93d518cd15e6ad51b2041e63}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get device id from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_af64863f6d964da2a2e55743a53fd91ce}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message content type from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a815716c7102e59a6c212d19fb3eec138}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Content\+Len}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message content length from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__stfwd_8h_a08c90d42907a340104e48bc32173ca32}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message content from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a1d376bf616d3048b68f1ba53a17b2c83}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+M\+Content}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Get multi-\/media message content from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_ae2f7abd4462f3d01b3732a4fdc94b30e}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant information from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_a41d46f6cc866b27380dac8dd23ad4885}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Sys\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, \mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message date time from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im__stfwd_8h_a57959f094ada341245d880e9795477c4}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message date time from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_ad9d1dc17150a4ce9aab7f546866ab6e0}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+G\+Info\+Id}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em mtcf M\+TC Get geolocation information id of IM message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_aca8e4770c13af496b58a8365231b6249}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Sess\+Type}} (Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get session type from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__stfwd_8h_a782c3c389249967982c0a6aeca5a6636}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Bot\+Sug}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message botsuggestion from store and forward session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__stfwd_8h_ab0790acdeca57f4b5420dfe5f3d9dcb8}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Bot\+Msg\+Content\+Type}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message botsuggestion from message session. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im__stfwd_8h_a8f7a47922fa6a326f5f5824f7e775a68}{Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Muti\+Content}} (Z\+U\+I\+NT i\+Sess\+Id, Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Msg\+Type)
+\begin{DoxyCompactList}\small\item\em M\+TC Get message muti content from message session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Store And Forward Session Interface Functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_TYPE@{EN\_MTC\_IM\_STFWD\_CONT\_TYPE}}
+\index{EN\_MTC\_IM\_STFWD\_CONT\_TYPE@{EN\_MTC\_IM\_STFWD\_CONT\_TYPE}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_STFWD\_CONT\_TYPE}{EN\_MTC\_IM\_STFWD\_CONT\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM store and forward session content type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_UNKNOWN@{EN\_MTC\_IM\_STFWD\_CONT\_UNKNOWN}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_UNKNOWN@{EN\_MTC\_IM\_STFWD\_CONT\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a38add92c652c79c4a0ea74568a2e7a25}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a38add92c652c79c4a0ea74568a2e7a25}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&unknown content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_TXT\_PLAIN@{EN\_MTC\_IM\_STFWD\_CONT\_TXT\_PLAIN}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_TXT\_PLAIN@{EN\_MTC\_IM\_STFWD\_CONT\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a089427f945a3667c47ece32712399dee}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a089427f945a3667c47ece32712399dee}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&text/plain content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_TXT\_PLAIN}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a5018928d308b2d23c8ad2c7ac7d24947}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a5018928d308b2d23c8ad2c7ac7d24947}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&content type of \char`\"{}text/plain\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_JPEG}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_JPEG}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a5d004b4b741b63cbd78b1aef00627fe7}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a5d004b4b741b63cbd78b1aef00627fe7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG&content type of \char`\"{}image/jpeg\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_BMP@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_BMP}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_BMP@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_IMAGE\_BMP}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a2f0e6495011128f9966fce8d4679a351}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a2f0e6495011128f9966fce8d4679a351}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP&content type of \char`\"{}image/bmp\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_FTHTTP@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_FTHTTP}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_FTHTTP@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_FTHTTP}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41abe46feb9150d04b757b9a17545622bed}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41abe46feb9150d04b757b9a17545622bed}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP&content type of \char`\"{}application/vnd.\+gsma.\+rcs-\/ft-\/http+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_LOCATION@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_LOCATION}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_LOCATION@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_LOCATION}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41ad636b70c37318731eef3fc369515a89d}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41ad636b70c37318731eef3fc369515a89d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+L\+O\+C\+A\+T\+I\+ON&content type of \char`\"{}application/vnd.\+gsma.\+rcspushlocation+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTMSG@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTMSG}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTMSG@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTMSG}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a0272d5e36cfa5bab0472a08a4674efc2}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a0272d5e36cfa5bab0472a08a4674efc2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+M\+SG&content type of \char`\"{}application/vnd.\+gsma.\+botsuggestion.\+v1.\+0+json\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTSUG@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTSUG}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTSUG@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_BOTSUG}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a1839251dc434fac844bec14e55215b7a}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a1839251dc434fac844bec14e55215b7a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+UG&content type of \char`\"{}application/vnd.\+gsma.\+botsuggestion.\+response.\+v1.\+0+json\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_MUTI@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_MUTI}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CONT\_MSG\_MUTI@{EN\_MTC\_IM\_STFWD\_CONT\_MSG\_MUTI}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a74a3c06a5ee1b83eb04c15a558027044}\label{mtc__im__stfwd_8h_a52d202d51a7f207ef88f9d4400d26d41a74a3c06a5ee1b83eb04c15a558027044}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+M\+U\+TI&content type of \char`\"{}multipart/mixed\char`\"{} content \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811}\label{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_IMDN\_TYPE@{EN\_MTC\_IM\_STFWD\_IMDN\_TYPE}}
+\index{EN\_MTC\_IM\_STFWD\_IMDN\_TYPE@{EN\_MTC\_IM\_STFWD\_IMDN\_TYPE}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_STFWD\_IMDN\_TYPE}{EN\_MTC\_IM\_STFWD\_IMDN\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM store and forward session imdn request type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_IMDN\_UNKNOWN@{EN\_MTC\_IM\_STFWD\_IMDN\_UNKNOWN}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_IMDN\_UNKNOWN@{EN\_MTC\_IM\_STFWD\_IMDN\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a1a7e0ac186817285180c77b1e20c5261}\label{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a1a7e0ac186817285180c77b1e20c5261}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+U\+N\+K\+N\+O\+WN&unknown message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_IMDN\_REG@{EN\_MTC\_IM\_STFWD\_IMDN\_REG}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_IMDN\_REG@{EN\_MTC\_IM\_STFWD\_IMDN\_REG}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a842c36d310a73e6d637c8d9e0b7ec6c9}\label{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a842c36d310a73e6d637c8d9e0b7ec6c9}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+R\+EG&regular message \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_IMDN\_DELI@{EN\_MTC\_IM\_STFWD\_IMDN\_DELI}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_IMDN\_DELI@{EN\_MTC\_IM\_STFWD\_IMDN\_DELI}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811ad25e375966cc8e425ceba86b805a8419}\label{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811ad25e375966cc8e425ceba86b805a8419}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+LI&message with delivery notification request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_IMDN\_DISP@{EN\_MTC\_IM\_STFWD\_IMDN\_DISP}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_IMDN\_DISP@{EN\_MTC\_IM\_STFWD\_IMDN\_DISP}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a29b6e57147633f2a2db7172c01010438}\label{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a29b6e57147633f2a2db7172c01010438}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+SP&message with display notification request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_IMDN\_BOTH@{EN\_MTC\_IM\_STFWD\_IMDN\_BOTH}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_IMDN\_BOTH@{EN\_MTC\_IM\_STFWD\_IMDN\_BOTH}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a83116fd26f11684ea9ca01f94839c155}\label{mtc__im__stfwd_8h_acd0eaf065aa47ac8a8f51c5c0aad5811a83116fd26f11684ea9ca01f94839c155}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+I\+M\+D\+N\+\_\+\+B\+O\+TH&message with delivery \& display notification request \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417}\label{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_TYPE@{EN\_MTC\_IM\_STFWD\_TYPE}}
+\index{EN\_MTC\_IM\_STFWD\_TYPE@{EN\_MTC\_IM\_STFWD\_TYPE}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_STFWD\_TYPE}{EN\_MTC\_IM\_STFWD\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM store and forward session type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_CHATBOT@{EN\_MTC\_IM\_STFWD\_CHATBOT}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_CHATBOT@{EN\_MTC\_IM\_STFWD\_CHATBOT}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417a74d19549694a9b84799092c8e4470d28}\label{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417a74d19549694a9b84799092c8e4470d28}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+H\+A\+T\+B\+OT&chatbot \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_STFWD\_UNKOWN@{EN\_MTC\_IM\_STFWD\_UNKOWN}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!EN\_MTC\_IM\_STFWD\_UNKOWN@{EN\_MTC\_IM\_STFWD\_UNKOWN}}}\mbox{\Hypertarget{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417ad02c4620c5c0d0cac821908049003296}\label{mtc__im__stfwd_8h_a069662ea3e27e74ec3ef35590382d417ad02c4620c5c0d0cac821908049003296}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+U\+N\+K\+O\+WN&unkown \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a45b44d7c0adfad0cb6c53ef38e69d57e}\label{mtc__im__stfwd_8h_a45b44d7c0adfad0cb6c53ef38e69d57e}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdAccept@{Mtc\_ImStFwdAccept}}
+\index{Mtc\_ImStFwdAccept@{Mtc\_ImStFwdAccept}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdAccept()}{Mtc\_ImStFwdAccept()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Accept (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Accept a store and forward session invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Accept store and forward session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Accept store and forward session failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a27b5df022bc89d233c921a68a9d618ad}\label{mtc__im__stfwd_8h_a27b5df022bc89d233c921a68a9d618ad}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetContId@{Mtc\_ImStFwdGetContId}}
+\index{Mtc\_ImStFwdGetContId@{Mtc\_ImStFwdGetContId}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetContId()}{Mtc\_ImStFwdGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get contribution-\/id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a95dd03e366ebb995bba88bdec23e3e21}\label{mtc__im__stfwd_8h_a95dd03e366ebb995bba88bdec23e3e21}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetConvId@{Mtc\_ImStFwdGetConvId}}
+\index{Mtc\_ImStFwdGetConvId@{Mtc\_ImStFwdGetConvId}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetConvId()}{Mtc\_ImStFwdGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get conversation-\/id from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a29874501872518c804f44b07a1bfe1a6}\label{mtc__im__stfwd_8h_a29874501872518c804f44b07a1bfe1a6}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetDateTime@{Mtc\_ImStFwdGetDateTime}}
+\index{Mtc\_ImStFwdGetDateTime@{Mtc\_ImStFwdGetDateTime}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetDateTime()}{Mtc\_ImStFwdGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+message session date time, otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_ac76f99ae05c150d6b1c4578271097252}\label{mtc__im__stfwd_8h_ac76f99ae05c150d6b1c4578271097252}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetOrigIdPartp@{Mtc\_ImStFwdGetOrigIdPartp}}
+\index{Mtc\_ImStFwdGetOrigIdPartp@{Mtc\_ImStFwdGetOrigIdPartp}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetOrigIdPartp()}{Mtc\_ImStFwdGetOrigIdPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Orig\+Id\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Get original identity of participant U\+RI from store and forward session. 
+
+The participant is the session initiator who initialized this store and forward session. It will return identity uri if session invitation has P-\/\+Asserted-\/\+Identity information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a1f7ed9c52b52e74bec3580ae2d952ccc}\label{mtc__im__stfwd_8h_a1f7ed9c52b52e74bec3580ae2d952ccc}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetOrigPartp@{Mtc\_ImStFwdGetOrigPartp}}
+\index{Mtc\_ImStFwdGetOrigPartp@{Mtc\_ImStFwdGetOrigPartp}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetOrigPartp()}{Mtc\_ImStFwdGetOrigPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Orig\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+Get original participant U\+RI from store and forward session. 
+
+The participant is the session initiator who initialized this store and forward session. It will return From uri from session invitation information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get original participant successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get original participant failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a9c13901e5d4398498543245a3a2a81f6}\label{mtc__im__stfwd_8h_a9c13901e5d4398498543245a3a2a81f6}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetPartp@{Mtc\_ImStFwdGetPartp}}
+\index{Mtc\_ImStFwdGetPartp@{Mtc\_ImStFwdGetPartp}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetPartp()}{Mtc\_ImStFwdGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant information from store and forward session. 
+
+The participant is the remote client who is joining session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_abb24c419056975a39f1ccc2d356f515a}\label{mtc__im__stfwd_8h_abb24c419056975a39f1ccc2d356f515a}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetPartpLstId@{Mtc\_ImStFwdGetPartpLstId}}
+\index{Mtc\_ImStFwdGetPartpLstId@{Mtc\_ImStFwdGetPartpLstId}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetPartpLstId()}{Mtc\_ImStFwdGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get participant list id from store and forward session. 
+
+The participant list id is all remote clients who are joining session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The participant list id on succeed or 0 on failed.
+\end{DoxyReturn}
+The caller is responsible for freeing it by \mbox{\hyperlink{mtc__partp_8h_a47276b69ad0ae6bba452f1e933e4c1ec}{Mtc\+\_\+\+Partp\+Lst\+Delete}}. \mbox{\Hypertarget{mtc__im__stfwd_8h_ae0546c48c292d593813d9d2aa28d930e}\label{mtc__im__stfwd_8h_ae0546c48c292d593813d9d2aa28d930e}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetPartpType@{Mtc\_ImStFwdGetPartpType}}
+\index{Mtc\_ImStFwdGetPartpType@{Mtc\_ImStFwdGetPartpType}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetPartpType()}{Mtc\_ImStFwdGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant type from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of IM store and forward session participant, see \mbox{\hyperlink{mtc__partp_8h_abe66ab722861a8aced34488e887e7663}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}.
+\end{DoxyReturn}
+If type is \mbox{\hyperlink{mtc__partp_8h_aeda64208158234c8f3cf606bec0c1e4ca2a4a054b3a368253665f01555f869f49}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE}}, participant can be got by \mbox{\hyperlink{mtc__im__stfwd_8h_a9c13901e5d4398498543245a3a2a81f6}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp}}. If type is \mbox{\hyperlink{mtc__partp_8h_aeda64208158234c8f3cf606bec0c1e4ca924a5e7a622bbc7b3410a02d9cd42277}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP}}, participant can be got by \mbox{\hyperlink{mtc__im__stfwd_8h_a9c13901e5d4398498543245a3a2a81f6}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp}}. If type is \mbox{\hyperlink{mtc__partp_8h_aeda64208158234c8f3cf606bec0c1e4ca022a51aac67f5eafcefe8cf215968b4e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST}}, participant can be got by \mbox{\hyperlink{mtc__im__stfwd_8h_abb24c419056975a39f1ccc2d356f515a}{Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Partp\+Lst\+Id}}. \mbox{\Hypertarget{mtc__im__stfwd_8h_aca8e4770c13af496b58a8365231b6249}\label{mtc__im__stfwd_8h_aca8e4770c13af496b58a8365231b6249}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetSessType@{Mtc\_ImStFwdGetSessType}}
+\index{Mtc\_ImStFwdGetSessType@{Mtc\_ImStFwdGetSessType}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetSessType()}{Mtc\_ImStFwdGetSessType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Sess\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get session type from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session type,ref @\+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+T\+Y\+PE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a24e1950b84d1aeadab9f46f13594c786}\label{mtc__im__stfwd_8h_a24e1950b84d1aeadab9f46f13594c786}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetSubject@{Mtc\_ImStFwdGetSubject}}
+\index{Mtc\_ImStFwdGetSubject@{Mtc\_ImStFwdGetSubject}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetSubject()}{Mtc\_ImStFwdGetSubject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Subject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Get user subject from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User subject. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a2b78de73ead60488edea2f0c2ef1def6}\label{mtc__im__stfwd_8h_a2b78de73ead60488edea2f0c2ef1def6}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdGetSysDateTime@{Mtc\_ImStFwdGetSysDateTime}}
+\index{Mtc\_ImStFwdGetSysDateTime@{Mtc\_ImStFwdGetSysDateTime}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdGetSysDateTime()}{Mtc\_ImStFwdGetSysDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Get\+Sys\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{\mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_ab0790acdeca57f4b5420dfe5f3d9dcb8}\label{mtc__im__stfwd_8h_ab0790acdeca57f4b5420dfe5f3d9dcb8}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetBotMsgContentType@{Mtc\_ImStFwdMsgGetBotMsgContentType}}
+\index{Mtc\_ImStFwdMsgGetBotMsgContentType@{Mtc\_ImStFwdMsgGetBotMsgContentType}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetBotMsgContentType()}{Mtc\_ImStFwdMsgGetBotMsgContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Bot\+Msg\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message botsuggestion from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a782c3c389249967982c0a6aeca5a6636}\label{mtc__im__stfwd_8h_a782c3c389249967982c0a6aeca5a6636}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetBotSug@{Mtc\_ImStFwdMsgGetBotSug}}
+\index{Mtc\_ImStFwdMsgGetBotSug@{Mtc\_ImStFwdMsgGetBotSug}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetBotSug()}{Mtc\_ImStFwdMsgGetBotSug()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Bot\+Sug (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message botsuggestion from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+botsuggestion if have then return true else return zfalse. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a08c90d42907a340104e48bc32173ca32}\label{mtc__im__stfwd_8h_a08c90d42907a340104e48bc32173ca32}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetContent@{Mtc\_ImStFwdMsgGetContent}}
+\index{Mtc\_ImStFwdMsgGetContent@{Mtc\_ImStFwdMsgGetContent}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetContent()}{Mtc\_ImStFwdMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message content from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a815716c7102e59a6c212d19fb3eec138}\label{mtc__im__stfwd_8h_a815716c7102e59a6c212d19fb3eec138}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetContentLen@{Mtc\_ImStFwdMsgGetContentLen}}
+\index{Mtc\_ImStFwdMsgGetContentLen@{Mtc\_ImStFwdMsgGetContentLen}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetContentLen()}{Mtc\_ImStFwdMsgGetContentLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Content\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message content length from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message content length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_af64863f6d964da2a2e55743a53fd91ce}\label{mtc__im__stfwd_8h_af64863f6d964da2a2e55743a53fd91ce}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetContentType@{Mtc\_ImStFwdMsgGetContentType}}
+\index{Mtc\_ImStFwdMsgGetContentType@{Mtc\_ImStFwdMsgGetContentType}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetContentType()}{Mtc\_ImStFwdMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message content type from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of IM message, see \mbox{\hyperlink{mtc__im__stfwd_8h_a70e0753283c38f2d4a4ea7bf5a827dd4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a57959f094ada341245d880e9795477c4}\label{mtc__im__stfwd_8h_a57959f094ada341245d880e9795477c4}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetDateTime@{Mtc\_ImStFwdMsgGetDateTime}}
+\index{Mtc\_ImStFwdMsgGetDateTime@{Mtc\_ImStFwdMsgGetDateTime}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetDateTime()}{Mtc\_ImStFwdMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message date time from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+message date time, otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a0d1125af93d518cd15e6ad51b2041e63}\label{mtc__im__stfwd_8h_a0d1125af93d518cd15e6ad51b2041e63}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetDeviceId@{Mtc\_ImStFwdMsgGetDeviceId}}
+\index{Mtc\_ImStFwdMsgGetDeviceId@{Mtc\_ImStFwdMsgGetDeviceId}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetDeviceId()}{Mtc\_ImStFwdMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get device id from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_ad9d1dc17150a4ce9aab7f546866ab6e0}\label{mtc__im__stfwd_8h_ad9d1dc17150a4ce9aab7f546866ab6e0}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetGInfoId@{Mtc\_ImStFwdMsgGetGInfoId}}
+\index{Mtc\_ImStFwdMsgGetGInfoId@{Mtc\_ImStFwdMsgGetGInfoId}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetGInfoId()}{Mtc\_ImStFwdMsgGetGInfoId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+G\+Info\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+mtcf M\+TC Get geolocation information id of IM message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The session message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The geolocation information id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a0ab4a597ad88b65b5cc83216373ad447}\label{mtc__im__stfwd_8h_a0ab4a597ad88b65b5cc83216373ad447}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetImdnId@{Mtc\_ImStFwdMsgGetImdnId}}
+\index{Mtc\_ImStFwdMsgGetImdnId@{Mtc\_ImStFwdMsgGetImdnId}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetImdnId()}{Mtc\_ImStFwdMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message Imdn id from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id of imdn. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a1d376bf616d3048b68f1ba53a17b2c83}\label{mtc__im__stfwd_8h_a1d376bf616d3048b68f1ba53a17b2c83}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetMContent@{Mtc\_ImStFwdMsgGetMContent}}
+\index{Mtc\_ImStFwdMsgGetMContent@{Mtc\_ImStFwdMsgGetMContent}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetMContent()}{Mtc\_ImStFwdMsgGetMContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+M\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get multi-\/media message content from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pp\+Data} & The multi-\/media message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Data\+Size} & The multi-\/media message content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get message content successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get message content failed. The caller must copy it, then use. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a8f7a47922fa6a326f5f5824f7e775a68}\label{mtc__im__stfwd_8h_a8f7a47922fa6a326f5f5824f7e775a68}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetMutiContent@{Mtc\_ImStFwdMsgGetMutiContent}}
+\index{Mtc\_ImStFwdMsgGetMutiContent@{Mtc\_ImStFwdMsgGetMutiContent}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetMutiContent()}{Mtc\_ImStFwdMsgGetMutiContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Muti\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message muti content from message session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type @\+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+T\+F\+W\+D\+\_\+\+C\+O\+N\+T\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_ae2f7abd4462f3d01b3732a4fdc94b30e}\label{mtc__im__stfwd_8h_ae2f7abd4462f3d01b3732a4fdc94b30e}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetPartp@{Mtc\_ImStFwdMsgGetPartp}}
+\index{Mtc\_ImStFwdMsgGetPartp@{Mtc\_ImStFwdMsgGetPartp}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetPartp()}{Mtc\_ImStFwdMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant information from store and forward session. 
+
+The participant is the remote client who has sent message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a41d46f6cc866b27380dac8dd23ad4885}\label{mtc__im__stfwd_8h_a41d46f6cc866b27380dac8dd23ad4885}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdMsgGetSysDateTime@{Mtc\_ImStFwdMsgGetSysDateTime}}
+\index{Mtc\_ImStFwdMsgGetSysDateTime@{Mtc\_ImStFwdMsgGetSysDateTime}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdMsgGetSysDateTime()}{Mtc\_ImStFwdMsgGetSysDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Msg\+Get\+Sys\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{\mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get message date time from store and forward session. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__stfwd_8h_a4ca5a7d40e0a8cb399345f86f4abfef1}\label{mtc__im__stfwd_8h_a4ca5a7d40e0a8cb399345f86f4abfef1}} 
+\index{mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}!Mtc\_ImStFwdReject@{Mtc\_ImStFwdReject}}
+\index{Mtc\_ImStFwdReject@{Mtc\_ImStFwdReject}!mtc\_im\_stfwd.h@{mtc\_im\_stfwd.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImStFwdReject()}{Mtc\_ImStFwdReject()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+St\+Fwd\+Reject (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+Reject a store and forward session invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The session id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Reject store and forward session successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Reject store and forward session failed. \\
+\hline
+\end{DoxyRetVals}

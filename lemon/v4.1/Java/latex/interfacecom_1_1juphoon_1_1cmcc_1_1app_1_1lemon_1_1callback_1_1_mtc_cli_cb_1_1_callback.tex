@@ -1,0 +1,230 @@
+\hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback Interface Reference}
+\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback}\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+
+
+M\+TC client callbacks.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ad8b3bad20a7a9c6fbc6aceda33c252d9}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ad8b3bad20a7a9c6fbc6aceda33c252d9}} 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ad8b3bad20a7a9c6fbc6aceda33c252d9}{mtc\+Cli\+Cb\+Reg\+Ok}} ()
+\begin{DoxyCompactList}\small\item\em the R\+E\+G\+I\+S\+E\+T\+ER successfully indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER successfully The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a89d6f190e4258a98349ed22124731834}{mtc\+Cli\+Cb\+Reg\+Failed}} (int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em the R\+E\+G\+I\+S\+E\+T\+ER failed indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER failed The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_aac4603f9dc0a6c290322e3bb603cd6d4}{mtc\+Cli\+Cb\+Auth\+Ind}} (int i\+Auth\+Type, int i\+Reg\+Id, String pc\+Nonce)
+\begin{DoxyCompactList}\small\item\em Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of Mtc\+\_\+\+Cli\+Login results. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a600e711afce242bde58afdf5138175a2}{mtc\+Cli\+Cb\+Serv\+Login\+Ok}} ()
+\begin{DoxyCompactList}\small\item\em the login successfully indication callback. The callback will be notified if server login successfully If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+F\+A\+L\+SE, this callback will not be called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a060ec282ff4b767a7037193065c3d78c}{mtc\+Cli\+Cb\+Lcl\+Login\+Ok}} ()
+\begin{DoxyCompactList}\small\item\em the login successfully indication callback. The callback will be notified if local login successfully If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+T\+R\+UE, this callback will not be called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ae3e4ac347d8489647a829fe4edc9ab12}{mtc\+Cli\+Cb\+Login\+Failed}} (int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em the login failed indication callback. The callback will be notified if login failed The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a47a050a61c0471424214075c87e34ab6}{mtc\+Cli\+Cb\+Refresh\+Ok}} (boolean b\+Active, boolean b\+Changed)
+\begin{DoxyCompactList}\small\item\em the refresh successfully indication callback. The callback will be notified if refresh successfully The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Refresh results \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a5521d2cb40957e180b52d679b0f867ca}{mtc\+Cli\+Cb\+Refresh\+Failed}} (boolean b\+Active, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em the refresh indication callback. The callback will be notified if refresh failed The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Refresh results \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a34ef629dc701b4b242e6a7da260bd73b}{mtc\+Cli\+Cb\+Lcl\+Logout}} ()
+\begin{DoxyCompactList}\small\item\em the local logout indication callback. The callback will be notified if client is not in register with server. If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+T\+R\+UE, this callback will not be called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ac50d2c11d1b8347e4c5878d5a8afce8f}{mtc\+Cli\+Cb\+Serv\+Logout}} (boolean b\+Active, int i\+Stat\+Code, int dw\+Expires)
+\begin{DoxyCompactList}\small\item\em the server logout indication callback. The callback will be notified if client has un-\/register from server. If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+F\+A\+L\+SE, this callback will not be called. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_af07d00915e6e6e0023c45842cacb7201}{mtc\+Cli\+Cb\+Reg\+Stat\+Changed}} (int i\+Reg\+Stat, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em the register state changed indication callback. The callback will be notified if register state has changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ad1ad869f44d96cf7eb4c8cde3507b095}{mtc\+Cli\+Cb\+Before\+Login}} ()
+\begin{DoxyCompactList}\small\item\em the before login indication callback. The callback will be notified before login. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ac7a720b5796b9e6fed74c974073490c8}{mtc\+Cli\+Cb\+Subs\+Stat\+Changed}} (int i\+Subs\+Stat, int i\+Sip\+Code, String pc\+Body)
+\begin{DoxyCompactList}\small\item\em the register subscribe state changed indication callback. The callback will be notified if register subscribe state has changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC client callbacks. 
+
+In order to receive M\+TC client callbacks, user should implement this interface, then use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_acbdd60b87e0181f73b0213faf0c85953}{Mtc\+Cli\+Cb.\+register\+Callback}} to register callbacks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_aac4603f9dc0a6c290322e3bb603cd6d4}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_aac4603f9dc0a6c290322e3bb603cd6d4}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbAuthInd@{mtcCliCbAuthInd}}
+\index{mtcCliCbAuthInd@{mtcCliCbAuthInd}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbAuthInd()}{mtcCliCbAuthInd()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Auth\+Ind (\begin{DoxyParamCaption}\item[{int}]{i\+Auth\+Type,  }\item[{int}]{i\+Reg\+Id,  }\item[{String}]{pc\+Nonce }\end{DoxyParamCaption})}
+
+
+
+Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of Mtc\+\_\+\+Cli\+Login results. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Auth\+Type} & is authorization type(see Mtc\+Cli\+Constants\+::\+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+S\+\_\+\+A\+U\+T\+H\+\_\+\+I\+M\+S\+\_\+\+A\+KA...). \\
+\hline
+{\em i\+Reg\+Id} & is used for locate which register. \\
+\hline
+{\em pc\+Nonce} & is used when authorization type is Mtc\+Cli\+Constants\+::\+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+S\+\_\+\+A\+U\+T\+H\+\_\+\+I\+M\+S\+\_\+\+A\+KA. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ad1ad869f44d96cf7eb4c8cde3507b095}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ad1ad869f44d96cf7eb4c8cde3507b095}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbBeforeLogin@{mtcCliCbBeforeLogin}}
+\index{mtcCliCbBeforeLogin@{mtcCliCbBeforeLogin}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbBeforeLogin()}{mtcCliCbBeforeLogin()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Before\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the before login indication callback. The callback will be notified before login. 
+
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a060ec282ff4b767a7037193065c3d78c}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a060ec282ff4b767a7037193065c3d78c}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbLclLoginOk@{mtcCliCbLclLoginOk}}
+\index{mtcCliCbLclLoginOk@{mtcCliCbLclLoginOk}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbLclLoginOk()}{mtcCliCbLclLoginOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Lcl\+Login\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the login successfully indication callback. The callback will be notified if local login successfully If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+T\+R\+UE, this callback will not be called. 
+
+The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a34ef629dc701b4b242e6a7da260bd73b}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a34ef629dc701b4b242e6a7da260bd73b}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbLclLogout@{mtcCliCbLclLogout}}
+\index{mtcCliCbLclLogout@{mtcCliCbLclLogout}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbLclLogout()}{mtcCliCbLclLogout()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Lcl\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the local logout indication callback. The callback will be notified if client is not in register with server. If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+T\+R\+UE, this callback will not be called. 
+
+The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Logout results \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ae3e4ac347d8489647a829fe4edc9ab12}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ae3e4ac347d8489647a829fe4edc9ab12}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbLoginFailed@{mtcCliCbLoginFailed}}
+\index{mtcCliCbLoginFailed@{mtcCliCbLoginFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbLoginFailed()}{mtcCliCbLoginFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Login\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+the login failed indication callback. The callback will be notified if login failed The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Stat\+Code} & Login failed code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a5521d2cb40957e180b52d679b0f867ca}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a5521d2cb40957e180b52d679b0f867ca}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbRefreshFailed@{mtcCliCbRefreshFailed}}
+\index{mtcCliCbRefreshFailed@{mtcCliCbRefreshFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbRefreshFailed()}{mtcCliCbRefreshFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Refresh\+Failed (\begin{DoxyParamCaption}\item[{boolean}]{b\+Active,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+the refresh indication callback. The callback will be notified if refresh failed The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Refresh results 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Active} & Indicate if it is a user action results. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Stat\+Code} & status code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a47a050a61c0471424214075c87e34ab6}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a47a050a61c0471424214075c87e34ab6}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbRefreshOk@{mtcCliCbRefreshOk}}
+\index{mtcCliCbRefreshOk@{mtcCliCbRefreshOk}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbRefreshOk()}{mtcCliCbRefreshOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Refresh\+Ok (\begin{DoxyParamCaption}\item[{boolean}]{b\+Active,  }\item[{boolean}]{b\+Changed }\end{DoxyParamCaption})}
+
+
+
+the refresh successfully indication callback. The callback will be notified if refresh successfully The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Refresh results 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Active} & Indicate if it is a user action results. \\
+\hline
+{\em b\+Changed} & Indicate if the registration information changed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a89d6f190e4258a98349ed22124731834}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a89d6f190e4258a98349ed22124731834}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbRegFailed@{mtcCliCbRegFailed}}
+\index{mtcCliCbRegFailed@{mtcCliCbRegFailed}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbRegFailed()}{mtcCliCbRegFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Reg\+Failed (\begin{DoxyParamCaption}\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+the R\+E\+G\+I\+S\+E\+T\+ER failed indication callback. The callback will be notified if R\+E\+G\+I\+S\+E\+T\+ER failed The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dw\+Stat\+Code} & R\+E\+G\+I\+S\+E\+T\+ER failed code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_af07d00915e6e6e0023c45842cacb7201}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_af07d00915e6e6e0023c45842cacb7201}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbRegStatChanged@{mtcCliCbRegStatChanged}}
+\index{mtcCliCbRegStatChanged@{mtcCliCbRegStatChanged}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbRegStatChanged()}{mtcCliCbRegStatChanged()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Reg\+Stat\+Changed (\begin{DoxyParamCaption}\item[{int}]{i\+Reg\+Stat,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+the register state changed indication callback. The callback will be notified if register state has changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Reg\+Stat} & is register state type(see \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_cli_constants_a8c7bc399cc90b30814312a41d8c07b5c}{Mtc\+Cli\+Constants.\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+D\+LE}}). \\
+\hline
+{\em dw\+Stat\+Code} & is changed reason(see \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_cli_constants_a0357af3919be505d818a838fb3ad0554}{Mtc\+Cli\+Constants.\+M\+T\+C\+\_\+\+C\+L\+I\+\_\+\+E\+R\+R\+\_\+\+L\+C\+L\+\_\+\+F\+A\+I\+L\+ED}}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a600e711afce242bde58afdf5138175a2}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_a600e711afce242bde58afdf5138175a2}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbServLoginOk@{mtcCliCbServLoginOk}}
+\index{mtcCliCbServLoginOk@{mtcCliCbServLoginOk}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbServLoginOk()}{mtcCliCbServLoginOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Serv\+Login\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the login successfully indication callback. The callback will be notified if server login successfully If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+F\+A\+L\+SE, this callback will not be called. 
+
+The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Login results \mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ac50d2c11d1b8347e4c5878d5a8afce8f}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ac50d2c11d1b8347e4c5878d5a8afce8f}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbServLogout@{mtcCliCbServLogout}}
+\index{mtcCliCbServLogout@{mtcCliCbServLogout}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbServLogout()}{mtcCliCbServLogout()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Serv\+Logout (\begin{DoxyParamCaption}\item[{boolean}]{b\+Active,  }\item[{int}]{i\+Stat\+Code,  }\item[{int}]{dw\+Expires }\end{DoxyParamCaption})}
+
+
+
+the server logout indication callback. The callback will be notified if client has un-\/register from server. If Mtc\+Cli\+Db\+::\+Mtc\+\_\+\+Cli\+Db\+Get\+User\+Reg is Z\+F\+A\+L\+SE, this callback will not be called. 
+
+The callback is one of Mtc\+Cli\+::\+Mtc\+\_\+\+Cli\+Logout results
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Active} & Indicate if it is a user action results. \\
+\hline
+{\em i\+Stat\+Code} & The event type which trigger logout. \\
+\hline
+{\em dw\+Expires} & The expire time value if server notify logout later. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ac7a720b5796b9e6fed74c974073490c8}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_cli_cb_1_1_callback_ac7a720b5796b9e6fed74c974073490c8}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}!mtcCliCbSubsStatChanged@{mtcCliCbSubsStatChanged}}
+\index{mtcCliCbSubsStatChanged@{mtcCliCbSubsStatChanged}!com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcCliCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcCliCbSubsStatChanged()}{mtcCliCbSubsStatChanged()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Cli\+Cb.\+Callback.\+mtc\+Cli\+Cb\+Subs\+Stat\+Changed (\begin{DoxyParamCaption}\item[{int}]{i\+Subs\+Stat,  }\item[{int}]{i\+Sip\+Code,  }\item[{String}]{pc\+Body }\end{DoxyParamCaption})}
+
+
+
+the register subscribe state changed indication callback. The callback will be notified if register subscribe state has changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Subs\+Stat} & is register subscribe state type(see Mtc\+Cli\+Constants\+::\+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+T\+Y\+PE). \\
+\hline
+{\em i\+Sip\+Code} & is S\+IP code. \\
+\hline
+{\em pc\+Body} & is notify body when i\+Subs\+Stat equal Mtc\+Cli\+Constants\+::\+E\+N\+\_\+\+M\+T\+C\+\_\+\+R\+E\+G\+\_\+\+S\+U\+B\+S\+\_\+\+S\+T\+A\+T\+\_\+\+R\+E\+C\+V\+\_\+\+N\+O\+T\+I\+FY, otherwise is null. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/callback/\mbox{\hyperlink{_mtc_cli_cb_8java}{Mtc\+Cli\+Cb.\+java}}\end{DoxyCompactItemize}

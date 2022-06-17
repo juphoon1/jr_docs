@@ -1,0 +1,1262 @@
+\hypertarget{rse__conf_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rse/rse\+\_\+conf.h File Reference}
+\label{rse__conf_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rse/rse\_conf.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rse/rse\_conf.h}}
+
+
+R\+SE Session and Conference Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rse__conf_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}{Rse\+\_\+\+Conf\+Create}} (Z\+U\+I\+NT $\ast$pi\+Conf\+Id, Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em R\+SE conference create with type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a8cc3328d15a7a6f8094013842278f5c1}{Rse\+\_\+\+Conf\+Delete}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference create. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+SE setup a new conference as the creater. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+B\+O\+OL b\+Video)
+\begin{DoxyCompactList}\small\item\em R\+SE join an already existed conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_af42aca0b0cc6ad5c25e050fa8a5969f8}{Rse\+\_\+\+Conf\+Alert}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+SE alert an incoming conference invite which is notified by callback function pfn\+Show\+Conf\+In. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a52ca1c60e6754c206a22a3d5135cee44}{Rse\+\_\+\+Conf\+Acpt}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+SE accept an incoming conference invite which is notified by callback function pfn\+Show\+Conf\+In. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a0aeee7c7ec6461b521bce386476f691a}{Rse\+\_\+\+Conf\+Hold}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Hold)
+\begin{DoxyCompactList}\small\item\em R\+SE conference hold. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_aaf691b5a1dd697b25e90e25f0300f2aa}{Rse\+\_\+\+Conf\+Subs}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE subscribe conference event. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a85c678fd253b9e31943b19eee75929cb}{Rse\+\_\+\+Conf\+Unsubs}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE unsubscribe conference event. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a45e075cc53d12e16119e1c5f58623e1f}{Rse\+\_\+\+Conf\+Ivt\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+SE invite new participant to conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_acc14a0d8d27a726ab6792f7d73311328}{Rse\+\_\+\+Conf\+Ivt\+User\+Lst}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+B\+O\+OL b\+Video)
+\begin{DoxyCompactList}\small\item\em R\+SE invite new participant list to a new conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}{Rse\+\_\+\+Conf\+Kick\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+SE kick participant from conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a7af2c098a9b03a029b93d15b4057bc48}{Rse\+\_\+\+Conf\+Ivt\+Sess}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Sess\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE invite new participant, which you already have a session with, to conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_ab4e1018c34bcb204e9371b55fca3e2cc}{Rse\+\_\+\+Conf\+Ivt\+Sess\+Lst}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Sess\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE invite new participant list, which you already have a session with, to conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a51914d879dbad48f94cbfecc5d38b61c}{Rse\+\_\+\+Conf\+Term}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Reason, Z\+B\+O\+OL b\+Term\+Conf)
+\begin{DoxyCompactList}\small\item\em R\+SE conference terminate. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rse__conf_8h_a3805f01619929bfc68211d567dbba0b7}{Rse\+\_\+\+Conf\+Get\+Cookie}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get cookie value. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a62f640f1f140f2896329e18cd91c5c90}{Rse\+\_\+\+Conf\+Get\+State}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get conference state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a157ee0f193331c767e730c11b59f7cc8}{Rse\+\_\+\+Conf\+Get\+Peer\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get peer uri and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a2b697a0152162c9a7e1ae481fdd83a93}{Rse\+\_\+\+Conf\+Get\+Conf\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get conference uri and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a05e4710d6b4e23a0131e8b2acab1a360}{Rse\+\_\+\+Conf\+Get\+Initiator\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get initiator uri and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a3c90a7e60e59a740e75913386b059c02}{Rse\+\_\+\+Conf\+Get\+Partp\+Size}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get paticipant size. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a65e87aa13a9daa7fa4eae15e0aab4872}{Rse\+\_\+\+Conf\+Get\+Partp\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get paticipant uri and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a963fa2d4d2af408653bdf2755a5d30f7}{Rse\+\_\+\+Conf\+Get\+Partp\+Stat}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+I\+NT i\+Index, Z\+U\+I\+NT $\ast$pi\+Stat)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get paticipant state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rse__conf_8h_a40f4bd135cee52e883870274d7fd48ed}{Rse\+\_\+\+Conf\+Get\+Mic\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get the mute status of microphone. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_ae7b1fcb9923b13449f3efb2cba95eb0f}{Rse\+\_\+\+Conf\+Set\+Mic\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em R\+SE conference set the mute status of microphone. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rse__conf_8h_a9b2ecd5ed5b5876361c46a9a696a30e6}{Rse\+\_\+\+Conf\+Get\+Spk\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference get the mute status of speaker. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a282c126b0972b13cb691a3244260b4bb}{Rse\+\_\+\+Conf\+Set\+Spk\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Mute)
+\begin{DoxyCompactList}\small\item\em R\+SE conference set the mute status of speaker. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a94641bac3d988219c44003688f1e742a}{Rse\+\_\+\+Conf\+Dtmf}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+C\+H\+AR uc\+Dtmf\+Type)
+\begin{DoxyCompactList}\small\item\em R\+SE conference send dtmf info. \end{DoxyCompactList}\item 
+Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a090bfea281e875acd1e71aab4f68b6f7}{Rse\+\_\+\+Conf\+Cmcc\+Create}} (Z\+U\+I\+NT $\ast$pi\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE cmcc conference create. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_abd00a2c8c5c6269f2a76e9ee08c3272b}{Rse\+\_\+\+Conf\+Cmcc\+Setup}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em R\+SE setup a new cmcc conference as the creater. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rse__conf_8h_a2160de11be83923a5afba0793bcc27f0}\label{rse__conf_8h_a2160de11be83923a5afba0793bcc27f0}} 
+Z\+F\+U\+NC Z\+V\+O\+ID {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Delete} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a6fc28f446d17ba01daf298f9130aabfd}\label{rse__conf_8h_a6fc28f446d17ba01daf298f9130aabfd}} 
+Z\+F\+U\+NC Z\+V\+O\+ID {\bfseries Rse\+\_\+\+Conf\+Cmcc\+DeleteX} (Z\+C\+H\+AR $\ast$pc\+Conf\+Uri)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_aca6fcb1e050c18376f1ff7b69343ad5e}\label{rse__conf_8h_aca6fcb1e050c18376f1ff7b69343ad5e}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Ivt\+User} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a6d26c8aef2d8e0655e93d4ba6a38f7af}\label{rse__conf_8h_a6d26c8aef2d8e0655e93d4ba6a38f7af}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Ivt\+UserX} (Z\+C\+H\+AR $\ast$pc\+Conf\+Uri)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_aa935d5629e56d49aa7c54da5c2362681}\label{rse__conf_8h_aa935d5629e56d49aa7c54da5c2362681}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Ivt\+User\+Lst} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a2619fa589a119beb1d712158e04cb52a}\label{rse__conf_8h_a2619fa589a119beb1d712158e04cb52a}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Kick\+Out\+User} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a15375afe0cdca917d70771140df68608}\label{rse__conf_8h_a15375afe0cdca917d70771140df68608}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Subs} (Z\+U\+I\+NT $\ast$pi\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Conf\+Uri, Z\+B\+O\+OL b\+User)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a6a5ec9541ce484925a030c36790d60ef}\label{rse__conf_8h_a6a5ec9541ce484925a030c36790d60ef}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Unsubs} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a4608e2a4c84debaf339b77e67a486266}\label{rse__conf_8h_a4608e2a4c84debaf339b77e67a486266}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Term} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_aed7ae01fe037d6cce26c4129398a86e3}\label{rse__conf_8h_aed7ae01fe037d6cce26c4129398a86e3}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Mute} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri, Z\+B\+O\+OL b\+Mute)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_aeedcb92b05a5d24b3742ac4e182669fc}\label{rse__conf_8h_aeedcb92b05a5d24b3742ac4e182669fc}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Cmcc\+Mute\+All} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Mute)
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rse__conf_8h_af4290deb9a9c7ba07feba65bb9bcdc0b}{Rse\+\_\+\+Conf\+Has\+Video}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference check if has a active video stream. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{rse__conf_8h_aafbb3e94385735cf005b196e5ebbeea7}{Rse\+\_\+\+Conf\+Has\+Audio}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference check if has a active audio stream. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rse__conf_8h_a7abb02e4f1c77dbb702bac27047efbdf}{Rse\+\_\+\+Conf\+Conf\+Id}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference id by conference id. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_ab561e0f763ede0502ae4f83873dff08f}{Rse\+\_\+\+Conf\+Camera\+Attach}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em R\+SE conference attach camera. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a3d41b875cf7e5009ea941c166482d6dc}{Rse\+\_\+\+Conf\+Camera\+Detach}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE conference detach camera. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{rse__conf_8h_af6b23aa145c157d536550f3149a3cd53}{Rse\+\_\+\+Conf\+Get\+Strm\+Name}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference stream name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rse__conf_8h_af47cf39d786c982beda746ea09eb7a95}{Rse\+\_\+\+Conf\+Strm\+Id\+From\+Strm\+Name}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+Name)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference stream id from render name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rse__conf_8h_aefe3ec345934d2443b4991461949fa34}{Rse\+\_\+\+Conf\+Get\+Video\+Strm\+Count}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference video stream count. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{rse__conf_8h_aa211055326960ff03c2e2da6ef27387f}{Rse\+\_\+\+Conf\+Get\+Video\+Strm\+Id\+By\+Index}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference video stream id by index. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_a174315b15c174c9677c02a470625aa70}{Rse\+\_\+\+Conf\+Get\+Video\+Stat}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+I\+NT i\+Strm\+Id, Z\+C\+H\+AR $\ast$pc\+Buf, Z\+U\+I\+NT $\ast$pi\+Size)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference video stream by stream id statistics. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{rse__conf_8h_af1fe03a8274dd53b2b6374b1627fa0ec}{Rse\+\_\+\+Conf\+Get\+Audio\+Stat}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Buf, Z\+U\+I\+NT $\ast$pi\+Size)
+\begin{DoxyCompactList}\small\item\em R\+SE get conference audio statistics. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rse__conf_8h_a07db07d3ee9fb1cdc114c41cf4e7ec58}\label{rse__conf_8h_a07db07d3ee9fb1cdc114c41cf4e7ec58}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Video\+Select\+Usr} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+Uri)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_acd1f56868bc0ebdfb7dc919e88fec38b}\label{rse__conf_8h_acd1f56868bc0ebdfb7dc919e88fec38b}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Get\+Max\+Image\+Num} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a23db9bb9296cf4c297187a91b9855ff4}\label{rse__conf_8h_a23db9bb9296cf4c297187a91b9855ff4}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Get\+Video\+Swith\+Mode} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a73d799a0590d1f8e4930b28db5b8f00c}\label{rse__conf_8h_a73d799a0590d1f8e4930b28db5b8f00c}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Get\+Multi\+Pic\+Mode} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a71fbc0cf5ab822228b8b51e353f64121}\label{rse__conf_8h_a71fbc0cf5ab822228b8b51e353f64121}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Enable\+Adaptive\+Aspect} (Z\+U\+I\+NT i\+Conf\+Id, Z\+B\+O\+OL b\+Enable, Z\+F\+L\+O\+AT f\+Fixed\+Aspect)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_aad5d206282dc7aeb1af06bbae9fb5c8e}\label{rse__conf_8h_aad5d206282dc7aeb1af06bbae9fb5c8e}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Rec\+Mic\+Start} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+C\+H\+AR uc\+File\+Type)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_afc6651857b8a7b4f3063f0947db566bd}\label{rse__conf_8h_afc6651857b8a7b4f3063f0947db566bd}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Rec\+Mic\+Stop} ()
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a663ff62992434b5d14381aca013ad7d1}\label{rse__conf_8h_a663ff62992434b5d14381aca013ad7d1}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Rec\+Playout\+Start} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+C\+H\+AR uc\+File\+Type)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a1091754b6dd7f949220b6f8be8110c7a}\label{rse__conf_8h_a1091754b6dd7f949220b6f8be8110c7a}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Rec\+Playout\+Stop} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_ad70dcc5a42dee6cb5da3f6ccc8fb6438}\label{rse__conf_8h_ad70dcc5a42dee6cb5da3f6ccc8fb6438}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Snd\+Start\+Send} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+C\+H\+AR uc\+File\+Type, Z\+B\+O\+OL b\+Loop, Z\+B\+O\+OL b\+Mix)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_aa18e86fc58f665261d358fbdbdd5ac1c}\label{rse__conf_8h_aa18e86fc58f665261d358fbdbdd5ac1c}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Snd\+Stop\+Send} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_ae1d4ed355df7b25a40f8c7f2575d2ff4}\label{rse__conf_8h_ae1d4ed355df7b25a40f8c7f2575d2ff4}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+File\+Play\+As\+Camera} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name, Z\+U\+I\+NT i\+Audio\+Strm\+Id, Z\+U\+I\+NT i\+Cycle)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a837c45ae2fe91fe3693cd9159a95082d}\label{rse__conf_8h_a837c45ae2fe91fe3693cd9159a95082d}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+File\+Play\+Stop} (Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$pc\+File\+Name)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_affbdabeea0c21b021771576f6e11cb8e}\label{rse__conf_8h_affbdabeea0c21b021771576f6e11cb8e}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Get\+Strm\+Id} (Z\+U\+I\+NT i\+Conf\+Id, Z\+U\+C\+H\+AR uc\+Strm\+Type)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a42e63473f3ee529aced0107affb969f7}\label{rse__conf_8h_a42e63473f3ee529aced0107affb969f7}} 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ {\bfseries Rse\+\_\+\+Conf\+Get\+Media\+Server\+Ip\+Addr} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a03f2814bc15dda874042a6b0f255c518}\label{rse__conf_8h_a03f2814bc15dda874042a6b0f255c518}} 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR {\bfseries Rse\+\_\+\+Conf\+Get\+Conf\+Type} (Z\+U\+I\+NT i\+Conf\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a74af7561bb0dabb83fbde0af71b63879}\label{rse__conf_8h_a74af7561bb0dabb83fbde0af71b63879}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Create\+Account} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token, Z\+C\+H\+AR $\ast$pc\+Pkg\+Id)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a1bcb94451c9f89eaf58dfa23ea7ab38d}\label{rse__conf_8h_a1bcb94451c9f89eaf58dfa23ea7ab38d}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Del\+Account} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a3052dc1a91e049123e957d672f14fbda}\label{rse__conf_8h_a3052dc1a91e049123e957d672f14fbda}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Charge\+Account} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Balance, Z\+U\+C\+H\+AR uc\+Type, Z\+U\+C\+H\+AR uc\+Access\+Type, Z\+U\+C\+H\+AR uc\+Srv\+Type, Z\+C\+H\+AR $\ast$pc\+Exire\+Date)
+\item 
+\mbox{\Hypertarget{rse__conf_8h_a7994847a93de0a584fb22b40b7a4ab47}\label{rse__conf_8h_a7994847a93de0a584fb22b40b7a4ab47}} 
+Z\+F\+U\+NC Z\+I\+NT {\bfseries Rse\+\_\+\+Conf\+Query\+Account} (Z\+C\+H\+AR $\ast$pc\+App\+Id, Z\+C\+H\+AR $\ast$pc\+Pwd, Z\+C\+H\+AR $\ast$pc\+Token, Z\+U\+I\+NT i\+Acc\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+SE Session and Conference Interfaces. 
+
+This file includes session and conference interface function. Those function is used to manage sessions and conferences. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rse__conf_8h_a52ca1c60e6754c206a22a3d5135cee44}\label{rse__conf_8h_a52ca1c60e6754c206a22a3d5135cee44}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfAcpt@{Rse\_ConfAcpt}}
+\index{Rse\_ConfAcpt@{Rse\_ConfAcpt}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfAcpt()}{Rse\_ConfAcpt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Acpt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+SE accept an incoming conference invite which is notified by callback function pfn\+Show\+Conf\+In. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want accept. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+pfn\+Show\+Conf\+In, \mbox{\hyperlink{rse__conf_8h_af42aca0b0cc6ad5c25e050fa8a5969f8}{Rse\+\_\+\+Conf\+Alert}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_af42aca0b0cc6ad5c25e050fa8a5969f8}\label{rse__conf_8h_af42aca0b0cc6ad5c25e050fa8a5969f8}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfAlert@{Rse\_ConfAlert}}
+\index{Rse\_ConfAlert@{Rse\_ConfAlert}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfAlert()}{Rse\_ConfAlert()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Alert (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+SE alert an incoming conference invite which is notified by callback function pfn\+Show\+Conf\+In. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want join. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+This function is used to tell the conference initiator that you have received the invitation and give user an indication in UI layer. User should make a dicision whether accept the conference invitation.
+
+\begin{DoxySeeAlso}{See also}
+pfn\+Show\+Conf\+In, \mbox{\hyperlink{rse__conf_8h_a52ca1c60e6754c206a22a3d5135cee44}{Rse\+\_\+\+Conf\+Acpt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_ab561e0f763ede0502ae4f83873dff08f}\label{rse__conf_8h_ab561e0f763ede0502ae4f83873dff08f}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfCameraAttach@{Rse\_ConfCameraAttach}}
+\index{Rse\_ConfCameraAttach@{Rse\_ConfCameraAttach}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfCameraAttach()}{Rse\_ConfCameraAttach()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Camera\+Attach (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference attach camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Name} & The camera name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rse__conf_8h_a3d41b875cf7e5009ea941c166482d6dc}\label{rse__conf_8h_a3d41b875cf7e5009ea941c166482d6dc}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfCameraDetach@{Rse\_ConfCameraDetach}}
+\index{Rse\_ConfCameraDetach@{Rse\_ConfCameraDetach}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfCameraDetach()}{Rse\_ConfCameraDetach()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Camera\+Detach (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference detach camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rse__conf_8h_a090bfea281e875acd1e71aab4f68b6f7}\label{rse__conf_8h_a090bfea281e875acd1e71aab4f68b6f7}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfCmccCreate@{Rse\_ConfCmccCreate}}
+\index{Rse\_ConfCmccCreate@{Rse\_ConfCmccCreate}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfCmccCreate()}{Rse\_ConfCmccCreate()}}
+{\footnotesize\ttfamily Z\+I\+NT Rse\+\_\+\+Conf\+Cmcc\+Create (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT $\ast$}]{pi\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE cmcc conference create. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em pi\+Conf\+Id} & The id of this new created conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+Different with the method of session creation, this function only malloc the resource of conference. If you want setup or join a conference, you need step ahead by calling other functions.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_abd00a2c8c5c6269f2a76e9ee08c3272b}\label{rse__conf_8h_abd00a2c8c5c6269f2a76e9ee08c3272b}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfCmccSetup@{Rse\_ConfCmccSetup}}
+\index{Rse\_ConfCmccSetup@{Rse\_ConfCmccSetup}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfCmccSetup()}{Rse\_ConfCmccSetup()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Cmcc\+Setup (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+SE setup a new cmcc conference as the creater. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want setup. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}{Rse\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a7abb02e4f1c77dbb702bac27047efbdf}\label{rse__conf_8h_a7abb02e4f1c77dbb702bac27047efbdf}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfConfId@{Rse\_ConfConfId}}
+\index{Rse\_ConfConfId@{Rse\_ConfConfId}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfConfId()}{Rse\_ConfConfId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rse\+\_\+\+Conf\+Conf\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference id by conference id. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & ID of conference. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}\label{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfCreate@{Rse\_ConfCreate}}
+\index{Rse\_ConfCreate@{Rse\_ConfCreate}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfCreate()}{Rse\_ConfCreate()}}
+{\footnotesize\ttfamily Z\+I\+NT Rse\+\_\+\+Conf\+Create (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT $\ast$}]{pi\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference create with type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em pi\+Conf\+Id} & The id of this new created conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Type} & The type of the conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+Different with the method of session creation, this function only malloc the resource of conference. If you want setup or join a conference, you need step ahead by calling other functions.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a8cc3328d15a7a6f8094013842278f5c1}\label{rse__conf_8h_a8cc3328d15a7a6f8094013842278f5c1}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfDelete@{Rse\_ConfDelete}}
+\index{Rse\_ConfDelete@{Rse\_ConfDelete}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfDelete()}{Rse\_ConfDelete()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Delete (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference create. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The conference id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}{Rse\+\_\+\+Conf\+Create}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a94641bac3d988219c44003688f1e742a}\label{rse__conf_8h_a94641bac3d988219c44003688f1e742a}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfDtmf@{Rse\_ConfDtmf}}
+\index{Rse\_ConfDtmf@{Rse\_ConfDtmf}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfDtmf()}{Rse\_ConfDtmf()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Dtmf (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+C\+H\+AR}]{uc\+Dtmf\+Type }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference send dtmf info. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want send dtmf info. \\
+\hline
+\mbox{\texttt{ in}}  & {\em uc\+Dtmf\+Type} & dtmf type which will be sent.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+E\+N\+\_\+\+M\+T\+F\+\_\+\+D\+T\+M\+F\+\_\+\+T\+Y\+PE 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_af1fe03a8274dd53b2b6374b1627fa0ec}\label{rse__conf_8h_af1fe03a8274dd53b2b6374b1627fa0ec}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetAudioStat@{Rse\_ConfGetAudioStat}}
+\index{Rse\_ConfGetAudioStat@{Rse\_ConfGetAudioStat}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetAudioStat()}{Rse\_ConfGetAudioStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Audio\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Buf,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Size }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference audio statistics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Buf} & The statistics string buffer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pi\+Size} & The statistics string buffer size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rse__conf_8h_a2b697a0152162c9a7e1ae481fdd83a93}\label{rse__conf_8h_a2b697a0152162c9a7e1ae481fdd83a93}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetConfUri@{Rse\_ConfGetConfUri}}
+\index{Rse\_ConfGetConfUri@{Rse\_ConfGetConfUri}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetConfUri()}{Rse\_ConfGetConfUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Conf\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get conference uri and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The uri of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a157ee0f193331c767e730c11b59f7cc8}{Rse\+\_\+\+Conf\+Get\+Peer\+Uri}}, \mbox{\hyperlink{rse__conf_8h_a05e4710d6b4e23a0131e8b2acab1a360}{Rse\+\_\+\+Conf\+Get\+Initiator\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a3805f01619929bfc68211d567dbba0b7}\label{rse__conf_8h_a3805f01619929bfc68211d567dbba0b7}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetCookie@{Rse\_ConfGetCookie}}
+\index{Rse\_ConfGetCookie@{Rse\_ConfGetCookie}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetCookie()}{Rse\_ConfGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rse\+\_\+\+Conf\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get cookie value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get cookie of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cookie of conference.
+\end{DoxyReturn}
+The cookie value coule be set by Rse\+\_\+\+Conf\+Setup, Rse\+\_\+\+Conf\+Join or Rse\+\_\+\+Conf\+Acpt previously.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}}, \mbox{\hyperlink{rse__conf_8h_a52ca1c60e6754c206a22a3d5135cee44}{Rse\+\_\+\+Conf\+Acpt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a05e4710d6b4e23a0131e8b2acab1a360}\label{rse__conf_8h_a05e4710d6b4e23a0131e8b2acab1a360}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetInitiatorUri@{Rse\_ConfGetInitiatorUri}}
+\index{Rse\_ConfGetInitiatorUri@{Rse\_ConfGetInitiatorUri}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetInitiatorUri()}{Rse\_ConfGetInitiatorUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Initiator\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get initiator uri and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The uri of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a157ee0f193331c767e730c11b59f7cc8}{Rse\+\_\+\+Conf\+Get\+Peer\+Uri}}, \mbox{\hyperlink{rse__conf_8h_a2b697a0152162c9a7e1ae481fdd83a93}{Rse\+\_\+\+Conf\+Get\+Conf\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a40f4bd135cee52e883870274d7fd48ed}\label{rse__conf_8h_a40f4bd135cee52e883870274d7fd48ed}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetMicMute@{Rse\_ConfGetMicMute}}
+\index{Rse\_ConfGetMicMute@{Rse\_ConfGetMicMute}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetMicMute()}{Rse\_ConfGetMicMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rse\+\_\+\+Conf\+Get\+Mic\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get the mute status of microphone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want get.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & on muted. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & on not muted.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_ae7b1fcb9923b13449f3efb2cba95eb0f}{Rse\+\_\+\+Conf\+Set\+Mic\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a3c90a7e60e59a740e75913386b059c02}\label{rse__conf_8h_a3c90a7e60e59a740e75913386b059c02}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetPartpSize@{Rse\_ConfGetPartpSize}}
+\index{Rse\_ConfGetPartpSize@{Rse\_ConfGetPartpSize}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetPartpSize()}{Rse\_ConfGetPartpSize()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Partp\+Size (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get paticipant size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The paticipant size.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a65e87aa13a9daa7fa4eae15e0aab4872}{Rse\+\_\+\+Conf\+Get\+Partp\+Uri}}, \mbox{\hyperlink{rse__conf_8h_a963fa2d4d2af408653bdf2755a5d30f7}{Rse\+\_\+\+Conf\+Get\+Partp\+Stat}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a963fa2d4d2af408653bdf2755a5d30f7}\label{rse__conf_8h_a963fa2d4d2af408653bdf2755a5d30f7}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetPartpStat@{Rse\_ConfGetPartpStat}}
+\index{Rse\_ConfGetPartpStat@{Rse\_ConfGetPartpStat}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetPartpStat()}{Rse\_ConfGetPartpStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Partp\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+I\+NT}]{i\+Index,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Stat }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get paticipant state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The paticipant index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Stat} & The state of paticipant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a3c90a7e60e59a740e75913386b059c02}{Rse\+\_\+\+Conf\+Get\+Partp\+Size}}, \mbox{\hyperlink{rse__conf_8h_a65e87aa13a9daa7fa4eae15e0aab4872}{Rse\+\_\+\+Conf\+Get\+Partp\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a65e87aa13a9daa7fa4eae15e0aab4872}\label{rse__conf_8h_a65e87aa13a9daa7fa4eae15e0aab4872}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetPartpUri@{Rse\_ConfGetPartpUri}}
+\index{Rse\_ConfGetPartpUri@{Rse\_ConfGetPartpUri}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetPartpUri()}{Rse\_ConfGetPartpUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Partp\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get paticipant uri and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The paticipant index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of paticipant. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The uri of paticipant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a3c90a7e60e59a740e75913386b059c02}{Rse\+\_\+\+Conf\+Get\+Partp\+Size}}, \mbox{\hyperlink{rse__conf_8h_a963fa2d4d2af408653bdf2755a5d30f7}{Rse\+\_\+\+Conf\+Get\+Partp\+Stat}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a157ee0f193331c767e730c11b59f7cc8}\label{rse__conf_8h_a157ee0f193331c767e730c11b59f7cc8}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetPeerUri@{Rse\_ConfGetPeerUri}}
+\index{Rse\_ConfGetPeerUri@{Rse\_ConfGetPeerUri}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetPeerUri()}{Rse\_ConfGetPeerUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Peer\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get peer uri and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The uri of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a2b697a0152162c9a7e1ae481fdd83a93}{Rse\+\_\+\+Conf\+Get\+Conf\+Uri}}, \mbox{\hyperlink{rse__conf_8h_a05e4710d6b4e23a0131e8b2acab1a360}{Rse\+\_\+\+Conf\+Get\+Initiator\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a9b2ecd5ed5b5876361c46a9a696a30e6}\label{rse__conf_8h_a9b2ecd5ed5b5876361c46a9a696a30e6}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetSpkMute@{Rse\_ConfGetSpkMute}}
+\index{Rse\_ConfGetSpkMute@{Rse\_ConfGetSpkMute}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetSpkMute()}{Rse\_ConfGetSpkMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rse\+\_\+\+Conf\+Get\+Spk\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get the mute status of speaker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want get.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & on muted. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & on not muted.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a282c126b0972b13cb691a3244260b4bb}{Rse\+\_\+\+Conf\+Set\+Spk\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a62f640f1f140f2896329e18cd91c5c90}\label{rse__conf_8h_a62f640f1f140f2896329e18cd91c5c90}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetState@{Rse\_ConfGetState}}
+\index{Rse\_ConfGetState@{Rse\_ConfGetState}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetState()}{Rse\_ConfGetState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+State (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference get conference state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want get conf state.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rse__conf_8h_af6b23aa145c157d536550f3149a3cd53}\label{rse__conf_8h_af6b23aa145c157d536550f3149a3cd53}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetStrmName@{Rse\_ConfGetStrmName}}
+\index{Rse\_ConfGetStrmName@{Rse\_ConfGetStrmName}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetStrmName()}{Rse\_ConfGetStrmName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+N\+ST Z\+C\+H\+AR$\ast$ Rse\+\_\+\+Conf\+Get\+Strm\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference stream name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Render name string when found, otherwise \char`\"{}\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rse__conf_8h_a174315b15c174c9677c02a470625aa70}\label{rse__conf_8h_a174315b15c174c9677c02a470625aa70}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetVideoStat@{Rse\_ConfGetVideoStat}}
+\index{Rse\_ConfGetVideoStat@{Rse\_ConfGetVideoStat}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetVideoStat()}{Rse\_ConfGetVideoStat()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Get\+Video\+Stat (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Strm\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Buf,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Size }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference video stream by stream id statistics. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Strm\+Id} & The ID of video stream. One conference may contains one more video stream. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Buf} & The statistics string buffer. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pi\+Size} & The statistics string buffer size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{rse__conf_8h_aefe3ec345934d2443b4991461949fa34}\label{rse__conf_8h_aefe3ec345934d2443b4991461949fa34}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetVideoStrmCount@{Rse\_ConfGetVideoStrmCount}}
+\index{Rse\_ConfGetVideoStrmCount@{Rse\_ConfGetVideoStrmCount}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetVideoStrmCount()}{Rse\_ConfGetVideoStrmCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rse\+\_\+\+Conf\+Get\+Video\+Strm\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference video stream count. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of conference video stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rse__conf_8h_aa211055326960ff03c2e2da6ef27387f}\label{rse__conf_8h_aa211055326960ff03c2e2da6ef27387f}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfGetVideoStrmIdByIndex@{Rse\_ConfGetVideoStrmIdByIndex}}
+\index{Rse\_ConfGetVideoStrmIdByIndex@{Rse\_ConfGetVideoStrmIdByIndex}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfGetVideoStrmIdByIndex()}{Rse\_ConfGetVideoStrmIdByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rse\+\_\+\+Conf\+Get\+Video\+Strm\+Id\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference video stream id by index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of conference video stream when found, otherwise Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rse__conf_8h_aafbb3e94385735cf005b196e5ebbeea7}\label{rse__conf_8h_aafbb3e94385735cf005b196e5ebbeea7}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfHasAudio@{Rse\_ConfHasAudio}}
+\index{Rse\_ConfHasAudio@{Rse\_ConfHasAudio}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfHasAudio()}{Rse\_ConfHasAudio()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rse\+\_\+\+Conf\+Has\+Audio (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference check if has a active audio stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & on yes. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & on no.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_af4290deb9a9c7ba07feba65bb9bcdc0b}{Rse\+\_\+\+Conf\+Has\+Video}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_af4290deb9a9c7ba07feba65bb9bcdc0b}\label{rse__conf_8h_af4290deb9a9c7ba07feba65bb9bcdc0b}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfHasVideo@{Rse\_ConfHasVideo}}
+\index{Rse\_ConfHasVideo@{Rse\_ConfHasVideo}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfHasVideo()}{Rse\_ConfHasVideo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Rse\+\_\+\+Conf\+Has\+Video (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference check if has a active video stream. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & on yes. \\
+\hline
+{\em Z\+F\+A\+L\+SE} & on no.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_aafbb3e94385735cf005b196e5ebbeea7}{Rse\+\_\+\+Conf\+Has\+Audio}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a0aeee7c7ec6461b521bce386476f691a}\label{rse__conf_8h_a0aeee7c7ec6461b521bce386476f691a}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfHold@{Rse\_ConfHold}}
+\index{Rse\_ConfHold@{Rse\_ConfHold}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfHold()}{Rse\_ConfHold()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Hold (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Hold }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference hold. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want hold or unhold. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Hold} & Indicate the willingness of hold or unhold.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a7af2c098a9b03a029b93d15b4057bc48}\label{rse__conf_8h_a7af2c098a9b03a029b93d15b4057bc48}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfIvtSess@{Rse\_ConfIvtSess}}
+\index{Rse\_ConfIvtSess@{Rse\_ConfIvtSess}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfIvtSess()}{Rse\_ConfIvtSess()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Ivt\+Sess (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Sess\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE invite new participant, which you already have a session with, to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Id} & The id of the session which you have with the want-\/invited participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}{Rse\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_ab4e1018c34bcb204e9371b55fca3e2cc}\label{rse__conf_8h_ab4e1018c34bcb204e9371b55fca3e2cc}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfIvtSessLst@{Rse\_ConfIvtSessLst}}
+\index{Rse\_ConfIvtSessLst@{Rse\_ConfIvtSessLst}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfIvtSessLst()}{Rse\_ConfIvtSessLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Ivt\+Sess\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Sess\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE invite new participant list, which you already have a session with, to conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sess\+Lst\+Id} & The session list id which you have with the want-\/invited participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}{Rse\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a45e075cc53d12e16119e1c5f58623e1f}\label{rse__conf_8h_a45e075cc53d12e16119e1c5f58623e1f}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfIvtUser@{Rse\_ConfIvtUser}}
+\index{Rse\_ConfIvtUser@{Rse\_ConfIvtUser}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfIvtUser()}{Rse\_ConfIvtUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Ivt\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+SE invite new participant to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}{Rse\+\_\+\+Conf\+Kick\+User}}, \mbox{\hyperlink{rse__conf_8h_a7af2c098a9b03a029b93d15b4057bc48}{Rse\+\_\+\+Conf\+Ivt\+Sess}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_acc14a0d8d27a726ab6792f7d73311328}\label{rse__conf_8h_acc14a0d8d27a726ab6792f7d73311328}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfIvtUserLst@{Rse\_ConfIvtUserLst}}
+\index{Rse\_ConfIvtUserLst@{Rse\_ConfIvtUserLst}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfIvtUserLst()}{Rse\_ConfIvtUserLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Ivt\+User\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Video }\end{DoxyParamCaption})}
+
+
+
+R\+SE invite new participant list to a new conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Video} & The video call flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}{Rse\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}\label{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfJoin@{Rse\_ConfJoin}}
+\index{Rse\_ConfJoin@{Rse\_ConfJoin}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfJoin()}{Rse\_ConfJoin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Join (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+B\+O\+OL}]{b\+Video }\end{DoxyParamCaption})}
+
+
+
+R\+SE join an already existed conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want join. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of existed conference. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Video} & The video conference flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}{Rse\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}\label{rse__conf_8h_ac23108b17a88707c6ca8ce8b9ca0dd14}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfKickUser@{Rse\_ConfKickUser}}
+\index{Rse\_ConfKickUser@{Rse\_ConfKickUser}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfKickUser()}{Rse\_ConfKickUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Kick\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri }\end{DoxyParamCaption})}
+
+
+
+R\+SE kick participant from conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want kick participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a45e075cc53d12e16119e1c5f58623e1f}{Rse\+\_\+\+Conf\+Ivt\+User}}, \mbox{\hyperlink{rse__conf_8h_a7af2c098a9b03a029b93d15b4057bc48}{Rse\+\_\+\+Conf\+Ivt\+Sess}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_ae7b1fcb9923b13449f3efb2cba95eb0f}\label{rse__conf_8h_ae7b1fcb9923b13449f3efb2cba95eb0f}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfSetMicMute@{Rse\_ConfSetMicMute}}
+\index{Rse\_ConfSetMicMute@{Rse\_ConfSetMicMute}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfSetMicMute()}{Rse\_ConfSetMicMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Set\+Mic\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference set the mute status of microphone. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Indicate whether mute the microphone.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a40f4bd135cee52e883870274d7fd48ed}{Rse\+\_\+\+Conf\+Get\+Mic\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a282c126b0972b13cb691a3244260b4bb}\label{rse__conf_8h_a282c126b0972b13cb691a3244260b4bb}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfSetSpkMute@{Rse\_ConfSetSpkMute}}
+\index{Rse\_ConfSetSpkMute@{Rse\_ConfSetSpkMute}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfSetSpkMute()}{Rse\_ConfSetSpkMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Set\+Spk\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+B\+O\+OL}]{b\+Mute }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference set the mute status of speaker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The ID of conference which you want set. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Mute} & Indicate whether mute the speaker.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a9b2ecd5ed5b5876361c46a9a696a30e6}{Rse\+\_\+\+Conf\+Get\+Spk\+Mute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}\label{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfSetup@{Rse\_ConfSetup}}
+\index{Rse\_ConfSetup@{Rse\_ConfSetup}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfSetup()}{Rse\_ConfSetup()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Setup (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+R\+SE setup a new conference as the creater. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want setup. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_af15d0a38db1659ac9a33926223980f7f}{Rse\+\_\+\+Conf\+Create}}, \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_af47cf39d786c982beda746ea09eb7a95}\label{rse__conf_8h_af47cf39d786c982beda746ea09eb7a95}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfStrmIdFromStrmName@{Rse\_ConfStrmIdFromStrmName}}
+\index{Rse\_ConfStrmIdFromStrmName@{Rse\_ConfStrmIdFromStrmName}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfStrmIdFromStrmName()}{Rse\_ConfStrmIdFromStrmName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Rse\+\_\+\+Conf\+Strm\+Id\+From\+Strm\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+N\+ST Z\+C\+H\+AR $\ast$}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+R\+SE get conference stream id from render name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+Name} & Render name string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ID of conference video stream when found, otherwise Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rse__conf_8h_aaf691b5a1dd697b25e90e25f0300f2aa}\label{rse__conf_8h_aaf691b5a1dd697b25e90e25f0300f2aa}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfSubs@{Rse\_ConfSubs}}
+\index{Rse\_ConfSubs@{Rse\_ConfSubs}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfSubs()}{Rse\_ConfSubs()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Subs (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE subscribe conference event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want subscribe.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a85c678fd253b9e31943b19eee75929cb}{Rse\+\_\+\+Conf\+Unsubs}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a51914d879dbad48f94cbfecc5d38b61c}\label{rse__conf_8h_a51914d879dbad48f94cbfecc5d38b61c}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfTerm@{Rse\_ConfTerm}}
+\index{Rse\_ConfTerm@{Rse\_ConfTerm}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfTerm()}{Rse\_ConfTerm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Term (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Reason,  }\item[{Z\+B\+O\+OL}]{b\+Term\+Conf }\end{DoxyParamCaption})}
+
+
+
+R\+SE conference terminate. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want terminate. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Reason} & Indicate the terminate reason which may trigger some service in S-\/\+C\+S\+CF.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+Actually Rse\+\_\+\+Conf\+Term does not free all resource allocated for this conference. It only starts a terminating procedure. All resource will be freed automaticly when the procedure ends.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_a40cf52593eaf7bc6b3fd0b853aa949e1}{Rse\+\_\+\+Conf\+Setup}}, \mbox{\hyperlink{rse__conf_8h_a5fb1999f9fa860392c39517edd5d4136}{Rse\+\_\+\+Conf\+Join}}, E\+N\+\_\+\+M\+T\+F\+\_\+\+T\+E\+R\+M\+\_\+\+R\+E\+A\+S\+O\+N\+\_\+\+T\+Y\+PE 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{rse__conf_8h_a85c678fd253b9e31943b19eee75929cb}\label{rse__conf_8h_a85c678fd253b9e31943b19eee75929cb}} 
+\index{rse\_conf.h@{rse\_conf.h}!Rse\_ConfUnsubs@{Rse\_ConfUnsubs}}
+\index{Rse\_ConfUnsubs@{Rse\_ConfUnsubs}!rse\_conf.h@{rse\_conf.h}}
+\doxysubsubsection{\texorpdfstring{Rse\_ConfUnsubs()}{Rse\_ConfUnsubs()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Rse\+\_\+\+Conf\+Unsubs (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+SE unsubscribe conference event. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want unsubscribe.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rse__conf_8h_aaf691b5a1dd697b25e90e25f0300f2aa}{Rse\+\_\+\+Conf\+Subs}} 
+\end{DoxySeeAlso}

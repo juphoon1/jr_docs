@@ -1,0 +1,316 @@
+\hypertarget{rie__evnt_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/enabler/rie/rie\+\_\+evnt.h File Reference}
+\label{rie__evnt_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_evnt.h@{/media/psf/Home/code/rcs/sdk/lemon/src/enabler/rie/rie\_evnt.h}}
+
+
+R\+IE E\+V\+NT Interfaces.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{rie__evnt_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_aef01c1b559900e37c29fdf86328967b2}\label{rie__evnt_8h_aef01c1b559900e37c29fdf86328967b2}} 
+typedef enum \mbox{\hyperlink{rie__evnt_8h_ac179bb513687ba8e5bef41d4b0abb76c}{E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{rie__evnt_8h_aef01c1b559900e37c29fdf86328967b2}{E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em Type define of R\+IE event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rie__evnt_8h_acce1dd1c060ddfd116a076176ce91875}\label{rie__evnt_8h_acce1dd1c060ddfd116a076176ce91875}} 
+typedef enum \mbox{\hyperlink{rie__evnt_8h_a6748f9d64e0e199d5d3df4d9284db926}{E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{rie__evnt_8h_acce1dd1c060ddfd116a076176ce91875}{E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em Type define of R\+IE application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_ac179bb513687ba8e5bef41d4b0abb76c}\label{rie__evnt_8h_ac179bb513687ba8e5bef41d4b0abb76c}} 
+enum \mbox{\hyperlink{rie__evnt_8h_ac179bb513687ba8e5bef41d4b0abb76c}{E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+P\+M\+S\+G\+\_\+\+R\+E\+C\+V\+\_\+\+M\+SG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+P\+M\+S\+G\+\_\+\+R\+E\+C\+V\+\_\+\+S\+M\+S\+\_\+\+I\+N\+FO}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+P\+M\+S\+G\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+P\+M\+S\+G\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+L\+M\+S\+G\+\_\+\+R\+E\+C\+V\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+L\+M\+S\+G\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+L\+M\+S\+G\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+I\+V\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+R\+E\+J\+E\+C\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+C\+A\+N\+C\+E\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+R\+E\+C\+V\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+S\+E\+N\+D\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+S\+E\+N\+D\+\_\+\+L\+A\+ST}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+R\+S\+F\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+I\+V\+T\+E\+D\+\_\+\+S\+E\+N\+D\+ER}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+I\+V\+T\+E\+D\+\_\+\+R\+E\+C\+V\+ER}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+R\+E\+J\+E\+C\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+C\+A\+N\+C\+E\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+R\+E\+C\+V\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+S\+E\+N\+D\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+S\+E\+N\+D\+\_\+\+L\+A\+ST}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+R\+E\+S\+U\+M\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+F\+E\+T\+C\+H\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+F\+E\+T\+C\+H\+\_\+\+R\+E\+J\+E\+C\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+F\+E\+T\+C\+H\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+F\+E\+T\+C\+H\+\_\+\+R\+E\+C\+V\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+F\+E\+T\+C\+H\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+S\+T\+F\+W\+D\+\_\+\+I\+V\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+S\+T\+F\+W\+D\+\_\+\+C\+A\+N\+C\+E\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+S\+T\+F\+W\+D\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+S\+T\+F\+W\+D\+\_\+\+R\+E\+C\+V\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+S\+T\+F\+W\+D\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+O\+W\+N\+L\+O\+A\+D\+\_\+\+F\+A\+IL}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+I\+NG}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+L\+A\+ST}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+U\+P\+L\+O\+A\+D\+\_\+\+F\+A\+IL}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+OK}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+F\+A\+IL}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+I\+V\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+R\+E\+J\+E\+C\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+C\+A\+N\+C\+E\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+E\+X\+I\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+R\+E\+C\+V\+I\+NG}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+S\+E\+N\+D\+I\+NG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+S\+E\+N\+D\+\_\+\+L\+A\+ST}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+S\+H\+A\+R\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+I\+V\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+I\+V\+T\+E\+DM}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+R\+E\+P\+L\+A\+C\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+R\+E\+P\+L\+A\+C\+E\+DM}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+R\+E\+J\+E\+C\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+C\+A\+N\+C\+E\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+L\+E\+A\+V\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+L\+E\+A\+V\+E\+\_\+\+F\+A\+IL}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+D\+I\+S\+S\+O\+L\+V\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+D\+I\+S\+S\+O\+L\+V\+E\+\_\+\+F\+A\+IL}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+I\+S\+C\+O\+MP}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+D\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+D\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+X\+P\+E\+L\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+X\+P\+E\+L\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+P\+A\+R\+T\+P\+\_\+\+S\+T\+A\+\_\+\+U\+PT}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+D\+F\+Y\+\_\+\+OK}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+D\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+M\+D\+F\+Y\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+M\+D\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+M\+D\+F\+Y\+\_\+\+R\+EQ}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+M\+D\+F\+Y\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+E\+S\+S\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+M\+D\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+D\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+A\+R\+T\+P\+\_\+\+A\+D\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+X\+P\+E\+L\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+P\+A\+R\+T\+P\+\_\+\+E\+X\+P\+E\+L\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+D\+F\+Y\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+M\+D\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+M\+D\+F\+Y\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+M\+D\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+M\+D\+F\+Y\+\_\+\+R\+EQ}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+M\+D\+F\+Y\+\_\+\+OK}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+R\+E\+F\+E\+R\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+M\+D\+F\+Y\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+I\+N\+F\+O\+\_\+\+C\+M\+C\+C\+G\+R\+P\+\_\+\+U\+P\+D\+A\+TE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+D\+S\+E\+S\+S\+\_\+\+R\+E\+T\+R\+I\+V\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+D\+S\+E\+S\+S\+\_\+\+R\+E\+T\+R\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+D\+S\+E\+S\+S\+\_\+\+R\+E\+T\+R\+I\+V\+E\+\_\+\+P\+A\+G\+E\+R\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+D\+S\+E\+S\+S\+\_\+\+R\+E\+T\+R\+I\+V\+E\+\_\+\+P\+A\+G\+E\+R\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+D\+S\+E\+S\+S\+\_\+\+R\+E\+T\+R\+I\+V\+E\+\_\+\+F\+I\+L\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+D\+S\+E\+S\+S\+\_\+\+R\+E\+T\+R\+I\+V\+E\+\_\+\+F\+I\+L\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+I\+V\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+I\+V\+T\+E\+DM}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+R\+E\+P\+L\+A\+CE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+R\+E\+P\+L\+A\+C\+EM}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+A\+C\+P\+T\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+C\+A\+N\+C\+E\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+R\+E\+L\+E\+A\+SE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+S\+S\+E\+S\+S\+\_\+\+R\+E\+C\+V\+\_\+\+D\+O\+NE}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+L\+I\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+D\+E\+L\+I\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+S\+P\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+D\+I\+S\+P\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+A\+C\+P\+T\+E\+D\+\_\+\+S\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+A\+C\+P\+T\+E\+D\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+D\+E\+LI}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+D\+E\+L\+I\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+D\+E\+L\+I\+\_\+\+F\+O\+R\+W\+A\+R\+D\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+D\+I\+SP}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+B\+U\+R\+N\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+L\+E\+G\+A\+C\+Y\+\_\+\+S\+MS}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+L\+E\+G\+A\+C\+Y\+\_\+\+M\+MS}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+I\+M\+D\+N\+\_\+\+R\+E\+C\+V\+\_\+\+L\+E\+G\+A\+C\+Y\+\_\+\+E\+RR}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+L\+O\+G\+I\+N\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+A\+P\+P\+E\+N\+D\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+A\+P\+P\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+L\+I\+S\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+L\+I\+S\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+F\+E\+T\+C\+H\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+F\+E\+T\+C\+H\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+C\+L\+O\+S\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+C\+L\+O\+S\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+L\+O\+G\+O\+U\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+L\+O\+G\+O\+U\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+M\+S\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+C\+E\+I\+V\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+S\+U\+B\+S\+\_\+\+L\+S\+T\+\_\+\+OK}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+S\+U\+B\+S\+\_\+\+L\+S\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+S\+U\+B\+S\+\_\+\+I\+N\+F\+O\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+S\+U\+B\+S\+\_\+\+I\+N\+F\+O\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+I\+N\+F\+O\+\_\+\+U\+P\+D\+A\+T\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+S\+U\+B\+S\+\_\+\+I\+N\+F\+O\+\_\+\+L\+I\+S\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+O\+N\+F\+\_\+\+S\+U\+B\+S\+\_\+\+I\+N\+F\+O\+\_\+\+L\+I\+S\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+M\+S\+G\+\_\+\+S\+T\+A\+RT}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+O\+F\+F\+L\+I\+N\+E\+\_\+\+M\+S\+G\+\_\+\+E\+ND}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+D\+E\+L\+E\+T\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+S\+U\+B\+S\+\_\+\+L\+S\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+S\+U\+B\+S\+\_\+\+L\+S\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+S\+U\+B\+S\+\_\+\+I\+N\+F\+O\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+S\+U\+B\+S\+\_\+\+I\+N\+F\+O\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+M\+D\+F\+Y\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+M\+D\+F\+Y\+\_\+\+S\+U\+B\+J\+E\+C\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+M\+D\+F\+Y\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+M\+D\+F\+Y\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+M\+D\+F\+Y\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+M\+D\+F\+Y\+\_\+\+C\+H\+A\+I\+R\+M\+A\+N\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+A\+D\+D\+\_\+\+P\+A\+R\+T\+P\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+A\+D\+D\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+E\+P\+L\+\_\+\+P\+A\+R\+T\+P\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+E\+P\+L\+\_\+\+P\+A\+R\+T\+P\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+J\+O\+I\+N\+\_\+\+I\+C\+O\+N\+W\+A\+L\+L\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+J\+O\+I\+N\+\_\+\+I\+C\+O\+N\+W\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+Q\+U\+I\+T\+\_\+\+I\+C\+O\+N\+W\+A\+L\+L\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+Q\+U\+I\+T\+\_\+\+I\+C\+O\+N\+W\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+P\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+G\+R\+P\+H\+T\+T\+P\+\_\+\+J\+O\+I\+N\+\_\+\+G\+R\+P\+\_\+\+F\+A\+I\+L\+ED}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+H\+A\+T\+B\+O\+T\+\_\+\+Q\+R\+Y\+\_\+\+L\+S\+T\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+H\+A\+T\+B\+O\+T\+\_\+\+Q\+R\+Y\+\_\+\+L\+S\+T\+\_\+\+F\+A\+I\+L\+ED}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+H\+A\+T\+B\+O\+T\+\_\+\+Q\+R\+Y\+\_\+\+I\+N\+F\+O\+\_\+\+OK}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+E\+V\+N\+T\+\_\+\+C\+H\+A\+T\+B\+O\+T\+\_\+\+Q\+R\+Y\+\_\+\+I\+N\+F\+O\+\_\+\+F\+A\+I\+L\+ED}
+ \}
+\begin{DoxyCompactList}\small\item\em Type define of R\+IE event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{rie__evnt_8h_a6748f9d64e0e199d5d3df4d9284db926}\label{rie__evnt_8h_a6748f9d64e0e199d5d3df4d9284db926}} 
+enum \mbox{\hyperlink{rie__evnt_8h_a6748f9d64e0e199d5d3df4d9284db926}{E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+P\+M\+SG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+L\+M\+SG}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+F\+T\+R\+SF}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+F\+R\+E\+S\+U\+ME}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+F\+F\+E\+T\+CH}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+F\+S\+T\+F\+WD}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+F\+T\+H\+T\+TP}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+H\+T\+TP}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+M\+S\+E\+SS}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+S\+S\+E\+SS}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+O\+F\+F\+L\+I\+NE}, 
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+R\+E\+F\+ER}, 
+\newline
+{\bfseries E\+N\+\_\+\+R\+I\+E\+\_\+\+A\+P\+P\+\_\+\+G\+I\+N\+FO}
+ \}
+\begin{DoxyCompactList}\small\item\em Type define of R\+IE application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_aa0fc2e1b41a43e6db5543fbe6a6e576c}\label{rie__evnt_8h_aa0fc2e1b41a43e6db5543fbe6a6e576c}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+S\+Msg\+Id} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a8f99372287b68bc64b8cea0e144c08c3}\label{rie__evnt_8h_a8f99372287b68bc64b8cea0e144c08c3}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+Re\+Sess\+Id} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a118ec3ae8e50734bceaf44c542b4e113}\label{rie__evnt_8h_a118ec3ae8e50734bceaf44c542b4e113}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+Partp\+Id} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a7b42a7538ea9da1107019981dd46b38e}\label{rie__evnt_8h_a7b42a7538ea9da1107019981dd46b38e}} 
+Z\+F\+U\+NC Z\+B\+O\+OL {\bfseries Rie\+\_\+\+Evnt\+Get\+Partp\+Full\+Ntfy} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a65a89e4fef18cf0cc45268f015e8903e}\label{rie__evnt_8h_a65a89e4fef18cf0cc45268f015e8903e}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+Tpt\+Data\+Size} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_ae54587fa4ccaeebb4aef1bbb8b1c0979}\label{rie__evnt_8h_ae54587fa4ccaeebb4aef1bbb8b1c0979}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+All\+Data\+Size} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a075d7e0b4107360f41d05a6b39fac367}\label{rie__evnt_8h_a075d7e0b4107360f41d05a6b39fac367}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+Ms\+Mbx\+Id} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a30caa3b595367d81fa166c8924adb085}\label{rie__evnt_8h_a30caa3b595367d81fa166c8924adb085}} 
+Z\+F\+U\+NC Z\+U\+I\+NT {\bfseries Rie\+\_\+\+Evnt\+Get\+Ms\+Msg\+Uid} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\item 
+\mbox{\Hypertarget{rie__evnt_8h_a68a10149b7626ec1a77a46b7c81a45e6}\label{rie__evnt_8h_a68a10149b7626ec1a77a46b7c81a45e6}} 
+Z\+F\+U\+NC Z\+U\+L\+O\+NG {\bfseries Rie\+\_\+\+Evnt\+Get\+Ms\+Obj\+Id} (\mbox{\hyperlink{rsd__evnt_8h_ad136b59ad5780ebd2c043b1f1688c3af}{R\+S\+D\+\_\+\+E\+V\+N\+T\+ID}} z\+Evnt\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+R\+IE E\+V\+NT Interfaces. 
+
+This file includes E\+V\+NT callback definitions. Those callback function is invoked when something happenned, and should change the presetation. 

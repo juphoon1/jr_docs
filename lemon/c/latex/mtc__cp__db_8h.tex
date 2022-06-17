@@ -1,0 +1,1064 @@
+\hypertarget{mtc__cp__db_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+cp\+\_\+db.h File Reference}
+\label{mtc__cp__db_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cp\_db.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_cp\_db.h}}
+
+
+M\+TC Client Provisioning Database Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__cp__db_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cp__db_8h_abf9c811a6fbbd76955db9db2f3d2e15f}\label{mtc__cp__db_8h_abf9c811a6fbbd76955db9db2f3d2e15f}} 
+typedef enum E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+T\+Y\+PE {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+T\+Y\+PE}
+\item 
+\mbox{\Hypertarget{mtc__cp__db_8h_a33597d9d180366c5d4960ddf9dea08d2}\label{mtc__cp__db_8h_a33597d9d180366c5d4960ddf9dea08d2}} 
+typedef enum E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__cp__db_8h_addca6d5b7d916f775db876207005dfad}\label{mtc__cp__db_8h_addca6d5b7d916f775db876207005dfad}} 
+enum {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+T\+Y\+PE} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+N\+O\+NE}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+W\+W\+W\+\_\+\+G\+BA}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+W\+W\+W\+\_\+\+G\+B\+A\+\_\+U}
+ \}
+\item 
+\mbox{\Hypertarget{mtc__cp__db_8h_a9e074e8183e86192d73c8a67af03aeac}\label{mtc__cp__db_8h_a9e074e8183e86192d73c8a67af03aeac}} 
+enum {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+D\+F\+LT}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+A\+D\+D\+L1}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+A\+D\+D\+L2}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_ae439f94e521f1e1efab36d09bf9d97b9}{Mtc\+\_\+\+Cp\+Db\+Get\+Ver}} (Z\+U\+I\+NT i\+Srv\+Type)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__cp__db_8h_a7e16c1f3841bb088e038ccff31ed16fd}{Mtc\+\_\+\+Cp\+Db\+Get\+Ver\+Timestamp}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get version timestamp. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_ac2ed7e2fc74d16de8198ee34fc0fb8a1}{Mtc\+\_\+\+Cp\+Db\+Get\+Token}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the token from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_ace6adb26271230c37bda047bff0d80bf}{Mtc\+\_\+\+Cp\+Db\+Get\+Cc}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the sip uri from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_ab1970c0fdd2484abfd37f4590c1f4fc7}{Mtc\+\_\+\+Cp\+Db\+Get\+Msisdn}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the M\+S\+I\+S\+DN from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_a2a94b1dbf3ab7c12f67376f25cf79e28}{Mtc\+\_\+\+Cp\+Db\+Get\+Sip\+Uri}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the sip uri from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_acd7fff7a8b69c0cb9c17b556a83b4731}{Mtc\+\_\+\+Cp\+Db\+Get\+Imsi}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the I\+M\+SI from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_a69189acf37c223b089e98694bd0dce93}{Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Addr}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the server address from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a5e8636c310aaef883a754d0f4907324e}{Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Cnt}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the server count from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_af3641e536d394effdf073b5de85e28e6}{Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Root}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the service root from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__cp__db_8h_a5902a9b91861c7f82223fad8cc1ef1e3}{Mtc\+\_\+\+Cp\+Db\+Get\+Supt\+Hdr\+Cmpl}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the support pgw header completion flag from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a7560d4975dc186dada51478f462e32b6}{Mtc\+\_\+\+Cp\+Db\+Get\+Tmr\+Len\+Wait\+Cp}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the length of wait cp timer from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a753ad1db8edc61992223e1265ee5838e}{Mtc\+\_\+\+Cp\+Db\+Get\+Tmr\+Len\+Wait\+Pt}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the length of wait prompt timer from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_ae6a49e02a8ab2ba624f41c508ec739eb}{Mtc\+\_\+\+Cp\+Db\+Get\+Ver\+Valid\+Time}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get validity time from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a95f79c2b3eb8aa1df3ccc460080a8328}{Mtc\+\_\+\+Cp\+Db\+Set\+Ver}} (Z\+I\+NT i\+Ver, Z\+U\+I\+NT i\+Srv\+Type)
+\begin{DoxyCompactList}\small\item\em Set version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a2d0fed70276ab20d92ede1e7d7f6bf83}{Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Timestamp}} (Z\+I\+NT i\+Ver\+Timestamp)
+\begin{DoxyCompactList}\small\item\em Set version timestamp. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a9e4bf4b3337300b272472d80836afe1b}{Mtc\+\_\+\+Cp\+Db\+Set\+Token}} (Z\+C\+H\+AR $\ast$pc\+Token)
+\begin{DoxyCompactList}\small\item\em Set token. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a80ae390e598312693d90aeacf1a89d89}{Mtc\+\_\+\+Cp\+Db\+Set\+Cc}} (Z\+C\+H\+AR $\ast$pc\+Country\+Code)
+\begin{DoxyCompactList}\small\item\em Set country code. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a888143c4563bbf40af73fee59a1aabd9}{Mtc\+\_\+\+Cp\+Db\+Set\+Msisdn}} (Z\+C\+H\+AR $\ast$pc\+Msisdn)
+\begin{DoxyCompactList}\small\item\em Set M\+S\+I\+S\+DN. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a3d7a3bd45dee0d481027b781c61a67df}{Mtc\+\_\+\+Cp\+Db\+Set\+Sip\+Uri}} (Z\+C\+H\+AR $\ast$pc\+Sip\+Uri)
+\begin{DoxyCompactList}\small\item\em Set sip uri. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a37afea0cac66bc3a63c904fdd894ed2d}{Mtc\+\_\+\+Cp\+Db\+Set\+Imsi}} (Z\+C\+H\+AR $\ast$pc\+Imsi)
+\begin{DoxyCompactList}\small\item\em Set I\+M\+SI. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a87a292da1b0d18b56f00f334563767f3}{Mtc\+\_\+\+Cp\+Db\+Set\+Srv\+Addr}} (Z\+C\+H\+AR $\ast$pc\+Srv\+Addr)
+\begin{DoxyCompactList}\small\item\em Set server address. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a1876f1cfac6b7922b23201864573ced6}{Mtc\+\_\+\+Cp\+Db\+Set\+Srv\+Root}} (Z\+C\+H\+AR $\ast$pc\+Srv\+Root)
+\begin{DoxyCompactList}\small\item\em Set service root. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a2a008f16d434c178b6ee8c23b23b1de8}{Mtc\+\_\+\+Cp\+Db\+Set\+Supt\+Hdr\+Cmpl}} (Z\+B\+O\+OL b\+Flag)
+\begin{DoxyCompactList}\small\item\em Set support pgw header completion flag. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_ab31ef2380e50d6387e785fcabb7efd86}{Mtc\+\_\+\+Cp\+Db\+Set\+Tmr\+Len\+Wait\+Cp}} (Z\+U\+I\+NT i\+Tmr\+Len)
+\begin{DoxyCompactList}\small\item\em Set wait cp timer length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_ac9ed1e317ff1e92a8f814a5653363d58}{Mtc\+\_\+\+Cp\+Db\+Set\+Tmr\+Len\+Wait\+Pt}} (Z\+U\+I\+NT i\+Tmr\+Len)
+\begin{DoxyCompactList}\small\item\em Set wait prompt timer length. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a18bfa67f81d2902945c92f1d4b15f84b}{Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Valid\+Time}} (Z\+I\+NT i\+Time)
+\begin{DoxyCompactList}\small\item\em Set validity time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_acdbb7c8b0c11fe7606ecb51dccaf4196}{Mtc\+\_\+\+Cli\+Db\+Get\+Cp\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a4ac359e02c75e6a9d035b95c4ef3d662}{Mtc\+\_\+\+Cli\+Db\+Set\+Cp\+Port}} (Z\+U\+I\+NT i\+Port)
+\begin{DoxyCompactList}\small\item\em Set cp port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a827447d4873be83b28b9dc43cc73b9b8}{Mtc\+\_\+\+Cli\+Db\+Get\+Cp\+Tls\+Port}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get tls port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_aef437382c0ddde322db2a744aece57ae}{Mtc\+\_\+\+Cli\+Db\+Set\+Cp\+Tls\+Port}} (Z\+U\+I\+NT i\+Port)
+\begin{DoxyCompactList}\small\item\em Set cp tls port. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_ac8dd4a3daac63ae646a861a01ee28e3a}{Mtc\+\_\+\+Cp\+Db\+Get\+Prov\+Vers}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the supported tprovisioning version from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a4de31f35d5cf7531e94ae538815335d4}{Mtc\+\_\+\+Cp\+Db\+Set\+Prov\+Vers}} (Z\+C\+H\+AR $\ast$pc\+Prov\+Vers)
+\begin{DoxyCompactList}\small\item\em Set supported provisioning version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_ac31843ca7cfd1fffa54d2e5edd02af61}{Mtc\+\_\+\+Cp\+Db\+Get\+Fd\+Name}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get the friendly device name from database. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_aa766c974807281894bc9966b7c05c879}{Mtc\+\_\+\+Cp\+Db\+Set\+Fd\+Name}} (Z\+C\+H\+AR $\ast$pc\+Fd\+Name)
+\begin{DoxyCompactList}\small\item\em Set friendly device name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_af659069b85b082a04245579539cf7f86}{Mtc\+\_\+\+Cp\+Db\+Get\+Rcs\+State}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get rcs state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a872654f491d5acd38c55f28868ec79a0}{Mtc\+\_\+\+Cp\+Db\+Set\+Rcs\+State}} (Z\+I\+NT i\+Rcs\+State)
+\begin{DoxyCompactList}\small\item\em Set rcs state. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a6114c9a7de3b5ac77bb7c454fc77328c}{Mtc\+\_\+\+Cp\+Db\+Get\+Def\+S\+M\+S\+App}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get default sms app. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a301f5b2f77244717ff28bc396bf58fb7}{Mtc\+\_\+\+Cp\+Db\+Set\+Def\+S\+M\+S\+App}} (Z\+I\+NT i\+Def\+S\+M\+S\+App)
+\begin{DoxyCompactList}\small\item\em Set default sms app. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_ae6455b81419b4473967e9f76b5204394}{Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Param\+Zero}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Set version param zero. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a6d309a1594abc259789dfe907d7485a4}{Mtc\+\_\+\+Cp\+Db\+Set\+Token\+Valid\+Time}} (Z\+U\+I\+NT i\+Valid\+Time)
+\begin{DoxyCompactList}\small\item\em Set cp token Valid\+Time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a738a9efeb5bc47d69e90afbec116b239}{Mtc\+\_\+\+Cp\+Db\+Get\+Token\+Valid\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Get cp token Valid\+Time. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a0fc2a0dcc60f45ee6cae071edb6765d1}{Mtc\+\_\+\+Cp\+Db\+Set\+Dms\+App\+Id}} (Z\+C\+H\+AR $\ast$pc\+App\+Id)
+\begin{DoxyCompactList}\small\item\em Set cp D\+MS App\+Id param. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__cp__db_8h_ae61abfe730a2271cbda338672bf8f869}{Mtc\+\_\+\+Cp\+Db\+Get\+Dms\+App\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Set cp D\+MS App\+Id param. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a176945279d33e7496e537ad77ea84f56}{Mtc\+\_\+\+Cp\+Db\+Set\+Auth\+Type}} (Z\+U\+I\+NT i\+Auth\+Type)
+\begin{DoxyCompactList}\small\item\em Set cp auth type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__cp__db_8h_a9503a568295130b1f8897ef36dcae0c0}{Mtc\+\_\+\+Cp\+Db\+Get\+Auth\+Type}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get client provisioning database get auth type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Client Provisioning Database Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__cp__db_8h_acdbb7c8b0c11fe7606ecb51dccaf4196}\label{mtc__cp__db_8h_acdbb7c8b0c11fe7606ecb51dccaf4196}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CliDbGetCpPort@{Mtc\_CliDbGetCpPort}}
+\index{Mtc\_CliDbGetCpPort@{Mtc\_CliDbGetCpPort}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDbGetCpPort()}{Mtc\_CliDbGetCpPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Db\+Get\+Cp\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get port. 
+
+\begin{DoxyReturn}{Returns}
+The client provisioning port. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_a827447d4873be83b28b9dc43cc73b9b8}\label{mtc__cp__db_8h_a827447d4873be83b28b9dc43cc73b9b8}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CliDbGetCpTlsPort@{Mtc\_CliDbGetCpTlsPort}}
+\index{Mtc\_CliDbGetCpTlsPort@{Mtc\_CliDbGetCpTlsPort}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDbGetCpTlsPort()}{Mtc\_CliDbGetCpTlsPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cli\+Db\+Get\+Cp\+Tls\+Port (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get tls port. 
+
+\begin{DoxyReturn}{Returns}
+The client provisioning tls port. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_a4ac359e02c75e6a9d035b95c4ef3d662}\label{mtc__cp__db_8h_a4ac359e02c75e6a9d035b95c4ef3d662}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CliDbSetCpPort@{Mtc\_CliDbSetCpPort}}
+\index{Mtc\_CliDbSetCpPort@{Mtc\_CliDbSetCpPort}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDbSetCpPort()}{Mtc\_CliDbSetCpPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Db\+Set\+Cp\+Port (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Port }\end{DoxyParamCaption})}
+
+
+
+Set cp port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Port} & The port.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set port successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set port failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_acdbb7c8b0c11fe7606ecb51dccaf4196}{Mtc\+\_\+\+Cli\+Db\+Get\+Cp\+Port}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_aef437382c0ddde322db2a744aece57ae}\label{mtc__cp__db_8h_aef437382c0ddde322db2a744aece57ae}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CliDbSetCpTlsPort@{Mtc\_CliDbSetCpTlsPort}}
+\index{Mtc\_CliDbSetCpTlsPort@{Mtc\_CliDbSetCpTlsPort}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CliDbSetCpTlsPort()}{Mtc\_CliDbSetCpTlsPort()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cli\+Db\+Set\+Cp\+Tls\+Port (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Port }\end{DoxyParamCaption})}
+
+
+
+Set cp tls port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Port} & The tls port.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set tls port successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set tls port failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a827447d4873be83b28b9dc43cc73b9b8}{Mtc\+\_\+\+Cli\+Db\+Get\+Cp\+Tls\+Port}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a9503a568295130b1f8897ef36dcae0c0}\label{mtc__cp__db_8h_a9503a568295130b1f8897ef36dcae0c0}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetAuthType@{Mtc\_CpDbGetAuthType}}
+\index{Mtc\_CpDbGetAuthType@{Mtc\_CpDbGetAuthType}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetAuthType()}{Mtc\_CpDbGetAuthType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Auth\+Type (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get auth type. 
+
+\begin{DoxyReturn}{Returns}
+The client provisioning auth type, see@\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+T\+Y\+PE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_ace6adb26271230c37bda047bff0d80bf}\label{mtc__cp__db_8h_ace6adb26271230c37bda047bff0d80bf}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetCc@{Mtc\_CpDbGetCc}}
+\index{Mtc\_CpDbGetCc@{Mtc\_CpDbGetCc}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetCc()}{Mtc\_CpDbGetCc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Cc (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the sip uri from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of country code.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a80ae390e598312693d90aeacf1a89d89}{Mtc\+\_\+\+Cp\+Db\+Set\+Cc}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a6114c9a7de3b5ac77bb7c454fc77328c}\label{mtc__cp__db_8h_a6114c9a7de3b5ac77bb7c454fc77328c}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetDefSMSApp@{Mtc\_CpDbGetDefSMSApp}}
+\index{Mtc\_CpDbGetDefSMSApp@{Mtc\_CpDbGetDefSMSApp}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetDefSMSApp()}{Mtc\_CpDbGetDefSMSApp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Def\+S\+M\+S\+App (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get default sms app. 
+
+\begin{DoxyReturn}{Returns}
+The client provisioning default sms app.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a301f5b2f77244717ff28bc396bf58fb7}{Mtc\+\_\+\+Cp\+Db\+Set\+Def\+S\+M\+S\+App}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ae61abfe730a2271cbda338672bf8f869}\label{mtc__cp__db_8h_ae61abfe730a2271cbda338672bf8f869}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetDmsAppId@{Mtc\_CpDbGetDmsAppId}}
+\index{Mtc\_CpDbGetDmsAppId@{Mtc\_CpDbGetDmsAppId}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetDmsAppId()}{Mtc\_CpDbGetDmsAppId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Dms\+App\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set cp D\+MS App\+Id param. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em return} & App\+Id value. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cp\+S\+Get\+Token\+Valid\+Time 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ac31843ca7cfd1fffa54d2e5edd02af61}\label{mtc__cp__db_8h_ac31843ca7cfd1fffa54d2e5edd02af61}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetFdName@{Mtc\_CpDbGetFdName}}
+\index{Mtc\_CpDbGetFdName@{Mtc\_CpDbGetFdName}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetFdName()}{Mtc\_CpDbGetFdName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Fd\+Name (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the friendly device name from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of friendly device name.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_aa766c974807281894bc9966b7c05c879}{Mtc\+\_\+\+Cp\+Db\+Set\+Fd\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_acd7fff7a8b69c0cb9c17b556a83b4731}\label{mtc__cp__db_8h_acd7fff7a8b69c0cb9c17b556a83b4731}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetImsi@{Mtc\_CpDbGetImsi}}
+\index{Mtc\_CpDbGetImsi@{Mtc\_CpDbGetImsi}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetImsi()}{Mtc\_CpDbGetImsi()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Imsi (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the I\+M\+SI from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of I\+M\+SI.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a37afea0cac66bc3a63c904fdd894ed2d}{Mtc\+\_\+\+Cp\+Db\+Set\+Imsi}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ab1970c0fdd2484abfd37f4590c1f4fc7}\label{mtc__cp__db_8h_ab1970c0fdd2484abfd37f4590c1f4fc7}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetMsisdn@{Mtc\_CpDbGetMsisdn}}
+\index{Mtc\_CpDbGetMsisdn@{Mtc\_CpDbGetMsisdn}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetMsisdn()}{Mtc\_CpDbGetMsisdn()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Msisdn (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the M\+S\+I\+S\+DN from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of M\+S\+I\+S\+DN.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a888143c4563bbf40af73fee59a1aabd9}{Mtc\+\_\+\+Cp\+Db\+Set\+Msisdn}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ac8dd4a3daac63ae646a861a01ee28e3a}\label{mtc__cp__db_8h_ac8dd4a3daac63ae646a861a01ee28e3a}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetProvVers@{Mtc\_CpDbGetProvVers}}
+\index{Mtc\_CpDbGetProvVers@{Mtc\_CpDbGetProvVers}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetProvVers()}{Mtc\_CpDbGetProvVers()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Prov\+Vers (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the supported tprovisioning version from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of supported tprovisioning version.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a4de31f35d5cf7531e94ae538815335d4}{Mtc\+\_\+\+Cp\+Db\+Set\+Prov\+Vers}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_af659069b85b082a04245579539cf7f86}\label{mtc__cp__db_8h_af659069b85b082a04245579539cf7f86}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetRcsState@{Mtc\_CpDbGetRcsState}}
+\index{Mtc\_CpDbGetRcsState@{Mtc\_CpDbGetRcsState}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetRcsState()}{Mtc\_CpDbGetRcsState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Rcs\+State (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get rcs state. 
+
+\begin{DoxyReturn}{Returns}
+The client provisioning rcs state.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a872654f491d5acd38c55f28868ec79a0}{Mtc\+\_\+\+Cp\+Db\+Set\+Rcs\+State}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a2a94b1dbf3ab7c12f67376f25cf79e28}\label{mtc__cp__db_8h_a2a94b1dbf3ab7c12f67376f25cf79e28}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetSipUri@{Mtc\_CpDbGetSipUri}}
+\index{Mtc\_CpDbGetSipUri@{Mtc\_CpDbGetSipUri}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetSipUri()}{Mtc\_CpDbGetSipUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Sip\+Uri (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the sip uri from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of sip uri.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a3d7a3bd45dee0d481027b781c61a67df}{Mtc\+\_\+\+Cp\+Db\+Set\+Sip\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a69189acf37c223b089e98694bd0dce93}\label{mtc__cp__db_8h_a69189acf37c223b089e98694bd0dce93}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetSrvAddr@{Mtc\_CpDbGetSrvAddr}}
+\index{Mtc\_CpDbGetSrvAddr@{Mtc\_CpDbGetSrvAddr}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetSrvAddr()}{Mtc\_CpDbGetSrvAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Addr (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the server address from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of server address.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a87a292da1b0d18b56f00f334563767f3}{Mtc\+\_\+\+Cp\+Db\+Set\+Srv\+Addr}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a5e8636c310aaef883a754d0f4907324e}\label{mtc__cp__db_8h_a5e8636c310aaef883a754d0f4907324e}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetSrvCnt@{Mtc\_CpDbGetSrvCnt}}
+\index{Mtc\_CpDbGetSrvCnt@{Mtc\_CpDbGetSrvCnt}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetSrvCnt()}{Mtc\_CpDbGetSrvCnt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Cnt (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the server count from database. 
+
+\begin{DoxyReturn}{Returns}
+The number of server count. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_af3641e536d394effdf073b5de85e28e6}\label{mtc__cp__db_8h_af3641e536d394effdf073b5de85e28e6}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetSrvRoot@{Mtc\_CpDbGetSrvRoot}}
+\index{Mtc\_CpDbGetSrvRoot@{Mtc\_CpDbGetSrvRoot}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetSrvRoot()}{Mtc\_CpDbGetSrvRoot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Root (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the service root from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of service root.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a1876f1cfac6b7922b23201864573ced6}{Mtc\+\_\+\+Cp\+Db\+Set\+Srv\+Root}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a5902a9b91861c7f82223fad8cc1ef1e3}\label{mtc__cp__db_8h_a5902a9b91861c7f82223fad8cc1ef1e3}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetSuptHdrCmpl@{Mtc\_CpDbGetSuptHdrCmpl}}
+\index{Mtc\_CpDbGetSuptHdrCmpl@{Mtc\_CpDbGetSuptHdrCmpl}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetSuptHdrCmpl()}{Mtc\_CpDbGetSuptHdrCmpl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Cp\+Db\+Get\+Supt\+Hdr\+Cmpl (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the support pgw header completion flag from database. 
+
+\begin{DoxyReturn}{Returns}
+The support flag.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a2a008f16d434c178b6ee8c23b23b1de8}{Mtc\+\_\+\+Cp\+Db\+Set\+Supt\+Hdr\+Cmpl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a7560d4975dc186dada51478f462e32b6}\label{mtc__cp__db_8h_a7560d4975dc186dada51478f462e32b6}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetTmrLenWaitCp@{Mtc\_CpDbGetTmrLenWaitCp}}
+\index{Mtc\_CpDbGetTmrLenWaitCp@{Mtc\_CpDbGetTmrLenWaitCp}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetTmrLenWaitCp()}{Mtc\_CpDbGetTmrLenWaitCp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Tmr\+Len\+Wait\+Cp (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the length of wait cp timer from database. 
+
+\begin{DoxyReturn}{Returns}
+The timer wait cp len.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ab31ef2380e50d6387e785fcabb7efd86}{Mtc\+\_\+\+Cp\+Db\+Set\+Tmr\+Len\+Wait\+Cp}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a753ad1db8edc61992223e1265ee5838e}\label{mtc__cp__db_8h_a753ad1db8edc61992223e1265ee5838e}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetTmrLenWaitPt@{Mtc\_CpDbGetTmrLenWaitPt}}
+\index{Mtc\_CpDbGetTmrLenWaitPt@{Mtc\_CpDbGetTmrLenWaitPt}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetTmrLenWaitPt()}{Mtc\_CpDbGetTmrLenWaitPt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Tmr\+Len\+Wait\+Pt (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the length of wait prompt timer from database. 
+
+\begin{DoxyReturn}{Returns}
+The timer wait prompt len.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ac9ed1e317ff1e92a8f814a5653363d58}{Mtc\+\_\+\+Cp\+Db\+Set\+Tmr\+Len\+Wait\+Pt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ac2ed7e2fc74d16de8198ee34fc0fb8a1}\label{mtc__cp__db_8h_ac2ed7e2fc74d16de8198ee34fc0fb8a1}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetToken@{Mtc\_CpDbGetToken}}
+\index{Mtc\_CpDbGetToken@{Mtc\_CpDbGetToken}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetToken()}{Mtc\_CpDbGetToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Cp\+Db\+Get\+Token (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the token from database. 
+
+\begin{DoxyReturn}{Returns}
+The string of token. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_a738a9efeb5bc47d69e90afbec116b239}\label{mtc__cp__db_8h_a738a9efeb5bc47d69e90afbec116b239}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetTokenValidTime@{Mtc\_CpDbGetTokenValidTime}}
+\index{Mtc\_CpDbGetTokenValidTime@{Mtc\_CpDbGetTokenValidTime}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetTokenValidTime()}{Mtc\_CpDbGetTokenValidTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Token\+Valid\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get cp token Valid\+Time. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set token valid\+Time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set token valid\+Time failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cp\+S\+Get\+Token\+Valid\+Time 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ae439f94e521f1e1efab36d09bf9d97b9}\label{mtc__cp__db_8h_ae439f94e521f1e1efab36d09bf9d97b9}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetVer@{Mtc\_CpDbGetVer}}
+\index{Mtc\_CpDbGetVer@{Mtc\_CpDbGetVer}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetVer()}{Mtc\_CpDbGetVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Ver (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Srv\+Type }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Type} & the server type, see@\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The client provisioning version. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_a7e16c1f3841bb088e038ccff31ed16fd}\label{mtc__cp__db_8h_a7e16c1f3841bb088e038ccff31ed16fd}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetVerTimestamp@{Mtc\_CpDbGetVerTimestamp}}
+\index{Mtc\_CpDbGetVerTimestamp@{Mtc\_CpDbGetVerTimestamp}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetVerTimestamp()}{Mtc\_CpDbGetVerTimestamp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Cp\+Db\+Get\+Ver\+Timestamp (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get client provisioning database get version timestamp. 
+
+\begin{DoxyReturn}{Returns}
+The client provisioning version timestamp. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__cp__db_8h_ae6a49e02a8ab2ba624f41c508ec739eb}\label{mtc__cp__db_8h_ae6a49e02a8ab2ba624f41c508ec739eb}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbGetVerValidTime@{Mtc\_CpDbGetVerValidTime}}
+\index{Mtc\_CpDbGetVerValidTime@{Mtc\_CpDbGetVerValidTime}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbGetVerValidTime()}{Mtc\_CpDbGetVerValidTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Get\+Ver\+Valid\+Time (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get validity time from database. 
+
+\begin{DoxyReturn}{Returns}
+The validity time.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a18bfa67f81d2902945c92f1d4b15f84b}{Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Valid\+Time}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a176945279d33e7496e537ad77ea84f56}\label{mtc__cp__db_8h_a176945279d33e7496e537ad77ea84f56}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetAuthType@{Mtc\_CpDbSetAuthType}}
+\index{Mtc\_CpDbSetAuthType@{Mtc\_CpDbSetAuthType}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetAuthType()}{Mtc\_CpDbSetAuthType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Auth\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Auth\+Type }\end{DoxyParamCaption})}
+
+
+
+Set cp auth type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Auth\+Type} & The auth type, see@\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+E\+N\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set auth type successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set auth type failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a9503a568295130b1f8897ef36dcae0c0}{Mtc\+\_\+\+Cp\+Db\+Get\+Auth\+Type}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a80ae390e598312693d90aeacf1a89d89}\label{mtc__cp__db_8h_a80ae390e598312693d90aeacf1a89d89}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetCc@{Mtc\_CpDbSetCc}}
+\index{Mtc\_CpDbSetCc@{Mtc\_CpDbSetCc}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetCc()}{Mtc\_CpDbSetCc()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Cc (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Country\+Code }\end{DoxyParamCaption})}
+
+
+
+Set country code. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Country\+Code} & Country code string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set country code successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set country code failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ace6adb26271230c37bda047bff0d80bf}{Mtc\+\_\+\+Cp\+Db\+Get\+Cc}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a301f5b2f77244717ff28bc396bf58fb7}\label{mtc__cp__db_8h_a301f5b2f77244717ff28bc396bf58fb7}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetDefSMSApp@{Mtc\_CpDbSetDefSMSApp}}
+\index{Mtc\_CpDbSetDefSMSApp@{Mtc\_CpDbSetDefSMSApp}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetDefSMSApp()}{Mtc\_CpDbSetDefSMSApp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Def\+S\+M\+S\+App (\begin{DoxyParamCaption}\item[{Z\+I\+NT}]{i\+Def\+S\+M\+S\+App }\end{DoxyParamCaption})}
+
+
+
+Set default sms app. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Def\+S\+M\+S\+App} & default sms app.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set default sms app successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set default sms app failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a6114c9a7de3b5ac77bb7c454fc77328c}{Mtc\+\_\+\+Cp\+Db\+Get\+Def\+S\+M\+S\+App}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a0fc2a0dcc60f45ee6cae071edb6765d1}\label{mtc__cp__db_8h_a0fc2a0dcc60f45ee6cae071edb6765d1}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetDmsAppId@{Mtc\_CpDbSetDmsAppId}}
+\index{Mtc\_CpDbSetDmsAppId@{Mtc\_CpDbSetDmsAppId}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetDmsAppId()}{Mtc\_CpDbSetDmsAppId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Dms\+App\+Id (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+App\+Id }\end{DoxyParamCaption})}
+
+
+
+Set cp D\+MS App\+Id param. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+App\+Id} & Add Dms platform App\+Id .\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set Dms platform App\+Id successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set Dms platform App\+Id.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cp\+Set\+Token\+Valid\+Time 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_aa766c974807281894bc9966b7c05c879}\label{mtc__cp__db_8h_aa766c974807281894bc9966b7c05c879}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetFdName@{Mtc\_CpDbSetFdName}}
+\index{Mtc\_CpDbSetFdName@{Mtc\_CpDbSetFdName}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetFdName()}{Mtc\_CpDbSetFdName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Fd\+Name (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Fd\+Name }\end{DoxyParamCaption})}
+
+
+
+Set friendly device name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Fd\+Name} & friendly device name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set friendly device name successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set friendly device name failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ac31843ca7cfd1fffa54d2e5edd02af61}{Mtc\+\_\+\+Cp\+Db\+Get\+Fd\+Name}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a37afea0cac66bc3a63c904fdd894ed2d}\label{mtc__cp__db_8h_a37afea0cac66bc3a63c904fdd894ed2d}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetImsi@{Mtc\_CpDbSetImsi}}
+\index{Mtc\_CpDbSetImsi@{Mtc\_CpDbSetImsi}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetImsi()}{Mtc\_CpDbSetImsi()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Imsi (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Imsi }\end{DoxyParamCaption})}
+
+
+
+Set I\+M\+SI. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Imsi} & I\+M\+SI string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set I\+M\+SI successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set I\+M\+SI failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_acd7fff7a8b69c0cb9c17b556a83b4731}{Mtc\+\_\+\+Cp\+Db\+Get\+Imsi}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a888143c4563bbf40af73fee59a1aabd9}\label{mtc__cp__db_8h_a888143c4563bbf40af73fee59a1aabd9}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetMsisdn@{Mtc\_CpDbSetMsisdn}}
+\index{Mtc\_CpDbSetMsisdn@{Mtc\_CpDbSetMsisdn}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetMsisdn()}{Mtc\_CpDbSetMsisdn()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Msisdn (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msisdn }\end{DoxyParamCaption})}
+
+
+
+Set M\+S\+I\+S\+DN. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Msisdn} & M\+S\+I\+S\+DN string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set M\+S\+I\+S\+DN successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set M\+S\+I\+S\+DN failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ab1970c0fdd2484abfd37f4590c1f4fc7}{Mtc\+\_\+\+Cp\+Db\+Get\+Msisdn}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a4de31f35d5cf7531e94ae538815335d4}\label{mtc__cp__db_8h_a4de31f35d5cf7531e94ae538815335d4}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetProvVers@{Mtc\_CpDbSetProvVers}}
+\index{Mtc\_CpDbSetProvVers@{Mtc\_CpDbSetProvVers}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetProvVers()}{Mtc\_CpDbSetProvVers()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Prov\+Vers (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Prov\+Vers }\end{DoxyParamCaption})}
+
+
+
+Set supported provisioning version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Prov\+Vers} & supported provisioning version string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set provisioning version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set provisioning version failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ac8dd4a3daac63ae646a861a01ee28e3a}{Mtc\+\_\+\+Cp\+Db\+Get\+Prov\+Vers}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a872654f491d5acd38c55f28868ec79a0}\label{mtc__cp__db_8h_a872654f491d5acd38c55f28868ec79a0}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetRcsState@{Mtc\_CpDbSetRcsState}}
+\index{Mtc\_CpDbSetRcsState@{Mtc\_CpDbSetRcsState}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetRcsState()}{Mtc\_CpDbSetRcsState()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Rcs\+State (\begin{DoxyParamCaption}\item[{Z\+I\+NT}]{i\+Rcs\+State }\end{DoxyParamCaption})}
+
+
+
+Set rcs state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Rcs\+State} & rcs state.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set rcs state successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set rcs state failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_af659069b85b082a04245579539cf7f86}{Mtc\+\_\+\+Cp\+Db\+Get\+Rcs\+State}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a3d7a3bd45dee0d481027b781c61a67df}\label{mtc__cp__db_8h_a3d7a3bd45dee0d481027b781c61a67df}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetSipUri@{Mtc\_CpDbSetSipUri}}
+\index{Mtc\_CpDbSetSipUri@{Mtc\_CpDbSetSipUri}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetSipUri()}{Mtc\_CpDbSetSipUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Sip\+Uri (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Sip\+Uri }\end{DoxyParamCaption})}
+
+
+
+Set sip uri. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Sip\+Uri} & sip uri string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set sip uri successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set sip uri failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a2a94b1dbf3ab7c12f67376f25cf79e28}{Mtc\+\_\+\+Cp\+Db\+Get\+Sip\+Uri}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a87a292da1b0d18b56f00f334563767f3}\label{mtc__cp__db_8h_a87a292da1b0d18b56f00f334563767f3}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetSrvAddr@{Mtc\_CpDbSetSrvAddr}}
+\index{Mtc\_CpDbSetSrvAddr@{Mtc\_CpDbSetSrvAddr}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetSrvAddr()}{Mtc\_CpDbSetSrvAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Srv\+Addr (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Srv\+Addr }\end{DoxyParamCaption})}
+
+
+
+Set server address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Srv\+Addr} & server address string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set server address successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set server address failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a69189acf37c223b089e98694bd0dce93}{Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Addr}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a1876f1cfac6b7922b23201864573ced6}\label{mtc__cp__db_8h_a1876f1cfac6b7922b23201864573ced6}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetSrvRoot@{Mtc\_CpDbSetSrvRoot}}
+\index{Mtc\_CpDbSetSrvRoot@{Mtc\_CpDbSetSrvRoot}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetSrvRoot()}{Mtc\_CpDbSetSrvRoot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Srv\+Root (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Srv\+Root }\end{DoxyParamCaption})}
+
+
+
+Set service root. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Srv\+Root} & service root string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set service root successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set service root failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_af3641e536d394effdf073b5de85e28e6}{Mtc\+\_\+\+Cp\+Db\+Get\+Srv\+Root}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a2a008f16d434c178b6ee8c23b23b1de8}\label{mtc__cp__db_8h_a2a008f16d434c178b6ee8c23b23b1de8}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetSuptHdrCmpl@{Mtc\_CpDbSetSuptHdrCmpl}}
+\index{Mtc\_CpDbSetSuptHdrCmpl@{Mtc\_CpDbSetSuptHdrCmpl}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetSuptHdrCmpl()}{Mtc\_CpDbSetSuptHdrCmpl()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Supt\+Hdr\+Cmpl (\begin{DoxyParamCaption}\item[{Z\+B\+O\+OL}]{b\+Flag }\end{DoxyParamCaption})}
+
+
+
+Set support pgw header completion flag. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b\+Flag} & support pgw header completion flag.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set support flag successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set support flag failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a5902a9b91861c7f82223fad8cc1ef1e3}{Mtc\+\_\+\+Cp\+Db\+Get\+Supt\+Hdr\+Cmpl}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ab31ef2380e50d6387e785fcabb7efd86}\label{mtc__cp__db_8h_ab31ef2380e50d6387e785fcabb7efd86}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetTmrLenWaitCp@{Mtc\_CpDbSetTmrLenWaitCp}}
+\index{Mtc\_CpDbSetTmrLenWaitCp@{Mtc\_CpDbSetTmrLenWaitCp}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetTmrLenWaitCp()}{Mtc\_CpDbSetTmrLenWaitCp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Tmr\+Len\+Wait\+Cp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Tmr\+Len }\end{DoxyParamCaption})}
+
+
+
+Set wait cp timer length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Tmr\+Len} & the timer length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set timer length successfully.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a7560d4975dc186dada51478f462e32b6}{Mtc\+\_\+\+Cp\+Db\+Get\+Tmr\+Len\+Wait\+Cp}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ac9ed1e317ff1e92a8f814a5653363d58}\label{mtc__cp__db_8h_ac9ed1e317ff1e92a8f814a5653363d58}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetTmrLenWaitPt@{Mtc\_CpDbSetTmrLenWaitPt}}
+\index{Mtc\_CpDbSetTmrLenWaitPt@{Mtc\_CpDbSetTmrLenWaitPt}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetTmrLenWaitPt()}{Mtc\_CpDbSetTmrLenWaitPt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Tmr\+Len\+Wait\+Pt (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Tmr\+Len }\end{DoxyParamCaption})}
+
+
+
+Set wait prompt timer length. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Tmr\+Len} & the timer length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set timer length successfully.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a753ad1db8edc61992223e1265ee5838e}{Mtc\+\_\+\+Cp\+Db\+Get\+Tmr\+Len\+Wait\+Pt}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a9e4bf4b3337300b272472d80836afe1b}\label{mtc__cp__db_8h_a9e4bf4b3337300b272472d80836afe1b}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetToken@{Mtc\_CpDbSetToken}}
+\index{Mtc\_CpDbSetToken@{Mtc\_CpDbSetToken}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetToken()}{Mtc\_CpDbSetToken()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Token (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Token }\end{DoxyParamCaption})}
+
+
+
+Set token. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Token} & Token string.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set token successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set token failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ac2ed7e2fc74d16de8198ee34fc0fb8a1}{Mtc\+\_\+\+Cp\+Db\+Get\+Token}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a6d309a1594abc259789dfe907d7485a4}\label{mtc__cp__db_8h_a6d309a1594abc259789dfe907d7485a4}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetTokenValidTime@{Mtc\_CpDbSetTokenValidTime}}
+\index{Mtc\_CpDbSetTokenValidTime@{Mtc\_CpDbSetTokenValidTime}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetTokenValidTime()}{Mtc\_CpDbSetTokenValidTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Token\+Valid\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Valid\+Time }\end{DoxyParamCaption})}
+
+
+
+Set cp token Valid\+Time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Valid\+Time} & The Valid\+Time.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set token valid\+Time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set token valid\+Time failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Cp\+Set\+Token\+Valid\+Time 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a95f79c2b3eb8aa1df3ccc460080a8328}\label{mtc__cp__db_8h_a95f79c2b3eb8aa1df3ccc460080a8328}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetVer@{Mtc\_CpDbSetVer}}
+\index{Mtc\_CpDbSetVer@{Mtc\_CpDbSetVer}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetVer()}{Mtc\_CpDbSetVer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Ver (\begin{DoxyParamCaption}\item[{Z\+I\+NT}]{i\+Ver,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Type }\end{DoxyParamCaption})}
+
+
+
+Set version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ver} & Version. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Type} & the server type, see@\+E\+N\+\_\+\+M\+T\+C\+\_\+\+C\+P\+\_\+\+S\+R\+V\+\_\+\+T\+Y\+PE. ~\newline
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set version successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set version failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ae439f94e521f1e1efab36d09bf9d97b9}{Mtc\+\_\+\+Cp\+Db\+Get\+Ver}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_ae6455b81419b4473967e9f76b5204394}\label{mtc__cp__db_8h_ae6455b81419b4473967e9f76b5204394}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetVerParamZero@{Mtc\_CpDbSetVerParamZero}}
+\index{Mtc\_CpDbSetVerParamZero@{Mtc\_CpDbSetVerParamZero}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetVerParamZero()}{Mtc\_CpDbSetVerParamZero()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Param\+Zero (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Set version param zero. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set version param zero successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set version param zero failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__cp__db_8h_a2d0fed70276ab20d92ede1e7d7f6bf83}\label{mtc__cp__db_8h_a2d0fed70276ab20d92ede1e7d7f6bf83}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetVerTimestamp@{Mtc\_CpDbSetVerTimestamp}}
+\index{Mtc\_CpDbSetVerTimestamp@{Mtc\_CpDbSetVerTimestamp}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetVerTimestamp()}{Mtc\_CpDbSetVerTimestamp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Timestamp (\begin{DoxyParamCaption}\item[{Z\+I\+NT}]{i\+Ver\+Timestamp }\end{DoxyParamCaption})}
+
+
+
+Set version timestamp. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Ver\+Timestamp} & version timestamp.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set version timestamp successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set version timestamp failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_a7e16c1f3841bb088e038ccff31ed16fd}{Mtc\+\_\+\+Cp\+Db\+Get\+Ver\+Timestamp}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__cp__db_8h_a18bfa67f81d2902945c92f1d4b15f84b}\label{mtc__cp__db_8h_a18bfa67f81d2902945c92f1d4b15f84b}} 
+\index{mtc\_cp\_db.h@{mtc\_cp\_db.h}!Mtc\_CpDbSetVerValidTime@{Mtc\_CpDbSetVerValidTime}}
+\index{Mtc\_CpDbSetVerValidTime@{Mtc\_CpDbSetVerValidTime}!mtc\_cp\_db.h@{mtc\_cp\_db.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_CpDbSetVerValidTime()}{Mtc\_CpDbSetVerValidTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Cp\+Db\+Set\+Ver\+Valid\+Time (\begin{DoxyParamCaption}\item[{Z\+I\+NT}]{i\+Time }\end{DoxyParamCaption})}
+
+
+
+Set validity time. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Time} & the validity time.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set timer length successfully.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__cp__db_8h_ae6a49e02a8ab2ba624f41c508ec739eb}{Mtc\+\_\+\+Cp\+Db\+Get\+Ver\+Valid\+Time}} 
+\end{DoxySeeAlso}

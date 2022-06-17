@@ -1,0 +1,186 @@
+\hypertarget{mtc__gs__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+gs\+\_\+cb.h File Reference}
+\label{mtc__gs__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gs\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gs\_cb.h}}
+
+
+M\+TC Geolocation Share Callback Interface Functions.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}\label{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}) (Z\+U\+I\+NT i\+G\+Info\+Id)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC GS geolocation information push operation ok. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}\label{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}}) (Z\+U\+I\+NT i\+G\+Info\+Id, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC GS geolocation information push operation failed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_aeaad6fd46ad9d46235bfda3db333eaf8}{Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Recv\+Ivt}} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs push information receive invitation callback. The callback will be notified if user receiving push information invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_a265ce9889001efaab5e0513aa67e9fbc}{Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Share\+Ok}} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs push information share ok callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_af1f6935448eb66fd0dd67dfdf296de8f}{Mtc\+\_\+\+Gs\+G\+Info\+Push\+Text}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_addfb52e6a082317d573e5fa6300c7c91}{Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Share\+Failed}} (\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs push information share failed callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_af1f6935448eb66fd0dd67dfdf296de8f}{Mtc\+\_\+\+Gs\+G\+Info\+Push\+Text}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_a8ff17967b19d222535804a7996b59a0d}{Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Released}} (\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs push information released callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_af1f6935448eb66fd0dd67dfdf296de8f}{Mtc\+\_\+\+Gs\+G\+Info\+Push\+Text}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_a816fe8fd27d87a6db633662b45d3572b}{Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Recv\+Done}} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs push information receive done callback. The callback will be notified if user received a geolocation information. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_a51a710bacb5d513cf9ecfd2487292109}{Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Recv\+Ivt}} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs pull information receive invitation callback. The callback will be notified if user receiving pull information invitation. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_ae42ac7dedde90925490166baf1e5f999}{Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Share\+Ok}} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs pull information share ok callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_afef0588f4b1f2ddd74af14d77d5ee0b5}{Mtc\+\_\+\+Gs\+G\+Info\+Pull\+Via\+Ft}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_ab15cf3ae129cdb8778e8e37792867e00}{Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Share\+Failed}} (\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs pull information share failed callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_afef0588f4b1f2ddd74af14d77d5ee0b5}{Mtc\+\_\+\+Gs\+G\+Info\+Pull\+Via\+Ft}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gs__cb_8h_a6969ad8d9af9739cff176e61e13d0725}{Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Share\+Blocked}} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gs pull information share blocked callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_afef0588f4b1f2ddd74af14d77d5ee0b5}{Mtc\+\_\+\+Gs\+G\+Info\+Pull\+Via\+Ft}} results. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gs__cb_8h_adad334dbe215234cbb743ee0176e17f4}\label{mtc__gs__cb_8h_adad334dbe215234cbb743ee0176e17f4}} 
+Z\+F\+U\+NC Z\+V\+O\+ID {\bfseries Mtc\+\_\+\+Gs\+Cb\+Set\+Fetch\+G\+Info\+Ok} (\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}} pfn\+Cb)
+\item 
+\mbox{\Hypertarget{mtc__gs__cb_8h_a17686ebdfd2bbe66b99391a55786d0fa}\label{mtc__gs__cb_8h_a17686ebdfd2bbe66b99391a55786d0fa}} 
+Z\+F\+U\+NC Z\+V\+O\+ID {\bfseries Mtc\+\_\+\+Gs\+Cb\+Set\+Fetch\+G\+Info\+Failed} (\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}} pfn\+Cb)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Geolocation Share Callback Interface Functions. 
+
+This file includes geolocation share callback interface function. Those function is used to manage geolocation information. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__gs__cb_8h_a51a710bacb5d513cf9ecfd2487292109}\label{mtc__gs__cb_8h_a51a710bacb5d513cf9ecfd2487292109}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPullGInfoRecvIvt@{Mtc\_GsCbSetPullGInfoRecvIvt}}
+\index{Mtc\_GsCbSetPullGInfoRecvIvt@{Mtc\_GsCbSetPullGInfoRecvIvt}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPullGInfoRecvIvt()}{Mtc\_GsCbSetPullGInfoRecvIvt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Recv\+Ivt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs pull information receive invitation callback. The callback will be notified if user receiving pull information invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_a6969ad8d9af9739cff176e61e13d0725}\label{mtc__gs__cb_8h_a6969ad8d9af9739cff176e61e13d0725}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPullGInfoShareBlocked@{Mtc\_GsCbSetPullGInfoShareBlocked}}
+\index{Mtc\_GsCbSetPullGInfoShareBlocked@{Mtc\_GsCbSetPullGInfoShareBlocked}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPullGInfoShareBlocked()}{Mtc\_GsCbSetPullGInfoShareBlocked()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Share\+Blocked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs pull information share blocked callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_afef0588f4b1f2ddd74af14d77d5ee0b5}{Mtc\+\_\+\+Gs\+G\+Info\+Pull\+Via\+Ft}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_ab15cf3ae129cdb8778e8e37792867e00}\label{mtc__gs__cb_8h_ab15cf3ae129cdb8778e8e37792867e00}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPullGInfoShareFailed@{Mtc\_GsCbSetPullGInfoShareFailed}}
+\index{Mtc\_GsCbSetPullGInfoShareFailed@{Mtc\_GsCbSetPullGInfoShareFailed}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPullGInfoShareFailed()}{Mtc\_GsCbSetPullGInfoShareFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Share\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs pull information share failed callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_afef0588f4b1f2ddd74af14d77d5ee0b5}{Mtc\+\_\+\+Gs\+G\+Info\+Pull\+Via\+Ft}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_ae42ac7dedde90925490166baf1e5f999}\label{mtc__gs__cb_8h_ae42ac7dedde90925490166baf1e5f999}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPullGInfoShareOk@{Mtc\_GsCbSetPullGInfoShareOk}}
+\index{Mtc\_GsCbSetPullGInfoShareOk@{Mtc\_GsCbSetPullGInfoShareOk}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPullGInfoShareOk()}{Mtc\_GsCbSetPullGInfoShareOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Pull\+G\+Info\+Share\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs pull information share ok callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_afef0588f4b1f2ddd74af14d77d5ee0b5}{Mtc\+\_\+\+Gs\+G\+Info\+Pull\+Via\+Ft}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_a816fe8fd27d87a6db633662b45d3572b}\label{mtc__gs__cb_8h_a816fe8fd27d87a6db633662b45d3572b}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPushGInfoRecvDone@{Mtc\_GsCbSetPushGInfoRecvDone}}
+\index{Mtc\_GsCbSetPushGInfoRecvDone@{Mtc\_GsCbSetPushGInfoRecvDone}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPushGInfoRecvDone()}{Mtc\_GsCbSetPushGInfoRecvDone()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Recv\+Done (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs push information receive done callback. The callback will be notified if user received a geolocation information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_aeaad6fd46ad9d46235bfda3db333eaf8}\label{mtc__gs__cb_8h_aeaad6fd46ad9d46235bfda3db333eaf8}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPushGInfoRecvIvt@{Mtc\_GsCbSetPushGInfoRecvIvt}}
+\index{Mtc\_GsCbSetPushGInfoRecvIvt@{Mtc\_GsCbSetPushGInfoRecvIvt}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPushGInfoRecvIvt()}{Mtc\_GsCbSetPushGInfoRecvIvt()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Recv\+Ivt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs push information receive invitation callback. The callback will be notified if user receiving push information invitation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_a8ff17967b19d222535804a7996b59a0d}\label{mtc__gs__cb_8h_a8ff17967b19d222535804a7996b59a0d}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPushGInfoReleased@{Mtc\_GsCbSetPushGInfoReleased}}
+\index{Mtc\_GsCbSetPushGInfoReleased@{Mtc\_GsCbSetPushGInfoReleased}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPushGInfoReleased()}{Mtc\_GsCbSetPushGInfoReleased()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs push information released callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_af1f6935448eb66fd0dd67dfdf296de8f}{Mtc\+\_\+\+Gs\+G\+Info\+Push\+Text}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_addfb52e6a082317d573e5fa6300c7c91}\label{mtc__gs__cb_8h_addfb52e6a082317d573e5fa6300c7c91}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPushGInfoShareFailed@{Mtc\_GsCbSetPushGInfoShareFailed}}
+\index{Mtc\_GsCbSetPushGInfoShareFailed@{Mtc\_GsCbSetPushGInfoShareFailed}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPushGInfoShareFailed()}{Mtc\_GsCbSetPushGInfoShareFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Share\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_aa29493dcc4f9ec8125b3371ad57d3ca2}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+X\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs push information share failed callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_af1f6935448eb66fd0dd67dfdf296de8f}{Mtc\+\_\+\+Gs\+G\+Info\+Push\+Text}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gs__cb_8h_a265ce9889001efaab5e0513aa67e9fbc}\label{mtc__gs__cb_8h_a265ce9889001efaab5e0513aa67e9fbc}} 
+\index{mtc\_gs\_cb.h@{mtc\_gs\_cb.h}!Mtc\_GsCbSetPushGInfoShareOk@{Mtc\_GsCbSetPushGInfoShareOk}}
+\index{Mtc\_GsCbSetPushGInfoShareOk@{Mtc\_GsCbSetPushGInfoShareOk}!mtc\_gs\_cb.h@{mtc\_gs\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GsCbSetPushGInfoShareOk()}{Mtc\_GsCbSetPushGInfoShareOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gs\+Cb\+Set\+Push\+G\+Info\+Share\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gs__cb_8h_a8f0bfa5a3938f442e2ff05ebd5ed9ca9}{P\+F\+N\+\_\+\+M\+T\+C\+G\+S\+G\+I\+N\+F\+O\+P\+U\+S\+H\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gs push information share ok callback. The callback is one of \mbox{\hyperlink{mtc__gs__ginfo_8h_af1f6935448eb66fd0dd67dfdf296de8f}{Mtc\+\_\+\+Gs\+G\+Info\+Push\+Text}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

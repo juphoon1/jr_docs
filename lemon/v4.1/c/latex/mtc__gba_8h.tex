@@ -1,0 +1,232 @@
+\hypertarget{mtc__gba_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+gba.h File Reference}
+\label{mtc__gba_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gba.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gba.h}}
+
+
+M\+TC G\+BA Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__gba_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__gba_8h_a9b1b8f6ba2b6cca6531ebb13f58f1b8b}{M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC gba status code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a40d1cc4b9beb99572b596851e55967d1}\label{mtc__gba_8h_a40d1cc4b9beb99572b596851e55967d1}} 
+\#define \mbox{\hyperlink{mtc__gba_8h_a40d1cc4b9beb99572b596851e55967d1}{M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 1)
+\begin{DoxyCompactList}\small\item\em authentication failed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a87445797d3050d1da08be8276c4f070d}\label{mtc__gba_8h_a87445797d3050d1da08be8276c4f070d}} 
+\#define \mbox{\hyperlink{mtc__gba_8h_a87445797d3050d1da08be8276c4f070d}{M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+P\+I\+C\+K\+\_\+\+X\+ML}}~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 2)
+\begin{DoxyCompactList}\small\item\em pick xml \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a6ed5d7f2cee1fb30920d00eddd32d16a}\label{mtc__gba_8h_a6ed5d7f2cee1fb30920d00eddd32d16a}} 
+\#define \mbox{\hyperlink{mtc__gba_8h_a6ed5d7f2cee1fb30920d00eddd32d16a}{M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 3)
+\begin{DoxyCompactList}\small\item\em timeout \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a069d4b405c34864322e959c62601c629}\label{mtc__gba_8h_a069d4b405c34864322e959c62601c629}} 
+\#define \mbox{\hyperlink{mtc__gba_8h_a069d4b405c34864322e959c62601c629}{M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK}}~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 4)
+\begin{DoxyCompactList}\small\item\em network \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a3d5514364f7a73dbbc8a75d0ecfbe2c9}\label{mtc__gba_8h_a3d5514364f7a73dbbc8a75d0ecfbe2c9}} 
+\#define \mbox{\hyperlink{mtc__gba_8h_a3d5514364f7a73dbbc8a75d0ecfbe2c9}{M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 200)
+\begin{DoxyCompactList}\small\item\em other \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__gba_8h_ae6e6c7fbfb81d5b2153dd59250386ebc}\label{mtc__gba_8h_ae6e6c7fbfb81d5b2153dd59250386ebc}} 
+typedef enum \mbox{\hyperlink{mtc__gba_8h_a24100c5e5271302787ccada1b6f89201}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__gba_8h_ae6e6c7fbfb81d5b2153dd59250386ebc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+BA bootstrapping type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a83c02492325e8da5f7b064753ae4731b}\label{mtc__gba_8h_a83c02492325e8da5f7b064753ae4731b}} 
+typedef enum \mbox{\hyperlink{mtc__gba_8h_a0ccb0206028609daffa19acd4c70b7ff}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+U\+A\+\_\+\+S\+E\+C\+\_\+\+P\+R\+O\+T\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__gba_8h_a83c02492325e8da5f7b064753ae4731b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+U\+A\+\_\+\+S\+E\+C\+\_\+\+P\+R\+O\+T\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em Type define of ua security protocol identifier type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__gba_8h_a24100c5e5271302787ccada1b6f89201}\label{mtc__gba_8h_a24100c5e5271302787ccada1b6f89201}} 
+enum \mbox{\hyperlink{mtc__gba_8h_a24100c5e5271302787ccada1b6f89201}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+U\+N\+K\+N\+W\+ON}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+ME}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+U\+I\+CC}
+ \}
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+BA bootstrapping type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba_8h_a0ccb0206028609daffa19acd4c70b7ff}\label{mtc__gba_8h_a0ccb0206028609daffa19acd4c70b7ff}} 
+enum \mbox{\hyperlink{mtc__gba_8h_a0ccb0206028609daffa19acd4c70b7ff}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+U\+A\+\_\+\+S\+E\+C\+\_\+\+P\+R\+O\+T\+\_\+\+T\+Y\+PE}} \{ {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+U\+A\+\_\+\+S\+E\+C\+\_\+\+P\+R\+O\+T\+\_\+\+H\+T\+TP}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+U\+A\+\_\+\+S\+E\+C\+\_\+\+P\+R\+O\+T\+\_\+\+I\+M\+AP}
+ \}
+\begin{DoxyCompactList}\small\item\em Type define of ua security protocol identifier type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} (Z\+U\+I\+NT i\+Boot\+Type, Z\+U\+I\+NT i\+Cookie)
+\begin{DoxyCompactList}\small\item\em gba bootstrapping start. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gba_8h_a7044960747483d1885d11d6d894172a8}{Mtc\+\_\+\+Gba\+Boot\+Stop}} (Z\+U\+I\+NT i\+Boot\+Id)
+\begin{DoxyCompactList}\small\item\em gba bootstrapping stop. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gba_8h_a1f4cfdb22c1f02a106083918c1fb10f8}{Mtc\+\_\+\+Gba\+Auth\+Enter\+Sec\+Ctx}} (Z\+U\+I\+NT i\+Boot\+Id, Z\+C\+H\+AR $\ast$pc\+Rsp, Z\+C\+H\+AR $\ast$pc\+Ik, Z\+C\+H\+AR $\ast$pc\+Ck, Z\+C\+H\+AR $\ast$pc\+Auts)
+\begin{DoxyCompactList}\small\item\em gba enter security context. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__gba_8h_a50fc95021142f0fd9bf2499a1bd5a34a}{Mtc\+\_\+\+Gba\+Auth\+Set\+Ks\+Ext\+Naf}} (Z\+C\+H\+AR $\ast$pc\+Ks\+Ext\+Naf)
+\begin{DoxyCompactList}\small\item\em gba set Ks\+\_\+ext\+\_\+\+N\+AF. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gba_8h_a8b196dc6110ac0550b2a3a3be929334b}{Mtc\+\_\+\+Gba\+Auth\+Get\+Ks\+Naf}} (Z\+C\+H\+AR $\ast$pc\+Naf\+Fqdn, Z\+U\+I\+NT i\+Ua\+Sec\+Prot)
+\begin{DoxyCompactList}\small\item\em gba get Ks\+\_\+\+N\+AF. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__gba_8h_a30e11277cce25ecae05113bd0f14b623}{Mtc\+\_\+\+Gba\+Auth\+Get\+Btid}} ()
+\begin{DoxyCompactList}\small\item\em gba get B-\/\+T\+ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC G\+BA Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__gba_8h_a9b1b8f6ba2b6cca6531ebb13f58f1b8b}\label{mtc__gba_8h_a9b1b8f6ba2b6cca6531ebb13f58f1b8b}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!MTC\_GBA\_ERR\_NO@{MTC\_GBA\_ERR\_NO}}
+\index{MTC\_GBA\_ERR\_NO@{MTC\_GBA\_ERR\_NO}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_GBA\_ERR\_NO}{MTC\_GBA\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_a83265d57876d246c76d4276c5eb30dd0}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+G\+BA}} + 0)}
+
+
+
+M\+TC gba status code. 
+
+no error 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__gba_8h_a1f4cfdb22c1f02a106083918c1fb10f8}\label{mtc__gba_8h_a1f4cfdb22c1f02a106083918c1fb10f8}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!Mtc\_GbaAuthEnterSecCtx@{Mtc\_GbaAuthEnterSecCtx}}
+\index{Mtc\_GbaAuthEnterSecCtx@{Mtc\_GbaAuthEnterSecCtx}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaAuthEnterSecCtx()}{Mtc\_GbaAuthEnterSecCtx()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gba\+Auth\+Enter\+Sec\+Ctx (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Boot\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Rsp,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ik,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ck,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Auts }\end{DoxyParamCaption})}
+
+
+
+gba enter security context. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Boot\+Id} & The boot id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Rsp} & The reponse. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ik} & The ik. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Ck} & The ck. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Auts} & The auts.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & enter successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & enter failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__gba_8h_a30e11277cce25ecae05113bd0f14b623}\label{mtc__gba_8h_a30e11277cce25ecae05113bd0f14b623}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!Mtc\_GbaAuthGetBtid@{Mtc\_GbaAuthGetBtid}}
+\index{Mtc\_GbaAuthGetBtid@{Mtc\_GbaAuthGetBtid}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaAuthGetBtid()}{Mtc\_GbaAuthGetBtid()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gba\+Auth\+Get\+Btid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gba get B-\/\+T\+ID. 
+
+\begin{DoxyReturn}{Returns}
+B-\/\+T\+ID string successfully, otherwise return empty string.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gba_8h_a8b196dc6110ac0550b2a3a3be929334b}{Mtc\+\_\+\+Gba\+Auth\+Get\+Ks\+Naf}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gba_8h_a8b196dc6110ac0550b2a3a3be929334b}\label{mtc__gba_8h_a8b196dc6110ac0550b2a3a3be929334b}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!Mtc\_GbaAuthGetKsNaf@{Mtc\_GbaAuthGetKsNaf}}
+\index{Mtc\_GbaAuthGetKsNaf@{Mtc\_GbaAuthGetKsNaf}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaAuthGetKsNaf()}{Mtc\_GbaAuthGetKsNaf()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Gba\+Auth\+Get\+Ks\+Naf (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Naf\+Fqdn,  }\item[{Z\+U\+I\+NT}]{i\+Ua\+Sec\+Prot }\end{DoxyParamCaption})}
+
+
+
+gba get Ks\+\_\+\+N\+AF. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Naf\+Fqdn} & The naf fqdn. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Ua\+Sec\+Prot} & The ua security protocol identifier type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ks\+\_\+\+N\+AF base64 string successfully, otherwise return empty string.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gba_8h_a30e11277cce25ecae05113bd0f14b623}{Mtc\+\_\+\+Gba\+Auth\+Get\+Btid}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gba_8h_a50fc95021142f0fd9bf2499a1bd5a34a}\label{mtc__gba_8h_a50fc95021142f0fd9bf2499a1bd5a34a}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!Mtc\_GbaAuthSetKsExtNaf@{Mtc\_GbaAuthSetKsExtNaf}}
+\index{Mtc\_GbaAuthSetKsExtNaf@{Mtc\_GbaAuthSetKsExtNaf}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaAuthSetKsExtNaf()}{Mtc\_GbaAuthSetKsExtNaf()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Gba\+Auth\+Set\+Ks\+Ext\+Naf (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Ks\+Ext\+Naf }\end{DoxyParamCaption})}
+
+
+
+gba set Ks\+\_\+ext\+\_\+\+N\+AF. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Ks\+Ext\+Naf} & The Ks\+\_\+ext\+\_\+\+N\+AF.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & set successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & set failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}\label{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!Mtc\_GbaBootStart@{Mtc\_GbaBootStart}}
+\index{Mtc\_GbaBootStart@{Mtc\_GbaBootStart}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaBootStart()}{Mtc\_GbaBootStart()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Gba\+Boot\+Start (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Boot\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Cookie }\end{DoxyParamCaption})}
+
+
+
+gba bootstrapping start. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Boot\+Type} & The boot type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gba_8h_ae6e6c7fbfb81d5b2153dd59250386ebc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+B\+A\+\_\+\+B\+O\+O\+T\+\_\+\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boot id successfully, otherwise Z\+M\+A\+X\+U\+I\+NT.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gba_8h_a7044960747483d1885d11d6d894172a8}{Mtc\+\_\+\+Gba\+Boot\+Stop}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__gba_8h_a7044960747483d1885d11d6d894172a8}\label{mtc__gba_8h_a7044960747483d1885d11d6d894172a8}} 
+\index{mtc\_gba.h@{mtc\_gba.h}!Mtc\_GbaBootStop@{Mtc\_GbaBootStop}}
+\index{Mtc\_GbaBootStop@{Mtc\_GbaBootStop}!mtc\_gba.h@{mtc\_gba.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaBootStop()}{Mtc\_GbaBootStop()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gba\+Boot\+Stop (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Boot\+Id }\end{DoxyParamCaption})}
+
+
+
+gba bootstrapping stop. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Boot\+Id} & The boot id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,950 @@
+\hypertarget{mtc__im__shareddata_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im\+\_\+shareddata.h File Reference}
+\label{mtc__im__shareddata_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_shareddata.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im\_shareddata.h}}
+
+
+M\+TC Instant Message Shared Data Interface Functions.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a3095438bcd20f9fbef0cad753db6187e}\label{mtc__im__shareddata_8h_a3095438bcd20f9fbef0cad753db6187e}} 
+typedef enum \mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im__shareddata_8h_a3095438bcd20f9fbef0cad753db6187e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM session shared map/sketch action type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a8a47a013637aa406e26ea2f80640abb7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+V\+E\+R\+S\+I\+ON}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a5057ca1829041206a1fc5b177e440aee}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+D\+R\+A\+W\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a9b4ff6f66ba5ad153e420e41991b71f1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+O\+UR}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a75e210e0d4836f0b26956d74e48c71a1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+I\+M\+A\+GE}}, 
+\newline
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ad01b57327d849adcf08db444aa3d9940}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+B\+O\+U\+N\+DS}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a056572f3903c6c64b3f942f8ff7e1e0e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+N\+DO}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173aa2defdce6b8e43f9cd002e91dddfcb6b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+M\+A\+R\+K\+ER}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ab46bafaf6f9d7cfae4b25e77d8acd964}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+S\+ER}}, 
+\newline
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173aeccc591a7bf4c82279721b3b81360339}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+VE}}, 
+\mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ad76d436bb3a95de66d38bf5c8222f164}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+N\+K\+O\+WN}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM session shared map/sketch action type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__shareddata_8h_afd5265822c07b99a1d7984f73cbe52b5}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Seq}} (Z\+U\+I\+NT i\+Shared\+Data\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata seq from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__shareddata_8h_a67e560b572b585c682a405a01b5941b1}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Close}} (Z\+U\+I\+NT i\+Shared\+Data\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata close from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a3b71e08f48b148b498a7b1475ce005c4}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Action\+Lst\+Count}} (Z\+U\+I\+NT i\+Shared\+Data\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata action list count from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_adfede14ec41077055568f1bc5092240d}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Action\+Type\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata action type by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a31254f199684bf64225671ded3b6cf98}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Version\+Id\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata version id by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+F\+L\+O\+AT \mbox{\hyperlink{mtc__im__shareddata_8h_a463800b40796ec6f72d0ef60b2644b31}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Width\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata drawing width by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a3395e1747c31c45bb779d9d524c94995}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Colour\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata drawing colour by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im__shareddata_8h_a7530d82a1b694261819fa774d0ba89f9}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Erase\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata drawing erase by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_acd080f7280b0fe01dd649be7a9614b94}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Point\+Data\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata drawing point data by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a379ae9be753ff0b2809a0b79a30cc031}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Bounds\+Data\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata bounds data by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ac89fcc184dc7cda2b12d4fa7d0816067}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Title\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata marker title by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_afc0ac0c1ac6e91eae1bd3c53cf3996c1}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Snippet\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata marker snippet by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a5916e6b06bd4025bcc200fbb8eaa4b45}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Id\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata marker id by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_afed0602a897dd2f558a35ef590090bbc}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Point\+Data\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata marker point by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_afcbad06075df1fd9f6bd87f4208c69d6}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+User\+Point\+Data\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata user point by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a4271fa3b620e8a8a3eeb90e99a1f950a}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Remove\+Id\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata remove id by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_af1dc4a82c8dbf82883633531b87e5401}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Back\+Ground\+Colour\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata back ground colour by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a78fd048923f9d68bc8f8386d3b386939}{Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Image\+Data\+By\+Index}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Index, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM get shareddata image data by index from message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a7574108aff97d44ead73013126d87f9e}{Mtc\+\_\+\+Im\+Shared\+Data\+Create}} ()
+\begin{DoxyCompactList}\small\item\em M\+TC IM create shared data. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ab1fac81e4d45137b010bef116b37af15}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Close}} (Z\+U\+I\+NT i\+Shared\+Data\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC shared data add close. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a09f17c894fe3a1240971c4caff175e17}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Version}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add version. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a2a30066cffb30362d4c142fccfc9b65d}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Drawing}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+F\+L\+O\+AT f\+Width, Z\+U\+I\+NT i\+Colour, Z\+B\+O\+OL b\+Erase, Z\+C\+H\+AR $\ast$pc\+Point\+Content, Z\+U\+I\+NT i\+Point\+Content\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add drawing. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ae7d340798a2922210ee70c366af3c0d6}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Undo}} (Z\+U\+I\+NT i\+Shared\+Data\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add undo. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ac6a0eb26a188c8d227ecbbac3f347920}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Bounds}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+C\+H\+AR $\ast$pc\+Point\+Content, Z\+U\+I\+NT i\+Point\+Content\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add bounds. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a8d2683b412d734d7653f41be9dfad346}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Marker}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+C\+H\+AR $\ast$pc\+Title, Z\+C\+H\+AR $\ast$pc\+Snippet, Z\+C\+H\+AR $\ast$pc\+Id, Z\+C\+H\+AR $\ast$pc\+Point\+Content, Z\+U\+I\+NT i\+Point\+Content\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add marker. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ac82d9833bf4d8f08ae1fb6baf39070d2}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Remove}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+C\+H\+AR $\ast$pc\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add remove. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ac0a3c732bc525560c5c86cee62ccb71d}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+User}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+C\+H\+AR $\ast$pc\+Point\+Content, Z\+U\+I\+NT i\+Point\+Content\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add marker. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_ad95acebdb52cb1e25a68b6ae5b780cc7}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Back\+Ground\+Colour}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Colour)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add back gourd colour. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_a22a6af7a1debadb798c62a3fc59d963c}{Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Image}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+C\+H\+AR $\ast$pc\+Image\+Content, Z\+U\+I\+NT i\+Image\+Content\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add back gourd colour. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_aaa139fff3843c0edb6531b1d23d328db}{Mtc\+\_\+\+Im\+Shared\+Data\+Generate\+Content}} (Z\+U\+I\+NT i\+Shared\+Data\+Id, Z\+U\+I\+NT i\+Seq, Z\+C\+H\+AR $\ast$$\ast$ppc\+Content, Z\+U\+I\+NT $\ast$pi\+Len)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data add back gourd colour. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im__shareddata_8h_aedda39e2c9c45126870af7d711c27993}{Mtc\+\_\+\+Im\+Shared\+Data\+Double\+To\+Hex\+Str}} (Z\+D\+O\+U\+B\+LE d\+Double, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data double to hex string. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+D\+O\+U\+B\+LE \mbox{\hyperlink{mtc__im__shareddata_8h_ad00dbec893e8cf10a771db63054dcaab}{Mtc\+\_\+\+Im\+Shared\+Data\+Hex\+Str\+To\+Double}} (Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC IM shared data hex string to double. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Message Shared Data Interface Functions. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_TYPE@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_TYPE}}
+\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_TYPE@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_TYPE}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_TYPE}{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM session shared map/sketch action type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_VERSION@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_VERSION}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_VERSION@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_VERSION}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a8a47a013637aa406e26ea2f80640abb7}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a8a47a013637aa406e26ea2f80640abb7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+V\+E\+R\+S\+I\+ON&version \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_DRAWING@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_DRAWING}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_DRAWING@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_DRAWING}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a5057ca1829041206a1fc5b177e440aee}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a5057ca1829041206a1fc5b177e440aee}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+D\+R\+A\+W\+I\+NG&drawing \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BACKGROUND\_COLOUR@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BACKGROUND\_COLOUR}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BACKGROUND\_COLOUR@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BACKGROUND\_COLOUR}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a9b4ff6f66ba5ad153e420e41991b71f1}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a9b4ff6f66ba5ad153e420e41991b71f1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+O\+UR&background\+\_\+colour \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_IMAGE@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_IMAGE}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_IMAGE@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_IMAGE}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a75e210e0d4836f0b26956d74e48c71a1}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a75e210e0d4836f0b26956d74e48c71a1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+I\+M\+A\+GE&image \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BOUNDS@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BOUNDS}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BOUNDS@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_BOUNDS}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ad01b57327d849adcf08db444aa3d9940}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ad01b57327d849adcf08db444aa3d9940}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+B\+O\+U\+N\+DS&bounds \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNDO@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNDO}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNDO@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNDO}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a056572f3903c6c64b3f942f8ff7e1e0e}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173a056572f3903c6c64b3f942f8ff7e1e0e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+N\+DO&undo \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_MARKER@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_MARKER}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_MARKER@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_MARKER}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173aa2defdce6b8e43f9cd002e91dddfcb6b}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173aa2defdce6b8e43f9cd002e91dddfcb6b}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+M\+A\+R\+K\+ER&marker \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_USER@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_USER}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_USER@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_USER}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ab46bafaf6f9d7cfae4b25e77d8acd964}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ab46bafaf6f9d7cfae4b25e77d8acd964}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+S\+ER&user \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_REMOVE@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_REMOVE}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_REMOVE@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_REMOVE}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173aeccc591a7bf4c82279721b3b81360339}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173aeccc591a7bf4c82279721b3b81360339}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+R\+E\+M\+O\+VE&remove \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNKOWN@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNKOWN}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNKOWN@{EN\_MTC\_IM\_SHAREDDATA\_ACTION\_UNKOWN}}}\mbox{\Hypertarget{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ad76d436bb3a95de66d38bf5c8222f164}\label{mtc__im__shareddata_8h_ac26ed519a589222628feb764d34aa173ad76d436bb3a95de66d38bf5c8222f164}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+H\+A\+R\+E\+D\+D\+A\+T\+A\+\_\+\+A\+C\+T\+I\+O\+N\+\_\+\+U\+N\+K\+O\+WN&unkown \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ad95acebdb52cb1e25a68b6ae5b780cc7}\label{mtc__im__shareddata_8h_ad95acebdb52cb1e25a68b6ae5b780cc7}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddBackGroundColour@{Mtc\_ImSharedDataAddBackGroundColour}}
+\index{Mtc\_ImSharedDataAddBackGroundColour@{Mtc\_ImSharedDataAddBackGroundColour}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddBackGroundColour()}{Mtc\_ImSharedDataAddBackGroundColour()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Back\+Ground\+Colour (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Colour }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add back gourd colour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Colour} & The colour.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ac6a0eb26a188c8d227ecbbac3f347920}\label{mtc__im__shareddata_8h_ac6a0eb26a188c8d227ecbbac3f347920}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddBounds@{Mtc\_ImSharedDataAddBounds}}
+\index{Mtc\_ImSharedDataAddBounds@{Mtc\_ImSharedDataAddBounds}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddBounds()}{Mtc\_ImSharedDataAddBounds()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Bounds (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Point\+Content,  }\item[{Z\+U\+I\+NT}]{i\+Point\+Content\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add bounds. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Point\+Content} & The point content. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Point\+Content\+Len} & The point content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ab1fac81e4d45137b010bef116b37af15}\label{mtc__im__shareddata_8h_ab1fac81e4d45137b010bef116b37af15}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddClose@{Mtc\_ImSharedDataAddClose}}
+\index{Mtc\_ImSharedDataAddClose@{Mtc\_ImSharedDataAddClose}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddClose()}{Mtc\_ImSharedDataAddClose()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Close (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC shared data add close. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a2a30066cffb30362d4c142fccfc9b65d}\label{mtc__im__shareddata_8h_a2a30066cffb30362d4c142fccfc9b65d}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddDrawing@{Mtc\_ImSharedDataAddDrawing}}
+\index{Mtc\_ImSharedDataAddDrawing@{Mtc\_ImSharedDataAddDrawing}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddDrawing()}{Mtc\_ImSharedDataAddDrawing()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Drawing (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+F\+L\+O\+AT}]{f\+Width,  }\item[{Z\+U\+I\+NT}]{i\+Colour,  }\item[{Z\+B\+O\+OL}]{b\+Erase,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Point\+Content,  }\item[{Z\+U\+I\+NT}]{i\+Point\+Content\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add drawing. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Width} & The width. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Colour} & The colour. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Erase} & The erase flag. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Point\+Content} & The point content. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Point\+Content\+Len} & The point content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a22a6af7a1debadb798c62a3fc59d963c}\label{mtc__im__shareddata_8h_a22a6af7a1debadb798c62a3fc59d963c}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddImage@{Mtc\_ImSharedDataAddImage}}
+\index{Mtc\_ImSharedDataAddImage@{Mtc\_ImSharedDataAddImage}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddImage()}{Mtc\_ImSharedDataAddImage()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Image (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Image\+Content,  }\item[{Z\+U\+I\+NT}]{i\+Image\+Content\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add back gourd colour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Image\+Content} & The image content. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Image\+Content\+Len} & The image content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a8d2683b412d734d7653f41be9dfad346}\label{mtc__im__shareddata_8h_a8d2683b412d734d7653f41be9dfad346}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddMarker@{Mtc\_ImSharedDataAddMarker}}
+\index{Mtc\_ImSharedDataAddMarker@{Mtc\_ImSharedDataAddMarker}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddMarker()}{Mtc\_ImSharedDataAddMarker()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Marker (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Title,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Snippet,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Point\+Content,  }\item[{Z\+U\+I\+NT}]{i\+Point\+Content\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add marker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Title} & The title. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Snippet} & The snippet. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Id} & The id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Point\+Content} & The point content. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Point\+Content\+Len} & The point content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ac82d9833bf4d8f08ae1fb6baf39070d2}\label{mtc__im__shareddata_8h_ac82d9833bf4d8f08ae1fb6baf39070d2}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddRemove@{Mtc\_ImSharedDataAddRemove}}
+\index{Mtc\_ImSharedDataAddRemove@{Mtc\_ImSharedDataAddRemove}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddRemove()}{Mtc\_ImSharedDataAddRemove()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Remove (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add remove. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Id} & The id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ae7d340798a2922210ee70c366af3c0d6}\label{mtc__im__shareddata_8h_ae7d340798a2922210ee70c366af3c0d6}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddUndo@{Mtc\_ImSharedDataAddUndo}}
+\index{Mtc\_ImSharedDataAddUndo@{Mtc\_ImSharedDataAddUndo}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddUndo()}{Mtc\_ImSharedDataAddUndo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Undo (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add undo. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ac0a3c732bc525560c5c86cee62ccb71d}\label{mtc__im__shareddata_8h_ac0a3c732bc525560c5c86cee62ccb71d}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddUser@{Mtc\_ImSharedDataAddUser}}
+\index{Mtc\_ImSharedDataAddUser@{Mtc\_ImSharedDataAddUser}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddUser()}{Mtc\_ImSharedDataAddUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Point\+Content,  }\item[{Z\+U\+I\+NT}]{i\+Point\+Content\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add marker. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Point\+Content} & The point content. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Point\+Content\+Len} & The point content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a09f17c894fe3a1240971c4caff175e17}\label{mtc__im__shareddata_8h_a09f17c894fe3a1240971c4caff175e17}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataAddVersion@{Mtc\_ImSharedDataAddVersion}}
+\index{Mtc\_ImSharedDataAddVersion@{Mtc\_ImSharedDataAddVersion}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataAddVersion()}{Mtc\_ImSharedDataAddVersion()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Add\+Version (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add version. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Id} & The version id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & add data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & add data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a7574108aff97d44ead73013126d87f9e}\label{mtc__im__shareddata_8h_a7574108aff97d44ead73013126d87f9e}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataCreate@{Mtc\_ImSharedDataCreate}}
+\index{Mtc\_ImSharedDataCreate@{Mtc\_ImSharedDataCreate}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataCreate()}{Mtc\_ImSharedDataCreate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM create shared data. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & shareddataid. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_aedda39e2c9c45126870af7d711c27993}\label{mtc__im__shareddata_8h_aedda39e2c9c45126870af7d711c27993}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataDoubleToHexStr@{Mtc\_ImSharedDataDoubleToHexStr}}
+\index{Mtc\_ImSharedDataDoubleToHexStr@{Mtc\_ImSharedDataDoubleToHexStr}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataDoubleToHexStr()}{Mtc\_ImSharedDataDoubleToHexStr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Double\+To\+Hex\+Str (\begin{DoxyParamCaption}\item[{Z\+D\+O\+U\+B\+LE}]{d\+Double,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data double to hex string. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em d\+Double} & The double data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pp\+Data} & The hex string. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Data\+Size} & The hex string size.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & data convert successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & data convert failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_aaa139fff3843c0edb6531b1d23d328db}\label{mtc__im__shareddata_8h_aaa139fff3843c0edb6531b1d23d328db}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGenerateContent@{Mtc\_ImSharedDataGenerateContent}}
+\index{Mtc\_ImSharedDataGenerateContent@{Mtc\_ImSharedDataGenerateContent}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGenerateContent()}{Mtc\_ImSharedDataGenerateContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Generate\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Seq,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data add back gourd colour. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shread\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The sharedata content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The sharedata content length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & generate data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & generate data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a3b71e08f48b148b498a7b1475ce005c4}\label{mtc__im__shareddata_8h_a3b71e08f48b148b498a7b1475ce005c4}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetActionLstCount@{Mtc\_ImSharedDataGetActionLstCount}}
+\index{Mtc\_ImSharedDataGetActionLstCount@{Mtc\_ImSharedDataGetActionLstCount}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetActionLstCount()}{Mtc\_ImSharedDataGetActionLstCount()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Action\+Lst\+Count (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata action list count from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & action list count. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_adfede14ec41077055568f1bc5092240d}\label{mtc__im__shareddata_8h_adfede14ec41077055568f1bc5092240d}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetActionTypeByIndex@{Mtc\_ImSharedDataGetActionTypeByIndex}}
+\index{Mtc\_ImSharedDataGetActionTypeByIndex@{Mtc\_ImSharedDataGetActionTypeByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetActionTypeByIndex()}{Mtc\_ImSharedDataGetActionTypeByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Action\+Type\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata action type by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & action type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_af1dc4a82c8dbf82883633531b87e5401}\label{mtc__im__shareddata_8h_af1dc4a82c8dbf82883633531b87e5401}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetBackGroundColourByIndex@{Mtc\_ImSharedDataGetBackGroundColourByIndex}}
+\index{Mtc\_ImSharedDataGetBackGroundColourByIndex@{Mtc\_ImSharedDataGetBackGroundColourByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetBackGroundColourByIndex()}{Mtc\_ImSharedDataGetBackGroundColourByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Back\+Ground\+Colour\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata back ground colour by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & back ground colour. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a379ae9be753ff0b2809a0b79a30cc031}\label{mtc__im__shareddata_8h_a379ae9be753ff0b2809a0b79a30cc031}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetBoundsDataByIndex@{Mtc\_ImSharedDataGetBoundsDataByIndex}}
+\index{Mtc\_ImSharedDataGetBoundsDataByIndex@{Mtc\_ImSharedDataGetBoundsDataByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetBoundsDataByIndex()}{Mtc\_ImSharedDataGetBoundsDataByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Bounds\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata bounds data by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The bounds data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The bounds data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a67e560b572b585c682a405a01b5941b1}\label{mtc__im__shareddata_8h_a67e560b572b585c682a405a01b5941b1}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetClose@{Mtc\_ImSharedDataGetClose}}
+\index{Mtc\_ImSharedDataGetClose@{Mtc\_ImSharedDataGetClose}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetClose()}{Mtc\_ImSharedDataGetClose()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Close (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata close from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & close flag. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a3395e1747c31c45bb779d9d524c94995}\label{mtc__im__shareddata_8h_a3395e1747c31c45bb779d9d524c94995}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetDrawingColourByIndex@{Mtc\_ImSharedDataGetDrawingColourByIndex}}
+\index{Mtc\_ImSharedDataGetDrawingColourByIndex@{Mtc\_ImSharedDataGetDrawingColourByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetDrawingColourByIndex()}{Mtc\_ImSharedDataGetDrawingColourByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Colour\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata drawing colour by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & drawing colour. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a7530d82a1b694261819fa774d0ba89f9}\label{mtc__im__shareddata_8h_a7530d82a1b694261819fa774d0ba89f9}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetDrawingEraseByIndex@{Mtc\_ImSharedDataGetDrawingEraseByIndex}}
+\index{Mtc\_ImSharedDataGetDrawingEraseByIndex@{Mtc\_ImSharedDataGetDrawingEraseByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetDrawingEraseByIndex()}{Mtc\_ImSharedDataGetDrawingEraseByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Erase\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata drawing erase by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & drawing erase. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_acd080f7280b0fe01dd649be7a9614b94}\label{mtc__im__shareddata_8h_acd080f7280b0fe01dd649be7a9614b94}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetDrawingPointDataByIndex@{Mtc\_ImSharedDataGetDrawingPointDataByIndex}}
+\index{Mtc\_ImSharedDataGetDrawingPointDataByIndex@{Mtc\_ImSharedDataGetDrawingPointDataByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetDrawingPointDataByIndex()}{Mtc\_ImSharedDataGetDrawingPointDataByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Point\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata drawing point data by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The point data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The point data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a463800b40796ec6f72d0ef60b2644b31}\label{mtc__im__shareddata_8h_a463800b40796ec6f72d0ef60b2644b31}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetDrawingWidthByIndex@{Mtc\_ImSharedDataGetDrawingWidthByIndex}}
+\index{Mtc\_ImSharedDataGetDrawingWidthByIndex@{Mtc\_ImSharedDataGetDrawingWidthByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetDrawingWidthByIndex()}{Mtc\_ImSharedDataGetDrawingWidthByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+F\+L\+O\+AT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Drawing\+Width\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata drawing width by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & drawing width. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a78fd048923f9d68bc8f8386d3b386939}\label{mtc__im__shareddata_8h_a78fd048923f9d68bc8f8386d3b386939}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetImageDataByIndex@{Mtc\_ImSharedDataGetImageDataByIndex}}
+\index{Mtc\_ImSharedDataGetImageDataByIndex@{Mtc\_ImSharedDataGetImageDataByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetImageDataByIndex()}{Mtc\_ImSharedDataGetImageDataByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Image\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata image data by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The image data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The image length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a5916e6b06bd4025bcc200fbb8eaa4b45}\label{mtc__im__shareddata_8h_a5916e6b06bd4025bcc200fbb8eaa4b45}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetMarkerIdByIndex@{Mtc\_ImSharedDataGetMarkerIdByIndex}}
+\index{Mtc\_ImSharedDataGetMarkerIdByIndex@{Mtc\_ImSharedDataGetMarkerIdByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetMarkerIdByIndex()}{Mtc\_ImSharedDataGetMarkerIdByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Id\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata marker id by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The marker id data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The marker id data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_afed0602a897dd2f558a35ef590090bbc}\label{mtc__im__shareddata_8h_afed0602a897dd2f558a35ef590090bbc}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetMarkerPointDataByIndex@{Mtc\_ImSharedDataGetMarkerPointDataByIndex}}
+\index{Mtc\_ImSharedDataGetMarkerPointDataByIndex@{Mtc\_ImSharedDataGetMarkerPointDataByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetMarkerPointDataByIndex()}{Mtc\_ImSharedDataGetMarkerPointDataByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Point\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata marker point by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The marker point data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The marker point data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_afc0ac0c1ac6e91eae1bd3c53cf3996c1}\label{mtc__im__shareddata_8h_afc0ac0c1ac6e91eae1bd3c53cf3996c1}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetMarkerSnippetByIndex@{Mtc\_ImSharedDataGetMarkerSnippetByIndex}}
+\index{Mtc\_ImSharedDataGetMarkerSnippetByIndex@{Mtc\_ImSharedDataGetMarkerSnippetByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetMarkerSnippetByIndex()}{Mtc\_ImSharedDataGetMarkerSnippetByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Snippet\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata marker snippet by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The marker snippet data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The marker snippet data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ac89fcc184dc7cda2b12d4fa7d0816067}\label{mtc__im__shareddata_8h_ac89fcc184dc7cda2b12d4fa7d0816067}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetMarkerTitleByIndex@{Mtc\_ImSharedDataGetMarkerTitleByIndex}}
+\index{Mtc\_ImSharedDataGetMarkerTitleByIndex@{Mtc\_ImSharedDataGetMarkerTitleByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetMarkerTitleByIndex()}{Mtc\_ImSharedDataGetMarkerTitleByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Marker\+Title\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata marker title by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The marker title data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The marker title data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a4271fa3b620e8a8a3eeb90e99a1f950a}\label{mtc__im__shareddata_8h_a4271fa3b620e8a8a3eeb90e99a1f950a}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetRemoveIdByIndex@{Mtc\_ImSharedDataGetRemoveIdByIndex}}
+\index{Mtc\_ImSharedDataGetRemoveIdByIndex@{Mtc\_ImSharedDataGetRemoveIdByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetRemoveIdByIndex()}{Mtc\_ImSharedDataGetRemoveIdByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Remove\+Id\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata remove id by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The remove id data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The remove id length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_afd5265822c07b99a1d7984f73cbe52b5}\label{mtc__im__shareddata_8h_afd5265822c07b99a1d7984f73cbe52b5}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetSeq@{Mtc\_ImSharedDataGetSeq}}
+\index{Mtc\_ImSharedDataGetSeq@{Mtc\_ImSharedDataGetSeq}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetSeq()}{Mtc\_ImSharedDataGetSeq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Seq (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata seq from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & seq. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_afcbad06075df1fd9f6bd87f4208c69d6}\label{mtc__im__shareddata_8h_afcbad06075df1fd9f6bd87f4208c69d6}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetUserPointDataByIndex@{Mtc\_ImSharedDataGetUserPointDataByIndex}}
+\index{Mtc\_ImSharedDataGetUserPointDataByIndex@{Mtc\_ImSharedDataGetUserPointDataByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetUserPointDataByIndex()}{Mtc\_ImSharedDataGetUserPointDataByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+User\+Point\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Content,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Len }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata user point by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Content} & The user point data. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Len} & The user point data length.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & get data successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & get data failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_a31254f199684bf64225671ded3b6cf98}\label{mtc__im__shareddata_8h_a31254f199684bf64225671ded3b6cf98}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataGetVersionIdByIndex@{Mtc\_ImSharedDataGetVersionIdByIndex}}
+\index{Mtc\_ImSharedDataGetVersionIdByIndex@{Mtc\_ImSharedDataGetVersionIdByIndex}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataGetVersionIdByIndex()}{Mtc\_ImSharedDataGetVersionIdByIndex()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+Shared\+Data\+Get\+Version\+Id\+By\+Index (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Shared\+Data\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Index }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM get shareddata version id by index from message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Shared\+Data\+Id} & The shareddata id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Index} & The action index.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & version id. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im__shareddata_8h_ad00dbec893e8cf10a771db63054dcaab}\label{mtc__im__shareddata_8h_ad00dbec893e8cf10a771db63054dcaab}} 
+\index{mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}!Mtc\_ImSharedDataHexStrToDouble@{Mtc\_ImSharedDataHexStrToDouble}}
+\index{Mtc\_ImSharedDataHexStrToDouble@{Mtc\_ImSharedDataHexStrToDouble}!mtc\_im\_shareddata.h@{mtc\_im\_shareddata.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImSharedDataHexStrToDouble()}{Mtc\_ImSharedDataHexStrToDouble()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+D\+O\+U\+B\+LE Mtc\+\_\+\+Im\+Shared\+Data\+Hex\+Str\+To\+Double (\begin{DoxyParamCaption}\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC IM shared data hex string to double. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Data} & The hex string. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The hex string size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double data successfully, otherwise return 0. 
+\end{DoxyReturn}

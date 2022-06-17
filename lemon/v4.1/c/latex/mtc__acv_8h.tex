@@ -1,0 +1,76 @@
+\hypertarget{mtc__acv_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+acv.h File Reference}
+\label{mtc__acv_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_acv.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_acv.h}}
+
+
+M\+TC archive Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__acv_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__acv_8h_a23c882fd504ac5354e939a420368c8b7}{Mtc\+\_\+\+Acv\+Commit}} (Z\+C\+H\+AR $\ast$pc\+Root, Z\+C\+H\+AR $\ast$pc\+Dir, Z\+C\+H\+AR $\ast$pc\+Acv\+Name, Z\+C\+H\+AR $\ast$pc\+Memo, Z\+C\+H\+AR $\ast$pc\+Device\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC archive logs and commit to server. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__acv_8h_a2702dfb3e41bf2d551485971953122ac}{Mtc\+\_\+\+Acv\+CommitX}} (Z\+C\+H\+AR $\ast$pc\+Root, Z\+C\+H\+AR $\ast$$\ast$ppc\+Dirs, Z\+C\+H\+AR $\ast$pc\+Acv\+Name, Z\+C\+H\+AR $\ast$pc\+Memo, Z\+C\+H\+AR $\ast$pc\+Device\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC archive logs and commit to server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC archive Interface Functions. 
+
+This file includes archive interface function. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__acv_8h_a23c882fd504ac5354e939a420368c8b7}\label{mtc__acv_8h_a23c882fd504ac5354e939a420368c8b7}} 
+\index{mtc\_acv.h@{mtc\_acv.h}!Mtc\_AcvCommit@{Mtc\_AcvCommit}}
+\index{Mtc\_AcvCommit@{Mtc\_AcvCommit}!mtc\_acv.h@{mtc\_acv.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_AcvCommit()}{Mtc\_AcvCommit()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Acv\+Commit (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Root,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Dir,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Acv\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Memo,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Device\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC archive logs and commit to server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Root} & The root directory. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Dir} & The log diretory. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Acv\+Name} & The archived file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Memo} & The memo. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Device\+Id} & The device id. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__acv_8h_a2702dfb3e41bf2d551485971953122ac}\label{mtc__acv_8h_a2702dfb3e41bf2d551485971953122ac}} 
+\index{mtc\_acv.h@{mtc\_acv.h}!Mtc\_AcvCommitX@{Mtc\_AcvCommitX}}
+\index{Mtc\_AcvCommitX@{Mtc\_AcvCommitX}!mtc\_acv.h@{mtc\_acv.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_AcvCommitX()}{Mtc\_AcvCommitX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Acv\+CommitX (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Root,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Dirs,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Acv\+Name,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Memo,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Device\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC archive logs and commit to server. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Root} & The root directory. \\
+\hline
+\mbox{\texttt{ in}}  & {\em ppc\+Dirs} & The log diretories. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Acv\+Name} & The archived file name. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Memo} & The memo. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Device\+Id} & The device id. \\
+\hline
+\end{DoxyParams}

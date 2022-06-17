@@ -1,0 +1,76 @@
+\hypertarget{mtc__ntp_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+ntp.h File Reference}
+\label{mtc__ntp_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_ntp.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_ntp.h}}
+
+
+M\+TC ntp Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__ntp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__ntp_8h_a0638075883e659f370c167384661fc58}\label{mtc__ntp_8h_a0638075883e659f370c167384661fc58}} 
+\#define \mbox{\hyperlink{mtc__ntp_8h_a0638075883e659f370c167384661fc58}{E\+N\+\_\+\+M\+T\+C\+\_\+\+N\+T\+P\+\_\+\+S\+Y\+S\+TM}}~0
+\begin{DoxyCompactList}\small\item\em ntp request owner is system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__ntp_8h_a2bbce57f316e4c2a7b1a968efa9efd65}\label{mtc__ntp_8h_a2bbce57f316e4c2a7b1a968efa9efd65}} 
+\#define \mbox{\hyperlink{mtc__ntp_8h_a2bbce57f316e4c2a7b1a968efa9efd65}{E\+N\+\_\+\+M\+T\+C\+\_\+\+N\+T\+P\+\_\+\+U\+SR}}~1
+\begin{DoxyCompactList}\small\item\em ntp request owner is user \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__ntp_8h_aa3788b1651660230de786fea0e112584}{Mtc\+\_\+\+Ntp\+Req}} (Z\+U\+I\+NT i\+Owner)
+\begin{DoxyCompactList}\small\item\em Begin Ntp Request. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__ntp_8h_a33a23befebfdc3088ac5460b8ea81ec3}{Mtc\+\_\+\+Ntp\+Get\+Time}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Get Ntp timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC ntp Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__ntp_8h_a33a23befebfdc3088ac5460b8ea81ec3}\label{mtc__ntp_8h_a33a23befebfdc3088ac5460b8ea81ec3}} 
+\index{mtc\_ntp.h@{mtc\_ntp.h}!Mtc\_NtpGetTime@{Mtc\_NtpGetTime}}
+\index{Mtc\_NtpGetTime@{Mtc\_NtpGetTime}!mtc\_ntp.h@{mtc\_ntp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_NtpGetTime()}{Mtc\_NtpGetTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Ntp\+Get\+Time (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Ntp timestamp. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+U\+I\+NT} & Ntp timestamp, if never initiate ntp request return 0. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__ntp_8h_aa3788b1651660230de786fea0e112584}\label{mtc__ntp_8h_aa3788b1651660230de786fea0e112584}} 
+\index{mtc\_ntp.h@{mtc\_ntp.h}!Mtc\_NtpReq@{Mtc\_NtpReq}}
+\index{Mtc\_NtpReq@{Mtc\_NtpReq}!mtc\_ntp.h@{mtc\_ntp.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_NtpReq()}{Mtc\_NtpReq()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Ntp\+Req (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Owner }\end{DoxyParamCaption})}
+
+
+
+Begin Ntp Request. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Owner} & The owner of ntp request.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Trigger Ntp Request successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Trigger Ntp Request failed. \\
+\hline
+\end{DoxyRetVals}

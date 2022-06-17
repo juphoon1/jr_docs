@@ -1,0 +1,387 @@
+\hypertarget{mtc__conf__cmcc_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+conf\+\_\+cmcc.h File Reference}
+\label{mtc__conf__cmcc_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf\_cmcc.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_conf\_cmcc.h}}
+
+
+M\+TC Cmcc Conference Manage Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__conf__cmcc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a0e651a8c9157c16e0bcf9043b22eccee}{Mtc\+\_\+\+Conf\+Cmcc\+Create}} (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em M\+TC conference cmc create. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a984f1b680dc1ddffe282c47f82288733}{Mtc\+\_\+\+Conf\+Cmcc\+Setup}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC setup a new cmcc conference as the creator. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_ab34269c5912f2c715058ea3e42a17764}{Mtc\+\_\+\+Conf\+Cmcc\+Get\+Conf\+Uri}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Disp\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc conference get conference U\+RI and display name. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a39daf3aa9a7f56d48eae174aae29546b}{Mtc\+\_\+\+Conf\+Cmcc\+Ivt\+User\+Lst}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC invite new participant list to a new conference, this interface will setup a new conference automatically. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a37cb5450106b8e4eb56abe0e3a1e375c}{Mtc\+\_\+\+Conf\+Cmcc\+Join}} (Z\+C\+H\+AR $\ast$pc\+Conf\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC chairman join cmcc conference with subcribe. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a81be0a42b112a7d8584eab45adc5082b}{Mtc\+\_\+\+Conf\+Cmcc\+JoinX}} (Z\+C\+H\+AR $\ast$pc\+Conf\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC participant join cmcc conference with R\+E\+F\+ER. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a0862fab79bb3de4526c2134643c778c6}{Mtc\+\_\+\+Conf\+Cmcc\+Term}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc term conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a740e15f147c8a66a121ee7ec92285d3e}{Mtc\+\_\+\+Conf\+Cmcc\+Ivt\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc conference invite an user to conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a9ff7e7097c0c43c5edece4c9281c611b}{Mtc\+\_\+\+Conf\+Cmcc\+Kick\+Out\+User}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc kick out an user from conference. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a02e540855afb5099079a8cc35cee296b}{Mtc\+\_\+\+Conf\+Cmcc\+Mute}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc mute a participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_ace47ba9f5b7cecb305b8e9b7d4007f4f}{Mtc\+\_\+\+Conf\+Cmcc\+Unmute}} (Z\+U\+I\+NT i\+Conf\+Id, Z\+C\+H\+AR $\ast$pc\+User\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc unmute a participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a3d0728a61e03bc99a6c659d08c97ac30}{Mtc\+\_\+\+Conf\+Cmcc\+Mute\+All}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc mute all participant. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__conf__cmcc_8h_a27b41c2e306c3431f4b50a28b7f314a4}{Mtc\+\_\+\+Conf\+Cmcc\+Unmute\+All}} (Z\+U\+I\+NT i\+Conf\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC cmcc unmute all participant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Cmcc Conference Manage Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a0e651a8c9157c16e0bcf9043b22eccee}\label{mtc__conf__cmcc_8h_a0e651a8c9157c16e0bcf9043b22eccee}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccCreate@{Mtc\_ConfCmccCreate}}
+\index{Mtc\_ConfCmccCreate@{Mtc\_ConfCmccCreate}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccCreate()}{Mtc\_ConfCmccCreate()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Create (\begin{DoxyParamCaption}\item[{Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID}]{ }\end{DoxyParamCaption})}
+
+
+
+M\+TC conference cmc create. 
+
+\begin{DoxyReturn}{Returns}
+The id of this new created conference on succeed, otherwise return Z\+M\+A\+X\+U\+I\+NT.
+\end{DoxyReturn}
+Different with the method of session creation, this function only malloc the resource of conference. If you want to setup or join a conference, you need step ahead by calling other functions.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a984f1b680dc1ddffe282c47f82288733}{Mtc\+\_\+\+Conf\+Cmcc\+Setup}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_ab34269c5912f2c715058ea3e42a17764}\label{mtc__conf__cmcc_8h_ab34269c5912f2c715058ea3e42a17764}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccGetConfUri@{Mtc\_ConfCmccGetConfUri}}
+\index{Mtc\_ConfCmccGetConfUri@{Mtc\_ConfCmccGetConfUri}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccGetConfUri()}{Mtc\_ConfCmccGetConfUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Get\+Conf\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Disp\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc conference get conference U\+RI and display name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to get. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Disp\+Name} & The display name of conference. \\
+\hline
+\mbox{\texttt{ out}}  & {\em ppc\+Uri} & The U\+RI of conference.\\
+\hline
+\end{DoxyParams}
+The caller must copy out parameter, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a740e15f147c8a66a121ee7ec92285d3e}\label{mtc__conf__cmcc_8h_a740e15f147c8a66a121ee7ec92285d3e}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccIvtUser@{Mtc\_ConfCmccIvtUser}}
+\index{Mtc\_ConfCmccIvtUser@{Mtc\_ConfCmccIvtUser}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccIvtUser()}{Mtc\_ConfCmccIvtUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Ivt\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc conference invite an user to conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+User\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & invite user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & invite user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a9ff7e7097c0c43c5edece4c9281c611b}{Mtc\+\_\+\+Conf\+Cmcc\+Kick\+Out\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a39daf3aa9a7f56d48eae174aae29546b}\label{mtc__conf__cmcc_8h_a39daf3aa9a7f56d48eae174aae29546b}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccIvtUserLst@{Mtc\_ConfCmccIvtUserLst}}
+\index{Mtc\_ConfCmccIvtUserLst@{Mtc\_ConfCmccIvtUserLst}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccIvtUserLst()}{Mtc\_ConfCmccIvtUserLst()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Ivt\+User\+Lst (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC invite new participant list to a new conference, this interface will setup a new conference automatically. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want invite new participant list. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id, UI shall use \mbox{\hyperlink{mtc__partp_8h_ab9c55634b840448ffa53fb8539678e2e}{Mtc\+\_\+\+Partp\+Lst\+Create}}, \mbox{\hyperlink{mtc__partp_8h_ac874d90bbd15c9ca9ddbf1db14b2b33e}{Mtc\+\_\+\+Partp\+Lst\+Add\+Partp}} to create the id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf_8h_a7acc66d251d4a03a52de889e01f97a87}{Mtc\+\_\+\+Conf\+Kick\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a37cb5450106b8e4eb56abe0e3a1e375c}\label{mtc__conf__cmcc_8h_a37cb5450106b8e4eb56abe0e3a1e375c}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccJoin@{Mtc\_ConfCmccJoin}}
+\index{Mtc\_ConfCmccJoin@{Mtc\_ConfCmccJoin}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccJoin()}{Mtc\_ConfCmccJoin()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Join (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conf\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC chairman join cmcc conference with subcribe. 
+
+The result will be notified by callbacks which were set by Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Join\+Ok or Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Join\+Failed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Conf\+Uri} & The uri of exist conference.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The id of conference, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a81be0a42b112a7d8584eab45adc5082b}\label{mtc__conf__cmcc_8h_a81be0a42b112a7d8584eab45adc5082b}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccJoinX@{Mtc\_ConfCmccJoinX}}
+\index{Mtc\_ConfCmccJoinX@{Mtc\_ConfCmccJoinX}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccJoinX()}{Mtc\_ConfCmccJoinX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+JoinX (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conf\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC participant join cmcc conference with R\+E\+F\+ER. 
+
+The result will be notified by callbacks which were set by Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Join\+OkX or Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Join\+FailedX.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Conf\+Uri} & The uri of exist conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a9ff7e7097c0c43c5edece4c9281c611b}\label{mtc__conf__cmcc_8h_a9ff7e7097c0c43c5edece4c9281c611b}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccKickOutUser@{Mtc\_ConfCmccKickOutUser}}
+\index{Mtc\_ConfCmccKickOutUser@{Mtc\_ConfCmccKickOutUser}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccKickOutUser()}{Mtc\_ConfCmccKickOutUser()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Kick\+Out\+User (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc kick out an user from conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want kick participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+User\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & kick out user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & kick out user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a740e15f147c8a66a121ee7ec92285d3e}{Mtc\+\_\+\+Conf\+Cmcc\+Ivt\+User}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a02e540855afb5099079a8cc35cee296b}\label{mtc__conf__cmcc_8h_a02e540855afb5099079a8cc35cee296b}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccMute@{Mtc\_ConfCmccMute}}
+\index{Mtc\_ConfCmccMute@{Mtc\_ConfCmccMute}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccMute()}{Mtc\_ConfCmccMute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Mute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc mute a participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want mute a participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+User\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & mute user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & mute user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_ace47ba9f5b7cecb305b8e9b7d4007f4f}{Mtc\+\_\+\+Conf\+Cmcc\+Unmute}}, \mbox{\hyperlink{mtc__conf__cmcc_8h_a27b41c2e306c3431f4b50a28b7f314a4}{Mtc\+\_\+\+Conf\+Cmcc\+Unmute\+All}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a3d0728a61e03bc99a6c659d08c97ac30}\label{mtc__conf__cmcc_8h_a3d0728a61e03bc99a6c659d08c97ac30}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccMuteAll@{Mtc\_ConfCmccMuteAll}}
+\index{Mtc\_ConfCmccMuteAll@{Mtc\_ConfCmccMuteAll}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccMuteAll()}{Mtc\_ConfCmccMuteAll()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Mute\+All (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc mute all participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want mute all participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & mute user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & mute user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a27b41c2e306c3431f4b50a28b7f314a4}{Mtc\+\_\+\+Conf\+Cmcc\+Unmute\+All}}, \mbox{\hyperlink{mtc__conf__cmcc_8h_ace47ba9f5b7cecb305b8e9b7d4007f4f}{Mtc\+\_\+\+Conf\+Cmcc\+Unmute}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a984f1b680dc1ddffe282c47f82288733}\label{mtc__conf__cmcc_8h_a984f1b680dc1ddffe282c47f82288733}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccSetup@{Mtc\_ConfCmccSetup}}
+\index{Mtc\_ConfCmccSetup@{Mtc\_ConfCmccSetup}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccSetup()}{Mtc\_ConfCmccSetup()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Setup (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC setup a new cmcc conference as the creator. 
+
+If setup a new conference as the creator, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Outgoing, Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Alerted, Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Conned
+
+While receiving conference invitation, G\+UI will be notified by callback which was set by Mtc\+\_\+\+Conf\+Cmcc\+Cb\+Set\+Incoming.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference which you want to setup. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & Used to correspond conference with UI resource.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & on succeed. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & on failure.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a0e651a8c9157c16e0bcf9043b22eccee}{Mtc\+\_\+\+Conf\+Cmcc\+Create}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a0862fab79bb3de4526c2134643c778c6}\label{mtc__conf__cmcc_8h_a0862fab79bb3de4526c2134643c778c6}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccTerm@{Mtc\_ConfCmccTerm}}
+\index{Mtc\_ConfCmccTerm@{Mtc\_ConfCmccTerm}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccTerm()}{Mtc\_ConfCmccTerm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Term (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc term conference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of the conference.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & term conference successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & term conference failed.\\
+\hline
+\end{DoxyRetVals}
+Actually Mtc\+\_\+\+Conf\+Term does not free all resource allocated for this conference. It only starts a terminating procedure. All resource will be freed automatically when the procedure ends.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a984f1b680dc1ddffe282c47f82288733}{Mtc\+\_\+\+Conf\+Cmcc\+Setup}}, \mbox{\hyperlink{mtc__conf__cmcc_8h_a37cb5450106b8e4eb56abe0e3a1e375c}{Mtc\+\_\+\+Conf\+Cmcc\+Join}}, 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_ace47ba9f5b7cecb305b8e9b7d4007f4f}\label{mtc__conf__cmcc_8h_ace47ba9f5b7cecb305b8e9b7d4007f4f}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccUnmute@{Mtc\_ConfCmccUnmute}}
+\index{Mtc\_ConfCmccUnmute@{Mtc\_ConfCmccUnmute}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccUnmute()}{Mtc\_ConfCmccUnmute()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Unmute (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+User\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc unmute a participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want unmute a participant. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+User\+Uri} & The uri of destination participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & unmute user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & unmute user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a02e540855afb5099079a8cc35cee296b}{Mtc\+\_\+\+Conf\+Cmcc\+Mute}}, \mbox{\hyperlink{mtc__conf__cmcc_8h_a3d0728a61e03bc99a6c659d08c97ac30}{Mtc\+\_\+\+Conf\+Cmcc\+Mute\+All}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__conf__cmcc_8h_a27b41c2e306c3431f4b50a28b7f314a4}\label{mtc__conf__cmcc_8h_a27b41c2e306c3431f4b50a28b7f314a4}} 
+\index{mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}!Mtc\_ConfCmccUnmuteAll@{Mtc\_ConfCmccUnmuteAll}}
+\index{Mtc\_ConfCmccUnmuteAll@{Mtc\_ConfCmccUnmuteAll}!mtc\_conf\_cmcc.h@{mtc\_conf\_cmcc.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ConfCmccUnmuteAll()}{Mtc\_ConfCmccUnmuteAll()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Conf\+Cmcc\+Unmute\+All (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Conf\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC cmcc unmute all participant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Conf\+Id} & The id of conference to which you want unmute all participant.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & unmute user successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & unmute user failed.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__conf__cmcc_8h_a3d0728a61e03bc99a6c659d08c97ac30}{Mtc\+\_\+\+Conf\+Cmcc\+Mute\+All}}, \mbox{\hyperlink{mtc__conf__cmcc_8h_a02e540855afb5099079a8cc35cee296b}{Mtc\+\_\+\+Conf\+Cmcc\+Mute}} 
+\end{DoxySeeAlso}

@@ -1,0 +1,109 @@
+\hypertarget{mtc__gba__cb_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+gba\+\_\+cb.h File Reference}
+\label{mtc__gba__cb_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gba\_cb.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_gba\_cb.h}}
+
+
+M\+TC G\+BA Callback Interface Functions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mtc__gba__cb_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__gba__cb_8h_a3629738b460ae71e40d15e7da4cc43cf}\label{mtc__gba__cb_8h_a3629738b460ae71e40d15e7da4cc43cf}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__gba__cb_8h_a3629738b460ae71e40d15e7da4cc43cf}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+O\+O\+T\+CB}}) (Z\+U\+I\+NT i\+Boot\+Id, Z\+U\+I\+NT i\+Cookie)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify G\+BA bootstrapping ok. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba__cb_8h_a38d7abe3f6b095f514d16c2afcecf989}\label{mtc__gba__cb_8h_a38d7abe3f6b095f514d16c2afcecf989}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__gba__cb_8h_a38d7abe3f6b095f514d16c2afcecf989}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+O\+O\+T\+C\+BX}}) (Z\+U\+I\+NT i\+Boot\+Id, Z\+U\+I\+NT i\+Cookie, Z\+U\+I\+NT i\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify G\+BA bootstrapping failed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba__cb_8h_ac431a48ff8e42c73445b558b84a80465}\label{mtc__gba__cb_8h_ac431a48ff8e42c73445b558b84a80465}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__gba__cb_8h_ac431a48ff8e42c73445b558b84a80465}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+A\+U\+T\+H\+I\+ND}}) (Z\+U\+I\+NT i\+Cookie, Z\+C\+H\+AR $\ast$pc\+Nonce)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify authorization indication. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__gba__cb_8h_aab758f123d9e40372af5fc9d1b2bd7f0}\label{mtc__gba__cb_8h_aab758f123d9e40372af5fc9d1b2bd7f0}} 
+typedef Z\+V\+O\+ID($\ast$ \mbox{\hyperlink{mtc__gba__cb_8h_aab758f123d9e40372af5fc9d1b2bd7f0}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+T\+I\+D\+E\+X\+P\+I\+R\+E\+D\+CB}}) (Z\+F\+U\+N\+C\+\_\+\+V\+O\+ID)
+\begin{DoxyCompactList}\small\item\em Type define of M\+TC G\+UI callback for notify G\+BA btid expired. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gba__cb_8h_ad1ba054037ad1d10cbf4770b85770427}{Mtc\+\_\+\+Gba\+Cb\+Set\+Boot\+Ok}} (\mbox{\hyperlink{mtc__gba__cb_8h_a3629738b460ae71e40d15e7da4cc43cf}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+O\+O\+T\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gba bootstrapping successfully callback. The callback is one of \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gba__cb_8h_a3da270ceeda9822a3cd612d098637c34}{Mtc\+\_\+\+Gba\+Cb\+Set\+Boot\+Failed}} (\mbox{\hyperlink{mtc__gba__cb_8h_a38d7abe3f6b095f514d16c2afcecf989}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+O\+O\+T\+C\+BX}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the gba bootstrapping failed callback. The callback is one of \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gba__cb_8h_a224748aa8e3885d7252a1ee327a38459}{Mtc\+\_\+\+Gba\+Cb\+Set\+Auth\+Ind}} (\mbox{\hyperlink{mtc__gba__cb_8h_ac431a48ff8e42c73445b558b84a80465}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+A\+U\+T\+H\+I\+ND}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} results. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+V\+O\+ID \mbox{\hyperlink{mtc__gba__cb_8h_ac559deb7fcc1bffde8fb1e933184454d}{Mtc\+\_\+\+Gba\+Cb\+Set\+Btid\+Expired}} (\mbox{\hyperlink{mtc__gba__cb_8h_aab758f123d9e40372af5fc9d1b2bd7f0}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+T\+I\+D\+E\+X\+P\+I\+R\+E\+D\+CB}} pfn\+Cb)
+\begin{DoxyCompactList}\small\item\em Set the btid expired callback. The callback will be notified if btid expired. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC G\+BA Callback Interface Functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__gba__cb_8h_a224748aa8e3885d7252a1ee327a38459}\label{mtc__gba__cb_8h_a224748aa8e3885d7252a1ee327a38459}} 
+\index{mtc\_gba\_cb.h@{mtc\_gba\_cb.h}!Mtc\_GbaCbSetAuthInd@{Mtc\_GbaCbSetAuthInd}}
+\index{Mtc\_GbaCbSetAuthInd@{Mtc\_GbaCbSetAuthInd}!mtc\_gba\_cb.h@{mtc\_gba\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaCbSetAuthInd()}{Mtc\_GbaCbSetAuthInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gba\+Cb\+Set\+Auth\+Ind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gba__cb_8h_ac431a48ff8e42c73445b558b84a80465}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+A\+U\+T\+H\+I\+ND}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gba__cb_8h_a3da270ceeda9822a3cd612d098637c34}\label{mtc__gba__cb_8h_a3da270ceeda9822a3cd612d098637c34}} 
+\index{mtc\_gba\_cb.h@{mtc\_gba\_cb.h}!Mtc\_GbaCbSetBootFailed@{Mtc\_GbaCbSetBootFailed}}
+\index{Mtc\_GbaCbSetBootFailed@{Mtc\_GbaCbSetBootFailed}!mtc\_gba\_cb.h@{mtc\_gba\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaCbSetBootFailed()}{Mtc\_GbaCbSetBootFailed()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gba\+Cb\+Set\+Boot\+Failed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gba__cb_8h_a38d7abe3f6b095f514d16c2afcecf989}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+O\+O\+T\+C\+BX}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gba bootstrapping failed callback. The callback is one of \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gba__cb_8h_ad1ba054037ad1d10cbf4770b85770427}\label{mtc__gba__cb_8h_ad1ba054037ad1d10cbf4770b85770427}} 
+\index{mtc\_gba\_cb.h@{mtc\_gba\_cb.h}!Mtc\_GbaCbSetBootOk@{Mtc\_GbaCbSetBootOk}}
+\index{Mtc\_GbaCbSetBootOk@{Mtc\_GbaCbSetBootOk}!mtc\_gba\_cb.h@{mtc\_gba\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaCbSetBootOk()}{Mtc\_GbaCbSetBootOk()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gba\+Cb\+Set\+Boot\+Ok (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gba__cb_8h_a3629738b460ae71e40d15e7da4cc43cf}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+O\+O\+T\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the gba bootstrapping successfully callback. The callback is one of \mbox{\hyperlink{mtc__gba_8h_a86588d4eb51427ee0b980bd9eff4f766}{Mtc\+\_\+\+Gba\+Boot\+Start}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__gba__cb_8h_ac559deb7fcc1bffde8fb1e933184454d}\label{mtc__gba__cb_8h_ac559deb7fcc1bffde8fb1e933184454d}} 
+\index{mtc\_gba\_cb.h@{mtc\_gba\_cb.h}!Mtc\_GbaCbSetBtidExpired@{Mtc\_GbaCbSetBtidExpired}}
+\index{Mtc\_GbaCbSetBtidExpired@{Mtc\_GbaCbSetBtidExpired}!mtc\_gba\_cb.h@{mtc\_gba\_cb.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_GbaCbSetBtidExpired()}{Mtc\_GbaCbSetBtidExpired()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+V\+O\+ID Mtc\+\_\+\+Gba\+Cb\+Set\+Btid\+Expired (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mtc__gba__cb_8h_aab758f123d9e40372af5fc9d1b2bd7f0}{P\+F\+N\+\_\+\+M\+T\+C\+G\+B\+A\+B\+T\+I\+D\+E\+X\+P\+I\+R\+E\+D\+CB}}}]{pfn\+Cb }\end{DoxyParamCaption})}
+
+
+
+Set the btid expired callback. The callback will be notified if btid expired. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pfn\+Cb} & Callback function. \\
+\hline
+\end{DoxyParams}

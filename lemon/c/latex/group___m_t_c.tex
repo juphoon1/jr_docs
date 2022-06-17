@@ -1,0 +1,98 @@
+\hypertarget{group___m_t_c}{}\doxysection{M\+TC}
+\label{group___m_t_c}\index{MTC@{MTC}}
+
+
+Multimedia Talk Client.  
+
+
+Multimedia Talk Client. 
+
+This module is part of Multimedia Talk Client Entity. It provides interfaces using in G\+UI. There are 2 main task got be done\+:
+\begin{DoxyEnumerate}
+\item Wrap interfaces of M\+TF, to make it more easy to use.
+\item Conceal the G\+UI process logic.
+\end{DoxyEnumerate}
+
+To start M\+TC use code like\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//initialize the client}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ab43e5e1ff28cb39498bae439c546b435}{Mtc\_CliInit}}(profile director);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// initialize callback functions}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_afae76f71d49d125a9d6fd7973715e281}{Mtc\_CliCbSetPrint}}(print callback);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_aed715d853a0a8b24e4f13103ca0dabbf}{Mtc\_CliCbSetRegOk}}(\textcolor{keyword}{register} ok callback);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__cb_8h_aa19a8cefaf52ca975aa74249a6976f6f}{Mtc\_CliCbSetRegFailed}}(\textcolor{keyword}{register} failed callback);}
+\DoxyCodeLine{... (other callbacks)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// open the client}}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a30ac3a409e026f5a769286a6f38db7bd}{Mtc\_CliOpen}}(user name);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// set local ip}}
+\DoxyCodeLine{Zos\_InetGetLocalIp(\&stIps);}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli__db_8h_a53256079d5a07a5dffb3ae2080793034}{Mtc\_CliDbSetLocalIp}}(stIps.astIps[0].u.iIp);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// start client}}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (\mbox{\hyperlink{mtc__cli_8h_a4978e2dcf33e5a344ae0efda8afdf7df}{Mtc\_CliStart}}() != ZOK)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}{Mtc\_CliDestroy}}();}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} ZFAILED;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+To stop M\+TC use code like\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_a2639fee1a88ac023683086b3592eb0c4}{Mtc\_CliStop}}();}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ae503bd4ada0e8d78189af950baa30bee}{Mtc\_CliClose}}();}
+\DoxyCodeLine{\mbox{\hyperlink{mtc__cli_8h_ac3ef0eb92f57ef242cf065adcf133901}{Mtc\_CliDestroy}}();}
+\end{DoxyCode}
+
+
+Detail description of files in module\+:
+\begin{DoxyEnumerate}
+\item \mbox{\hyperlink{mtc__cli_8h}{M\+TC Client Interfaces }}
+\item \mbox{\hyperlink{mtc__cli__cfg_8h}{M\+TC Client Config Interfaces }}
+\item \mbox{\hyperlink{mtc__cli__cb_8h}{M\+TC Client Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__cli__db_8h}{M\+TC Client Database Interfaces }}
+\item \mbox{\hyperlink{mtc__call_8h}{M\+TC Call Interfaces }}
+\item \mbox{\hyperlink{mtc__call__cfg_8h}{M\+TC Call Config Interfaces }}
+\item \mbox{\hyperlink{mtc__call__cb_8h}{M\+TC Call Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__call__db_8h}{M\+TC Call Database Interfaces }}
+\item \mbox{\hyperlink{mtc__conf_8h}{M\+TC Conference Session Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__cb_8h}{M\+TC Conference Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__db_8h}{M\+TC Conference Database Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__cmcc_8h}{M\+TC Conference Session Interfaces }}
+\item \mbox{\hyperlink{mtc__conf__cmcc__cb_8h_source}{M\+TC Conference Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__partp_8h}{M\+TC Participant Interfaces }}
+\item \mbox{\hyperlink{mtc__im_8h}{M\+TC IM Page Message Interfaces }}
+\item \mbox{\hyperlink{mtc__im__cb_8h}{M\+TC IM Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__im__db_8h}{M\+TC IM Database Interfaces }}
+\item \mbox{\hyperlink{mtc__im__large_8h}{M\+TC IM Large Message Interfaces }}
+\item \mbox{\hyperlink{mtc__im__sess_8h}{M\+TC IM Session Interfaces }}
+\item \mbox{\hyperlink{mtc__im__stfwd_8h}{M\+TC IM Store And Forward Interfaces }}
+\item \mbox{\hyperlink{mtc__im__file_8h}{M\+TC IM File Transfer Interfaces }}
+\item \mbox{\hyperlink{mtc__im__fthttp_8h}{M\+TC IM File Transfer Via Http Interfaces }}
+\item \mbox{\hyperlink{mtc__mwi_8h}{M\+TC M\+WI Interfaces }}
+\item \mbox{\hyperlink{mtc__mwi__cb_8h}{M\+TC M\+WI Callback Interfaces }}
+\item \mbox{\hyperlink{mtc__prof_8h}{M\+TC Profile Interfaces }}
+\item \mbox{\hyperlink{mtc__prof__cfg_8h}{M\+TC Profile Config Interfaces }}
+\item \mbox{\hyperlink{mtc__prof__db_8h}{M\+TC Profile Database Interfaces }}
+\item \mbox{\hyperlink{mtc__prov__cfg_8h}{M\+TC Provision Config Interfaces }}
+\item \mbox{\hyperlink{mtc__prov__db_8h}{M\+TC Provision Database Interfaces }}
+\item \mbox{\hyperlink{mtc__media_8h}{M\+TC Media Interfaces }}
+\item \mbox{\hyperlink{mtc__media__cb_8h}{M\+TC Media Callback Interface }}
+\item \mbox{\hyperlink{mtc__cap_8h}{M\+TC Capability Interface }}
+\item \mbox{\hyperlink{mtc__cap__cb_8h}{M\+TC Capability Callback Interface }}
+\item \mbox{\hyperlink{mtc__cap__db_8h}{M\+TC Capability Database Interface }}
+\item \mbox{\hyperlink{mtc__cp_8h}{M\+TC Client Provisioning Interface }}
+\item \mbox{\hyperlink{mtc__cp__cb_8h}{M\+TC Client Provisioning Callback Interface }}
+\item \mbox{\hyperlink{mtc__cp__db_8h}{M\+TC Client Provisioning Database Interface }}
+\item \mbox{\hyperlink{mtc__gs__ginfo_8h}{M\+TC Geolocation Share Interface }}
+\item \mbox{\hyperlink{mtc__gs__cb_8h}{M\+TC Geolocation Share Callback Interface }}
+\item \mbox{\hyperlink{mtc__gs__db_8h}{M\+TC Geolocation Share Database Interface }}
+\item \mbox{\hyperlink{mtc__ring_8h}{M\+TC Ring Interfaces }}
+\item \mbox{\hyperlink{mtc__uri_8h}{M\+TC U\+RI Interfaces }}
+\item \mbox{\hyperlink{mtc__lcs_8h}{M\+TC License Interfaces }}
+\item \mbox{\hyperlink{mtc__util_8h}{M\+TC Utility Interfaces }}
+\item \mbox{\hyperlink{mtc__ver_8h}{M\+TC Version Interfaces }} 
+\end{DoxyEnumerate}

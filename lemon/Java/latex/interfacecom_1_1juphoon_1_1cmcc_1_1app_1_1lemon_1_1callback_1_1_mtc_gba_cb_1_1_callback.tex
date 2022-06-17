@@ -1,0 +1,83 @@
+\hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback}{}\doxysection{com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Gba\+Cb.\+Callback Interface Reference}
+\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback}\index{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}}
+
+
+M\+TC gba callbacks.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_aa7685fe7ad79236f827ed16feb28bc2e}{mtc\+Gba\+Cb\+Boot\+Ok}} (int i\+Boot\+Id, int z\+Cookie)
+\begin{DoxyCompactList}\small\item\em Set the gba add subscribe successfully callback. The callback is one of \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_gba_a34fe7526a8c83b8747641ed45d3f4aba}{Mtc\+Gba.\+Mtc\+\_\+\+Gba\+Boot\+Start}} results. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_a52ad5adbe49508d5f82f5447e1fbfaed}{mtc\+Gba\+Cb\+Boot\+Failed}} (int i\+Boot\+Id, int z\+Cookie, int dw\+Stat\+Code)
+\begin{DoxyCompactList}\small\item\em Set the gba add subscribe failed callback. The callback is one of \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_gba_a34fe7526a8c83b8747641ed45d3f4aba}{Mtc\+Gba.\+Mtc\+\_\+\+Gba\+Boot\+Start}} results. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_acd70aa9d0f8c28bcb1d5d86332fcc2a6}{mtc\+Gba\+Cb\+Auth\+Ind}} (int i\+Boot\+Id, String pc\+Nonce)
+\begin{DoxyCompactList}\small\item\em Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of Mtc\+\_\+\+Gba\+Boot\+Start results. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_a69911af97dc151cc49f5ccb14d0b98df}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_a69911af97dc151cc49f5ccb14d0b98df}} 
+void \mbox{\hyperlink{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_a69911af97dc151cc49f5ccb14d0b98df}{mtc\+Gba\+Cb\+Btid\+Expired}} ()
+\begin{DoxyCompactList}\small\item\em Set the btid expired callback. The callback will be notified if btid expired. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC gba callbacks. 
+
+In order to receive M\+TC gba callbacks, user should implement this interface, then use \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_ac2933fc9be87986570078173b505d447}{Mtc\+Gba\+Cb.\+set\+Callback}} to register callbacks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_acd70aa9d0f8c28bcb1d5d86332fcc2a6}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_acd70aa9d0f8c28bcb1d5d86332fcc2a6}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}!mtcGbaCbAuthInd@{mtcGbaCbAuthInd}}
+\index{mtcGbaCbAuthInd@{mtcGbaCbAuthInd}!com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcGbaCbAuthInd()}{mtcGbaCbAuthInd()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Gba\+Cb.\+Callback.\+mtc\+Gba\+Cb\+Auth\+Ind (\begin{DoxyParamCaption}\item[{int}]{i\+Boot\+Id,  }\item[{String}]{pc\+Nonce }\end{DoxyParamCaption})}
+
+
+
+Set the authorizaiton indication callback. The callback will be notified if authorizaiton indication The callback is one of Mtc\+\_\+\+Gba\+Boot\+Start results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Boot\+Id} & The id of bootstrapping. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Nonce} & The Nonce used for calculate R\+ES,IK,CK. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_a52ad5adbe49508d5f82f5447e1fbfaed}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_a52ad5adbe49508d5f82f5447e1fbfaed}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}!mtcGbaCbBootFailed@{mtcGbaCbBootFailed}}
+\index{mtcGbaCbBootFailed@{mtcGbaCbBootFailed}!com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcGbaCbBootFailed()}{mtcGbaCbBootFailed()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Gba\+Cb.\+Callback.\+mtc\+Gba\+Cb\+Boot\+Failed (\begin{DoxyParamCaption}\item[{int}]{i\+Boot\+Id,  }\item[{int}]{z\+Cookie,  }\item[{int}]{dw\+Stat\+Code }\end{DoxyParamCaption})}
+
+
+
+Set the gba add subscribe failed callback. The callback is one of \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_gba_a34fe7526a8c83b8747641ed45d3f4aba}{Mtc\+Gba.\+Mtc\+\_\+\+Gba\+Boot\+Start}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Boot\+Id} & The id of bootstrapping. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em dw\+Stat\+Code} & status code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_aa7685fe7ad79236f827ed16feb28bc2e}\label{interfacecom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1callback_1_1_mtc_gba_cb_1_1_callback_aa7685fe7ad79236f827ed16feb28bc2e}} 
+\index{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}!mtcGbaCbBootOk@{mtcGbaCbBootOk}}
+\index{mtcGbaCbBootOk@{mtcGbaCbBootOk}!com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback@{com.juphoon.cmcc.app.lemon.callback.MtcGbaCb.Callback}}
+\doxysubsubsection{\texorpdfstring{mtcGbaCbBootOk()}{mtcGbaCbBootOk()}}
+{\footnotesize\ttfamily void com.\+juphoon.\+cmcc.\+app.\+lemon.\+callback.\+Mtc\+Gba\+Cb.\+Callback.\+mtc\+Gba\+Cb\+Boot\+Ok (\begin{DoxyParamCaption}\item[{int}]{i\+Boot\+Id,  }\item[{int}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+Set the gba add subscribe successfully callback. The callback is one of \mbox{\hyperlink{classcom_1_1juphoon_1_1cmcc_1_1app_1_1lemon_1_1_mtc_gba_a34fe7526a8c83b8747641ed45d3f4aba}{Mtc\+Gba.\+Mtc\+\_\+\+Gba\+Boot\+Start}} results. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Boot\+Id} & The id of bootstrapping. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/psf/\+Home/code/rcs/shared/pack/windows/all/include/src/com/juphoon/cmcc/app/lemon/callback/\mbox{\hyperlink{_mtc_gba_cb_8java}{Mtc\+Gba\+Cb.\+java}}\end{DoxyCompactItemize}

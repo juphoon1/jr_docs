@@ -1,0 +1,2318 @@
+\hypertarget{mtc__im_8h}{}\doxysection{/media/psf/\+Home/code/rcs/sdk/lemon/src/service/rcs/mtc\+\_\+im.h File Reference}
+\label{mtc__im_8h}\index{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im.h@{/media/psf/Home/code/rcs/sdk/lemon/src/service/rcs/mtc\_im.h}}
+
+
+M\+TC Instant Message Interface Functions.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mtc__im_8h_aa583589c7dbd04e169745b55d4279aed}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+NO}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 0)
+\begin{DoxyCompactList}\small\item\em M\+TC im status code(error no or terminated code). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a774cab08c5b8334f68f4d248aac7c3ef}\label{mtc__im_8h_a774cab08c5b8334f68f4d248aac7c3ef}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a774cab08c5b8334f68f4d248aac7c3ef}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 1)
+\begin{DoxyCompactList}\small\item\em im forbidden. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a76191180e025506f9fe1486a480dba6a}\label{mtc__im_8h_a76191180e025506f9fe1486a480dba6a}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a76191180e025506f9fe1486a480dba6a}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 2)
+\begin{DoxyCompactList}\small\item\em im participant not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a9ba41928ba94c1492b97a854cd4772ab}\label{mtc__im_8h_a9ba41928ba94c1492b97a854cd4772ab}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a9ba41928ba94c1492b97a854cd4772ab}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+A\+C\+P\+T\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 3)
+\begin{DoxyCompactList}\small\item\em im not accepted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_acd2979f93d93a1c0f7e577aefc421897}\label{mtc__im_8h_acd2979f93d93a1c0f7e577aefc421897}} 
+\#define \mbox{\hyperlink{mtc__im_8h_acd2979f93d93a1c0f7e577aefc421897}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+T\+E\+M\+P\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 4)
+\begin{DoxyCompactList}\small\item\em im participant temp unavailable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a900c17cd8228c67090d09905be3f2e63}\label{mtc__im_8h_a900c17cd8228c67090d09905be3f2e63}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a900c17cd8228c67090d09905be3f2e63}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+R\+E\+Q\+\_\+\+T\+E\+R\+M\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 5)
+\begin{DoxyCompactList}\small\item\em im request terminated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a744372c0710770e0340728e9241ee8c4}\label{mtc__im_8h_a744372c0710770e0340728e9241ee8c4}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a744372c0710770e0340728e9241ee8c4}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 6)
+\begin{DoxyCompactList}\small\item\em server internal error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ae28b2ac5da37f2cadaa31226996bae2b}\label{mtc__im_8h_ae28b2ac5da37f2cadaa31226996bae2b}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ae28b2ac5da37f2cadaa31226996bae2b}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 7)
+\begin{DoxyCompactList}\small\item\em service unavailable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a6f3839b18da9e333dcff361b6c13eabb}\label{mtc__im_8h_a6f3839b18da9e333dcff361b6c13eabb}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a6f3839b18da9e333dcff361b6c13eabb}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 8)
+\begin{DoxyCompactList}\small\item\em request timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ae044f79534d63e088dd399360114c22e}\label{mtc__im_8h_ae044f79534d63e088dd399360114c22e}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ae044f79534d63e088dd399360114c22e}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+O\+F\+F\+L\+I\+NE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 9)
+\begin{DoxyCompactList}\small\item\em callee not registered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ac7d5d1d28a16ee682d755fea1fc4a493}\label{mtc__im_8h_ac7d5d1d28a16ee682d755fea1fc4a493}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ac7d5d1d28a16ee682d755fea1fc4a493}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+N\+E\+T\+W\+O\+RK}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 10)
+\begin{DoxyCompactList}\small\item\em network error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aa33af35995072da4f7961de4fc6acfe7}\label{mtc__im_8h_aa33af35995072da4f7961de4fc6acfe7}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aa33af35995072da4f7961de4fc6acfe7}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+E\+X\+P\+E\+L\+L\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 11)
+\begin{DoxyCompactList}\small\item\em expelled error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a22b6d312ae4528299a3dba64ca86c550}\label{mtc__im_8h_a22b6d312ae4528299a3dba64ca86c550}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a22b6d312ae4528299a3dba64ca86c550}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+O\+NE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 12)
+\begin{DoxyCompactList}\small\item\em gone. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a5e924c27000749c52f6730549708c1fd}\label{mtc__im_8h_a5e924c27000749c52f6730549708c1fd}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a5e924c27000749c52f6730549708c1fd}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+E\+X\+C\+E\+E\+D\+\_\+\+M\+A\+X\+\_\+\+P\+A\+R\+TP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 13)
+\begin{DoxyCompactList}\small\item\em exceed maximum participant size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a6d9462efe66eea22512d060d1c0e0152}\label{mtc__im_8h_a6d9462efe66eea22512d060d1c0e0152}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a6d9462efe66eea22512d060d1c0e0152}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+E\+X\+C\+E\+E\+D\+\_\+\+M\+A\+X\+\_\+\+L\+E\+N\+G\+TH}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 14)
+\begin{DoxyCompactList}\small\item\em exceed maximum length. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a1860ab89f886e8e5a1c9f3cdc1a78ad9}\label{mtc__im_8h_a1860ab89f886e8e5a1c9f3cdc1a78ad9}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a1860ab89f886e8e5a1c9f3cdc1a78ad9}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+C\+R\+E\+A\+T\+E\+D\+\_\+\+G\+R\+P\+\_\+\+F\+U\+LL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 15)
+\begin{DoxyCompactList}\small\item\em created group is full. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a9d7010ef702a01aa933d66be7521de14}\label{mtc__im_8h_a9d7010ef702a01aa933d66be7521de14}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a9d7010ef702a01aa933d66be7521de14}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+J\+O\+I\+N\+E\+D\+\_\+\+G\+R\+P\+\_\+\+F\+U\+LL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 16)
+\begin{DoxyCompactList}\small\item\em joined group is full. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_abf2aa16ac3b414556e504e470ca87b50}\label{mtc__im_8h_abf2aa16ac3b414556e504e470ca87b50}} 
+\#define \mbox{\hyperlink{mtc__im_8h_abf2aa16ac3b414556e504e470ca87b50}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+M\+A\+N\+A\+G\+E\+D\+\_\+\+G\+R\+P\+\_\+\+F\+U\+LL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 17)
+\begin{DoxyCompactList}\small\item\em managed group is full. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a18da54a970bf270b18883ac47b0dec20}\label{mtc__im_8h_a18da54a970bf270b18883ac47b0dec20}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a18da54a970bf270b18883ac47b0dec20}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+D\+E\+C\+L\+I\+NE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 18)
+\begin{DoxyCompactList}\small\item\em decline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a926747ff8d12871b25b59a13baf3754e}\label{mtc__im_8h_a926747ff8d12871b25b59a13baf3754e}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a926747ff8d12871b25b59a13baf3754e}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+T\+O\+O\+\_\+\+F\+E\+W\+\_\+\+P\+A\+R\+TP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 19)
+\begin{DoxyCompactList}\small\item\em too few participant. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a3457fe45511c5570091085843f3ea775}\label{mtc__im_8h_a3457fe45511c5570091085843f3ea775}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a3457fe45511c5570091085843f3ea775}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+N\+O\+\_\+\+P\+A\+R\+T\+P\+L\+ST}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 20)
+\begin{DoxyCompactList}\small\item\em no participant list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_abc06cc1aaf8a2d85b770fddc5e4dcfef}\label{mtc__im_8h_abc06cc1aaf8a2d85b770fddc5e4dcfef}} 
+\#define \mbox{\hyperlink{mtc__im_8h_abc06cc1aaf8a2d85b770fddc5e4dcfef}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+R\+P\+N\+A\+M\+E\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+OW}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 21)
+\begin{DoxyCompactList}\small\item\em Group name not allowed by monitor plat. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_af55629f63a03772d8f315ac71bacd617}\label{mtc__im_8h_af55629f63a03772d8f315ac71bacd617}} 
+\#define \mbox{\hyperlink{mtc__im_8h_af55629f63a03772d8f315ac71bacd617}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+R\+E\+S\+L\+S\+T\+\_\+\+S\+Y\+N\+T\+AX}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 22)
+\begin{DoxyCompactList}\small\item\em Resource-\/list syntax error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a97bd68f1c730c2b4a980982e941f8a23}\label{mtc__im_8h_a97bd68f1c730c2b4a980982e941f8a23}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a97bd68f1c730c2b4a980982e941f8a23}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+R\+E\+F\+E\+R\+T\+O\+\_\+\+R\+E\+Q\+U\+I\+R\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 23)
+\begin{DoxyCompactList}\small\item\em Refer-\/\+To field required. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a218593b84b31ab968154a27a9be95c6d}\label{mtc__im_8h_a218593b84b31ab968154a27a9be95c6d}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a218593b84b31ab968154a27a9be95c6d}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+O\+R\+I\+G\+I\+N\+A\+T\+O\+R\+\_\+\+N\+O\+T\+I\+N\+\_\+\+G\+R\+O\+UP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 24)
+\begin{DoxyCompactList}\small\item\em Originator not in group. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_af0dd0740b51657a50de12c591fc972c0}\label{mtc__im_8h_af0dd0740b51657a50de12c591fc972c0}} 
+\#define \mbox{\hyperlink{mtc__im_8h_af0dd0740b51657a50de12c591fc972c0}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+I\+N\+\_\+\+G\+R\+O\+UP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 25)
+\begin{DoxyCompactList}\small\item\em Destination already in group. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a80bd985831a7ec785ecfe43f21bfca39}\label{mtc__im_8h_a80bd985831a7ec785ecfe43f21bfca39}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a80bd985831a7ec785ecfe43f21bfca39}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+N\+O\+T\+\_\+\+A\+U\+T\+H\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 26)
+\begin{DoxyCompactList}\small\item\em Service not authorised. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a2e4957a1548c69991b059ed902e03a24}\label{mtc__im_8h_a2e4957a1548c69991b059ed902e03a24}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a2e4957a1548c69991b059ed902e03a24}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+P\+A\+R\+T\+P\+\_\+\+N\+O\+T\+I\+N\+\_\+\+G\+R\+O\+UP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 27)
+\begin{DoxyCompactList}\small\item\em Destination not in group. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aa412d6665ab7fb74454f2e1bda1bfc96}\label{mtc__im_8h_aa412d6665ab7fb74454f2e1bda1bfc96}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aa412d6665ab7fb74454f2e1bda1bfc96}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+P\+A\+R\+T\+P\+\_\+\+M\+I\+S\+S\+\_\+\+G\+P\+M\+A\+N\+\_\+\+C\+AP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 28)
+\begin{DoxyCompactList}\small\item\em Destination miss gpmanage capability. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aa1723ab321bb07d6c7bd353c6765b267}\label{mtc__im_8h_aa1723ab321bb07d6c7bd353c6765b267}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aa1723ab321bb07d6c7bd353c6765b267}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+C\+H\+A\+G\+E\+\_\+\+A\+D\+M\+I\+N\+\_\+\+L\+O\+O\+P\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 29)
+\begin{DoxyCompactList}\small\item\em Change admin oper looped. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ab0ea329f4832bc89252fc3a176b8303f}\label{mtc__im_8h_ab0ea329f4832bc89252fc3a176b8303f}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ab0ea329f4832bc89252fc3a176b8303f}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+R\+P\+\_\+\+M\+E\+M\+B\+E\+R\+\_\+\+F\+U\+LL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 30)
+\begin{DoxyCompactList}\small\item\em Group chat is full. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ab8cac023c69be111ca7d0661bcae8aa3}\label{mtc__im_8h_ab8cac023c69be111ca7d0661bcae8aa3}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ab8cac023c69be111ca7d0661bcae8aa3}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+P\+M\+E\+S\+S\+A\+G\+E\+\_\+\+N\+O\+T\+\_\+\+A\+U\+TH}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 31)
+\begin{DoxyCompactList}\small\item\em Group S\+MS Message have no authority. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a0c9de637c0d23aeb13f959266dd939d2}\label{mtc__im_8h_a0c9de637c0d23aeb13f959266dd939d2}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a0c9de637c0d23aeb13f959266dd939d2}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+P\+M\+E\+S\+S\+A\+G\+E\+\_\+\+O\+U\+T\+\_\+\+Q\+U\+O\+TA}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 32)
+\begin{DoxyCompactList}\small\item\em Group S\+MS Message out of quota. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a966a8403235c4a3b90477379a716835a}\label{mtc__im_8h_a966a8403235c4a3b90477379a716835a}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a966a8403235c4a3b90477379a716835a}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+P\+M\+E\+S\+S\+A\+G\+E\+\_\+\+V\+I\+P\+\_\+\+O\+U\+T\+\_\+\+Q\+U\+O\+TA}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 33)
+\begin{DoxyCompactList}\small\item\em Group S\+MS Message vip out of quota. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a5d23739b81db1908fb50162623bd6e01}\label{mtc__im_8h_a5d23739b81db1908fb50162623bd6e01}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a5d23739b81db1908fb50162623bd6e01}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+G\+P\+M\+E\+S\+S\+A\+G\+E\+\_\+\+S\+A\+F\+E\+T\+Y\+\_\+\+O\+U\+T\+\_\+\+Q\+U\+O\+TA}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 34)
+\begin{DoxyCompactList}\small\item\em Group S\+MS Message safety out of quota. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a7e650cb8822edfc522493075442be1ab}\label{mtc__im_8h_a7e650cb8822edfc522493075442be1ab}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a7e650cb8822edfc522493075442be1ab}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+S\+U\+R\+P\+A\+S\+S\+\_\+\+T\+R\+A\+F\+F\+IC}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 35)
+\begin{DoxyCompactList}\small\item\em surpass traffic \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a10b91b1b9fcf410919e9f1459a40825e}\label{mtc__im_8h_a10b91b1b9fcf410919e9f1459a40825e}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a10b91b1b9fcf410919e9f1459a40825e}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+E\+M\+E\+R\+G\+E\+N\+C\+Y\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 36)
+\begin{DoxyCompactList}\small\item\em emergency forbidden \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a4bdc15e684f28441856aeaabd22152b8}\label{mtc__im_8h_a4bdc15e684f28441856aeaabd22152b8}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a4bdc15e684f28441856aeaabd22152b8}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+I\+L\+E\+\_\+\+E\+X\+P\+I\+R\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 37)
+\begin{DoxyCompactList}\small\item\em file expired \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a589fdbd93d42a44aaafeb1df706b1307}\label{mtc__im_8h_a589fdbd93d42a44aaafeb1df706b1307}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a589fdbd93d42a44aaafeb1df706b1307}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+D\+I\+S\+M\+I\+S\+S\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 38)
+\begin{DoxyCompactList}\small\item\em group dismissed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a3d4dd85822d37505f8e702ff2cef8b00}\label{mtc__im_8h_a3d4dd85822d37505f8e702ff2cef8b00}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a3d4dd85822d37505f8e702ff2cef8b00}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+L\+E\+A\+V\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 39)
+\begin{DoxyCompactList}\small\item\em member leaved. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_af9071764f4037a535954300d54c1e805}\label{mtc__im_8h_af9071764f4037a535954300d54c1e805}} 
+\#define \mbox{\hyperlink{mtc__im_8h_af9071764f4037a535954300d54c1e805}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+B\+A\+D\+\_\+\+R\+EQ}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 40)
+\begin{DoxyCompactList}\small\item\em bad request. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ac083536f83195eccdd994cbcda1f64aa}\label{mtc__im_8h_ac083536f83195eccdd994cbcda1f64aa}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ac083536f83195eccdd994cbcda1f64aa}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+N\+O\+T\+\_\+\+I\+MP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 41)
+\begin{DoxyCompactList}\small\item\em not implement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a8928b95666455850cd2978b019eee22b}\label{mtc__im_8h_a8928b95666455850cd2978b019eee22b}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a8928b95666455850cd2978b019eee22b}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+S\+E\+N\+D\+\_\+\+M\+S\+G\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 42)
+\begin{DoxyCompactList}\small\item\em send msg timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a49d354ff26df4e5f7e39d4fb0d0f8431}\label{mtc__im_8h_a49d354ff26df4e5f7e39d4fb0d0f8431}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a49d354ff26df4e5f7e39d4fb0d0f8431}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+U\+P\+\_\+\+R\+E\+S\+E\+N\+D\+\_\+\+A\+S\+\_\+\+X\+MS}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 43)
+\begin{DoxyCompactList}\small\item\em gsma up 1-\/1 message\+Technology selection rules \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a87801d9b16cdff640f573a5795d40beb}\label{mtc__im_8h_a87801d9b16cdff640f573a5795d40beb}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a87801d9b16cdff640f573a5795d40beb}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+B\+A\+D\+\_\+\+R\+SP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 44)
+\begin{DoxyCompactList}\small\item\em http bad response. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a4bbbbed6944de09f442e45c92eb49c19}\label{mtc__im_8h_a4bbbbed6944de09f442e45c92eb49c19}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a4bbbbed6944de09f442e45c92eb49c19}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+B\+A\+D\+\_\+\+R\+EQ}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 45)
+\begin{DoxyCompactList}\small\item\em http bad request. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ad9a948dc0edf04db761b2aacd0e7a874}\label{mtc__im_8h_ad9a948dc0edf04db761b2aacd0e7a874}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ad9a948dc0edf04db761b2aacd0e7a874}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 46)
+\begin{DoxyCompactList}\small\item\em http auth fail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ab023659e1e2ae80837dbf2b2a68d4859}\label{mtc__im_8h_ab023659e1e2ae80837dbf2b2a68d4859}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ab023659e1e2ae80837dbf2b2a68d4859}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+T\+O\+O\+\_\+\+M\+A\+N\+Y\+\_\+\+P\+A\+R\+TP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 47)
+\begin{DoxyCompactList}\small\item\em http too many participants. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a79b176aeaa9934411d782ceb80dff4e4}\label{mtc__im_8h_a79b176aeaa9934411d782ceb80dff4e4}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a79b176aeaa9934411d782ceb80dff4e4}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+E\+RR}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 48)
+\begin{DoxyCompactList}\small\item\em http server error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aad354b3079631c9c9cf52515d63f5cbc}\label{mtc__im_8h_aad354b3079631c9c9cf52515d63f5cbc}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aad354b3079631c9c9cf52515d63f5cbc}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+G\+O\+NE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 49)
+\begin{DoxyCompactList}\small\item\em http group gone. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a1c28b4bd6bd1665fdd92e16027142fbf}\label{mtc__im_8h_a1c28b4bd6bd1665fdd92e16027142fbf}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a1c28b4bd6bd1665fdd92e16027142fbf}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+N\+O\+T\+\_\+\+M\+D\+FY}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 50)
+\begin{DoxyCompactList}\small\item\em http not modify. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a9cca00af31fd66ed6bba3f48975afd9b}\label{mtc__im_8h_a9cca00af31fd66ed6bba3f48975afd9b}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a9cca00af31fd66ed6bba3f48975afd9b}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 51)
+\begin{DoxyCompactList}\small\item\em http not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a02b143443da5d01c833a1c215857ba5d}\label{mtc__im_8h_a02b143443da5d01c833a1c215857ba5d}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a02b143443da5d01c833a1c215857ba5d}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+D\+I\+S\+P\+N\+A\+M\+E\+\_\+\+A\+U\+T\+H\+\_\+\+F\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 52)
+\begin{DoxyCompactList}\small\item\em http display name auth fail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ac2ebd0d036af6fc218d26ed2fcdbeb96}\label{mtc__im_8h_ac2ebd0d036af6fc218d26ed2fcdbeb96}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ac2ebd0d036af6fc218d26ed2fcdbeb96}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+S\+R\+V\+\_\+\+N\+O\+T\+\_\+\+A\+U\+T\+H\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 53)
+\begin{DoxyCompactList}\small\item\em http Service not authorised. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a20c81dde765fde4488576e423795b516}\label{mtc__im_8h_a20c81dde765fde4488576e423795b516}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a20c81dde765fde4488576e423795b516}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 54)
+\begin{DoxyCompactList}\small\item\em http timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a22d450ab7903b0520228713934583beb}\label{mtc__im_8h_a22d450ab7903b0520228713934583beb}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a22d450ab7903b0520228713934583beb}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+C\+M\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 55)
+\begin{DoxyCompactList}\small\item\em http command timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ac4b8b73ae606dc683e5aa8e5cd029357}\label{mtc__im_8h_ac4b8b73ae606dc683e5aa8e5cd029357}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ac4b8b73ae606dc683e5aa8e5cd029357}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+H\+T\+T\+P\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 56)
+\begin{DoxyCompactList}\small\item\em fthttp server unavail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aedcfa03665de0bd9bb2fc9d3f7cfcbae}\label{mtc__im_8h_aedcfa03665de0bd9bb2fc9d3f7cfcbae}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aedcfa03665de0bd9bb2fc9d3f7cfcbae}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+O\+P\+E\+N\+\_\+\+F\+I\+LE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 57)
+\begin{DoxyCompactList}\small\item\em fthttp open file fail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aadf15856050a7e01e3cc471f23b997ba}\label{mtc__im_8h_aadf15856050a7e01e3cc471f23b997ba}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aadf15856050a7e01e3cc471f23b997ba}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+F\+I\+L\+E\+\_\+\+T\+O\+O\+\_\+\+L\+A\+R\+GE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 58)
+\begin{DoxyCompactList}\small\item\em fthttp file too large. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a1580ce97c7f4879dbba2891796881a35}\label{mtc__im_8h_a1580ce97c7f4879dbba2891796881a35}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a1580ce97c7f4879dbba2891796881a35}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+O\+P\+E\+N\+\_\+\+S\+E\+SS}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 59)
+\begin{DoxyCompactList}\small\item\em fthttp open http error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a280cab28e04dd9ce611c7b7181f34df9}\label{mtc__im_8h_a280cab28e04dd9ce611c7b7181f34df9}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a280cab28e04dd9ce611c7b7181f34df9}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+O\+P\+E\+N\+\_\+\+F\+S\+E\+SS}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 60)
+\begin{DoxyCompactList}\small\item\em fthttp open fhttp error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ab6bbfd4897c1c96ce38bb729642dd30d}\label{mtc__im_8h_ab6bbfd4897c1c96ce38bb729642dd30d}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ab6bbfd4897c1c96ce38bb729642dd30d}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+C\+A\+N\+C\+EL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 61)
+\begin{DoxyCompactList}\small\item\em fthttp cancel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a71e45ebbe159ce1031eaa6d5da169af4}\label{mtc__im_8h_a71e45ebbe159ce1031eaa6d5da169af4}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a71e45ebbe159ce1031eaa6d5da169af4}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+H\+E\+\_\+\+C\+O\+N\+N\+ET}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 62)
+\begin{DoxyCompactList}\small\item\em fthttp open file fail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a9c9d14e498e13f4afcee75d13fb9aac0}\label{mtc__im_8h_a9c9d14e498e13f4afcee75d13fb9aac0}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a9c9d14e498e13f4afcee75d13fb9aac0}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+D\+O\+\_\+\+R\+EQ}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 63)
+\begin{DoxyCompactList}\small\item\em fthttp http connect error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a7ae6947c47c3ceae748c6b969cd37a35}\label{mtc__im_8h_a7ae6947c47c3ceae748c6b969cd37a35}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a7ae6947c47c3ceae748c6b969cd37a35}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+G\+B\+A\+\_\+\+B\+O\+OT}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 64)
+\begin{DoxyCompactList}\small\item\em fthttp gba boot error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aa7f325ebadd82697f885d98e07eb1233}\label{mtc__im_8h_aa7f325ebadd82697f885d98e07eb1233}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aa7f325ebadd82697f885d98e07eb1233}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+H\+E\+\_\+\+D\+I\+SC}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 65)
+\begin{DoxyCompactList}\small\item\em fthttp http disconnect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a56177159cc288374192067c5c3322e69}\label{mtc__im_8h_a56177159cc288374192067c5c3322e69}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a56177159cc288374192067c5c3322e69}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+H\+E\+\_\+\+S\+E\+ND}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 66)
+\begin{DoxyCompactList}\small\item\em fthttp http send error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ad2a9f4ee1d38d6def09aa6e4b24ff868}\label{mtc__im_8h_ad2a9f4ee1d38d6def09aa6e4b24ff868}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ad2a9f4ee1d38d6def09aa6e4b24ff868}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+H\+E\+\_\+\+R\+E\+CV}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 67)
+\begin{DoxyCompactList}\small\item\em fthttp http recv error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a0c582388e944d6e71003cfa63e05cf42}\label{mtc__im_8h_a0c582388e944d6e71003cfa63e05cf42}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a0c582388e944d6e71003cfa63e05cf42}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+P\+I\+C\+K\+\_\+\+B\+O\+DY}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 68)
+\begin{DoxyCompactList}\small\item\em fthttp pick body fail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_afae468cea26168fc8233e363f11fa27a}\label{mtc__im_8h_afae468cea26168fc8233e363f11fa27a}} 
+\#define \mbox{\hyperlink{mtc__im_8h_afae468cea26168fc8233e363f11fa27a}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+U\+N\+K\+N\+O\+W\+N\+\_\+\+T\+Y\+PE}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 69)
+\begin{DoxyCompactList}\small\item\em fthttp unknown type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a2fb9afa3b7b1f73095399b0ffa6efb62}\label{mtc__im_8h_a2fb9afa3b7b1f73095399b0ffa6efb62}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a2fb9afa3b7b1f73095399b0ffa6efb62}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+F\+I\+L\+E\+\_\+\+N\+O\+T\+\_\+\+E\+X\+I\+ST}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 70)
+\begin{DoxyCompactList}\small\item\em fthttp file not exist. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_ac0c1eda5720bf7ca633e4b065abc9e67}\label{mtc__im_8h_ac0c1eda5720bf7ca633e4b065abc9e67}} 
+\#define \mbox{\hyperlink{mtc__im_8h_ac0c1eda5720bf7ca633e4b065abc9e67}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+F\+I\+L\+E\+\_\+\+F\+I\+L\+E\+\_\+\+E\+X\+P\+I\+R\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 71)
+\begin{DoxyCompactList}\small\item\em fthttp file expired. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a4a43fba81e461109a63e51ab3fa04550}\label{mtc__im_8h_a4a43fba81e461109a63e51ab3fa04550}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a4a43fba81e461109a63e51ab3fa04550}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+B\+A\+D\+\_\+\+R\+SP}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 72)
+\begin{DoxyCompactList}\small\item\em fthttp bad response. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a4bb913cecc943aff3ffbafb4b9fa7c01}\label{mtc__im_8h_a4bb913cecc943aff3ffbafb4b9fa7c01}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a4bb913cecc943aff3ffbafb4b9fa7c01}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+S\+R\+V\+\_\+\+U\+N\+A\+V\+A\+IL}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 73)
+\begin{DoxyCompactList}\small\item\em fthttp server unavail. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aadb8051b7071028e9af30b62eaacde10}\label{mtc__im_8h_aadb8051b7071028e9af30b62eaacde10}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aadb8051b7071028e9af30b62eaacde10}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+F\+O\+R\+B\+I\+D\+D\+EN}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 74)
+\begin{DoxyCompactList}\small\item\em fthttp request forbidden. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a49cd7a6b0ac56a75436bf18aac020237}\label{mtc__im_8h_a49cd7a6b0ac56a75436bf18aac020237}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a49cd7a6b0ac56a75436bf18aac020237}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+F\+T\+H\+T\+T\+P\+\_\+\+T\+I\+M\+E\+O\+UT}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 75)
+\begin{DoxyCompactList}\small\item\em fthttp request timeout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a58a02f601c1facb310b91798fc5e5296}\label{mtc__im_8h_a58a02f601c1facb310b91798fc5e5296}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a58a02f601c1facb310b91798fc5e5296}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+B\+O\+T\+\_\+\+C\+O\+N\+V\+\_\+\+N\+E\+E\+D\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 76)
+\begin{DoxyCompactList}\small\item\em chatbot conversation needed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_adac56c7f8cbacded6d82641550b2f703}\label{mtc__im_8h_adac56c7f8cbacded6d82641550b2f703}} 
+\#define \mbox{\hyperlink{mtc__im_8h_adac56c7f8cbacded6d82641550b2f703}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+W\+ED}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 77)
+\begin{DoxyCompactList}\small\item\em method not allowed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a276e78d73f7decb680aa83dac43fec09}\label{mtc__im_8h_a276e78d73f7decb680aa83dac43fec09}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a276e78d73f7decb680aa83dac43fec09}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+T\+O\+K\+E\+N\+\_\+\+N\+O\+T\+\_\+\+F\+O\+U\+ND}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 78)
+\begin{DoxyCompactList}\small\item\em token not found. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aff0a0dd378b06f32bf5094ae2fb96bf2}\label{mtc__im_8h_aff0a0dd378b06f32bf5094ae2fb96bf2}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aff0a0dd378b06f32bf5094ae2fb96bf2}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+B\+O\+T\+\_\+\+S\+P\+A\+M\+\_\+\+S\+E\+N\+D\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 77)
+\begin{DoxyCompactList}\small\item\em spam sender. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a96869697483e48e263a6bbf1e40d280f}\label{mtc__im_8h_a96869697483e48e263a6bbf1e40d280f}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a96869697483e48e263a6bbf1e40d280f}{M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+O\+T\+H\+ER}}~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 200)
+\begin{DoxyCompactList}\small\item\em other error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{mtc__im_8h_adb8c47ccf688b20967cbd602650fadb4}{M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN}}~0x0001
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message service flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a5f8229a27f6706b3d348478b4644f915}\label{mtc__im_8h_a5f8229a27f6706b3d348478b4644f915}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a5f8229a27f6706b3d348478b4644f915}{M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+P\+U\+B\+\_\+\+I\+ND}}~0x0002
+\begin{DoxyCompactList}\small\item\em The public message flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_aada3edc7e1b9e0e98539bec54d405c1d}\label{mtc__im_8h_aada3edc7e1b9e0e98539bec54d405c1d}} 
+\#define \mbox{\hyperlink{mtc__im_8h_aada3edc7e1b9e0e98539bec54d405c1d}{M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+G\+M\+\_\+\+M\+I\+X\+\_\+\+M\+SG}}~0x0004
+\begin{DoxyCompactList}\small\item\em The bgm mix message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a522d408b7951cf72d2f469307126fb56}\label{mtc__im_8h_a522d408b7951cf72d2f469307126fb56}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a522d408b7951cf72d2f469307126fb56}{M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+C\+H\+A\+T\+B\+OT}}~0x0008
+\begin{DoxyCompactList}\small\item\em The chatbot message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a27bea093dfd933817f21c2acd4854ed3}\label{mtc__im_8h_a27bea093dfd933817f21c2acd4854ed3}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a27bea093dfd933817f21c2acd4854ed3}{M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+C\+A\+L\+L\+\_\+\+C\+OM}}~0x0010
+\begin{DoxyCompactList}\small\item\em The callcomposer message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a67e65de1ea985b6d1d9f0de0332c7fbf}\label{mtc__im_8h_a67e65de1ea985b6d1d9f0de0332c7fbf}} 
+\#define \mbox{\hyperlink{mtc__im_8h_a67e65de1ea985b6d1d9f0de0332c7fbf}{M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+P\+R\+E\+C\+A\+LL}}~0x0020
+\begin{DoxyCompactList}\small\item\em The pre-\/call message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mtc__im_8h_a97b7c64e578a084515e122be3c21921f}\label{mtc__im_8h_a97b7c64e578a084515e122be3c21921f}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im_8h_a97b7c64e578a084515e122be3c21921f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message content type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a83c5df5a59dcf78c9c37e148bf3f21fe}\label{mtc__im_8h_a83c5df5a59dcf78c9c37e148bf3f21fe}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im_8h_a83c5df5a59dcf78c9c37e148bf3f21fe}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message S\+MS info type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a23945b916ad9a1340a8bfe8a2a5f9398}\label{mtc__im_8h_a23945b916ad9a1340a8bfe8a2a5f9398}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_a0c57850a40f5d0a4a57fbb4da54a91ea}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im_8h_a23945b916ad9a1340a8bfe8a2a5f9398}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message group join notify option type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a398a1bcac9c52162c48dac0a2bb37ea0}\label{mtc__im_8h_a398a1bcac9c52162c48dac0a2bb37ea0}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im_8h_a398a1bcac9c52162c48dac0a2bb37ea0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message spam type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a3eea462411747a666cdd790b673c3c06}\label{mtc__im_8h_a3eea462411747a666cdd790b673c3c06}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im_8h_a3eea462411747a666cdd790b673c3c06}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM session group type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a43fedf92da1d5811a947c34d02c71167}\label{mtc__im_8h_a43fedf92da1d5811a947c34d02c71167}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{mtc__im_8h_a43fedf92da1d5811a947c34d02c71167}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+Y\+PE}}
+\begin{DoxyCompactList}\small\item\em M\+TC IM system message type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_addbd40cd28db3c430f6b85bbeb7ec35b}\label{mtc__im_8h_addbd40cd28db3c430f6b85bbeb7ec35b}} 
+typedef enum \mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}} {\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448abca067ca51b05068332620f4eb0bbad8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448acc256a9d21fb608dec6e5a8d545740ad}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aafe2ea61e2f8b886c0a45ebd9e55d182}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+A\+P\+P\+\_\+\+S\+MS}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a1993feac38b71731014dcb51afb17858}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae52afae24c37e759d08d196f8cf57d1a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+O\+M\+A\+\_\+\+P\+U\+SH}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5b99f40451d3d2741b33a91f5a832adc}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+G\+R\+P\+\_\+\+J\+O\+IN}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448accd82132958ba130a8f8b307e7e28202}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+G\+R\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+FY}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a604417c6e6154e1b86852b8ce01830ab}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+R\+E\+V\+O\+KE}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae7b995325c5deb91ae7ad0d7e0859221}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+P\+R\+E\+\_\+\+C\+A\+LL}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a8a188e1ca65d62f1f4b21ad3f5ad4b30}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a2fded715c26e3cd67aa21af606cd4595}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a9364a451cab8b249caa0c17d3f2ef9d0}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aaeeef7f05e557be82f398083fbc8aa72}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+DN}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a4ca3b8b354f6c52e59b37797aae7ce43}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5566df5ddc2cade9b653ec6f27cb4195}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac67467fdb85fbc6a500825c74a2d56d2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448adf2f1725ab6268462e685287dd35a9d7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448abaf581222e0a95f588fd9c45fd03dfa2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a655b45aa99d50bea4597226442d29885}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a780ec89ab001529e31c609c2d75cba57}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+A\+B\+N\+T\+F\+Y\+\_\+\+X\+ML}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aaee25e54fd814a5930619099e1d57104}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+E\+X\+V\+C\+A\+RD}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ad84d8a554d84150472b7043061a13b2d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+X\+V\+C\+A\+RD}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a32867f5d33ce3ea0cd2e2be795b9badd}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+S\+MS}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aa3a343ea086c6eab1f542e61e8507b1e}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac0a881498c967be3abeeedbe5acf7cd3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5818f3afa704bd295dec1b4214984d30}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+O\+M\+A\+\_\+\+P\+U\+SH}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae7fcdbca794ac1f84f0049042ca68e83}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5fd9e5320ced366fe0a35eb26db0f4a5}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+M\+SG}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae40607bc7ab5aa14bb73403dedfb97b8}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+UG}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac612b8d5b387707abec2dbfce93653de}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+U\+G\+R\+EP}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a2b21e8c3667c5045dacb3b84c9907c17}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+H\+A\+R\+E\+D\+D\+A\+TA}}, 
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac815d1155bd02657e9500e57ef5639df}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+M\+U\+TI}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a30a2f917dec96ab2454eb5a6e7b35fa2}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+P\+R\+E\+\_\+\+C\+A\+LL}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message content type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a0377a6800920b0a3472d532d2a07968c}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+B\+U\+SY}}, 
+\mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a6d793da79ac9a0b0c91df5ee251b069a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER}}, 
+\mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4ad09a11d677bc2d4e1a4a43490a464d3f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+R\+CH}}, 
+\mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a7b2c1fe57bd1a52dbb96ceceef21ece3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+N\+O\+T\+\_\+\+R\+EG}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message S\+MS info type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mtc__im_8h_a0c57850a40f5d0a4a57fbb4da54a91ea}\label{mtc__im_8h_a0c57850a40f5d0a4a57fbb4da54a91ea}} 
+enum \mbox{\hyperlink{mtc__im_8h_a0c57850a40f5d0a4a57fbb4da54a91ea}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+404}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+Y\+ES}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+NO}, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+U\+N\+K\+O\+WN}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message group join notify option type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}} \{ \newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+IN}, 
+\mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954baf106eab15ed52c635970c6bd744c1852}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+P\+O\+L\+I\+T\+I\+C\+A\+L\+\_\+\+R\+U\+M\+OR}}, 
+\mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba5c99db27bcacc07c8f4bad2480207366}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+J\+U\+R\+I\+S\+P\+R\+U\+D\+E\+N\+CE}}, 
+\mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954bae56f6d3c424c0891a3b0da25e3d0e804}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+F\+R\+A\+UD}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954baa966378456ac2fff2f391d42c3cabae1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+A\+L\+I\+C\+I\+O\+U\+S\+\_\+\+M\+A\+R\+K\+E\+T\+I\+NG}}, 
+\mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba927aab369bd65e890a70ba9498249382}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+V\+I\+O\+L\+E\+N\+CE}}, 
+\mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba6c7636fef378ca1a747c7bfe9d9eefb7}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+O\+T\+H\+ER}} = 9, 
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+AX}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM page message spam type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a61f202370867848da8dbbb292d6c645a}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+LL}}, 
+\mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a33881aa4261654ce5e6274b438c70612}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+E\+N\+E\+R\+AL}}, 
+\mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410af2e94cc0927f09f07ec35b3860bb440d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+T\+E\+R\+P\+R\+I\+SE}}, 
+\mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a78bc7a1fcbb001580827c107117d6696}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+A\+R\+TY}}, 
+\newline
+{\bfseries E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+ND}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM session group type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+Y\+PE}} \{ \mbox{\hyperlink{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6dad11919662d2320b67a97e3890aadd005}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6da677aedfb83248c2da398116002b148aa}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+P\+O\+RT}}, 
+\mbox{\hyperlink{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6da61b49f5f3a04d5aa7061022ea26f1de1}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+K\+D\+EL}}
+ \}
+\begin{DoxyCompactList}\small\item\em M\+TC IM system message type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}} \{ \newline
+\mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15affeb034b0d7a8d605d79557a9c0beabb}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15ad1cabd054fb25db855769dc1913be28f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+D\+A\+TA}}, 
+\mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a4f544d981aee256ecf8e6ae35aa3ddc3}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+A\+CK}}, 
+\mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a7f95e288546eac59f82196deb268f8cb}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+S\+M\+MA}}, 
+\newline
+\mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a6b1ae0ec2d911d31b4337ed1db714d73}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+E\+R\+R\+OR}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ad66964072802e74a005ca66b45682786}{Mtc\+\_\+\+Im\+P\+Msg\+Send\+Sms}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Smsc, Z\+C\+H\+AR $\ast$pc\+Phone, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Re\+Try, Z\+U\+I\+NT i\+Msg\+Ref, Z\+B\+O\+OL b\+T\+P\+DU)
+\begin{DoxyCompactList}\small\item\em Sending Instant Message to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ab30c4e777c1752e98299e4814432a852}{Mtc\+\_\+\+Im\+P\+Msg\+Send\+Sms\+Ack}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Smsc\+Addr, Z\+U\+I\+NT i\+Msg\+Ref, Z\+U\+I\+NT error\+Code)
+\begin{DoxyCompactList}\small\item\em Sending S\+MS A\+CK to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im_8h_a025c128e190093cb6557e72fdddc29d3}{Mtc\+\_\+\+Pmsg\+Send\+Sms\+AckX}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Call\+Id\+Number, Z\+C\+H\+AR $\ast$pc\+Call\+Id\+Host, Z\+C\+H\+AR $\ast$pc\+Peer\+Uri, Z\+U\+I\+NT i\+Msg\+Ref, Z\+U\+I\+NT error\+Code)
+\begin{DoxyCompactList}\small\item\em Sending S\+MS A\+CK to one participant with S\+MS using rfc 3G\+PP TS 24.\+341. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a14ee766afbb91db24708deb09d3052d8}{Mtc\+\_\+\+Im\+P\+Msg\+Send\+Sms\+Smma}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Smsc, Z\+U\+I\+NT i\+Msg\+Ref, Z\+B\+O\+OL b\+Available)
+\begin{DoxyCompactList}\small\item\em Sending S\+MS S\+M\+MA to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_aad638abaac48c756a9e0ff77bcd797f0}{Mtc\+\_\+\+Im\+P\+Msg\+Send}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+U\+I\+NT i\+Srv\+Flag, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Traf\+Type, Z\+C\+H\+AR $\ast$pc\+In\+Reply\+To, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Instant Message to one participant. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_aad4c785ebefc8470f9909d8f7fa73a08}{Mtc\+\_\+\+Im\+P\+Msg\+SendU}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+U\+I\+NT i\+Partp\+Lst\+Id, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Font\+Info, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Instant Message to participant list. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a96d94532b76c4c0c13993fff2c37f975}{Mtc\+\_\+\+Im\+P\+Msg\+SendS}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+From\+Uri, Z\+C\+H\+AR $\ast$pc\+To\+Uri, Z\+M\+T\+I\+M\+E\+\_\+T z\+Date, Z\+U\+I\+NT i\+Spam\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Instant Message to one participant with spam information. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ac8b308255cfc3c1bd7dea0f645dc7ca5}{Mtc\+\_\+\+Im\+P\+Msg\+Send\+GM}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending Instant Message to one group for group management. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a1a672b322cf11dec7d4238c767f86ff8}{Mtc\+\_\+\+Im\+P\+Msg\+SendM}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+V\+O\+ID $\ast$p\+Data, Z\+U\+I\+NT i\+Data\+Size, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Re\+Imdn\+Id)
+\begin{DoxyCompactList}\small\item\em Sending multi-\/media Message to one participant. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_acd0aa881fc135c5a1ef6c8b643a06ca4}{Mtc\+\_\+\+Im\+P\+Msg\+Reply}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Msg\+Len, Z\+U\+I\+NT i\+Msg\+Type, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id)
+\begin{DoxyCompactList}\small\item\em Reply to specific standalone page mode message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a47b764fbe8cf4f3707e8c5e01aafd3d4}{Mtc\+\_\+\+Im\+P\+Msg\+Revoke}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+C\+H\+AR $\ast$pc\+Conv\+Id, Z\+C\+H\+AR $\ast$pc\+Cont\+Id)
+\begin{DoxyCompactList}\small\item\em Revoke to specific standalone page mode message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im_8h_a42f86ad233b058001fa7371a903e8c33}{Mtc\+\_\+\+Im\+P\+Msg\+Response}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Sip\+Code)
+\begin{DoxyCompactList}\small\item\em Response to specific standalone page mode message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a6b49e7bba3c6bf36844430ab7cbf26b5}{Mtc\+\_\+\+Im\+P\+Msg\+Send\+System}} (Z\+C\+O\+O\+K\+IE z\+Cookie, Z\+C\+H\+AR $\ast$pc\+Uri, Z\+C\+H\+AR $\ast$pc\+Msg, Z\+U\+I\+NT i\+Sys\+Type)
+\begin{DoxyCompactList}\small\item\em Sending system message to one participant. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE \mbox{\hyperlink{mtc__im_8h_a839ab3936c571c431e0ccad15cefecbd}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get user cookie from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im_8h_a338af74f838604e293aea9c465c42fa6}{Mtc\+\_\+\+Im\+P\+Msg\+Set\+Cookie}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+O\+O\+K\+IE z\+Cookie)
+\begin{DoxyCompactList}\small\item\em M\+TC Set user cookie in a page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ab26e93eb1789fb9ebacc6d8f9b34080f}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Imdn\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the Imdn id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a2db6deaed8746d1e920f59d92ba5163c}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Device\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get device id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a9c523d2382d334ff4859747732cf745f}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the content type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a60811802c104a9a35157a517131b226e}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the content length from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a7fe7fcc9166658ea739183a4691e59e1}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the content from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im_8h_a3255cff250fd001c304982097f7877f0}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+M\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+V\+O\+ID $\ast$$\ast$pp\+Data, Z\+U\+I\+NT $\ast$pi\+Data\+Size)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the multi-\/media content from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ac9fae0dddd6d5387abd62ccba8c49d1f}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Bot\+Msg\+Content\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em R\+IE Get chatbot result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a473262fcf0315edddc85c0b9bca15d4f}{Mtc\+\_\+\+Im\+P\+Ms\+Get\+Muti\+Content}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+U\+I\+NT i\+Msg\+Type)
+\begin{DoxyCompactList}\small\item\em R\+IE Get chatbot result. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a2c674b9258ba09058f5bde43ca5260be}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+MF Get participant type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im_8h_a7ab4ef4d02515c5094b2d495ce5bdb03}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant information from page message. Get receiver information from feion carbon copy page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a3ca48f88c2e27ca73aba9119b7e1b588}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Cpim\+Partp}} (Z\+U\+I\+NT i\+Msg\+Id, Z\+C\+H\+AR $\ast$$\ast$ppc\+Name, Z\+C\+H\+AR $\ast$$\ast$ppc\+Uri)
+\begin{DoxyCompactList}\small\item\em M\+TC Get peer information frompage message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_adf733f966c40fce2ac43849356c0c404}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp\+Lst\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get participant list id from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+I\+NT \mbox{\hyperlink{mtc__im_8h_a1c2994c63a202a2f8dba4db5dbcb599b}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Sys\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id, \mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$pst\+Time)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T \mbox{\hyperlink{mtc__im_8h_a76ea6c16530013c1625dfc6216ff9b0b}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Date\+Time}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get date time from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a8ecddc9ee0d44983c9fca2e6bc559d8c}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Conv\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get conversation-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a560864ac359e1fa792418d3cfedaf26e}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a7786c052c91d267e0b5748cd62e3f98a}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Irt\+Cont\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get inreplyto-\/contribution-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a9cd93b30c6d6669509ac0039957b5991}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Sip\+Code}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get sip code from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a35896b970b58192c5ab515c25893ad13}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Burn\+Time\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get burn after reading time length from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a7671653e01dab929993f959e0bdeb76d}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Font\+Info}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get font information from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_abc164a490ec4994b2a0dd197a585be26}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Traffic\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get Traffic Type from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a5625824d4a5faf2d7f90334acf918dc1}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+Msg\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke message-\/id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+C\+H\+AR \mbox{\hyperlink{mtc__im_8h_a38248fcf2ff203e5d7f7ebc172064a72}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+Result}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke result from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_afd992e3f0b1cf8db9bbfd02f0af08555}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+From\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke from addr from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a229ea567f063598635461123d3e63efc}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+To\+Addr}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke to addr from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a41bcdb525201648b7b1ac97c8eaea838}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Grp\+Name}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the qrcode group-\/name from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a2b1e35f6ce58eda7953732a7d19c3a40}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Grp\+Uri}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the qrcode group-\/\+Uri from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a024ef8cedc3d9ecd18d4c0a44e621c84}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Grp\+Proposer}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the qrcode group-\/proposer from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a2a9a943ed9c2ab6ee4b4f9396afeadc5}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Reason}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the qrcode reason from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_aba6eabcffaa00e4a94fa8600687b6f43}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Option\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get the qrcode option type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_aac456d51546dfd4e0d8a4aba24ab2099}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+App\+Push\+Type}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get app push type from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ad9073f404173e27c25a9a4ac025c335b}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Ft\+Http\+Id}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get fthttp id from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_abc23af2da902655402466f1c4cfcf83b}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Oma\+Im}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get O\+MA IM flag from page message. O\+MA IM flag exist in accept header +g.\+oma.\+sip-\/im. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a5bc30fd946ea601e3d8b6483b1c4fc4a}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Oma\+Im\+Sys}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get O\+MA IM flag from IM system message. O\+MA IM system message flag exist in accept header +g.\+oma.\+sip-\/im.\+system-\/message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a0d996dde3695cf2ef807afcfe65dc4fd}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Rcs\+Sms}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get R\+CS S\+MS flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a70cca7c5b6e35ed61db66cb0869953a5}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Sms\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get sms indication flag from page message. It has \char`\"{}sms;operation=submit\char`\"{} in \char`\"{}\+P-\/\+Message-\/\+Type-\/\+Indicator\char`\"{}. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a46ed056991ad7f30ad78c0b99c5a2223}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Pub\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get public message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a2babfba4f0df6d9264e0fb32d6726971}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Grp\+M\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get group manage message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a3f06238fb06660311d830e722cfe5f86}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Call\+Composer\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get callcomposer message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_ae431fd5ea1805b084db820a64c09ecf1}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Revoke\+Msg\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get revoke message indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_aa8c86ff799a1cdb27b2ca3de9e510f73}{Mtc\+\_\+\+Im\+P\+Msg\+Supt\+Msg\+Revoke}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC support message revoke indication flag from im message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a51b521e7697bffea31b7053cc77736e8}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Burn\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get burn after reading indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_ade10bb2e991d3597c02d4815f1d41805}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Spam\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get spam indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a5344c07fe4839eeae96594974fd1dbf3}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Direct\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get directional indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a4f6a109e4adc50026d8b5da9cd7e45cc}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Silence\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get silence indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_abb66ee1674b9deb0475176a781e5de2b}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Cc\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get carbon copy indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a2129da72a34fee4b04ff20894ce8eb24}{Mtc\+\_\+\+Im\+P\+Msg\+Has\+Off\+Ind}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get offline indication flag from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a658df76c01e4c6c5883090ef11caa030}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Is\+Chat\+Bot}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get is chatboe message from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+B\+O\+OL \mbox{\hyperlink{mtc__im_8h_a8099d4b347607d2b361d64832c31db9f}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Is\+Pre\+Call}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get is pre-\/call message from page message. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_a28a901766cc330e23e6c998035ec7777}{Mtc\+\_\+\+Im\+P\+Msg\+Conver\+C\+Type}} (Z\+U\+I\+NT i\+Type)
+\begin{DoxyCompactList}\small\item\em Mtc pager msg conver type. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+C\+H\+AR $\ast$ \mbox{\hyperlink{mtc__im_8h_a9e8c3cbe8112cca73d01dc137bf6974e}{Mtc\+\_\+\+Im\+P\+Msg\+Create\+Revoke\+Xml}} (Z\+C\+H\+AR $\ast$pc\+Msg\+Id, Z\+C\+H\+AR $\ast$pc\+Revoke\+Result, Z\+C\+H\+AR $\ast$pc\+From\+Addr, Z\+C\+H\+AR $\ast$pc\+To\+Addr)
+\begin{DoxyCompactList}\small\item\em M\+TC create revoke xml content. \end{DoxyCompactList}\item 
+Z\+F\+U\+NC Z\+U\+I\+NT \mbox{\hyperlink{mtc__im_8h_ad5768d397437f0373e19fe22d327daf0}{Mtc\+\_\+\+Im\+P\+Msg\+Get\+Retry\+Len}} (Z\+U\+I\+NT i\+Msg\+Id)
+\begin{DoxyCompactList}\small\item\em M\+TC Get retry time len from page message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+M\+TC Instant Message Interface Functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mtc__im_8h_aa583589c7dbd04e169745b55d4279aed}\label{mtc__im_8h_aa583589c7dbd04e169745b55d4279aed}} 
+\index{mtc\_im.h@{mtc\_im.h}!MTC\_IM\_ERR\_NO@{MTC\_IM\_ERR\_NO}}
+\index{MTC\_IM\_ERR\_NO@{MTC\_IM\_ERR\_NO}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_IM\_ERR\_NO}{MTC\_IM\_ERR\_NO}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+I\+M\+\_\+\+E\+R\+R\+\_\+\+NO~(\mbox{\hyperlink{mtc__cli_8h_a7566a36238874ca3fc320571eb6098db}{M\+T\+C\+\_\+\+E\+B\+A\+S\+E\+\_\+\+IM}} + 0)}
+
+
+
+M\+TC im status code(error no or terminated code). 
+
+no error. \mbox{\Hypertarget{mtc__im_8h_adb8c47ccf688b20967cbd602650fadb4}\label{mtc__im_8h_adb8c47ccf688b20967cbd602650fadb4}} 
+\index{mtc\_im.h@{mtc\_im.h}!MTC\_PMSG\_SRV\_BURN@{MTC\_PMSG\_SRV\_BURN}}
+\index{MTC\_PMSG\_SRV\_BURN@{MTC\_PMSG\_SRV\_BURN}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{MTC\_PMSG\_SRV\_BURN}{MTC\_PMSG\_SRV\_BURN}}
+{\footnotesize\ttfamily \#define M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+R\+V\+\_\+\+B\+U\+RN~0x0001}
+
+
+
+M\+TC IM page message service flag. 
+
+The burn after reading message flag 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410}\label{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410}} 
+\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_GROUP\_TYPE@{EN\_MTC\_GROUP\_TYPE}}
+\index{EN\_MTC\_GROUP\_TYPE@{EN\_MTC\_GROUP\_TYPE}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_GROUP\_TYPE}{EN\_MTC\_GROUP\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410}{E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM session group type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GROUP\_TYPE\_ALL@{EN\_MTC\_GROUP\_TYPE\_ALL}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_GROUP\_TYPE\_ALL@{EN\_MTC\_GROUP\_TYPE\_ALL}}}\mbox{\Hypertarget{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a61f202370867848da8dbbb292d6c645a}\label{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a61f202370867848da8dbbb292d6c645a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+LL&all groups \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GROUP\_TYPE\_GENERAL@{EN\_MTC\_GROUP\_TYPE\_GENERAL}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_GROUP\_TYPE\_GENERAL@{EN\_MTC\_GROUP\_TYPE\_GENERAL}}}\mbox{\Hypertarget{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a33881aa4261654ce5e6274b438c70612}\label{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a33881aa4261654ce5e6274b438c70612}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+E\+N\+E\+R\+AL&general group \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GROUP\_TYPE\_ENTERPRISE@{EN\_MTC\_GROUP\_TYPE\_ENTERPRISE}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_GROUP\_TYPE\_ENTERPRISE@{EN\_MTC\_GROUP\_TYPE\_ENTERPRISE}}}\mbox{\Hypertarget{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410af2e94cc0927f09f07ec35b3860bb440d}\label{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410af2e94cc0927f09f07ec35b3860bb440d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+N\+T\+E\+R\+P\+R\+I\+SE&enterprise group \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_GROUP\_TYPE\_PARTY@{EN\_MTC\_GROUP\_TYPE\_PARTY}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_GROUP\_TYPE\_PARTY@{EN\_MTC\_GROUP\_TYPE\_PARTY}}}\mbox{\Hypertarget{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a78bc7a1fcbb001580827c107117d6696}\label{mtc__im_8h_a96f4ee0d2545ce2fa3fa7bb2d87eb410a78bc7a1fcbb001580827c107117d6696}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+A\+R\+TY&party group \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15}\label{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15}} 
+\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_IM\_SMS\_TYPE@{EN\_MTC\_IM\_SMS\_TYPE}}
+\index{EN\_MTC\_IM\_SMS\_TYPE@{EN\_MTC\_IM\_SMS\_TYPE}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_IM\_SMS\_TYPE}{EN\_MTC\_IM\_SMS\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15}{E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SMS\_CONT\_UNKNOWN@{EN\_MTC\_IM\_SMS\_CONT\_UNKNOWN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_IM\_SMS\_CONT\_UNKNOWN@{EN\_MTC\_IM\_SMS\_CONT\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15affeb034b0d7a8d605d79557a9c0beabb}\label{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15affeb034b0d7a8d605d79557a9c0beabb}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&unknown content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SMS\_CONT\_RPDATA@{EN\_MTC\_IM\_SMS\_CONT\_RPDATA}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_IM\_SMS\_CONT\_RPDATA@{EN\_MTC\_IM\_SMS\_CONT\_RPDATA}}}\mbox{\Hypertarget{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15ad1cabd054fb25db855769dc1913be28f}\label{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15ad1cabd054fb25db855769dc1913be28f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+D\+A\+TA&sms rp-\/data content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SMS\_CONT\_RPACK@{EN\_MTC\_IM\_SMS\_CONT\_RPACK}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_IM\_SMS\_CONT\_RPACK@{EN\_MTC\_IM\_SMS\_CONT\_RPACK}}}\mbox{\Hypertarget{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a4f544d981aee256ecf8e6ae35aa3ddc3}\label{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a4f544d981aee256ecf8e6ae35aa3ddc3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+A\+CK&sms rp-\/ack content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SMS\_CONT\_RPSMMA@{EN\_MTC\_IM\_SMS\_CONT\_RPSMMA}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_IM\_SMS\_CONT\_RPSMMA@{EN\_MTC\_IM\_SMS\_CONT\_RPSMMA}}}\mbox{\Hypertarget{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a7f95e288546eac59f82196deb268f8cb}\label{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a7f95e288546eac59f82196deb268f8cb}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+S\+M\+MA&sms rp-\/smma content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_IM\_SMS\_CONT\_RPERROR@{EN\_MTC\_IM\_SMS\_CONT\_RPERROR}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_IM\_SMS\_CONT\_RPERROR@{EN\_MTC\_IM\_SMS\_CONT\_RPERROR}}}\mbox{\Hypertarget{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a6b1ae0ec2d911d31b4337ed1db714d73}\label{mtc__im_8h_a5ac822ed809d36f2eb664718ace4ab15a6b1ae0ec2d911d31b4337ed1db714d73}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+I\+M\+\_\+\+S\+M\+S\+\_\+\+C\+O\+N\+T\+\_\+\+R\+P\+E\+R\+R\+OR&sms rp-\/error content \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448}} 
+\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CTYPE@{EN\_MTC\_PMSG\_CTYPE}}
+\index{EN\_MTC\_PMSG\_CTYPE@{EN\_MTC\_PMSG\_CTYPE}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PMSG\_CTYPE}{EN\_MTC\_PMSG\_CTYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}}
+
+
+
+M\+TC IM page message content type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_UNKNOWN@{EN\_MTC\_PMSG\_CONT\_UNKNOWN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_UNKNOWN@{EN\_MTC\_PMSG\_CONT\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448abca067ca51b05068332620f4eb0bbad8}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448abca067ca51b05068332620f4eb0bbad8}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+U\+N\+K\+N\+O\+WN&unknown content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_TXT\_PLAIN@{EN\_MTC\_PMSG\_CONT\_TXT\_PLAIN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_TXT\_PLAIN@{EN\_MTC\_PMSG\_CONT\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448acc256a9d21fb608dec6e5a8d545740ad}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448acc256a9d21fb608dec6e5a8d545740ad}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&text/plain content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_APP\_SMS@{EN\_MTC\_PMSG\_CONT\_APP\_SMS}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_APP\_SMS@{EN\_MTC\_PMSG\_CONT\_APP\_SMS}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aafe2ea61e2f8b886c0a45ebd9e55d182}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aafe2ea61e2f8b886c0a45ebd9e55d182}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+A\+P\+P\+\_\+\+S\+MS&application/vnd.\+3gpp.\+sms content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_VEMOTICON@{EN\_MTC\_PMSG\_CONT\_VEMOTICON}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_VEMOTICON@{EN\_MTC\_PMSG\_CONT\_VEMOTICON}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a1993feac38b71731014dcb51afb17858}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a1993feac38b71731014dcb51afb17858}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON&\char`\"{}application/vemoticon+xml\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_OMA\_PUSH@{EN\_MTC\_PMSG\_CONT\_OMA\_PUSH}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_OMA\_PUSH@{EN\_MTC\_PMSG\_CONT\_OMA\_PUSH}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae52afae24c37e759d08d196f8cf57d1a}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae52afae24c37e759d08d196f8cf57d1a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+O\+M\+A\+\_\+\+P\+U\+SH&\char`\"{}application/vnd.\+oma.\+push\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_GRP\_JOIN@{EN\_MTC\_PMSG\_CONT\_GRP\_JOIN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_GRP\_JOIN@{EN\_MTC\_PMSG\_CONT\_GRP\_JOIN}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5b99f40451d3d2741b33a91f5a832adc}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5b99f40451d3d2741b33a91f5a832adc}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+G\+R\+P\+\_\+\+J\+O\+IN&\char`\"{}message/group-\/join\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_GRP\_JOIN\_NTFY@{EN\_MTC\_PMSG\_CONT\_GRP\_JOIN\_NTFY}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_GRP\_JOIN\_NTFY@{EN\_MTC\_PMSG\_CONT\_GRP\_JOIN\_NTFY}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448accd82132958ba130a8f8b307e7e28202}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448accd82132958ba130a8f8b307e7e28202}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+G\+R\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+FY&\char`\"{}message/group-\/join-\/notify\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_REVOKE@{EN\_MTC\_PMSG\_CONT\_REVOKE}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_REVOKE@{EN\_MTC\_PMSG\_CONT\_REVOKE}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a604417c6e6154e1b86852b8ce01830ab}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a604417c6e6154e1b86852b8ce01830ab}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+R\+E\+V\+O\+KE&\char`\"{}application/vnd.\+gsma.\+rcsrevoke+xml\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_PRE\_CALL@{EN\_MTC\_PMSG\_CONT\_PRE\_CALL}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_PRE\_CALL@{EN\_MTC\_PMSG\_CONT\_PRE\_CALL}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae7b995325c5deb91ae7ad0d7e0859221}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae7b995325c5deb91ae7ad0d7e0859221}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+P\+R\+E\+\_\+\+C\+A\+LL&content type of \char`\"{}application/vnd.\+gsma.\+encall+xml\char`\"{} \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_PLAIN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_PLAIN@{EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_PLAIN}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a8a188e1ca65d62f1f4b21ad3f5ad4b30}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a8a188e1ca65d62f1f4b21ad3f5ad4b30}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN&content type of \char`\"{}text/plain\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_JPEG}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_JPEG@{EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_JPEG}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a2fded715c26e3cd67aa21af606cd4595}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a2fded715c26e3cd67aa21af606cd4595}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+J\+P\+EG&content type of \char`\"{}image/jpeg\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_BMP@{EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_BMP}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_BMP@{EN\_MTC\_PMSG\_CONT\_MSG\_IMAGE\_BMP}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a9364a451cab8b249caa0c17d3f2ef9d0}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a9364a451cab8b249caa0c17d3f2ef9d0}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+A\+G\+E\+\_\+\+B\+MP&content type of \char`\"{}image/bmp\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_IMDN@{EN\_MTC\_PMSG\_CONT\_MSG\_IMDN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_IMDN@{EN\_MTC\_PMSG\_CONT\_MSG\_IMDN}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aaeeef7f05e557be82f398083fbc8aa72}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aaeeef7f05e557be82f398083fbc8aa72}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+I\+M\+DN&content type of \char`\"{}message/imdn+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_VEMOTICON@{EN\_MTC\_PMSG\_CONT\_MSG\_VEMOTICON}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_VEMOTICON@{EN\_MTC\_PMSG\_CONT\_MSG\_VEMOTICON}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a4ca3b8b354f6c52e59b37797aae7ce43}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a4ca3b8b354f6c52e59b37797aae7ce43}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+V\+E\+M\+O\+T\+I\+C\+ON&content type of \char`\"{}application/vemoticon+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MTC\_PMSG\_CONT\_MSG\_CLOUD\_FILE}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_CLOUD\_FILE@{EN\_MTC\_PMSG\_CONT\_MSG\_CLOUD\_FILE}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5566df5ddc2cade9b653ec6f27cb4195}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5566df5ddc2cade9b653ec6f27cb4195}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+L\+O\+U\+D\+\_\+\+F\+I\+LE&content type of \char`\"{}application/cloudfile+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MTC\_PMSG\_CONT\_MSG\_CMRED\_BAG}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_CMRED\_BAG@{EN\_MTC\_PMSG\_CONT\_MSG\_CMRED\_BAG}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac67467fdb85fbc6a500825c74a2d56d2}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac67467fdb85fbc6a500825c74a2d56d2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+M\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}application/cmredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MTC\_PMSG\_CONT\_MSG\_CHRED\_BAG}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_CHRED\_BAG@{EN\_MTC\_PMSG\_CONT\_MSG\_CHRED\_BAG}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448adf2f1725ab6268462e685287dd35a9d7}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448adf2f1725ab6268462e685287dd35a9d7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+H\+R\+E\+D\+\_\+\+B\+AG&content type of \char`\"{}application/chredbag+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_CARD@{EN\_MTC\_PMSG\_CONT\_MSG\_CARD}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_CARD@{EN\_MTC\_PMSG\_CONT\_MSG\_CARD}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448abaf581222e0a95f588fd9c45fd03dfa2}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448abaf581222e0a95f588fd9c45fd03dfa2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+A\+RD&content type of \char`\"{}application/card+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_139MAIL\_NEW@{EN\_MTC\_PMSG\_CONT\_MSG\_139MAIL\_NEW}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_139MAIL\_NEW@{EN\_MTC\_PMSG\_CONT\_MSG\_139MAIL\_NEW}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a655b45aa99d50bea4597226442d29885}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a655b45aa99d50bea4597226442d29885}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+139\+M\+A\+I\+L\+\_\+\+N\+EW&content type of \char`\"{}application/commonextension+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_ABNTFY\_XML@{EN\_MTC\_PMSG\_CONT\_MSG\_ABNTFY\_XML}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_ABNTFY\_XML@{EN\_MTC\_PMSG\_CONT\_MSG\_ABNTFY\_XML}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a780ec89ab001529e31c609c2d75cba57}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a780ec89ab001529e31c609c2d75cba57}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+A\+B\+N\+T\+F\+Y\+\_\+\+X\+ML&content type of \char`\"{}application/\+A\+B\+Notification+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_EXVCARD@{EN\_MTC\_PMSG\_CONT\_MSG\_EXVCARD}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_EXVCARD@{EN\_MTC\_PMSG\_CONT\_MSG\_EXVCARD}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aaee25e54fd814a5930619099e1d57104}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aaee25e54fd814a5930619099e1d57104}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+E\+X\+V\+C\+A\+RD&content type of \char`\"{}text/ex-\/vcard\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_XVCARD@{EN\_MTC\_PMSG\_CONT\_MSG\_XVCARD}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_XVCARD@{EN\_MTC\_PMSG\_CONT\_MSG\_XVCARD}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ad84d8a554d84150472b7043061a13b2d}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ad84d8a554d84150472b7043061a13b2d}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+X\+V\+C\+A\+RD&content type of \char`\"{}text/x-\/vcard\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_SMS@{EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_SMS}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_SMS@{EN\_MTC\_PMSG\_CONT\_MSG\_TXT\_SMS}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a32867f5d33ce3ea0cd2e2be795b9badd}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a32867f5d33ce3ea0cd2e2be795b9badd}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+S\+MS&content type of \char`\"{}text/sms\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MTC\_PMSG\_CONT\_MSG\_COM\_TEMP}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_COM\_TEMP@{EN\_MTC\_PMSG\_CONT\_MSG\_COM\_TEMP}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aa3a343ea086c6eab1f542e61e8507b1e}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448aa3a343ea086c6eab1f542e61e8507b1e}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+C\+O\+M\+\_\+\+T\+E\+MP&content type of \char`\"{}application/commontemplate+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_REVOKE@{EN\_MTC\_PMSG\_CONT\_MSG\_REVOKE}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_REVOKE@{EN\_MTC\_PMSG\_CONT\_MSG\_REVOKE}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac0a881498c967be3abeeedbe5acf7cd3}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac0a881498c967be3abeeedbe5acf7cd3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+R\+E\+V\+O\+KE&content type of \char`\"{}application/vnd.\+gsma.\+rcsrevoke+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_OMA\_PUSH@{EN\_MTC\_PMSG\_CONT\_MSG\_OMA\_PUSH}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_OMA\_PUSH@{EN\_MTC\_PMSG\_CONT\_MSG\_OMA\_PUSH}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5818f3afa704bd295dec1b4214984d30}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5818f3afa704bd295dec1b4214984d30}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+O\+M\+A\+\_\+\+P\+U\+SH&content type of \char`\"{}application/vnd.\+oma.\+push\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_FTHTTP@{EN\_MTC\_PMSG\_CONT\_MSG\_FTHTTP}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_FTHTTP@{EN\_MTC\_PMSG\_CONT\_MSG\_FTHTTP}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae7fcdbca794ac1f84f0049042ca68e83}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae7fcdbca794ac1f84f0049042ca68e83}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+F\+T\+H\+T\+TP&content type of \char`\"{}application/vnd.\+gsma.\+rcs-\/ft-\/http+xml\char`\"{} wrapt by cpim \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_BOTMSG@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTMSG}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_BOTMSG@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTMSG}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5fd9e5320ced366fe0a35eb26db0f4a5}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a5fd9e5320ced366fe0a35eb26db0f4a5}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+M\+SG&content type of \char`\"{}application/vnd.\+gsma.\+botmessage.\+v1.\+0+json\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUG@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUG}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUG@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUG}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae40607bc7ab5aa14bb73403dedfb97b8}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ae40607bc7ab5aa14bb73403dedfb97b8}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+UG&content type of \char`\"{}application/vnd.\+gsma.\+botsuggestion.\+v1.\+0+json\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUGREP@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUGREP}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUGREP@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSUGREP}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac612b8d5b387707abec2dbfce93653de}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac612b8d5b387707abec2dbfce93653de}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+U\+G\+R\+EP&content type of \char`\"{}application/vnd.\+gsma.\+botsuggestion.\+response.\+v1.\+0+json\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSHAREDDATA@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSHAREDDATA}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_BOTSHAREDDATA@{EN\_MTC\_PMSG\_CONT\_MSG\_BOTSHAREDDATA}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a2b21e8c3667c5045dacb3b84c9907c17}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a2b21e8c3667c5045dacb3b84c9907c17}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+B\+O\+T\+S\+H\+A\+R\+E\+D\+D\+A\+TA&content type of \char`\"{}application/vnd.\+gsma.\+botsharedclientdata.\+v1.\+0+json\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_MUTI@{EN\_MTC\_PMSG\_CONT\_MSG\_MUTI}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_MUTI@{EN\_MTC\_PMSG\_CONT\_MSG\_MUTI}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac815d1155bd02657e9500e57ef5639df}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448ac815d1155bd02657e9500e57ef5639df}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+M\+U\+TI&content type of \char`\"{}multipart/mixed\char`\"{} content \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_CONT\_MSG\_PRE\_CALL@{EN\_MTC\_PMSG\_CONT\_MSG\_PRE\_CALL}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_CONT\_MSG\_PRE\_CALL@{EN\_MTC\_PMSG\_CONT\_MSG\_PRE\_CALL}}}\mbox{\Hypertarget{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a30a2f917dec96ab2454eb5a6e7b35fa2}\label{mtc__im_8h_ab92740e24769b0db9cac81fca4ec6448a30a2f917dec96ab2454eb5a6e7b35fa2}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+P\+R\+E\+\_\+\+C\+A\+LL&content type of \char`\"{}application/vnd.\+gsma.\+encall+xml\char`\"{} content \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4}\label{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4}} 
+\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SMS\_TYPE@{EN\_MTC\_PMSG\_SMS\_TYPE}}
+\index{EN\_MTC\_PMSG\_SMS\_TYPE@{EN\_MTC\_PMSG\_SMS\_TYPE}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PMSG\_SMS\_TYPE}{EN\_MTC\_PMSG\_SMS\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM page message S\+MS info type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SMS\_BUSY@{EN\_MTC\_PMSG\_SMS\_BUSY}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SMS\_BUSY@{EN\_MTC\_PMSG\_SMS\_BUSY}}}\mbox{\Hypertarget{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a0377a6800920b0a3472d532d2a07968c}\label{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a0377a6800920b0a3472d532d2a07968c}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+B\+U\+SY&busy \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SMS\_NO\_ANSWER@{EN\_MTC\_PMSG\_SMS\_NO\_ANSWER}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SMS\_NO\_ANSWER@{EN\_MTC\_PMSG\_SMS\_NO\_ANSWER}}}\mbox{\Hypertarget{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a6d793da79ac9a0b0c91df5ee251b069a}\label{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a6d793da79ac9a0b0c91df5ee251b069a}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+N\+O\+\_\+\+A\+N\+S\+W\+ER&noanswer \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SMS\_NOT\_REARCH@{EN\_MTC\_PMSG\_SMS\_NOT\_REARCH}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SMS\_NOT\_REARCH@{EN\_MTC\_PMSG\_SMS\_NOT\_REARCH}}}\mbox{\Hypertarget{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4ad09a11d677bc2d4e1a4a43490a464d3f}\label{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4ad09a11d677bc2d4e1a4a43490a464d3f}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+R\+CH&notreachable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SMS\_NOT\_REG@{EN\_MTC\_PMSG\_SMS\_NOT\_REG}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SMS\_NOT\_REG@{EN\_MTC\_PMSG\_SMS\_NOT\_REG}}}\mbox{\Hypertarget{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a7b2c1fe57bd1a52dbb96ceceef21ece3}\label{mtc__im_8h_a9c6c5ce618690781a7c1fd64e7cb7ab4a7b2c1fe57bd1a52dbb96ceceef21ece3}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+M\+S\+\_\+\+N\+O\+T\+\_\+\+R\+EG&notregistered \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954b}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954b}} 
+\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_TYPE@{EN\_MTC\_PMSG\_SPAM\_TYPE}}
+\index{EN\_MTC\_PMSG\_SPAM\_TYPE@{EN\_MTC\_PMSG\_SPAM\_TYPE}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_PMSG\_SPAM\_TYPE}{EN\_MTC\_PMSG\_SPAM\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954b}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM page message spam type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SPAM\_POLITICAL\_RUMOR@{EN\_MTC\_PMSG\_SPAM\_POLITICAL\_RUMOR}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_POLITICAL\_RUMOR@{EN\_MTC\_PMSG\_SPAM\_POLITICAL\_RUMOR}}}\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954baf106eab15ed52c635970c6bd744c1852}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954baf106eab15ed52c635970c6bd744c1852}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+P\+O\+L\+I\+T\+I\+C\+A\+L\+\_\+\+R\+U\+M\+OR&political rumor msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SPAM\_JURISPRUDENCE@{EN\_MTC\_PMSG\_SPAM\_JURISPRUDENCE}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_JURISPRUDENCE@{EN\_MTC\_PMSG\_SPAM\_JURISPRUDENCE}}}\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba5c99db27bcacc07c8f4bad2480207366}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba5c99db27bcacc07c8f4bad2480207366}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+J\+U\+R\+I\+S\+P\+R\+U\+D\+E\+N\+CE&jurisprudence msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SPAM\_FRAUD@{EN\_MTC\_PMSG\_SPAM\_FRAUD}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_FRAUD@{EN\_MTC\_PMSG\_SPAM\_FRAUD}}}\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954bae56f6d3c424c0891a3b0da25e3d0e804}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954bae56f6d3c424c0891a3b0da25e3d0e804}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+F\+R\+A\+UD&fraud msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SPAM\_MALICIOUS\_MARKETING@{EN\_MTC\_PMSG\_SPAM\_MALICIOUS\_MARKETING}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_MALICIOUS\_MARKETING@{EN\_MTC\_PMSG\_SPAM\_MALICIOUS\_MARKETING}}}\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954baa966378456ac2fff2f391d42c3cabae1}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954baa966378456ac2fff2f391d42c3cabae1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+M\+A\+L\+I\+C\+I\+O\+U\+S\+\_\+\+M\+A\+R\+K\+E\+T\+I\+NG&malicious marketing msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SPAM\_VIOLENCE@{EN\_MTC\_PMSG\_SPAM\_VIOLENCE}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_VIOLENCE@{EN\_MTC\_PMSG\_SPAM\_VIOLENCE}}}\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba927aab369bd65e890a70ba9498249382}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba927aab369bd65e890a70ba9498249382}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+V\+I\+O\+L\+E\+N\+CE&violence msg \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_PMSG\_SPAM\_OTHER@{EN\_MTC\_PMSG\_SPAM\_OTHER}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_PMSG\_SPAM\_OTHER@{EN\_MTC\_PMSG\_SPAM\_OTHER}}}\mbox{\Hypertarget{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba6c7636fef378ca1a747c7bfe9d9eefb7}\label{mtc__im_8h_a1f66ba3f1f0468a9b60eced73643954ba6c7636fef378ca1a747c7bfe9d9eefb7}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+S\+P\+A\+M\+\_\+\+O\+T\+H\+ER&other msg \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6d}\label{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6d}} 
+\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_SYSTEM\_TYPE@{EN\_MTC\_SYSTEM\_TYPE}}
+\index{EN\_MTC\_SYSTEM\_TYPE@{EN\_MTC\_SYSTEM\_TYPE}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{EN\_MTC\_SYSTEM\_TYPE}{EN\_MTC\_SYSTEM\_TYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6d}{E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+Y\+PE}}}
+
+
+
+M\+TC IM system message type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_SYS\_UNKNOWN@{EN\_MTC\_SYS\_UNKNOWN}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_SYS\_UNKNOWN@{EN\_MTC\_SYS\_UNKNOWN}}}\mbox{\Hypertarget{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6dad11919662d2320b67a97e3890aadd005}\label{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6dad11919662d2320b67a97e3890aadd005}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+U\+N\+K\+N\+O\+WN&unknown system message type \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_SYS\_REPORT@{EN\_MTC\_SYS\_REPORT}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_SYS\_REPORT@{EN\_MTC\_SYS\_REPORT}}}\mbox{\Hypertarget{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6da677aedfb83248c2da398116002b148aa}\label{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6da677aedfb83248c2da398116002b148aa}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+R\+E\+P\+O\+RT&system msg of reporting chatbot \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EN\_MTC\_SYS\_TKDEL@{EN\_MTC\_SYS\_TKDEL}!mtc\_im.h@{mtc\_im.h}}\index{mtc\_im.h@{mtc\_im.h}!EN\_MTC\_SYS\_TKDEL@{EN\_MTC\_SYS\_TKDEL}}}\mbox{\Hypertarget{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6da61b49f5f3a04d5aa7061022ea26f1de1}\label{mtc__im_8h_acbf0df6eb4537ef688036cf90a0eef6da61b49f5f3a04d5aa7061022ea26f1de1}} 
+E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+K\+D\+EL&system msg of deleting token \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mtc__im_8h_a28a901766cc330e23e6c998035ec7777}\label{mtc__im_8h_a28a901766cc330e23e6c998035ec7777}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgConverCType@{Mtc\_ImPMsgConverCType}}
+\index{Mtc\_ImPMsgConverCType@{Mtc\_ImPMsgConverCType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgConverCType()}{Mtc\_ImPMsgConverCType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Conver\+C\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Mtc pager msg conver type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Type} & The old mtc msg type.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em new} & mmf msg type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a9e8c3cbe8112cca73d01dc137bf6974e}\label{mtc__im_8h_a9e8c3cbe8112cca73d01dc137bf6974e}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgCreateRevokeXml@{Mtc\_ImPMsgCreateRevokeXml}}
+\index{Mtc\_ImPMsgCreateRevokeXml@{Mtc\_ImPMsgCreateRevokeXml}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgCreateRevokeXml()}{Mtc\_ImPMsgCreateRevokeXml()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Create\+Revoke\+Xml (\begin{DoxyParamCaption}\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Revoke\+Result,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Addr,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Addr }\end{DoxyParamCaption})}
+
+
+
+M\+TC create revoke xml content. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Msg\+Id} & The revoke message-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Revoke\+Result} & message revoke result. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Addr} & message revoke from addr. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Addr} & message revoke to addr. The caller must copy it, then use. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mtc__im_8h_a473262fcf0315edddc85c0b9bca15d4f}\label{mtc__im_8h_a473262fcf0315edddc85c0b9bca15d4f}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsGetMutiContent@{Mtc\_ImPMsGetMutiContent}}
+\index{Mtc\_ImPMsGetMutiContent@{Mtc\_ImPMsGetMutiContent}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsGetMutiContent()}{Mtc\_ImPMsGetMutiContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Ms\+Get\+Muti\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get chatbot result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The chatbot result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_aac456d51546dfd4e0d8a4aba24ab2099}\label{mtc__im_8h_aac456d51546dfd4e0d8a4aba24ab2099}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetAppPushType@{Mtc\_ImPMsgGetAppPushType}}
+\index{Mtc\_ImPMsgGetAppPushType@{Mtc\_ImPMsgGetAppPushType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetAppPushType()}{Mtc\_ImPMsgGetAppPushType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+App\+Push\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get app push type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+app push type if it is a oma push message, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ac9fae0dddd6d5387abd62ccba8c49d1f}\label{mtc__im_8h_ac9fae0dddd6d5387abd62ccba8c49d1f}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetBotMsgContentType@{Mtc\_ImPMsgGetBotMsgContentType}}
+\index{Mtc\_ImPMsgGetBotMsgContentType@{Mtc\_ImPMsgGetBotMsgContentType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetBotMsgContentType()}{Mtc\_ImPMsgGetBotMsgContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Bot\+Msg\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+R\+IE Get chatbot result. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The chatbot result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a35896b970b58192c5ab515c25893ad13}\label{mtc__im_8h_a35896b970b58192c5ab515c25893ad13}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetBurnTimeLen@{Mtc\_ImPMsgGetBurnTimeLen}}
+\index{Mtc\_ImPMsgGetBurnTimeLen@{Mtc\_ImPMsgGetBurnTimeLen}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetBurnTimeLen()}{Mtc\_ImPMsgGetBurnTimeLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Burn\+Time\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get burn after reading time length from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+burn after reading time length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a7fe7fcc9166658ea739183a4691e59e1}\label{mtc__im_8h_a7fe7fcc9166658ea739183a4691e59e1}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetContent@{Mtc\_ImPMsgGetContent}}
+\index{Mtc\_ImPMsgGetContent@{Mtc\_ImPMsgGetContent}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetContent()}{Mtc\_ImPMsgGetContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the content from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a60811802c104a9a35157a517131b226e}\label{mtc__im_8h_a60811802c104a9a35157a517131b226e}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetContentLen@{Mtc\_ImPMsgGetContentLen}}
+\index{Mtc\_ImPMsgGetContentLen@{Mtc\_ImPMsgGetContentLen}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetContentLen()}{Mtc\_ImPMsgGetContentLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the content length from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message content length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a9c523d2382d334ff4859747732cf745f}\label{mtc__im_8h_a9c523d2382d334ff4859747732cf745f}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetContentType@{Mtc\_ImPMsgGetContentType}}
+\index{Mtc\_ImPMsgGetContentType@{Mtc\_ImPMsgGetContentType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetContentType()}{Mtc\_ImPMsgGetContentType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the content type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of page message, \mbox{\hyperlink{mtc__im_8h_a97b7c64e578a084515e122be3c21921f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Im\+P\+Msg\+Get\+Content\+TypeX 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__im_8h_a560864ac359e1fa792418d3cfedaf26e}\label{mtc__im_8h_a560864ac359e1fa792418d3cfedaf26e}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetContId@{Mtc\_ImPMsgGetContId}}
+\index{Mtc\_ImPMsgGetContId@{Mtc\_ImPMsgGetContId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetContId()}{Mtc\_ImPMsgGetContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a8ecddc9ee0d44983c9fca2e6bc559d8c}\label{mtc__im_8h_a8ecddc9ee0d44983c9fca2e6bc559d8c}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetConvId@{Mtc\_ImPMsgGetConvId}}
+\index{Mtc\_ImPMsgGetConvId@{Mtc\_ImPMsgGetConvId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetConvId()}{Mtc\_ImPMsgGetConvId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Conv\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get conversation-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The conversation-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a839ab3936c571c431e0ccad15cefecbd}\label{mtc__im_8h_a839ab3936c571c431e0ccad15cefecbd}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetCookie@{Mtc\_ImPMsgGetCookie}}
+\index{Mtc\_ImPMsgGetCookie@{Mtc\_ImPMsgGetCookie}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetCookie()}{Mtc\_ImPMsgGetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+O\+O\+K\+IE Mtc\+\_\+\+Im\+P\+Msg\+Get\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get user cookie from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User cookie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a3ca48f88c2e27ca73aba9119b7e1b588}\label{mtc__im_8h_a3ca48f88c2e27ca73aba9119b7e1b588}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetCpimPartp@{Mtc\_ImPMsgGetCpimPartp}}
+\index{Mtc\_ImPMsgGetCpimPartp@{Mtc\_ImPMsgGetCpimPartp}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetCpimPartp()}{Mtc\_ImPMsgGetCpimPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Cpim\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get peer information frompage message. 
+
+The participant is the remote client who sent message or the own multi client who carbon copy message
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri must copy it, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a76ea6c16530013c1625dfc6216ff9b0b}\label{mtc__im_8h_a76ea6c16530013c1625dfc6216ff9b0b}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetDateTime@{Mtc\_ImPMsgGetDateTime}}
+\index{Mtc\_ImPMsgGetDateTime@{Mtc\_ImPMsgGetDateTime}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetDateTime()}{Mtc\_ImPMsgGetDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+M\+T\+I\+M\+E\+\_\+T Mtc\+\_\+\+Im\+P\+Msg\+Get\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message date time(milliseconds), otherwise return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a2db6deaed8746d1e920f59d92ba5163c}\label{mtc__im_8h_a2db6deaed8746d1e920f59d92ba5163c}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetDeviceId@{Mtc\_ImPMsgGetDeviceId}}
+\index{Mtc\_ImPMsgGetDeviceId@{Mtc\_ImPMsgGetDeviceId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetDeviceId()}{Mtc\_ImPMsgGetDeviceId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Device\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get device id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message device id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a7671653e01dab929993f959e0bdeb76d}\label{mtc__im_8h_a7671653e01dab929993f959e0bdeb76d}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetFontInfo@{Mtc\_ImPMsgGetFontInfo}}
+\index{Mtc\_ImPMsgGetFontInfo@{Mtc\_ImPMsgGetFontInfo}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetFontInfo()}{Mtc\_ImPMsgGetFontInfo()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Font\+Info (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get font information from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & font information. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_ad9073f404173e27c25a9a4ac025c335b}\label{mtc__im_8h_ad9073f404173e27c25a9a4ac025c335b}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetFtHttpId@{Mtc\_ImPMsgGetFtHttpId}}
+\index{Mtc\_ImPMsgGetFtHttpId@{Mtc\_ImPMsgGetFtHttpId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetFtHttpId()}{Mtc\_ImPMsgGetFtHttpId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Ft\+Http\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get fthttp id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the fthttp id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ab26e93eb1789fb9ebacc6d8f9b34080f}\label{mtc__im_8h_ab26e93eb1789fb9ebacc6d8f9b34080f}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetImdnId@{Mtc\_ImPMsgGetImdnId}}
+\index{Mtc\_ImPMsgGetImdnId@{Mtc\_ImPMsgGetImdnId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetImdnId()}{Mtc\_ImPMsgGetImdnId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Imdn\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the Imdn id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+imdn id of page message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a7786c052c91d267e0b5748cd62e3f98a}\label{mtc__im_8h_a7786c052c91d267e0b5748cd62e3f98a}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetIrtContId@{Mtc\_ImPMsgGetIrtContId}}
+\index{Mtc\_ImPMsgGetIrtContId@{Mtc\_ImPMsgGetIrtContId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetIrtContId()}{Mtc\_ImPMsgGetIrtContId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Irt\+Cont\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get inreplyto-\/contribution-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inreplyto-\/contribution-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a658df76c01e4c6c5883090ef11caa030}\label{mtc__im_8h_a658df76c01e4c6c5883090ef11caa030}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetIsChatBot@{Mtc\_ImPMsgGetIsChatBot}}
+\index{Mtc\_ImPMsgGetIsChatBot@{Mtc\_ImPMsgGetIsChatBot}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetIsChatBot()}{Mtc\_ImPMsgGetIsChatBot()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Get\+Is\+Chat\+Bot (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get is chatboe message from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The is chatbot message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a8099d4b347607d2b361d64832c31db9f}\label{mtc__im_8h_a8099d4b347607d2b361d64832c31db9f}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetIsPreCall@{Mtc\_ImPMsgGetIsPreCall}}
+\index{Mtc\_ImPMsgGetIsPreCall@{Mtc\_ImPMsgGetIsPreCall}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetIsPreCall()}{Mtc\_ImPMsgGetIsPreCall()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Get\+Is\+Pre\+Call (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get is pre-\/call message from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the is pre-\/call message. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a3255cff250fd001c304982097f7877f0}\label{mtc__im_8h_a3255cff250fd001c304982097f7877f0}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetMContent@{Mtc\_ImPMsgGetMContent}}
+\index{Mtc\_ImPMsgGetMContent@{Mtc\_ImPMsgGetMContent}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetMContent()}{Mtc\_ImPMsgGetMContent()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+M\+Content (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+V\+O\+ID $\ast$$\ast$}]{pp\+Data,  }\item[{Z\+U\+I\+NT $\ast$}]{pi\+Data\+Size }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the multi-\/media content from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pp\+Data} & The multi-\/media message content. \\
+\hline
+\mbox{\texttt{ out}}  & {\em pi\+Data\+Size} & The multi-\/media message content length.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a7ab4ef4d02515c5094b2d495ce5bdb03}\label{mtc__im_8h_a7ab4ef4d02515c5094b2d495ce5bdb03}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetPartp@{Mtc\_ImPMsgGetPartp}}
+\index{Mtc\_ImPMsgGetPartp@{Mtc\_ImPMsgGetPartp}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetPartp()}{Mtc\_ImPMsgGetPartp()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Name,  }\item[{Z\+C\+H\+AR $\ast$$\ast$}]{ppc\+Uri }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant information from page message. Get receiver information from feion carbon copy page message. 
+
+The participant is the remote client who sent message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Name} & The participant name. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ppc\+Uri} & The participant U\+RI.\\
+\hline
+\end{DoxyParams}
+ppc\+Name and ppc\+Uri must copy it, then use.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get participant information successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get participant information failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_adf733f966c40fce2ac43849356c0c404}\label{mtc__im_8h_adf733f966c40fce2ac43849356c0c404}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetPartpLstId@{Mtc\_ImPMsgGetPartpLstId}}
+\index{Mtc\_ImPMsgGetPartpLstId@{Mtc\_ImPMsgGetPartpLstId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetPartpLstId()}{Mtc\_ImPMsgGetPartpLstId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp\+Lst\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get participant list id from im message. 
+
+The participant list id is all remote clients who are received message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & participant list id. The caller is responsible for freeing it by Mtc\+\_\+\+Partp\+Lst\+Delete \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a2c674b9258ba09058f5bde43ca5260be}\label{mtc__im_8h_a2c674b9258ba09058f5bde43ca5260be}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetPartpType@{Mtc\_ImPMsgGetPartpType}}
+\index{Mtc\_ImPMsgGetPartpType@{Mtc\_ImPMsgGetPartpType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetPartpType()}{Mtc\_ImPMsgGetPartpType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+MF Get participant type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Type} & of page message participant type, \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__partp_8h_abe66ab722861a8aced34488e887e7663}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+T\+Y\+PE}}.
+\end{DoxySeeAlso}
+If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+O\+NE, participant can be got by Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+P\+R\+E\+D\+E\+F\+\_\+\+G\+RP, participant can be got by Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp. If type is E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+A\+R\+T\+P\+\_\+\+L\+S\+T\+\_\+\+U\+R\+I\+\_\+\+L\+ST, participant can be got by Mtc\+\_\+\+Im\+P\+Msg\+Get\+Partp\+Lst\+Id. \mbox{\Hypertarget{mtc__im_8h_a41bcdb525201648b7b1ac97c8eaea838}\label{mtc__im_8h_a41bcdb525201648b7b1ac97c8eaea838}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetQrcodeGrpName@{Mtc\_ImPMsgGetQrcodeGrpName}}
+\index{Mtc\_ImPMsgGetQrcodeGrpName@{Mtc\_ImPMsgGetQrcodeGrpName}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetQrcodeGrpName()}{Mtc\_ImPMsgGetQrcodeGrpName()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Grp\+Name (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the qrcode group-\/name from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a024ef8cedc3d9ecd18d4c0a44e621c84}\label{mtc__im_8h_a024ef8cedc3d9ecd18d4c0a44e621c84}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetQrcodeGrpProposer@{Mtc\_ImPMsgGetQrcodeGrpProposer}}
+\index{Mtc\_ImPMsgGetQrcodeGrpProposer@{Mtc\_ImPMsgGetQrcodeGrpProposer}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetQrcodeGrpProposer()}{Mtc\_ImPMsgGetQrcodeGrpProposer()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Grp\+Proposer (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the qrcode group-\/proposer from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a2b1e35f6ce58eda7953732a7d19c3a40}\label{mtc__im_8h_a2b1e35f6ce58eda7953732a7d19c3a40}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetQrcodeGrpUri@{Mtc\_ImPMsgGetQrcodeGrpUri}}
+\index{Mtc\_ImPMsgGetQrcodeGrpUri@{Mtc\_ImPMsgGetQrcodeGrpUri}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetQrcodeGrpUri()}{Mtc\_ImPMsgGetQrcodeGrpUri()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Grp\+Uri (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the qrcode group-\/\+Uri from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_aba6eabcffaa00e4a94fa8600687b6f43}\label{mtc__im_8h_aba6eabcffaa00e4a94fa8600687b6f43}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetQrcodeOptionType@{Mtc\_ImPMsgGetQrcodeOptionType}}
+\index{Mtc\_ImPMsgGetQrcodeOptionType@{Mtc\_ImPMsgGetQrcodeOptionType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetQrcodeOptionType()}{Mtc\_ImPMsgGetQrcodeOptionType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Option\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the qrcode option type from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type of page message, \mbox{\hyperlink{mtc__im_8h_a23945b916ad9a1340a8bfe8a2a5f9398}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+G\+R\+O\+U\+P\+\_\+\+J\+O\+I\+N\+\_\+\+N\+T\+F\+Y\+\_\+\+O\+P\+T\+I\+O\+N\+\_\+\+T\+Y\+PE}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a2a9a943ed9c2ab6ee4b4f9396afeadc5}\label{mtc__im_8h_a2a9a943ed9c2ab6ee4b4f9396afeadc5}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetQrcodeReason@{Mtc\_ImPMsgGetQrcodeReason}}
+\index{Mtc\_ImPMsgGetQrcodeReason@{Mtc\_ImPMsgGetQrcodeReason}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetQrcodeReason()}{Mtc\_ImPMsgGetQrcodeReason()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Qrcode\+Reason (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get the qrcode reason from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The page message content. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ad5768d397437f0373e19fe22d327daf0}\label{mtc__im_8h_ad5768d397437f0373e19fe22d327daf0}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetRetryLen@{Mtc\_ImPMsgGetRetryLen}}
+\index{Mtc\_ImPMsgGetRetryLen@{Mtc\_ImPMsgGetRetryLen}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetRetryLen()}{Mtc\_ImPMsgGetRetryLen()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Retry\+Len (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get retry time len from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The retry time len.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the retry time len. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_afd992e3f0b1cf8db9bbfd02f0af08555}\label{mtc__im_8h_afd992e3f0b1cf8db9bbfd02f0af08555}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetRevokeFromAddr@{Mtc\_ImPMsgGetRevokeFromAddr}}
+\index{Mtc\_ImPMsgGetRevokeFromAddr@{Mtc\_ImPMsgGetRevokeFromAddr}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetRevokeFromAddr()}{Mtc\_ImPMsgGetRevokeFromAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+From\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke from addr from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke from addr. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a5625824d4a5faf2d7f90334acf918dc1}\label{mtc__im_8h_a5625824d4a5faf2d7f90334acf918dc1}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetRevokeMsgId@{Mtc\_ImPMsgGetRevokeMsgId}}
+\index{Mtc\_ImPMsgGetRevokeMsgId@{Mtc\_ImPMsgGetRevokeMsgId}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetRevokeMsgId()}{Mtc\_ImPMsgGetRevokeMsgId()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+Msg\+Id (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke message-\/id from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke message-\/id. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a38248fcf2ff203e5d7f7ebc172064a72}\label{mtc__im_8h_a38248fcf2ff203e5d7f7ebc172064a72}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetRevokeResult@{Mtc\_ImPMsgGetRevokeResult}}
+\index{Mtc\_ImPMsgGetRevokeResult@{Mtc\_ImPMsgGetRevokeResult}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetRevokeResult()}{Mtc\_ImPMsgGetRevokeResult()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+C\+H\+AR Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+Result (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke result from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke result. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a229ea567f063598635461123d3e63efc}\label{mtc__im_8h_a229ea567f063598635461123d3e63efc}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetRevokeToAddr@{Mtc\_ImPMsgGetRevokeToAddr}}
+\index{Mtc\_ImPMsgGetRevokeToAddr@{Mtc\_ImPMsgGetRevokeToAddr}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetRevokeToAddr()}{Mtc\_ImPMsgGetRevokeToAddr()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Revoke\+To\+Addr (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke to addr from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The revoke to addr. The caller must copy it, then use. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a9cd93b30c6d6669509ac0039957b5991}\label{mtc__im_8h_a9cd93b30c6d6669509ac0039957b5991}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetSipCode@{Mtc\_ImPMsgGetSipCode}}
+\index{Mtc\_ImPMsgGetSipCode@{Mtc\_ImPMsgGetSipCode}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetSipCode()}{Mtc\_ImPMsgGetSipCode()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Sip\+Code (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get sip code from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get sip code successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get sip code failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a1c2994c63a202a2f8dba4db5dbcb599b}\label{mtc__im_8h_a1c2994c63a202a2f8dba4db5dbcb599b}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetSysDateTime@{Mtc\_ImPMsgGetSysDateTime}}
+\index{Mtc\_ImPMsgGetSysDateTime@{Mtc\_ImPMsgGetSysDateTime}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetSysDateTime()}{Mtc\_ImPMsgGetSysDateTime()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Get\+Sys\+Date\+Time (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{\mbox{\hyperlink{mtc__util_8h_ad5fbd753db8455a3e2ff95dd4dabb099}{S\+T\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+\_\+\+T\+I\+ME}} $\ast$}]{pst\+Time }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get date time from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em pst\+Time} & The date time value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Get date time successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Get date time failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_abc164a490ec4994b2a0dd197a585be26}\label{mtc__im_8h_abc164a490ec4994b2a0dd197a585be26}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgGetTrafficType@{Mtc\_ImPMsgGetTrafficType}}
+\index{Mtc\_ImPMsgGetTrafficType@{Mtc\_ImPMsgGetTrafficType}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgGetTrafficType()}{Mtc\_ImPMsgGetTrafficType()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+C\+H\+AR$\ast$ Mtc\+\_\+\+Im\+P\+Msg\+Get\+Traffic\+Type (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get Traffic Type from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & Traffic Type. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a51b521e7697bffea31b7053cc77736e8}\label{mtc__im_8h_a51b521e7697bffea31b7053cc77736e8}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasBurnInd@{Mtc\_ImPMsgHasBurnInd}}
+\index{Mtc\_ImPMsgHasBurnInd@{Mtc\_ImPMsgHasBurnInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasBurnInd()}{Mtc\_ImPMsgHasBurnInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Burn\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get burn after reading indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a burn after reading message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a3f06238fb06660311d830e722cfe5f86}\label{mtc__im_8h_a3f06238fb06660311d830e722cfe5f86}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasCallComposerInd@{Mtc\_ImPMsgHasCallComposerInd}}
+\index{Mtc\_ImPMsgHasCallComposerInd@{Mtc\_ImPMsgHasCallComposerInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasCallComposerInd()}{Mtc\_ImPMsgHasCallComposerInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Call\+Composer\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get callcomposer message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has callcomposer message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_abb66ee1674b9deb0475176a781e5de2b}\label{mtc__im_8h_abb66ee1674b9deb0475176a781e5de2b}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasCcInd@{Mtc\_ImPMsgHasCcInd}}
+\index{Mtc\_ImPMsgHasCcInd@{Mtc\_ImPMsgHasCcInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasCcInd()}{Mtc\_ImPMsgHasCcInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Cc\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get carbon copy indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a carbon copy message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a5344c07fe4839eeae96594974fd1dbf3}\label{mtc__im_8h_a5344c07fe4839eeae96594974fd1dbf3}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasDirectInd@{Mtc\_ImPMsgHasDirectInd}}
+\index{Mtc\_ImPMsgHasDirectInd@{Mtc\_ImPMsgHasDirectInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasDirectInd()}{Mtc\_ImPMsgHasDirectInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Direct\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get directional indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a directional message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a2babfba4f0df6d9264e0fb32d6726971}\label{mtc__im_8h_a2babfba4f0df6d9264e0fb32d6726971}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasGrpMInd@{Mtc\_ImPMsgHasGrpMInd}}
+\index{Mtc\_ImPMsgHasGrpMInd@{Mtc\_ImPMsgHasGrpMInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasGrpMInd()}{Mtc\_ImPMsgHasGrpMInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Grp\+M\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get group manage message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has group manage message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a2129da72a34fee4b04ff20894ce8eb24}\label{mtc__im_8h_a2129da72a34fee4b04ff20894ce8eb24}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasOffInd@{Mtc\_ImPMsgHasOffInd}}
+\index{Mtc\_ImPMsgHasOffInd@{Mtc\_ImPMsgHasOffInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasOffInd()}{Mtc\_ImPMsgHasOffInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Off\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get offline indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a offline message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_abc23af2da902655402466f1c4cfcf83b}\label{mtc__im_8h_abc23af2da902655402466f1c4cfcf83b}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasOmaIm@{Mtc\_ImPMsgHasOmaIm}}
+\index{Mtc\_ImPMsgHasOmaIm@{Mtc\_ImPMsgHasOmaIm}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasOmaIm()}{Mtc\_ImPMsgHasOmaIm()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Oma\+Im (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get O\+MA IM flag from page message. O\+MA IM flag exist in accept header +g.\+oma.\+sip-\/im. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a O\+MA page message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a5bc30fd946ea601e3d8b6483b1c4fc4a}\label{mtc__im_8h_a5bc30fd946ea601e3d8b6483b1c4fc4a}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasOmaImSys@{Mtc\_ImPMsgHasOmaImSys}}
+\index{Mtc\_ImPMsgHasOmaImSys@{Mtc\_ImPMsgHasOmaImSys}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasOmaImSys()}{Mtc\_ImPMsgHasOmaImSys()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Oma\+Im\+Sys (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get O\+MA IM flag from IM system message. O\+MA IM system message flag exist in accept header +g.\+oma.\+sip-\/im.\+system-\/message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a O\+MA IM system message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a46ed056991ad7f30ad78c0b99c5a2223}\label{mtc__im_8h_a46ed056991ad7f30ad78c0b99c5a2223}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasPubInd@{Mtc\_ImPMsgHasPubInd}}
+\index{Mtc\_ImPMsgHasPubInd@{Mtc\_ImPMsgHasPubInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasPubInd()}{Mtc\_ImPMsgHasPubInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Pub\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get public message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has public message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a0d996dde3695cf2ef807afcfe65dc4fd}\label{mtc__im_8h_a0d996dde3695cf2ef807afcfe65dc4fd}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasRcsSms@{Mtc\_ImPMsgHasRcsSms}}
+\index{Mtc\_ImPMsgHasRcsSms@{Mtc\_ImPMsgHasRcsSms}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasRcsSms()}{Mtc\_ImPMsgHasRcsSms()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Rcs\+Sms (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get R\+CS S\+MS flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a R\+CS S\+MS message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ae431fd5ea1805b084db820a64c09ecf1}\label{mtc__im_8h_ae431fd5ea1805b084db820a64c09ecf1}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasRevokeMsgInd@{Mtc\_ImPMsgHasRevokeMsgInd}}
+\index{Mtc\_ImPMsgHasRevokeMsgInd@{Mtc\_ImPMsgHasRevokeMsgInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasRevokeMsgInd()}{Mtc\_ImPMsgHasRevokeMsgInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Revoke\+Msg\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get revoke message indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it has revoke message indication, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a4f6a109e4adc50026d8b5da9cd7e45cc}\label{mtc__im_8h_a4f6a109e4adc50026d8b5da9cd7e45cc}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasSilenceInd@{Mtc\_ImPMsgHasSilenceInd}}
+\index{Mtc\_ImPMsgHasSilenceInd@{Mtc\_ImPMsgHasSilenceInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasSilenceInd()}{Mtc\_ImPMsgHasSilenceInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Silence\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get silence indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a silence message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a70cca7c5b6e35ed61db66cb0869953a5}\label{mtc__im_8h_a70cca7c5b6e35ed61db66cb0869953a5}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasSmsInd@{Mtc\_ImPMsgHasSmsInd}}
+\index{Mtc\_ImPMsgHasSmsInd@{Mtc\_ImPMsgHasSmsInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasSmsInd()}{Mtc\_ImPMsgHasSmsInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Sms\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get sms indication flag from page message. It has \char`\"{}sms;operation=submit\char`\"{} in \char`\"{}\+P-\/\+Message-\/\+Type-\/\+Indicator\char`\"{}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a R\+CS S\+MS message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ade10bb2e991d3597c02d4815f1d41805}\label{mtc__im_8h_ade10bb2e991d3597c02d4815f1d41805}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgHasSpamInd@{Mtc\_ImPMsgHasSpamInd}}
+\index{Mtc\_ImPMsgHasSpamInd@{Mtc\_ImPMsgHasSpamInd}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgHasSpamInd()}{Mtc\_ImPMsgHasSpamInd()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Has\+Spam\+Ind (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC Get spam indication flag from page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+T\+R\+UE if it is a spam message, otherwise return Z\+F\+A\+L\+SE. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_acd0aa881fc135c5a1ef6c8b643a06ca4}\label{mtc__im_8h_acd0aa881fc135c5a1ef6c8b643a06ca4}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgReply@{Mtc\_ImPMsgReply}}
+\index{Mtc\_ImPMsgReply@{Mtc\_ImPMsgReply}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgReply()}{Mtc\_ImPMsgReply()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Reply (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Len,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id }\end{DoxyParamCaption})}
+
+
+
+Reply to specific standalone page mode message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Len} & The message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{mtc__im_8h_a97b7c64e578a084515e122be3c21921f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id reply to.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a42f86ad233b058001fa7371a903e8c33}\label{mtc__im_8h_a42f86ad233b058001fa7371a903e8c33}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgResponse@{Mtc\_ImPMsgResponse}}
+\index{Mtc\_ImPMsgResponse@{Mtc\_ImPMsgResponse}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgResponse()}{Mtc\_ImPMsgResponse()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Response (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+U\+I\+NT}]{i\+Sip\+Code }\end{DoxyParamCaption})}
+
+
+
+Response to specific standalone page mode message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sip\+Code} & The sip status code.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Response successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Response failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a47b764fbe8cf4f3707e8c5e01aafd3d4}\label{mtc__im_8h_a47b764fbe8cf4f3707e8c5e01aafd3d4}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgRevoke@{Mtc\_ImPMsgRevoke}}
+\index{Mtc\_ImPMsgRevoke@{Mtc\_ImPMsgRevoke}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgRevoke()}{Mtc\_ImPMsgRevoke()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Revoke (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Cont\+Id }\end{DoxyParamCaption})}
+
+
+
+Revoke to specific standalone page mode message. C\+PM message will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation-\/id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Cont\+Id} & The contribution-\/id reply to.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_aad638abaac48c756a9e0ff77bcd797f0}\label{mtc__im_8h_aad638abaac48c756a9e0ff77bcd797f0}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSend@{Mtc\_ImPMsgSend}}
+\index{Mtc\_ImPMsgSend@{Mtc\_ImPMsgSend}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSend()}{Mtc\_ImPMsgSend()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Send (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+U\+I\+NT}]{i\+Srv\+Flag,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Conv\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Traf\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+In\+Reply\+To,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Instant Message to one participant. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}} or \mbox{\hyperlink{mtc__im__cb_8h_a9ab402bd1d4e1fa0858ce5102e3f4832}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Sms\+Info}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Srv\+Flag} & The message service flags \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Conv\+Id} & The conversation id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Traf\+Type} & The Traffic identification, see @\+Mtc\+\_\+\+Im\+P\+Msg\+Get\+Traffic\+Type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+In\+Reply\+To} & The In\+Reply\+To-\/\+Contriabution-\/\+ID. ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ac8b308255cfc3c1bd7dea0f645dc7ca5}\label{mtc__im_8h_ac8b308255cfc3c1bd7dea0f645dc7ca5}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendGM@{Mtc\_ImPMsgSendGM}}
+\index{Mtc\_ImPMsgSendGM@{Mtc\_ImPMsgSendGM}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendGM()}{Mtc\_ImPMsgSendGM()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Send\+GM (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Instant Message to one group for group management. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN or E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+O\+N\+T\+\_\+\+M\+S\+G\+\_\+\+T\+X\+T\+\_\+\+P\+L\+A\+IN. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a1a672b322cf11dec7d4238c767f86ff8}\label{mtc__im_8h_a1a672b322cf11dec7d4238c767f86ff8}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendM@{Mtc\_ImPMsgSendM}}
+\index{Mtc\_ImPMsgSendM@{Mtc\_ImPMsgSendM}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendM()}{Mtc\_ImPMsgSendM()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+SendM (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+V\+O\+ID $\ast$}]{p\+Data,  }\item[{Z\+U\+I\+NT}]{i\+Data\+Size,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending multi-\/media Message to one participant. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}} or \mbox{\hyperlink{mtc__im__cb_8h_a9ab402bd1d4e1fa0858ce5102e3f4832}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Sms\+Info}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+Data} & The multi-\/media message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Data\+Size} & The multi-\/media message size. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id. ~\newline
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Mtc\+\_\+\+Im\+P\+Msg\+Send\+RS 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{mtc__im_8h_a96d94532b76c4c0c13993fff2c37f975}\label{mtc__im_8h_a96d94532b76c4c0c13993fff2c37f975}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendS@{Mtc\_ImPMsgSendS}}
+\index{Mtc\_ImPMsgSendS@{Mtc\_ImPMsgSendS}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendS()}{Mtc\_ImPMsgSendS()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+SendS (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+From\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+To\+Uri,  }\item[{Z\+M\+T\+I\+M\+E\+\_\+T}]{z\+Date,  }\item[{Z\+U\+I\+NT}]{i\+Spam\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Instant Message to one participant with spam information. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type, see \mbox{\hyperlink{mtc__im_8h_a97b7c64e578a084515e122be3c21921f}{E\+N\+\_\+\+M\+T\+C\+\_\+\+P\+M\+S\+G\+\_\+\+C\+T\+Y\+PE}}. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+From\+Uri} & The from uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+To\+Uri} & The to uri. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Date} & The date(milliseconds). \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Spam\+Type} & The spam information type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ad66964072802e74a005ca66b45682786}\label{mtc__im_8h_ad66964072802e74a005ca66b45682786}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendSms@{Mtc\_ImPMsgSendSms}}
+\index{Mtc\_ImPMsgSendSms@{Mtc\_ImPMsgSendSms}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendSms()}{Mtc\_ImPMsgSendSms()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Send\+Sms (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Smsc,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Phone,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Re\+Try,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+B\+O\+OL}]{b\+T\+P\+DU }\end{DoxyParamCaption})}
+
+
+
+Sending Instant Message to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Smsc} & The smsc address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Phone} & The receiver address, if pass T\+P\+DU, Z\+N\+U\+LL. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body, formated by S\+MS. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Re\+Try} & The retry time, 0 = not retry. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Ref} & The message refernece. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+T\+P\+DU} & indicate whether tpdu or text.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_ab30c4e777c1752e98299e4814432a852}\label{mtc__im_8h_ab30c4e777c1752e98299e4814432a852}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendSmsAck@{Mtc\_ImPMsgSendSmsAck}}
+\index{Mtc\_ImPMsgSendSmsAck@{Mtc\_ImPMsgSendSmsAck}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendSmsAck()}{Mtc\_ImPMsgSendSmsAck()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Send\+Sms\+Ack (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Smsc\+Addr,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+U\+I\+NT}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+Sending S\+MS A\+CK to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Smsc\+Addr} & The smsc address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Ref} & The message refernece. \\
+\hline
+\mbox{\texttt{ in}}  & {\em error\+Code} & pass the errrorcode if receive fail.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a14ee766afbb91db24708deb09d3052d8}\label{mtc__im_8h_a14ee766afbb91db24708deb09d3052d8}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendSmsSmma@{Mtc\_ImPMsgSendSmsSmma}}
+\index{Mtc\_ImPMsgSendSmsSmma@{Mtc\_ImPMsgSendSmsSmma}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendSmsSmma()}{Mtc\_ImPMsgSendSmsSmma()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Send\+Sms\+Smma (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Smsc,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+B\+O\+OL}]{b\+Available }\end{DoxyParamCaption})}
+
+
+
+Sending S\+MS S\+M\+MA to one participant with S\+MS. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Smsc} & The smsc address. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Ref} & The message refernece. \\
+\hline
+\mbox{\texttt{ in}}  & {\em b\+Available} & The phone capacity is full.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a6b49e7bba3c6bf36844430ab7cbf26b5}\label{mtc__im_8h_a6b49e7bba3c6bf36844430ab7cbf26b5}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendSystem@{Mtc\_ImPMsgSendSystem}}
+\index{Mtc\_ImPMsgSendSystem@{Mtc\_ImPMsgSendSystem}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendSystem()}{Mtc\_ImPMsgSendSystem()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Send\+System (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Uri,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Sys\+Type }\end{DoxyParamCaption})}
+
+
+
+Sending system message to one participant. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Uri} & The message receiver S\+IP U\+RI. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Sys\+Type} & The system msg type, see@\+E\+N\+\_\+\+M\+T\+C\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+Y\+PE.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Send message successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Send message failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_aad4c785ebefc8470f9909d8f7fa73a08}\label{mtc__im_8h_aad4c785ebefc8470f9909d8f7fa73a08}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSendU@{Mtc\_ImPMsgSendU}}
+\index{Mtc\_ImPMsgSendU@{Mtc\_ImPMsgSendU}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSendU()}{Mtc\_ImPMsgSendU()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+U\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+SendU (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+U\+I\+NT}]{i\+Partp\+Lst\+Id,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Msg,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Type,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Font\+Info,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Re\+Imdn\+Id }\end{DoxyParamCaption})}
+
+
+
+Sending Instant Message to participant list. IM will be sent by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}} or \mbox{\hyperlink{mtc__im__cb_8h_a9ab402bd1d4e1fa0858ce5102e3f4832}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Sms\+Info}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Partp\+Lst\+Id} & The participant list id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Msg} & The message body. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Type} & The message type. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Font\+Info} & The font information of message. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Re\+Imdn\+Id} & The resend imdn message id.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mtc__im_8h_a338af74f838604e293aea9c465c42fa6}\label{mtc__im_8h_a338af74f838604e293aea9c465c42fa6}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSetCookie@{Mtc\_ImPMsgSetCookie}}
+\index{Mtc\_ImPMsgSetCookie@{Mtc\_ImPMsgSetCookie}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSetCookie()}{Mtc\_ImPMsgSetCookie()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Im\+P\+Msg\+Set\+Cookie (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id,  }\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie }\end{DoxyParamCaption})}
+
+
+
+M\+TC Set user cookie in a page message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+OK} & Set user cookie successfully. \\
+\hline
+{\em Z\+F\+A\+I\+L\+ED} & Set user cookie failed. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_aa8c86ff799a1cdb27b2ca3de9e510f73}\label{mtc__im_8h_aa8c86ff799a1cdb27b2ca3de9e510f73}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_ImPMsgSuptMsgRevoke@{Mtc\_ImPMsgSuptMsgRevoke}}
+\index{Mtc\_ImPMsgSuptMsgRevoke@{Mtc\_ImPMsgSuptMsgRevoke}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_ImPMsgSuptMsgRevoke()}{Mtc\_ImPMsgSuptMsgRevoke()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+B\+O\+OL Mtc\+\_\+\+Im\+P\+Msg\+Supt\+Msg\+Revoke (\begin{DoxyParamCaption}\item[{Z\+U\+I\+NT}]{i\+Msg\+Id }\end{DoxyParamCaption})}
+
+
+
+M\+TC support message revoke indication flag from im message. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Id} & The message Id.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Z\+T\+R\+UE} & if it support message revoke, otherwise return Z\+F\+A\+L\+SE. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{mtc__im_8h_a025c128e190093cb6557e72fdddc29d3}\label{mtc__im_8h_a025c128e190093cb6557e72fdddc29d3}} 
+\index{mtc\_im.h@{mtc\_im.h}!Mtc\_PmsgSendSmsAckX@{Mtc\_PmsgSendSmsAckX}}
+\index{Mtc\_PmsgSendSmsAckX@{Mtc\_PmsgSendSmsAckX}!mtc\_im.h@{mtc\_im.h}}
+\doxysubsubsection{\texorpdfstring{Mtc\_PmsgSendSmsAckX()}{Mtc\_PmsgSendSmsAckX()}}
+{\footnotesize\ttfamily Z\+F\+U\+NC Z\+I\+NT Mtc\+\_\+\+Pmsg\+Send\+Sms\+AckX (\begin{DoxyParamCaption}\item[{Z\+C\+O\+O\+K\+IE}]{z\+Cookie,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Call\+Id\+Number,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Call\+Id\+Host,  }\item[{Z\+C\+H\+AR $\ast$}]{pc\+Peer\+Uri,  }\item[{Z\+U\+I\+NT}]{i\+Msg\+Ref,  }\item[{Z\+U\+I\+NT}]{error\+Code }\end{DoxyParamCaption})}
+
+
+
+Sending S\+MS A\+CK to one participant with S\+MS using rfc 3G\+PP TS 24.\+341. IM will send by S\+IP M\+E\+S\+S\+A\+GE method. 
+
+The result will be notified by callbacks which were set by \mbox{\hyperlink{mtc__im__cb_8h_a08d52df35ddd9352e9a2357f9d52a29b}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Ok}} or \mbox{\hyperlink{mtc__im__cb_8h_a46119fa22867d76064a2c0f33e2e5c65}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Send\+Failed}}.
+
+While receiving IM, G\+UI will be notified by callback which was set by \mbox{\hyperlink{mtc__im__cb_8h_a67ac5ed2dbce798edc0cb4d35544d386}{Mtc\+\_\+\+Im\+Cb\+Set\+P\+Msg\+Recv\+Msg}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z\+Cookie} & The user cookie. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Call\+Id\+Number} & The Call\+Id Number string from Mtc\+\_\+\+P\+Msg\+Get\+Call\+Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Call\+Id\+Host} & The Call\+Id Number string from Mtc\+\_\+\+P\+Msg\+Get\+Call\+Id. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pc\+Peer\+Uri} & The peer uri string from Mtc\+\_\+\+P\+Msg\+Get\+Ip\+Sm\+Gw. \\
+\hline
+\mbox{\texttt{ in}}  & {\em i\+Msg\+Ref} & The message refernece. \\
+\hline
+\mbox{\texttt{ in}}  & {\em error\+Code} & pass the errrorcode if receive fail.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The message id when send message successfully, otherwise return Z\+M\+A\+X\+U\+I\+NT. 
+\end{DoxyReturn}
