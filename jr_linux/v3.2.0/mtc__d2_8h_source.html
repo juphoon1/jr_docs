@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_d2.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_d2.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc__d2_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_d2.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : xiangbo.hui</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2015-03-27</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">      Data structure and function declare required by MTC statistics</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_D2_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_D2_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#abeca4b3d2e78939cbf96395fa54d6837">   58</a></span>ZFUNC MTC_IMG <a class="code hl_function" href="mtc__d2_8h.html#abeca4b3d2e78939cbf96395fa54d6837">Mtc_D2CreateImage</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a21eae5939ea892c54e21b24d235ee3bf">   64</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__d2_8h.html#a21eae5939ea892c54e21b24d235ee3bf">Mtc_D2DeleteImage</a>(MTC_IMG zImage);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a8c7522dc683ab7ada6b70788c6d28c81">   71</a></span>ZFUNC MTC_IMG <a class="code hl_function" href="mtc__d2_8h.html#a8c7522dc683ab7ada6b70788c6d28c81">Mtc_D2ParseImage</a>(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMsg);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#adfe239e14d383bc02a4e530c5297710a">   78</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__d2_8h.html#adfe239e14d383bc02a4e530c5297710a">Mtc_D2PrintImage</a>(MTC_IMG zImage);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#ae7a9b3111b550dc12ccb40a0dae21e50">   92</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#ae7a9b3111b550dc12ccb40a0dae21e50">Mtc_D2SetImageParms</a>(MTC_IMG zImage,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a729feaf305630d022877bc18a20417f1">  106</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__d2_8h.html#a729feaf305630d022877bc18a20417f1">Mtc_D2GetImageParms</a>(MTC_IMG zImage);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a25398da61ccae063f2f532e4beccaa19">  112</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__d2_8h.html#a25398da61ccae063f2f532e4beccaa19">Mtc_D2CreateAction</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a8f07a5ceefa8177fe3d802d38200cd94">  118</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__d2_8h.html#a8f07a5ceefa8177fe3d802d38200cd94">Mtc_D2DeleteAction</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a995067006a314c4d9c048d6a3aa7c306">  125</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__d2_8h.html#a995067006a314c4d9c048d6a3aa7c306">Mtc_D2ParseAction</a>(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMsg);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a5ff3843d9155b2b5c9622a5776665f0d">  132</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__d2_8h.html#a5ff3843d9155b2b5c9622a5776665f0d">Mtc_D2PrintAction</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a73809649ba52346ae493ffda01d997e2">  145</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a73809649ba52346ae493ffda01d997e2">Mtc_D2SetActionParms</a>(MTC_ACT zAction,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a45d83de952a895b96ae1248a96777985">  158</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__d2_8h.html#a45d83de952a895b96ae1248a96777985">Mtc_D2GetActionParms</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a31f4ac519aa6aa7af44cf102aa4b9349">  167</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a31f4ac519aa6aa7af44cf102aa4b9349">Mtc_D2AddActionPosition</a>(MTC_ACT zAction,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fX, <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fY);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a4b1f0f623b266762282468ca2d5a20b9">  178</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a4b1f0f623b266762282468ca2d5a20b9">Mtc_D2AddActionPositionX</a>(MTC_ACT zAction,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fX, <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fY, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIntVal);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a474f47011586a0501199837162adc9fb">  186</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a474f47011586a0501199837162adc9fb">Mtc_D2GetActionPositionCount</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a31fea1d3119cac5414a876e8537f31a4">  194</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a31fea1d3119cac5414a876e8537f31a4">Mtc_D2GetActionIntval</a>(MTC_ACT zAction, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a41eb556b23cbdaf221ab148b8dc43197">  202</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> <a class="code hl_function" href="mtc__d2_8h.html#a41eb556b23cbdaf221ab148b8dc43197">Mtc_D2GetActionPositionX</a>(MTC_ACT zAction, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a858bf1cd2f534b60413f35e5d185b2df">  210</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> <a class="code hl_function" href="mtc__d2_8h.html#a858bf1cd2f534b60413f35e5d185b2df">Mtc_D2GetActionPositionY</a>(MTC_ACT zAction, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a65dce383f7de26f9aa010c58e3795470">  221</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__d2_8h.html#a65dce383f7de26f9aa010c58e3795470">Mtc_D2GetActionPath</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a3fae9b86db135d8ffd0f1939f8b5e130">  227</a></span>ZFUNC MTC_SESS <a class="code hl_function" href="mtc__d2_8h.html#a3fae9b86db135d8ffd0f1939f8b5e130">Mtc_D2CreateSession</a>();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#ada6e3ce9cc02dfbcb37dff99ef479595">  233</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__d2_8h.html#ada6e3ce9cc02dfbcb37dff99ef479595">Mtc_D2DeleteSession</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a349dcfa3fbb6c9259ad47d6d0fe2a832">  241</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a349dcfa3fbb6c9259ad47d6d0fe2a832">Mtc_D2SessionSetPageCount</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPageCount);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a72faee317bb0b5ec4b10316c98e849a0">  248</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a72faee317bb0b5ec4b10316c98e849a0">Mtc_D2SessionAddPage</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#af9d09828d0ab16c6c033d1998642b300">  255</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__d2_8h.html#af9d09828d0ab16c6c033d1998642b300">Mtc_D2SessionGetPageCount</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#aa5b32b7d05b3f28df08cdbdafab81026">  267</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#aa5b32b7d05b3f28df08cdbdafab81026">Mtc_D2SessionSetImage</a>(MTC_SESS zSession, MTC_IMG zImage);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#addd2c6a5fa1384bab428ae21571b0119">  275</a></span>ZFUNC MTC_IMG <a class="code hl_function" href="mtc__d2_8h.html#addd2c6a5fa1384bab428ae21571b0119">Mtc_D2SessionGetImage</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPageId);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a023ad01f12ea0669182f26646079876c">  284</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a023ad01f12ea0669182f26646079876c">Mtc_D2SessionSetCfAction</a>(MTC_SESS zSession,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcKey, MTC_ACT zAction);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a3f9f0cd227ed2e918269e55beccf8661">  293</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__d2_8h.html#a3f9f0cd227ed2e918269e55beccf8661">Mtc_D2SessionGetCfAction</a>(MTC_SESS zSession, ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcKey);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#ae3476ce31c1dde20f41f3262d68b5235">  300</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#ae3476ce31c1dde20f41f3262d68b5235">Mtc_D2SessionGetCfActionCount</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a28cea568cc40ecece9d35980863f5c69">  308</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__d2_8h.html#a28cea568cc40ecece9d35980863f5c69">Mtc_D2SessionEnumCfActionKey</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a178e9cdfaae440f176c32887a6f6e726">  316</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__d2_8h.html#a178e9cdfaae440f176c32887a6f6e726">Mtc_D2SessionEnumCfAction</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#abdbbc8e41c80a86349c0f26dc49efc77">  324</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__d2_8h.html#abdbbc8e41c80a86349c0f26dc49efc77">Mtc_D2SessionAddAction</a>(MTC_SESS zSession, MTC_ACT zAction);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#a806117bfe6028e79b40034056ae1be97">  331</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__d2_8h.html#a806117bfe6028e79b40034056ae1be97">Mtc_D2SessionGetActionCount</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPageId);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="mtc__d2_8h.html#adcad22914130bb2e8d200ff41b5efb4b">  339</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__d2_8h.html#adcad22914130bb2e8d200ff41b5efb4b">Mtc_D2SessionEnumAction</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPageId,</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>}</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_D2_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="ttc" id="amtc__d2_8h_html_a023ad01f12ea0669182f26646079876c"><div class="ttname"><a href="mtc__d2_8h.html#a023ad01f12ea0669182f26646079876c">Mtc_D2SessionSetCfAction</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SessionSetCfAction(MTC_SESS zSession, ZCONST ZCHAR *pcKey, MTC_ACT zAction)</div><div class="ttdoc">Set context-free action of session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a178e9cdfaae440f176c32887a6f6e726"><div class="ttname"><a href="mtc__d2_8h.html#a178e9cdfaae440f176c32887a6f6e726">Mtc_D2SessionEnumCfAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_D2SessionEnumCfAction(MTC_SESS zSession, ZUINT iIndex)</div><div class="ttdoc">Enumrate the context-free action in session by index.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a21eae5939ea892c54e21b24d235ee3bf"><div class="ttname"><a href="mtc__d2_8h.html#a21eae5939ea892c54e21b24d235ee3bf">Mtc_D2DeleteImage</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_D2DeleteImage(MTC_IMG zImage)</div><div class="ttdoc">Delete image object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a25398da61ccae063f2f532e4beccaa19"><div class="ttname"><a href="mtc__d2_8h.html#a25398da61ccae063f2f532e4beccaa19">Mtc_D2CreateAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_D2CreateAction(ZFUNC_VOID)</div><div class="ttdoc">Create action object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a28cea568cc40ecece9d35980863f5c69"><div class="ttname"><a href="mtc__d2_8h.html#a28cea568cc40ecece9d35980863f5c69">Mtc_D2SessionEnumCfActionKey</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_D2SessionEnumCfActionKey(MTC_SESS zSession, ZUINT iIndex)</div><div class="ttdoc">Enumrate the key of context-free action in session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a31f4ac519aa6aa7af44cf102aa4b9349"><div class="ttname"><a href="mtc__d2_8h.html#a31f4ac519aa6aa7af44cf102aa4b9349">Mtc_D2AddActionPosition</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2AddActionPosition(MTC_ACT zAction, ZFLOAT fX, ZFLOAT fY)</div><div class="ttdoc">Add action position.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a31fea1d3119cac5414a876e8537f31a4"><div class="ttname"><a href="mtc__d2_8h.html#a31fea1d3119cac5414a876e8537f31a4">Mtc_D2GetActionIntval</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2GetActionIntval(MTC_ACT zAction, ZUINT iIndex)</div><div class="ttdoc">Get the interval of position.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a349dcfa3fbb6c9259ad47d6d0fe2a832"><div class="ttname"><a href="mtc__d2_8h.html#a349dcfa3fbb6c9259ad47d6d0fe2a832">Mtc_D2SessionSetPageCount</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SessionSetPageCount(MTC_SESS zSession, ZUINT iPageCount)</div><div class="ttdoc">Set session page count.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a3f9f0cd227ed2e918269e55beccf8661"><div class="ttname"><a href="mtc__d2_8h.html#a3f9f0cd227ed2e918269e55beccf8661">Mtc_D2SessionGetCfAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_D2SessionGetCfAction(MTC_SESS zSession, ZCONST ZCHAR *pcKey)</div><div class="ttdoc">Get context-free action of session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a3fae9b86db135d8ffd0f1939f8b5e130"><div class="ttname"><a href="mtc__d2_8h.html#a3fae9b86db135d8ffd0f1939f8b5e130">Mtc_D2CreateSession</a></div><div class="ttdeci">ZFUNC MTC_SESS Mtc_D2CreateSession()</div><div class="ttdoc">Create session object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a41eb556b23cbdaf221ab148b8dc43197"><div class="ttname"><a href="mtc__d2_8h.html#a41eb556b23cbdaf221ab148b8dc43197">Mtc_D2GetActionPositionX</a></div><div class="ttdeci">ZFUNC ZFLOAT Mtc_D2GetActionPositionX(MTC_ACT zAction, ZUINT iIndex)</div><div class="ttdoc">Get the X value of position.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a45d83de952a895b96ae1248a96777985"><div class="ttname"><a href="mtc__d2_8h.html#a45d83de952a895b96ae1248a96777985">Mtc_D2GetActionParms</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_D2GetActionParms(MTC_ACT zAction)</div><div class="ttdoc">Get action parameters.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a474f47011586a0501199837162adc9fb"><div class="ttname"><a href="mtc__d2_8h.html#a474f47011586a0501199837162adc9fb">Mtc_D2GetActionPositionCount</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_D2GetActionPositionCount(MTC_ACT zAction)</div><div class="ttdoc">Get count of positions in action object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a4b1f0f623b266762282468ca2d5a20b9"><div class="ttname"><a href="mtc__d2_8h.html#a4b1f0f623b266762282468ca2d5a20b9">Mtc_D2AddActionPositionX</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2AddActionPositionX(MTC_ACT zAction, ZFLOAT fX, ZFLOAT fY, ZUINT iIntVal)</div><div class="ttdoc">Set action positions.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a5ff3843d9155b2b5c9622a5776665f0d"><div class="ttname"><a href="mtc__d2_8h.html#a5ff3843d9155b2b5c9622a5776665f0d">Mtc_D2PrintAction</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_D2PrintAction(MTC_ACT zAction)</div><div class="ttdoc">Save action object to text.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a65dce383f7de26f9aa010c58e3795470"><div class="ttname"><a href="mtc__d2_8h.html#a65dce383f7de26f9aa010c58e3795470">Mtc_D2GetActionPath</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_D2GetActionPath(MTC_ACT zAction)</div><div class="ttdoc">Get the path of action.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a729feaf305630d022877bc18a20417f1"><div class="ttname"><a href="mtc__d2_8h.html#a729feaf305630d022877bc18a20417f1">Mtc_D2GetImageParms</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_D2GetImageParms(MTC_IMG zImage)</div><div class="ttdoc">Get image parameters.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a72faee317bb0b5ec4b10316c98e849a0"><div class="ttname"><a href="mtc__d2_8h.html#a72faee317bb0b5ec4b10316c98e849a0">Mtc_D2SessionAddPage</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SessionAddPage(MTC_SESS zSession)</div><div class="ttdoc">Add page in session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a73809649ba52346ae493ffda01d997e2"><div class="ttname"><a href="mtc__d2_8h.html#a73809649ba52346ae493ffda01d997e2">Mtc_D2SetActionParms</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SetActionParms(MTC_ACT zAction, ZCONST ZCHAR *pcInfo)</div><div class="ttdoc">Set action parameters.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a806117bfe6028e79b40034056ae1be97"><div class="ttname"><a href="mtc__d2_8h.html#a806117bfe6028e79b40034056ae1be97">Mtc_D2SessionGetActionCount</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_D2SessionGetActionCount(MTC_SESS zSession, ZUINT iPageId)</div><div class="ttdoc">Get count of actions.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a858bf1cd2f534b60413f35e5d185b2df"><div class="ttname"><a href="mtc__d2_8h.html#a858bf1cd2f534b60413f35e5d185b2df">Mtc_D2GetActionPositionY</a></div><div class="ttdeci">ZFUNC ZFLOAT Mtc_D2GetActionPositionY(MTC_ACT zAction, ZUINT iIndex)</div><div class="ttdoc">Get the Y value of position.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a8c7522dc683ab7ada6b70788c6d28c81"><div class="ttname"><a href="mtc__d2_8h.html#a8c7522dc683ab7ada6b70788c6d28c81">Mtc_D2ParseImage</a></div><div class="ttdeci">ZFUNC MTC_IMG Mtc_D2ParseImage(ZCONST ZCHAR *pcMsg)</div><div class="ttdoc">Create image object from text.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a8f07a5ceefa8177fe3d802d38200cd94"><div class="ttname"><a href="mtc__d2_8h.html#a8f07a5ceefa8177fe3d802d38200cd94">Mtc_D2DeleteAction</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_D2DeleteAction(MTC_ACT zAction)</div><div class="ttdoc">Delete action object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_a995067006a314c4d9c048d6a3aa7c306"><div class="ttname"><a href="mtc__d2_8h.html#a995067006a314c4d9c048d6a3aa7c306">Mtc_D2ParseAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_D2ParseAction(ZCONST ZCHAR *pcMsg)</div><div class="ttdoc">Create action object from text.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_aa5b32b7d05b3f28df08cdbdafab81026"><div class="ttname"><a href="mtc__d2_8h.html#aa5b32b7d05b3f28df08cdbdafab81026">Mtc_D2SessionSetImage</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SessionSetImage(MTC_SESS zSession, MTC_IMG zImage)</div><div class="ttdoc">Add image object to session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_abdbbc8e41c80a86349c0f26dc49efc77"><div class="ttname"><a href="mtc__d2_8h.html#abdbbc8e41c80a86349c0f26dc49efc77">Mtc_D2SessionAddAction</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SessionAddAction(MTC_SESS zSession, MTC_ACT zAction)</div><div class="ttdoc">Add action object to session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_abeca4b3d2e78939cbf96395fa54d6837"><div class="ttname"><a href="mtc__d2_8h.html#abeca4b3d2e78939cbf96395fa54d6837">Mtc_D2CreateImage</a></div><div class="ttdeci">ZFUNC MTC_IMG Mtc_D2CreateImage(ZFUNC_VOID)</div><div class="ttdoc">Create image object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_ada6e3ce9cc02dfbcb37dff99ef479595"><div class="ttname"><a href="mtc__d2_8h.html#ada6e3ce9cc02dfbcb37dff99ef479595">Mtc_D2DeleteSession</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_D2DeleteSession(MTC_SESS zSession)</div><div class="ttdoc">Delete session object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_adcad22914130bb2e8d200ff41b5efb4b"><div class="ttname"><a href="mtc__d2_8h.html#adcad22914130bb2e8d200ff41b5efb4b">Mtc_D2SessionEnumAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_D2SessionEnumAction(MTC_SESS zSession, ZUINT iPageId, ZUINT iIndex)</div><div class="ttdoc">Enumrate the actions in session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_addd2c6a5fa1384bab428ae21571b0119"><div class="ttname"><a href="mtc__d2_8h.html#addd2c6a5fa1384bab428ae21571b0119">Mtc_D2SessionGetImage</a></div><div class="ttdeci">ZFUNC MTC_IMG Mtc_D2SessionGetImage(MTC_SESS zSession, ZUINT iPageId)</div><div class="ttdoc">Enumrate the image object.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_adfe239e14d383bc02a4e530c5297710a"><div class="ttname"><a href="mtc__d2_8h.html#adfe239e14d383bc02a4e530c5297710a">Mtc_D2PrintImage</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_D2PrintImage(MTC_IMG zImage)</div><div class="ttdoc">Save image object to text.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_ae3476ce31c1dde20f41f3262d68b5235"><div class="ttname"><a href="mtc__d2_8h.html#ae3476ce31c1dde20f41f3262d68b5235">Mtc_D2SessionGetCfActionCount</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SessionGetCfActionCount(MTC_SESS zSession)</div><div class="ttdoc">Get count of context-free action in session.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_ae7a9b3111b550dc12ccb40a0dae21e50"><div class="ttname"><a href="mtc__d2_8h.html#ae7a9b3111b550dc12ccb40a0dae21e50">Mtc_D2SetImageParms</a></div><div class="ttdeci">ZFUNC ZINT Mtc_D2SetImageParms(MTC_IMG zImage, ZCONST ZCHAR *pcInfo)</div><div class="ttdoc">Set image parameters.</div></div>
+<div class="ttc" id="amtc__d2_8h_html_af9d09828d0ab16c6c033d1998642b300"><div class="ttname"><a href="mtc__d2_8h.html#af9d09828d0ab16c6c033d1998642b300">Mtc_D2SessionGetPageCount</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_D2SessionGetPageCount(MTC_SESS zSession)</div><div class="ttdoc">Get page count in session.</div></div>
+<div class="ttc" id="azos__osenv_8h_html_a1ae79d3bb3502c7dc5c16726c78c4bfd"><div class="ttname"><a href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a></div><div class="ttdeci">#define ZFUNC_VOID</div><div class="ttdoc">ZOS support void function declare</div><div class="ttdef"><b>Definition:</b> zos_osenv.h:72</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a0aeacdc5282bd997daff7c8296ea828d"><div class="ttname"><a href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a></div><div class="ttdeci">float ZFLOAT</div><div class="ttdoc">Type of float.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:92</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a21a9b77ccd8a0f566fda0b1bf60d3c76"><div class="ttname"><a href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a></div><div class="ttdeci">void ZVOID</div><div class="ttdoc">Type of void.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:107</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_aae3b50edbfc2210f1b21f28c4d196aaa"><div class="ttname"><a href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a></div><div class="ttdeci">int ZINT</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:98</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

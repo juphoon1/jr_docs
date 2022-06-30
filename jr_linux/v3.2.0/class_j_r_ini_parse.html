@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: JRIniParse类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_j_r_ini_parse-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">JRIniParse类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a1ce14315c1b6fcbaa9c9bb65431d5bf3"><td class="memItemLeft" align="right" valign="top"><a id="a1ce14315c1b6fcbaa9c9bb65431d5bf3" name="a1ce14315c1b6fcbaa9c9bb65431d5bf3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadINI</b> (string path)</td></tr>
+<tr class="separator:a1ce14315c1b6fcbaa9c9bb65431d5bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db6c0bfff36d14468ffe202bcd60d5e"><td class="memItemLeft" align="right" valign="top"><a id="a5db6c0bfff36d14468ffe202bcd60d5e" name="a5db6c0bfff36d14468ffe202bcd60d5e"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (string root, string key)</td></tr>
+<tr class="separator:a5db6c0bfff36d14468ffe202bcd60d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94c7cc16859fa083f1ea803416b6448"><td class="memItemLeft" align="right" valign="top"><a id="af94c7cc16859fa083f1ea803416b6448" name="af94c7cc16859fa083f1ea803416b6448"></a>
+vector&lt; <a class="el" href="class_j_r_ini_node.html">JRIniNode</a> &gt;::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> ()</td></tr>
+<tr class="separator:af94c7cc16859fa083f1ea803416b6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e005c33bf801e563217e9b372888bd"><td class="memItemLeft" align="right" valign="top"><a id="af5e005c33bf801e563217e9b372888bd" name="af5e005c33bf801e563217e9b372888bd"></a>
+vector&lt; <a class="el" href="class_j_r_ini_node.html">JRIniNode</a> &gt;::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (string root, string key, string value)</td></tr>
+<tr class="separator:af5e005c33bf801e563217e9b372888bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3462f3fd5ead61df228ba34dbd19e487"><td class="memItemLeft" align="right" valign="top"><a id="a3462f3fd5ead61df228ba34dbd19e487" name="a3462f3fd5ead61df228ba34dbd19e487"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>WriteINI</b> (string path)</td></tr>
+<tr class="separator:a3462f3fd5ead61df228ba34dbd19e487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c05ab5da4188ded2fc4d0efeafee4f"><td class="memItemLeft" align="right" valign="top"><a id="a46c05ab5da4188ded2fc4d0efeafee4f" name="a46c05ab5da4188ded2fc4d0efeafee4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:a46c05ab5da4188ded2fc4d0efeafee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/<a class="el" href="_j_r_ini_parse_8h_source.html">JRIniParse.h</a></li>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/src/JRIniParse.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

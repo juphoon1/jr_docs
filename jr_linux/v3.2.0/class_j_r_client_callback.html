@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: JRClientCallback类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_j_r_client_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">JRClientCallback类 参考<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___xE7_x99_xBB_xE5_xBD_x95_xE6_xA8_xA1_xE5_x9D_x97.html">登录模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 JRClientCallback 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_j_r_client_callback.png" usemap="#JRClientCallback_map" alt=""/>
+  <map id="JRClientCallback_map" name="JRClientCallback_map">
+<area href="class_j_r_client_callback_impl.html" alt="JRClientCallbackImpl" shape="rect" coords="0,56,130,80"/>
+<area href="class_listener.html" alt="Listener" shape="rect" coords="140,56,270,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aee2e91d0c62608aa40791d722d0ab7cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_client_callback.html#aee2e91d0c62608aa40791d722d0ab7cd">onClientInitResult</a> (bool result, int reason)=0</td></tr>
+<tr class="memdesc:aee2e91d0c62608aa40791d722d0ab7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">sdk 初始化结果回调。  <a href="class_j_r_client_callback.html#aee2e91d0c62608aa40791d722d0ab7cd">更多...</a><br /></td></tr>
+<tr class="separator:aee2e91d0c62608aa40791d722d0ab7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b61225153dd1b0c7589e96ea65d7845"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_client_callback.html#a5b61225153dd1b0c7589e96ea65d7845">onClientLoginResult</a> (bool result, int reason)=0</td></tr>
+<tr class="memdesc:a5b61225153dd1b0c7589e96ea65d7845"><td class="mdescLeft">&#160;</td><td class="mdescRight">登录结果回调。  <a href="class_j_r_client_callback.html#a5b61225153dd1b0c7589e96ea65d7845">更多...</a><br /></td></tr>
+<tr class="separator:a5b61225153dd1b0c7589e96ea65d7845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb73b9060b92c11f0199362fb679b5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_client_callback.html#a2fb73b9060b92c11f0199362fb679b5c">onClientLogoutResult</a> (int reason)=0</td></tr>
+<tr class="memdesc:a2fb73b9060b92c11f0199362fb679b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">登出回调。  <a href="class_j_r_client_callback.html#a2fb73b9060b92c11f0199362fb679b5c">更多...</a><br /></td></tr>
+<tr class="separator:a2fb73b9060b92c11f0199362fb679b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abee4bf84034930ed69b8aea0a4fd58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_client_callback.html#a5abee4bf84034930ed69b8aea0a4fd58">onClientStateChange</a> (int state, int oldState)=0</td></tr>
+<tr class="memdesc:a5abee4bf84034930ed69b8aea0a4fd58"><td class="mdescLeft">&#160;</td><td class="mdescRight">登录状态变化通知。  <a href="class_j_r_client_callback.html#a5abee4bf84034930ed69b8aea0a4fd58">更多...</a><br /></td></tr>
+<tr class="separator:a5abee4bf84034930ed69b8aea0a4fd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062cd9c45da5fcc59a9c4102e71b1156"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_client_callback.html#a062cd9c45da5fcc59a9c4102e71b1156">onClientEvent</a> (void *zEvntId)=0</td></tr>
+<tr class="memdesc:a062cd9c45da5fcc59a9c4102e71b1156"><td class="mdescLeft">&#160;</td><td class="mdescRight">事件上报回调 使用者需要在此函数内完成线程转移，并将zEvntId通过 xxx接口进行设置。  <a href="class_j_r_client_callback.html#a062cd9c45da5fcc59a9c4102e71b1156">更多...</a><br /></td></tr>
+<tr class="separator:a062cd9c45da5fcc59a9c4102e71b1156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a062cd9c45da5fcc59a9c4102e71b1156" name="a062cd9c45da5fcc59a9c4102e71b1156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062cd9c45da5fcc59a9c4102e71b1156">&#9670;&nbsp;</a></span>onClientEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRClientCallback::onClientEvent </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>zEvntId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>事件上报回调 使用者需要在此函数内完成线程转移，并将zEvntId通过 xxx接口进行设置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">zEvntId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_listener.html#ad13bf0533f8cc41a7d84eb4fdd56fb57">Listener</a> , 以及 <a class="el" href="class_j_r_client_callback_impl.html#a6bfb457ace519f4e57953c6d008ad251">JRClientCallbackImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aee2e91d0c62608aa40791d722d0ab7cd" name="aee2e91d0c62608aa40791d722d0ab7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2e91d0c62608aa40791d722d0ab7cd">&#9670;&nbsp;</a></span>onClientInitResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRClientCallback::onClientInitResult </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sdk 初始化结果回调。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>初始化 sdk 是否成功。<ul>
+<li>true：初始化成功。</li>
+<li>false：初始化失败。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>初始化 sdk 失败原因。参见 <a class="el" href="class_j_r_client.html#a75c6eb943d1c078845887ed130eb999f">初始化失败原因</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_listener.html#a1285717574df39a29f8a8c607834eb8b">Listener</a> , 以及 <a class="el" href="class_j_r_client_callback_impl.html#a81ff55bc2fd911f71c537dcd709cbb27">JRClientCallbackImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a5b61225153dd1b0c7589e96ea65d7845" name="a5b61225153dd1b0c7589e96ea65d7845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b61225153dd1b0c7589e96ea65d7845">&#9670;&nbsp;</a></span>onClientLoginResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRClientCallback::onClientLoginResult </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登录结果回调。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>登录是否成功。<ul>
+<li>true：登录成功。</li>
+<li>false：登录失败。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>登录失败原因。参见 <a class="el" href="class_j_r_client.html#a92cd3c162dbc43b8a1c4e27ddfd5a7da">登录失败原因</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_listener.html#a49a1ec990dcbcc582f6106f2bfcbc19e">Listener</a> , 以及 <a class="el" href="class_j_r_client_callback_impl.html#ad6b6a4524ec6a4a09a938babb0fdaf7a">JRClientCallbackImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a2fb73b9060b92c11f0199362fb679b5c" name="a2fb73b9060b92c11f0199362fb679b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb73b9060b92c11f0199362fb679b5c">&#9670;&nbsp;</a></span>onClientLogoutResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRClientCallback::onClientLogoutResult </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登出回调。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>登出原因。参见 <a class="el" href="class_j_r_client.html#a92cd3c162dbc43b8a1c4e27ddfd5a7da">登出原因</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_listener.html#af72115dad6698dadefa5680b8c771171">Listener</a> , 以及 <a class="el" href="class_j_r_client_callback_impl.html#aa88ac9a421ea91e60900b02561235d88">JRClientCallbackImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a5abee4bf84034930ed69b8aea0a4fd58" name="a5abee4bf84034930ed69b8aea0a4fd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abee4bf84034930ed69b8aea0a4fd58">&#9670;&nbsp;</a></span>onClientStateChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRClientCallback::onClientStateChange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>oldState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>登录状态变化通知。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>当前登录状态值。参见 <a class="el" href="class_j_r_client.html#a3e6a6464ed1f4f7c0b9900fb1a648c11">登录状态</a>。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oldState</td><td>之前的登录状态值。参见 <a class="el" href="class_j_r_client.html#a3e6a6464ed1f4f7c0b9900fb1a648c11">登录状态</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_listener.html#a219ebdaa4ea8db335dcb448795fa09ea">Listener</a> , 以及 <a class="el" href="class_j_r_client_callback_impl.html#a76b3c0f6fbf45272c53ad8f6a1506377">JRClientCallbackImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/<a class="el" href="_j_r_client_callback_8h_source.html">JRClientCallback.h</a></li>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/src/JRClientCallback.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/JRAccount.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d1c3ca8df6f8d5c46b2bba990ed9df32.html">jrsdk</a></li><li class="navelem"><a class="el" href="dir_e2a4919a87acac518081f88daf1d8d69.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">JRAccount.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef JRACCOUNT_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define JRACCOUNT_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;JrSdk_global.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;JRAccountConstants.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_j_r_account.html">   12</a></span><span class="keyword">class </span>JRSDK_EXPORT <a class="code hl_class" href="class_j_r_account.html">JRAccount</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_j_r_account.html">JRAccount</a> * getInstance();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_j_r_account.html#aec1eac4f444c1cb15d2939eeef46ba5a">   31</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_account.html#aec1eac4f444c1cb15d2939eeef46ba5a">createAccount</a>(<span class="keywordtype">string</span> accountName) = 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_j_r_account.html#aacb6233395a11940ccb7d8961d1424cc">   42</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_account.html#aacb6233395a11940ccb7d8961d1424cc">deleteAccount</a>(<span class="keywordtype">string</span> accountName) = 0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_j_r_account.html#abf71a2d61239490446d835109ec74e18">   57</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_account.html#abf71a2d61239490446d835109ec74e18">setAccountConfig</a>(<span class="keywordtype">string</span> accountName, map&lt;JRAccountConstants, string&gt; extraParams) = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_j_r_account.html#ac889d57218abd59af4acb4f402f103b7">   73</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_account.html#ac889d57218abd59af4acb4f402f103b7">setAccountConfig</a>(<span class="keywordtype">string</span> accountName, <a class="code hl_enumeration" href="group___xE8_xB4_xA6_xE5_x8F_xB7_xE6_xA8_xA1_xE5_x9D_x97.html#ga076586a6d0d05471305625f19bd0341a">JRAccountConstants</a> constants, <span class="keywordtype">string</span> value) = 0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_j_r_account.html#a3e2b34a9831c6083634afd32a84e014c">   83</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_account.html#a3e2b34a9831c6083634afd32a84e014c">getAccountConfig</a>(<span class="keywordtype">string</span> accountName, <a class="code hl_enumeration" href="group___xE8_xB4_xA6_xE5_x8F_xB7_xE6_xA8_xA1_xE5_x9D_x97.html#ga076586a6d0d05471305625f19bd0341a">JRAccountConstants</a> paramKey) = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_j_r_account.html#a17afc5a07d5b1504db30076925b6f3ea">   90</a></span>   <span class="keyword">virtual</span> vector&lt;string&gt; <a class="code hl_function" href="class_j_r_account.html#a17afc5a07d5b1504db30076925b6f3ea">getAccountList</a>() = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_class" href="class_j_r_account.html">JRAccount</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_j_r_account.html">~JRAccount</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">class </span>CGarbo {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        ~CGarbo() {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">if</span> (JRAccount::m_pJRAccount) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                SAFE_DELETE_PTR(JRAccount::m_pJRAccount);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    };</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_j_r_account.html">JRAccount</a> * m_pJRAccount;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">static</span> CGarbo m_garbo;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#endif </span><span class="comment">// JRACCOUNT_H</span></div>
+<div class="ttc" id="aclass_j_r_account_html"><div class="ttname"><a href="class_j_r_account.html">JRAccount</a></div><div class="ttdef"><b>Definition:</b> JRAccount.h:12</div></div>
+<div class="ttc" id="aclass_j_r_account_html_a17afc5a07d5b1504db30076925b6f3ea"><div class="ttname"><a href="class_j_r_account.html#a17afc5a07d5b1504db30076925b6f3ea">JRAccount::getAccountList</a></div><div class="ttdeci">virtual vector&lt; string &gt; getAccountList()=0</div><div class="ttdoc">获取帐号列表。</div></div>
+<div class="ttc" id="aclass_j_r_account_html_a3e2b34a9831c6083634afd32a84e014c"><div class="ttname"><a href="class_j_r_account.html#a3e2b34a9831c6083634afd32a84e014c">JRAccount::getAccountConfig</a></div><div class="ttdeci">virtual string getAccountConfig(string accountName, JRAccountConstants paramKey)=0</div><div class="ttdoc">获取帐号配置参数。</div></div>
+<div class="ttc" id="aclass_j_r_account_html_aacb6233395a11940ccb7d8961d1424cc"><div class="ttname"><a href="class_j_r_account.html#aacb6233395a11940ccb7d8961d1424cc">JRAccount::deleteAccount</a></div><div class="ttdeci">virtual bool deleteAccount(string accountName)=0</div><div class="ttdoc">删除帐号。</div></div>
+<div class="ttc" id="aclass_j_r_account_html_abf71a2d61239490446d835109ec74e18"><div class="ttname"><a href="class_j_r_account.html#abf71a2d61239490446d835109ec74e18">JRAccount::setAccountConfig</a></div><div class="ttdeci">virtual bool setAccountConfig(string accountName, map&lt; JRAccountConstants, string &gt; extraParams)=0</div><div class="ttdoc">设置帐号配置。</div></div>
+<div class="ttc" id="aclass_j_r_account_html_ac889d57218abd59af4acb4f402f103b7"><div class="ttname"><a href="class_j_r_account.html#ac889d57218abd59af4acb4f402f103b7">JRAccount::setAccountConfig</a></div><div class="ttdeci">virtual bool setAccountConfig(string accountName, JRAccountConstants constants, string value)=0</div><div class="ttdoc">设置帐号配置。</div></div>
+<div class="ttc" id="aclass_j_r_account_html_aec1eac4f444c1cb15d2939eeef46ba5a"><div class="ttname"><a href="class_j_r_account.html#aec1eac4f444c1cb15d2939eeef46ba5a">JRAccount::createAccount</a></div><div class="ttdeci">virtual bool createAccount(string accountName)=0</div><div class="ttdoc">创建账号。</div></div>
+<div class="ttc" id="agroup___xE8_xB4_xA6_xE5_x8F_xB7_xE6_xA8_xA1_xE5_x9D_x97_html_ga076586a6d0d05471305625f19bd0341a"><div class="ttname"><a href="group___xE8_xB4_xA6_xE5_x8F_xB7_xE6_xA8_xA1_xE5_x9D_x97.html#ga076586a6d0d05471305625f19bd0341a">JRAccountConstants</a></div><div class="ttdeci">JRAccountConstants</div><div class="ttdoc">账号配置参数。</div><div class="ttdef"><b>Definition:</b> JRAccountConstants.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

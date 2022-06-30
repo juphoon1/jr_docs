@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_uri.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_uri.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc__uri_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_uri.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : leo.lv</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2011-01-03</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">      Data structure and function declare required by MTC URI</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_URI_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_URI_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a91462f5b733526273a97090019dd09e4">   52</a></span><span class="preprocessor">#define MTC_URI_FMT_NOT_COMPLTE -1   </span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a56158a59290e1a151601a7751966bf75">   53</a></span><span class="preprocessor">#define MTC_URI_FMT_INVAL_URI   -2   </span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a8e13181c57f19ff9de4483fc14a6dd4f">   54</a></span><span class="preprocessor">#define MTC_URI_FMT_EMPTY_URI   -3   </span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a3a8b97f69721eea75be1d1f1fbd67568">   58</a></span><span class="preprocessor">#define MTC_URI_TMNL_APP    &quot;app&quot;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#define MTC_URI_TMNL_PC     &quot;pc&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#define MTC_URI_TMNL_MAC    &quot;mac&quot;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#define MTC_URI_TMNL_PAD    &quot;pad&quot;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#define MTC_URI_TMNL_WEB    &quot;web&quot;</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a7770f20ff99616537fdcf4a58808eedf">   71</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__uri_8h.html#a7770f20ff99616537fdcf4a58808eedf">Mtc_UriIsValid</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a79ecf4fdb804f236b673236b2b69373b">   83</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a79ecf4fdb804f236b673236b2b69373b">Mtc_UriFormat</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcEarlyUri, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcRealm, </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bUserPhone);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a135b8733520d7f1bf50b31f73e584437">   94</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a135b8733520d7f1bf50b31f73e584437">Mtc_UriWebFormat</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcEarlyUri);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#ac7aaabd18f876150fbed5e66a2860aea">  106</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#ac7aaabd18f876150fbed5e66a2860aea">Mtc_UriFormatX</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcEarlyUri, <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bUserPhone);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a3e6e56ea8bfcc407ef5b3c5377c7f213">  116</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a3e6e56ea8bfcc407ef5b3c5377c7f213">Mtc_UriFormatTelUri</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcPhone);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a55baf8f54cfaa0125551dfacc10f03b7">  126</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a55baf8f54cfaa0125551dfacc10f03b7">Mtc_UriFormatNat</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcPhone);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a947c78e95eacd2f938445cd48004e67a">  136</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a947c78e95eacd2f938445cd48004e67a">Mtc_UriFormatInt</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcPhone);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a6b40c62b90d6b87ad3fc4048f4e76e07">  147</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a6b40c62b90d6b87ad3fc4048f4e76e07">Mtc_UriGetName</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iLen);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#abeb6c5a6197cd1cbfc5bd2c732889be7">  157</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#abeb6c5a6197cd1cbfc5bd2c732889be7">Mtc_UriGetUserPart</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#ae29b4f2919eb3c4952f8b5687c127236">  167</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#ae29b4f2919eb3c4952f8b5687c127236">Mtc_UriGetHostPart</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a7fbab5b1eca6a6ba115501be4d71b910">  176</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a7fbab5b1eca6a6ba115501be4d71b910">Mtc_UriGetDirectUri</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * pcTmnlType);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="mtc__uri_8h.html#a0bdd4d4dd3223adb76469f6d099e6177">  185</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__uri_8h.html#a0bdd4d4dd3223adb76469f6d099e6177">Mtc_UriGetTmnlType</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUserUri);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_URI_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="ttc" id="amtc__uri_8h_html_a0bdd4d4dd3223adb76469f6d099e6177"><div class="ttname"><a href="mtc__uri_8h.html#a0bdd4d4dd3223adb76469f6d099e6177">Mtc_UriGetTmnlType</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriGetTmnlType(ZCHAR *pcUserUri)</div><div class="ttdoc">Get terminal type of uri</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a135b8733520d7f1bf50b31f73e584437"><div class="ttname"><a href="mtc__uri_8h.html#a135b8733520d7f1bf50b31f73e584437">Mtc_UriWebFormat</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriWebFormat(ZCHAR *pcEarlyUri)</div><div class="ttdoc">Format early URI to a valid URI.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a3e6e56ea8bfcc407ef5b3c5377c7f213"><div class="ttname"><a href="mtc__uri_8h.html#a3e6e56ea8bfcc407ef5b3c5377c7f213">Mtc_UriFormatTelUri</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriFormatTelUri(ZCHAR *pcPhone)</div><div class="ttdoc">Format a TEL URI from phone.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a55baf8f54cfaa0125551dfacc10f03b7"><div class="ttname"><a href="mtc__uri_8h.html#a55baf8f54cfaa0125551dfacc10f03b7">Mtc_UriFormatNat</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriFormatNat(ZCHAR *pcPhone)</div><div class="ttdoc">Format a national URI from phone.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a6b40c62b90d6b87ad3fc4048f4e76e07"><div class="ttname"><a href="mtc__uri_8h.html#a6b40c62b90d6b87ad3fc4048f4e76e07">Mtc_UriGetName</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriGetName(ZCHAR *pcUri, ZUINT iLen)</div><div class="ttdoc">Get user part from SIP or TEL URI.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a7770f20ff99616537fdcf4a58808eedf"><div class="ttname"><a href="mtc__uri_8h.html#a7770f20ff99616537fdcf4a58808eedf">Mtc_UriIsValid</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_UriIsValid(ZCHAR *pcUri)</div><div class="ttdoc">Check URI is valid.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a79ecf4fdb804f236b673236b2b69373b"><div class="ttname"><a href="mtc__uri_8h.html#a79ecf4fdb804f236b673236b2b69373b">Mtc_UriFormat</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriFormat(ZCHAR *pcEarlyUri, ZCHAR *pcRealm, ZBOOL bUserPhone)</div><div class="ttdoc">Format early URI to a valid URI.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a7fbab5b1eca6a6ba115501be4d71b910"><div class="ttname"><a href="mtc__uri_8h.html#a7fbab5b1eca6a6ba115501be4d71b910">Mtc_UriGetDirectUri</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriGetDirectUri(ZCHAR *pcTmnlType)</div><div class="ttdoc">Get direct uri.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_a947c78e95eacd2f938445cd48004e67a"><div class="ttname"><a href="mtc__uri_8h.html#a947c78e95eacd2f938445cd48004e67a">Mtc_UriFormatInt</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriFormatInt(ZCHAR *pcPhone)</div><div class="ttdoc">Format a international URI from phone.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_abeb6c5a6197cd1cbfc5bd2c732889be7"><div class="ttname"><a href="mtc__uri_8h.html#abeb6c5a6197cd1cbfc5bd2c732889be7">Mtc_UriGetUserPart</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriGetUserPart(ZCHAR *pcUri)</div><div class="ttdoc">Get user part(ex: phone number) of URI(SIP or TEL URI).</div></div>
+<div class="ttc" id="amtc__uri_8h_html_ac7aaabd18f876150fbed5e66a2860aea"><div class="ttname"><a href="mtc__uri_8h.html#ac7aaabd18f876150fbed5e66a2860aea">Mtc_UriFormatX</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriFormatX(ZCHAR *pcEarlyUri, ZBOOL bUserPhone)</div><div class="ttdoc">Format early URI to a valid URI. It will automatically fill realm by Mtc_CliDbGetSipRegRealm.</div></div>
+<div class="ttc" id="amtc__uri_8h_html_ae29b4f2919eb3c4952f8b5687c127236"><div class="ttname"><a href="mtc__uri_8h.html#ae29b4f2919eb3c4952f8b5687c127236">Mtc_UriGetHostPart</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_UriGetHostPart(ZCHAR *pcUri)</div><div class="ttdoc">Get user part(ex: phone number) of URI(SIP or TEL URI).</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_afbe956c8bc4de2ad5c421aa144d07f16"><div class="ttname"><a href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a></div><div class="ttdeci">int ZBOOL</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:106</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

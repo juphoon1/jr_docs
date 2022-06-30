@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/JRClientImpl.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d1c3ca8df6f8d5c46b2bba990ed9df32.html">jrsdk</a></li><li class="navelem"><a class="el" href="dir_e2a4919a87acac518081f88daf1d8d69.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">JRClientImpl.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef JRCLIENTIMPL_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define JRCLIENTIMPL_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;JRNotify.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;MtcEngine.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;JRClient.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_j_r_client_impl.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_r_client_impl.html">JRClientImpl</a>: <span class="keyword">public</span> <a class="code hl_class" href="class_j_r_client.html">JRClient</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_mtc_notify_listener.html">MtcNotifyListener</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> onNotify(<a class="code hl_class" href="class_j_r_notify.html">JRNotify</a> *jrNotify) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#a504fdb86414afa1b49fa732c58ef6d23">getCapServerAddress</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a760935b0a850bfc4f1f62c050cad24ac">setCapServerAddress</a>(<span class="keywordtype">string</span> capServerAddress) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a41c4f098bcae806a38f6e81d5878dc19">startInitWithAppkey</a>(<span class="keywordtype">string</span> appKey, <span class="keywordtype">string</span> appId, <span class="keywordtype">string</span> cuei,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            <span class="keywordtype">string</span> vendor, <span class="keywordtype">string</span> vendorName, <span class="keywordtype">string</span> vendorVersion) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_client_impl.html#a471985c220cb72c621af1d006ecf7162">login</a>(<span class="keywordtype">string</span> userName) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a47a5a9a056d89dd1d3de034819d60994">setAutoReLogin</a>(<span class="keywordtype">bool</span> enable) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#af3f451a8f836687282313fdefb1c4f36">getCurAccount</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#a6294ecbba93e985995e134046d056541">getCurLoginNumber</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_client_impl.html#a59f9ebcc3262f671a5ed3f7332914af2">logout</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_j_r_client_impl.html#a54c8f7715a482948c0d415d30e367c00">getState</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#ad73c7f316daf09bae1313419a926e077">getSDKVersion</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_client_impl.html#a8884b18b2571e68fe067224d54bcbe34">isNeedUploadCallParameters</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a651a95f5ff86e6fdd8292f9b3e36b0ee">setNeedUploadCallParameters</a>(<span class="keywordtype">bool</span> needUploadCallParameters) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#af2282f333aca1e8138a8822850258910">getAppKey</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a14caf19e169741973e56fa7a18e501f7">addCallback</a>(<a class="code hl_class" href="class_j_r_client_callback.html">JRClientCallback</a> *callback) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a3547ef811cb5605841b39280cada51d7">removeCallback</a>(<a class="code hl_class" href="class_j_r_client_callback.html">JRClientCallback</a> *callback) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_client_impl.html#a9b1f60c9a3d015d0fa7d9384f3dc7716">driver</a>(<span class="keywordtype">void</span> * zEvntId) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#a9b13ce8a6c15bab21524e362b67aa1e7">getCuei</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getNtpTime() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a088f57422a99012fb46140f8e88281c9">setMmeLogSize</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mmeLogSize) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a86d55885090f77e532eb047b4cf70e2a">setMmeLogCount</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mmeLogCount) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a5e5e1713dda4db4a07c5f486e95a546f">setMtcLogSize</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mtcLogSize) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#ac9ca256b5f180240d79b586234270fa4">setMtcLogCount</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mtcLogCount) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a13b0932f45ebf116e6891557aa3f2b49">enableDebugMode</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a97bcd1fe42af9ec15e9d9c35178c8788">disableDebguMode</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_client_impl.html#a23241cf65981d593fc0e92407dc20abb">uploadLog</a>(<span class="keywordtype">string</span> vendor, <span class="keywordtype">string</span> reason, std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">bool</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> * response)&gt; onResult) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#a3ae00eb07f4938691336e94f5e5c0a01">getVendor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#a3f8fb513f79df857c036a1bb352232e0">getVendorName</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_j_r_client_impl.html#ae5049f343e22e0b96d92588f30410b40">getVendorVersion</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_class" href="class_j_r_client_impl.html">JRClientImpl</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_class" href="class_j_r_client_impl.html">~JRClientImpl</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    vector&lt;JRClientCallback *&gt; mCallbacks;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">string</span> capServerAddress;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> mEnableReLogin;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">bool</span> mNeedUploadCallParameters;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">string</span> mAppKey;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">string</span> mCuei;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">string</span> mVendor;                   <span class="comment">// 应用名称</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">string</span> mVendorName;               <span class="comment">// 音响名称</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">string</span> mVendorVersion;            <span class="comment">// 音响版本</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> mState;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> m_iSameRetryTimes;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">int</span> m_iAllRetryTimes;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">int</span> m_iLastError;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">bool</span> m_bTriggerRegister;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">bool</span> m_bNetState;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> setState(<span class="keywordtype">int</span> state);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> initClient();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> existsLicenseFile();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> notifyLogin(<span class="keyword">const</span> <span class="keywordtype">bool</span> result, <span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> notifyLogout(<span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> notifyStateChange(<span class="keyword">const</span> <span class="keywordtype">int</span> state, <span class="keyword">const</span> <span class="keywordtype">int</span> oldState);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">int</span> translateFromMtc(<span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">int</span> translateStateFromMtc(<span class="keyword">const</span> <span class="keywordtype">int</span> mtcState);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">int</span> getLoginReasonFromMtcReason(<span class="keyword">const</span> <span class="keywordtype">int</span> errorCode);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> getInitErrorFromMtcReason(<span class="keyword">const</span> <span class="keywordtype">int</span> errorCode);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">bool</span> needDownloadLicenseForInit(<span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">bool</span> needDownloadLicenseForLogin(<span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> notifyClientInit(<span class="keyword">const</span> <span class="keywordtype">bool</span> result, <span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> notifyClientEvent(<span class="keywordtype">void</span> *zEvntId);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordtype">void</span> downloadLicenseAndInitClient();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> needRelogin(<span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_j_r_client.html">JRClient</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif </span><span class="comment">// JRCLIENTIMPL_H</span></div>
+<div class="ttc" id="aclass_j_r_client_callback_html"><div class="ttname"><a href="class_j_r_client_callback.html">JRClientCallback</a></div><div class="ttdef"><b>Definition:</b> JRClientCallback.h:13</div></div>
+<div class="ttc" id="aclass_j_r_client_html"><div class="ttname"><a href="class_j_r_client.html">JRClient</a></div><div class="ttdoc">登录组件。</div><div class="ttdef"><b>Definition:</b> JRClient.h:16</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html"><div class="ttname"><a href="class_j_r_client_impl.html">JRClientImpl</a></div><div class="ttdef"><b>Definition:</b> JRClientImpl.h:8</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a088f57422a99012fb46140f8e88281c9"><div class="ttname"><a href="class_j_r_client_impl.html#a088f57422a99012fb46140f8e88281c9">JRClientImpl::setMmeLogSize</a></div><div class="ttdeci">void setMmeLogSize(unsigned int mmeLogSize) override</div><div class="ttdoc">设置mme 文件日志大小, 需要在 startInitWithAppkey 函数执行前进行调用, 否则不生效</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:569</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a13b0932f45ebf116e6891557aa3f2b49"><div class="ttname"><a href="class_j_r_client_impl.html#a13b0932f45ebf116e6891557aa3f2b49">JRClientImpl::enableDebugMode</a></div><div class="ttdeci">void enableDebugMode() override</div><div class="ttdoc">开启调试模式</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:594</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a14caf19e169741973e56fa7a18e501f7"><div class="ttname"><a href="class_j_r_client_impl.html#a14caf19e169741973e56fa7a18e501f7">JRClientImpl::addCallback</a></div><div class="ttdeci">void addCallback(JRClientCallback *callback) override</div><div class="ttdoc">添加回调。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:524</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a23241cf65981d593fc0e92407dc20abb"><div class="ttname"><a href="class_j_r_client_impl.html#a23241cf65981d593fc0e92407dc20abb">JRClientImpl::uploadLog</a></div><div class="ttdeci">void uploadLog(string vendor, string reason, std::function&lt; void(bool, const char *response)&gt; onResult) override</div><div class="ttdoc">开始上传日志</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:602</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a3547ef811cb5605841b39280cada51d7"><div class="ttname"><a href="class_j_r_client_impl.html#a3547ef811cb5605841b39280cada51d7">JRClientImpl::removeCallback</a></div><div class="ttdeci">void removeCallback(JRClientCallback *callback) override</div><div class="ttdoc">删除回调。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:528</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a3ae00eb07f4938691336e94f5e5c0a01"><div class="ttname"><a href="class_j_r_client_impl.html#a3ae00eb07f4938691336e94f5e5c0a01">JRClientImpl::getVendor</a></div><div class="ttdeci">string getVendor() override</div><div class="ttdoc">获取当前音响的名称。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:622</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a3f8fb513f79df857c036a1bb352232e0"><div class="ttname"><a href="class_j_r_client_impl.html#a3f8fb513f79df857c036a1bb352232e0">JRClientImpl::getVendorName</a></div><div class="ttdeci">string getVendorName() override</div><div class="ttdoc">获取当前音响的型号。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:626</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a41c4f098bcae806a38f6e81d5878dc19"><div class="ttname"><a href="class_j_r_client_impl.html#a41c4f098bcae806a38f6e81d5878dc19">JRClientImpl::startInitWithAppkey</a></div><div class="ttdeci">void startInitWithAppkey(string appKey, string appId, string cuei, string vendor, string vendorName, string vendorVersion) override</div><div class="ttdoc">初始化。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:341</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a471985c220cb72c621af1d006ecf7162"><div class="ttname"><a href="class_j_r_client_impl.html#a471985c220cb72c621af1d006ecf7162">JRClientImpl::login</a></div><div class="ttdeci">bool login(string userName) override</div><div class="ttdoc">登录。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:442</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a47a5a9a056d89dd1d3de034819d60994"><div class="ttname"><a href="class_j_r_client_impl.html#a47a5a9a056d89dd1d3de034819d60994">JRClientImpl::setAutoReLogin</a></div><div class="ttdeci">void setAutoReLogin(bool enable) override</div><div class="ttdoc">设置是否重试注册。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:476</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a504fdb86414afa1b49fa732c58ef6d23"><div class="ttname"><a href="class_j_r_client_impl.html#a504fdb86414afa1b49fa732c58ef6d23">JRClientImpl::getCapServerAddress</a></div><div class="ttdeci">string getCapServerAddress() const override</div><div class="ttdoc">获取能力开放平台服务器地址。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:318</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a54c8f7715a482948c0d415d30e367c00"><div class="ttname"><a href="class_j_r_client_impl.html#a54c8f7715a482948c0d415d30e367c00">JRClientImpl::getState</a></div><div class="ttdeci">int getState() override</div><div class="ttdoc">获取当前登录状态。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:504</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a59f9ebcc3262f671a5ed3f7332914af2"><div class="ttname"><a href="class_j_r_client_impl.html#a59f9ebcc3262f671a5ed3f7332914af2">JRClientImpl::logout</a></div><div class="ttdeci">bool logout() override</div><div class="ttdoc">登出。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:498</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a5e5e1713dda4db4a07c5f486e95a546f"><div class="ttname"><a href="class_j_r_client_impl.html#a5e5e1713dda4db4a07c5f486e95a546f">JRClientImpl::setMtcLogSize</a></div><div class="ttdeci">void setMtcLogSize(unsigned int mtcLogSize) override</div><div class="ttdoc">设置 mtc 文件日志大小, 需要在 startInitWithAppkey 函数执行前进行调用, 否则不生效</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:581</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a6294ecbba93e985995e134046d056541"><div class="ttname"><a href="class_j_r_client_impl.html#a6294ecbba93e985995e134046d056541">JRClientImpl::getCurLoginNumber</a></div><div class="ttdeci">string getCurLoginNumber() override</div><div class="ttdoc">获取当前登录的号码。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:489</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a651a95f5ff86e6fdd8292f9b3e36b0ee"><div class="ttname"><a href="class_j_r_client_impl.html#a651a95f5ff86e6fdd8292f9b3e36b0ee">JRClientImpl::setNeedUploadCallParameters</a></div><div class="ttdeci">void setNeedUploadCallParameters(bool needUploadCallParameters) override</div><div class="ttdoc">设置是否需要上传通话参数到服务器，默认为 false。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:516</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a760935b0a850bfc4f1f62c050cad24ac"><div class="ttname"><a href="class_j_r_client_impl.html#a760935b0a850bfc4f1f62c050cad24ac">JRClientImpl::setCapServerAddress</a></div><div class="ttdeci">void setCapServerAddress(string capServerAddress) override</div><div class="ttdoc">设置能力开放平台服务器地址。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:337</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a86d55885090f77e532eb047b4cf70e2a"><div class="ttname"><a href="class_j_r_client_impl.html#a86d55885090f77e532eb047b4cf70e2a">JRClientImpl::setMmeLogCount</a></div><div class="ttdeci">void setMmeLogCount(unsigned int mmeLogCount) override</div><div class="ttdoc">设置mme 文件日志数量</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:577</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a8884b18b2571e68fe067224d54bcbe34"><div class="ttname"><a href="class_j_r_client_impl.html#a8884b18b2571e68fe067224d54bcbe34">JRClientImpl::isNeedUploadCallParameters</a></div><div class="ttdeci">bool isNeedUploadCallParameters() override</div><div class="ttdoc">是否需要上传通话参数到服务器。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:512</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a97bcd1fe42af9ec15e9d9c35178c8788"><div class="ttname"><a href="class_j_r_client_impl.html#a97bcd1fe42af9ec15e9d9c35178c8788">JRClientImpl::disableDebguMode</a></div><div class="ttdeci">void disableDebguMode() override</div><div class="ttdoc">关闭调式模式</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:598</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a9b13ce8a6c15bab21524e362b67aa1e7"><div class="ttname"><a href="class_j_r_client_impl.html#a9b13ce8a6c15bab21524e362b67aa1e7">JRClientImpl::getCuei</a></div><div class="ttdeci">string getCuei() override</div><div class="ttdoc">获取cuei</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:561</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_a9b1f60c9a3d015d0fa7d9384f3dc7716"><div class="ttname"><a href="class_j_r_client_impl.html#a9b1f60c9a3d015d0fa7d9384f3dc7716">JRClientImpl::driver</a></div><div class="ttdeci">bool driver(void *zEvntId) override</div><div class="ttdoc">JRClient 驱动服务。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:539</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_ac9ca256b5f180240d79b586234270fa4"><div class="ttname"><a href="class_j_r_client_impl.html#ac9ca256b5f180240d79b586234270fa4">JRClientImpl::setMtcLogCount</a></div><div class="ttdeci">void setMtcLogCount(unsigned int mtcLogCount) override</div><div class="ttdoc">设置 mtc 文件日志文件数量, 需要在 startInitWithAppkey 函数执行前进行调用, 否则不生效</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:590</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_ad73c7f316daf09bae1313419a926e077"><div class="ttname"><a href="class_j_r_client_impl.html#ad73c7f316daf09bae1313419a926e077">JRClientImpl::getSDKVersion</a></div><div class="ttdeci">string getSDKVersion() override</div><div class="ttdoc">获取 sdk 版本号。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:508</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_ae5049f343e22e0b96d92588f30410b40"><div class="ttname"><a href="class_j_r_client_impl.html#ae5049f343e22e0b96d92588f30410b40">JRClientImpl::getVendorVersion</a></div><div class="ttdeci">string getVendorVersion() override</div><div class="ttdoc">获取当前音响的版本号。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:630</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_af2282f333aca1e8138a8822850258910"><div class="ttname"><a href="class_j_r_client_impl.html#af2282f333aca1e8138a8822850258910">JRClientImpl::getAppKey</a></div><div class="ttdeci">string getAppKey() override</div><div class="ttdoc">获取 AppKey。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:520</div></div>
+<div class="ttc" id="aclass_j_r_client_impl_html_af3f451a8f836687282313fdefb1c4f36"><div class="ttname"><a href="class_j_r_client_impl.html#af3f451a8f836687282313fdefb1c4f36">JRClientImpl::getCurAccount</a></div><div class="ttdeci">string getCurAccount() override</div><div class="ttdoc">获取当前open的账号。</div><div class="ttdef"><b>Definition:</b> JRClientImpl.cc:480</div></div>
+<div class="ttc" id="aclass_j_r_notify_html"><div class="ttname"><a href="class_j_r_notify.html">JRNotify</a></div><div class="ttdef"><b>Definition:</b> JRNotify.h:52</div></div>
+<div class="ttc" id="aclass_mtc_notify_listener_html"><div class="ttname"><a href="class_mtc_notify_listener.html">MtcNotifyListener</a></div><div class="ttdef"><b>Definition:</b> MtcEngine.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

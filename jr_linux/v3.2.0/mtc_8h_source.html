@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************ </span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : leo.lv</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2011-01-03</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    Marcos and structure definitions required by the mtc.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#include &quot;<a class="code" href="zos__type_8h.html">zos_type.h</a>&quot;</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#include &quot;mtc_limit.h&quot;</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">/* mtc support dll export */</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#ifdef MTC_SUPT_DLL_EXPORT</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#undef ZFUNC</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#define ZFUNC ZFUNC_EXPORT</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif </span><span class="comment">/* MTC_SUPT_DLL_EXPORT */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#if((defined LIMITED_MOD_COM) || (defined LIMITED_MOD_LEMON) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__util_8h.html">mtc_util.h</a>&quot;</span>                <span class="comment">/* MTC Utility Interfaces */</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cli_8h.html">mtc_cli.h</a>&quot;</span>                 <span class="comment">/* MTC Client Interfaces */</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cli__cfg_8h.html">mtc_cli_cfg.h</a>&quot;</span>             <span class="comment">/* MTC Client Config Interfaces */</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cli__cb_8h.html">mtc_cli_cb.h</a>&quot;</span>              <span class="comment">/* MTC Client Callback Interfaces */</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cli__db_8h.html">mtc_cli_db.h</a>&quot;</span>              <span class="comment">/* MTC Client Database Interfaces */</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cap_8h.html">mtc_cap.h</a>&quot;</span>                 <span class="comment">/* MTC Capability Interface */</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cap__cb_8h.html">mtc_cap_cb.h</a>&quot;</span>              <span class="comment">/* MTC Capability Callback Interface */</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cap__db_8h.html">mtc_cap_db.h</a>&quot;</span>              <span class="comment">/* MTC Capability Database Interface */</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__prof_8h.html">mtc_prof.h</a>&quot;</span>                <span class="comment">/* MTC Profile Interfaces */</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__prof__cfg_8h.html">mtc_prof_cfg.h</a>&quot;</span>            <span class="comment">/* MTC Profile Config Interfaces */</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__prof__db_8h.html">mtc_prof_db.h</a>&quot;</span>             <span class="comment">/* MTC Profile Database Interfaces */</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__prov__cfg_8h.html">mtc_prov_cfg.h</a>&quot;</span>            <span class="comment">/* MTC Provision Config Interfaces */</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__prov__db_8h.html">mtc_prov_db.h</a>&quot;</span>             <span class="comment">/* MTC Provision Database Interfaces */</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__gba_8h.html">mtc_gba.h</a>&quot;</span>                 <span class="comment">/* MTC GBA Interface */</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__gba__cb_8h.html">mtc_gba_cb.h</a>&quot;</span>              <span class="comment">/* MTC GBA Callback Interface */</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mwi_8h.html">mtc_mwi.h</a>&quot;</span>                 <span class="comment">/* MTC MWI Interfaces */</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mwi__cb_8h.html">mtc_mwi_cb.h</a>&quot;</span>              <span class="comment">/* MTC MWI Callback Interfaces */</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__lcs_8h.html">mtc_lcs.h</a>&quot;</span>                 <span class="comment">/* MTC License Interfaces */</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__acv_8h.html">mtc_acv.h</a>&quot;</span>                 <span class="comment">/* MTC archive Interfaes */</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__acv__db_8h.html">mtc_acv_db.h</a>&quot;</span>              <span class="comment">/* MTC archive database Interfaes */</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__partp_8h.html">mtc_partp.h</a>&quot;</span>               <span class="comment">/* MTC Participant Interfaces */</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__uri_8h.html">mtc_uri.h</a>&quot;</span>                 <span class="comment">/* MTC URI Interfaces */</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__ver_8h.html">mtc_ver.h</a>&quot;</span>                 <span class="comment">/* MTC Version Interfaces */</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__lcs__cb_8h.html">mtc_lcs_cb.h</a>&quot;</span>              <span class="comment">/* MTC license Callback Interfaces */</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__ntp_8h.html">mtc_ntp.h</a>&quot;</span>                 <span class="comment">/* MTC NTP Interfaces */</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__ntp__cb_8h.html">mtc_ntp_cb.h</a>&quot;</span>              <span class="comment">/* MTC NTP Callback Interfaces */</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#if((defined LIMITED_MOD_COM) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mod__com_8h.html">mtc_mod_com.h</a>&quot;</span>             <span class="comment">/* MTC module common Interfaces */</span>  </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#if((defined LIMITED_MOD_MSG) || (defined LIMITED_MOD_LEMON) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im_8h.html">mtc_im.h</a>&quot;</span>                  <span class="comment">/* MTC IM Page Message Interfaces */</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__cb_8h.html">mtc_im_cb.h</a>&quot;</span>               <span class="comment">/* MTC IM Callback Interfaces */</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">    #include &quot;mtc_im_ft_cb.h&quot;</span>            <span class="comment">/* MTC IM ft Callback Interfaces */</span>    </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">    #include &quot;mtc_im_grp_cb.h&quot;</span>           <span class="comment">/* MTC IM group Callback Interfaces */</span>    </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__db_8h.html">mtc_im_db.h</a>&quot;</span>               <span class="comment">/* MTC IM Database Interfaces */</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__large_8h.html">mtc_im_large.h</a>&quot;</span>            <span class="comment">/* MTC IM Large Message Interfaces */</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__sess_8h.html">mtc_im_sess.h</a>&quot;</span>             <span class="comment">/* MTC IM Session Interfaces */</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__cmcc_8h.html">mtc_im_cmcc.h</a>&quot;</span>             <span class="comment">/* MTC IM CMCC Interfaces */</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__omsg_8h.html">mtc_im_omsg.h</a>&quot;</span>             <span class="comment">/* MTC IM Offline Message Interfaces */</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__stfwd_8h.html">mtc_im_stfwd.h</a>&quot;</span>            <span class="comment">/* MTC IM Store And Forward Interfaces */</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__file_8h.html">mtc_im_file.h</a>&quot;</span>             <span class="comment">/* MTC IM File Transfer Interfaces */</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__fthttp_8h.html">mtc_im_fthttp.h</a>&quot;</span>           <span class="comment">/* MTC IM File Transfer Via Http Interfaces */</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__im__shareddata_8h.html">mtc_im_shareddata.h</a>&quot;</span>       <span class="comment">/* MTC Instant Message Shared Data Interfaces */</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">    #include &quot;mtc_im_chatbot.h&quot;</span>          <span class="comment">/* MTC IM chatbot Interfaces */</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__gs__ginfo_8h.html">mtc_gs_ginfo.h</a>&quot;</span>            <span class="comment">/* MTC Geolocation Share Interface */</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__gs__cb_8h.html">mtc_gs_cb.h</a>&quot;</span>               <span class="comment">/* MTC Geolocation Share Callback Interface */</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__gs__db_8h.html">mtc_gs_db.h</a>&quot;</span>               <span class="comment">/* MTC Geolocation Share Database Interface */</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#if((defined LIMITED_MOD_MSG) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mod__msg_8h.html">mtc_mod_msg.h</a>&quot;</span>             <span class="comment">/* MTC module message Interfaces */</span>  </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">#if((defined LIMITED_MOD_CP) || (defined LIMITED_MOD_LEMON) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cp_8h.html">mtc_cp.h</a>&quot;</span>                  <span class="comment">/* MTC Client Provisioning Interface */</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cp__cb_8h.html">mtc_cp_cb.h</a>&quot;</span>               <span class="comment">/* MTC Client Provisioning Callback Interface */</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__cp__db_8h.html">mtc_cp_db.h</a>&quot;</span>               <span class="comment">/* MTC Client Provisioning Database Interface */</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#if((defined LIMITED_MOD_CP) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mod__cp_8h.html">mtc_mod_cp.h</a>&quot;</span>              <span class="comment">/* MTC module cp Interfaces */</span>  </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="preprocessor">#if((defined LIMITED_MOD_PA) || (defined LIMITED_MOD_LEMON) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__pa_8h.html">mtc_pa.h</a>&quot;</span>                  <span class="comment">/* MTC Public Account Interface */</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__pa__cb_8h.html">mtc_pa_cb.h</a>&quot;</span>               <span class="comment">/* MTC Public Account callback interfaces */</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#if((defined LIMITED_MOD_PA) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mod__pa_8h.html">mtc_mod_pa.h</a>&quot;</span>              <span class="comment">/* MTC module public account Interfaces */</span>  </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#if((defined LIMITED_MOD_VOIP) || (defined LIMITED_MOD_VOICE ) \</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="preprocessor">    || (defined LIMITED_MOD_ZERO_VOIP) || (defined LIMITED_MOD_LEMON) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__call_8h.html">mtc_call.h</a>&quot;</span>                <span class="comment">/* MTC Call Interfaces */</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">    #include &quot;mtc_call_rtc.h&quot;</span>            <span class="comment">/* MTC Rtc Call Interfaces */</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__call__cfg_8h.html">mtc_call_cfg.h</a>&quot;</span>            <span class="comment">/* MTC Call Config Interfaces */</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__call__cb_8h.html">mtc_call_cb.h</a>&quot;</span>             <span class="comment">/* MTC Call Callback Interfaces */</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__call__db_8h.html">mtc_call_db.h</a>&quot;</span>             <span class="comment">/* MTC Call Database Interfaces */</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__ring_8h.html">mtc_ring.h</a>&quot;</span>                <span class="comment">/* MTC Ring Interfaces */</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__conf_8h.html">mtc_conf.h</a>&quot;</span>                <span class="comment">/* MTC Conference Session Interfaces */</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__conf__cb_8h.html">mtc_conf_cb.h</a>&quot;</span>             <span class="comment">/* MTC Conference Callback Interfaces */</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__conf__db_8h.html">mtc_conf_db.h</a>&quot;</span>             <span class="comment">/* MTC Conference Database Interfaces */</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__conf__cmcc_8h.html">mtc_conf_cmcc.h</a>&quot;</span>           <span class="comment">/* MTC Conference cmcc Interfaces */</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">    #include &quot;mtc_conf_cmcc_cb.h&quot;</span>        <span class="comment">/* MTC Conference cmcc Callback Interfaces */</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__media_8h.html">mtc_media.h</a>&quot;</span>               <span class="comment">/* MTC Media Interfaces */</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__media__cb_8h.html">mtc_media_cb.h</a>&quot;</span>            <span class="comment">/* MTC Media Callback Interface */</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#if ((defined LIMITED_MOD_VOIP) || (defined LIMITED_MOD_ZERO_VOIP) \</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="preprocessor">    || (defined LIMITED_MOD_VOICE ) || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mod__voip_8h.html">mtc_mod_voip.h</a>&quot;</span>            <span class="comment">/* MTC module voip Interfaces */</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#if((defined LIMITED_MOD_LEMON)  || (defined LIMITED_MOD_TMTC))</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__mod__cmcc_8h.html">mtc_mod_cmcc.h</a>&quot;</span>            <span class="comment">/* MTC module cmcc Interfaces */</span>  </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#ifdef LIMITED_MOD_DOODLE</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__doodle_8h.html">mtc_doodle.h</a>&quot;</span>              <span class="comment">/* MTC doodle interfaces */</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="preprocessor">    #include &quot;<a class="code" href="mtc__d2_8h.html">mtc_d2.h</a>&quot;</span>                  <span class="comment">/* MTC doodle interfaces version 2 */</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="amtc__acv_8h_html"><div class="ttname"><a href="mtc__acv_8h.html">mtc_acv.h</a></div><div class="ttdoc">MTC archive Interface Functions</div></div>
+<div class="ttc" id="amtc__acv__db_8h_html"><div class="ttname"><a href="mtc__acv__db_8h.html">mtc_acv_db.h</a></div><div class="ttdoc">MTC archive db Interface Functions</div></div>
+<div class="ttc" id="amtc__call_8h_html"><div class="ttname"><a href="mtc__call_8h.html">mtc_call.h</a></div><div class="ttdoc">MTC Call Interface Functions</div></div>
+<div class="ttc" id="amtc__call__cb_8h_html"><div class="ttname"><a href="mtc__call__cb_8h.html">mtc_call_cb.h</a></div><div class="ttdoc">MTC Call Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__call__cfg_8h_html"><div class="ttname"><a href="mtc__call__cfg_8h.html">mtc_call_cfg.h</a></div><div class="ttdoc">MTC Call Config Interface Functions</div></div>
+<div class="ttc" id="amtc__call__db_8h_html"><div class="ttname"><a href="mtc__call__db_8h.html">mtc_call_db.h</a></div><div class="ttdoc">MTC Call Database Interface Functions</div></div>
+<div class="ttc" id="amtc__cap_8h_html"><div class="ttname"><a href="mtc__cap_8h.html">mtc_cap.h</a></div><div class="ttdoc">MTC Capability Qurey Interface Functions</div></div>
+<div class="ttc" id="amtc__cap__cb_8h_html"><div class="ttname"><a href="mtc__cap__cb_8h.html">mtc_cap_cb.h</a></div><div class="ttdoc">MTC Capability Qurey Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__cap__db_8h_html"><div class="ttname"><a href="mtc__cap__db_8h.html">mtc_cap_db.h</a></div><div class="ttdoc">MTC capability Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__cli_8h_html"><div class="ttname"><a href="mtc__cli_8h.html">mtc_cli.h</a></div><div class="ttdoc">MTC Client Interface Functions</div></div>
+<div class="ttc" id="amtc__cli__cb_8h_html"><div class="ttname"><a href="mtc__cli__cb_8h.html">mtc_cli_cb.h</a></div><div class="ttdoc">MTC Client Callback Interface Functions.</div></div>
+<div class="ttc" id="amtc__cli__cfg_8h_html"><div class="ttname"><a href="mtc__cli__cfg_8h.html">mtc_cli_cfg.h</a></div><div class="ttdoc">MTC Client Config Interface Functions</div></div>
+<div class="ttc" id="amtc__cli__db_8h_html"><div class="ttname"><a href="mtc__cli__db_8h.html">mtc_cli_db.h</a></div><div class="ttdoc">MTC Client Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__conf_8h_html"><div class="ttname"><a href="mtc__conf_8h.html">mtc_conf.h</a></div><div class="ttdoc">MTC Conference Interfaces</div></div>
+<div class="ttc" id="amtc__conf__cb_8h_html"><div class="ttname"><a href="mtc__conf__cb_8h.html">mtc_conf_cb.h</a></div><div class="ttdoc">MTC Conference Callback Interfaces</div></div>
+<div class="ttc" id="amtc__conf__cmcc_8h_html"><div class="ttname"><a href="mtc__conf__cmcc_8h.html">mtc_conf_cmcc.h</a></div><div class="ttdoc">MTC Cmcc Conference Manage Interface Functions</div></div>
+<div class="ttc" id="amtc__conf__db_8h_html"><div class="ttname"><a href="mtc__conf__db_8h.html">mtc_conf_db.h</a></div><div class="ttdoc">MTC Conference Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__cp_8h_html"><div class="ttname"><a href="mtc__cp_8h.html">mtc_cp.h</a></div><div class="ttdoc">MTC Client Provisioning Interface Functions</div></div>
+<div class="ttc" id="amtc__cp__cb_8h_html"><div class="ttname"><a href="mtc__cp__cb_8h.html">mtc_cp_cb.h</a></div><div class="ttdoc">MTC Client Provisioning Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__cp__db_8h_html"><div class="ttname"><a href="mtc__cp__db_8h.html">mtc_cp_db.h</a></div><div class="ttdoc">MTC Client Provisioning Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__d2_8h_html"><div class="ttname"><a href="mtc__d2_8h.html">mtc_d2.h</a></div><div class="ttdoc">MTC Doodle Interface Functions</div></div>
+<div class="ttc" id="amtc__doodle_8h_html"><div class="ttname"><a href="mtc__doodle_8h.html">mtc_doodle.h</a></div><div class="ttdoc">MTC Doodle Interface Functions</div></div>
+<div class="ttc" id="amtc__gba_8h_html"><div class="ttname"><a href="mtc__gba_8h.html">mtc_gba.h</a></div><div class="ttdoc">MTC GBA Interface Functions</div></div>
+<div class="ttc" id="amtc__gba__cb_8h_html"><div class="ttname"><a href="mtc__gba__cb_8h.html">mtc_gba_cb.h</a></div><div class="ttdoc">MTC GBA Callback Interface Functions.</div></div>
+<div class="ttc" id="amtc__gs__cb_8h_html"><div class="ttname"><a href="mtc__gs__cb_8h.html">mtc_gs_cb.h</a></div><div class="ttdoc">MTC Geolocation Share Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__gs__db_8h_html"><div class="ttname"><a href="mtc__gs__db_8h.html">mtc_gs_db.h</a></div><div class="ttdoc">MTC Geolocation Share Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__gs__ginfo_8h_html"><div class="ttname"><a href="mtc__gs__ginfo_8h.html">mtc_gs_ginfo.h</a></div><div class="ttdoc">MTC Geolocation Share Geolocation Information Interface Functions</div></div>
+<div class="ttc" id="amtc__im_8h_html"><div class="ttname"><a href="mtc__im_8h.html">mtc_im.h</a></div><div class="ttdoc">MTC Instant Message Interface Functions</div></div>
+<div class="ttc" id="amtc__im__cb_8h_html"><div class="ttname"><a href="mtc__im__cb_8h.html">mtc_im_cb.h</a></div><div class="ttdoc">MTC Instant Message Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__im__cmcc_8h_html"><div class="ttname"><a href="mtc__im__cmcc_8h.html">mtc_im_cmcc.h</a></div><div class="ttdoc">MTC Instant Messaging Interface Functions In CMCC Model</div></div>
+<div class="ttc" id="amtc__im__db_8h_html"><div class="ttname"><a href="mtc__im__db_8h.html">mtc_im_db.h</a></div><div class="ttdoc">MTC IM Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__im__file_8h_html"><div class="ttname"><a href="mtc__im__file_8h.html">mtc_im_file.h</a></div><div class="ttdoc">MTC Instant Message File Transfer Interface Functions</div></div>
+<div class="ttc" id="amtc__im__fthttp_8h_html"><div class="ttname"><a href="mtc__im__fthttp_8h.html">mtc_im_fthttp.h</a></div><div class="ttdoc">MTC Instant Message File Transfer Via Http Interface Functions</div></div>
+<div class="ttc" id="amtc__im__large_8h_html"><div class="ttname"><a href="mtc__im__large_8h.html">mtc_im_large.h</a></div><div class="ttdoc">MTC Instant Message Large Mode Interface Functions</div></div>
+<div class="ttc" id="amtc__im__omsg_8h_html"><div class="ttname"><a href="mtc__im__omsg_8h.html">mtc_im_omsg.h</a></div><div class="ttdoc">MTC Instant Message Offline Message Interface Functions</div></div>
+<div class="ttc" id="amtc__im__sess_8h_html"><div class="ttname"><a href="mtc__im__sess_8h.html">mtc_im_sess.h</a></div><div class="ttdoc">MTC Instant Messaging Session Interface Functions</div></div>
+<div class="ttc" id="amtc__im__shareddata_8h_html"><div class="ttname"><a href="mtc__im__shareddata_8h.html">mtc_im_shareddata.h</a></div><div class="ttdoc">MTC Instant Message Shared Data Interface Functions</div></div>
+<div class="ttc" id="amtc__im__stfwd_8h_html"><div class="ttname"><a href="mtc__im__stfwd_8h.html">mtc_im_stfwd.h</a></div><div class="ttdoc">MTC Instant Store And Forward Session Interface Functions</div></div>
+<div class="ttc" id="amtc__lcs_8h_html"><div class="ttname"><a href="mtc__lcs_8h.html">mtc_lcs.h</a></div><div class="ttdoc">MTC lcs Interface Functions</div></div>
+<div class="ttc" id="amtc__lcs__cb_8h_html"><div class="ttname"><a href="mtc__lcs__cb_8h.html">mtc_lcs_cb.h</a></div><div class="ttdoc">MTC License Callback Interface Functions.</div></div>
+<div class="ttc" id="amtc__media_8h_html"><div class="ttname"><a href="mtc__media_8h.html">mtc_media.h</a></div><div class="ttdoc">MTC Media Interface Functions</div></div>
+<div class="ttc" id="amtc__media__cb_8h_html"><div class="ttname"><a href="mtc__media__cb_8h.html">mtc_media_cb.h</a></div><div class="ttdoc">MTC media Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__mod__cmcc_8h_html"><div class="ttname"><a href="mtc__mod__cmcc_8h.html">mtc_mod_cmcc.h</a></div><div class="ttdoc">MTC module cmcc Interface Functions</div></div>
+<div class="ttc" id="amtc__mod__com_8h_html"><div class="ttname"><a href="mtc__mod__com_8h.html">mtc_mod_com.h</a></div><div class="ttdoc">MTC module common Interface Functions</div></div>
+<div class="ttc" id="amtc__mod__cp_8h_html"><div class="ttname"><a href="mtc__mod__cp_8h.html">mtc_mod_cp.h</a></div><div class="ttdoc">MTC module client provisioning Interface Functions</div></div>
+<div class="ttc" id="amtc__mod__msg_8h_html"><div class="ttname"><a href="mtc__mod__msg_8h.html">mtc_mod_msg.h</a></div><div class="ttdoc">mtc message module Interface Functions</div></div>
+<div class="ttc" id="amtc__mod__pa_8h_html"><div class="ttname"><a href="mtc__mod__pa_8h.html">mtc_mod_pa.h</a></div><div class="ttdoc">MTC module public account Interface Functions</div></div>
+<div class="ttc" id="amtc__mod__voip_8h_html"><div class="ttname"><a href="mtc__mod__voip_8h.html">mtc_mod_voip.h</a></div><div class="ttdoc">MTC voip module register Interface Functions</div></div>
+<div class="ttc" id="amtc__mwi_8h_html"><div class="ttname"><a href="mtc__mwi_8h.html">mtc_mwi.h</a></div><div class="ttdoc">MTC Message Wait Indication Interface Functions</div></div>
+<div class="ttc" id="amtc__mwi__cb_8h_html"><div class="ttname"><a href="mtc__mwi__cb_8h.html">mtc_mwi_cb.h</a></div><div class="ttdoc">MTC Message Wait Indication Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__ntp_8h_html"><div class="ttname"><a href="mtc__ntp_8h.html">mtc_ntp.h</a></div><div class="ttdoc">MTC ntp Interface Functions</div></div>
+<div class="ttc" id="amtc__ntp__cb_8h_html"><div class="ttname"><a href="mtc__ntp__cb_8h.html">mtc_ntp_cb.h</a></div><div class="ttdoc">MTC NTP Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__pa_8h_html"><div class="ttname"><a href="mtc__pa_8h.html">mtc_pa.h</a></div><div class="ttdoc">MTC CMCC Public Account Interface Functions</div></div>
+<div class="ttc" id="amtc__pa__cb_8h_html"><div class="ttname"><a href="mtc__pa__cb_8h.html">mtc_pa_cb.h</a></div><div class="ttdoc">MTC CMCC Public Account Callback Interface Functions</div></div>
+<div class="ttc" id="amtc__partp_8h_html"><div class="ttname"><a href="mtc__partp_8h.html">mtc_partp.h</a></div><div class="ttdoc">MTC Participant Interface Functions</div></div>
+<div class="ttc" id="amtc__prof_8h_html"><div class="ttname"><a href="mtc__prof_8h.html">mtc_prof.h</a></div><div class="ttdoc">MTC Profile Interface Functions.</div></div>
+<div class="ttc" id="amtc__prof__cfg_8h_html"><div class="ttname"><a href="mtc__prof__cfg_8h.html">mtc_prof_cfg.h</a></div><div class="ttdoc">MTC Profile Config Interface Functions.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html"><div class="ttname"><a href="mtc__prof__db_8h.html">mtc_prof_db.h</a></div><div class="ttdoc">MTC Profile Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__prov__cfg_8h_html"><div class="ttname"><a href="mtc__prov__cfg_8h.html">mtc_prov_cfg.h</a></div><div class="ttdoc">MTC Provision Config Interface Functions.</div></div>
+<div class="ttc" id="amtc__prov__db_8h_html"><div class="ttname"><a href="mtc__prov__db_8h.html">mtc_prov_db.h</a></div><div class="ttdoc">MTC Provision Database Interface Functions.</div></div>
+<div class="ttc" id="amtc__ring_8h_html"><div class="ttname"><a href="mtc__ring_8h.html">mtc_ring.h</a></div><div class="ttdoc">MTC Ring Interface Functions.</div></div>
+<div class="ttc" id="amtc__uri_8h_html"><div class="ttname"><a href="mtc__uri_8h.html">mtc_uri.h</a></div><div class="ttdoc">MTC URI Interface Functions.</div></div>
+<div class="ttc" id="amtc__util_8h_html"><div class="ttname"><a href="mtc__util_8h.html">mtc_util.h</a></div><div class="ttdoc">MTC Utility Interface Functions.</div></div>
+<div class="ttc" id="amtc__ver_8h_html"><div class="ttname"><a href="mtc__ver_8h.html">mtc_ver.h</a></div><div class="ttdoc">MTC Version Interface Functions.</div></div>
+<div class="ttc" id="azos__type_8h_html"><div class="ttname"><a href="zos__type_8h.html">zos_type.h</a></div><div class="ttdoc">Basic data type used by Zos.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/JRAutoConfigImpl.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d1c3ca8df6f8d5c46b2bba990ed9df32.html">jrsdk</a></li><li class="navelem"><a class="el" href="dir_e2a4919a87acac518081f88daf1d8d69.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">JRAutoConfigImpl.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef JRAUTOCONFIGIMPL_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define JRAUTOCONFIGIMPL_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;JrSdk_global.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;MtcEngine.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;JRAutoConfig.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;JRCallCallback.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_j_r_auto_config_impl.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_r_auto_config_impl.html">JRAutoConfigImpl</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_j_r_auto_config.html">JRAutoConfig</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_mtc_notify_listener.html">MtcNotifyListener</a> , <span class="keyword">public</span> <a class="code hl_class" href="class_j_r_call_callback.html">JRCallCallback</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> vendorName;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> vendorVersion;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#a06330f55991fab61623cf4bc896097be">startAutoConfig</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#af99718dedf53c46421d58f38b300ccbf">startAutoConfigWithCUEI</a>(<span class="keywordtype">string</span> serverAdderss, <span class="keywordtype">string</span> cuei, <span class="keywordtype">string</span> vendor, <span class="keywordtype">string</span> vendorName, <span class="keywordtype">string</span> vendorVersion) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#af99718dedf53c46421d58f38b300ccbf">startAutoConfigWithCUEI</a>(<span class="keywordtype">string</span> CUEI, <span class="keywordtype">string</span> vendor, <span class="keywordtype">string</span> vendorName, <span class="keywordtype">string</span> vendorVersion) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#aac803f65348f50481de90f696933b917">addCallback</a>(<a class="code hl_class" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> *callback) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#a6261d0e98e63d7228f4123ecf901685e">removeCallback</a>(<a class="code hl_class" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> *callback) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> onNotify(<a class="code hl_class" href="class_j_r_notify.html">JRNotify</a> *notify) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#a78100eaed0cdbfc7944b4d56a9bd37c7">setCPExpired</a>(<span class="keywordtype">bool</span> expired) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#a6d67376e9c98de7b06898abcf810e16c">isCPExpired</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#a5ae920e6221c6f48dfe1fb5797ca1641">onCallItemUpdated</a>(<a class="code hl_class" href="class_j_r_call_item.html">JRCallItem</a> *item, <span class="keywordtype">int</span> updateType) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#abdd795e012dc0b68bfcf9f5996a50f3b">onCallItemRemove</a>(<a class="code hl_class" href="class_j_r_call_item.html">JRCallItem</a> *item, <span class="keywordtype">int</span> reason) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_j_r_auto_config_impl.html#ac92b0c86179d4a0e30a34eab21e3fc37">onCallItemAdd</a>(<a class="code hl_class" href="class_j_r_call_item.html">JRCallItem</a> *item) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> translateFromMtcReason(<span class="keyword">const</span> <span class="keywordtype">int</span> errorCode);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="class_j_r_auto_config_impl.html">JRAutoConfigImpl</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_j_r_auto_config_impl.html">~JRAutoConfigImpl</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    vector&lt;JRAutoConfigCallback *&gt; mCallbacks;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">string</span> mCurrentUser;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> isConfigProfileExpired;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">int</span> mRetryCount;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> isNeedLogin;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">bool</span> mHasCallGoing;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> notifyAutoConfigResult(<span class="keyword">const</span> <span class="keywordtype">bool</span> succeed, <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> notifyAutoConfigRecvMessage(<span class="keyword">const</span> <span class="keywordtype">string</span> message , <span class="keyword">const</span> <span class="keywordtype">string</span> title);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> notifyAutoConfigStateUpdate(<span class="keyword">const</span> <span class="keywordtype">int</span> state);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> notifyAutoConfigExpired(<span class="keyword">const</span> <span class="keywordtype">bool</span> isNeedLogin);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> needDownloadLicense(<span class="keyword">const</span> <span class="keywordtype">int</span> reason);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">friend</span> <a class="code hl_class" href="class_j_r_auto_config.html">JRAutoConfig</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">// JRAUTOCONFIGIMPL_H</span></div>
+<div class="ttc" id="aclass_j_r_auto_config_callback_html"><div class="ttname"><a href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a></div><div class="ttdef"><b>Definition:</b> JRAutoConfigCallback.h:12</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_html"><div class="ttname"><a href="class_j_r_auto_config.html">JRAutoConfig</a></div><div class="ttdoc">自动配置组件。</div><div class="ttdef"><b>Definition:</b> JRAutoConfig.h:15</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html"><div class="ttname"><a href="class_j_r_auto_config_impl.html">JRAutoConfigImpl</a></div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.h:9</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_a06330f55991fab61623cf4bc896097be"><div class="ttname"><a href="class_j_r_auto_config_impl.html#a06330f55991fab61623cf4bc896097be">JRAutoConfigImpl::startAutoConfig</a></div><div class="ttdeci">bool startAutoConfig() override</div><div class="ttdoc">获取自动配置。</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:13</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_a5ae920e6221c6f48dfe1fb5797ca1641"><div class="ttname"><a href="class_j_r_auto_config_impl.html#a5ae920e6221c6f48dfe1fb5797ca1641">JRAutoConfigImpl::onCallItemUpdated</a></div><div class="ttdeci">void onCallItemUpdated(JRCallItem *item, int updateType) override</div><div class="ttdoc">通话状态更新回调</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:307</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_a6261d0e98e63d7228f4123ecf901685e"><div class="ttname"><a href="class_j_r_auto_config_impl.html#a6261d0e98e63d7228f4123ecf901685e">JRAutoConfigImpl::removeCallback</a></div><div class="ttdeci">void removeCallback(JRAutoConfigCallback *callback) override</div><div class="ttdoc">删除回调</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:122</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_a6d67376e9c98de7b06898abcf810e16c"><div class="ttname"><a href="class_j_r_auto_config_impl.html#a6d67376e9c98de7b06898abcf810e16c">JRAutoConfigImpl::isCPExpired</a></div><div class="ttdeci">bool isCPExpired() override</div><div class="ttdoc">判断配置文件是否过期。</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:199</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_a78100eaed0cdbfc7944b4d56a9bd37c7"><div class="ttname"><a href="class_j_r_auto_config_impl.html#a78100eaed0cdbfc7944b4d56a9bd37c7">JRAutoConfigImpl::setCPExpired</a></div><div class="ttdeci">void setCPExpired(bool expired) override</div><div class="ttdoc">设置配置文件是否过期</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:195</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_aac803f65348f50481de90f696933b917"><div class="ttname"><a href="class_j_r_auto_config_impl.html#aac803f65348f50481de90f696933b917">JRAutoConfigImpl::addCallback</a></div><div class="ttdeci">void addCallback(JRAutoConfigCallback *callback) override</div><div class="ttdoc">添加回调 将JRAutoConfigCallback对象设置给JRCall模块，用于通话事件的上报</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:118</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_abdd795e012dc0b68bfcf9f5996a50f3b"><div class="ttname"><a href="class_j_r_auto_config_impl.html#abdd795e012dc0b68bfcf9f5996a50f3b">JRAutoConfigImpl::onCallItemRemove</a></div><div class="ttdeci">void onCallItemRemove(JRCallItem *item, int reason) override</div><div class="ttdoc">移除通话回调</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:311</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_ac92b0c86179d4a0e30a34eab21e3fc37"><div class="ttname"><a href="class_j_r_auto_config_impl.html#ac92b0c86179d4a0e30a34eab21e3fc37">JRAutoConfigImpl::onCallItemAdd</a></div><div class="ttdeci">void onCallItemAdd(JRCallItem *item) override</div><div class="ttdoc">新增通话回调</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:319</div></div>
+<div class="ttc" id="aclass_j_r_auto_config_impl_html_af99718dedf53c46421d58f38b300ccbf"><div class="ttname"><a href="class_j_r_auto_config_impl.html#af99718dedf53c46421d58f38b300ccbf">JRAutoConfigImpl::startAutoConfigWithCUEI</a></div><div class="ttdeci">bool startAutoConfigWithCUEI(string serverAdderss, string cuei, string vendor, string vendorName, string vendorVersion) override</div><div class="ttdoc">获取自动配置。</div><div class="ttdef"><b>Definition:</b> JRAutoConfigImpl.cc:44</div></div>
+<div class="ttc" id="aclass_j_r_call_callback_html"><div class="ttname"><a href="class_j_r_call_callback.html">JRCallCallback</a></div><div class="ttdef"><b>Definition:</b> JRCallCallback.h:14</div></div>
+<div class="ttc" id="aclass_j_r_call_item_html"><div class="ttname"><a href="class_j_r_call_item.html">JRCallItem</a></div><div class="ttdef"><b>Definition:</b> JRCallItem.h:5</div></div>
+<div class="ttc" id="aclass_j_r_notify_html"><div class="ttname"><a href="class_j_r_notify.html">JRNotify</a></div><div class="ttdef"><b>Definition:</b> JRNotify.h:52</div></div>
+<div class="ttc" id="aclass_mtc_notify_listener_html"><div class="ttname"><a href="class_mtc_notify_listener.html">MtcNotifyListener</a></div><div class="ttdef"><b>Definition:</b> MtcEngine.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

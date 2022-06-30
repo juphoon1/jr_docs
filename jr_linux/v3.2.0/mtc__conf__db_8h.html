@@ -1,0 +1,1200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_conf_db.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_conf_db.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC Conference Database Interface Functions.  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__conf__db_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ad7c26f65ec928e5400e992a922bd4e64"><td class="memItemLeft" align="right" valign="top"><a id="ad7c26f65ec928e5400e992a922bd4e64" name="ad7c26f65ec928e5400e992a922bd4e64"></a>
+typedef enum EN_MTC_CONF_DB_RES_RATIO_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_CONF_DB_RES_RATIO_TYPE</b></td></tr>
+<tr class="separator:ad7c26f65ec928e5400e992a922bd4e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ab036ad08e545075d2159f72475f53421"><td class="memItemLeft" align="right" valign="top"><a id="ab036ad08e545075d2159f72475f53421" name="ab036ad08e545075d2159f72475f53421"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_CONF_DB_RES_RATIO_TYPE</b> { <br />
+&#160;&#160;<b>EN_MTC_CONF_DB_RES_RATIO_DEFAULT</b>
+, <b>EN_MTC_CONF_DB_RES_RATIO_288P</b>
+, <b>EN_MTC_CONF_DB_RES_RATIO_480P</b>
+, <b>EN_MTC_CONF_DB_RES_RATIO_720P</b>
+, <br />
+&#160;&#160;<b>EN_MTC_CONF_DB_RES_RATIO_1080P</b>
+<br />
+ }</td></tr>
+<tr class="separator:ab036ad08e545075d2159f72475f53421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a143347b974a90dd66dcf1ed28080bdfb"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a143347b974a90dd66dcf1ed28080bdfb">Mtc_ConfDbGetFactUri</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a143347b974a90dd66dcf1ed28080bdfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get conference factory URI.  <a href="mtc__conf__db_8h.html#a143347b974a90dd66dcf1ed28080bdfb">更多...</a><br /></td></tr>
+<tr class="separator:a143347b974a90dd66dcf1ed28080bdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e86279b2065b2eb72f28c31bcec3b01"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a1e86279b2065b2eb72f28c31bcec3b01">Mtc_ConfDbSetFactUri</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri)</td></tr>
+<tr class="memdesc:a1e86279b2065b2eb72f28c31bcec3b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set conference factory URI.  <a href="mtc__conf__db_8h.html#a1e86279b2065b2eb72f28c31bcec3b01">更多...</a><br /></td></tr>
+<tr class="separator:a1e86279b2065b2eb72f28c31bcec3b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73f5973afbc84b816e5712f08b58c39"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#ae73f5973afbc84b816e5712f08b58c39">Mtc_ConfDbGetVideoFactUri</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ae73f5973afbc84b816e5712f08b58c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get video conference factory URI.  <a href="mtc__conf__db_8h.html#ae73f5973afbc84b816e5712f08b58c39">更多...</a><br /></td></tr>
+<tr class="separator:ae73f5973afbc84b816e5712f08b58c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5c380cad6ab85a9dd2eda696e53f3e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#abb5c380cad6ab85a9dd2eda696e53f3e">Mtc_ConfDbSetVideoFactUri</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri)</td></tr>
+<tr class="memdesc:abb5c380cad6ab85a9dd2eda696e53f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set video conference factory URI.  <a href="mtc__conf__db_8h.html#abb5c380cad6ab85a9dd2eda696e53f3e">更多...</a><br /></td></tr>
+<tr class="separator:abb5c380cad6ab85a9dd2eda696e53f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa177b79da03f490f19707b03b6d14603"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#aa177b79da03f490f19707b03b6d14603">Mtc_ConfDbGetConfControlUri</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:aa177b79da03f490f19707b03b6d14603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get conference control URI.  <a href="mtc__conf__db_8h.html#aa177b79da03f490f19707b03b6d14603">更多...</a><br /></td></tr>
+<tr class="separator:aa177b79da03f490f19707b03b6d14603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f60b6deb2134fc77a435004f1885e7"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a15f60b6deb2134fc77a435004f1885e7">Mtc_ConfDbSetConfControlUri</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri)</td></tr>
+<tr class="memdesc:a15f60b6deb2134fc77a435004f1885e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set conference control URI.  <a href="mtc__conf__db_8h.html#a15f60b6deb2134fc77a435004f1885e7">更多...</a><br /></td></tr>
+<tr class="separator:a15f60b6deb2134fc77a435004f1885e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4fac04c3a3504639597892b9841e77"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#aad4fac04c3a3504639597892b9841e77">Mtc_ConfDbGetConfAppId</a> ()</td></tr>
+<tr class="memdesc:aad4fac04c3a3504639597892b9841e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get conference APP ID.  <a href="mtc__conf__db_8h.html#aad4fac04c3a3504639597892b9841e77">更多...</a><br /></td></tr>
+<tr class="separator:aad4fac04c3a3504639597892b9841e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af22616b0a49a0c002f3cd02eece385"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a2af22616b0a49a0c002f3cd02eece385">Mtc_ConfDbSetConfAppId</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcAppId)</td></tr>
+<tr class="memdesc:a2af22616b0a49a0c002f3cd02eece385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set conference APP ID.  <a href="mtc__conf__db_8h.html#a2af22616b0a49a0c002f3cd02eece385">更多...</a><br /></td></tr>
+<tr class="separator:a2af22616b0a49a0c002f3cd02eece385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3158475b988d4bd9866cc2cda428552e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a3158475b988d4bd9866cc2cda428552e">Mtc_ConfDbGetConfPwd</a> ()</td></tr>
+<tr class="memdesc:a3158475b988d4bd9866cc2cda428552e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get conference APP password.  <a href="mtc__conf__db_8h.html#a3158475b988d4bd9866cc2cda428552e">更多...</a><br /></td></tr>
+<tr class="separator:a3158475b988d4bd9866cc2cda428552e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6ccac5cf7694b3b22c9f949741cce6"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a0a6ccac5cf7694b3b22c9f949741cce6">Mtc_ConfDbSetConfPwd</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcPwd)</td></tr>
+<tr class="memdesc:a0a6ccac5cf7694b3b22c9f949741cce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set conference APP password.  <a href="mtc__conf__db_8h.html#a0a6ccac5cf7694b3b22c9f949741cce6">更多...</a><br /></td></tr>
+<tr class="separator:a0a6ccac5cf7694b3b22c9f949741cce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac764f97fb66b67f37e4e0610fab4eed9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#ac764f97fb66b67f37e4e0610fab4eed9">Mtc_ConfSetMcuPrefix</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMcuPrefix)</td></tr>
+<tr class="memdesc:ac764f97fb66b67f37e4e0610fab4eed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set conference mcu prefix.  <a href="mtc__conf__db_8h.html#ac764f97fb66b67f37e4e0610fab4eed9">更多...</a><br /></td></tr>
+<tr class="separator:ac764f97fb66b67f37e4e0610fab4eed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26285652efe31434bde78f675efd8d2f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a26285652efe31434bde78f675efd8d2f">Mtc_ConfGetMcuPrefix</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a26285652efe31434bde78f675efd8d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get conference mcu prefix.  <a href="mtc__conf__db_8h.html#a26285652efe31434bde78f675efd8d2f">更多...</a><br /></td></tr>
+<tr class="separator:a26285652efe31434bde78f675efd8d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af550bbd5345aaa3aba845739a13fbc63"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#af550bbd5345aaa3aba845739a13fbc63">Mtc_ConfDbGetVideoSwitchMode</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:af550bbd5345aaa3aba845739a13fbc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get http conference video switch mode.  <a href="mtc__conf__db_8h.html#af550bbd5345aaa3aba845739a13fbc63">更多...</a><br /></td></tr>
+<tr class="separator:af550bbd5345aaa3aba845739a13fbc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9629f4f2df871425dec8a03a48bb5b9c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a9629f4f2df871425dec8a03a48bb5b9c">Mtc_ConfDbSetVideoSwitchMode</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMode)</td></tr>
+<tr class="memdesc:a9629f4f2df871425dec8a03a48bb5b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set http conference video switch mode.  <a href="mtc__conf__db_8h.html#a9629f4f2df871425dec8a03a48bb5b9c">更多...</a><br /></td></tr>
+<tr class="separator:a9629f4f2df871425dec8a03a48bb5b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f113e48a10042e77df017d94ac5f53e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a5f113e48a10042e77df017d94ac5f53e">Mtc_ConfDbGetHttpConfToken</a> ()</td></tr>
+<tr class="memdesc:a5f113e48a10042e77df017d94ac5f53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get http conf token.  <a href="mtc__conf__db_8h.html#a5f113e48a10042e77df017d94ac5f53e">更多...</a><br /></td></tr>
+<tr class="separator:a5f113e48a10042e77df017d94ac5f53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b63b61d4ff03006aa08561cb89bc2cb"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a0b63b61d4ff03006aa08561cb89bc2cb">Mtc_ConfDbSetHttpConfToken</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcToken)</td></tr>
+<tr class="memdesc:a0b63b61d4ff03006aa08561cb89bc2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set http conf token.  <a href="mtc__conf__db_8h.html#a0b63b61d4ff03006aa08561cb89bc2cb">更多...</a><br /></td></tr>
+<tr class="separator:a0b63b61d4ff03006aa08561cb89bc2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72750af8ba3730f12316be81b9da5a56"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a72750af8ba3730f12316be81b9da5a56">Mtc_ConfDbGetConfHttpsEnable</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a72750af8ba3730f12316be81b9da5a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get use https conf enable.  <a href="mtc__conf__db_8h.html#a72750af8ba3730f12316be81b9da5a56">更多...</a><br /></td></tr>
+<tr class="separator:a72750af8ba3730f12316be81b9da5a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9905fc88aa12bd48b2927fa5a6470418"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a9905fc88aa12bd48b2927fa5a6470418">Mtc_ConfDbSetConfHttpsEnable</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:a9905fc88aa12bd48b2927fa5a6470418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set use https conf enable.  <a href="mtc__conf__db_8h.html#a9905fc88aa12bd48b2927fa5a6470418">更多...</a><br /></td></tr>
+<tr class="separator:a9905fc88aa12bd48b2927fa5a6470418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd2c7348fb0d5e46137933087f3999e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a4bd2c7348fb0d5e46137933087f3999e">Mtc_ConfDbGetMaxPartpCount</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a4bd2c7348fb0d5e46137933087f3999e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get http conf video max partp count.  <a href="mtc__conf__db_8h.html#a4bd2c7348fb0d5e46137933087f3999e">更多...</a><br /></td></tr>
+<tr class="separator:a4bd2c7348fb0d5e46137933087f3999e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5eda46eb6957b3a9534b42c292ea59"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a9e5eda46eb6957b3a9534b42c292ea59">Mtc_ConfDbSetMaxPartpCount</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCount)</td></tr>
+<tr class="memdesc:a9e5eda46eb6957b3a9534b42c292ea59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set http conference video participants count.  <a href="mtc__conf__db_8h.html#a9e5eda46eb6957b3a9534b42c292ea59">更多...</a><br /></td></tr>
+<tr class="separator:a9e5eda46eb6957b3a9534b42c292ea59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87051da766bc6725458a8d80865d9a20"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a87051da766bc6725458a8d80865d9a20">Mtc_ConfDbGetMaxImageCount</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a87051da766bc6725458a8d80865d9a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get http conf video max remote image count.  <a href="mtc__conf__db_8h.html#a87051da766bc6725458a8d80865d9a20">更多...</a><br /></td></tr>
+<tr class="separator:a87051da766bc6725458a8d80865d9a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496c1bb1f875249c1fb8e3b4bb4e7dff"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a496c1bb1f875249c1fb8e3b4bb4e7dff">Mtc_ConfDbSetMaxImageCount</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCount)</td></tr>
+<tr class="memdesc:a496c1bb1f875249c1fb8e3b4bb4e7dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set http conference video remote image count.  <a href="mtc__conf__db_8h.html#a496c1bb1f875249c1fb8e3b4bb4e7dff">更多...</a><br /></td></tr>
+<tr class="separator:a496c1bb1f875249c1fb8e3b4bb4e7dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97edb9c121b93aed0690f265a5371133"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a97edb9c121b93aed0690f265a5371133">Mtc_ConfDbSetAudioRecEnable</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:a97edb9c121b93aed0690f265a5371133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set http conf video conference enable record audio flag.  <a href="mtc__conf__db_8h.html#a97edb9c121b93aed0690f265a5371133">更多...</a><br /></td></tr>
+<tr class="separator:a97edb9c121b93aed0690f265a5371133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8121dc9f4149b62f1b01b28cbbd1dfb4"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a8121dc9f4149b62f1b01b28cbbd1dfb4">Mtc_ConfDbGetAudioRecEnable</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a8121dc9f4149b62f1b01b28cbbd1dfb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get http conf video conference enable record audio flag.  <a href="mtc__conf__db_8h.html#a8121dc9f4149b62f1b01b28cbbd1dfb4">更多...</a><br /></td></tr>
+<tr class="separator:a8121dc9f4149b62f1b01b28cbbd1dfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218ef6e0a732e42c0185324e9fafcfa1"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a218ef6e0a732e42c0185324e9fafcfa1">Mtc_ConfDbGetConfSubsEnable</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a218ef6e0a732e42c0185324e9fafcfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get conference subscribe enable flag.  <a href="mtc__conf__db_8h.html#a218ef6e0a732e42c0185324e9fafcfa1">更多...</a><br /></td></tr>
+<tr class="separator:a218ef6e0a732e42c0185324e9fafcfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa026ac55976d7d5a9d7f6d49a56941fd"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#aa026ac55976d7d5a9d7f6d49a56941fd">Mtc_ConfDbSetConfSubsEnable</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:aa026ac55976d7d5a9d7f6d49a56941fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set conference subscribe enable flag.  <a href="mtc__conf__db_8h.html#aa026ac55976d7d5a9d7f6d49a56941fd">更多...</a><br /></td></tr>
+<tr class="separator:aa026ac55976d7d5a9d7f6d49a56941fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e25466b6d4e792f0defe610cef0f555"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a5e25466b6d4e792f0defe610cef0f555">Mtc_ConfDbSetMcuConfEnable</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:a5e25466b6d4e792f0defe610cef0f555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MCU conference enablee flag.  <a href="mtc__conf__db_8h.html#a5e25466b6d4e792f0defe610cef0f555">更多...</a><br /></td></tr>
+<tr class="separator:a5e25466b6d4e792f0defe610cef0f555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e4876f77b0bdc39938208c943a9956"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a26e4876f77b0bdc39938208c943a9956">Mtc_ConfDbGetMcuConfEnable</a> ()</td></tr>
+<tr class="memdesc:a26e4876f77b0bdc39938208c943a9956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get MCU conference enable flag.  <a href="mtc__conf__db_8h.html#a26e4876f77b0bdc39938208c943a9956">更多...</a><br /></td></tr>
+<tr class="separator:a26e4876f77b0bdc39938208c943a9956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30cda09b4934dfb73357ff0de674f9b6"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a30cda09b4934dfb73357ff0de674f9b6">Mtc_ConfDbSetResRatioType</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:a30cda09b4934dfb73357ff0de674f9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set resolution ratio type.  <a href="mtc__conf__db_8h.html#a30cda09b4934dfb73357ff0de674f9b6">更多...</a><br /></td></tr>
+<tr class="separator:a30cda09b4934dfb73357ff0de674f9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a2baae8cefc4dff2475dea4b30745a"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a91a2baae8cefc4dff2475dea4b30745a">Mtc_ConfDbGetResRatioType</a> ()</td></tr>
+<tr class="memdesc:a91a2baae8cefc4dff2475dea4b30745a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get resolution ratio type.  <a href="mtc__conf__db_8h.html#a91a2baae8cefc4dff2475dea4b30745a">更多...</a><br /></td></tr>
+<tr class="separator:a91a2baae8cefc4dff2475dea4b30745a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332c0e9094653a4f347c899cafb947cb"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a332c0e9094653a4f347c899cafb947cb">Mtc_McuConfDbSetResRatioType</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:a332c0e9094653a4f347c899cafb947cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set resolution ratio type.  <a href="mtc__conf__db_8h.html#a332c0e9094653a4f347c899cafb947cb">更多...</a><br /></td></tr>
+<tr class="separator:a332c0e9094653a4f347c899cafb947cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1594196fc2296e16bd5dda03ac8b92"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#aaf1594196fc2296e16bd5dda03ac8b92">Mtc_McuConfDbGetResRatioType</a> ()</td></tr>
+<tr class="memdesc:aaf1594196fc2296e16bd5dda03ac8b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get resolution ratio type.  <a href="mtc__conf__db_8h.html#aaf1594196fc2296e16bd5dda03ac8b92">更多...</a><br /></td></tr>
+<tr class="separator:aaf1594196fc2296e16bd5dda03ac8b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bda1bd15d24b55f34bfe8eba1166c2"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a03bda1bd15d24b55f34bfe8eba1166c2">Mtc_ConfDbSetAutoHttpQry</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:a03bda1bd15d24b55f34bfe8eba1166c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set auto start http query enable flag in muti-conference.  <a href="mtc__conf__db_8h.html#a03bda1bd15d24b55f34bfe8eba1166c2">更多...</a><br /></td></tr>
+<tr class="separator:a03bda1bd15d24b55f34bfe8eba1166c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1e38d98fb7bd05afcdcbd15d1ace16"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__conf__db_8h.html#a0c1e38d98fb7bd05afcdcbd15d1ace16">Mtc_ConfDbGetAutoHttpQry</a> ()</td></tr>
+<tr class="memdesc:a0c1e38d98fb7bd05afcdcbd15d1ace16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get auto start http query enable flag in muti-conference.  <a href="mtc__conf__db_8h.html#a0c1e38d98fb7bd05afcdcbd15d1ace16">更多...</a><br /></td></tr>
+<tr class="separator:a0c1e38d98fb7bd05afcdcbd15d1ace16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c2ec99147396694ad535abe70b8623"><td class="memItemLeft" align="right" valign="top"><a id="a29c2ec99147396694ad535abe70b8623" name="a29c2ec99147396694ad535abe70b8623"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbGetRpsiEnable</b> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="separator:a29c2ec99147396694ad535abe70b8623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae059fce4dee78832626135d34096f1ed"><td class="memItemLeft" align="right" valign="top"><a id="ae059fce4dee78832626135d34096f1ed" name="ae059fce4dee78832626135d34096f1ed"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbSetRpsiEnable</b> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="separator:ae059fce4dee78832626135d34096f1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2cdae96e0f781eab25b041592f8559"><td class="memItemLeft" align="right" valign="top"><a id="a9d2cdae96e0f781eab25b041592f8559" name="a9d2cdae96e0f781eab25b041592f8559"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbGetResolutionControl</b> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="separator:a9d2cdae96e0f781eab25b041592f8559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a345319cf890134794c0311ee205ad40b"><td class="memItemLeft" align="right" valign="top"><a id="a345319cf890134794c0311ee205ad40b" name="a345319cf890134794c0311ee205ad40b"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbSetResolutionControl</b> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="separator:a345319cf890134794c0311ee205ad40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc6ee080ac4742fa6d504f6cdc75432"><td class="memItemLeft" align="right" valign="top"><a id="acbc6ee080ac4742fa6d504f6cdc75432" name="acbc6ee080ac4742fa6d504f6cdc75432"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbGetFramerateControl</b> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="separator:acbc6ee080ac4742fa6d504f6cdc75432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd5736c0704155a3934481304cf1f49"><td class="memItemLeft" align="right" valign="top"><a id="a7dd5736c0704155a3934481304cf1f49" name="a7dd5736c0704155a3934481304cf1f49"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbSetFramerateControl</b> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="separator:a7dd5736c0704155a3934481304cf1f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8dda479303e766158d02cdbd31f88e"><td class="memItemLeft" align="right" valign="top"><a id="a6f8dda479303e766158d02cdbd31f88e" name="a6f8dda479303e766158d02cdbd31f88e"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbGetVideoArs</b> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="separator:a6f8dda479303e766158d02cdbd31f88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12197c732011edb87def83022cf38fe"><td class="memItemLeft" align="right" valign="top"><a id="ae12197c732011edb87def83022cf38fe" name="ae12197c732011edb87def83022cf38fe"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbSetVideoArs</b> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="separator:ae12197c732011edb87def83022cf38fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0d5ba86284eef982b0cf0c1f83fc61"><td class="memItemLeft" align="right" valign="top"><a id="acc0d5ba86284eef982b0cf0c1f83fc61" name="acc0d5ba86284eef982b0cf0c1f83fc61"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbGetMdmEnable</b> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="separator:acc0d5ba86284eef982b0cf0c1f83fc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89225c388a3b3e4d3bbb5fba35b3b70b"><td class="memItemLeft" align="right" valign="top"><a id="a89225c388a3b3e4d3bbb5fba35b3b70b" name="a89225c388a3b3e4d3bbb5fba35b3b70b"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_ConfDbSetMdmEnable</b> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="separator:a89225c388a3b3e4d3bbb5fba35b3b70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC Conference Database Interface Functions. </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a8121dc9f4149b62f1b01b28cbbd1dfb4" name="a8121dc9f4149b62f1b01b28cbbd1dfb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8121dc9f4149b62f1b01b28cbbd1dfb4">&#9670;&nbsp;</a></span>Mtc_ConfDbGetAudioRecEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ConfDbGetAudioRecEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get http conf video conference enable record audio flag. </p>
+<dl class="section return"><dt>返回</dt><dd>The video http conference enable record audio flag.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a97edb9c121b93aed0690f265a5371133">Mtc_ConfDbSetAudioRecEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0c1e38d98fb7bd05afcdcbd15d1ace16" name="a0c1e38d98fb7bd05afcdcbd15d1ace16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1e38d98fb7bd05afcdcbd15d1ace16">&#9670;&nbsp;</a></span>Mtc_ConfDbGetAutoHttpQry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ConfDbGetAutoHttpQry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get auto start http query enable flag in muti-conference. </p>
+<dl class="section return"><dt>返回</dt><dd>The auto start http query enable flag.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a0c1e38d98fb7bd05afcdcbd15d1ace16">Mtc_ConfDbGetAutoHttpQry</a> </dd></dl>
+
+</div>
+</div>
+<a id="aad4fac04c3a3504639597892b9841e77" name="aad4fac04c3a3504639597892b9841e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4fac04c3a3504639597892b9841e77">&#9670;&nbsp;</a></span>Mtc_ConfDbGetConfAppId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfDbGetConfAppId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get conference APP ID. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of conference APP ID.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a2af22616b0a49a0c002f3cd02eece385">Mtc_ConfDbSetConfAppId</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa177b79da03f490f19707b03b6d14603" name="aa177b79da03f490f19707b03b6d14603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa177b79da03f490f19707b03b6d14603">&#9670;&nbsp;</a></span>Mtc_ConfDbGetConfControlUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfDbGetConfControlUri </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get conference control URI. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of conference control URI.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a15f60b6deb2134fc77a435004f1885e7">Mtc_ConfDbSetConfControlUri</a> </dd></dl>
+
+</div>
+</div>
+<a id="a72750af8ba3730f12316be81b9da5a56" name="a72750af8ba3730f12316be81b9da5a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72750af8ba3730f12316be81b9da5a56">&#9670;&nbsp;</a></span>Mtc_ConfDbGetConfHttpsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ConfDbGetConfHttpsEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get use https conf enable. </p>
+<dl class="section return"><dt>返回</dt><dd>The https conference enable flag.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a9905fc88aa12bd48b2927fa5a6470418">Mtc_ConfDbSetConfHttpsEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3158475b988d4bd9866cc2cda428552e" name="a3158475b988d4bd9866cc2cda428552e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3158475b988d4bd9866cc2cda428552e">&#9670;&nbsp;</a></span>Mtc_ConfDbGetConfPwd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfDbGetConfPwd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get conference APP password. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of conference APP password.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a0a6ccac5cf7694b3b22c9f949741cce6">Mtc_ConfDbSetConfPwd</a> </dd></dl>
+
+</div>
+</div>
+<a id="a218ef6e0a732e42c0185324e9fafcfa1" name="a218ef6e0a732e42c0185324e9fafcfa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a218ef6e0a732e42c0185324e9fafcfa1">&#9670;&nbsp;</a></span>Mtc_ConfDbGetConfSubsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ConfDbGetConfSubsEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get conference subscribe enable flag. </p>
+<dl class="section return"><dt>返回</dt><dd>The conference subscribe enable flag.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#aa026ac55976d7d5a9d7f6d49a56941fd">Mtc_ConfDbSetConfSubsEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a143347b974a90dd66dcf1ed28080bdfb" name="a143347b974a90dd66dcf1ed28080bdfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143347b974a90dd66dcf1ed28080bdfb">&#9670;&nbsp;</a></span>Mtc_ConfDbGetFactUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfDbGetFactUri </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get conference factory URI. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of conference factory URI.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a1e86279b2065b2eb72f28c31bcec3b01">Mtc_ConfDbSetFactUri</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5f113e48a10042e77df017d94ac5f53e" name="a5f113e48a10042e77df017d94ac5f53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f113e48a10042e77df017d94ac5f53e">&#9670;&nbsp;</a></span>Mtc_ConfDbGetHttpConfToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfDbGetHttpConfToken </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get http conf token. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZCHAR</td><td>* the http conf token.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a0b63b61d4ff03006aa08561cb89bc2cb">Mtc_ConfDbSetHttpConfToken</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87051da766bc6725458a8d80865d9a20" name="a87051da766bc6725458a8d80865d9a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87051da766bc6725458a8d80865d9a20">&#9670;&nbsp;</a></span>Mtc_ConfDbGetMaxImageCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ConfDbGetMaxImageCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get http conf video max remote image count. </p>
+<dl class="section return"><dt>返回</dt><dd>The video max remote image count(default 4) of http conference.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a496c1bb1f875249c1fb8e3b4bb4e7dff">Mtc_ConfDbSetMaxImageCount</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4bd2c7348fb0d5e46137933087f3999e" name="a4bd2c7348fb0d5e46137933087f3999e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd2c7348fb0d5e46137933087f3999e">&#9670;&nbsp;</a></span>Mtc_ConfDbGetMaxPartpCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ConfDbGetMaxPartpCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get http conf video max partp count. </p>
+<dl class="section return"><dt>返回</dt><dd>The video max participants count(default 5) of http conference.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a9e5eda46eb6957b3a9534b42c292ea59">Mtc_ConfDbSetMaxPartpCount</a> </dd></dl>
+
+</div>
+</div>
+<a id="a26e4876f77b0bdc39938208c943a9956" name="a26e4876f77b0bdc39938208c943a9956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e4876f77b0bdc39938208c943a9956">&#9670;&nbsp;</a></span>Mtc_ConfDbGetMcuConfEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ConfDbGetMcuConfEnable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get MCU conference enable flag. </p>
+<dl class="section return"><dt>返回</dt><dd>The MCU conference enable flag.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a5e25466b6d4e792f0defe610cef0f555">Mtc_ConfDbSetMcuConfEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a91a2baae8cefc4dff2475dea4b30745a" name="a91a2baae8cefc4dff2475dea4b30745a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a2baae8cefc4dff2475dea4b30745a">&#9670;&nbsp;</a></span>Mtc_ConfDbGetResRatioType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ConfDbGetResRatioType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get resolution ratio type. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">the</td><td>conf video resolution ratio type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a91a2baae8cefc4dff2475dea4b30745a">Mtc_ConfDbGetResRatioType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae73f5973afbc84b816e5712f08b58c39" name="ae73f5973afbc84b816e5712f08b58c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73f5973afbc84b816e5712f08b58c39">&#9670;&nbsp;</a></span>Mtc_ConfDbGetVideoFactUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfDbGetVideoFactUri </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get video conference factory URI. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of video conference factory URI.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#abb5c380cad6ab85a9dd2eda696e53f3e">Mtc_ConfDbSetVideoFactUri</a> </dd></dl>
+
+</div>
+</div>
+<a id="af550bbd5345aaa3aba845739a13fbc63" name="af550bbd5345aaa3aba845739a13fbc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af550bbd5345aaa3aba845739a13fbc63">&#9670;&nbsp;</a></span>Mtc_ConfDbGetVideoSwitchMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ConfDbGetVideoSwitchMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get http conference video switch mode. </p>
+<dl class="section return"><dt>返回</dt><dd>The video switch mode of http conference.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a9629f4f2df871425dec8a03a48bb5b9c">Mtc_ConfDbSetVideoSwitchMode</a> </dd></dl>
+
+</div>
+</div>
+<a id="a97edb9c121b93aed0690f265a5371133" name="a97edb9c121b93aed0690f265a5371133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97edb9c121b93aed0690f265a5371133">&#9670;&nbsp;</a></span>Mtc_ConfDbSetAudioRecEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetAudioRecEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set http conf video conference enable record audio flag. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>enable video conference record audio.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set enable video conference record audio successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set enable video conference record audio failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a8121dc9f4149b62f1b01b28cbbd1dfb4">Mtc_ConfDbGetAudioRecEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a03bda1bd15d24b55f34bfe8eba1166c2" name="a03bda1bd15d24b55f34bfe8eba1166c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03bda1bd15d24b55f34bfe8eba1166c2">&#9670;&nbsp;</a></span>Mtc_ConfDbSetAutoHttpQry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ConfDbSetAutoHttpQry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set auto start http query enable flag in muti-conference. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>enable auto start http query.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set enable auto start http query successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set auto start http query failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a03bda1bd15d24b55f34bfe8eba1166c2">Mtc_ConfDbSetAutoHttpQry</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2af22616b0a49a0c002f3cd02eece385" name="a2af22616b0a49a0c002f3cd02eece385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af22616b0a49a0c002f3cd02eece385">&#9670;&nbsp;</a></span>Mtc_ConfDbSetConfAppId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetConfAppId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcAppId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set conference APP ID. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcUri</td><td>Conference APP ID(set app id for multi-stream, 47 for testing environment, 34 for business environment). As for CS conference, app id is 203 for testing environment, 121 for business environment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference APP ID successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference APP ID failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#aad4fac04c3a3504639597892b9841e77">Mtc_ConfDbGetConfAppId</a> </dd></dl>
+
+</div>
+</div>
+<a id="a15f60b6deb2134fc77a435004f1885e7" name="a15f60b6deb2134fc77a435004f1885e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f60b6deb2134fc77a435004f1885e7">&#9670;&nbsp;</a></span>Mtc_ConfDbSetConfControlUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetConfControlUri </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcUri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set conference control URI. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcUri</td><td>Conference control URI.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference control URI successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference control URI failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#aa177b79da03f490f19707b03b6d14603">Mtc_ConfDbGetConfControlUri</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9905fc88aa12bd48b2927fa5a6470418" name="a9905fc88aa12bd48b2927fa5a6470418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9905fc88aa12bd48b2927fa5a6470418">&#9670;&nbsp;</a></span>Mtc_ConfDbSetConfHttpsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetConfHttpsEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set use https conf enable. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>enable https conference.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set enable https conference successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set enable https conference failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a72750af8ba3730f12316be81b9da5a56">Mtc_ConfDbGetConfHttpsEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0a6ccac5cf7694b3b22c9f949741cce6" name="a0a6ccac5cf7694b3b22c9f949741cce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6ccac5cf7694b3b22c9f949741cce6">&#9670;&nbsp;</a></span>Mtc_ConfDbSetConfPwd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetConfPwd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcPwd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set conference APP password. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcUri</td><td>Conference APP password.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference APP password successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference APP password failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a3158475b988d4bd9866cc2cda428552e">Mtc_ConfDbGetConfPwd</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa026ac55976d7d5a9d7f6d49a56941fd" name="aa026ac55976d7d5a9d7f6d49a56941fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa026ac55976d7d5a9d7f6d49a56941fd">&#9670;&nbsp;</a></span>Mtc_ConfDbSetConfSubsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetConfSubsEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set conference subscribe enable flag. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>enable conference subscribe enable.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set enable conference subscribe successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set enable conference subscribe failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a218ef6e0a732e42c0185324e9fafcfa1">Mtc_ConfDbGetConfSubsEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1e86279b2065b2eb72f28c31bcec3b01" name="a1e86279b2065b2eb72f28c31bcec3b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e86279b2065b2eb72f28c31bcec3b01">&#9670;&nbsp;</a></span>Mtc_ConfDbSetFactUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetFactUri </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcUri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set conference factory URI. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcUri</td><td>Conference factory URI.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference factory URI successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference factory URI failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a143347b974a90dd66dcf1ed28080bdfb">Mtc_ConfDbGetFactUri</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0b63b61d4ff03006aa08561cb89bc2cb" name="a0b63b61d4ff03006aa08561cb89bc2cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b63b61d4ff03006aa08561cb89bc2cb">&#9670;&nbsp;</a></span>Mtc_ConfDbSetHttpConfToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetHttpConfToken </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcToken</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set http conf token. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the http conf token successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the http conf token failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a5f113e48a10042e77df017d94ac5f53e">Mtc_ConfDbGetHttpConfToken</a> </dd></dl>
+
+</div>
+</div>
+<a id="a496c1bb1f875249c1fb8e3b4bb4e7dff" name="a496c1bb1f875249c1fb8e3b4bb4e7dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496c1bb1f875249c1fb8e3b4bb4e7dff">&#9670;&nbsp;</a></span>Mtc_ConfDbSetMaxImageCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetMaxImageCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set http conference video remote image count. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iCount(default</td><td>4) video max remote image count(0 or not set for server's max value (at present server supports 9 participants including chairman, which means <br  />
+ server supports 8 remote images).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference video max remote image count successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference video max remote image count failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a87051da766bc6725458a8d80865d9a20">Mtc_ConfDbGetMaxImageCount</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9e5eda46eb6957b3a9534b42c292ea59" name="a9e5eda46eb6957b3a9534b42c292ea59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5eda46eb6957b3a9534b42c292ea59">&#9670;&nbsp;</a></span>Mtc_ConfDbSetMaxPartpCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetMaxPartpCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set http conference video participants count. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iCount(default</td><td>5) video max participant count(0 or not set for server's max value (at present server supports 9 participants including chairman).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference video max participants count successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference video max participants count failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a4bd2c7348fb0d5e46137933087f3999e">Mtc_ConfDbGetMaxPartpCount</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5e25466b6d4e792f0defe610cef0f555" name="a5e25466b6d4e792f0defe610cef0f555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e25466b6d4e792f0defe610cef0f555">&#9670;&nbsp;</a></span>Mtc_ConfDbSetMcuConfEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetMcuConfEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set MCU conference enablee flag. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>enable MCU conference.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set enable MCU conference successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set enable MCU conference failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a26e4876f77b0bdc39938208c943a9956">Mtc_ConfDbGetMcuConfEnable</a> </dd></dl>
+
+</div>
+</div>
+<a id="a30cda09b4934dfb73357ff0de674f9b6" name="a30cda09b4934dfb73357ff0de674f9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30cda09b4934dfb73357ff0de674f9b6">&#9670;&nbsp;</a></span>Mtc_ConfDbSetResRatioType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetResRatioType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set resolution ratio type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>the type of resolution ratio.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set resolution ratio type successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set resolution ratio type failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a30cda09b4934dfb73357ff0de674f9b6">Mtc_ConfDbSetResRatioType</a> </dd></dl>
+
+</div>
+</div>
+<a id="abb5c380cad6ab85a9dd2eda696e53f3e" name="abb5c380cad6ab85a9dd2eda696e53f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5c380cad6ab85a9dd2eda696e53f3e">&#9670;&nbsp;</a></span>Mtc_ConfDbSetVideoFactUri()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetVideoFactUri </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcUri</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set video conference factory URI. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcUri</td><td>Video Conference factory URI.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set video conference factory URI successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set video conference factory URI failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#ae73f5973afbc84b816e5712f08b58c39">Mtc_ConfDbGetVideoFactUri</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9629f4f2df871425dec8a03a48bb5b9c" name="a9629f4f2df871425dec8a03a48bb5b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9629f4f2df871425dec8a03a48bb5b9c">&#9670;&nbsp;</a></span>Mtc_ConfDbSetVideoSwitchMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfDbSetVideoSwitchMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set http conference video switch mode. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMode</td><td>video switch mode <a class="el" href="mtc__conf_8h.html#a31b0246f0577e9277ae256a3f1353864">EN_MTC_CONF_VIDEO_SWITCH_MODE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference video switch mode successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference video switch mode failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#af550bbd5345aaa3aba845739a13fbc63">Mtc_ConfDbGetVideoSwitchMode</a> </dd></dl>
+
+</div>
+</div>
+<a id="a26285652efe31434bde78f675efd8d2f" name="a26285652efe31434bde78f675efd8d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26285652efe31434bde78f675efd8d2f">&#9670;&nbsp;</a></span>Mtc_ConfGetMcuPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ConfGetMcuPrefix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get conference mcu prefix. </p>
+<dl class="section return"><dt>返回</dt><dd>The conference mcu prefix.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#ac764f97fb66b67f37e4e0610fab4eed9">Mtc_ConfSetMcuPrefix</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac764f97fb66b67f37e4e0610fab4eed9" name="ac764f97fb66b67f37e4e0610fab4eed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac764f97fb66b67f37e4e0610fab4eed9">&#9670;&nbsp;</a></span>Mtc_ConfSetMcuPrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ConfSetMcuPrefix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcMcuPrefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set conference mcu prefix. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcMcuPrefix</td><td>Conference mcu prefix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set conference mcu prefix successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set conference mcu prefix failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a26285652efe31434bde78f675efd8d2f">Mtc_ConfGetMcuPrefix</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaf1594196fc2296e16bd5dda03ac8b92" name="aaf1594196fc2296e16bd5dda03ac8b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1594196fc2296e16bd5dda03ac8b92">&#9670;&nbsp;</a></span>Mtc_McuConfDbGetResRatioType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_McuConfDbGetResRatioType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get resolution ratio type. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">the</td><td>mcu conf video resolution ratio type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#aaf1594196fc2296e16bd5dda03ac8b92">Mtc_McuConfDbGetResRatioType</a> </dd></dl>
+
+</div>
+</div>
+<a id="a332c0e9094653a4f347c899cafb947cb" name="a332c0e9094653a4f347c899cafb947cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332c0e9094653a4f347c899cafb947cb">&#9670;&nbsp;</a></span>Mtc_McuConfDbSetResRatioType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_McuConfDbSetResRatioType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set resolution ratio type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>the type of resolution ratio.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set resolution ratio type successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set resolution ratio type failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__conf__db_8h.html#a332c0e9094653a4f347c899cafb947cb">Mtc_McuConfDbSetResRatioType</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

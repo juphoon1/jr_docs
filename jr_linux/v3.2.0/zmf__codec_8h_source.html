@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/grape/zmf_codec.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_f1a3acf3e1f2b9415cf1af1ac8bfb4f9.html">grape</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">zmf_codec.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="zmf__codec_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __ZMF_CODEC_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __ZMF_CODEC_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma GCC visibility push(default)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_zmf_video_codec_h264.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">/* &#39;Base&#39;,&#39;Main&#39;, &#39;Extd&#39;, &#39;High&#39; */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">char</span>                    cProfile[4];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">/* &#39;10&#39;,&#39;1b&#39;,&#39;11&#39;,&#39;12&#39;,...,&#39;51&#39; */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">char</span>                    cLevel[2];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">char</span>                    bErrorConcealOn;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">char</span>                    bSmallNalu;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <a class="code hl_struct" href="struct_zmf_video_codec_h264.html">ZmfVideoCodecH264</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_zmf_video_codec_v_p8.html">   33</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">char</span>                    bPictureLossIndicationOn;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">char</span>                    feedbackModeOn;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">char</span>                    bErrorConcealOn;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} <a class="code hl_struct" href="struct_zmf_video_codec_v_p8.html">ZmfVideoCodecVP8</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="union_zmf_video_codec_specific.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_struct" href="struct_zmf_video_codec_h264.html">ZmfVideoCodecH264</a>       H264;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_struct" href="struct_zmf_video_codec_v_p8.html">ZmfVideoCodecVP8</a>        VP8;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <a class="code hl_union" href="union_zmf_video_codec_specific.html">ZmfVideoCodecSpecific</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_zmf_video_codec.html">   44</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">unsigned</span>                width;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">unsigned</span>                height;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">/* kbps */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">unsigned</span>                startBitrate;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">unsigned</span>                maxBitrate;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">unsigned</span>                minBitrate;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">unsigned</span>                maxFramerate;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>            qpMax;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>            qpMin;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_union" href="union_zmf_video_codec_specific.html">ZmfVideoCodecSpecific</a>   codecSpecific;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <a class="code hl_struct" href="struct_zmf_video_codec.html">ZmfVideoCodec</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_zmf_audio_codec_a_m_r.html">   61</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">unsigned</span>                bandMode;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <a class="code hl_struct" href="struct_zmf_audio_codec_a_m_r.html">ZmfAudioCodecAMR</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="union_zmf_audio_codec_specific.html">   65</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_struct" href="struct_zmf_audio_codec_a_m_r.html">ZmfAudioCodecAMR</a>        AMR;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>} <a class="code hl_union" href="union_zmf_audio_codec_specific.html">ZmfAudioCodecSpecific</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="struct_zmf_audio_codec.html">   69</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">unsigned</span>                sampleRate;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">unsigned</span>                bitrate;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">unsigned</span>                channels;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_union" href="union_zmf_audio_codec_specific.html">ZmfAudioCodecSpecific</a>   codecSpecific;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>} <a class="code hl_struct" href="struct_zmf_audio_codec.html">ZmfAudioCodec</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="union_zmf_codec.html">   76</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_struct" href="struct_zmf_video_codec.html">ZmfVideoCodec</a>           video;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_struct" href="struct_zmf_audio_codec.html">ZmfAudioCodec</a>           audio;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <a class="code hl_union" href="union_zmf_codec.html">ZmfCodec</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">   84</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a5a77d7fe8e0e83de52991246fc909308">   90</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a5a77d7fe8e0e83de52991246fc909308">ZmfCodecKeyFrame</a> = 0,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a0faa13564f5e77c21617889002f99ef0">   95</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a0faa13564f5e77c21617889002f99ef0">ZmfCodecBitrate</a>,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445aa9fc9e5c5a291a73e92e6eb648e37fa8">  100</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445aa9fc9e5c5a291a73e92e6eb648e37fa8">ZmfCodecFramerate</a>,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445af67d15e71748dea3cb597a241f22d55d">  105</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445af67d15e71748dea3cb597a241f22d55d">ZmfAmrBandMode</a>,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a6754a611fc0e3156641f73cd8fab0df1">  110</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a6754a611fc0e3156641f73cd8fab0df1">ZmfCodecWidth</a>,</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a347f405d5b9a4b39f9dea2779d850de9">  115</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a347f405d5b9a4b39f9dea2779d850de9">ZmfCodecHeight</a>,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a968df47558ed87427778d4850e144691">  120</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a968df47558ed87427778d4850e144691">ZmfCodecPacketLoss</a>,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a3fdd15df85e0390964cfda8b6d5f6699">  125</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a3fdd15df85e0390964cfda8b6d5f6699">ZmfCodecRtt</a>,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a78f49498c3f99beb53e79c3905152506">  130</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a78f49498c3f99beb53e79c3905152506">ZmfCodecErrorConceal</a>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a414f194a63350f154601da692e93028d">  135</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a414f194a63350f154601da692e93028d">ZmfCodecStream</a>,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ae576e057d97a0de51e7e5685544071e7">  140</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ae576e057d97a0de51e7e5685544071e7">ZmfCodecH264SPS</a>,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a92cf81dd5e87144ba539b323112d2c03">  145</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a92cf81dd5e87144ba539b323112d2c03">ZmfCodecH265SPS</a> = <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ae576e057d97a0de51e7e5685544071e7">ZmfCodecH264SPS</a>,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445abbe1d742b39d5243c159b17627f99b4d">  150</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445abbe1d742b39d5243c159b17627f99b4d">ZmfCodecH264PPS</a>,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a820b9ba69fb60ccbf427f122089fdd9f">  155</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a820b9ba69fb60ccbf427f122089fdd9f">ZmfCodecH265PPS</a> = <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445abbe1d742b39d5243c159b17627f99b4d">ZmfCodecH264PPS</a>,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ab221e3ed39760479e199d0d96c305ea6">  160</a></span>    <a class="code hl_enumvalue" href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ab221e3ed39760479e199d0d96c305ea6">ZmfCodecH265VPS</a>,</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    ZmfCodecPitch,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    ZmfCodecDtx,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    ZmfCodecFixBw,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    ZmfOpusMode,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>} <a class="code hl_enumeration" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga2e68a41eddd6c074798af8b86e77944f">  176</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="group___zmf_codec.html#ga2e68a41eddd6c074798af8b86e77944f">ZmfCodecOut</a>)(<span class="keywordtype">void</span>* user_data, <span class="keyword">const</span> <span class="keywordtype">char</span>* buf, <span class="keywordtype">unsigned</span> length,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                            <span class="keywordtype">void</span>* cookie, <span class="keywordtype">int</span> bLastFrag);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html">  182</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">  190</a></span>    <span class="keywordtype">void</span>* (*codecNew)(<span class="keyword">const</span> <span class="keywordtype">char</span>* codecName, <a class="code hl_typedef" href="group___zmf_codec.html#ga2e68a41eddd6c074798af8b86e77944f">ZmfCodecOut</a> callback, <span class="keywordtype">void</span>* user_data);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html#a2a239e324be61a736f501204f6415862">  205</a></span>    int (*codecDo)(<span class="keywordtype">void</span> *handle, <span class="keywordtype">void</span>* in, <span class="keywordtype">unsigned</span> in_len, <span class="keywordtype">unsigned</span> timeStampMs,</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                   <span class="keywordtype">void</span>* cookie, <span class="keywordtype">int</span> bLastFrag);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html#ac61d6f8f497063fe68f611dd7a5ebae1">  217</a></span>    int (*codecReset)(<span class="keywordtype">void</span> *handle, <a class="code hl_union" href="union_zmf_codec.html">ZmfCodec</a>* settings);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html#a811508159b417df735a207dba537a8d0">  230</a></span>    int (*codecSet)(<span class="keywordtype">void</span> *handle, <a class="code hl_enumeration" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> key, <span class="keyword">const</span> <span class="keywordtype">void</span> *value, <span class="keywordtype">int</span> value_size);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html#a28438952322f3f3119ea2522f84164a9">  243</a></span>    int (*codecGet)(<span class="keywordtype">void</span> *handle, <a class="code hl_enumeration" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> key, <span class="keywordtype">void</span> *value, <span class="keywordtype">int</span> value_size);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="struct_zmf_codec_class.html#a2327a9f0d0173ec5d87218c5181ac49b">  252</a></span>    int (*codecDelete)(<span class="keywordtype">void</span> *handle);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>} <a class="code hl_struct" href="struct_zmf_codec_class.html">ZmfCodecClass</a>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gacdaf8e1a7a4fe916a53eb633f0389cf2">  256</a></span><span class="preprocessor">#define ZMF_CODEC_FALLBACK_SOFTWARE -13</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gaea14556b4cb6d90c354e31025028bbbe">  259</a></span><span class="preprocessor">#define ZMF_BUILTIN_DECODER_H264  &quot;zmf.builtin.H264.decoder&quot;</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga99b70af4f8fcf05bd8658b448d0e062e">  261</a></span><span class="preprocessor">#define ZMF_BUILTIN_ENCODER_H264  &quot;zmf.builtin.H264.encoder&quot;</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga448dc883a322f3114a0214236066b46c">  263</a></span><span class="preprocessor">#define ZMF_BUILTIN_DECODER_H265  &quot;zmf.builtin.H265.decoder&quot;</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gaa673caefbd7c8693d68c60e3d44ce7ba">  265</a></span><span class="preprocessor">#define ZMF_BUILTIN_ENCODER_H265  &quot;zmf.builtin.H265.encoder&quot;</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga561769c98c7655a4923e29dabc96adcd">  268</a></span><span class="preprocessor">#define ZMF_DECODER_H264  &quot;H264.decoder&quot;</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga09f11c8a3e9cd6fb2d7c6740bae5a3e4">  270</a></span><span class="preprocessor">#define ZMF_ENCODER_H264  &quot;H264.encoder&quot;</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gab1dd6c316e42f7709abfab941d401f68">  272</a></span><span class="preprocessor">#define ZMF_DECODER_H265  &quot;H265.decoder&quot;</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga463217aa3411bfd60e44891e9b24da3b">  274</a></span><span class="preprocessor">#define ZMF_ENCODER_H265  &quot;H265.encoder&quot;</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga1b731b86a0a6f376d3c5f818eb9159e1">  277</a></span><span class="preprocessor">#define ZMF_FILE_ENCODER_H264 &quot;FILE.H264.encoder&quot;</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga384913d5dd11483f76a954b88ede9d9f">  288</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___zmf_codec.html#ga384913d5dd11483f76a954b88ede9d9f">Zmf_CodecRegister</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* codecName, <span class="keyword">const</span> <a class="code hl_struct" href="struct_zmf_codec_class.html">ZmfCodecClass</a> *klass);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#gadf3c9672b47ba4462cb16c0911c6c296">  298</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_zmf_codec_class.html">ZmfCodecClass</a>* <a class="code hl_function" href="group___zmf_codec.html#gadf3c9672b47ba4462cb16c0911c6c296">Zmf_CodecGetClass</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* codecName);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="group___zmf_codec.html#ga0946ecb6f16d99f4c3dbcb76728390dd">  308</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___zmf_codec.html#ga0946ecb6f16d99f4c3dbcb76728390dd">Zmf_CodecGetList</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* codecNames[], <span class="keywordtype">int</span> *count);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>}</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="preprocessor">#pragma GCC visibility pop</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agroup___zmf_codec_html_ga0946ecb6f16d99f4c3dbcb76728390dd"><div class="ttname"><a href="group___zmf_codec.html#ga0946ecb6f16d99f4c3dbcb76728390dd">Zmf_CodecGetList</a></div><div class="ttdeci">int Zmf_CodecGetList(const char *codecNames[], int *count)</div><div class="ttdoc">查询编解码列表</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_ga2e68a41eddd6c074798af8b86e77944f"><div class="ttname"><a href="group___zmf_codec.html#ga2e68a41eddd6c074798af8b86e77944f">ZmfCodecOut</a></div><div class="ttdeci">void(* ZmfCodecOut)(void *user_data, const char *buf, unsigned length, void *cookie, int bLastFrag)</div><div class="ttdoc">编解码完成后，通过回调函数导出给使用者</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:176</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_ga384913d5dd11483f76a954b88ede9d9f"><div class="ttname"><a href="group___zmf_codec.html#ga384913d5dd11483f76a954b88ede9d9f">Zmf_CodecRegister</a></div><div class="ttdeci">int Zmf_CodecRegister(const char *codecName, const ZmfCodecClass *klass)</div><div class="ttdoc">注册外部编解码器</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_ga9693bcf09d19010964e20838127b5445"><div class="ttname"><a href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a></div><div class="ttdeci">ZmfCodecKey</div><div class="ttdoc">动态枚举参数，用于 ZmfCodecClass::codecSet, ZmfCodecClass::codecGet</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:84</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gadf3c9672b47ba4462cb16c0911c6c296"><div class="ttname"><a href="group___zmf_codec.html#gadf3c9672b47ba4462cb16c0911c6c296">Zmf_CodecGetClass</a></div><div class="ttdeci">const ZmfCodecClass * Zmf_CodecGetClass(const char *codecName)</div><div class="ttdoc">获取编解码类</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a0faa13564f5e77c21617889002f99ef0"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a0faa13564f5e77c21617889002f99ef0">ZmfCodecBitrate</a></div><div class="ttdeci">@ ZmfCodecBitrate</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:95</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a347f405d5b9a4b39f9dea2779d850de9"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a347f405d5b9a4b39f9dea2779d850de9">ZmfCodecHeight</a></div><div class="ttdeci">@ ZmfCodecHeight</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:115</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a3fdd15df85e0390964cfda8b6d5f6699"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a3fdd15df85e0390964cfda8b6d5f6699">ZmfCodecRtt</a></div><div class="ttdeci">@ ZmfCodecRtt</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:125</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a414f194a63350f154601da692e93028d"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a414f194a63350f154601da692e93028d">ZmfCodecStream</a></div><div class="ttdeci">@ ZmfCodecStream</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:135</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a5a77d7fe8e0e83de52991246fc909308"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a5a77d7fe8e0e83de52991246fc909308">ZmfCodecKeyFrame</a></div><div class="ttdeci">@ ZmfCodecKeyFrame</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:90</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a6754a611fc0e3156641f73cd8fab0df1"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a6754a611fc0e3156641f73cd8fab0df1">ZmfCodecWidth</a></div><div class="ttdeci">@ ZmfCodecWidth</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:110</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a78f49498c3f99beb53e79c3905152506"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a78f49498c3f99beb53e79c3905152506">ZmfCodecErrorConceal</a></div><div class="ttdeci">@ ZmfCodecErrorConceal</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:130</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a820b9ba69fb60ccbf427f122089fdd9f"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a820b9ba69fb60ccbf427f122089fdd9f">ZmfCodecH265PPS</a></div><div class="ttdeci">@ ZmfCodecH265PPS</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:155</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a92cf81dd5e87144ba539b323112d2c03"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a92cf81dd5e87144ba539b323112d2c03">ZmfCodecH265SPS</a></div><div class="ttdeci">@ ZmfCodecH265SPS</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:145</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445a968df47558ed87427778d4850e144691"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445a968df47558ed87427778d4850e144691">ZmfCodecPacketLoss</a></div><div class="ttdeci">@ ZmfCodecPacketLoss</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:120</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445aa9fc9e5c5a291a73e92e6eb648e37fa8"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445aa9fc9e5c5a291a73e92e6eb648e37fa8">ZmfCodecFramerate</a></div><div class="ttdeci">@ ZmfCodecFramerate</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:100</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445ab221e3ed39760479e199d0d96c305ea6"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ab221e3ed39760479e199d0d96c305ea6">ZmfCodecH265VPS</a></div><div class="ttdeci">@ ZmfCodecH265VPS</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:160</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445abbe1d742b39d5243c159b17627f99b4d"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445abbe1d742b39d5243c159b17627f99b4d">ZmfCodecH264PPS</a></div><div class="ttdeci">@ ZmfCodecH264PPS</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:150</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445ae576e057d97a0de51e7e5685544071e7"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445ae576e057d97a0de51e7e5685544071e7">ZmfCodecH264SPS</a></div><div class="ttdeci">@ ZmfCodecH264SPS</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:140</div></div>
+<div class="ttc" id="agroup___zmf_codec_html_gga9693bcf09d19010964e20838127b5445af67d15e71748dea3cb597a241f22d55d"><div class="ttname"><a href="group___zmf_codec.html#gga9693bcf09d19010964e20838127b5445af67d15e71748dea3cb597a241f22d55d">ZmfAmrBandMode</a></div><div class="ttdeci">@ ZmfAmrBandMode</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:105</div></div>
+<div class="ttc" id="astruct_zmf_audio_codec_a_m_r_html"><div class="ttname"><a href="struct_zmf_audio_codec_a_m_r.html">ZmfAudioCodecAMR</a></div><div class="ttdoc">音频编解码器参数</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:61</div></div>
+<div class="ttc" id="astruct_zmf_audio_codec_html"><div class="ttname"><a href="struct_zmf_audio_codec.html">ZmfAudioCodec</a></div><div class="ttdef"><b>Definition:</b> zmf_codec.h:69</div></div>
+<div class="ttc" id="astruct_zmf_codec_class_html"><div class="ttname"><a href="struct_zmf_codec_class.html">ZmfCodecClass</a></div><div class="ttdoc">ZmfCodecClass结构体</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:182</div></div>
+<div class="ttc" id="astruct_zmf_video_codec_h264_html"><div class="ttname"><a href="struct_zmf_video_codec_h264.html">ZmfVideoCodecH264</a></div><div class="ttdoc">视频编解码器参数</div><div class="ttdef"><b>Definition:</b> zmf_codec.h:24</div></div>
+<div class="ttc" id="astruct_zmf_video_codec_html"><div class="ttname"><a href="struct_zmf_video_codec.html">ZmfVideoCodec</a></div><div class="ttdef"><b>Definition:</b> zmf_codec.h:44</div></div>
+<div class="ttc" id="astruct_zmf_video_codec_v_p8_html"><div class="ttname"><a href="struct_zmf_video_codec_v_p8.html">ZmfVideoCodecVP8</a></div><div class="ttdef"><b>Definition:</b> zmf_codec.h:33</div></div>
+<div class="ttc" id="aunion_zmf_audio_codec_specific_html"><div class="ttname"><a href="union_zmf_audio_codec_specific.html">ZmfAudioCodecSpecific</a></div><div class="ttdef"><b>Definition:</b> zmf_codec.h:65</div></div>
+<div class="ttc" id="aunion_zmf_codec_html"><div class="ttname"><a href="union_zmf_codec.html">ZmfCodec</a></div><div class="ttdef"><b>Definition:</b> zmf_codec.h:76</div></div>
+<div class="ttc" id="aunion_zmf_video_codec_specific_html"><div class="ttname"><a href="union_zmf_video_codec_specific.html">ZmfVideoCodecSpecific</a></div><div class="ttdef"><b>Definition:</b> zmf_codec.h:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

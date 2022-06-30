@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_ring.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_ring.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC Ring Interface Functions.  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__ring_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a8fa9ba79c93ea234c7e9a9eb03fd62c9"><td class="memItemLeft" align="right" valign="top"><a id="a8fa9ba79c93ea234c7e9a9eb03fd62c9" name="a8fa9ba79c93ea234c7e9a9eb03fd62c9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_RING_FOREVER</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a8fa9ba79c93ea234c7e9a9eb03fd62c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for playing ring forever. <br /></td></tr>
+<tr class="separator:a8fa9ba79c93ea234c7e9a9eb03fd62c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c58b46f57dfe3c12a90c76326c5342b"><td class="memItemLeft" align="right" valign="top"><a id="a0c58b46f57dfe3c12a90c76326c5342b" name="a0c58b46f57dfe3c12a90c76326c5342b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_RING_DTMF_LEN</b>&#160;&#160;&#160;200</td></tr>
+<tr class="memdesc:a0c58b46f57dfe3c12a90c76326c5342b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for playing DTMF time length in milliseconds. <br /></td></tr>
+<tr class="separator:a0c58b46f57dfe3c12a90c76326c5342b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f13b74aa3199d05ea40e4418fc5ada"><td class="memItemLeft" align="right" valign="top"><a id="a36f13b74aa3199d05ea40e4418fc5ada" name="a36f13b74aa3199d05ea40e4418fc5ada"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_RING_ALERT_LEN</b>&#160;&#160;&#160;500</td></tr>
+<tr class="memdesc:a36f13b74aa3199d05ea40e4418fc5ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for playing alert event time length in milliseconds. <br /></td></tr>
+<tr class="separator:a36f13b74aa3199d05ea40e4418fc5ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef402f00984fa69b48303da76059107"><td class="memItemLeft" align="right" valign="top"><a id="a6ef402f00984fa69b48303da76059107" name="a6ef402f00984fa69b48303da76059107"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_RING_TERM_LEN</b>&#160;&#160;&#160;2000</td></tr>
+<tr class="memdesc:a6ef402f00984fa69b48303da76059107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for playing terminated event time length in milliseconds. <br /></td></tr>
+<tr class="separator:a6ef402f00984fa69b48303da76059107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc9500f2c9bfad35e13e44b239ed322"><td class="memItemLeft" align="right" valign="top"><a id="abcc9500f2c9bfad35e13e44b239ed322" name="abcc9500f2c9bfad35e13e44b239ed322"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_RING_ASSET_MASK</b>&#160;&#160;&#160;0x80000000</td></tr>
+<tr class="memdesc:abcc9500f2c9bfad35e13e44b239ed322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask for use resource in asset for Android. <br /></td></tr>
+<tr class="separator:abcc9500f2c9bfad35e13e44b239ed322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a39d55965bd7ae39a04b56827eadabc9e"><td class="memItemLeft" align="right" valign="top"><a id="a39d55965bd7ae39a04b56827eadabc9e" name="a39d55965bd7ae39a04b56827eadabc9e"></a>
+typedef enum <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">EN_MTC_RING_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_RING_TYPE</b></td></tr>
+<tr class="memdesc:a39d55965bd7ae39a04b56827eadabc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC ring type <br /></td></tr>
+<tr class="separator:a39d55965bd7ae39a04b56827eadabc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a9dc0eabe44fc5f5c8395f2092944e9b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">EN_MTC_RING_TYPE</a> { <br />
+&#160;&#160;<a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb">EN_MTC_RING_TONE_0</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041">EN_MTC_RING_TONE_1</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90">EN_MTC_RING_TONE_2</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc">EN_MTC_RING_TONE_3</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f">EN_MTC_RING_TONE_4</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c">EN_MTC_RING_TONE_5</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03">EN_MTC_RING_TONE_6</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f">EN_MTC_RING_TONE_7</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b">EN_MTC_RING_TONE_8</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687">EN_MTC_RING_TONE_9</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a">EN_MTC_RING_TONE_STAR</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab">EN_MTC_RING_TONE_POUND</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3">EN_MTC_RING_RING</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e">EN_MTC_RING_RING_BACK</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3">EN_MTC_RING_CALL_FAILED</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96">EN_MTC_RING_BUSY</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5">EN_MTC_RING_CALL_WAIT</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56">EN_MTC_RING_FORWARD</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e">EN_MTC_RING_TERM</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3">EN_MTC_RING_HELD</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460">EN_MTC_RING_MSG_RECV</a>
+, <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f">EN_MTC_RING_SIZE</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a9dc0eabe44fc5f5c8395f2092944e9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC ring type  <a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">更多...</a><br /></td></tr>
+<tr class="separator:a9dc0eabe44fc5f5c8395f2092944e9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4b45373e73cd061e02c3b83c5a44d220"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMilliSeconds)</td></tr>
+<tr class="memdesc:a4b45373e73cd061e02c3b83c5a44d220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play ring, and ring type see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.  <a href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">更多...</a><br /></td></tr>
+<tr class="separator:a4b45373e73cd061e02c3b83c5a44d220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8447f8dff6def194fbd4e2e67ff53b85"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a8447f8dff6def194fbd4e2e67ff53b85">Mtc_RingPlayNoLoop</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:a8447f8dff6def194fbd4e2e67ff53b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play ring with no loop, and ring type see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.  <a href="mtc__ring_8h.html#a8447f8dff6def194fbd4e2e67ff53b85">更多...</a><br /></td></tr>
+<tr class="separator:a8447f8dff6def194fbd4e2e67ff53b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8f47f61f511e1bd431aaac7aac6d62"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62">Mtc_RingPlayX</a> (ZCONST <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcFileName, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMilliSeconds)</td></tr>
+<tr class="memdesc:a3d8f47f61f511e1bd431aaac7aac6d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play ring file.  <a href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62">更多...</a><br /></td></tr>
+<tr class="separator:a3d8f47f61f511e1bd431aaac7aac6d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592aa69498f5298664ae50954402266e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e">Mtc_RingStop</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:a592aa69498f5298664ae50954402266e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio stop playback.  <a href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e">更多...</a><br /></td></tr>
+<tr class="separator:a592aa69498f5298664ae50954402266e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59aa232583e4d9592b9afd64bab71ad"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#af59aa232583e4d9592b9afd64bab71ad">Mtc_RingIsPlay</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:af59aa232583e4d9592b9afd64bab71ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio is playing.  <a href="mtc__ring_8h.html#af59aa232583e4d9592b9afd64bab71ad">更多...</a><br /></td></tr>
+<tr class="separator:af59aa232583e4d9592b9afd64bab71ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2dcd1b1b2a63e9adaf132a5fd21632f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#ae2dcd1b1b2a63e9adaf132a5fd21632f">Mtc_RingGetMute</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ae2dcd1b1b2a63e9adaf132a5fd21632f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mute status.  <a href="mtc__ring_8h.html#ae2dcd1b1b2a63e9adaf132a5fd21632f">更多...</a><br /></td></tr>
+<tr class="separator:ae2dcd1b1b2a63e9adaf132a5fd21632f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a57156448c1035a584cdb56f92415ad"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a8a57156448c1035a584cdb56f92415ad">Mtc_RingSetMute</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bMute)</td></tr>
+<tr class="memdesc:a8a57156448c1035a584cdb56f92415ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set mute status.  <a href="mtc__ring_8h.html#a8a57156448c1035a584cdb56f92415ad">更多...</a><br /></td></tr>
+<tr class="separator:a8a57156448c1035a584cdb56f92415ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1e4034dd4e1ad573387bc5aa0025f2"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a3a1e4034dd4e1ad573387bc5aa0025f2">Mtc_RingGetMuteType</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:a3a1e4034dd4e1ad573387bc5aa0025f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mute status of specific type.  <a href="mtc__ring_8h.html#a3a1e4034dd4e1ad573387bc5aa0025f2">更多...</a><br /></td></tr>
+<tr class="separator:a3a1e4034dd4e1ad573387bc5aa0025f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed7d8238922772ca94a77c84af3b6e8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a7ed7d8238922772ca94a77c84af3b6e8">Mtc_RingSetMuteType</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bMute)</td></tr>
+<tr class="memdesc:a7ed7d8238922772ca94a77c84af3b6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set mute status of specific type.  <a href="mtc__ring_8h.html#a7ed7d8238922772ca94a77c84af3b6e8">更多...</a><br /></td></tr>
+<tr class="separator:a7ed7d8238922772ca94a77c84af3b6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0df20c3c8a7b892a7351e0a7bfc7eb7"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#ac0df20c3c8a7b892a7351e0a7bfc7eb7">Mtc_RingGetName</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:ac0df20c3c8a7b892a7351e0a7bfc7eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ring name by type.  <a href="mtc__ring_8h.html#ac0df20c3c8a7b892a7351e0a7bfc7eb7">更多...</a><br /></td></tr>
+<tr class="separator:ac0df20c3c8a7b892a7351e0a7bfc7eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0a2ae338fc2a677a107ff5b48d3e8f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#aaa0a2ae338fc2a677a107ff5b48d3e8f">Mtc_RingGetDesc</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:aaa0a2ae338fc2a677a107ff5b48d3e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ring description by type.  <a href="mtc__ring_8h.html#aaa0a2ae338fc2a677a107ff5b48d3e8f">更多...</a><br /></td></tr>
+<tr class="separator:aaa0a2ae338fc2a677a107ff5b48d3e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1244e24a85ed3c1c8372da791c2647"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">Mtc_RingGetType</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName)</td></tr>
+<tr class="memdesc:a3d1244e24a85ed3c1c8372da791c2647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ring type by name.  <a href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">更多...</a><br /></td></tr>
+<tr class="separator:a3d1244e24a85ed3c1c8372da791c2647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4feb1be5712370334d8bf8c83647af"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#acf4feb1be5712370334d8bf8c83647af">Mtc_RingGetCtmName</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType)</td></tr>
+<tr class="memdesc:acf4feb1be5712370334d8bf8c83647af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get custom ring file name by type.  <a href="mtc__ring_8h.html#acf4feb1be5712370334d8bf8c83647af">更多...</a><br /></td></tr>
+<tr class="separator:acf4feb1be5712370334d8bf8c83647af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b05a1c2c092e41c7197ea2280bb7ff3"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#a9b05a1c2c092e41c7197ea2280bb7ff3">Mtc_RingSetCtmName</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType, ZCONST <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName)</td></tr>
+<tr class="memdesc:a9b05a1c2c092e41c7197ea2280bb7ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set custom ring file name.  <a href="mtc__ring_8h.html#a9b05a1c2c092e41c7197ea2280bb7ff3">更多...</a><br /></td></tr>
+<tr class="separator:a9b05a1c2c092e41c7197ea2280bb7ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86fa0397f3e696b25706d6adafc6461"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#ad86fa0397f3e696b25706d6adafc6461">Mtc_RingGetDir</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ad86fa0397f3e696b25706d6adafc6461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get directory for default ring file.  <a href="mtc__ring_8h.html#ad86fa0397f3e696b25706d6adafc6461">更多...</a><br /></td></tr>
+<tr class="separator:ad86fa0397f3e696b25706d6adafc6461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6410217cd98dd72fbbe1f6b366a1d65"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">Mtc_RingSetDir</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wLen)</td></tr>
+<tr class="memdesc:ab6410217cd98dd72fbbe1f6b366a1d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set directory for default ring file.  <a href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">更多...</a><br /></td></tr>
+<tr class="separator:ab6410217cd98dd72fbbe1f6b366a1d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC Ring Interface Functions. </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a9dc0eabe44fc5f5c8395f2092944e9b8" name="a9dc0eabe44fc5f5c8395f2092944e9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc0eabe44fc5f5c8395f2092944e9b8">&#9670;&nbsp;</a></span>EN_MTC_RING_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">EN_MTC_RING_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTC ring type </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb" name="a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb"></a>EN_MTC_RING_TONE_0&#160;</td><td class="fielddoc"><p >tone 0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041" name="a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041"></a>EN_MTC_RING_TONE_1&#160;</td><td class="fielddoc"><p >tone 1 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90" name="a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90"></a>EN_MTC_RING_TONE_2&#160;</td><td class="fielddoc"><p >tone 2 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc" name="a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc"></a>EN_MTC_RING_TONE_3&#160;</td><td class="fielddoc"><p >tone 3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f" name="a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f"></a>EN_MTC_RING_TONE_4&#160;</td><td class="fielddoc"><p >tone 4 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c" name="a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c"></a>EN_MTC_RING_TONE_5&#160;</td><td class="fielddoc"><p >tone 5 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03" name="a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03"></a>EN_MTC_RING_TONE_6&#160;</td><td class="fielddoc"><p >tone 6 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f" name="a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f"></a>EN_MTC_RING_TONE_7&#160;</td><td class="fielddoc"><p >tone 7 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b" name="a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b"></a>EN_MTC_RING_TONE_8&#160;</td><td class="fielddoc"><p >tone 8 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687" name="a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687"></a>EN_MTC_RING_TONE_9&#160;</td><td class="fielddoc"><p >tone 9 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a" name="a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a"></a>EN_MTC_RING_TONE_STAR&#160;</td><td class="fielddoc"><p >tone * </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab" name="a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab"></a>EN_MTC_RING_TONE_POUND&#160;</td><td class="fielddoc"><p >tone # </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3" name="a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3"></a>EN_MTC_RING_RING&#160;</td><td class="fielddoc"><p >ring </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e" name="a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e"></a>EN_MTC_RING_RING_BACK&#160;</td><td class="fielddoc"><p >ring back </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3" name="a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3"></a>EN_MTC_RING_CALL_FAILED&#160;</td><td class="fielddoc"><p >call failed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96" name="a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96"></a>EN_MTC_RING_BUSY&#160;</td><td class="fielddoc"><p >busy </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5" name="a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5"></a>EN_MTC_RING_CALL_WAIT&#160;</td><td class="fielddoc"><p >call waiting </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56" name="a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56"></a>EN_MTC_RING_FORWARD&#160;</td><td class="fielddoc"><p >forwarding </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e" name="a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e"></a>EN_MTC_RING_TERM&#160;</td><td class="fielddoc"><p >call terminated </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3" name="a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3"></a>EN_MTC_RING_HELD&#160;</td><td class="fielddoc"><p >call held </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460" name="a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460"></a>EN_MTC_RING_MSG_RECV&#160;</td><td class="fielddoc"><p >message received </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f" name="a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f"></a>EN_MTC_RING_SIZE&#160;</td><td class="fielddoc"><p >ring size </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="acf4feb1be5712370334d8bf8c83647af" name="acf4feb1be5712370334d8bf8c83647af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4feb1be5712370334d8bf8c83647af">&#9670;&nbsp;</a></span>Mtc_RingGetCtmName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_RingGetCtmName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get custom ring file name by type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The ring custom ring file name if found, otherwise return empty string.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a9b05a1c2c092e41c7197ea2280bb7ff3">Mtc_RingSetCtmName</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaa0a2ae338fc2a677a107ff5b48d3e8f" name="aaa0a2ae338fc2a677a107ff5b48d3e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0a2ae338fc2a677a107ff5b48d3e8f">&#9670;&nbsp;</a></span>Mtc_RingGetDesc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_RingGetDesc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ring description by type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The ring description if found, otherwise return empty string.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">Mtc_RingGetType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad86fa0397f3e696b25706d6adafc6461" name="ad86fa0397f3e696b25706d6adafc6461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad86fa0397f3e696b25706d6adafc6461">&#9670;&nbsp;</a></span>Mtc_RingGetDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_RingGetDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get directory for default ring file. </p>
+<dl class="section return"><dt>返回</dt><dd>The directory for default ring file.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">Mtc_RingSetDir</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae2dcd1b1b2a63e9adaf132a5fd21632f" name="ae2dcd1b1b2a63e9adaf132a5fd21632f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2dcd1b1b2a63e9adaf132a5fd21632f">&#9670;&nbsp;</a></span>Mtc_RingGetMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_RingGetMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get mute status. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZTRUE</td><td>In mute. </td></tr>
+    <tr><td class="paramname">ZFALSE</td><td>In unmute.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a8a57156448c1035a584cdb56f92415ad">Mtc_RingSetMute</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3a1e4034dd4e1ad573387bc5aa0025f2" name="a3a1e4034dd4e1ad573387bc5aa0025f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1e4034dd4e1ad573387bc5aa0025f2">&#9670;&nbsp;</a></span>Mtc_RingGetMuteType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_RingGetMuteType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get mute status of specific type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>Ring type, <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZTRUE</td><td>In mute. </td></tr>
+    <tr><td class="paramname">ZFALSE</td><td>In unmute.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a7ed7d8238922772ca94a77c84af3b6e8" title="Set mute status of specific type.">Mtc_RingSetMuteType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac0df20c3c8a7b892a7351e0a7bfc7eb7" name="ac0df20c3c8a7b892a7351e0a7bfc7eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0df20c3c8a7b892a7351e0a7bfc7eb7">&#9670;&nbsp;</a></span>Mtc_RingGetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_RingGetName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ring name by type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The ring name if found, otherwise return empty string.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">Mtc_RingGetType</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3d1244e24a85ed3c1c8372da791c2647" name="a3d1244e24a85ed3c1c8372da791c2647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1244e24a85ed3c1c8372da791c2647">&#9670;&nbsp;</a></span>Mtc_RingGetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingGetType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ring type by name. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The ring name string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The ring type if found. Or return -1.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#ac0df20c3c8a7b892a7351e0a7bfc7eb7">Mtc_RingGetName</a> </dd></dl>
+
+</div>
+</div>
+<a id="af59aa232583e4d9592b9afd64bab71ad" name="af59aa232583e4d9592b9afd64bab71ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af59aa232583e4d9592b9afd64bab71ad">&#9670;&nbsp;</a></span>Mtc_RingIsPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_RingIsPlay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Audio is playing. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZTRUE</td><td>Audio is playing. </td></tr>
+    <tr><td class="paramname">ZFALSE</td><td>Audio is not playing.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4b45373e73cd061e02c3b83c5a44d220" name="a4b45373e73cd061e02c3b83c5a44d220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b45373e73cd061e02c3b83c5a44d220">&#9670;&nbsp;</a></span>Mtc_RingPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingPlay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMilliSeconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play ring, and ring type see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>. </p>
+<p >It will play the custom set file if found. Or it will try to play the default ring file. The default ring file path formed by the directory set by <a class="el" href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">Mtc_RingSetDir</a>, the ring name and ".wav" for extension name.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMilliSeconds</td><td>The playing time length in milliseconds, 0 is for forever.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Audio plays ring successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Audio plays ring failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62">Mtc_RingPlayX</a> <a class="el" href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e" title="Audio stop playback.">Mtc_RingStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8447f8dff6def194fbd4e2e67ff53b85" name="a8447f8dff6def194fbd4e2e67ff53b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8447f8dff6def194fbd4e2e67ff53b85">&#9670;&nbsp;</a></span>Mtc_RingPlayNoLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingPlayNoLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play ring with no loop, and ring type see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>. </p>
+<p >It will play the custom set file if found. Or it will try to play the default ring file. The default ring file path formed by the directory set by <a class="el" href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">Mtc_RingSetDir</a>, the ring name and ".wav" for extension name.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Audio plays ring successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Audio plays ring failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3d8f47f61f511e1bd431aaac7aac6d62" name="a3d8f47f61f511e1bd431aaac7aac6d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8f47f61f511e1bd431aaac7aac6d62">&#9670;&nbsp;</a></span>Mtc_RingPlayX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingPlayX </td>
+          <td>(</td>
+          <td class="paramtype">ZCONST <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMilliSeconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Play ring file. </p>
+<p >The ring name and ".wav" for extension name.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcFileName</td><td>File name of ring file. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMilliSeconds</td><td>The playing time length in milliseconds, 0 is for forever.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Audio plays ring successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Audio plays ring failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a> <a class="el" href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e" title="Audio stop playback.">Mtc_RingStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9b05a1c2c092e41c7197ea2280bb7ff3" name="a9b05a1c2c092e41c7197ea2280bb7ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b05a1c2c092e41c7197ea2280bb7ff3">&#9670;&nbsp;</a></span>Mtc_RingSetCtmName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingSetCtmName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ZCONST <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set custom ring file name. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The ring file name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set custom ring file name successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set custom ring file name failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#acf4feb1be5712370334d8bf8c83647af">Mtc_RingGetCtmName</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab6410217cd98dd72fbbe1f6b366a1d65" name="ab6410217cd98dd72fbbe1f6b366a1d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6410217cd98dd72fbbe1f6b366a1d65">&#9670;&nbsp;</a></span>Mtc_RingSetDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_RingSetDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td>
+          <td class="paramname"><em>wLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set directory for default ring file. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The directory name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wLen</td><td>The string length of directory name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set directory for default ring file successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set directory for default ring file failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#ad86fa0397f3e696b25706d6adafc6461">Mtc_RingGetDir</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8a57156448c1035a584cdb56f92415ad" name="a8a57156448c1035a584cdb56f92415ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a57156448c1035a584cdb56f92415ad">&#9670;&nbsp;</a></span>Mtc_RingSetMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingSetMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bMute</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set mute status. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bMute</td><td>ZTRUE to mute ring, ZFALSE to unmute ring.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set mute status successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set mute status failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#ae2dcd1b1b2a63e9adaf132a5fd21632f">Mtc_RingGetMute</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7ed7d8238922772ca94a77c84af3b6e8" name="a7ed7d8238922772ca94a77c84af3b6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed7d8238922772ca94a77c84af3b6e8">&#9670;&nbsp;</a></span>Mtc_RingSetMuteType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_RingSetMuteType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bMute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set mute status of specific type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>Ring type, <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bMute</td><td>ZTRUE to mute ring, ZFALSE to unmute ring.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set mute status successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set mute status failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a3a1e4034dd4e1ad573387bc5aa0025f2" title="Get mute status of specific type.">Mtc_RingGetMuteType</a> </dd></dl>
+
+</div>
+</div>
+<a id="a592aa69498f5298664ae50954402266e" name="a592aa69498f5298664ae50954402266e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592aa69498f5298664ae50954402266e">&#9670;&nbsp;</a></span>Mtc_RingStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_RingStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Audio stop playback. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iType</td><td>The ring Type, see <a class="el" href="mtc__ring_8h.html#a39d55965bd7ae39a04b56827eadabc9e">EN_MTC_RING_TYPE</a>. ZMAXUINT to stop every ring play.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a> <a class="el" href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62" title="Play ring file.">Mtc_RingPlayX</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: 音频扩展功能</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">音频扩展功能</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ZMF音频模块的扩展接口，向外部提供控制音频采集与播放的手段。  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:gad0df8a492d71c362db81bb470be36cf8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gad0df8a492d71c362db81bb470be36cf8">ZmfAudioOutputCallback</a>) (void *pUser, const char *outputId, int iSampleRateHz, int iChannels, unsigned char *buf, int len)</td></tr>
+<tr class="memdesc:gad0df8a492d71c362db81bb470be36cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义一种回调函数的类型，该回调函数用于向zmf注入要播放的音频输出数据。  <a href="group___zmf_audio_ext.html#gad0df8a492d71c362db81bb470be36cf8">更多...</a><br /></td></tr>
+<tr class="separator:gad0df8a492d71c362db81bb470be36cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga489581963ed4ba892b47160fd57d87d3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga489581963ed4ba892b47160fd57d87d3">ZmfAudioOutputFilter</a>) (const char *outputId, int iSampleRateHz, int iChannels, unsigned char *buf, int len)</td></tr>
+<tr class="memdesc:ga489581963ed4ba892b47160fd57d87d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义一种回调函数的类型，该回调函数用于处理要播放的音频输出数据。  <a href="group___zmf_audio_ext.html#ga489581963ed4ba892b47160fd57d87d3">更多...</a><br /></td></tr>
+<tr class="separator:ga489581963ed4ba892b47160fd57d87d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf0b102de99a2695891b642456c1df86"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gadf0b102de99a2695891b642456c1df86">ZmfAudioInputCallback</a>) (void *pUser, const char *inputId, int iSampleRateHz, int iChannels, unsigned char *buf, int len, int *micLevel, int playDelayMS, int recDelayMS, int clockDrift)</td></tr>
+<tr class="memdesc:gadf0b102de99a2695891b642456c1df86"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义一种回调函数的类型，该回调函数用于从zmf音频模块获取音频输入数据。  <a href="group___zmf_audio_ext.html#gadf0b102de99a2695891b642456c1df86">更多...</a><br /></td></tr>
+<tr class="separator:gadf0b102de99a2695891b642456c1df86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9c46319c99a49c1f39b20a9d8a2567f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gaf9c46319c99a49c1f39b20a9d8a2567f">ZmfEventListenCallback</a>) (int iEventType, const char *json, int len)</td></tr>
+<tr class="memdesc:gaf9c46319c99a49c1f39b20a9d8a2567f"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数，用于接收事件通知  <a href="group___zmf_audio_ext.html#gaf9c46319c99a49c1f39b20a9d8a2567f">更多...</a><br /></td></tr>
+<tr class="separator:gaf9c46319c99a49c1f39b20a9d8a2567f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga1d150b433ee1b8d0894cf7293a34db26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga1d150b433ee1b8d0894cf7293a34db26">Zmf_OnAudioInput</a> (const char *inputId, int sampleRateHz, int iChannels, unsigned char *buf, int len, int *micLevel, int playDelayMS, int recDelayMS, int clockDrift)</td></tr>
+<tr class="memdesc:ga1d150b433ee1b8d0894cf7293a34db26"><td class="mdescLeft">&#160;</td><td class="mdescRight">zmf音频模块获取音频输入数据的接口。  <a href="group___zmf_audio_ext.html#ga1d150b433ee1b8d0894cf7293a34db26">更多...</a><br /></td></tr>
+<tr class="separator:ga1d150b433ee1b8d0894cf7293a34db26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac520dc7740f4dc5295fd2bccd598a590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gac520dc7740f4dc5295fd2bccd598a590">Zmf_OnAudioOutput</a> (const char *outputId, int sampleRateHz, int iChannels, unsigned char *buf, int len)</td></tr>
+<tr class="memdesc:gac520dc7740f4dc5295fd2bccd598a590"><td class="mdescLeft">&#160;</td><td class="mdescRight">zmf音频模块获取音频输出数据的接口。  <a href="group___zmf_audio_ext.html#gac520dc7740f4dc5295fd2bccd598a590">更多...</a><br /></td></tr>
+<tr class="separator:gac520dc7740f4dc5295fd2bccd598a590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01d443fe71678c6e3e5d58227b2fa5a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga01d443fe71678c6e3e5d58227b2fa5a7">Zmf_AudioOutputAddCallback</a> (void *pUser, <a class="el" href="group___zmf_audio_ext.html#gad0df8a492d71c362db81bb470be36cf8">ZmfAudioOutputCallback</a> pfnCb)</td></tr>
+<tr class="memdesc:ga01d443fe71678c6e3e5d58227b2fa5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册回调函数，该回调函数负责注入音频输出数据到zmf。  <a href="group___zmf_audio_ext.html#ga01d443fe71678c6e3e5d58227b2fa5a7">更多...</a><br /></td></tr>
+<tr class="separator:ga01d443fe71678c6e3e5d58227b2fa5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5079de1499bab53e861dabe7c4e9b309"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga5079de1499bab53e861dabe7c4e9b309">Zmf_AudioOutputRemoveCallback</a> (void *pUser)</td></tr>
+<tr class="memdesc:ga5079de1499bab53e861dabe7c4e9b309"><td class="mdescLeft">&#160;</td><td class="mdescRight">注销音频输出回调函数，该回调函数负责注入音频输出数据到zmf。  <a href="group___zmf_audio_ext.html#ga5079de1499bab53e861dabe7c4e9b309">更多...</a><br /></td></tr>
+<tr class="separator:ga5079de1499bab53e861dabe7c4e9b309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e9df2e05e42fc48bbd7928e2d5a8444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga7e9df2e05e42fc48bbd7928e2d5a8444">Zmf_AudioOutputSetFilter</a> (<a class="el" href="group___zmf_audio_ext.html#ga489581963ed4ba892b47160fd57d87d3">ZmfAudioOutputFilter</a> callback)</td></tr>
+<tr class="memdesc:ga7e9df2e05e42fc48bbd7928e2d5a8444"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册回调函数，该回调函数负责处理音频输入数据。  <a href="group___zmf_audio_ext.html#ga7e9df2e05e42fc48bbd7928e2d5a8444">更多...</a><br /></td></tr>
+<tr class="separator:ga7e9df2e05e42fc48bbd7928e2d5a8444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7e8a3f73474d9fee5c80e2623d9d4cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gaf7e8a3f73474d9fee5c80e2623d9d4cf">Zmf_AudioloopbackStart</a> (char *inputId)</td></tr>
+<tr class="separator:gaf7e8a3f73474d9fee5c80e2623d9d4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0900b581af1501ee9021ba12fd42e347"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga0900b581af1501ee9021ba12fd42e347">Zmf_AudioloopbackStop</a> (char *inputId)</td></tr>
+<tr class="separator:ga0900b581af1501ee9021ba12fd42e347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30010322e60837d76db75bac2a5e75ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga30010322e60837d76db75bac2a5e75ed">Zmf_AudioLoopBackSetWeight</a> (double micVolumeWeight)</td></tr>
+<tr class="separator:ga30010322e60837d76db75bac2a5e75ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga031fe33745e2c8ab2d0341e1953eff07"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga031fe33745e2c8ab2d0341e1953eff07">Zmf_AudioLoopBackGetWeight</a> ()</td></tr>
+<tr class="separator:ga031fe33745e2c8ab2d0341e1953eff07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba116825e8a1a20f4d1acd4d5cd39b54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gaba116825e8a1a20f4d1acd4d5cd39b54">Zmf_AudioInputAddCallback</a> (void *pUser, <a class="el" href="group___zmf_audio_ext.html#gadf0b102de99a2695891b642456c1df86">ZmfAudioInputCallback</a> pfnCb)</td></tr>
+<tr class="memdesc:gaba116825e8a1a20f4d1acd4d5cd39b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册音频输入回调函数，该回调函数用于处理音频输入数据。  <a href="group___zmf_audio_ext.html#gaba116825e8a1a20f4d1acd4d5cd39b54">更多...</a><br /></td></tr>
+<tr class="separator:gaba116825e8a1a20f4d1acd4d5cd39b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fa75beac885dc1c79d5fe0e34646305"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#ga6fa75beac885dc1c79d5fe0e34646305">Zmf_AudioInputRemoveCallback</a> (void *pUser)</td></tr>
+<tr class="memdesc:ga6fa75beac885dc1c79d5fe0e34646305"><td class="mdescLeft">&#160;</td><td class="mdescRight">注销音频输入回调函数，该回调函数用于处理音频输入数据。  <a href="group___zmf_audio_ext.html#ga6fa75beac885dc1c79d5fe0e34646305">更多...</a><br /></td></tr>
+<tr class="separator:ga6fa75beac885dc1c79d5fe0e34646305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae456bfdac309b0bb03623bd9f7bd9157"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gae456bfdac309b0bb03623bd9f7bd9157">Zmf_OnAudioOutputDidStop</a> (const char *outputId)</td></tr>
+<tr class="separator:gae456bfdac309b0bb03623bd9f7bd9157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc802213f8f8264c5188690d51d0b0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_ext.html#gacc802213f8f8264c5188690d51d0b0bb">Zmf_OnAudioInputDidStop</a> (const char *inputId)</td></tr>
+<tr class="memdesc:gacc802213f8f8264c5188690d51d0b0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">通知zmf音频模块，音频输入已经停止  <a href="group___zmf_audio_ext.html#gacc802213f8f8264c5188690d51d0b0bb">更多...</a><br /></td></tr>
+<tr class="separator:gacc802213f8f8264c5188690d51d0b0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p >ZMF音频模块的扩展接口，向外部提供控制音频采集与播放的手段。 </p>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="gadf0b102de99a2695891b642456c1df86" name="gadf0b102de99a2695891b642456c1df86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadf0b102de99a2695891b642456c1df86">&#9670;&nbsp;</a></span>ZmfAudioInputCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ZmfAudioInputCallback) (void *pUser, const char *inputId, int iSampleRateHz, int iChannels, unsigned char *buf, int len, int *micLevel, int playDelayMS, int recDelayMS, int clockDrift)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义一种回调函数的类型，该回调函数用于从zmf音频模块获取音频输入数据。 </p>
+<p >该回调函数将在@ Zmf_OnAudioInput 接口执行时被调用。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUser</td><td>通过Zmf_AddAudioInputCallback 接口注册的用户数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>音频输入的Id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iSampleRateHz</td><td>音频输入数据的采样率，单位为Hz </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>音频输入数据的通道数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>音频输入数据的首地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>音频输入数据的大小，单位为采样点 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">micLevel</td><td>系统提供的音频输入数据的麦克风增益值，[0,100] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">playDelayMS</td><td>系统提供的音频播放延时，单位ms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recDelayMS</td><td>系统提供的音频采集延时，单位ms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clockDrift</td><td>系统提供的时钟漂移，单位ms </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#ga6fa75beac885dc1c79d5fe0e34646305">Zmf_AudioInputRemoveCallback</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">micLevel</td><td><br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad0df8a492d71c362db81bb470be36cf8" name="gad0df8a492d71c362db81bb470be36cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0df8a492d71c362db81bb470be36cf8">&#9670;&nbsp;</a></span>ZmfAudioOutputCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* ZmfAudioOutputCallback) (void *pUser, const char *outputId, int iSampleRateHz, int iChannels, unsigned char *buf, int len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义一种回调函数的类型，该回调函数用于向zmf注入要播放的音频输出数据。 </p>
+<p >该回调函数将在@ Zmf_OnAudioOutput 接口执行时被调用。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUser</td><td>通过<a class="el" href="group___zmf_audio_ext.html#ga01d443fe71678c6e3e5d58227b2fa5a7">Zmf_AudioOutputAddCallback</a> 接口注册的用户数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputId</td><td>音频输出的Id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iSampleRateHz</td><td>输出音频数据的采样率，以Hz为单位 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>输出音频数据的通道数 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>注入zmf的音频输出数据的首地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>zmf要求的音频输出数据的大小，单位为采样点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>实际注入zmf的音频输出数据的大小，单位为采样点 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#ga5079de1499bab53e861dabe7c4e9b309">Zmf_AudioOutputRemoveCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga489581963ed4ba892b47160fd57d87d3" name="ga489581963ed4ba892b47160fd57d87d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga489581963ed4ba892b47160fd57d87d3">&#9670;&nbsp;</a></span>ZmfAudioOutputFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ZmfAudioOutputFilter) (const char *outputId, int iSampleRateHz, int iChannels, unsigned char *buf, int len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义一种回调函数的类型，该回调函数用于处理要播放的音频输出数据。 </p>
+<p >该回调函数将在@ Zmf_OnAudioOutput 接口执行时被调用。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputId</td><td>音频输出的Id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iSampleRateHz</td><td>输出音频数据的采样率，以Hz为单位 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>输出音频数据的通道数 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buf</td><td>音频输出数据的首地址，回调函数处理结果需要放回同一地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>音频输出数据的大小，单位为采样点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaf9c46319c99a49c1f39b20a9d8a2567f" name="gaf9c46319c99a49c1f39b20a9d8a2567f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9c46319c99a49c1f39b20a9d8a2567f">&#9670;&nbsp;</a></span>ZmfEventListenCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ZmfEventListenCallback) (int iEventType, const char *json, int len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调函数，用于接收事件通知 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iEventType</td><td>事件类型 ZmfVideoEventType , ZmfAudioEventType </td></tr>
+    <tr><td class="paramname">json</td><td>事件JSON参数 </td></tr>
+    <tr><td class="paramname">json</td><td>参数长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="gaba116825e8a1a20f4d1acd4d5cd39b54" name="gaba116825e8a1a20f4d1acd4d5cd39b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba116825e8a1a20f4d1acd4d5cd39b54">&#9670;&nbsp;</a></span>Zmf_AudioInputAddCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputAddCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_ext.html#gadf0b102de99a2695891b642456c1df86">ZmfAudioInputCallback</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册音频输入回调函数，该回调函数用于处理音频输入数据。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUser</td><td>指针，指向要注册的回调函数所使用的用户数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>函数指针，指向要注册的回调函数，类型参考 <a class="el" href="group___zmf_audio_ext.html#gadf0b102de99a2695891b642456c1df86">ZmfAudioInputCallback</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#ga6fa75beac885dc1c79d5fe0e34646305">Zmf_AudioInputRemoveCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga6fa75beac885dc1c79d5fe0e34646305" name="ga6fa75beac885dc1c79d5fe0e34646305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fa75beac885dc1c79d5fe0e34646305">&#9670;&nbsp;</a></span>Zmf_AudioInputRemoveCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputRemoveCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注销音频输入回调函数，该回调函数用于处理音频输入数据。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUser</td><td>指针，指向要注销的回调函数所使用的用户数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#gaba116825e8a1a20f4d1acd4d5cd39b54">Zmf_AudioInputAddCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga031fe33745e2c8ab2d0341e1953eff07" name="ga031fe33745e2c8ab2d0341e1953eff07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga031fe33745e2c8ab2d0341e1953eff07">&#9670;&nbsp;</a></span>Zmf_AudioLoopBackGetWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Zmf_AudioLoopBackGetWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >set the volume of loopback audio</p>
+<dl class="section return"><dt>返回</dt><dd>the Weight of Zmf inputCallback audio, vary from 0 to 1 </dd></dl>
+
+</div>
+</div>
+<a id="ga30010322e60837d76db75bac2a5e75ed" name="ga30010322e60837d76db75bac2a5e75ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30010322e60837d76db75bac2a5e75ed">&#9670;&nbsp;</a></span>Zmf_AudioLoopBackSetWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioLoopBackSetWeight </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>micVolumeWeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >set the volume of loopback audio</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">micVolumeWeight</td><td>the Weight of Zmf inputCallback audio, vary from 0 to 1</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on succeed, otherwise failed. </dd></dl>
+
+</div>
+</div>
+<a id="gaf7e8a3f73474d9fee5c80e2623d9d4cf" name="gaf7e8a3f73474d9fee5c80e2623d9d4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7e8a3f73474d9fee5c80e2623d9d4cf">&#9670;&nbsp;</a></span>Zmf_AudioloopbackStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioloopbackStart </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>inputId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Zmf loopback audio start</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>the inputId of Zmf inputCallback audio</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on succeed, otherwise failed. </dd></dl>
+
+</div>
+</div>
+<a id="ga0900b581af1501ee9021ba12fd42e347" name="ga0900b581af1501ee9021ba12fd42e347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0900b581af1501ee9021ba12fd42e347">&#9670;&nbsp;</a></span>Zmf_AudioloopbackStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioloopbackStop </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>inputId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >loopback audio stop</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>the inputId of Zmf inputCallback audio</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>0 on succeed, otherwise failed. </dd></dl>
+
+</div>
+</div>
+<a id="ga01d443fe71678c6e3e5d58227b2fa5a7" name="ga01d443fe71678c6e3e5d58227b2fa5a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01d443fe71678c6e3e5d58227b2fa5a7">&#9670;&nbsp;</a></span>Zmf_AudioOutputAddCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputAddCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_ext.html#gad0df8a492d71c362db81bb470be36cf8">ZmfAudioOutputCallback</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册回调函数，该回调函数负责注入音频输出数据到zmf。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUser</td><td>指针，指向要注册的回调函数所使用的用户数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>函数指针，指向要注册的回调函数，类型参考 <a class="el" href="group___zmf_audio_ext.html#gad0df8a492d71c362db81bb470be36cf8">ZmfAudioOutputCallback</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#ga5079de1499bab53e861dabe7c4e9b309">Zmf_AudioOutputRemoveCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga5079de1499bab53e861dabe7c4e9b309" name="ga5079de1499bab53e861dabe7c4e9b309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5079de1499bab53e861dabe7c4e9b309">&#9670;&nbsp;</a></span>Zmf_AudioOutputRemoveCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputRemoveCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注销音频输出回调函数，该回调函数负责注入音频输出数据到zmf。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pUser</td><td>指针，指向要注销的回调函数所使用的用户数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#ga01d443fe71678c6e3e5d58227b2fa5a7">Zmf_AudioOutputAddCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga7e9df2e05e42fc48bbd7928e2d5a8444" name="ga7e9df2e05e42fc48bbd7928e2d5a8444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e9df2e05e42fc48bbd7928e2d5a8444">&#9670;&nbsp;</a></span>Zmf_AudioOutputSetFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_AudioOutputSetFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_ext.html#ga489581963ed4ba892b47160fd57d87d3">ZmfAudioOutputFilter</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册回调函数，该回调函数负责处理音频输入数据。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>函数指针，指向要注册的回调函数，类型参考 <a class="el" href="group___zmf_audio_ext.html#ga489581963ed4ba892b47160fd57d87d3">ZmfAudioOutputFilter</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1d150b433ee1b8d0894cf7293a34db26" name="ga1d150b433ee1b8d0894cf7293a34db26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d150b433ee1b8d0894cf7293a34db26">&#9670;&nbsp;</a></span>Zmf_OnAudioInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnAudioInput </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inputId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleRateHz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iChannels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>micLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playDelayMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recDelayMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clockDrift</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zmf音频模块获取音频输入数据的接口。 </p>
+<p >所有通过<a class="el" href="group___zmf_audio_ext.html#gaba116825e8a1a20f4d1acd4d5cd39b54">Zmf_AudioInputAddCallback</a> 接口注册的回调函数都会在本接口 执行时被调用，从而获取zmf音频模块采集的音频输入数据。如果音频输入数据有多个通道， 将在jssmme引擎中进行混音，第一个输入将会作为主通道。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>音频输入的Id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleRateHz</td><td>音频输入数据的采样率，单位为Hz </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>音频输入数据的通道数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>音频输入数据的首地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>音频输入数据的大小，单位为采样点 </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">micLevel</td><td>系统提供的音频输入数据的麦克风增益值，[0,100] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">playDelayMS</td><td>系统提供的音频播放延时，单位ms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recDelayMS</td><td>系统提供的音频采集延时，单位ms </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clockDrift</td><td>系统提供的时钟漂移，单位ms </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gacc802213f8f8264c5188690d51d0b0bb" name="gacc802213f8f8264c5188690d51d0b0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc802213f8f8264c5188690d51d0b0bb">&#9670;&nbsp;</a></span>Zmf_OnAudioInputDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnAudioInputDidStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inputId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>通知zmf音频模块，音频输入已经停止 </p>
+<p >音频输入已经停止后，zmf音频模块需要执行相应的操作。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>音频输入设备名称 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_ext.html#gae456bfdac309b0bb03623bd9f7bd9157">Zmf_OnAudioOutputDidStop</a>, <a class="el" href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">Zmf_AudioInputStop</a>, <a class="el" href="group___zmf_audio_functions.html#ga8ea6bb1eb315575309c4ec181f0752c8">Zmf_AudioInputStopAll</a> </dd></dl>
+
+</div>
+</div>
+<a id="gac520dc7740f4dc5295fd2bccd598a590" name="gac520dc7740f4dc5295fd2bccd598a590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac520dc7740f4dc5295fd2bccd598a590">&#9670;&nbsp;</a></span>Zmf_OnAudioOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnAudioOutput </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>outputId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleRateHz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iChannels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>zmf音频模块获取音频输出数据的接口。 </p>
+<p >所有通过<a class="el" href="group___zmf_audio_ext.html#ga01d443fe71678c6e3e5d58227b2fa5a7">Zmf_AudioOutputAddCallback</a> 接口注册的回调函数都会在本接口 执行时被调用，在指定的缓存地址上进行音频输出数据的填充，从而将数据传递给音频输出设备进行播放。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputId</td><td>音频输出的Id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleRateHz</td><td>音频输出数据的采样率，单位为Hz </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>音频输出数据的通道数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>音频输出数据的首地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>音频输出数据的大小，单位为采样点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae456bfdac309b0bb03623bd9f7bd9157" name="gae456bfdac309b0bb03623bd9f7bd9157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae456bfdac309b0bb03623bd9f7bd9157">&#9670;&nbsp;</a></span>Zmf_OnAudioOutputDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnAudioOutputDidStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>outputId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >tell ZMF the audio output has stopped</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputId</td><td>unique name of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,2205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_call_cb.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_call_cb.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC Call Callback Interface Functions  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__call__cb_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a065d6e5a6ae8d49bf936bb31d263e6c6"><td class="memItemLeft" align="right" valign="top"><a id="a065d6e5a6ae8d49bf936bb31d263e6c6" name="a065d6e5a6ae8d49bf936bb31d263e6c6"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCB</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId)</td></tr>
+<tr class="memdesc:a065d6e5a6ae8d49bf936bb31d263e6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback. <br /></td></tr>
+<tr class="separator:a065d6e5a6ae8d49bf936bb31d263e6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acc09c5c8702b42526eeca0f6336ae0"><td class="memItemLeft" align="right" valign="top"><a id="a9acc09c5c8702b42526eeca0f6336ae0" name="a9acc09c5c8702b42526eeca0f6336ae0"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLRTCCB</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iEvntType, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSdp, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStatCode)</td></tr>
+<tr class="memdesc:a9acc09c5c8702b42526eeca0f6336ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback. iStatCode See error codes definition in <a class="el" href="mtc__call_8h.html" title="MTC Call Interface Functions">mtc_call.h</a> like <a class="el" href="mtc__call_8h.html#abc65b56ae83b18233cce8e503600dbd0">MTC_CALL_ERR_NO</a>. <br /></td></tr>
+<tr class="separator:a9acc09c5c8702b42526eeca0f6336ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d88b3762c83753adb5c8fda69f4da6"><td class="memItemLeft" align="right" valign="top"><a id="a25d88b3762c83753adb5c8fda69f4da6" name="a25d88b3762c83753adb5c8fda69f4da6"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBALERTED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iAlertType)</td></tr>
+<tr class="memdesc:a25d88b3762c83753adb5c8fda69f4da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify alerted. <br /></td></tr>
+<tr class="separator:a25d88b3762c83753adb5c8fda69f4da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b5a2dc6e789358105df5ee9bafc023"><td class="memItemLeft" align="right" valign="top"><a id="aa9b5a2dc6e789358105df5ee9bafc023" name="aa9b5a2dc6e789358105df5ee9bafc023"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBTERMED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStatCode)</td></tr>
+<tr class="memdesc:aa9b5a2dc6e789358105df5ee9bafc023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify terminated. <br /></td></tr>
+<tr class="separator:aa9b5a2dc6e789358105df5ee9bafc023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77365f22007e1f3514bfe043c80faea2"><td class="memItemLeft" align="right" valign="top"><a id="a77365f22007e1f3514bfe043c80faea2" name="a77365f22007e1f3514bfe043c80faea2"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBREPLACED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId)</td></tr>
+<tr class="memdesc:a77365f22007e1f3514bfe043c80faea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify replaced. <br /></td></tr>
+<tr class="separator:a77365f22007e1f3514bfe043c80faea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e988d3dd855acdfc1686d16629f87c"><td class="memItemLeft" align="right" valign="top"><a id="a97e988d3dd855acdfc1686d16629f87c" name="a97e988d3dd855acdfc1686d16629f87c"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBINFO</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo)</td></tr>
+<tr class="memdesc:a97e988d3dd855acdfc1686d16629f87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify receive info. <br /></td></tr>
+<tr class="separator:a97e988d3dd855acdfc1686d16629f87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce230c4f76425d803156645b3252d9f"><td class="memItemLeft" align="right" valign="top"><a id="a6ce230c4f76425d803156645b3252d9f" name="a6ce230c4f76425d803156645b3252d9f"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBINFOX</b>) (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo)</td></tr>
+<tr class="memdesc:a6ce230c4f76425d803156645b3252d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify receive info. <br /></td></tr>
+<tr class="separator:a6ce230c4f76425d803156645b3252d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e81fee2a408dfecb9780560c82214b"><td class="memItemLeft" align="right" valign="top"><a id="ad0e81fee2a408dfecb9780560c82214b" name="ad0e81fee2a408dfecb9780560c82214b"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBERR</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStatCode)</td></tr>
+<tr class="memdesc:ad0e81fee2a408dfecb9780560c82214b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify error. <br /></td></tr>
+<tr class="separator:ad0e81fee2a408dfecb9780560c82214b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85f0642b29026f7700d03545448cf18a"><td class="memItemLeft" align="right" valign="top"><a id="a85f0642b29026f7700d03545448cf18a" name="a85f0642b29026f7700d03545448cf18a"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBVIDEOSTATUS</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iParm1, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iParm2)</td></tr>
+<tr class="memdesc:a85f0642b29026f7700d03545448cf18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for video status change. <br /></td></tr>
+<tr class="separator:a85f0642b29026f7700d03545448cf18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab9c753d8c8e4e590ff8c7253595326"><td class="memItemLeft" align="right" valign="top"><a id="a7ab9c753d8c8e4e590ff8c7253595326" name="a7ab9c753d8c8e4e590ff8c7253595326"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBVIDEOSIZE</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iWidth, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iHeight, <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iOrientation)</td></tr>
+<tr class="memdesc:a7ab9c753d8c8e4e590ff8c7253595326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for video size change. <br /></td></tr>
+<tr class="separator:a7ab9c753d8c8e4e590ff8c7253595326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8c0ffcbfa67fa9be1ca811849fe50a"><td class="memItemLeft" align="right" valign="top"><a id="a7c8c0ffcbfa67fa9be1ca811849fe50a" name="a7c8c0ffcbfa67fa9be1ca811849fe50a"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBCAPTURE</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iParm)</td></tr>
+<tr class="memdesc:a7c8c0ffcbfa67fa9be1ca811849fe50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for capture <br /></td></tr>
+<tr class="separator:a7c8c0ffcbfa67fa9be1ca811849fe50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae528168edaaf4b11b4fc228aa086a684"><td class="memItemLeft" align="right" valign="top"><a id="ae528168edaaf4b11b4fc228aa086a684" name="ae528168edaaf4b11b4fc228aa086a684"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBCAPTURESIZE</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iWidth, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iHeight)</td></tr>
+<tr class="memdesc:ae528168edaaf4b11b4fc228aa086a684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for capture size <br /></td></tr>
+<tr class="separator:ae528168edaaf4b11b4fc228aa086a684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88032d482ce501c3724c7d1ab1a11d8"><td class="memItemLeft" align="right" valign="top"><a id="ab88032d482ce501c3724c7d1ab1a11d8" name="ab88032d482ce501c3724c7d1ab1a11d8"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBNETSTATUSCHANGED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bVideo, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bSend, <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iType)</td></tr>
+<tr class="memdesc:ab88032d482ce501c3724c7d1ab1a11d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for network status changed <br /></td></tr>
+<tr class="separator:ab88032d482ce501c3724c7d1ab1a11d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1615ee74f08499c30521fad8ba0380"><td class="memItemLeft" align="right" valign="top"><a id="a7d1615ee74f08499c30521fad8ba0380" name="a7d1615ee74f08499c30521fad8ba0380"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBRTPCONNECTIVITY</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bConnected)</td></tr>
+<tr class="memdesc:a7d1615ee74f08499c30521fad8ba0380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for rtp connectivity <br /></td></tr>
+<tr class="separator:a7d1615ee74f08499c30521fad8ba0380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35f219a8d5706080e082fb3012e4186"><td class="memItemLeft" align="right" valign="top"><a id="aa35f219a8d5706080e082fb3012e4186" name="aa35f219a8d5706080e082fb3012e4186"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBPARTPUPDTED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUri, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iState)</td></tr>
+<tr class="memdesc:aa35f219a8d5706080e082fb3012e4186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC session callback for notify participant updated. <br /></td></tr>
+<tr class="separator:aa35f219a8d5706080e082fb3012e4186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa154c2f8b299c2c18e7f9640c4a02bde"><td class="memItemLeft" align="right" valign="top"><a id="aa154c2f8b299c2c18e7f9640c4a02bde" name="aa154c2f8b299c2c18e7f9640c4a02bde"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBCRYPTOSTACHANGED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStateType, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bVideo)</td></tr>
+<tr class="memdesc:aa154c2f8b299c2c18e7f9640c4a02bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for crypto status change. <br /></td></tr>
+<tr class="separator:aa154c2f8b299c2c18e7f9640c4a02bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5641233cf64939c9b264869db7f7b0"><td class="memItemLeft" align="right" valign="top"><a id="a0b5641233cf64939c9b264869db7f7b0" name="a0b5641233cf64939c9b264869db7f7b0"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBRECVRTPPACKET</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStrmId, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bVideo, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcData, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iLen)</td></tr>
+<tr class="memdesc:a0b5641233cf64939c9b264869db7f7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for recving rtp packet <br  />
+ <br /></td></tr>
+<tr class="separator:a0b5641233cf64939c9b264869db7f7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eade58bfdd7503e18e288e7aa215efa"><td class="memItemLeft" align="right" valign="top"><a id="a8eade58bfdd7503e18e288e7aa215efa" name="a8eade58bfdd7503e18e288e7aa215efa"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBSENDRTPPACKET</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iTptId, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcRmtAddr, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcData, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iLen)</td></tr>
+<tr class="memdesc:a8eade58bfdd7503e18e288e7aa215efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for sending rtp packet <br  />
+ <br /></td></tr>
+<tr class="separator:a8eade58bfdd7503e18e288e7aa215efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709484127ac1bf24ccbe985f51547ba9"><td class="memItemLeft" align="right" valign="top"><a id="a709484127ac1bf24ccbe985f51547ba9" name="a709484127ac1bf24ccbe985f51547ba9"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBFILEPLAYSTOPPEDX</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId)</td></tr>
+<tr class="memdesc:a709484127ac1bf24ccbe985f51547ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for stream file play stoopedx. <br /></td></tr>
+<tr class="separator:a709484127ac1bf24ccbe985f51547ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac476dfb47f1fcb893421a9dc569894e4"><td class="memItemLeft" align="right" valign="top"><a id="ac476dfb47f1fcb893421a9dc569894e4" name="ac476dfb47f1fcb893421a9dc569894e4"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCSUBSOK</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSubsId)</td></tr>
+<tr class="memdesc:ac476dfb47f1fcb893421a9dc569894e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC subscription callback for subscription ok . <br /></td></tr>
+<tr class="separator:ac476dfb47f1fcb893421a9dc569894e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261f0f953405e715bf73251fbda93075"><td class="memItemLeft" align="right" valign="top"><a id="a261f0f953405e715bf73251fbda93075" name="a261f0f953405e715bf73251fbda93075"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCSUBSFAILED</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSubsId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStatCode)</td></tr>
+<tr class="memdesc:a261f0f953405e715bf73251fbda93075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC subscription callback for subscription failed . <br /></td></tr>
+<tr class="separator:a261f0f953405e715bf73251fbda93075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e3b0f0f2807f239629cc63d0a44245"><td class="memItemLeft" align="right" valign="top"><a id="a34e3b0f0f2807f239629cc63d0a44245" name="a34e3b0f0f2807f239629cc63d0a44245"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBSUBSINFO</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSubsId, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo)</td></tr>
+<tr class="memdesc:a34e3b0f0f2807f239629cc63d0a44245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for notify receive subs info. <br /></td></tr>
+<tr class="separator:a34e3b0f0f2807f239629cc63d0a44245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecf9998c4bd825d26fc91b4eb5676a4"><td class="memItemLeft" align="right" valign="top"><a id="a9ecf9998c4bd825d26fc91b4eb5676a4" name="a9ecf9998c4bd825d26fc91b4eb5676a4"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCREFERCALL</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId)</td></tr>
+<tr class="memdesc:a9ecf9998c4bd825d26fc91b4eb5676a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC refer call callback. <br /></td></tr>
+<tr class="separator:a9ecf9998c4bd825d26fc91b4eb5676a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c3bc4c693c5eefaf205a3efbfb928f"><td class="memItemLeft" align="right" valign="top"><a id="a82c3bc4c693c5eefaf205a3efbfb928f" name="a82c3bc4c693c5eefaf205a3efbfb928f"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCCALLCBDTMF</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iDtmfType)</td></tr>
+<tr class="memdesc:a82c3bc4c693c5eefaf205a3efbfb928f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC call callback for dmtf received. <br /></td></tr>
+<tr class="separator:a82c3bc4c693c5eefaf205a3efbfb928f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a14c376fc6c6e141d13f8688159c3d6"><td class="memItemLeft" align="right" valign="top"><a id="a1a14c376fc6c6e141d13f8688159c3d6" name="a1a14c376fc6c6e141d13f8688159c3d6"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCPTTRECVD</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPttType, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPttId, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bSqu, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bPttMute, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iPttSum, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSct, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iAddType, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iAddValue)</td></tr>
+<tr class="memdesc:a1a14c376fc6c6e141d13f8688159c3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC receive ptt event callback. <br /></td></tr>
+<tr class="separator:a1a14c376fc6c6e141d13f8688159c3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a84ef4abd17f6905ff80581ff472ccbdf"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a84ef4abd17f6905ff80581ff472ccbdf">Mtc_CallCbSetIncoming</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a84ef4abd17f6905ff80581ff472ccbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate received a new call.  <a href="mtc__call__cb_8h.html#a84ef4abd17f6905ff80581ff472ccbdf">更多...</a><br /></td></tr>
+<tr class="separator:a84ef4abd17f6905ff80581ff472ccbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed0936c87752443d17b079e4a913edb"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a7ed0936c87752443d17b079e4a913edb">Mtc_CallCbSetOutgoing</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a7ed0936c87752443d17b079e4a913edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate send a new call.  <a href="mtc__call__cb_8h.html#a7ed0936c87752443d17b079e4a913edb">更多...</a><br /></td></tr>
+<tr class="separator:a7ed0936c87752443d17b079e4a913edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac297651a626b8dd68be2b3d1f59a82f1"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ac297651a626b8dd68be2b3d1f59a82f1">Mtc_CallCbSetAlerted</a> (<a class="el" href="mtc__call__cb_8h.html#a25d88b3762c83753adb5c8fda69f4da6">PFN_MTCCALLCBALERTED</a> pfnCb)</td></tr>
+<tr class="memdesc:ac297651a626b8dd68be2b3d1f59a82f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate the callee is ringing.  <a href="mtc__call__cb_8h.html#ac297651a626b8dd68be2b3d1f59a82f1">更多...</a><br /></td></tr>
+<tr class="separator:ac297651a626b8dd68be2b3d1f59a82f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09850334b7c87971f38662d5017dc659"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a09850334b7c87971f38662d5017dc659">Mtc_CallCbSetForwarded</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a09850334b7c87971f38662d5017dc659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate the call is forwarded.  <a href="mtc__call__cb_8h.html#a09850334b7c87971f38662d5017dc659">更多...</a><br /></td></tr>
+<tr class="separator:a09850334b7c87971f38662d5017dc659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de57c2892ce63e45fe64ffcc63aeff8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a0de57c2892ce63e45fe64ffcc63aeff8">Mtc_CallCbSetPracked</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a0de57c2892ce63e45fe64ffcc63aeff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate the callee receive prack.  <a href="mtc__call__cb_8h.html#a0de57c2892ce63e45fe64ffcc63aeff8">更多...</a><br /></td></tr>
+<tr class="separator:a0de57c2892ce63e45fe64ffcc63aeff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c24ecb4dd0f6ed06a932a42cd94406c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a7c24ecb4dd0f6ed06a932a42cd94406c">Mtc_CallCbSetTalking</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a7c24ecb4dd0f6ed06a932a42cd94406c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate the call has established.  <a href="mtc__call__cb_8h.html#a7c24ecb4dd0f6ed06a932a42cd94406c">更多...</a><br /></td></tr>
+<tr class="separator:a7c24ecb4dd0f6ed06a932a42cd94406c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ce0761081a423a5650337435381fb9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aa0ce0761081a423a5650337435381fb9">Mtc_CallCbSetTermed</a> (<a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> pfnCb)</td></tr>
+<tr class="memdesc:aa0ce0761081a423a5650337435381fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call is terminated.  <a href="mtc__call__cb_8h.html#aa0ce0761081a423a5650337435381fb9">更多...</a><br /></td></tr>
+<tr class="separator:aa0ce0761081a423a5650337435381fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169bec3ef3079b38a23b0285cdc767c2"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a169bec3ef3079b38a23b0285cdc767c2">Mtc_CallCbSetMdfyAcpt</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a169bec3ef3079b38a23b0285cdc767c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call modifying accepted.  <a href="mtc__call__cb_8h.html#a169bec3ef3079b38a23b0285cdc767c2">更多...</a><br /></td></tr>
+<tr class="separator:a169bec3ef3079b38a23b0285cdc767c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b32c36d76ae1188ea4b079d1cd0b5c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a90b32c36d76ae1188ea4b079d1cd0b5c">Mtc_CallCbSetMdfyed</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a90b32c36d76ae1188ea4b079d1cd0b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call modifyed.  <a href="mtc__call__cb_8h.html#a90b32c36d76ae1188ea4b079d1cd0b5c">更多...</a><br /></td></tr>
+<tr class="separator:a90b32c36d76ae1188ea4b079d1cd0b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3cb2bc5a087e3084c7bfdd63f7269c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a7f3cb2bc5a087e3084c7bfdd63f7269c">Mtc_CallCbSetMdfyReq</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a7f3cb2bc5a087e3084c7bfdd63f7269c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call modify request.  <a href="mtc__call__cb_8h.html#a7f3cb2bc5a087e3084c7bfdd63f7269c">更多...</a><br /></td></tr>
+<tr class="separator:a7f3cb2bc5a087e3084c7bfdd63f7269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4d2896fa468956e546702db7809a4a"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a0f4d2896fa468956e546702db7809a4a">Mtc_CallCbSetHoldOk</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a0f4d2896fa468956e546702db7809a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call hold successfully.  <a href="mtc__call__cb_8h.html#a0f4d2896fa468956e546702db7809a4a">更多...</a><br /></td></tr>
+<tr class="separator:a0f4d2896fa468956e546702db7809a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0291c814dd0e96fc291aaa696ab98248"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a0291c814dd0e96fc291aaa696ab98248">Mtc_CallCbSetHoldFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a0291c814dd0e96fc291aaa696ab98248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call hold failed.  <a href="mtc__call__cb_8h.html#a0291c814dd0e96fc291aaa696ab98248">更多...</a><br /></td></tr>
+<tr class="separator:a0291c814dd0e96fc291aaa696ab98248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a43bd5076bb86d0c1eb76a252487aae"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a4a43bd5076bb86d0c1eb76a252487aae">Mtc_CallCbSetUnHoldOk</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a4a43bd5076bb86d0c1eb76a252487aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call un-hold successfully.  <a href="mtc__call__cb_8h.html#a4a43bd5076bb86d0c1eb76a252487aae">更多...</a><br /></td></tr>
+<tr class="separator:a4a43bd5076bb86d0c1eb76a252487aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84ebc0606e89ef2512a238186c24ac7"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ad84ebc0606e89ef2512a238186c24ac7">Mtc_CallCbSetUnHoldFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:ad84ebc0606e89ef2512a238186c24ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call un-hold failed.  <a href="mtc__call__cb_8h.html#ad84ebc0606e89ef2512a238186c24ac7">更多...</a><br /></td></tr>
+<tr class="separator:ad84ebc0606e89ef2512a238186c24ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2f744c1e0c4c2d67e7fdb31f61890c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a1e2f744c1e0c4c2d67e7fdb31f61890c">Mtc_CallCbSetHeld</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a1e2f744c1e0c4c2d67e7fdb31f61890c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call was held by peer.  <a href="mtc__call__cb_8h.html#a1e2f744c1e0c4c2d67e7fdb31f61890c">更多...</a><br /></td></tr>
+<tr class="separator:a1e2f744c1e0c4c2d67e7fdb31f61890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc18d6769ecb915474aaa97e43510029"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#acc18d6769ecb915474aaa97e43510029">Mtc_CallCbSetUnHeld</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:acc18d6769ecb915474aaa97e43510029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call was un-held by peer.  <a href="mtc__call__cb_8h.html#acc18d6769ecb915474aaa97e43510029">更多...</a><br /></td></tr>
+<tr class="separator:acc18d6769ecb915474aaa97e43510029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0902f3050c167c41988f33255a8c1087"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a0902f3050c167c41988f33255a8c1087">Mtc_CallCbSetAddAudioOk</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a0902f3050c167c41988f33255a8c1087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate adding voice stream has been completed successfully.  <a href="mtc__call__cb_8h.html#a0902f3050c167c41988f33255a8c1087">更多...</a><br /></td></tr>
+<tr class="separator:a0902f3050c167c41988f33255a8c1087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37329c68a463535409e969d5cfa2fb70"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a37329c68a463535409e969d5cfa2fb70">Mtc_CallCbSetAddAudioFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a37329c68a463535409e969d5cfa2fb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate adding voice stream failed.  <a href="mtc__call__cb_8h.html#a37329c68a463535409e969d5cfa2fb70">更多...</a><br /></td></tr>
+<tr class="separator:a37329c68a463535409e969d5cfa2fb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ec5c5ebbab4ef69a9ebb3a3f816814"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ad7ec5c5ebbab4ef69a9ebb3a3f816814">Mtc_CallCbSetRmvAudioOk</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:ad7ec5c5ebbab4ef69a9ebb3a3f816814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate removing voice stream has been completed successfully.  <a href="mtc__call__cb_8h.html#ad7ec5c5ebbab4ef69a9ebb3a3f816814">更多...</a><br /></td></tr>
+<tr class="separator:ad7ec5c5ebbab4ef69a9ebb3a3f816814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a0a4ba62599fd02d7dd3342d94adb9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a09a0a4ba62599fd02d7dd3342d94adb9">Mtc_CallCbSetRmvAudioFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a09a0a4ba62599fd02d7dd3342d94adb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate removing voice stream has been failed.  <a href="mtc__call__cb_8h.html#a09a0a4ba62599fd02d7dd3342d94adb9">更多...</a><br /></td></tr>
+<tr class="separator:a09a0a4ba62599fd02d7dd3342d94adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2666cb46807fce1c6f392638a696ed22"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a2666cb46807fce1c6f392638a696ed22">Mtc_CallCbSetAddAudioReq</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a2666cb46807fce1c6f392638a696ed22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receiving request of adding voice stream.  <a href="mtc__call__cb_8h.html#a2666cb46807fce1c6f392638a696ed22">更多...</a><br /></td></tr>
+<tr class="separator:a2666cb46807fce1c6f392638a696ed22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f6f19baec6c3f94cea73f2d84349a9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aa7f6f19baec6c3f94cea73f2d84349a9">Mtc_CallCbSetAddAudioCancel</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:aa7f6f19baec6c3f94cea73f2d84349a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate cancel request of adding voice stream.  <a href="mtc__call__cb_8h.html#aa7f6f19baec6c3f94cea73f2d84349a9">更多...</a><br /></td></tr>
+<tr class="separator:aa7f6f19baec6c3f94cea73f2d84349a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30882b46bf16676d8ff0ab7126e31e9b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a30882b46bf16676d8ff0ab7126e31e9b">Mtc_CallCbSetAddVideoOk</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a30882b46bf16676d8ff0ab7126e31e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate adding video stream has been completed successfully.  <a href="mtc__call__cb_8h.html#a30882b46bf16676d8ff0ab7126e31e9b">更多...</a><br /></td></tr>
+<tr class="separator:a30882b46bf16676d8ff0ab7126e31e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ca7e8aa5cf0fc6958ccec2dce9caed"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ad8ca7e8aa5cf0fc6958ccec2dce9caed">Mtc_CallCbSetAddVideoFailed</a> (<a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> pfnCb)</td></tr>
+<tr class="memdesc:ad8ca7e8aa5cf0fc6958ccec2dce9caed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate adding video stream has been failed.  <a href="mtc__call__cb_8h.html#ad8ca7e8aa5cf0fc6958ccec2dce9caed">更多...</a><br /></td></tr>
+<tr class="separator:ad8ca7e8aa5cf0fc6958ccec2dce9caed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9acf8c14544000ec7fec87c4ffd6a4e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aa9acf8c14544000ec7fec87c4ffd6a4e">Mtc_CallCbSetRmvVideoOk</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:aa9acf8c14544000ec7fec87c4ffd6a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate removing video stream has been completed successfully.  <a href="mtc__call__cb_8h.html#aa9acf8c14544000ec7fec87c4ffd6a4e">更多...</a><br /></td></tr>
+<tr class="separator:aa9acf8c14544000ec7fec87c4ffd6a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8317853118671fd39a34f78848f5f6"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a3d8317853118671fd39a34f78848f5f6">Mtc_CallCbSetRmvVideoFailed</a> (<a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> pfnCb)</td></tr>
+<tr class="memdesc:a3d8317853118671fd39a34f78848f5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate removing video stream has been failed.  <a href="mtc__call__cb_8h.html#a3d8317853118671fd39a34f78848f5f6">更多...</a><br /></td></tr>
+<tr class="separator:a3d8317853118671fd39a34f78848f5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4565cdeb267d628032c7ad0f2636b5"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aae4565cdeb267d628032c7ad0f2636b5">Mtc_CallCbSetAddVideoReq</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:aae4565cdeb267d628032c7ad0f2636b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receiving request of adding video stream.  <a href="mtc__call__cb_8h.html#aae4565cdeb267d628032c7ad0f2636b5">更多...</a><br /></td></tr>
+<tr class="separator:aae4565cdeb267d628032c7ad0f2636b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac674a1fd8c91328a21edab58990821cf"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ac674a1fd8c91328a21edab58990821cf">Mtc_CallCbSetAddVideoCancel</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:ac674a1fd8c91328a21edab58990821cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate cancel request of adding video stream.  <a href="mtc__call__cb_8h.html#ac674a1fd8c91328a21edab58990821cf">更多...</a><br /></td></tr>
+<tr class="separator:ac674a1fd8c91328a21edab58990821cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28920432c7627f4e7f202035a047a785"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a28920432c7627f4e7f202035a047a785">Mtc_CallCbSetRefered</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a28920432c7627f4e7f202035a047a785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call refered.  <a href="mtc__call__cb_8h.html#a28920432c7627f4e7f202035a047a785">更多...</a><br /></td></tr>
+<tr class="separator:a28920432c7627f4e7f202035a047a785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e6136bd7de50a1a8451f0b4aea020e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a49e6136bd7de50a1a8451f0b4aea020e">Mtc_CallCbSetTrsfAcpt</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a49e6136bd7de50a1a8451f0b4aea020e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call transferred accepted.  <a href="mtc__call__cb_8h.html#a49e6136bd7de50a1a8451f0b4aea020e">更多...</a><br /></td></tr>
+<tr class="separator:a49e6136bd7de50a1a8451f0b4aea020e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8745820d02835897c1120b8d9e7c8bae"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a8745820d02835897c1120b8d9e7c8bae">Mtc_CallCbSetTrsfTerm</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a8745820d02835897c1120b8d9e7c8bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call transferred terminated.  <a href="mtc__call__cb_8h.html#a8745820d02835897c1120b8d9e7c8bae">更多...</a><br /></td></tr>
+<tr class="separator:a8745820d02835897c1120b8d9e7c8bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cdef3f924f34531defcfab8cdf07db8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a5cdef3f924f34531defcfab8cdf07db8">Mtc_CallCbSetTrsfFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a5cdef3f924f34531defcfab8cdf07db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call transferred failed.  <a href="mtc__call__cb_8h.html#a5cdef3f924f34531defcfab8cdf07db8">更多...</a><br /></td></tr>
+<tr class="separator:a5cdef3f924f34531defcfab8cdf07db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa808e84f6972c6566057b7a02e1ba942"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aa808e84f6972c6566057b7a02e1ba942">Mtc_CallCbSetRedirected</a> (<a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> pfnCb)</td></tr>
+<tr class="memdesc:aa808e84f6972c6566057b7a02e1ba942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call redirected.  <a href="mtc__call__cb_8h.html#aa808e84f6972c6566057b7a02e1ba942">更多...</a><br /></td></tr>
+<tr class="separator:aa808e84f6972c6566057b7a02e1ba942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e2d289c20b03b34069e3ab15f08354"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aa5e2d289c20b03b34069e3ab15f08354">Mtc_CallCbSetReplaced</a> (<a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> pfnCb)</td></tr>
+<tr class="memdesc:aa5e2d289c20b03b34069e3ab15f08354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call replaced.  <a href="mtc__call__cb_8h.html#aa5e2d289c20b03b34069e3ab15f08354">更多...</a><br /></td></tr>
+<tr class="separator:aa5e2d289c20b03b34069e3ab15f08354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73562490cf4d41bcbd7f6e5a86d74a23"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a73562490cf4d41bcbd7f6e5a86d74a23">Mtc_CallCbSetReplaceOk</a> (<a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> pfnCb)</td></tr>
+<tr class="memdesc:a73562490cf4d41bcbd7f6e5a86d74a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call replace ok.  <a href="mtc__call__cb_8h.html#a73562490cf4d41bcbd7f6e5a86d74a23">更多...</a><br /></td></tr>
+<tr class="separator:a73562490cf4d41bcbd7f6e5a86d74a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492885db4407a79a5ef798d241c6ea1b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a492885db4407a79a5ef798d241c6ea1b">Mtc_CallCbSetReplaceFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> pfnCb)</td></tr>
+<tr class="memdesc:a492885db4407a79a5ef798d241c6ea1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call replace failed.  <a href="mtc__call__cb_8h.html#a492885db4407a79a5ef798d241c6ea1b">更多...</a><br /></td></tr>
+<tr class="separator:a492885db4407a79a5ef798d241c6ea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a999148c366457230e92f3c10f8f41"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a32a999148c366457230e92f3c10f8f41">Mtc_CallCbSetInfo</a> (<a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a> pfnCb)</td></tr>
+<tr class="memdesc:a32a999148c366457230e92f3c10f8f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receive info.  <a href="mtc__call__cb_8h.html#a32a999148c366457230e92f3c10f8f41">更多...</a><br /></td></tr>
+<tr class="separator:a32a999148c366457230e92f3c10f8f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c5411b0b0c4b03cd034cc0f7a97bcc"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a80c5411b0b0c4b03cd034cc0f7a97bcc">Mtc_CallCbSetInfoX</a> (<a class="el" href="mtc__call__cb_8h.html#a6ce230c4f76425d803156645b3252d9f">PFN_MTCCALLCBINFOX</a> pfnCb)</td></tr>
+<tr class="memdesc:a80c5411b0b0c4b03cd034cc0f7a97bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receive info.  <a href="mtc__call__cb_8h.html#a80c5411b0b0c4b03cd034cc0f7a97bcc">更多...</a><br /></td></tr>
+<tr class="separator:a80c5411b0b0c4b03cd034cc0f7a97bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51726b7544b0571e586fcd56020f248e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a51726b7544b0571e586fcd56020f248e">Mtc_CallCbSetRtpConnectivity</a> (<a class="el" href="mtc__call__cb_8h.html#a7d1615ee74f08499c30521fad8ba0380">PFN_MTCCALLCBRTPCONNECTIVITY</a> pfnCb)</td></tr>
+<tr class="memdesc:a51726b7544b0571e586fcd56020f248e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate rtp connectivity.  <a href="mtc__call__cb_8h.html#a51726b7544b0571e586fcd56020f248e">更多...</a><br /></td></tr>
+<tr class="separator:a51726b7544b0571e586fcd56020f248e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243e89bf1210c24248fd9ac040acfe0e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a243e89bf1210c24248fd9ac040acfe0e">Mtc_CallCbSetCamDisconned</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a243e89bf1210c24248fd9ac040acfe0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call replaced.  <a href="mtc__call__cb_8h.html#a243e89bf1210c24248fd9ac040acfe0e">更多...</a><br /></td></tr>
+<tr class="separator:a243e89bf1210c24248fd9ac040acfe0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4761255e8b6e582311dc87e52dc5ced"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ac4761255e8b6e582311dc87e52dc5ced">Mtc_CallCbSetVideoSize</a> (<a class="el" href="mtc__call__cb_8h.html#a7ab9c753d8c8e4e590ff8c7253595326">PFN_MTCCALLCBVIDEOSIZE</a> pfnCb)</td></tr>
+<tr class="memdesc:ac4761255e8b6e582311dc87e52dc5ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call's video size changed.  <a href="mtc__call__cb_8h.html#ac4761255e8b6e582311dc87e52dc5ced">更多...</a><br /></td></tr>
+<tr class="separator:ac4761255e8b6e582311dc87e52dc5ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2a50dd7be50861bcf633c083bef4db"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a4d2a50dd7be50861bcf633c083bef4db">Mtc_CallCbSetNetStaChanged</a> (<a class="el" href="mtc__call__cb_8h.html#ab88032d482ce501c3724c7d1ab1a11d8">PFN_MTCCALLCBNETSTATUSCHANGED</a> pfnCb)</td></tr>
+<tr class="memdesc:a4d2a50dd7be50861bcf633c083bef4db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call's network status.  <a href="mtc__call__cb_8h.html#a4d2a50dd7be50861bcf633c083bef4db">更多...</a><br /></td></tr>
+<tr class="separator:a4d2a50dd7be50861bcf633c083bef4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10665d5032fd84336ba10b6bd0c8ebde"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a10665d5032fd84336ba10b6bd0c8ebde">Mtc_CallCbSetVideoIncomingSta</a> (<a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> pfnCb)</td></tr>
+<tr class="memdesc:a10665d5032fd84336ba10b6bd0c8ebde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call's video incoming status.  <a href="mtc__call__cb_8h.html#a10665d5032fd84336ba10b6bd0c8ebde">更多...</a><br /></td></tr>
+<tr class="separator:a10665d5032fd84336ba10b6bd0c8ebde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a25cbfa496dcceb2fa64a8c3f3dea4"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a29a25cbfa496dcceb2fa64a8c3f3dea4">Mtc_CallCbSetVideoOutgoingSta</a> (<a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> pfnCb)</td></tr>
+<tr class="memdesc:a29a25cbfa496dcceb2fa64a8c3f3dea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call's video outgoing status.  <a href="mtc__call__cb_8h.html#a29a25cbfa496dcceb2fa64a8c3f3dea4">更多...</a><br /></td></tr>
+<tr class="separator:a29a25cbfa496dcceb2fa64a8c3f3dea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf67b02d1245b8cc27e92064b171c4c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a9cf67b02d1245b8cc27e92064b171c4c">Mtc_CallCbSetVideoProtectSta</a> (<a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> pfnCb)</td></tr>
+<tr class="memdesc:a9cf67b02d1245b8cc27e92064b171c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call's video protection status.  <a href="mtc__call__cb_8h.html#a9cf67b02d1245b8cc27e92064b171c4c">更多...</a><br /></td></tr>
+<tr class="separator:a9cf67b02d1245b8cc27e92064b171c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53002a3c6c265b92c2f6673aee02792"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ac53002a3c6c265b92c2f6673aee02792">Mtc_CallCbSetCaptureFramerate</a> (<a class="el" href="mtc__call__cb_8h.html#a7c8c0ffcbfa67fa9be1ca811849fe50a">PFN_MTCCALLCBCAPTURE</a> pfnCb)</td></tr>
+<tr class="memdesc:ac53002a3c6c265b92c2f6673aee02792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate capture framerate.  <a href="mtc__call__cb_8h.html#ac53002a3c6c265b92c2f6673aee02792">更多...</a><br /></td></tr>
+<tr class="separator:ac53002a3c6c265b92c2f6673aee02792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dde5674c73ae540e70735d210a06199"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a1dde5674c73ae540e70735d210a06199">Mtc_CallCbSetCaptureSize</a> (<a class="el" href="mtc__call__cb_8h.html#ae528168edaaf4b11b4fc228aa086a684">PFN_MTCCALLCBCAPTURESIZE</a> pfnCb)</td></tr>
+<tr class="memdesc:a1dde5674c73ae540e70735d210a06199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate capture framerate.  <a href="mtc__call__cb_8h.html#a1dde5674c73ae540e70735d210a06199">更多...</a><br /></td></tr>
+<tr class="separator:a1dde5674c73ae540e70735d210a06199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3deed1d67aaf88a3c0f032b69c3d39f9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a3deed1d67aaf88a3c0f032b69c3d39f9">Mtc_CallCbSetPartpUpdted</a> (<a class="el" href="mtc__call__cb_8h.html#aa35f219a8d5706080e082fb3012e4186">PFN_MTCCALLCBPARTPUPDTED</a> pfnCb)</td></tr>
+<tr class="memdesc:a3deed1d67aaf88a3c0f032b69c3d39f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate session participant's status updated.  <a href="mtc__call__cb_8h.html#a3deed1d67aaf88a3c0f032b69c3d39f9">更多...</a><br /></td></tr>
+<tr class="separator:a3deed1d67aaf88a3c0f032b69c3d39f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6454ce483ca8fea873afc89a3a8f9712"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a6454ce483ca8fea873afc89a3a8f9712">Mtc_CallCbSetFilePlayStoppedx</a> (<a class="el" href="mtc__call__cb_8h.html#a709484127ac1bf24ccbe985f51547ba9">PFN_MTCCALLCBFILEPLAYSTOPPEDX</a> pfnCb)</td></tr>
+<tr class="memdesc:a6454ce483ca8fea873afc89a3a8f9712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate file play stoppedx.  <a href="mtc__call__cb_8h.html#a6454ce483ca8fea873afc89a3a8f9712">更多...</a><br /></td></tr>
+<tr class="separator:a6454ce483ca8fea873afc89a3a8f9712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba9b25b72e2766e27788a3c70fee600"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aaba9b25b72e2766e27788a3c70fee600">Mtc_CallCbSetError</a> (<a class="el" href="mtc__call__cb_8h.html#ad0e81fee2a408dfecb9780560c82214b">PFN_MTCCALLCBERR</a> pfnCb)</td></tr>
+<tr class="memdesc:aaba9b25b72e2766e27788a3c70fee600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call error.  <a href="mtc__call__cb_8h.html#aaba9b25b72e2766e27788a3c70fee600">更多...</a><br /></td></tr>
+<tr class="separator:aaba9b25b72e2766e27788a3c70fee600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05794403f623d3834f386ccec3a83e72"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a05794403f623d3834f386ccec3a83e72">Mtc_CallCbSetCryptoStaChanged</a> (<a class="el" href="mtc__call__cb_8h.html#aa154c2f8b299c2c18e7f9640c4a02bde">PFN_MTCCALLCBCRYPTOSTACHANGED</a> pfnCb)</td></tr>
+<tr class="memdesc:a05794403f623d3834f386ccec3a83e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate call's crypto status.  <a href="mtc__call__cb_8h.html#a05794403f623d3834f386ccec3a83e72">更多...</a><br /></td></tr>
+<tr class="separator:a05794403f623d3834f386ccec3a83e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af221bfd6196d43f35b2acbc22b22bd22"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#af221bfd6196d43f35b2acbc22b22bd22">Mtc_CallCbSetRecvRtpPacket</a> (<a class="el" href="mtc__call__cb_8h.html#a0b5641233cf64939c9b264869db7f7b0">PFN_MTCCALLCBRECVRTPPACKET</a> pfnCb)</td></tr>
+<tr class="memdesc:af221bfd6196d43f35b2acbc22b22bd22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receiving a rtp packtet.  <a href="mtc__call__cb_8h.html#af221bfd6196d43f35b2acbc22b22bd22">更多...</a><br /></td></tr>
+<tr class="separator:af221bfd6196d43f35b2acbc22b22bd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f6fd425b33d8921b837c79f28a5b45"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#af7f6fd425b33d8921b837c79f28a5b45">Mtc_CallCbSetSendRtpPacket</a> (<a class="el" href="mtc__call__cb_8h.html#a8eade58bfdd7503e18e288e7aa215efa">PFN_MTCCALLCBSENDRTPPACKET</a> pfnCb)</td></tr>
+<tr class="memdesc:af7f6fd425b33d8921b837c79f28a5b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate sending a rtp packtet.  <a href="mtc__call__cb_8h.html#af7f6fd425b33d8921b837c79f28a5b45">更多...</a><br /></td></tr>
+<tr class="separator:af7f6fd425b33d8921b837c79f28a5b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbd615ad36d88593c496897c4cae1e8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#abbbd615ad36d88593c496897c4cae1e8">Mtc_CallCbAddInfo</a> (<a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a> pfnCb)</td></tr>
+<tr class="memdesc:abbbd615ad36d88593c496897c4cae1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receive info.  <a href="mtc__call__cb_8h.html#abbbd615ad36d88593c496897c4cae1e8">更多...</a><br /></td></tr>
+<tr class="separator:abbbd615ad36d88593c496897c4cae1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecf0fc074693e82521405df26245e39"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a9ecf0fc074693e82521405df26245e39">Mtc_CallCbRmvInfo</a> (<a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a> pfnCb)</td></tr>
+<tr class="memdesc:a9ecf0fc074693e82521405df26245e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove callback of indicate receive info.  <a href="mtc__call__cb_8h.html#a9ecf0fc074693e82521405df26245e39">更多...</a><br /></td></tr>
+<tr class="separator:a9ecf0fc074693e82521405df26245e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeb5cb9b758574da65f4326ef625c7d"><td class="memItemLeft" align="right" valign="top"><a id="aaaeb5cb9b758574da65f4326ef625c7d" name="aaaeb5cb9b758574da65f4326ef625c7d"></a>
+ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Mtc_CallCbSetRecvDtmf</b> (<a class="el" href="mtc__call__cb_8h.html#a82c3bc4c693c5eefaf205a3efbfb928f">PFN_MTCCALLCBDTMF</a> pfnCb)</td></tr>
+<tr class="separator:aaaeb5cb9b758574da65f4326ef625c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcd52605d1bdceda6b371584579d2ae"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#aabcd52605d1bdceda6b371584579d2ae">Mtc_CallCbSetSubsOk</a> (<a class="el" href="mtc__call__cb_8h.html#ac476dfb47f1fcb893421a9dc569894e4">PFN_MTCSUBSOK</a> pfnCb)</td></tr>
+<tr class="memdesc:aabcd52605d1bdceda6b371584579d2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate subscription ok.  <a href="mtc__call__cb_8h.html#aabcd52605d1bdceda6b371584579d2ae">更多...</a><br /></td></tr>
+<tr class="separator:aabcd52605d1bdceda6b371584579d2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd03a7f7204c18475a8e5b63836eec4"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a4dd03a7f7204c18475a8e5b63836eec4">Mtc_CallCbSetSubsFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a261f0f953405e715bf73251fbda93075">PFN_MTCSUBSFAILED</a> pfnCb)</td></tr>
+<tr class="memdesc:a4dd03a7f7204c18475a8e5b63836eec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate subscription failed.  <a href="mtc__call__cb_8h.html#a4dd03a7f7204c18475a8e5b63836eec4">更多...</a><br /></td></tr>
+<tr class="separator:a4dd03a7f7204c18475a8e5b63836eec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d0cbc38ace8d30069aa3a664242f1b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a22d0cbc38ace8d30069aa3a664242f1b">Mtc_CallCbSetSubsInfo</a> (<a class="el" href="mtc__call__cb_8h.html#a34e3b0f0f2807f239629cc63d0a44245">PFN_MTCCALLCBSUBSINFO</a> pfnCb)</td></tr>
+<tr class="memdesc:a22d0cbc38ace8d30069aa3a664242f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receive subs info.  <a href="mtc__call__cb_8h.html#a22d0cbc38ace8d30069aa3a664242f1b">更多...</a><br /></td></tr>
+<tr class="separator:a22d0cbc38ace8d30069aa3a664242f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adee5173029e4c8f1091e616d5bb845"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a4adee5173029e4c8f1091e616d5bb845">Mtc_CallCbSetSubsReq</a> (<a class="el" href="mtc__call__cb_8h.html#a34e3b0f0f2807f239629cc63d0a44245">PFN_MTCCALLCBSUBSINFO</a> pfnCb)</td></tr>
+<tr class="memdesc:a4adee5173029e4c8f1091e616d5bb845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate receive subscribe request.  <a href="mtc__call__cb_8h.html#a4adee5173029e4c8f1091e616d5bb845">更多...</a><br /></td></tr>
+<tr class="separator:a4adee5173029e4c8f1091e616d5bb845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e14cdb5c0f67c1b2e15da5e45fb5a5"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ab4e14cdb5c0f67c1b2e15da5e45fb5a5">Mtc_CallCbSetReferCallOk</a> (<a class="el" href="mtc__call__cb_8h.html#a9ecf9998c4bd825d26fc91b4eb5676a4">PFN_MTCREFERCALL</a> pfnCb)</td></tr>
+<tr class="memdesc:ab4e14cdb5c0f67c1b2e15da5e45fb5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of refer call ok.  <a href="mtc__call__cb_8h.html#ab4e14cdb5c0f67c1b2e15da5e45fb5a5">更多...</a><br /></td></tr>
+<tr class="separator:ab4e14cdb5c0f67c1b2e15da5e45fb5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69be533dfac65331d344e48808794db8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a69be533dfac65331d344e48808794db8">Mtc_CallCbSetReferCallFailed</a> (<a class="el" href="mtc__call__cb_8h.html#a9ecf9998c4bd825d26fc91b4eb5676a4">PFN_MTCREFERCALL</a> pfnCb)</td></tr>
+<tr class="memdesc:a69be533dfac65331d344e48808794db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of refer call failed.  <a href="mtc__call__cb_8h.html#a69be533dfac65331d344e48808794db8">更多...</a><br /></td></tr>
+<tr class="separator:a69be533dfac65331d344e48808794db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c7da725b0efd80987a45a61e788e43"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ad2c7da725b0efd80987a45a61e788e43">Mtc_CallCbSetPttRecvd</a> (<a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> pfnCb)</td></tr>
+<tr class="memdesc:ad2c7da725b0efd80987a45a61e788e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of receiving ptt event.  <a href="mtc__call__cb_8h.html#ad2c7da725b0efd80987a45a61e788e43">更多...</a><br /></td></tr>
+<tr class="separator:ad2c7da725b0efd80987a45a61e788e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d87384271ff8aeb98cb507b0fbb8b77"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#a6d87384271ff8aeb98cb507b0fbb8b77">Mtc_CallCbSetRtcCall</a> (<a class="el" href="mtc__call__cb_8h.html#a9acc09c5c8702b42526eeca0f6336ae0">PFN_MTCCALLRTCCB</a> pfnCb)</td></tr>
+<tr class="memdesc:a6d87384271ff8aeb98cb507b0fbb8b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback for a rtc call.  <a href="mtc__call__cb_8h.html#a6d87384271ff8aeb98cb507b0fbb8b77">更多...</a><br /></td></tr>
+<tr class="separator:a6d87384271ff8aeb98cb507b0fbb8b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac126db26540627e209b8d540b07c0d2d"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__call__cb_8h.html#ac126db26540627e209b8d540b07c0d2d">Mtc_CallCbSetVideoRingBack</a> (<a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> pfnCb)</td></tr>
+<tr class="memdesc:ac126db26540627e209b8d540b07c0d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback of indicate the caller receiving video ring back.  <a href="mtc__call__cb_8h.html#ac126db26540627e209b8d540b07c0d2d">更多...</a><br /></td></tr>
+<tr class="separator:ac126db26540627e209b8d540b07c0d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC Call Callback Interface Functions </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="abbbd615ad36d88593c496897c4cae1e8" name="abbbd615ad36d88593c496897c4cae1e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbbd615ad36d88593c496897c4cae1e8">&#9670;&nbsp;</a></span>Mtc_CallCbAddInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbAddInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receive info. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ecf0fc074693e82521405df26245e39" name="a9ecf0fc074693e82521405df26245e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ecf0fc074693e82521405df26245e39">&#9670;&nbsp;</a></span>Mtc_CallCbRmvInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbRmvInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove callback of indicate receive info. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7f6f19baec6c3f94cea73f2d84349a9" name="aa7f6f19baec6c3f94cea73f2d84349a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f6f19baec6c3f94cea73f2d84349a9">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddAudioCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddAudioCancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate cancel request of adding voice stream. </p>
+<p >This callback indicates cancel request of adding voice stream which was invoked by peer. GUI should cancel showed message box. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37329c68a463535409e969d5cfa2fb70" name="a37329c68a463535409e969d5cfa2fb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37329c68a463535409e969d5cfa2fb70">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddAudioFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddAudioFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate adding voice stream failed. </p>
+<p >This callback indicates failed to add voice stream to the call. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0902f3050c167c41988f33255a8c1087" name="a0902f3050c167c41988f33255a8c1087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0902f3050c167c41988f33255a8c1087">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddAudioOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddAudioOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate adding voice stream has been completed successfully. </p>
+<p >This callback indicates the operation of adding voice stream to the call has been completed successfully. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2666cb46807fce1c6f392638a696ed22" name="a2666cb46807fce1c6f392638a696ed22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2666cb46807fce1c6f392638a696ed22">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddAudioReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddAudioReq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receiving request of adding voice stream. </p>
+<p >This callback indicates receiving request of adding voice stream which was invoked by peer. GUI should show a message box to inform user this information, and wait for user to accept or reject this requst. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac674a1fd8c91328a21edab58990821cf" name="ac674a1fd8c91328a21edab58990821cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac674a1fd8c91328a21edab58990821cf">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddVideoCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddVideoCancel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate cancel request of adding video stream. </p>
+<p >This callback indicates cancel request of adding video stream which was invoked by peer. GUI should cancel showed message box. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8ca7e8aa5cf0fc6958ccec2dce9caed" name="ad8ca7e8aa5cf0fc6958ccec2dce9caed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ca7e8aa5cf0fc6958ccec2dce9caed">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddVideoFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddVideoFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate adding video stream has been failed. </p>
+<p >This callback indicates failed to add video stream to the call. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> is the ID of session. GUI should use it to locate call window.</p>
+<p >"iStatCode" in <a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> has below values.</p><ul>
+<li><a class="el" href="mtc__call_8h.html#aee1b31e6fcaacaf189d4ecd8247deb88">MTC_CALL_ERR_REJECTED</a> Failed by remote rejected</li>
+<li><a class="el" href="mtc__call_8h.html#aabb013b980b447da5204e72d1ee0b270">MTC_CALL_ERR_NETWORK</a> Failed by network disconnected</li>
+<li><a class="el" href="mtc__call_8h.html#a0aded210af72758eea5e4c6b0d57ee9f">MTC_CALL_ERR_TIMEOUT</a> Failed by timeout for request <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a30882b46bf16676d8ff0ab7126e31e9b" name="a30882b46bf16676d8ff0ab7126e31e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30882b46bf16676d8ff0ab7126e31e9b">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddVideoOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddVideoOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate adding video stream has been completed successfully. </p>
+<p >This callback indicates the operation of adding video stream to the call has been completed successfully. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae4565cdeb267d628032c7ad0f2636b5" name="aae4565cdeb267d628032c7ad0f2636b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4565cdeb267d628032c7ad0f2636b5">&#9670;&nbsp;</a></span>Mtc_CallCbSetAddVideoReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAddVideoReq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receiving request of adding video stream. </p>
+<p >This callback indicates receiving request of adding video stream which was invoked by peer. GUI should show a message box to inform user this information, and wait for user to accept or reject this requst. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac297651a626b8dd68be2b3d1f59a82f1" name="ac297651a626b8dd68be2b3d1f59a82f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac297651a626b8dd68be2b3d1f59a82f1">&#9670;&nbsp;</a></span>Mtc_CallCbSetAlerted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetAlerted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a25d88b3762c83753adb5c8fda69f4da6">PFN_MTCCALLCBALERTED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate the callee is ringing. </p>
+<p >GUI should update the status of outgoing call window "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a25d88b3762c83753adb5c8fda69f4da6">PFN_MTCCALLCBALERTED</a> is the ID of session. GUI should use it to locate call window.</p><ul>
+<li>Use <a class="el" href="mtc__call_8h.html#a4c090136f04358410f2c134a3faf7d10">Mtc_SessGetEarlyMediaStatus</a> and <a class="el" href="mtc__call_8h.html#a858ead61a26b3d9e5c6fa7eedadb1b0f">Mtc_SessHasVideo</a> to check if there is a video early media. If so, use <a class="el" href="mtc__call_8h.html#a93e3f8b55ad19cac4d2b640ede15b625">Mtc_SessHasOfferAnswer</a> to check if offer answer exchanged is completed. If so, GUI should invoke <a class="el" href="mtc__call_8h.html#a323e8acd3bdfcb6e1361c2d63f3b714d">Mtc_SessVideoStart</a> to start receive video early media.</li>
+</ul>
+<p >"iAlertType" in <a class="el" href="mtc__call__cb_8h.html#a25d88b3762c83753adb5c8fda69f4da6">PFN_MTCCALLCBALERTED</a> has below values:</p><ul>
+<li>MTC_CALL_ALERT_RING Alerted by 180 ringing.</li>
+<li>MTC_CALL_ALERT_QUEUE Alerted by 182 queued.</li>
+<li>MTC_CALL_ALERT_PROGRESS Alerted by 183 session progress.</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a243e89bf1210c24248fd9ac040acfe0e" name="a243e89bf1210c24248fd9ac040acfe0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243e89bf1210c24248fd9ac040acfe0e">&#9670;&nbsp;</a></span>Mtc_CallCbSetCamDisconned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetCamDisconned </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call replaced. </p>
+<p >This callback indicates the camera has disconnected with this call. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac53002a3c6c265b92c2f6673aee02792" name="ac53002a3c6c265b92c2f6673aee02792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53002a3c6c265b92c2f6673aee02792">&#9670;&nbsp;</a></span>Mtc_CallCbSetCaptureFramerate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetCaptureFramerate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a7c8c0ffcbfa67fa9be1ca811849fe50a">PFN_MTCCALLCBCAPTURE</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate capture framerate. </p>
+<p >This callback indicates the capture statistics. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a7c8c0ffcbfa67fa9be1ca811849fe50a">PFN_MTCCALLCBCAPTURE</a> is the ID of session. GUI should use it to locate call window. "iParm" in <a class="el" href="mtc__call__cb_8h.html#a7c8c0ffcbfa67fa9be1ca811849fe50a">PFN_MTCCALLCBCAPTURE</a> indicate the framerate.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1dde5674c73ae540e70735d210a06199" name="a1dde5674c73ae540e70735d210a06199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dde5674c73ae540e70735d210a06199">&#9670;&nbsp;</a></span>Mtc_CallCbSetCaptureSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetCaptureSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#ae528168edaaf4b11b4fc228aa086a684">PFN_MTCCALLCBCAPTURESIZE</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate capture framerate. </p>
+<p >This callback indicates the capture size. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#ae528168edaaf4b11b4fc228aa086a684">PFN_MTCCALLCBCAPTURESIZE</a> is the ID of session. GUI should use it to locate call window. "iWidth" in <a class="el" href="mtc__call__cb_8h.html#ae528168edaaf4b11b4fc228aa086a684">PFN_MTCCALLCBCAPTURESIZE</a> indicate capture width. "iHeight" in <a class="el" href="mtc__call__cb_8h.html#ae528168edaaf4b11b4fc228aa086a684">PFN_MTCCALLCBCAPTURESIZE</a> indicate capture height.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05794403f623d3834f386ccec3a83e72" name="a05794403f623d3834f386ccec3a83e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05794403f623d3834f386ccec3a83e72">&#9670;&nbsp;</a></span>Mtc_CallCbSetCryptoStaChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetCryptoStaChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#aa154c2f8b299c2c18e7f9640c4a02bde">PFN_MTCCALLCBCRYPTOSTACHANGED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call's crypto status. </p>
+<p >This callback indicates the call's crypto status. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#aa154c2f8b299c2c18e7f9640c4a02bde">PFN_MTCCALLCBCRYPTOSTACHANGED</a> is the ID of session. GUI should use it to locate call window. "iStateType" in <a class="el" href="mtc__call__cb_8h.html#aa154c2f8b299c2c18e7f9640c4a02bde">PFN_MTCCALLCBCRYPTOSTACHANGED</a> indicate the crypto status type <a class="el" href="mtc__call_8h.html#a43877e3ac0d52a25d44d3953f3548a82">EN_MTC_SESS_CRYPTO_STATE_TYPE</a>. "bVideo" in <a class="el" href="mtc__call__cb_8h.html#aa154c2f8b299c2c18e7f9640c4a02bde">PFN_MTCCALLCBCRYPTOSTACHANGED</a> indicate if the crypto status of video stream is changed.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaba9b25b72e2766e27788a3c70fee600" name="aaba9b25b72e2766e27788a3c70fee600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba9b25b72e2766e27788a3c70fee600">&#9670;&nbsp;</a></span>Mtc_CallCbSetError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#ad0e81fee2a408dfecb9780560c82214b">PFN_MTCCALLCBERR</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call error. </p>
+<p >This callback indicates error occured during call. GUI should show the detail error information to user. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#ad0e81fee2a408dfecb9780560c82214b">PFN_MTCCALLCBERR</a> is the ID of the session which occurs error. "iStatCode" in <a class="el" href="mtc__call__cb_8h.html#ad0e81fee2a408dfecb9780560c82214b">PFN_MTCCALLCBERR</a> is the error code(see MSF_STAT_ERR_NO), it can be</p><ul>
+<li>If iStatCode &lt; 0x1000, contains SIP response status code, use Sip_ReasonFromCode to get description string</li>
+<li>Otherwise, use <a class="el" href="mtc__call_8h.html#a56543eabf3845f4d64d906fdf91e391e">Mtc_SessGetStatDesc</a> to get description string</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6454ce483ca8fea873afc89a3a8f9712" name="a6454ce483ca8fea873afc89a3a8f9712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6454ce483ca8fea873afc89a3a8f9712">&#9670;&nbsp;</a></span>Mtc_CallCbSetFilePlayStoppedx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetFilePlayStoppedx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a709484127ac1bf24ccbe985f51547ba9">PFN_MTCCALLCBFILEPLAYSTOPPEDX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate file play stoppedx. </p>
+<p >This callback indicates the capture size. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a709484127ac1bf24ccbe985f51547ba9">PFN_MTCCALLCBFILEPLAYSTOPPEDX</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09850334b7c87971f38662d5017dc659" name="a09850334b7c87971f38662d5017dc659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09850334b7c87971f38662d5017dc659">&#9670;&nbsp;</a></span>Mtc_CallCbSetForwarded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetForwarded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate the call is forwarded. </p>
+<p >GUI should update the status of outgoing call window "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e2f744c1e0c4c2d67e7fdb31f61890c" name="a1e2f744c1e0c4c2d67e7fdb31f61890c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2f744c1e0c4c2d67e7fdb31f61890c">&#9670;&nbsp;</a></span>Mtc_CallCbSetHeld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetHeld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call was held by peer. </p>
+<p >This callback indicates peer hold the call. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0291c814dd0e96fc291aaa696ab98248" name="a0291c814dd0e96fc291aaa696ab98248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0291c814dd0e96fc291aaa696ab98248">&#9670;&nbsp;</a></span>Mtc_CallCbSetHoldFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetHoldFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call hold failed. </p>
+<p >This callback indicates hold operation has been failed. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f4d2896fa468956e546702db7809a4a" name="a0f4d2896fa468956e546702db7809a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f4d2896fa468956e546702db7809a4a">&#9670;&nbsp;</a></span>Mtc_CallCbSetHoldOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetHoldOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call hold successfully. </p>
+<p >This callback indicates hold operation has been completed successfully. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84ef4abd17f6905ff80581ff472ccbdf" name="a84ef4abd17f6905ff80581ff472ccbdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ef4abd17f6905ff80581ff472ccbdf">&#9670;&nbsp;</a></span>Mtc_CallCbSetIncoming()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetIncoming </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate received a new call. </p>
+<p >GUI use <a class="el" href="mtc__call_8h.html">MTC Session Interfaces</a>, like <a class="el" href="mtc__call_8h.html#a88a5a550390b2637dac3da143f2d876e">Mtc_SessGetPeerUri</a>, to get detail information and present those to user. And wait for user action, accept or decline. iSessId in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to get session status.</p><ul>
+<li>Use <a class="el" href="mtc__call_8h.html#a1420a15d1459227f56a1ac111c538a09">Mtc_SessPeerOfferVideo</a> to check if incoming call has video request.<ul>
+<li>Has video, show video call alert window with 3 options<ul>
+<li>accept</li>
+<li>accept with video</li>
+<li>decline</li>
+</ul>
+</li>
+<li>No Video, show voice call alert window with 2 options<ul>
+<li>accept</li>
+<li>decline</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Assign iSessId to alert window. It will be used when invoke <a class="el" href="mtc__call_8h.html#a98cc54b4aab2670b1ad94d18348c03e4">Mtc_SessAnswer</a> or <a class="el" href="mtc__call_8h.html#af7daa98eb9eb1a79c716ff7129dcab26">Mtc_SessTerm</a>.</li>
+<li>Get peer information by <a class="el" href="mtc__call_8h.html#a88a5a550390b2637dac3da143f2d876e">Mtc_SessGetPeerUri</a>.</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a32a999148c366457230e92f3c10f8f41" name="a32a999148c366457230e92f3c10f8f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a999148c366457230e92f3c10f8f41">&#9670;&nbsp;</a></span>Mtc_CallCbSetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receive info. </p>
+<p >This callback indicates the call has received info message. GUI should update the INFO information. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a97e988d3dd855acdfc1686d16629f87c">PFN_MTCCALLCBINFO</a> is the ID of session replaced, GUI should use it to locate call window. "pcInfo" is the info string.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80c5411b0b0c4b03cd034cc0f7a97bcc" name="a80c5411b0b0c4b03cd034cc0f7a97bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c5411b0b0c4b03cd034cc0f7a97bcc">&#9670;&nbsp;</a></span>Mtc_CallCbSetInfoX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetInfoX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a6ce230c4f76425d803156645b3252d9f">PFN_MTCCALLCBINFOX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receive info. </p>
+<p >This callback indicates the call has received info message "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a6ce230c4f76425d803156645b3252d9f">PFN_MTCCALLCBINFOX</a> is the ID of session, GUI should use it to locate call window. "pcUri" is the URI(SIP or TEL URI) info where the message from. "pcInfo" is the info string.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a169bec3ef3079b38a23b0285cdc767c2" name="a169bec3ef3079b38a23b0285cdc767c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169bec3ef3079b38a23b0285cdc767c2">&#9670;&nbsp;</a></span>Mtc_CallCbSetMdfyAcpt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetMdfyAcpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call modifying accepted. </p>
+<p >To change the attribute of media stream is called call modify, includes hold and add or remove media stream. This callback indicates the modification is accept by peer. GUI should check which service has been invoke by user. If user hold or un-hold the call, show hold or un-hold successfully. If user add video upon a voice call, then switch to video call window. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a90b32c36d76ae1188ea4b079d1cd0b5c" name="a90b32c36d76ae1188ea4b079d1cd0b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b32c36d76ae1188ea4b079d1cd0b5c">&#9670;&nbsp;</a></span>Mtc_CallCbSetMdfyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetMdfyed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call modifyed. </p>
+<p >This callback indicates modification was invoke by peer, and this modification is completed. GUI use <a class="el" href="mtc__call_8h.html">MTC Session Interfaces</a>, like <a class="el" href="mtc__call_8h.html#a858ead61a26b3d9e5c6fa7eedadb1b0f">Mtc_SessHasVideo</a>, check media status. And then show corresponding changes. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f3cb2bc5a087e3084c7bfdd63f7269c" name="a7f3cb2bc5a087e3084c7bfdd63f7269c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3cb2bc5a087e3084c7bfdd63f7269c">&#9670;&nbsp;</a></span>Mtc_CallCbSetMdfyReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetMdfyReq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call modify request. </p>
+<p >This callback indicates modification was invoke by peer, and this modification is waiting for user's confirm. GUI use <a class="el" href="mtc__call_8h.html">MTC Session Interfaces</a>, like <a class="el" href="mtc__call_8h.html#a2bd1341985ec161cd4d460963e59c5ce">Mtc_SessHasAudio</a> and <a class="el" href="mtc__call_8h.html#a858ead61a26b3d9e5c6fa7eedadb1b0f">Mtc_SessHasVideo</a>, to check media status and make a decision whether accept one or all of active these streams. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d2a50dd7be50861bcf633c083bef4db" name="a4d2a50dd7be50861bcf633c083bef4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2a50dd7be50861bcf633c083bef4db">&#9670;&nbsp;</a></span>Mtc_CallCbSetNetStaChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetNetStaChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#ab88032d482ce501c3724c7d1ab1a11d8">PFN_MTCCALLCBNETSTATUSCHANGED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call's network status. </p>
+<p >This callback indicates the call's network status. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#ab88032d482ce501c3724c7d1ab1a11d8">PFN_MTCCALLCBNETSTATUSCHANGED</a> is the ID of session. GUI should use it to locate call window. "bVideo" in <a class="el" href="mtc__call__cb_8h.html#ab88032d482ce501c3724c7d1ab1a11d8">PFN_MTCCALLCBNETSTATUSCHANGED</a> indicate if the network status of video stream is changed. "bSend" in <a class="el" href="mtc__call__cb_8h.html#ab88032d482ce501c3724c7d1ab1a11d8">PFN_MTCCALLCBNETSTATUSCHANGED</a> indicate if the network status of sending direction is changed. "iType" in <a class="el" href="mtc__call__cb_8h.html#ab88032d482ce501c3724c7d1ab1a11d8">PFN_MTCCALLCBNETSTATUSCHANGED</a> indicate the network status type <a class="el" href="mtc__call_8h.html#a5dd71400b254e6165e9e282500671443">EN_MTC_NET_STATUS_TYPE</a>.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ed0936c87752443d17b079e4a913edb" name="a7ed0936c87752443d17b079e4a913edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ed0936c87752443d17b079e4a913edb">&#9670;&nbsp;</a></span>Mtc_CallCbSetOutgoing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetOutgoing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate send a new call. </p>
+<p >GUI use <a class="el" href="mtc__call_8h.html">MTC Session Interfaces</a>, like <a class="el" href="mtc__call_8h.html#a88a5a550390b2637dac3da143f2d876e">Mtc_SessGetPeerUri</a>, to get detail information and present those to user. And show a outgoing call window. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to get session status.</p><ul>
+<li>Use <a class="el" href="mtc__call_8h.html#a858ead61a26b3d9e5c6fa7eedadb1b0f">Mtc_SessHasVideo</a> to check if outgoing call has video request.<ul>
+<li>Has video, show video call window</li>
+<li>No Video, show voice call window</li>
+</ul>
+</li>
+<li>Get peer information by <a class="el" href="mtc__call_8h.html#a88a5a550390b2637dac3da143f2d876e">Mtc_SessGetPeerUri</a>.</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3deed1d67aaf88a3c0f032b69c3d39f9" name="a3deed1d67aaf88a3c0f032b69c3d39f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3deed1d67aaf88a3c0f032b69c3d39f9">&#9670;&nbsp;</a></span>Mtc_CallCbSetPartpUpdted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetPartpUpdted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#aa35f219a8d5706080e082fb3012e4186">PFN_MTCCALLCBPARTPUPDTED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate session participant's status updated. </p>
+<p >GUI should update session participant's status. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#aa35f219a8d5706080e082fb3012e4186">PFN_MTCCALLCBPARTPUPDTED</a> is the ID of session. GUI should use it to locate call window. "pcUri" in <a class="el" href="mtc__call__cb_8h.html#aa35f219a8d5706080e082fb3012e4186">PFN_MTCCALLCBPARTPUPDTED</a> is the URI of the participant which status has been updated. "iState" in <a class="el" href="mtc__call__cb_8h.html#aa35f219a8d5706080e082fb3012e4186">PFN_MTCCALLCBPARTPUPDTED</a> see below values: -EN_MTC_SESS_PARTP_STATE_PENDING Unconfirmed state -EN_MTC_SESS_PARTP_STATE_DIALINGIN Creating or join a session -EN_MTC_SESS_PARTP_STATE_DIALINGOUT Being invited to a session -EN_MTC_SESS_PARTP_STATE_ALERTING Being invited and is alerting -EN_MTC_SESS_PARTP_STATE_CONNED Attend to a session successfully -EN_MTC_SESS_PARTP_STATE_ONHOLD In hold state -EN_MTC_SESS_PARTP_STATE_DISCING Leaving a session -EN_MTC_SESS_PARTP_STATE_DISCED Already leave a session</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0de57c2892ce63e45fe64ffcc63aeff8" name="a0de57c2892ce63e45fe64ffcc63aeff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de57c2892ce63e45fe64ffcc63aeff8">&#9670;&nbsp;</a></span>Mtc_CallCbSetPracked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetPracked </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate the callee receive prack. </p>
+<p >GUI may use reliable provision response to check if peer is still alive. If do so, GUI should show a incoming call view in this callback instead incoming callback. GUI should update the status of outgoing call window. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2c7da725b0efd80987a45a61e788e43" name="ad2c7da725b0efd80987a45a61e788e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c7da725b0efd80987a45a61e788e43">&#9670;&nbsp;</a></span>Mtc_CallCbSetPttRecvd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetPttRecvd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of receiving ptt event. </p>
+<p >This callback indicates receiving ptt event callback. GUI should show a dialog to inform user, current call receives a ptt event.</p>
+<p >"iSessId" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is ID of session. GUI should use it to locate call window.</p>
+<p >"iPttType" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT type <a class="el" href="mtc__call_8h.html#ab1a75164dec3f7e4ffb6c80203bda7cc">EN_MTC_PTT_TYPE</a>.</p>
+<p >"iPttId" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT ID.</p>
+<p >"bSqu" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT squelch indication flag.</p>
+<p >"bPttMute" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT mute flag.</p>
+<p >"iPttSum" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT summation.</p>
+<p >"iSct" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT simultaneous call transmissions.</p>
+<p >"iAddType" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT additional feature type <a class="el" href="mtc__call_8h.html#afd3713cb0f646f667c4b10f043a550a5">EN_MTC_PTT_RX_ADD_TYPE</a>.</p>
+<p >"iAddValue" in <a class="el" href="mtc__call__cb_8h.html#a1a14c376fc6c6e141d13f8688159c3d6">PFN_MTCPTTRECVD</a> is PTT additional feature value.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af221bfd6196d43f35b2acbc22b22bd22" name="af221bfd6196d43f35b2acbc22b22bd22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af221bfd6196d43f35b2acbc22b22bd22">&#9670;&nbsp;</a></span>Mtc_CallCbSetRecvRtpPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRecvRtpPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a0b5641233cf64939c9b264869db7f7b0">PFN_MTCCALLCBRECVRTPPACKET</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receiving a rtp packtet. </p>
+<p >This callback indicates receiving a RTP packtet.</p>
+<p >"iStrmId" in <a class="el" href="mtc__call__cb_8h.html#a0b5641233cf64939c9b264869db7f7b0">PFN_MTCCALLCBRECVRTPPACKET</a> is the ID of stream(audio or video).</p>
+<p >"bVideo" in <a class="el" href="mtc__call__cb_8h.html#a0b5641233cf64939c9b264869db7f7b0">PFN_MTCCALLCBRECVRTPPACKET</a> is ZTRUE indicates RTP packet is video packet, ZFALSE indicate the rtp packet is audio packet.</p>
+<p >"pcData" in <a class="el" href="mtc__call__cb_8h.html#a0b5641233cf64939c9b264869db7f7b0">PFN_MTCCALLCBRECVRTPPACKET</a> is the RTP packet data.</p>
+<p >"iLen" in <a class="el" href="mtc__call__cb_8h.html#a0b5641233cf64939c9b264869db7f7b0">PFN_MTCCALLCBRECVRTPPACKET</a> is the RTP packet data length.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa808e84f6972c6566057b7a02e1ba942" name="aa808e84f6972c6566057b7a02e1ba942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa808e84f6972c6566057b7a02e1ba942">&#9670;&nbsp;</a></span>Mtc_CallCbSetRedirected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRedirected </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call redirected. </p>
+<p >This callback indicates the outgoing call was forwarded to another number. GUI should update call status. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69be533dfac65331d344e48808794db8" name="a69be533dfac65331d344e48808794db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69be533dfac65331d344e48808794db8">&#9670;&nbsp;</a></span>Mtc_CallCbSetReferCallFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetReferCallFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a9ecf9998c4bd825d26fc91b4eb5676a4">PFN_MTCREFERCALL</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of refer call failed. </p>
+<p >This callback indicates receiving a refer call failed callback. GUI should show a dialog to inform user, current call was refered failed.</p>
+<p >"iSessId" in <a class="el" href="mtc__call__cb_8h.html#a9ecf9998c4bd825d26fc91b4eb5676a4">PFN_MTCREFERCALL</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4e14cdb5c0f67c1b2e15da5e45fb5a5" name="ab4e14cdb5c0f67c1b2e15da5e45fb5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e14cdb5c0f67c1b2e15da5e45fb5a5">&#9670;&nbsp;</a></span>Mtc_CallCbSetReferCallOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetReferCallOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a9ecf9998c4bd825d26fc91b4eb5676a4">PFN_MTCREFERCALL</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of refer call ok. </p>
+<p >This callback indicates receiving a refer call ok callback. GUI should show a dialog to inform user, current call was refered ok.</p>
+<p >"iSessId" in <a class="el" href="mtc__call__cb_8h.html#a9ecf9998c4bd825d26fc91b4eb5676a4">PFN_MTCREFERCALL</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28920432c7627f4e7f202035a047a785" name="a28920432c7627f4e7f202035a047a785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28920432c7627f4e7f202035a047a785">&#9670;&nbsp;</a></span>Mtc_CallCbSetRefered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRefered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call refered. </p>
+<p >This callback indicates the session is transfered by peer to a new destination. The new session will be indicated by callback which was set by <a class="el" href="mtc__call__cb_8h.html#a7ed0936c87752443d17b079e4a913edb">Mtc_CallCbSetOutgoing</a>. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa5e2d289c20b03b34069e3ab15f08354" name="aa5e2d289c20b03b34069e3ab15f08354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e2d289c20b03b34069e3ab15f08354">&#9670;&nbsp;</a></span>Mtc_CallCbSetReplaced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetReplaced </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call replaced. </p>
+<p >This callback indicates the call has replaced by another call, which should happen when previous call was transfered to another peer. GUI should update the peer information. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> is the ID of session replaced, GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a492885db4407a79a5ef798d241c6ea1b" name="a492885db4407a79a5ef798d241c6ea1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492885db4407a79a5ef798d241c6ea1b">&#9670;&nbsp;</a></span>Mtc_CallCbSetReplaceFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetReplaceFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call replace failed. </p>
+<p >This callback indicates the call has replace failed by another call, which should happen when previous call was transfered to another peer. GUI should update the peer information. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> is the ID of session replace failed, GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a73562490cf4d41bcbd7f6e5a86d74a23" name="a73562490cf4d41bcbd7f6e5a86d74a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73562490cf4d41bcbd7f6e5a86d74a23">&#9670;&nbsp;</a></span>Mtc_CallCbSetReplaceOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetReplaceOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call replace ok. </p>
+<p >This callback indicates the call has replace ok by another call, which should happen when previous call was transfered to another peer. GUI should update the peer information. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a77365f22007e1f3514bfe043c80faea2">PFN_MTCCALLCBREPLACED</a> is the ID of session replace ok, GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09a0a4ba62599fd02d7dd3342d94adb9" name="a09a0a4ba62599fd02d7dd3342d94adb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a0a4ba62599fd02d7dd3342d94adb9">&#9670;&nbsp;</a></span>Mtc_CallCbSetRmvAudioFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRmvAudioFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate removing voice stream has been failed. </p>
+<p >This callback indicates failed to remove voice stream of the call. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7ec5c5ebbab4ef69a9ebb3a3f816814" name="ad7ec5c5ebbab4ef69a9ebb3a3f816814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ec5c5ebbab4ef69a9ebb3a3f816814">&#9670;&nbsp;</a></span>Mtc_CallCbSetRmvAudioOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRmvAudioOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate removing voice stream has been completed successfully. </p>
+<p >This callback indicates the operation of removing voice stream of the call has been completed successfully. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d8317853118671fd39a34f78848f5f6" name="a3d8317853118671fd39a34f78848f5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8317853118671fd39a34f78848f5f6">&#9670;&nbsp;</a></span>Mtc_CallCbSetRmvVideoFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRmvVideoFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate removing video stream has been failed. </p>
+<p >This callback indicates failed to remove video stream of the call. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> is the ID of session. GUI should use it to locate call window.</p>
+<p >"iStatCode" in <a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> has below values.</p><ul>
+<li><a class="el" href="mtc__call_8h.html#aee1b31e6fcaacaf189d4ecd8247deb88">MTC_CALL_ERR_REJECTED</a> Failed by remote rejected</li>
+<li><a class="el" href="mtc__call_8h.html#aabb013b980b447da5204e72d1ee0b270">MTC_CALL_ERR_NETWORK</a> Failed by network disconnected</li>
+<li><a class="el" href="mtc__call_8h.html#a0aded210af72758eea5e4c6b0d57ee9f">MTC_CALL_ERR_TIMEOUT</a> Failed by timeout for request <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aa9acf8c14544000ec7fec87c4ffd6a4e" name="aa9acf8c14544000ec7fec87c4ffd6a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9acf8c14544000ec7fec87c4ffd6a4e">&#9670;&nbsp;</a></span>Mtc_CallCbSetRmvVideoOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRmvVideoOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate removing video stream has been completed successfully. </p>
+<p >This callback indicates the operation of removing video stream of the call has been completed successfully. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6d87384271ff8aeb98cb507b0fbb8b77" name="a6d87384271ff8aeb98cb507b0fbb8b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d87384271ff8aeb98cb507b0fbb8b77">&#9670;&nbsp;</a></span>Mtc_CallCbSetRtcCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRtcCall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a9acc09c5c8702b42526eeca0f6336ae0">PFN_MTCCALLRTCCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback for a rtc call. </p>
+<p >GUI use <a class="el" href="mtc__call_8h.html">MTC Session Interfaces</a>, like <a class="el" href="mtc__call_8h.html#a88a5a550390b2637dac3da143f2d876e">Mtc_SessGetPeerUri</a>, to get detail information and present those to user. And wait for user action, accept or decline. iSessId in <a class="el" href="mtc__call__cb_8h.html#a9acc09c5c8702b42526eeca0f6336ae0">PFN_MTCCALLRTCCB</a> is the ID of session. GUI should use it to get session status. iEvntType in <a class="el" href="mtc__call__cb_8h.html#a9acc09c5c8702b42526eeca0f6336ae0">PFN_MTCCALLRTCCB</a> is call event type EN_MTC_RTC_CALL_EVENT_TYPE of session.</p>
+<p >pcSdp in <a class="el" href="mtc__call__cb_8h.html#a9acc09c5c8702b42526eeca0f6336ae0">PFN_MTCCALLRTCCB</a> is the SDP string of the session.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51726b7544b0571e586fcd56020f248e" name="a51726b7544b0571e586fcd56020f248e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51726b7544b0571e586fcd56020f248e">&#9670;&nbsp;</a></span>Mtc_CallCbSetRtpConnectivity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetRtpConnectivity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a7d1615ee74f08499c30521fad8ba0380">PFN_MTCCALLCBRTPCONNECTIVITY</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate rtp connectivity. </p>
+<p >This callback indicates the RTP connectivity status is changed.</p>
+<p >"iSessId" in <a class="el" href="mtc__call__cb_8h.html#a7d1615ee74f08499c30521fad8ba0380">PFN_MTCCALLCBRTPCONNECTIVITY</a> is the ID of session, GUI should use it to locate call window.</p>
+<p >When "bConned" in <a class="el" href="mtc__call__cb_8h.html#a7d1615ee74f08499c30521fad8ba0380">PFN_MTCCALLCBRTPCONNECTIVITY</a> is ZTRUE indicate media engine detected RTP packet received, ZFALSE indicate media engine hasn't detected RTP packet received for about 20 seconds.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7f6fd425b33d8921b837c79f28a5b45" name="af7f6fd425b33d8921b837c79f28a5b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f6fd425b33d8921b837c79f28a5b45">&#9670;&nbsp;</a></span>Mtc_CallCbSetSendRtpPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetSendRtpPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a8eade58bfdd7503e18e288e7aa215efa">PFN_MTCCALLCBSENDRTPPACKET</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate sending a rtp packtet. </p>
+<p >This callback indicates sending a RTP packtet report.</p>
+<p >"iTptId" in <a class="el" href="mtc__call__cb_8h.html#a8eade58bfdd7503e18e288e7aa215efa">PFN_MTCCALLCBSENDRTPPACKET</a> is the ID of transport id.</p>
+<p >"pcRmtAddr" in <a class="el" href="mtc__call__cb_8h.html#a8eade58bfdd7503e18e288e7aa215efa">PFN_MTCCALLCBSENDRTPPACKET</a> indicates RTP packet will be sent the the remote addr</p>
+<p >"pcData" in <a class="el" href="mtc__call__cb_8h.html#a8eade58bfdd7503e18e288e7aa215efa">PFN_MTCCALLCBSENDRTPPACKET</a> is the RTP packet data.</p>
+<p >"iLen" in <a class="el" href="mtc__call__cb_8h.html#a8eade58bfdd7503e18e288e7aa215efa">PFN_MTCCALLCBSENDRTPPACKET</a> is the RTP packet data length.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4dd03a7f7204c18475a8e5b63836eec4" name="a4dd03a7f7204c18475a8e5b63836eec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd03a7f7204c18475a8e5b63836eec4">&#9670;&nbsp;</a></span>Mtc_CallCbSetSubsFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetSubsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a261f0f953405e715bf73251fbda93075">PFN_MTCSUBSFAILED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate subscription failed. </p>
+<p >This callback indicates the subscription failed. "iSubsId" in <a class="el" href="mtc__call__cb_8h.html#a261f0f953405e715bf73251fbda93075">PFN_MTCSUBSFAILED</a> is the ID of subscription. "iStatCode" in <a class="el" href="mtc__call__cb_8h.html#ad0e81fee2a408dfecb9780560c82214b">PFN_MTCCALLCBERR</a> is the error code(see MSF_STAT_ERR_NO), it can be</p><ul>
+<li>If iStatCode &lt; 0x1000, contains SIP response status code, use Sip_ReasonFromCode to get description string</li>
+<li>Otherwise, use <a class="el" href="mtc__call_8h.html#a56543eabf3845f4d64d906fdf91e391e">Mtc_SessGetStatDesc</a> to get description string</li>
+</ul>
+<p >GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a22d0cbc38ace8d30069aa3a664242f1b" name="a22d0cbc38ace8d30069aa3a664242f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d0cbc38ace8d30069aa3a664242f1b">&#9670;&nbsp;</a></span>Mtc_CallCbSetSubsInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetSubsInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a34e3b0f0f2807f239629cc63d0a44245">PFN_MTCCALLCBSUBSINFO</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receive subs info. </p>
+<p >This callback indicates the call has received subs info message. GUI should update the subscription info information.</p>
+<p >"iSubsId" in <a class="el" href="mtc__call__cb_8h.html#a34e3b0f0f2807f239629cc63d0a44245">PFN_MTCCALLCBSUBSINFO</a> is the ID of subscription, "pcInfo" is the subs info string.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabcd52605d1bdceda6b371584579d2ae" name="aabcd52605d1bdceda6b371584579d2ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabcd52605d1bdceda6b371584579d2ae">&#9670;&nbsp;</a></span>Mtc_CallCbSetSubsOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetSubsOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#ac476dfb47f1fcb893421a9dc569894e4">PFN_MTCSUBSOK</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate subscription ok. </p>
+<p >This callback indicates the subscription ok. "iSubsId" in <a class="el" href="mtc__call__cb_8h.html#ac476dfb47f1fcb893421a9dc569894e4">PFN_MTCSUBSOK</a> is the ID of subscription. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4adee5173029e4c8f1091e616d5bb845" name="a4adee5173029e4c8f1091e616d5bb845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4adee5173029e4c8f1091e616d5bb845">&#9670;&nbsp;</a></span>Mtc_CallCbSetSubsReq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetSubsReq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a34e3b0f0f2807f239629cc63d0a44245">PFN_MTCCALLCBSUBSINFO</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate receive subscribe request. </p>
+<p >This callback indicates the call has received subs request. GUI should notify the subscription state to the subscriber with NOTIFY response.</p>
+<p >"iSubsId" in <a class="el" href="mtc__call__cb_8h.html#a34e3b0f0f2807f239629cc63d0a44245">PFN_MTCCALLCBSUBSINFO</a> is the ID of subscription, "pcInfo" is the subs info string.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c24ecb4dd0f6ed06a932a42cd94406c" name="a7c24ecb4dd0f6ed06a932a42cd94406c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c24ecb4dd0f6ed06a932a42cd94406c">&#9670;&nbsp;</a></span>Mtc_CallCbSetTalking()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetTalking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate the call has established. </p>
+<p >The call can be a received call or a send out call. GUI should switch to talking window. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p><ul>
+<li>Use <a class="el" href="mtc__call_8h.html#a858ead61a26b3d9e5c6fa7eedadb1b0f">Mtc_SessHasVideo</a> to check if there is a video media. If so, GUI should invoke <a class="el" href="mtc__call_8h.html#a323e8acd3bdfcb6e1361c2d63f3b714d">Mtc_SessVideoStart</a> to start send and receive video media.</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0ce0761081a423a5650337435381fb9" name="aa0ce0761081a423a5650337435381fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ce0761081a423a5650337435381fb9">&#9670;&nbsp;</a></span>Mtc_CallCbSetTermed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetTermed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call is terminated. </p>
+<p >"iStatCode" in <a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> has below values.</p><ul>
+<li><a class="el" href="mtc__call_8h.html#a24dba5183620e847d3512cf921d47bff">MTC_CALL_TERM_BYE</a> Terminated by remote BYE</li>
+<li><a class="el" href="mtc__call_8h.html#a3191af483242698605fe36f3dfb0f210">MTC_CALL_TERM_CANCEL</a> Terminated by remote CANCEL</li>
+<li><a class="el" href="mtc__call_8h.html#abd01be1e1f2c7510c525ffe33a678862">MTC_CALL_TERM_BUSY</a> Terminated by 486 Busy Here</li>
+<li><a class="el" href="mtc__call_8h.html#af35d12c2b38132f8db8905af5ccf0d06">MTC_CALL_TERM_DECLINE</a> Terminated by 603 Decline</li>
+<li><a class="el" href="mtc__call_8h.html#a9cb4d438605ed2226aaff0ad1e8dcf98">MTC_CALL_ERR_FORBIDDEN</a> Terminated by 403 Forbidden</li>
+<li><a class="el" href="mtc__call_8h.html#a758bbcc8e320f5bef04e534583943e50">MTC_CALL_ERR_NOT_FOUND</a> Terminated by 404 Not Found</li>
+<li><a class="el" href="mtc__call_8h.html#a519d1a1dc8484bf605a033a8dc20e8f7">MTC_CALL_ERR_NOT_ACPTED</a> Terminated by 406 Not Acceptable or 488 Not Acceptable Here</li>
+<li><a class="el" href="mtc__call_8h.html#a27895c05f7558bf4975a7abe8b45a61d">MTC_CALL_ERR_REQ_TERMED</a> Terminated by 487 Request Terminated</li>
+<li><a class="el" href="mtc__call_8h.html#a81855cea1e7d186bfb24703ff3676deb">MTC_CALL_ERR_INTERNAL_ERR</a> Terminated by 500 Server Internal Error</li>
+<li><a class="el" href="mtc__call_8h.html#a014fa868baa4398bb42132af335abb11">MTC_CALL_ERR_SRV_UNAVAIL</a> Terminated by 503 Service Unavailable</li>
+<li><a class="el" href="mtc__call_8h.html#aa0060fa0f96234ccfe5669d5c28dfe74">MTC_CALL_ERR_NOT_EXIST</a> Terminated by 604 Does Not Exist Anywhere The call can be a received call or a send out call. GUI should show the reason why the call was terminated for a few seconds, and switch to main working window. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#aa9b5a2dc6e789358105df5ee9bafc023">PFN_MTCCALLCBTERMED</a> is the ID of session. GUI should use it to locate call window.</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a49e6136bd7de50a1a8451f0b4aea020e" name="a49e6136bd7de50a1a8451f0b4aea020e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e6136bd7de50a1a8451f0b4aea020e">&#9670;&nbsp;</a></span>Mtc_CallCbSetTrsfAcpt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetTrsfAcpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call transferred accepted. </p>
+<p >This callback indicates receiving a transfer request. GUI should show a dialog to inform user, current call was transfered. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cdef3f924f34531defcfab8cdf07db8" name="a5cdef3f924f34531defcfab8cdf07db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cdef3f924f34531defcfab8cdf07db8">&#9670;&nbsp;</a></span>Mtc_CallCbSetTrsfFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetTrsfFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call transferred failed. </p>
+<p >This callback indicates transfer failed. GUI should show a dialog to inform user, current call was transfered. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8745820d02835897c1120b8d9e7c8bae" name="a8745820d02835897c1120b8d9e7c8bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8745820d02835897c1120b8d9e7c8bae">&#9670;&nbsp;</a></span>Mtc_CallCbSetTrsfTerm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetTrsfTerm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call transferred terminated. </p>
+<p >For extension.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc18d6769ecb915474aaa97e43510029" name="acc18d6769ecb915474aaa97e43510029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc18d6769ecb915474aaa97e43510029">&#9670;&nbsp;</a></span>Mtc_CallCbSetUnHeld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetUnHeld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call was un-held by peer. </p>
+<p >This callback indicates un-held hold the call. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad84ebc0606e89ef2512a238186c24ac7" name="ad84ebc0606e89ef2512a238186c24ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84ebc0606e89ef2512a238186c24ac7">&#9670;&nbsp;</a></span>Mtc_CallCbSetUnHoldFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetUnHoldFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call un-hold failed. </p>
+<p >This callback indicates un-hold operation has been failed. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a43bd5076bb86d0c1eb76a252487aae" name="a4a43bd5076bb86d0c1eb76a252487aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a43bd5076bb86d0c1eb76a252487aae">&#9670;&nbsp;</a></span>Mtc_CallCbSetUnHoldOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetUnHoldOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call un-hold successfully. </p>
+<p >This callback indicates un-hold operation has been completed successfully. GUI should update session status according to session ID. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10665d5032fd84336ba10b6bd0c8ebde" name="a10665d5032fd84336ba10b6bd0c8ebde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10665d5032fd84336ba10b6bd0c8ebde">&#9670;&nbsp;</a></span>Mtc_CallCbSetVideoIncomingSta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetVideoIncomingSta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call's video incoming status. </p>
+<p >This callback indicates the call's video incoming status. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> is the ID of session. GUI should use it to locate call window. "iParm1" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the framerate. "iParm2" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the bitrate.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29a25cbfa496dcceb2fa64a8c3f3dea4" name="a29a25cbfa496dcceb2fa64a8c3f3dea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a25cbfa496dcceb2fa64a8c3f3dea4">&#9670;&nbsp;</a></span>Mtc_CallCbSetVideoOutgoingSta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetVideoOutgoingSta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call's video outgoing status. </p>
+<p >This callback indicates the call's video outgoing status. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> is the ID of session. GUI should use it to locate call window. "iParm1" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the framerate. "iParm2" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the bitrate.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9cf67b02d1245b8cc27e92064b171c4c" name="a9cf67b02d1245b8cc27e92064b171c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf67b02d1245b8cc27e92064b171c4c">&#9670;&nbsp;</a></span>Mtc_CallCbSetVideoProtectSta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetVideoProtectSta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call's video protection status. </p>
+<p >This callback indicates the call's video protection status. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> is the ID of session. GUI should use it to locate call window. "iParm1" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the FEC bitrate in kbps. "iParm2" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the NACK bitrate in kbps.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac126db26540627e209b8d540b07c0d2d" name="ac126db26540627e209b8d540b07c0d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac126db26540627e209b8d540b07c0d2d">&#9670;&nbsp;</a></span>Mtc_CallCbSetVideoRingBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetVideoRingBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate the caller receiving video ring back. </p>
+<p >GUI should show a video call view in this callback to show video images in the ring back video stream. GUI should update the status of outgoing call window. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a065d6e5a6ae8d49bf936bb31d263e6c6">PFN_MTCCALLCB</a> is the ID of session. GUI should use it to locate call window.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac4761255e8b6e582311dc87e52dc5ced" name="ac4761255e8b6e582311dc87e52dc5ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4761255e8b6e582311dc87e52dc5ced">&#9670;&nbsp;</a></span>Mtc_CallCbSetVideoSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_CallCbSetVideoSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__call__cb_8h.html#a7ab9c753d8c8e4e590ff8c7253595326">PFN_MTCCALLCBVIDEOSIZE</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set callback of indicate call's video size changed. </p>
+<p >This callback indicates the call's video size changed. "iSessId" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> is the ID of session. GUI should use it to locate call window. "iWidth" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the width of frame. "iHeight" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the height of frame. "iOrientation" in <a class="el" href="mtc__call__cb_8h.html#a85f0642b29026f7700d03545448cf18a">PFN_MTCCALLCBVIDEOSTATUS</a> indicate the orientation. <a class="el" href="mtc__call_8h.html#ac599d2c6c31e213051ab3e3f04fc56d9">EN_MTC_ORIENTATION_TYPE</a></p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

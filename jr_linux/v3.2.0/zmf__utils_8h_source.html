@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/grape/zmf_utils.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_f1a3acf3e1f2b9415cf1af1ac8bfb4f9.html">grape</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">zmf_utils.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="zmf__utils_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __ZMF_UTILS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __ZMF_UTILS_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma GCC visibility push(default)</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___zmf_log.html#ga3aa9654419561364d6f8c06886288d50">   25</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    ZmfLogDebug     = 0,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    ZmfLogInfo      = 1,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ZmfLogWarn      = 2,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ZmfLogError     = 3,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <a class="code hl_enumeration" href="group___zmf_log.html#ga3aa9654419561364d6f8c06886288d50">ZmfLogLevel</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> Zmf_LogV(<span class="keywordtype">int</span> iLogLevel, <span class="keyword">const</span> <span class="keywordtype">char</span> *format, va_list argv);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group___zmf_video_type.html#gaac691f724757163edbbcd53a76c393da">   46</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    ZmfPixelFormatI420              = 1,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    ZmfPixelFormatIYUV              = 2,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    ZmfPixelFormatRGB24             = 3,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    ZmfPixelFormatABGR              = 4,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    ZmfPixelFormatARGB              = 5,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    ZmfPixelFormatARGB4444          = 6,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ZmfPixelFormatRGB565            = 7,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    ZmfPixelFormatARGB1555          = 8,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ZmfPixelFormatYUY2              = 9,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ZmfPixelFormatYV12              = 10,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    ZmfPixelFormatUYVY              = 11,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    ZmfPixelFormatMJPG              = 12,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    ZmfPixelFormatNV21              = 13,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    ZmfPixelFormatNV12              = 14,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    ZmfPixelFormatBGRA              = 15</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <a class="code hl_enumeration" href="group___zmf_video_type.html#gaac691f724757163edbbcd53a76c393da">ZmfPixelFormatType</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga47b44ebb8617bc40be9290d84e0be02c">   87</a></span><span class="keywordtype">int</span>  <a class="code hl_function" href="group___zmf_video_interface.html#ga47b44ebb8617bc40be9290d84e0be02c">Zmf_ImageFromI420</a> (<span class="keywordtype">void</span>* dstFrame, <span class="keywordtype">int</span> dstFormat, <span class="keywordtype">int</span> dstStride,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                        <span class="keyword">const</span> <span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">int</span> srcWidth, <span class="keywordtype">int</span> srcHeight);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">int</span>  Zmf_ConvertFromI420 (<span class="keywordtype">void</span>* dstFrame, <span class="keywordtype">int</span> dstFormat,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                          <span class="keyword">const</span> <span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">int</span> srcWidth, <span class="keywordtype">int</span> srcHeight);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#gab2b53ae6069d1ed3a45f7430ab7430f9">  108</a></span><span class="keywordtype">int</span>  <a class="code hl_function" href="group___zmf_video_interface.html#gab2b53ae6069d1ed3a45f7430ab7430f9">Zmf_ImageFromYV12</a> (<span class="keywordtype">void</span>* dstFrame, <span class="keywordtype">int</span> dstFormat, <span class="keywordtype">int</span> dstStride,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                          <span class="keyword">const</span> <span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">int</span> srcWidth, <span class="keywordtype">int</span> srcHeight);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">int</span>  Zmf_ConvertFromYV12 (<span class="keywordtype">void</span>* dstFrame, <span class="keywordtype">int</span> dstFormat,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                          <span class="keyword">const</span> <span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">int</span> srcWidth, <span class="keywordtype">int</span> srcHeight);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga226972fc2f3ca59f514b7dd5d76c4709">  134</a></span><span class="keywordtype">int</span>  <a class="code hl_function" href="group___zmf_video_interface.html#ga226972fc2f3ca59f514b7dd5d76c4709">Zmf_ConvertToI420</a>(<span class="keywordtype">void</span>* dstFrame,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                       <span class="keywordtype">int</span> srcFormat, <span class="keyword">const</span> <span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">unsigned</span> srcBufLen,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                       <span class="keywordtype">int</span> srcWidth, <span class="keywordtype">int</span> srcHeight, <span class="keywordtype">int</span> crop_x, <span class="keywordtype">int</span> crop_y,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                       <span class="keywordtype">int</span> *dstWidth, <span class="keywordtype">int</span> *dstHeight, <span class="keywordtype">int</span> rotateAngle);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga06e7fa5ec4d99e43bdc55b799c74e7d6">  152</a></span><span class="keywordtype">int</span>  <a class="code hl_function" href="group___zmf_video_interface.html#ga06e7fa5ec4d99e43bdc55b799c74e7d6">Zmf_ScaleI420</a>(<span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">int</span> srcWidth, <span class="keywordtype">int</span> srcHeight,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                   <span class="keywordtype">void</span>* dstFrame, <span class="keywordtype">int</span> dstWidth, <span class="keywordtype">int</span> dstHeight);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga0807fe032ff7dcaf3d6a9a1a91a99480">  166</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga0807fe032ff7dcaf3d6a9a1a91a99480">Zmf_MirrorI420UpDown</a>(<span class="keywordtype">void</span>* srcFrame, <span class="keywordtype">void</span>* dstFrame,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                     <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">//TESSAR</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">enum</span> ZmfTessarCollectLevel {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    ZmfTessarError,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    ZmfTessarWarn,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    ZmfTessarImportant,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    ZmfTessarDebug,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>};</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">enum</span> ZmfTessarCollectType {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    ZmfTessarData     = 0x01,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    ZmfTessarEvent    = 0x02,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    ZmfTessarAll      = 0x03,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga31495654a60077c3d89142ac5641e33c">  183</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="group___zmf_video_interface.html#ga31495654a60077c3d89142ac5641e33c">ZmfTessarInform</a> {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca3f9c23db424babadb2d0a4336ab8bac4">  184</a></span>    <a class="code hl_enumvalue" href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca3f9c23db424babadb2d0a4336ab8bac4">ZmfTessarTimeOut</a>        = 1 &lt;&lt; 0,   </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca4191bd34494df51295e7dee65fef8069">  185</a></span>    <a class="code hl_enumvalue" href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca4191bd34494df51295e7dee65fef8069">ZmfTessarErrorOccured</a>   = 1 &lt;&lt; 1,   </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>};</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga0db9edbd7d170cdc9dc0fbd46ad5284b">  192</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga0db9edbd7d170cdc9dc0fbd46ad5284b">Zmf_TessarRegister</a>();</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga7e76a09efc381a111ade344ea4ab717d">  199</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga7e76a09efc381a111ade344ea4ab717d">Zmf_TessarDeregister</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#gac7b3f4ecc5f0188fd281c52105588534">  208</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="group___zmf_video_interface.html#gac7b3f4ecc5f0188fd281c52105588534">Zmf_GetTessarData</a>(<span class="keywordtype">int</span> level, <span class="keywordtype">int</span> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga9267a2174fef1c3ce1b65b5f39d66a5d">  220</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga9267a2174fef1c3ce1b65b5f39d66a5d">Zmf_TessarRecord</a>(<span class="keywordtype">int</span> keys[], <span class="keywordtype">int</span> values[], <span class="keyword">const</span> <span class="keywordtype">int</span> size, <span class="keywordtype">int</span> flag);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga3fb048eb3c562e60e0d43ea8c7b88caa">  230</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga3fb048eb3c562e60e0d43ea8c7b88caa">Zmf_TessarAddCallback</a>(<span class="keywordtype">void</span>* cookie, <span class="keywordtype">void</span> (*pfnCb) (<span class="keywordtype">void</span>* cookie, <span class="keywordtype">int</span> event, <span class="keywordtype">int</span> info), <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> eventMask);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga82fde0b55fd4add24d9c9a75a8dc947f">  236</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga82fde0b55fd4add24d9c9a75a8dc947f">Zmf_TessarRemoveCallback</a>(<span class="keywordtype">void</span>* cookie);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="group___zmf_video_interface.html#ga9a81566ce2acac92879f09403601e774">  243</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group___zmf_video_interface.html#ga9a81566ce2acac92879f09403601e774">Zmf_GetLastError</a>(<span class="keywordtype">char</span> code[16], <span class="keywordtype">char</span> msg[2048]);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#ifdef __GNUC__</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#pragma GCC visibility pop</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agroup___zmf_log_html_ga3aa9654419561364d6f8c06886288d50"><div class="ttname"><a href="group___zmf_log.html#ga3aa9654419561364d6f8c06886288d50">ZmfLogLevel</a></div><div class="ttdeci">ZmfLogLevel</div><div class="ttdoc">日志等级</div><div class="ttdef"><b>Definition:</b> zmf_utils.h:25</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga06e7fa5ec4d99e43bdc55b799c74e7d6"><div class="ttname"><a href="group___zmf_video_interface.html#ga06e7fa5ec4d99e43bdc55b799c74e7d6">Zmf_ScaleI420</a></div><div class="ttdeci">int Zmf_ScaleI420(void *srcFrame, int srcWidth, int srcHeight, void *dstFrame, int dstWidth, int dstHeight)</div><div class="ttdoc">缩放I420图像</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga0807fe032ff7dcaf3d6a9a1a91a99480"><div class="ttname"><a href="group___zmf_video_interface.html#ga0807fe032ff7dcaf3d6a9a1a91a99480">Zmf_MirrorI420UpDown</a></div><div class="ttdeci">int Zmf_MirrorI420UpDown(void *srcFrame, void *dstFrame, int width, int height)</div><div class="ttdoc">上下翻转I420图像</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga0db9edbd7d170cdc9dc0fbd46ad5284b"><div class="ttname"><a href="group___zmf_video_interface.html#ga0db9edbd7d170cdc9dc0fbd46ad5284b">Zmf_TessarRegister</a></div><div class="ttdeci">int Zmf_TessarRegister()</div><div class="ttdoc">注册天赛ID。</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga226972fc2f3ca59f514b7dd5d76c4709"><div class="ttname"><a href="group___zmf_video_interface.html#ga226972fc2f3ca59f514b7dd5d76c4709">Zmf_ConvertToI420</a></div><div class="ttdeci">int Zmf_ConvertToI420(void *dstFrame, int srcFormat, const void *srcFrame, unsigned srcBufLen, int srcWidth, int srcHeight, int crop_x, int crop_y, int *dstWidth, int *dstHeight, int rotateAngle)</div><div class="ttdoc">将图像类型转换成I420</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga31495654a60077c3d89142ac5641e33c"><div class="ttname"><a href="group___zmf_video_interface.html#ga31495654a60077c3d89142ac5641e33c">ZmfTessarInform</a></div><div class="ttdeci">ZmfTessarInform</div><div class="ttdef"><b>Definition:</b> zmf_utils.h:183</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga3fb048eb3c562e60e0d43ea8c7b88caa"><div class="ttname"><a href="group___zmf_video_interface.html#ga3fb048eb3c562e60e0d43ea8c7b88caa">Zmf_TessarAddCallback</a></div><div class="ttdeci">void Zmf_TessarAddCallback(void *cookie, void(*pfnCb)(void *cookie, int event, int info), unsigned int eventMask)</div><div class="ttdoc">设置天赛消息提醒回调。</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga47b44ebb8617bc40be9290d84e0be02c"><div class="ttname"><a href="group___zmf_video_interface.html#ga47b44ebb8617bc40be9290d84e0be02c">Zmf_ImageFromI420</a></div><div class="ttdeci">int Zmf_ImageFromI420(void *dstFrame, int dstFormat, int dstStride, const void *srcFrame, int srcWidth, int srcHeight)</div><div class="ttdoc">将I420图像转换成别的类型</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga7e76a09efc381a111ade344ea4ab717d"><div class="ttname"><a href="group___zmf_video_interface.html#ga7e76a09efc381a111ade344ea4ab717d">Zmf_TessarDeregister</a></div><div class="ttdeci">void Zmf_TessarDeregister(int id)</div><div class="ttdoc">注销天赛ID。</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga82fde0b55fd4add24d9c9a75a8dc947f"><div class="ttname"><a href="group___zmf_video_interface.html#ga82fde0b55fd4add24d9c9a75a8dc947f">Zmf_TessarRemoveCallback</a></div><div class="ttdeci">void Zmf_TessarRemoveCallback(void *cookie)</div><div class="ttdoc">取消消息提醒。</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga9267a2174fef1c3ce1b65b5f39d66a5d"><div class="ttname"><a href="group___zmf_video_interface.html#ga9267a2174fef1c3ce1b65b5f39d66a5d">Zmf_TessarRecord</a></div><div class="ttdeci">int Zmf_TessarRecord(int keys[], int values[], const int size, int flag)</div><div class="ttdoc">写入天赛数据</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_ga9a81566ce2acac92879f09403601e774"><div class="ttname"><a href="group___zmf_video_interface.html#ga9a81566ce2acac92879f09403601e774">Zmf_GetLastError</a></div><div class="ttdeci">void Zmf_GetLastError(char code[16], char msg[2048])</div><div class="ttdoc">获得last error。</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_gab2b53ae6069d1ed3a45f7430ab7430f9"><div class="ttname"><a href="group___zmf_video_interface.html#gab2b53ae6069d1ed3a45f7430ab7430f9">Zmf_ImageFromYV12</a></div><div class="ttdeci">int Zmf_ImageFromYV12(void *dstFrame, int dstFormat, int dstStride, const void *srcFrame, int srcWidth, int srcHeight)</div><div class="ttdoc">将YV12图像转换成别的类型</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_gac7b3f4ecc5f0188fd281c52105588534"><div class="ttname"><a href="group___zmf_video_interface.html#gac7b3f4ecc5f0188fd281c52105588534">Zmf_GetTessarData</a></div><div class="ttdeci">const char * Zmf_GetTessarData(int level, int type, int id)</div><div class="ttdoc">获取tessar字符串(json)</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_gga31495654a60077c3d89142ac5641e33ca3f9c23db424babadb2d0a4336ab8bac4"><div class="ttname"><a href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca3f9c23db424babadb2d0a4336ab8bac4">ZmfTessarTimeOut</a></div><div class="ttdeci">@ ZmfTessarTimeOut</div><div class="ttdoc">内部有新的数据写入，但至少持续5秒没有输出数据</div><div class="ttdef"><b>Definition:</b> zmf_utils.h:184</div></div>
+<div class="ttc" id="agroup___zmf_video_interface_html_gga31495654a60077c3d89142ac5641e33ca4191bd34494df51295e7dee65fef8069"><div class="ttname"><a href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca4191bd34494df51295e7dee65fef8069">ZmfTessarErrorOccured</a></div><div class="ttdeci">@ ZmfTessarErrorOccured</div><div class="ttdoc">发生Error级别的事件</div><div class="ttdef"><b>Definition:</b> zmf_utils.h:185</div></div>
+<div class="ttc" id="agroup___zmf_video_type_html_gaac691f724757163edbbcd53a76c393da"><div class="ttname"><a href="group___zmf_video_type.html#gaac691f724757163edbbcd53a76c393da">ZmfPixelFormatType</a></div><div class="ttdeci">ZmfPixelFormatType</div><div class="ttdoc">ZMF模块支持的图像类型</div><div class="ttdef"><b>Definition:</b> zmf_utils.h:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

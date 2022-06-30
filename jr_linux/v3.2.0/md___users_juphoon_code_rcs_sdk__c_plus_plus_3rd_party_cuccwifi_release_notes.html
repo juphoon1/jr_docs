@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: VoIP SDK</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">VoIP SDK </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >菊风 VoIP SDK 提供标准 SIP 音视频通话功能</p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+版本信息</h1>
+<p >Lemon 4.1</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+4.1.1.5 [Jun 9 2022]</h1>
+<p >【新增特性】</p><ol type="1">
+<li>新增视频彩铃回调函数 Mtc_CallCbSetVideoRingBack 或 mtcCallCbVideoRingBack；</li>
+</ol>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>解决打开 precondition 时无法收到来电问题；</li>
+</ol>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无 </p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+4.1.1.4 [May 23 2022]</h1>
+<p >【新增特性】</p><ol type="1">
+<li>SIP 网关2.0的回调函数 PFN_MTCCALLRTCCB 新增通话挂断状态码参数 iStatCode。 状态码定义参考 <a class="el" href="mtc__call_8h.html" title="MTC Call Interface Functions">mtc_call.h</a> 中 MTC_CALL_ERR_NO 等的定义。</li>
+<li>新增 rtc 事件 EN_RSE_RTC_CALL_PRACK 表示已收到 prack 信令。</li>
+</ol>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】 无</p>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无 </p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+4.1.1.3 [May 14 2022]</h1>
+<p >【新增特性】</p>
+<p >无</p>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>SDK 基于 VoIMS 4.1.0 分支，3.1.0 分支的代码已经合并至4.1.0 分支；</li>
+<li>解决 sip 并发数过大导致内存分配不足问题；</li>
+</ol>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无 </p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+4.1.1.2 [Apr 20 2022]</h1>
+<p >【新增特性】</p>
+<p >无</p>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>新增 precodition 配置接口 Mtc_CallDbSetPrecondSupt，默认配置关闭. 打开开关，即可发起呼叫时携带 precondition 相关 sdp 参数。</li>
+<li>电信天翼 SDK 去掉 license 限制；</li>
+</ol>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无 </p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+4.1.1.1 [Mar 24 2022]</h2>
+<p >【新增特性】</p>
+<p >无</p>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>临时兼容语音通话invite 请求也携带 video tag，用于标识 sdk 是否支持视频通话能力。</li>
+<li>兼容电信天翼定制设备摄像头无法打开问题；</li>
+</ol>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+4.1.1.0 [Mar 21 2022]</h2>
+<p >【新增特性】</p><ol type="1">
+<li>支持 SIP GW 2.0 功能</li>
+</ol>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p>
+<p >【接口变更】</p><ol type="1">
+<li>新增头文件 mtc_call_rtc.h；</li>
+<li>新增初始化接口 Mtc_SessRtcInit，需要设置本地 ip 地址和端口；</li>
+<li>新增发送消息回调接口 Mtc_SessRtcCbSetExternSend；</li>
+<li>新增收到消息接口 Mtc_SessRtcRecvSipMsg；</li>
+<li>新增获取被叫 uri 接口 Mtc_SessGetCalledUri；</li>
+</ol>
+<p >【版本升级应注意的问题】</p><ol type="1">
+<li>对于 rtc 通话功能不需要媒体引擎和 SDP，只支持通话 SIP 信令交互；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md7"></a>
+4.1.0.2 [Jan 18 2022]</h2>
+<p >【新增特性】</p>
+<p >无</p>
+<p >【优化】</p>
+<p >无</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+4.1.0.3 [Jan 19 2022]</h2>
+<p >【新增特性】</p>
+<p >无</p>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>解决红黑树引起的 omap id 问题，可能导致无法登录注册，无法收发 sip 消息等问题；</li>
+<li>临时兼容语音通话invite 请求也携带 video tag，用于标识 sdk 是否支持视频通话能力。</li>
+</ol>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无</p>
+<h2><a class="anchor" id="autotoc_md9"></a>
+4.1.0.2 [Jan 18 2022]</h2>
+<p >【新增特性】</p>
+<p >无</p>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>解决 Inband DTMF 未上报 DTMF 回调问题。</li>
+</ol>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p><ol type="1">
+<li>Inband DTMF 会消耗 CPU, 一般不建议使用。</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md10"></a>
+4.1.0.1 [Jan 12 2022]</h2>
+<p >【新增特性】</p><ol type="1">
+<li>升级媒体引擎至6.5；</li>
+</ol>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p>
+<p >无</p>
+<p >【接口变更】</p>
+<p >无</p>
+<p >【版本升级应注意的问题】</p>
+<p >无</p>
+<h2><a class="anchor" id="autotoc_md11"></a>
+4.1.0.0 [Jan 12 2022]</h2>
+<p >【新增特性】</p><ol type="1">
+<li>更新 release note 中版本命名；</li>
+<li>支持发送 DTMF 和接收 DTMF 功能；</li>
+</ol>
+<p >【优化】</p>
+<p >无</p>
+<p >【修复】</p><ol type="1">
+<li>兼容解决 H264 payload type 被置为0 无法收到视频流问题；</li>
+</ol>
+<p >【接口变更】</p><ol type="1">
+<li>新增接收 dtmf 事件回调函数 Mtc_CallCbSetRecvDtmf(ios 或者windows) 或者 mtcCallCbRecvDtmf(int iSessId, int iDtmfType)(android)；</li>
+<li>DTMF 类型定义参考：头文件mtc_call.h 或者 MtcCallConstants.java 中 EN_MTC_CALL_DTMF_TYPE 定义；</li>
+</ol>
+<p >【版本升级应注意的问题】</p><ol type="1">
+<li>android 中需要增加实现 mtcCallCbRecvDtmf 回调接口；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md12"></a>
+v6.4-20220106</h2>
+<ol type="1">
+<li>兼容解决 h264 payload type 为0时，无法看到视频图像问题；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md13"></a>
+v6.4-20211223</h2>
+<ol type="1">
+<li>解决 task id 无法找到问题；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md14"></a>
+v6.4-20211222</h2>
+<ol type="1">
+<li>解决音视频通话 ANR 问题；</li>
+<li>解决 SDK 长时间通话偶现无法发出呼叫或者收到来电问题；</li>
+<li>针对RS805 设备增加音频采集buffer 长度至200ms;</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md15"></a>
+v6.4-20211217</h2>
+<ol type="1">
+<li>解决 sdp 的 srtp 协商问题；</li>
+<li>解决无法收到添加视频请求回调问题；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md16"></a>
+v6.4-20211216</h2>
+<ol type="1">
+<li>解决 tls 握手失败问题；</li>
+<li>自动配置时增加网络检测；</li>
+<li>增加设置媒体日志接口 Mtc_CliCfgSetMmeLogFile；</li>
+<li>安卓需要在调用 MtcCli.Mtc_CliInit 之前调用 ZpandTimer.init 初始化 context;</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md17"></a>
+v6.4-20211210</h2>
+<ol type="1">
+<li>解决 dtmf 协商问题;</li>
+<li>重新编译版本增加调试信息定位 anr 问题；</li>
+<li>更新 license.sign 文件有效期至2022年12月31日；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md18"></a>
+v6.4-20211130</h2>
+<ol type="1">
+<li>解决账号注销后无法登录问题</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md19"></a>
+v6.4-20211129</h2>
+<ol type="1">
+<li>升级媒体引擎至6.4版本</li>
+<li>兼容优士康RS805设备语音采集抖动问题</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md20"></a>
+v5.01-20211115</h2>
+<ol type="1">
+<li>解决 iOS 呼叫保持问题；</li>
+<li>合并 VoIMS-5.01-develop 分支代码到3.1.0 分支；</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md21"></a>
+v5.01-20211109</h2>
+<ol type="1">
+<li>解决 iOS NTP 查询 DNS 偶现崩溃问题；</li>
+<li>解决弱网情况 NTP 未上报 DNS 查询失败回调问题；</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md22"></a>
+v5.01-20220418</h1>
+<ol type="1">
+<li>android 全量版本将 libzmf.a 合并到liblemon.so中;</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md23"></a>
+v5.01-20211229</h3>
+<p >1.修复发起自动配置，登录，呼叫，会议业务时license校验内存泄露问题；</p>
+<h3><a class="anchor" id="autotoc_md24"></a>
+v5.01-20211228</h3>
+<ol type="1">
+<li>修复发起自动配置，登录，呼叫，会议业务时license校验内存泄露问题；</li>
+<li>修复通话挂断后，媒体socket收数据内存泄露问题；</li>
+<li>修复发起 SIP Options 心跳内存泄露问题；</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md25"></a>
+v5.01-20211221</h3>
+<ol type="1">
+<li>支持通过 Mtc_ImPMsgSendSms 发送 SMS over IP 的 SIP Message；</li>
+<li>收到 SMS over IP 的 SIP message 时，会收到 mtcImCbPMsgRecvMsg 或者 Mtc_ImCbSetPMsgRecvMsg 设置的回调通知。</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md26"></a>
+v5.01-20211217</h3>
+<p >1.解决amr-wb 协商导致单通问题；</p>
+<h3><a class="anchor" id="autotoc_md27"></a>
+v5.01-20211210</h3>
+<p >1.解决存在多方通话订阅时无法发起1对1呼叫问题。</p>
+<h3><a class="anchor" id="autotoc_md28"></a>
+v5.01-20211102</h3>
+<p >1.兼容解决 DTMF 采样率与语音编解码不一致问题;</p>
+<h3><a class="anchor" id="autotoc_md29"></a>
+v5.01-20211101</h3>
+<p >1.解决多方通话会场订阅对象被删除，导致无法邀请人入会问题;</p>
+<h3><a class="anchor" id="autotoc_md30"></a>
+v5.01-20211026</h3>
+<p >1.修复 DTMF Payload Type 异常问题；</p>
+<h3><a class="anchor" id="autotoc_md31"></a>
+&#x241A;&#x241A;&#x241A;v5.01-20211018</h3>
+<p >1.修复安卓无法登录问题； 2.解决 amr-wb 编码使用104 Payload 时，偶现单通问题；</p>
+<h3><a class="anchor" id="autotoc_md32"></a>
+v5.01-20211013</h3>
+<p >1.新增 DTMF 回调接口 mtcCallCbRecvDtmf； 2.日志打印增加日期属性； 3.版本基于3.1.0 和媒体引擎5.01 版本； </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

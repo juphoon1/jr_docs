@@ -1,0 +1,2607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_prov_db.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_prov_db.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC Provision Database Interface Functions.  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__prov__db_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a8118d1b89f4d894e1b18dd6c42b25899"><td class="memItemLeft" align="right" valign="top"><a id="a8118d1b89f4d894e1b18dd6c42b25899" name="a8118d1b89f4d894e1b18dd6c42b25899"></a>
+typedef enum <a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07c">EN_MTC_PROV_RCS_VER_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_PROV_RCS_VER_TYPE</b></td></tr>
+<tr class="memdesc:a8118d1b89f4d894e1b18dd6c42b25899"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision rcs version type <br /></td></tr>
+<tr class="separator:a8118d1b89f4d894e1b18dd6c42b25899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48c538a1fa58a5e053cac76f81757e7"><td class="memItemLeft" align="right" valign="top"><a id="ab48c538a1fa58a5e053cac76f81757e7" name="ab48c538a1fa58a5e053cac76f81757e7"></a>
+typedef enum <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0">EN_MTC_PROV_RCS_PROF_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_PROV_RCS_PROF_TYPE</b></td></tr>
+<tr class="memdesc:ab48c538a1fa58a5e053cac76f81757e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision rcs profile type <br /></td></tr>
+<tr class="separator:ab48c538a1fa58a5e053cac76f81757e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb230013fc30752417d47312a08af7d9"><td class="memItemLeft" align="right" valign="top"><a id="acb230013fc30752417d47312a08af7d9" name="acb230013fc30752417d47312a08af7d9"></a>
+typedef enum <a class="el" href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7d">EN_MTC_PROV_DEVICE_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_PROV_DEVICE_TYPE</b></td></tr>
+<tr class="memdesc:acb230013fc30752417d47312a08af7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision device type <br /></td></tr>
+<tr class="separator:acb230013fc30752417d47312a08af7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb14cf6577b76762f3accd05cd43fe8"><td class="memItemLeft" align="right" valign="top"><a id="aabb14cf6577b76762f3accd05cd43fe8" name="aabb14cf6577b76762f3accd05cd43fe8"></a>
+typedef enum <a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87">EN_MTC_PROV_SRV_TMPL_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_PROV_SRV_TMPL_TYPE</b></td></tr>
+<tr class="memdesc:aabb14cf6577b76762f3accd05cd43fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision server template type <br /></td></tr>
+<tr class="separator:aabb14cf6577b76762f3accd05cd43fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a3339e10fcd524f5f02ad4b953cfac07c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07c">EN_MTC_PROV_RCS_VER_TYPE</a> { <br />
+&#160;&#160;<a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07ca485cb44b709a3586197177266c985fe3">EN_MTC_PROV_RCS_VER_UNKNOWN</a>
+, <a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07cad731f6781af940fc5911f07d32296efa">EN_MTC_PROV_RCS_VER_5_1</a>
+, <a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07caeb4841b30a67ed3a0006bee6aad9d808">EN_MTC_PROV_RCS_VER_5_1_B</a>
+, <a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07ca87a9bc5f95101b86a88ae2e4e5a43c0f">EN_MTC_PROV_RCS_VER_6_0</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07ca623818a52dd780f0f4fd22f6b95bde16">EN_MTC_PROV_RCS_VER_7_0</a>
+, <a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07ca865f8668238869ffe0450c4fcbea4a77">EN_MTC_PROV_RCS_VER_9_0</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a3339e10fcd524f5f02ad4b953cfac07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision rcs version type  <a href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07c">更多...</a><br /></td></tr>
+<tr class="separator:a3339e10fcd524f5f02ad4b953cfac07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c45f3ab07661b1339d36927d91e3b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0">EN_MTC_PROV_RCS_PROF_TYPE</a> { <br />
+&#160;&#160;<a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0abec340d3536ef5949f8ad22461ab6bc1">EN_MTC_PROV_RCS_PROF_UNKNOWN</a>
+, <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0a70754800bf42649af1f29280e536063c">EN_MTC_PROV_RCS_PROF_JOYN_BLACKBIRD</a>
+, <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0ae372aee821015c32387f56623c373386">EN_MTC_PROV_RCS_PROF_JOYN_HOTFIXES</a>
+, <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0aa7c9acf93f0eff5eccb32c426b1b53da">EN_MTC_PROV_RCS_PROF_UP_1_0</a>
+, <br />
+&#160;&#160;<a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0a39e8349e00d58aa73275b0c9ca11d925">EN_MTC_PROV_RCS_PROF_UP_T</a>
+, <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0a3a666da17a5964fa89ff3530f20bf38f">EN_MTC_PROV_RCS_PROF_UP_2_0</a>
+, <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0a951ed424ca016fd5cf0ab3cf3b586b21">EN_MTC_PROV_RCS_PROF_UP_2_3</a>
+, <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0a1dd8cb764da397b8e230f13b007f7ca8">EN_MTC_PROV_RCS_PROF_UP_2_4</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a46c45f3ab07661b1339d36927d91e3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision rcs profile type  <a href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0">更多...</a><br /></td></tr>
+<tr class="separator:a46c45f3ab07661b1339d36927d91e3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa93464b7090684c81d7e3584327f7d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7d">EN_MTC_PROV_DEVICE_TYPE</a> { <a class="el" href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7da100b975a144d5c6b60053709aeb3fae1">EN_MTC_PROV_DEVICE_TABLET</a>
+, <a class="el" href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7da6482e853ec01123aec396c93639fb22f">EN_MTC_PROV_DEVICE_PC</a>
+, <a class="el" href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7da3378a5857cc552e9ee4116390877b9b5">EN_MTC_PROV_DEVICE_OTHER</a>
+ }</td></tr>
+<tr class="memdesc:aaaa93464b7090684c81d7e3584327f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision device type  <a href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7d">更多...</a><br /></td></tr>
+<tr class="separator:aaaa93464b7090684c81d7e3584327f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96632d470905af21dbe3bdae0c237a87"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87">EN_MTC_PROV_SRV_TMPL_TYPE</a> { <a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87ad378f745346f31019038869d0f1fb377">EN_MTC_PROV_SRV_TMPL_UNKNOWN</a>
+, <a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87af1e56ef5c7614383cc2fa194868d2076">EN_MTC_PROV_SRV_TMPL_LOCAL</a>
+, <a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87aa2831344a9e6001bfdbd7c8967217599">EN_MTC_PROV_SRV_TMPL_GLOBAL</a>
+, <a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87ad2768a44a376caf501f58d8692cf2f79">EN_MTC_PROV_SRV_TMPL_OTHER</a>
+ }</td></tr>
+<tr class="memdesc:a96632d470905af21dbe3bdae0c237a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtc provision server template type  <a href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87">更多...</a><br /></td></tr>
+<tr class="separator:a96632d470905af21dbe3bdae0c237a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a70125cc89567b9bd832c5ee328a55741"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a70125cc89567b9bd832c5ee328a55741">Mtc_ProvDbFlush</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a70125cc89567b9bd832c5ee328a55741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush provision into database.  <a href="mtc__prov__db_8h.html#a70125cc89567b9bd832c5ee328a55741">更多...</a><br /></td></tr>
+<tr class="separator:a70125cc89567b9bd832c5ee328a55741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6beda8e57b5f3379060088a6865770"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a1a6beda8e57b5f3379060088a6865770">Mtc_ProvDbGetLoginOnPC</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a1a6beda8e57b5f3379060088a6865770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the automatically start on PC option from database.  <a href="mtc__prov__db_8h.html#a1a6beda8e57b5f3379060088a6865770">更多...</a><br /></td></tr>
+<tr class="separator:a1a6beda8e57b5f3379060088a6865770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaceab0bb2937118935b1e2f02b3ce801"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#aaceab0bb2937118935b1e2f02b3ce801">Mtc_ProvDbGetManualIp</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:aaceab0bb2937118935b1e2f02b3ce801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the using manual local IP option from database.  <a href="mtc__prov__db_8h.html#aaceab0bb2937118935b1e2f02b3ce801">更多...</a><br /></td></tr>
+<tr class="separator:aaceab0bb2937118935b1e2f02b3ce801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4679743eedd6de8215069bff89baae7e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a4679743eedd6de8215069bff89baae7e">Mtc_ProvDbGetGuiShowDbg</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a4679743eedd6de8215069bff89baae7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the GUI show debug window option from database.  <a href="mtc__prov__db_8h.html#a4679743eedd6de8215069bff89baae7e">更多...</a><br /></td></tr>
+<tr class="separator:a4679743eedd6de8215069bff89baae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57df51cc9f152b15b5bc2f503d913fac"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a57df51cc9f152b15b5bc2f503d913fac">Mtc_ProvDbGetMmeDumpDbg</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a57df51cc9f152b15b5bc2f503d913fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MME dump debug option from database.  <a href="mtc__prov__db_8h.html#a57df51cc9f152b15b5bc2f503d913fac">更多...</a><br /></td></tr>
+<tr class="separator:a57df51cc9f152b15b5bc2f503d913fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276c530cdbe1607049203628a1bf0d6b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a276c530cdbe1607049203628a1bf0d6b">Mtc_ProvDbGetMmeLogLevel</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a276c530cdbe1607049203628a1bf0d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MME log level from database.  <a href="mtc__prov__db_8h.html#a276c530cdbe1607049203628a1bf0d6b">更多...</a><br /></td></tr>
+<tr class="separator:a276c530cdbe1607049203628a1bf0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab867be62f2e57729c82e31c598a41afd"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ab867be62f2e57729c82e31c598a41afd">Mtc_ProvDbGetMvcRecVoice</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ab867be62f2e57729c82e31c598a41afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mvc record voice option from database.  <a href="mtc__prov__db_8h.html#ab867be62f2e57729c82e31c598a41afd">更多...</a><br /></td></tr>
+<tr class="separator:ab867be62f2e57729c82e31c598a41afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03389d39ecb1c1c518d3db747d14aaa9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a03389d39ecb1c1c518d3db747d14aaa9">Mtc_ProvDbGetMvdRecVideo</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a03389d39ecb1c1c518d3db747d14aaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mvd record video option from database.  <a href="mtc__prov__db_8h.html#a03389d39ecb1c1c518d3db747d14aaa9">更多...</a><br /></td></tr>
+<tr class="separator:a03389d39ecb1c1c518d3db747d14aaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fbf6419debfda66e72c88a31c45184"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a69fbf6419debfda66e72c88a31c45184">Mtc_ProvDbGetMvdSyncAudio</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a69fbf6419debfda66e72c88a31c45184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mvd sync audio option from database.  <a href="mtc__prov__db_8h.html#a69fbf6419debfda66e72c88a31c45184">更多...</a><br /></td></tr>
+<tr class="separator:a69fbf6419debfda66e72c88a31c45184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f34fe19b95617b034cb81c3b79fdb7"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a36f34fe19b95617b034cb81c3b79fdb7">Mtc_ProvDbGetCurProfUser</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a36f34fe19b95617b034cb81c3b79fdb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current profile user from database.  <a href="mtc__prov__db_8h.html#a36f34fe19b95617b034cb81c3b79fdb7">更多...</a><br /></td></tr>
+<tr class="separator:a36f34fe19b95617b034cb81c3b79fdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6eb4de5139a00b27db56b775f6ac26"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a7b6eb4de5139a00b27db56b775f6ac26">Mtc_ProvDbGetEmgRealm</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a7b6eb4de5139a00b27db56b775f6ac26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get emergency server realm.  <a href="mtc__prov__db_8h.html#a7b6eb4de5139a00b27db56b775f6ac26">更多...</a><br /></td></tr>
+<tr class="separator:a7b6eb4de5139a00b27db56b775f6ac26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65b6f798c27c1ba825155ce8a5e2b44"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ac65b6f798c27c1ba825155ce8a5e2b44">Mtc_ProvDbGetEmgAddr</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ac65b6f798c27c1ba825155ce8a5e2b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the emergency server address from database.  <a href="mtc__prov__db_8h.html#ac65b6f798c27c1ba825155ce8a5e2b44">更多...</a><br /></td></tr>
+<tr class="separator:ac65b6f798c27c1ba825155ce8a5e2b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03bb76157fc901be78f3853b8e3efce2"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a03bb76157fc901be78f3853b8e3efce2">Mtc_ProvDbGetDftRegRealm</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a03bb76157fc901be78f3853b8e3efce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default register realm from database.  <a href="mtc__prov__db_8h.html#a03bb76157fc901be78f3853b8e3efce2">更多...</a><br /></td></tr>
+<tr class="separator:a03bb76157fc901be78f3853b8e3efce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6e9aa4ad89426d1d85df8855846dff"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a4c6e9aa4ad89426d1d85df8855846dff">Mtc_ProvDbGetDftProxyAddr</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a4c6e9aa4ad89426d1d85df8855846dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default proxy address from database.  <a href="mtc__prov__db_8h.html#a4c6e9aa4ad89426d1d85df8855846dff">更多...</a><br /></td></tr>
+<tr class="separator:a4c6e9aa4ad89426d1d85df8855846dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac103513c1ba0078a731b2b1a5b8d97cd"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ac103513c1ba0078a731b2b1a5b8d97cd">Mtc_ProvDbGetDftAuthNameInRealm</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ac103513c1ba0078a731b2b1a5b8d97cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default authentication name in register realm from database.  <a href="mtc__prov__db_8h.html#ac103513c1ba0078a731b2b1a5b8d97cd">更多...</a><br /></td></tr>
+<tr class="separator:ac103513c1ba0078a731b2b1a5b8d97cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5ee44488a9278738ca59f0066cfcf8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a8b5ee44488a9278738ca59f0066cfcf8">Mtc_ProvDbGetDftSubRegEvnt</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a8b5ee44488a9278738ca59f0066cfcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default subscribe register event from database.  <a href="mtc__prov__db_8h.html#a8b5ee44488a9278738ca59f0066cfcf8">更多...</a><br /></td></tr>
+<tr class="separator:a8b5ee44488a9278738ca59f0066cfcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5571c2657d6bb47ee434a27e1279048f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a5571c2657d6bb47ee434a27e1279048f">Mtc_ProvDbGetDftDtmfType</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a5571c2657d6bb47ee434a27e1279048f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default DTMF type from database.  <a href="mtc__prov__db_8h.html#a5571c2657d6bb47ee434a27e1279048f">更多...</a><br /></td></tr>
+<tr class="separator:a5571c2657d6bb47ee434a27e1279048f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e0c1cc23eadce9ab87089ef05bb8a2"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ad1e0c1cc23eadce9ab87089ef05bb8a2">Mtc_ProvDbGetDftRingDir</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ad1e0c1cc23eadce9ab87089ef05bb8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default ring directory.  <a href="mtc__prov__db_8h.html#ad1e0c1cc23eadce9ab87089ef05bb8a2">更多...</a><br /></td></tr>
+<tr class="separator:ad1e0c1cc23eadce9ab87089ef05bb8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05591df5ad768639a9642252275ccfc0"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a05591df5ad768639a9642252275ccfc0">Mtc_ProvDbGetRingMute</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a05591df5ad768639a9642252275ccfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ring mute option.  <a href="mtc__prov__db_8h.html#a05591df5ad768639a9642252275ccfc0">更多...</a><br /></td></tr>
+<tr class="separator:a05591df5ad768639a9642252275ccfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc5d8a58bc20776a5db54b0b5770ea1c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#afc5d8a58bc20776a5db54b0b5770ea1c">Mtc_ProvDbSetLoginOnPC</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:afc5d8a58bc20776a5db54b0b5770ea1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set automatically start on PC option.  <a href="mtc__prov__db_8h.html#afc5d8a58bc20776a5db54b0b5770ea1c">更多...</a><br /></td></tr>
+<tr class="separator:afc5d8a58bc20776a5db54b0b5770ea1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948760237f12953359e2f5d4fff17132"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a948760237f12953359e2f5d4fff17132">Mtc_ProvDbSetManualIp</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:a948760237f12953359e2f5d4fff17132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set using manual local IP option.  <a href="mtc__prov__db_8h.html#a948760237f12953359e2f5d4fff17132">更多...</a><br /></td></tr>
+<tr class="separator:a948760237f12953359e2f5d4fff17132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0488a73b6b1d83333f539708a8fe28d2"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a0488a73b6b1d83333f539708a8fe28d2">Mtc_ProvDbSetMmeDumpDbg</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bEnable)</td></tr>
+<tr class="memdesc:a0488a73b6b1d83333f539708a8fe28d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MME dump information to file option.  <a href="mtc__prov__db_8h.html#a0488a73b6b1d83333f539708a8fe28d2">更多...</a><br /></td></tr>
+<tr class="separator:a0488a73b6b1d83333f539708a8fe28d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebbc11638fd14b78386459d4e0533e0"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#afebbc11638fd14b78386459d4e0533e0">Mtc_ProvDbSetMmeLogLevel</a> (<a class="el" href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a> ucLevel)</td></tr>
+<tr class="memdesc:afebbc11638fd14b78386459d4e0533e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MME log level.  <a href="mtc__prov__db_8h.html#afebbc11638fd14b78386459d4e0533e0">更多...</a><br /></td></tr>
+<tr class="separator:afebbc11638fd14b78386459d4e0533e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869f4cde86247df90c60fe0acbab4818"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a869f4cde86247df90c60fe0acbab4818">Mtc_ProvDbSetCurProfUser</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcUser)</td></tr>
+<tr class="memdesc:a869f4cde86247df90c60fe0acbab4818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current profile user.  <a href="mtc__prov__db_8h.html#a869f4cde86247df90c60fe0acbab4818">更多...</a><br /></td></tr>
+<tr class="separator:a869f4cde86247df90c60fe0acbab4818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43b6abccbd89ecf0c23f25c11e13120"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ab43b6abccbd89ecf0c23f25c11e13120">Mtc_ProvDbSetDftRingDir</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcDir)</td></tr>
+<tr class="memdesc:ab43b6abccbd89ecf0c23f25c11e13120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default ring directory.  <a href="mtc__prov__db_8h.html#ab43b6abccbd89ecf0c23f25c11e13120">更多...</a><br /></td></tr>
+<tr class="separator:ab43b6abccbd89ecf0c23f25c11e13120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993b1985ae7ae9140571e530054c2e24"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a993b1985ae7ae9140571e530054c2e24">Mtc_ProvDbSetRingMute</a> (<a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bMute)</td></tr>
+<tr class="memdesc:a993b1985ae7ae9140571e530054c2e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ring mute option.  <a href="mtc__prov__db_8h.html#a993b1985ae7ae9140571e530054c2e24">更多...</a><br /></td></tr>
+<tr class="separator:a993b1985ae7ae9140571e530054c2e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb9ff7c0bb92c9179f75fe9e7a97edd"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> **ppcParm)</td></tr>
+<tr class="memdesc:a8eb9ff7c0bb92c9179f75fe9e7a97edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension parameter.  <a href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">更多...</a><br /></td></tr>
+<tr class="separator:a8eb9ff7c0bb92c9179f75fe9e7a97edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8b11683436b897040fd85cd5a37b37"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#abb8b11683436b897040fd85cd5a37b37">Mtc_ProvDbGetExtnParmBool</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> *pbParm)</td></tr>
+<tr class="memdesc:abb8b11683436b897040fd85cd5a37b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension parameter.  <a href="mtc__prov__db_8h.html#abb8b11683436b897040fd85cd5a37b37">更多...</a><br /></td></tr>
+<tr class="separator:abb8b11683436b897040fd85cd5a37b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66af0b2b699639930ce2b38fe73826d"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#aa66af0b2b699639930ce2b38fe73826d">Mtc_ProvDbGetExtnParmInt</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> *piParm)</td></tr>
+<tr class="memdesc:aa66af0b2b699639930ce2b38fe73826d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension parameter.  <a href="mtc__prov__db_8h.html#aa66af0b2b699639930ce2b38fe73826d">更多...</a><br /></td></tr>
+<tr class="separator:aa66af0b2b699639930ce2b38fe73826d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f0f87ce08d224e45ee36882dadc0889"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a1f0f87ce08d224e45ee36882dadc0889">Mtc_ProvDbGetExtnParmUint</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> *piParm)</td></tr>
+<tr class="memdesc:a1f0f87ce08d224e45ee36882dadc0889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension parameter.  <a href="mtc__prov__db_8h.html#a1f0f87ce08d224e45ee36882dadc0889">更多...</a><br /></td></tr>
+<tr class="separator:a1f0f87ce08d224e45ee36882dadc0889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c609d91ea6fd021ce2b3c05fdbd2b47"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a3c609d91ea6fd021ce2b3c05fdbd2b47">Mtc_ProvDbGetExtnParmX</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iIndex)</td></tr>
+<tr class="memdesc:a3c609d91ea6fd021ce2b3c05fdbd2b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension parameter.  <a href="mtc__prov__db_8h.html#a3c609d91ea6fd021ce2b3c05fdbd2b47">更多...</a><br /></td></tr>
+<tr class="separator:a3c609d91ea6fd021ce2b3c05fdbd2b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7024a03cf0139f8bb47c7d544c533f25"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a7024a03cf0139f8bb47c7d544c533f25">Mtc_ProvDbGetExtnParmCount</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName)</td></tr>
+<tr class="memdesc:a7024a03cf0139f8bb47c7d544c533f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get extension parameter.  <a href="mtc__prov__db_8h.html#a7024a03cf0139f8bb47c7d544c533f25">更多...</a><br /></td></tr>
+<tr class="separator:a7024a03cf0139f8bb47c7d544c533f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18094ab74bf425c1dd3f128e70393c5f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a18094ab74bf425c1dd3f128e70393c5f">Mtc_ProvDbSetExtnParm</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVal)</td></tr>
+<tr class="memdesc:a18094ab74bf425c1dd3f128e70393c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extension parameter.  <a href="mtc__prov__db_8h.html#a18094ab74bf425c1dd3f128e70393c5f">更多...</a><br /></td></tr>
+<tr class="separator:a18094ab74bf425c1dd3f128e70393c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15db9c96ddaf16d050aee4a72f80ea2b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a15db9c96ddaf16d050aee4a72f80ea2b">Mtc_ProvDbSetExtnParmBool</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bVal)</td></tr>
+<tr class="memdesc:a15db9c96ddaf16d050aee4a72f80ea2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extension parameter.  <a href="mtc__prov__db_8h.html#a15db9c96ddaf16d050aee4a72f80ea2b">更多...</a><br /></td></tr>
+<tr class="separator:a15db9c96ddaf16d050aee4a72f80ea2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932fa0d5bc842b6d87a5eae069830d72"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a932fa0d5bc842b6d87a5eae069830d72">Mtc_ProvDbSetExtnParmInt</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iVal)</td></tr>
+<tr class="memdesc:a932fa0d5bc842b6d87a5eae069830d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extension parameter.  <a href="mtc__prov__db_8h.html#a932fa0d5bc842b6d87a5eae069830d72">更多...</a><br /></td></tr>
+<tr class="separator:a932fa0d5bc842b6d87a5eae069830d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0605bbac462e9e28e090bc1266f9b28"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ac0605bbac462e9e28e090bc1266f9b28">Mtc_ProvDbSetExtnParmUint</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iVal)</td></tr>
+<tr class="memdesc:ac0605bbac462e9e28e090bc1266f9b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set extension parameter.  <a href="mtc__prov__db_8h.html#ac0605bbac462e9e28e090bc1266f9b28">更多...</a><br /></td></tr>
+<tr class="separator:ac0605bbac462e9e28e090bc1266f9b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27828f38fd949f6d354b05fff2668245"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a27828f38fd949f6d354b05fff2668245">Mtc_ProvDbAddExtnParm</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVal)</td></tr>
+<tr class="memdesc:a27828f38fd949f6d354b05fff2668245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add extension parameter.  <a href="mtc__prov__db_8h.html#a27828f38fd949f6d354b05fff2668245">更多...</a><br /></td></tr>
+<tr class="separator:a27828f38fd949f6d354b05fff2668245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db306d382ea392851b1d0008c65ab82"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a3db306d382ea392851b1d0008c65ab82">Mtc_ProvDbAddExtnParmN</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wNameLen, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVal, <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wValLen)</td></tr>
+<tr class="memdesc:a3db306d382ea392851b1d0008c65ab82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add extension parameter.  <a href="mtc__prov__db_8h.html#a3db306d382ea392851b1d0008c65ab82">更多...</a><br /></td></tr>
+<tr class="separator:a3db306d382ea392851b1d0008c65ab82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bfb8ad8d98a1c83f6addea3fc8f690"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a36bfb8ad8d98a1c83f6addea3fc8f690">Mtc_ProvDbGetRcsVer</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a36bfb8ad8d98a1c83f6addea3fc8f690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RCS version from database. It is only mandatory from RCS 5.1 onwards.  <a href="mtc__prov__db_8h.html#a36bfb8ad8d98a1c83f6addea3fc8f690">更多...</a><br /></td></tr>
+<tr class="separator:a36bfb8ad8d98a1c83f6addea3fc8f690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae37179981b43fa4e03c65b3df1afac"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#afae37179981b43fa4e03c65b3df1afac">Mtc_ProvDbGetRcsProfile</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:afae37179981b43fa4e03c65b3df1afac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the RCS profile from database.  <a href="mtc__prov__db_8h.html#afae37179981b43fa4e03c65b3df1afac">更多...</a><br /></td></tr>
+<tr class="separator:afae37179981b43fa4e03c65b3df1afac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab084ffd235c77c68a2ea471c0147e9d8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ab084ffd235c77c68a2ea471c0147e9d8">Mtc_ProvDbGetDeviceType</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ab084ffd235c77c68a2ea471c0147e9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device type from database.  <a href="mtc__prov__db_8h.html#ab084ffd235c77c68a2ea471c0147e9d8">更多...</a><br /></td></tr>
+<tr class="separator:ab084ffd235c77c68a2ea471c0147e9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cb65c0d311e7460c45445694ca698e"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ab6cb65c0d311e7460c45445694ca698e">Mtc_ProvDbGetSmsPort</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ab6cb65c0d311e7460c45445694ca698e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SMS port from database.  <a href="mtc__prov__db_8h.html#ab6cb65c0d311e7460c45445694ca698e">更多...</a><br /></td></tr>
+<tr class="separator:ab6cb65c0d311e7460c45445694ca698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f38238ab0a7dee1829f7c274479caf7"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a1f38238ab0a7dee1829f7c274479caf7">Mtc_ProvDbGetCliVendor</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a1f38238ab0a7dee1829f7c274479caf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the client vendor from database.  <a href="mtc__prov__db_8h.html#a1f38238ab0a7dee1829f7c274479caf7">更多...</a><br /></td></tr>
+<tr class="separator:a1f38238ab0a7dee1829f7c274479caf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90aec488ad0db4d89e34c264e54c9fb"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ab90aec488ad0db4d89e34c264e54c9fb">Mtc_ProvDbGetCliVer</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ab90aec488ad0db4d89e34c264e54c9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the client version from database.  <a href="mtc__prov__db_8h.html#ab90aec488ad0db4d89e34c264e54c9fb">更多...</a><br /></td></tr>
+<tr class="separator:ab90aec488ad0db4d89e34c264e54c9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073f055e946c9be3071d601c57b99fd9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a073f055e946c9be3071d601c57b99fd9">Mtc_ProvDbGetTmnlVendor</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a073f055e946c9be3071d601c57b99fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the terminal vendor from database.  <a href="mtc__prov__db_8h.html#a073f055e946c9be3071d601c57b99fd9">更多...</a><br /></td></tr>
+<tr class="separator:a073f055e946c9be3071d601c57b99fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3876669c27af7736efaa1f5ba9a686b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ad3876669c27af7736efaa1f5ba9a686b">Mtc_ProvDbGetTmnlModel</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ad3876669c27af7736efaa1f5ba9a686b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the terminal model from database.  <a href="mtc__prov__db_8h.html#ad3876669c27af7736efaa1f5ba9a686b">更多...</a><br /></td></tr>
+<tr class="separator:ad3876669c27af7736efaa1f5ba9a686b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673c27ad77be38afd2d67c149aeb9b27"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a673c27ad77be38afd2d67c149aeb9b27">Mtc_ProvDbGetTmnlSwVer</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a673c27ad77be38afd2d67c149aeb9b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the terminal software version from database.  <a href="mtc__prov__db_8h.html#a673c27ad77be38afd2d67c149aeb9b27">更多...</a><br /></td></tr>
+<tr class="separator:a673c27ad77be38afd2d67c149aeb9b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878594e7f2d03bff9d6f2b6eb4bc7e72"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a878594e7f2d03bff9d6f2b6eb4bc7e72">Mtc_ProvDbGetChnnlId</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a878594e7f2d03bff9d6f2b6eb4bc7e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel id from database.  <a href="mtc__prov__db_8h.html#a878594e7f2d03bff9d6f2b6eb4bc7e72">更多...</a><br /></td></tr>
+<tr class="separator:a878594e7f2d03bff9d6f2b6eb4bc7e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66a335f59f1987d775fd57c020b1538"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#af66a335f59f1987d775fd57c020b1538">Mtc_ProvDbGetSrvTmpl</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:af66a335f59f1987d775fd57c020b1538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the server template from database.  <a href="mtc__prov__db_8h.html#af66a335f59f1987d775fd57c020b1538">更多...</a><br /></td></tr>
+<tr class="separator:af66a335f59f1987d775fd57c020b1538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e04ea5a6935e0089ccecadba9903fc"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a45e04ea5a6935e0089ccecadba9903fc">Mtc_ProvDbGetSrvTmplX</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a45e04ea5a6935e0089ccecadba9903fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the server template from database.  <a href="mtc__prov__db_8h.html#a45e04ea5a6935e0089ccecadba9903fc">更多...</a><br /></td></tr>
+<tr class="separator:a45e04ea5a6935e0089ccecadba9903fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28a0ab55003212d140e212f3a927db9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ac28a0ab55003212d140e212f3a927db9">Mtc_ProvDbGetMcc</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:ac28a0ab55003212d140e212f3a927db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mobile country code from database.  <a href="mtc__prov__db_8h.html#ac28a0ab55003212d140e212f3a927db9">更多...</a><br /></td></tr>
+<tr class="separator:ac28a0ab55003212d140e212f3a927db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e008748732e360240b8fda7e80a1f3d"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a8e008748732e360240b8fda7e80a1f3d">Mtc_ProvDbGetMnc</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a8e008748732e360240b8fda7e80a1f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mobile network code from database.  <a href="mtc__prov__db_8h.html#a8e008748732e360240b8fda7e80a1f3d">更多...</a><br /></td></tr>
+<tr class="separator:a8e008748732e360240b8fda7e80a1f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92668e63cc0e959b3b7d14c6183a52e9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a92668e63cc0e959b3b7d14c6183a52e9">Mtc_ProvDbGetImei</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a92668e63cc0e959b3b7d14c6183a52e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IMEI from database.  <a href="mtc__prov__db_8h.html#a92668e63cc0e959b3b7d14c6183a52e9">更多...</a><br /></td></tr>
+<tr class="separator:a92668e63cc0e959b3b7d14c6183a52e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d5695a086b10056549400e7f94e1d9"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a85d5695a086b10056549400e7f94e1d9">Mtc_ProvDbGetSrvType</a> (<a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>)</td></tr>
+<tr class="memdesc:a85d5695a086b10056549400e7f94e1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the service type from database.  <a href="mtc__prov__db_8h.html#a85d5695a086b10056549400e7f94e1d9">更多...</a><br /></td></tr>
+<tr class="separator:a85d5695a086b10056549400e7f94e1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b348ba7ffa6e45211bf7d15f4fcafb"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a87b348ba7ffa6e45211bf7d15f4fcafb">Mtc_ProvDbSetRcsVer</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iRcsVer)</td></tr>
+<tr class="memdesc:a87b348ba7ffa6e45211bf7d15f4fcafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RCS version. It is only mandatory from RCS 5.1 onwards.  <a href="mtc__prov__db_8h.html#a87b348ba7ffa6e45211bf7d15f4fcafb">更多...</a><br /></td></tr>
+<tr class="separator:a87b348ba7ffa6e45211bf7d15f4fcafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258d9a55a80d07e6775866183bc5ff48"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a258d9a55a80d07e6775866183bc5ff48">Mtc_ProvDbSetRcsProfile</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iRcsProfile)</td></tr>
+<tr class="memdesc:a258d9a55a80d07e6775866183bc5ff48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RCS profile.  <a href="mtc__prov__db_8h.html#a258d9a55a80d07e6775866183bc5ff48">更多...</a><br /></td></tr>
+<tr class="separator:a258d9a55a80d07e6775866183bc5ff48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777ef8a76f31d37e2098eeee6ccf0d4a"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a777ef8a76f31d37e2098eeee6ccf0d4a">Mtc_ProvDbSetDeviceType</a> (<a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wDeviceType)</td></tr>
+<tr class="memdesc:a777ef8a76f31d37e2098eeee6ccf0d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set device type.  <a href="mtc__prov__db_8h.html#a777ef8a76f31d37e2098eeee6ccf0d4a">更多...</a><br /></td></tr>
+<tr class="separator:a777ef8a76f31d37e2098eeee6ccf0d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b33e8a3902b932b93a4db065f2ba62"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a05b33e8a3902b932b93a4db065f2ba62">Mtc_ProvDbSetSmsPort</a> (<a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wPort)</td></tr>
+<tr class="memdesc:a05b33e8a3902b932b93a4db065f2ba62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set SMS port.  <a href="mtc__prov__db_8h.html#a05b33e8a3902b932b93a4db065f2ba62">更多...</a><br /></td></tr>
+<tr class="separator:a05b33e8a3902b932b93a4db065f2ba62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf06406f3b1f3180ef3367c466b83c28"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#acf06406f3b1f3180ef3367c466b83c28">Mtc_ProvDbSetCliVendor</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVendor)</td></tr>
+<tr class="memdesc:acf06406f3b1f3180ef3367c466b83c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set client vendor.  <a href="mtc__prov__db_8h.html#acf06406f3b1f3180ef3367c466b83c28">更多...</a><br /></td></tr>
+<tr class="separator:acf06406f3b1f3180ef3367c466b83c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd25cb7d19adcf0e45189ee2bfa1c39"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a8cd25cb7d19adcf0e45189ee2bfa1c39">Mtc_ProvDbSetCliVer</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVer)</td></tr>
+<tr class="memdesc:a8cd25cb7d19adcf0e45189ee2bfa1c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set client version.  <a href="mtc__prov__db_8h.html#a8cd25cb7d19adcf0e45189ee2bfa1c39">更多...</a><br /></td></tr>
+<tr class="separator:a8cd25cb7d19adcf0e45189ee2bfa1c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ad5f1ada39a8213fb1063332f61ca0"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#aa7ad5f1ada39a8213fb1063332f61ca0">Mtc_ProvDbSetTmnlVendor</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVendor)</td></tr>
+<tr class="memdesc:aa7ad5f1ada39a8213fb1063332f61ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set terminal vendor.  <a href="mtc__prov__db_8h.html#aa7ad5f1ada39a8213fb1063332f61ca0">更多...</a><br /></td></tr>
+<tr class="separator:aa7ad5f1ada39a8213fb1063332f61ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adb0671d61a18aa8d27ee5d65480286"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a3adb0671d61a18aa8d27ee5d65480286">Mtc_ProvDbSetTmnlModel</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcModel)</td></tr>
+<tr class="memdesc:a3adb0671d61a18aa8d27ee5d65480286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set terminal model.  <a href="mtc__prov__db_8h.html#a3adb0671d61a18aa8d27ee5d65480286">更多...</a><br /></td></tr>
+<tr class="separator:a3adb0671d61a18aa8d27ee5d65480286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed22337158bb9bc37de79fc7a58fd0f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a3ed22337158bb9bc37de79fc7a58fd0f">Mtc_ProvDbSetTmnlSwVer</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVer)</td></tr>
+<tr class="memdesc:a3ed22337158bb9bc37de79fc7a58fd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set terminal software version.  <a href="mtc__prov__db_8h.html#a3ed22337158bb9bc37de79fc7a58fd0f">更多...</a><br /></td></tr>
+<tr class="separator:a3ed22337158bb9bc37de79fc7a58fd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa1a258a65195801f58e929194b43d5"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a7aa1a258a65195801f58e929194b43d5">Mtc_ProvDbSetChnnlId</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcChnnlId)</td></tr>
+<tr class="memdesc:a7aa1a258a65195801f58e929194b43d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set channel id.  <a href="mtc__prov__db_8h.html#a7aa1a258a65195801f58e929194b43d5">更多...</a><br /></td></tr>
+<tr class="separator:a7aa1a258a65195801f58e929194b43d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d9618474aa0021a9b34a220283166f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a86d9618474aa0021a9b34a220283166f">Mtc_ProvDbSetSrvTmpl</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSrvTmpl)</td></tr>
+<tr class="memdesc:a86d9618474aa0021a9b34a220283166f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set server template.  <a href="mtc__prov__db_8h.html#a86d9618474aa0021a9b34a220283166f">更多...</a><br /></td></tr>
+<tr class="separator:a86d9618474aa0021a9b34a220283166f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a7542de0f734a6b014a6f3f2437fd5"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a37a7542de0f734a6b014a6f3f2437fd5">Mtc_ProvDbSetSrvTmplX</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSrvTmpl)</td></tr>
+<tr class="memdesc:a37a7542de0f734a6b014a6f3f2437fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set server template.  <a href="mtc__prov__db_8h.html#a37a7542de0f734a6b014a6f3f2437fd5">更多...</a><br /></td></tr>
+<tr class="separator:a37a7542de0f734a6b014a6f3f2437fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae496263ff84da335bee99ff2fa5b6b85"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ae496263ff84da335bee99ff2fa5b6b85">Mtc_ProvDbSetMcc</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMcc)</td></tr>
+<tr class="memdesc:ae496263ff84da335bee99ff2fa5b6b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set mobile country code.  <a href="mtc__prov__db_8h.html#ae496263ff84da335bee99ff2fa5b6b85">更多...</a><br /></td></tr>
+<tr class="separator:ae496263ff84da335bee99ff2fa5b6b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1974c06b2dc4ba455264e84da1b60d20"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#a1974c06b2dc4ba455264e84da1b60d20">Mtc_ProvDbSetMnc</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMnc)</td></tr>
+<tr class="memdesc:a1974c06b2dc4ba455264e84da1b60d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set mobile network code.  <a href="mtc__prov__db_8h.html#a1974c06b2dc4ba455264e84da1b60d20">更多...</a><br /></td></tr>
+<tr class="separator:a1974c06b2dc4ba455264e84da1b60d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad159ccca45b2317dae5dfa119e269c09"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ad159ccca45b2317dae5dfa119e269c09">Mtc_ProvDbSetImei</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcImei)</td></tr>
+<tr class="memdesc:ad159ccca45b2317dae5dfa119e269c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IMEI.  <a href="mtc__prov__db_8h.html#ad159ccca45b2317dae5dfa119e269c09">更多...</a><br /></td></tr>
+<tr class="separator:ad159ccca45b2317dae5dfa119e269c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35da5751c9b99fb176b50ed931a44e3"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__prov__db_8h.html#ae35da5751c9b99fb176b50ed931a44e3">Mtc_ProvDbSetSrvType</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSrvType)</td></tr>
+<tr class="memdesc:ae35da5751c9b99fb176b50ed931a44e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set service type.  <a href="mtc__prov__db_8h.html#ae35da5751c9b99fb176b50ed931a44e3">更多...</a><br /></td></tr>
+<tr class="separator:ae35da5751c9b99fb176b50ed931a44e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC Provision Database Interface Functions. </p>
+<p >Provision Database contain client global configuration beside account profile. For example, auto run client when PC startup. </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="aaaa93464b7090684c81d7e3584327f7d" name="aaaa93464b7090684c81d7e3584327f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa93464b7090684c81d7e3584327f7d">&#9670;&nbsp;</a></span>EN_MTC_PROV_DEVICE_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mtc__prov__db_8h.html#aaaa93464b7090684c81d7e3584327f7d">EN_MTC_PROV_DEVICE_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mtc provision device type </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="aaaa93464b7090684c81d7e3584327f7da100b975a144d5c6b60053709aeb3fae1" name="aaaa93464b7090684c81d7e3584327f7da100b975a144d5c6b60053709aeb3fae1"></a>EN_MTC_PROV_DEVICE_TABLET&#160;</td><td class="fielddoc"><p >tablet device type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaaa93464b7090684c81d7e3584327f7da6482e853ec01123aec396c93639fb22f" name="aaaa93464b7090684c81d7e3584327f7da6482e853ec01123aec396c93639fb22f"></a>EN_MTC_PROV_DEVICE_PC&#160;</td><td class="fielddoc"><p >pc device type </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aaaa93464b7090684c81d7e3584327f7da3378a5857cc552e9ee4116390877b9b5" name="aaaa93464b7090684c81d7e3584327f7da3378a5857cc552e9ee4116390877b9b5"></a>EN_MTC_PROV_DEVICE_OTHER&#160;</td><td class="fielddoc"><p >other device type </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a46c45f3ab07661b1339d36927d91e3b0" name="a46c45f3ab07661b1339d36927d91e3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c45f3ab07661b1339d36927d91e3b0">&#9670;&nbsp;</a></span>EN_MTC_PROV_RCS_PROF_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mtc__prov__db_8h.html#a46c45f3ab07661b1339d36927d91e3b0">EN_MTC_PROV_RCS_PROF_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mtc provision rcs profile type </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0abec340d3536ef5949f8ad22461ab6bc1" name="a46c45f3ab07661b1339d36927d91e3b0abec340d3536ef5949f8ad22461ab6bc1"></a>EN_MTC_PROV_RCS_PROF_UNKNOWN&#160;</td><td class="fielddoc"><p >unknown </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0a70754800bf42649af1f29280e536063c" name="a46c45f3ab07661b1339d36927d91e3b0a70754800bf42649af1f29280e536063c"></a>EN_MTC_PROV_RCS_PROF_JOYN_BLACKBIRD&#160;</td><td class="fielddoc"><p >joyn blackbird </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0ae372aee821015c32387f56623c373386" name="a46c45f3ab07661b1339d36927d91e3b0ae372aee821015c32387f56623c373386"></a>EN_MTC_PROV_RCS_PROF_JOYN_HOTFIXES&#160;</td><td class="fielddoc"><p >joyn hotfixes </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0aa7c9acf93f0eff5eccb32c426b1b53da" name="a46c45f3ab07661b1339d36927d91e3b0aa7c9acf93f0eff5eccb32c426b1b53da"></a>EN_MTC_PROV_RCS_PROF_UP_1_0&#160;</td><td class="fielddoc"><p >UP_1.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0a39e8349e00d58aa73275b0c9ca11d925" name="a46c45f3ab07661b1339d36927d91e3b0a39e8349e00d58aa73275b0c9ca11d925"></a>EN_MTC_PROV_RCS_PROF_UP_T&#160;</td><td class="fielddoc"><p >UP_T </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0a3a666da17a5964fa89ff3530f20bf38f" name="a46c45f3ab07661b1339d36927d91e3b0a3a666da17a5964fa89ff3530f20bf38f"></a>EN_MTC_PROV_RCS_PROF_UP_2_0&#160;</td><td class="fielddoc"><p >UP_2.0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0a951ed424ca016fd5cf0ab3cf3b586b21" name="a46c45f3ab07661b1339d36927d91e3b0a951ed424ca016fd5cf0ab3cf3b586b21"></a>EN_MTC_PROV_RCS_PROF_UP_2_3&#160;</td><td class="fielddoc"><p >UP_2.3 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a46c45f3ab07661b1339d36927d91e3b0a1dd8cb764da397b8e230f13b007f7ca8" name="a46c45f3ab07661b1339d36927d91e3b0a1dd8cb764da397b8e230f13b007f7ca8"></a>EN_MTC_PROV_RCS_PROF_UP_2_4&#160;</td><td class="fielddoc"><p >UP_2.4 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3339e10fcd524f5f02ad4b953cfac07c" name="a3339e10fcd524f5f02ad4b953cfac07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3339e10fcd524f5f02ad4b953cfac07c">&#9670;&nbsp;</a></span>EN_MTC_PROV_RCS_VER_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mtc__prov__db_8h.html#a3339e10fcd524f5f02ad4b953cfac07c">EN_MTC_PROV_RCS_VER_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mtc provision rcs version type </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a3339e10fcd524f5f02ad4b953cfac07ca485cb44b709a3586197177266c985fe3" name="a3339e10fcd524f5f02ad4b953cfac07ca485cb44b709a3586197177266c985fe3"></a>EN_MTC_PROV_RCS_VER_UNKNOWN&#160;</td><td class="fielddoc"><p >unknown </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3339e10fcd524f5f02ad4b953cfac07cad731f6781af940fc5911f07d32296efa" name="a3339e10fcd524f5f02ad4b953cfac07cad731f6781af940fc5911f07d32296efa"></a>EN_MTC_PROV_RCS_VER_5_1&#160;</td><td class="fielddoc"><p >rcs5.1_v1.0(5.1) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3339e10fcd524f5f02ad4b953cfac07caeb4841b30a67ed3a0006bee6aad9d808" name="a3339e10fcd524f5f02ad4b953cfac07caeb4841b30a67ed3a0006bee6aad9d808"></a>EN_MTC_PROV_RCS_VER_5_1_B&#160;</td><td class="fielddoc"><p >rcs5.1_v2.0(5.1B) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3339e10fcd524f5f02ad4b953cfac07ca87a9bc5f95101b86a88ae2e4e5a43c0f" name="a3339e10fcd524f5f02ad4b953cfac07ca87a9bc5f95101b86a88ae2e4e5a43c0f"></a>EN_MTC_PROV_RCS_VER_6_0&#160;</td><td class="fielddoc"><p >rcs6.0(6.0) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3339e10fcd524f5f02ad4b953cfac07ca623818a52dd780f0f4fd22f6b95bde16" name="a3339e10fcd524f5f02ad4b953cfac07ca623818a52dd780f0f4fd22f6b95bde16"></a>EN_MTC_PROV_RCS_VER_7_0&#160;</td><td class="fielddoc"><p >rcs7.0(7.0) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3339e10fcd524f5f02ad4b953cfac07ca865f8668238869ffe0450c4fcbea4a77" name="a3339e10fcd524f5f02ad4b953cfac07ca865f8668238869ffe0450c4fcbea4a77"></a>EN_MTC_PROV_RCS_VER_9_0&#160;</td><td class="fielddoc"><p >rcs7.0(9.0) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a96632d470905af21dbe3bdae0c237a87" name="a96632d470905af21dbe3bdae0c237a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96632d470905af21dbe3bdae0c237a87">&#9670;&nbsp;</a></span>EN_MTC_PROV_SRV_TMPL_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="mtc__prov__db_8h.html#a96632d470905af21dbe3bdae0c237a87">EN_MTC_PROV_SRV_TMPL_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mtc provision server template type </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a96632d470905af21dbe3bdae0c237a87ad378f745346f31019038869d0f1fb377" name="a96632d470905af21dbe3bdae0c237a87ad378f745346f31019038869d0f1fb377"></a>EN_MTC_PROV_SRV_TMPL_UNKNOWN&#160;</td><td class="fielddoc"><p >unknown </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a96632d470905af21dbe3bdae0c237a87af1e56ef5c7614383cc2fa194868d2076" name="a96632d470905af21dbe3bdae0c237a87af1e56ef5c7614383cc2fa194868d2076"></a>EN_MTC_PROV_SRV_TMPL_LOCAL&#160;</td><td class="fielddoc"><p >config.rcs.mncXXX.mccXXX.pub.3gppnetwork.org </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a96632d470905af21dbe3bdae0c237a87aa2831344a9e6001bfdbd7c8967217599" name="a96632d470905af21dbe3bdae0c237a87aa2831344a9e6001bfdbd7c8967217599"></a>EN_MTC_PROV_SRV_TMPL_GLOBAL&#160;</td><td class="fielddoc"><p >global.config.rcs.mncXXX.mccXXX.pub.3gppnetwork.org </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a96632d470905af21dbe3bdae0c237a87ad2768a44a376caf501f58d8692cf2f79" name="a96632d470905af21dbe3bdae0c237a87ad2768a44a376caf501f58d8692cf2f79"></a>EN_MTC_PROV_SRV_TMPL_OTHER&#160;</td><td class="fielddoc"><p >other </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a27828f38fd949f6d354b05fff2668245" name="a27828f38fd949f6d354b05fff2668245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27828f38fd949f6d354b05fff2668245">&#9670;&nbsp;</a></span>Mtc_ProvDbAddExtnParm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbAddExtnParm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVal</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Add the parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Add the parameter failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3db306d382ea392851b1d0008c65ab82" name="a3db306d382ea392851b1d0008c65ab82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db306d382ea392851b1d0008c65ab82">&#9670;&nbsp;</a></span>Mtc_ProvDbAddExtnParmN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbAddExtnParmN </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td>
+          <td class="paramname"><em>wNameLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td>
+          <td class="paramname"><em>wValLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wNameLen</td><td>The parameter name length. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVal</td><td>The parameter value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wValLen</td><td>The parameter value length.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Add the parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Add the parameter failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a70125cc89567b9bd832c5ee328a55741" name="a70125cc89567b9bd832c5ee328a55741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70125cc89567b9bd832c5ee328a55741">&#9670;&nbsp;</a></span>Mtc_ProvDbFlush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbFlush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flush provision into database. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the flush successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the flush failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a878594e7f2d03bff9d6f2b6eb4bc7e72" name="a878594e7f2d03bff9d6f2b6eb4bc7e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a878594e7f2d03bff9d6f2b6eb4bc7e72">&#9670;&nbsp;</a></span>Mtc_ProvDbGetChnnlId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetChnnlId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the channel id from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of channel id.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a7aa1a258a65195801f58e929194b43d5">Mtc_ProvDbSetChnnlId</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1f38238ab0a7dee1829f7c274479caf7" name="a1f38238ab0a7dee1829f7c274479caf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f38238ab0a7dee1829f7c274479caf7">&#9670;&nbsp;</a></span>Mtc_ProvDbGetCliVendor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetCliVendor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the client vendor from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of client vendor.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#acf06406f3b1f3180ef3367c466b83c28">Mtc_ProvDbSetCliVendor</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab90aec488ad0db4d89e34c264e54c9fb" name="ab90aec488ad0db4d89e34c264e54c9fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90aec488ad0db4d89e34c264e54c9fb">&#9670;&nbsp;</a></span>Mtc_ProvDbGetCliVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetCliVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the client version from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of client version.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8cd25cb7d19adcf0e45189ee2bfa1c39">Mtc_ProvDbSetCliVer</a> </dd></dl>
+
+</div>
+</div>
+<a id="a36f34fe19b95617b034cb81c3b79fdb7" name="a36f34fe19b95617b034cb81c3b79fdb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f34fe19b95617b034cb81c3b79fdb7">&#9670;&nbsp;</a></span>Mtc_ProvDbGetCurProfUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetCurProfUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current profile user from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Current profile user. </dd></dl>
+
+</div>
+</div>
+<a id="ab084ffd235c77c68a2ea471c0147e9d8" name="ab084ffd235c77c68a2ea471c0147e9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab084ffd235c77c68a2ea471c0147e9d8">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> Mtc_ProvDbGetDeviceType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the device type from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The device type, </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#acb230013fc30752417d47312a08af7d9">EN_MTC_PROV_DEVICE_TYPE</a>.</dd>
+<dd>
+<a class="el" href="mtc__prov__db_8h.html#a777ef8a76f31d37e2098eeee6ccf0d4a">Mtc_ProvDbSetDeviceType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac103513c1ba0078a731b2b1a5b8d97cd" name="ac103513c1ba0078a731b2b1a5b8d97cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac103513c1ba0078a731b2b1a5b8d97cd">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDftAuthNameInRealm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetDftAuthNameInRealm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default authentication name in register realm from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Default authentication name in realm. </dd></dl>
+
+</div>
+</div>
+<a id="a5571c2657d6bb47ee434a27e1279048f" name="a5571c2657d6bb47ee434a27e1279048f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5571c2657d6bb47ee434a27e1279048f">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDftDtmfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ProvDbGetDftDtmfType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default DTMF type from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Default DTMF type, see <a class="el" href="mtc__call__db_8h.html#adfb56b79070d5daf842ed8ff7749e00d">EN_MTC_DB_DTMF_TYPE</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4c6e9aa4ad89426d1d85df8855846dff" name="a4c6e9aa4ad89426d1d85df8855846dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6e9aa4ad89426d1d85df8855846dff">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDftProxyAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetDftProxyAddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default proxy address from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Default proxy address. </dd></dl>
+
+</div>
+</div>
+<a id="a03bb76157fc901be78f3853b8e3efce2" name="a03bb76157fc901be78f3853b8e3efce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03bb76157fc901be78f3853b8e3efce2">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDftRegRealm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetDftRegRealm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default register realm from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Default register realm. </dd></dl>
+
+</div>
+</div>
+<a id="ad1e0c1cc23eadce9ab87089ef05bb8a2" name="ad1e0c1cc23eadce9ab87089ef05bb8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e0c1cc23eadce9ab87089ef05bb8a2">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDftRingDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetDftRingDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default ring directory. </p>
+<dl class="section return"><dt>返回</dt><dd>Default ring directory. </dd></dl>
+
+</div>
+</div>
+<a id="a8b5ee44488a9278738ca59f0066cfcf8" name="a8b5ee44488a9278738ca59f0066cfcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5ee44488a9278738ca59f0066cfcf8">&#9670;&nbsp;</a></span>Mtc_ProvDbGetDftSubRegEvnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetDftSubRegEvnt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the default subscribe register event from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Default subscribe register event. </dd></dl>
+
+</div>
+</div>
+<a id="ac65b6f798c27c1ba825155ce8a5e2b44" name="ac65b6f798c27c1ba825155ce8a5e2b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65b6f798c27c1ba825155ce8a5e2b44">&#9670;&nbsp;</a></span>Mtc_ProvDbGetEmgAddr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetEmgAddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the emergency server address from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Default emergency server address. </dd></dl>
+
+</div>
+</div>
+<a id="a7b6eb4de5139a00b27db56b775f6ac26" name="a7b6eb4de5139a00b27db56b775f6ac26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6eb4de5139a00b27db56b775f6ac26">&#9670;&nbsp;</a></span>Mtc_ProvDbGetEmgRealm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetEmgRealm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get emergency server realm. </p>
+<p >The general emergency call flow is like below:</p><ol type="1">
+<li>No any account has logined</li>
+<li>initialize the client</li>
+<li>Mtc_CliInit(profile director);</li>
+<li>initialize callback functions</li>
+<li>Mtc_CliCbSetPrint(print callback);</li>
+<li>Mtc_CallCbSetAlerted(alerted callback);</li>
+<li>Mtc_CallCbSetTalking(talking callback);</li>
+<li>Mtc_CallCbSetTermed(terminated callback);</li>
+<li>Mtc_CallCbSetError(error callback);</li>
+<li>Open an null account Mtc_CliOpen(ZNULL)</li>
+<li>Start client service <a class="el" href="mtc__cli_8h.html#a4978e2dcf33e5a344ae0efda8afdf7df" title="Start Client Service.">Mtc_CliStart()</a></li>
+<li>Get Emergency server info by <a class="el" href="mtc__prov__db_8h.html#ac65b6f798c27c1ba825155ce8a5e2b44">Mtc_ProvDbGetEmgAddr</a></li>
+<li>Set local and server parameters: <div class="fragment"><div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#ad4f2ff0241496b6a063ae3a41f545700">Mtc_CliDbSetSipLclTcpPort</a>(5060);</div>
+<div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#ad4f2ff0241496b6a063ae3a41f545700">Mtc_CliDbSetSipLclTcpPort</a>(5060);</div>
+<div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#ad5541357e8efa34b4066c285ad7cd386">Mtc_CliDbSetSipRegIp</a>(pcProxyAddr);</div>
+<div class="line">Mtc_CliDbSetSipRegPort(5060);</div>
+<div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#aa48a19abd45390c5c98b62f9ee6617ae">Mtc_CliDbSetSipRegRealm</a>(pcProxyRealm);</div>
+<div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#a1c2512863efb6cb0cfc75df9f5b8357c">Mtc_CliDbSetSipRegTpt</a>(EN_MSP_TPT_UDP);</div>
+<div class="line">Mtc_CliDbSetUserReg(<a class="code hl_define" href="zos__type_8h.html#a90b26e321f93fcbe00002d235e724319">ZTRUE</a>);</div>
+<div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#a9ff7b9fca95976794f13e15fbda9d6ce">Mtc_CliDbSetAuthName</a>(<span class="stringliteral">&quot;unknown&quot;</span>);</div>
+<div class="line"><a class="code hl_function" href="mtc__cli__db_8h.html#a404856d125323afb594e719bc8de9ce8">Mtc_CliDbSetAuthPass</a>(<span class="stringliteral">&quot;unknown&quot;</span>);</div>
+<div class="ttc" id="amtc__cli__db_8h_html_a1c2512863efb6cb0cfc75df9f5b8357c"><div class="ttname"><a href="mtc__cli__db_8h.html#a1c2512863efb6cb0cfc75df9f5b8357c">Mtc_CliDbSetSipRegTpt</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CliDbSetSipRegTpt(ZUCHAR ucTpt)</div><div class="ttdoc">Set register proxy transport.</div></div>
+<div class="ttc" id="amtc__cli__db_8h_html_a404856d125323afb594e719bc8de9ce8"><div class="ttname"><a href="mtc__cli__db_8h.html#a404856d125323afb594e719bc8de9ce8">Mtc_CliDbSetAuthPass</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CliDbSetAuthPass(ZCHAR *pcPass)</div><div class="ttdoc">Set authorization password.</div></div>
+<div class="ttc" id="amtc__cli__db_8h_html_a9ff7b9fca95976794f13e15fbda9d6ce"><div class="ttname"><a href="mtc__cli__db_8h.html#a9ff7b9fca95976794f13e15fbda9d6ce">Mtc_CliDbSetAuthName</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CliDbSetAuthName(ZCHAR *pcName)</div><div class="ttdoc">Set authorization name.</div></div>
+<div class="ttc" id="amtc__cli__db_8h_html_aa48a19abd45390c5c98b62f9ee6617ae"><div class="ttname"><a href="mtc__cli__db_8h.html#aa48a19abd45390c5c98b62f9ee6617ae">Mtc_CliDbSetSipRegRealm</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CliDbSetSipRegRealm(ZCHAR *pcRealm)</div><div class="ttdoc">Set the sip register realm.</div></div>
+<div class="ttc" id="amtc__cli__db_8h_html_ad4f2ff0241496b6a063ae3a41f545700"><div class="ttname"><a href="mtc__cli__db_8h.html#ad4f2ff0241496b6a063ae3a41f545700">Mtc_CliDbSetSipLclTcpPort</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CliDbSetSipLclTcpPort(ZUINT iPort)</div><div class="ttdoc">Set sip local TCP listen port.</div></div>
+<div class="ttc" id="amtc__cli__db_8h_html_ad5541357e8efa34b4066c285ad7cd386"><div class="ttname"><a href="mtc__cli__db_8h.html#ad5541357e8efa34b4066c285ad7cd386">Mtc_CliDbSetSipRegIp</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CliDbSetSipRegIp(ZCHAR *pcIp, ZUINT iIndex)</div><div class="ttdoc">Set the sip register and proxy IP.</div></div>
+<div class="ttc" id="azos__type_8h_html_a90b26e321f93fcbe00002d235e724319"><div class="ttname"><a href="zos__type_8h.html#a90b26e321f93fcbe00002d235e724319">ZTRUE</a></div><div class="ttdeci">#define ZTRUE</div><div class="ttdoc">true</div><div class="ttdef"><b>Definition:</b> zos_type.h:57</div></div>
+</div><!-- fragment --></li>
+</ol>
+<dl class="section return"><dt>返回</dt><dd>Default emergency server realm. </dd></dl>
+
+</div>
+</div>
+<a id="a8eb9ff7c0bb92c9179f75fe9e7a97edd" name="a8eb9ff7c0bb92c9179f75fe9e7a97edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb9ff7c0bb92c9179f75fe9e7a97edd">&#9670;&nbsp;</a></span>Mtc_ProvDbGetExtnParm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbGetExtnParm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> **&#160;</td>
+          <td class="paramname"><em>ppcParm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ppcParm</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>get extension parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>get extension parameter failed, the extension parameter is not exist.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a18094ab74bf425c1dd3f128e70393c5f">Mtc_ProvDbSetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="abb8b11683436b897040fd85cd5a37b37" name="abb8b11683436b897040fd85cd5a37b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8b11683436b897040fd85cd5a37b37">&#9670;&nbsp;</a></span>Mtc_ProvDbGetExtnParmBool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbGetExtnParmBool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> *&#160;</td>
+          <td class="paramname"><em>pbParm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pbParm</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>get extension parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>get extension parameter failed, the extension parameter is not exist.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7024a03cf0139f8bb47c7d544c533f25" name="a7024a03cf0139f8bb47c7d544c533f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7024a03cf0139f8bb47c7d544c533f25">&#9670;&nbsp;</a></span>Mtc_ProvDbGetExtnParmCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ProvDbGetExtnParmCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Get the parameter count successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Get the parameter count failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a18094ab74bf425c1dd3f128e70393c5f">Mtc_ProvDbSetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa66af0b2b699639930ce2b38fe73826d" name="aa66af0b2b699639930ce2b38fe73826d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66af0b2b699639930ce2b38fe73826d">&#9670;&nbsp;</a></span>Mtc_ProvDbGetExtnParmInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbGetExtnParmInt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> *&#160;</td>
+          <td class="paramname"><em>piParm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">piParm</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>get extension parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>get extension parameter failed, the extension parameter is not exist.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1f0f87ce08d224e45ee36882dadc0889" name="a1f0f87ce08d224e45ee36882dadc0889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0f87ce08d224e45ee36882dadc0889">&#9670;&nbsp;</a></span>Mtc_ProvDbGetExtnParmUint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbGetExtnParmUint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> *&#160;</td>
+          <td class="paramname"><em>piParm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">piParm</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>get extension parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>get extension parameter failed, the extension parameter is not exist.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3c609d91ea6fd021ce2b3c05fdbd2b47" name="a3c609d91ea6fd021ce2b3c05fdbd2b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c609d91ea6fd021ce2b3c05fdbd2b47">&#9670;&nbsp;</a></span>Mtc_ProvDbGetExtnParmX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetExtnParmX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td>
+          <td class="paramname"><em>iIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iIndex</td><td>The parameter index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The parameter value when get extension parameter successfully, otherwise return empty string.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a18094ab74bf425c1dd3f128e70393c5f">Mtc_ProvDbSetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4679743eedd6de8215069bff89baae7e" name="a4679743eedd6de8215069bff89baae7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4679743eedd6de8215069bff89baae7e">&#9670;&nbsp;</a></span>Mtc_ProvDbGetGuiShowDbg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetGuiShowDbg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the GUI show debug window option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Show debug window option. </dd></dl>
+
+</div>
+</div>
+<a id="a92668e63cc0e959b3b7d14c6183a52e9" name="a92668e63cc0e959b3b7d14c6183a52e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92668e63cc0e959b3b7d14c6183a52e9">&#9670;&nbsp;</a></span>Mtc_ProvDbGetImei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetImei </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the IMEI from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of IMEI.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ad159ccca45b2317dae5dfa119e269c09">Mtc_ProvDbSetImei</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1a6beda8e57b5f3379060088a6865770" name="a1a6beda8e57b5f3379060088a6865770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6beda8e57b5f3379060088a6865770">&#9670;&nbsp;</a></span>Mtc_ProvDbGetLoginOnPC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetLoginOnPC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the automatically start on PC option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Automatically start on PC option. </dd></dl>
+
+</div>
+</div>
+<a id="aaceab0bb2937118935b1e2f02b3ce801" name="aaceab0bb2937118935b1e2f02b3ce801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaceab0bb2937118935b1e2f02b3ce801">&#9670;&nbsp;</a></span>Mtc_ProvDbGetManualIp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetManualIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the using manual local IP option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>Automatically start on PC option. </dd></dl>
+
+</div>
+</div>
+<a id="ac28a0ab55003212d140e212f3a927db9" name="ac28a0ab55003212d140e212f3a927db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28a0ab55003212d140e212f3a927db9">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMcc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetMcc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mobile country code from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of mobile country code.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ae496263ff84da335bee99ff2fa5b6b85">Mtc_ProvDbSetMcc</a> </dd></dl>
+
+</div>
+</div>
+<a id="a57df51cc9f152b15b5bc2f503d913fac" name="a57df51cc9f152b15b5bc2f503d913fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57df51cc9f152b15b5bc2f503d913fac">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMmeDumpDbg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetMmeDumpDbg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the MME dump debug option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>MME dump debug option. </dd></dl>
+
+</div>
+</div>
+<a id="a276c530cdbe1607049203628a1bf0d6b" name="a276c530cdbe1607049203628a1bf0d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276c530cdbe1607049203628a1bf0d6b">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMmeLogLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a> Mtc_ProvDbGetMmeLogLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the MME log level from database. </p>
+<dl class="section return"><dt>返回</dt><dd>MME log level number. </dd></dl>
+
+</div>
+</div>
+<a id="a8e008748732e360240b8fda7e80a1f3d" name="a8e008748732e360240b8fda7e80a1f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e008748732e360240b8fda7e80a1f3d">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMnc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetMnc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mobile network code from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of mobile network code.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a1974c06b2dc4ba455264e84da1b60d20">Mtc_ProvDbSetMnc</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab867be62f2e57729c82e31c598a41afd" name="ab867be62f2e57729c82e31c598a41afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab867be62f2e57729c82e31c598a41afd">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMvcRecVoice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetMvcRecVoice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mvc record voice option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>mvc record debug option. </dd></dl>
+
+</div>
+</div>
+<a id="a03389d39ecb1c1c518d3db747d14aaa9" name="a03389d39ecb1c1c518d3db747d14aaa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03389d39ecb1c1c518d3db747d14aaa9">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMvdRecVideo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetMvdRecVideo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mvd record video option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>mvd record debug option. </dd></dl>
+
+</div>
+</div>
+<a id="a69fbf6419debfda66e72c88a31c45184" name="a69fbf6419debfda66e72c88a31c45184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69fbf6419debfda66e72c88a31c45184">&#9670;&nbsp;</a></span>Mtc_ProvDbGetMvdSyncAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetMvdSyncAudio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mvd sync audio option from database. </p>
+<dl class="section return"><dt>返回</dt><dd>mvc record debug option. </dd></dl>
+
+</div>
+</div>
+<a id="afae37179981b43fa4e03c65b3df1afac" name="afae37179981b43fa4e03c65b3df1afac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae37179981b43fa4e03c65b3df1afac">&#9670;&nbsp;</a></span>Mtc_ProvDbGetRcsProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ProvDbGetRcsProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the RCS profile from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The type of RCS profile, </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ab48c538a1fa58a5e053cac76f81757e7">EN_MTC_PROV_RCS_PROF_TYPE</a>.</dd>
+<dd>
+<a class="el" href="mtc__prov__db_8h.html#a258d9a55a80d07e6775866183bc5ff48">Mtc_ProvDbSetRcsProfile</a> </dd></dl>
+
+</div>
+</div>
+<a id="a36bfb8ad8d98a1c83f6addea3fc8f690" name="a36bfb8ad8d98a1c83f6addea3fc8f690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bfb8ad8d98a1c83f6addea3fc8f690">&#9670;&nbsp;</a></span>Mtc_ProvDbGetRcsVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ProvDbGetRcsVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the RCS version from database. It is only mandatory from RCS 5.1 onwards. </p>
+<dl class="section return"><dt>返回</dt><dd>The type of RCS version, </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8118d1b89f4d894e1b18dd6c42b25899">EN_MTC_PROV_RCS_VER_TYPE</a>.</dd>
+<dd>
+<a class="el" href="mtc__prov__db_8h.html#a87b348ba7ffa6e45211bf7d15f4fcafb">Mtc_ProvDbSetRcsVer</a> </dd></dl>
+
+</div>
+</div>
+<a id="a05591df5ad768639a9642252275ccfc0" name="a05591df5ad768639a9642252275ccfc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05591df5ad768639a9642252275ccfc0">&#9670;&nbsp;</a></span>Mtc_ProvDbGetRingMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> Mtc_ProvDbGetRingMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ring mute option. </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZTRUE</td><td>Mute ring. </td></tr>
+    <tr><td class="paramname">ZFALSE</td><td>Not to mute ring.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a993b1985ae7ae9140571e530054c2e24" title="Set ring mute option.">Mtc_ProvDbSetRingMute</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab6cb65c0d311e7460c45445694ca698e" name="ab6cb65c0d311e7460c45445694ca698e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6cb65c0d311e7460c45445694ca698e">&#9670;&nbsp;</a></span>Mtc_ProvDbGetSmsPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> Mtc_ProvDbGetSmsPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the SMS port from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The SMS port.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a05b33e8a3902b932b93a4db065f2ba62">Mtc_ProvDbSetSmsPort</a> </dd></dl>
+
+</div>
+</div>
+<a id="af66a335f59f1987d775fd57c020b1538" name="af66a335f59f1987d775fd57c020b1538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66a335f59f1987d775fd57c020b1538">&#9670;&nbsp;</a></span>Mtc_ProvDbGetSrvTmpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ProvDbGetSrvTmpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the server template from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The type of server template, </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#aabb14cf6577b76762f3accd05cd43fe8">EN_MTC_PROV_SRV_TMPL_TYPE</a>.</dd>
+<dd>
+<a class="el" href="mtc__prov__db_8h.html#a86d9618474aa0021a9b34a220283166f">Mtc_ProvDbSetSrvTmpl</a> </dd></dl>
+
+</div>
+</div>
+<a id="a45e04ea5a6935e0089ccecadba9903fc" name="a45e04ea5a6935e0089ccecadba9903fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e04ea5a6935e0089ccecadba9903fc">&#9670;&nbsp;</a></span>Mtc_ProvDbGetSrvTmplX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetSrvTmplX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the server template from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of server template.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a37a7542de0f734a6b014a6f3f2437fd5">Mtc_ProvDbSetSrvTmplX</a> </dd></dl>
+
+</div>
+</div>
+<a id="a85d5695a086b10056549400e7f94e1d9" name="a85d5695a086b10056549400e7f94e1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d5695a086b10056549400e7f94e1d9">&#9670;&nbsp;</a></span>Mtc_ProvDbGetSrvType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetSrvType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the service type from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of service type.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ae35da5751c9b99fb176b50ed931a44e3">Mtc_ProvDbSetSrvType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad3876669c27af7736efaa1f5ba9a686b" name="ad3876669c27af7736efaa1f5ba9a686b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3876669c27af7736efaa1f5ba9a686b">&#9670;&nbsp;</a></span>Mtc_ProvDbGetTmnlModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetTmnlModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the terminal model from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of terminal model.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a3adb0671d61a18aa8d27ee5d65480286">Mtc_ProvDbSetTmnlModel</a> </dd></dl>
+
+</div>
+</div>
+<a id="a673c27ad77be38afd2d67c149aeb9b27" name="a673c27ad77be38afd2d67c149aeb9b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a673c27ad77be38afd2d67c149aeb9b27">&#9670;&nbsp;</a></span>Mtc_ProvDbGetTmnlSwVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetTmnlSwVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the terminal software version from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of terminal software version.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a3ed22337158bb9bc37de79fc7a58fd0f">Mtc_ProvDbSetTmnlSwVer</a> </dd></dl>
+
+</div>
+</div>
+<a id="a073f055e946c9be3071d601c57b99fd9" name="a073f055e946c9be3071d601c57b99fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073f055e946c9be3071d601c57b99fd9">&#9670;&nbsp;</a></span>Mtc_ProvDbGetTmnlVendor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_ProvDbGetTmnlVendor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the terminal vendor from database. </p>
+<dl class="section return"><dt>返回</dt><dd>The string of terminal vendor.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#aa7ad5f1ada39a8213fb1063332f61ca0">Mtc_ProvDbSetTmnlVendor</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7aa1a258a65195801f58e929194b43d5" name="a7aa1a258a65195801f58e929194b43d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa1a258a65195801f58e929194b43d5">&#9670;&nbsp;</a></span>Mtc_ProvDbSetChnnlId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetChnnlId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcChnnlId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set channel id. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcChnnlId</td><td>channel id string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set channel id successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set channel id failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a878594e7f2d03bff9d6f2b6eb4bc7e72">Mtc_ProvDbGetChnnlId</a> </dd></dl>
+
+</div>
+</div>
+<a id="acf06406f3b1f3180ef3367c466b83c28" name="acf06406f3b1f3180ef3367c466b83c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf06406f3b1f3180ef3367c466b83c28">&#9670;&nbsp;</a></span>Mtc_ProvDbSetCliVendor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetCliVendor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVendor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set client vendor. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVendor</td><td>Client vendor string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set client vendor successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set client vendor failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a1f38238ab0a7dee1829f7c274479caf7">Mtc_ProvDbGetCliVendor</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8cd25cb7d19adcf0e45189ee2bfa1c39" name="a8cd25cb7d19adcf0e45189ee2bfa1c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd25cb7d19adcf0e45189ee2bfa1c39">&#9670;&nbsp;</a></span>Mtc_ProvDbSetCliVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetCliVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set client version. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVer</td><td>client version string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set client version successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set client version failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ab90aec488ad0db4d89e34c264e54c9fb">Mtc_ProvDbGetCliVer</a> </dd></dl>
+
+</div>
+</div>
+<a id="a869f4cde86247df90c60fe0acbab4818" name="a869f4cde86247df90c60fe0acbab4818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869f4cde86247df90c60fe0acbab4818">&#9670;&nbsp;</a></span>Mtc_ProvDbSetCurProfUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetCurProfUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set current profile user. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcUser</td><td>The profile user name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the profile user successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the profile user failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a36f34fe19b95617b034cb81c3b79fdb7">Mtc_ProvDbGetCurProfUser</a> </dd></dl>
+
+</div>
+</div>
+<a id="a777ef8a76f31d37e2098eeee6ccf0d4a" name="a777ef8a76f31d37e2098eeee6ccf0d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777ef8a76f31d37e2098eeee6ccf0d4a">&#9670;&nbsp;</a></span>Mtc_ProvDbSetDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetDeviceType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td>
+          <td class="paramname"><em>wDeviceType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set device type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wDeviceType</td><td>device type, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#acb230013fc30752417d47312a08af7d9">EN_MTC_PROV_DEVICE_TYPE</a>.</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set device type successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set device type failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ab084ffd235c77c68a2ea471c0147e9d8">Mtc_ProvDbGetDeviceType</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab43b6abccbd89ecf0c23f25c11e13120" name="ab43b6abccbd89ecf0c23f25c11e13120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43b6abccbd89ecf0c23f25c11e13120">&#9670;&nbsp;</a></span>Mtc_ProvDbSetDftRingDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetDftRingDir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcDir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set default ring directory. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcDir</td><td>The default ring directory.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the default ring directory successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the default ring directory failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ad1e0c1cc23eadce9ab87089ef05bb8a2">Mtc_ProvDbGetDftRingDir</a> </dd></dl>
+
+</div>
+</div>
+<a id="a18094ab74bf425c1dd3f128e70393c5f" name="a18094ab74bf425c1dd3f128e70393c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18094ab74bf425c1dd3f128e70393c5f">&#9670;&nbsp;</a></span>Mtc_ProvDbSetExtnParm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetExtnParm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVal</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the parameter failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a15db9c96ddaf16d050aee4a72f80ea2b" name="a15db9c96ddaf16d050aee4a72f80ea2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15db9c96ddaf16d050aee4a72f80ea2b">&#9670;&nbsp;</a></span>Mtc_ProvDbSetExtnParmBool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetExtnParmBool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bVal</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the parameter failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="a932fa0d5bc842b6d87a5eae069830d72" name="a932fa0d5bc842b6d87a5eae069830d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932fa0d5bc842b6d87a5eae069830d72">&#9670;&nbsp;</a></span>Mtc_ProvDbSetExtnParmInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetExtnParmInt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td>
+          <td class="paramname"><em>iVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iVal</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the parameter failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac0605bbac462e9e28e090bc1266f9b28" name="ac0605bbac462e9e28e090bc1266f9b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0605bbac462e9e28e090bc1266f9b28">&#9670;&nbsp;</a></span>Mtc_ProvDbSetExtnParmUint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetExtnParmUint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set extension parameter. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcName</td><td>The parameter name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iVal</td><td>The parameter value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the parameter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the parameter failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8eb9ff7c0bb92c9179f75fe9e7a97edd">Mtc_ProvDbGetExtnParm</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad159ccca45b2317dae5dfa119e269c09" name="ad159ccca45b2317dae5dfa119e269c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad159ccca45b2317dae5dfa119e269c09">&#9670;&nbsp;</a></span>Mtc_ProvDbSetImei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetImei </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcImei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set IMEI. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcImei</td><td>IMEI string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set IMEI successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set IMEI failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a92668e63cc0e959b3b7d14c6183a52e9">Mtc_ProvDbGetImei</a> </dd></dl>
+
+</div>
+</div>
+<a id="afc5d8a58bc20776a5db54b0b5770ea1c" name="afc5d8a58bc20776a5db54b0b5770ea1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc5d8a58bc20776a5db54b0b5770ea1c">&#9670;&nbsp;</a></span>Mtc_ProvDbSetLoginOnPC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetLoginOnPC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set automatically start on PC option. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>The boolean value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the option successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the option failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a1a6beda8e57b5f3379060088a6865770">Mtc_ProvDbGetLoginOnPC</a> </dd></dl>
+
+</div>
+</div>
+<a id="a948760237f12953359e2f5d4fff17132" name="a948760237f12953359e2f5d4fff17132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948760237f12953359e2f5d4fff17132">&#9670;&nbsp;</a></span>Mtc_ProvDbSetManualIp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetManualIp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set using manual local IP option. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>The boolean value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the option successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the option failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#aaceab0bb2937118935b1e2f02b3ce801">Mtc_ProvDbGetManualIp</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae496263ff84da335bee99ff2fa5b6b85" name="ae496263ff84da335bee99ff2fa5b6b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae496263ff84da335bee99ff2fa5b6b85">&#9670;&nbsp;</a></span>Mtc_ProvDbSetMcc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetMcc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcMcc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set mobile country code. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcMcc</td><td>mobile country code string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set mobile country code successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set mobile country code failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ac28a0ab55003212d140e212f3a927db9">Mtc_ProvDbGetMcc</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0488a73b6b1d83333f539708a8fe28d2" name="a0488a73b6b1d83333f539708a8fe28d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0488a73b6b1d83333f539708a8fe28d2">&#9670;&nbsp;</a></span>Mtc_ProvDbSetMmeDumpDbg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetMmeDumpDbg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bEnable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set MME dump information to file option. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bEnable</td><td>The boolean value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the option successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the option failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a57df51cc9f152b15b5bc2f503d913fac">Mtc_ProvDbGetMmeDumpDbg</a> </dd></dl>
+
+</div>
+</div>
+<a id="afebbc11638fd14b78386459d4e0533e0" name="afebbc11638fd14b78386459d4e0533e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afebbc11638fd14b78386459d4e0533e0">&#9670;&nbsp;</a></span>Mtc_ProvDbSetMmeLogLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetMmeLogLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a>&#160;</td>
+          <td class="paramname"><em>ucLevel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set MME log level. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ucLevel</td><td>Log level number, 0 is no log, bigger number for more log.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set the option successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set the option failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a57df51cc9f152b15b5bc2f503d913fac">Mtc_ProvDbGetMmeDumpDbg</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1974c06b2dc4ba455264e84da1b60d20" name="a1974c06b2dc4ba455264e84da1b60d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1974c06b2dc4ba455264e84da1b60d20">&#9670;&nbsp;</a></span>Mtc_ProvDbSetMnc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetMnc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcMnc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set mobile network code. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcMnc</td><td>mobile network code string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set mobile network code successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set mobile network code failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8e008748732e360240b8fda7e80a1f3d">Mtc_ProvDbGetMnc</a> </dd></dl>
+
+</div>
+</div>
+<a id="a258d9a55a80d07e6775866183bc5ff48" name="a258d9a55a80d07e6775866183bc5ff48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258d9a55a80d07e6775866183bc5ff48">&#9670;&nbsp;</a></span>Mtc_ProvDbSetRcsProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetRcsProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iRcsProfile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set RCS profile. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iRcsProfile</td><td>RCS profile type, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ab48c538a1fa58a5e053cac76f81757e7">EN_MTC_PROV_RCS_PROF_TYPE</a>.</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set RCS profile successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set RCS profile failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#afae37179981b43fa4e03c65b3df1afac">Mtc_ProvDbGetRcsProfile</a> </dd></dl>
+
+</div>
+</div>
+<a id="a87b348ba7ffa6e45211bf7d15f4fcafb" name="a87b348ba7ffa6e45211bf7d15f4fcafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b348ba7ffa6e45211bf7d15f4fcafb">&#9670;&nbsp;</a></span>Mtc_ProvDbSetRcsVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetRcsVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iRcsVer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set RCS version. It is only mandatory from RCS 5.1 onwards. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iRcsVer</td><td>RCS version type, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a8118d1b89f4d894e1b18dd6c42b25899">EN_MTC_PROV_RCS_VER_TYPE</a>.</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set RCS version successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set RCS version failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a36bfb8ad8d98a1c83f6addea3fc8f690">Mtc_ProvDbGetRcsVer</a> </dd></dl>
+
+</div>
+</div>
+<a id="a993b1985ae7ae9140571e530054c2e24" name="a993b1985ae7ae9140571e530054c2e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993b1985ae7ae9140571e530054c2e24">&#9670;&nbsp;</a></span>Mtc_ProvDbSetRingMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetRingMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a>&#160;</td>
+          <td class="paramname"><em>bMute</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set ring mute option. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bMute</td><td>ZTRUE to mute ring.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set ring mute option successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set ring mute option failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a05591df5ad768639a9642252275ccfc0">Mtc_ProvDbGetRingMute</a> </dd></dl>
+
+</div>
+</div>
+<a id="a05b33e8a3902b932b93a4db065f2ba62" name="a05b33e8a3902b932b93a4db065f2ba62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b33e8a3902b932b93a4db065f2ba62">&#9670;&nbsp;</a></span>Mtc_ProvDbSetSmsPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetSmsPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a>&#160;</td>
+          <td class="paramname"><em>wPort</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set SMS port. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wPort</td><td>SMS port.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set SMS port successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set SMS port failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ab6cb65c0d311e7460c45445694ca698e">Mtc_ProvDbGetSmsPort</a> </dd></dl>
+
+</div>
+</div>
+<a id="a86d9618474aa0021a9b34a220283166f" name="a86d9618474aa0021a9b34a220283166f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d9618474aa0021a9b34a220283166f">&#9670;&nbsp;</a></span>Mtc_ProvDbSetSrvTmpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetSrvTmpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iSrvTmpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set server template. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iSrvTmpl</td><td>server template, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#aabb14cf6577b76762f3accd05cd43fe8">EN_MTC_PROV_SRV_TMPL_TYPE</a>.</dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set server template successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set server template failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#af66a335f59f1987d775fd57c020b1538">Mtc_ProvDbGetSrvTmpl</a> </dd></dl>
+
+</div>
+</div>
+<a id="a37a7542de0f734a6b014a6f3f2437fd5" name="a37a7542de0f734a6b014a6f3f2437fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a7542de0f734a6b014a6f3f2437fd5">&#9670;&nbsp;</a></span>Mtc_ProvDbSetSrvTmplX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetSrvTmplX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcSrvTmpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set server template. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcSrvTmpl</td><td>server template.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set server template successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set server template failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a45e04ea5a6935e0089ccecadba9903fc">Mtc_ProvDbGetSrvTmplX</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae35da5751c9b99fb176b50ed931a44e3" name="ae35da5751c9b99fb176b50ed931a44e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35da5751c9b99fb176b50ed931a44e3">&#9670;&nbsp;</a></span>Mtc_ProvDbSetSrvType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetSrvType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcSrvType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set service type. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcSrvType</td><td>service type string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set service type successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set tservice type failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a85d5695a086b10056549400e7f94e1d9">Mtc_ProvDbGetSrvType</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3adb0671d61a18aa8d27ee5d65480286" name="a3adb0671d61a18aa8d27ee5d65480286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3adb0671d61a18aa8d27ee5d65480286">&#9670;&nbsp;</a></span>Mtc_ProvDbSetTmnlModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetTmnlModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcModel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set terminal model. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcModel</td><td>terminal model string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set terminal model successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set terminal model failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#ad3876669c27af7736efaa1f5ba9a686b">Mtc_ProvDbGetTmnlModel</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3ed22337158bb9bc37de79fc7a58fd0f" name="a3ed22337158bb9bc37de79fc7a58fd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed22337158bb9bc37de79fc7a58fd0f">&#9670;&nbsp;</a></span>Mtc_ProvDbSetTmnlSwVer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetTmnlSwVer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set terminal software version. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVer</td><td>terminal software version string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set terminal software version successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set terminal software version failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a673c27ad77be38afd2d67c149aeb9b27">Mtc_ProvDbGetTmnlSwVer</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa7ad5f1ada39a8213fb1063332f61ca0" name="aa7ad5f1ada39a8213fb1063332f61ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ad5f1ada39a8213fb1063332f61ca0">&#9670;&nbsp;</a></span>Mtc_ProvDbSetTmnlVendor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_ProvDbSetTmnlVendor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcVendor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set terminal vendor. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcVendor</td><td>terminal vendor string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>Set terminal vendor successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>Set terminal vendor failed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__prov__db_8h.html#a073f055e946c9be3071d601c57b99fd9">Mtc_ProvDbGetTmnlVendor</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

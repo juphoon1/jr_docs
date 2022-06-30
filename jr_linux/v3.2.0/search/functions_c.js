@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['rapidjson_5fdisableif_5freturn_0',['RAPIDJSON_DISABLEIF_RETURN',['../class_generic_value.html#a4a4418a93777942e1fb7ea71f8aaf680',1,'GenericValue::RAPIDJSON_DISABLEIF_RETURN()'],['../class_generic_pointer.html#aaf4d7d852098878d24188d134182d42f',1,'GenericPointer::RAPIDJSON_DISABLEIF_RETURN((internal::NotExpr&lt; internal::IsSame&lt; typename internal::RemoveConst&lt; T &gt;::Type, Ch &gt; &gt;),(GenericPointer)) Append(T *name'],['../class_generic_pointer.html#a914bbdd96e2a248e035b8ebd68526369',1,'GenericPointer::RAPIDJSON_DISABLEIF_RETURN((internal::OrExpr&lt; internal::IsPointer&lt; T &gt;, internal::IsGenericValue&lt; T &gt; &gt;),(ValueType &amp;)) Set(ValueType &amp;root'],['../class_generic_pointer.html#a1bb4a253f33687734e5b20795632a801',1,'GenericPointer::RAPIDJSON_DISABLEIF_RETURN((internal::OrExpr&lt; internal::IsPointer&lt; T &gt;, internal::IsGenericValue&lt; T &gt; &gt;),(ValueType &amp;)) Set(GenericDocument&lt; EncodingType']]],
+  ['rawassign_1',['RawAssign',['../class_generic_value.html#abb8ea2dfbe74ff4ee7dac6be31317f81',1,'GenericValue']]],
+  ['rawnumber_2',['RawNumber',['../struct_base_reader_handler.html#a9ed0d83d5e6c8f5e4b32ca3735ff0bb7',1,'BaseReaderHandler']]],
+  ['rawvalue_3',['RawValue',['../class_pretty_writer.html#a440890a72408a150ef46edda6becdc94',1,'PrettyWriter::RawValue()'],['../class_writer.html#ae0d1615104e4e88040b9640e6784008a',1,'Writer::RawValue()']]],
+  ['realloc_4',['Realloc',['../class_memory_pool_allocator.html#a7c273279d361b207ff622d4bdfc63074',1,'MemoryPoolAllocator']]],
+  ['removecallback_5',['removeCallback',['../class_j_r_call.html#a00365059ba4c889abc1e8e21e47d5cbc',1,'JRCall::removeCallback()'],['../class_j_r_call_impl.html#a2d55b05adb4a49af93f45b49210e9869',1,'JRCallImpl::removeCallback()'],['../class_j_r_client.html#a65c11f10745f76b5ad30c4482c2cdbcb',1,'JRClient::removeCallback()'],['../class_j_r_client_impl.html#a3547ef811cb5605841b39280cada51d7',1,'JRClientImpl::removeCallback()']]],
+  ['removecallitem_6',['removeCallItem',['../class_j_r_call_storage.html#a41f081caeca0de6e4e4585314b77c26f',1,'JRCallStorage']]],
+  ['reset_7',['Reset',['../class_generic_schema_validator.html#a49efbbe098cb77728be3d48cafed17e4',1,'GenericSchemaValidator::Reset()'],['../class_writer.html#a8b53e8f137f7fcf694f5500711b3f58d',1,'Writer::Reset()']]]
+];

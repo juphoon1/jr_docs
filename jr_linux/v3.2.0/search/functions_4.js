@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['getaccountconfig_0',['getAccountConfig',['../class_j_r_account.html#a3e2b34a9831c6083634afd32a84e014c',1,'JRAccount::getAccountConfig()'],['../class_j_r_account_impl.html#a076e30eaef57a81e0507c958d7b89084',1,'JRAccountImpl::getAccountConfig()']]],
+  ['getaccountlist_1',['getAccountList',['../class_j_r_account.html#a17afc5a07d5b1504db30076925b6f3ea',1,'JRAccount::getAccountList()'],['../class_j_r_account_impl.html#a59ca7bd35569d216e72d320618fccf55',1,'JRAccountImpl::getAccountList()']]],
+  ['getappkey_2',['getAppKey',['../class_j_r_client.html#af885d189602e4286312dbaa44ec032fa',1,'JRClient::getAppKey()'],['../class_j_r_client_impl.html#af2282f333aca1e8138a8822850258910',1,'JRClientImpl::getAppKey()']]],
+  ['getcallitem_3',['getCallItem',['../class_j_r_call_storage.html#af9e42af82a99e7d95074dedcccb5af81',1,'JRCallStorage']]],
+  ['getcameraid_4',['getCameraId',['../class_j_r_media_device.html#a30646f29029220a7d7455e965059319f',1,'JRMediaDevice']]],
+  ['getcapserveraddress_5',['getCapServerAddress',['../class_j_r_client.html#a6c246b497347e165b0b9271a60444140',1,'JRClient::getCapServerAddress()'],['../class_j_r_client_impl.html#a504fdb86414afa1b49fa732c58ef6d23',1,'JRClientImpl::getCapServerAddress()']]],
+  ['getcuei_6',['getCuei',['../class_j_r_client.html#aea1e32292cfe6e3498cc9ccb0db10441',1,'JRClient::getCuei()'],['../class_j_r_client_impl.html#a9b13ce8a6c15bab21524e362b67aa1e7',1,'JRClientImpl::getCuei()']]],
+  ['getcuraccount_7',['getCurAccount',['../class_j_r_client.html#a82889de72f9fcb1ca1351e1d70405036',1,'JRClient::getCurAccount()'],['../class_j_r_client_impl.html#af3f451a8f836687282313fdefb1c4f36',1,'JRClientImpl::getCurAccount()']]],
+  ['getcurloginnumber_8',['getCurLoginNumber',['../class_j_r_client.html#aa1a482c1ca9b431da704e2ac04602ef3',1,'JRClient::getCurLoginNumber()'],['../class_j_r_client_impl.html#a6294ecbba93e985995e134046d056541',1,'JRClientImpl::getCurLoginNumber()']]],
+  ['getdtmfdesc_9',['getDtmfDesc',['../class_j_r_call.html#a59e8db297e32df9fc927144a5d79555e',1,'JRCall::getDtmfDesc()'],['../class_j_r_call_impl.html#ae9fd2cbd8fb7e93b0e20c7ae5d10fa40',1,'JRCallImpl::getDtmfDesc()']]],
+  ['getinputdevices_10',['getInputDevices',['../class_j_r_media_device.html#af44adca4ed89d36bd1044747496813d4',1,'JRMediaDevice']]],
+  ['getinstance_11',['getInstance',['../class_j_r_account.html#a2fbf42a0b893b7e823951806c67f5259',1,'JRAccount::getInstance()'],['../class_j_r_call.html#a06ab24658ef1abbf3859746e5c262bb6',1,'JRCall::getInstance()'],['../class_j_r_client.html#a19d0ea199c53bb0e9e87f8fac2110286',1,'JRClient::getInstance()']]],
+  ['getoutputdevices_12',['getOutputDevices',['../class_j_r_media_device.html#aea49d6bb74bbc8c217a63a7868053659',1,'JRMediaDevice']]],
+  ['getsdkversion_13',['getSDKVersion',['../class_j_r_client.html#a3167ee86f0b3cdf8298e104637d6ecde',1,'JRClient::getSDKVersion()'],['../class_j_r_client_impl.html#ad73c7f316daf09bae1313419a926e077',1,'JRClientImpl::getSDKVersion()']]],
+  ['getstate_14',['getState',['../class_j_r_client.html#a706e03a413da5c2cc81382f7978c0c0c',1,'JRClient::getState()'],['../class_j_r_client_impl.html#a54c8f7715a482948c0d415d30e367c00',1,'JRClientImpl::getState()']]],
+  ['getstatistics_15',['getStatistics',['../class_j_r_call.html#a26fb48bf4f8465302cf896bb75b5c4d1',1,'JRCall::getStatistics()'],['../class_j_r_call_impl.html#aef346370f2319e12b098d3ae55260c9b',1,'JRCallImpl::getStatistics()']]],
+  ['getvendor_16',['getVendor',['../class_j_r_client.html#afedf8f61b9dbdaf96f95f446262004ba',1,'JRClient::getVendor()'],['../class_j_r_client_impl.html#a3ae00eb07f4938691336e94f5e5c0a01',1,'JRClientImpl::getVendor()']]],
+  ['getvendorname_17',['getVendorName',['../class_j_r_client.html#aca9d61d9f1485036730b7dc033a16d14',1,'JRClient::getVendorName()'],['../class_j_r_client_impl.html#a3f8fb513f79df857c036a1bb352232e0',1,'JRClientImpl::getVendorName()']]],
+  ['getvendorversion_18',['getVendorVersion',['../class_j_r_client.html#a74eec755782d74c3746662dab0c0deb0',1,'JRClient::getVendorVersion()'],['../class_j_r_client_impl.html#ae5049f343e22e0b96d92588f30410b40',1,'JRClientImpl::getVendorVersion()']]]
+];

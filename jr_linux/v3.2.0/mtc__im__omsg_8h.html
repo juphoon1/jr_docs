@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_im_omsg.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_im_omsg.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC Instant Message Offline Message Interface Functions  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__im__omsg_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a34916d6130c7761a674313ec32c86863"><td class="memItemLeft" align="right" valign="top"><a id="a34916d6130c7761a674313ec32c86863" name="a34916d6130c7761a674313ec32c86863"></a>
+typedef enum EN_MTC_OMSG_MSG_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_OMSG_MSG_TYPE</b></td></tr>
+<tr class="separator:a34916d6130c7761a674313ec32c86863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a604d6a3159cc523c04fcf0ad18c481cc"><td class="memItemLeft" align="right" valign="top"><a id="a604d6a3159cc523c04fcf0ad18c481cc" name="a604d6a3159cc523c04fcf0ad18c481cc"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_OMSG_MSG_TYPE</b> { <br />
+&#160;&#160;<b>EN_MTC_OMSG_MSG_PAGE</b>
+, <b>EN_MTC_OMSG_MSG_LARGE</b>
+, <b>EN_MTC_OMSG_MSG_GINFO_IVTED</b>
+, <b>EN_MTC_OMSG_MSG_FILE_IVTED</b>
+, <br />
+&#160;&#160;<b>EN_MTC_OMSG_MSG_GRP_IVTED</b>
+, <b>EN_MTC_OMSG_MSG_GRP_MSG</b>
+, <b>EN_MTC_OMSG_MSG_UNKOWN</b>
+<br />
+ }</td></tr>
+<tr class="separator:a604d6a3159cc523c04fcf0ad18c481cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1fbb913965bc32b96a706bf9b2b67e2c"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__im__omsg_8h.html#a1fbb913965bc32b96a706bf9b2b67e2c">Mtc_ImOMsgGetMsgCount</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMsgLstId)</td></tr>
+<tr class="memdesc:a1fbb913965bc32b96a706bf9b2b67e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC Get Offline Message list Message Count.  <a href="mtc__im__omsg_8h.html#a1fbb913965bc32b96a706bf9b2b67e2c">更多...</a><br /></td></tr>
+<tr class="separator:a1fbb913965bc32b96a706bf9b2b67e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f0171ed979cf4183ab84a314b9f764"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__im__omsg_8h.html#a50f0171ed979cf4183ab84a314b9f764">Mtc_ImOMsgGetMsgTypeByIndex</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMsgLstId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex)</td></tr>
+<tr class="memdesc:a50f0171ed979cf4183ab84a314b9f764"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC Get Offline Message Type By Index.  <a href="mtc__im__omsg_8h.html#a50f0171ed979cf4183ab84a314b9f764">更多...</a><br /></td></tr>
+<tr class="separator:a50f0171ed979cf4183ab84a314b9f764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071afdb05790c64e2a73f01c53b71997"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__im__omsg_8h.html#a071afdb05790c64e2a73f01c53b71997">Mtc_ImOMsgGetMsgIdByIndex</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMsgLstId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex)</td></tr>
+<tr class="memdesc:a071afdb05790c64e2a73f01c53b71997"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC Get Offline Message MessageId By Index.  <a href="mtc__im__omsg_8h.html#a071afdb05790c64e2a73f01c53b71997">更多...</a><br /></td></tr>
+<tr class="separator:a071afdb05790c64e2a73f01c53b71997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc8d86eda579cb3f2939ba2ad596da8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__im__omsg_8h.html#a1fc8d86eda579cb3f2939ba2ad596da8">Mtc_ImOMsgGetSessIdByIndex</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMsgLstId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex)</td></tr>
+<tr class="memdesc:a1fc8d86eda579cb3f2939ba2ad596da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC Get Offline Message SessionId By Index.  <a href="mtc__im__omsg_8h.html#a1fc8d86eda579cb3f2939ba2ad596da8">更多...</a><br /></td></tr>
+<tr class="separator:a1fc8d86eda579cb3f2939ba2ad596da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC Instant Message Offline Message Interface Functions </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a1fbb913965bc32b96a706bf9b2b67e2c" name="a1fbb913965bc32b96a706bf9b2b67e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fbb913965bc32b96a706bf9b2b67e2c">&#9670;&nbsp;</a></span>Mtc_ImOMsgGetMsgCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ImOMsgGetMsgCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMsgLstId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTC Get Offline Message list Message Count. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMsgLstId</td><td>The offline-message list id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">The</td><td>Message Count. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a071afdb05790c64e2a73f01c53b71997" name="a071afdb05790c64e2a73f01c53b71997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071afdb05790c64e2a73f01c53b71997">&#9670;&nbsp;</a></span>Mtc_ImOMsgGetMsgIdByIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ImOMsgGetMsgIdByIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMsgLstId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTC Get Offline Message MessageId By Index. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMsgLstId</td><td>The offline-message list id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iIndex</td><td>The Index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">The</td><td>Message Id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50f0171ed979cf4183ab84a314b9f764" name="a50f0171ed979cf4183ab84a314b9f764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f0171ed979cf4183ab84a314b9f764">&#9670;&nbsp;</a></span>Mtc_ImOMsgGetMsgTypeByIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ImOMsgGetMsgTypeByIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMsgLstId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTC Get Offline Message Type By Index. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMsgLstId</td><td>The offline-message list id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iIndex</td><td>The Index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">The</td><td>Message Type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fc8d86eda579cb3f2939ba2ad596da8" name="a1fc8d86eda579cb3f2939ba2ad596da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc8d86eda579cb3f2939ba2ad596da8">&#9670;&nbsp;</a></span>Mtc_ImOMsgGetSessIdByIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_ImOMsgGetSessIdByIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iMsgLstId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTC Get Offline Message SessionId By Index. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iMsgLstId</td><td>The offline-message list id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iIndex</td><td>The Index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">The</td><td>Session Id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

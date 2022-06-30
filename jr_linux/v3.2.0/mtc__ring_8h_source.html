@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_ring.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_ring.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc__ring_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_ring.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : leo.lv</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2011-01-03</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    Macros and structure definitions required by the MTC ring.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_RING_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_RING_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a8fa9ba79c93ea234c7e9a9eb03fd62c9">   52</a></span><span class="preprocessor">#define MTC_RING_FOREVER 0</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a0c58b46f57dfe3c12a90c76326c5342b">   55</a></span><span class="preprocessor">#define MTC_RING_DTMF_LEN 200</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a36f13b74aa3199d05ea40e4418fc5ada">   58</a></span><span class="preprocessor">#define MTC_RING_ALERT_LEN 500</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a6ef402f00984fa69b48303da76059107">   61</a></span><span class="preprocessor">#define MTC_RING_TERM_LEN 2000</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#abcc9500f2c9bfad35e13e44b239ed322">   64</a></span><span class="preprocessor">#define MTC_RING_ASSET_MASK 0x80000000</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">   69</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">EN_MTC_RING_TYPE</a></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb">   71</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb">EN_MTC_RING_TONE_0</a>,              </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041">   72</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041">EN_MTC_RING_TONE_1</a>,              </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90">   73</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90">EN_MTC_RING_TONE_2</a>,              </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc">   74</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc">EN_MTC_RING_TONE_3</a>,              </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f">   75</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f">EN_MTC_RING_TONE_4</a>,              </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c">   76</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c">EN_MTC_RING_TONE_5</a>,              </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03">   77</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03">EN_MTC_RING_TONE_6</a>,              </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f">   78</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f">EN_MTC_RING_TONE_7</a>,              </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b">   79</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b">EN_MTC_RING_TONE_8</a>,              </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687">   80</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687">EN_MTC_RING_TONE_9</a>,              </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a">   81</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a">EN_MTC_RING_TONE_STAR</a>,           </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab">   82</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab">EN_MTC_RING_TONE_POUND</a>,          </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3">   84</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3">EN_MTC_RING_RING</a>,                </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e">   85</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e">EN_MTC_RING_RING_BACK</a>,           </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3">   86</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3">EN_MTC_RING_CALL_FAILED</a>,         </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96">   87</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96">EN_MTC_RING_BUSY</a>,                </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5">   88</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5">EN_MTC_RING_CALL_WAIT</a>,           </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56">   89</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56">EN_MTC_RING_FORWARD</a>,             </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e">   90</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e">EN_MTC_RING_TERM</a>,                </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3">   91</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3">EN_MTC_RING_HELD</a>,                </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460">   93</a></span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460">EN_MTC_RING_MSG_RECV</a>,            </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_enumvalue" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f">EN_MTC_RING_SIZE</a>                 </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f">   95</a></span>} <a class="code hl_enumeration" href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">EN_MTC_RING_TYPE</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">  113</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMilliSeconds);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a8447f8dff6def194fbd4e2e67ff53b85">  129</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a8447f8dff6def194fbd4e2e67ff53b85">Mtc_RingPlayNoLoop</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62">  145</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62">Mtc_RingPlayX</a>(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcFileName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMilliSeconds);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e">  155</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e">Mtc_RingStop</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#af59aa232583e4d9592b9afd64bab71ad">  165</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__ring_8h.html#af59aa232583e4d9592b9afd64bab71ad">Mtc_RingIsPlay</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#ae2dcd1b1b2a63e9adaf132a5fd21632f">  175</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__ring_8h.html#ae2dcd1b1b2a63e9adaf132a5fd21632f">Mtc_RingGetMute</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a8a57156448c1035a584cdb56f92415ad">  187</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a8a57156448c1035a584cdb56f92415ad">Mtc_RingSetMute</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bMute);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a3a1e4034dd4e1ad573387bc5aa0025f2">  199</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__ring_8h.html#a3a1e4034dd4e1ad573387bc5aa0025f2">Mtc_RingGetMuteType</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a7ed7d8238922772ca94a77c84af3b6e8">  212</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a7ed7d8238922772ca94a77c84af3b6e8">Mtc_RingSetMuteType</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType, <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bMute);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#ac0df20c3c8a7b892a7351e0a7bfc7eb7">  223</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__ring_8h.html#ac0df20c3c8a7b892a7351e0a7bfc7eb7">Mtc_RingGetName</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType);</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#aaa0a2ae338fc2a677a107ff5b48d3e8f">  234</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__ring_8h.html#aaa0a2ae338fc2a677a107ff5b48d3e8f">Mtc_RingGetDesc</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">  245</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">Mtc_RingGetType</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#acf4feb1be5712370334d8bf8c83647af">  256</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__ring_8h.html#acf4feb1be5712370334d8bf8c83647af">Mtc_RingGetCtmName</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#a9b05a1c2c092e41c7197ea2280bb7ff3">  269</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__ring_8h.html#a9b05a1c2c092e41c7197ea2280bb7ff3">Mtc_RingSetCtmName</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iType, ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#ad86fa0397f3e696b25706d6adafc6461">  278</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__ring_8h.html#ad86fa0397f3e696b25706d6adafc6461">Mtc_RingGetDir</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">  291</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">Mtc_RingSetDir</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wLen);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>}</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_RING_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="ttc" id="amtc__ring_8h_html_a3a1e4034dd4e1ad573387bc5aa0025f2"><div class="ttname"><a href="mtc__ring_8h.html#a3a1e4034dd4e1ad573387bc5aa0025f2">Mtc_RingGetMuteType</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_RingGetMuteType(ZUINT iType)</div><div class="ttdoc">Get mute status of specific type.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a3d1244e24a85ed3c1c8372da791c2647"><div class="ttname"><a href="mtc__ring_8h.html#a3d1244e24a85ed3c1c8372da791c2647">Mtc_RingGetType</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingGetType(ZCHAR *pcName)</div><div class="ttdoc">Get ring type by name.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a3d8f47f61f511e1bd431aaac7aac6d62"><div class="ttname"><a href="mtc__ring_8h.html#a3d8f47f61f511e1bd431aaac7aac6d62">Mtc_RingPlayX</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingPlayX(ZCONST ZCHAR *pcFileName, ZUINT iMilliSeconds)</div><div class="ttdoc">Play ring file.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a4b45373e73cd061e02c3b83c5a44d220"><div class="ttname"><a href="mtc__ring_8h.html#a4b45373e73cd061e02c3b83c5a44d220">Mtc_RingPlay</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingPlay(ZUINT iType, ZUINT iMilliSeconds)</div><div class="ttdoc">Play ring, and ring type see EN_MTC_RING_TYPE.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a592aa69498f5298664ae50954402266e"><div class="ttname"><a href="mtc__ring_8h.html#a592aa69498f5298664ae50954402266e">Mtc_RingStop</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_RingStop(ZUINT iType)</div><div class="ttdoc">Audio stop playback.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a7ed7d8238922772ca94a77c84af3b6e8"><div class="ttname"><a href="mtc__ring_8h.html#a7ed7d8238922772ca94a77c84af3b6e8">Mtc_RingSetMuteType</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingSetMuteType(ZUINT iType, ZBOOL bMute)</div><div class="ttdoc">Set mute status of specific type.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a8447f8dff6def194fbd4e2e67ff53b85"><div class="ttname"><a href="mtc__ring_8h.html#a8447f8dff6def194fbd4e2e67ff53b85">Mtc_RingPlayNoLoop</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingPlayNoLoop(ZUINT iType)</div><div class="ttdoc">Play ring with no loop, and ring type see EN_MTC_RING_TYPE.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a8a57156448c1035a584cdb56f92415ad"><div class="ttname"><a href="mtc__ring_8h.html#a8a57156448c1035a584cdb56f92415ad">Mtc_RingSetMute</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingSetMute(ZBOOL bMute)</div><div class="ttdoc">Set mute status.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9b05a1c2c092e41c7197ea2280bb7ff3"><div class="ttname"><a href="mtc__ring_8h.html#a9b05a1c2c092e41c7197ea2280bb7ff3">Mtc_RingSetCtmName</a></div><div class="ttdeci">ZFUNC ZINT Mtc_RingSetCtmName(ZUINT iType, ZCONST ZCHAR *pcName)</div><div class="ttdoc">Set custom ring file name.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8">EN_MTC_RING_TYPE</a></div><div class="ttdeci">EN_MTC_RING_TYPE</div><div class="ttdoc">MTC ring type</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:70</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a04169c3ccd75f32b646f5520681c9e56">EN_MTC_RING_FORWARD</a></div><div class="ttdeci">@ EN_MTC_RING_FORWARD</div><div class="ttdoc">forwarding</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:89</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a39fbdad98c7889a38778e47091e7728c">EN_MTC_RING_TONE_5</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_5</div><div class="ttdoc">tone 5</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:76</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a3c1da6741a4e8f0c4681964e3e1f719f">EN_MTC_RING_TONE_4</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_4</div><div class="ttdoc">tone 4</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:75</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a42f43b590d3801e3be306092db65bef3">EN_MTC_RING_HELD</a></div><div class="ttdeci">@ EN_MTC_RING_HELD</div><div class="ttdoc">call held</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:91</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a56097caa841a96ca9dd8832725af52ab">EN_MTC_RING_TONE_POUND</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_POUND</div><div class="ttdoc">tone #</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:82</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a576b34b857df541964093919a20479d3">EN_MTC_RING_CALL_FAILED</a></div><div class="ttdeci">@ EN_MTC_RING_CALL_FAILED</div><div class="ttdoc">call failed</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:86</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a60ccafe4f00f5e6c45ef1d5267598a96">EN_MTC_RING_BUSY</a></div><div class="ttdeci">@ EN_MTC_RING_BUSY</div><div class="ttdoc">busy</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:87</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a68795ec8cb27a7c2bc78b4a9a755740f">EN_MTC_RING_TONE_7</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_7</div><div class="ttdoc">tone 7</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:78</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a6ba627bb76b3f82ad0eb877bc6675d90">EN_MTC_RING_TONE_2</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_2</div><div class="ttdoc">tone 2</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:73</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a72c7d0e6bf11083b85b8b45d502663c5">EN_MTC_RING_CALL_WAIT</a></div><div class="ttdeci">@ EN_MTC_RING_CALL_WAIT</div><div class="ttdoc">call waiting</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:88</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a7ebe4281147886e7c7bddbb2303b6041">EN_MTC_RING_TONE_1</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_1</div><div class="ttdoc">tone 1</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:72</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a93747120513496dd5d95e4c61b5d3fbb">EN_MTC_RING_TONE_0</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_0</div><div class="ttdoc">tone 0</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:71</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8a966ef1e3447f526c2e5ba031b3044460">EN_MTC_RING_MSG_RECV</a></div><div class="ttdeci">@ EN_MTC_RING_MSG_RECV</div><div class="ttdoc">message received</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:93</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aa09aba995ec11af1d5108583ba39c8cc">EN_MTC_RING_TONE_3</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_3</div><div class="ttdoc">tone 3</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:74</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aba6e1a143286066173d8e1cd09a8cfe3">EN_MTC_RING_RING</a></div><div class="ttdeci">@ EN_MTC_RING_RING</div><div class="ttdoc">ring</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:84</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ac5c8615a78ea13bb3c3ea1eacfd3963e">EN_MTC_RING_RING_BACK</a></div><div class="ttdeci">@ EN_MTC_RING_RING_BACK</div><div class="ttdoc">ring back</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:85</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad43e39a9178fb8a61452a3638570768e">EN_MTC_RING_TERM</a></div><div class="ttdeci">@ EN_MTC_RING_TERM</div><div class="ttdoc">call terminated</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:90</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ad98e16bde8d054ad00e14edbcb48de4b">EN_MTC_RING_TONE_8</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_8</div><div class="ttdoc">tone 8</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:79</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8ae151a03ab82421f880fa022416c6618a">EN_MTC_RING_TONE_STAR</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_STAR</div><div class="ttdoc">tone *</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:81</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aecd674069bc4e4cf5cfb2687c55e3a03">EN_MTC_RING_TONE_6</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_6</div><div class="ttdoc">tone 6</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:77</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8aee747457ff9169a796bc329bde9b7687">EN_MTC_RING_TONE_9</a></div><div class="ttdeci">@ EN_MTC_RING_TONE_9</div><div class="ttdoc">tone 9</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:80</div></div>
+<div class="ttc" id="amtc__ring_8h_html_a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f"><div class="ttname"><a href="mtc__ring_8h.html#a9dc0eabe44fc5f5c8395f2092944e9b8af7f61c88cfa9ce0571b73ad70066510f">EN_MTC_RING_SIZE</a></div><div class="ttdeci">@ EN_MTC_RING_SIZE</div><div class="ttdoc">ring size</div><div class="ttdef"><b>Definition:</b> mtc_ring.h:94</div></div>
+<div class="ttc" id="amtc__ring_8h_html_aaa0a2ae338fc2a677a107ff5b48d3e8f"><div class="ttname"><a href="mtc__ring_8h.html#aaa0a2ae338fc2a677a107ff5b48d3e8f">Mtc_RingGetDesc</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_RingGetDesc(ZUINT iType)</div><div class="ttdoc">Get ring description by type.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_ab6410217cd98dd72fbbe1f6b366a1d65"><div class="ttname"><a href="mtc__ring_8h.html#ab6410217cd98dd72fbbe1f6b366a1d65">Mtc_RingSetDir</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_RingSetDir(ZCHAR *pcName, ZUSHORT wLen)</div><div class="ttdoc">Set directory for default ring file.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_ac0df20c3c8a7b892a7351e0a7bfc7eb7"><div class="ttname"><a href="mtc__ring_8h.html#ac0df20c3c8a7b892a7351e0a7bfc7eb7">Mtc_RingGetName</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_RingGetName(ZUINT iType)</div><div class="ttdoc">Get ring name by type.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_acf4feb1be5712370334d8bf8c83647af"><div class="ttname"><a href="mtc__ring_8h.html#acf4feb1be5712370334d8bf8c83647af">Mtc_RingGetCtmName</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_RingGetCtmName(ZUINT iType)</div><div class="ttdoc">Get custom ring file name by type.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_ad86fa0397f3e696b25706d6adafc6461"><div class="ttname"><a href="mtc__ring_8h.html#ad86fa0397f3e696b25706d6adafc6461">Mtc_RingGetDir</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_RingGetDir(ZFUNC_VOID)</div><div class="ttdoc">Get directory for default ring file.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_ae2dcd1b1b2a63e9adaf132a5fd21632f"><div class="ttname"><a href="mtc__ring_8h.html#ae2dcd1b1b2a63e9adaf132a5fd21632f">Mtc_RingGetMute</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_RingGetMute(ZFUNC_VOID)</div><div class="ttdoc">Get mute status.</div></div>
+<div class="ttc" id="amtc__ring_8h_html_af59aa232583e4d9592b9afd64bab71ad"><div class="ttname"><a href="mtc__ring_8h.html#af59aa232583e4d9592b9afd64bab71ad">Mtc_RingIsPlay</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_RingIsPlay(ZFUNC_VOID)</div><div class="ttdoc">Audio is playing.</div></div>
+<div class="ttc" id="azos__osenv_8h_html_a1ae79d3bb3502c7dc5c16726c78c4bfd"><div class="ttname"><a href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a></div><div class="ttdeci">#define ZFUNC_VOID</div><div class="ttdoc">ZOS support void function declare</div><div class="ttdef"><b>Definition:</b> zos_osenv.h:72</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a12ce6b35314a3c541296cf3e974292ea"><div class="ttname"><a href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a></div><div class="ttdeci">unsigned short ZUSHORT</div><div class="ttdoc">Type of unsinged short.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:104</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a21a9b77ccd8a0f566fda0b1bf60d3c76"><div class="ttname"><a href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a></div><div class="ttdeci">void ZVOID</div><div class="ttdoc">Type of void.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:107</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_aae3b50edbfc2210f1b21f28c4d196aaa"><div class="ttname"><a href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a></div><div class="ttdeci">int ZINT</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:98</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_afbe956c8bc4de2ad5c421aa144d07f16"><div class="ttname"><a href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a></div><div class="ttdeci">int ZBOOL</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:106</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

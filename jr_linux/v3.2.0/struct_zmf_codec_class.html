@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: ZmfCodecClass结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_zmf_codec_class-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">ZmfCodecClass结构体 参考<div class="ingroups"><a class="el" href="group___zmf_codec.html">外部编解码器</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ZmfCodecClass结构体  
+ <a href="struct_zmf_codec_class.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="zmf__codec_8h_source.html">zmf_codec.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a28d8b5fb3d9c448e1d7f058e4fb57893"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">codecNew</a> )(const char *codecName, <a class="el" href="group___zmf_codec.html#ga2e68a41eddd6c074798af8b86e77944f">ZmfCodecOut</a> callback, void *user_data)</td></tr>
+<tr class="memdesc:a28d8b5fb3d9c448e1d7f058e4fb57893"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建新的Codec实例  <a href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">更多...</a><br /></td></tr>
+<tr class="separator:a28d8b5fb3d9c448e1d7f058e4fb57893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a239e324be61a736f501204f6415862"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_codec_class.html#a2a239e324be61a736f501204f6415862">codecDo</a> )(void *handle, void *in, unsigned in_len, unsigned timeStampMs, void *cookie, int bLastFrag)</td></tr>
+<tr class="memdesc:a2a239e324be61a736f501204f6415862"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理原数据，进行编解码，再通过callback()返回  <a href="struct_zmf_codec_class.html#a2a239e324be61a736f501204f6415862">更多...</a><br /></td></tr>
+<tr class="separator:a2a239e324be61a736f501204f6415862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61d6f8f497063fe68f611dd7a5ebae1"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_codec_class.html#ac61d6f8f497063fe68f611dd7a5ebae1">codecReset</a> )(void *handle, <a class="el" href="union_zmf_codec.html">ZmfCodec</a> *settings)</td></tr>
+<tr class="memdesc:ac61d6f8f497063fe68f611dd7a5ebae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置Codec实例  <a href="struct_zmf_codec_class.html#ac61d6f8f497063fe68f611dd7a5ebae1">更多...</a><br /></td></tr>
+<tr class="separator:ac61d6f8f497063fe68f611dd7a5ebae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811508159b417df735a207dba537a8d0"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_codec_class.html#a811508159b417df735a207dba537a8d0">codecSet</a> )(void *handle, <a class="el" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> key, const void *value, int value_size)</td></tr>
+<tr class="memdesc:a811508159b417df735a207dba537a8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态设置Codec参数  <a href="struct_zmf_codec_class.html#a811508159b417df735a207dba537a8d0">更多...</a><br /></td></tr>
+<tr class="separator:a811508159b417df735a207dba537a8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28438952322f3f3119ea2522f84164a9"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_codec_class.html#a28438952322f3f3119ea2522f84164a9">codecGet</a> )(void *handle, <a class="el" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> key, void *value, int value_size)</td></tr>
+<tr class="memdesc:a28438952322f3f3119ea2522f84164a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">动态获取Codec参数  <a href="struct_zmf_codec_class.html#a28438952322f3f3119ea2522f84164a9">更多...</a><br /></td></tr>
+<tr class="separator:a28438952322f3f3119ea2522f84164a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2327a9f0d0173ec5d87218c5181ac49b"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_codec_class.html#a2327a9f0d0173ec5d87218c5181ac49b">codecDelete</a> )(void *handle)</td></tr>
+<tr class="memdesc:a2327a9f0d0173ec5d87218c5181ac49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁Codec实例  <a href="struct_zmf_codec_class.html#a2327a9f0d0173ec5d87218c5181ac49b">更多...</a><br /></td></tr>
+<tr class="separator:a2327a9f0d0173ec5d87218c5181ac49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >ZmfCodecClass结构体 </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a2327a9f0d0173ec5d87218c5181ac49b" name="a2327a9f0d0173ec5d87218c5181ac49b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2327a9f0d0173ec5d87218c5181ac49b">&#9670;&nbsp;</a></span>codecDelete</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* ZmfCodecClass::codecDelete) (void *handle)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁Codec实例 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Codec实例指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>销毁成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>销毁失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a239e324be61a736f501204f6415862" name="a2a239e324be61a736f501204f6415862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a239e324be61a736f501204f6415862">&#9670;&nbsp;</a></span>codecDo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* ZmfCodecClass::codecDo) (void *handle, void *in, unsigned in_len, unsigned timeStampMs, void *cookie, int bLastFrag)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>处理原数据，进行编解码，再通过callback()返回 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Codec实例指针 </td></tr>
+    <tr><td class="paramname">in</td><td>原始数据地址 </td></tr>
+    <tr><td class="paramname">in_len</td><td>原始数据长度 </td></tr>
+    <tr><td class="paramname">timeStampMs</td><td>原始数据的时间戳 </td></tr>
+    <tr><td class="paramname">cookie</td><td>该次操作携带的内部数据 </td></tr>
+    <tr><td class="paramname">bLastFrag</td><td>是否为单次编解码操作的最后片段(一次编解码可以分多次进行) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>编解码成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>编解码失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>调用前需成功创建新的Codec实例 <a class="el" href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">codecNew</a> </dd></dl>
+
+</div>
+</div>
+<a id="a28438952322f3f3119ea2522f84164a9" name="a28438952322f3f3119ea2522f84164a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28438952322f3f3119ea2522f84164a9">&#9670;&nbsp;</a></span>codecGet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* ZmfCodecClass::codecGet) (void *handle, <a class="el" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> key, void *value, int value_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态获取Codec参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Codec实例指针 </td></tr>
+    <tr><td class="paramname">key</td><td>配置项 <a class="el" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> </td></tr>
+    <tr><td class="paramname">value</td><td>配置值 </td></tr>
+    <tr><td class="paramname">value_size</td><td>配置值长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>查询成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>查询失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>调用前需成功创建新的Codec实例 <a class="el" href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">codecNew</a> </dd></dl>
+
+</div>
+</div>
+<a id="a28d8b5fb3d9c448e1d7f058e4fb57893" name="a28d8b5fb3d9c448e1d7f058e4fb57893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d8b5fb3d9c448e1d7f058e4fb57893">&#9670;&nbsp;</a></span>codecNew</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void *(* ZmfCodecClass::codecNew) (const char *codecName, <a class="el" href="group___zmf_codec.html#ga2e68a41eddd6c074798af8b86e77944f">ZmfCodecOut</a> callback, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建新的Codec实例 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codecName</td><td>编解码器名字，例如：“com.juphoon.H264.encoder" </td></tr>
+    <tr><td class="paramname">callback</td><td>实例完成一次编解码(数据转换)通过该回调函数传递给内部引擎 </td></tr>
+    <tr><td class="paramname">user_data</td><td>回调函数callback 所携带的内部指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>实例指针 </dd></dl>
+
+</div>
+</div>
+<a id="ac61d6f8f497063fe68f611dd7a5ebae1" name="ac61d6f8f497063fe68f611dd7a5ebae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61d6f8f497063fe68f611dd7a5ebae1">&#9670;&nbsp;</a></span>codecReset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* ZmfCodecClass::codecReset) (void *handle, <a class="el" href="union_zmf_codec.html">ZmfCodec</a> *settings)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重置Codec实例 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Codec实例指针 </td></tr>
+    <tr><td class="paramname">settings</td><td>Codec设置参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>重置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>处理失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>调用前需成功创建新的Codec实例 <a class="el" href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">codecNew</a> </dd></dl>
+
+</div>
+</div>
+<a id="a811508159b417df735a207dba537a8d0" name="a811508159b417df735a207dba537a8d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811508159b417df735a207dba537a8d0">&#9670;&nbsp;</a></span>codecSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* ZmfCodecClass::codecSet) (void *handle, <a class="el" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> key, const void *value, int value_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>动态设置Codec参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>Codec实例指针 </td></tr>
+    <tr><td class="paramname">key</td><td>配置项 <a class="el" href="group___zmf_codec.html#ga9693bcf09d19010964e20838127b5445">ZmfCodecKey</a> </td></tr>
+    <tr><td class="paramname">value</td><td>配置值 </td></tr>
+    <tr><td class="paramname">value_size</td><td>配置值长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>设置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>调用前需成功创建新的Codec实例 <a class="el" href="struct_zmf_codec_class.html#a28d8b5fb3d9c448e1d7f058e4fb57893">codecNew</a> </dd></dl>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/grape/<a class="el" href="zmf__codec_8h_source.html">zmf_codec.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

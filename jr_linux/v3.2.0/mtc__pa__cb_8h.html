@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_pa_cb.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_pa_cb.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC CMCC Public Account Callback Interface Functions  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__pa__cb_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:aa6b533c8024d75f045248be50eb53503"><td class="memItemLeft" align="right" valign="top"><a id="aa6b533c8024d75f045248be50eb53503" name="aa6b533c8024d75f045248be50eb53503"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCPACB</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId)</td></tr>
+<tr class="memdesc:aa6b533c8024d75f045248be50eb53503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC public account operation ok. <br /></td></tr>
+<tr class="separator:aa6b533c8024d75f045248be50eb53503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fbd5f811911e4bd65b3acf6f2e4414"><td class="memItemLeft" align="right" valign="top"><a id="a84fbd5f811911e4bd65b3acf6f2e4414" name="a84fbd5f811911e4bd65b3acf6f2e4414"></a>
+typedef <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>(*&#160;</td><td class="memItemRight" valign="bottom"><b>PFN_MTCPACBX</b>) (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iStatCode)</td></tr>
+<tr class="memdesc:a84fbd5f811911e4bd65b3acf6f2e4414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC public account operation failed. <br /></td></tr>
+<tr class="separator:a84fbd5f811911e4bd65b3acf6f2e4414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:acb63a2bee352e17af20f057c95614b19"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#acb63a2bee352e17af20f057c95614b19">Mtc_PaCbSetPaAddSubsOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:acb63a2bee352e17af20f057c95614b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account add subscribe successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a4983a1eed8853144d0046ab2f0b68f0a">Mtc_PaSessAddSubs</a> results  <a href="mtc__pa__cb_8h.html#acb63a2bee352e17af20f057c95614b19">更多...</a><br /></td></tr>
+<tr class="separator:acb63a2bee352e17af20f057c95614b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ea9b1f9394ebb5e2ad65c96080ce5b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a34ea9b1f9394ebb5e2ad65c96080ce5b">Mtc_PaCbSetPaAddSubsFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a34ea9b1f9394ebb5e2ad65c96080ce5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account add subscribe failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a4983a1eed8853144d0046ab2f0b68f0a">Mtc_PaSessAddSubs</a> results  <a href="mtc__pa__cb_8h.html#a34ea9b1f9394ebb5e2ad65c96080ce5b">更多...</a><br /></td></tr>
+<tr class="separator:a34ea9b1f9394ebb5e2ad65c96080ce5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a9be3f941157ebb1a817ed4c9c0791"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#ac5a9be3f941157ebb1a817ed4c9c0791">Mtc_PaCbSetPaCancelSubsOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:ac5a9be3f941157ebb1a817ed4c9c0791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account cancel subscribe successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a7083d6d8374a144a34e8d3c89490b65a">Mtc_PaSessCancelSubs</a> results  <a href="mtc__pa__cb_8h.html#ac5a9be3f941157ebb1a817ed4c9c0791">更多...</a><br /></td></tr>
+<tr class="separator:ac5a9be3f941157ebb1a817ed4c9c0791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b1aef49ca9acea768ac3da3f6fe25f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a61b1aef49ca9acea768ac3da3f6fe25f">Mtc_PaCbSetPaCancelSubsFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a61b1aef49ca9acea768ac3da3f6fe25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the publia account cancel subscribe failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a7083d6d8374a144a34e8d3c89490b65a">Mtc_PaSessCancelSubs</a> results  <a href="mtc__pa__cb_8h.html#a61b1aef49ca9acea768ac3da3f6fe25f">更多...</a><br /></td></tr>
+<tr class="separator:a61b1aef49ca9acea768ac3da3f6fe25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c4b8d61f550c421dd358931a508da6"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#aa8c4b8d61f550c421dd358931a508da6">Mtc_PaCbSetPaQryUsrSubsOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:aa8c4b8d61f550c421dd358931a508da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account query user subscribed successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a2bb1d37a1dae73f582a0f57d17becd36">Mtc_PaSessQryUsrSubs</a> results  <a href="mtc__pa__cb_8h.html#aa8c4b8d61f550c421dd358931a508da6">更多...</a><br /></td></tr>
+<tr class="separator:aa8c4b8d61f550c421dd358931a508da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25c3984a5e241eb63cf9d673334f1cd"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#ae25c3984a5e241eb63cf9d673334f1cd">Mtc_PaCbSetPaQryUsrSubsFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:ae25c3984a5e241eb63cf9d673334f1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account query user subscribed failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a2bb1d37a1dae73f582a0f57d17becd36">Mtc_PaSessQryUsrSubs</a> results  <a href="mtc__pa__cb_8h.html#ae25c3984a5e241eb63cf9d673334f1cd">更多...</a><br /></td></tr>
+<tr class="separator:ae25c3984a5e241eb63cf9d673334f1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af293dc37675cd25f25aaade86a6bd015"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#af293dc37675cd25f25aaade86a6bd015">Mtc_PaCbSetPaGetPubLstOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:af293dc37675cd25f25aaade86a6bd015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public list successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#af4813ecc9292ea11ac758e71252a7a72">Mtc_PaSessGetPubLst</a> results  <a href="mtc__pa__cb_8h.html#af293dc37675cd25f25aaade86a6bd015">更多...</a><br /></td></tr>
+<tr class="separator:af293dc37675cd25f25aaade86a6bd015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ab176056e71e2bcdb8e36aea2373d4"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a06ab176056e71e2bcdb8e36aea2373d4">Mtc_PaCbSetPaGetPubLstFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a06ab176056e71e2bcdb8e36aea2373d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public list failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#af4813ecc9292ea11ac758e71252a7a72">Mtc_PaSessGetPubLst</a> results  <a href="mtc__pa__cb_8h.html#a06ab176056e71e2bcdb8e36aea2373d4">更多...</a><br /></td></tr>
+<tr class="separator:a06ab176056e71e2bcdb8e36aea2373d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470129f8921e5a3283fce83018ee77bf"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a470129f8921e5a3283fce83018ee77bf">Mtc_PaCbSetPaGetPubLstRecmdOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:a470129f8921e5a3283fce83018ee77bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public list recommend successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a079175eb73b37cfb9fcae1a02a8467aa">Mtc_PaSessGetPubLstRecmd</a> results  <a href="mtc__pa__cb_8h.html#a470129f8921e5a3283fce83018ee77bf">更多...</a><br /></td></tr>
+<tr class="separator:a470129f8921e5a3283fce83018ee77bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b8bfb9b2443fdf8108aa33243d87c6"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#af4b8bfb9b2443fdf8108aa33243d87c6">Mtc_PaCbSetPaGetPubLstRecmdFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:af4b8bfb9b2443fdf8108aa33243d87c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public list recommend failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a079175eb73b37cfb9fcae1a02a8467aa">Mtc_PaSessGetPubLstRecmd</a> results  <a href="mtc__pa__cb_8h.html#af4b8bfb9b2443fdf8108aa33243d87c6">更多...</a><br /></td></tr>
+<tr class="separator:af4b8bfb9b2443fdf8108aa33243d87c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ade701a7f88a8b8b7fcc12351641ef1"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a8ade701a7f88a8b8b7fcc12351641ef1">Mtc_PaCbSetPaGetPubDetailOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:a8ade701a7f88a8b8b7fcc12351641ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public detail successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#ad1f668af80f7a66ef81f4f8fbf40b5d5">Mtc_PaSessGetPubDetail</a> results  <a href="mtc__pa__cb_8h.html#a8ade701a7f88a8b8b7fcc12351641ef1">更多...</a><br /></td></tr>
+<tr class="separator:a8ade701a7f88a8b8b7fcc12351641ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda9064ff8bbe0b7ad451d360a343359"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#adda9064ff8bbe0b7ad451d360a343359">Mtc_PaCbSetPaGetPubDetailFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:adda9064ff8bbe0b7ad451d360a343359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public detail failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#ad1f668af80f7a66ef81f4f8fbf40b5d5">Mtc_PaSessGetPubDetail</a> results  <a href="mtc__pa__cb_8h.html#adda9064ff8bbe0b7ad451d360a343359">更多...</a><br /></td></tr>
+<tr class="separator:adda9064ff8bbe0b7ad451d360a343359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3e9de97b2eb8b34805ece70d663b84"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a5a3e9de97b2eb8b34805ece70d663b84">Mtc_PaCbSetPaGetPubMenuOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:a5a3e9de97b2eb8b34805ece70d663b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public menu successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a3aced7be3e8b8adda011d7039eabc467">Mtc_PaSessGetPubMenu</a> results  <a href="mtc__pa__cb_8h.html#a5a3e9de97b2eb8b34805ece70d663b84">更多...</a><br /></td></tr>
+<tr class="separator:a5a3e9de97b2eb8b34805ece70d663b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d86cdb6f1e081ddb698ccf353eecb7"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a02d86cdb6f1e081ddb698ccf353eecb7">Mtc_PaCbSetPaGetPubMenuFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a02d86cdb6f1e081ddb698ccf353eecb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get public menu failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a3aced7be3e8b8adda011d7039eabc467">Mtc_PaSessGetPubMenu</a> results  <a href="mtc__pa__cb_8h.html#a02d86cdb6f1e081ddb698ccf353eecb7">更多...</a><br /></td></tr>
+<tr class="separator:a02d86cdb6f1e081ddb698ccf353eecb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585b9150f3af5899b63f8635d527480a"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a585b9150f3af5899b63f8635d527480a">Mtc_PaCbSetPaGetPrevMsgOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:a585b9150f3af5899b63f8635d527480a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get previous message successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a01e3e8acf07e2ddae237f8565e867b7d">Mtc_PaSessGetPrevMsg</a> results  <a href="mtc__pa__cb_8h.html#a585b9150f3af5899b63f8635d527480a">更多...</a><br /></td></tr>
+<tr class="separator:a585b9150f3af5899b63f8635d527480a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393a99fa254e8b40f1a8937521964328"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a393a99fa254e8b40f1a8937521964328">Mtc_PaCbSetPaGetPrevMsgFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a393a99fa254e8b40f1a8937521964328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account get previous message failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a01e3e8acf07e2ddae237f8565e867b7d">Mtc_PaSessGetPrevMsg</a> results  <a href="mtc__pa__cb_8h.html#a393a99fa254e8b40f1a8937521964328">更多...</a><br /></td></tr>
+<tr class="separator:a393a99fa254e8b40f1a8937521964328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaace5c0ffbed9e68b15ff26926a4b8f"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#adaace5c0ffbed9e68b15ff26926a4b8f">Mtc_PaCbSetPaComplainPubOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:adaace5c0ffbed9e68b15ff26926a4b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account complain public successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a6c4beb6c1dc3c331fadf816b619a61f9">Mtc_PaSessComplainPub</a> results  <a href="mtc__pa__cb_8h.html#adaace5c0ffbed9e68b15ff26926a4b8f">更多...</a><br /></td></tr>
+<tr class="separator:adaace5c0ffbed9e68b15ff26926a4b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79001a847d4df052d8e0a0fa4ea8cb67"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a79001a847d4df052d8e0a0fa4ea8cb67">Mtc_PaCbSetPaComplainPubFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a79001a847d4df052d8e0a0fa4ea8cb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account complain public failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a6c4beb6c1dc3c331fadf816b619a61f9">Mtc_PaSessComplainPub</a> results  <a href="mtc__pa__cb_8h.html#a79001a847d4df052d8e0a0fa4ea8cb67">更多...</a><br /></td></tr>
+<tr class="separator:a79001a847d4df052d8e0a0fa4ea8cb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68b1fe9b733fbcf1a8099b0c5f47db4"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#ad68b1fe9b733fbcf1a8099b0c5f47db4">Mtc_PaCbSetPaSetAcptStatOk</a> (<a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a> pfnCb)</td></tr>
+<tr class="memdesc:ad68b1fe9b733fbcf1a8099b0c5f47db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account set accept status successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a59398621d39ca61beb9f44e3172a6ec7">Mtc_PaSessSetAcptStat</a> results  <a href="mtc__pa__cb_8h.html#ad68b1fe9b733fbcf1a8099b0c5f47db4">更多...</a><br /></td></tr>
+<tr class="separator:ad68b1fe9b733fbcf1a8099b0c5f47db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfa2fc7ffd7d21c4a8eb59377a3d94b"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__pa__cb_8h.html#a5cfa2fc7ffd7d21c4a8eb59377a3d94b">Mtc_PaCbSetPaSetAcptStatFailed</a> (<a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a> pfnCb)</td></tr>
+<tr class="memdesc:a5cfa2fc7ffd7d21c4a8eb59377a3d94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the public account set accept status failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a59398621d39ca61beb9f44e3172a6ec7">Mtc_PaSessSetAcptStat</a> results  <a href="mtc__pa__cb_8h.html#a5cfa2fc7ffd7d21c4a8eb59377a3d94b">更多...</a><br /></td></tr>
+<tr class="separator:a5cfa2fc7ffd7d21c4a8eb59377a3d94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC CMCC Public Account Callback Interface Functions </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a34ea9b1f9394ebb5e2ad65c96080ce5b" name="a34ea9b1f9394ebb5e2ad65c96080ce5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ea9b1f9394ebb5e2ad65c96080ce5b">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaAddSubsFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaAddSubsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account add subscribe failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a4983a1eed8853144d0046ab2f0b68f0a">Mtc_PaSessAddSubs</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb63a2bee352e17af20f057c95614b19" name="acb63a2bee352e17af20f057c95614b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb63a2bee352e17af20f057c95614b19">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaAddSubsOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaAddSubsOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account add subscribe successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a4983a1eed8853144d0046ab2f0b68f0a">Mtc_PaSessAddSubs</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61b1aef49ca9acea768ac3da3f6fe25f" name="a61b1aef49ca9acea768ac3da3f6fe25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b1aef49ca9acea768ac3da3f6fe25f">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaCancelSubsFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaCancelSubsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the publia account cancel subscribe failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a7083d6d8374a144a34e8d3c89490b65a">Mtc_PaSessCancelSubs</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac5a9be3f941157ebb1a817ed4c9c0791" name="ac5a9be3f941157ebb1a817ed4c9c0791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a9be3f941157ebb1a817ed4c9c0791">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaCancelSubsOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaCancelSubsOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account cancel subscribe successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a7083d6d8374a144a34e8d3c89490b65a">Mtc_PaSessCancelSubs</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79001a847d4df052d8e0a0fa4ea8cb67" name="a79001a847d4df052d8e0a0fa4ea8cb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79001a847d4df052d8e0a0fa4ea8cb67">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaComplainPubFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaComplainPubFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account complain public failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a6c4beb6c1dc3c331fadf816b619a61f9">Mtc_PaSessComplainPub</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adaace5c0ffbed9e68b15ff26926a4b8f" name="adaace5c0ffbed9e68b15ff26926a4b8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaace5c0ffbed9e68b15ff26926a4b8f">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaComplainPubOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaComplainPubOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account complain public successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a6c4beb6c1dc3c331fadf816b619a61f9">Mtc_PaSessComplainPub</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a393a99fa254e8b40f1a8937521964328" name="a393a99fa254e8b40f1a8937521964328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393a99fa254e8b40f1a8937521964328">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPrevMsgFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPrevMsgFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get previous message failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a01e3e8acf07e2ddae237f8565e867b7d">Mtc_PaSessGetPrevMsg</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a585b9150f3af5899b63f8635d527480a" name="a585b9150f3af5899b63f8635d527480a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585b9150f3af5899b63f8635d527480a">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPrevMsgOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPrevMsgOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get previous message successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a01e3e8acf07e2ddae237f8565e867b7d">Mtc_PaSessGetPrevMsg</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adda9064ff8bbe0b7ad451d360a343359" name="adda9064ff8bbe0b7ad451d360a343359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda9064ff8bbe0b7ad451d360a343359">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubDetailFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubDetailFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public detail failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#ad1f668af80f7a66ef81f4f8fbf40b5d5">Mtc_PaSessGetPubDetail</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8ade701a7f88a8b8b7fcc12351641ef1" name="a8ade701a7f88a8b8b7fcc12351641ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ade701a7f88a8b8b7fcc12351641ef1">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubDetailOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubDetailOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public detail successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#ad1f668af80f7a66ef81f4f8fbf40b5d5">Mtc_PaSessGetPubDetail</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06ab176056e71e2bcdb8e36aea2373d4" name="a06ab176056e71e2bcdb8e36aea2373d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ab176056e71e2bcdb8e36aea2373d4">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubLstFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubLstFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public list failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#af4813ecc9292ea11ac758e71252a7a72">Mtc_PaSessGetPubLst</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af293dc37675cd25f25aaade86a6bd015" name="af293dc37675cd25f25aaade86a6bd015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af293dc37675cd25f25aaade86a6bd015">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubLstOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubLstOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public list successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#af4813ecc9292ea11ac758e71252a7a72">Mtc_PaSessGetPubLst</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af4b8bfb9b2443fdf8108aa33243d87c6" name="af4b8bfb9b2443fdf8108aa33243d87c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b8bfb9b2443fdf8108aa33243d87c6">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubLstRecmdFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubLstRecmdFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public list recommend failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a079175eb73b37cfb9fcae1a02a8467aa">Mtc_PaSessGetPubLstRecmd</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a470129f8921e5a3283fce83018ee77bf" name="a470129f8921e5a3283fce83018ee77bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470129f8921e5a3283fce83018ee77bf">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubLstRecmdOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubLstRecmdOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public list recommend successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a079175eb73b37cfb9fcae1a02a8467aa">Mtc_PaSessGetPubLstRecmd</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a02d86cdb6f1e081ddb698ccf353eecb7" name="a02d86cdb6f1e081ddb698ccf353eecb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d86cdb6f1e081ddb698ccf353eecb7">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubMenuFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubMenuFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public menu failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a3aced7be3e8b8adda011d7039eabc467">Mtc_PaSessGetPubMenu</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a3e9de97b2eb8b34805ece70d663b84" name="a5a3e9de97b2eb8b34805ece70d663b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3e9de97b2eb8b34805ece70d663b84">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaGetPubMenuOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaGetPubMenuOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account get public menu successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a3aced7be3e8b8adda011d7039eabc467">Mtc_PaSessGetPubMenu</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae25c3984a5e241eb63cf9d673334f1cd" name="ae25c3984a5e241eb63cf9d673334f1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25c3984a5e241eb63cf9d673334f1cd">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaQryUsrSubsFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaQryUsrSubsFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account query user subscribed failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a2bb1d37a1dae73f582a0f57d17becd36">Mtc_PaSessQryUsrSubs</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8c4b8d61f550c421dd358931a508da6" name="aa8c4b8d61f550c421dd358931a508da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c4b8d61f550c421dd358931a508da6">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaQryUsrSubsOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaQryUsrSubsOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account query user subscribed successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a2bb1d37a1dae73f582a0f57d17becd36">Mtc_PaSessQryUsrSubs</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5cfa2fc7ffd7d21c4a8eb59377a3d94b" name="a5cfa2fc7ffd7d21c4a8eb59377a3d94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cfa2fc7ffd7d21c4a8eb59377a3d94b">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaSetAcptStatFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaSetAcptStatFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#a84fbd5f811911e4bd65b3acf6f2e4414">PFN_MTCPACBX</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account set accept status failed callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a59398621d39ca61beb9f44e3172a6ec7">Mtc_PaSessSetAcptStat</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad68b1fe9b733fbcf1a8099b0c5f47db4" name="ad68b1fe9b733fbcf1a8099b0c5f47db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68b1fe9b733fbcf1a8099b0c5f47db4">&#9670;&nbsp;</a></span>Mtc_PaCbSetPaSetAcptStatOk()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_PaCbSetPaSetAcptStatOk </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="mtc__pa__cb_8h.html#aa6b533c8024d75f045248be50eb53503">PFN_MTCPACB</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the public account set accept status successfully callback. The callback is one of <a class="el" href="mtc__pa_8h.html#a59398621d39ca61beb9f44e3172a6ec7">Mtc_PaSessSetAcptStat</a> results </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pfnCb</td><td>Callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

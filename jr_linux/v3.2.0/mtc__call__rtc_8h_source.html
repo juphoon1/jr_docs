@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_call_rtc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_call_rtc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2022 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT,</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_call_rtc.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : kerwin.peng</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2022-02-25</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">      Data structure and function declare required by MTC rtc call</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_CALL_RTC_H_</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_CALL_RTC_H_</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">/* @brief mtc client config extern send  */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">typedef</span> <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> (*PFN_MTCCCALLRTCEXTERNSEND)(<a class="code hl_typedef" href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a> *pucBuf, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iLen);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">typedef</span> <span class="keyword">enum</span> EN_MTC_RTC_CALL_EVENT_TYPE</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        EN_MTC_RTC_CALL_INCOMING, </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        EN_MTC_RTC_CALL_ALERT,    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        EN_MTC_RTC_CALL_ANSWER,   </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        EN_MTC_RTC_CALL_PRACK,    </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        EN_MTC_RTC_CALL_ACK,      </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        EN_MTC_RTC_CALL_MDFY_REQ, </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        EN_MTC_RTC_CALL_TERMED    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    } EN_MTC_RTC_CALL_EVENT_TYPE;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html">   70</a></span>    <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html">tagST_RTC_CALL_SIP_CONFIG</a></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a9431153b02b41fe349eab4254a50dc8b">   72</a></span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *<a class="code hl_variable" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a9431153b02b41fe349eab4254a50dc8b">pcSipDir</a>;              </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#afad922b22d3f5bb5f4008fc953b9d52e">   73</a></span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *<a class="code hl_variable" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#afad922b22d3f5bb5f4008fc953b9d52e">pcPublicIp</a>;            </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a14b4f27426d44594453582ca5dd045f1">   74</a></span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *<a class="code hl_variable" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a14b4f27426d44594453582ca5dd045f1">pcEntryIp</a>;             </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a29a471660120d43a6124ca970d85b042">   75</a></span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_variable" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a29a471660120d43a6124ca970d85b042">iEntryPort</a>;             </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a10c884bafc1de12aa70ff221ac1fb5a7">   76</a></span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *<a class="code hl_variable" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a10c884bafc1de12aa70ff221ac1fb5a7">pcRmtIp</a>;               </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#af2696de2afcc8f809dcaac85bd8597f4">   78</a></span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_variable" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#af2696de2afcc8f809dcaac85bd8597f4">iRmtPort</a>;               </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> *pfnCliCbPrint;         <span class="comment">/* external send callback @ref PFN_MTCCLIPRINT */</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> *pfnCliCbEvnt;          <span class="comment">/* external send callback @ref PFN_MTCCLIEVNT */</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> *pfnCallCbRtc;          <span class="comment">/* external send callback @ref PFN_MTCCALLRTCCB */</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> *pfnCallCbRtcExtnSend;  <span class="comment">/* external send callback @ref PFN_MTCCCALLRTCEXTERNSEND */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    } <a class="code hl_struct" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html">RTC_CALL_SIP_CONFIG</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcInit(<a class="code hl_struct" href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html">RTC_CALL_SIP_CONFIG</a> *pstSipCfg);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_SessRtcCall(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcCallerUri, ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcCalleeUri,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                                ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcOfferSdp);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcAlert(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcAnswer(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSdp);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcTerm(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcUpdate(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSdp);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcUpdateRsp(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId, ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSdp);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcSendAck(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iSessId);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">     * @brief Set sip external send message callback.</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">     * @param [in] PFN_MTCCCALLRTCEXTERNSEND, The callback while sip protocol stack to send SIP message.</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">     * @retval ZOK Set sip extenal transport callback successfully.</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">     * @retval ZFAILED Set sip external transport callback failed.</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcCbSetExternSend(PFN_MTCCCALLRTCEXTERNSEND pfnExternSend);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_SessRtcRecvSipMsg(<a class="code hl_typedef" href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a> *pucData, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iDataLen);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_RTC_CALL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html">tagST_RTC_CALL_SIP_CONFIG</a></div><div class="ttdoc">SIP configuration for initialization</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:71</div></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html_a10c884bafc1de12aa70ff221ac1fb5a7"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a10c884bafc1de12aa70ff221ac1fb5a7">tagST_RTC_CALL_SIP_CONFIG::pcRmtIp</a></div><div class="ttdeci">ZCHAR * pcRmtIp</div><div class="ttdoc">sip client(entry) remote address for receiving sip message</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:76</div></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html_a14b4f27426d44594453582ca5dd045f1"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a14b4f27426d44594453582ca5dd045f1">tagST_RTC_CALL_SIP_CONFIG::pcEntryIp</a></div><div class="ttdeci">ZCHAR * pcEntryIp</div><div class="ttdoc">sip client(entry) local address</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:74</div></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html_a29a471660120d43a6124ca970d85b042"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a29a471660120d43a6124ca970d85b042">tagST_RTC_CALL_SIP_CONFIG::iEntryPort</a></div><div class="ttdeci">ZUINT iEntryPort</div><div class="ttdoc">sip client(entry) local port</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:75</div></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html_a9431153b02b41fe349eab4254a50dc8b"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#a9431153b02b41fe349eab4254a50dc8b">tagST_RTC_CALL_SIP_CONFIG::pcSipDir</a></div><div class="ttdeci">ZCHAR * pcSipDir</div><div class="ttdoc">direcotry to store sip log and profile</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:72</div></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html_af2696de2afcc8f809dcaac85bd8597f4"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#af2696de2afcc8f809dcaac85bd8597f4">tagST_RTC_CALL_SIP_CONFIG::iRmtPort</a></div><div class="ttdeci">ZUINT iRmtPort</div><div class="ttdoc">sip client(entry) remote port for receiving sip message</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:78</div></div>
+<div class="ttc" id="astructtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g_html_afad922b22d3f5bb5f4008fc953b9d52e"><div class="ttname"><a href="structtag_s_t___r_t_c___c_a_l_l___s_i_p___c_o_n_f_i_g.html#afad922b22d3f5bb5f4008fc953b9d52e">tagST_RTC_CALL_SIP_CONFIG::pcPublicIp</a></div><div class="ttdeci">ZCHAR * pcPublicIp</div><div class="ttdoc">sip client(entry) public address</div><div class="ttdef"><b>Definition:</b> mtc_call_rtc.h:73</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a21a9b77ccd8a0f566fda0b1bf60d3c76"><div class="ttname"><a href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a></div><div class="ttdeci">void ZVOID</div><div class="ttdoc">Type of void.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:107</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a5e0d65c524861742f7f8cce052942055"><div class="ttname"><a href="zplin__osenv_8h.html#a5e0d65c524861742f7f8cce052942055">ZUCHAR</a></div><div class="ttdeci">unsigned char ZUCHAR</div><div class="ttdoc">Type of unsigned char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:105</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_aae3b50edbfc2210f1b21f28c4d196aaa"><div class="ttname"><a href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a></div><div class="ttdeci">int ZINT</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:98</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_doodle.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_doodle.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc__doodle_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_doodle.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : xiangbo.hui</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2015-03-27</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">      Data structure and function declare required by MTC statistics</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_DOODLE_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_DOODLE_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga7251016fe80b7d02cd534cb8dd146856">   59</a></span><span class="preprocessor">#define MtcDoodleImageTypeKey       &quot;MtcDoodleImageTypeKey&quot;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#gac15fb88d77c99e51f68fa3485388d491">   65</a></span><span class="preprocessor">#define MtcDoodleImageNameKey       &quot;MtcDoodleImageNameKey&quot;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#gac6b0b0758c66f289eca9fd8483cc52fb">   71</a></span><span class="preprocessor">#define MtcDoodleImageUriKey        &quot;MtcDoodleImageUriKey&quot;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga506a632e226a182a62756dad7cf53337">   77</a></span><span class="preprocessor">#define MtcDoodleResolutionKey      &quot;MtcDoodleResolutionKey&quot;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga52ff34b4def6ab444cc320844a59b593">   83</a></span><span class="preprocessor">#define MtcDoodlePositionKey        &quot;MtcDoodlePositionKey&quot;</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga160a9b6979f6dbdbd719bf294a390ce7">   89</a></span><span class="preprocessor">#define MtcDoodleActionTypeKey      &quot;MtcDoodleActionTypeKey&quot;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga65cc43052a0e6d99da765061a396ef93">   95</a></span><span class="preprocessor">#define MtcDoodleSeqNoKey           &quot;MtcDoodleSeqNoKey&quot;</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga30d261107f9b5fdac0abf880f4bf51c4">  101</a></span><span class="preprocessor">#define MtcDoodleBrushKey           &quot;MtcDoodleBrushKey&quot;</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#gad28bc9998484421932ee7a6f3c93a6fd">  107</a></span><span class="preprocessor">#define MtcDoodleWidthKey           &quot;MtcDoodleWidthKey&quot;</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#gab4ede57cf81dd015210464318481c0ea">  113</a></span><span class="preprocessor">#define MtcDoodleColorKey           &quot;MtcDoodleColorKey&quot;</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga22198c5463954ffa4bbc98805772478a">  119</a></span><span class="preprocessor">#define MtcDoodlePageIdKey          &quot;MtcDoodlePageIdKey&quot;</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga42f24ac230d37e6c2a6b19f93de21b1d">  125</a></span><span class="preprocessor">#define MtcDoodlePageCountKey       &quot;MtcDoodlePageCountKey&quot;</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#gaeb4d2082f7ec965b133f7c36029fce0a">  131</a></span><span class="preprocessor">#define MtcDoodleUserUriKey         &quot;MtcDoodleUserUriKey&quot;</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="group___mtc_doodle_key.html#ga455e93db7ec0b92e586b1664defb94f5">  137</a></span><span class="preprocessor">#define MtcDoodleContentKey         &quot;MtcDoodleContentKey&quot;</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> MTC_IMG;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> MTC_ACT;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">typedef</span> <span class="keywordtype">size_t</span> MTC_SESS;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a14ce93425ecb983142d79cba3458e64e">  153</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="mtc__doodle_8h.html#a14ce93425ecb983142d79cba3458e64e">EN_MTC_DOODLE_IMAGE_TYPE</a></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    EN_MTC_DOODLE_IMAGE_PNG = 1,</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    EN_MTC_DOODLE_IMAGE_JPEG,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    EN_MTC_DOODLE_IMAGE_BMP</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#ae957f3be19c1db21c63b6af8b77ead6d">  158</a></span>} <a class="code hl_enumeration" href="mtc__doodle_8h.html#a14ce93425ecb983142d79cba3458e64e">EN_MTC_DOODLE_IMAGE_TYPE</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a8ab7cc1cff77b6430c7338d175cd46fe">  161</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="mtc__doodle_8h.html#a8ab7cc1cff77b6430c7338d175cd46fe">EN_MTC_DOODLE_ACTION_TYPE</a></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    EN_MTC_DOODLE_ACTION_DRAW,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    EN_MTC_DOODLE_ACTION_ERASE,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    EN_MTC_DOODLE_ACTION_CLEAN,</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    EN_MTC_DOODLE_ACTION_UNDO,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    EN_MTC_DOODLE_ACTION_SELECT_PAGE,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    EN_MTC_DOODLE_ACTION_START,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    EN_MTC_DOODLE_ACTION_STOP,</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    EN_MTC_DOODLE_ACTION_LASER_POINT,</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    EN_MTC_DOODLE_ACTION_ARROW,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    EN_MTC_DOODLE_ACTION_DRAW_RECTANGLE,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    EN_MTC_DOODLE_ACTION_DRAW_ELLIPSE,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    EN_MTC_DOODLE_ACTION_TEXT,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#aa6d9e9017fac0e8eb6abb22a17251fc5">  175</a></span>} <a class="code hl_enumeration" href="mtc__doodle_8h.html#a8ab7cc1cff77b6430c7338d175cd46fe">EN_MTC_DOODLE_ACTION_TYPE</a>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a54a3c5692a3e110be832e4b7ce6629d3">  185</a></span>ZFUNC MTC_IMG <a class="code hl_function" href="mtc__doodle_8h.html#a54a3c5692a3e110be832e4b7ce6629d3">Mtc_DoodleCreateImage</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a5f3d3e8472c1382885070ce8c3a03ea7">  191</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__doodle_8h.html#a5f3d3e8472c1382885070ce8c3a03ea7">Mtc_DoodleDeleteImage</a>(MTC_IMG zImage);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a5687f6b73c415b536d52099b73443ba7">  198</a></span>ZFUNC MTC_IMG <a class="code hl_function" href="mtc__doodle_8h.html#a5687f6b73c415b536d52099b73443ba7">Mtc_DoodleParseImage</a>(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMsg);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a93fca185e32b2b54755768b5391f1e0d">  205</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__doodle_8h.html#a93fca185e32b2b54755768b5391f1e0d">Mtc_DoodlePrintImage</a>(MTC_IMG zImage);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a650cbb10a0e805076626058d3f722761">  219</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a650cbb10a0e805076626058d3f722761">Mtc_DoodleSetImageAttr</a>(MTC_IMG zImage,</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a0a85fd8067475398defee46cfc33f05b">  233</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__doodle_8h.html#a0a85fd8067475398defee46cfc33f05b">Mtc_DoodleGetImageAttr</a>(MTC_IMG zImage);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a422ff0085b14c16dbeec2662a9d2e427">  239</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__doodle_8h.html#a422ff0085b14c16dbeec2662a9d2e427">Mtc_DoodleCreateAction</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#ae27fb7c1eccda31735ecf6e7fd6c0285">  245</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__doodle_8h.html#ae27fb7c1eccda31735ecf6e7fd6c0285">Mtc_DoodleDeleteAction</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a1cf710cab59636d3025ac7caf3542042">  252</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__doodle_8h.html#a1cf710cab59636d3025ac7caf3542042">Mtc_DoodleParseAction</a>(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMsg);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a777ac33bf6234b3610748b54695808e3">  259</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__doodle_8h.html#a777ac33bf6234b3610748b54695808e3">Mtc_DoodlePrintAction</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a8d8adf0842cb021cdc8ca9159b93a350">  272</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a8d8adf0842cb021cdc8ca9159b93a350">Mtc_DoodleSetActionAttr</a>(MTC_ACT zAction,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcInfo);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#abe0b9ce73f47fd680979f9745c006f44">  285</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__doodle_8h.html#abe0b9ce73f47fd680979f9745c006f44">Mtc_DoodleGetActionAttr</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a3d3b5f69c2c35bad8e0fbf8cb1953ee2">  294</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a3d3b5f69c2c35bad8e0fbf8cb1953ee2">Mtc_DoodleAddActionPosition</a>(MTC_ACT zAction,</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fX, <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fY);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a712e3a59e15488975368dd99b23bcbf0">  305</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a712e3a59e15488975368dd99b23bcbf0">Mtc_DoodleAddActionPositionX</a>(MTC_ACT zAction,</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fX, <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> fY, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIntVal);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#ae73071bf86ba621dbbc91e0b8fde7f59">  313</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#ae73071bf86ba621dbbc91e0b8fde7f59">Mtc_DoodleGetActionPositionCount</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a533e9ded2f8f41c121833dbbee79dfa6">  321</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a533e9ded2f8f41c121833dbbee79dfa6">Mtc_DoodleGetActionIntval</a>(MTC_ACT zAction, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iIndex);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a737f5ac9f7df406d525532d98da44e63">  329</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a737f5ac9f7df406d525532d98da44e63">Mtc_DoodleGetActionPositionX</a>(MTC_ACT zAction, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iIndex);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#ac9aad073f5a0ef28517f5f1a30df10ea">  337</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a> <a class="code hl_function" href="mtc__doodle_8h.html#ac9aad073f5a0ef28517f5f1a30df10ea">Mtc_DoodleGetActionPositionY</a>(MTC_ACT zAction, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iIndex);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#aff1d1c646a559f448697437099284e58">  348</a></span>ZFUNC ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__doodle_8h.html#aff1d1c646a559f448697437099284e58">Mtc_DoodleGetActionPath</a>(MTC_ACT zAction);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a285668ebbbfee3516e7613aca7e861db">  354</a></span>ZFUNC MTC_SESS <a class="code hl_function" href="mtc__doodle_8h.html#a285668ebbbfee3516e7613aca7e861db">Mtc_DoodleCreateSession</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#ab623030c9cb343c34cbbc9d3facfeacb">  360</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> <a class="code hl_function" href="mtc__doodle_8h.html#ab623030c9cb343c34cbbc9d3facfeacb">Mtc_DoodleDeleteSession</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a8790dc88babe1c74fcad174e56196429">  368</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a8790dc88babe1c74fcad174e56196429">Mtc_DoodleSessionSetPageCount</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iCount);</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#ac38754d33aaf6a856bbb3a51b4d6f438">  380</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#ac38754d33aaf6a856bbb3a51b4d6f438">Mtc_DoodleSessionAddImage</a>(MTC_SESS zSession, MTC_IMG zImage);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a12c646c5361ff1789faf9896a5eb9a78">  387</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#a12c646c5361ff1789faf9896a5eb9a78">Mtc_DoodleSessionGetImageCount</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a53d687683373458614ac4048767e2f92">  395</a></span>ZFUNC MTC_IMG <a class="code hl_function" href="mtc__doodle_8h.html#a53d687683373458614ac4048767e2f92">Mtc_DoodleSessionEnumImage</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#aacb72964b892b0e31bab4a7a68c8914b">  405</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#aacb72964b892b0e31bab4a7a68c8914b">Mtc_DoodleSessionAddAction</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bSelf,</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    MTC_ACT zAction);</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#aaa5791d2f12032a2f37a4e978fdbcae5">  413</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__doodle_8h.html#aaa5791d2f12032a2f37a4e978fdbcae5">Mtc_DoodleSessionGetActionCount</a>(MTC_SESS zSession);</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a7a0afd03d14a201d947a9458177594a1">  421</a></span>ZFUNC MTC_ACT <a class="code hl_function" href="mtc__doodle_8h.html#a7a0afd03d14a201d947a9458177594a1">Mtc_DoodleSessionEnumAction</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno"><a class="line" href="mtc__doodle_8h.html#a0dc1a92a5a1d1c23ed9c1d8be273f804">  429</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__doodle_8h.html#a0dc1a92a5a1d1c23ed9c1d8be273f804">Mtc_DoodleSessionEnumSelf</a>(MTC_SESS zSession, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iIndex);</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>}</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_DOODLE_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
+<div class="ttc" id="amtc__doodle_8h_html_a0a85fd8067475398defee46cfc33f05b"><div class="ttname"><a href="mtc__doodle_8h.html#a0a85fd8067475398defee46cfc33f05b">Mtc_DoodleGetImageAttr</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_DoodleGetImageAttr(MTC_IMG zImage)</div><div class="ttdoc">Get image attributes.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a0dc1a92a5a1d1c23ed9c1d8be273f804"><div class="ttname"><a href="mtc__doodle_8h.html#a0dc1a92a5a1d1c23ed9c1d8be273f804">Mtc_DoodleSessionEnumSelf</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_DoodleSessionEnumSelf(MTC_SESS zSession, ZUINT iIndex)</div><div class="ttdoc">Enumrate the self flags in session.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a12c646c5361ff1789faf9896a5eb9a78"><div class="ttname"><a href="mtc__doodle_8h.html#a12c646c5361ff1789faf9896a5eb9a78">Mtc_DoodleSessionGetImageCount</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSessionGetImageCount(MTC_SESS zSession)</div><div class="ttdoc">Get the count of image.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a14ce93425ecb983142d79cba3458e64e"><div class="ttname"><a href="mtc__doodle_8h.html#a14ce93425ecb983142d79cba3458e64e">EN_MTC_DOODLE_IMAGE_TYPE</a></div><div class="ttdeci">EN_MTC_DOODLE_IMAGE_TYPE</div><div class="ttdoc">The type of image.</div><div class="ttdef"><b>Definition:</b> mtc_doodle.h:154</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a1cf710cab59636d3025ac7caf3542042"><div class="ttname"><a href="mtc__doodle_8h.html#a1cf710cab59636d3025ac7caf3542042">Mtc_DoodleParseAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_DoodleParseAction(ZCONST ZCHAR *pcMsg)</div><div class="ttdoc">Create action object from text.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a285668ebbbfee3516e7613aca7e861db"><div class="ttname"><a href="mtc__doodle_8h.html#a285668ebbbfee3516e7613aca7e861db">Mtc_DoodleCreateSession</a></div><div class="ttdeci">ZFUNC MTC_SESS Mtc_DoodleCreateSession(ZFUNC_VOID)</div><div class="ttdoc">Create session object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a3d3b5f69c2c35bad8e0fbf8cb1953ee2"><div class="ttname"><a href="mtc__doodle_8h.html#a3d3b5f69c2c35bad8e0fbf8cb1953ee2">Mtc_DoodleAddActionPosition</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleAddActionPosition(MTC_ACT zAction, ZFLOAT fX, ZFLOAT fY)</div><div class="ttdoc">Add action position.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a422ff0085b14c16dbeec2662a9d2e427"><div class="ttname"><a href="mtc__doodle_8h.html#a422ff0085b14c16dbeec2662a9d2e427">Mtc_DoodleCreateAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_DoodleCreateAction(ZFUNC_VOID)</div><div class="ttdoc">Create action object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a533e9ded2f8f41c121833dbbee79dfa6"><div class="ttname"><a href="mtc__doodle_8h.html#a533e9ded2f8f41c121833dbbee79dfa6">Mtc_DoodleGetActionIntval</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleGetActionIntval(MTC_ACT zAction, ZINT iIndex)</div><div class="ttdoc">Get the interval of position.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a53d687683373458614ac4048767e2f92"><div class="ttname"><a href="mtc__doodle_8h.html#a53d687683373458614ac4048767e2f92">Mtc_DoodleSessionEnumImage</a></div><div class="ttdeci">ZFUNC MTC_IMG Mtc_DoodleSessionEnumImage(MTC_SESS zSession, ZUINT iIndex)</div><div class="ttdoc">Enumrate the image object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a54a3c5692a3e110be832e4b7ce6629d3"><div class="ttname"><a href="mtc__doodle_8h.html#a54a3c5692a3e110be832e4b7ce6629d3">Mtc_DoodleCreateImage</a></div><div class="ttdeci">ZFUNC MTC_IMG Mtc_DoodleCreateImage(ZFUNC_VOID)</div><div class="ttdoc">Create image object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a5687f6b73c415b536d52099b73443ba7"><div class="ttname"><a href="mtc__doodle_8h.html#a5687f6b73c415b536d52099b73443ba7">Mtc_DoodleParseImage</a></div><div class="ttdeci">ZFUNC MTC_IMG Mtc_DoodleParseImage(ZCONST ZCHAR *pcMsg)</div><div class="ttdoc">Create image object from text.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a5f3d3e8472c1382885070ce8c3a03ea7"><div class="ttname"><a href="mtc__doodle_8h.html#a5f3d3e8472c1382885070ce8c3a03ea7">Mtc_DoodleDeleteImage</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_DoodleDeleteImage(MTC_IMG zImage)</div><div class="ttdoc">Delete image object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a650cbb10a0e805076626058d3f722761"><div class="ttname"><a href="mtc__doodle_8h.html#a650cbb10a0e805076626058d3f722761">Mtc_DoodleSetImageAttr</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSetImageAttr(MTC_IMG zImage, ZCONST ZCHAR *pcInfo)</div><div class="ttdoc">Set image attributes.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a712e3a59e15488975368dd99b23bcbf0"><div class="ttname"><a href="mtc__doodle_8h.html#a712e3a59e15488975368dd99b23bcbf0">Mtc_DoodleAddActionPositionX</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleAddActionPositionX(MTC_ACT zAction, ZFLOAT fX, ZFLOAT fY, ZUINT iIntVal)</div><div class="ttdoc">Set action positions.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a737f5ac9f7df406d525532d98da44e63"><div class="ttname"><a href="mtc__doodle_8h.html#a737f5ac9f7df406d525532d98da44e63">Mtc_DoodleGetActionPositionX</a></div><div class="ttdeci">ZFUNC ZFLOAT Mtc_DoodleGetActionPositionX(MTC_ACT zAction, ZINT iIndex)</div><div class="ttdoc">Get the X value of position.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a777ac33bf6234b3610748b54695808e3"><div class="ttname"><a href="mtc__doodle_8h.html#a777ac33bf6234b3610748b54695808e3">Mtc_DoodlePrintAction</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_DoodlePrintAction(MTC_ACT zAction)</div><div class="ttdoc">Save action object to text.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a7a0afd03d14a201d947a9458177594a1"><div class="ttname"><a href="mtc__doodle_8h.html#a7a0afd03d14a201d947a9458177594a1">Mtc_DoodleSessionEnumAction</a></div><div class="ttdeci">ZFUNC MTC_ACT Mtc_DoodleSessionEnumAction(MTC_SESS zSession, ZUINT iIndex)</div><div class="ttdoc">Enumrate the actions in session.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a8790dc88babe1c74fcad174e56196429"><div class="ttname"><a href="mtc__doodle_8h.html#a8790dc88babe1c74fcad174e56196429">Mtc_DoodleSessionSetPageCount</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSessionSetPageCount(MTC_SESS zSession, ZINT iCount)</div><div class="ttdoc">Set page count.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a8ab7cc1cff77b6430c7338d175cd46fe"><div class="ttname"><a href="mtc__doodle_8h.html#a8ab7cc1cff77b6430c7338d175cd46fe">EN_MTC_DOODLE_ACTION_TYPE</a></div><div class="ttdeci">EN_MTC_DOODLE_ACTION_TYPE</div><div class="ttdoc">The type of action.</div><div class="ttdef"><b>Definition:</b> mtc_doodle.h:162</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a8d8adf0842cb021cdc8ca9159b93a350"><div class="ttname"><a href="mtc__doodle_8h.html#a8d8adf0842cb021cdc8ca9159b93a350">Mtc_DoodleSetActionAttr</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSetActionAttr(MTC_ACT zAction, ZCONST ZCHAR *pcInfo)</div><div class="ttdoc">Set action attributes.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_a93fca185e32b2b54755768b5391f1e0d"><div class="ttname"><a href="mtc__doodle_8h.html#a93fca185e32b2b54755768b5391f1e0d">Mtc_DoodlePrintImage</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_DoodlePrintImage(MTC_IMG zImage)</div><div class="ttdoc">Save image object to text.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_aaa5791d2f12032a2f37a4e978fdbcae5"><div class="ttname"><a href="mtc__doodle_8h.html#aaa5791d2f12032a2f37a4e978fdbcae5">Mtc_DoodleSessionGetActionCount</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSessionGetActionCount(MTC_SESS zSession)</div><div class="ttdoc">Get count of actions.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_aacb72964b892b0e31bab4a7a68c8914b"><div class="ttname"><a href="mtc__doodle_8h.html#aacb72964b892b0e31bab4a7a68c8914b">Mtc_DoodleSessionAddAction</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSessionAddAction(MTC_SESS zSession, ZBOOL bSelf, MTC_ACT zAction)</div><div class="ttdoc">Add action object to session.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_ab623030c9cb343c34cbbc9d3facfeacb"><div class="ttname"><a href="mtc__doodle_8h.html#ab623030c9cb343c34cbbc9d3facfeacb">Mtc_DoodleDeleteSession</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_DoodleDeleteSession(MTC_SESS zSession)</div><div class="ttdoc">Delete session object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_abe0b9ce73f47fd680979f9745c006f44"><div class="ttname"><a href="mtc__doodle_8h.html#abe0b9ce73f47fd680979f9745c006f44">Mtc_DoodleGetActionAttr</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_DoodleGetActionAttr(MTC_ACT zAction)</div><div class="ttdoc">Get action attributes.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_ac38754d33aaf6a856bbb3a51b4d6f438"><div class="ttname"><a href="mtc__doodle_8h.html#ac38754d33aaf6a856bbb3a51b4d6f438">Mtc_DoodleSessionAddImage</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleSessionAddImage(MTC_SESS zSession, MTC_IMG zImage)</div><div class="ttdoc">Add image object to session.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_ac9aad073f5a0ef28517f5f1a30df10ea"><div class="ttname"><a href="mtc__doodle_8h.html#ac9aad073f5a0ef28517f5f1a30df10ea">Mtc_DoodleGetActionPositionY</a></div><div class="ttdeci">ZFUNC ZFLOAT Mtc_DoodleGetActionPositionY(MTC_ACT zAction, ZINT iIndex)</div><div class="ttdoc">Get the Y value of position.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_ae27fb7c1eccda31735ecf6e7fd6c0285"><div class="ttname"><a href="mtc__doodle_8h.html#ae27fb7c1eccda31735ecf6e7fd6c0285">Mtc_DoodleDeleteAction</a></div><div class="ttdeci">ZFUNC ZVOID Mtc_DoodleDeleteAction(MTC_ACT zAction)</div><div class="ttdoc">Delete action object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_ae73071bf86ba621dbbc91e0b8fde7f59"><div class="ttname"><a href="mtc__doodle_8h.html#ae73071bf86ba621dbbc91e0b8fde7f59">Mtc_DoodleGetActionPositionCount</a></div><div class="ttdeci">ZFUNC ZINT Mtc_DoodleGetActionPositionCount(MTC_ACT zAction)</div><div class="ttdoc">Get count of positions in action object.</div></div>
+<div class="ttc" id="amtc__doodle_8h_html_aff1d1c646a559f448697437099284e58"><div class="ttname"><a href="mtc__doodle_8h.html#aff1d1c646a559f448697437099284e58">Mtc_DoodleGetActionPath</a></div><div class="ttdeci">ZFUNC ZCONST ZCHAR * Mtc_DoodleGetActionPath(MTC_ACT zAction)</div><div class="ttdoc">Get the path of action.</div></div>
+<div class="ttc" id="azos__osenv_8h_html_a1ae79d3bb3502c7dc5c16726c78c4bfd"><div class="ttname"><a href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a></div><div class="ttdeci">#define ZFUNC_VOID</div><div class="ttdoc">ZOS support void function declare</div><div class="ttdef"><b>Definition:</b> zos_osenv.h:72</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a0aeacdc5282bd997daff7c8296ea828d"><div class="ttname"><a href="zplin__osenv_8h.html#a0aeacdc5282bd997daff7c8296ea828d">ZFLOAT</a></div><div class="ttdeci">float ZFLOAT</div><div class="ttdoc">Type of float.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:92</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a21a9b77ccd8a0f566fda0b1bf60d3c76"><div class="ttname"><a href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a></div><div class="ttdeci">void ZVOID</div><div class="ttdoc">Type of void.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:107</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_aae3b50edbfc2210f1b21f28c4d196aaa"><div class="ttname"><a href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a></div><div class="ttdeci">int ZINT</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:98</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_afbe956c8bc4de2ad5c421aa144d07f16"><div class="ttname"><a href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a></div><div class="ttdeci">int ZBOOL</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:106</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

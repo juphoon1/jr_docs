@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_cp.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_cp.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc__cp_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_cp.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : phil.zhou</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2012-08-11</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">      Data structure and function declare required by MTC client provisoning.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_CP_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_CP_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a717e358d5aec01be3b6c826fe5bd157e">   52</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_NO              (MTC_EBASE_CP + 0)  </span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a0870361e5a4564f52a499a3120791ea8">   53</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_TIMEOUT         (MTC_EBASE_CP + 1)  </span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a93574ef892f465ff8221ed31e2ad13e6">   54</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_NETWORK         (MTC_EBASE_CP + 2)  </span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#acb0489b9f0dfb8c94653282ca4b33dc7">   55</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_FORBIDDEN       (MTC_EBASE_CP + 3)  </span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a69cffbe5df4935512e9db0034f404303">   56</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_INTERNAL_ERR    (MTC_EBASE_CP + 4)  </span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a1e2bd57ffce609a25c4e93547403fdca">   57</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_INCORRET_XML    (MTC_EBASE_CP + 5)  </span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a843ebc61de91072490b62b33cd6d273a">   58</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_DISABLED_TEMP   (MTC_EBASE_CP + 6)  </span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ab833967d172563fb8e93c9cf6b809b2a">   59</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_DISABLED_PERM   (MTC_EBASE_CP + 7)  </span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a33adfddbc14ae35a6d6613b95437a5e5">   60</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_DECLINE         (MTC_EBASE_CP + 8)  </span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a55d1ee3dcda9bb607cd6c582bbecc773">   61</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_INVALID_OTP     (MTC_EBASE_CP + 9)  </span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a1454e1193a7868b8fe7d4d9aae371e83">   62</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_INVALID_TOKEN   (MTC_EBASE_CP + 10) </span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a4c9110407068141e4a2ae98535d4a5c6">   63</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_INVALID_NUMBER  (MTC_EBASE_CP + 11) </span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a42de5ebd346a134d711c732d72543714">   64</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_RETRY_AFTER     (MTC_EBASE_CP + 12) </span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a5ad704006d4f475abc51c3355d1a3d15">   65</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_BOSS_ERROR      (MTC_EBASE_CP + 13) </span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac0f84f36a79eae5e2257f88a36be8eef">   66</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_NO_WHITE_USER   (MTC_EBASE_CP + 14) </span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a410fdf8fdd7907ccd4b76089e388cd98">   67</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_BOSS_TIMEOUT    (MTC_EBASE_CP + 15) </span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a163394467acdc45cdfeb48436f13fbc0">   68</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_PROMPT_TIMEOUT  (MTC_EBASE_CP + 16) </span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a036049251d2f7741897e472fbd433d58">   69</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_HAS_BODY        (MTC_EBASE_CP + 17) </span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a10d063e3846f6a4fb1c13fbaa3cbe2ee">   70</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_301_EXCEED_LIMIT (MTC_EBASE_CP + 18) </span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a322fcf62befc03ba29106ba6e93dcc3d">   71</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_INVALID_VERS    (MTC_EBASE_CP + 19) </span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a6c5446c9a8dc1d29e8ece4c1b1a71f88">   72</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_DISA_C_REENABLE (MTC_EBASE_CP + 20) </span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac8a834e9fffc41d74fb49889e2df72e5">   73</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_IN_DORMANT      (MTC_EBASE_CP + 21) </span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ad393ab231ba731465c66519892eea8ba">   74</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_NO_COOKIE       (MTC_EBASE_CP + 22) </span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a7439ea1a2081951003dab1a5232b1e52">   75</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_AUTH_FAILED     (MTC_EBASE_CP + 23) </span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a7ea56e60b1f884e535616aa09f8ce41d">   76</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_NEED_PS_ACCESS  (MTC_EBASE_CP + 24) </span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a439b6c88cc2777394d4e55c2f22da5b0">   77</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_ADDL_FAILED     (MTC_EBASE_CP + 25) </span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a743857d616a121fee828a799012cc171">   78</a></span><span class="preprocessor">#define MTC_CP_STAT_ERR_OTHER           (MTC_EBASE_CP + 200)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418">   81</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418">EN_MTC_CP_ACT_TYPE</a></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>{</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def">   83</a></span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def">EN_MTC_CP_ACT_ACPT</a>,                 </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d">   84</a></span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d">EN_MTC_CP_ACT_DECL</a>,                 </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a02fb582fa1cb1c31ad1ea9da99c5b96a">   85</a></span>} <a class="code hl_enumeration" href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418">EN_MTC_CP_ACT_TYPE</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76">   88</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76">EN_MTC_CP_NET_TYPE</a></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99">   90</a></span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99">EN_MTC_CP_NET_UNKNOWN</a>,              </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55">   91</a></span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55">EN_MTC_CP_NET_PS</a>,                   </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b">   92</a></span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b">EN_MTC_CP_NET_WIFI</a>,                 </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a6af050886dd4c068fdc82a45f243c27e">   93</a></span>} <a class="code hl_enumeration" href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76">EN_MTC_CP_NET_TYPE</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21">   96</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code hl_enumeration" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21">EN_MTC_CP_EXPIRE_TYPE</a></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a">   98</a></span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a">EN_MTC_CP_EXPIRE_VER</a>,               </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_enumvalue" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9">EN_MTC_CP_EXPIRE_TOKEN</a>              </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9">  100</a></span>} <a class="code hl_enumeration" href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21">EN_MTC_CP_EXPIRE_TYPE</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ae013da1f324e1d5a040ed1736b34d24d">  130</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__cp_8h.html#ae013da1f324e1d5a040ed1736b34d24d">Mtc_Cp</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iNetType, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcToken);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a842c9ba3636eda63a501632884b787ce">  160</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a842c9ba3636eda63a501632884b787ce">Mtc_CpX</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iNetType, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcToken, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iTimes);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a03cbf16ed603f55e4f9bd1a311866c43">  182</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a03cbf16ed603f55e4f9bd1a311866c43">Mtc_CpCtcc</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcCtei, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcBindId);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ad1c851be10b3dc1895d3af1315931a95">  210</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__cp_8h.html#ad1c851be10b3dc1895d3af1315931a95">Mtc_CpReCfg</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iNetType);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a4e7990fd009b3e1342be41f01f2830e0">  221</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a4e7990fd009b3e1342be41f01f2830e0">Mtc_CpAct</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iActType);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a09bc438aa05d380999988cf98cce825b">  236</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a09bc438aa05d380999988cf98cce825b">Mtc_CpValidSMS</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcSMS);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a47c823682a5f51f1220563a063042d68">  247</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a47c823682a5f51f1220563a063042d68">Mtc_CpPromptMSISDN</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcMsisdn);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a3ebe1d71b8d779b333b9826b6df50b75">  258</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a3ebe1d71b8d779b333b9826b6df50b75">Mtc_CpPromptOTP</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcOTP);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a1a137f870b489018fe79f8ab2446cb83">  269</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a1a137f870b489018fe79f8ab2446cb83">Mtc_CpPromptToken</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcToken);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a9a5fb624d28f2141f1633cc6f342f0af">  281</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a9a5fb624d28f2141f1633cc6f342f0af">Mtc_CpEUCRAct</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iMsgId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iActType, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcPIN);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#ac7d67a110d0c3eb20f0b4a88be71ae79">  308</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__cp_8h.html#ac7d67a110d0c3eb20f0b4a88be71ae79">Mtc_CpAD</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#aa6b3d176f414f1ab191701c4595dbca7">  326</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__cp_8h.html#aa6b3d176f414f1ab191701c4595dbca7">Mtc_CpADWithOTP</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcOTP);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a31ef80027beb6d621e38f629be591dae">  337</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a31ef80027beb6d621e38f629be591dae">Mtc_CpADPromptOTP</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcOTP);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a4e2eb5bf444e42c5ae1bf0c89155acb5">  348</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a4e2eb5bf444e42c5ae1bf0c89155acb5">Mtc_CpADPromptPIN</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcPIN);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#acd3d244b7146ee0e36e55664996661bb">  357</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#acd3d244b7146ee0e36e55664996661bb">Mtc_CpGetRetryTimeLen</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCpId);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="mtc__cp_8h.html#a1d091d7033609737bab1b48f46796c4b">  367</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__cp_8h.html#a1d091d7033609737bab1b48f46796c4b">Mtc_CpParseXml</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcXml);</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>}</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_CP_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="ttc" id="amtc__cp_8h_html_a03cbf16ed603f55e4f9bd1a311866c43"><div class="ttname"><a href="mtc__cp_8h.html#a03cbf16ed603f55e4f9bd1a311866c43">Mtc_CpCtcc</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_CpCtcc(ZCHAR *pcCtei, ZCHAR *pcBindId)</div><div class="ttdoc">MTC Cilent provisioning confiure with ctcc CTEI and bundle_id. Sending request mesaage to RCS configu...</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a072cbc296f6c3376daa622104f41aa21"><div class="ttname"><a href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21">EN_MTC_CP_EXPIRE_TYPE</a></div><div class="ttdeci">EN_MTC_CP_EXPIRE_TYPE</div><div class="ttdoc">MTC Client Provisioning Expire Type</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:97</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a"><div class="ttname"><a href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21a074e1eabaa8374d42b73a008753e934a">EN_MTC_CP_EXPIRE_VER</a></div><div class="ttdeci">@ EN_MTC_CP_EXPIRE_VER</div><div class="ttdoc">version expire</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:98</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9"><div class="ttname"><a href="mtc__cp_8h.html#a072cbc296f6c3376daa622104f41aa21a63f235de99ba5989a5c458fa63dfd8b9">EN_MTC_CP_EXPIRE_TOKEN</a></div><div class="ttdeci">@ EN_MTC_CP_EXPIRE_TOKEN</div><div class="ttdoc">token expire</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:99</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a09bc438aa05d380999988cf98cce825b"><div class="ttname"><a href="mtc__cp_8h.html#a09bc438aa05d380999988cf98cce825b">Mtc_CpValidSMS</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpValidSMS(ZCHAR *pcSMS)</div><div class="ttdoc">MTC Cilent provisioning validate SMS.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a1a137f870b489018fe79f8ab2446cb83"><div class="ttname"><a href="mtc__cp_8h.html#a1a137f870b489018fe79f8ab2446cb83">Mtc_CpPromptToken</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpPromptToken(ZUINT iCpId, ZCHAR *pcToken)</div><div class="ttdoc">MTC Cilent provisioning prompt for token by primary device.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a1d091d7033609737bab1b48f46796c4b"><div class="ttname"><a href="mtc__cp_8h.html#a1d091d7033609737bab1b48f46796c4b">Mtc_CpParseXml</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpParseXml(ZCHAR *pcXml)</div><div class="ttdoc">MTC Cilent provisioning parse the config xml.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a31ef80027beb6d621e38f629be591dae"><div class="ttname"><a href="mtc__cp_8h.html#a31ef80027beb6d621e38f629be591dae">Mtc_CpADPromptOTP</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpADPromptOTP(ZUINT iCpId, ZCHAR *pcOTP)</div><div class="ttdoc">MTC Cilent provisioning prompt for OTP by additional device.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a3ebe1d71b8d779b333b9826b6df50b75"><div class="ttname"><a href="mtc__cp_8h.html#a3ebe1d71b8d779b333b9826b6df50b75">Mtc_CpPromptOTP</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpPromptOTP(ZUINT iCpId, ZCHAR *pcOTP)</div><div class="ttdoc">MTC Cilent provisioning prompt for OTP by primary device.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a47c823682a5f51f1220563a063042d68"><div class="ttname"><a href="mtc__cp_8h.html#a47c823682a5f51f1220563a063042d68">Mtc_CpPromptMSISDN</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpPromptMSISDN(ZUINT iCpId, ZCHAR *pcMsisdn)</div><div class="ttdoc">MTC Cilent provisioning prompt for MSISDN by primary device.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a4e2eb5bf444e42c5ae1bf0c89155acb5"><div class="ttname"><a href="mtc__cp_8h.html#a4e2eb5bf444e42c5ae1bf0c89155acb5">Mtc_CpADPromptPIN</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpADPromptPIN(ZUINT iCpId, ZCHAR *pcPIN)</div><div class="ttdoc">MTC Cilent provisioning prompt for PIN by additional device.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a4e7990fd009b3e1342be41f01f2830e0"><div class="ttname"><a href="mtc__cp_8h.html#a4e7990fd009b3e1342be41f01f2830e0">Mtc_CpAct</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpAct(ZUINT iCpId, ZUINT iActType)</div><div class="ttdoc">MTC Cilent provisioning action.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a842c9ba3636eda63a501632884b787ce"><div class="ttname"><a href="mtc__cp_8h.html#a842c9ba3636eda63a501632884b787ce">Mtc_CpX</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_CpX(ZUINT iNetType, ZCHAR *pcToken, ZUINT iTimes)</div><div class="ttdoc">MTC Cilent provisioning configure by primary device. Sending request mesaage to RCS configuration ser...</div></div>
+<div class="ttc" id="amtc__cp_8h_html_a9a5fb624d28f2141f1633cc6f342f0af"><div class="ttname"><a href="mtc__cp_8h.html#a9a5fb624d28f2141f1633cc6f342f0af">Mtc_CpEUCRAct</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpEUCRAct(ZUINT iMsgId, ZUINT iActType, ZCHAR *pcPIN)</div><div class="ttdoc">MTC Cilent provisioning end user confirmation request action by primary device.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_aa6b3d176f414f1ab191701c4595dbca7"><div class="ttname"><a href="mtc__cp_8h.html#aa6b3d176f414f1ab191701c4595dbca7">Mtc_CpADWithOTP</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_CpADWithOTP(ZCHAR *pcOTP)</div><div class="ttdoc">MTC Cilent provisioning by additional device with OTP. Sending request mesaage to RCS configuration s...</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ac19c57febd78a8dc983ae24d865a6a76"><div class="ttname"><a href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76">EN_MTC_CP_NET_TYPE</a></div><div class="ttdeci">EN_MTC_CP_NET_TYPE</div><div class="ttdoc">MTC Client Provisioning Network Type</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:89</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55"><div class="ttname"><a href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76a799605478cb5fe3bbc5b1daa45894c55">EN_MTC_CP_NET_PS</a></div><div class="ttdeci">@ EN_MTC_CP_NET_PS</div><div class="ttdoc">PS network</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:91</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b"><div class="ttname"><a href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76a8662704370a2c79328c3344f2df1fe8b">EN_MTC_CP_NET_WIFI</a></div><div class="ttdeci">@ EN_MTC_CP_NET_WIFI</div><div class="ttdoc">WIFI network</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:92</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99"><div class="ttname"><a href="mtc__cp_8h.html#ac19c57febd78a8dc983ae24d865a6a76acefd65169369f94b809e3e96023c4d99">EN_MTC_CP_NET_UNKNOWN</a></div><div class="ttdeci">@ EN_MTC_CP_NET_UNKNOWN</div><div class="ttdoc">unknown network</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:90</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ac7d67a110d0c3eb20f0b4a88be71ae79"><div class="ttname"><a href="mtc__cp_8h.html#ac7d67a110d0c3eb20f0b4a88be71ae79">Mtc_CpAD</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_CpAD(ZFUNC_VOID)</div><div class="ttdoc">MTC Cilent provisioning by additional device. Sending request mesaage to RCS configuration server....</div></div>
+<div class="ttc" id="amtc__cp_8h_html_acd3d244b7146ee0e36e55664996661bb"><div class="ttname"><a href="mtc__cp_8h.html#acd3d244b7146ee0e36e55664996661bb">Mtc_CpGetRetryTimeLen</a></div><div class="ttdeci">ZFUNC ZINT Mtc_CpGetRetryTimeLen(ZUINT iCpId)</div><div class="ttdoc">MTC Cilent provisioning get retry time len.</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ad1c851be10b3dc1895d3af1315931a95"><div class="ttname"><a href="mtc__cp_8h.html#ad1c851be10b3dc1895d3af1315931a95">Mtc_CpReCfg</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_CpReCfg(ZUINT iNetType)</div><div class="ttdoc">MTC Cilent provisioning reconfigure by primary device. Sending request mesaage to RCS configuration s...</div></div>
+<div class="ttc" id="amtc__cp_8h_html_adef36ccaa05dbc270d94b5d239f8b418"><div class="ttname"><a href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418">EN_MTC_CP_ACT_TYPE</a></div><div class="ttdeci">EN_MTC_CP_ACT_TYPE</div><div class="ttdoc">MTC Client Provisioning Action Type</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:82</div></div>
+<div class="ttc" id="amtc__cp_8h_html_adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d"><div class="ttname"><a href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418ae9529355843c0bddb160b0be03c3547d">EN_MTC_CP_ACT_DECL</a></div><div class="ttdeci">@ EN_MTC_CP_ACT_DECL</div><div class="ttdoc">Client provisioning decline action</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:84</div></div>
+<div class="ttc" id="amtc__cp_8h_html_adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def"><div class="ttname"><a href="mtc__cp_8h.html#adef36ccaa05dbc270d94b5d239f8b418afc4a318622a151795c3a19ff209e8def">EN_MTC_CP_ACT_ACPT</a></div><div class="ttdeci">@ EN_MTC_CP_ACT_ACPT</div><div class="ttdoc">Client provisioning accept action</div><div class="ttdef"><b>Definition:</b> mtc_cp.h:83</div></div>
+<div class="ttc" id="amtc__cp_8h_html_ae013da1f324e1d5a040ed1736b34d24d"><div class="ttname"><a href="mtc__cp_8h.html#ae013da1f324e1d5a040ed1736b34d24d">Mtc_Cp</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_Cp(ZUINT iNetType, ZCHAR *pcToken)</div><div class="ttdoc">MTC Cilent provisioning configure by primary device. Sending request mesaage to RCS configuration ser...</div></div>
+<div class="ttc" id="azos__osenv_8h_html_a1ae79d3bb3502c7dc5c16726c78c4bfd"><div class="ttname"><a href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a></div><div class="ttdeci">#define ZFUNC_VOID</div><div class="ttdoc">ZOS support void function declare</div><div class="ttdef"><b>Definition:</b> zos_osenv.h:72</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_aae3b50edbfc2210f1b21f28c4d196aaa"><div class="ttname"><a href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a></div><div class="ttdeci">int ZINT</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:98</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

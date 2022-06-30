@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: JRMediaDevice类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_j_r_media_device-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">JRMediaDevice类 参考<div class="ingroups"><a class="el" href="group___xE5_xAA_x92_xE4_xBD_x93_xE6_xA8_xA1_xE5_x9D_x97.html">媒体模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a04e15893d1ba7e35d35a00a573b49ecc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a04e15893d1ba7e35d35a00a573b49ecc">initAudio</a> ()</td></tr>
+<tr class="memdesc:a04e15893d1ba7e35d35a00a573b49ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频设备初始化  <a href="class_j_r_media_device.html#a04e15893d1ba7e35d35a00a573b49ecc">更多...</a><br /></td></tr>
+<tr class="separator:a04e15893d1ba7e35d35a00a573b49ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab618b6dad717840023d763617c02241f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#ab618b6dad717840023d763617c02241f">startAudio</a> ()</td></tr>
+<tr class="memdesc:ab618b6dad717840023d763617c02241f"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开音频设备 音频的获取由sdk自动控制, 该接口在通话开始前进行调用，若由用户自动传递媒体流则不需要调用该接口  <a href="class_j_r_media_device.html#ab618b6dad717840023d763617c02241f">更多...</a><br /></td></tr>
+<tr class="separator:ab618b6dad717840023d763617c02241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9b59a8137988b2bf9d2f61945b2f44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a4b9b59a8137988b2bf9d2f61945b2f44">stopAudio</a> ()</td></tr>
+<tr class="memdesc:a4b9b59a8137988b2bf9d2f61945b2f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭音频设备 音频的获取由sdk自动控制, 该接口在通话开始后进行调用，若由用户自动传递媒体流则不需要调用该接口音  <a href="class_j_r_media_device.html#a4b9b59a8137988b2bf9d2f61945b2f44">更多...</a><br /></td></tr>
+<tr class="separator:a4b9b59a8137988b2bf9d2f61945b2f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a183b5945f4a0b476da133ae6b5b5bed8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a183b5945f4a0b476da133ae6b5b5bed8">setAdpType</a> (int type)</td></tr>
+<tr class="memdesc:a183b5945f4a0b476da133ae6b5b5bed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动音频输入输出设置开关  <a href="class_j_r_media_device.html#a183b5945f4a0b476da133ae6b5b5bed8">更多...</a><br /></td></tr>
+<tr class="separator:a183b5945f4a0b476da133ae6b5b5bed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329d610aeb2fe816c225ae35b97c752f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a329d610aeb2fe816c225ae35b97c752f">initVideo</a> ()</td></tr>
+<tr class="memdesc:a329d610aeb2fe816c225ae35b97c752f"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频设备初始化  <a href="class_j_r_media_device.html#a329d610aeb2fe816c225ae35b97c752f">更多...</a><br /></td></tr>
+<tr class="separator:a329d610aeb2fe816c225ae35b97c752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f2e8fc587bfd5fe85e710c780f3b14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a95f2e8fc587bfd5fe85e710c780f3b14">startCamera</a> ()</td></tr>
+<tr class="memdesc:a95f2e8fc587bfd5fe85e710c780f3b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开摄像头  <a href="class_j_r_media_device.html#a95f2e8fc587bfd5fe85e710c780f3b14">更多...</a><br /></td></tr>
+<tr class="separator:a95f2e8fc587bfd5fe85e710c780f3b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fc8be7e6b25f87e70ed51cfac88ba5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a92fc8be7e6b25f87e70ed51cfac88ba5">stopCamera</a> ()</td></tr>
+<tr class="memdesc:a92fc8be7e6b25f87e70ed51cfac88ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭摄像头  <a href="class_j_r_media_device.html#a92fc8be7e6b25f87e70ed51cfac88ba5">更多...</a><br /></td></tr>
+<tr class="separator:a92fc8be7e6b25f87e70ed51cfac88ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30646f29029220a7d7455e965059319f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a30646f29029220a7d7455e965059319f">getCameraId</a> ()</td></tr>
+<tr class="memdesc:a30646f29029220a7d7455e965059319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取摄像头设备信息 用于在通话建立成功之后，调用 接口进行绑定的入参  <a href="class_j_r_media_device.html#a30646f29029220a7d7455e965059319f">更多...</a><br /></td></tr>
+<tr class="separator:a30646f29029220a7d7455e965059319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102b8dc93da4d0e4d33434655c8faf99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a102b8dc93da4d0e4d33434655c8faf99">onAudioInput</a> (const char *inputId, int sampleRateHz, int iChannels, unsigned char *buf, int len, int *micLevel, int playDelayMS, int recDelayMS, int clockDrift)</td></tr>
+<tr class="memdesc:a102b8dc93da4d0e4d33434655c8faf99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The audio input data entry to ZMF, each callback will obtain the data.  <a href="class_j_r_media_device.html#a102b8dc93da4d0e4d33434655c8faf99">更多...</a><br /></td></tr>
+<tr class="separator:a102b8dc93da4d0e4d33434655c8faf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f60c06433fca96ffc418318ee21970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a80f60c06433fca96ffc418318ee21970">onAudioInputDidStop</a> (const char *inputId)</td></tr>
+<tr class="memdesc:a80f60c06433fca96ffc418318ee21970"><td class="mdescLeft">&#160;</td><td class="mdescRight">tell ZMF the audio input has stopped  <a href="class_j_r_media_device.html#a80f60c06433fca96ffc418318ee21970">更多...</a><br /></td></tr>
+<tr class="separator:a80f60c06433fca96ffc418318ee21970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489b5643518edad141c021cd61945f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a489b5643518edad141c021cd61945f38">onAudioOutput</a> (const char *outputId, int sampleRateHz, int iChannels, unsigned char *buf, int len)</td></tr>
+<tr class="memdesc:a489b5643518edad141c021cd61945f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outlet which audio output can get data from.  <a href="class_j_r_media_device.html#a489b5643518edad141c021cd61945f38">更多...</a><br /></td></tr>
+<tr class="separator:a489b5643518edad141c021cd61945f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a2d0c43e40018ee4c096ec11dcdfe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a54a2d0c43e40018ee4c096ec11dcdfe7">onAudioOutputDidStop</a> (const char *outputId)</td></tr>
+<tr class="memdesc:a54a2d0c43e40018ee4c096ec11dcdfe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">tell ZMF the audio output has stopped  <a href="class_j_r_media_device.html#a54a2d0c43e40018ee4c096ec11dcdfe7">更多...</a><br /></td></tr>
+<tr class="separator:a54a2d0c43e40018ee4c096ec11dcdfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44adca4ed89d36bd1044747496813d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#af44adca4ed89d36bd1044747496813d4">getInputDevices</a> (int &amp;curentId, int &amp;count, vector&lt; string &gt; &amp;cId, vector&lt; string &gt; &amp;deviceName)</td></tr>
+<tr class="memdesc:af44adca4ed89d36bd1044747496813d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取输入设备列表  <a href="class_j_r_media_device.html#af44adca4ed89d36bd1044747496813d4">更多...</a><br /></td></tr>
+<tr class="separator:af44adca4ed89d36bd1044747496813d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea49d6bb74bbc8c217a63a7868053659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#aea49d6bb74bbc8c217a63a7868053659">getOutputDevices</a> (int &amp;curentId, int &amp;count, vector&lt; string &gt; &amp;cId, vector&lt; string &gt; &amp;deviceName)</td></tr>
+<tr class="memdesc:aea49d6bb74bbc8c217a63a7868053659"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取输出设备列表  <a href="class_j_r_media_device.html#aea49d6bb74bbc8c217a63a7868053659">更多...</a><br /></td></tr>
+<tr class="separator:aea49d6bb74bbc8c217a63a7868053659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c4fcbfad679cd2da8a43a307b4355b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a79c4fcbfad679cd2da8a43a307b4355b">selectInputDeviceId</a> (int id)</td></tr>
+<tr class="memdesc:a79c4fcbfad679cd2da8a43a307b4355b"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择使用的输入设备的Id  <a href="class_j_r_media_device.html#a79c4fcbfad679cd2da8a43a307b4355b">更多...</a><br /></td></tr>
+<tr class="separator:a79c4fcbfad679cd2da8a43a307b4355b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664fcf3fedae501e7348b36132f12fc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_media_device.html#a664fcf3fedae501e7348b36132f12fc8">selectOutputDeviceId</a> (int id)</td></tr>
+<tr class="memdesc:a664fcf3fedae501e7348b36132f12fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">选择使用的输出设备的Id  <a href="class_j_r_media_device.html#a664fcf3fedae501e7348b36132f12fc8">更多...</a><br /></td></tr>
+<tr class="separator:a664fcf3fedae501e7348b36132f12fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a657320b1b73ae53a932a91aee56fdd70"><td class="memItemLeft" align="right" valign="top"><a id="a657320b1b73ae53a932a91aee56fdd70" name="a657320b1b73ae53a932a91aee56fdd70"></a>
+static <a class="el" href="class_j_r_media_device.html">JRMediaDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="separator:a657320b1b73ae53a932a91aee56fdd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a30646f29029220a7d7455e965059319f" name="a30646f29029220a7d7455e965059319f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30646f29029220a7d7455e965059319f">&#9670;&nbsp;</a></span>getCameraId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string JRMediaDevice::getCameraId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取摄像头设备信息 用于在通话建立成功之后，调用 接口进行绑定的入参 </p>
+<dl class="section return"><dt>返回</dt><dd>摄像头设备信息 </dd></dl>
+
+</div>
+</div>
+<a id="af44adca4ed89d36bd1044747496813d4" name="af44adca4ed89d36bd1044747496813d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44adca4ed89d36bd1044747496813d4">&#9670;&nbsp;</a></span>getInputDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JRMediaDevice::getInputDevices </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>curentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>deviceName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取输入设备列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">curentId,当前使用的设备Id</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cId,设备ID名称列表</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">deviceName,设备名称列表</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea49d6bb74bbc8c217a63a7868053659" name="aea49d6bb74bbc8c217a63a7868053659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea49d6bb74bbc8c217a63a7868053659">&#9670;&nbsp;</a></span>getOutputDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JRMediaDevice::getOutputDevices </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>curentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>deviceName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取输出设备列表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">curentId,当前使用的设备Id</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">cId,设备ID名称列表</td><td></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">deviceName,设备名称列表</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04e15893d1ba7e35d35a00a573b49ecc" name="a04e15893d1ba7e35d35a00a573b49ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e15893d1ba7e35d35a00a573b49ecc">&#9670;&nbsp;</a></span>initAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::initAudio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>音频设备初始化 </p>
+<dl class="section return"><dt>返回</dt><dd>表示音频设备初始化结果<ul>
+<li>0 表示成功</li>
+<li>1 表示失败 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a329d610aeb2fe816c225ae35b97c752f" name="a329d610aeb2fe816c225ae35b97c752f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329d610aeb2fe816c225ae35b97c752f">&#9670;&nbsp;</a></span>initVideo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::initVideo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>视频设备初始化 </p>
+<dl class="section return"><dt>返回</dt><dd>表示视频设备初始化结果<ul>
+<li>0 表示成功</li>
+<li>1 表示失败 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a102b8dc93da4d0e4d33434655c8faf99" name="a102b8dc93da4d0e4d33434655c8faf99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102b8dc93da4d0e4d33434655c8faf99">&#9670;&nbsp;</a></span>onAudioInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JRMediaDevice::onAudioInput </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inputId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleRateHz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iChannels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>micLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playDelayMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>recDelayMS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>clockDrift</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The audio input data entry to ZMF, each callback will obtain the data. </p>
+<p >Multiple data will mix in the callback of the jssmme Engine, and the first input will be main channel.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>unique name of the audio input </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleRateHz</td><td>the sample rating of the pcm data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>the channel number of the pcm data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the pcm data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the pcm data length </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">micLevel</td><td><br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">playDelayMS</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">recDelayMS</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clockDrift</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80f60c06433fca96ffc418318ee21970" name="a80f60c06433fca96ffc418318ee21970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f60c06433fca96ffc418318ee21970">&#9670;&nbsp;</a></span>onAudioInputDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JRMediaDevice::onAudioInputDidStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inputId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tell ZMF the audio input has stopped </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputId</td><td>unique name of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a489b5643518edad141c021cd61945f38" name="a489b5643518edad141c021cd61945f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489b5643518edad141c021cd61945f38">&#9670;&nbsp;</a></span>onAudioOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JRMediaDevice::onAudioOutput </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>outputId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleRateHz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iChannels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The outlet which audio output can get data from. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputId</td><td>unique name of the audio output </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sampleRateHz</td><td>the sample rating of the pcm data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iChannels</td><td>the channel number of the pcm data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>the pcm data to be filled </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>the pcm data length </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54a2d0c43e40018ee4c096ec11dcdfe7" name="a54a2d0c43e40018ee4c096ec11dcdfe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a2d0c43e40018ee4c096ec11dcdfe7">&#9670;&nbsp;</a></span>onAudioOutputDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JRMediaDevice::onAudioOutputDidStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>outputId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>tell ZMF the audio output has stopped </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">outputId</td><td>unique name of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79c4fcbfad679cd2da8a43a307b4355b" name="a79c4fcbfad679cd2da8a43a307b4355b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c4fcbfad679cd2da8a43a307b4355b">&#9670;&nbsp;</a></span>selectInputDeviceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JRMediaDevice::selectInputDeviceId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选择使用的输入设备的Id </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">设备id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a664fcf3fedae501e7348b36132f12fc8" name="a664fcf3fedae501e7348b36132f12fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664fcf3fedae501e7348b36132f12fc8">&#9670;&nbsp;</a></span>selectOutputDeviceId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JRMediaDevice::selectOutputDeviceId </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>选择使用的输出设备的Id </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">设备id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a183b5945f4a0b476da133ae6b5b5bed8" name="a183b5945f4a0b476da133ae6b5b5bed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183b5945f4a0b476da133ae6b5b5bed8">&#9670;&nbsp;</a></span>setAdpType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::setAdpType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>自动音频输入输出设置开关 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>EN_AUDIOCONTROL_TYPE </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab618b6dad717840023d763617c02241f" name="ab618b6dad717840023d763617c02241f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab618b6dad717840023d763617c02241f">&#9670;&nbsp;</a></span>startAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::startAudio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>打开音频设备 音频的获取由sdk自动控制, 该接口在通话开始前进行调用，若由用户自动传递媒体流则不需要调用该接口 </p>
+<dl class="section return"><dt>返回</dt><dd>0, 表示接口调用成功， 1表示接口调用失败 </dd></dl>
+
+</div>
+</div>
+<a id="a95f2e8fc587bfd5fe85e710c780f3b14" name="a95f2e8fc587bfd5fe85e710c780f3b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f2e8fc587bfd5fe85e710c780f3b14">&#9670;&nbsp;</a></span>startCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::startCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>打开摄像头 </p>
+<dl class="section return"><dt>返回</dt><dd>表示摄像头打开结果<ul>
+<li>0 表示成功</li>
+<li>1 表示失败 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a4b9b59a8137988b2bf9d2f61945b2f44" name="a4b9b59a8137988b2bf9d2f61945b2f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9b59a8137988b2bf9d2f61945b2f44">&#9670;&nbsp;</a></span>stopAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::stopAudio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭音频设备 音频的获取由sdk自动控制, 该接口在通话开始后进行调用，若由用户自动传递媒体流则不需要调用该接口音 </p>
+<dl class="section return"><dt>返回</dt><dd>0. 表示接口调用成功，1表示接口调用失败 </dd></dl>
+
+</div>
+</div>
+<a id="a92fc8be7e6b25f87e70ed51cfac88ba5" name="a92fc8be7e6b25f87e70ed51cfac88ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92fc8be7e6b25f87e70ed51cfac88ba5">&#9670;&nbsp;</a></span>stopCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int JRMediaDevice::stopCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭摄像头 </p>
+<dl class="section return"><dt>返回</dt><dd>表示摄像头关闭结果<ul>
+<li>0 表示成功</li>
+<li>1 表示失败 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/<a class="el" href="_j_r_media_device_8h_source.html">JRMediaDevice.h</a></li>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/src/JRMediaDevice.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

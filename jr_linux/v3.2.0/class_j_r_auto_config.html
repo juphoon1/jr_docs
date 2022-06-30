@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: JRAutoConfig类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="class_j_r_auto_config-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">JRAutoConfig类 参考<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___xE8_x87_xAA_xE5_x8A_xA8_xE9_x85_x8D_xE7_xBD_xAE_xE6_xA8_xA1_xE5_x9D_x97.html">自动配置模块</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>自动配置组件。  
+ <a href="class_j_r_auto_config.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_j_r_auto_config_8h_source.html">JRAutoConfig.h</a>&gt;</code></p>
+<div class="dynheader">
+类 JRAutoConfig 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_j_r_auto_config.png" usemap="#JRAutoConfig_map" alt=""/>
+  <map id="JRAutoConfig_map" name="JRAutoConfig_map">
+<area href="class_j_r_auto_config_impl.html" alt="JRAutoConfigImpl" shape="rect" coords="0,56,112,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a67704ffee90c28cb666dbec867ed9833"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a67704ffee90c28cb666dbec867ed9833">startAutoConfig</a> ()=0</td></tr>
+<tr class="memdesc:a67704ffee90c28cb666dbec867ed9833"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取自动配置。  <a href="class_j_r_auto_config.html#a67704ffee90c28cb666dbec867ed9833">更多...</a><br /></td></tr>
+<tr class="separator:a67704ffee90c28cb666dbec867ed9833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266d62b7c31684431a09364e6cc642bc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a266d62b7c31684431a09364e6cc642bc">startAutoConfigWithCUEI</a> (string serverAdderss, string cuei, string vendor, string vendorName, string vendorVersion)=0</td></tr>
+<tr class="memdesc:a266d62b7c31684431a09364e6cc642bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取自动配置。  <a href="class_j_r_auto_config.html#a266d62b7c31684431a09364e6cc642bc">更多...</a><br /></td></tr>
+<tr class="separator:a266d62b7c31684431a09364e6cc642bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae776f679e6857ec5c78d8ad5bc4c2272"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#ae776f679e6857ec5c78d8ad5bc4c2272">startAutoConfigWithCUEI</a> (string CUEI, string verdor, string vendorName, string vendorVersion)=0</td></tr>
+<tr class="memdesc:ae776f679e6857ec5c78d8ad5bc4c2272"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取自动配置。  <a href="class_j_r_auto_config.html#ae776f679e6857ec5c78d8ad5bc4c2272">更多...</a><br /></td></tr>
+<tr class="separator:ae776f679e6857ec5c78d8ad5bc4c2272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ab822ea6ea96c7d9a4fcd6519283c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a08ab822ea6ea96c7d9a4fcd6519283c8">isCPExpired</a> ()=0</td></tr>
+<tr class="memdesc:a08ab822ea6ea96c7d9a4fcd6519283c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断配置文件是否过期。  <a href="class_j_r_auto_config.html#a08ab822ea6ea96c7d9a4fcd6519283c8">更多...</a><br /></td></tr>
+<tr class="separator:a08ab822ea6ea96c7d9a4fcd6519283c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7496853b04c56123470293d87667b376"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a7496853b04c56123470293d87667b376">setCPExpired</a> (bool expired)=0</td></tr>
+<tr class="memdesc:a7496853b04c56123470293d87667b376"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置配置文件是否过期  <a href="class_j_r_auto_config.html#a7496853b04c56123470293d87667b376">更多...</a><br /></td></tr>
+<tr class="separator:a7496853b04c56123470293d87667b376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd9351989877ebeecfc880ba8a3d834"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a9cd9351989877ebeecfc880ba8a3d834">addCallback</a> (<a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> *callback)=0</td></tr>
+<tr class="memdesc:a9cd9351989877ebeecfc880ba8a3d834"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加回调 将JRAutoConfigCallback对象设置给JRCall模块，用于通话事件的上报  <a href="class_j_r_auto_config.html#a9cd9351989877ebeecfc880ba8a3d834">更多...</a><br /></td></tr>
+<tr class="separator:a9cd9351989877ebeecfc880ba8a3d834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037f4d8f2188251739efbf0fc8ae4a3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a037f4d8f2188251739efbf0fc8ae4a3a">removeCallback</a> (<a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> *callback)=0</td></tr>
+<tr class="memdesc:a037f4d8f2188251739efbf0fc8ae4a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除回调  <a href="class_j_r_auto_config.html#a037f4d8f2188251739efbf0fc8ae4a3a">更多...</a><br /></td></tr>
+<tr class="separator:a037f4d8f2188251739efbf0fc8ae4a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ac2baf84eafa2badbe95c69d362d7a"><td class="memItemLeft" align="right" valign="top"><a id="a12ac2baf84eafa2badbe95c69d362d7a" name="a12ac2baf84eafa2badbe95c69d362d7a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasCustomCPClock</b> ()</td></tr>
+<tr class="separator:a12ac2baf84eafa2badbe95c69d362d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a9ab6987559457b884722af8e8787f095"><td class="memItemLeft" align="right" valign="top"><a id="a9ab6987559457b884722af8e8787f095" name="a9ab6987559457b884722af8e8787f095"></a>
+static <a class="el" href="class_j_r_auto_config.html">JRAutoConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="separator:a9ab6987559457b884722af8e8787f095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa2bdebe64da1d8e8c861ee123d08c180"><td class="memItemLeft" align="right" valign="top"><a id="aa2bdebe64da1d8e8c861ee123d08c180" name="aa2bdebe64da1d8e8c861ee123d08c180"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cpId</b></td></tr>
+<tr class="separator:aa2bdebe64da1d8e8c861ee123d08c180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:a770fd2a358f3877db3bf55c5856d5cb0"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_r_auto_config.html#a770fd2a358f3877db3bf55c5856d5cb0">SUCCESS</a> = 0</td></tr>
+<tr class="memdesc:a770fd2a358f3877db3bf55c5856d5cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">自动配置失败原因  <a href="class_j_r_auto_config.html#a770fd2a358f3877db3bf55c5856d5cb0">更多...</a><br /></td></tr>
+<tr class="separator:a770fd2a358f3877db3bf55c5856d5cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d855dbb5c03544dd8129a10f77f2d7"><td class="memItemLeft" align="right" valign="top"><a id="a20d855dbb5c03544dd8129a10f77f2d7" name="a20d855dbb5c03544dd8129a10f77f2d7"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>LICENSE_ERROR_FILE_NOT_EXIT</b> = 1</td></tr>
+<tr class="memdesc:a20d855dbb5c03544dd8129a10f77f2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">license 文件不存在 <br /></td></tr>
+<tr class="separator:a20d855dbb5c03544dd8129a10f77f2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae312f32ac65f19f69933c6fdb24f94b5"><td class="memItemLeft" align="right" valign="top"><a id="ae312f32ac65f19f69933c6fdb24f94b5" name="ae312f32ac65f19f69933c6fdb24f94b5"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>LICENSE_ERROR_INVALID_FILE</b> = 2</td></tr>
+<tr class="memdesc:ae312f32ac65f19f69933c6fdb24f94b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">license 文件非法 <br /></td></tr>
+<tr class="separator:ae312f32ac65f19f69933c6fdb24f94b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c762f87cb9b00823d78b0543cb80ff2"><td class="memItemLeft" align="right" valign="top"><a id="a9c762f87cb9b00823d78b0543cb80ff2" name="a9c762f87cb9b00823d78b0543cb80ff2"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>LICENSE_ERROR_INVALID_APP_ID</b> = 3</td></tr>
+<tr class="memdesc:a9c762f87cb9b00823d78b0543cb80ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">license 非法 AppId <br /></td></tr>
+<tr class="separator:a9c762f87cb9b00823d78b0543cb80ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0660a0cbed54c13d5e47e25f331ade35"><td class="memItemLeft" align="right" valign="top"><a id="a0660a0cbed54c13d5e47e25f331ade35" name="a0660a0cbed54c13d5e47e25f331ade35"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>LICENSE_ERROR_TIME_EXPIRED</b> = 4</td></tr>
+<tr class="memdesc:a0660a0cbed54c13d5e47e25f331ade35"><td class="mdescLeft">&#160;</td><td class="mdescRight">license 时间过期 <br /></td></tr>
+<tr class="separator:a0660a0cbed54c13d5e47e25f331ade35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fb4af0f7df275c857aedd339cee394"><td class="memItemLeft" align="right" valign="top"><a id="a43fb4af0f7df275c857aedd339cee394" name="a43fb4af0f7df275c857aedd339cee394"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>LICENSE_ERROR_NTP_TIME_CHECK_ERROR</b> = 5</td></tr>
+<tr class="memdesc:a43fb4af0f7df275c857aedd339cee394"><td class="mdescLeft">&#160;</td><td class="mdescRight">ntp 时间校验错误 <br /></td></tr>
+<tr class="separator:a43fb4af0f7df275c857aedd339cee394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6afa4a68a22d57fd7992672357b07d6"><td class="memItemLeft" align="right" valign="top"><a id="ae6afa4a68a22d57fd7992672357b07d6" name="ae6afa4a68a22d57fd7992672357b07d6"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>LICENSE_ERROR_OTHER</b> = 6</td></tr>
+<tr class="memdesc:ae6afa4a68a22d57fd7992672357b07d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">其他的 license 验证错误 <br /></td></tr>
+<tr class="separator:ae6afa4a68a22d57fd7992672357b07d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e84224804d671368d604307d434f84"><td class="memItemLeft" align="right" valign="top"><a id="a94e84224804d671368d604307d434f84" name="a94e84224804d671368d604307d434f84"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>REASON_OTHER</b> = 100</td></tr>
+<tr class="memdesc:a94e84224804d671368d604307d434f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">其他错误 <br /></td></tr>
+<tr class="separator:a94e84224804d671368d604307d434f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >自动配置组件。 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a9cd9351989877ebeecfc880ba8a3d834" name="a9cd9351989877ebeecfc880ba8a3d834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd9351989877ebeecfc880ba8a3d834">&#9670;&nbsp;</a></span>addCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRAutoConfig::addCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加回调 将JRAutoConfigCallback对象设置给JRCall模块，用于通话事件的上报 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td><a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> 接口对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#aac803f65348f50481de90f696933b917">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a08ab822ea6ea96c7d9a4fcd6519283c8" name="a08ab822ea6ea96c7d9a4fcd6519283c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ab822ea6ea96c7d9a4fcd6519283c8">&#9670;&nbsp;</a></span>isCPExpired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool JRAutoConfig::isCPExpired </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断配置文件是否过期。 </p>
+<dl class="section return"><dt>返回</dt><dd>判断配置文件是否过期。<ul>
+<li>true：过期。</li>
+<li>false:未过期。 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#a6d67376e9c98de7b06898abcf810e16c">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a037f4d8f2188251739efbf0fc8ae4a3a" name="a037f4d8f2188251739efbf0fc8ae4a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037f4d8f2188251739efbf0fc8ae4a3a">&#9670;&nbsp;</a></span>removeCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRAutoConfig::removeCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> *&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>删除回调 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td><a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a> 接口对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#a6261d0e98e63d7228f4123ecf901685e">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a7496853b04c56123470293d87667b376" name="a7496853b04c56123470293d87667b376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7496853b04c56123470293d87667b376">&#9670;&nbsp;</a></span>setCPExpired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JRAutoConfig::setCPExpired </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>expired</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置配置文件是否过期 </p>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#a78100eaed0cdbfc7944b4d56a9bd37c7">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a67704ffee90c28cb666dbec867ed9833" name="a67704ffee90c28cb666dbec867ed9833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67704ffee90c28cb666dbec867ed9833">&#9670;&nbsp;</a></span>startAutoConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool JRAutoConfig::startAutoConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取自动配置。 </p>
+<dl class="section return"><dt>返回</dt><dd>自动配置接口调用结果<ul>
+<li>true 表示接口调用成功</li>
+<li>false 表示接口调用失败 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#a06330f55991fab61623cf4bc896097be">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae776f679e6857ec5c78d8ad5bc4c2272" name="ae776f679e6857ec5c78d8ad5bc4c2272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae776f679e6857ec5c78d8ad5bc4c2272">&#9670;&nbsp;</a></span>startAutoConfigWithCUEI() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool JRAutoConfig::startAutoConfigWithCUEI </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>CUEI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>verdor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>vendorName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>vendorVersion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取自动配置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">CUEI</td><td>CUEI号码 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">verdor</td><td>厂家标识 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vendorName</td><td>音箱的名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vendorVersion</td><td>音箱版本号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动配置接口调用结果<ul>
+<li>true 表示接口调用成功</li>
+<li>false 表示接口调用失败 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#a59af7e40d02ba7a17ebae3ec7c9779c0">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a266d62b7c31684431a09364e6cc642bc" name="a266d62b7c31684431a09364e6cc642bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266d62b7c31684431a09364e6cc642bc">&#9670;&nbsp;</a></span>startAutoConfigWithCUEI() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool JRAutoConfig::startAutoConfigWithCUEI </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>serverAdderss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>cuei</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>vendor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>vendorName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>vendorVersion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取自动配置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">serverAdderss</td><td>DMS服务器地址 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cuei</td><td>CUEI号码 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vendor</td><td>厂家标识 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vendorName</td><td>音箱的名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vendorVersion</td><td>音箱版本号</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>自动配置接口调用结果<ul>
+<li>true 表示接口调用成功</li>
+<li>false 表示接口调用失败 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="class_j_r_auto_config_impl.html#af99718dedf53c46421d58f38b300ccbf">JRAutoConfigImpl</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a770fd2a358f3877db3bf55c5856d5cb0" name="a770fd2a358f3877db3bf55c5856d5cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770fd2a358f3877db3bf55c5856d5cb0">&#9670;&nbsp;</a></span>SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int JRAutoConfig::SUCCESS = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自动配置失败原因 </p>
+<p >自动配置成功 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/include/<a class="el" href="_j_r_auto_config_8h_source.html">JRAutoConfig.h</a></li>
+<li>/Users/juphoon/code/rcs/sdk/CPlusPlus/jrsdk/src/JRAutoConfig.cc</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,1029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: 音频基础接口</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">音频基础接口</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ZMF模块实现音频采集、播放等基本功能的常用接口。  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga1586f0a11803d5c0c2a0b9029ea14ed4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> (void *applicationContext)</td></tr>
+<tr class="memdesc:ga1586f0a11803d5c0c2a0b9029ea14ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化ZMF(Zero Media Framework)的音频模块。  <a href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">更多...</a><br /></td></tr>
+<tr class="separator:ga1586f0a11803d5c0c2a0b9029ea14ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2f53a6c3236f16c5411bd9d53cbb76b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gad2f53a6c3236f16c5411bd9d53cbb76b">Zmf_AudioInitialize2</a> (void *applicationContext, <a class="el" href="group___zmf_audio_types.html#ga2291408804d4df9939be61d1a8f4ac0a">ZmfAudioDeviceType</a> deviceType)</td></tr>
+<tr class="memdesc:gad2f53a6c3236f16c5411bd9d53cbb76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化ZMF(Zero Media Framework)的音频模块。  <a href="group___zmf_audio_functions.html#gad2f53a6c3236f16c5411bd9d53cbb76b">更多...</a><br /></td></tr>
+<tr class="separator:gad2f53a6c3236f16c5411bd9d53cbb76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b419dedd86623566f594f2faf8e0ba2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga1b419dedd86623566f594f2faf8e0ba2">Zmf_AudioTerminate</a> (void)</td></tr>
+<tr class="memdesc:ga1b419dedd86623566f594f2faf8e0ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁ZMF音频模块，释放所有资源。  <a href="group___zmf_audio_functions.html#ga1b419dedd86623566f594f2faf8e0ba2">更多...</a><br /></td></tr>
+<tr class="separator:ga1b419dedd86623566f594f2faf8e0ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaced15c5db12e3b8c1d0de20208f7c1ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gaced15c5db12e3b8c1d0de20208f7c1ab">Zmf_AudioSessionSetMode</a> (<a class="el" href="group___zmf_audio_types.html#gad954f414f49cb71d7880dd43c2023bcb">ZmfSessionMode</a> enAudioMode)</td></tr>
+<tr class="memdesc:gaced15c5db12e3b8c1d0de20208f7c1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置系统音频的session模式。  <a href="group___zmf_audio_functions.html#gaced15c5db12e3b8c1d0de20208f7c1ab">更多...</a><br /></td></tr>
+<tr class="separator:gaced15c5db12e3b8c1d0de20208f7c1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd9b0e90e0c9a5258aa8c7ec82b90892"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">Zmf_AudioInputGetCount</a> (void)</td></tr>
+<tr class="memdesc:gacd9b0e90e0c9a5258aa8c7ec82b90892"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输入设备的数量。  <a href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">更多...</a><br /></td></tr>
+<tr class="separator:gacd9b0e90e0c9a5258aa8c7ec82b90892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26db15ea0567c6f903adcde1c5c6fed9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga26db15ea0567c6f903adcde1c5c6fed9">Zmf_AudioInputSetVolume</a> (int percent)</td></tr>
+<tr class="memdesc:ga26db15ea0567c6f903adcde1c5c6fed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频输入设备的音量。  <a href="group___zmf_audio_functions.html#ga26db15ea0567c6f903adcde1c5c6fed9">更多...</a><br /></td></tr>
+<tr class="separator:ga26db15ea0567c6f903adcde1c5c6fed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78587bf211e0ffa912dbe257b50f1ca9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga78587bf211e0ffa912dbe257b50f1ca9">Zmf_AudioInputGetVolume</a> (int *percent)</td></tr>
+<tr class="memdesc:ga78587bf211e0ffa912dbe257b50f1ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输入设备的音量。  <a href="group___zmf_audio_functions.html#ga78587bf211e0ffa912dbe257b50f1ca9">更多...</a><br /></td></tr>
+<tr class="separator:ga78587bf211e0ffa912dbe257b50f1ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga762290e0968abe4862576d884bbe2fc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">Zmf_AudioInputGetName</a> (int iIndex, char acId[512], char acName[512])</td></tr>
+<tr class="memdesc:ga762290e0968abe4862576d884bbe2fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输入设备的名称。  <a href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">更多...</a><br /></td></tr>
+<tr class="separator:ga762290e0968abe4862576d884bbe2fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4399e30c27fe7514812feffcea629bca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a> (const char *pcId, int iSamplingRate, int iChannelNumber, <a class="el" href="group___zmf_audio_types.html#gaf73c17a8617e643eb9c0ce08aed3569a">ZmfAecMode</a> enAecMode, <a class="el" href="group___zmf_audio_types.html#gaa837d795205261936eaf38a1f081dda5">ZmfAgcMode</a> enAgcMode)</td></tr>
+<tr class="memdesc:ga4399e30c27fe7514812feffcea629bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动指定的音频输入设备。  <a href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">更多...</a><br /></td></tr>
+<tr class="separator:ga4399e30c27fe7514812feffcea629bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c1b1000290a39ac9bb3a70ace478819"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">Zmf_AudioInputStop</a> (const char *pcId)</td></tr>
+<tr class="memdesc:ga1c1b1000290a39ac9bb3a70ace478819"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定音频输入设备停止采集。  <a href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">更多...</a><br /></td></tr>
+<tr class="separator:ga1c1b1000290a39ac9bb3a70ace478819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ea6bb1eb315575309c4ec181f0752c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga8ea6bb1eb315575309c4ec181f0752c8">Zmf_AudioInputStopAll</a> (void)</td></tr>
+<tr class="memdesc:ga8ea6bb1eb315575309c4ec181f0752c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有音频输入设备停止采集。  <a href="group___zmf_audio_functions.html#ga8ea6bb1eb315575309c4ec181f0752c8">更多...</a><br /></td></tr>
+<tr class="separator:ga8ea6bb1eb315575309c4ec181f0752c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaae5a2ecd2ce239f206cdddc33e4b14c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gaaae5a2ecd2ce239f206cdddc33e4b14c">Zmf_AudioInputSetBoostLevel</a> (float level)</td></tr>
+<tr class="memdesc:gaaae5a2ecd2ce239f206cdddc33e4b14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频输入设备的硬件麦克风增益值。  <a href="group___zmf_audio_functions.html#gaaae5a2ecd2ce239f206cdddc33e4b14c">更多...</a><br /></td></tr>
+<tr class="separator:gaaae5a2ecd2ce239f206cdddc33e4b14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga053a36ea8dc9d8d03b70d0543679e028"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga053a36ea8dc9d8d03b70d0543679e028">Zmf_AudioInputGetBoostLevel</a> (float *level)</td></tr>
+<tr class="memdesc:ga053a36ea8dc9d8d03b70d0543679e028"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输入设备的硬件麦克风增益值。  <a href="group___zmf_audio_functions.html#ga053a36ea8dc9d8d03b70d0543679e028">更多...</a><br /></td></tr>
+<tr class="separator:ga053a36ea8dc9d8d03b70d0543679e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea3db604c715bf3cf51bc410f155cf67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gaea3db604c715bf3cf51bc410f155cf67">Zmf_AudioInputBoostControl</a> (int mode)</td></tr>
+<tr class="memdesc:gaea3db604c715bf3cf51bc410f155cf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频输入设备的麦克风增益控制模式。  <a href="group___zmf_audio_functions.html#gaea3db604c715bf3cf51bc410f155cf67">更多...</a><br /></td></tr>
+<tr class="separator:gaea3db604c715bf3cf51bc410f155cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed529baee60b817707534b28a7b455fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> (void)</td></tr>
+<tr class="memdesc:gaed529baee60b817707534b28a7b455fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输出设备的数量。  <a href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">更多...</a><br /></td></tr>
+<tr class="separator:gaed529baee60b817707534b28a7b455fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5025bcaec4dbb3d23c85b080792de38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gac5025bcaec4dbb3d23c85b080792de38">Zmf_AudioOutputSetVolume</a> (int percent)</td></tr>
+<tr class="memdesc:gac5025bcaec4dbb3d23c85b080792de38"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频输出设备的音量。  <a href="group___zmf_audio_functions.html#gac5025bcaec4dbb3d23c85b080792de38">更多...</a><br /></td></tr>
+<tr class="separator:gac5025bcaec4dbb3d23c85b080792de38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7b0cede4deb434d9cf2895dea9ec01c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gad7b0cede4deb434d9cf2895dea9ec01c">Zmf_AudioOutputGetVolume</a> (int *percent)</td></tr>
+<tr class="memdesc:gad7b0cede4deb434d9cf2895dea9ec01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输出设备的音量。  <a href="group___zmf_audio_functions.html#gad7b0cede4deb434d9cf2895dea9ec01c">更多...</a><br /></td></tr>
+<tr class="separator:gad7b0cede4deb434d9cf2895dea9ec01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga407776dbc21079ae7af0dc475d2a9f37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga407776dbc21079ae7af0dc475d2a9f37">Zmf_AudioOutputGetName</a> (int iIndex, char acId[512], char acName[512])</td></tr>
+<tr class="memdesc:ga407776dbc21079ae7af0dc475d2a9f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频输出设备的名称。  <a href="group___zmf_audio_functions.html#ga407776dbc21079ae7af0dc475d2a9f37">更多...</a><br /></td></tr>
+<tr class="separator:ga407776dbc21079ae7af0dc475d2a9f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec246f589d66e2e22bff1b03b858a794"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gaec246f589d66e2e22bff1b03b858a794">Zmf_AudioOutputStart</a> (const char *pcId, int iSamplingRate, int iChannelNumber)</td></tr>
+<tr class="memdesc:gaec246f589d66e2e22bff1b03b858a794"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动指定的音频输出设备。  <a href="group___zmf_audio_functions.html#gaec246f589d66e2e22bff1b03b858a794">更多...</a><br /></td></tr>
+<tr class="separator:gaec246f589d66e2e22bff1b03b858a794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00fd5a64cd2e718224eb29cbd24d2c9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#ga00fd5a64cd2e718224eb29cbd24d2c9e">Zmf_AudioOutputStop</a> (const char *pcId)</td></tr>
+<tr class="memdesc:ga00fd5a64cd2e718224eb29cbd24d2c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定的音频输出设备停止播放。  <a href="group___zmf_audio_functions.html#ga00fd5a64cd2e718224eb29cbd24d2c9e">更多...</a><br /></td></tr>
+<tr class="separator:ga00fd5a64cd2e718224eb29cbd24d2c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2ce7a8e09c4471a5a87283a91065ba8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_audio_functions.html#gac2ce7a8e09c4471a5a87283a91065ba8">Zmf_AudioOutputStopAll</a> (void)</td></tr>
+<tr class="memdesc:gac2ce7a8e09c4471a5a87283a91065ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有音频输出设备停止采集。  <a href="group___zmf_audio_functions.html#gac2ce7a8e09c4471a5a87283a91065ba8">更多...</a><br /></td></tr>
+<tr class="separator:gac2ce7a8e09c4471a5a87283a91065ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p >ZMF模块实现音频采集、播放等基本功能的常用接口。 </p>
+<h2 class="groupheader">函数说明</h2>
+<a id="ga1586f0a11803d5c0c2a0b9029ea14ed4" name="ga1586f0a11803d5c0c2a0b9029ea14ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1586f0a11803d5c0c2a0b9029ea14ed4">&#9670;&nbsp;</a></span>Zmf_AudioInitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInitialize </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>applicationContext</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化ZMF(Zero Media Framework)的音频模块。 </p>
+<p >ZMF的音频模块负责音频采集、音频播放设备的管理。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">applicationContext</td><td>对于Windows系统, 此参数应该是窗口的句柄，事件通知将被传递给对应窗口。 或者此参数可以是ZmfEventListenCallback类型的回调函数。 对于iOS系统, 此参数应该设置为NULL，它将被忽略。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ZMF音频模块初始化成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>ZMF音频模块初始化失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>无 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gad2f53a6c3236f16c5411bd9d53cbb76b">Zmf_AudioInitialize2</a>, <a class="el" href="group___zmf_audio_functions.html#ga1b419dedd86623566f594f2faf8e0ba2">Zmf_AudioTerminate</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gad2f53a6c3236f16c5411bd9d53cbb76b" name="gad2f53a6c3236f16c5411bd9d53cbb76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2f53a6c3236f16c5411bd9d53cbb76b">&#9670;&nbsp;</a></span>Zmf_AudioInitialize2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInitialize2 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>applicationContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_types.html#ga2291408804d4df9939be61d1a8f4ac0a">ZmfAudioDeviceType</a>&#160;</td>
+          <td class="paramname"><em>deviceType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化ZMF(Zero Media Framework)的音频模块。 </p>
+<p >仅Windows和Linux系统支持此接口。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">applicationContext</td><td>对于Windows系统, 此参数应该是窗口的句柄，事件通知将被传递给对应窗口。 或者此参数可以是ZmfEventListenCallback类型的回调函数。 </td></tr>
+    <tr><td class="paramname">deviceType</td><td>音频设备的类型，参见<a class="el" href="group___zmf_audio_types.html#ga2291408804d4df9939be61d1a8f4ac0a">ZmfAudioDeviceType</a> 。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ZMF音频模块初始化成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>ZMF音频模块初始化失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>无 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+
+</div>
+</div>
+<a id="gaea3db604c715bf3cf51bc410f155cf67" name="gaea3db604c715bf3cf51bc410f155cf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea3db604c715bf3cf51bc410f155cf67">&#9670;&nbsp;</a></span>Zmf_AudioInputBoostControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputBoostControl </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频输入设备的麦克风增益控制模式。 </p>
+<p >仅Windows7系统支持。设置音频输入设备的麦克风增益控制模式。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>设置的麦克风增益控制模式，参见<a class="el" href="group___zmf_audio_types.html#ga3410260f1e141e77d544ef8aba0b6c53">ZmfBoostMode</a> 。 Off模式：在<a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a> 接口调用后，系统麦克风增益自动为0， 在<a class="el" href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">Zmf_AudioInputStop</a> 接口调用后，系统麦克风增益恢复。 Manual模式：在<a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a> 接口调用后,可以通过<a class="el" href="group___zmf_audio_functions.html#ga053a36ea8dc9d8d03b70d0543679e028">Zmf_AudioInputGetBoostLevel</a> 接口 和 <a class="el" href="group___zmf_audio_functions.html#gaaae5a2ecd2ce239f206cdddc33e4b14c">Zmf_AudioInputSetBoostLevel</a> 接口获取和设置系统麦克风增益。 建议选择off模式。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>必须在<a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a> 之前调用。 在<a class="el" href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">Zmf_AudioInputStop</a>, <a class="el" href="group___zmf_audio_functions.html#ga8ea6bb1eb315575309c4ec181f0752c8">Zmf_AudioInputStopAll</a> 调用之前，无法改变该模式。 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gaaae5a2ecd2ce239f206cdddc33e4b14c">Zmf_AudioInputSetBoostLevel</a>, <a class="el" href="group___zmf_audio_functions.html#ga053a36ea8dc9d8d03b70d0543679e028">Zmf_AudioInputGetBoostLevel</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga053a36ea8dc9d8d03b70d0543679e028" name="ga053a36ea8dc9d8d03b70d0543679e028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga053a36ea8dc9d8d03b70d0543679e028">&#9670;&nbsp;</a></span>Zmf_AudioInputGetBoostLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputGetBoostLevel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输入设备的硬件麦克风增益值。 </p>
+<p >仅Windows7系统支持。获取音频输入设备的硬件麦克风增益值。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>float指针，保存接口获取的系统麦克风增益值，单位dB。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功调用Boost模式设置接口<a class="el" href="group___zmf_audio_functions.html#gaea3db604c715bf3cf51bc410f155cf67">Zmf_AudioInputBoostControl</a> 将模式设置为Manual。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gaaae5a2ecd2ce239f206cdddc33e4b14c">Zmf_AudioInputSetBoostLevel</a>, <a class="el" href="group___zmf_audio_functions.html#gaea3db604c715bf3cf51bc410f155cf67">Zmf_AudioInputBoostControl</a> </dd></dl>
+
+</div>
+</div>
+<a id="gacd9b0e90e0c9a5258aa8c7ec82b90892" name="gacd9b0e90e0c9a5258aa8c7ec82b90892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd9b0e90e0c9a5258aa8c7ec82b90892">&#9670;&nbsp;</a></span>Zmf_AudioInputGetCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputGetCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输入设备的数量。 </p>
+<p >获取当前系统可用的音频输入设备的总数量。 </p><dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">成功获取的系统可用音频输入设备的总数量，单位为个。</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">Zmf_AudioInputGetName</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga762290e0968abe4862576d884bbe2fc5" name="ga762290e0968abe4862576d884bbe2fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga762290e0968abe4862576d884bbe2fc5">&#9670;&nbsp;</a></span>Zmf_AudioInputGetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputGetName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>acId</em>[512], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>acName</em>[512]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输入设备的名称。 </p>
+<p >指定音频输入设备的序号iIndex，接口返回该设备的Id信息和名称信息。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>指定的音频输入设备的序号。如果<a class="el" href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">Zmf_AudioInputGetCount</a> 接口返 回的音频输入设备总数为count，那么此参数取值范围为[0, count-1]。 </td></tr>
+    <tr><td class="paramname">acId</td><td>长度为512字节的buffer指针，用于保存该设备的Id。 </td></tr>
+    <tr><td class="paramname">acName</td><td>长度为512字节的buffer指针，用于保存该设备的名称。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输入设备总数<a class="el" href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">Zmf_AudioInputGetCount</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">Zmf_AudioInputGetName</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga78587bf211e0ffa912dbe257b50f1ca9" name="ga78587bf211e0ffa912dbe257b50f1ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78587bf211e0ffa912dbe257b50f1ca9">&#9670;&nbsp;</a></span>Zmf_AudioInputGetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputGetVolume </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>percent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输入设备的音量。 </p>
+<p >仅Windows系统支持。设置当前ZMF音频模块绑定的音频输入设备的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>设置的音量值。int类型，取值范围为[0, 100]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>设置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gad7b0cede4deb434d9cf2895dea9ec01c">Zmf_AudioOutputGetVolume</a>, <a class="el" href="group___zmf_audio_functions.html#ga26db15ea0567c6f903adcde1c5c6fed9">Zmf_AudioInputSetVolume</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaaae5a2ecd2ce239f206cdddc33e4b14c" name="gaaae5a2ecd2ce239f206cdddc33e4b14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaae5a2ecd2ce239f206cdddc33e4b14c">&#9670;&nbsp;</a></span>Zmf_AudioInputSetBoostLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputSetBoostLevel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频输入设备的硬件麦克风增益值。 </p>
+<p >仅Windows7系统支持。设置音频输入设备的系统麦克风增益值。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>要设置的硬件麦克风增益值，单位dB。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功调用Boost模式设置接口<a class="el" href="group___zmf_audio_functions.html#gaea3db604c715bf3cf51bc410f155cf67">Zmf_AudioInputBoostControl</a> 将模式设置为Manual。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga053a36ea8dc9d8d03b70d0543679e028">Zmf_AudioInputGetBoostLevel</a>, <a class="el" href="group___zmf_audio_functions.html#gaea3db604c715bf3cf51bc410f155cf67">Zmf_AudioInputBoostControl</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga26db15ea0567c6f903adcde1c5c6fed9" name="ga26db15ea0567c6f903adcde1c5c6fed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26db15ea0567c6f903adcde1c5c6fed9">&#9670;&nbsp;</a></span>Zmf_AudioInputSetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputSetVolume </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频输入设备的音量。 </p>
+<p >仅Windows系统支持。设置当前ZMF音频模块绑定的音频输入设备的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>设置的音量值。int类型，取值范围为[0, 100]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>设置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gac5025bcaec4dbb3d23c85b080792de38">Zmf_AudioOutputSetVolume</a>, <a class="el" href="group___zmf_audio_functions.html#ga78587bf211e0ffa912dbe257b50f1ca9">Zmf_AudioInputGetVolume</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga4399e30c27fe7514812feffcea629bca" name="ga4399e30c27fe7514812feffcea629bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4399e30c27fe7514812feffcea629bca">&#9670;&nbsp;</a></span>Zmf_AudioInputStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputStart </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pcId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSamplingRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iChannelNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_types.html#gaf73c17a8617e643eb9c0ce08aed3569a">ZmfAecMode</a>&#160;</td>
+          <td class="paramname"><em>enAecMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_types.html#gaa837d795205261936eaf38a1f081dda5">ZmfAgcMode</a>&#160;</td>
+          <td class="paramname"><em>enAgcMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启动指定的音频输入设备。 </p>
+<p >指定音频输入设备，基于配置信息，启动音频输入设备，开始采集音频数据。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pcId</td><td>buffer指针，指定启动的音频输入设备的Id。 </td></tr>
+    <tr><td class="paramname">iSamplingRate</td><td>启动音频输入流的同时，配置的采样率，单位为Hz，0代表自动选择。 </td></tr>
+    <tr><td class="paramname">iChannelNumber</td><td>启动音频输入流的同时，配置的通道数，0代表自动选择。 </td></tr>
+    <tr><td class="paramname">enAecMode</td><td>启动音频输入流的同时，配置的系统aec模式，参见<a class="el" href="group___zmf_audio_types.html#gaf73c17a8617e643eb9c0ce08aed3569a">ZmfAecMode</a> 。 </td></tr>
+    <tr><td class="paramname">enAgcMode</td><td>启动音频输入流的同时，配置的系统agc模式，参见<a class="el" href="group___zmf_audio_types.html#gaa837d795205261936eaf38a1f081dda5">ZmfAgcMode</a> 。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输入设备总数<a class="el" href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">Zmf_AudioInputGetCount</a> 。 </dd>
+<dd>
+已成功获取指定音频输入设备的设备Id<a class="el" href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">Zmf_AudioInputGetName</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">Zmf_AudioInputStop</a>, <a class="el" href="group___zmf_audio_functions.html#ga8ea6bb1eb315575309c4ec181f0752c8">Zmf_AudioInputStopAll</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga1c1b1000290a39ac9bb3a70ace478819" name="ga1c1b1000290a39ac9bb3a70ace478819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c1b1000290a39ac9bb3a70ace478819">&#9670;&nbsp;</a></span>Zmf_AudioInputStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pcId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定音频输入设备停止采集。 </p>
+<p >指定音频输入设备的Id，停止该设备的音频采集。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pcId</td><td>buffer指针，指定要停止的音频输入设备的Id。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输入设备总数<a class="el" href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">Zmf_AudioInputGetCount</a> 。 </dd>
+<dd>
+已成功获取指定音频输入设备的设备Id<a class="el" href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">Zmf_AudioInputGetName</a> 。 </dd>
+<dd>
+已成功启动指定音频输入设备开始音频流的采集<a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a>, <a class="el" href="group___zmf_audio_functions.html#ga8ea6bb1eb315575309c4ec181f0752c8">Zmf_AudioInputStopAll</a>, <a class="el" href="group___zmf_audio_ext.html#gacc802213f8f8264c5188690d51d0b0bb">Zmf_OnAudioInputDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga8ea6bb1eb315575309c4ec181f0752c8" name="ga8ea6bb1eb315575309c4ec181f0752c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ea6bb1eb315575309c4ec181f0752c8">&#9670;&nbsp;</a></span>Zmf_AudioInputStopAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioInputStopAll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>所有音频输入设备停止采集。 </p>
+<p >停止所有音频输入设备的音频采集。 </p><dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输入设备总数<a class="el" href="group___zmf_audio_functions.html#gacd9b0e90e0c9a5258aa8c7ec82b90892">Zmf_AudioInputGetCount</a> 。 </dd>
+<dd>
+已成功获取指定音频输入设备的设备Id<a class="el" href="group___zmf_audio_functions.html#ga762290e0968abe4862576d884bbe2fc5">Zmf_AudioInputGetName</a> 。 </dd>
+<dd>
+已成功启动指定音频输入设备开始音频流的采集<a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga4399e30c27fe7514812feffcea629bca">Zmf_AudioInputStart</a>, <a class="el" href="group___zmf_audio_functions.html#ga1c1b1000290a39ac9bb3a70ace478819">Zmf_AudioInputStop</a>, <a class="el" href="group___zmf_audio_ext.html#gacc802213f8f8264c5188690d51d0b0bb">Zmf_OnAudioInputDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaed529baee60b817707534b28a7b455fe" name="gaed529baee60b817707534b28a7b455fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed529baee60b817707534b28a7b455fe">&#9670;&nbsp;</a></span>Zmf_AudioOutputGetCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputGetCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输出设备的数量。 </p>
+<p >获取当前系统可用的音频输出设备的总数量。 </p><dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">成功获取的系统可用音频输出设备的总数量，单位为个。</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga407776dbc21079ae7af0dc475d2a9f37">Zmf_AudioOutputGetName</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga407776dbc21079ae7af0dc475d2a9f37" name="ga407776dbc21079ae7af0dc475d2a9f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga407776dbc21079ae7af0dc475d2a9f37">&#9670;&nbsp;</a></span>Zmf_AudioOutputGetName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputGetName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>acId</em>[512], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>acName</em>[512]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输出设备的名称。 </p>
+<p >指定音频输出设备的序号iIndex，接口返回该设备的Id和名称。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iIndex</td><td>指定的音频输出设备的序号。如果<a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> 接口返 回的音频输出设备总数为count，那么此参数取值范围为[0, count-1]。 </td></tr>
+    <tr><td class="paramname">acId</td><td>长度为512字节的buffer指针，用于保存该设备的Id。 </td></tr>
+    <tr><td class="paramname">acName</td><td>长度为512字节的buffer指针，用于保存该设备的名称。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输出设备总数<a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> </dd></dl>
+
+</div>
+</div>
+<a id="gad7b0cede4deb434d9cf2895dea9ec01c" name="gad7b0cede4deb434d9cf2895dea9ec01c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7b0cede4deb434d9cf2895dea9ec01c">&#9670;&nbsp;</a></span>Zmf_AudioOutputGetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputGetVolume </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>percent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取音频输出设备的音量。 </p>
+<p >仅Windows系统支持。设置当前ZMF音频模块的音频输出设备的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>设置的音量值。int类型，取值范围为[0, 100]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>设置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga78587bf211e0ffa912dbe257b50f1ca9">Zmf_AudioInputGetVolume</a>, <a class="el" href="group___zmf_audio_functions.html#ga26db15ea0567c6f903adcde1c5c6fed9">Zmf_AudioInputSetVolume</a> </dd></dl>
+
+</div>
+</div>
+<a id="gac5025bcaec4dbb3d23c85b080792de38" name="gac5025bcaec4dbb3d23c85b080792de38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5025bcaec4dbb3d23c85b080792de38">&#9670;&nbsp;</a></span>Zmf_AudioOutputSetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputSetVolume </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>percent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频输出设备的音量。 </p>
+<p >仅Windows系统支持。设置当前ZMF音频模块的音频输出设备的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">percent</td><td>设置的音量值。int类型，取值范围为[0, 100]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>设置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga26db15ea0567c6f903adcde1c5c6fed9">Zmf_AudioInputSetVolume</a>, <a class="el" href="group___zmf_audio_functions.html#gad7b0cede4deb434d9cf2895dea9ec01c">Zmf_AudioOutputGetVolume</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaec246f589d66e2e22bff1b03b858a794" name="gaec246f589d66e2e22bff1b03b858a794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec246f589d66e2e22bff1b03b858a794">&#9670;&nbsp;</a></span>Zmf_AudioOutputStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputStart </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pcId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iSamplingRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iChannelNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启动指定的音频输出设备。 </p>
+<p >指定音频输出设备，基于配置信息，启动音频输出设备，开始播放音频数据。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pcId</td><td>buffer指针，指定启动的音频输出设备的Id。 </td></tr>
+    <tr><td class="paramname">iSamplingRate</td><td>启动音频输出设备的同时，配置的采样率，单位为Hz，0代表自动选择。 </td></tr>
+    <tr><td class="paramname">iChannelNumber</td><td>启动音频输出设备的同时，配置的通道数，0代表自动选择。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输入设备总数<a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> 。 </dd>
+<dd>
+已成功获取指定音频输入设备的设备Id<a class="el" href="group___zmf_audio_functions.html#ga407776dbc21079ae7af0dc475d2a9f37">Zmf_AudioOutputGetName</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#ga00fd5a64cd2e718224eb29cbd24d2c9e">Zmf_AudioOutputStop</a>, <a class="el" href="group___zmf_audio_functions.html#gac2ce7a8e09c4471a5a87283a91065ba8">Zmf_AudioOutputStopAll</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga00fd5a64cd2e718224eb29cbd24d2c9e" name="ga00fd5a64cd2e718224eb29cbd24d2c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00fd5a64cd2e718224eb29cbd24d2c9e">&#9670;&nbsp;</a></span>Zmf_AudioOutputStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pcId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定的音频输出设备停止播放。 </p>
+<p >指定音频输出设备的Id，停止该设备的音频播放。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pcId</td><td>buffer指针，指定要停止播放的音频输出设备的Id。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输出设备总数<a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> 。 </dd>
+<dd>
+已成功获取指定音频输出设备的设备Id<a class="el" href="group___zmf_audio_functions.html#ga407776dbc21079ae7af0dc475d2a9f37">Zmf_AudioOutputGetName</a> 。 </dd>
+<dd>
+已成功启动指定音频输出设备开始音频流的采集<a class="el" href="group___zmf_audio_functions.html#gaec246f589d66e2e22bff1b03b858a794">Zmf_AudioOutputStart</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gaec246f589d66e2e22bff1b03b858a794">Zmf_AudioOutputStart</a>, <a class="el" href="group___zmf_audio_functions.html#gac2ce7a8e09c4471a5a87283a91065ba8">Zmf_AudioOutputStopAll</a>, <a class="el" href="group___zmf_audio_ext.html#gae456bfdac309b0bb03623bd9f7bd9157">Zmf_OnAudioOutputDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="gac2ce7a8e09c4471a5a87283a91065ba8" name="gac2ce7a8e09c4471a5a87283a91065ba8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2ce7a8e09c4471a5a87283a91065ba8">&#9670;&nbsp;</a></span>Zmf_AudioOutputStopAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioOutputStopAll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>所有音频输出设备停止采集。 </p>
+<p >停止所有音频输入设备的音频采集。 </p><dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>调用成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>调用失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd>
+<dd>
+已成功获取当前系统可用的音频输入设备总数<a class="el" href="group___zmf_audio_functions.html#gaed529baee60b817707534b28a7b455fe">Zmf_AudioOutputGetCount</a> 。 </dd>
+<dd>
+已成功获取指定音频输入设备的设备Id<a class="el" href="group___zmf_audio_functions.html#ga407776dbc21079ae7af0dc475d2a9f37">Zmf_AudioOutputGetName</a> 。 </dd>
+<dd>
+已成功启动指定音频输入设备开始音频流的采集<a class="el" href="group___zmf_audio_functions.html#gaec246f589d66e2e22bff1b03b858a794">Zmf_AudioOutputStart</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_audio_functions.html#gaec246f589d66e2e22bff1b03b858a794">Zmf_AudioOutputStart</a>, <a class="el" href="group___zmf_audio_functions.html#ga00fd5a64cd2e718224eb29cbd24d2c9e">Zmf_AudioOutputStop</a>, <a class="el" href="group___zmf_audio_ext.html#gae456bfdac309b0bb03623bd9f7bd9157">Zmf_OnAudioOutputDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaced15c5db12e3b8c1d0de20208f7c1ab" name="gaced15c5db12e3b8c1d0de20208f7c1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaced15c5db12e3b8c1d0de20208f7c1ab">&#9670;&nbsp;</a></span>Zmf_AudioSessionSetMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioSessionSetMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_types.html#gad954f414f49cb71d7880dd43c2023bcb">ZmfSessionMode</a>&#160;</td>
+          <td class="paramname"><em>enAudioMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置系统音频的session模式。 </p>
+<p >仅ios系统支持。设置ios系统的音频session模式。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enAudioMode</td><td>设置的音频session模式。取值范围参见<a class="el" href="group___zmf_audio_types.html#gad954f414f49cb71d7880dd43c2023bcb">ZmfSessionMode</a> 。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>设置失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>已成功调用音频初始化接口<a class="el" href="group___zmf_audio_functions.html#ga1586f0a11803d5c0c2a0b9029ea14ed4">Zmf_AudioInitialize</a> 。 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+
+</div>
+</div>
+<a id="ga1b419dedd86623566f594f2faf8e0ba2" name="ga1b419dedd86623566f594f2faf8e0ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b419dedd86623566f594f2faf8e0ba2">&#9670;&nbsp;</a></span>Zmf_AudioTerminate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_AudioTerminate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁ZMF音频模块，释放所有资源。 </p>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ZMF音频模块销毁成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>ZMF音频模块销毁失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>前置条件</dt><dd>无 </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>无 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

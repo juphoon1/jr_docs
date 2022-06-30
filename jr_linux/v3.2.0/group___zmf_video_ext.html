@@ -1,0 +1,1090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: 视频扩展功能</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">视频扩展功能</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>自定义设备的扩展，视频采集和渲染完全由外部控制。  
+<a href="#details">更多...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_file_video_layer.html">ZmfFileVideoLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga08230994225dda3ffcef4b9964bea912"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912">ZmfVideoCaptureCallback</a>) (void *pUser, const char *captureId, int iFace, int iImgAngle, int iCaptureOrient, int *iWidth, int *iHeight, int iPaddingWidth, int iPaddingHeight, unsigned char *buf, <a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:ga08230994225dda3ffcef4b9964bea912"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数，用于接收采集到的图像数据  <a href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912">更多...</a><br /></td></tr>
+<tr class="separator:ga08230994225dda3ffcef4b9964bea912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d05f99a5a76118938773ee5f74e999f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f">ZmfVideoRenderCallback</a>) (void *pUser, const char *renderId, int sourceType, int iAngle, int iMirror, int *iWidth, int *iHeight, unsigned char *buf, unsigned long timeStamp)</td></tr>
+<tr class="memdesc:ga1d05f99a5a76118938773ee5f74e999f"><td class="mdescLeft">&#160;</td><td class="mdescRight">回调函数，用于接收图像渲染数据  <a href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f">更多...</a><br /></td></tr>
+<tr class="separator:ga1d05f99a5a76118938773ee5f74e999f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga9ab7aa346fb75741792c8b10c4f3e1a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga9ab7aa346fb75741792c8b10c4f3e1a2">Zmf_OnVideoCapture</a> (const char *captureId, int iFace, int iImgAngle, int iCamAngle, int *iWidth, int *iHeight, unsigned char *bufI420, <a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:ga9ab7aa346fb75741792c8b10c4f3e1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入ZMF模块的外部采集数据  <a href="group___zmf_video_ext.html#ga9ab7aa346fb75741792c8b10c4f3e1a2">更多...</a><br /></td></tr>
+<tr class="separator:ga9ab7aa346fb75741792c8b10c4f3e1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f322449f250067c6f557bc59169f935"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga6f322449f250067c6f557bc59169f935">Zmf_OnH264AnnexBCapture</a> (const char *captureId, int iFace, int iImgAngle, int iCamAngle, int *iWidth, int *iHeight, unsigned char *bufI420, <a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> *encoder)</td></tr>
+<tr class="memdesc:ga6f322449f250067c6f557bc59169f935"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入ZMF模块的H264AnnexB数据  <a href="group___zmf_video_ext.html#ga6f322449f250067c6f557bc59169f935">更多...</a><br /></td></tr>
+<tr class="separator:ga6f322449f250067c6f557bc59169f935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa23c3c30b405d4d10370d45375fbb87a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gaa23c3c30b405d4d10370d45375fbb87a">Zmf_OnVideoRender</a> (const char *renderId, int sourceType, int iAngle, int iMirror, int *iWidth, int *iHeight, unsigned char *bufI420, unsigned long timeStamp)</td></tr>
+<tr class="memdesc:gaa23c3c30b405d4d10370d45375fbb87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入ZMF模块的渲染数据  <a href="group___zmf_video_ext.html#gaa23c3c30b405d4d10370d45375fbb87a">更多...</a><br /></td></tr>
+<tr class="separator:gaa23c3c30b405d4d10370d45375fbb87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22c0253e642ce750ec3047b5caf1fea3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga22c0253e642ce750ec3047b5caf1fea3">Zmf_VideoCaptureAddCallback</a> (void *pUser, <a class="el" href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912">ZmfVideoCaptureCallback</a> pfnCb)</td></tr>
+<tr class="memdesc:ga22c0253e642ce750ec3047b5caf1fea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加图像采集回调函数  <a href="group___zmf_video_ext.html#ga22c0253e642ce750ec3047b5caf1fea3">更多...</a><br /></td></tr>
+<tr class="separator:ga22c0253e642ce750ec3047b5caf1fea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53b552dbc7dc8f0f0f882a7b77ae5e15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga53b552dbc7dc8f0f0f882a7b77ae5e15">Zmf_VideoCaptureRemoveCallback</a> (void *pUser)</td></tr>
+<tr class="memdesc:ga53b552dbc7dc8f0f0f882a7b77ae5e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除图像采集回调函数  <a href="group___zmf_video_ext.html#ga53b552dbc7dc8f0f0f882a7b77ae5e15">更多...</a><br /></td></tr>
+<tr class="separator:ga53b552dbc7dc8f0f0f882a7b77ae5e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab4bea964a2799f9a13d9c5b4fb9a588"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gaab4bea964a2799f9a13d9c5b4fb9a588">Zmf_VideoRenderAddCallback</a> (void *pUser, <a class="el" href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f">ZmfVideoRenderCallback</a> pfnCb)</td></tr>
+<tr class="memdesc:gaab4bea964a2799f9a13d9c5b4fb9a588"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加图像渲染回调函数  <a href="group___zmf_video_ext.html#gaab4bea964a2799f9a13d9c5b4fb9a588">更多...</a><br /></td></tr>
+<tr class="separator:gaab4bea964a2799f9a13d9c5b4fb9a588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a384daee6d3f181e3190853ebb1fc07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga0a384daee6d3f181e3190853ebb1fc07">Zmf_VideoRenderRemoveCallback</a> (void *pUser)</td></tr>
+<tr class="memdesc:ga0a384daee6d3f181e3190853ebb1fc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除图像渲染回调函数  <a href="group___zmf_video_ext.html#ga0a384daee6d3f181e3190853ebb1fc07">更多...</a><br /></td></tr>
+<tr class="separator:ga0a384daee6d3f181e3190853ebb1fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4914069bd5c711315154b3ba3e60e0ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea">Zmf_OnVideoRenderDidReceived</a> (const char *renderId, void *hWnd, int iWidth, int iHeight, int iImgAngle)</td></tr>
+<tr class="memdesc:ga4914069bd5c711315154b3ba3e60e0ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发 ZmfVideoRenderDidReceive 事件  <a href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea">更多...</a><br /></td></tr>
+<tr class="separator:ga4914069bd5c711315154b3ba3e60e0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae46d1f5312e145ae4eb4e44969cc7015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015">Zmf_OnVideoRenderDidResized</a> (const char *renderId, void *hWnd, int iWidth, int iHeight, int iImgAngle)</td></tr>
+<tr class="memdesc:gae46d1f5312e145ae4eb4e44969cc7015"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发 ZmfVideoRenderDidResize 事件  <a href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015">更多...</a><br /></td></tr>
+<tr class="separator:gae46d1f5312e145ae4eb4e44969cc7015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1a2b78ae28ed9fa00df6fc2e3a10ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd">Zmf_OnVideoRenderDidStarted</a> (const char *renderId, void *hWnd, int iWidth, int iHeight, int iImgAngle)</td></tr>
+<tr class="memdesc:gac1a2b78ae28ed9fa00df6fc2e3a10ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发 ZmfVideoRenderDidStart 事件  <a href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd">更多...</a><br /></td></tr>
+<tr class="separator:gac1a2b78ae28ed9fa00df6fc2e3a10ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff07411b37db071984a1e2b4584c06cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf">Zmf_OnVideoRenderRequestRemove</a> (const char *renderId, void *hWnd)</td></tr>
+<tr class="memdesc:gaff07411b37db071984a1e2b4584c06cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发 ZmfVideoRenderRequestRemove 事件  <a href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf">更多...</a><br /></td></tr>
+<tr class="separator:gaff07411b37db071984a1e2b4584c06cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbd72bf3e6a7f404605ba8d926fe8361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361">Zmf_OnVideoRenderDidMatch</a> (const char *renderId, void *hWnd, int matching)</td></tr>
+<tr class="memdesc:gacbd72bf3e6a7f404605ba8d926fe8361"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发 ZmfVideoRenderDidMatch 事件  <a href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361">更多...</a><br /></td></tr>
+<tr class="separator:gacbd72bf3e6a7f404605ba8d926fe8361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89456a4e10b0268628367113ac1c9806"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806">Zmf_OnVideoCaptureDidStop</a> (const char *captureId)</td></tr>
+<tr class="memdesc:ga89456a4e10b0268628367113ac1c9806"><td class="mdescLeft">&#160;</td><td class="mdescRight">提示ZMF图像采集已经停止  <a href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806">更多...</a><br /></td></tr>
+<tr class="separator:ga89456a4e10b0268628367113ac1c9806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf64e8f56b8b0f5c2884dcfe4b2ec4f31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#gaf64e8f56b8b0f5c2884dcfe4b2ec4f31">Zmf_OnVideoCaptureStatus</a> (const char *captureId, int bExposure, int brightness, int bBacklot)</td></tr>
+<tr class="memdesc:gaf64e8f56b8b0f5c2884dcfe4b2ec4f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">提示ZMF图像采集状态改变  <a href="group___zmf_video_ext.html#gaf64e8f56b8b0f5c2884dcfe4b2ec4f31">更多...</a><br /></td></tr>
+<tr class="separator:gaf64e8f56b8b0f5c2884dcfe4b2ec4f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57941e7cbb01693418535c46816d5904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga57941e7cbb01693418535c46816d5904">Zmf_OnVideoErrorOccurred</a> (const char *desc,...)</td></tr>
+<tr class="memdesc:ga57941e7cbb01693418535c46816d5904"><td class="mdescLeft">&#160;</td><td class="mdescRight">提示ZMF视频模块发生错误  <a href="group___zmf_video_ext.html#ga57941e7cbb01693418535c46816d5904">更多...</a><br /></td></tr>
+<tr class="separator:ga57941e7cbb01693418535c46816d5904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8194a0bdbb14bff0c4730f8e9f579b6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga8194a0bdbb14bff0c4730f8e9f579b6d">Zmf_BeautyInitError</a> (const char *format)</td></tr>
+<tr class="memdesc:ga8194a0bdbb14bff0c4730f8e9f579b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">提示ZMF美颜模块初始化失败  <a href="group___zmf_video_ext.html#ga8194a0bdbb14bff0c4730f8e9f579b6d">更多...</a><br /></td></tr>
+<tr class="separator:ga8194a0bdbb14bff0c4730f8e9f579b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ae049aa5e97bac22274845e45f5ef2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_ext.html#ga8ae049aa5e97bac22274845e45f5ef2a">Zmf_VideoSetListener</a> (<a class="el" href="group___zmf_audio_ext.html#gaf9c46319c99a49c1f39b20a9d8a2567f">ZmfEventListenCallback</a> pfnVideoListen)</td></tr>
+<tr class="memdesc:ga8ae049aa5e97bac22274845e45f5ef2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ZMF视频模块回调函数  <a href="group___zmf_video_ext.html#ga8ae049aa5e97bac22274845e45f5ef2a">更多...</a><br /></td></tr>
+<tr class="separator:ga8ae049aa5e97bac22274845e45f5ef2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p >自定义设备的扩展，视频采集和渲染完全由外部控制。 </p>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="ga08230994225dda3ffcef4b9964bea912" name="ga08230994225dda3ffcef4b9964bea912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08230994225dda3ffcef4b9964bea912">&#9670;&nbsp;</a></span>ZmfVideoCaptureCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ZmfVideoCaptureCallback) (void *pUser, const char *captureId, int iFace, int iImgAngle, int iCaptureOrient, int *iWidth, int *iHeight, int iPaddingWidth, int iPaddingHeight, unsigned char *buf, <a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> *encoder)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调函数，用于接收采集到的图像数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pUser</td><td>通过 <a class="el" href="group___zmf_video_ext.html#ga22c0253e642ce750ec3047b5caf1fea3">Zmf_VideoCaptureAddCallback</a> 注册的用户数据 </td></tr>
+    <tr><td class="paramname">captureId</td><td>采集源ID </td></tr>
+    <tr><td class="paramname">iFace</td><td>镜头朝向 <a class="el" href="group___zmf_video_type.html#gadfdc7340be0459a6625d8a84ff60ae54">ZmfVideoFaceType</a> </td></tr>
+    <tr><td class="paramname">iImgAngle</td><td>图像旋转角度(顺时针) </td></tr>
+    <tr><td class="paramname">iCaptureOrient</td><td>设备固定角度 </td></tr>
+    <tr><td class="paramname">iWidth</td><td>输入图像宽，同时作为输出表示裁剪后实际图像宽 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>输入图像高，同时作为输出表示裁剪后实际图像高 </td></tr>
+    <tr><td class="paramname">iPaddingWidth</td><td>32位补齐后的黑边宽度 <a class="el" href="group___zmf_video_interface.html#gacf8a01b5c4b0929ecb3d932f9c60fcc1">Zmf_DesktopCapturePadding</a> </td></tr>
+    <tr><td class="paramname">iPaddingHeight</td><td>32位补齐后的黑边高度 <a class="el" href="group___zmf_video_interface.html#gacf8a01b5c4b0929ecb3d932f9c60fcc1">Zmf_DesktopCapturePadding</a> </td></tr>
+    <tr><td class="paramname">buf</td><td>图像I420数据 </td></tr>
+    <tr><td class="paramname">encoder</td><td>编码器 <a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>如果encoder是NULL，输入图像的格式必须是 ZmfPixelFormatI420 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f" title="回调函数，用于接收图像渲染数据">ZmfVideoRenderCallback</a>, <a class="el" href="group___zmf_video_ext.html#ga22c0253e642ce750ec3047b5caf1fea3" title="添加图像采集回调函数">Zmf_VideoCaptureAddCallback</a>, <a class="el" href="group___zmf_video_ext.html#ga53b552dbc7dc8f0f0f882a7b77ae5e15" title="移除图像采集回调函数">Zmf_VideoCaptureRemoveCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga1d05f99a5a76118938773ee5f74e999f" name="ga1d05f99a5a76118938773ee5f74e999f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d05f99a5a76118938773ee5f74e999f">&#9670;&nbsp;</a></span>ZmfVideoRenderCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* ZmfVideoRenderCallback) (void *pUser, const char *renderId, int sourceType, int iAngle, int iMirror, int *iWidth, int *iHeight, unsigned char *buf, unsigned long timeStamp)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回调函数，用于接收图像渲染数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pUser</td><td>通过 <a class="el" href="group___zmf_video_ext.html#gaab4bea964a2799f9a13d9c5b4fb9a588">Zmf_VideoRenderAddCallback</a> 注册的用户数据 </td></tr>
+    <tr><td class="paramname">captureId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">sourceType</td><td>视频渲染源类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_type.html#ga12c4833c10a0e8202ccd65bf95182d73" title="Video source type.">ZmfVideoSourceType</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iAngle</td><td>图像角度 </td></tr>
+    <tr><td class="paramname">iMirror</td><td>镜像方式 <a class="el" href="group___zmf_video_type.html#gafdaf4f0ca16c977e89efa364f3863925">ZmfMirrorType</a> </td></tr>
+    <tr><td class="paramname">iWidth</td><td>图像宽度 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>图像高度 </td></tr>
+    <tr><td class="paramname">buf</td><td>图像I420数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">&gt;0</td><td>正在处理渲染数据 </td></tr>
+    <tr><td class="paramname">0</td><td>其它 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>警告</dt><dd>如果buf或iWidth或iHeight等于0，意味着停止渲染，需要同时调用 <a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf">Zmf_OnVideoRenderRequestRemove</a> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912" title="回调函数，用于接收采集到的图像数据">ZmfVideoCaptureCallback</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="ga8194a0bdbb14bff0c4730f8e9f579b6d" name="ga8194a0bdbb14bff0c4730f8e9f579b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8194a0bdbb14bff0c4730f8e9f579b6d">&#9670;&nbsp;</a></span>Zmf_BeautyInitError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_BeautyInitError </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>提示ZMF美颜模块初始化失败 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>错误信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+
+</div>
+</div>
+<a id="ga6f322449f250067c6f557bc59169f935" name="ga6f322449f250067c6f557bc59169f935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f322449f250067c6f557bc59169f935">&#9670;&nbsp;</a></span>Zmf_OnH264AnnexBCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnH264AnnexBCapture </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>captureId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iFace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iImgAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCamAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>bufI420</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输入ZMF模块的H264AnnexB数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">captureId</td><td>采集源ID </td></tr>
+    <tr><td class="paramname">iFace</td><td>镜头朝向 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_type.html#gadfdc7340be0459a6625d8a84ff60ae54" title="视频采集设备的镜头朝向">ZmfVideoFaceType</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iImgAngle</td><td>图像顺时针角度 </td></tr>
+    <tr><td class="paramname">iCamAngle</td><td>镜头固定角度 </td></tr>
+    <tr><td class="paramname">iWidth</td><td>输入图像宽，同时作为输出表示裁剪后实际图像宽 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>输入图像高，同时作为输出表示裁剪后实际图像高 </td></tr>
+    <tr><td class="paramname">bufI420</td><td>图像数据 </td></tr>
+    <tr><td class="paramname">encoder</td><td>编码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga9ab7aa346fb75741792c8b10c4f3e1a2" title="输入ZMF模块的外部采集数据">Zmf_OnVideoCapture</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga9ab7aa346fb75741792c8b10c4f3e1a2" name="ga9ab7aa346fb75741792c8b10c4f3e1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ab7aa346fb75741792c8b10c4f3e1a2">&#9670;&nbsp;</a></span>Zmf_OnVideoCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoCapture </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>captureId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iFace</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iImgAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCamAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>bufI420</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_zmf_video_capture_encoder.html">ZmfVideoCaptureEncoder</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输入ZMF模块的外部采集数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">captureId</td><td>采集源ID </td></tr>
+    <tr><td class="paramname">iFace</td><td>镜头朝向 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_type.html#gadfdc7340be0459a6625d8a84ff60ae54" title="视频采集设备的镜头朝向">ZmfVideoFaceType</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iImgAngle</td><td>图像顺时针角度 </td></tr>
+    <tr><td class="paramname">iCamAngle</td><td>镜头固定角度 </td></tr>
+    <tr><td class="paramname">iWidth</td><td>输入图像宽，同时作为输出表示裁剪后实际图像宽 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>输入图像高，同时作为输出表示裁剪后实际图像高 </td></tr>
+    <tr><td class="paramname">bufI420</td><td>图像数据 </td></tr>
+    <tr><td class="paramname">encoder</td><td>编码器 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>如果encoder是NULL，输入图像的格式必须是 ZmfPixelFormatI420 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga6f322449f250067c6f557bc59169f935" title="输入ZMF模块的H264AnnexB数据">Zmf_OnH264AnnexBCapture</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga89456a4e10b0268628367113ac1c9806" name="ga89456a4e10b0268628367113ac1c9806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga89456a4e10b0268628367113ac1c9806">&#9670;&nbsp;</a></span>Zmf_OnVideoCaptureDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoCaptureDidStop </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>captureId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>提示ZMF图像采集已经停止 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">captureId</td><td>采集源ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea" title="触发 ZmfVideoRenderDidReceive 事件">Zmf_OnVideoRenderDidReceived</a>, <a class="el" href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015" title="触发 ZmfVideoRenderDidResize 事件">Zmf_OnVideoRenderDidResized</a>, <a class="el" href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd" title="触发 ZmfVideoRenderDidStart 事件">Zmf_OnVideoRenderDidStarted</a>, <a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf" title="触发 ZmfVideoRenderRequestRemove 事件">Zmf_OnVideoRenderRequestRemove</a>, <a class="el" href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361" title="触发 ZmfVideoRenderDidMatch 事件">Zmf_OnVideoRenderDidMatch</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaf64e8f56b8b0f5c2884dcfe4b2ec4f31" name="gaf64e8f56b8b0f5c2884dcfe4b2ec4f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf64e8f56b8b0f5c2884dcfe4b2ec4f31">&#9670;&nbsp;</a></span>Zmf_OnVideoCaptureStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoCaptureStatus </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>captureId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bExposure</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>brightness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bBacklot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>提示ZMF图像采集状态改变 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">captureId</td><td>采集源ID </td></tr>
+    <tr><td class="paramname">bExposure</td><td>0表示关闭曝光，其它表示开启 </td></tr>
+    <tr><td class="paramname">brightness</td><td>图像平均亮度，范围[0, 255] </td></tr>
+    <tr><td class="paramname">bBacklot</td><td>1表示开启背景检查，0表示关闭 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+
+</div>
+</div>
+<a id="ga57941e7cbb01693418535c46816d5904" name="ga57941e7cbb01693418535c46816d5904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57941e7cbb01693418535c46816d5904">&#9670;&nbsp;</a></span>Zmf_OnVideoErrorOccurred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoErrorOccurred </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>提示ZMF视频模块发生错误 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>错误信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+
+</div>
+</div>
+<a id="gaa23c3c30b405d4d10370d45375fbb87a" name="gaa23c3c30b405d4d10370d45375fbb87a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa23c3c30b405d4d10370d45375fbb87a">&#9670;&nbsp;</a></span>Zmf_OnVideoRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoRender </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renderId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sourceType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iMirror</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>iHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>bufI420</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>timeStamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>输入ZMF模块的渲染数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">sourceType</td><td>渲染源类型 <a class="el" href="group___zmf_video_type.html#ga12c4833c10a0e8202ccd65bf95182d73">ZmfVideoSourceType</a> </td></tr>
+    <tr><td class="paramname">iAngle</td><td>图像顺时针角度 </td></tr>
+    <tr><td class="paramname">iWidth</td><td>图像宽 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>图像高 </td></tr>
+    <tr><td class="paramname">bufI420</td><td>图像数据 </td></tr>
+    <tr><td class="paramname">timeStamp</td><td>渲染时间戳 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+
+</div>
+</div>
+<a id="gacbd72bf3e6a7f404605ba8d926fe8361" name="gacbd72bf3e6a7f404605ba8d926fe8361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacbd72bf3e6a7f404605ba8d926fe8361">&#9670;&nbsp;</a></span>Zmf_OnVideoRenderDidMatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoRenderDidMatch </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renderId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matching</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发 ZmfVideoRenderDidMatch 事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">hWnd</td><td>渲染源绑定的窗口句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea" title="触发 ZmfVideoRenderDidReceive 事件">Zmf_OnVideoRenderDidReceived</a>, <a class="el" href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015" title="触发 ZmfVideoRenderDidResize 事件">Zmf_OnVideoRenderDidResized</a>, <a class="el" href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd" title="触发 ZmfVideoRenderDidStart 事件">Zmf_OnVideoRenderDidStarted</a>, <a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf" title="触发 ZmfVideoRenderRequestRemove 事件">Zmf_OnVideoRenderRequestRemove</a>, <a class="el" href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806" title="提示ZMF图像采集已经停止">Zmf_OnVideoCaptureDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga4914069bd5c711315154b3ba3e60e0ea" name="ga4914069bd5c711315154b3ba3e60e0ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4914069bd5c711315154b3ba3e60e0ea">&#9670;&nbsp;</a></span>Zmf_OnVideoRenderDidReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoRenderDidReceived </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renderId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iImgAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发 ZmfVideoRenderDidReceive 事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">hWnd</td><td>渲染源绑定的窗口句柄 </td></tr>
+    <tr><td class="paramname">iWidth</td><td>图像宽 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>图像高 </td></tr>
+    <tr><td class="paramname">iImgAngle</td><td>图像顺时针角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015" title="触发 ZmfVideoRenderDidResize 事件">Zmf_OnVideoRenderDidResized</a>, <a class="el" href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd" title="触发 ZmfVideoRenderDidStart 事件">Zmf_OnVideoRenderDidStarted</a>, <a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf" title="触发 ZmfVideoRenderRequestRemove 事件">Zmf_OnVideoRenderRequestRemove</a>, <a class="el" href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361" title="触发 ZmfVideoRenderDidMatch 事件">Zmf_OnVideoRenderDidMatch</a>, <a class="el" href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806" title="提示ZMF图像采集已经停止">Zmf_OnVideoCaptureDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="gae46d1f5312e145ae4eb4e44969cc7015" name="gae46d1f5312e145ae4eb4e44969cc7015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae46d1f5312e145ae4eb4e44969cc7015">&#9670;&nbsp;</a></span>Zmf_OnVideoRenderDidResized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoRenderDidResized </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renderId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iImgAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发 ZmfVideoRenderDidResize 事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">hWnd</td><td>渲染源绑定的窗口句柄 </td></tr>
+    <tr><td class="paramname">iWidth</td><td>图像宽 </td></tr>
+    <tr><td class="paramname">iHeight</td><td>图像高 </td></tr>
+    <tr><td class="paramname">iImgAngle</td><td>图像顺时针角度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea" title="触发 ZmfVideoRenderDidReceive 事件">Zmf_OnVideoRenderDidReceived</a>, <a class="el" href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd" title="触发 ZmfVideoRenderDidStart 事件">Zmf_OnVideoRenderDidStarted</a>, <a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf" title="触发 ZmfVideoRenderRequestRemove 事件">Zmf_OnVideoRenderRequestRemove</a>, <a class="el" href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361" title="触发 ZmfVideoRenderDidMatch 事件">Zmf_OnVideoRenderDidMatch</a>, <a class="el" href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806" title="提示ZMF图像采集已经停止">Zmf_OnVideoCaptureDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="gac1a2b78ae28ed9fa00df6fc2e3a10ffd" name="gac1a2b78ae28ed9fa00df6fc2e3a10ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1a2b78ae28ed9fa00df6fc2e3a10ffd">&#9670;&nbsp;</a></span>Zmf_OnVideoRenderDidStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoRenderDidStarted </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renderId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hWnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iImgAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发 ZmfVideoRenderDidStart 事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">hWnd</td><td>渲染源绑定的窗口句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea" title="触发 ZmfVideoRenderDidReceive 事件">Zmf_OnVideoRenderDidReceived</a>, <a class="el" href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015" title="触发 ZmfVideoRenderDidResize 事件">Zmf_OnVideoRenderDidResized</a>, <a class="el" href="group___zmf_video_ext.html#gaff07411b37db071984a1e2b4584c06cf" title="触发 ZmfVideoRenderRequestRemove 事件">Zmf_OnVideoRenderRequestRemove</a>, <a class="el" href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361" title="触发 ZmfVideoRenderDidMatch 事件">Zmf_OnVideoRenderDidMatch</a>, <a class="el" href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806" title="提示ZMF图像采集已经停止">Zmf_OnVideoCaptureDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaff07411b37db071984a1e2b4584c06cf" name="gaff07411b37db071984a1e2b4584c06cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff07411b37db071984a1e2b4584c06cf">&#9670;&nbsp;</a></span>Zmf_OnVideoRenderRequestRemove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Zmf_OnVideoRenderRequestRemove </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>renderId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hWnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发 ZmfVideoRenderRequestRemove 事件 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderId</td><td>渲染源ID </td></tr>
+    <tr><td class="paramname">hWnd</td><td>渲染源绑定的窗口句柄 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>NULL </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga4914069bd5c711315154b3ba3e60e0ea" title="触发 ZmfVideoRenderDidReceive 事件">Zmf_OnVideoRenderDidReceived</a>, <a class="el" href="group___zmf_video_ext.html#gae46d1f5312e145ae4eb4e44969cc7015" title="触发 ZmfVideoRenderDidResize 事件">Zmf_OnVideoRenderDidResized</a>, <a class="el" href="group___zmf_video_ext.html#gac1a2b78ae28ed9fa00df6fc2e3a10ffd" title="触发 ZmfVideoRenderDidStart 事件">Zmf_OnVideoRenderDidStarted</a>, <a class="el" href="group___zmf_video_ext.html#gacbd72bf3e6a7f404605ba8d926fe8361" title="触发 ZmfVideoRenderDidMatch 事件">Zmf_OnVideoRenderDidMatch</a>, <a class="el" href="group___zmf_video_ext.html#ga89456a4e10b0268628367113ac1c9806" title="提示ZMF图像采集已经停止">Zmf_OnVideoCaptureDidStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga22c0253e642ce750ec3047b5caf1fea3" name="ga22c0253e642ce750ec3047b5caf1fea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22c0253e642ce750ec3047b5caf1fea3">&#9670;&nbsp;</a></span>Zmf_VideoCaptureAddCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_VideoCaptureAddCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912">ZmfVideoCaptureCallback</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加图像采集回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pUser</td><td>自定义数据 </td></tr>
+    <tr><td class="paramname">pfnCb</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>回调函数添加成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>添加失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912" title="回调函数，用于接收采集到的图像数据">ZmfVideoCaptureCallback</a>, <a class="el" href="group___zmf_video_ext.html#ga53b552dbc7dc8f0f0f882a7b77ae5e15" title="移除图像采集回调函数">Zmf_VideoCaptureRemoveCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga53b552dbc7dc8f0f0f882a7b77ae5e15" name="ga53b552dbc7dc8f0f0f882a7b77ae5e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53b552dbc7dc8f0f0f882a7b77ae5e15">&#9670;&nbsp;</a></span>Zmf_VideoCaptureRemoveCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_VideoCaptureRemoveCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除图像采集回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pUser</td><td>自定义数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>回调函数移除成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>移除失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga08230994225dda3ffcef4b9964bea912" title="回调函数，用于接收采集到的图像数据">ZmfVideoCaptureCallback</a>, <a class="el" href="group___zmf_video_ext.html#ga22c0253e642ce750ec3047b5caf1fea3" title="添加图像采集回调函数">Zmf_VideoCaptureAddCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="gaab4bea964a2799f9a13d9c5b4fb9a588" name="gaab4bea964a2799f9a13d9c5b4fb9a588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab4bea964a2799f9a13d9c5b4fb9a588">&#9670;&nbsp;</a></span>Zmf_VideoRenderAddCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_VideoRenderAddCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f">ZmfVideoRenderCallback</a>&#160;</td>
+          <td class="paramname"><em>pfnCb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加图像渲染回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pUser</td><td>自定义数据 </td></tr>
+    <tr><td class="paramname">pfnCb</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>回调函数添加成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>添加失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f" title="回调函数，用于接收图像渲染数据">ZmfVideoRenderCallback</a>, <a class="el" href="group___zmf_video_ext.html#ga0a384daee6d3f181e3190853ebb1fc07" title="移除图像渲染回调函数">Zmf_VideoRenderRemoveCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga0a384daee6d3f181e3190853ebb1fc07" name="ga0a384daee6d3f181e3190853ebb1fc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a384daee6d3f181e3190853ebb1fc07">&#9670;&nbsp;</a></span>Zmf_VideoRenderRemoveCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_VideoRenderRemoveCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pUser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除图像渲染回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pUser</td><td>自定义数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>回调函数移除成功 </td></tr>
+    <tr><td class="paramname">其它</td><td>移除失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="group___zmf_video_ext.html#ga1d05f99a5a76118938773ee5f74e999f" title="回调函数，用于接收图像渲染数据">ZmfVideoRenderCallback</a>, <a class="el" href="group___zmf_video_ext.html#gaab4bea964a2799f9a13d9c5b4fb9a588" title="添加图像渲染回调函数">Zmf_VideoRenderAddCallback</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga8ae049aa5e97bac22274845e45f5ef2a" name="ga8ae049aa5e97bac22274845e45f5ef2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ae049aa5e97bac22274845e45f5ef2a">&#9670;&nbsp;</a></span>Zmf_VideoSetListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Zmf_VideoSetListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___zmf_audio_ext.html#gaf9c46319c99a49c1f39b20a9d8a2567f">ZmfEventListenCallback</a>&#160;</td>
+          <td class="paramname"><em>pfnVideoListen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ZMF视频模块回调函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pfnVideoListen</td><td>回调函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>int </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>设置成功 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

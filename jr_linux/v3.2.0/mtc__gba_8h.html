@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_gba.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">mtc_gba.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>MTC GBA Interface Functions  
+<a href="#details">更多...</a></p>
+
+<p><a href="mtc__gba_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a9b1b8f6ba2b6cca6531ebb13f58f1b8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a9b1b8f6ba2b6cca6531ebb13f58f1b8b">MTC_GBA_ERR_NO</a>&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 0)</td></tr>
+<tr class="memdesc:a9b1b8f6ba2b6cca6531ebb13f58f1b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTC gba status code.  <a href="mtc__gba_8h.html#a9b1b8f6ba2b6cca6531ebb13f58f1b8b">更多...</a><br /></td></tr>
+<tr class="separator:a9b1b8f6ba2b6cca6531ebb13f58f1b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40d1cc4b9beb99572b596851e55967d1"><td class="memItemLeft" align="right" valign="top"><a id="a40d1cc4b9beb99572b596851e55967d1" name="a40d1cc4b9beb99572b596851e55967d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_GBA_ERR_AUTH_FAIL</b>&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 1)</td></tr>
+<tr class="memdesc:a40d1cc4b9beb99572b596851e55967d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">authentication failed <br /></td></tr>
+<tr class="separator:a40d1cc4b9beb99572b596851e55967d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87445797d3050d1da08be8276c4f070d"><td class="memItemLeft" align="right" valign="top"><a id="a87445797d3050d1da08be8276c4f070d" name="a87445797d3050d1da08be8276c4f070d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_GBA_ERR_PICK_XML</b>&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 2)</td></tr>
+<tr class="memdesc:a87445797d3050d1da08be8276c4f070d"><td class="mdescLeft">&#160;</td><td class="mdescRight">pick xml <br /></td></tr>
+<tr class="separator:a87445797d3050d1da08be8276c4f070d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed5d7f2cee1fb30920d00eddd32d16a"><td class="memItemLeft" align="right" valign="top"><a id="a6ed5d7f2cee1fb30920d00eddd32d16a" name="a6ed5d7f2cee1fb30920d00eddd32d16a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_GBA_ERR_TIMEOUT</b>&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 3)</td></tr>
+<tr class="memdesc:a6ed5d7f2cee1fb30920d00eddd32d16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">timeout <br /></td></tr>
+<tr class="separator:a6ed5d7f2cee1fb30920d00eddd32d16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069d4b405c34864322e959c62601c629"><td class="memItemLeft" align="right" valign="top"><a id="a069d4b405c34864322e959c62601c629" name="a069d4b405c34864322e959c62601c629"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_GBA_ERR_NETWORK</b>&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 4)</td></tr>
+<tr class="memdesc:a069d4b405c34864322e959c62601c629"><td class="mdescLeft">&#160;</td><td class="mdescRight">network <br /></td></tr>
+<tr class="separator:a069d4b405c34864322e959c62601c629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5514364f7a73dbbc8a75d0ecfbe2c9"><td class="memItemLeft" align="right" valign="top"><a id="a3d5514364f7a73dbbc8a75d0ecfbe2c9" name="a3d5514364f7a73dbbc8a75d0ecfbe2c9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MTC_GBA_ERR_OTHER</b>&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 200)</td></tr>
+<tr class="memdesc:a3d5514364f7a73dbbc8a75d0ecfbe2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">other <br /></td></tr>
+<tr class="separator:a3d5514364f7a73dbbc8a75d0ecfbe2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ae6e6c7fbfb81d5b2153dd59250386ebc"><td class="memItemLeft" align="right" valign="top"><a id="ae6e6c7fbfb81d5b2153dd59250386ebc" name="ae6e6c7fbfb81d5b2153dd59250386ebc"></a>
+typedef enum <a class="el" href="mtc__gba_8h.html#a24100c5e5271302787ccada1b6f89201">EN_MTC_GBA_BOOT_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_GBA_BOOT_TYPE</b></td></tr>
+<tr class="memdesc:ae6e6c7fbfb81d5b2153dd59250386ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC GBA bootstrapping type <br /></td></tr>
+<tr class="separator:ae6e6c7fbfb81d5b2153dd59250386ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c02492325e8da5f7b064753ae4731b"><td class="memItemLeft" align="right" valign="top"><a id="a83c02492325e8da5f7b064753ae4731b" name="a83c02492325e8da5f7b064753ae4731b"></a>
+typedef enum <a class="el" href="mtc__gba_8h.html#a0ccb0206028609daffa19acd4c70b7ff">EN_MTC_GBA_UA_SEC_PROT_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EN_MTC_GBA_UA_SEC_PROT_TYPE</b></td></tr>
+<tr class="memdesc:a83c02492325e8da5f7b064753ae4731b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of ua security protocol identifier type <br /></td></tr>
+<tr class="separator:a83c02492325e8da5f7b064753ae4731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a24100c5e5271302787ccada1b6f89201"><td class="memItemLeft" align="right" valign="top"><a id="a24100c5e5271302787ccada1b6f89201" name="a24100c5e5271302787ccada1b6f89201"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a24100c5e5271302787ccada1b6f89201">EN_MTC_GBA_BOOT_TYPE</a> { <b>EN_MTC_GBA_BOOT_UNKNWON</b>
+, <b>EN_MTC_GBA_BOOT_ME</b>
+, <b>EN_MTC_GBA_BOOT_UICC</b>
+ }</td></tr>
+<tr class="memdesc:a24100c5e5271302787ccada1b6f89201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of MTC GBA bootstrapping type <br /></td></tr>
+<tr class="separator:a24100c5e5271302787ccada1b6f89201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccb0206028609daffa19acd4c70b7ff"><td class="memItemLeft" align="right" valign="top"><a id="a0ccb0206028609daffa19acd4c70b7ff" name="a0ccb0206028609daffa19acd4c70b7ff"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a0ccb0206028609daffa19acd4c70b7ff">EN_MTC_GBA_UA_SEC_PROT_TYPE</a> { <b>EN_MTC_GBA_UA_SEC_PROT_HTTP</b>
+, <b>EN_MTC_GBA_UA_SEC_PROT_IMAP</b>
+ }</td></tr>
+<tr class="memdesc:a0ccb0206028609daffa19acd4c70b7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type define of ua security protocol identifier type <br /></td></tr>
+<tr class="separator:a0ccb0206028609daffa19acd4c70b7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a86588d4eb51427ee0b980bd9eff4f766"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a86588d4eb51427ee0b980bd9eff4f766">Mtc_GbaBootStart</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iBootType, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iCookie)</td></tr>
+<tr class="memdesc:a86588d4eb51427ee0b980bd9eff4f766"><td class="mdescLeft">&#160;</td><td class="mdescRight">gba bootstrapping start.  <a href="mtc__gba_8h.html#a86588d4eb51427ee0b980bd9eff4f766">更多...</a><br /></td></tr>
+<tr class="separator:a86588d4eb51427ee0b980bd9eff4f766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7044960747483d1885d11d6d894172a8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a7044960747483d1885d11d6d894172a8">Mtc_GbaBootStop</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iBootId)</td></tr>
+<tr class="memdesc:a7044960747483d1885d11d6d894172a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">gba bootstrapping stop.  <a href="mtc__gba_8h.html#a7044960747483d1885d11d6d894172a8">更多...</a><br /></td></tr>
+<tr class="separator:a7044960747483d1885d11d6d894172a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4cfdb22c1f02a106083918c1fb10f8"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a1f4cfdb22c1f02a106083918c1fb10f8">Mtc_GbaAuthEnterSecCtx</a> (<a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iBootId, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcRsp, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcIk, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcCk, <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcAuts)</td></tr>
+<tr class="memdesc:a1f4cfdb22c1f02a106083918c1fb10f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">gba enter security context.  <a href="mtc__gba_8h.html#a1f4cfdb22c1f02a106083918c1fb10f8">更多...</a><br /></td></tr>
+<tr class="separator:a1f4cfdb22c1f02a106083918c1fb10f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50fc95021142f0fd9bf2499a1bd5a34a"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a50fc95021142f0fd9bf2499a1bd5a34a">Mtc_GbaAuthSetKsExtNaf</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcKsExtNaf)</td></tr>
+<tr class="memdesc:a50fc95021142f0fd9bf2499a1bd5a34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">gba set Ks_ext_NAF.  <a href="mtc__gba_8h.html#a50fc95021142f0fd9bf2499a1bd5a34a">更多...</a><br /></td></tr>
+<tr class="separator:a50fc95021142f0fd9bf2499a1bd5a34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cadc298a5d3ba31fb8505ef86bdbb45"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#a9cadc298a5d3ba31fb8505ef86bdbb45">Mtc_GbaAuthGetKsNaf</a> (<a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcNafFqdn, <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iUaSecProt)</td></tr>
+<tr class="memdesc:a9cadc298a5d3ba31fb8505ef86bdbb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">gba get Ks_NAF.  <a href="mtc__gba_8h.html#a9cadc298a5d3ba31fb8505ef86bdbb45">更多...</a><br /></td></tr>
+<tr class="separator:a9cadc298a5d3ba31fb8505ef86bdbb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae926e3444d13628cc85c21c087f450f0"><td class="memItemLeft" align="right" valign="top">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtc__gba_8h.html#ae926e3444d13628cc85c21c087f450f0">Mtc_GbaAuthGetBtid</a> ()</td></tr>
+<tr class="memdesc:ae926e3444d13628cc85c21c087f450f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">gba get B-TID.  <a href="mtc__gba_8h.html#ae926e3444d13628cc85c21c087f450f0">更多...</a><br /></td></tr>
+<tr class="separator:ae926e3444d13628cc85c21c087f450f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >MTC GBA Interface Functions </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a9b1b8f6ba2b6cca6531ebb13f58f1b8b" name="a9b1b8f6ba2b6cca6531ebb13f58f1b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1b8f6ba2b6cca6531ebb13f58f1b8b">&#9670;&nbsp;</a></span>MTC_GBA_ERR_NO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MTC_GBA_ERR_NO&#160;&#160;&#160;(<a class="el" href="mtc__cli_8h.html#a83265d57876d246c76d4276c5eb30dd0">MTC_EBASE_GBA</a> + 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTC gba status code. </p>
+<p >no error </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a1f4cfdb22c1f02a106083918c1fb10f8" name="a1f4cfdb22c1f02a106083918c1fb10f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4cfdb22c1f02a106083918c1fb10f8">&#9670;&nbsp;</a></span>Mtc_GbaAuthEnterSecCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_GbaAuthEnterSecCtx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iBootId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcRsp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcIk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcCk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcAuts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gba enter security context. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iBootId</td><td>The boot id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcRsp</td><td>The reponse. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcIk</td><td>The ik. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcCk</td><td>The ck. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcAuts</td><td>The auts.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>enter successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>enter failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae926e3444d13628cc85c21c087f450f0" name="ae926e3444d13628cc85c21c087f450f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae926e3444d13628cc85c21c087f450f0">&#9670;&nbsp;</a></span>Mtc_GbaAuthGetBtid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_GbaAuthGetBtid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gba get B-TID. </p>
+<dl class="section return"><dt>返回</dt><dd>B-TID string successfully, otherwise return empty string.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__gba_8h.html#a9cadc298a5d3ba31fb8505ef86bdbb45">Mtc_GbaAuthGetKsNaf</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9cadc298a5d3ba31fb8505ef86bdbb45" name="a9cadc298a5d3ba31fb8505ef86bdbb45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cadc298a5d3ba31fb8505ef86bdbb45">&#9670;&nbsp;</a></span>Mtc_GbaAuthGetKsNaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * Mtc_GbaAuthGetKsNaf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcNafFqdn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iUaSecProt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gba get Ks_NAF. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcNafFqdn</td><td>The naf fqdn. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iUaSecProt</td><td>The ua security protocol identifier type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>Ks_NAF base64 string successfully, otherwise return empty string.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__gba_8h.html#ae926e3444d13628cc85c21c087f450f0">Mtc_GbaAuthGetBtid</a> </dd></dl>
+
+</div>
+</div>
+<a id="a50fc95021142f0fd9bf2499a1bd5a34a" name="a50fc95021142f0fd9bf2499a1bd5a34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50fc95021142f0fd9bf2499a1bd5a34a">&#9670;&nbsp;</a></span>Mtc_GbaAuthSetKsExtNaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> Mtc_GbaAuthSetKsExtNaf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *&#160;</td>
+          <td class="paramname"><em>pcKsExtNaf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gba set Ks_ext_NAF. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pcKsExtNaf</td><td>The Ks_ext_NAF.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ZOK</td><td>set successfully. </td></tr>
+    <tr><td class="paramname">ZFAILED</td><td>set failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86588d4eb51427ee0b980bd9eff4f766" name="a86588d4eb51427ee0b980bd9eff4f766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86588d4eb51427ee0b980bd9eff4f766">&#9670;&nbsp;</a></span>Mtc_GbaBootStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> Mtc_GbaBootStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iBootType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iCookie</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gba bootstrapping start. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iBootType</td><td>The boot type, </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__gba_8h.html#ae6e6c7fbfb81d5b2153dd59250386ebc">EN_MTC_GBA_BOOT_TYPE</a>. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iCookie</td><td>The user cookie.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>boot id successfully, otherwise ZMAXUINT.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__gba_8h.html#a7044960747483d1885d11d6d894172a8">Mtc_GbaBootStop</a> </dd></dl>
+
+</div>
+</div>
+<a id="a7044960747483d1885d11d6d894172a8" name="a7044960747483d1885d11d6d894172a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7044960747483d1885d11d6d894172a8">&#9670;&nbsp;</a></span>Mtc_GbaBootStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ZFUNC <a class="el" href="zplin__osenv_8h.html#a21a9b77ccd8a0f566fda0b1bf60d3c76">ZVOID</a> Mtc_GbaBootStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a>&#160;</td>
+          <td class="paramname"><em>iBootId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>gba bootstrapping stop. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iBootId</td><td>The boot id.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="mtc__gba_8h.html#a86588d4eb51427ee0b980bd9eff4f766">Mtc_GbaBootStart</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

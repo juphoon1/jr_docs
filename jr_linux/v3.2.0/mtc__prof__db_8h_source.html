@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/service/rcs/mtc_prof_db.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_ac3015f0eaa686d39bc946e3d2dcebf4.html">service</a></li><li class="navelem"><a class="el" href="dir_fc2bc83077c349e291d7903397284aea.html">rcs</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">mtc_prof_db.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mtc__prof__db_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/************************************************************************</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"></span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">        Copyright (c) 2005-2011 by Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">                       All rights reserved.</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">     This software is confidential and proprietary to Juphoon System,</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">     Inc. No part of this software may be reproduced, stored, transmitted,</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">     disclosed or used in any form or by any means other than as expressly</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">     provided by the written license agreement between Juphoon and its</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">     licensee.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">     THIS SOFTWARE IS PROVIDED BY JUPHOON &quot;AS IS&quot; AND ANY EXPRESS OR </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED </span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">     ARE DISCLAIMED. IN NO EVENT SHALL JUPHOON BE LIABLE FOR ANY DIRECT, </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS </span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, </span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING </span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">     IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE </span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">     POSSIBILITY OF SUCH DAMAGE. </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">                    Juphoon System Software, Inc.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">                    Email: support@juphoon.com</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">                    Web: http://www.juphoon.com</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">************************************************************************/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*************************************************</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  File name     : mtc_prof_db.h</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  Module        : multimedia talk client</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  Author        : leo.lv</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  Created on    : 2011-01-03</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  Description   :</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">      Data structure and function declare required by MTC profile DB</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  Modify History:</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  1. Date:        Author:         Modification:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">*************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#ifndef _MTC_PROF_DB_H__</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#define _MTC_PROF_DB_H__</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a0bfc6f8c6f683e05bb7ab13ee234253b">   58</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__prof__db_8h.html#a0bfc6f8c6f683e05bb7ab13ee234253b">Mtc_ProfDbGetAppVer</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#ae1c124a152ddf604df44e2a56c97dd1a">   70</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#ae1c124a152ddf604df44e2a56c97dd1a">Mtc_ProfDbSetAppVer</a>(ZCONST <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcAppVer);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a30974c5b3deedd891441805c1b5c38b1">   80</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a30974c5b3deedd891441805c1b5c38b1">Mtc_ProfDbGetRemPwd</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a3ec02b291759a938641db3db28bab572">   92</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a3ec02b291759a938641db3db28bab572">Mtc_ProfDbSetRemPwd</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bRember);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#ad9c41dd3a9ce803fcdd34a3f1aa9a2e1">  102</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__prof__db_8h.html#ad9c41dd3a9ce803fcdd34a3f1aa9a2e1">Mtc_ProfDbGetAutoLogin</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a2aec6e6520b6e7f8678be49a98521afb">  114</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a2aec6e6520b6e7f8678be49a98521afb">Mtc_ProfDbSetAutoLogin</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bAuto);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a7ffc3c207e90179f6aa48d18ba8e3a17">  123</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__prof__db_8h.html#a7ffc3c207e90179f6aa48d18ba8e3a17">Mtc_ProfDbGetAvatarFile</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#ade4542ed77f1633f7990ab85edfd13df">  135</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#ade4542ed77f1633f7990ab85edfd13df">Mtc_ProfDbSetAvatarFile</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcFileName);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#aa98cf37f932074db854292597d6c6b15">  144</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__prof__db_8h.html#aa98cf37f932074db854292597d6c6b15">Mtc_ProfDbGetCountryCode</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a1afe50e4640b3b70cc2cf2565a5e9d4e">  156</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a1afe50e4640b3b70cc2cf2565a5e9d4e">Mtc_ProfDbSetCountryCode</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcCountryCode);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a64f4f07d376e8ea5566438c145fe800b">  165</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__prof__db_8h.html#a64f4f07d376e8ea5566438c145fe800b">Mtc_ProfDbGetAreaCode</a>(<a class="code hl_define" href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a>);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a66a8d3e68cbb67dbe8101a55f8ad2a90">  177</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a66a8d3e68cbb67dbe8101a55f8ad2a90">Mtc_ProfDbSetAreaCode</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcAreaCode);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a90215c13e0d33d74be0a093c9ccc4cd2">  187</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a90215c13e0d33d74be0a093c9ccc4cd2">Mtc_ProfDbGetCpEnable</a>();</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#aad23381dc607bea4d30d3189e095cfe6">  199</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#aad23381dc607bea4d30d3189e095cfe6">Mtc_ProfDbSetCpEnable</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bCpEnable);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a9842c810ac00d5aa816e544186afc7fb">  213</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a9842c810ac00d5aa816e544186afc7fb">Mtc_ProfDbGetExtnParm</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> **ppcParm);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a64a4a4ec4c49db9fc0264f31cff8cf11">  227</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a64a4a4ec4c49db9fc0264f31cff8cf11">Mtc_ProfDbGetExtnParmBool</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> *pbParm);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a841c0077218dda74323d062f06824f63">  241</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a841c0077218dda74323d062f06824f63">Mtc_ProfDbGetExtnParmInt</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> *piParm);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#af7cde7b6c1a6a95bdd01494a1f443627">  255</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#af7cde7b6c1a6a95bdd01494a1f443627">Mtc_ProfDbGetExtnParmUint</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> *piParm);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a1f041c18f45bb1e798eeb868c14546c6">  268</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> * <a class="code hl_function" href="mtc__prof__db_8h.html#a1f041c18f45bb1e798eeb868c14546c6">Mtc_ProfDbGetExtnParmX</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iIndex);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a8488a8f3f10d4871f85f406703033f15">  280</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a8488a8f3f10d4871f85f406703033f15">Mtc_ProfDbGetExtnParmCount</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a81ef6f4d27b95e46c2f4f91aad28a503">  293</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a81ef6f4d27b95e46c2f4f91aad28a503">Mtc_ProfDbSetExtnParm</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVal);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#affc1b727f37b36f1a0ce79575bc69f4c">  306</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#affc1b727f37b36f1a0ce79575bc69f4c">Mtc_ProfDbSetExtnParmBool</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a> bVal);</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a086856713822cdb174724f431fdba5fe">  319</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a086856713822cdb174724f431fdba5fe">Mtc_ProfDbSetExtnParmInt</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> iVal);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a7a8822efb937d4519d1089cbe3806bc4">  332</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a7a8822efb937d4519d1089cbe3806bc4">Mtc_ProfDbSetExtnParmUint</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a> iVal);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a48f22cd94317157bd74113ded6782fe1">  345</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a48f22cd94317157bd74113ded6782fe1">Mtc_ProfDbAddExtnParm</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVal);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="mtc__prof__db_8h.html#a1e8d2fb5b736f27f584f9cafa6943ff8">  360</a></span>ZFUNC <a class="code hl_typedef" href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a> <a class="code hl_function" href="mtc__prof__db_8h.html#a1e8d2fb5b736f27f584f9cafa6943ff8">Mtc_ProfDbAddExtnParmN</a>(<a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcName, <a class="code hl_typedef" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wNameLen,</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                <a class="code hl_typedef" href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a> *pcVal, <a class="code hl_typedef" href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a> wValLen);</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>}</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="preprocessor">#endif </span><span class="comment">/* _MTC_PROF_DB_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="ttc" id="amtc__prof__db_8h_html_a086856713822cdb174724f431fdba5fe"><div class="ttname"><a href="mtc__prof__db_8h.html#a086856713822cdb174724f431fdba5fe">Mtc_ProfDbSetExtnParmInt</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetExtnParmInt(ZCHAR *pcName, ZINT iVal)</div><div class="ttdoc">Set extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a0bfc6f8c6f683e05bb7ab13ee234253b"><div class="ttname"><a href="mtc__prof__db_8h.html#a0bfc6f8c6f683e05bb7ab13ee234253b">Mtc_ProfDbGetAppVer</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_ProfDbGetAppVer(ZFUNC_VOID)</div><div class="ttdoc">Get application version from database.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a1afe50e4640b3b70cc2cf2565a5e9d4e"><div class="ttname"><a href="mtc__prof__db_8h.html#a1afe50e4640b3b70cc2cf2565a5e9d4e">Mtc_ProfDbSetCountryCode</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetCountryCode(ZCHAR *pcCountryCode)</div><div class="ttdoc">Set country code.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a1e8d2fb5b736f27f584f9cafa6943ff8"><div class="ttname"><a href="mtc__prof__db_8h.html#a1e8d2fb5b736f27f584f9cafa6943ff8">Mtc_ProfDbAddExtnParmN</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbAddExtnParmN(ZCHAR *pcName, ZUSHORT wNameLen, ZCHAR *pcVal, ZUSHORT wValLen)</div><div class="ttdoc">Add extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a1f041c18f45bb1e798eeb868c14546c6"><div class="ttname"><a href="mtc__prof__db_8h.html#a1f041c18f45bb1e798eeb868c14546c6">Mtc_ProfDbGetExtnParmX</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_ProfDbGetExtnParmX(ZCHAR *pcName, ZINT iIndex)</div><div class="ttdoc">Get extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a2aec6e6520b6e7f8678be49a98521afb"><div class="ttname"><a href="mtc__prof__db_8h.html#a2aec6e6520b6e7f8678be49a98521afb">Mtc_ProfDbSetAutoLogin</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetAutoLogin(ZBOOL bAuto)</div><div class="ttdoc">Set the user automatically login option.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a30974c5b3deedd891441805c1b5c38b1"><div class="ttname"><a href="mtc__prof__db_8h.html#a30974c5b3deedd891441805c1b5c38b1">Mtc_ProfDbGetRemPwd</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_ProfDbGetRemPwd(ZFUNC_VOID)</div><div class="ttdoc">Get remember password option from database.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a3ec02b291759a938641db3db28bab572"><div class="ttname"><a href="mtc__prof__db_8h.html#a3ec02b291759a938641db3db28bab572">Mtc_ProfDbSetRemPwd</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetRemPwd(ZBOOL bRember)</div><div class="ttdoc">Set remember password option.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a48f22cd94317157bd74113ded6782fe1"><div class="ttname"><a href="mtc__prof__db_8h.html#a48f22cd94317157bd74113ded6782fe1">Mtc_ProfDbAddExtnParm</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbAddExtnParm(ZCHAR *pcName, ZCHAR *pcVal)</div><div class="ttdoc">Add extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a64a4a4ec4c49db9fc0264f31cff8cf11"><div class="ttname"><a href="mtc__prof__db_8h.html#a64a4a4ec4c49db9fc0264f31cff8cf11">Mtc_ProfDbGetExtnParmBool</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbGetExtnParmBool(ZCHAR *pcName, ZBOOL *pbParm)</div><div class="ttdoc">Get extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a64f4f07d376e8ea5566438c145fe800b"><div class="ttname"><a href="mtc__prof__db_8h.html#a64f4f07d376e8ea5566438c145fe800b">Mtc_ProfDbGetAreaCode</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_ProfDbGetAreaCode(ZFUNC_VOID)</div><div class="ttdoc">Get area code.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a66a8d3e68cbb67dbe8101a55f8ad2a90"><div class="ttname"><a href="mtc__prof__db_8h.html#a66a8d3e68cbb67dbe8101a55f8ad2a90">Mtc_ProfDbSetAreaCode</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetAreaCode(ZCHAR *pcAreaCode)</div><div class="ttdoc">Set area code.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a7a8822efb937d4519d1089cbe3806bc4"><div class="ttname"><a href="mtc__prof__db_8h.html#a7a8822efb937d4519d1089cbe3806bc4">Mtc_ProfDbSetExtnParmUint</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetExtnParmUint(ZCHAR *pcName, ZUINT iVal)</div><div class="ttdoc">Set extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a7ffc3c207e90179f6aa48d18ba8e3a17"><div class="ttname"><a href="mtc__prof__db_8h.html#a7ffc3c207e90179f6aa48d18ba8e3a17">Mtc_ProfDbGetAvatarFile</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_ProfDbGetAvatarFile(ZFUNC_VOID)</div><div class="ttdoc">Get avatar file name.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a81ef6f4d27b95e46c2f4f91aad28a503"><div class="ttname"><a href="mtc__prof__db_8h.html#a81ef6f4d27b95e46c2f4f91aad28a503">Mtc_ProfDbSetExtnParm</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetExtnParm(ZCHAR *pcName, ZCHAR *pcVal)</div><div class="ttdoc">Set extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a841c0077218dda74323d062f06824f63"><div class="ttname"><a href="mtc__prof__db_8h.html#a841c0077218dda74323d062f06824f63">Mtc_ProfDbGetExtnParmInt</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbGetExtnParmInt(ZCHAR *pcName, ZINT *piParm)</div><div class="ttdoc">Get extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a8488a8f3f10d4871f85f406703033f15"><div class="ttname"><a href="mtc__prof__db_8h.html#a8488a8f3f10d4871f85f406703033f15">Mtc_ProfDbGetExtnParmCount</a></div><div class="ttdeci">ZFUNC ZUINT Mtc_ProfDbGetExtnParmCount(ZCHAR *pcName)</div><div class="ttdoc">Get extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a90215c13e0d33d74be0a093c9ccc4cd2"><div class="ttname"><a href="mtc__prof__db_8h.html#a90215c13e0d33d74be0a093c9ccc4cd2">Mtc_ProfDbGetCpEnable</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_ProfDbGetCpEnable()</div><div class="ttdoc">Get the client provisioning enable from database.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_a9842c810ac00d5aa816e544186afc7fb"><div class="ttname"><a href="mtc__prof__db_8h.html#a9842c810ac00d5aa816e544186afc7fb">Mtc_ProfDbGetExtnParm</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbGetExtnParm(ZCHAR *pcName, ZCHAR **ppcParm)</div><div class="ttdoc">Get extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_aa98cf37f932074db854292597d6c6b15"><div class="ttname"><a href="mtc__prof__db_8h.html#aa98cf37f932074db854292597d6c6b15">Mtc_ProfDbGetCountryCode</a></div><div class="ttdeci">ZFUNC ZCHAR * Mtc_ProfDbGetCountryCode(ZFUNC_VOID)</div><div class="ttdoc">Get country code.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_aad23381dc607bea4d30d3189e095cfe6"><div class="ttname"><a href="mtc__prof__db_8h.html#aad23381dc607bea4d30d3189e095cfe6">Mtc_ProfDbSetCpEnable</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetCpEnable(ZBOOL bCpEnable)</div><div class="ttdoc">Set client provisioning enable.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_ad9c41dd3a9ce803fcdd34a3f1aa9a2e1"><div class="ttname"><a href="mtc__prof__db_8h.html#ad9c41dd3a9ce803fcdd34a3f1aa9a2e1">Mtc_ProfDbGetAutoLogin</a></div><div class="ttdeci">ZFUNC ZBOOL Mtc_ProfDbGetAutoLogin(ZFUNC_VOID)</div><div class="ttdoc">Get the user automatically login option from database.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_ade4542ed77f1633f7990ab85edfd13df"><div class="ttname"><a href="mtc__prof__db_8h.html#ade4542ed77f1633f7990ab85edfd13df">Mtc_ProfDbSetAvatarFile</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetAvatarFile(ZCHAR *pcFileName)</div><div class="ttdoc">Set avatar file name.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_ae1c124a152ddf604df44e2a56c97dd1a"><div class="ttname"><a href="mtc__prof__db_8h.html#ae1c124a152ddf604df44e2a56c97dd1a">Mtc_ProfDbSetAppVer</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetAppVer(ZCONST ZCHAR *pcAppVer)</div><div class="ttdoc">Set application version from database.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_af7cde7b6c1a6a95bdd01494a1f443627"><div class="ttname"><a href="mtc__prof__db_8h.html#af7cde7b6c1a6a95bdd01494a1f443627">Mtc_ProfDbGetExtnParmUint</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbGetExtnParmUint(ZCHAR *pcName, ZUINT *piParm)</div><div class="ttdoc">Get extension parameter.</div></div>
+<div class="ttc" id="amtc__prof__db_8h_html_affc1b727f37b36f1a0ce79575bc69f4c"><div class="ttname"><a href="mtc__prof__db_8h.html#affc1b727f37b36f1a0ce79575bc69f4c">Mtc_ProfDbSetExtnParmBool</a></div><div class="ttdeci">ZFUNC ZINT Mtc_ProfDbSetExtnParmBool(ZCHAR *pcName, ZBOOL bVal)</div><div class="ttdoc">Set extension parameter.</div></div>
+<div class="ttc" id="azos__osenv_8h_html_a1ae79d3bb3502c7dc5c16726c78c4bfd"><div class="ttname"><a href="zos__osenv_8h.html#a1ae79d3bb3502c7dc5c16726c78c4bfd">ZFUNC_VOID</a></div><div class="ttdeci">#define ZFUNC_VOID</div><div class="ttdoc">ZOS support void function declare</div><div class="ttdef"><b>Definition:</b> zos_osenv.h:72</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a00d065b2d9a1c97f0172b94bebbf009b"><div class="ttname"><a href="zplin__osenv_8h.html#a00d065b2d9a1c97f0172b94bebbf009b">ZCHAR</a></div><div class="ttdeci">char ZCHAR</div><div class="ttdoc">Type of char.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:100</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a12ce6b35314a3c541296cf3e974292ea"><div class="ttname"><a href="zplin__osenv_8h.html#a12ce6b35314a3c541296cf3e974292ea">ZUSHORT</a></div><div class="ttdeci">unsigned short ZUSHORT</div><div class="ttdoc">Type of unsinged short.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:104</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_a464177d9742a7776282ac7b056a30593"><div class="ttname"><a href="zplin__osenv_8h.html#a464177d9742a7776282ac7b056a30593">ZUINT</a></div><div class="ttdeci">unsigned int ZUINT</div><div class="ttdoc">Type of unsigned int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:102</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_aae3b50edbfc2210f1b21f28c4d196aaa"><div class="ttname"><a href="zplin__osenv_8h.html#aae3b50edbfc2210f1b21f28c4d196aaa">ZINT</a></div><div class="ttdeci">int ZINT</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:98</div></div>
+<div class="ttc" id="azplin__osenv_8h_html_afbe956c8bc4de2ad5c421aa144d07f16"><div class="ttname"><a href="zplin__osenv_8h.html#afbe956c8bc4de2ad5c421aa144d07f16">ZBOOL</a></div><div class="ttdeci">int ZBOOL</div><div class="ttdoc">Type of int.</div><div class="ttdef"><b>Definition:</b> zplin_osenv.h:106</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: /Users/juphoon/code/rcs/sdk/CPlusPlus/3rdParty/cuccwifi/include/grape/zmf_utils.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ac1e9fede566aac571d9ed097263eea9.html">3rdParty</a></li><li class="navelem"><a class="el" href="dir_26b5aed8cb20c56a2b56a88e17be6c0e.html">cuccwifi</a></li><li class="navelem"><a class="el" href="dir_17578248de0cc715b27d02057f2c60a9.html">include</a></li><li class="navelem"><a class="el" href="dir_f1a3acf3e1f2b9415cf1af1ac8bfb4f9.html">grape</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">zmf_utils.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ZMF图像转换工具函数  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
+</div>
+<p><a href="zmf__utils_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga3aa9654419561364d6f8c06886288d50"><td class="memItemLeft" align="right" valign="top"><a id="ga3aa9654419561364d6f8c06886288d50" name="ga3aa9654419561364d6f8c06886288d50"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_log.html#ga3aa9654419561364d6f8c06886288d50">ZmfLogLevel</a> { <b>ZmfLogDebug</b> = 0
+, <b>ZmfLogInfo</b> = 1
+, <b>ZmfLogWarn</b> = 2
+, <b>ZmfLogError</b> = 3
+ }</td></tr>
+<tr class="memdesc:ga3aa9654419561364d6f8c06886288d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志等级 <br /></td></tr>
+<tr class="separator:ga3aa9654419561364d6f8c06886288d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac691f724757163edbbcd53a76c393da"><td class="memItemLeft" align="right" valign="top"><a id="gaac691f724757163edbbcd53a76c393da" name="gaac691f724757163edbbcd53a76c393da"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_type.html#gaac691f724757163edbbcd53a76c393da">ZmfPixelFormatType</a> { <br />
+&#160;&#160;<b>ZmfPixelFormatI420</b> = 1
+, <b>ZmfPixelFormatIYUV</b> = 2
+, <b>ZmfPixelFormatRGB24</b> = 3
+, <b>ZmfPixelFormatABGR</b> = 4
+, <br />
+&#160;&#160;<b>ZmfPixelFormatARGB</b> = 5
+, <b>ZmfPixelFormatARGB4444</b> = 6
+, <b>ZmfPixelFormatRGB565</b> = 7
+, <b>ZmfPixelFormatARGB1555</b> = 8
+, <br />
+&#160;&#160;<b>ZmfPixelFormatYUY2</b> = 9
+, <b>ZmfPixelFormatYV12</b> = 10
+, <b>ZmfPixelFormatUYVY</b> = 11
+, <b>ZmfPixelFormatMJPG</b> = 12
+, <br />
+&#160;&#160;<b>ZmfPixelFormatNV21</b> = 13
+, <b>ZmfPixelFormatNV12</b> = 14
+, <b>ZmfPixelFormatBGRA</b> = 15
+<br />
+ }</td></tr>
+<tr class="memdesc:gaac691f724757163edbbcd53a76c393da"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZMF模块支持的图像类型 <br /></td></tr>
+<tr class="separator:gaac691f724757163edbbcd53a76c393da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc97eab028488024ae2b4c374a2a9bb3"><td class="memItemLeft" align="right" valign="top"><a id="gafc97eab028488024ae2b4c374a2a9bb3" name="gafc97eab028488024ae2b4c374a2a9bb3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ZmfTessarCollectLevel</b> { <b>ZmfTessarError</b>
+, <b>ZmfTessarWarn</b>
+, <b>ZmfTessarImportant</b>
+, <b>ZmfTessarDebug</b>
+ }</td></tr>
+<tr class="separator:gafc97eab028488024ae2b4c374a2a9bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga821c5ad204f15c5e51d8b9055ecd56c9"><td class="memItemLeft" align="right" valign="top"><a id="ga821c5ad204f15c5e51d8b9055ecd56c9" name="ga821c5ad204f15c5e51d8b9055ecd56c9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ZmfTessarCollectType</b> { <b>ZmfTessarData</b> = 0x01
+, <b>ZmfTessarEvent</b> = 0x02
+, <b>ZmfTessarAll</b> = 0x03
+ }</td></tr>
+<tr class="separator:ga821c5ad204f15c5e51d8b9055ecd56c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31495654a60077c3d89142ac5641e33c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga31495654a60077c3d89142ac5641e33c">ZmfTessarInform</a> { <a class="el" href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca3f9c23db424babadb2d0a4336ab8bac4">ZmfTessarTimeOut</a> = 1 &lt;&lt; 0
+, <a class="el" href="group___zmf_video_interface.html#gga31495654a60077c3d89142ac5641e33ca4191bd34494df51295e7dee65fef8069">ZmfTessarErrorOccured</a> = 1 &lt;&lt; 1
+ }</td></tr>
+<tr class="separator:ga31495654a60077c3d89142ac5641e33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af1ddff56351cf38085af5c7e3a452b26"><td class="memItemLeft" align="right" valign="top"><a id="af1ddff56351cf38085af5c7e3a452b26" name="af1ddff56351cf38085af5c7e3a452b26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Zmf_LogV</b> (int iLogLevel, const char *format, va_list argv)</td></tr>
+<tr class="separator:af1ddff56351cf38085af5c7e3a452b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47b44ebb8617bc40be9290d84e0be02c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga47b44ebb8617bc40be9290d84e0be02c">Zmf_ImageFromI420</a> (void *dstFrame, int dstFormat, int dstStride, const void *srcFrame, int srcWidth, int srcHeight)</td></tr>
+<tr class="memdesc:ga47b44ebb8617bc40be9290d84e0be02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将I420图像转换成别的类型  <a href="group___zmf_video_interface.html#ga47b44ebb8617bc40be9290d84e0be02c">更多...</a><br /></td></tr>
+<tr class="separator:ga47b44ebb8617bc40be9290d84e0be02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2b53ae6069d1ed3a45f7430ab7430f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#gab2b53ae6069d1ed3a45f7430ab7430f9">Zmf_ImageFromYV12</a> (void *dstFrame, int dstFormat, int dstStride, const void *srcFrame, int srcWidth, int srcHeight)</td></tr>
+<tr class="memdesc:gab2b53ae6069d1ed3a45f7430ab7430f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">将YV12图像转换成别的类型  <a href="group___zmf_video_interface.html#gab2b53ae6069d1ed3a45f7430ab7430f9">更多...</a><br /></td></tr>
+<tr class="separator:gab2b53ae6069d1ed3a45f7430ab7430f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga226972fc2f3ca59f514b7dd5d76c4709"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga226972fc2f3ca59f514b7dd5d76c4709">Zmf_ConvertToI420</a> (void *dstFrame, int srcFormat, const void *srcFrame, unsigned srcBufLen, int srcWidth, int srcHeight, int crop_x, int crop_y, int *dstWidth, int *dstHeight, int rotateAngle)</td></tr>
+<tr class="memdesc:ga226972fc2f3ca59f514b7dd5d76c4709"><td class="mdescLeft">&#160;</td><td class="mdescRight">将图像类型转换成I420  <a href="group___zmf_video_interface.html#ga226972fc2f3ca59f514b7dd5d76c4709">更多...</a><br /></td></tr>
+<tr class="separator:ga226972fc2f3ca59f514b7dd5d76c4709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06e7fa5ec4d99e43bdc55b799c74e7d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga06e7fa5ec4d99e43bdc55b799c74e7d6">Zmf_ScaleI420</a> (void *srcFrame, int srcWidth, int srcHeight, void *dstFrame, int dstWidth, int dstHeight)</td></tr>
+<tr class="memdesc:ga06e7fa5ec4d99e43bdc55b799c74e7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">缩放I420图像  <a href="group___zmf_video_interface.html#ga06e7fa5ec4d99e43bdc55b799c74e7d6">更多...</a><br /></td></tr>
+<tr class="separator:ga06e7fa5ec4d99e43bdc55b799c74e7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0807fe032ff7dcaf3d6a9a1a91a99480"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga0807fe032ff7dcaf3d6a9a1a91a99480">Zmf_MirrorI420UpDown</a> (void *srcFrame, void *dstFrame, int width, int height)</td></tr>
+<tr class="memdesc:ga0807fe032ff7dcaf3d6a9a1a91a99480"><td class="mdescLeft">&#160;</td><td class="mdescRight">上下翻转I420图像  <a href="group___zmf_video_interface.html#ga0807fe032ff7dcaf3d6a9a1a91a99480">更多...</a><br /></td></tr>
+<tr class="separator:ga0807fe032ff7dcaf3d6a9a1a91a99480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0db9edbd7d170cdc9dc0fbd46ad5284b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga0db9edbd7d170cdc9dc0fbd46ad5284b">Zmf_TessarRegister</a> ()</td></tr>
+<tr class="memdesc:ga0db9edbd7d170cdc9dc0fbd46ad5284b"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册天赛ID。  <a href="group___zmf_video_interface.html#ga0db9edbd7d170cdc9dc0fbd46ad5284b">更多...</a><br /></td></tr>
+<tr class="separator:ga0db9edbd7d170cdc9dc0fbd46ad5284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e76a09efc381a111ade344ea4ab717d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga7e76a09efc381a111ade344ea4ab717d">Zmf_TessarDeregister</a> (int id)</td></tr>
+<tr class="memdesc:ga7e76a09efc381a111ade344ea4ab717d"><td class="mdescLeft">&#160;</td><td class="mdescRight">注销天赛ID。  <a href="group___zmf_video_interface.html#ga7e76a09efc381a111ade344ea4ab717d">更多...</a><br /></td></tr>
+<tr class="separator:ga7e76a09efc381a111ade344ea4ab717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7b3f4ecc5f0188fd281c52105588534"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#gac7b3f4ecc5f0188fd281c52105588534">Zmf_GetTessarData</a> (int level, int type, int id)</td></tr>
+<tr class="memdesc:gac7b3f4ecc5f0188fd281c52105588534"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取tessar字符串(json)  <a href="group___zmf_video_interface.html#gac7b3f4ecc5f0188fd281c52105588534">更多...</a><br /></td></tr>
+<tr class="separator:gac7b3f4ecc5f0188fd281c52105588534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9267a2174fef1c3ce1b65b5f39d66a5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga9267a2174fef1c3ce1b65b5f39d66a5d">Zmf_TessarRecord</a> (int keys[], int values[], const int size, int flag)</td></tr>
+<tr class="memdesc:ga9267a2174fef1c3ce1b65b5f39d66a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入天赛数据  <a href="group___zmf_video_interface.html#ga9267a2174fef1c3ce1b65b5f39d66a5d">更多...</a><br /></td></tr>
+<tr class="separator:ga9267a2174fef1c3ce1b65b5f39d66a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fb048eb3c562e60e0d43ea8c7b88caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga3fb048eb3c562e60e0d43ea8c7b88caa">Zmf_TessarAddCallback</a> (void *cookie, void(*pfnCb)(void *cookie, int event, int info), unsigned int eventMask)</td></tr>
+<tr class="memdesc:ga3fb048eb3c562e60e0d43ea8c7b88caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置天赛消息提醒回调。  <a href="group___zmf_video_interface.html#ga3fb048eb3c562e60e0d43ea8c7b88caa">更多...</a><br /></td></tr>
+<tr class="separator:ga3fb048eb3c562e60e0d43ea8c7b88caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82fde0b55fd4add24d9c9a75a8dc947f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga82fde0b55fd4add24d9c9a75a8dc947f">Zmf_TessarRemoveCallback</a> (void *cookie)</td></tr>
+<tr class="memdesc:ga82fde0b55fd4add24d9c9a75a8dc947f"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消消息提醒。  <a href="group___zmf_video_interface.html#ga82fde0b55fd4add24d9c9a75a8dc947f">更多...</a><br /></td></tr>
+<tr class="separator:ga82fde0b55fd4add24d9c9a75a8dc947f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a81566ce2acac92879f09403601e774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___zmf_video_interface.html#ga9a81566ce2acac92879f09403601e774">Zmf_GetLastError</a> (char code[16], char msg[2048])</td></tr>
+<tr class="memdesc:ga9a81566ce2acac92879f09403601e774"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得last error。  <a href="group___zmf_video_interface.html#ga9a81566ce2acac92879f09403601e774">更多...</a><br /></td></tr>
+<tr class="separator:ga9a81566ce2acac92879f09403601e774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >ZMF图像转换工具函数 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>JrSdk For Linux: Juphoon JR SDK for Linux</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">JrSdk For Linux
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Juphoon JR SDK for Linux </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2><a class="anchor" id="autotoc_md1"></a>
+1. 版本变动清单</h2>
+<p >**&lt;font color=#ff0000&gt;&gt;21.10.11  JR SDK 1.00版本&lt;/font&gt;**</p>
+<p >// todo</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+2. 代码初解</h2>
+<p >JR的代码层级结构如下：</p>
+<div class="fragment"><div class="line">.</div>
+<div class="line">├── 3rdParty</div>
+<div class="line">├── CMakeLists.txt</div>
+<div class="line">├── README.md</div>
+<div class="line">├── client_vers.sh</div>
+<div class="line">├── jrdemo</div>
+<div class="line">│   ├── CMakeLists.txt</div>
+<div class="line">│   ├── configure.h</div>
+<div class="line">│   └── main.cc</div>
+<div class="line">├── jrsdk</div>
+<div class="line">│   ├── CMakeLists.txt</div>
+<div class="line">│   ├── include</div>
+<div class="line">│   │   ├── JRAccount.h</div>
+<div class="line">│   │   ├── JRAccountConstants.h</div>
+<div class="line">│   │   ├── JRAccountImpl.h</div>
+<div class="line">│   │   ├── JRAccountParam.h</div>
+<div class="line">│   │   ├── JRAutoConfig.h</div>
+<div class="line">│   │   ├── JRAutoConfigCallback.h</div>
+<div class="line">│   │   ├── JRAutoConfigImpl.h</div>
+<div class="line">│   │   ├── JRCall.h</div>
+<div class="line">│   │   ├── JRCallCallback.h</div>
+<div class="line">│   │   ├── JRCallConstants.h</div>
+<div class="line">│   │   ├── JRCallImpl.h</div>
+<div class="line">│   │   ├── JRCallItem.h</div>
+<div class="line">│   │   ├── JRCallMember.h</div>
+<div class="line">│   │   ├── JRCallStorage.h</div>
+<div class="line">│   │   ├── JRCallback.h</div>
+<div class="line">│   │   ├── JRClient.h</div>
+<div class="line">│   │   ├── JRClientCallback.h</div>
+<div class="line">│   │   ├── JRClientImpl.h</div>
+<div class="line">│   │   ├── JRCommonUtils.h</div>
+<div class="line">│   │   ├── JRConfigure.h</div>
+<div class="line">│   │   ├── JRMediaDevice.h</div>
+<div class="line">│   │   ├── JRNetworkRequest.h</div>
+<div class="line">│   │   ├── JRNotify.h</div>
+<div class="line">│   │   ├── JRParam.h</div>
+<div class="line">│   │   ├── JRVersion.h</div>
+<div class="line">│   │   ├── JrSdk_global.h</div>
+<div class="line">│   │   ├── JrSdk_prv.h</div>
+<div class="line">│   │   ├── MtcCallNotify.h</div>
+<div class="line">│   │   ├── MtcClientNotify.h</div>
+<div class="line">│   │   └── MtcEngine.h</div>
+<div class="line">│   └── src</div>
+<div class="line">│       ├── JRAccount.cc</div>
+<div class="line">│       ├── JRAccountImpl.cc</div>
+<div class="line">│       ├── JRAccountParam.cc</div>
+<div class="line">│       ├── JRAutoConfig.cc</div>
+<div class="line">│       ├── JRAutoConfigImpl.cc</div>
+<div class="line">│       ├── JRCall.cc</div>
+<div class="line">│       ├── JRCallCallback.cc</div>
+<div class="line">│       ├── JRCallConstants.cc</div>
+<div class="line">│       ├── JRCallImpl.cc</div>
+<div class="line">│       ├── JRCallItem.cc</div>
+<div class="line">│       ├── JRCallMember.cc</div>
+<div class="line">│       ├── JRCallStorage.cc</div>
+<div class="line">│       ├── JRCallback.cc</div>
+<div class="line">│       ├── JRClient.cc</div>
+<div class="line">│       ├── JRClientCallback.cc</div>
+<div class="line">│       ├── JRClientImpl.cc</div>
+<div class="line">│       ├── JRCommonUtils.cc</div>
+<div class="line">│       ├── JRMediaDevice.cc</div>
+<div class="line">│       ├── JRNetworkRequest.cc</div>
+<div class="line">│       ├── JRNotify.cc</div>
+<div class="line">│       ├── MtcCallNotify.cc</div>
+<div class="line">│       ├── MtcClientNotify.cc</div>
+<div class="line">│       └── MtcEngine.cc</div>
+<div class="line">├── release_note.txt</div>
+<div class="line">└── ring</div>
+<div class="line">    ├── RingBack.wav</div>
+<div class="line">    └── Term.wav</div>
+</div><!-- fragment --><p >这些文件的作用如下：</p>
+<ul>
+<li>3rdParty: 文件夹，存放JR SDK所依赖的三方库以及头文件。</li>
+<li>ring: 铃音文件，包含响铃和挂断的铃声。</li>
+<li>CMakeLists.txt: 完整工程的CMakeLists.txt, 内部会调用jrdemo和jrsdk的CMakeLists.txt</li>
+<li>jrdemo: JR SDK 集成的demo, 其中 CMakeList.txt 为其编译文件。</li>
+<li>jrsdk: JR SDK, 其中 CMakeList.txt 为其编译文件。</li>
+<li>client_vers.sh, 生成 jrsdk的版本信息的shell脚本。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+3. JR SDK 模块</h2>
+<p >JR SDK 目前分为下述模块：</p>
+<ol type="1">
+<li><a class="el" href="class_j_r_client.html" title="登录组件。">JRClient</a> 模块: 涉及文件有，JRClient.*, <a class="el" href="class_j_r_client_impl.html">JRClientImpl</a>.*, <a class="el" href="class_j_r_client_callback.html">JRClientCallback</a>.*。该模块的主要提供Juphoon IMS SDK 初始化功能， 以及账号的注册功能。<ul>
+<li><a class="el" href="class_j_r_client.html" title="登录组件。">JRClient</a>.*: 基类，用于对外暴露接口。</li>
+<li><a class="el" href="class_j_r_client_impl.html">JRClientImpl</a>.*: <a class="el" href="class_j_r_client.html" title="登录组件。">JRClient</a> 的实现，不对外提供。</li>
+<li><a class="el" href="class_j_r_client_callback.html">JRClientCallback</a>.*: JRClient的回调接口，用于通知上层, Juphoon IMS SDK的初始化状态以及客户端的注册状态, 由demo侧将其进行实现。</li>
+</ul>
+</li>
+<li><a class="el" href="class_j_r_auto_config.html" title="自动配置组件。">JRAutoConfig</a> 模块: 涉及文件有，JRAutoConfig.*, <a class="el" href="class_j_r_auto_config_impl.html">JRAutoConfigImpl</a>.*, <a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a>.*。该模块的主要提供Juphoon IMS SDK自动配置相关的功能。<ul>
+<li><a class="el" href="class_j_r_auto_config.html" title="自动配置组件。">JRAutoConfig</a>.*: 基类，用于对外暴露接口。</li>
+<li><a class="el" href="class_j_r_auto_config_impl.html">JRAutoConfigImpl</a>.*: JRAutoConfig的实现, 不对外提供。</li>
+<li><a class="el" href="class_j_r_auto_config_callback.html">JRAutoConfigCallback</a>.*: 自动配置相关的回调，用于通知上层, Juphoon IMS SDK的自动配置的情况, 由demo侧进行实现。</li>
+</ul>
+</li>
+<li>JRAccount模块: 涉及文件有, <a class="el" href="class_j_r_account.html">JRAccount</a>.*, <a class="el" href="class_j_r_account_impl.html">JRAccountImpl</a>.*。该模块为账号的创建以及进行配置设置。<ul>
+<li><a class="el" href="class_j_r_account.html">JRAccount</a>.*: 基类，用于对外暴露接口。</li>
+<li><a class="el" href="class_j_r_account_impl.html">JRAccountImpl</a>.*: 用于JRAccount的实现, 不对外暴露。</li>
+</ul>
+</li>
+<li>JRCall模块: 涉及文件有, <a class="el" href="class_j_r_call.html">JRCall</a>.*， <a class="el" href="class_j_r_call_impl.html">JRCallImpl</a>.*, <a class="el" href="class_j_r_call_callback.html">JRCallCallback</a>.*等文件。该模块主要提供Juphoon IMS SDK通话相关的功能。<ul>
+<li><a class="el" href="class_j_r_call.html">JRCall</a>.*: 基类, 用于对外暴露接口。</li>
+<li><a class="el" href="class_j_r_call_impl.html">JRCallImpl</a>.*: JRCall的实现，不对外提供。</li>
+<li><a class="el" href="class_j_r_call_callback.html">JRCallCallback</a>.*: 通话相关的回调，用于通知上层, Juphoon IMS SDK的通话状况, 由demo侧进行实现。</li>
+</ul>
+</li>
+<li>JRNetworkRequest模块: 涉及文件有JRNetworkRequest.cc。该模块主要提供数据上报的功能，该部分接口不对外提供.</li>
+<li>JRMediaDevice模块: 涉及文件有JRMediaDevice.cc。 该模块主要是对ims sdk 媒体部分接口的封装，提供音频的开启与关闭的功能。</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md4"></a>
+4. 编译</h2>
+<ol type="1">
+<li>在当前目录下创建<code>build</code>目录，使得编译产生的临时文件都在build目录下，不会对源代码造成污染。</li>
+<li>进入build目录下, 执行 <code>cmake .. &amp;&amp; make &amp;&amp; make install</code>。</li>
+<li>编译会生成一个vowifi文件夹，内部包好有bin, include, lib三个文件夹。其中bin文件夹中包含有jrdemo的验证程序，include, 和lib文件夹用于客户自行使用集成。</li>
+<li>添加环境变量 LD_LIBRARY_PATH, 其值为库所在的路径。例如执行命令<code>export LD_LIBRARY_PATH=../lib/x86_64</code>(该命令仅适用于x86_64环境)。</li>
+<li>运行jrdemo, 执行<code>./jrdemo</code></li>
+</ol>
+<h2><a class="anchor" id="autotoc_md5"></a>
+5. 基本配置</h2>
+<p >所涉及到的配置参数, 定义于configure.h中, 开发者可根据自身情况进行修改。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能   </th><th class="markdownTableHeadNone">定义   </th><th class="markdownTableHeadNone">提示    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">应用ID   </td><td class="markdownTableBodyNone">const string appId   </td><td class="markdownTableBodyNone">SDK管理平台创建应⽤时填写的应⽤ID    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">应用名称   </td><td class="markdownTableBodyNone">const string vendor   </td><td class="markdownTableBodyNone">⾳箱上使⽤⾳箱名称 和音响名称一致    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">音箱名称   </td><td class="markdownTableBodyNone">const string vendorName   </td><td class="markdownTableBodyNone">⾳箱的型号 必填    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">音箱版本号   </td><td class="markdownTableBodyNone">const string vendorVersion   </td><td class="markdownTableBodyNone">⾳箱App或 ⾳箱系统版本号 必填    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">音箱设备号   </td><td class="markdownTableBodyNone">const string cuei   </td><td class="markdownTableBodyNone">设备的CUEI号    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">应⽤AppKey   </td><td class="markdownTableBodyNone">const string appKey   </td><td class="markdownTableBodyNone">SDK管理平台创建应⽤时后台⽣成的Appkey   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md6"></a>
+6. 集成</h2>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Juphoon IMS SDK 初始化</h3>
+<p >首先需要进行Juphoon IMS SDK的初始化, 相关接口见JRClient.h。 在初始化之前需要设置 <code><a class="el" href="class_j_r_client.html" title="登录组件。">JRClient</a></code> 的回调进行监听,</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line"> * 添加回调。</div>
+<div class="line"> *</div>
+<div class="line"> * @param callback JRClientCallback 接口对象。</div>
+<div class="line">*/</div>
+<div class="line">void addCallback(JRClientCallback *callback)</div>
+</div><!-- fragment --><p >初始化SDK接口调用</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* @brief 初始化。</div>
+<div class="line">*</div>
+<div class="line">* @param appKey            用户从能力平台上申请的 AppKey 字符串。</div>
+<div class="line">* @param appId             应用ID。</div>
+<div class="line">* @param cuei              音箱设备号。</div>
+<div class="line">* @param vendor            应用名称。</div>
+<div class="line">* @param vendorName        音箱名称。</div>
+<div class="line">* @param vendorVersion     音箱版本号。</div>
+<div class="line">*/</div>
+<div class="line">void startInitWithAppkey(string appKey, string appId, string cuei, </div>
+<div class="line">                string vendor, string vendorName, string vendorVersion);</div>
+</div><!-- fragment --><p >初始化的结果通过<code>onClientInitResult</code>进行通知</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* sdk 初始化结果回调。</div>
+<div class="line">*</div>
+<div class="line">* @param result 初始化 sdk 是否成功。</div>
+<div class="line">* - true：初始化成功。</div>
+<div class="line">* - false：初始化失败。</div>
+<div class="line">* @param reason 初始化 sdk 失败原因。参见 @ref JRClient.SUCCESS &quot;初始化失败原因&quot;。</div>
+<div class="line">*/</div>
+<div class="line">void onClientInitResult(bool result, int reason);</div>
+</div><!-- fragment --><p >初始化失败的具体错误值如下: </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">JRClient::SUCCESS = 0; // 初始化成功</div>
+<div class="line">JRClient::SDK_FOLDER_CREATE_ERROR = 1; //SDK目录文件夹创建失败</div>
+<div class="line">JRClient::UNSATISFIED_LINK_ERROR = 2; // so库加载失败</div>
+<div class="line">JRClient::CPU_NOT_SUPPORTED = 3; // CPU不支持</div>
+<div class="line">JRClient::INIT_ERROR = 4; // 初始化失败</div>
+<div class="line">JRClient::DOWNLOAD_LICENSE_ERROR = 5; // 下载 license 失败</div>
+<div class="line">JRClient::DOWNLOAD_LICENSE_SUCC = 6; // 下载 license 成功</div>
+<div class="line">JRClient::LICENSE_ERROR_FILE_NOT_EXIT = 7; // license 文件不存在</div>
+<div class="line">JRClient::LICENSE_ERROR_INVALID_FILE = 8; // license 文件非法</div>
+<div class="line">JRClient::LICENSE_ERROR_INVALID_APP_ID = 9; //license 非法 AppId</div>
+<div class="line">JRClient::LICENSE_ERROR_TIME_EXPIRED = 10; //license 时间过期</div>
+<div class="line">JRClient::LICENSE_ERROR_NTP_TIME_CHECK_ERROR = 11; //ntp 时间校验错误</div>
+<div class="line">JRClient::LICENSE_ERROR_OTHER = 12; // 其他的 license 验证错误</div>
+<div class="line">JRClient::REASON_OTHER = 100; //其他错误</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
+自动配置</h3>
+<p >自动配置模块相关接口见JRAutoConfig.h, 首先需要对<code><a class="el" href="class_j_r_auto_config.html" title="自动配置组件。">JRAutoConfig</a></code>模块进行设置监听</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line"> * 添加回调。</div>
+<div class="line"> *</div>
+<div class="line"> * @param callback JRAutoConfigCallback 接口对象。</div>
+<div class="line">*/</div>
+<div class="line">void addCallback(JRAutoConfigCallback *callback)</div>
+</div><!-- fragment --><p >开始进行自动配置 </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 获取自动配置。</div>
+<div class="line">*</div>
+<div class="line">* @return true 表示接口调用成功，false 表示接口调用失败</div>
+<div class="line">*/</div>
+<div class="line">bool startAutoConfig();</div>
+</div><!-- fragment --><p >自动配置完成之后，结果通过 <code>onAutoConfigResult</code> 接口进行返回通知给用户层, 若失败,具体错误码如下:</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">JRAutoConfig::SUCCESS = 0; // 自动配置成功</div>
+<div class="line">JRAutoConfig::LICENSE_ERROR_FILE_NOT_EXIT = 1; //  license 文件不存在</div>
+<div class="line">JRAutoConfig::LICENSE_ERROR_INVALID_FILE = 2; // license 文件非法</div>
+<div class="line">JRAutoConfig::LICENSE_ERROR_INVALID_APP_ID = 3; //license 非法 AppId</div>
+<div class="line">JRAutoConfig::LICENSE_ERROR_TIME_EXPIRED = 4; //license 时间过期</div>
+<div class="line">JRAutoConfig::LICENSE_ERROR_NTP_TIME_CHECK_ERROR = 5;  //ntp 时间校验错误</div>
+<div class="line">JRAutoConfig::LICENSE_ERROR_OTHER = 6; //其他的 license 验证错误</div>
+<div class="line">JRAutoConfig::REASON_OTHER = 100; //其他错误</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
+注册</h3>
+<p >注册模块与初始化模块一致，都属于JRClient模块的功能, 相关接口见JRClient.h。</p>
+<p ><b>登录</b></p>
+<p >当IMS SDK初始化完成之后，可以通过调用该接口进行登录操作</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 登录。</div>
+<div class="line">*</div>
+<div class="line">* 只有登录成功后才能进行各种业务。</div>
+<div class="line">*</div>
+<div class="line">* @param userName 帐号名。</div>
+<div class="line">* @return 调用是否成功。</div>
+<div class="line">* - true：正常执行调用流程，登录结果通过 @ref JRClientCallback::onClientLoginResult &quot;onClientLoginResult&quot; 通知。</div>
+<div class="line">* - false：调用失败，不会收到 @ref JRClientCallback::onClientLoginResult &quot;onClientLoginResult&quot; 通知。</div>
+<div class="line">*/</div>
+<div class="line">bool login(string userName);</div>
+</div><!-- fragment --><p ><b>登出</b></p>
+<p >登出调用</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 登出。</div>
+<div class="line">*</div>
+<div class="line">* 登出后不能进行各种业务。</div>
+<div class="line">*</div>
+<div class="line">* @return 调用是否成功。</div>
+<div class="line">* - true：正常执行调用流程，登录结果通过 @ref JRClientCallback::onClientLogoutResult &quot;onClientLogoutResult&quot; 通知。</div>
+<div class="line">* - false：调用失败，不会收到 @ref JRClientCallback::onClientLogoutResult &quot;onClientLogoutResult&quot; 通知。</div>
+<div class="line">*/</div>
+<div class="line">bool logout();</div>
+</div><!-- fragment --><p> <b>禁止重试注册的开关</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line"> * 禁止重试注册的开关</div>
+<div class="line"> * @param enable true or false</div>
+<div class="line"> */</div>
+<div class="line">void setAutoRelogin(bool enable)</div>
+</div><!-- fragment --><p ><b>获取sdk版本号</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line"> * 获取 sdk 版本号</div>
+<div class="line"> * @return</div>
+<div class="line"> */</div>
+<div class="line">string getSDKVersion()</div>
+</div><!-- fragment --><p ><b>获取当前使用的账号</b> </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line"> * 获取当前open的账号</div>
+<div class="line"> *</div>
+<div class="line"> * return 返回账号名</div>
+<div class="line"> */</div>
+<div class="line">string getCurAccount()</div>
+</div><!-- fragment --><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line"> * 获取当前登录状态</div>
+<div class="line"> * 登录状态值@JRClient::ClientState</div>
+<div class="line"> * return 当前登录状态值</div>
+<div class="line"> */</div>
+<div class="line">int getState()</div>
+</div><!-- fragment --><p >登录状态 JRClient::ClientState的定义:</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">int STATE_NOT_INIT=0;//未初始化</div>
+<div class="line">int STATE_IDLE = 1  // 未登录</div>
+<div class="line">int STATE_REGING = 2; // 注册中</div>
+<div class="line">int STATE_REGED = 3;  // 已注册</div>
+<div class="line">int STATE_UNREGING = 4; // 注销中</div>
+</div><!-- fragment --><p ><b>登录状态变更的通知</b></p>
+<p >在程序运行过程中，所有有关注册状态变更的事件会通过JRClientCallback中的回调接口进行通知，具体 如下,</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line"> /**</div>
+<div class="line">* 登录结果回调。</div>
+<div class="line">*</div>
+<div class="line">* @param result 登录是否成功。</div>
+<div class="line">* - true：登录成功。</div>
+<div class="line">* - false：登录失败。</div>
+<div class="line">* @param reason 登录失败原因。参见 @ref JRClient.REASON_NONE &quot;登录失败原因&quot;。</div>
+<div class="line">*/</div>
+<div class="line">virtual void onClientLoginResult(bool result,int reason) = 0;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 登出回调。</div>
+<div class="line">*</div>
+<div class="line">* @param reason 登出原因。参见 @ref JRClient.REASON_NONE &quot;登出原因&quot;。</div>
+<div class="line">*/</div>
+<div class="line">virtual void onClientLogoutResult(int reason) = 0;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 登录状态变化通知。</div>
+<div class="line">*</div>
+<div class="line">* @param state    当前登录状态值。参见 @ref JRClient.STATE_NOT_INIT &quot;登录状态&quot;。</div>
+<div class="line">* @param oldState 之前的登录状态值。参见 @ref JRClient.STATE_NOT_INIT &quot;登录状态&quot;。</div>
+<div class="line">*/</div>
+<div class="line">virtual void onClientStateChange(int state, int oldState) = 0;</div>
+</div><!-- fragment --><p ><b>登录失败处理</b></p>
+<p >&lt;font color=#ff0000&gt;&gt; 注意：如果登录失败，onClientStateChange回调中state将恢复为STATE_IDLE，reason为具体的错误类型。&lt;/font&gt;</p>
+<p >错误类型如下：</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">底层错误码   </th><th class="markdownTableHeadNone">返回码描述   </th><th class="markdownTableHeadNone">Linux    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57603   </td><td class="markdownTableBodyNone">鉴权失败，无效的用户名或密码   </td><td class="markdownTableBodyNone">REASON_AUTHENTICATION_FAILED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57604   </td><td class="markdownTableBodyNone">使用无效的用户名   </td><td class="markdownTableBodyNone">REASON_INVALID_USER    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57605   </td><td class="markdownTableBodyNone">注册超时   </td><td class="markdownTableBodyNone">REASON_TIMEOUT    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57606   </td><td class="markdownTableBodyNone">服务器忙   </td><td class="markdownTableBodyNone">REASON_SERVER_BUSY    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57607   </td><td class="markdownTableBodyNone">服务器不可达   </td><td class="markdownTableBodyNone">REASON_SERVER_NOT_REACHED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57608   </td><td class="markdownTableBodyNone">请求被拒绝   </td><td class="markdownTableBodyNone">REASON_FORBIDDEN    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57609   </td><td class="markdownTableBodyNone">服务不存在   </td><td class="markdownTableBodyNone">REASON_UNAVAILABLE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57610   </td><td class="markdownTableBodyNone">dns查询失败   </td><td class="markdownTableBodyNone">REASON_DNS_QUERY_FAILED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57611   </td><td class="markdownTableBodyNone">网络错误   </td><td class="markdownTableBodyNone">REASON_NETWORK_ERROR    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57612   </td><td class="markdownTableBodyNone">网络侧要求重新注册   </td><td class="markdownTableBodyNone">REASON_DEACTIVED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57613   </td><td class="markdownTableBodyNone">试用出错   </td><td class="markdownTableBodyNone">REASON_PROBATION    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57614   </td><td class="markdownTableBodyNone">服务器内部错误   </td><td class="markdownTableBodyNone">REASON_INTERNAL_ERROR    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57615   </td><td class="markdownTableBodyNone">没有资源   </td><td class="markdownTableBodyNone">REASON_NO_RESOURCE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57616   </td><td class="markdownTableBodyNone">被踢下线   </td><td class="markdownTableBodyNone">REASON_REJECTED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57617   </td><td class="markdownTableBodyNone">sip错误   </td><td class="markdownTableBodyNone">REASON_SIP_SESSION_ERROR    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57618   </td><td class="markdownTableBodyNone">注销错误   </td><td class="markdownTableBodyNone">REASON_UNREGISTER_ERROR    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57619   </td><td class="markdownTableBodyNone">无效的地址   </td><td class="markdownTableBodyNone">REASON_INVALID_IP_ADDR    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57620   </td><td class="markdownTableBodyNone">等待APP输入SIP密码超时   </td><td class="markdownTableBodyNone">REASON_WAIT_PROMPT_PASSWORD_TIMEOUT    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57621   </td><td class="markdownTableBodyNone">平台数据不一致   </td><td class="markdownTableBodyNone">REASON_NOT_FOUND_USER    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57622   </td><td class="markdownTableBodyNone">用户关闭或者停机   </td><td class="markdownTableBodyNone">REASON_AUTHENTICATION_REJECTED    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">57623   </td><td class="markdownTableBodyNone">用户的pvi不一致   </td><td class="markdownTableBodyNone">REASON_ID_NOT_MATCH    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">57624   </td><td class="markdownTableBodyNone">用户不存在   </td><td class="markdownTableBodyNone">REASON_USER_NOT_EXIST   </td></tr>
+</table>
+<p >为了维护缓存配置的有效性，当 state 恢复为STATE_IDLE，且reason是如下几种错误时：</p>
+<div class="fragment"><div class="line">/// 注册鉴权有误，无效的用户名或密码</div>
+<div class="line">REASON_AUTHENTICATION_FAILED，</div>
+<div class="line">/// 登录失败，无效用户名</div>
+<div class="line">REASON_INVALID_USER</div>
+<div class="line">/// 无效的账号或密码</div>
+<div class="line">REASON_FORBIDDEN</div>
+<div class="line">/// 无效的地址</div>
+<div class="line">REASON_INVALID_IP_ADDR</div>
+<div class="line">/// 平台数据不一致</div>
+<div class="line">REASON_NOT_FOUND_USER</div>
+<div class="line">///  用户关闭或者停机</div>
+<div class="line">REASON_AUTHENTICATION_REJECTED</div>
+<div class="line">///  用户信息不一致</div>
+<div class="line">REASON_ID_NOT_MATCH</div>
+<div class="line">/// 用户不存在</div>
+<div class="line">REASON_USER_NOT_EXIST</div>
+</div><!-- fragment --><p >&lt;font color=#ff0000&gt;&gt;强烈建议重新调用获取配置接口，重新获取配置来刷新缓存配置信息&lt;/font&gt;</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+账号模块</h3>
+<p >账号模块用于自动配置完成之后对于账号的管理，包括账号的创建，删除以及配置等</p>
+<p ><b>创建账号</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 创建账号。</div>
+<div class="line">*</div>
+<div class="line">* @param accountName 账号名称。</div>
+<div class="line">* @return 是否正常调用。</div>
+<div class="line">* - true：正常执行调用流程。</div>
+<div class="line">* - false：调用失败。</div>
+<div class="line">*/</div>
+<div class="line">bool createAccount(string accountName)</div>
+</div><!-- fragment --><p ><b>删除账号</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line"> /**</div>
+<div class="line"> * 删除帐号。</div>
+<div class="line"> *</div>
+<div class="line"> * @param accountName 帐号名称。</div>
+<div class="line"> * @return 是否正常调用。</div>
+<div class="line"> * - true：正常执行调用流程。</div>
+<div class="line"> * - false：调用失败。</div>
+<div class="line"> */</div>
+<div class="line">bool deleteAccount(string accountName)</div>
+</div><!-- fragment --><p ><b>设置配置</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 设置帐号配置。</div>
+<div class="line">*</div>
+<div class="line">* 该方法与 @ref setAccountConfig(string accountName, JRAccountConstants constants, string value) &quot;setAccountConfig&quot; 方法的区别是：</div>
+<div class="line">* 该方法可以同时设置多个账号配置。</div>
+<div class="line">*</div>
+<div class="line">* @param accountName 帐号名。</div>
+<div class="line">* @param extraParams 帐号配置参数，详见 @ref JRAccountConstants 。</div>
+<div class="line">* @return 是否正常调用。</div>
+<div class="line">* - true：正常执行调用流程。</div>
+<div class="line">* - false：调用失败。</div>
+<div class="line">*/</div>
+<div class="line">bool setAccountConfig(string accountName, map&lt;JRAccountConstants, string&gt; extraParams)</div>
+</div><!-- fragment --><p ><b>获取配置</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 获取帐号配置参数。</div>
+<div class="line">*</div>
+<div class="line">* @param accountName 帐号名。</div>
+<div class="line">* @param paramKey    帐号配置参数。</div>
+<div class="line">* @return 账号配置参数对应的值。</div>
+<div class="line">*/</div>
+<div class="line">string getAccountConfig(string accountName, JRAccountConstants paramKey)</div>
+</div><!-- fragment --><p ><b>获取账号列表</b></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 获取帐号列表。</div>
+<div class="line">*</div>
+<div class="line">* @return 帐号集合。</div>
+<div class="line">*/</div>
+<div class="line">vector&lt;string&gt; getAccountList()</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+通话模块</h3>
+<p >通话接口见JRCall.h文件。</p>
+<p >发起通话</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 拨打一对一通话</div>
+<div class="line">*</div>
+<div class="line">* @param number  对端号码</div>
+<div class="line">* @return 返回true, 代表成功，false，表示失败</div>
+<div class="line">*/</div>
+<div class="line">bool call(string number);</div>
+</div><!-- fragment --><p >接听通话, 其中item对象，会通过回调的形式进行上报，由用户进行管理。 </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 接听一对一电话</div>
+<div class="line">*</div>
+<div class="line">* @param item    JRCallItem 对象</div>
+<div class="line">* @return 返回true, 代表成功，false，表示失败</div>
+<div class="line">*/</div>
+<div class="line">bool answer(JRCallItem *item);</div>
+</div><!-- fragment --><p >结束通话, 其中item对象，会通过回调的形式进行上报，由用户进行管理。</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 挂断某路通话</div>
+<div class="line">*</div>
+<div class="line">* @param item   JRCallItem 对象</div>
+<div class="line">* @param reason 挂断原因</div>
+<div class="line">* @see TermReason</div>
+<div class="line">*/</div>
+<div class="line">bool endCall(JRCallItem *item, int reason);</div>
+</div><!-- fragment --><p >其中 reason 为, 一般情况下正常挂断填<code><a class="el" href="class_j_r_call.html#a519c1117d0795d6757ff03de1db87d57" title="通话正常">JRCall::NORMAL</a></code></p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 未成功建立连接</div>
+<div class="line">*/</div>
+<div class="line">const int JRCall::UNCONNECTED = 0;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 拨打号码是空号（或未知号码）</div>
+<div class="line">*/</div>
+<div class="line">const int JRCall::NOT_FIND = 1;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 用户未接</div>
+<div class="line">*/</div>
+<div class="line">const int JRCall::BUSY = 2;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 用户拒接</div>
+<div class="line">*/</div>
+<div class="line">const int JRCall::DECLINE = 3;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 通话中特殊中断</div>
+<div class="line">*/</div>
+<div class="line">const int JRCall::INTERRUPT = 4;</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 通话正常</div>
+<div class="line">*/</div>
+<div class="line">const int JRCall::NORMAL = 5;</div>
+</div><!-- fragment --><p >静音或取消静音, 其中item对象，会通过回调的形式进行上报，由用户进行管理。</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 静音或者取消静音通话</div>
+<div class="line">*</div>
+<div class="line">* @param item JRCallItem 对象</div>
+<div class="line">* @return 返回true, 代表成功,false,示失败</div>
+<div class="line">*/</div>
+<div class="line">bool mute(JRCallItem *item);</div>
+</div><!-- fragment --><p >发送dtmf, 其中item对象，会通过回调的形式进行上报，由用户进行管理, dtmf 对象参照 EN_JRCALL_DTMF类型。 </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 发送dtmf</div>
+<div class="line">*</div>
+<div class="line">* @param item JRCallItem 对象</div>
+<div class="line">* @param dtmf dtmf类型</div>
+<div class="line">* @return 返回true, 代表成功，false，表示失败</div>
+<div class="line">*/</div>
+<div class="line">bool sendDtmf(JRCallItem *item, int dtmf);</div>
+<div class="line"> </div>
+<div class="line">enum EN_JRCALL_DTMF{</div>
+<div class="line">    EN_JRCALL_DTMF_0,</div>
+<div class="line">    EN_JRCALL_DTMF_1,</div>
+<div class="line">    EN_JRCALL_DTMF_2,</div>
+<div class="line">    EN_JRCALL_DTMF_3,</div>
+<div class="line">    EN_JRCALL_DTMF_4,</div>
+<div class="line">    EN_JRCALL_DTMF_5,</div>
+<div class="line">    EN_JRCALL_DTMF_6,</div>
+<div class="line">    EN_JRCALL_DTMF_7,</div>
+<div class="line">    EN_JRCALL_DTMF_8,</div>
+<div class="line">    EN_JRCALL_DTMF_9,</div>
+<div class="line">    EN_JRCALL_DTMF_A,</div>
+<div class="line">    EN_JRCALL_DTMF_B,</div>
+<div class="line">    EN_JRCALL_DTMF_C,</div>
+<div class="line">    EN_JRCALL_DTMF_D,</div>
+<div class="line">    EN_JRCALL_DTMF_POUND,</div>
+<div class="line">    EN_JRCALL_DTMF_STAR,</div>
+<div class="line">};</div>
+</div><!-- fragment --><p >通话过程中，JRSDK的状态变更通过回调的形式进行通知，开发者需要继承并实现JRCallCallback类中的方法，并通过<code>addCallback</code>接口进行设置。 </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 添加回调</div>
+<div class="line">*</div>
+<div class="line">* @param callback JRCallCallback 接口对象</div>
+<div class="line">*/</div>
+<div class="line">void addCallback(JRCallCallback * callback);</div>
+</div><!-- fragment --><p ><a class="el" href="class_j_r_call_callback.html">JRCallCallback</a> 所需要实现的方法如下:</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* 通话状态更新回调</div>
+<div class="line">*</div>
+<div class="line">* @param item       JRCallItem 对象，当 item 为 nil 时表示全部更新</div>
+<div class="line">* @param updateType 更新的事件类型</div>
+<div class="line">* @see JRCall.UpdateType</div>
+<div class="line">*/</div>
+<div class="line">void onCallItemUpdated(JRCallItem *item, int updateType);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 移除通话回调</div>
+<div class="line">*</div>
+<div class="line">* @param item   JRCallItem 对象</div>
+<div class="line">* @param reason 通话结束原因</div>
+<div class="line">* @see JRCall.TermReason</div>
+<div class="line">*/</div>
+<div class="line">void onCallItemRemove(JRCallItem *item, int reason);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* 新增通话回调</div>
+<div class="line">*</div>
+<div class="line">* @param item JRCallItem 对象</div>
+<div class="line">*/</div>
+<div class="line">void onCallItemAdd(JRCallItem *item);</div>
+</div><!-- fragment --><p >当收到来电时，通过<code>onCallItemAdd</code>接口进行上报。由对端结束的通话通过<code>onCallItemRemove</code>接口进行通知。通话过程中的各种状态变更，通过<code>onCallItemUpdated</code>接口进行上报。其中<code>onCallItemUpdated</code>接口中的updateType 类型有以下几种情况 </p><div class="fragment"><div class="line"> {c++}</div>
+<div class="line">JRCall::ALERT;  // 对方振动铃声</div>
+<div class="line">JRCall::RECV_DTMF; // 收到 dtmf 事件</div>
+<div class="line">JRCall::OUTGOING;  // 通话成功呼出事件</div>
+<div class="line">JRCall::TALKING;  // 通话成功进行通话</div>
+<div class="line">JRCall::NET_STA_CHANGED;  // 通话过程中网络通话变更</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+音频设置</h3>
+<p >有关音频设置的接口见<code><a class="el" href="_j_r_media_device_8h_source.html">JRMediaDevice.h</a></code>文件</p>
+<p >sdk 控制声音的输入输出</p>
+<p >当 <code>setAdpType</code> 设置<code>EN_INPUTSDK_OUTPUTSDK_TYPE</code>类型时， 能够不需要外部输入和输出音频流。</p>
+<p >通过调用startAudio()接口进行打开音频， 通过stopAudio()接口进行关闭音频。</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* @brief 打开音频设备</div>
+<div class="line">* 音频的获取由sdk自动控制, 该接口在通话开始前进行调用，若由用户自动传递媒体流则不需要调用该接口</div>
+<div class="line">* </div>
+<div class="line">* @return 0, 表示接口调用成功， 1表示接口调用失败</div>
+<div class="line">*/</div>
+<div class="line">int startAudio();</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* @brief 关闭音频设备</div>
+<div class="line">* 音频的获取由sdk自动控制, 该接口在通话开始后进行调用，若由用户自动传递媒体流则不需要调用该接口音</div>
+<div class="line">* </div>
+<div class="line">* @return 0. 表示接口调用成功，1表示接口调用失败</div>
+<div class="line">*/</div>
+<div class="line">int stopAudio();</div>
+</div><!-- fragment --><p >音箱侧控制音频输入输出的相关定义, 开发者需要通过<code>setAdpType</code>接口设置为<code>EN_INPUTUSER_OUATPUTUSER</code>类型</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* The audio input data entry to ZMF, each callback will obtain the data.</div>
+<div class="line">* Multiple data will mix in the callback of the jssmme Engine,</div>
+<div class="line">* and the first input will be main channel.</div>
+<div class="line">*</div>
+<div class="line">* @param[in] inputId       unique name of the audio input</div>
+<div class="line">* @param[in] sampleRateHz  the sample rating of the pcm data</div>
+<div class="line">* @param[in] iChannels     the channel number of the pcm data</div>
+<div class="line">* @param[in] buf           the pcm data</div>
+<div class="line">* @param[in] len           the pcm data length</div>
+<div class="line">* @param[in,out] micLevel  </div>
+<div class="line">* @param[in] playDelayMS</div>
+<div class="line">* @param[in] recDelayMS</div>
+<div class="line">* @param[in] clockDrift</div>
+<div class="line">*</div>
+<div class="line">*/</div>
+<div class="line">void onAudioInput(const char *inputId, int sampleRateHz, int iChannels, </div>
+<div class="line">                        unsigned char *buf, int len, int *micLevel, </div>
+<div class="line">                        int playDelayMS, int recDelayMS, int clockDrift);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* tell ZMF the audio input has stopped</div>
+<div class="line">*</div>
+<div class="line">* @param[in] inputId       unique name of the device</div>
+<div class="line">*/</div>
+<div class="line">void onAudioInputDidStop(const char *inputId);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* The outlet which audio output can get data from.</div>
+<div class="line">*</div>
+<div class="line">* @param[in] outputId      unique name of the audio output</div>
+<div class="line">* @param[in] sampleRateHz  the sample rating of the pcm data</div>
+<div class="line">* @param[in] iChannels     the channel number of the pcm data</div>
+<div class="line">* @param[in] buf           the pcm data to be filled</div>
+<div class="line">* @param[in] len           the pcm data length</div>
+<div class="line">*/</div>
+<div class="line">void onAudioOutput(const char *outputId, int sampleRateHz, int iChannels, </div>
+<div class="line">                    unsigned char *buf, int len);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* tell ZMF the audio output has stopped</div>
+<div class="line">*</div>
+<div class="line">* @param[in] outputId      unique name of the device</div>
+<div class="line">*/</div>
+<div class="line">void onAudioOutputDidStop(const char *outputId);</div>
+</div><!-- fragment --><p >音频设备的选择， 部分设备可能需要对输入输出设备进行调整之后，才能够正常的输入或者输出音频.</p>
+<p >接口如下:</p>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">/**</div>
+<div class="line">* @brief 获取输入设备列表</div>
+<div class="line">* </div>
+<div class="line">* @param[out] curentId, 当前使用的设备Id</div>
+<div class="line">* @param[out] cId, 设备ID名称列表</div>
+<div class="line">* @param[out] deviceName, 设备名称列表</div>
+<div class="line">*</div>
+<div class="line">*/</div>
+<div class="line">void getInputDevices(int &amp;curentId, int &amp;count, vector&lt;string&gt; &amp; cId, vector&lt;string&gt; &amp;deviceName);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* @brief 获取输出设备列表</div>
+<div class="line">* </div>
+<div class="line">* @param[out] curentId, 当前使用的设备Id</div>
+<div class="line">* @param[out] cId, 设备ID名称列表</div>
+<div class="line">* @param[out] deviceName, 设备名称列表</div>
+<div class="line">*</div>
+<div class="line">*/</div>
+<div class="line">void getOutputDevices(int &amp;curentId, int &amp;count, vector&lt;string&gt; &amp; cId, vector&lt;string&gt; &amp;deviceName);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* @brief 选择使用的输入设备的Id</div>
+<div class="line">*</div>
+<div class="line">* @param[in] 设备id </div>
+<div class="line">*</div>
+<div class="line">*/</div>
+<div class="line">bool selectInputDeviceId(int id);</div>
+<div class="line"> </div>
+<div class="line">/**</div>
+<div class="line">* @brief 选择使用的输出设备的Id</div>
+<div class="line">*</div>
+<div class="line">* @param[in] 设备id </div>
+<div class="line">*</div>
+<div class="line">*/</div>
+<div class="line">bool selectOutputDeviceId(int id); </div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>
